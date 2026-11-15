@@ -36,7 +36,7 @@ Ang tab na **Lessons** ay nagbibigay sa iyo ng access sa curriculum at mga mater
 
 Awtomatikong dala ang iyong login kapag binuksan mo ang tab na Lessons. Hindi mo na kailangang mag-sign in muli nang hiwalay sa Lessons.church.
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
 Kapag nasa loob ka na ng tab na Lessons, maaari kang mag-browse ng curriculum na inilaan ng inyong simbahan. Depende sa na-set up ng inyong simbahan, maaari kang makakita ng:
 

@@ -1,91 +1,92 @@
 ---
-title: "Anmeldungs-Etikettendesigner"
-description: "Passen Sie in B1 Admin die Namensschild- und Abholzettel-Vorlagen an, die beim Check-in gedruckt werden, inklusive Feldern, Positionierung und Bedingungen für Geburtstage oder Notizen."
+title: "Check-In-Etikettengestalter"
+description: "Passen Sie die Vorlagen für Namensschilder und Abholzettel an, die beim Check-in in B1 Admin gedruckt werden, einschließlich Feldern, Positionierung sowie Bedingungen für Geburtstag oder Notizen."
 ---
 
-# Anmeldungs-Etikettendesigner
+# Check-In-Etikettengestalter
 
 <div class="article-intro">
 
-Der Etikettendesigner ermöglicht es Ihnen, die Namensschild- und Abholquittungs-Vorlagen zu erstellen und anzupassen, die beim Einchecken von Kindern durch Familien ausgedruckt werden. Sie können genau steuern, welche Informationen auf jedem Etikett angezeigt werden, wo sie positioniert werden und wie sie aussehen.
+Mit dem Etikettengestalter erstellen und bearbeiten Sie die Vorlagen für Namensschilder und Abholzettel, die gedruckt werden, wenn Familien ihre Kinder einchecken. Sie bestimmen genau, welche Informationen auf jedem Etikett erscheinen, wo sie positioniert werden und wie sie aussehen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie [Anwesenheit](./setup.md) ein und konfigurieren Sie mindestens eine Gottesdienstzeit mit aktivierter Anmeldung
-- Richten Sie [Anmeldung](./check-in.md) ein, damit Etiketten gedruckt werden
-- Sie benötigen Verwaltungszugriff auf den Anwesenheitsbereich
+- Richten Sie die [Anwesenheit](./setup.md) ein und konfigurieren Sie mindestens eine Gottesdienstzeit mit aktiviertem Check-in
+- Richten Sie den [Check-In](./check-in.md) ein, damit Etiketten gedruckt werden
+- Sie benötigen die Berechtigung **Anwesenheit bearbeiten**
 
 </div>
 
-## Öffnen des Etikettendesigners
+## Den Etikettengestalter öffnen {#opening-the-label-designer}
 
-Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Mobil**, und klicken Sie auf **B1 CheckIn**. Klicken Sie dann auf die Schaltfläche **Etiketten entwerfen** auf der Karte "Anmeldungs-Etiketten". Sie sehen eine Liste Ihrer gespeicherten Etikettenvorlagen, unterteilt nach Typ: **Namensschild** und **Abholquittung**.
+Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Mobil** auf und klicken Sie auf **Etiketten**. Alternativ klicken Sie auf **B1 CheckIn** und dann auf der Karte **Check-in-Etiketten** auf **Etiketten gestalten**.
 
-## Etikettentypen
+Die Seite **Check-in-Etiketten** listet Ihre gespeicherten Vorlagen mit ihrem **Namen**, dem **Typ** (**Namensschild** oder **Abholzettel**) und der **Größe** auf. Wenn Sie noch keine erstellt haben, steht dort **Keine Etikettenvorlagen**, und B1 Checkin druckt sein eingebautes Namensschild und den eingebauten Abholzettel.
 
-- **Namensschild** – wird ausgedruckt und an das Kind angebracht. Enthält typischerweise den Namen des Kindes, sein Klassenzimmer/seine Sitzung und einen Sicherheitscode.
-- **Abholquittung** – wird an den Eltern oder Erziehungsberechtigten gegeben. Enthält typischerweise den Sicherheitscode und eine Liste der Kinder, die sie angemeldet haben.
+## Etikettentypen {#label-types}
 
-B1 beginnt mit einer Standard-Namenschildvorlage und einer Standard-Abholquittungs-Vorlage in der Größe von Standard-Thermisk-Etiketten von 3,5 × 1,1 Zoll.
+- **Namensschild** – wird gedruckt und dem Kind angeheftet. Enthält in der Regel den Namen des Kindes, seine Klasse bzw. Sitzung und einen Sicherheitscode.
+- **Abholzettel** – wird den Eltern oder Erziehungsberechtigten gegeben. Enthält in der Regel den Sicherheitscode und eine Liste der Kinder, die sie eingecheckt haben.
 
-## Etikettenvorlage erstellen
+Beide Startvorlagen sind für standardmäßige thermische Etiketten im Format 3,5 × 1,1 Zoll (Brother DK-1201) ausgelegt.
 
-1. Klicken Sie auf **Hinzufügen** und wählen Sie einen Startpunkt aus dem Menü: **Namensschild 3,5" x 1,1"**, **Abholquittung 3,5" x 1,1"** oder **Blank**.
-2. Eine neue Vorlage wird im Etiketteneditor geöffnet.
+## Eine Etikettenvorlage erstellen {#creating-a-label-template}
 
-### Etiketteneditor
+1. Klicken Sie auf **Etikett hinzufügen** und wählen Sie einen Ausgangspunkt: **Namensschild 3,5" x 1,1"**, **Abholzettel 3,5" x 1,1"** oder **Leer**.
+2. Die Vorlage öffnet sich im Etiketteneditor, mit einer Vorschau des Etiketts, das mit Beispieldaten gefüllt ist.
 
-Der Editor zeigt eine skalierte Vorschau des Etiketts in der konfigurierten Größe. Im linken Panel können Sie folgende Optionen konfigurieren:
+### Etiketteneditor {#label-editor}
 
-- **Name** – der Vorlagenname (nur für Ihre Referenz)
-- **Etikettentyp** – Namensschild oder Abholquittung
-- **Breite / Höhe** – Etikettengröße in Zoll
+Oben im Editor können Sie Folgendes festlegen:
 
-### Blöcke hinzufügen
+- **Name** – der Name der Vorlage (nur zu Ihrer Information; Pflichtfeld)
+- **Typ** – Namensschild oder Abholzettel
+- **Breite (in)** / **Höhe (in)** – Größe des Etiketts in Zoll
 
-Ein Etikett wird aus Blöcken erstellt – einzelne Inhaltselemente, die auf der Etikettenleinwand positioniert werden. Klicken Sie auf **Block hinzufügen**, um einen neuen Block einzufügen und seinen Typ auszuwählen:
+### Blöcke hinzufügen {#adding-blocks}
 
-- **Feld** – zieht einen Datenwert zum Druckzeitpunkt:
-  - `person.displayName` – der volle Name der Person
-  - `sessions` – der Service/das Klassenzimmer, zu dem sie angemeldet wurden
-  - `securityCode` – der zufällig generierte Abholsicherheitscode
-  - `children` – Liste der Kinder (für Abholquittungen)
-  - `person.nametagNotes` – spezielle Notizen im Datensatz der Person
-  - `person.isBirthdayWeek` – true, wenn der Geburtstag der Person (Monat und Tag) innerhalb von 3 Tagen vor oder nach dem Anmeldedatum liegt
-  - `campus` – der Standortname
-- **Text** – statischer Text, den Sie eingeben (für Überschriften, Beschriftungen oder Anweisungen)
-- **Barcode** – ein Barcode, der den Sicherheitscode codiert
+Ein Etikett besteht aus Blöcken – einzelnen Inhaltselementen, die auf dem Etikett platziert werden. Klicken Sie im Bereich **Block hinzufügen** auf eine Schaltfläche, um einen Block hinzuzufügen:
 
-### Blöcke positionieren
+- **Felder** – übernehmen beim Drucken einen Wert. Namensschilder bieten **Anzeigename**, **Vorname**, **Nachname**, **Spitzname**, **Notizen für Namensschild** (die Notizen im Datensatz der Person), **Geburtstag diese Woche** (wahr, wenn der Geburtstag der Person innerhalb von 3 Tagen vor oder nach dem Check-in-Datum liegt), **Sitzungen** (die Gottesdienstzeiten und Räume, in die sie eingecheckt wurden), **Sicherheitscode**, **Datum** und **Name der Kirche**. Abholzettel bieten **Kinder**, **Kinder & Allergien**, **Sicherheitscode**, **Datum** und **Name der Kirche**.
+- **Text** – fester Text, den Sie eingeben (für Überschriften, Beschriftungen oder Anweisungen)
+- **Barcode** – ein Barcode nach Code 128 oder Code 39 eines Feldes, etwa des Sicherheitscodes
+- **QR-Code** – ein QR-Code eines Feldes
+- **Rahmen** – ein Rechteck mit optionaler Füllfarbe und Umrandung
 
-Jeder Block hat **X**, **Y**, **Breite** und **Höhe**-Felder, die als Prozentsätze der Etikettenleinwand ausgedrückt werden (0–100). Passen Sie diese an, um Inhalte genau zu positionieren. Sie können auch folgende Einstellungen vornehmen:
+### Blöcke positionieren und gestalten {#positioning-and-styling-blocks}
 
-- **Schriftgröße** – Textgröße in Punkten
-- **Fett** – Fettdruck umschalten
-- **Ausrichten** – Linksbündige, mittenbündige oder rechtsbündige Textausrichtung
-- **Bedingung** – Blöcke optional ausblenden, wenn ein Feld leer ist (z.B. nur Namensschild-Notizen anzeigen, wenn sie einen Wert haben). Dies funktioniert auch mit `person.isBirthdayWeek`, um ein Geburtstagsgrafik oder Text nur auf Namensschildern für Kinder anzuzeigen, deren Geburtstag einige Tage nach der Anmeldung liegt.
+Ziehen Sie einen Block auf dem Etikett, um ihn zu verschieben, oder klicken Sie darauf und verwenden Sie den Bereich **Eigenschaften**. **X**, **Y**, **B** und **H** sind Prozentwerte des Etiketts (0–100). Je nach Block können Sie außerdem festlegen:
 
-### Speichern
+- **Schriftgröße** – Textgröße, bezogen auf die Höhe des Etiketts
+- **Fett** und **Kursiv**
+- **Ausrichtung** – Links, Zentriert oder Rechts
+- **Symbologie** und **Wert** – für Barcodes und QR-Codes
+- **Füllung** und **Umrandung** – für Rahmen
+- **Bedingung** – **Immer** zeigt den Block an. Wählen Sie ein Feld, um den Block nur anzuzeigen, wenn dieses Feld **nicht leer ist**, **leer ist**, **gleich** oder **ungleich** einem Wert ist. Zum Beispiel: Notizen nur anzeigen, wenn sie ausgefüllt sind, oder eine Geburtstagsgrafik nur anzeigen, wenn **Geburtstag diese Woche** gleich `true` ist.
 
-Klicken Sie auf **Speichern**, um die Vorlage zu speichern. Die aktualisierte Vorlage wird beim nächsten Drucken von Etiketten in B1 Checkin verwendet.
+Klicken Sie auf **Block entfernen**, um den ausgewählten Block zu löschen.
 
-## Vorlagen neu ordnen
+### Speichern {#saving}
 
-Wenn Sie mehrere Namensschild- oder Abholquittungs-Vorlagen haben, verwendet B1 Checkin standardmäßig die erste Vorlage in der Liste. Ziehen Sie Vorlagen, um sie neu zu ordnen.
+Klicken Sie auf **Speichern**, um die Vorlage zu sichern, oder auf **Abbrechen**, um Ihre Änderungen zu verwerfen. B1 Checkin verwendet die aktualisierte Vorlage, sobald es das nächste Mal seine Einstellungen lädt.
 
-## Vorlage löschen
+## Die Standardvorlage festlegen {#choosing-the-default-template}
 
-Klicken Sie auf das Löschsymbol in einer Vorlagenseile und bestätigen Sie. Das Löschen der letzten Vorlage eines Typs stellt die Standard-integrierte Vorlage wieder her.
+Wenn Sie mehr als eine Vorlage eines Typs haben, klicken Sie bei der Vorlage, die B1 Checkin drucken soll, auf **Als Standard festlegen**. Sie erhält dann ein Abzeichen **Standard**, und jede andere Vorlage dieses Typs ist nicht mehr die Standardvorlage. Wenn keine Vorlage eines Typs als Standard markiert ist, verwendet der Kiosk die erste.
+
+## Eine Vorlage löschen {#deleting-a-template}
+
+Klicken Sie in der Zeile der Vorlage auf **Löschen** und bestätigen Sie. Wenn Sie alle Vorlagen eines Typs löschen, kehrt B1 Checkin für diesen Typ zu seinem eingebauten Etikett zurück.
 
 :::tip
-Machen Sie einen Testdruck nach dem Bearbeiten einer Vorlage, um zu bestätigen, dass das Layout vor Ihrem nächsten Service richtig aussieht.
+Drucken Sie nach dem Bearbeiten einer Vorlage ein Testexemplar, um vor dem nächsten Gottesdienst zu prüfen, ob das Layout stimmt.
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Anmeldungseinrichtung](./setup.md) – konfigurieren Sie Services und Gruppen für die Anmeldung
-- [Anmeldung abschließen](./check-in.md) – der Anmeldungsablauf für Familien
-- [B1 Checkin Erste Schritte](../../b1-checkin/getting-started/index.md) – die Checkin-Kiosk-App
+- [Anwesenheitseinrichtung](./setup.md) – Gottesdienste und Gruppen für den Check-in konfigurieren
+- [Check-In](./check-in.md) – den Kiosk von B1 Checkin einrichten
+- [B1 Checkin – Erste Schritte](../../b1-checkin/getting-started/index.md) – die Kiosk-App Checkin

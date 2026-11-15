@@ -1,104 +1,110 @@
 ---
-title: "Guía: Configurar las donaciones en línea"
-description: "Configure las donaciones en línea en B1 Admin creando fondos de donación, conectando Stripe y agregando una página de Donar a su sitio web B1.church para los miembros."
+title: "Guia: Configure as Doações Online"
+description: "Configure as doações online no B1 Admin criando os fundos de doação, conectando o Stripe e adicionando uma página de doação ao seu site B1.church para os membros."
 ---
 
-# Configurar las donaciones en línea
+# Configure as Doações Online
 
 <div class="article-intro">
 
-Repase todo lo necesario para aceptar donaciones en línea en su iglesia: desde crear los fondos de donación, pasando por conectar Stripe para el procesamiento de pagos, hasta compartir la página de ofrendas con su congregación. Al terminar, los miembros podrán dar en línea a través de su sitio web y de la aplicación móvil.
+Veja tudo o que é necessário para receber doações online na sua igreja -- desde a criação dos fundos de doação, passando pela conexão com o Stripe para o processamento de pagamentos, até o compartilhamento da página de doações com a sua congregação. Ao final, os membros poderão contribuir online pelo seu site e pelo aplicativo móvel.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de comenzar</h4>
+<h4>Antes de Começar</h4>
 
-- Cuenta de B1 Admin con acceso de administrador: consulte [Roles y permisos](../people/roles-permissions.md)
-- Una cuenta de Stripe (cree una gratis en [stripe.com](https://stripe.com) si es necesario)
+- Conta do B1 Admin com acesso de administrador -- veja [Funções e Permissões](../people/roles-permissions.md)
+- Uma conta no Stripe (crie uma gratuitamente em [stripe.com](https://stripe.com), se necessário)
 
 </div>
 
-## Paso 1: Crear fondos de donación
+## Passo 1: Crie os Fundos de Doação {#step-1-create-donation-funds}
 
-Los fondos son las categorías a las que los donantes pueden dar. Necesita al menos un fondo antes de poder aceptar donaciones.
+Os fundos são as categorias às quais os doadores podem contribuir. Você precisa de pelo menos um fundo antes de receber doações.
 
-Siga la guía [Fondos](../donations/funds.md) para configurar sus categorías de ofrendas:
+Siga o guia [Fundos](../donations/funds.md) para configurar as suas categorias de doação:
 
-1. Cree sus fondos más comunes (por ejemplo, "Fondo general", "Fondo de construcción", "Misiones")
-2. Marque adecuadamente los fondos deducibles de impuestos: esto afecta los estados de cuenta de donaciones de fin de año
+1. No [menu Jump](../introduction.md#getting-around-with-the-jump-menu), escolha **Doações > Fundos** e clique em **Adicionar Fundo**
+2. Crie os fundos mais comuns (por exemplo, "Fundo Geral", "Fundo de Construção", "Missões")
+3. Marque **Dedutível de impostos** nos fundos cujas contribuições devem constar nos recibos de doação de fim de ano, e mantenha **Visível para doadores** marcada nos fundos que os doadores devem poder escolher online
 
 :::tip
-Puede agregar más fondos en cualquier momento. Comience con sus categorías de donación más comunes.
+Você pode adicionar mais fundos a qualquer momento. Comece pelas categorias de doação mais comuns.
 :::
 
-## Paso 2: Conectar Stripe
+## Passo 2: Conecte o Stripe {#step-2-connect-stripe}
 
-Stripe maneja todo el procesamiento de pagos. Conectará su cuenta de Stripe a B1 Admin para que las donaciones lleguen a su cuenta bancaria.
+O Stripe cuida de todo o processamento de pagamentos. Você conectará a sua conta do Stripe ao B1 Admin para que as doações cheguem à sua conta bancária.
 
-Siga la guía [Configuración de donaciones en línea](../donations/online-giving-setup.md) para conectar Stripe:
+Siga o guia [Configuração de Doações Online](../donations/online-giving-setup.md) para conectar o Stripe:
 
-1. Inicie sesión en su panel de Stripe y obtenga su clave publicable y su clave secreta
-2. En B1 Admin, vaya a Configuración e ingrese ambas claves
+1. Faça login no seu painel do Stripe e acesse **Desenvolvedores > Chaves de API** para encontrar a sua Chave Publicável e a sua Chave Secreta
+2. No B1 Admin, acesse **Configurações**, clique em **Editar** na seção **Doações** e defina o **Provedor** como **Stripe**
+3. Cole a Chave Publicável em **Chave pública** e a Chave Secreta em **Chave secreta**, confira a **Moeda** e clique em **Salvar**
+
+O B1 também oferece suporte ao **Kingdom Funding** e ao **Paystack** (para igrejas na África) como provedores de doações -- veja [Configuração de Doações Online](../donations/online-giving-setup.md).
 
 :::warning
-Stripe muestra su clave secreta una sola vez. Cópiela y guárdela antes de salir del panel de Stripe. Si la pierde, deberá generar una nueva.
+O Stripe mostra a sua Chave Secreta apenas uma vez. Copie-a e salve-a antes de sair do painel do Stripe. Se você a perder, será necessário gerar uma nova.
 :::
 
-## Paso 3: Agregar una página de ofrendas a su sitio web
+## Passo 3: Adicione uma Página de Doações ao Seu Site {#step-3-add-a-giving-page-to-your-website}
 
-Haga que la ofrenda sea accesible agregando una página de donaciones a su sitio web de B1.
+Facilite a contribuição adicionando uma página de doações ao seu site B1.
 
-Siga las guías [Configuración de donaciones en línea](../donations/online-giving-setup.md) y [Administrar páginas](../website/managing-pages.md) para:
+Siga os guias [Configuração de Doações Online](../donations/online-giving-setup.md) e [Gerenciando Páginas](../website/managing-pages.md) para:
 
-1. Agregar una pestaña "Donar" a su sitio de B1.church
-2. Su URL de ofrendas será: `https://yoursubdomain.b1.church/donate`
-3. Los miembros pueden dar sin iniciar sesión (página pública) o iniciar sesión para usar métodos de pago guardados e historial de donaciones
+1. Adicionar uma aba **Doação** ao seu site B1.church (ou um elemento **Doação** a uma página no criador de sites)
+2. O endereço da sua página de doações será: `https://yoursubdomain.b1.church/donate`
+3. Os membros podem contribuir sem fazer login (página pública) ou fazer login para usar formas de pagamento salvas e ver o histórico de doações
+4. Para direcionar os doadores diretamente a um único fundo, clique em **Link de doação** nesse fundo, em **Doações > Fundos**, para copiar um link (ou baixar um QR code) com o fundo e o valor já preenchidos
 
-## Paso 4: Realizar una donación de prueba
+## Passo 4: Faça uma Doação de Teste {#step-4-make-a-test-donation}
 
-Antes de anunciarlo a su congregación, verifique que todo funcione.
+Antes de anunciar à sua congregação, verifique se tudo funciona.
 
-1. Realice una pequeña donación de prueba para verificar que el proceso funciona de principio a fin
-2. Compruebe que la donación aparece en B1 Admin, en Donaciones
+1. Faça uma pequena doação de teste para confirmar que o fluxo funciona de ponta a ponta
+2. Confira se a doação aparece no B1 Admin, em **Doações > Lotes**
 
 :::tip
-Use primero el modo de prueba de Stripe si desea verificar sin cargos reales, y luego cambie al modo en vivo antes de anunciarlo a su congregación.
+Para testar sem cobranças reais, você pode salvar primeiro as chaves de teste do Stripe e, depois, substituí-las pelas suas chaves de produção em **Configurações > Doações**, antes de anunciar à congregação.
 :::
 
-## Paso 5: Anunciar a su congregación
+## Passo 5: Anuncie à Sua Congregação {#step-5-announce-to-your-congregation}
 
-Dé a conocer la novedad para que los miembros sepan que pueden dar en línea.
+Divulgue para que os membros saibam que podem contribuir online.
 
-1. Comparta la URL de ofrendas a través de su sitio web, boletines por correo electrónico, boletines de la iglesia y redes sociales
-2. Los miembros también pueden dar a través de la [aplicación B1](../../b1-church/giving/index.md): la función de ofrendas está integrada
+1. Compartilhe o endereço de doações pelo seu site, pelos boletins informativos por e-mail, pelos boletins da igreja e pelas redes sociais
+2. Os membros também podem contribuir pelo [Aplicativo B1](../../b1-church/giving/index.md) -- a função de doações já vem integrada
 
 :::info
-Los miembros que inicien sesión pueden guardar métodos de pago, configurar donaciones recurrentes y ver su historial de ofrendas. Las ofrendas anónimas también funcionan: no se requiere inicio de sesión.
+Os membros que fazem login podem salvar formas de pagamento, configurar doações recorrentes e ver o histórico de doações. As doações anônimas também funcionam -- sem necessidade de login.
 :::
 
-## Paso 6: Gestión continua
+## Passo 6: Manutenção Contínua {#step-6-ongoing-management}
 
-Mantenga sus registros de donaciones actualizados y genere informes durante todo el año.
+Mantenha os seus registros de doações atualizados e gere relatórios ao longo do ano.
 
-1. [Importe las transacciones de Stripe](../donations/stripe-import.md) periódicamente (semanal o mensualmente) para mantener sus registros al día
-2. [Vea los informes de donaciones](../donations/donation-reports.md) para hacer seguimiento de las tendencias de ofrendas y los totales por fondo
-3. [Genere los estados de cuenta de ofrendas de fin de año](../donations/giving-statements.md) para los registros fiscales de sus donantes
+1. As doações online são registradas automaticamente. Use a [Importação do Stripe](../donations/stripe-import.md) para capturar transações do Stripe que não foram sincronizadas -- clique em **Visualizar** para ver o que está faltando e, depois, em **Importar ausentes**
+2. [Veja os relatórios de doações](../donations/donation-reports.md) em **Doações > Resumo** para acompanhar as tendências de doação e os totais por fundo
+3. Confira **Doações > Doações não concluídas** para as doações recorrentes cujo cartão foi recusado, e clique em **Tentar novamente** quando o doador atualizar a forma de pagamento
+4. [Gere os recibos de doação de fim de ano](../donations/giving-statements.md) para os registros fiscais dos seus doadores
 
 :::tip
-Realice las importaciones de Stripe al menos una vez al mes para que sus registros se mantengan actualizados. Consulte la [Guía de informes de fin de año](./year-end-reports.md) para el proceso completo de fin de año.
+Execute uma visualização da Importação do Stripe antes de fechar cada mês, para que os seus registros batam com o Stripe. Veja o [Guia de Relatórios de Fim de Ano](./year-end-reports.md) para o processo completo de fim de ano.
 :::
 
-## ¡Listo!
+## Pronto! {#youre-done}
 
-Su iglesia ya acepta donaciones en línea. Los miembros pueden dar a través de su sitio web, de la aplicación B1 o desde cualquier dispositivo con un navegador web. Todas las donaciones se registran automáticamente en B1 Admin.
+A sua igreja já está recebendo doações online. Os membros podem contribuir pelo seu site, pelo Aplicativo B1 ou por qualquer dispositivo com navegador da web. Todas as doações são registradas automaticamente no B1 Admin.
 
-## Artículos relacionados
+## Artigos Relacionados {#related-articles}
 
-- [Fondos](../donations/funds.md): cree y administre las categorías de donación
-- [Lotes](../donations/batches.md): organice las donaciones en grupos
-- [Registrar donaciones](../donations/recording-donations.md): ingrese manualmente las donaciones en efectivo y con cheque
-- [Importación de Stripe](../donations/stripe-import.md): incorpore las transacciones en línea a B1 Admin
-- [Informes de donaciones](../donations/donation-reports.md): vea las tendencias y totales de ofrendas
-- [Estados de cuenta de ofrendas](../donations/giving-statements.md): genere los estados de cuenta fiscales de fin de año
-- [Hacer donaciones](../../b1-church/giving/making-donations.md): la experiencia de ofrendas de los miembros en B1.church y en la aplicación B1
+- [Fundos](../donations/funds.md) — crie e gerencie as categorias de doação
+- [Lotes](../donations/batches.md) — organize as doações em grupos
+- [Registrando Doações](../donations/recording-donations.md) — lance manualmente as doações em dinheiro e em cheque
+- [Importação do Stripe](../donations/stripe-import.md) — traga as transações online para o B1 Admin
+- [Relatórios de Doações](../donations/donation-reports.md) — veja as tendências e os totais de doação
+- [Recibos de Doação](../donations/giving-statements.md) — gere os recibos fiscais de fim de ano
+- [Fazendo Doações](../../b1-church/giving/making-donations.md) — a experiência de doação dos membros no B1.church e no Aplicativo B1

@@ -1,73 +1,74 @@
 ---
 title: "Verfügbarkeitskalender"
-description: "Richten Sie in B1 Admin buchbare Räume und Geräte ein, buchen Sie sie im Kalender, fügen Sie Rüst- und Abbauzeiten hinzu und verwalten Sie wiederkehrende oder genehmigungspflichtige Buchungen."
+description: "Richten Sie in B1 Admin buchbare Räume und Geräte ein und buchen Sie sie dann im Kalender, fügen Sie Puffer für Aufbau und Abbau hinzu und behandeln Sie wiederkehrende oder genehmigungspflichtige Buchungen."
 ---
 
 # Verfügbarkeitskalender
 
 <div class="article-intro">
 
-Der Verfügbarkeitskalender gibt Ihnen einen Überblick über alle Raum- und Ressourcenbuchungen in Ihrer Kirche. Von hier aus können Sie sehen, was geplant ist, Konflikte vor deren Auftreten erkennen und direkt einen Raum oder eine Ressource für ein Ereignis buchen.
+Der Verfügbarkeitskalender bietet Ihnen eine Gesamtübersicht über alle Raum- und Ressourcenbuchungen in Ihrer Kirche. Hier sehen Sie, was geplant ist, erkennen Konflikte, bevor sie entstehen, und buchen einen Raum oder eine Ressource direkt für jedes beliebige Ereignis.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Richten Sie mindestens einen [Raum oder eine Ressource](./rooms-resources.md) im Abschnitt "Räume & Ressourcen" ein
-- Sie benötigen Bearbeitungszugriff auf den Abschnitt "Kalender" in B1 Admin
+- Richten Sie mindestens einen [Raum oder eine Ressource](./rooms-resources.md) im Bereich Räume & Ressourcen ein
+- Sie benötigen die Berechtigung **Inhalte bearbeiten**
 
 </div>
 
-## Verfügbarkeitskalender öffnen
+## Den Verfügbarkeitskalender öffnen {#opening-the-availability-calendar}
 
-Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Kalender**, und klicken Sie auf **Verfügbarkeit**.
+Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Kalender** auf und klicken Sie auf **Verfügbarkeit**.
 
-## Kalender lesen
+## Den Kalender lesen {#reading-the-calendar}
 
-Der Kalender zeigt standardmäßig den aktuellen Monat an. Sie können mit den Pfeilen oben vorwärts und rückwärts navigieren oder zwischen Monats-, Wochen- und Tagesansichten wechseln.
+Der Kalender zeigt standardmäßig den aktuellen Monat. Verwenden Sie oben **Heute**, **Zurück** und **Weiter**, um zu navigieren, und **Monat**, **Woche**, **Tag** oder **Agenda**, um die Ansicht zu ändern.
 
-Jedes Ereignis ist nach Buchungsstatus farbcodiert:
+Jede Buchung ist nach Status farblich gekennzeichnet:
 
 | Farbe | Bedeutung |
-|-------|----------|
+|-------|---------|
 | Grün | Genehmigt |
 | Orange | Genehmigung ausstehend |
-| Grau | Blockiert (nicht verfügbar) |
+| Grau | Gesperrt (nicht verfügbar), angezeigt als *Gesperrt: Grund* |
 
-Wenn Sie mit der Maus über ein Ereignis fahren, werden der Ereignistitel und der Raum oder die Ressource angezeigt, an die es angebunden ist.
+Jede Buchung zeigt den Ereignistitel, gefolgt von den Räumen und Ressourcen, die sie nutzt. Fahren Sie mit der Maus über eine Buchung, um den vollständigen Text zu sehen. Klicken Sie auf eine Buchung, um das zugehörige Ereignis zu öffnen und zu bearbeiten.
 
-## Nach Raum oder Ressource filtern
+## Nach Raum oder Ressource filtern {#filtering-by-room-or-resource}
 
-Verwenden Sie das Dropdown-Menü **Raum / Ressource** oben links, um den Kalender auf einen einzelnen Raum oder eine Ressource zu begrenzen. Wählen Sie **Alle Räume & Ressourcen** aus, um zur vollständigen Ansicht zurückzukehren.
+Verwenden Sie das Dropdown-Menü **Raum / Ressource** oben links, um den Kalender auf einen einzelnen Raum oder eine einzelne Ressource einzugrenzen. Wählen Sie **Alle Räume & Ressourcen**, um zur vollständigen Ansicht zurückzukehren.
 
-## Raum oder Ressource buchen
+## Einen Raum oder eine Ressource buchen {#booking-a-room-or-resource}
 
-1. Klicken Sie auf die Schaltfläche **Buchen** oben auf der Seite.
-2. Füllen Sie im geöffneten Dialog die Ereignisdetails aus:
-   - **Titel** – der Name des Ereignisses
-   - **Start-** und **End-Datum/Uhrzeit**
+1. Klicken Sie oben auf der Seite auf die Schaltfläche **Buchen**.
+2. Der Dialog **Neues Ereignis** öffnet sich – derselbe Editor, der auch im Kalender verwendet wird (siehe [Ereignisse hinzufügen und bearbeiten](./creating-calendars.md#adding-and-editing-events)). Füllen Sie die Ereignisdetails aus:
+   - **Gruppe** *(erforderlich)* – die Gruppe, zu der das Ereignis gehört. Wenn Sie [Vorlagen](./rooms-resources.md#event-templates) haben, können Sie außerdem eine **Vorlage** wählen, um den Rest auszufüllen.
+   - **Titel** *(erforderlich)*
+   - **Beginn** und **Ende** als Datum/Uhrzeit *(erforderlich; das Ende muss nach dem Beginn liegen)*
    - **Sichtbarkeit** – Öffentlich oder Privat
-   - **Räume** – wählen Sie einen oder mehrere Räume zu reservieren
-   - **Ressourcen** – wählen Sie eine oder mehrere Ressourcen zu reservieren
-3. Optional können Sie **Setup-** und **Abbau-Zeiten** festlegen (in Minuten). Diese erweitern die Buchung auf beide Seiten, sodass der Raum für Setup und Reinigung reserviert ist, auch wenn die Ereignis-Start/End-Zeiten gleich bleiben.
-4. Um die Buchung zu wiederholen, überprüfen Sie **Wiederholt** und konfigurieren Sie die Wiederholung:
-   - **Alle wiederholen** – legen Sie das Intervall fest (z.B. alle 2 Wochen).
-   - **Häufigkeit** – Täglich, Wöchentlich oder Monatlich. Wöchentlich ermöglicht es Ihnen, spezifische Wochentage auszuwählen; Monatlich ermöglicht es Ihnen, einen festen Tag des Monats oder ein relatives Muster wie "der zweite Dienstag" zu wählen.
-   - **Endet** – Nie, an einem bestimmten Datum oder nach einer bestimmten Anzahl von Vorkommen.
-5. Um ein benutzerdefiniertes Buchungsfenster zu festzulegen (anders als Ereignis-Start/End), schalten Sie **Benutzerdefiniertes Buchungsfenster** um und geben Sie die Fenster-Start- und End-Zeiten ein. Verwenden Sie dies, wenn ein Raum außerhalb der aufgelisteten Ereigniszeiten zugänglich sein muss.
+   - **Räume** – wählen Sie einen oder mehrere Räume zur Reservierung
+   - **Ressourcen** – wählen Sie eine oder mehrere Ressourcen zur Reservierung
+3. Sobald ein Raum oder eine Ressource ausgewählt ist, können Sie **Aufbau (Min. vorher)** und **Abbau (Min. nachher)** festlegen. Diese Puffer verlängern die Buchung an beiden Enden, sodass der Raum für Aufbau und Aufräumen reserviert ist, auch wenn die Start- und Endzeiten des Ereignisses gleich bleiben.
+4. Um die Buchung zu wiederholen, legen Sie zuerst den **Beginn** fest und aktivieren Sie dann **Wiederholen** und konfigurieren Sie die Wiederholung:
+   - **Intervall** – wie oft sie sich wiederholt (zum Beispiel 2 mit Woche für alle 2 Wochen).
+   - **Häufigkeit** – Tag, Woche oder Monat. Bei Wochen können Sie bestimmte Wochentage auswählen; bei Monaten einen festen Tag im Monat oder ein relatives Muster wie „der zweite Dienstag“.
+   - **Endet** – **Nie**, **Am** einem bestimmten **Enddatum** oder **Nach** einer festgelegten Anzahl von Terminen.
+5. Um ein eigenes Buchungsfenster festzulegen (abweichend von Beginn und Ende des Ereignisses), aktivieren Sie **Benutzerdefiniertes Reservierungsfenster** und geben Sie **Reservieren ab** und **Reservieren bis** ein. Dies ersetzt die Minuten für Aufbau und Abbau. Nutzen Sie es, wenn ein Raum außerhalb der angegebenen Zeiten des Ereignisses zugänglich sein muss.
 6. Klicken Sie auf **Speichern**, um die Buchung einzureichen.
 
 :::info
-Wenn der Raum oder die Ressource eine konfigurierte **Genehmigungsgruppe** hat, wird die Buchung als **Genehmigung ausstehend** angezeigt, bis ein Leiter dieser Gruppe sie genehmigt. Siehe [Kalender-Genehmigungen](./approvals.md) für den Genehmigungsworkflow.
+Ist für den Raum oder die Ressource eine **Genehmigungsgruppe** konfiguriert, erscheint die Buchung als **Ausstehend**, bis sie auf der Seite Genehmigungen bestätigt wird – außer Sie sind Mitglied dieser Gruppe, dann wird sie sofort genehmigt. Den Genehmigungsablauf finden Sie unter [Kalender-Genehmigungen](./approvals.md).
 :::
 
 :::tip
-Der Kalender hebt vor dem Speichern Konflikte hervor. Wenn Sie eine Konfliktwarnung sehen, passen Sie Ihre Zeiten an oder wählen Sie einen anderen Raum.
+Der Editor zeigt vor dem Speichern eine Warnung an, wenn ein Raum oder eine Ressource zu diesem Zeitpunkt bereits gebucht oder gesperrt ist. Wenn Sie eine Konfliktwarnung sehen, passen Sie Ihre Zeiten an oder wählen Sie einen anderen Raum.
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Räume, Ressourcen & Zeitplanung](./rooms-resources.md) – richten Sie buchbare Räume und Ausrüstung ein
-- [Kalender-Genehmigungen](./approvals.md) – genehmigen oder lehnen Sie Buchungsanfragen ab
-- [Kalender erstellen](./creating-calendars.md) – verwalten Sie Ereigniskalender
+- [Räume, Ressourcen & Terminplanung](./rooms-resources.md) — buchbare Räume und Geräte einrichten
+- [Kalender-Genehmigungen](./approvals.md) — Buchungsanfragen genehmigen oder ablehnen
+- [Kalender erstellen](./creating-calendars.md) — Ereigniskalender verwalten

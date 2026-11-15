@@ -1,56 +1,56 @@
 ---
-title: "मोबाइल मैसेज"
-description: "B1 Admin इवेंट को Mobile Message, एक ऑस्ट्रेलियाई SMS API, से जोड़ें, Zapier या Make webhooks से स्वागत, दान और रिमाइंडर टेक्स्ट भेजें।"
+title: "Mobile Message"
+description: "B1 Admin events को Mobile Message (एक ऑस्ट्रेलियाई SMS API) से जोड़ें, Zapier या Make webhooks का उपयोग करके स्वागत, donation, और reminder texts भेजें।"
 ---
 
-# मोबाइल मैसेज
+# Mobile Message
 
 <div class="article-intro">
 
-[मोबाइल मैसेज](https://mobilemessage.com.au) एक ऑस्ट्रेलियाई SMS API है, जो AU के चर्चों में लोकप्रिय है क्योंकि यह स्थानीय नंबर और AU के लिए प्रतिस्पर्धी मूल्य निर्धारण देता है, जबकि Clearstream और Text In Church अमेरिका-केंद्रित हैं। मोबाइल मैसेज के पास आज कोई फर्स्ट-क्लास Zapier ऐप नहीं है, लेकिन वह एक सार्वजनिक REST API प्रकाशित करता है। इसलिए आप **Webhooks by Zapier** (या Make का HTTP मॉड्यूल) के ज़रिए B1 इवेंट्स को मोबाइल मैसेज के टेक्स्ट से कुछ ही मिनटों में जोड़ सकते हैं।
+[Mobile Message](https://mobilemessage.com.au) एक ऑस्ट्रेलियाई SMS API है — AU चर्चों में लोकप्रिय, क्योंकि यह स्थानीय नंबर और प्रतिस्पर्धी AU मूल्य निर्धारण देता है, जहाँ Clearstream और Text In Church अमेरिका-केंद्रित हैं। Mobile Message के पास आज पहली-श्रेणी का Zapier ऐप नहीं है, पर वह एक सार्वजनिक REST API प्रकाशित करता है, इसलिए आप **Webhooks by Zapier** (या Make के HTTP module) के माध्यम से B1 events को Mobile Message texts से कुछ ही मिनटों में वायर कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- एक [मोबाइल मैसेज](https://mobilemessage.com.au) खाता, जिसमें पंजीकृत Sender ID और API क्रेडेंशियल हों (API username + password, *Account → API Settings* के अंतर्गत)
-- एक [Zapier](https://zapier.com) खाता (या [Make](https://www.make.com))
-- **Edit Settings** अनुमति वाला एक B1Admin उपयोगकर्ता
+- पंजीकृत Sender ID और API credentials वाला [Mobile Message](https://mobilemessage.com.au) account (API username + password, *Account → API Settings* के अंतर्गत)
+- एक [Zapier](https://zapier.com) account (या [Make](https://www.make.com))
+- **Edit Settings** अनुमति वाला एक B1Admin user
 
 </div>
 
-## आप क्या जोड़ सकते हैं
+## आप क्या वायर कर सकते हैं {#what-you-can-wire-up}
 
-मोबाइल मैसेज का API "SMS भेजने" वाले स्वरूप का है, जिसमें कोई ट्रिगर नहीं होता, केवल बाहर जाने वाले टेक्स्ट होते हैं। इसलिए सभी रेसिपी B1 → SMS की दिशा में हैं:
+Mobile Message का API "SMS भेजो"-आकार का है — कोई triggers नहीं, केवल outbound text। इसलिए सारी रेसिपी B1 → SMS हैं:
 
-| दिशा | B1 ट्रिगर | परिणाम |
+| दिशा | B1 trigger | परिणाम |
 |---|---|---|
-| B1 → मोबाइल मैसेज | `person.created` | नए व्यक्ति को स्वागत संदेश |
-| B1 → मोबाइल मैसेज | `donation.created` | दाता को धन्यवाद संदेश |
-| B1 → मोबाइल मैसेज | `form.submission.created` | ड्यूटी पर मौजूद टीम को पेज करें |
-| B1 → मोबाइल मैसेज | `event.created` | किसी सूची को भेजा जाने वाला रिमाइंडर |
+| B1 → Mobile Message | `person.created` | नए व्यक्ति को स्वागत text |
+| B1 → Mobile Message | `donation.created` | donor को धन्यवाद text |
+| B1 → Mobile Message | `form.submission.created` | on-call टीम को पेज करना |
+| B1 → Mobile Message | `event.created` | एक list को reminder broadcast |
 
-## सेटअप
+## सेटअप {#setup}
 
-### 1. B1 API key बनाएँ
+### 1. B1 API key बनाएँ {#1-mint-a-b1-api-key}
 
 **Settings → Developer → API Keys → New API Key**:
 
-- `settings:write`: ट्रिगर वेबहुक पंजीकृत करने के लिए
-- `people:read`: `personId` से प्राप्तकर्ता का फ़ोन नंबर खोजने के लिए
+- `settings:write` — trigger webhook के रजिस्टर होने के लिए
+- `people:read` — `personId` से प्राप्तकर्ता का फ़ोन नंबर खोजने के लिए
 
-### 2. Webhooks by Zapier से Zap बनाएँ
+### 2. Webhooks by Zapier के साथ Zap बनाएँ {#2-build-the-zap-with-webhooks-by-zapier}
 
-1. **ट्रिगर**: B1.church में वह इवेंट चुनें जो आप चाहते हैं (जैसे New Donation)।
-2. **एक्शन**: B1.church में Find Person (`data.personId` का उपयोग करके) चुनें, ताकि फ़ोन नंबर और नाम मिल सके।
-3. **एक्शन**: Webhooks by Zapier में **POST** चुनें। नीचे दिए अनुसार कॉन्फ़िगर करें।
+1. **Trigger** — B1.church: वह event चुनें जो चाहिए (जैसे New Donation)।
+2. **Action** — B1.church: Find Person (`data.personId` से) ताकि फ़ोन नंबर और नाम मिले।
+3. **Action** — Webhooks by Zapier: **POST**। नीचे के अनुसार कॉन्फ़िगर करें।
 
-POST चरण की सेटिंग्स:
+POST चरण की settings:
 
-- **URL**: `https://api.mobilemessage.com.au/v1/messages`
-- **Payload Type**: JSON
-- **Data**:
+- **URL** — `https://api.mobilemessage.com.au/v1/messages`
+- **Payload Type** — JSON
+- **Data** —
   ```json
   {
     "messages": [
@@ -62,47 +62,47 @@ POST चरण की सेटिंग्स:
     ]
   }
   ```
-- **Headers**: `Content-Type: application/json` (Webhooks by Zapier इसे अपने-आप जोड़ देता है)
-- **Basic Auth**: *Basic Auth* फ़ील्ड में `<api_username>|<api_password>` डालें (Zapier इसे सही `Authorization: Basic …` हेडर में बदल देता है)
+- **Headers** — `Content-Type: application/json` (Webhooks by Zapier इसे अपने-आप जोड़ता है)
+- **Basic Auth** — *Basic Auth* फ़ील्ड में `<api_username>|<api_password>` सेट करें (Zapier इसे सही `Authorization: Basic …` header में बदल देता है)
 
-Zap चालू करें। B1Admin में एक परीक्षण उपहार भेजें और जाँचें कि टेक्स्ट पहुँचता है।
+Zap चालू करें। text पहुँचने की पुष्टि के लिए B1Admin में एक परीक्षण उपहार भेजें।
 
-## सामान्य रेसिपी
+## सामान्य रेसिपी {#common-recipes}
 
-### सुबह के इवेंट रिमाइंडर
+### सुबह के समय event reminders {#event-reminders-the-morning-of}
 
-- **ट्रिगर**: Schedule by Zapier (रोज़ सुबह 7 बजे)
-- **एक्शन**: B1.church में आज के लिए Find Events (या कोई निश्चित तिथि फ़िल्टर वाला Find चरण, या आज की इवेंट सूची को Google Sheet में सहेजें)
-- **एक्शन**: Webhooks by Zapier: इवेंट सूची के साथ मोबाइल मैसेज पर POST करें, किसी पंजीकृत सब्सक्राइबर समूह के लिए
+- **Trigger** — Schedule by Zapier (रोज़ाना, सुबह 7 बजे)
+- **Action** — आज के events की सूची एक Google Sheet में (या किसी अन्य ऐप में जिसे Zapier पढ़ सके) रखें और आज की पंक्तियाँ खोजें — B1 के Zapier ऐप में events खोजने के लिए कोई action नहीं है
+- **Action** — Webhooks by Zapier: पंजीकृत subscriber group को event सूची के साथ Mobile Message पर POST करें
 
-### सूची प्रसारण के लिए बैच एंडपॉइंट का उपयोग करें
+### सूची broadcast के लिए batch endpoint का उपयोग करें {#use-the-batch-endpoint-for-a-list-broadcast}
 
-मोबाइल मैसेज का `/v्1/messages` एंडपॉइंट प्रति कॉल 10,000 संदेशों तक स्वीकार करता है। किसी B1 समूह को प्रसारण करने के लिए:
+Mobile Message का `/v1/messages` endpoint प्रति call 10,000 messages तक स्वीकार करता है। किसी B1 group पर broadcast करने के लिए:
 
-- **ट्रिगर**: B1.church में New Form Submission (किसी विशेष फ़ॉर्म तक सीमित करें)
-- **एक्शन**: B1.church में लक्ष्य समूह के लिए List Group Members (`/membership/groupmembers?groupId=…` पर *Webhooks by Zapier: GET* चरण के माध्यम से)
-- **एक्शन**: Formatter by Zapier → Utilities → प्रतिक्रिया को `messages` सरणी में Line-itemize करें
-- **एक्शन**: Webhooks by Zapier: पूरी सरणी को `/v1/messages` पर POST करें
+- **Trigger** — B1.church: New Form Submission (किसी विशिष्ट form पर filter)
+- **Action** — Webhooks by Zapier: लक्षित group के सदस्यों की सूची के लिए GET `/membership/groupmembers?groupId=…` (B1 के Zapier ऐप में इसके लिए list action नहीं है; API key को `Authorization: Bearer cak_…` header के रूप में भेजें)
+- **Action** — Formatter by Zapier → Utilities → Line-itemize प्रतिक्रिया को `messages` array में बदलने के लिए
+- **Action** — Webhooks by Zapier: पूरे array को `/v1/messages` पर POST करें
 
-### Make विकल्प
+### Make विकल्प {#make-alternative}
 
-यदि आप Make पसंद करते हैं, तो B1 Watch Events ट्रिगर के बाद **HTTP — Make a request** मॉड्यूल जोड़ें और उसे उसी तरह कॉन्फ़िगर करें (POST, Basic Auth, JSON body)। B1 की ओर की जानकारी के लिए [Make overview](../make.md) देखें।
+अगर आप Make पसंद करते हैं, तो B1 Watch Events trigger के बाद **HTTP — Make a request** module रखें, उसे उसी तरह कॉन्फ़िगर करें (POST, Basic Auth, JSON body)। B1 की ओर के लिए [Make overview](../make.md) देखें — ध्यान दें कि B1.church Make ऐप अभी रिलीज़ नहीं हुआ है।
 
-## सीमाएँ और नोट्स
+## सीमाएँ और नोट्स {#limits--notes}
 
-- **Basic Auth ही एकमात्र प्रमाणीकरण विधि है**: मोबाइल मैसेज डैशबोर्ड से username और password जारी करता है। दोनों को गुप्त रखें।
-- **`sender` आपके मोबाइल मैसेज खाते पर पंजीकृत Sender ID होना चाहिए**, नहीं तो भेजने पर `400 Invalid sender` त्रुटि आएगी। AU नियमों के अनुसार sender पंजीकरण आवश्यक है।
-- **AU फ़ोन नंबर** `0412345678` (स्थानीय) या `+61412345678` (अंतरराष्ट्रीय) हो सकते हैं। API दोनों स्वीकार करता है, लेकिन यदि आप विदेश में भी भेज रहे हैं तो `+61…` प्रारूप में एकरूपता रखें।
-- **प्रति अनुरोध 10,000 संदेश तक**: प्रसारण के लिए उपयोगी है, लेकिन एक B1 वेबहुक डिलीवरी शायद ही इतनी बड़ी सूची भेजती है, इसलिए बैच एंडपॉइंट को निर्धारित बल्क Zaps के लिए सुरक्षित रखें।
+- **Basic Auth ही एकमात्र authentication विधि है** — Mobile Message डैशबोर्ड से username और password जारी करता है। दोनों को गुप्त मानें।
+- **`sender` आपके Mobile Message account पर पंजीकृत Sender ID होना चाहिए**, नहीं तो भेजना `400 Invalid sender` लौटाएगा। AU नियम sender पंजीकरण अनिवार्य करते हैं।
+- **AU फ़ोन नंबर** `0412345678` (स्थानीय) या `+61412345678` (अंतरराष्ट्रीय) हो सकते हैं। API दोनों स्वीकार करता है, पर अगर आप विदेश में भी भेजते हैं तो `+61…` पर सामान्यीकृत करें।
+- **प्रति request 10,000 messages तक** — broadcasts के लिए उपयोगी, पर एक B1 webhook delivery शायद ही इतनी बड़ी सूची देगी; batch endpoint को निर्धारित थोक Zaps के लिए रखें।
 
-## समस्या निवारण
+## समस्या निवारण {#troubleshooting}
 
-- **POST पर `401 Unauthorized` आता है**: Basic Auth क्रेडेंशियल गलत हैं। मोबाइल मैसेज डैशबोर्ड के *Account → API Settings* से दोबारा कॉपी करें। ध्यान दें कि डिफ़ॉल्ट रूप से username आपका खाता ईमेल होता है, कोई अलग API key नहीं।
-- **POST पर `400 Invalid sender` आता है**: `sender` मान आपके खाते पर पंजीकृत Sender ID नहीं है। पहले उसे मोबाइल मैसेज डैशबोर्ड में पंजीकृत करें।
-- **टेक्स्ट आता है लेकिन कटा हुआ होता है**: मोबाइल मैसेज लगभग 160 अक्षरों से लंबे संदेशों को कई भागों में बाँट देता है, और हर भाग का शुल्क लगता है। प्रतिक्रिया (response body) देखें, उसमें भागों की संख्या लिखी होती है।
+- **POST `401 Unauthorized` लौटाता है** — Basic Auth credentials गलत हैं। Mobile Message डैशबोर्ड *Account → API Settings* से फिर से कॉपी करें। ध्यान दें कि username डिफ़ॉल्ट रूप से आपका account email है, कोई अलग API key नहीं।
+- **POST `400 Invalid sender` लौटाता है** — `sender` मान आपके account पर पंजीकृत Sender ID नहीं है। पहले उसे Mobile Message डैशबोर्ड में पंजीकृत करें।
+- **Text पहुँचता है पर कटा हुआ होता है** — Mobile Message लगभग 160 अक्षरों से बड़े messages को कई भागों में बाँटता है; हर भाग का शुल्क लगता है। response body जाँचें — उसमें भागों की संख्या दी होती है।
 
-## इसे भी देखें
+## यह भी देखें {#see-also}
 
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md): अन्य SMS प्रदाता जिनके पास मूल Zapier ऐप हैं (Webhooks-by-Zapier चरण की ज़रूरत नहीं)
-- [Zapier (overview)](../zapier.md): हर Zapier रेसिपी का B1 पक्ष
-- [मोबाइल मैसेज API दस्तावेज़](https://mobilemessage.com.au/api-documentation)
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — मूल Zapier ऐप वाले वैकल्पिक SMS providers (Webhooks-by-Zapier चरण की ज़रूरत नहीं)
+- [Zapier (overview)](../zapier.md) — हर Zapier रेसिपी का B1 हिस्सा
+- [Mobile Message API docs](https://mobilemessage.com.au/api-documentation)

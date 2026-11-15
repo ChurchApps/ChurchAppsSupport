@@ -51,7 +51,7 @@ Benötigen Sie einen Elternteil während des Gottesdienstes -- ein Windelwechsel
 
 Wenn ein Namensschild oder Abhol-Label verloren oder beschädigt wird, kann das Personal auf einer bemannten Station die Labels der Familie **nachdrucken**, nachdem der Sicherheitscode auf dem Auschecken-Bildschirm eingegeben wurde. Der Nachdruck verwendet den gleichen Drucker und die gleichen Label-Vorlagen wie das ursprüngliche Check-In.
 
-## Notfall-Rundfunk
+## Notfall-Rundfunk {#emergency-broadcast}
 
 Im Notfall kann das Personal die Erziehungsberechtigten von **jedem eingecheckten Kind** des aktuellen Gottesdienstes auf einmal benachrichtigen:
 

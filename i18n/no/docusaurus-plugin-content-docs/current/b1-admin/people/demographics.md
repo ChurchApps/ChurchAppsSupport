@@ -1,13 +1,13 @@
 ---
 title: "Demografi"
-description: "Se menighetens alder, kjønn, medlemskap, sivilstand og campusfordeling i B1 Admins interaktive diagrammer, og gå i dybden på hver gruppe."
+description: "Se menighetens aldersfordeling, kjønn, medlemskap, sivilstatus og kampusfordeling i de interaktive diagrammene i B1 Admin, og gå i dybden på en hvilken som helst gruppe."
 ---
 
 # Demografi
 
 <div class="article-intro">
 
-**Demografi**-dashbordet gir deg et visuelt øyeblikksbilde av menigheten din — hvem de er, hvor mange de er, og hvordan medlemmene fordeler seg på aldersgrupper, kjønn, sivilstatus og campus. Hvert diagram er interaktivt: klikk på et hvilket som helst segment for å hoppe rett til et filtrert personsøk som viser nøyaktig de personene.
+Dashbordet **Demografi** gir deg et visuelt øyeblikksbilde av menigheten din: hvem de er, hvor mange de er, og hvordan medlemskapet fordeler seg på aldersgrupper, kjønn, sivilstatus og kampuser. Hvert diagram er interaktivt. Klikk på et hvilket som helst segment for å gå rett til et filtrert personsøk som viser nøyaktig disse personene.
 
 </div>
 
@@ -15,46 +15,46 @@ description: "Se menighetens alder, kjønn, medlemskap, sivilstand og campusford
 <h4>Før du begynner</h4>
 
 - Personer må finnes i katalogen din. Se [Legge til personer](./adding-people.md) eller [Importere data](./importing-data.md) for å komme i gang.
-- For å se campus-diagrammet må du først ha campus satt opp under [Settings → Campuses](../settings/campuses.md).
+- For å dele opp kampusdiagrammet etter kampus, må du først ha satt opp kampuser i [Innstillinger → Kampuser](../settings/campuses.md).
 
 </div>
 
-## Åpne Demografi
+## Åpne Demografi {#opening-demographics}
 
-Klikk på **Demographics** i sidehodet på **People**-siden. Siden viser det totale antallet personer øverst, etterfulgt av diagrammene som er beskrevet nedenfor.
+Klikk på **Demografi** i sidetoppen på siden **Personer**. Siden viser det totale antallet personer (**Totalt**) øverst, etterfulgt av diagrammene nedenfor. Hvert ringdiagram viser også totalen under diagrammet. Klikk på **Personer** øverst til høyre for å gå tilbake til katalogen.
 
-## Diagrammer
+## Diagrammer {#charts}
 
-### Aldersfordeling
+### Alder {#age}
 
-Et gruppert stolpediagram som viser hvor mange personer som faller inn i hver aldersgruppe (for eksempel 0–9, 10–17, 18–24, og så videre opp til 65+). Hver stolpe er delt i tre serier — **Female**, **Male** og **Unassigned** — slik at du ser kjønnsfordelingen innen hver aldersgruppe med et blikk.
+Et stablet søylediagram som viser hvor mange personer som faller inn i hver aldersgruppe: 0–3, 4–11, 12–18, 19–25, 26–35, 36–50, 51–64 og 65+. Hver søyle er delt etter kjønn: **Kvinne**, **Mann**, og, når noen i den gruppen ikke har registrert kjønn, **Ikke tildelt**. Da ser du kjønnsfordelingen innen hver aldersgruppe med et blikk. Personer uten fødselsdato telles ikke i dette diagrammet.
 
-### Medlemsstatus
+### Medlemskapstyper {#membership-types}
 
-Et ringdiagram som deler opp menigheten din etter medlemsstatus (for eksempel Member, Regular Attender, Visitor og så videre).
+Et ringdiagram som deler opp menigheten etter medlemsstatus (for eksempel Medlem, Fast deltaker, Besøkende og så videre). Personer uten status vises som **Ikke tildelt**.
 
-### Kjønn
+### Kjønn {#gender}
 
-Et ringdiagram som viser andelen kvinnelige, mannlige og ikke-tildelte poster i katalogen din.
+Et ringdiagram som viser andelen kvinne-, mann- og ikke-tildelte poster i katalogen din.
 
-### Sivilstatus
+### Sivilstatus {#marital-status}
 
-Et ringdiagram som viser fordelingen på sivilstatusverdier (for eksempel Married, Single, Widowed).
+Et ringdiagram som viser fordelingen mellom verdiene for sivilstatus (for eksempel Gift, Ugift, Enke/enkemann).
 
-### Campus
+### Kampus {#campus}
 
-Et ringdiagram som viser hvordan personer fordeler seg på menighetens campus. Dette diagrammet vises bare hvis du har campus konfigurert og minst én person tilordnet et campus. Personer uten tildelt campus vises som **Unassigned**.
+Et ringdiagram som viser hvordan personer fordeler seg på kirkens kampuser. Personer uten tildelt kampus vises som **Ikke tildelt**, så en kirke uten kampuser ser ett enkelt **Ikke tildelt**-segment.
 
-## Dykke ned i dataene
+## Gå i dybden på dataene {#drilling-into-the-data}
 
-Klikk på et hvilket som helst stykke av et ringdiagram eller et stolpesegment i aldersdiagrammet for å gå til **People**-siden, forhåndsfiltrert til å vise nøyaktig disse personene. Filteret forblir aktivt når siden er ferdig lastet, og antallet over listen viser hvor mange husstander og personer som traff. Bruk dette til raskt å lage en kontaktliste, kjøre en masseoperasjon eller eksportere et segment — for eksempel kan du klikke på **Visitor**-stykket i Medlemsstatus for å se alle besøkende og deretter sende dem til en arbeidsflyt.
+Klikk på et hvilket som helst segment i et ringdiagram (eller navnet i forklaringen) eller på et hvilket som helst søylesegment i aldersdiagrammet for å gå til siden **Personer**, forhåndsfiltrert til nøyaktig disse personene. Filteret forblir aktivt når siden er ferdig lastet, og antallet over listen viser hvor mange husstander og personer som traff. Bruk dette til raskt å bygge en kontaktliste, kjøre en masseoperasjon eller eksportere et segment. For eksempel kan du klikke på segmentet **Besøkende** i Medlemsstatus for å se alle besøkende, og deretter sende dem til en arbeidsflyt.
 
 :::tip
-Etter at du har dykket ned i et filtrert resultat, bruk **Save as List** i personsøket for å lagre filteret til senere bruk. Se [Lagrede lister](./lists.md).
+Etter at du har gått i dybden på et filtrert resultat, bruk **Lagre som liste** i personsøket for å lagre filteret til senere bruk. Se [Lagrede lister](./lists.md).
 :::
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Søke etter personer](./searching-people.md) — People-siden du havner på når du dykker ned fra et diagram
-- [Lagrede lister](./lists.md) — lagre et demografisk segment som en gjenbrukbar liste
-- [Campus](../settings/campuses.md) — konfigurer campus slik at campus-diagrammet vises
+- [Søke etter personer](./searching-people.md): siden Personer du havner på når du går i dybden på et diagram
+- [Lagrede lister](./lists.md): lagre et demografisk segment som en gjenbrukbar liste
+- [Kampuser](../settings/campuses.md): sett opp kampuser slik at kampusdiagrammet vises

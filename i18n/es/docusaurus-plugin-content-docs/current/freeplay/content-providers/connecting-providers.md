@@ -51,7 +51,7 @@ Ciertos proveedores usan un flujo de dispositivo, similar a la forma en que inic
 Un indicador pulsante **Esperando confirmación** muestra que FreePlay está comprobando su inicio de sesión. La pantalla muestra cuántos minutos quedan antes de que venza el código, así que complete el proceso con prontitud. Seleccione **Generar nuevo código** si se agota el tiempo.
 :::
 
-## Inicio de sesión con teléfono (solo código QR)
+## Inicio de sesión con teléfono (solo código QR) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** y **Go Curriculum** usan un inicio de sesión con código QR ligeramente distinto, sin código que escribir:
 

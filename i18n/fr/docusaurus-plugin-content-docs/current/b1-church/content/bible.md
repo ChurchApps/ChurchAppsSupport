@@ -1,52 +1,55 @@
 ---
-title: "Lecture de la Bible sur B1.church"
+title: "Lire la Bible sur B1.church"
 sidebar_label: "Bible"
-description: "Lisez les Écritures dans le lecteur biblique B1.church, avec contrôles de livre, chapitre et traduction, et une page Bible pour la lecture quotidienne."
+description: "Lisez les Écritures dans le lecteur biblique de B1.church, avec des commandes de livre, de chapitre et de traduction, et une page Bible pour la lecture quotidienne."
 ---
 
 # Bible
 
 <div class="article-intro">
 
-B1.church inclut un lecteur Bible intégré afin que vous puissiez lire l'Écriture sans quitter le site. Le lecteur est intégré directement dans la page, vous donnant un accès rapide à n'importe quel passage à côté de vos autres outils d'église.
+B1.church comprend un lecteur biblique intégré afin que vous puissiez lire les Écritures sans quitter le site. Le lecteur est intégré directement dans la page, ce qui vous donne un accès rapide à n'importe quel passage, à côté de vos autres outils d'église.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Aucune connexion n'est requise pour utiliser le lecteur Bible. La page Bible est accessible au public.
+- Aucune connexion n'est nécessaire pour utiliser le lecteur biblique. La page Bible est accessible à tous.
 - Votre église doit avoir ajouté une page Bible à la navigation de son site.
 
 </div>
 
-## Lire la Bible
+## Lire la Bible {#reading-the-bible}
 
-1. Accédez à la page **Bible** à partir de la navigation du site de votre église.
-2. Le lecteur s'ouvre sur Genèse 1:1 par défaut.
-3. Utilisez les contrôles de navigation dans le lecteur pour vous déplacer vers un livre, un chapitre ou un verset différent.
+1. Accédez à la page **Bible** depuis la navigation du site de votre église.
+2. Le lecteur s'ouvre par défaut sur la Genèse 1.
+3. Utilisez les commandes de navigation du lecteur pour passer à un autre livre, chapitre ou verset.
 
-Le lecteur Bible est alimenté par **YouVersion** et vous donne accès à un large choix de traductions bibliques dans de nombreuses langues.
+Le lecteur biblique est fourni par **YouVersion** et vous donne accès à un large choix de traductions bibliques dans de nombreuses langues.
 
-## Navigation dans les passages
+## Naviguer dans les passages {#navigating-passages}
 
-Le lecteur intégré fournit des contrôles pour naviguer à travers l'Écriture. Vous pouvez :
+Le lecteur intégré propose des commandes pour parcourir les Écritures. Vous pouvez :
 
-- Naviguer vers un livre spécifique de la Bible
-- Accéder à un chapitre particulier
-- Faire défiler les versets dans un chapitre
-- Basculer vers une traduction biblique différente à l'aide du sélecteur de version
+- Parcourir un livre précis de la Bible
+- Aller directement à un chapitre donné
+- Faire défiler les versets d'un chapitre
+- Changer de traduction biblique à l'aide du sélecteur de version
+- Sur le site web de votre église, utiliser les boutons **Chapitre précédent** et **Chapitre suivant** au-dessus du texte pour parcourir un livre
 
-Le lecteur remplit la zone de contenu de la page, vous donnant beaucoup d'espace pour lire confortablement.
-
-:::tip
-Votre livre, chapitre et traduction sélectionnés sont mémorisés afin que le lecteur se rouvre là où vous l'aviez laissé.
-:::
+Le lecteur occupe toute la zone de contenu de la page, vous offrant un espace confortable pour lire.
 
 :::tip
-Vous pouvez marquer la page Bible dans votre navigateur pour y revenir rapidement pour votre lecture quotidienne. Associez-la au [Verset du jour](./verse-of-the-day.md) pour une inspiration quotidienne de l'Écriture.
+Dans le portail des membres (`/mobile/bible`), le livre, le chapitre et la traduction que vous avez sélectionnés sont mémorisés sur cet appareil, de sorte que le lecteur se rouvre là où vous vous étiez arrêté. Le lecteur du site web commence toujours à la Genèse 1.
 :::
 
-## Disponibilité
+Si le lecteur ne parvient pas à se charger, la page le signale et propose un bouton pour lire sur Bible.com à la place (le portail des membres propose aussi Biblia.com).
 
-La page Bible est une fonctionnalité de contenu intégrée de B1.church. Si vous ne voyez pas de lien **Bible** dans la navigation de votre église, votre administrateur d'église n'a peut-être pas l'ajouté au menu du site. Contactez votre administrateur d'église pour le demander.
+:::tip
+Vous pouvez ajouter la page Bible à vos favoris dans votre navigateur pour y revenir rapidement lors de votre lecture quotidienne. Associez-la au [Verset du jour](./verse-of-the-day.md) pour une inspiration quotidienne tirée des Écritures.
+:::
+
+## Disponibilité {#availability}
+
+La page Bible est une fonctionnalité de contenu intégrée à B1.church. Si vous ne voyez pas de lien **Bible** dans la navigation de votre église, l'administrateur de votre église ne l'a peut-être pas ajouté au menu du site. Contactez l'administrateur de votre église pour le demander.

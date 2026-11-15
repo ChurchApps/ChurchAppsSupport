@@ -1,42 +1,42 @@
 ---
-title: "Online-Spenden auf B1.church"
+title: "Online-Spenden und Gaben in B1.church"
 sidebar_label: "Spenden"
-description: "Online bei Ihrer Gemeinde auf B1.church ohne Konto spenden oder sich anmelden, um Daueraufträge, Zahlungsmittel und Spendenbescheinigungen zu verwalten."
+description: "Spende online an deine Gemeinde in B1.church, auch ohne Konto, oder melde dich an, um wiederkehrende Gaben, Zahlungsmethoden und Zuwendungsbescheinigungen zu verwalten."
 ---
 
 # Spenden
 
 <div class="article-intro">
 
-Mit B1App können Sie Ihre Gemeinde ganz einfach durch Online-Spenden unterstützen. Ob Sie eine schnelle Einmalgabe machen oder regelmäßige Spenden verwalten möchten – alles, was Sie brauchen, finden Sie auf der B1.church-Website Ihrer Gemeinde.
+B1App macht es einfach, deine Gemeinde mit Online-Spenden zu unterstützen. Ob du eine schnelle einmalige Gabe geben oder regelmäßige Gaben verwalten möchtest -- alles, was du brauchst, ist über die B1.church-Website deiner Gemeinde erreichbar.
 
 </div>
 
-## Überblick
+## Überblick {#overview}
 
-B1App unterstützt zwei Wege zu spenden:
+B1App unterstützt zwei Wege zu geben:
 
-- **Öffentliche Spenden** – Jeder kann spenden, ohne sich anzumelden. Besuchen Sie die Spendenseite Ihrer Gemeinde, wählen Sie einen Fonds und geben Sie Ihre Zahlungsdaten ein. Ein Konto ist nicht erforderlich.
-- **Spenden mit Anmeldung** – Wenn Sie sich vor dem Spenden [anmelden](../getting-started/logging-in.md), werden Ihre Gaben mit Ihrem Konto verknüpft. So erhalten Sie Zugriff auf Ihren vollständigen Spendenverlauf, druckbare Spendenbescheinigungen, die Verwaltung wiederkehrender Spenden und gespeicherte Zahlungsmethoden.
+- **Öffentliche Spenden** -- Jeder kann ohne Anmeldung eine einmalige oder wiederkehrende Spende tätigen. Besuche die Spendenseite deiner Gemeinde, wähle einen Fonds und gib deine Zahlungsdaten ein. Ein Konto ist nicht nötig, und du kannst auch anonym geben.
+- **Gegeben als angemeldetes Mitglied** -- Wenn du dich vor dem Spenden [anmeldest](../getting-started/logging-in.md), werden deine Gaben mit deinem Konto verknüpft. Du erhältst so Zugriff auf deinen vollständigen Spendenverlauf, druckbare Zuwendungsbescheinigungen, die Verwaltung wiederkehrender Spenden und gespeicherte Zahlungsmethoden.
 
-## Was Sie tun können
+## Was du tun kannst {#what-you-can-do}
 
-Im Bereich Spenden stehen Ihnen folgende Möglichkeiten zur Verfügung:
+Dies steht dir im Bereich Spenden zur Verfügung:
 
-- **Gezielt an Fonds spenden** – Ihre Gemeinde hat möglicherweise mehrere Fonds eingerichtet, zum Beispiel einen Allgemeinen Fonds, einen Gebäudefonds oder einen Missionsfonds. Sie können wählen, für welchen Fonds Ihre Spende bestimmt ist.
-- **Mit Karte oder Bankkonto zahlen** – Spenden werden sicher über Stripe verarbeitet. Sie können mit Kredit- oder Debitkarte zahlen. Außerdem stehen Anweisungen für eine Überweisung per ACH zur Verfügung.
-- **Wiederkehrende Spenden einrichten** – Angemeldete Mitglieder können automatische, wiederkehrende Spenden planen, damit Sie keine Gabe mehr verpassen.
-- **Spendenverlauf anzeigen** – Sehen Sie eine vollständige Liste Ihrer bisherigen Spenden mit Datum, Methode, Fonds und Betrag.
-- **Spendenbescheinigungen drucken** – Erstellen Sie druckbare Spendenbescheinigungen für das laufende oder das vergangene Jahr für Ihre steuerlichen Unterlagen.
-- **Zahlungsmethoden verwalten** – Speichern und verwalten Sie Ihre Zahlungsmethoden, um künftig schneller spenden zu können.
+- **Gaben für bestimmte Fonds** -- Deine Gemeinde hat möglicherweise mehrere Fonds eingerichtet, zum Beispiel einen Allgemeinen Fonds, einen Baufonds oder einen Missionsfonds. Du kannst wählen, für welchen Fonds deine Spende bestimmt ist.
+- **Bezahlen mit Karte oder Bankkonto** -- Spenden werden sicher über den Zahlungsanbieter deiner Gemeinde abgewickelt (die meisten Gemeinden nutzen Stripe). Du kannst mit Kredit- oder Debitkarte bezahlen und je nach Anbieter auch mit Bankkonto, Mobile Money oder PayPal und Venmo. Anleitungen für eine Banküberweisung per ACH sind ebenfalls verfügbar.
+- **Wiederkehrende Spenden einrichten** -- Angemeldete Mitglieder können automatische wiederkehrende Spenden planen, damit du nie eine Gabe verpasst.
+- **Spendenverlauf ansehen** -- Sieh dir eine vollständige Liste deiner früheren Spenden an, mit Datum, Methode, Fonds und Betrag.
+- **Zuwendungsbescheinigungen drucken** -- Erstelle druckbare Zuwendungsbescheinigungen für das laufende oder das vergangene Jahr für deine Steuerunterlagen.
+- **Zahlungsmethoden verwalten** -- Speichere und verwalte deine Zahlungsmethoden, damit du künftig schneller geben kannst.
 
-Ihre Gemeinde kann einschränken, für welche Jahre Mitglieder den Spendenverlauf sehen, oder ihn ganz ausblenden, und sie kann einen Spendenhinweis hinzufügen, der auf Ihrer Seite Spenden und in den Bescheinigungen erscheint. Siehe [Spendenverlauf](./donation-history.md#if-your-church-limits-giving-history).
+Deine Gemeinde kann einschränken, welche Jahre des Spendenverlaufs Mitglieder sehen, oder ihn ausblenden, und sie kann einen Spendenhinweis hinzufügen, der auf deiner Seite Spenden und den Bescheinigungen erscheint. Siehe [Spendenverlauf](./donation-history.md#if-your-church-limits-giving-history).
 
 :::info
-Spenden werden sicher über **Stripe** verarbeitet. Ihre Zahlungsdaten werden niemals auf den Servern von B1.church gespeichert.
+Spenden werden sicher über den Zahlungsanbieter deiner Gemeinde abgewickelt, etwa **Stripe**. Deine Karten- und Bankdaten werden nie auf den Servern von B1.church gespeichert.
 :::
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Eine Spende tätigen](./making-donations.md) – Erfahren Sie, wie Sie mit oder ohne Konto geben
-- [Spendenverlauf](./donation-history.md) – Ihre bisherigen Spenden ansehen und Spendenbescheinigungen drucken
+- [Eine Spende tätigen](./making-donations.md) -- Erfahre, wie du mit oder ohne Konto gibst
+- [Spendenverlauf](./donation-history.md) -- Sieh dir deine früheren Spenden an und drucke Zuwendungsbescheinigungen

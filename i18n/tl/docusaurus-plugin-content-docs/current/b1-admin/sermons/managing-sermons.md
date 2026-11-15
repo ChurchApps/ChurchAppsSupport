@@ -1,84 +1,91 @@
 ---
-title: "Pamamahala ng mga Sermon"
-description: "Pamahalaan ang sermon library sa B1 Admin: magdagdag ng sermon mula YouTube, Vimeo, o Facebook, i-edit ang detalye, at kumuha ng podcast feed ng simbahan."
+title: "Pamamahala ng Mga Sermon"
+description: "Pamahalaan ang iyong sermon library sa B1 Admin: magdagdag ng mga sermon mula sa YouTube, Vimeo, o Facebook, mag-edit ng mga detalye, at makakuha ng podcast feed para sa iyong simbahan."
 ---
 
-# Pamamahala ng mga Sermon
+# Pamamahala ng Mga Sermon
 
 <div class="article-intro">
 
-Ipinapakita ng pahina ng Sermons ang buong library ng inyong mga sermon. Dito maaari kayong magdagdag ng bagong sermon, mag-edit ng mga kasalukuyang entry, at ayusin ang inyong nilalaman ayon sa playlist. Ang bawat sermon ay maaaring i-link sa video o audio na naka-host sa YouTube, Vimeo, Facebook, o sa custom na URL.
+Ipinapakita ng pahinang Sermons ang buong sermon library mo. Mula rito, maaari kang magdagdag ng mga bagong sermon, mag-edit ng umiiral na entry, at ayusin ang iyong content ayon sa playlist. Maaaring mag-link ang bawat sermon sa video o audio na naka-host sa YouTube, Vimeo, Facebook, o custom na URL.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan ninyo ang pahintulot na **contentApi.streamingServices.edit**. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md) kung wala kayong access.
-- Gumawa ng kahit isang [playlist](./playlists.md) na paglalagyan ng inyong mga sermon
-- Ihanda ang inyong mga video ID o URL mula sa YouTube, Vimeo, o Facebook
+- Kailangan mo ng permiso na **Edit Services** sa seksyong **Content** ng iyong role. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) kung wala kang access.
+- Gumawa ng kahit isang [playlist](./playlists.md) kung saan ayusin ang iyong mga sermon
+- Ihanda ang iyong mga video ID o URL mula sa YouTube, Vimeo, o Facebook
 
 </div>
 
-## Pagtingin sa Inyong Library ng mga Sermon
+## Pagtingin sa Iyong Sermon Library {#viewing-your-sermon-library}
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Sermons**, at i-click ang **Sermons**.
-2. Ipinapakita ng pahina ng Sermons ang inyong mga sermon entry sa isang table na may **Playlist**, pamagat, at **Publish Date** ng bawat sermon. Gamitin ang search box sa itaas ng table para i-filter ang listahan. Nakalista ang inyong mga playlist sa panel na **Playlists** sa tabi ng table.
-3. I-click ang **Edit** sa row ng anumang sermon para tingnan o i-edit ang mga detalye nito.
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas-kaliwa), palawakin ang **Sermons**, at i-click ang **Sermons**.
+2. Ipinapakita ng pahinang Sermons ang iyong mga sermon entry sa isang table, may **Playlist**, pamagat (**Sermon**), at **Publish Date** ng bawat sermon, mula sa pinakabago, kasama ang bilang gaya ng "11 of 11 sermons". I-type sa kahon na **Search sermons by title or playlist...** para i-filter ang listahan. Nakalista ang iyong mga playlist sa panel na **Playlists** sa tabi ng table, at nasa ibaba nito ang panel na **Podcast Feed**.
+3. I-hover ang row ng isang sermon at i-click ang **Edit** para tingnan o i-edit ang mga detalye nito.
 
-## Pagdaragdag ng Sermon
+## Pagdaragdag ng Sermon {#adding-a-sermon}
 
-1. I-click ang button na **Add Sermon** sa kanang itaas na sulok at piliin ang **Add Sermon** mula sa dropdown.
-2. Pumili ng **Playlist** kung saan ilalagay ang sermon.
-3. Piliin ang inyong **Video Provider** -- YouTube, Vimeo, Facebook, o Custom URL. Inirerekomenda namin ang YouTube dahil ito ang pinakamahusay gumana sa sistema ng B1.
-4. Ilagay ang video ID o URL at i-click ang **Fetch**. Para sa YouTube, ang video ID ay ang mga karakter na kasunod ng `v=` sa YouTube URL.
-5. Kapag na-click ninyo ang **Fetch**, awtomatikong ii-import ang mga detalye ng sermon, kasama ang petsa ng pag-publish, haba, pamagat, paglalarawan, at thumbnail.
-6. Gawin ang anumang pagbabagong nais ninyo at i-click ang **Save**.
+1. I-click ang button na **Add Sermon** sa kanang-itaas at piliin ang **Add Sermon** mula sa dropdown. Magbubukas ang form na **Edit Sermon** sa itaas ng listahan.
+2. Pumili ng **Playlist** kung saan ilalagay ang sermon (o iwan sa **None**).
+3. Piliin ang iyong **Video Provider** -- **YouTube**, **Vimeo**, **Facebook**, o **Custom Embed Url**. Inirerekomenda namin ang YouTube dahil pinakamahusay itong gumagana sa sistema ng B1.
+4. Ilagay ang **YouTube ID**, **Vimeo ID**, **Sermon ID** (Facebook), o **Sermon Embed Url** ng video. Maaari mong i-paste ang buong link ng video; ang ID lamang ang itatago ng B1. Para sa YouTube, ang video ID ay ang mga karakter na nasa likod ng `v=` sa YouTube URL.
+5. Para sa YouTube at Vimeo, i-click ang **Fetch** para awtomatikong i-import ang mga detalye ng sermon, kabilang ang petsa ng publish, tagal, pamagat, paglalarawan, at thumbnail. Kung hindi ma-load ang mga detalye, may lalabas na mensahe at maaari mo itong punan nang mag-isa.
+6. Gawin ang mga pagbabagong gusto mo at i-click ang **Save**.
 
 :::tip
-Maaari rin kayong magdagdag ng permanenteng URL ng live stream sa pamamagitan ng pagpili sa **Add Permanent Live URL** mula sa dropdown na **Add Sermon**. Gumagawa ito ng tuloy-tuloy na koneksyon sa live stream ng inyong YouTube channel gamit ang inyong Channel ID. Tingnan ang [Live Streaming](./live-streaming.md) para sa karagdagang detalye.
+Maaari ka ring magdagdag ng permanenteng live stream URL sa pamamagitan ng pagpili sa **Add Permanent Live URL** mula sa dropdown na **Add Sermon**. Lumilikha ito ng tuloy-tuloy na koneksyon sa live stream ng iyong YouTube channel gamit ang iyong Channel ID. Tingnan ang [Live Streaming](./live-streaming.md) para sa higit pang detalye.
 :::
 
-## Pag-edit ng Sermon
+## Pag-edit ng Sermon {#editing-a-sermon}
 
-1. I-click ang **Edit** sa row ng anumang sermon sa inyong library para buksan ang mga detalye nito.
-2. I-update ang pamagat, tagapagsalita, petsa, paglalarawan, thumbnail, o mga media link ayon sa kailangan.
-3. I-click ang **Save** para i-apply ang inyong mga pagbabago.
+1. I-click ang **Edit** sa anumang row ng sermon sa iyong library para buksan ang mga detalye nito.
+2. I-update ang pamagat, petsa, paglalarawan, thumbnail, tagal, o media links kung kinakailangan.
+3. I-click ang **Save** para ilapat ang iyong mga pagbabago, o **Cancel** para isara ang form.
 
-## Mga Detalye ng Sermon
+Para alisin ang sermon, buksan ito, i-click ang **Delete**, at kumpirmahin.
+
+### Pagdaragdag ng Sermon sa Ibang Playlist {#adding-a-sermon-to-another-playlist}
+
+Para ilista ang parehong sermon sa pangalawang playlist (halimbawa, sermon na kabilang sa isang series at sa koleksyong "Best Of"), buksan ang sermon, i-click ang **Add to another playlist**, piliin ang playlist, at i-click ang **Add**. Mag-iimbak ito ng kopya ng sermon sa playlist na iyon.
+
+## Mga Detalye ng Sermon {#sermon-details}
 
 Maaaring maglaman ang bawat sermon entry ng:
 
-- **Title** -- Ang pangalan ng sermon na makikita ng mga bisita
-- **Speaker** -- Kung sino ang nagbahagi ng sermon
-- **Date** -- Ang petsa ng pag-publish o pagbabahagi
+- **Playlist** -- Ang series na kinabibilangan ng sermon
+- **Video Provider** at video ID -- Kung saan naka-host ang video ng sermon: YouTube, Vimeo, Facebook, o custom na embed URL
+- **Publish Date** -- Ang petsa kung kailan ipino-publish ang sermon; ang mga sermon na walang petsa ay nagpapakita ng **Not scheduled** sa listahan
+- **Total Sermon Duration** -- Ang haba ng sermon sa minuto at segundo
+- **Thumbnail** -- Preview na larawang ipinapakita sa iyong sermon library. I-click ang larawan para i-crop o palitan ito (16:9).
+- **Title** -- Ang pangalan ng sermon na nakikita ng mga bisita
 - **Description** -- Buod ng nilalaman ng sermon
-- **Thumbnail** -- Larawang preview na makikita sa inyong library ng sermon
-- **Video/Audio Links** -- Mga URL ng media ng sermon sa YouTube, Vimeo, Facebook, o custom na host
-- **Audio File URL (for podcast)** -- Direktang link sa MP3/M4A file para sa sermon na ito. Maaari kayong mag-paste ng URL o i-click ang **Upload Audio** para mag-upload ng file at awtomatikong mapunan ito. Tanging ang mga sermon na may ganitong field (o direktang link ng video file) ang isinasama sa inyong podcast feed.
+- **Audio File URL (for podcast)** -- Direktang link sa MP3/M4A file para sa sermon na ito. Maaari mong i-paste ang URL o, kapag na-save na ang sermon, i-click ang **Upload Audio** para mag-upload ng file at awtomatikong mapunan ito. Tanging ang mga sermon na may field na ito (o direktang link sa video file) ang kasama sa iyong podcast feed.
 
-## Ang Inyong Podcast Feed {#your-podcast-feed}
+## Ang Iyong Podcast Feed {#your-podcast-feed}
 
-Kapag may kahit isang sermon nang may nakakabit na audio o video file, awtomatikong gumagawa ang B1 Admin ng podcast RSS feed para sa inyong simbahan -- walang kailangang i-on. Makikita ito sa panel na **Podcast Feed** sa ibaba ng listahan ng sermon: i-click ang copy icon para kopyahin ang URL ng feed, saka isumite ang URL na iyon sa Apple Podcasts, Spotify, o anumang ibang podcast directory.
+Kapag may kahit isang sermon na may nakakabit na audio o video file, awtomatikong gumagawa ang B1 Admin ng podcast RSS feed para sa iyong simbahan -- wala kang kailangang i-on. Makikita ito sa panel na **Podcast Feed** sa tabi ng listahan ng sermon (sa ibaba ng panel na **Playlists**): i-click ang copy icon para kopyahin ang feed URL, pagkatapos i-submit ang URL na iyon sa Apple Podcasts, Spotify, o sa anumang iba pang podcast directory.
 
 :::info
-Ang mga sermon na naka-link lamang sa embedded player (tulad ng YouTube o Vimeo video ID) ay hindi lalabas sa podcast feed -- kailangan ng mga podcast app ang direktang media file na maaaring i-download. Magdagdag ng **Audio File URL** para maisama ang isang sermon.
+Ang mga sermon na naka-link lamang sa embedded player (gaya ng YouTube o Vimeo video ID) ay hindi lilitaw sa podcast feed -- kailangan ng mga podcast app ng direkta at madaling i-download na media file. Magdagdag ng **Audio File URL** para maisama ang isang sermon.
 :::
 
-## Pag-iskedyul ng Sermon para sa Live Stream
+## Pag-iiskedyul ng Sermon para sa Live Stream {#scheduling-a-sermon-for-live-stream}
 
-Pagkatapos magdagdag ng sermon, maaari ninyo itong i-iskedyul para i-broadcast sa inyong pahina ng live stream:
+Pagkatapos magdagdag ng sermon, maaari mo itong iiskedyul para sa broadcast sa iyong live stream page:
 
 1. Sa Jump menu, piliin ang **Sermons > Live Stream Times**.
-2. I-edit ang isang service at sa ilalim ng **Video Settings**, piliin ang inyong sermon mula sa dropdown.
-3. Ipapalabas ang sermon sa itinakdang oras ng service.
+2. I-edit ang isang serbisyo at sa ilalim ng **Video Settings**, piliin ang iyong sermon mula sa dropdown na **Sermon**.
+3. Ipe-play ang sermon sa nakatakdang oras ng serbisyo.
 
 :::info
-Para mag-import ng maraming sermon nang sabay-sabay sa halip na isa-isang idagdag, gamitin ang tool na [Bulk Import](./bulk-import.md) para direktang kunin ang mga video mula sa inyong YouTube o Vimeo account.
+Para mag-import ng maraming sermon nang sabay-sabay sa halip na isa-isang idagdag, gamitin ang [Bulk Import](./bulk-import.md) para kunin nang direkta ang mga video mula sa iyong YouTube o Vimeo account.
 :::
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Mga Playlist](./playlists.md) -- Ayusin ang mga sermon sa mga serye
-- [Live Streaming](./live-streaming.md) -- I-configure ang inyong iskedyul ng streaming
+- [Playlists](./playlists.md) -- Ayusin ang mga sermon sa mga series
+- [Live Streaming](./live-streaming.md) -- I-configure ang iyong iskedyul ng streaming
 - [Bulk Import](./bulk-import.md) -- Mag-import ng maraming sermon nang sabay-sabay

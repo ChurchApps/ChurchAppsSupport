@@ -51,7 +51,7 @@ Noen leverandører bruker en enhetsflyt, likt som når du logger inn i strømmet
 En pulserende indikator **Venter på bekreftelse** viser at FreePlay sjekker innloggingen din. Skjermen viser hvor mange minutter som er igjen før koden utløper, så fullfør raskt. Velg **Generer ny kode** hvis den går ut.
 :::
 
-## Telefoninnlogging (kun QR-kode)
+## Telefoninnlogging (kun QR-kode) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** og **Go Curriculum** bruker en litt annen QR-kodeinnlogging, uten kode å skrive inn:
 

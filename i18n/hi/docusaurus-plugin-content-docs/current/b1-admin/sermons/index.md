@@ -1,48 +1,52 @@
 ---
-title: "B1 Admin में सेरमन"
+title: "B1 Admin में प्रवचन"
 sidebar_label: "प्रवचन"
-description: "B1 Admin में अपनी सेरमन लाइब्रेरी, प्लेलिस्ट, लाइव स्ट्रीम शेड्यूल और YouTube या Vimeo से बल्क आयात सेट करें और प्रबंधित करें।"
+description: "अपनी B1 Admin प्रवचन लाइब्रेरी, प्लेलिस्ट, लाइव स्ट्रीम शेड्यूल, और YouTube या Vimeo से बल्क इम्पोर्ट सेट करें और प्रबंधित करें।"
 ---
 
 # प्रवचन
 
 <div class="article-intro">
 
-B1 Admin में Sermons अनुभाग आपको अपनी चर्च की प्रवचन लाइब्रेरी और live streaming को manage करने देता है। आप अलग-अलग प्रवचन जोड़ सकते हैं, उन्हें playlists में व्यवस्थित कर सकते हैं, live stream schedules configure कर सकते हैं, और YouTube या Vimeo से मौजूदा सामग्री को bulk में import कर सकते हैं।
+B1 Admin में Sermons अनुभाग आपको अपने चर्च की प्रवचन लाइब्रेरी और लाइव स्ट्रीमिंग प्रबंधित करने देता है। आप अलग-अलग प्रवचन जोड़ सकते हैं, उन्हें प्लेलिस्ट में व्यवस्थित कर सकते हैं, लाइव स्ट्रीम शेड्यूल कॉन्फ़िगर कर सकते हैं, और YouTube या Vimeo से मौजूदा सामग्री एक साथ आयात कर सकते हैं।
 
 </div>
 
 :::info
-Sermons अनुभाग तक पहुंचने के लिए आपको **contentApi.streamingServices.edit** अनुमति की आवश्यकता है। यदि आपके menu में Sermons दिखाई नहीं देता, तो अपने church administrator से उपयुक्त role देने के लिए कहें। Permissions manage करने के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
+Sermons अनुभाग तक पहुँचने के लिए आपकी भूमिका के **Content** अनुभाग में **Edit Services** अनुमति होनी चाहिए। इसके बिना Sermons आपके मेनू से गायब रहता है और उसके पेज अनुमति का संदेश दिखाते हैं। यदि आपके मेनू में Sermons नहीं दिखता, तो अपने चर्च प्रशासक से उचित भूमिका देने को कहें। अनुमतियाँ प्रबंधित करने के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
 :::
 
-## आप क्या कर सकते हैं
+## आप क्या कर सकते हैं {#what-you-can-do}
 
-Sermons अनुभाग चार मुख्य क्षेत्रों में व्यवस्थित है:
+[Jump menu](../introduction.md#getting-around-with-the-jump-menu) में, **Sermons** के तीन पेज हैं: **Sermons** (आपकी लाइब्रेरी, प्लेलिस्ट और पॉडकास्ट फ़ीड), **Live Stream Times**, और **Settings**। Bulk Import **Add Sermon** बटन से पहुँचा जाता है। यह अनुभाग इन क्षेत्रों को कवर करता है:
 
-### Sermons
+### प्रवचन {#sermons}
 
-अपनी लाइब्रेरी में अलग-अलग प्रवचन की entries जोड़ें और manage करें। हर प्रवचन में title, speaker, date, description, thumbnail, और video या audio content के links शामिल हो सकते हैं। आप प्रवचनों को YouTube, Vimeo, Facebook, या custom video URLs से link कर सकते हैं। पूरी जानकारी के लिए [प्रवचन प्रबंधित करना](./managing-sermons.md) देखें।
+अपनी लाइब्रेरी में अलग-अलग प्रवचन प्रविष्टियाँ जोड़ें और प्रबंधित करें। हर प्रवचन में शीर्षक, वक्ता, तिथि, विवरण, थंबनेल, और वीडियो या ऑडियो सामग्री के लिंक हो सकते हैं। आप प्रवचनों को YouTube, Vimeo, Facebook, या कस्टम वीडियो URL से जोड़ सकते हैं। पूरे विवरण के लिए [Managing Sermons](./managing-sermons.md) देखें।
 
-### Playlists
+### प्लेलिस्ट {#playlists}
 
-अपने प्रवचनों को series या collections में व्यवस्थित करें। Playlists से आपकी congregation के लिए किसी प्रवचन series को क्रम से browse करना आसान हो जाता है। हर playlist का अपना name, description, और thumbnail होता है। अधिक जानकारी के लिए [Playlists](./playlists.md) देखें।
+अपने प्रवचनों को श्रृंखलाओं या संग्रहों में व्यवस्थित करें। प्लेलिस्ट से आपकी मंडली किसी प्रवचन श्रृंखला को क्रम से देखना आसान पाती है। हर प्लेलिस्ट का अपना नाम, विवरण और थंबनेल होता है। अधिक जानकारी के लिए [Playlists](./playlists.md) देखें।
 
-### Live Stream Times
+### लाइव स्ट्रीम समय {#live-stream-times}
 
-अपने चर्च का live streaming schedule configure करें। Recurring weekly services या one-time events सेट करें, chat और video settings manage करें, और नियंत्रित करें कि आपका stream कब live जाता है। Visitors आपके streaming page पर अगली scheduled service time देखेंगे। **Sermons** के अंतर्गत एक अलग **Settings** page उन tabs (chat, prayer, और custom links) को नियंत्रित करता है जो आपके live stream के साथ दिखाई देते हैं। Setup निर्देशों के लिए [Live Streaming](./live-streaming.md) देखें।
+अपने चर्च का लाइव स्ट्रीमिंग शेड्यूल कॉन्फ़िगर करें। आवर्ती साप्ताहिक सेवाएँ या एक-बार के कार्यक्रम सेट करें, चैट और वीडियो सेटिंग प्रबंधित करें, और नियंत्रित करें कि आपकी स्ट्रीम कब लाइव जाए। दर्शकों को आपके स्ट्रीमिंग पेज पर अगली निर्धारित सेवा का समय दिखेगा। सेटअप निर्देशों के लिए [Live Streaming](./live-streaming.md) देखें।
 
-### Bulk Import
+### स्ट्रीम सेटिंग्स {#stream-settings}
 
-YouTube या Vimeo से वीडियो को bulk में import करके अपनी प्रवचन लाइब्रेरी को जल्दी से भरें। अपनी मौजूदा प्रवचन सामग्री को B1 में लाने का यह सबसे तेज़ तरीका है। शुरू करने के लिए [Bulk Import](./bulk-import.md) देखें।
+**Sermons** के अंतर्गत **Settings** पेज (जिसका शीर्षक **Stream Settings** है) आपकी लाइव स्ट्रीम के साथ दिखने वाले **Content Tabs** -- चैट, प्रार्थना, और कस्टम लिंक -- को नियंत्रित करता है। देखें [Streaming Page Settings](./live-streaming.md#streaming-page-settings)।
+
+### बल्क इम्पोर्ट {#bulk-import}
+
+YouTube या Vimeo से वीडियो एक साथ आयात करके अपनी प्रवचन लाइब्रेरी जल्दी भरें। अपनी मौजूदा प्रवचन सामग्री को B1 में लाने का यह सबसे तेज़ तरीका है। शुरू करने के लिए [Bulk Import](./bulk-import.md) देखें।
 
 :::tip
-यदि आप पहली बार प्रवचन सेट कर रहे हैं, तो एक [playlist](./playlists.md) बनाकर शुरू करें, फिर या तो [प्रवचनों को अलग-अलग जोड़ें](./managing-sermons.md) या YouTube या Vimeo से [उन्हें bulk में import करें](./bulk-import.md)।
+यदि आप पहली बार प्रवचन सेट कर रहे हैं, तो पहले एक [प्लेलिस्ट](./playlists.md) बनाएँ, फिर या तो [प्रवचन अलग-अलग जोड़ें](./managing-sermons.md) या YouTube या Vimeo से [एक साथ आयात करें](./bulk-import.md)।
 :::
 
-## अगले कदम
+## अगले कदम {#next-steps}
 
-- [प्रवचन प्रबंधित करना](./managing-sermons.md) -- अलग-अलग प्रवचन जोड़ें और संपादित करें
-- [Playlists](./playlists.md) -- प्रवचनों को series में व्यवस्थित करें
-- [Live Streaming](./live-streaming.md) -- अपना live stream schedule और settings सेट करें
-- [Bulk Import](./bulk-import.md) -- YouTube या Vimeo से प्रवचन import करें
+- [Managing Sermons](./managing-sermons.md) -- अलग-अलग प्रवचन जोड़ें और संपादित करें
+- [Playlists](./playlists.md) -- प्रवचनों को श्रृंखलाओं में व्यवस्थित करें
+- [Live Streaming](./live-streaming.md) -- अपना लाइव स्ट्रीम शेड्यूल और सेटिंग्स सेट करें
+- [Bulk Import](./bulk-import.md) -- YouTube या Vimeo से प्रवचन आयात करें

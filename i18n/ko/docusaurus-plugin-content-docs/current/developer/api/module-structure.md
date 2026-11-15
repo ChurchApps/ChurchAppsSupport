@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## 모듈 간 통신
+## 모듈 간 통신 {#cross-module-communication}
 
 각 모듈은 자체 데이터베이스를 소유하며(([데이터베이스](./database.md) 참조), 모듈이 다른 모듈의 테이블을 직접 쿼리하는 일은 없습니다. 한 모듈이 다른 모듈이 소유한 데이터를 필요로 할 때 -- 예를 들어 doing 모듈이 membership에서 사람을 조회할 때 -- 는 소유 모듈의 `src/shared/modules/`에 있는 **게이트웨이**를 거칩니다.
 

@@ -1,107 +1,108 @@
 ---
 title: "Personen suchen"
-description: "Durchsuchen Sie das Personenverzeichnis in B1 Admin nach Namen, sortieren und wählen Sie Spalten in der Tabellenansicht, erstellen Sie Filter mit der erweiterten Suche und exportieren Sie Treffer als CSV."
+description: "Durchsuchen Sie das Personenverzeichnis von B1 Admin nach Namen, sortieren und wählen Sie Spalten in der Tabellenansicht, erstellen Sie Filter mit der erweiterten Suche und exportieren Sie Treffer als CSV."
 ---
 
 # Personen suchen
 
 <div class="article-intro">
 
-Die Seite **Personen** zeigt Ihr Kirchenverzeichnis als durchsuchbare Liste von Haushalten oder als sortierbare Tabelle einzelner Personen. Sie finden schnell jede Person Ihrer Gemeinde, bestimmen, welche Angaben angezeigt werden, und exportieren Ihre Ergebnisse. Effizientes Suchen ist für die tägliche Verwaltung unerlässlich – etwa beim Nachfassen bei Besuchern, beim Erstellen von Kontaktlisten und bei der Pflege von Mitgliederdaten.
+Die Seite **Personen** zeigt Ihr Gemeindeverzeichnis als durchsuchbare Liste von Haushalten oder als sortierbare Tabelle einzelner Personen. Sie finden schnell jede Person in Ihrer Gemeinde, bestimmen, welche Informationen angezeigt werden, und exportieren Ihre Ergebnisse. Effizientes Suchen ist unverzichtbar für die tägliche Verwaltung, etwa beim Nachfassen bei Besuchern, beim Erstellen von Kontaktlisten und bei der Pflege von Mitgliederdatensätzen.
 
 </div>
 
-## Schulungsvideo
+## Schulungsvideo {#training-video}
 
-<YouTube id="7Y-tN9RmnDQ" title="Personen suchen und Listen erstellen in B1" next="Eigene Felder, Massenbearbeitung und Export in B1" nextUrl="/docs/b1-admin/settings/custom-fields" />
+<YouTube id="7Y-tN9RmnDQ" title="Personen suchen und Listen in B1 erstellen" next="Eigene Felder, Massenbearbeitung und Export in B1" nextUrl="/docs/b1-admin/settings/custom-fields" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen ein aktives B1-Admin-Konto mit der Berechtigung, Personen anzuzeigen. Siehe [Rollen & Berechtigungen](roles-permissions.md), wenn Sie sich über Ihre Zugriffsstufe nicht sicher sind.
-- Ihr Kirchenverzeichnis sollte Personen enthalten. Wenn Sie noch niemanden angelegt haben, lesen Sie [Personen hinzufügen](adding-people.md) oder [Daten importieren](importing-data.md).
+- Sie benötigen ein aktives B1-Admin-Konto mit der Berechtigung, Personen einzusehen. Siehe [Rollen & Berechtigungen](roles-permissions.md), wenn Sie sich bei Ihrer Zugriffsstufe nicht sicher sind.
+- Ihr Gemeindeverzeichnis sollte Personen enthalten. Wenn Sie noch niemanden hinzugefügt haben, lesen Sie [Personen hinzufügen](adding-people.md) oder [Daten importieren](importing-data.md).
 
 </div>
 
-## Haushalte und Tabellenansichten
+## Ansicht nach Haushalten und Tabelle {#households-and-table-views}
 
-Die Seite Personen listet Ihr Verzeichnis nach **Haushalt**, alphabetisch gruppiert. Jede Zeile zeigt die Fotos des Haushalts, seinen Namen (zum Beispiel „Familie Schmidt“) und die Namen aller Angehörigen. Klicken Sie auf einen Haushalt, um das Profil des Haushaltsvorstands zu öffnen, oder auf den Namen eines Mitglieds, um diese Person zu öffnen. Eine Anzahl über der Liste zeigt, wie viele Haushalte und Personen angezeigt werden.
+Die Seite Personen listet Ihr Verzeichnis nach **Haushalt** auf, alphabetisch gruppiert. Jede Zeile zeigt die Fotos des Haushalts, seinen Namen (zum Beispiel „Familie Schmidt“) und die Namen aller Mitglieder. Klicken Sie auf einen Haushalt, um das Profil des Haushaltsvorstands zu öffnen, oder klicken Sie auf den Namen eines Mitglieds, um diese Person zu öffnen. Eine Anzeige über der Liste zeigt, wie viele Haushalte und Personen angezeigt werden.
 
-Verwenden Sie den Schalter **Anzeigen als** über der Liste, um zwischen **Haushalte** und **Tabelle** zu wechseln. Die Ansicht **Tabelle** listet eine Person pro Zeile und ist die Ansicht, in der Sie sortieren und Spalten auswählen können (siehe unten). B1 merkt sich Ihre Wahl auf diesem Gerät.
+Mit dem Schalter **Anzeigen als** über der Liste wechseln Sie zwischen **Haushalte** und **Tabelle**. Die Ansicht **Tabelle** listet eine Person pro Zeile auf und dort können Sie sortieren und Spalten auswählen (siehe unten). B1 merkt sich Ihre Auswahl auf diesem Gerät.
 
-In der Ansicht **Tabelle** erscheint der Mitgliedsstatus jeder Person unter ihrem Namen, und jeder der sieben Status hat seine eigene Farbe – dieselbe, die auch im Profil der Person verwendet wird. Wer in seiner Haushaltsrolle als **Kind** eingetragen ist, zeigt außerdem neben dem Status ein Schildchen **Kind**. Um jemanden als Kind zu kennzeichnen, legen Sie seine Rolle im [Haushaltsbereich](./adding-people.md#managing-households) auf seinem Profil fest.
+In der Ansicht **Tabelle** erscheint der Mitgliedschaftsstatus jeder Person unter ihrem Namen. Jeder der sieben Status hat eine eigene Farbe, dieselbe, die auch im Profil der Person verwendet wird. Wer als Haushaltsrolle **Kind** hat, zeigt außerdem neben dem Status eine Markierung **Kind**. Um jemanden als Kind zu kennzeichnen, legen Sie seine Rolle im [Haushaltsbereich](./adding-people.md#managing-households) auf seinem Profil fest.
 
-Standardmäßig lädt die Seite nur den ersten Teil Ihres Verzeichnisses. Haben Sie mehr Personen, klicken Sie unterhalb der Liste auf **Alle Mitglieder anzeigen**, um alle zu laden.
+Standardmäßig lädt die Seite nur den ersten Teil Ihres Verzeichnisses. Wenn Sie mehr Personen haben, klicken Sie unter der Liste auf **Alle Mitglieder anzeigen**, um alle zu laden.
 
-## Schnellsuche
+## Schnellsuche {#quick-search}
 
-Das Feld **Haushalt oder Person suchen** oben auf der Seite Personen findet Mitglieder in Echtzeit:
+Das Feld **Haushalt oder Person finden** oben auf der Seite Personen hilft Ihnen, Mitglieder in Echtzeit zu finden:
 
 1. Klicken Sie oben auf der Seite Personen in das **Suchfeld**.
 2. Beginnen Sie, einen Namen einzugeben.
-3. Die Ergebnisse werden beim Tippen automatisch gefiltert (mit einer kurzen Verzögerung von etwa einer halben Sekunde, damit die Suche nicht bei jedem Tastendruck ausgelöst wird).
+3. Die Ergebnisse werden während des Tippens automatisch gefiltert (mit einer kurzen Verzögerung von etwa einer halben Sekunde, damit die Suche nicht bei jedem Tastendruck ausgelöst wird).
 4. Die Liste darunter aktualisiert sich und zeigt nur die passenden Ergebnisse.
 
-Klicken Sie auf **Zurücksetzen** (unterhalb des Suchfelds), um die Suche zurückzusetzen und wieder Ihr gesamtes Verzeichnis anzuzeigen.
+Klicken Sie auf **Zurücksetzen** (unter dem Suchfeld), um die Suche zurückzusetzen und wieder Ihr gesamtes Verzeichnis anzuzeigen.
 
 :::tip
 Sie müssen nicht die Eingabetaste drücken. Die Suche läuft automatisch, sobald Sie aufhören zu tippen.
 :::
 
-## Ergebnisse sortieren
+## Ergebnisse sortieren {#sorting-results}
 
-In der Ansicht **Tabelle** sind Personen nach Nachname, dann Vorname sortiert. Sie können das Verzeichnis auf andere Weise sortieren, indem Sie auf eine beliebige Spaltenüberschrift klicken:
+In der Ansicht **Tabelle** sind Personen nach Nachname, dann Vorname sortiert. Sie können das Verzeichnis anders sortieren, indem Sie auf eine beliebige Spaltenüberschrift klicken:
 
-1. Klicken Sie auf eine **Spaltenüberschrift** (z. B. **Name** oder **E-Mail**), um nach dieser Spalte zu sortieren.
-2. Klicken Sie erneut auf dieselbe Überschrift, um die Sortierreihenfolge umzukehren.
+1. Klicken Sie auf eine **Spaltenüberschrift** (zum Beispiel **Name** oder **E-Mail**), um nach dieser Spalte zu sortieren.
+2. Klicken Sie auf dieselbe Überschrift erneut, um die Sortierreihenfolge umzukehren.
 
-So finden Sie Personen leicht alphabetisch, nach Alter oder nach einer anderen sichtbaren Spalte.
+Der erste Klick sortiert die Spalte aufsteigend (A bis Z, vom Jüngsten zum Ältesten, frühestes Datum zuerst), und der Pfeil neben der Überschrift zeigt die Richtung an. Personen ohne Wert in dieser Spalte stehen immer am Ende. So finden Sie Personen leicht alphabetisch, nach Alter oder nach jeder anderen sichtbaren Spalte.
 
-## Spalten anpassen
+## Spalten anpassen {#customizing-columns}
 
-Nicht jede Angabe muss gleichzeitig sichtbar sein. Sie können wählen, welche Spalten in der Tabelle erscheinen:
+Nicht jede Information muss gleichzeitig sichtbar sein. Sie können wählen, welche Spalten in der Tabelle erscheinen:
 
-1. Klicken Sie im Seitenkopf von Personen auf das Symbol **Spalten auswählen**. (Spalten gelten für die Ansicht **Tabelle**.)
-2. Aktivieren oder deaktivieren Sie Spalten, um sie ein- oder auszublenden. Verfügbare Spalten sind unter anderem:
-   - **Foto**
-   - **Name**
-   - **E-Mail**
-   - **Telefon**
-   - **Adresse**
-   - **Geburtsdatum**
-   - **Alter**
-   - **Geschlecht**
-   - **Mitgliedsstatus**
-   - **Standort**
-   - **Hinzugefügt am** – wann der Datensatz der Person angelegt wurde
-3. Die Tabelle wird sofort an Ihre Auswahl angepasst. Klicken Sie auf **Fertig**, um den Dialog **Spalten auswählen** zu schließen.
+1. Klicken Sie im Seitenkopf der Seite Personen auf das Symbol **Spalten auswählen**. (Spalten gelten für die Ansicht **Tabelle**; wenn Sie eine Spalte anhaken, wechselt die Seite daher auch in die Ansicht **Tabelle**.)
+2. Setzen oder entfernen Sie die Häkchen bei den Spalten, um sie ein- oder auszublenden. Der Reiter **Standard** bietet:
+   - **Foto** und **Anzeigename** (standardmäßig angezeigt)
+   - **Nachname**, **Vorname** und **Zweiter Vorname**
+   - **Adresse**, **Ort**, **Bundesland** und **PLZ**
+   - **Haupt-E-Mail** und **Haupt-Telefon** (die Mobilnummer oder, falls keine Mobilnummer vorhanden ist, die Festnetz- oder Geschäftsnummer)
+   - **Geburtsdatum**, **Geburtstag (ohne Jahr)** und **Alter**
+   - **Geschlecht**, **Mitgliedschaftsstatus**, **Standort**, **Familienstand** und **Hochzeitstag**
+   - **Hinweise für das Namensschild**
+   - **Hinzugefügt am** -- wann der Datensatz der Person angelegt wurde
+   - **Löschoption** -- fügt jeder Zeile ein Löschsymbol hinzu (nur verfügbar, wenn Sie Personen bearbeiten dürfen)
+3. Die Tabelle aktualisiert sich sofort entsprechend Ihrer Auswahl. Klicken Sie auf **Fertig** (oder **Schließen**), um den Dialog **Spalten auswählen** zu schließen. B1 merkt sich Ihre Spalten auf diesem Gerät.
 
 ### Eigene Felder als Spalten anzeigen {#showing-custom-fields-as-columns}
 
-Der Spaltenauswahl hat zwei Registerkarten: **Standard** enthält die oben aufgeführten eingebauten Spalten, und **Benutzerdefiniert** enthält Ihre [eigenen Felder](../settings/custom-fields.md) der Kirche sowie die Fragen aus allen Formularen für Personen. Aktivieren Sie auf der Registerkarte **Benutzerdefiniert** ein eigenes Feld, um es als Spalte hinzuzufügen; der Wert jeder Person für dieses Feld erscheint dann in der Tabelle. Die Werte werden genauso dargestellt wie im Profil der Person: Ja/Nein-Felder zeigen *Ja* oder *Nein*, Multiple-Choice-Felder zeigen die Bezeichnung der Option und Datumsangaben werden als Kurzdatum angezeigt. Personen ohne Wert für das Feld zeigen eine leere Zelle.
+Der Spaltenauswähler hat zwei Reiter: **Standard** enthält die oben aufgeführten integrierten Spalten, **Eigene** enthält die [Eigenen Felder](../settings/custom-fields.md) Ihrer Gemeinde zusammen mit den Fragen aus allen Personenformularen. Haken Sie auf dem Reiter **Eigene** ein Eigenfeld an, um es als Spalte hinzuzufügen; der Wert jeder Person für dieses Feld erscheint dann in der Tabelle. Die Werte werden genauso angezeigt wie im Profil der Person: Ja/Nein-Felder zeigen *Ja* oder *Nein*, Auswahlfelder zeigen die Bezeichnung der Option, und Datumsangaben werden als Kurzdatum angezeigt. Personen ohne Wert für das Feld sehen eine leere Zelle.
 
-## Suchergebnisse exportieren
+
+## Suchergebnisse exportieren {#exporting-search-results}
 
 Sie können Ihre aktuellen Suchergebnisse jederzeit als CSV-Datei herunterladen:
 
 1. Wenden Sie die gewünschten Suchen oder Filter an.
-2. Klicken Sie im Seitenkopf von Personen auf die Schaltfläche **Exportieren**.
-3. Eine CSV-Datei wird auf Ihren Computer heruntergeladen, bereit zum Öffnen in Excel, Google Tabellen oder einem anderen Tabellenkalkulationsprogramm.
+2. Klicken Sie im Seitenkopf der Seite Personen auf die Schaltfläche **Exportieren**.
+3. Eine CSV-Datei wird auf Ihren Computer heruntergeladen und lässt sich in Excel, Google Tabellen oder einem anderen Tabellenprogramm öffnen.
 
-Weitere Details zum Export finden Sie unter [Daten exportieren](./exporting-data.md).
+Weitere Details zum Exportieren finden Sie unter [Daten exportieren](./exporting-data.md).
 
 :::tip
-Für anspruchsvollere Abfragen – etwa um alle zu finden, die in den letzten drei Monaten nicht anwesend waren – probieren Sie die Funktion [KI-Suche](./ai-search.md), mit der Sie in einfacher Sprache fragen können.
+Für anspruchsvollere Abfragen -- etwa um alle zu finden, die in den letzten drei Monaten nicht teilgenommen haben -- probieren Sie die Funktion [KI-Suche](./ai-search.md). Dort können Sie mit einfachen Fragen in natürlicher Sprache suchen.
 :::
 
 ## Erweiterte Suche {#advanced-search}
 
-Mit der erweiterten Suche erstellen Sie präzise Filter, indem Sie Bedingungen kombinieren. Öffnen Sie sie, indem Sie auf der Seite Personen unterhalb des Suchfelds auf **Erweitert** klicken. Klappen Sie dann eine Kategorie auf und aktivieren Sie die Felder, nach denen Sie filtern möchten (Sie können auf den Namen des Feldes oder sein Kontrollkästchen klicken), und wählen Sie für jedes einen Operator und einen Wert. Kategorien sind **Namen**, **Demografie**, **Kontakt**, **Mitgliedschaft**, **Aktivität** (Spenden und Anwesenheit) und **Eigene Felder**.
+Mit der erweiterten Suche erstellen Sie präzise Filter, indem Sie Bedingungen kombinieren. Öffnen Sie sie, indem Sie auf der Seite Personen unter dem Suchfeld auf **Erweitert** klicken. Klappen Sie dann eine Kategorie auf und markieren Sie die Felder, nach denen Sie filtern möchten (Sie können auf den Namen des Feldes oder auf sein Kästchen klicken), und wählen Sie für jedes Feld einen Operator und einen Wert. Zu den Kategorien gehören **Namen**, **Demografie**, **Kontaktdaten**, **Mitgliedschaft & Gruppen** (Mitgliedschaftsstatus, Standort, Hinzugefügt am und Gruppenmitgliedschaft), **Aktivität** (Spenden und Anwesenheit) und **Eigene Felder**.
 
-Um neue Personen zu finden, öffnen Sie **Mitgliedschaft** und aktivieren Sie **Hinzugefügt am**. Es beginnt mit **in den letzten N Tagen** und 30 als Vorgabe, sodass Sie mit einem Klick alle finden, die im letzten Monat hinzugefügt wurden; ändern Sie die Anzahl der Tage oder wechseln Sie zu *gleich / nach / vor*, um ein Datum auszuwählen. **Geburtsdatum** und **Hochzeitstag** bieten ebenfalls **in den letzten N Tagen** an. Das Datum „Hinzugefügt am“ wird nur für Personen erfasst, die seit Ende Oktober 2026 angelegt wurden; ältere Personen haben kein Datum, daher findet dieser Filter sie nicht.
+Es gibt keine Suchschaltfläche: Die Ergebnisse aktualisieren sich etwa eine halbe Sekunde nach jeder Filteränderung automatisch, und Personen müssen jeden angehakten Filter erfüllen. Die aktivierten Filter erscheinen als Chips über den Kategorien -- klicken Sie auf das **x** eines Chips, um diesen Filter zu entfernen, oder auf **Alle löschen**, um alle zu entfernen. Klicken Sie erneut auf **Erweitert**, um das Panel wieder auszublenden.
 
-Der Bereich **Eigene Felder** listet die [eigenen Felder](../settings/custom-fields.md) Ihrer Kirche auf – die Felder, die Sie unter Einstellungen definieren, um eigene Angaben zu erfassen (zum Beispiel ein Ablaufdatum der Führungszeugnisprüfung). Die angebotenen Operatoren entsprechen dem Typ jedes Feldes: Textfelder unterstützen *enthält / gleich / beginnt mit / endet mit*, Zahlenfelder die Vergleichsoperatoren, Datumsfelder *gleich / nach / vor*, und Ja/Nein- sowie Multiple-Choice-Felder lassen Sie einen Wert auswählen. Jedes Feld, nach dem Sie hier filtern können, lässt sich als dynamische [Liste](./lists.md) speichern.
+Um neue Personen zu finden, öffnen Sie **Mitgliedschaft & Gruppen** und markieren Sie **Hinzugefügt am**. Es beginnt mit **in den letzten N Tagen** und dem Wert 30, sodass Sie mit einem Klick alle finden, die im letzten Monat hinzugefügt wurden. Ändern Sie die Anzahl der Tage oder wechseln Sie zu *ist gleich / nach / vor*, um ein Datum auszuwählen. **Geburtsdatum** und **Hochzeitstag** bieten ebenfalls **in den letzten N Tagen** an. Das Datum „Hinzugefügt am“ wird nur für Personen erfasst, die seit Ende Oktober 2026 angelegt wurden. Personen, die früher hinzugefügt wurden, haben kein Datum, daher findet dieser Filter sie nicht.
 
-## Suchen als Listen speichern
+Die Kategorie **Eigene Felder** listet die [Eigenen Felder](../settings/custom-fields.md) Ihrer Gemeinde auf -- die Felder, die Sie in den Einstellungen definieren, um eigene Informationen zu erfassen (etwa ein Ablaufdatum für eine Hintergrundprüfung). Die angebotenen Operatoren richten sich nach dem Typ jedes Feldes: Textfelder unterstützen *enthält / ist gleich / beginnt mit / endet mit*, Zahlenfelder die Vergleichsoperatoren, Datumsfelder *ist gleich / nach / vor*, und bei Ja/Nein- und Auswahlfeldern wählen Sie einen Wert. Jedes Feld, nach dem Sie hier filtern können, lässt sich als laufende [Liste](./lists.md) speichern.
 
-Nach einer Suche erscheint im Seitenkopf von Personen die Schaltfläche **Als Liste speichern**. Klicken Sie darauf, um Ihre aktuelle Abfrage unter einem Namen und optional einer Kategorie zu speichern, sodass Sie sie in künftigen Sitzungen sofort wieder aufrufen können. Details finden Sie unter [Gespeicherte Listen](./lists.md).
+## Suchen als Listen speichern {#saving-searches-as-lists}
+
+Nachdem Sie eine Suche mit mindestens einer Person ausgeführt haben, erscheint im Seitenkopf der Seite Personen die Schaltfläche **Als Liste speichern** (für Mitarbeitende, die Personen bearbeiten dürfen). Klicken Sie darauf, um Ihre aktuelle Abfrage unter einem Namen und optional einer Kategorie zu speichern, damit Sie sie bei künftigen Sitzungen sofort wieder öffnen können. Alle Einzelheiten finden Sie unter [Gespeicherte Listen](./lists.md).

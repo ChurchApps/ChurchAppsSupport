@@ -1,58 +1,59 @@
 ---
-title: "Frammøte"
-description: "Se ukentlig oppmøte, rom og gjester i B1 Admin, og sett opp campuser, gudstjenestetider, deltakertall og kioskinnsjekk fra Attendance-siden."
+title: "Oppmøte"
+description: "Gjennomgå ukentlig oppmøte, rom og gjester i B1 Admin, og sett deretter opp menigheter, gudstjenestetidspunkter, antallsregistreringer og kioskinnsjekking fra siden Attendance."
 ---
 
-# Frammøte
+# Oppmøte
 
 <div class="article-intro">
 
-Frammøte-delen i B1 Admin gir deg en fullstendig oversikt over hvem som møter opp på din kirke og hvordan gruppene dine vokser over tid. Fra konfigurering av samlinger og tjenestider til gjennomgang av trender og oppsett av selvregistrering, alt du trenger for å spore og forstå frammøte administreres fra denne siden.
+Seksjonen Attendance i B1 Admin gir deg et fullstendig bilde av hvem som kommer til menigheten din, og hvordan gruppene dine vokser over tid. Fra oppsett av menigheter og gudstjenestetidspunkter til gjennomgang av trender og oppsett av selvinnsjekking, administreres alt du trenger for å følge og forstå oppmøte fra denne siden.
 
 </div>
 
-## Sideoversikt
+## Sideoversikt {#page-overview}
 
-For å åpne siden, åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvid **Personer** og klikk på **Oppmøte**. Siden åpnes med en oversikt over **denne uken** (søndag til lørdag).
+For å åpne siden åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **People** og klikker **Attendance**. Siden åpnes med et sammendrag for **denne uken** (søndag til lørdag).
 
-Venstre kolonne viser ukens datoer og det totale antallet personer **i rommet** -- ditt totale antall opptellinger hvis opptellinger er registrert denne uken, ellers antallet personer som har sjekket inn. Under totalen ser du hvor mange som er innsjekket, talt opp og gjester, pluss en fordeling per gudstjeneste hvis du har mer enn én. Hvis ingen har sjekket inn denne uken ennå, vises den siste uken som hadde frammøte.
+I venstre kolonne vises datoene for uken og det totale antallet personer **i rommet** – ditt totale antall fra antallsregistreringer dersom det er registrert antall denne uken, ellers antall personer som har sjekket inn. Under totalen ser du hvor mange som har sjekket inn, telt og gjester, pluss en fordeling per gudstjeneste dersom du har mer enn én. Hvis ingen har sjekket inn ennå denne uken, står det det, og siste dato for registrert oppmøte vises (for eksempel «Last recorded Jan 25, 2026: 10»).
 
 Hovedområdet på siden viser:
 
-- **Rom** -- hver gruppe folk har sjekket inn til denne uken, med antallet innsjekkede (og en kapasitetsindikator for grupper med innsjekkingskapasitet). Klikk på en gruppe for å åpne den.
-- **Gjester** -- personer som har sjekket inn som gjester denne uken. Klikk på et navn for å åpne vedkommendes post.
-- **Siste 13 uker** -- et lite søylediagram over innsjekkinger per uke, med hvor mange av ukene som hadde innsjekkinger.
-- **Opptellinger denne uken** -- opptellinger registrert for ukens gudstjenester.
+- **Rooms** – hver gruppe folk har sjekket inn til denne uken, med antall innsjekkede (og en kapasitetslinje for grupper med innsjekkingskapasitet). Klikk på en gruppe for å åpne den.
+- **Guests** – personer som har sjekket inn som gjester denne uken. Klikk på et navn for å åpne posten deres.
+- **Last 13 weeks** – et lite søylediagram over ukentlige innsjekkinger, med hvor mange av ukene som hadde innsjekkinger. Lenken **All years** åpner rapportene.
+- **Headcounts this week** – antall som er registrert for denne ukens gudstjenester.
 
-## Handlinger
+## Handlinger {#actions}
 
-Venstre kolonne inneholder også sidens handlinger. Hver enkelt åpnes i hovedområdet; klikk på tilbakelenken **Oppmøte** for å gå tilbake til ukesoversikten.
+I venstre kolonne finner du også sidens handlinger. Hver enkelt åpnes i hovedområdet; klikk på tilbakelenken **Attendance** for å gå tilbake til ukesammendraget.
 
-### Oppsett
+### Setup {#setup}
 
-Klikk på **Oppsett** for å konfigurere byggesteinene for frammøtesporing. Her definerer du samlingene dine, legger til gudstjenester og samlingstidspunkter for hver samling (med en valgfri innsjekkingsplan for hvert samlingstidspunkt), og ser hvilke [grupper](../groups/creating-groups.md) som er tildelt samlingstidspunktene. Antall samlinger, samlingstidspunkter, planlagte og uplanlagte grupper og totalt antall grupper vises øverst. Du trenger bare å gjøre dette en gang, selv om du kan oppdatere det når som helst når planen din endres. Se [Frammøteoppsett](setup.md) for en fullstendig gjennomgang.
+Klikk **Setup** for å konfigurere byggeklossene i oppmøtesporingen (den vises bare for personer med tillatelsen **Edit Services** for oppmøte). Her definerer du menighetene dine, legger til gudstjenester og gudstjenestetidspunkter på hver menighet (inkludert en valgfri innsjekkingstidsplan for hvert gudstjenestetidspunkt), og ser hvilke [grupper](../groups/creating-groups.md) som er tilordnet disse gudstjenestetidspunktene. Antall menigheter, gudstjenestetidspunkter, grupper med og uten tidsplan, og totalt antall grupper vises øverst. Dette trenger du bare å gjøre én gang, men du kan oppdatere det når planen endrer seg. Se [oppmøteoppsett](setup.md) for en fullstendig gjennomgang.
 
-### Alle år (rapporter) {#all-years-reports}
+### All years (rapporter) {#all-years-reports}
 
-Klikk på **Alle år** for å åpne frammøterapportene. Fanene øverst bytter mellom **Frammøtetrend** (trender for hele menigheten over tid), **Opptellingstrend** (opptellinger summert per uke) og **Gruppeoppmøte** (frammøte fordelt på enkeltgrupper). Bruk filtrene til å begrense resultatene etter datointervall, samling eller samlingstidspunkt. Se [Sporing av frammøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
+Klikk **All years** for å åpne oppmøterapportene. Fanene øverst bytter mellom **Attendance Trend** (trender for hele menigheten over tid), **Headcount Trend** (antallstotaler per uke) og **Group Attendance** (oppmøte fordelt på hver enkelt gruppe). Bruk filtrene for å snevre inn resultatene etter datoperiode, menighet eller gudstjenestetidspunkt. Se [Følge oppmøte](tracking-attendance.md) for detaljer om bruk av rapporter og filtre.
 
-### Registrer opptelling {#enter-headcount}
+### Enter headcount {#enter-headcount}
 
-Klikk på **Registrer opptelling** for å registrere et enkelt totalt antall for en gudstjeneste, et samlingstidspunkt eller en gruppe i stedet for en navngitt liste. Se [Registrering av opptelling og trend](headcount-entry.md) for detaljer.
+Klikk **Enter headcount** for å registrere et enkelt samlet antall for en gudstjeneste, et gudstjenestetidspunkt eller en gruppe i stedet for en navngitt deltakerliste. Se [Registrering av antall og trend](headcount-entry.md) for detaljer.
 
 ### Kiosk {#kiosk}
 
-Klikk på **Kiosk** for å åpne innstillingene for **Kiosktema**, der du angir bakgrunnsbilder og hvordan kioskens hvileskjerm oppfører seg. En lenke **Innsjekkingskiosk, QR og etiketter** tar deg til de fullstendige [B1 CheckIn-innstillingene](check-in.md).
+Klikk **Kiosk** for å åpne innstillingene for **Kiosk Theme**, der du angir bakgrunnsbildet og hvilemodusen for innsjekkingskiosken. En lenke **Check-in kiosk, QR, and labels** tar deg til de fullstendige [innstillingene for B1 CheckIn](check-in.md), som også dekker QR-registrering av gjester og [etikettdesigneren](labels.md). Fargene på kiosken hentes fra **Mobile > App Theme**.
 
-## Neste steg
+## Neste steg {#next-steps}
 
-- [Frammøteoppsett](setup.md) -- konfigurer samlinger, tjenestider og grupper
-- [Registrering av frammøte](recording-attendance.md) -- skriv inn frammøte manuelt for en gruppesamling og skriv ut klasselister
-- [Sporing av frammøte](tracking-attendance.md) -- vis trender og filtrer rapporter
-- [Manntallregistrering og trend](headcount-entry.md) -- registrer og kartlegg totalt antall uten navngitt liste
-- [Innsjekking](check-in.md) -- sett opp selvregistrering for tjenester
-- [Innsjekkingssikkerhet](checkin-safety.md) -- romkapasiteter, frivilliger, hentepersoner og personsøk
+- [Oppmøteoppsett](setup.md) – konfigurer menigheter, gudstjenestetidspunkter og grupper
+- [Registrering av oppmøte](recording-attendance.md) – før inn oppmøte manuelt for en gruppesamling og skriv ut klasselister
+- [Følge oppmøte](tracking-attendance.md) – se trender og filtrer rapporter
+- [Registrering av antall og trend](headcount-entry.md) – registrer og lag diagram over samlede antall uten navngitt deltakerliste
+- [Innsjekking](check-in.md) – sett opp selvinnsjekking til gudstjenester
+- [Sikkerhet ved innsjekking](checkin-safety.md) – romkapasiteter, bemanningsforhold, hentepersoner og opprop
+- [Etikettdesigner for innsjekking](labels.md) – design navnelapper og hentelapper som skrives ut ved innsjekking
 
 :::tip
-Hvis du setter opp frammøte for første gang, begynn med veiledningen [Frammøteoppsett](setup.md) for å definere samlingene og tjenestidene dine. Når det er på plass, kan du begynne å [registrere frammøte](recording-attendance.md) manuelt eller sette opp [selvregistrering](check-in.md).
+Hvis du setter opp oppmøte for første gang, start med veiledningen [Oppmøteoppsett](setup.md) for å definere menighetene og gudstjenestetidspunktene dine. Når det er på plass, kan du begynne å [registrere oppmøte](recording-attendance.md) manuelt eller sette opp [selvinnsjekking](check-in.md).
 :::

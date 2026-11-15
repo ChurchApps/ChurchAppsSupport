@@ -51,7 +51,7 @@ Trenger du en forelder under gudstjenesten — bleieskift, et barn som gråter? 
 
 Hvis en navnelapp eller hentelapp er mistet eller skadet, kan ansatte på en betjent stasjon **skrive ut** familiens etiketter på nytt fra utsjekkingsskjermen etter å ha skrevet inn sikkerhetskoden. Utskriften bruker samme skriver og de samme etikettmalene som den opprinnelige innsjekkingen.
 
-## Nødvarsling
+## Nødvarsling {#emergency-broadcast}
 
 I en nødssituasjon kan ansatte sende tekstmelding til de foresatte til **alle innsjekkede barn** i den aktuelle gudstjenesten samtidig:
 

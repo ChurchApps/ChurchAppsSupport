@@ -1,141 +1,149 @@
 ---
 title: "Creación de calendarios"
-description: "Crea un calendario en B1 Admin, conecta grupos o importa archivos .ics, y administra sus eventos, registros y notas desde un solo lugar."
+description: "Cree un calendario en B1 Admin, conecte grupos o importe archivos .ics, y administre sus eventos, registros y notas desde un solo lugar."
 ---
 
 # Creación de calendarios
 
 <div class="article-intro">
 
-Crear un calendario en B1 Admin te permite armar una vista seleccionada de eventos conectando uno o más grupos. Los eventos los administran los líderes de grupo dentro de sus grupos, y tu calendario muestra esos eventos en un solo lugar. Los administradores con acceso de edición pueden agregar o editar eventos de cualquier grupo. Los líderes de grupo que no son administradores solo pueden administrar eventos de los grupos que lideran.
+Crear un calendario en B1 Admin le permite construir una vista seleccionada de eventos al conectar uno o más grupos. Los eventos los administran los líderes de cada grupo dentro de sus grupos, y su calendario muestra esos eventos en un solo lugar. Los administradores con acceso de edición pueden añadir o editar eventos de cualquier grupo. Los líderes de grupo que no son administradores solo pueden administrar los eventos de los grupos que lideran.
 
 </div>
 
-## Video de capacitación
+## Video de capacitación {#training-video}
 
 <YouTube id="Ko3kgsCSLFs" title="Creación de calendarios, eventos y reservas de salas en B1" next="Registro a eventos y eventos de pago en B1" nextUrl="/docs/b1-admin/calendars/paid-registrations" />
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Configura los [grupos](../groups/creating-groups.md) cuyos eventos quieres incluir en tu calendario
-- Necesitas acceso administrativo a la sección Calendarios en B1 Admin
+- Configure los [grupos](../groups/creating-groups.md) cuyos eventos desea incluir en su calendario
+- Necesita el permiso **Editar contenido**
 
 </div>
 
-## Crear un nuevo calendario
+## Crear un calendario nuevo {#creating-a-new-calendar}
 
-1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expande **Calendarios** y haz clic en **Calendarios**.
-2. Haz clic en **Agregar calendario** en la parte superior de la página. El formulario de nuevo calendario se abre debajo de la lista de calendarios.
-3. Escribe un **nombre** para tu calendario (por ejemplo, "Eventos de ministerio juvenil" o "Calendario principal de la iglesia").
-4. Agrega una **descripción** opcional para ayudar a tu equipo a entender para qué sirve este calendario.
-5. Haz clic en **Crear** para guardar tu nuevo calendario.
+1. En B1 Admin, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), despliegue **Calendarios** y haga clic en **Calendarios**.
+2. Haga clic en **Añadir calendario** en la parte superior de la página. El formulario del nuevo calendario se abre debajo de la lista de calendarios.
+3. Introduzca un **Nombre del calendario** (por ejemplo, "Eventos del ministerio juvenil" o "Calendario principal de la iglesia").
+4. Haga clic en **Crear** para guardar su nuevo calendario.
 
-## La página de detalle del calendario
+Para cambiar el nombre o eliminar un calendario más adelante, pase el cursor sobre su fila en la página de Calendarios y haga clic en **Editar** (o haga clic en **Editar** en la página de detalle del calendario).
 
-Después de crear un calendario, haz clic en **Administrar eventos** en su fila para abrir la página de detalle. Esta página tiene dos áreas principales:
+## La página de detalle del calendario {#the-calendar-detail-page}
 
-- **Columna izquierda** -- El nombre del calendario con sus acciones (**Nuevo evento**, **Editar**, **Importar .ics** e **Imprimir**), seguido de la lista **Grupos en el calendario** que muestra qué grupos están incluidos en este calendario. Haz clic en **Quitar** junto a un grupo para sacarlo del calendario.
-- **Área principal** -- La vista **Eventos del calendario**, que muestra los eventos de los grupos conectados, con los botones **Suscribirse** y **Agregar grupo** encima.
+Después de crear un calendario, haga clic en su nombre (o pase el cursor sobre su fila y haga clic en **Administrar eventos**) para abrir la página de detalle. Esta página tiene dos áreas principales:
 
-## Conectar grupos
+- **Columna izquierda**: el nombre del calendario con sus acciones (**Nuevo evento**, **Editar**, **Importar .ics** e **Imprimir**), un enlace a las aprobaciones pendientes, y la lista de **Grupos en el calendario** que muestra qué grupos están incluidos en este calendario. Haga clic en **Quitar** junto a un grupo para retirarlo del calendario.
+- **Área principal**: la vista de **Eventos del calendario** con los eventos traídos de los grupos conectados, con los botones **Suscribirse** y **Añadir grupo** encima. Use **Hoy**, **Atrás**, **Siguiente** y las vistas **Mes**, **Semana**, **Día** y **Agenda** para moverse. Cada evento se dibuja con el color de su grupo. Los colores se asignan automáticamente, y un grupo conserva el mismo color en todos los calendarios.
 
-Los grupos que tienen eventos en el calendario aparecen automáticamente en la lista **Grupos en el calendario**, en el lado izquierdo de la página de detalle.
+Haga clic en **Imprimir** para obtener un mes imprimible. La impresión comienza con el logotipo de fondo claro de su iglesia (de [Apariencia](../website/appearance.md), si configuró uno), el nombre de la iglesia y el nombre del calendario. Los nombres de los eventos ocupan más líneas en lugar de cortarse, y se mantienen los colores de los grupos.
 
-1. Haz clic en **Agregar grupo** encima del calendario para asociar un grupo con tu calendario.
-2. Selecciona el grupo del menú desplegable. La lista incluye todos los grupos de tu iglesia, no solo los grupos a los que perteneces.
-3. Elige si quieres incluir **todos los eventos** de ese grupo o solo **eventos específicos**.
-4. Haz clic en **Guardar**.
+## Conectar grupos {#connecting-groups}
 
-Cada evento aparece en el calendario una sola vez. Si agregas un grupo completo, cualquiera de sus eventos que ya hayas agregado uno por uno se integra en la entrada del grupo, y elegir eventos específicos de un grupo que ya está en el calendario no agrega nada nuevo. Solo los grupos agregados completos aparecen en **Grupos en el calendario**.
+Los grupos que tienen eventos en el calendario aparecen automáticamente en la lista **Grupos en el calendario** de la izquierda de la página de detalle.
 
-### Importar un archivo .ics
+1. Haga clic en **Añadir grupo** encima del calendario para asociar un grupo a su calendario.
+2. Elija el grupo en **Seleccione un grupo**. La lista incluye todos los grupos de su iglesia, no solo los grupos a los que usted pertenece.
+3. Elija **Añadir todos los eventos del grupo**, o **Añadir eventos específicos** y haga clic en cada evento que desee en el pequeño calendario que aparece.
+4. Haga clic en **Guardar**.
 
-Haz clic en **Importar .ics** para traer eventos de otro calendario. Elige el **Grupo** al que deben pertenecer los eventos, luego haz clic en **Elegir archivo .ics** o pega el contenido del archivo, y haz clic en **Importar**. Los eventos se crean en ese grupo, y el grupo se agrega al calendario desde el que importaste, así que los eventos aparecen allí de inmediato.
+Cada evento aparece en el calendario solo una vez. Si añade un grupo completo, cualquiera de sus eventos que ya hubiera añadido uno por uno se integra en la entrada del grupo, y elegir eventos específicos de un grupo que ya está en el calendario no añade nada nuevo. Solo los grupos añadidos completos aparecen en **Grupos en el calendario**.
 
-### Quitar un evento del calendario
+### Importar un archivo .ics {#importing-an-ics-file}
 
-Haz clic en un evento del calendario y luego en **Quitar del calendario**. Esto solo quita el evento de este calendario; el evento en sí permanece en su grupo. Si el evento está en el calendario porque se agregó todo su grupo, quitarlo elimina todos los eventos de ese grupo de este calendario (los eventos siguen en el grupo). Para eliminar un evento de forma definitiva, bórralo desde el [calendario del grupo](../groups/group-calendar.md).
+Haga clic en **Importar .ics** para traer eventos de otro calendario. Elija el **Grupo** al que deben pertenecer los eventos, luego haga clic en **Elegir archivo .ics** o pegue el contenido del archivo, y haga clic en **Importar**. Los eventos se crean en ese grupo, y el grupo se añade al calendario desde el que importó, de modo que los eventos aparecen allí de inmediato.
+
+### Quitar un evento del calendario {#removing-an-event-from-the-calendar}
+
+Haga clic en un evento del calendario y luego en **Quitar del calendario**. Esto solo quita el evento de este calendario; el evento en sí permanece en su grupo. Si el evento está en el calendario porque se añadió todo su grupo, quitarlo elimina de este calendario todos los eventos de ese grupo (los eventos siguen en el grupo). Para eliminar un evento de forma definitiva, bórrelo desde el [calendario del grupo](../groups/group-calendar.md).
 
 :::tip
-Conectar grupos a tu calendario es una forma eficaz de reunir eventos automáticamente. Cuando un líder de grupo agrega un evento a su [grupo](../groups/creating-groups.md), puede aparecer en el calendario de toda la iglesia sin trabajo adicional de tu parte.
+Conectar grupos a su calendario es una forma eficaz de agregar eventos automáticamente. Cuando un líder de grupo añade un evento a su [grupo](../groups/creating-groups.md), puede aparecer en el calendario de toda la iglesia sin trabajo adicional de su parte.
 :::
 
 :::info
-Si quieres crear un único calendario que reúna eventos de muchos grupos de tu iglesia, consulta [Calendario curado](./curated-calendar.md) para un enfoque más simple.
+Si desea crear un solo calendario que tome eventos de muchos grupos de su iglesia, consulte [Calendario seleccionado](./curated-calendar.md) para un enfoque más simplificado.
 :::
 
-## Agregar y editar eventos {#adding-and-editing-events}
+## Añadir y editar eventos {#adding-and-editing-events}
 
-Haz clic en **Nuevo evento** en la página de detalle del calendario para agregar un evento, o haz clic en un evento del calendario y luego en **Editar** para cambiarlo. El formulario **Nuevo evento** / **Editar evento** tiene estos campos:
+Haga clic en **Nuevo evento** en la página de detalle del calendario para añadir un evento, o haga clic en un evento del calendario y luego en **Editar** para cambiarlo. El formulario **Nuevo evento** / **Editar evento** tiene estos campos:
 
-- **Grupo** -- El grupo al que pertenece el evento. Si tu iglesia tiene plantillas de eventos, también puedes elegir una **Plantilla** para completar el formulario.
+- **Grupo**: el grupo al que pertenece el evento. Si su iglesia tiene plantillas de eventos, también puede elegir una **Plantilla** para completar el formulario.
 - **Título**
-- **Foto del evento** -- Haz clic en **Agregar foto** (o en el recuadro vacío de la foto) para elegir o subir una imagen, recortada en formato panorámico 16:9. Haz clic en **Cambiar foto** para reemplazarla. La foto se muestra en la parte superior de la página del evento en tu sitio web y como su mosaico cuando un elemento Calendario muestra **Próximos eventos** (consulta [Mostrar eventos en tu sitio web](#showing-events-on-your-website)).
-- **Descripción** -- Se muestra en la página del evento en tu sitio web. Se admiten texto en negrita, listas y enlaces.
-- **Inicio** y **Fin**, **Se repite** y **Visibilidad** (**Público** o **Privado**).
-- **Etiquetas** -- Rótulos separados por comas, como `jóvenes, estudiantes`. Un elemento Calendario en tu sitio web puede configurarse para mostrar solo eventos con una etiqueta específica. Es el mismo campo **Etiquetas** que aparece en la configuración de registro del evento.
-- **Quién puede ver las notas** y **Quién puede publicar notas** -- Quién puede leer y agregar notas al evento (consulta [Notas del evento](#event-notes)). Elige **Solo personal** (la opción predeterminada), **Líderes de grupo** (líderes del grupo del evento) o **Miembros del grupo** (todas las personas del grupo del evento, incluidos sus líderes).
-- **Salas** y **Recursos** -- Reserva espacio y equipo para el evento. Consulta [Salas, recursos y programación](./rooms-resources.md).
+- **Foto del evento**: haga clic en **Añadir foto** (o en el recuadro vacío de foto) para elegir o subir una imagen, recortada a un formato amplio de 16:9. Haga clic en **Cambiar foto** para reemplazarla. La foto se muestra en la parte superior de la página del evento en su sitio web y como su miniatura cuando un elemento de Calendario muestra **Próximos eventos** (consulte [Mostrar eventos en su sitio web](#showing-events-on-your-website)).
+- **Descripción**: se muestra en la página del evento en su sitio web. Se admiten texto en negrita, listas y enlaces.
+- **Inicio** y **Fin**, **Se repite** y **Visibilidad** (**Pública** o **Privada**).
+- **Etiquetas**: etiquetas separadas por comas, como `youth, students`. Un elemento de Calendario en su sitio web puede configurarse para mostrar solo eventos con una determinada etiqueta. Es el mismo campo **Etiquetas** que aparece en la configuración de registro del evento.
+- **Quién puede ver las notas** y **Quién puede publicar notas**: quién puede leer y añadir a las notas del evento (consulte [Notas del evento](#event-notes)). Elija **Solo personal** (la opción predeterminada), **Líderes de grupo** (líderes del grupo del evento) o **Miembros del grupo** (todas las personas del grupo del evento, incluidos sus líderes).
+- **Salas** y **Recursos**: reserve espacio y equipos para el evento. Consulte [Salas, recursos y programación](./rooms-resources.md). Una vez elegida una sala o recurso, también puede añadir tiempo de preparación y limpieza o una ventana de reserva personalizada; consulte [Reservar una sala o recurso](./availability.md#booking-a-room-or-resource).
+- **Recordatorios**: expanda esta sección para enviar recordatorios antes del evento. Consulte [Recordatorios de eventos](./event-reminders.md).
 
-Haz clic en **Guardar**. Si el evento se repite, B1 te pide confirmación, porque guardar actualiza cada ocurrencia de la serie.
+**Grupo**, **Título**, **Inicio** y **Fin** son obligatorios, y el fin debe ser posterior al inicio. Haga clic en **Guardar**. Si el evento se repite, B1 le pedirá que confirme, porque guardar actualiza todas las ocurrencias de la serie. Para eliminar un evento, ábralo en el editor y haga clic en **Eliminar**.
 
 ### Notas del evento {#event-notes}
 
-Cada evento tiene su propio hilo de notas para planificación y seguimiento. Haz clic en un evento en la página de detalle del calendario; el cuadro de diálogo muestra los detalles del evento, sus recordatorios y sus **Notas** debajo. Escribe una nota y publícala para agregarla al hilo.
+Cada evento tiene su propio hilo de notas para la planificación y el seguimiento. Haga clic en un evento en la página de detalle del calendario; el cuadro de diálogo muestra los detalles del evento, sus recordatorios y sus **Notas** debajo, con los botones **Editar**, **Administrar registros** y **Quitar del calendario**. Escriba una nota y publíquela para añadirla al hilo.
 
-El personal con permiso para editar contenido o administrar calendarios siempre puede leer y publicar notas de eventos. La configuración **Quién puede ver las notas** y **Quién puede publicar notas** del evento determina si los líderes o miembros del grupo del evento también pueden hacerlo.
+El personal con permiso para editar contenido o administrar calendarios siempre puede leer y publicar notas del evento. Las configuraciones **Quién puede ver las notas** y **Quién puede publicar notas** del evento determinan si los líderes o miembros del grupo del evento también pueden hacerlo.
 
-### Mostrar eventos en tu sitio web {#showing-events-on-your-website}
+### Mostrar eventos en su sitio web {#showing-events-on-your-website}
 
-Para poner un calendario en tu sitio web, agrega un elemento **Calendario** a una página y elige este calendario. El elemento puede mostrar un calendario mensual o una cuadrícula de mosaicos de próximos eventos, y puede limitarse a eventos con una sola etiqueta. Los visitantes que hagan clic en un evento abren su propia página de evento. Consulta [Uso del elemento Calendario](../website/page-editor.md#using-the-calendar-element).
+Para colocar un calendario en su sitio web, añada un elemento **Calendario** a una página y elija este calendario. El elemento puede mostrar un calendario mensual o una cuadrícula de miniaturas de próximos eventos, y puede limitarse a eventos con una sola etiqueta. Los visitantes que hacen clic en un evento abren su propia página de evento. Consulte [Uso del elemento Calendario](../website/page-editor.md#using-the-calendar-element).
 
 ## Habilitar el registro a eventos {#enabling-event-registration}
 
-Puedes habilitar el registro para cualquier evento del calendario para que los miembros puedan inscribirse a través del sitio web de B1 o de la aplicación móvil.
+Puede habilitar el registro para cualquier evento del calendario para que los miembros se inscriban a través del sitio web de B1 o de la app móvil.
 
-1. Haz clic en un evento existente o crea uno nuevo.
-2. En el editor del evento, activa **Registro** para habilitarlo.
-3. Configura los ajustes de registro:
-   - **Capacidad** (opcional) -- Establece un número máximo de registros. Déjalo en blanco para ilimitado.
-   - **Apertura del registro** -- La fecha y hora en que el registro está disponible.
-   - **Cierre del registro** -- La fecha y hora en que se cierra el registro.
-   - **Etiquetas** -- Rótulos separados por comas (por ejemplo, "jóvenes, retiro, VBS") para ayudar a categorizar los eventos con registro.
-   - **Preguntas de registro** -- Opcionalmente, adjunta un [formulario](../forms/creating-forms.md) para que los inscritos respondan preguntas adicionales (restricciones alimentarias, talla de camiseta, contacto de emergencia, etc.) como parte de la inscripción. Elige **Ninguno** para omitir las preguntas.
-   - **Habilitar lista de espera** -- Cuando el evento se llena, permite que los inscritos adicionales se unan a una lista de espera en lugar de ser rechazados. Consulta [Registros de pago](./paid-registrations.md#waitlist).
-4. Guarda el evento.
+1. Haga clic en un evento existente del calendario (créelo primero si es necesario) y haga clic en **Administrar registros**. Se abre la página de registro del evento. (El botón **Activar registro** en la página de **Registros** lo lleva a sus calendarios para elegir un evento).
+2. Haga clic en **Editar configuración** y luego active **Habilitar registro** en la tarjeta **Configuración de registro**.
+3. Configure los ajustes de registro:
+   - **Capacidad** (opcional): establezca un número máximo de registros. Déjelo en blanco para ilimitado.
+   - **Apertura del registro**: la fecha y hora en que el registro queda disponible.
+   - **Cierre del registro**: la fecha y hora en que se cierra el registro.
+   - **Etiquetas**: etiquetas separadas por comas (por ejemplo, "jóvenes, retiro, VBS") para ayudar a clasificar los eventos con registro.
+   - **Preguntas de registro**: opcionalmente, adjunte un [formulario](../forms/creating-forms.md) para que quienes se registran respondan preguntas adicionales (restricciones alimentarias, talla de camiseta, contacto de emergencia, etc.) como parte de la inscripción. Elija **Ninguno** para omitir las preguntas.
+   - **Habilitar lista de espera**: cuando el evento se llena, permita que más personas se unan a una lista de espera en lugar de rechazarlas. Consulte [Registros de pago](./paid-registrations.md#waitlist).
+4. Haga clic en **Guardar configuración**.
 
-En el caso de eventos de pago, la misma página de configuración te permite definir **Tipos de asistente** con precio, **Selecciones** opcionales (complementos) y **Códigos de descuento**, con el pago procesado a través del proveedor de donaciones de tu iglesia. Consulta [Registros de pago](./paid-registrations.md) para la guía completa.
+Para los eventos de pago, la misma página de configuración le permite definir **Tipos de asistente** con precio, **Selecciones** opcionales (complementos) y **Códigos de descuento**, con el cobro de pagos a través del proveedor de donaciones de su iglesia. Consulte [Registros de pago](./paid-registrations.md) para la guía completa.
 
-Una vez habilitado el registro, los miembros verán un botón **Regístrate para este evento** al ver el evento en [B1.church o en la aplicación B1](../../b1-church/events/registering.md). Si adjuntaste un formulario, los inscritos verán un paso de **Preguntas** durante el registro, y sus respuestas se guardarán junto con su registro.
+Una vez habilitado el registro, los miembros verán un botón **Registrarse para este evento** al ver el evento en [B1.church o en la App de B1](../../b1-church/events/registering.md). Si adjuntó un formulario, quienes se registran verán un paso de **Preguntas** durante el registro, y sus respuestas se guardan junto con su registro.
 
 :::info
-Las preguntas de registro solo funcionan con formularios que **no** estén marcados como Restringidos. Un formulario restringido se omite automáticamente durante el registro en lugar de mostrarse, así que usa un formulario no restringido cuando adjuntes preguntas a un evento.
+Las preguntas de registro solo funcionan con formularios que **no** estén marcados como Restringidos. Un formulario restringido se omite automáticamente durante el registro en lugar de mostrarse, así que use un formulario no restringido al adjuntar preguntas a un evento.
 :::
 
-### Administrar registros
+### Administrar registros {#managing-registrations}
 
-Para ver y administrar los registros de tus eventos:
+Para ver y administrar los registros de sus eventos:
 
-1. En el menú Jump, elige **Calendarios > Registros**.
-2. Verás una tabla con todos los eventos que tienen el registro habilitado, con el título del evento, la fecha, el número actual de registros frente a la capacidad, y las etiquetas.
-3. Haz clic en un evento para ver la lista completa de registros, incluidos los nombres, el número de miembros, los tipos de asistente, el estado de pago y la fecha de registro.
-4. Desde la página de detalle, puedes:
-   - **Agregar asistente** -- Registrar manualmente a alguien que se inscribió sin conexión o por teléfono.
-   - **Cancelar** registros individuales
-   - **Eliminar** registros de forma permanente
-   - **Promover** registros de la lista de espera cuando se libere un lugar
-   - **Exportar CSV** -- Descargar todos los registros, incluidos los tipos de asistente, selecciones, montos de pago y respuestas a las preguntas
+1. En el menú Jump, elija **Calendarios > Registros**.
+2. Verá una tabla de todos los eventos con el registro habilitado, con el título del evento, la fecha, el número actual de registros frente a la capacidad, y las etiquetas. Escriba en **Buscar eventos** para filtrarla.
+3. Haga clic en el nombre de un evento para ver la lista completa de registros, con las columnas **Nombre**, **Miembros**, **Tipo**, **Pagados / Total**, **Estado** y **Fecha**.
+4. Desde la página de detalle, puede:
+   - **Añadir asistente**: registrar manualmente a alguien que se inscribió fuera de línea o por teléfono.
+   - **Cancelar registro** en registros individuales (le pedirá confirmación)
+   - **Eliminar** registros de forma permanente (le pedirá confirmación)
+   - **Promover** registros en lista de espera cuando se libera un lugar
+   - **Exportar CSV**: descargue todos los registros, incluidos los tipos de asistente, las selecciones, los montos de pago y las respuestas a las preguntas
 
-Si el evento tiene Preguntas de registro adjuntas, la página de detalle también muestra un filtro **Solo preguntas sin responder** para encontrar rápidamente a los inscritos que aún no han enviado respuestas, y un botón **Ver respuestas** en cada registro respondido para ver sus respuestas. Los eventos de pago agregan una columna **Tipo**, una columna **Pagado / Total**, conteos por tipo y un cuadro de diálogo con el detalle de pagos. Consulta [Registros de pago](./paid-registrations.md#the-registration-roster).
+   Estas acciones de fila son iconos al final de cada fila; pase el cursor sobre un icono para ver su nombre.
+
+Si el evento tiene preguntas de registro adjuntas, la página de detalle también muestra un filtro **Solo preguntas sin responder** para encontrar rápidamente a quienes se registraron y aún no han enviado respuestas, y un botón **Ver respuestas** en cada registro respondido para ver sus respuestas. Los eventos con tipos de asistente también muestran los recuentos por tipo encima de la tabla, y cada fila tiene un cuadro de diálogo de **Detalles del registro** con los pagos; consulte [Registros de pago](./paid-registrations.md#the-registration-roster).
+
+El lado izquierdo de la página de detalle muestra cuántas personas están registradas (quien se registró y todas las personas de su registro), con una barra de capacidad, el número de la lista de espera si existe, las etiquetas del evento y sus **Recordatorios**. El título de la tarjeta **Registros** cuenta los registros en lugar de las personas, que es lo que limita la capacidad; así que una familia de cuatro es un registro pero cuatro personas.
 
 :::tip
-Usa la barra de progreso de capacidad para monitorear qué tan rápido se llenan los eventos. La barra se vuelve roja cuando un evento alcanza o supera su capacidad.
+Use la barra de progreso de capacidad en la página de Registros para monitorear qué tan rápido se llenan los eventos. La barra se vuelve roja cuando un evento está en su capacidad o por encima de ella.
 :::
 
-## Próximos pasos
+## Próximos pasos {#next-steps}
 
-- [Calendario curado](./curated-calendar.md) -- Crea un calendario que reúna eventos de varios grupos
-- [Registros de pago](./paid-registrations.md) -- Tipos de asistente, selecciones complementarias, códigos de descuento, pagos y listas de espera
-- [Guía de registro a eventos](../guides/event-registration.md) -- Guía paso a paso para configurar el registro a eventos
-- [Resumen de calendarios](./index.md) -- Volver al resumen de calendarios
+- [Calendario seleccionado](./curated-calendar.md): cree un calendario que tome eventos de varios grupos
+- [Registros de pago](./paid-registrations.md): tipos de asistente, selecciones complementarias, códigos de descuento, pagos y listas de espera
+- [Guía de registro a eventos](../guides/event-registration.md): guía paso a paso para configurar el registro a eventos
+- [Resumen de calendarios](./index.md): regrese al resumen de calendarios

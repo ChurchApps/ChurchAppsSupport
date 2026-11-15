@@ -51,7 +51,7 @@ Bestimmte Anbieter nutzen eine Geräteanmeldung, ähnlich wie Sie sich in Stream
 Ein pulsierendes Symbol **Warten auf Bestätigung** zeigt an, dass FreePlay Ihre Anmeldung prüft. Der Bildschirm zeigt, wie viele Minuten bis zum Ablauf des Codes verbleiben. Schließen Sie den Vorgang daher zügig ab. Ist der Code abgelaufen, wählen Sie **Neuen Code erzeugen**.
 :::
 
-## Anmeldung per Telefon (nur QR-Code)
+## Anmeldung per Telefon (nur QR-Code) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** und **Go Curriculum** verwenden eine etwas andere Anmeldung per QR-Code, bei der Sie keinen Code eingeben müssen:
 

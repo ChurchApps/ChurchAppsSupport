@@ -1,96 +1,111 @@
 ---
-title: "Rollen & Berechtigungen"
-description: "Rollen in B1 Admin festlegen: was Mitarbeitende und Ehrenamtliche sehen und ändern dürfen, von Spenden über Anwesenheit bis zu Personen und Gruppen."
+title: "Rollen und Berechtigungen"
+description: "Richten Sie in B1 Admin Rollen ein, um festzulegen, was Mitarbeitende und ehrenamtlich Tätige sehen und ändern dürfen – von Spenden und Anwesenheit bis zu Personen und Gruppen."
 ---
 
-# Rollen & Berechtigungen
+# Rollen und Berechtigungen
 
 <div class="article-intro">
 
-Mit Rollen steuern Sie, worauf verschiedene Benutzer in Ihrem ChurchApps-Konto zugreifen können. Sie können eigene Rollen für Mitarbeitende, Ehrenamtliche und andere Teammitglieder anlegen, jeweils mit eigener Zugriffsstufe, um Ihre Daten zu schützen.
+Mit Rollen legen Sie fest, worauf verschiedene Benutzer in Ihrem ChurchApps-Konto zugreifen dürfen. Sie können eigene Rollen für Mitarbeitende, ehrenamtlich Tätige und andere Teammitglieder anlegen, jeweils mit eigener Zugriffsstufe, damit Ihre Daten geschützt bleiben.
 
 </div>
 
-## Schulungsvideo
+## Schulungsvideo {#training-video}
 
-<YouTube id="ZzCIkinVMnE" title="Rollen, Berechtigungen und Ihr Team in B1 einladen" next="Dienstzeiten und Anwesenheit in B1 einrichten" nextUrl="/docs/b1-admin/attendance/setup" />
+<YouTube id="ZzCIkinVMnE" title="Rollen, Berechtigungen und das Einladen Ihres Teams in B1" next="Einrichten von Gottesdiensten und Anwesenheit in B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Sie benötigen Zugriff als Domänenadministrator oder eine Rolle mit der Berechtigung, Rollen zu verwalten
-- Halten Sie eine Liste der Teammitglieder und der Bereiche bereit, auf die sie Zugriff brauchen
-- Prüfen Sie die unten aufgeführten Berechtigungskategorien, um Ihre Rollen zu planen
+- Sie benötigen Zugriff als Domain-Administrator oder eine Rolle mit der Berechtigung, Rollen zu verwalten
+- Halten Sie eine Liste Ihrer Teammitglieder und der Bereiche bereit, die sie benötigen
+- Sehen Sie sich die unten aufgeführten Berechtigungskategorien an, um Ihre Rollen zu planen
 
 </div>
 
-## Auf Rollen zugreifen
+## Auf Rollen zugreifen {#accessing-roles}
 
-1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (das Suchfeld oben links) und klappen Sie **Einstellungen** auf.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und klappen Sie **Einstellungen** auf.
 2. Klicken Sie auf **Rollen**.
-3. Die Seite Rollen zeigt alle für Ihre Kirche definierten Rollen. Die Spalte **Mitglieder** zeigt, wie viele Benutzer in jeder Rolle sind, und die Zeile **(Alle)** zeigt **Alle Benutzer**.
+3. Die Seite Rollen zeigt alle derzeit für Ihre Gemeinde definierten Rollen. Die Spalte **Mitglieder** zeigt, wie viele Benutzer in jeder Rolle sind, und die Zeile **(Alle)** zeigt **Alle Benutzer**.
 
-## Die Seite Rollen verstehen
+## Eine Rolle erstellen {#creating-a-role}
 
-Die Seite Rollen ist in zwei Bereiche geteilt:
+Klicken Sie oben auf der Seite Rollen auf **Rolle hinzufügen**. Das Menü bietet:
 
-- **Linke Seite** – Zeigt die Liste der Mitglieder, die der gewählten Rolle zugewiesen sind.
-- **Rechte Seite** – Zeigt die Berechtigungen, die Sie für diese Rolle festlegen können.
+- **Eigene Rolle hinzufügen** -- Öffnet ein Formular **Rolle bearbeiten** oberhalb der Liste. Geben Sie einen **Rollennamen** ein und klicken Sie auf **Speichern**. Die neue Rolle startet ohne Berechtigungen.
+- **Rolle „Buchhaltung“ hinzufügen**, **Rolle „Gemeindemitarbeitende“ hinzufügen**, **Rolle „Inhaltsadministration“ hinzufügen** und **Rolle „Lektionsadministration“ hinzufügen** -- Vorgefertigte Rollen mit einer sinnvollen Auswahl an Berechtigungen. B1 bittet um Bestätigung und legt dann die Rolle an. Sie können ihre Berechtigungen danach wie bei jeder anderen Rolle ändern.
 
-Klicken Sie auf einen beliebigen Rollennamen, um dessen Mitglieder und Berechtigungen anzusehen und zu verwalten.
+## Eine Rolle umbenennen oder löschen {#renaming-or-deleting-a-role}
 
-## Benutzer einer Rolle hinzufügen
+Fahren Sie mit der Maus über die Zeile einer Rolle und klicken Sie auf **Bearbeiten**. Ändern Sie im Formular **Rolle bearbeiten** den **Rollennamen** und klicken Sie auf **Speichern**, oder klicken Sie auf **Löschen** und bestätigen Sie, um die Rolle zu entfernen. Die Rolle **Domain-Administratoren** kann nicht gelöscht werden.
 
-1. Wählen Sie die Rolle, der Sie Mitglieder hinzufügen möchten.
-2. Verwenden Sie das **Suchfeld** auf der linken Seite, um die gewünschte Person zu finden.
-3. Wählen Sie die Person aus den Suchergebnissen.
-4. Sie wird sofort der Rolle hinzugefügt.
+## Die Seite einer Rolle verstehen {#understanding-a-roles-page}
 
-## Benutzer aus einer Rolle entfernen
+Klicken Sie auf den Namen einer Rolle, um deren Seite zu öffnen. Sie hat zwei Bereiche:
 
-1. Wählen Sie die Rolle, die den Benutzer enthält.
-2. Suchen Sie die Person in der Mitgliederliste auf der linken Seite.
-3. Klicken Sie neben ihrem Namen auf die Schaltfläche **Entfernen**.
+- **Mitglieder** (links) -- Die Personen in der Rolle, mit Name und E-Mail-Adresse.
+- **Berechtigungen bearbeiten** (rechts) -- Die Berechtigungen, die Sie der Rolle erteilen können.
 
-## Berechtigungen festlegen
+Die Zeile **(Alle)** öffnet eine Seite für Berechtigungen, die für jeden Benutzer Ihrer Gemeinde gelten; sie hat keine Mitgliederliste.
 
-Jede Rolle kann Zugriff auf bestimmte Bereiche von B1 Admin erhalten. Im Bereich **Berechtigungen bearbeiten** sind die Berechtigungen in Abschnitte gegliedert, die Sie aufklappen können, etwa **Anwesenheit**, **Inhalt**, **Spenden**, **Formulare und Pläne**, **Lektionen**, **Nachrichten**, **Personen und Gruppen** und **Aufgaben**. Geben Sie ein Wort in das Feld **Berechtigungen filtern** ein, um nur die passenden Berechtigungen anzuzeigen.
+## Benutzer einer Rolle hinzufügen {#adding-users-to-a-role}
 
-Aktivieren oder deaktivieren Sie eine Berechtigung, um sie der Rolle zu gewähren oder zu entziehen. Jede Abschnittsüberschrift zeigt, wie viele ihrer Berechtigungen die Rolle hat, etwa **2 von 5**, und die Anzahl aktualisiert sich, während Sie Kästchen an- und abwählen.
+1. Öffnen Sie die Rolle und klicken Sie im Bereich **Mitglieder** auf **Hinzufügen**. Es öffnet sich ein Formular **Hinzufügen zu** für diese Rolle.
+2. Geben Sie einen Namen oder eine E-Mail-Adresse in das Suchfeld ein und klicken Sie auf die Suchschaltfläche.
+3. Klicken Sie neben der Person auf die Schaltfläche zum Hinzufügen. Sie wird sofort der Rolle zugewiesen, und B1 bietet an, ihr eine Einladungs-E-Mail zu senden, damit sie sich anmelden kann.
+4. Ist die Person noch nicht in Ihrer Gemeinde erfasst, klicken Sie unter den Suchergebnissen auf **Neuen Benutzer anlegen**, geben Sie **Vorname**, **Nachname** und **E-Mail** ein und klicken Sie auf **Speichern**.
 
-### Berechtigungen für Spenden
+Um den Namen oder die E-Mail-Adresse eines Mitglieds zu ändern, klicken Sie in dessen Zeile auf das Bearbeiten-Symbol.
+
+## Benutzer aus einer Rolle entfernen {#removing-users-from-a-role}
+
+1. Öffnen Sie die Rolle, die den Benutzer enthält, den Sie entfernen möchten.
+2. Suchen Sie die Person in der Liste **Mitglieder**.
+3. Klicken Sie in ihrer Zeile auf das Löschsymbol und bestätigen Sie.
+
+Ihre Gemeinde muss immer mindestens einen Domain-Administrator haben, daher kann das letzte Mitglied der Rolle **Domain-Administratoren** nicht entfernt werden.
+
+## Berechtigungen konfigurieren {#configuring-permissions}
+
+Jede Rolle kann Zugriff auf bestimmte Bereiche von B1 Admin erhalten. Im Bereich **Berechtigungen bearbeiten** sind die Berechtigungen in Abschnitte gruppiert, die Sie aufklappen können, etwa **Anwesenheit**, **Inhalt**, **Spenden**, **Formulare und Pläne**, **Lektionen**, **Nachrichten**, **Personen und Gruppen** und **Aufgaben**. Geben Sie in das Feld **Berechtigungen filtern** einen Begriff ein, um nur passende Berechtigungen anzuzeigen.
+
+Aktivieren oder deaktivieren Sie eine Berechtigung, um sie der Rolle zu erteilen oder zu entziehen. Jede Änderung wird sofort gespeichert; es gibt keine Schaltfläche Speichern. Beachten Sie, dass **Kircheneinstellungen bearbeiten**, mit dem sich die Seite Einstellungen öffnet, im Abschnitt **Inhalt** liegt. Jede Abschnittsüberschrift zeigt, wie viele ihrer Berechtigungen die Rolle hat, etwa **2 von 5**, und diese Anzahl aktualisiert sich, während Sie Kästchen aktivieren und deaktivieren.
+
+### Berechtigungen für Spenden {#donations-permissions}
 
 Der Abschnitt **Spenden** enthält diese Berechtigungen:
 
-- **Spendenübersichten anzeigen** – Sehen des Bereichs Spenden, einschließlich der Seiten Übersicht, Stapel, Fonds, Kampagnen und Spendenbescheinigungen.
-- **Spenden anzeigen** – Einzelne Spenden sehen, etwa die Gaben innerhalb eines Stapels.
-- **Spenden bearbeiten** – Volle Kontrolle: Spenden und Stapel hinzufügen, bearbeiten und löschen sowie [Stapel schließen und wieder öffnen](../donations/batches.md#closing-and-reopening-a-batch).
-- **Spenden erfassen** – Stapel hinzufügen und Spenden erfassen, bearbeiten oder löschen, aber nur in Stapeln, die noch offen sind. Wer nur diese Berechtigung hat, kann keine Stapel löschen, sie nicht schließen oder wieder öffnen und keine Gaben ändern, die über Online-Spenden eingegangen sind.
-- **Spendeneinstellungen bearbeiten** – Verwalten der Einstellungen für Spenden.
+- **Spendenübersichten anzeigen** -- Zugriff auf den Bereich Spenden, einschließlich der Seiten Übersicht, Stapel, Fonds, Kampagnen und Spendenbescheinigungen.
+- **Spenden anzeigen** -- Einzelne Spenden sehen, etwa die Gaben innerhalb eines Stapels.
+- **Spenden bearbeiten** -- Volle Kontrolle: Spenden und Stapel hinzufügen, bearbeiten und löschen sowie [Stapel schließen und wieder öffnen](../donations/batches.md#closing-and-reopening-a-batch).
+- **Spenden erfassen** -- Stapel anlegen sowie Spenden erfassen, bearbeiten oder löschen, aber nur in Stapeln, die noch geöffnet sind. Personen mit nur dieser Berechtigung können Stapel nicht löschen, nicht schließen oder wieder öffnen und keine Spenden ändern, die über Online-Spenden eingegangen sind.
+- **Einstellungen bearbeiten** -- Spendeneinstellungen verwalten.
 
-Wer **Spenden erfassen**, aber nicht **Spendenübersichten anzeigen** hat, sieht unter **Spenden** nur die Seite **Stapel**. Geben Sie einem Zählteam sowohl **Spenden erfassen** als auch **Spenden anzeigen**, damit es einen Stapel öffnen und die Gaben sehen kann, die es erfasst hat. Details finden Sie unter [Wer einen Stapel ändern kann](../donations/batches.md#who-can-change-a-batch).
+Wer **Spenden erfassen**, aber nicht **Spendenübersichten anzeigen** besitzt, sieht unter **Spenden** nur die Seite **Stapel**. Geben Sie einem Zählteam sowohl **Spenden erfassen** als auch **Spenden anzeigen**, damit es einen Stapel öffnen und die selbst erfassten Gaben sehen kann. Einzelheiten finden Sie unter [Wer einen Stapel ändern kann](../donations/batches.md#who-can-change-a-batch).
 
-### Nur Namen von Personen anzeigen {#people-names-only}
+### Nur Namen von Personen {#people-names-only}
 
-Der Abschnitt **Personen und Gruppen** enthält **Nur Namen von Personen anzeigen**. Verwenden Sie diese Berechtigung für Ehrenamtliche, die Personen nur über den Namen nachschlagen müssen – etwa um jemanden in einem Suchfeld auszuwählen –, ohne Zugriff auf das vollständige Verzeichnis. Mit dieser Berechtigung allein kann eine Person:
+Der Abschnitt **Personen und Gruppen** enthält **Nur Namen von Personen anzeigen**. Verwenden Sie diese Berechtigung für ehrenamtlich Tätige, die Personen über ihren Namen nachschlagen müssen – zum Beispiel, um jemanden in einem Suchfeld auszuwählen –, ohne Zugriff auf das vollständige Verzeichnis zu haben. Mit dieser Berechtigung allein kann eine Person:
 
-- Nach Personen über den Namen suchen und die Liste der kürzlich hinzugefügten Personen sehen, aber nur Name, Foto und Mitgliedsstatus jeder Person sehen
+- Nach Personen über den Namen suchen und die Liste der kürzlich hinzugefügten Personen sehen, dabei aber nur den Namen, das Foto und den Mitgliedsstatus jeder Person sehen
 - Nicht nach E-Mail-Adressen suchen, keine Kontaktdaten sehen und das Verzeichnis **Personen** nicht öffnen
 
-Kombinieren Sie **Nur Namen von Personen anzeigen** mit **Anwesenheit anzeigen** oder **Anwesenheit bearbeiten** für Ehrenamtliche, die die Anwesenheit im Unterricht erfassen. Unter **Personen** in ihrem Menü öffnet sich dann **Gruppen**, wo sie die Liste **Alle Gruppen** öffnen und die Namen der Mitglieder und die Sitzungen jeder Klasse sehen können. Mit **Anwesenheit bearbeiten** können sie außerdem [Anwesenheit erfassen](../attendance/recording-attendance.md) und Gäste über die Suche nach ihrem Namen hinzufügen. Namen sind keine Links zu Personendatensätzen, und vertrauliche Gruppen bleiben verborgen, solange die ehrenamtliche Person nicht Mitglied ist.
+Kombinieren Sie **Nur Namen von Personen anzeigen** mit **Anwesenheit anzeigen** oder **Anwesenheit bearbeiten** für ehrenamtlich Tätige, die die Anwesenheit im Unterricht erfassen. **Personen** in ihrem Menü öffnet dann **Gruppen**, wo sie die Liste **Alle Gruppen** öffnen und die Namen der Mitglieder und die Sitzungen jeder Klasse sehen können. Mit **Anwesenheit bearbeiten** können sie außerdem [Anwesenheit erfassen](../attendance/recording-attendance.md) und Besucher hinzufügen, indem sie deren Namen suchen. Namen sind keine Links zu Personendatensätzen, und vertrauliche Gruppen bleiben verborgen, sofern die ehrenamtlich tätige Person nicht Mitglied ist.
 
-B1 Admin blendet Links und Schaltflächen aus, für die eine Rolle nicht die nötigen Berechtigungen hat. Die Liste **Alle Gruppen** ist zum Beispiel nur für Personen verfügbar, die Gruppen bearbeiten, Gruppenmitglieder oder Personen ansehen können, oder die **Nur Namen von Personen anzeigen** zusammen mit **Anwesenheit anzeigen** oder **Anwesenheit bearbeiten** haben (andere werden zum Dashboard zurückgeschickt). Die Einrichtung der Anwesenheit erscheint nur mit **Gottesdienste bearbeiten**. Die Schaltfläche **E-Mail** einer Gruppe erscheint nur für Personen mit **Gruppenmitglieder bearbeiten** (die Berechtigung, die zum Versand von Gruppen-E-Mails nötig ist). Eine Gruppenliste zu drucken erfordert **Gruppenmitglieder anzeigen** oder die Leitung dieser Gruppe. Das Löschen einer Kalenderveranstaltung erfordert **Inhalte bearbeiten** (oder das Zurückziehen der eigenen offenen Anfrage).
+B1 Admin blendet Links und Schaltflächen aus, für die eine Rolle keine Berechtigung hat. Die Liste **Alle Gruppen** ist zum Beispiel nur für Personen verfügbar, die Gruppen bearbeiten, Gruppenmitglieder anzeigen oder Personen anzeigen können, oder die **Nur Namen von Personen anzeigen** zusammen mit **Anwesenheit anzeigen** oder **Anwesenheit bearbeiten** haben (alle anderen werden zurück zum Dashboard geleitet). Die Einrichtung der Anwesenheit erscheint nur mit **Gottesdienste bearbeiten**, die Schaltfläche **E-Mail** einer Gruppe nur für Personen mit **Gruppenmitglieder bearbeiten** (die Berechtigung für den Versand von Gruppen-E-Mails), das Drucken einer Gruppenliste erfordert **Gruppenmitglieder anzeigen** oder dass man diese Gruppe leitet, und das Löschen eines Kalendertermins erfordert **Inhalte bearbeiten** (oder das Zurückziehen einer eigenen ausstehenden Anfrage).
 
-### Zugang für Check-in-Kioske {#check-in-kiosk-accounts}
+### Konten für Check-in-Terminals {#check-in-kiosk-accounts}
 
-Das Konto, mit dem man sich an einem [Kiosk für B1 Checkin](../../b1-checkin/getting-started/logging-in.md) anmeldet, braucht die Berechtigung **Checkin** im Bereich **Anwesenheit** (oder **Anwesenheit bearbeiten**). Mit **Checkin** allein kann der Kiosk Familien nach Name oder Telefonnummer suchen, sie ein- und auschecken und anzeigen, wer ein Kind abholen darf – ohne Zugriff auf das Personenverzeichnis.
+Das Konto, mit dem sich ein [B1 Checkin](../../b1-checkin/getting-started/logging-in.md)-Terminal anmeldet, benötigt die Berechtigung **Check-in** im Abschnitt **Anwesenheit** (oder **Anwesenheit bearbeiten**). Mit **Check-in** allein kann das Terminal Familien über Namen oder Telefonnummer suchen, sie ein- und auschecken und anzeigen, wer ein Kind abholen darf – ohne Zugriff auf das Personenverzeichnis.
 
-Checkin wird nicht mehr über die Zeile **(Alle)** vergeben. Dass jemand in einer Rolle mit anderen Berechtigungen ist, erlaubt ihm nicht, den Kiosk zu betreiben; fügen Sie **Checkin** einer Rolle wie „Check-in-Ehrenamtliche“ hinzu und nehmen Sie die Kiosk-Konten in diese Rolle auf.
+Check-in wird nicht mehr über die Zeile **(Alle)** erteilt. Eine Mitgliedschaft in einer Rolle mit anderen Berechtigungen erlaubt es niemandem, das Terminal zu betreiben; fügen Sie **Check-in** einer Rolle wie „Check-in-Ehrenamtliche“ hinzu und nehmen Sie die Terminal-Konten in diese Rolle auf.
 
 :::warning
-**Domänenadministratoren** haben vollen Zugriff auf alle Bereiche Ihres ChurchApps-Kontos. Ihre Berechtigungen können nicht geändert oder eingeschränkt werden. Verwenden Sie diese Rolle nur für Ihre vertrauenswürdigsten Administratoren.
+**Domain-Administratoren** haben vollen Zugriff auf alle Bereiche Ihres ChurchApps-Kontos. Ihre Berechtigungen lassen sich weder ändern noch einschränken. Verwenden Sie diese Rolle nur für Ihre vertrauenswürdigsten Administratoren.
 :::
 
 :::tip
-Legen Sie gezielte Rollen an, etwa „Schatzmeister“ nur mit Zugriff auf **Spenden**, „Zählteam“ mit **Spenden erfassen** und **Spenden anzeigen** oder „Check-in-Ehrenamtliche“ nur mit Zugriff auf **Anwesenheit**. Das folgt dem Prinzip der minimalen Rechte und schützt Ihre Daten. Mehr dazu, wie ChurchApps Ihre Informationen schützt, finden Sie unter [Datensicherheit](./data-security.md).
+Legen Sie gezielte Rollen an, etwa „Schatzmeister“ mit nur Zugriff auf **Spenden**, „Zählteam“ mit **Spenden erfassen** und **Spenden anzeigen** oder „Check-in-Ehrenamtliche“ mit nur Zugriff auf **Anwesenheit**. So gilt das Prinzip der minimalen Berechtigung, und Ihre Daten bleiben geschützt. Mehr dazu, wie ChurchApps Ihre Informationen schützt, finden Sie unter [Datensicherheit](./data-security.md).
 :::

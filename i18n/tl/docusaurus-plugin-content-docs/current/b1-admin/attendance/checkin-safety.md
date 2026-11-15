@@ -20,7 +20,7 @@ May kasamang mga kontrol sa kaligtasan ng mga bata ang B1 para sa check-in: limi
 
 </div>
 
-## Kapasidad ng Silid at Pagsasara ng Silid
+## Kapasidad ng Silid at Pagsasara ng Silid {#room-capacity-and-closing-a-room}
 
 Maaaring magpatupad ng sariling limitasyon ang bawat check-in room (grupo). Buksan ang grupo, i-click ang **Edit** para i-edit ang mga setting nito, at hanapin ang seksyong **Check-In Capacity**:
 
@@ -28,7 +28,7 @@ Maaaring magpatupad ng sariling limitasyon ang bawat check-in room (grupo). Buks
 - **Guest Capacity** -- Opsyonal na hiwalay na limitasyon sa dami ng bisitang kayang tanggapin ng silid.
 - **Closed for Check-In** -- Itakda sa **Yes** para agad na ihinto ang lahat ng check-in sa silid na ito (halimbawa, kapag kanselado ang klase o hindi magagamit ang silid). Gumagana pa rin ang mga check-out.
 
-## Mga Ratio ng Volunteer
+## Mga Ratio ng Volunteer {#volunteer-ratios}
 
 Ang parehong seksyong **Check-In Capacity** sa grupo ay may kasamang mga patakaran sa staffing:
 
@@ -50,11 +50,11 @@ Ang higpit ng pagpapatupad ng mga ratio ay isang setting para sa buong simbahan:
 Ang Capacity at Closed for Check-In ay palaging mahigpit na limitasyon — ang pagpili ng warn/block ay para lamang sa mga ratio ng volunteer.
 :::
 
-## Mga Uri ng Check-In
+## Mga Uri ng Check-In {#check-in-types}
 
 Itinatala ng bawat check-in kung ang tao ay **Member**, **Guest**, o **Volunteer**. Pinipili ang uri gamit ang mga chip sa household screen ng kiosk (ang Member ang default). Nakakaapekto ang mga uri sa mga patakarang pangkaligtasan — ang mga volunteer ang nagbibigay ng saklaw sa ratio, at ang mga bisita ay nabibilang sa Guest Capacity ng silid.
 
-## Gabay sa Edad at Grade ng Silid
+## Gabay sa Edad at Grade ng Silid {#age-and-grade-room-guidance}
 
 Maaari kayong magtakda ng saklaw ng edad o grade sa bawat silid para magabayan ng kiosk ang mga pamilya sa angkop na silid:
 
@@ -66,7 +66,7 @@ Nagpapalit ang mga grade sa **grade promotion date** ng inyong simbahan:
 1. Sa B1 Admin, pumunta sa **Settings** at buksan ang seksyong **Grade Promotion**.
 2. Itakda ang buwan at araw kung kailan nagpo-promote ng mga estudyante ang inyong simbahan (halimbawa, Agosto 1). Kinakalkula ang mga edad at grade sa kiosk batay sa pinakahuling promotion date.
 
-## Mga Mapagkakatiwalaan at Hindi Awtorisadong Sumusundo
+## Mga Mapagkakatiwalaan at Hindi Awtorisadong Sumusundo {#trusted-and-not-authorized-pickup-people}
 
 Maaaring magkaroon ang bawat sambahayan ng listahan ng mga taong pinapayagan — o hindi pinapayagan — na sumundo sa mga anak nito.
 

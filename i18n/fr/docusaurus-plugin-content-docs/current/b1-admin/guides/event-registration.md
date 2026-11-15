@@ -1,18 +1,18 @@
 ---
-title: "Guide : Configurer l'inscription à un événement"
-description: "Configurez un formulaire d'inscription à un événement dans B1 Admin pour recueillir les coordonnées des participants et les paiements facultatifs, l'intégrer à votre site web d'église et suivre les inscriptions."
+title: "Guide : Configurer l'inscription aux événements"
+description: "Configurez un formulaire d'inscription à un événement dans B1 Admin pour recueillir les coordonnées des participants et les paiements facultatifs, l'intégrer à votre site web et suivre les inscriptions."
 ---
 
-# Configurer l'inscription à un événement
+# Configurer l'inscription aux événements
 
 <div class="article-intro">
 
-Créez un formulaire d'inscription à un événement, recueillez les informations des participants et les paiements facultatifs, intégrez-le à votre site web d'église et gérez les soumissions au fur et à mesure qu'elles arrivent. Au terme de ce guide, vous disposerez d'une page d'inscription partageable pour n'importe quel événement de votre église.
+Créez un formulaire d'inscription à un événement, recueillez les renseignements des participants et les paiements facultatifs, intégrez-le à votre site web et gérez les soumissions au fur et à mesure qu'elles arrivent. Au terme de ce guide, vous disposerez d'une page d'inscription partageable pour n'importe quel événement de votre église.
 
 </div>
 
 :::info
-**Deux façons de gérer l'inscription à un événement :** Ce guide porte sur l'**inscription par formulaire**, qui vous donne un contrôle total sur les champs personnalisés et la collecte des paiements. Pour les événements plus simples, où il suffit de savoir qui participe, utilisez l'**inscription native aux événements** intégrée au calendrier -- consultez [Créer des calendriers](../calendars/creating-calendars.md#enabling-event-registration) pour les instructions de configuration. L'inscription native permet aux membres de s'inscrire directement depuis [B1.church ou l'application B1](../../b1-church/events/registering.md), avec un suivi des places disponibles, des périodes d'inscription et des confirmations par courriel.
+**Deux façons de gérer l'inscription aux événements :** ce guide traite de **l'inscription par formulaire** -- un formulaire Autonome avec son propre lien public, des questions personnalisées et un champ de paiement facultatif. Pour un événement inscrit à votre calendrier, vous pouvez plutôt utiliser l'**inscription aux événements** intégrée au calendrier -- voir [Création de calendriers](../calendars/creating-calendars.md#enabling-event-registration). Elle permet aux membres de s'inscrire directement depuis [B1.church ou l'application B1](../../b1-church/events/registering.md), avec une capacité, des dates d'ouverture et de fermeture, une liste d'attente, des questions d'inscription facultatives tirées d'un formulaire, et des types de participants avec prix (voir [Inscriptions payantes](../calendars/paid-registrations.md)).
 :::
 
 <div class="prereqs">
@@ -23,66 +23,68 @@ Créez un formulaire d'inscription à un événement, recueillez les information
 
 </div>
 
-## Étape 1 : Créer un formulaire autonome
+## Étape 1 : Créer un formulaire Autonome {#step-1-create-a-stand-alone-form}
 
-Les formulaires autonomes ont leur propre URL publique, accessible à tous -- parfait pour les inscriptions à un événement.
+Les formulaires Autonomes ont leur propre adresse web publique que n'importe qui peut consulter -- parfait pour l'inscription à un événement.
 
 Suivez le guide [Créer des formulaires](../forms/creating-forms.md) pour :
 
-1. Accéder à Formulaires et cliquer sur Ajouter un formulaire
-2. Choisir le type « Autonome » -- cela donne à votre formulaire sa propre URL publique
-3. Le nommer d'après l'événement (par exemple, « Inscription à la retraite des hommes », « Inscription à l'École biblique de vacances »)
+1. Dans le [menu Jump](../introduction.md#getting-around-with-the-jump-menu), choisissez **Personnes > Formulaires** et cliquez sur **Ajouter un formulaire**
+2. Nommez-le d'après l'événement (par exemple « Inscription à la retraite des hommes », « Inscription au VBS »)
+3. Dans **Associer à**, choisissez **Autonome** -- cela donne à votre formulaire sa propre adresse web publique
+4. Cliquez sur **Enregistrer**
 
-## Étape 2 : Ajouter des questions
+## Étape 2 : Ajouter des questions {#step-2-add-questions}
 
-Créez les champs dont vous avez besoin pour recueillir les informations des inscrits.
+Construisez les champs dont vous avez besoin pour recueillir les renseignements des participants.
 
 Suivez le guide [Créer des formulaires](../forms/creating-forms.md#adding-questions) pour ajouter vos questions :
 
-1. Allez dans l'onglet Questions et ajoutez les champs correspondant aux informations recherchées : nom, courriel, téléphone, restrictions alimentaires, taille de t-shirt, contact d'urgence, etc.
-2. Utilisez Choix multiples pour les options telles que les préférences de repas ou les choix de sessions
+1. Ouvrez le formulaire, allez dans l'onglet **Questions** et cliquez sur **Ajouter une question** pour chaque renseignement dont vous avez besoin : nom, courriel, téléphone, restrictions alimentaires, taille de t-shirt, contact d'urgence, etc.
+2. Utilisez **Choix multiple** pour des options comme les préférences de repas ou le choix de sessions
+3. Pour recueillir des frais, ajoutez une question de type **Paiement** et choisissez son **Fonds** et son **Montant**
 
 :::warning
-Le type de champ Paiement nécessite que Stripe soit configuré. Si vous n'avez pas encore configuré les dons en ligne, consultez [Configuration des dons en ligne](../donations/online-giving-setup.md) avant d'ajouter des champs de paiement.
+Le type de champ Paiement exige que Stripe soit configuré. Si vous n'avez pas encore configuré les dons en ligne, consultez la [Configuration des dons en ligne](../donations/online-giving-setup.md) avant d'ajouter des champs de paiement.
 :::
 
-## Étape 3 : Configurer les paramètres du formulaire
+## Étape 3 : Configurer les paramètres du formulaire {#step-3-configure-form-settings}
 
-Définissez à quel moment et de quelle manière votre formulaire d'inscription est disponible.
+Contrôlez quand et comment votre formulaire d'inscription est disponible. Suivez la section [Configurer les propriétés du formulaire](../forms/creating-forms.md#configuring-form-properties) pour :
 
-1. Définissez les dates de disponibilité si l'inscription ne doit être ouverte que pendant une durée limitée
-2. Copiez l'URL publique -- vous pouvez la partager directement
-3. Ajoutez des membres du formulaire avec les rôles Admin ou Lecture seule pour vous aider à gérer les soumissions
+1. Cliquer sur **Modifier le formulaire** et, si l'inscription ne doit être ouverte que pendant une période limitée, régler **Définir une période de disponibilité du formulaire** sur **Oui**, puis choisir les dates de début et de fin
+2. Copier l'**adresse web publique** affichée à gauche de la page du formulaire -- vous pouvez la partager directement. Cliquez sur **Code QR** à côté du formulaire dans la liste des Formulaires pour télécharger un code QR destiné aux feuillets et aux diapositives
+3. Dans l'onglet **Membres du formulaire**, ajoutez des personnes comme **Administrateur** ou **Consultation seulement** pour vous aider à gérer les soumissions, et activez **Notification par courriel** pour toute personne qui doit recevoir un courriel à chaque nouvelle inscription
 
-## Étape 4 : Intégrer à votre site web
+## Étape 4 : Intégrer le formulaire à votre site web {#step-4-embed-on-your-website}
 
-Facilitez la découverte du formulaire d'inscription en l'ajoutant à votre site web d'église.
+Rendez le formulaire d'inscription facile à trouver en l'ajoutant au site web de votre église.
 
-Suivez le guide [Gérer les pages](../website/managing-pages.md) pour :
+Suivez le guide [Éditeur de pages](../website/page-editor.md) pour :
 
-1. Dans l'éditeur de votre site web B1, ajouter une nouvelle section à une page et sélectionner l'élément Formulaire
-2. Choisir votre formulaire d'inscription dans la liste
+1. Ouvrir une page dans l'éditeur de votre site web B1 et cliquer sur **Ajouter du contenu**
+2. Glisser l'élément **Formulaire** dans une section et choisir votre formulaire d'inscription
 
 :::tip
-Partagez aussi l'URL autonome par courriel, sur les réseaux sociaux et dans les bulletins de l'église -- plus il y a d'endroits où le formulaire est visible, plus vous recevrez d'inscriptions.
+Partagez aussi l'adresse web autonome par courriel, sur les réseaux sociaux et dans les feuillets de l'église -- plus le formulaire est visible, plus il y aura d'inscriptions.
 :::
 
-## Étape 5 : Gérer les soumissions
+## Étape 5 : Gérer les soumissions {#step-5-manage-submissions}
 
-Suivez les inscriptions au fur et à mesure et exportez les données lorsque vous en avez besoin.
+Suivez les inscriptions au fur et à mesure qu'elles arrivent et exportez les données lorsque vous en avez besoin.
 
 Suivez le guide [Gérer les soumissions](../forms/managing-submissions.md) pour :
 
-1. Consulter les réponses au fur et à mesure qu'elles arrivent dans l'onglet Soumissions
-2. Exporter au format CSV pour les tableurs, le suivi du nombre de participants ou le partage avec les coordonnateurs d'événements
+1. Examiner les réponses au fur et à mesure qu'elles arrivent dans l'onglet **Soumissions du formulaire**
+2. Cliquer sur **Exporter** pour télécharger un CSV destiné aux tableurs, au suivi du nombre de participants ou au partage avec les coordonnateurs de l'événement
 
-## Vous avez terminé !
+## Terminé ! {#youre-done}
 
-Votre inscription à l'événement est en ligne. Partagez le lien, intégrez-le à votre site web et suivez les inscriptions depuis B1 Admin. Une fois l'événement terminé, exportez la liste finale pour vos archives.
+Votre inscription à l'événement est en ligne. Partagez le lien, intégrez-le à votre site web et suivez les inscriptions depuis B1 Admin. Une fois l'événement terminé, exportez la liste finale pour vos registres.
 
-## Articles connexes
+## Articles connexes {#related-articles}
 
-- [Créer des formulaires](../forms/creating-forms.md) -- créer des formulaires avec différents types de champs
-- [Gérer les soumissions](../forms/managing-submissions.md) -- consulter et exporter les réponses aux formulaires
-- [Gérer les pages](../website/managing-pages.md) -- intégrer des formulaires à votre site web
-- [Configuration des dons en ligne](../donations/online-giving-setup.md) -- requis pour les champs de paiement
+- [Créer des formulaires](../forms/creating-forms.md) — créez des formulaires avec différents types de champs
+- [Gérer les soumissions](../forms/managing-submissions.md) — examinez et exportez les réponses aux formulaires
+- [Éditeur de pages](../website/page-editor.md) — intégrez des formulaires à votre site web
+- [Configuration des dons en ligne](../donations/online-giving-setup.md) — requise pour les champs de paiement

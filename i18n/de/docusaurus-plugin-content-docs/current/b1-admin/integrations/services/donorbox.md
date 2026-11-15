@@ -1,18 +1,18 @@
 ---
 title: "Donorbox"
-description: "Verbinden Sie Donorbox über Zapier mit B1 Admin, damit Online-Spenden automatisch Spendendatensätze und Spenderprofile erstellen, ganz ohne manuellen Export."
+description: "Verbinden Sie Donorbox mit B1 Admin über Zapier, damit Online-Spenden automatisch Spendenaufzeichnungen und Spenderprofile in B1 anlegen – ohne manuellen Export."
 ---
 
 # Donorbox
 
 <div class="article-intro">
 
-Wenn Ihre Gemeinde Spenden über Donorbox entgegennimmt, aber Personen und Konten in B1 verfolgt, können Donorboxs sofortige Zapier-Auslöser passende Spendendatensätze in B1 erstellen – und den Spender als B1-Person erstellen, wenn er noch nicht existiert. Keine manuelle Abstimmung, kein monatlicher Export.
+Wenn Ihre Gemeinde Spenden über Donorbox entgegennimmt, Personen und Bescheinigungen aber in B1 verwaltet, können Sie die sofortigen Zapier-Auslöser von Donorbox passende Spendenaufzeichnungen in B1 erstellen lassen – und den Spender als B1-Person anlegen, falls er noch nicht existiert. Kein manueller Abgleich, kein monatlicher Export.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
 - Ein [Donorbox](https://donorbox.org)-Konto mit mindestens einer Kampagne
 - Ein [Zapier](https://zapier.com)-Konto
@@ -20,72 +20,73 @@ Wenn Ihre Gemeinde Spenden über Donorbox entgegennimmt, aber Personen und Konte
 
 </div>
 
-## Was Sie verkabeln können
+## Was Sie verbinden können {#what-you-can-wire-up}
 
-| Richtung | Donorbox-Auslöser | B1-Aktion |
+| Richtung | Auslöser bei Donorbox | Aktion in B1 |
 |---|---|---|
 | Donorbox → B1 | Neue oder aktualisierte Spende (sofort) | Person suchen → Spende hinzufügen |
 | Donorbox → B1 | Neuer oder aktualisierter Spender | Person erstellen |
-| Donorbox → B1 | Neuer oder aktualisierter Plan (wiederkehrend) | Spende hinzufügen (Plankennung als Notiz verwenden) |
+| Donorbox → B1 | Neuer oder aktualisierter Plan (wiederkehrend) | Person suchen → Spende hinzufügen (Plan-ID als Notiz verwenden) |
 
-Donorbox veröffentlicht seine Auslöser als **sofortig** – sie werden innerhalb von Sekunden nach einer echten Spende ausgelöst. Kein Abruf-Verzug.
+Donorbox stellt seine Auslöser als **sofortig** bereit – sie feuern innerhalb von Sekunden nach einer echten Spende. Es gibt keine Verzögerung durch Abfragen.
 
-## Setup
+## Einrichtung {#setup}
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen B1-API-Schlüssel erstellen {#1-mint-a-b1-api-key}
 
-In B1Admin: **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Geltungsbereiche:
+In B1Admin: **Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Berechtigungen:
 
-- `people:read` – um den Spender nach E-Mail zu suchen
-- `people:write` – um ihn zu erstellen, wenn er neu ist
-- `donations:write` – um die Gabe zu zeichnen
+- `people:read` – um den Spender anhand der E-Mail-Adresse nachzuschlagen
+- `people:write` – um ihn anzulegen, falls er neu ist
+- `donations:write` – um die Gabe zu erfassen
 
-Auslöser in dieser Richtung sind Donorboxs, nicht B1s, also benötigen Sie hier nicht `settings:write`.
+- `settings:write` – Zapier prüft beim Verbinden jeden B1-Schlüssel gegen die Webhook-Liste von B1; ohne diese Berechtigung schlägt die Verbindung fehl (auch wenn hier Donorbox und nicht B1 den Auslöser besitzt)
 
-### 2. Erstellen Sie den „Spende aufzeichnen" Zap
+### 2. Den Zap „Spende erfassen“ erstellen {#2-build-the-record-a-donation-zap}
 
-1. **Auslöser** – Donorbox: Neue Spende. Verbinden Sie mit Donorboxs API-Schlüssel (in Donorbox: *Account → Profil → API-Einstellungen*).
-2. **Aktion** – B1.church: Person suchen. Ordnen Sie die Spender-E-Mail aus dem Auslöser dem Feld *E-Mail* zu.
-3. **Aktion** – Filter by Zapier (optional): fahren Sie nur fort, wenn der Spender nicht gefunden wurde, dann…
-4. **Aktion** – B1.church: Person erstellen. Ordnen Sie Vor-/Nach-/E-Mail zu, damit der Spender als Mitglied landet, nicht nur als Gabe-Datensatz.
-5. **Aktion** – B1.church: Spende hinzufügen. Ordnen Sie zu:
-   - Betrag → `data.amount`
-   - Spendendatum → Spendendatum des Auslösers
-   - Fonds → Wählen Sie den B1-Fonds, der der Donorbox-Kampagne entspricht (Zapier lässt Sie Fonds basierend auf einem Filter- oder Formatter-Schritt wechseln)
-   - Methode → „Online"
-   - Notizen → Donorbox-Transaktions-ID (praktisch bei der Abstimmung)
+1. **Auslöser** – Donorbox: Neue Spende. Verbinden Sie ihn mit dem API-Schlüssel von Donorbox (in Donorbox: *Konto → Profil → API-Einstellungen*).
+2. **Aktion** – B1.church: Person suchen. Ordnen Sie die E-Mail-Adresse des Spenders aus dem Auslöser dem Feld *E-Mail* zu.
+3. **Aktion** – B1.church: Spende hinzufügen. Ordnen Sie zu:
+   - Person → die ID aus Schritt 2
+   - Betrag → der Spendenbetrag aus dem Auslöser
+   - Spendendatum → das Spendendatum aus dem Auslöser
+   - Fonds → wählen Sie den B1-Fonds, der der Donorbox-Kampagne entspricht (Zapier lässt Sie die Fonds anhand eines Filters oder eines Formatter-Schritts wechseln)
+   - Methode → „Online“
+   - Notizen → Transaktions-ID von Donorbox (praktisch beim Abgleich)
 
-Schalten Sie den Zap ein. Die nächste Live-Spende über Donorbox landet in **B1Admin → Spenden** automatisch.
+Schalten Sie den Zap ein. Die nächste Live-Spende über Donorbox landet automatisch unter **B1Admin → Spenden**.
 
-## Häufige Rezepte
+Die Funktion *Person suchen* von B1 bricht den Zap mit dem Fehler „No person found“ ab, wenn niemand diese E-Mail-Adresse hat. Daher kann ein Filterschritt nicht darauf verzweigen. Um Erstspender zu behandeln, aktivieren Sie die Fehlerbehandlung von Zapier für den Schritt Person suchen und führen Sie im Fehlerpfad B1.church: Person erstellen (Vor-/Nachname/E-Mail zuordnen) und danach Spende hinzufügen mit der ID der neuen Person aus. Alternativ führen Sie den Zap *Neuer Spender* → *Person erstellen* aus der Tabelle oben aus, damit Spender in B1 bereits existieren, bevor ihre Gabe eingeht.
 
-### Ein Zap pro Fonds
+## Häufige Rezepte {#common-recipes}
 
-Wenn Sie mehrere Donorbox-Kampagnen führen, die zu separaten B1-Fonds zuordnen, ist das sauberste Layout ein Zap pro Kampagne mit einem Donorbox *campaign* Filter oben – auf diese Weise ist die Fonds-Zuordnung hartcodiert und Sie überspringen den Lookup-Schritt.
+### Ein Zap pro Fonds {#one-zap-per-fund}
 
-### Aktualisierte Spenden als Korrektionen behandeln
+Wenn Sie mehrere Donorbox-Kampagnen betreiben, die separaten B1-Fonds zugeordnet sind, ist die sauberste Anordnung ein Zap pro Kampagne mit einem Filter nach *Kampagne* von Donorbox ganz oben. So ist die Fonds-Zuordnung fest hinterlegt und Sie sparen sich den Nachschlageschritt.
 
-Donorboxs *Neue oder aktualisierte Spende* wird auch bei Bearbeitungen ausgelöst. Verwenden Sie einen Zapier *Path*-Schritt auf `event_type`, um zu gabeln: „new" → Spende hinzufügen, „updated" → Spende suchen + Aktualisieren (Hinweis: B1s Zapier-App hat derzeit keine Update-Spende-Aktion – vorerst melden Sie „updated"-Ereignisse in einem Slack-Kanal zur manuellen Überprüfung).
+### Aktualisierte Spenden als Korrekturen behandeln {#treat-updated-donations-as-corrections}
 
-### Synchronisieren Sie wiederkehrende Planänderungen mit einem Slack-Kanal
+Der Auslöser *Neue oder aktualisierte Spende* von Donorbox feuert auch bei Bearbeitungen. Verwenden Sie einen Zapier-Schritt *Pfad* auf `event_type`, um zu verzweigen: „new“ → Spende hinzufügen, „updated“ → Spende suchen + aktualisieren (Hinweis: Die Zapier-App von B1 hat derzeit keine Aktion „Spende aktualisieren“ – protokollieren Sie „updated“-Ereignisse vorerst in einem Slack-Kanal zur manuellen Prüfung).
+
+### Änderungen wiederkehrender Pläne in einen Slack-Kanal übernehmen {#sync-recurring-plan-changes-to-a-slack-channel}
 
 - **Auslöser** – Donorbox: Neuer oder aktualisierter Plan
-- **Aktion** – Slack: Nachricht zu `#donations` senden (z.B. „Plan geändert — Sarahs monatliche Gabe beträgt jetzt $200")
+- **Aktion** – Slack: Nachricht senden an `#donations` (z. B. „Plan geändert – Saras monatliche Gabe beträgt jetzt 200 $“)
 
-## Limits & Notizen
+## Einschränkungen und Hinweise {#limits--notes}
 
-- **Spender nach E-Mail abgleichen.** Donorbox teilt B1s Personen-ID nicht mit; der einzige dauerhafte Join-Schlüssel ist E-Mail. Spender, die unter einer anderen E-Mail geben, erstellen eine neue B1-Person – Ihre monatliche Abstimmung sollte nach diesen suchen.
-- **Rückerstattungen werden nicht separat verfügbar gemacht** – Donorbox gibt eine Statusaktualisierung für die gleiche Spende aus. B1s Zapier-App hat derzeit keine *Spende aktualisieren*-Aktion; das sichere Muster heute ist, Rückerstattungsereignisse aus dem Verkehr zu registrieren und die Spende manuell anzupassen.
-- **Testen Sie zuerst in Donorboxs Sandbox**, um zu vermeiden, dass falsche Gaben in Produktions-B1 erstellt werden. Donorbox bietet Test-Modus-Anmeldedaten getrennt von Live.
+- **Spender über die E-Mail-Adresse zuordnen.** Donorbox teilt die Person-ID von B1 nicht; der einzige dauerhafte Verknüpfungsschlüssel ist die E-Mail-Adresse. Spender, die unter einer anderen E-Mail-Adresse geben, legen eine neue B1-Person an – Ihr monatlicher Abgleich sollte danach suchen.
+- **Rückerstattungen werden nicht gesondert angezeigt** – Donorbox sendet bei derselben Spende eine Statusaktualisierung. Die Zapier-App von B1 hat derzeit keine Aktion *Spende aktualisieren*; das sichere Vorgehen ist derzeit, Rückerstattungsereignisse außerhalb von B1 zu protokollieren und die Spende manuell anzupassen.
+- **Testen Sie zuerst in der Sandbox von Donorbox**, um keine erfundenen Gaben im Produktivsystem von B1 zu erzeugen. Donorbox stellt Testzugangsdaten getrennt von den Live-Zugangsdaten bereit.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-- **„Person nicht gefunden" Warnung bei jedem Lauf** – das ist in Ordnung, wenn Sie die Schritte so bestellt haben, dass eine *Person erstellen*-Aktion im not-found-Zweig läuft. Wenn der Create Person-Schritt auch nie läuft, überprüfen Sie doppelt, dass der API-Schlüssel `people:write` hat.
-- **Spendenbetrag sieht 100-mal zu groß oder klein aus** – Donorbox sendet Cents in einigen Payload-Varianten und Dollar in anderen. Verwenden Sie einen *Formatter by Zapier – Nummern*-Schritt, um durch 100 zu teilen, wenn nötig.
-- **Doppelte Spenden aus einer einzelnen Gabe** – Donorbox feuert sowohl *Neue Spende* als auch *Spende aktualisiert* aus. Filtern Sie entweder zu `event_type = "donation.succeeded"` oder erstellen Sie zwei Zaps mit nicht überlappenden Filtern.
+- **Fehler „No person found“** – der Spender ist noch nicht in B1 (oder hat unter einer anderen E-Mail-Adresse gegeben). Richten Sie den oben beschriebenen Fehlerpfad ein und prüfen Sie, ob der API-Schlüssel `people:write` besitzt, damit *Person erstellen* ausgeführt werden kann.
+- **Der Spendenbetrag wirkt 100-mal zu groß oder zu klein** – Donorbox sendet je nach Variante der Nutzdaten teils Cent, teils Dollar. Verwenden Sie bei Bedarf einen Schritt *Formatter by Zapier — Numbers*, um durch 100 zu teilen.
+- **Doppelte Spenden aus einer einzigen Gabe** – Donorbox feuert sowohl *Neue Spende* als auch *Aktualisierte Spende*. Filtern Sie entweder auf `event_type = "donation.succeeded"` oder erstellen Sie zwei Zaps mit sich nicht überschneidenden Filtern.
 
-## Siehe auch
+## Siehe auch {#see-also}
 
-- [Zapier (Übersicht)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
-- [Subsplash](./subsplash.md) – eine weitere Spendenplattform mit einer Zapier-App
-- [Mailchimp](./mailchimp.md) – Kettenverkettung „neue Gabe" in ein E-Mail-Tag
+- [Zapier (Überblick)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
+- [Subsplash](./subsplash.md) – eine weitere Spendenplattform mit Zapier-App
+- [Mailchimp](./mailchimp.md) – „Neue Gabe“ mit einer E-Mail-Markierung verknüpfen

@@ -182,7 +182,7 @@ OAuth 클라이언트(타사 앱 자체)는 전역으로 등록됩니다. `clien
 | `POST /membership/oauth/clients` | Server.Admin | 클라이언트 생성 또는 업데이트 |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | 클라이언트 삭제 |
 
-### 동적 클라이언트 등록
+### 동적 클라이언트 등록 {#dynamic-client-registration}
 
 `POST /membership/oauth/register`(공개, RFC 7591)는 claude.ai의 MCP 커넥터 같은 클라이언트가 스스로 등록할 수 있게 합니다. API의 `/.well-known/oauth-authorization-server` 문서에 광고되어 있습니다. [MCP 서버 → OAuth 디스커버리](./mcp.md#oauth-discovery)를 참고하세요.
 
@@ -202,6 +202,6 @@ Content-Type: application/json
 
 B1Admin 동의 페이지에서 자체 등록된 클라이언트에는 스스로 등록했다는 안내가 표시됩니다. 이 클라이언트는 사용자의 B1 계정이 할 수 있는 것 이상은 할 수 없으며, **설정 → 개발자 → 연결된 앱**에서 연결을 끊을 수 있습니다.
 
-## SDK 지원
+## SDK 지원 {#sdk-support}
 
 `@churchapps/integration-sdk` 패키지는 모든 OAuth 흐름을 타입이 지정된 헬퍼로 감쌉니다. `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`이 있습니다. 패키지 README와 [웹훅](./webhooks.md#sdk-support)의 종단 간 예제를 참고하세요.

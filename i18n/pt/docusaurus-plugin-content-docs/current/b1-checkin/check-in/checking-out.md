@@ -51,7 +51,7 @@ Precisa de um pai durante o serviço -- uma mudança de fralda, uma criança cho
 
 Se um nome ou rótulo de retirada for perdido ou danificado, a equipe em uma estação gerenciada pode **reprint** os rótulos da família da tela de check-out após digitar o código de segurança. A reimpressão usa a mesma impressora e modelos de rótulo como o check-in original.
 
-## Transmissão de Emergência
+## Transmissão de Emergência {#emergency-broadcast}
 
 Em uma emergência, a equipe pode enviar um texto aos guardiões de **every checked-in child** para o serviço atual de uma vez:
 

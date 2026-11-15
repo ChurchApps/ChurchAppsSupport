@@ -1,91 +1,92 @@
 ---
-title: "Concepteur d'Étiquettes de Pointage"
-description: "Personnalisez les modèles d'étiquettes de nom et de fiches de récupération imprimés à l'enregistrement dans B1 Admin, y compris les champs, le positionnement et les conditions d'anniversaire ou de notes."
+title: "Concepteur d'étiquettes d'enregistrement"
+description: "Personnalisez les modèles de badges et de coupons de récupération imprimés lors de l'enregistrement dans B1 Admin, y compris les champs, le positionnement et les conditions d'anniversaire ou de notes."
 ---
 
-# Concepteur d'Étiquettes de Pointage
+# Concepteur d'étiquettes d'enregistrement
 
 <div class="article-intro">
 
-Le Concepteur d'Étiquettes vous permet de créer et de personnaliser les modèles de badges de nom et de bordereaux de récupération qui s'impriment lorsque les familles pointent leurs enfants. Vous pouvez contrôler exactement quelles informations apparaissent sur chaque étiquette, où elle est positionnée et comment elle se présente.
+Le concepteur d'étiquettes vous permet de créer et de personnaliser les modèles de badges et de coupons de récupération imprimés lorsque les familles enregistrent leurs enfants. Vous contrôlez exactement les informations qui apparaissent sur chaque étiquette, leur position et leur apparence.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Configurez la [Participation](./setup.md) et configurez au moins un créneau horaire de service avec le pointage activé
-- Configurez le [Pointage](./check-in.md) pour que les étiquettes s'impriment
-- Vous avez besoin d'un accès administratif à la section Participation
+- Configurez les [Présences](./setup.md) et paramétrez au moins un horaire de service avec l'enregistrement activé
+- Configurez l'[Enregistrement](./check-in.md) afin que les étiquettes s'impriment
+- Vous devez disposer de l'autorisation **Modifier les présences**
 
 </div>
 
-## Ouverture du Concepteur d'Étiquettes
+## Ouvrir le concepteur d'étiquettes {#opening-the-label-designer}
 
-Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Mobile**, et cliquez sur **B1 CheckIn**. Cliquez ensuite sur le bouton **Concevoir les Étiquettes** sur la carte Étiquettes de Pointage. Vous verrez une liste de vos modèles d'étiquettes enregistrés, séparés par type : **Badge** et **Bordereau de Récupération**.
+Dans B1 Admin, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche), développez **Mobile** et cliquez sur **Étiquettes**. Vous pouvez aussi cliquer sur **B1 CheckIn**, puis sur **Concevoir les étiquettes** dans la carte **Étiquettes d'enregistrement**.
 
-## Types d'Étiquettes
+La page **Étiquettes d'enregistrement** liste vos modèles enregistrés avec leur **Nom**, leur **Type** (**Badge** ou **Coupon de récupération**) et leur **Taille**. Si vous n'en avez pas encore créé, la page indique **Aucun modèle d'étiquette**, et B1 Checkin imprime son badge et son coupon de récupération intégrés.
 
-- **Badge** — imprimé et attaché à l'enfant. Comprend généralement le nom de l'enfant, sa classe/séance et un code de sécurité.
-- **Bordereau de Récupération** — donné au parent ou au tuteur. Comprend généralement le code de sécurité et une liste des enfants qu'il a pointés.
+## Types d'étiquettes {#label-types}
 
-B1 vous commence avec un modèle de badge par défaut et un modèle de bordereau de récupération par défaut dimensionné pour des étiquettes thermiques standard de 3,5 × 1,1 pouces.
+- **Badge** — imprimé et attaché à l'enfant. Comprend généralement le nom de l'enfant, sa classe ou sa séance, et un code de sécurité.
+- **Coupon de récupération** — remis au parent ou au tuteur. Comprend généralement le code de sécurité et la liste des enfants qu'il a enregistrés.
 
-## Création d'un Modèle d'Étiquette
+Les deux modèles de départ sont dimensionnés pour des étiquettes thermiques standard de 3,5 × 1,1 pouce (Brother DK-1201).
 
-1. Cliquez sur **Ajouter** et choisissez un point de départ dans le menu : **Badge 3,5" x 1,1"**, **Bordereau de Récupération 3,5" x 1,1"**, ou **Vierge**.
-2. Un nouveau modèle s'ouvre dans l'éditeur d'étiquettes.
+## Créer un modèle d'étiquette {#creating-a-label-template}
 
-### Éditeur d'Étiquettes
+1. Cliquez sur **Ajouter une étiquette** et choisissez un point de départ : **Badge 3,5" x 1,1"**, **Coupon de récupération 3,5" x 1,1"** ou **Vierge**.
+2. Le modèle s'ouvre dans l'éditeur d'étiquettes, avec un aperçu de l'étiquette remplie de données d'exemple.
 
-L'éditeur affiche un aperçu mis à l'échelle de l'étiquette à la taille configurée. Le long du panneau de gauche, vous pouvez configurer :
+### Éditeur d'étiquettes {#label-editor}
 
-- **Nom** — le nom du modèle (pour votre référence uniquement)
-- **Type d'Étiquette** — Badge ou Bordereau de Récupération
-- **Largeur / Hauteur** — taille d'étiquette en pouces
+En haut de l'éditeur, vous pouvez définir :
 
-### Ajout de Blocs
+- **Nom** — le nom du modèle (pour votre référence seulement ; obligatoire)
+- **Type** — Badge ou Coupon de récupération
+- **Largeur (po)** / **Hauteur (po)** — dimensions de l'étiquette en pouces
 
-Une étiquette est construite à partir de blocs — des éléments de contenu individuels positionnés sur la toile d'étiquette. Cliquez sur **Ajouter un Bloc** pour insérer un nouveau bloc et choisissez son type :
+### Ajouter des blocs {#adding-blocks}
 
-- **Champ** — récupère une valeur de données au moment de l'impression :
-  - `person.displayName` — le nom complet de la personne
-  - `sessions` — le service/classe dans lequel il s'est pointé
-  - `securityCode` — le code de sécurité de récupération généré aléatoirement
-  - `children` — liste des enfants (pour les bordereaux de récupération)
-  - `person.nametagNotes` — toutes les notes spéciales sur le dossier de la personne
-  - `person.isBirthdayWeek` — vrai si l'anniversaire de la personne (mois et jour) se situe dans les 3 jours avant ou après la date d'accueil
-  - `campus` — le nom du campus
-- **Texte** — du texte statique que vous tapez (pour les titres, les étiquettes ou les instructions)
-- **Code-barres** — un code-barres encodant le code de sécurité
+Une étiquette est composée de blocs — des éléments de contenu individuels placés sur l'étiquette. Cliquez sur un bouton du panneau **Ajouter un bloc** pour en ajouter un :
 
-### Positionnement des Blocs
+- **Champs** — insèrent une valeur au moment de l'impression. Les badges proposent **Nom d'affichage**, **Prénom**, **Nom**, **Surnom**, **Notes du badge** (les notes de la fiche de la personne), **Anniversaire cette semaine** (vrai lorsque l'anniversaire de la personne tombe dans les 3 jours avant ou après la date d'enregistrement), **Séances** (les horaires de service et les salles où elle s'est enregistrée), **Code de sécurité**, **Date** et **Nom de l'église**. Les coupons de récupération proposent **Enfants**, **Enfants et allergies**, **Code de sécurité**, **Date** et **Nom de l'église**.
+- **Texte** — texte statique que vous saisissez (pour les titres, les libellés ou les instructions)
+- **Code-barres** — un code-barres Code 128 ou Code 39 d'un champ, comme le code de sécurité
+- **Code QR** — un code QR d'un champ
+- **Boîte** — un rectangle avec une couleur de remplissage et une bordure facultatives
 
-Chaque bloc a des champs **X**, **Y**, **Largeur** et **Hauteur** exprimés en pourcentages de la toile d'étiquette (0–100). Ajustez-les pour positionner le contenu avec précision. Vous pouvez également définir :
+### Positionner et styliser les blocs {#positioning-and-styling-blocks}
 
-- **Taille de Police** — taille du texte en points
-- **Gras** — basculer le texte en gras
-- **Aligner** — alignement du texte à gauche, au centre ou à droite
-- **Condition** — masquer éventuellement le bloc si un champ est vide (par exemple, afficher uniquement nametagNotes s'il a une valeur). Cela fonctionne également avec `person.isBirthdayWeek` pour afficher un graphique ou du texte d'anniversaire uniquement sur les badges pour les enfants dont l'anniversaire est à quelques jours du pointage.
+Faites glisser un bloc sur l'étiquette pour le déplacer, ou cliquez dessus et utilisez le panneau **Propriétés**. **X**, **Y**, **L** et **H** sont des pourcentages de l'étiquette (0 à 100). Selon le bloc, vous pouvez aussi définir :
 
-### Sauvegarde
+- **Taille de police** — taille du texte, proportionnelle à la hauteur de l'étiquette
+- **Gras** et **Italique**
+- **Alignement** — Gauche, Centre ou Droite
+- **Symbologie** et **Valeur** — pour les codes-barres et les codes QR
+- **Remplissage** et **Bordure** — pour les boîtes
+- **Condition** — **Toujours** affiche le bloc. Choisissez un champ pour n'afficher le bloc que lorsque ce champ **n'est pas vide**, **est vide**, **est égal à** ou **n'est pas égal à** une valeur. Par exemple, n'afficher les notes du badge que lorsqu'elles sont remplies, ou afficher un graphique d'anniversaire seulement lorsque **Anniversaire cette semaine** est égal à `true`.
 
-Cliquez sur **Enregistrer** pour enregistrer le modèle. Le modèle mis à jour sera utilisé la prochaine fois que des étiquettes seront imprimées dans B1 Checkin.
+Cliquez sur **Supprimer le bloc** pour effacer le bloc sélectionné.
 
-## Réorganisation des Modèles
+### Enregistrer {#saving}
 
-Si vous avez plusieurs modèles de badge ou de bordereau de récupération, B1 Checkin utilisera le premier modèle de la liste par défaut. Faites glisser les modèles pour les réorganiser.
+Cliquez sur **Enregistrer** pour sauvegarder le modèle, ou sur **Annuler** pour abandonner vos modifications. B1 Checkin utilise le modèle mis à jour la prochaine fois qu'il charge ses paramètres.
 
-## Suppression d'un Modèle
+## Choisir le modèle par défaut {#choosing-the-default-template}
 
-Cliquez sur l'icône de suppression sur n'importe quelle ligne de modèle et confirmez. La suppression du dernier modèle d'un type restaure le modèle par défaut intégré.
+Si vous avez plusieurs modèles d'un même type, cliquez sur **Définir par défaut** pour celui que B1 Checkin doit imprimer. Il affiche un badge **Par défaut**, et tout autre modèle de ce type cesse d'être celui par défaut. Si aucun modèle d'un type n'est marqué par défaut, la borne utilise le premier.
+
+## Supprimer un modèle {#deleting-a-template}
+
+Cliquez sur **Supprimer** sur la ligne du modèle et confirmez. Si vous supprimez tous les modèles d'un type, B1 Checkin revient à l'étiquette intégrée pour ce type.
 
 :::tip
-Faites un test d'impression après avoir modifié un modèle pour confirmer que la mise en page semble correcte avant votre prochain service.
+Faites une impression test après avoir modifié un modèle pour vérifier que la mise en page est correcte avant votre prochain service.
 :::
 
-## Articles Connexes
+## Articles connexes {#related-articles}
 
-- [Configuration du Pointage](./setup.md) — configurer les services et les groupes pour le pointage
-- [Effectuer le Pointage](./check-in.md) — le flux de pointage pour les familles
-- [Bien Démarrer avec B1 Checkin](../../b1-checkin/getting-started/index.md) — l'application borne Checkin
+- [Configuration des présences](./setup.md) — configurer les services et les groupes pour l'enregistrement
+- [Enregistrement](./check-in.md) — configurer la borne B1 Checkin
+- [Premiers pas avec B1 Checkin](../../b1-checkin/getting-started/index.md) — l'application de borne Checkin

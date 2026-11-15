@@ -1,67 +1,67 @@
 ---
-title: "Um Beitritt zu einer Gruppe bitten"
-description: "Beantragen Sie auf B1.church den Beitritt zu genehmigungspflichtigen Gruppen, mit optionaler Notiz. Offene Anfragen können Sie verfolgen oder stornieren."
+title: "Beitritt zu einer Gruppe anfragen"
+description: "Bitte in B1.church um den Beitritt zu einer Gruppe, die eine Genehmigung verlangt, füge eine optionale Notiz für die Leitung hinzu und verfolge oder storniere deine ausstehende Anfrage."
 ---
 
-# Um Beitritt zu einer Gruppe bitten
+# Beitritt zu einer Gruppe anfragen
 
 <div class="article-intro">
 
-Einige Gruppen erfordern eine Genehmigung, bevor Sie Mitglied werden können. Wenn eine Gruppe diese Einstellung hat, reichen Sie eine Beitrittanfrage ein -- optional mit einer Nachricht an den Gruppenleiter -- und warten auf die Genehmigung oder Ablehnung durch den Leiter. Sie können den Status Ihrer ausstehenden Anfragen jederzeit anzeigen und sie jederzeit stornieren.
+Manche Gruppen verlangen eine Genehmigung, bevor du Mitglied werden kannst. Hat eine Gruppe diese Einstellung, reichst du eine Beitrittsanfrage ein -- optional mit einer Nachricht an die Gruppenleitung -- und wartest, bis die Leitung zustimmt oder ablehnt. Den Status deiner ausstehenden Anfragen kannst du jederzeit ansehen und sie stornieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen [angemeldet](../getting-started/logging-in.md) sein, um bei Ihrem B1.church-Konto eine Beitrittanfrage für eine Gruppe einzureichen.
+- Du musst in deinem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein, um den Beitritt zu einer Gruppe anzufragen.
 
 </div>
 
-## Beitreten vs. Um Beitritt bitten
+## Beitreten oder Beitritt anfragen {#joining-vs-requesting-to-join}
 
-Gruppen können unterschiedliche Beitrittrichtlinien haben, die von ihren Administratoren festgelegt werden:
+Gruppen können von ihren Administratoren unterschiedliche Beitrittsregeln erhalten:
 
-- **Offen** -- Klicken Sie auf **Gruppe beitreten** auf der Seite mit den Gruppendetails und Sie werden sofort als Mitglied hinzugefügt.
-- **Genehmigung erforderlich** -- Klicken Sie auf **Um Beitritt bitten**, um eine Anfrage einzureichen, die ein Gruppenleiter genehmigen muss, bevor Sie Mitglied werden.
-- **Geschlossen** -- Es wird keine Beitrittschaltfläche angezeigt. Mitglieder müssen manuell von Leitern hinzugefügt werden.
+- **Offen** -- Klicke auf der Detailseite der Gruppe auf **Gruppe beitreten**, und du wirst sofort als Mitglied aufgenommen.
+- **Anfrage erforderlich** -- Klicke auf **Beitritt anfragen**, um eine Anfrage einzureichen, die eine Gruppenleitung genehmigen muss, bevor du Mitglied wirst.
+- **Geschlossen** -- Es erscheint keine Beitrittsschaltfläche. Mitglieder müssen von Leitern manuell hinzugefügt werden.
 
-## Wie Sie eine Beitrittanfrage einreichen
+## So reichst du eine Beitrittsanfrage ein {#how-to-submit-a-join-request}
 
-1. Navigieren Sie zu der Gruppe, der Sie beitreten möchten. Siehe [Gruppen durchsuchen](./browsing-groups.md), wenn Sie Hilfe beim Finden benötigen.
-2. Öffnen Sie die Seite mit den Gruppendetails.
-3. Klicken Sie auf **Um Beitritt bitten**.
-4. Ein Dialog wird angezeigt, in dem Sie optional eine Nachricht an den Gruppenleiter schreiben können, in der Sie erklären, warum Sie beitreten möchten.
-5. Klicken Sie auf **Absenden**, um Ihre Anfrage zu senden.
+1. Suche die Gruppe, der du beitreten möchtest. Siehe [Gruppen durchsuchen](./browsing-groups.md), falls du Hilfe beim Finden brauchst.
+2. Öffne die Detailseite der Gruppe.
+3. Klicke auf **Beitritt anfragen**.
+4. Es erscheint der Dialog **Beitritt anfragen**, in dem du optional unter **Nachricht (optional)** an die Gruppenleitung schreiben kannst, warum du beitreten möchtest.
+5. Klicke auf **Anfrage senden**, um deine Anfrage abzuschicken.
 
-Die Seite der Gruppe zeigt nun einen **Anfrage ausstehend** Vermerk anstelle der Schaltfläche. Die Leiter der Gruppe erhalten eine Benachrichtigung über Ihre Anfrage. Sobald sie sie überprüft haben, erhalten Sie eine Benachrichtigung mit dem Ergebnis.
+Die Seite der Gruppe zeigt nun anstelle der Schaltfläche einen Hinweis **Anfrage ausstehend**. Die Gruppenleitung erhält eine Benachrichtigung über deine Anfrage. Sobald sie sie geprüft hat, erhältst du eine Benachrichtigung mit dem Ergebnis.
 
 :::tip
-Eine kurze Nachricht zu schreiben -- z.B. wie Sie von der Gruppe gehört haben oder was Sie davon erwarten -- kann dem Leiter helfen, schneller eine Entscheidung zu treffen.
+Eine kurze Nachricht -- etwa wie du von der Gruppe erfahren hast oder was du dir davon erhoffst -- kann der Leitung helfen, schneller zu entscheiden.
 :::
 
-## Überprüfung des Status Ihrer Anfragen
+## Den Status deiner Anfragen prüfen {#checking-the-status-of-your-requests}
 
-Nach dem Absenden einer Anfrage können Sie deren Status auf der Seite **Gruppen** anzeigen:
+Nachdem du eine Anfrage gesendet hast, kannst du ihren Status auf dem Bildschirm **Gruppen** im Mitgliederportal ansehen (dem Bildschirm, der deine eigenen Gruppen auflistet, nicht der öffentlichen Seite **Gruppe finden**):
 
-1. Navigieren Sie zur Seite **Gruppen** auf der B1.church-Website Ihrer Kirche.
-2. Scrollen Sie nach unten zum Abschnitt **Ausstehende Anfragen**.
-3. Jede ausstehende Anfrage zeigt den Gruppennamen und das Datum an, an dem Sie sie eingereicht haben.
+1. Öffne **Gruppen** im Mitgliederportal.
+2. Scrolle zum Abschnitt **Ausstehende Anfragen**. Er erscheint nur, solange eine Anfrage auf Antwort wartet.
+3. Jede ausstehende Anfrage zeigt den Gruppennamen und das Datum, an dem du sie eingereicht hast (zum Beispiel "Angefragt 10.11.2026").
 
-Wenn eine Anfrage genehmigt oder abgelehnt wurde, erhalten Sie eine Benachrichtigung -- genehmigte Anfragen machen Sie zum Mitglied in der Gruppe.
+Wird eine Anfrage genehmigt oder abgelehnt, erhältst du eine Benachrichtigung -- genehmigte Anfragen nehmen dich als Mitglied in die Gruppe auf.
 
-## Stornierung einer Anfrage
+## Eine Anfrage stornieren {#cancelling-a-request}
 
-Wenn Sie sich vor der Überprüfung durch einen Leiter anders überlegen:
+Wenn du deine Meinung änderst, bevor eine Leitung deine Anfrage prüft:
 
-1. Gehen Sie zur Seite **Gruppen**.
-2. Suchen Sie Ihre Anfrage im Abschnitt **Ausstehende Anfragen**.
-3. Klicken Sie auf **Stornieren** neben der Anfrage.
+1. Öffne **Gruppen** im Mitgliederportal.
+2. Finde deine Anfrage im Abschnitt **Ausstehende Anfragen**.
+3. Klicke neben der Anfrage auf **Anfrage zurückziehen**.
 
-Die Anfrage wird sofort zurückgezogen und der Leiter sieht sie nicht mehr.
+Die Anfrage wird sofort zurückgezogen, und die Leitung sieht sie nicht mehr.
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Gruppen durchsuchen](./browsing-groups.md) -- Finden Sie Gruppen zum Beitreten
-- [Gruppendetails](./group-details.md) -- Was Sie auf einer Gruppenseite sehen und tun können
-- [Gruppengespräche](./conversations.md) -- Nehmen Sie an Diskussionen teil, sobald Sie Mitglied sind
+- [Gruppen durchsuchen](./browsing-groups.md) -- Gruppen finden, denen du beitreten kannst
+- [Gruppendetails](./group-details.md) -- Was du auf der Seite einer Gruppe sehen und tun kannst
+- [Gruppenunterhaltungen](./conversations.md) -- An Diskussionen teilnehmen, sobald du Mitglied bist

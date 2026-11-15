@@ -1,13 +1,13 @@
 ---
-title: "Veiledning: Følg opp oppmøtet i menigheten"
-description: "Før oppmøte i B1 Admin ved å sette opp campuser og gudstjenestetider, registrere det manuelt eller via selvinnsjekk, og lese rapportene."
+title: "Veiledning: Før oversikt over kirkens oppmøte"
+description: "Før oversikt over oppmøte i B1 Admin ved å sette opp kampuser og gudstjenestetider, registrere det manuelt eller via selvinnsjekking, og lese rapporter."
 ---
 
-# Følg opp oppmøtet i menigheten
+# Før oversikt over kirkens oppmøte
 
 <div class="article-intro">
 
-Sett opp oppmøteregistrering for gudstjenestene og gruppene dine – fra å konfigurere avdelinger og samlingstider, til å registrere oppmøte manuelt eller via selvbetjent innsjekking, og til å se utviklingen i rapporter. Når du er ferdig, har du full oversikt over hvem som kommer og når.
+Sett opp oppmøteregistrering for gudstjenestene og gruppene dine, fra konfigurering av kampuser og gudstjenestetider, til registrering av oppmøte manuelt eller via selvbetjent innsjekkingsapp, og til å se trender i rapportene. Når du er ferdig, har du et fullstendig bilde av hvem som er til stede og når.
 
 </div>
 
@@ -15,85 +15,90 @@ Sett opp oppmøteregistrering for gudstjenestene og gruppene dine – fra å kon
 <h4>Før du begynner</h4>
 
 - B1 Admin-konto med administratortilgang
-- [Personer lagt til i registeret ditt](../people/adding-people.md)
-- [Grupper opprettet](../groups/creating-groups.md) for tjenestegrenene du vil følge opp
+- [Personer lagt til i katalogen din](../people/adding-people.md)
+- [Grupper opprettet](../groups/creating-groups.md) for tjenestene du vil følge
 
 </div>
 
-## Trinn 1: Konfigurer avdelinger og samlinger
+## Steg 1: Konfigurer kampuser og gudstjenester {#step-1-configure-campuses--services}
 
-Bestem hvor og når menigheten samles.
+Definer hvor og når kirken din samles.
 
 Følg veiledningen [Oppsett av oppmøte](../attendance/setup.md) for å:
 
-1. Legge til avdelingen din (for eksempel «Hovedavdeling»)
-2. Legge til samlingstider (for eksempel «Søndag 09:00», «Søndag 11:00», «Onsdag 19:00»)
-3. Knytte grupper til hver samlingstid for å bestemme hvilke klasser og tjenestegrener som møtes under samlingen
+1. I [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu), velg **Personer > Oppmøte** og klikk på **Oppsett**
+2. Legg til kampusen din (f.eks. «Hovedkampus») og gudstjenestene som holdes der
+3. Legg til gudstjenestetider (f.eks. «Søndag kl. 09:00», «Søndag kl. 11:00», «Onsdag kl. 19:00»)
 
-## Trinn 2: Aktiver oppmøteregistrering for grupper
+## Steg 2: Aktiver oppmøteregistrering for grupper {#step-2-enable-group-attendance-tracking}
 
-Slå på oppmøteregistrering for gruppene du vil følge opp.
+Slå på oppmøteregistrering for gruppene du vil følge med på.
 
 Følg veiledningen [Opprette grupper](../groups/creating-groups.md) for å:
 
-1. Redigere hver gruppe du vil følge opp og slå på «Følg oppmøte»
-2. Knytte gruppene til samlingstider slik at oppmøtet registreres på riktig samling
+1. Åpne hver gruppe du vil følge, klikk på **Rediger**, og sett **Registrer oppmøte** til **Ja**
+2. Hvis gruppen møtes under en gudstjeneste, velg tidspunktet under **Legg til gudstjenestetid** og klikk på plusstegnet slik at oppmøtet registreres på riktig gudstjeneste. Klikk deretter på **Lagre**
 
 :::info
-Ikke alle grupper trenger oppmøteregistrering. Aktiver den for grupper der du vil følge deltakelsen – barneklasser, smågrupper, søndagsskole og lignende.
+Ikke alle grupper trenger oppmøteregistrering. Slå det på for grupper der du vil følge deltakelsen, som barneklasser, smågrupper, søndagsskole osv.
 :::
 
-## Trinn 3: Registrer oppmøte manuelt
+## Steg 3: Registrer oppmøte manuelt {#step-3-record-attendance-manually}
 
-Kryss av for hvem som møtte opp på hver samling og i hver gruppe.
+Kryss av for hvem som var til stede på hver gudstjeneste og i hver gruppe.
 
 Følg veiledningen [Registrere oppmøte](../attendance/recording-attendance.md) for å:
 
-1. Åpne en gruppe, klikk på **Alle økter** i seksjonen **Økter**, og legg til en økt for datoen og samlingstiden. Merk av for **Legg også til for de andre gruppene** for å opprette økter for alle klasser på den samlingstiden samtidig.
-2. Kryss av for hvem som møtte opp i hver gruppe
+1. Åpne en gruppe, klikk på **Alle økter** i delen **Økter**, klikk på **Ny**, og velg **Gudstjenestetid** og **Øktdato**. Kryss av for **Legg også til for de andre _N_ gruppene i _gudstjenestetid_** for å opprette økter for alle klasser på den gudstjenestetiden samtidig.
+2. Kryss av for hvem som var til stede, og klikk på **Lagre oppmøte**
+
+Hvis du bare trenger et totaltall i stedet for navn (for eksempel for hovedgudstjenesten), klikk på **Registrer antall** på siden **Oppmøte** i stedet. Se [Registrering av antall](../attendance/headcount-entry.md).
 
 :::tip
-Manuell registrering fungerer utmerket for gudstjenester for voksne, smågrupper og alle situasjoner der en innsjekkingskiosk ikke er praktisk.
+Manuell registrering fungerer godt for voksengudstjenester, smågrupper og situasjoner der en innsjekkingsterminal ikke er praktisk.
 :::
 
-## Trinn 4: Sett opp selvbetjent innsjekking (valgfritt)
+## Steg 4: Sett opp selvinnsjekking (valgfritt) {#step-4-set-up-self-check-in-optional}
 
-La medlemmene sjekke seg inn selv på et nettbrett i kioskmodus.
+La medlemmene sjekke seg inn selv ved hjelp av en nettbrettterminal.
 
 Følg veiledningen [Innsjekking](../attendance/check-in.md) for å:
 
-1. Installere appen B1 Checkin på et nettbrett for selvbetjent innsjekking
-2. La medlemmene søke opp navnet sitt og sjekke inn seg selv og familien
-3. Oppmøte fra innsjekking vises sammen med manuelt registrert oppmøte – det er ingen forskjell i dataene
+1. Installere B1 Checkin-appen på et nettbrett for selvbetjent innsjekking
+2. La medlemmer søke etter navnet sitt og sjekke seg inn selv og familien sin
+3. Innsjekkingsregistreringer vises sammen med manuelt registrerte oppmøter, uten forskjell i dataene
 
 :::info
-For et fullstendig oppsett av barnearbeidet, inkludert maskinvare og skriverkonfigurasjon, se [Veiledning for barneinnsjekking](./childrens-checkin.md).
+For et komplett oppsett av barnearbeidet, inkludert maskinvare og skriverkonfigurasjon, se [veiledningen for barneinnsjekking](./childrens-checkin.md).
 :::
 
-## Trinn 5: Se oppmøterapporter
+## Steg 5: Se oppmøterapporter {#step-5-view-attendance-reports}
 
-Få det store bildet av deltakelsen i menigheten.
+Få det store bildet av deltakelsen i kirken din.
 
-Følg veiledningen [Oppmøterapporter](../reports/attendance-reports.md). Det finnes tre rapportvisninger:
+Følg veiledningen [Oppmøterapporter](../reports/attendance-reports.md). På siden **Oppmøte**, klikk på **Alle år** for å finne disse rapportene som faner:
 
-1. **Oppmøteutvikling** — se oppmøtet over tid for å oppdage vekst eller nedgang
-2. **Gruppeoppmøte** — se hvem som møtte opp på hver gruppeøkt i en periode, med nedlasting som CSV
-3. **Daglig gruppeoppmøte** — oppdeling dag for dag for detaljert analyse
+1. **Oppmøtetrend** — se oppmøte over tid for å oppdage vekst eller nedgang
+2. **Trend for antall** — diagram over antalltotalene du har registrert for hånd
+3. **Gruppeoppmøte** — se hvem som var til stede på hver gruppeøkt i et datointervall, med CSV-nedlasting
+
+For en telling dag for dag for én gruppe, åpne rapporten **Daglig gruppeoppmøte** på **admin.b1.church/reports/dailyGroupAttendance**.
 
 :::info
-Rapportene kombinerer både manuelt registrert oppmøte og oppmøte fra selvbetjent innsjekking. Dataene vises på samme måte uansett – begge metodene mater de samme rapportene.
+Oppmøterapportene kombinerer både manuelt registrert oppmøte og selvinnsjekking. Dataene vises likt uansett metode, og begge metodene mates inn i de samme rapportene.
 :::
 
-## Du er ferdig!
+## Du er ferdig! {#youre-done}
 
-Oppmøteregistreringen er satt opp. Enten du registrerer oppmøte manuelt, bruker innsjekkingsappen eller begge deler, havner alle dataene i de samme rapportene, slik at du har en klar oversikt over deltakelsen i menigheten.
+Oppmøteregistreringen din er satt opp. Enten du registrerer oppmøte manuelt, bruker innsjekkingsappen, eller begge deler, havner alle dataene i de samme rapportene, slik at du har et tydelig bilde av deltakelsen i hele kirken.
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Oppsett av oppmøte](../attendance/setup.md) — konfigurer avdelinger og samlinger
+- [Oppsett av oppmøte](../attendance/setup.md) — konfigurer kampuser og gudstjenester
+- [Registrering av antall](../attendance/headcount-entry.md) — før totaltall uten navn
 - [Registrere oppmøte](../attendance/recording-attendance.md) — registrer oppmøte manuelt
-- [Følge opp oppmøte](../attendance/tracking-attendance.md) — se på utviklingen i oppmøtet
+- [Følge oppmøte](../attendance/tracking-attendance.md) — gjennomgå oppmøtetrender
 - [Innsjekking](../attendance/check-in.md) — selvbetjent innsjekkingsapp
 - [Opprette grupper](../groups/creating-groups.md) — sett opp grupper med oppmøteregistrering
-- [Oppmøterapporter](../reports/attendance-reports.md) — se utviklingen i oppmøtet
-- [Veiledning for barneinnsjekking](./childrens-checkin.md) — fullstendig oppsett av innsjekking for barnearbeidet
+- [Oppmøterapporter](../reports/attendance-reports.md) — se oppmøtetrender
+- [Veiledning for barneinnsjekking](./childrens-checkin.md) — komplett oppsett av innsjekking i barnearbeidet

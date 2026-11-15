@@ -1,94 +1,93 @@
 ---
 title: "Clearstream"
-description: "Conecte o Clearstream SMS ao B1 Admin pelo Zapier: envie textos em novas doações ou formulários e traga as respostas recebidas de volta como pessoas."
+description: "Conecte o SMS da Clearstream ao B1 Admin pelo Zapier: envie mensagens de texto para novas doações ou envios de formulários e traga as respostas recebidas de volta como pessoas."
 ---
 
 # Clearstream
 
 <div class="article-intro">
 
-Dispare uma mensagem de texto [Clearstream](https://clearstream.io) de qualquer evento B1 — nova pessoa, novo presente, envio de formulário, atualização de calendário — e puxe respostas de volta como registros B1. O aplicativo Zapier do Clearstream expõe ambas as direções, então toda a fiação é uma receita e não código personalizado.
+Dispare uma mensagem de texto da [Clearstream](https://clearstream.io) a partir de qualquer evento do B1 -- nova pessoa, nova doação, envio de formulário, atualização de calendário -- e traga as respostas de volta como registros do B1. O app da Clearstream no Zapier oferece as duas direções, então toda a integração é uma receita, e não código personalizado.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Uma conta [Clearstream](https://clearstream.io) com pelo menos uma lista e uma alocação de SMS
-- Uma conta [Zapier](https://zapier.com)
-- Um usuário B1Admin com permissão para **Editar Configurações**
+- Uma conta na [Clearstream](https://clearstream.io) com pelo menos uma lista e uma cota de SMS
+- Uma conta no [Zapier](https://zapier.com)
+- Um usuário do B1Admin com a permissão **Editar configurações**
 
 </div>
 
-## O Que Você Pode Conectar
+## O que você pode conectar {#what-you-can-wire-up}
 
 | Direção | Gatilho | Ação |
 |---|---|---|
-| B1 → Clearstream | B1 `person.created` | Clearstream: Criar/Atualizar Assinante + Enviar Texto para Número |
-| B1 → Clearstream | B1 `donation.created` | Clearstream: Enviar Texto para Lista (por ex. notificar a equipe de finanças) |
-| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Enviar Texto para uma lista de roteamento (por ex. equipe de pedido de oração) |
-| Clearstream → B1 | Novo Texto Recebido | B1: Criar Pessoa; tag com a palavra-chave que eles texaram |
+| B1 → Clearstream | B1 `person.created` | Clearstream: Criar/atualizar assinante + Enviar texto para número |
+| B1 → Clearstream | B1 `donation.created` | Clearstream: Enviar texto para lista (por exemplo, avisar a equipe financeira) |
+| B1 → Clearstream | B1 `form.submission.created` | Clearstream: Enviar texto para uma lista de encaminhamento (por exemplo, a equipe de pedidos de oração) |
+| Clearstream → B1 | Nova mensagem de texto recebida | B1: Criar pessoa; marcar com a palavra-chave enviada no texto |
 
-Ações Clearstream do Zapier: *Enviar Texto para Número*, *Enviar Texto para Lista*, *Criar/Atualizar Assinante*, *Adicionar Assinante a Fluxo de Trabalho Automatizado*, *Adicionar Tag a Assinante*, *Remover Assinante da Lista*.
+Ações da Clearstream no Zapier: *Enviar texto para número*, *Enviar texto para lista*, *Criar/atualizar assinante*, *Adicionar assinante a fluxo de trabalho automatizado*, *Adicionar marcação ao assinante*, *Remover assinante da lista*.
 
-## Configuração
+## Configuração {#setup}
 
-### 1. Cunhar uma chave de API B1
+### 1. Crie uma chave de API do B1 {#1-mint-a-b1-api-key}
 
-**Configurações → Desenvolvedor → Chaves de API → Nova Chave de API**:
+**Configurações → Desenvolvedor → Chaves de API → Nova chave de API**:
 
-- `settings:write` — obrigatório para B1 registrar o webhook do gatilho
-- `people:read` — necessário para procurar a pessoa do evento (`personId` → nome/telefone/email)
-- (Opcional) `people:write` se respostas Clearstream devem criar contatos B1
+- `settings:write` -- necessário para conectar a chave ao Zapier e para o B1 registrar o webhook do gatilho
+- `people:read` -- necessário para buscar a pessoa a partir do evento (`personId` → nome/telefone/e-mail)
+- (Opcional) `people:write`, se as respostas da Clearstream devem criar contatos no B1
 
-### 2. Construir o Zap "texto em novo presente"
+### 2. Monte o Zap "enviar texto para nova doação" {#2-build-the-text-on-new-gift-zap}
 
-1. **Gatilho** — B1.church: Nova Doação
-2. **Ação** — B1.church: Procurar Pessoa (o `personId` da doação)
-3. **Ação** — Clearstream: Enviar Texto para Número. Use o telefone da pessoa do passo 2 como destinatário, componha a mensagem (`"Obrigado por seu presente, {first}! …"`).
+1. **Gatilho** -- B1.church: Nova doação
+2. **Ação** -- B1.church: Encontrar pessoa (o `personId` da doação)
+3. **Ação** -- Clearstream: Enviar texto para número. Use o telefone da pessoa obtido na etapa 2 como destinatário e componha a mensagem (`"Thanks for your gift, {first}! …"`).
 
-Ative o Zap. B1 registra o webhook de doação ao ativar; você verá `Zapier — donation.created` aparecer em **Configurações → Desenvolvedor → Webhooks**.
+Ative o Zap. O B1 registra o webhook de doações na ativação; você verá `Zapier — donation.created` aparecer em **Configurações → Desenvolvedor → Webhooks**.
 
-### 3. (Opcional) Puxe respostas de volta como registros B1
+### 3. (Opcional) Traga as respostas de volta como registros do B1 {#3-optional-pull-replies-back-as-b1-records}
 
-1. **Gatilho** — Clearstream: Novo Texto Recebido
-2. **Ação** — Filtrar por Zapier na palavra-chave — por ex. apenas continuar se o corpo do texto começar com `PRAY`
-3. **Ação** — B1.church: Procurar Pessoa (por telefone)
-4. **Ação** — Filtro / Caminho — se não encontrado, crie-o; qualquer forma, arquive o corpo do texto em algum lugar (Slack, Google Sheet, ou um envio de formulário B1 via Webhooks por Zapier).
+1. **Gatilho** -- Clearstream: Nova mensagem de texto recebida
+2. **Ação** -- Filtro pelo Zapier com a palavra-chave -- por exemplo, continue somente se o texto começar com `PRAY`
+3. **Ação** -- registre o conteúdo da mensagem em um local que a sua equipe verá (Slack, uma planilha do Google ou uma tarefa do B1). O *Encontrar pessoa* do B1 busca pessoas somente por ID, e-mail ou nome, e não por telefone; por isso, associe a resposta a uma pessoa do B1 manualmente (ou adicione uma requisição GET do Webhooks by Zapier ao endpoint `/membership/people/search/phone?number=…` do B1).
 
-## Receitas Comuns
+## Receitas comuns {#common-recipes}
 
-### Paging de equipe de voluntários
+### Acionar a equipe de voluntários {#volunteer-team-paging}
 
-- **Gatilho** — B1.church: Nova Envio de Formulário (filtrado no id do formulário de pedido de oração)
-- **Ação** — Clearstream: Enviar Texto para Lista, onde a lista é sua equipe pastoral de plantão. Componha o corpo como `Novo pedido de oração: {data.questions.0.answer}`.
+- **Gatilho** -- B1.church: Novo envio de formulário (filtrado pelo ID do formulário de pedido de oração)
+- **Ação** -- Clearstream: Enviar texto para lista, em que a lista é a sua equipe pastoral de plantão. Componha o corpo da mensagem como `New prayer request: {data.questions.0.answer}`.
 
-### Sequência de follow-up de visitante pela primeira vez
+### Sequência de acompanhamento para visitantes de primeira vez {#first-time-visitor-follow-up-sequence}
 
-- **Gatilho** — B1.church: Nova Pessoa, filtrada em uma tag de pessoa B1 "Visitante pela primeira vez"
-- **Ação** — Clearstream: Adicionar Assinante a Fluxo de Trabalho Automatizado. Mapeie o id do fluxo de trabalho para um drip de texto de 7 dias pré-construído.
+- **Gatilho** -- B1.church: Nova pessoa, filtrada pela situação de membro da pessoa (por exemplo, *Visitante*)
+- **Ação** -- Clearstream: Adicionar assinante a fluxo de trabalho automatizado. Associe o ID do fluxo a uma sequência pronta de textos de 7 dias.
 
-### Adesão de grupo impulsionada por palavra-chave
+### Participação em grupo por palavra-chave {#keyword-driven-group-join}
 
-- **Gatilho** — Clearstream: Novo Texto Recebido (filtrar para palavra-chave `MENS`)
-- **Ação** — B1.church: Procurar Pessoa (por telefone); fork em não-encontrado → Criar Pessoa
-- **Ação** — B1.church: Adicionar Membro do Grupo ao grupo Ministério dos Homens
+- **Gatilho** -- Clearstream: Nova mensagem de texto recebida (filtrada pela palavra-chave `MENS`)
+- **Ação** -- B1.church: Criar pessoa com o nome e o telefone de quem enviou a mensagem (o *Encontrar pessoa* do B1 não consegue buscar pessoas por telefone, então verifique duplicidades depois em **Pessoas**)
+- **Ação** -- B1.church: Adicionar membro ao grupo Ministério masculino
 
-## Limites e Notas
+## Limites e observações {#limits--notes}
 
-- **Clearstream mede SMS por mensagem.** Cada ação Enviar Texto consome um ou mais créditos dependendo do comprimento e número de destinatários — verifique a alocação do seu plano.
-- **Telefone deve estar em formato E.164** (por ex. `+15555550199`) para *Enviar Texto para Número*. O registro de pessoa B1 armazena o que foi inserido; use um passo *Formatter by Zapier — Números → Formatar Número de Telefone* se você não puder garantir o formato.
-- **Nenhum cabeçalho é obrigatório do lado B1** — a autenticação Clearstream vive inteiramente dentro de sua conexão Zapier.
+- **A Clearstream cobra os SMS por mensagem.** Cada ação de Enviar texto consome um ou mais créditos, dependendo do tamanho e do número de destinatários -- confira a cota do seu plano.
+- **O telefone precisa estar no formato E.164** (por exemplo, `+15555550199`) para *Enviar texto para número*. O cadastro da pessoa no B1 armazena o que foi digitado; use uma etapa *Formatter by Zapier -- Numbers → Format Phone Number* caso não consiga garantir o formato.
+- **Não é necessário nenhum cabeçalho do lado do B1** -- a autenticação da Clearstream fica totalmente dentro da conexão dela no Zapier.
 
-## Solução de Problemas
+## Solução de problemas {#troubleshooting}
 
-- **Gatilho nunca dispara** — `Configurações → Desenvolvedor → Webhooks` deve mostrar uma linha `Zapier — <event>` após o Zap ser ativado. Se não, a chave de API B1 está faltando `settings:write`. Re-cunha e re-conecte.
-- **Clearstream retorna "Número de telefone inválido"** — o campo destinatário não está em E.164. Adicione um passo Formatar Número de Telefone.
-- **Enviar Texto para Lista falha com `403`** — o usuário de API Clearstream carece de permissão para essa lista, ou o id da lista está errado. Ids da lista são visíveis na página de detalhe da lista Clearstream.
+- **O gatilho nunca dispara** -- `Settings → Developer → Webhooks` deve mostrar uma linha `Zapier — <event>` depois que o Zap for ativado. Se não aparecer, a chave de API do B1 não tem `settings:write`. Gere a chave novamente e reconecte.
+- **A Clearstream retorna "Invalid phone number"** -- o campo de destinatário não está em E.164. Adicione uma etapa Format Phone Number.
+- **Enviar texto para lista falha com `403`** -- o usuário da API da Clearstream não tem permissão para aquela lista, ou o ID da lista está errado. Os IDs das listas aparecem na página de detalhes da lista na Clearstream.
 
-## Veja Também
+## Veja também {#see-also}
 
-- [Text In Church](./text-in-church.md) — plataforma SMS alternativa, forma de fiação semelhante
-- [Mobile Message](./mobile-message.md) — para igrejas fora dos EUA
-- [Zapier (visão geral)](../zapier.md) — lado B1 de cada receita Zapier
-- [Documentos da API Clearstream](https://api-docs.clearstream.io/) — para integrações personalizado além do aplicativo Zapier
+- [Text In Church](./text-in-church.md) -- plataforma alternativa de SMS, com estrutura de integração semelhante
+- [Mobile Message](./mobile-message.md) -- para igrejas fora dos EUA
+- [Zapier (visão geral)](../zapier.md) -- o lado do B1 de todas as receitas do Zapier
+- [Documentação da API da Clearstream](https://api-docs.clearstream.io/) -- para integrações personalizadas além do app do Zapier

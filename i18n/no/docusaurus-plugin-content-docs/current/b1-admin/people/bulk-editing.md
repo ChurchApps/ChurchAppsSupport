@@ -1,203 +1,175 @@
 ---
 title: "Masseredigering av personer"
-description: "Oppdater medlemsstatus, sivilstand, kjønn, reservasjon, egendefinerte ja/nei-felt eller gruppemedlemskap for mange personer samtidig i B1 Admin."
+description: "Oppdater medlemsstatus, sivilstatus, kjønn, valg om å stå utenfor katalogen, kampus, ja/nei-egendefinerte felt eller grupper for mange personer samtidig i B1 Admin."
 ---
 
 # Masseredigering av personer
 
 <div class="article-intro">
-Masseredigering lar deg oppdatere flere personer samtidig, og sparer tid når du skal gjøre den samme endringen for mange. Du kan oppdatere medlemsstatus, sivilstatus, kjønn, reservasjonsvalg og gruppemedlemskap i én operasjon.
+Masseredigering lar deg oppdatere flere personer samtidig, og sparer tid når du gjør den samme endringen for mange. Du kan oppdatere medlemsstatus, sivilstatus, kjønn, valg om å stå utenfor katalogen, kampus, ja/nei-egendefinerte felt, gruppemedlemskap og arbeidsflyter i én operasjon, eller slette personer.
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
 - Du trenger tillatelse til å administrere personopplysninger. Se [Roller og tillatelser](./roles-permissions.md) for detaljer.
-- Du bør ha lagt til eller importert personene du vil redigere. Se [Legge til personer](./adding-people.md) om nødvendig.
+- Du bør allerede ha lagt til eller importert personene du vil redigere. Se [Legge til personer](./adding-people.md) om nødvendig.
 </div>
 
-## Velge personer for masseredigering
+## Velge personer for masseredigering {#selecting-people-for-bulk-editing}
 
 1. Gå til **Personer** i B1 Admin
 2. Bruk søke- eller filterverktøyene for å finne personene du vil oppdatere
 3. Kryss av i boksene for å velge personer
    - I visningen **Husstander** velger du alle i en husstand ved å krysse av for husstanden
    - I visningen **Tabell** (bytt med bryteren **Vis som**) kan du velge personer enkeltvis
-   - Eller bruk avkrysningsboksen over listen for å velge alle synlige personer
+   - Eller bruk avmerkingsboksen over listen for å velge alle synlige personer
 4. Når du har valgt minst én person, viser linjen over listen hvor mange som er valgt, sammen med **Fjern valg** og en knapp **Handlinger**
 
 :::tip
-Hvis du skal oppdatere en stor gruppe personer basert på bestemte kriterier, bruk [AI-søk](./ai-search.md) eller filtre for å snevre inn listen først, og velg deretter alle som passer.
+Hvis du trenger å oppdatere en stor gruppe personer basert på bestemte kriterier, bruk funksjonen [AI-søk](./ai-search.md) eller filtre for å snevre inn listen først. Velg deretter alle som passer.
 :::
 
-## Tilgjengelige massehandlinger
+## Tilgjengelige masseoperasjoner {#available-bulk-actions}
 
-Menyen **Handlinger** gir flere alternativer:
+Menyen **Handlinger** har alternativene nedenfor. Hvert av dem åpner en liten dialog som viser hvor mange personer den vil endre. Velg en verdi og klikk på **Bruk**. Den nye verdien erstatter det hver valgte person hadde før. Når det er ferdig, bekrefter en melding nederst på siden hvor mange personer som ble oppdatert.
 
-### Oppdatere medlemsstatus
-
-Oppdater medlemsstatusen for alle valgte personer:
+### Sett medlemsstatus {#set-membership-status}
 
 1. Klikk på **Handlinger** → **Sett medlemsstatus**
-2. Velg den nye statusen:
-   - **Besøkende** -- Førstegangs- eller sporadiske gjester
-   - **Gjest** -- Gjester, for eksempel familier som er registrert ved en innsjekkingskiosk
-   - **Fast deltaker** -- Hyppige deltakere som ikke er medlemmer
-   - **Medlem** -- Offisielle medlemmer av menigheten
-   - **Ansatt** -- Ansatte i menigheten
-   - **Inaktiv** -- Personer som ikke lenger deltar
-   - **Avdød** -- Personer som har gått bort
-3. Velg oppdateringsmodus:
-   - **Overskriv alle** -- Erstatt gjeldende status for alle valgte personer
-   - **Oppdater bare tomme** -- Sett status bare for personer som ikke har en
-4. Klikk på **Oppdater**
+2. Velg den nye **Medlemsstatusen**:
+   - **Besøkende**: førstegangs- eller sporadiske deltakere
+   - **Gjest**: gjester, for eksempel familier som er registrert på en innsjekkingsterminal
+   - **Fast deltaker**: hyppige deltakere som ikke er medlemmer
+   - **Medlem**: offisielle medlemmer av kirken
+   - **Ansatt**: ansatte i kirken
+   - **Inaktiv**: personer som ikke lenger deltar
+   - **Død**: personer som har gått bort
+3. Klikk på **Bruk**
 
-### Oppdatere sivilstatus
-
-Oppdater sivilstatus i bulk:
+### Sett sivilstatus {#set-marital-status}
 
 1. Klikk på **Handlinger** → **Sett sivilstatus**
-2. Velg den nye statusen:
-   - **Ukjent**
-   - **Enslig**
-   - **Gift**
-   - **Skilt**
-   - **Enke/enkemann**
-3. Velg om eksisterende verdier skal overskrives, eller om bare tomme felt skal oppdateres
-4. Klikk på **Oppdater**
+2. Velg **Ukjent**, **Ugift**, **Gift**, **Skilt** eller **Enke/enkemann**
+3. Klikk på **Bruk**
 
-### Oppdatere kjønn
-
-Oppdater kjønnsopplysninger for flere personer:
+### Sett kjønn {#set-gender}
 
 1. Klikk på **Handlinger** → **Sett kjønn**
-2. Velg verdien:
-   - **Ikke spesifisert**
-   - **Mann**
-   - **Kvinne**
-3. Velg oppdateringsmodus (overskriv alle eller bare tomme)
-4. Klikk på **Oppdater**
+2. Velg **Ikke oppgitt**, **Mann** eller **Kvinne**
+3. Klikk på **Bruk**
 
-### Oppdatere reservasjonsstatus
+### Sett valg om å stå utenfor katalogen {#set-directory-opt-out}
 
-Styr om personer har reservert seg mot kommunikasjon:
+Valget om å stå utenfor katalogen styrer om personer vises i medlemskatalogen: [utskriftskatalogen](./print-directory.md) og medlemskatalogen i B1-appen. Det er den samme innstillingen som **Skjul meg fra medlemskatalogen** på en persons post.
 
-1. Klikk på **Handlinger** → **Sett reservasjon i katalogen**
-2. Velg:
-   - **Nei** -- Tillat kommunikasjon (fjern reservasjonen)
-   - **Ja** -- Blokker kommunikasjon (sett reservasjonen)
-3. Velg oppdateringsmodus
-4. Klikk på **Oppdater**
+1. Klikk på **Handlinger** → **Sett valg om å stå utenfor katalogen**
+2. Velg **Valgt bort ja** for å skjule de valgte personene fra katalogen, eller **Valgt bort nei** for å vise dem igjen
+3. Klikk på **Bruk**
 
 :::warning
-Vær forsiktig når du endrer reservasjonsstatus. Personer som uttrykkelig har reservert seg, skal ikke motta kommunikasjon uten at de har gitt nytt samtykke.
+Personer som har valgt å skjule seg fra katalogen, bør forbli skjult med mindre de ber om å bli oppført igjen.
 :::
 
-### Sette egendefinert felt
+### Sett kampus {#set-campus}
 
-Sett en verdi for et Ja/Nei-[egendefinert felt](../settings/custom-fields.md) for alle valgte personer samtidig:
+Dette alternativet vises når kirken din har satt opp [kampuser](../settings/campuses.md).
+
+1. Klikk på **Handlinger** → **Sett kampus**
+2. Velg kampusen
+3. Klikk på **Bruk**
+
+### Sett egendefinert felt {#set-custom-field}
+
+Sett en ja/nei-verdi for et [egendefinert felt](../settings/custom-fields.md) for alle valgte personer samtidig:
 
 1. Klikk på **Handlinger** → **Sett egendefinert felt**.
-2. Velg det egendefinerte Ja/Nei-feltet du vil sette.
-3. Velg verdien (**Ja** eller **Nei**) som skal brukes.
-4. Klikk på **Oppdater**.
+2. Velg det ja/nei-baserte **egendefinerte feltet** du vil sette.
+3. Velg **Verdi** (**Ja** eller **Nei**) som skal brukes.
+4. Klikk på **Bruk**.
 
 :::info
-Bare Ja/Nei-felt kan settes med denne massehandlingen. For å sette andre felttyper må du redigere hver person enkeltvis.
+Bare ja/nei-egendefinerte felt er tilgjengelige for denne masseoperasjonen. For å sette andre feltyper, rediger hver person enkeltvis. Hvis kirken din ikke har noen ja/nei-egendefinerte felt, sier dialogen fra.
 :::
 
-### Legge til i gruppe
-
-Legg alle valgte personer til i en eller flere grupper:
+### Legg til i gruppe {#add-to-group}
 
 1. Klikk på **Handlinger** → **Legg til i gruppe**
-2. Søk etter og velg gruppen(e) personene skal legges til i
-3. Du kan velge flere grupper og legge personene til i alle sammen
-4. Klikk på **Legg til i grupper**
+2. Velg **Gruppen** du vil legge personene til i. Hvis du vil legge dem i en helt ny gruppe i stedet, kryss av for **Opprett ny gruppe** og skriv inn et **Nytt gruppenavn**.
+3. Klikk på **Bruk**
 
-Hver person legges til som vanlig medlem i den valgte gruppen(e). Du kan senere gjøre enkeltpersoner til gruppeledere ved behov, fra siden [Gruppemedlemmer](../groups/group-members.md).
+Hver person legges til som et vanlig medlem av gruppen. Du kan senere gjøre enkeltpersoner til gruppeledere fra siden [Gruppemedlemmer](../groups/group-members.md). Hvis du vil legge personer til i flere grupper, gjentar du dette for hver gruppe.
 
-### Fjerne fra gruppe
-
-Fjern alle valgte personer fra en eller flere grupper:
+### Fjern fra gruppe {#remove-from-group}
 
 1. Klikk på **Handlinger** → **Fjern fra gruppe**
-2. Søk etter og velg gruppen(e) personene skal fjernes fra
-3. Du kan velge flere grupper
-4. Klikk på **Fjern fra grupper**
+2. Velg **Gruppen** du vil fjerne personene fra
+3. Klikk på **Bruk**
 
 :::info
-Denne handlingen fjerner bare personene fra de angitte gruppene. Den sletter ikke personpostene deres.
+Denne handlingen fjerner bare personene fra gruppen. Den sletter ikke personpostene deres.
 :::
 
-### Slette personer
+### Legg til i arbeidsflyt {#add-to-workflow}
 
-Slett de valgte personene permanent fra menighetens database:
+Legg de valgte personene til i en [arbeidsflyt](../serving/workflows.md) som kort:
+
+1. Klikk på **Handlinger** → **Legg til i arbeidsflyt**
+2. Velg arbeidsflyten
+3. Klikk på **Bruk**
+
+### Slett personer {#delete-people}
+
+Slett de valgte personene fra kirkens database:
 
 1. Klikk på **Handlinger** → **Slett**
-2. Dialogen **Slett valgte personer** ber deg bekrefte hvor mange personer som skal slettes
+2. Dialogen **Slett valgte personer** ber deg bekrefte hvor mange personer som slettes
 3. Klikk på **Slett**
 
 :::danger
-Sletting av personer er permanent og kan ikke angres. Dette fjerner all data om dem, inkludert:
-- Personopplysninger
-- Gruppemedlemskap
-- Oppmøteregistreringer
-- Gavehistorikk
-- Skjemainnsendinger
-
-Bruk bare denne handlingen hvis du er helt sikker på at du vil fjerne disse personene fra systemet.
+Slettede personer forsvinner fra katalogen, gruppene og søkene dine. Bruk bare denne handlingen hvis du er helt sikker på at du vil fjerne disse personene fra systemet.
 :::
 
-## Resultater av masseredigering
+Du kan ikke velge deg selv, så du kan ikke slette eller masseredigere din egen post i bulk.
 
-Etter at du har utført en massehandling, får du en oppsummering som viser:
 
-- **Totalt valgt** -- Hvor mange personer som var med i operasjonen
-- **Oppdatert** -- Hvor mange poster som ble endret
-- **Mislyktes** -- Poster som ikke kunne oppdateres (hvis aktuelt)
-- **Uendret** -- Poster som ikke trengte endringer (for eksempel når modusen «oppdater bare tomme» er brukt)
+## Beste praksis {#best-practices}
 
-Hvis noen oppdateringer mislyktes, får du feildetaljer som forklarer hvorfor.
+- **Start i det små**: Test masseoperasjoner på noen få poster først, for å være sikker på at du gjør de riktige endringene
+- **Bruk filtre**: Snevre inn listen med filtre eller AI-søk før du velger personer, slik at du bare oppdaterer de rette personene
+- **Dobbeltsjekk valgene**: Gå gjennom de valgte personene før du bruker masseendringer
+- **Dokumenter store endringer**: Før notater om masseoppdateringer, i tilfelle du trenger å se tilbake på dem senere
+- **Koordiner med teamet ditt**: Gi beskjed til andre administratorer når du gjør store masseendringer
 
-## Beste praksis
+## Vanlige bruksområder {#common-use-cases}
 
-- **Start i det små** -- Test massehandlinger på noen få poster først, slik at du er sikker på at endringene er riktige
-- **Bruk filtre** -- Snevre inn listen med filtre eller AI-søk før du velger personer, slik at du bare oppdaterer de rette personene
-- **Dobbeltsjekk valgene** -- Gå gjennom de valgte personene før du bruker massendringer
-- **Bruk modusen «oppdater bare tomme»** -- Når du vil fylle inn manglende data uten å overskrive eksisterende opplysninger
-- **Dokumenter større endringer** -- Før notater om massoppdateringer, i tilfelle du trenger å se på dem senere
-- **Samordne med teamet ditt** -- Gi beskjed til andre administratorer når du gjør store massendringer
+### Oppdatere nye medlemmer {#updating-new-members}
 
-## Vanlige bruksområder
-
-### Oppdatere nye medlemmer
-
-Etter en medlemsklasse, oppdater alle deltakerne til medlemsstatus:
+Etter en medlemsklasse oppdaterer du alle deltakerne til medlemsstatus:
 
 1. Søk etter personene som deltok i klassen
-2. Velg dem alle
+2. Velg alle sammen
 3. Bruk **Handlinger** → **Sett medlemsstatus** → **Medlem**
 
-### Organisere smågrupper
+### Organisere smågrupper {#organizing-small-groups}
 
 Legg flere personer til i en ny smågruppe:
 
-1. Søk etter personene du vil ha med i gruppen
+1. Søk etter personene du vil ha i gruppen
 2. Velg dem
 3. Bruk **Handlinger** → **Legg til i gruppe** og velg smågruppen
 
-### Rydde opp i data
+### Rydde opp i data {#cleaning-up-data}
 
-Fyll inn manglende sivilstatus for ektepar:
+Merk en gruppe tidligere deltakere som inaktive:
 
-1. Filtrer på personer som er gift (ved hjelp av husstandsinformasjon)
-2. Velg de som har tom sivilstatus
-3. Bruk **Handlinger** → **Sett sivilstatus** → **Gift** → **Oppdater bare tomme**
+1. Åpne **Avansert** søk og filtrer for personene du vil oppdatere (for eksempel alle som ikke har deltatt nylig)
+2. Velg dem
+3. Bruk **Handlinger** → **Sett medlemsstatus** → **Inaktiv**
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Søke etter personer](./searching-people.md) -- Finn personer å redigere
-- [AI-søk](./ai-search.md) -- Bruk naturlig språk for å finne bestemte grupper av personer
-- [Gruppemedlemmer](../groups/group-members.md) -- Administrer gruppemedlemskap
-- [Eksportere data](./exporting-data.md) -- Eksporter personopplysninger før massendringer
+- [Søke etter personer](./searching-people.md): finn personer å redigere
+- [AI-søk](./ai-search.md): bruk naturlig språk for å finne bestemte grupper av personer
+- [Gruppemedlemmer](../groups/group-members.md): administrer gruppemedlemskap
+- [Eksportere data](./exporting-data.md): eksporter personopplysninger før masseendringer

@@ -51,7 +51,7 @@ Hai bisogno di un genitore durante il servizio -- un cambio di pannolino, un bam
 
 Se un cartellino dei nomi o un'etichetta di ritiro è perso o danneggiato, il personale su una stazione gestita può **ristampare** le etichette della famiglia dalla schermata di check-out dopo aver inserito il codice di sicurezza. La ristampa utilizza la stessa stampante e i modelli di etichetta del check-in originale.
 
-## Broadcast di Emergenza
+## Broadcast di Emergenza {#emergency-broadcast}
 
 In un'emergenza, il personale può inviare un messaggio ai tutori di **ogni bambino controllato** per il servizio attuale in una volta:
 

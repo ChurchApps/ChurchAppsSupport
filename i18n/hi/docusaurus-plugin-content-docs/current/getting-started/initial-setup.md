@@ -20,7 +20,7 @@ description: "B1 Admin में एक नए चर्च का पहली 
 
 </div>
 
-## चरण 1: अपने चर्च की जानकारी कॉन्फ़िगर करें
+## चरण 1: अपने चर्च की जानकारी कॉन्फ़िगर करें {#step-1-configure-your-church-information}
 
 1. [जंप मेनू](../b1-admin/introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाएँ कोने में स्थित खोज बार), **Settings** का विस्तार करें, और **Settings** पर क्लिक करें।
 2. **Church Information** अनुभाग में, **Edit** पर क्लिक करें।

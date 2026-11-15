@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Service Times
+## Service Times {#service-times}
 
 Base path: `/attendance/servicetimes`
 

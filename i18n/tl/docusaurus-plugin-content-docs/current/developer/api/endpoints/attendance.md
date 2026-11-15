@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Mga Oras ng Serbisyo
+## Mga Oras ng Serbisyo {#service-times}
 
 Base path: `/attendance/servicetimes`
 

@@ -1,134 +1,123 @@
 ---
-title: "Soporte Multimoneda"
-description: "Registra e informa de donaciones en varias monedas en B1 Admin: entrada manual, donaciones con Stripe y conversión de los totales combinados."
+title: "Compatibilidad con múltiples monedas"
+description: "Registre e informe donaciones en distintas monedas en B1 Admin, incluidos el ingreso manual, las donaciones en línea con Stripe y cómo se convierten los totales combinados."
 ---
 
-# Soporte Multimoneda
+# Compatibilidad con múltiples monedas
 
 <div class="article-intro">
 
-La función multimoneda de B1 permite que tu iglesia acepte y registre donaciones en diferentes monedas. Esto es particularmente útil para iglesias con miembros internacionales, misioneros o múltiples sedes en diferentes países.
+La función de múltiples monedas de B1 permite que su iglesia acepte y registre donaciones en distintas monedas. Es especialmente útil para iglesias con miembros internacionales, misioneros o varios campus en diferentes países.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Necesitas permiso para gestionar donaciones. Consulta [Roles y Permisos](../people/roles-permissions.md) para obtener detalles.
-- Configura tu [ofrendas en línea](./online-giving-setup.md) con Stripe, que soporta transacciones multimoneda.
-- Entiende las necesidades contables de tu iglesia para manejar múltiples monedas.
+- Necesita permiso para administrar las donaciones. Consulte [Roles y permisos](../people/roles-permissions.md) para más detalles.
+- Configure sus [donaciones en línea](./online-giving-setup.md) con Stripe, que admite transacciones en múltiples monedas. Una iglesia sin donaciones en línea aún puede elegir la moneda en que se registran sus donativos ingresados a mano.
+- Conozca las necesidades contables de su iglesia para manejar varias monedas.
 
 </div>
 
-## Habilitando Multimoneda
+La moneda de su iglesia comienza siendo la moneda del país ingresado al registrarse la iglesia (por ejemplo, chelines kenianos para una iglesia en Kenia), y se usa si todavía no se ha guardado ninguna moneda. Puede cambiarla en cualquier momento en **Configuración → Donaciones** (el menú desplegable **Moneda**). Si su país no se reconoce, comienza en dólares estadounidenses.
 
-El soporte multimoneda está ahora habilitado por defecto en B1. Una vez habilitado:
+## Activar múltiples monedas {#enabling-multi-currency}
 
-- Los miembros pueden dar en su moneda local cuando donan en línea
-- Puedes registrar manualmente donaciones en cualquier moneda
-- Los reportes de donaciones muestran montos en su moneda original
-- Stripe maneja la conversión de moneda automáticamente para ofrendas en línea
+El soporte de múltiples monedas está activado por defecto en B1:
 
-## Monedas Soportadas
+- Los donativos en línea se cobran en la moneda elegida en su configuración de **Donaciones**
+- Cada donación conserva la moneda en que fue registrada, y cada línea de donación muestra esa moneda
+- Los totales combinados se convierten a la moneda de su iglesia (consulte [Totales convertidos](#converted-totals))
+- Stripe se encarga de convertir la moneda a la moneda de pago de su cuenta para las donaciones en línea
 
-El sistema soporta todas las monedas principales del mundo, incluyendo:
+## Monedas admitidas {#supported-currencies}
 
-- **USD** -- Dólar de Estados Unidos
-- **EUR** -- Euro
-- **GBP** -- Libra Esterlina
-- **CAD** -- Dólar Canadiense
-- **AUD** -- Dólar Australiano
-- **MXN** -- Peso Mexicano
-- **BRL** -- Real Brasileño
-- **INR** -- Rupia India
-- **CNY** -- Yuan Chino
-- **JPY** -- Yen Japonés
+El sistema admite todas las principales monedas del mundo, entre ellas:
+
+- **USD**: dólar estadounidense
+- **EUR**: euro
+- **GBP**: libra esterlina
+- **CAD**: dólar canadiense
+- **AUD**: dólar australiano
+- **MXN**: peso mexicano
+- **BRL**: real brasileño
+- **INR**: rupia india
+- **CNY**: yuan chino
+- **JPY**: yen japonés
 - Y muchas más...
 
-Las monedas disponibles para ofrendas en línea dependen de las monedas soportadas de tu cuenta de Stripe.
+Las monedas disponibles para las donaciones en línea dependen de las monedas admitidas por su cuenta de Stripe.
 
-## Registrando Donaciones en Diferentes Monedas
+## Registrar donaciones en distintas monedas {#recording-donations-in-different-currencies}
 
-### Donaciones en Línea
+### Donaciones en línea {#online-donations}
 
-Cuando un miembro da en línea a través de Stripe:
+Cuando un miembro dona en línea a través de Stripe:
 
-1. Selecciona su moneda preferida en el pago
+1. El donativo se cobra en la moneda configurada en **Configuración → Donaciones**; los donantes no eligen una moneda al pagar
 2. Stripe procesa el pago en esa moneda
-3. La donación se registra en B1 con el monto de moneda original
-4. Stripe maneja automáticamente cualquier conversión de moneda necesaria a tu moneda predeterminada de cuenta
+3. La donación se registra en B1 con esa moneda y ese monto
+4. Stripe gestiona automáticamente cualquier conversión de moneda necesaria a la moneda de pago de su cuenta
 
-### Entrada Manual
+Si cambia después la configuración de **Moneda**, los nuevos donativos usan la nueva moneda, mientras que los donativos ya registrados conservan la suya, por lo que sus registros pueden contener más de una moneda.
 
-Para registrar una donación en efectivo o cheque en una moneda diferente:
+### Ingreso manual {#manual-entry}
 
-1. Ve a **Donaciones > Lotes** en B1 Admin y abre el lote
-2. Haz clic en **Añadir Donación** en la parte superior de la página del lote
-3. Selecciona la moneda del menú desplegable de moneda
-4. Ingresa el monto en esa moneda
-5. Completa el resto de los detalles de la donación
-6. Haz clic en **Guardar**
+Los donativos que ingresa a mano -en un lote, con **Importar CSV** o con **Registrar un donativo** en el registro de una persona- siempre se registran en la moneda de su iglesia, que se muestra junto al campo **Monto**. No hay un menú desplegable de moneda para el ingreso manual, así que convierta a la moneda de su iglesia un donativo hecho en otra moneda antes de ingresarlo, y anote el monto original en **Notas** si lo necesita.
 
-## Viendo Donaciones Multimoneda
+## Ver donaciones en múltiples monedas {#viewing-multi-currency-donations}
 
-### Reportes de Donaciones
+### Informes de donaciones {#donation-reports}
 
-Los reportes de donaciones muestran montos en su moneda original:
+Las líneas de donación individuales -en un lote, en la página de un fondo y en el historial de donaciones de una persona- muestran cada donativo en la moneda en que fue registrado. Los totales combinados se convierten, como se describe a continuación.
 
-- Los registros individuales de donación muestran el código de moneda (ej., "$100.00 USD")
-- Los totales se calculan por moneda
-- Puedes filtrar por monedas específicas
+### Totales convertidos {#converted-totals}
 
-### Totales Convertidos
+Cada vez que B1 muestra un único total combinado -las tarjetas de indicadores del resumen de donaciones, el total de un lote de donaciones y el total de un fondo-, las donaciones registradas en una moneda distinta a la predeterminada de su iglesia se convierten a la moneda de su iglesia usando los tipos de cambio actuales. Así, el total es un número único y significativo en lugar de sumar monedas diferentes. Aparece una nota **Convertido a los tipos de cambio actuales** debajo del total siempre que se aplicó una conversión. Las líneas de donación individuales siguen mostrándose en su moneda original.
 
-Dondequiera que B1 muestre un único total combinado -- las tarjetas de KPI del resumen de ofrendas, un total de lote de donación y el total de un fondo -- las donaciones registradas en una moneda distinta a tu moneda predeterminada se convierten a tu moneda de iglesia usando tipos de cambio actuales, así que el total es un número significativo único en lugar de sumar monedas diferentes juntas. Una nota de **Convertido a tipos de cambio actuales** aparece debajo del total siempre que se aplicó una conversión. Los elementos de línea de donación individuales aún muestran su moneda original.
+### Estados de donación {#giving-statements}
 
-### Declaraciones de Ofrendas
+Los estados de donación enumeran el monto de cada donativo tal como se registró y suman los montos sin convertirlos, por lo que un estado solo es exacto cuando todos los donativos de ese donante del año están en la moneda de su iglesia. Si un donante dio en más de una moneda, revise su estado antes de enviarlo.
 
-Cuando se generan declaraciones de ofrendas:
+## Integración con Stripe {#stripe-integration}
 
-- Cada donación aparece con su moneda original
-- Los totales se desglosan por moneda
-- Los miembros ven exactamente qué dieron en cada moneda
+Para las donaciones en línea, Stripe gestiona las transacciones en múltiples monedas:
 
-## Integración de Stripe
-
-Para ofrendas en línea, Stripe maneja transacciones multimoneda:
-
-- **Conversión automática** -- Stripe convierte monedas a tu moneda predeterminada de cuenta
-- **Tipos de cambio** -- Stripe usa tipos de cambio de mercado actuales
-- **Tarifas** -- La conversión de moneda puede incurrir en tarifas adicionales de Stripe
-- **Moneda de depósito** -- Los fondos se depositan en tu moneda predeterminada de cuenta
+- **Conversión automática**: Stripe convierte las monedas a la moneda predeterminada de su cuenta
+- **Tipos de cambio**: Stripe usa los tipos de cambio actuales del mercado
+- **Comisiones**: la conversión de moneda puede generar comisiones adicionales de Stripe
+- **Moneda de pago**: los fondos se depositan en la moneda predeterminada de su cuenta
 
 :::info
-Revisa tu panel de Stripe para ver los tipos de cambio actuales y cualquier tarifa asociada con transacciones multimoneda.
+Revise su panel de Stripe para ver los tipos de cambio actuales y las comisiones asociadas a las transacciones en múltiples monedas.
 :::
 
-## Consideraciones Contables
+## Consideraciones contables {#accounting-considerations}
 
-Al trabajar con múltiples monedas:
+Al trabajar con varias monedas:
 
-- **Mantenimiento de registros** -- Mantén un seguimiento de los montos de donación originales y monedas para reportes precisos
-- **Tipos de cambio** -- Ten en cuenta que los tipos de conversión de Stripe pueden diferir de los tipos de tu banco
-- **Recibos fiscales** -- Consulta con tu contador sobre cómo reportar donaciones en diferentes monedas para propósitos fiscales
-- **Asignación de fondos** -- Puedes asignar donaciones a fondos específicos independientemente de la moneda
+- **Registros**: lleve un control de los montos y monedas originales de las donaciones para un informe preciso
+- **Tipos de cambio**: tenga en cuenta que los tipos de cambio de Stripe pueden diferir de los de su banco
+- **Recibos fiscales**: consulte con su contador cómo informar las donaciones en distintas monedas para fines fiscales
+- **Asignación a fondos**: puede asignar las donaciones a fondos específicos sin importar la moneda
 
-## Mejores Prácticas
+## Buenas prácticas {#best-practices}
 
-- **Moneda predeterminada** -- Establece tu moneda de iglesia primaria como la predeterminada para la mayoría de transacciones
-- **Comunicación clara** -- Dile a los donantes qué moneda están dando durante el proceso de pago
-- **Reportes consistentes** -- Los totales combinados siempre se convierten a tu moneda de iglesia automáticamente; usa el filtro de moneda por donación cuando necesites ver montos originales
-- **Reconciliación regular** -- Reconcilia los depósitos de Stripe con tus registros de donaciones, teniendo en cuenta conversiones de moneda
+- **Moneda predeterminada**: configure la moneda principal de su iglesia en **Configuración > Donaciones** para que los donativos ingresados a mano y los totales de donación la usen
+- **Comunicación clara**: indique a los donantes en qué moneda están donando durante el proceso de pago
+- **Informes coherentes**: los totales combinados siempre se convierten automáticamente a la moneda de su iglesia; abra un lote o un fondo para ver el monto y la moneda originales de cada donativo
+- **Conciliación periódica**: concilie los pagos de Stripe con sus registros de donación, teniendo en cuenta las conversiones de moneda
 
-## Limitaciones
+## Limitaciones {#limitations}
 
-- La conversión de moneda para procesamiento de pagos se maneja por Stripe solo para ofrendas en línea; las donaciones manuales se registran tal como se ingresan sin conversión automática
-- Los reportes históricos y elementos de línea de donación individuales siempre muestran la moneda original en que se registró la ofrenda
-- Los totales combinados (tarjetas de KPI, totales de lote, totales de fondo) se convierten a tu moneda de iglesia usando tipos de cambio actuales -- estos tipos pueden diferir ligeramente de los de tu banco o Stripe al momento en que se liquidan los fondos
+- La conversión de moneda para el procesamiento de pagos la gestiona Stripe solo para las donaciones en línea; las donaciones manuales se registran en la moneda de su iglesia tal como se ingresaron
+- Los informes históricos y las líneas de donación individuales siempre muestran la moneda original en que se registró el donativo
+- Los totales combinados (tarjetas de indicadores, totales de lotes y totales de fondos) se convierten a la moneda de su iglesia con los tipos de cambio actuales; estos tipos pueden diferir ligeramente de los de su banco o Stripe en el momento en que se liquidan los fondos
 
-## Artículos Relacionados
+## Artículos relacionados {#related-articles}
 
-- [Configuración de Ofrendas en Línea](./online-giving-setup.md) -- Configura Stripe para aceptar donaciones
-- [Registrando Donaciones](./recording-donations.md) -- Ingresa manualmente registros de donación
-- [Reportes de Donaciones](./donation-reports.md) -- Genera y ve resúmenes de donaciones
-- [Declaraciones de Ofrendas](./giving-statements.md) -- Crea declaraciones de ofrendas de fin de año
+- [Configuración de donación en línea](./online-giving-setup.md): configure Stripe para aceptar donaciones
+- [Registrar donaciones](./recording-donations.md): ingrese manualmente los registros de donación
+- [Informes de donaciones](./donation-reports.md): genere y vea resúmenes de donaciones
+- [Estados de donación](./giving-statements.md): cree estados de donación de fin de año

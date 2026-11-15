@@ -11,7 +11,7 @@ Lessons.church ist eine völlig kostenlose Curriculum-Plattform für Kirchen. Es
 
 </div>
 
-## Was Sie tun können
+## Was Sie tun können {#what-you-can-do}
 
 Mit Lessons.church kann Ihre Kirche:
 

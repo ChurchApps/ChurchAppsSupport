@@ -43,6 +43,8 @@ After selecting Stripe as your provider, a **Currency** dropdown appears alongsi
 
 If you haven't saved a currency yet, the dropdown starts on the currency of your church's country from sign-up instead of US dollars. Check it matches your Stripe account before saving.
 
+If your church doesn't take gifts online, leave **Provider** set to **None** and still pick a **Currency** -- the list then includes every currency, with the note "The currency your church records gifts in." Gifts you enter by hand in batches are recorded in that currency, and giving totals are shown in it.
+
 Supported currencies include USD, EUR, GBP, CAD, AUD, INR, JPY, SGD, HKD, SEK, NOK, DKK, CHF, MXN, BRL, and PHP. You can confirm or change your account's default currency in your [Stripe Dashboard](https://dashboard.stripe.com/settings/currencies).
 
 :::info

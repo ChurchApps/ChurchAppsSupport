@@ -1,5 +1,5 @@
 ---
-title: "Primi passi con il portale membri B1.church"
+title: "Primi passi con il portale membri di B1.church"
 sidebar_label: "Primi passi"
 description: "Trova il sito B1.church della tua chiesa, crea il tuo account membro e scopri cosa offre il portale, dai gruppi e le donazioni al check-in e ai piani di servizio."
 ---
@@ -12,29 +12,30 @@ B1.church è la casa online della tua chiesa. È il luogo dove restare in contat
 
 </div>
 
-## Accedere al sito della tua chiesa
+## Accedere al sito della tua chiesa {#accessing-your-churchs-site}
 
 La tua chiesa ha un proprio indirizzo B1.church, generalmente nel formato `https://yourchurchname.b1.church`. Puoi visitare questo indirizzo da qualsiasi browser web, sul computer, sul tablet o sul telefono. La leadership della chiesa o il team di accoglienza può fornirti l'indirizzo esatto.
 
 Quando visiti per la prima volta il sito, vedrai il sito pubblico della tua chiesa con la sua grafica personalizzata, i menu di navigazione e le pagine di contenuto.
 
-## Creare un account
+## Creare un account {#creating-an-account}
 
-Per accedere al portale membri e alle sue funzionalità, ti serve un account ChurchApps.
+Per accedere al portale membri e alle sue funzionalità ti serve un account ChurchApps.
 
 1. Visita l'indirizzo B1.church della tua chiesa.
-2. Fai clic sul pulsante **Accedi** nell'angolo in alto a destra della pagina.
-3. Nella schermata di accesso, seleziona l'opzione per **Registrarti** e creare un nuovo account.
-4. Inserisci il tuo **nome**, il tuo **cognome**, il tuo **indirizzo email** e scegli una **password**.
-5. Completa il modulo di registrazione.
+2. Clicca sul pulsante **Accedi** nell'angolo in alto a destra della pagina (oppure vai su `/login` se la tua chiesa non mostra il pulsante). Nel portale membri, tocca invece **Accedi**.
+3. Nella schermata di accesso, seleziona **Registrati** (**Crea un account** nel portale membri).
+4. Inserisci il tuo **nome**, il tuo **cognome** e il tuo **indirizzo email**, poi invia il modulo.
+5. Controlla la tua email per un **codice di verifica a 6 cifre** e inseriscilo.
+6. Scegli una **password** (di almeno 8 caratteri) e reinseriscila per confermarla.
 
-Dopo la registrazione, potrai accedere al portale membri con tutti i suoi strumenti.
+A questo punto sei connesso e puoi usare il portale membri con tutti i suoi strumenti.
 
 :::tip
 Se la tua chiesa ti ha già inserito nel proprio sistema, usa lo stesso indirizzo email che hanno registrato. In questo modo il tuo account verrà collegato al tuo profilo esistente della chiesa.
 :::
 
-## Cosa puoi fare
+## Cosa puoi fare {#what-you-can-do}
 
 Una volta effettuato l'accesso, il portale membri ti offre la possibilità di:
 
@@ -45,11 +46,11 @@ Una volta effettuato l'accesso, il portale membri ti offre la possibilità di:
 - **Check-in** per le celebrazioni e gli eventi
 - La **Comunità**, un elenco per trovare e contattare altri membri
 
-## Accedere dal telefono
+## Accedere dal telefono {#accessing-on-your-phone}
 
-B1.church funziona in qualsiasi browser mobile. Per un'esperienza più simile a un'app, installa il portale membri della tua chiesa come **Progressive Web App (PWA)**: visita `https://yourchurchname.b1.church/mobile/install` per ottenere istruzioni guidate specifiche per il tuo dispositivo, oppure aggiungilo direttamente alla schermata Home da Safari o Chrome. Non è necessario alcuno store di app. Consulta [Installare come app (PWA)](./installing-pwa.md) per le istruzioni.
+B1.church funziona in qualsiasi browser mobile. Per un'esperienza più simile a un'app, installa il portale membri della tua chiesa come **Progressive Web App (PWA)**: visita `https://yourchurchname.b1.church/mobile/install` per ottenere istruzioni guidate specifiche per il tuo dispositivo, oppure aggiungilo direttamente alla schermata Home da Safari o Chrome. Non serve alcuno store di app. Consulta [Installare come app (PWA)](./installing-pwa.md) per le istruzioni.
 
-## Prossimi passi
+## Prossimi passi {#next-steps}
 
 - [Accedere](./logging-in.md) -- Scopri come effettuare l'accesso e gestire la tua sessione.
 - [Navigare in B1App](./navigating.md) -- Orientati nel portale membri.

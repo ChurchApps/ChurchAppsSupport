@@ -30,7 +30,7 @@ Un'applicazione kiosk progettata appositamente per le postazioni di check-in nel
 
 Un'applicazione Android TV che visualizza i contenuti delle lezioni nelle aule. Gli insegnanti possono inviare diapositive, video e attività delle lezioni a uno schermo TV, rendendo semplice presentare il materiale didattico durante le lezioni.
 
-## Configurazione locale
+## Configurazione locale {#local-setup}
 
 Tutte le app mobili condividono lo stesso toolchain basato su Expo e seguono schemi di configurazione simili. Prendendo come esempio B1 Checkin:
 

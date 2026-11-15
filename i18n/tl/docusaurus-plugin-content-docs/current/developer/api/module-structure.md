@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## Cross-Module Communication
+## Cross-Module Communication {#cross-module-communication}
 
 Bawat module ay may-ari ng sarili nitong database (tingnan ang [Database](./database.md)), at isang module ay hindi kailanman nag-query ng iba pang module's tables nang direkta. Kapag isang module ay kailangan ng data na-own ng iba -- halimbawa, ang doing module na nag-resolve ng people mula sa membership -- ito ay napupunta sa pamamagitan ng owning module's **gateway** sa `src/shared/modules/`:
 

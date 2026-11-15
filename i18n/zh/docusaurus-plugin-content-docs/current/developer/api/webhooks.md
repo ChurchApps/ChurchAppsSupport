@@ -73,7 +73,7 @@ Content-Type: application/json
 | `GET /membership/webhooks/deliveries/:deliveryId` | 一个交付的完整负载和响应 |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | 重新队列交付 |
 
-## 事件目录
+## 事件目录 {#event-catalog}
 
 事件名称遵循 `{entity}.{action}` 的模式。从 `GET /membership/webhooks/events` 获取实时列表。
 
@@ -189,7 +189,7 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 
 拒绝任何签名不匹配的请求。可选地，也拒绝其 `X-B1-Timestamp` 超过几分钟的请求以限制重放窗口。
 
-## SDK 支持
+## SDK 支持 {#sdk-support}
 
 对于 Node.js，`@churchapps/integration-sdk` 附带一个类型化验证器和一个 Express 中间件，为您处理原始主体捕获、签名检查和信封解析：
 

@@ -61,7 +61,7 @@ Mantenere le credenziali mascherate solo quando si modifica lo stesso provider s
 
 Limitare ogni caricamento/aggiornamento alla chiesa B1 autenticata. Vincolare i callback a un'integrazione salvata e all'account/servizio/mittente Twilio previsto, e rifiutare assegnazioni in conflitto tra chiese diverse. La rotazione delle credenziali e la disconnessione del provider devono invalidare la prontezza e sospendere gli invii in coda, senza cancellare consensi né registri storici di consegna.
 
-## Il consenso e la soppressione sono lavoro necessario per il rilascio
+## Il consenso e la soppressione sono lavoro necessario per il rilascio {#consent-and-suppression-are-required-release-work}
 
 Introdurre registri di iscrizione legati al telefono per il programma Twilio, più eventi di consenso/soppressione in sola aggiunta. Il minimo di prove suggerito è: ID della chiesa, ID del programma, telefono normalizzato, associazione facoltativa e verificata con la persona, azione affermativa, ID del modulo/risposta di origine o prova esterna verificata, timestamp del server, testo/versione dell'informativa, URL di origine, URL delle politiche ed eventi di revoca/ripresa. Limitare l'accesso e la conservazione secondo la politica di sicurezza dei dati della chiesa.
 

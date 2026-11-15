@@ -7,170 +7,171 @@ description: "Legg til, fjern og utpek ledere for gruppemedlemmer i B1 Admin, og
 
 <div class="article-intro">
 
-Når du har opprettet en gruppe, er neste steg å legge til medlemmer. Fra gruppens detaljside kan du søke etter personer, legge dem til i gruppen, utpeke ledere, sende meldinger og eksportere medlemslisten. Å administrere gruppemedlemskap er avgjørende for å koordinere smågrupper, komiteer og klasser.
+Når du har opprettet en gruppe, er neste steg å legge til medlemmer. Fra en gruppes detaljside kan du søke etter personer, legge dem til i gruppen, utpeke ledere, sende meldinger og eksportere medlemslisten. Å administrere gruppemedlemskap er avgjørende for å koordinere smågrupper, komiteer og klasser.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger minst én gruppe satt opp i B1 Admin. Se [Opprette grupper](creating-groups.md) hvis du ikke har laget en ennå.
-- Personene du vil legge til bør allerede finnes i [personkatalogen](../people/adding-people.md). Hvis noen ikke finnes der, kan du opprette dem fra medlemssøket (se nedenfor).
+- Du trenger minst én gruppe satt opp i B1 Admin. Se [Opprette grupper](creating-groups.md) hvis du ikke har opprettet en ennå.
+- Personene du vil legge til, bør allerede være i [personregisteret](../people/adding-people.md) ditt. Hvis noen ikke er der, kan du opprette dem fra medlemssøket (se nedenfor).
 
 </div>
 
-## Legge til medlemmer i en gruppe
+## Legge til medlemmer i en gruppe {#adding-members-to-a-group}
 
-1. I [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) velger du **Personer > Grupper** og klikker på gruppen du vil administrere.
-2. I seksjonen **Medlemmer** på gruppesiden klikker du **Alle medlemmer**. (Team og tjenester åpnes direkte til medlemslisten.)
-3. I boksen **Legg til person** under medlemslisten skriver du inn navnet på personen du vil legge til, og trykker **Enter** eller klikker søkeikonet.
-4. Klikk på personens navn, eller pluss-ikonet ved siden av det, i søkeresultatene.
-5. Personen vises nå i gruppens medlemsliste.
+1. I [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) velger du **People > Groups** og klikker på gruppen du vil administrere.
+2. I seksjonen **Members** på gruppesiden klikker du **All members**. (Team og tjenester åpnes rett til medlemslisten.)
+3. I boksen **Add Person** under medlemslisten skriver du inn navnet på personen du vil legge til, og trykker **Enter** eller klikker søkeikonet. Personer som allerede er i gruppen, utelates fra resultatene. For å finne personer etter andre felt enn navn, klikker du **Advanced**.
+4. Klikk på personens navn, eller legg-til-ikonet ved siden av, i søkeresultatene.
+5. Personen vises nå i medlemslisten for gruppen. Hvis det finnes en e-postadresse på personen, spør dialogen **Send Invite Email?** om du vil sende en invitasjon på e-post; klikk **Send Invite** eller **No Thanks**.
 
 :::tip
-Før du skriver noe, viser boksen **Legg til person** en kort liste over **nylige personer** du kan legge til med ett klikk.
+Før du skriver noe, viser boksen **Add Person** en kort liste over **Recent people** som du kan legge til med ett klikk: personene du sist valgte i et personsøk (husket i denne nettleseren), og deretter personene som sist ble lagt til i B1.
 :::
 
-Når du er ferdig, klikker du lenken **Tilbake til** med gruppens navn for å gå tilbake til gruppesiden. Gruppesiden viser et sammendrag av gruppens **Medlemmer**, **Økter**, **Kalender** og **Helse**, hver med en lenke til full visning. Hvis du er en av gruppens ledere, vises også **Ledernotater** (se [Ledernotater](#leader-notes) nedenfor). Når skjemaer er koblet til gruppen, vises også en seksjon for **Koblede skjemaer** (se [Koblede skjemaer](#linked-forms) nedenfor).
+Når du er ferdig, klikker du lenken **Back to** med gruppens navn for å gå tilbake til gruppesiden. Gruppesiden viser et sammendrag av gruppens **Members** (med **All members**), **Sessions** (**All sessions**), **Calendar** (**All events**) og **Health** (**See health**). Hver lenke åpner den fullstendige visningen; **See health** viser gruppens antall medlemmer, nye medlemmer, avganger og frafall, med diagrammer over endringer i medlemskap, oppmøte, alder og kjønn. Hvis du er en av gruppens ledere, vises også **Leader notes** (se [Lederens notater](#leader-notes) nedenfor). Når skjemaer er knyttet til gruppen, vises også en seksjon **Linked forms** (se [Tilknyttede skjemaer](#linked-forms) nedenfor).
 
-### Legge til noen som ikke er i B1 ennå
+### Legge til noen som ikke er i B1 ennå {#adding-someone-who-isnt-in-b1-yet}
 
-Hvis søket ditt ikke finner noen, viser søket **Ingen poster funnet** med en lenke til **Legg til ny person**. Klikk på den, skriv inn personens fornavn, etternavn og eventuelt e-post, og klikk **Legg til**. Den nye personen opprettes i personkatalogen din og legges til i gruppen i ett steg -- du trenger ikke søke etter dem igjen.
+Hvis søket ditt ikke finner noen, viser søket **No records found** med en lenke **Add New Person**. Klikk på den, skriv inn personens fornavn og etternavn, eventuelt tittel, e-post og mobilnummer, og klikk **Add**. Den nye personen opprettes i personregisteret ditt og legges til i gruppen i ett steg – du trenger ikke å søke etter vedkommende igjen.
 
 ## Utpeke gruppeledere {#designating-group-leaders}
 
-Gruppeledere har spesielle rettigheter -- de kan redigere [gruppekalenderen](group-calendar.md), administrere arrangementer og hjelpe til med å koordinere gruppen.
+Gruppeledere har spesielle rettigheter – de kan redigere [gruppekalenderen](group-calendar.md), administrere hendelser og hjelpe til med å koordinere gruppen.
 
-1. Finn personen du vil gjøre til leder i gruppens medlemsliste.
-2. Klikk på **stjerneikonet** (**Gjør til leder**) ved siden av navnet deres.
-3. Personen er nå utpekt som gruppeleder og viser en merkelapp **Leder**.
+1. Finn personen du vil gjøre til leder i medlemslisten for gruppen.
+2. Klikk på **stjerneikonet** (**Make Leader**) ved siden av navnet.
+3. Personen er nå utpekt som gruppeleder og viser et merke **Leader**.
 
-For å fjerne lederstatus klikker du stjerneikonet (**Fjern lederrettigheter**) igjen.
+For å fjerne lederstatus klikker du stjerneikonet (**Remove Leader Access**) igjen. Øverst i medlemslisten telles gruppens medlemmer og ledere.
 
 :::info
-Alle gruppemedlemmer kan se gruppekalenderen og arrangementene, men bare ledere kan legge til eller redigere kalenderarrangementer.
+Alle gruppemedlemmer kan se gruppekalenderen og hendelsene, men bare ledere kan legge til eller redigere kalenderhendelser.
 :::
 
-## Koblede skjemaer {#linked-forms}
+## Tilknyttede skjemaer {#linked-forms}
 
-Når et frittstående skjema er [koblet til gruppen](../forms/creating-forms.md#linking-a-form-to-a-group), viser gruppesiden en seksjon for **Koblede skjemaer** med hvert skjemas navn, om det er **Åpent** eller **Stengt**, og hvor mange skjemaer som er koblet. Seksjonen vises bare for gruppens ledere og for personer som kan administrere skjemaer, og bare når minst ett skjema er koblet. Skjemaadministratorer kan klikke på et skjemas navn for å åpne det, eller klikke **Alle skjemaer** for å gå til siden Skjemaer.
+Når et frittstående skjema er [knyttet til gruppen](../forms/creating-forms.md#linking-a-form-to-a-group), viser gruppesiden en seksjon **Linked forms** med navnet på hvert skjema, om det er **Open** eller **Closed**, og hvor mange skjemaer som er knyttet til. Seksjonen vises bare for gruppens ledere og for personer som kan administrere skjemaer, og bare når minst ett skjema er knyttet til. Skjemaadministratorer kan klikke på et skjemanavn for å åpne det, eller klikke **All forms** for å gå til siden Forms.
 
 Gruppeledere leser og skriver ut svarene på disse skjemaene fra gruppens side på [B1.church](../../b1-church/groups/group-details.md#linked-forms).
 
-## Ledernotater {#leader-notes}
+## Lederens notater {#leader-notes}
 
-Gruppeledere kan føre private notater om gruppen -- for eksempel oppfølginger, bønnebehov eller pastorale bekymringer -- som resten av gruppen aldri ser.
+Gruppeledere kan føre private notater om gruppen – for eksempel oppfølginger, bønnebehov eller pastorale bekymringer – som resten av gruppen aldri ser.
 
-Seksjonen **Ledernotater** vises på gruppesiden bare for personer som er ledere i den gruppen. Den viser det nyeste notatet, hvem som skrev det og når, og hvor mange notater det finnes.
+Seksjonen **Leader notes** vises på gruppesiden bare for personer som er ledere for gruppen. Den viser det nyeste notatet, hvem som skrev det og når, og hvor mange notater det finnes.
 
-1. På gruppesiden klikker du **Alle notater** i seksjonen **Ledernotater**.
-2. Skriv notatet ditt i boksen og legg det ut. Notatene vises med forfatterens navn og bilde, og dato og klokkeslett for når hvert ble lagt ut.
-3. Klikk lenken **Tilbake til** med gruppens navn for å gå tilbake til gruppesiden.
+1. På gruppesiden klikker du **All notes** i seksjonen **Leader notes**.
+2. Skriv notatet ditt i boksen og legg det ut. For å formatere det markerer du tekst og velger **Bold**, **Italic**, **Bulleted list** eller **Numbered list** fra popup-menyen som dukker opp (eller trykker **Ctrl+B** / **Ctrl+I**). Notatene vises med forfatterens navn og bilde, og dato og klokkeslett for når de ble lagt ut.
+3. Klikk lenken **Back to** med gruppens navn for å gå tilbake til gruppesiden.
 
 :::info
-Ledernotater er bare synlige for gruppens ledere. Andre medlemmer kan ikke se dem, og det kan heller ikke ansatte eller administratorer -- selv med full tilgang -- med mindre de også er ledere i den gruppen. For å gi en annen person tilgang, [gjør du dem til leder](#designating-group-leaders). Ledere ser også disse notatene i seksjonen **Ledernotater** på gruppesiden på [B1.church](../../b1-church/groups/group-details.md#leader-notes), og på fanen **Grupper** på siden [Notater](../people/notes.md) i B1 Admin.
+Lederens notater er bare synlige for gruppens ledere. Andre medlemmer kan ikke se dem, og det kan heller ikke ansatte eller administratorer – selv med full tilgang – med mindre de også er ledere for gruppen. For å gi en annen person tilgang, [gjør dem til leder](#designating-group-leaders). Ledere ser også disse notatene i seksjonen **Leader notes** på gruppens side på [B1.church](../../b1-church/groups/group-details.md#leader-notes), og på fanen **Groups** på siden [Notater](../people/notes.md) i B1 Admin.
 :::
 
-## Sende meldinger til gruppemedlemmer
+## Sende meldinger til gruppemedlemmer {#sending-messages-to-group-members}
 
-Du kan kommunisere med alle medlemmene i en gruppe direkte fra B1 Admin:
+Du kan kommunisere direkte med alle medlemmene i en gruppe fra B1 Admin:
 
-1. I gruppens medlemsliste klikker du ikonet **Send en melding til medlemmer** over listen.
-2. Skriv meldingen din i tekstboksen (eller velg en fra **Maler**).
-3. Klikk **Send**.
+1. I gruppens medlemsliste klikker du ikonet **Send a message to members** over listen.
+2. Skriv meldingen din i tekstboksen, med opptil 140 tegn. For å starte fra en ferdig melding klikker du **Show Templates** og velger en fra **Templates**.
+3. Klikk **Send**. Et varsel **Message sent.** bekrefter at den er sendt.
 
-Meldingen din leveres til alle medlemmene i gruppen.
+Meldingen leveres som et appvarsel til alle andre medlemmer i gruppen, og starter med «Message from» og fornavnet ditt.
 
-## Sende e-post til gruppemedlemmer
+## Sende e-post til gruppemedlemmer {#emailing-group-members}
 
 Du kan sende formaterte e-poster til alle medlemmene i en gruppe:
 
-1. Fra gruppens detaljside klikker du knappen **E-post** på venstre side av siden.
-2. Dialogen Send e-post åpnes og viser hvor mange medlemmer som vil få e-posten, og hvor mange som ikke har en e-postadresse registrert.
-3. Velg eventuelt en **e-postmal** fra nedtrekkslisten, eller skriv en melding fra bunnen av. Klikk **Administrer maler** for å lage eller redigere maler.
-4. Skriv inn en **emnelinje**. Du kan sette inn flettefelt ved å klikke på feltbrikkene: `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}`, `{{churchName}}`, og **Gruppenavn** (`{{groupName}}`), som fylles ut med gruppens navn.
-5. Skriv **e-postinnholdet** i HTML-editoren. De samme flettefeltene er tilgjengelige her.
-6. Klikk **Send**.
-7. En oppsummering viser hvor mange e-poster som ble sendt, og hvor mange medlemmer som ble hoppet over (ingen e-post registrert).
+1. Fra gruppens detaljside klikker du knappen **Email** på venstre side av siden.
+2. Dialogen Send Email åpnes og viser hvor mange medlemmer som vil få e-posten, og hvor mange som ikke har en e-postadresse registrert.
+3. Velg eventuelt en lagret e-post fra **Load Template (optional)**, eller skriv en melding fra bunnen av. Klikk **Manage Templates** for å lage eller redigere maler.
+4. Skriv inn et **Subject**. Du kan sette inn flettefelt ved å klikke på feltbrikkene: **First Name** (`{{firstName}}`), **Last Name** (`{{lastName}}`), **Display Name** (`{{displayName}}`), **Email** (`{{email}}`), **Church Name** (`{{churchName}}`) og **Group Name** (`{{groupName}}`), som fylles ut med gruppens navn.
+5. Skriv **email body** i formateringseditoren. De samme flettefeltene er tilgjengelige her. Klikk fanen **Preview** for å kontrollere meldingen før du sender.
+6. Klikk **Send Email**.
+7. Et sammendrag viser hvor mange e-poster som ble sendt, og hvor mange medlemmer som ble hoppet over (ingen e-postadresse registrert).
 
 :::tip
-Lag gjenbrukbare e-postmaler for gjentakende kommunikasjon, som ukeoppdateringer, arrangementskunngjøringer eller bønneemner. Maler sparer tid og sikrer ensartet budskap.
+Lag gjenbrukbare e-postmaler for faste meldinger, som ukentlige oppdateringer, kunngjøringer av arrangementer eller bønneforespørsler. Maler sparer tid og sikrer en konsekvent kommunikasjon.
 :::
 
-### Slå på gruppe-e-post for kirken din {#turning-on-group-email-for-your-church}
+### Slå på gruppe-e-post for menigheten din {#turning-on-group-email-for-your-church}
 
-Alle kirker på B1 sender e-post fra samme adresse, og de deler derfor én avsenderomdømme. For å holde alles e-post unna søppelpostmapper, gjennomgår ChurchApps-teamet hver kirke én gang før den kan sende gruppe-e-post.
+Alle menigheter i B1 sender e-post fra samme adresse (menighetens navn vises som avsendernavn), og de deler derfor én avsenderrykte. For å holde alles e-post ute av søppelpostmappene gjennomgår ChurchApps-teamet hver menighet én gang før den kan sende gruppe-e-post.
 
-Hvis kirken din ikke er gjennomgått ennå, viser dialogen Send e-post **Gruppe-e-post trenger en rask gjennomgang** i stedet for meldingseditoren:
+Hvis menigheten din ikke er gjennomgått ennå, viser dialogen Send Email **Group email needs a quick review** i stedet for meldingseditoren:
 
-1. Klikk **Be om gjennomgang**. ChurchApps-støtteteamet får beskjed.
-2. Dialogen endres til **Gjennomgang forespurt**. Du kan lukke den.
-3. Gruppe-e-post slås vanligvis på innen én arbeidsdag. Åpne dialogen Send e-post igjen etter det for å sende meldingen din.
+1. Klikk **Request review**. ChurchApps-supportteamet får beskjed.
+2. Dialogen endres til **Review requested**. Du kan lukke den.
+3. Gruppe-e-post slås vanligvis på innen én virkedag. Åpne dialogen Send Email på nytt etter det for å sende meldingen din.
 
-Før kirken din er godkjent, sender B1 heller ikke [oppfølgings-e-poster fra skjemaer](../forms/creating-forms.md#sending-a-follow-up-email) eller trinnet **Send e-post** i [arbeidsflyter](../serving/workflows.md).
+Før menigheten din er godkjent, sender B1 heller ikke [oppfølgings-e-poster fra skjemaer](../forms/creating-forms.md#sending-a-follow-up-email) eller trinnet **Send email** i [arbeidsflyter](../serving/workflows.md).
 
-:::info Sendingsgrenser
-Etter godkjenning kan en kirke sende opptil 150 kirkeskrevne e-poster per dag. Grensen øker etter hvert som kirken bygger opp en ren sendingshistorikk, opptil 2 000 per dag. Hvis nylige meldinger har blitt returnert eller merket som søppelpost, settes gruppe-e-post på pause, og dialogen ber deg kontakte støtte. Hvis en sending ville gå over den daglige grensen din, sender B1 den ikke og viser en feilmelding.
+:::info Sendegrenser
+Etter godkjenning kan en menighet sende opptil 150 e-poster skrevet av menigheten per dag. Grensen øker etter hvert som menigheten bygger opp en ren sendehistorikk, opp til 2 000 per dag. Hvis nylige meldinger har blitt returnert eller merket som spam, settes gruppe-e-post på pause, og dialogen ber deg kontakte support. Hvis en sending ville gått over den daglige grensen, sender B1 den ikke og viser en feilmelding.
 :::
 
 ## Sende tekstmeldinger til gruppemedlemmer {#texting-group-members}
 
-Når kirken din har koblet til en [SMS-leverandør](../settings/church-settings.md#texting), vises en knapp **SMS** (**Send SMS til denne gruppen**) ved siden av knappen **E-post** på gruppesiden.
+Når menigheten din har koblet til en [leverandør for tekstmeldinger](../settings/church-settings.md#texting), vises en knapp **Text** (**Text this group**) ved siden av knappen **Email** på gruppesiden.
 
-1. Klikk **SMS** fra gruppens detaljside.
-2. Dialogen viser hvor mange medlemmer som får meldingen. Medlemmer uten registrert mobilnummer, eller som har reservert seg, hoppes over.
-3. Velg eventuelt en lagret tekstmelding fra **Last inn mal (valgfritt)** for å fylle ut meldingen. Velgeren vises når kirken din har [tekstmaler](../settings/email-templates.md#text-templates); personer som kan redigere innstillinger ser også en lenke til **Administrer maler**.
-4. Skriv eller rediger meldingen din. For å personalisere den klikker du på en plassholderbrikke under meldingsboksen -- **Fornavn**, **Etternavn**, **Visningsnavn**, **Kirkens navn** eller **Gruppenavn** -- for å sette den inn der markøren står. Hver plassholder fylles ut med mottakerens egne opplysninger når teksten sendes; **Gruppenavn** blir gruppens navn.
+1. Fra gruppens detaljside klikker du **Text**.
+2. Dialogen viser hvor mange medlemmer som vil få teksten. Medlemmer uten mobilnummer registrert, eller som har reservert seg, hoppes over.
+3. Velg eventuelt en lagret tekstmelding fra **Load Template (optional)** for å fylle inn meldingen. Velgeren vises når menigheten din har [tekstmaler](../settings/email-templates.md#text-templates); personer som kan redigere innstillinger ser også en lenke **Manage Templates**.
+4. Skriv eller rediger meldingen din. For å personalisere den klikker du en plassholderbrikke under meldingsboksen – **First Name**, **Last Name**, **Display Name**, **Church Name** eller **Group Name** – for å sette den inn ved markøren. Hver plassholder fylles ut med mottakerens egne opplysninger når teksten sendes; **Group Name** blir gruppens navn.
 5. Klikk **Send**.
 
-Se [Personalisere tekster med flettefelt](../settings/church-settings.md#personalizing-texts-with-merge-fields) for mer informasjon.
+Se [Personliggjøre tekster med flettefelt](../settings/church-settings.md#personalizing-texts-with-merge-fields) for mer informasjon.
 
-## Eksportere gruppedata
+## Eksportere gruppedata {#exporting-group-data}
 
 For å laste ned gruppens medlemsliste som en fil:
 
-1. I gruppens medlemsliste klikker du **Eksporter** over listen.
-2. En CSV-fil med informasjon om gruppens medlemmer lastes ned til datamaskinen din.
+1. I gruppens medlemsliste klikker du **Export** over listen.
+2. En CSV-fil med medlemsopplysningene for gruppen lastes ned til datamaskinen din.
 
-En CSV-eksport er nyttig for å importere data til andre verktøy, eller for å beholde offline-kopier. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
+En CSV-eksport er nyttig for å importere data til andre verktøy eller for å beholde offline-kopier. For flere eksportalternativer, se [Eksportere data](../people/exporting-data.md).
 
 ## Skrive ut medlemslisten {#printing-the-member-list}
 
-I gruppens medlemsliste klikker du ikonet **Skriv ut navneliste** (skriver) over listen og velger et oppsett. Siden åpnes i en ny fane, og nettleserens utskriftsdialog vises automatisk.
+I gruppens medlemsliste klikker du ikonet **Print Roll Sheet** (skriver) over listen og velger et oppsett. Ikonet vises for personer som kan se gruppemedlemmer, og for gruppens ledere. Siden åpnes i en ny fane, og nettleserens utskriftsdialog vises automatisk.
 
-- **Oppmøteliste** -- en udatert klasseliste med bokser for **Til stede** og **Fraværende**, som lærere kan krysse av for hånd. Se [Skrive ut en navneliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
-- **Kontaktliste** -- en kontaktliste for gruppen, datert i dag og med kirkens logo (**logo for lys bakgrunn** fra [Nettsted > Utseende](../website/appearance.md), hvis du har lastet opp en) øverst, med kirkens navn under, og gruppens navn. Hvert medlem har en rad med **Navn**, **Telefon**, **E-post** og **Adresse**. Ledere står først og er merket **Leder**, deretter alle andre etter etternavn. Telefonnummeret som vises er medlemmets mobilnummer, eller hjem- eller jobbnummer hvis det ikke finnes et mobilnummer. Kontaktopplysninger står tomme for dem som har reservert seg.
+- **Attendance Sheet** – en udatert klasseliste med bokser for **Present** og **Absent**, som lærere kan krysse av for hånd. Se [Skrive ut en klasseliste](../attendance/recording-attendance.md#printing-a-roll-sheet).
+- **Contact Roster** – en kontaktliste for gruppen, datert i dag og med menighetens logo (**Light Background Logo** fra [Nettside > Utseende](../website/appearance.md), hvis du har lastet opp en) øverst, med menighetens navn under, og gruppens navn. Hvert medlem har en rad med **Name**, **Phone**, **Email** og **Address**. Ledere står først og er merket **Leader**, deretter alle andre etter etternavn. Telefonnummeret som vises, er medlemmets mobilnummer, eller hjemme- eller jobbnummer hvis det ikke finnes mobilnummer. Kontaktopplysninger er tomme for alle som har reservert seg.
 
 :::warning
-En kontaktliste inneholder medlemmenes personlige kontaktopplysninger. Del utskrevne kopier bare med gruppens ledere og andre som trenger dem.
+En kontaktliste inneholder medlemmenes personlige kontaktopplysninger. Del utskrifter bare med gruppens ledere og andre som trenger dem.
 :::
 
-## Sende push-varsler til gruppemedlemmer
+## Sende pushvarsler til gruppemedlemmer {#sending-push-notifications-to-group-members}
 
-Du kan sende et push-varsel direkte til alle gruppemedlemmer som har B1.church-appen installert på enheten sin med push-varsler slått på.
+Du kan sende et pushvarsel direkte til alle gruppemedlemmer som har appen B1.church installert på enheten sin, med pushvarsler slått på.
 
-1. Fra gruppens detaljside klikker du **Varsle** (under knappene **E-post** og **SMS** -- SMS-knappen vises når en [SMS-leverandør](../settings/church-settings.md#texting) er koblet til).
-2. En dialog åpnes og viser hvor mange av gruppens medlemmer som har push slått på.
-3. Fyll inn detaljene for varselet:
-   - **Tittel** *(påkrevd)* -- Et kort sammendrag, opptil 80 tegn.
-   - **Melding** *(påkrevd)* -- Varslets innhold, opptil 240 tegn.
-   - **URL for åpne lenke eller flyer** *(valgfritt)* -- En relativ appsti (for eksempel `/mobile/groups`) eller en full `https://`-URL som varselet åpner når det trykkes på.
-   - **Bilde-URL** *(valgfritt)* -- En `https://`-URL til et bilde som vises sammen med varselet på støttede enheter.
-4. En direkte forhåndsvisning viser hvordan varselet vil se ut på enheten.
-5. Klikk **Send varsel**.
+1. Fra gruppens detaljside klikker du **Notify** (under knappene **Email** og **Text** – knappen **Text** vises når en [leverandør for tekstmeldinger](../settings/church-settings.md#texting) er koblet til).
+2. En dialog åpnes og viser hvor mange av gruppens medlemmer som har pushvarsler slått på. Du telles ikke, siden du er avsender.
+3. Under **When** lar du **Send now** stå, eller velger **Schedule for later** og velger en dato og et klokkeslett under **Send at**. Planlagte varsler kan vises, redigeres eller avlyses under **Mobile > [Push Notifications](../settings/mobile-app.md#push-notifications)**.
+4. Fyll inn detaljene for varselet:
+   - **Title** *(påkrevd)* – et kort sammendrag, opptil 80 tegn.
+   - **Message** *(påkrevd)* – selve innholdet i varselet, opptil 240 tegn.
+   - **Open link or flyer URL** *(valgfritt)* – en relativ sti i appen (for eksempel `/mobile/groups`) eller en full `https://`-adresse som varselet åpner når det trykkes på.
+   - **Image URL** *(valgfritt)* – en `https://`-adresse til et bilde som vises sammen med varselet på støttede enheter.
+5. En direkte forhåndsvisning viser hvordan varselet vil se ut på enheten.
+6. Klikk **Send Notification** (eller **Schedule Notification**).
 
 :::info
-Push-varsler leveres bare til gruppemedlemmer som har B1.church-PWA-en installert og ikke har slått av push-varsler. Medlemmer uten registrert push-enhet, eller med push slått av, telles som hoppet over, og sendingsoppsummeringen viser hvor mange som ble nådd og hvor mange som ble hoppet over.
+Pushvarsler leveres bare til gruppemedlemmer som har installert B1.church-PWA-en og ikke har slått av pushvarsler. Medlemmer uten registrert pushenhet, eller med pushvarsler av, telles som hoppet over, og sammendraget viser hvor mange som ble nådd kontra hoppet over.
 :::
 
 :::tip
-Etter sending viser dialogen hvor mange varsler som ble lagt i kø. Hvis de fleste medlemmene vises som hoppet over, kan du minne dem på å besøke B1.church-nettstedet sitt, installere det som en app på hjemskjermen og tillate varsler når de blir spurt.
+Etter at du har sendt, viser dialogen hvor mange varsler som ble lagt i kø. Hvis de fleste medlemmene vises som hoppet over, minn dem på å besøke B1.church-nettstedet sitt, installere det som en app på startskjermen og tillate varsler når du blir spurt.
 :::
 
-## Fjerne medlemmer
+## Fjerne medlemmer {#removing-members}
 
-For å fjerne noen fra en gruppe, finner du navnet deres i medlemslisten og klikker knappen **fjern** ved siden av oppføringen.
+For å fjerne noen fra en gruppe finner du navnet deres i medlemslisten, klikker på **Remove**-ikonet ved siden av oppføringen og bekrefter.
 
 :::info
-Å fjerne en person fra en gruppe sletter dem ikke fra kirkekatalogen din. De vil fortsatt vises i delen [Personer](../people/adding-people.md) og kan legges til i gruppen igjen når som helst.
+Å fjerne en person fra en gruppe sletter dem ikke fra menighetens register. De vises fortsatt i seksjonen [People](../people/adding-people.md), og kan legges til i gruppen igjen når som helst.
 :::

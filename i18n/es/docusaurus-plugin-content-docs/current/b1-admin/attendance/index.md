@@ -1,58 +1,59 @@
 ---
 title: "Asistencia"
-description: "Revisa la asistencia semanal, salas e invitados en B1 Admin, y configura campus, horarios, totales y quiosco desde la página de Asistencia."
+description: "Revise la asistencia semanal, las salas y los invitados en B1 Admin, y luego configure campus, horarios de servicio, conteos totales y registro de entrada en quiosco desde la página de Asistencia."
 ---
 
 # Asistencia
 
 <div class="article-intro">
 
-La sección de Asistencia en B1 Admin te brinda una vista completa de quién está asistiendo a tu iglesia y cómo tus grupos están creciendo con el tiempo. Desde configurar sedes y horarios de servicio hasta revisar tendencias y configurar auto registro, todo lo que necesitas para rastrear y entender la asistencia se gestiona desde esta página.
+La sección de Asistencia en B1 Admin le ofrece una vista completa de quién asiste a su iglesia y de cómo crecen sus grupos con el tiempo. Desde la configuración de campus y horarios de servicio hasta la revisión de tendencias y la configuración del autoservicio de registro de entrada, todo lo necesario para registrar y entender la asistencia se gestiona desde esta página.
 
 </div>
 
-## Descripción General de la Página
+## Descripción de la página {#page-overview}
 
-Para abrir la página, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **People** y haz clic en **Attendance**. La página se abre con un resumen de **esta semana** (de domingo a sábado).
+Para abrir la página, abra el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), despliegue **Personas** y haga clic en **Asistencia**. La página se abre con un resumen de **esta semana** (de domingo a sábado).
 
-La columna izquierda muestra las fechas de la semana y el número total de personas **en la sala**: tu total de conteos si se registraron conteos esta semana, o de lo contrario, el número de personas registradas. Debajo del total verás cuántas se registraron, se contaron y cuántas fueron huéspedes, además de un desglose por servicio si tienes más de uno. Si nadie se ha registrado todavía esta semana, se muestra la última semana que tuvo asistencia.
+La columna izquierda muestra las fechas de la semana y el número total de personas **en la sala**: su conteo total si se introdujeron conteos totales esta semana, o de lo contrario el número de personas registradas. Debajo del total verá cuántas se registraron, contaron y cuántos fueron invitados, además de una división por servicio cuando tiene más de uno. Si nadie se ha registrado todavía esta semana, se indica así y se muestra la última fecha en que se registró asistencia (por ejemplo, "Último registro 25 de ene de 2026: 10").
 
 El área principal de la página muestra:
 
-- **Rooms** -- cada grupo en el que las personas se registraron esta semana, con el número de registros (y una barra de capacidad para los grupos con capacidad de registro). Haz clic en un grupo para abrirlo.
-- **Guests** -- personas que se registraron como huéspedes esta semana. Haz clic en un nombre para abrir su registro.
-- **Last 13 weeks** -- un pequeño gráfico de barras con los registros semanales, y cuántas de esas semanas tuvieron registros.
-- **Headcounts this week** -- conteos registrados para los servicios de esta semana.
+- **Salas**: cada grupo al que las personas se registraron esta semana, con el número de registros (y una barra de capacidad para los grupos que tienen capacidad de registro). Haga clic en un grupo para abrirlo.
+- **Invitados**: personas que se registraron como invitados esta semana. Haga clic en un nombre para abrir su registro.
+- **Últimas 13 semanas**: un pequeño gráfico de barras de los registros semanales, con cuántas de esas semanas tuvieron registros. Su enlace **Todos los años** abre los informes.
+- **Conteos totales de esta semana**: conteos totales introducidos para los servicios de esta semana.
 
-## Acciones
+## Acciones {#actions}
 
-La columna izquierda también contiene las acciones de la página. Cada una se abre en el área principal; haz clic en el enlace de regreso **Attendance** para volver al resumen semanal.
+La columna izquierda también contiene las acciones de la página. Cada una se abre en el área principal; haga clic en el enlace de regreso **Asistencia** para volver al resumen semanal.
 
-### Setup
+### Configuración {#setup}
 
-Haz clic en **Setup** para configurar los elementos básicos del seguimiento de asistencia. Aquí defines tus sedes, añades servicios y horarios de servicio a cada sede (incluido un horario de registro opcional para cada horario de servicio) y ves qué [grupos](../groups/creating-groups.md) están asignados a esos horarios de servicio. En la parte superior aparecen los recuentos de sedes, horarios de servicio, grupos programados y no programados, y el total de grupos. Solo necesitas hacer esto una vez, aunque puedes actualizarlo cuando cambie tu horario. Consulta [Configuración de Asistencia](setup.md) para un recorrido completo.
+Haga clic en **Configuración** para configurar los elementos básicos del seguimiento de asistencia (solo aparece para las personas con el permiso de asistencia **Editar servicios**). Aquí define sus campus, añade servicios y horarios de servicio a cada campus (incluido un horario de registro opcional para cada horario de servicio) y ve qué [grupos](../groups/creating-groups.md) están asignados a esos horarios de servicio. En la parte superior aparecen los totales de campus, horarios de servicio, grupos con y sin horario, y grupos en total. Solo necesita hacer esto una vez, aunque puede actualizarlo cada vez que cambie su horario. Consulte [Configuración de asistencia](setup.md) para una guía completa.
 
-### All years (Reports)
+### Todos los años (Informes) {#all-years-reports}
 
-Haz clic en **All years** para abrir los informes de asistencia. Las pestañas en la parte superior cambian entre **Attendance Trend** (tendencias de toda la iglesia a lo largo del tiempo), **Headcount Trend** (totales de conteos por semana) y **Group Attendance** (asistencia desglosada por grupo individual). Usa los filtros para limitar los resultados por rango de fechas, sede u horario de servicio. Consulta [Rastreando Asistencia](tracking-attendance.md) para obtener detalles sobre cómo usar informes y filtros.
+Haga clic en **Todos los años** para abrir los informes de asistencia. Las pestañas en la parte superior cambian entre **Tendencia de asistencia** (tendencias de toda la iglesia a lo largo del tiempo), **Tendencia de conteo total** (totales de conteo por semana) y **Asistencia por grupo** (asistencia desglosada por cada grupo). Use los filtros para reducir los resultados por rango de fechas, campus u horario de servicio. Consulte [Seguimiento de asistencia](tracking-attendance.md) para más detalles sobre el uso de informes y filtros.
 
-### Enter headcount
+### Introducir conteo total {#enter-headcount}
 
-Haz clic en **Enter headcount** para registrar un total simple para un servicio, horario de servicio o grupo, en lugar de un registro nominal. Consulta [Entrada y Tendencia de Conteos](headcount-entry.md) para obtener detalles.
+Haga clic en **Introducir conteo total** para registrar un conteo total simple de un servicio, horario de servicio o grupo, en lugar de una lista nominal. Consulte [Registro de conteo total y tendencia](headcount-entry.md) para más detalles.
 
-### Kiosk
+### Quiosco {#kiosk}
 
-Haz clic en **Kiosk** para abrir la configuración de **Kiosk Theme**, donde defines las imágenes de fondo del quiosco de registro y el comportamiento de la pantalla de inactividad. Un enlace **Check-in kiosk, QR, and labels** te lleva a la configuración completa de [B1 CheckIn](check-in.md).
+Haga clic en **Quiosco** para abrir la configuración del **Tema del quiosco**, donde establece la imagen de fondo del quiosco de registro y la pantalla de inactividad. Un enlace **Registro de entrada en quiosco, QR y etiquetas** lo lleva a la configuración completa de [B1 CheckIn](check-in.md), que también cubre el registro de invitados por QR y el [diseñador de etiquetas](labels.md). Los colores del quiosco provienen de **Móvil > Tema de la app**.
 
-## Próximos Pasos
+## Próximos pasos {#next-steps}
 
-- [Configuración de Asistencia](setup.md) -- configura sedes, horarios de servicio y grupos
-- [Registrando Asistencia](recording-attendance.md) -- ingresa manualmente la asistencia para una sesión de grupo e imprime hojas de asistencia de clase
-- [Rastreando Asistencia](tracking-attendance.md) -- ver tendencias y filtrar reportes
-- [Entrada y Tendencia de Conteos](headcount-entry.md) -- registra y grafica conteos totales sin un registro nominal
-- [Auto Registro](check-in.md) -- configura auto registro para servicios
-- [Seguridad en Auto Registro](checkin-safety.md) -- capacidades de sala, ratios de voluntarios, personas de recogida y paginación
+- [Configuración de asistencia](setup.md): configure campus, horarios de servicio y grupos
+- [Registrar asistencia](recording-attendance.md): introduzca manualmente la asistencia de una sesión de grupo e imprima las listas de asistencia de clase
+- [Seguimiento de asistencia](tracking-attendance.md): vea tendencias y filtre informes
+- [Registro de conteo total y tendencia](headcount-entry.md): registre y grafique totales sin una lista nominal
+- [Registro de entrada](check-in.md): configure el autoservicio de registro de entrada para los servicios
+- [Seguridad en el registro de entrada](checkin-safety.md): capacidades de salas, proporciones de voluntarios, personas autorizadas para recoger y avisos
+- [Diseñador de etiquetas de registro de entrada](labels.md): diseñe las credenciales y los comprobantes de recogida impresos en el registro
 
 :::tip
-Si estás configurando la asistencia por primera vez, comienza con la guía [Configuración de Asistencia](setup.md) para definir tus sedes y horarios de servicio. Una vez que eso esté en su lugar, puedes comenzar a [registrar asistencia](recording-attendance.md) manualmente o configurar [auto registro](check-in.md).
+Si configura la asistencia por primera vez, comience con la guía de [Configuración de asistencia](setup.md) para definir sus campus y horarios de servicio. Una vez hecho esto, puede empezar a [registrar la asistencia](recording-attendance.md) manualmente o configurar el [autoservicio de registro de entrada](check-in.md).
 :::

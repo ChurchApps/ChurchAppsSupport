@@ -1,34 +1,34 @@
 ---
-title: "Ehrenamt und Anmeldung in B1.church"
+title: "Ehrenamtlicher Dienst und Anmeldung in B1.church"
 sidebar_label: "Dienst"
-description: "Suchen Sie auf B1.church nach offenen Ehrenamtsstellen, melden Sie sich an, sehen Sie Ihre Einsätze und sagen Sie Anmeldungen vor Fristende wieder ab."
+description: "Durchsuche Ehrenamtsmöglichkeiten auf B1.church, melde dich für offene Positionen an, sieh dir deine Diensteinsätze an und storniere Anmeldungen vor der Frist."
 ---
 
 # Dienst
 
 <div class="article-intro">
 
-Im Bereich Dienst auf B1.church können Sie ehrenamtliche Möglichkeiten durchsehen und sich für Positionen in Ihrer Gemeinde eintragen. Neben Ihren zugewiesenen Plänen und Gottesdienstabläufen können Sie nun selbst Positionen wählen, die noch besetzt werden müssen.
+Der Bereich Dienst auf B1.church ermöglicht es dir, Ehrenamtsmöglichkeiten zu durchsuchen und dich für Positionen in deiner Gemeinde anzumelden. Zusätzlich zu deinen zugewiesenen Plänen und Gottesdienstreihenfolgen kannst du nun selbst die Positionen wählen, die noch besetzt werden müssen.
 
 </div>
 
-## Was Sie tun können
+## Was du tun kannst {#what-you-can-do}
 
-- **Ehrenamtliche Möglichkeiten durchsehen** -- Sehen Sie kommende Dienstpläne mit offenen Positionen, die Freiwillige benötigen.
-- **Sich für Positionen eintragen** -- Wählen Sie eine Position und tragen Sie sich mit einem Klick selbst ein.
-- **Ihre Pläne ansehen** -- Sehen Sie Ihre kommenden und vergangenen [Dienstzuweisungen](../plans/viewing-plans.md).
-- **Auf Zuweisungen antworten** -- Nehmen Sie Positionen, für die Sie eingeplant sind, an oder lehnen Sie sie ab, und zwar auf der Seite Pläne oder im Abschnitt **Sie dienen** auf der Startseite. Ändern sich Ihre Pläne, nachdem Sie zugesagt haben, können Sie eine [angenommene Zuweisung zurückgeben](../plans/viewing-plans.md#declining-an-accepted-assignment), bis der Gottesdienst vorbei ist.
-- **Eigene Eintragungen entfernen** -- Nehmen Sie eine Selbsteintragung zurück, wenn sich Ihre Pläne ändern (vor Ablauf der Frist).
+- **Ehrenamtsmöglichkeiten durchsuchen** -- Sieh dir kommende Dienstpläne mit offenen Positionen an, für die Helfer gesucht werden.
+- **Für Positionen anmelden** -- Wähle eine Position und melde dich mit einem Klick selbst an.
+- **Deine Pläne ansehen** -- Sieh deine kommenden und vergangenen [Diensteinsätze](../plans/viewing-plans.md).
+- **Auf Einsätze reagieren** -- Nimm Positionen an oder lehne sie ab, für die du eingeteilt wurdest, über die Seite Pläne oder den Abschnitt **Du dienst mit** auf der Startseite. Ändern sich deine Pläne nach der Zusage, kannst du einen [angenommenen Einsatz ablehnen](../plans/viewing-plans.md#declining-an-accepted-assignment), bis der Gottesdienst vorbei ist.
+- **Anmeldungen entfernen** -- Storniere deine Selbstanmeldung, wenn sich deine Pläne ändern (vor der Frist).
 
-## So funktioniert es
+## So funktioniert es {#how-it-works}
 
-Die Gemeindeverwaltung legt Dienstpläne an und markiert bestimmte Positionen als für die Selbsteintragung verfügbar. Diese Positionen erscheinen auf der Freiwilligen-Seite, nach Kategorien geordnet (etwa „Band“, „Gastfreundschaft“ oder „Kinderarbeit“). Sie sehen, wie viele Plätze für jede Position frei sind, und können sich für die Positionen eintragen, für die Sie verfügbar sind.
+Der Administrator deiner Gemeinde legt Dienstpläne an und markiert bestimmte Positionen als für Selbstanmeldung verfügbar. Diese Pläne erscheinen auf der Seite **Ehrenamtsmöglichkeiten** der Website deiner Gemeinde und auf dem Bildschirm **Ehrenamt** im Mitgliederportal (tippe im Bildschirm Pläne auf **Zum Dienst anmelden**). Öffne einen Plan, um seine Positionen zu sehen, nach Kategorie geordnet (etwa "Band", "Gastfreundschaft" oder "Kinderarbeit"), mit der Anzahl der freien Plätze in jeder, und melde dich für die an, für die du verfügbar bist.
 
 :::info
-Auf der Freiwilligen-Seite erscheinen nur Positionen, die Ihre Gemeindeverwaltung für die Selbsteintragung freigegeben hat. Manche Positionen werden möglicherweise nur durch direkte Zuweisung besetzt.
+Nur Positionen, die dein Gemeindeadministrator für die Selbstanmeldung freigegeben hat, erscheinen auf der Ehrenamtsseite. Manche Positionen können nur über direkte Einteilung besetzt werden.
 :::
 
-## Mehr erfahren
+## Mehr erfahren {#learn-more}
 
-- [Freiwilligen-Anmeldung](./volunteer-signup.md) -- Schritt-für-Schritt-Anleitung zum Durchsehen und Eintragen für ehrenamtliche Positionen
-- [Pläne anzeigen](../plans/viewing-plans.md) -- Ihre zugewiesenen Dienstpläne und Gottesdienstabläufe ansehen
+- [Ehrenamtliche Anmeldung](./volunteer-signup.md) -- Schritt-für-Schritt-Anleitung zum Durchsuchen und Anmelden für Ehrenamtspositionen
+- [Pläne anzeigen](../plans/viewing-plans.md) -- Sieh deine zugewiesenen Dienstpläne und Gottesdienstreihenfolgen

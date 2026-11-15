@@ -1,43 +1,45 @@
 ---
 title: "Configuración del perfil y dispositivos en B1 Admin"
 sidebar_label: "Perfil"
-description: "Actualice su nombre, correo electrónico, contraseña, inicio de sesión en dos pasos, tema y dispositivos conectados en su perfil de B1 Admin, y apruebe los cambios de perfil de los miembros."
+description: "Actualice su nombre, correo electrónico, contraseña, inicio de sesión de dos factores, tema y dispositivos conectados en su perfil de B1 Admin, y apruebe los cambios de perfil de los miembros."
 ---
 
 # Perfil
 
 <div class="article-intro">
 
-La sección Perfil le permite administrar la configuración de su cuenta personal en ChurchApps. Su perfil se comparte entre todas las herramientas de ChurchApps, así que los cambios que realice aquí se aplican en todas partes, desde B1 Admin hasta B1 App.
+La sección Perfil le permite administrar la configuración personal de su cuenta en ChurchApps. Para abrirla, haga clic en su foto de perfil en la esquina superior derecha de B1 Admin y elija **Edit Profile**. Su perfil se comparte entre todas las herramientas de ChurchApps, así que los cambios que haga aquí se aplican en todas partes, desde B1 Admin hasta la aplicación B1.
 
 </div>
 
-## Qué puede hacer
+## Lo que puede hacer {#what-you-can-do}
 
 Desde la sección Perfil, puede:
 
-- **Actualizar su nombre y correo electrónico** -- Mantenga su información de contacto al día.
-- **Cambiar su contraseña** -- Establezca una nueva contraseña para su cuenta.
-- **Activar el inicio de sesión en dos pasos** -- Requiera un código de una aplicación de autenticación al iniciar sesión. Consulte [Inicio de sesión en dos pasos](./managing-profile.md#two-factor-sign-in).
-- **Cambiar el tema** -- Alterne entre el modo claro y el modo oscuro desde el menú de usuario (haga clic en su foto de perfil en la esquina superior derecha).
-- **Administrar los dispositivos conectados** -- Vea y controle qué dispositivos ChurchAppsPlayer están vinculados a su cuenta.
-- **Ver las cuentas vinculadas** -- Vea y administre los servicios externos conectados a su cuenta de ChurchApps.
-- **Aprobar las solicitudes de cambio de perfil** -- Revise y aplique las actualizaciones enviadas por los miembros.
+- **Actualizar su nombre y correo electrónico**: mantenga actualizada su información de contacto.
+- **Cambiar su contraseña**: establezca una contraseña nueva para su cuenta.
+- **Activar el inicio de sesión de dos factores**: exija un código de una aplicación de autenticación al iniciar sesión. Consulte [Inicio de sesión de dos factores](./managing-profile.md#two-factor-sign-in).
+- **Cambiar de tema**: alterne entre el modo claro y oscuro desde el menú de usuario (haga clic en su foto de perfil en la esquina superior derecha).
+- **Administrar dispositivos conectados**: vea, vincule, renombre y elimine las pantallas ChurchAppsPlayer y FreePlay vinculadas a su cuenta.
+- **Ver cuentas vinculadas**: vea y administre los servicios externos conectados a su cuenta de ChurchApps.
+- **Aprobar solicitudes de cambio de perfil**: revise y aplique las actualizaciones enviadas por los miembros.
+- **Revisar solicitudes de eliminación de cuenta**: apruebe o rechace las solicitudes de los miembros para eliminar sus cuentas.
 
-## Subsecciones del perfil
+## Subsecciones del perfil {#profile-sub-sections}
 
 El área de Perfil tiene las siguientes páginas:
 
-1. **[Administrar su perfil](./managing-profile.md)** -- Edite su información personal, cambie su contraseña, administre las cuentas vinculadas, active el inicio de sesión en dos pasos, ajuste las preferencias de tema y gestione la eliminación de la cuenta.
-2. **[Aprobar cambios de perfil](./approving-profile-changes.md)** -- Revise y apruebe las solicitudes de actualización de perfil enviadas por los miembros a través de B1 App.
-3. **[Administrar dispositivos](./devices.md)** -- Vea, agregue y administre los dispositivos ChurchAppsPlayer emparejados con su cuenta.
+1. **[Administración de su perfil](./managing-profile.md)**: edite su información personal, cambie su contraseña, administre las cuentas vinculadas, active el inicio de sesión de dos factores, ajuste las preferencias de tema y gestione la eliminación de cuentas.
+2. **[Aprobación de cambios de perfil](./approving-profile-changes.md)**: revise y apruebe las solicitudes de actualización de perfil que los miembros envían a través de la aplicación B1.
+3. **[Revisión de solicitudes de eliminación de cuenta](./account-deletion.md)**: apruebe o rechace las solicitudes de los miembros para eliminar sus cuentas.
+4. **[Administración de dispositivos](./devices.md)**: vea, agregue, renombre y elimine las pantallas ChurchAppsPlayer y FreePlay vinculadas a su cuenta.
 
 :::tip
-Mantenga actualizada su dirección de correo electrónico. Se utiliza para recuperar la cuenta y para enviar notificaciones importantes de su iglesia.
+Mantenga actualizada su dirección de correo electrónico. Se usa para recuperar la cuenta y para las notificaciones importantes de su iglesia.
 :::
 
-## Próximos pasos
+## Siguientes pasos {#next-steps}
 
-- [Administrar su perfil](./managing-profile.md) -- Edite su configuración personal
-- [Aprobar cambios de perfil](./approving-profile-changes.md) -- Revise las solicitudes de cambio de perfil de los miembros
-- [Administrar dispositivos](./devices.md) -- Administre los dispositivos conectados
+- [Administración de su perfil](./managing-profile.md): edite su configuración personal
+- [Aprobación de cambios de perfil](./approving-profile-changes.md): revise las solicitudes de cambio de perfil de los miembros
+- [Administración de dispositivos](./devices.md): administre los dispositivos conectados

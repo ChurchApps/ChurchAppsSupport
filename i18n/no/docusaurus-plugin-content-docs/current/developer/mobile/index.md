@@ -30,7 +30,7 @@ En spesialbygd kioskapplikasjon for innsjekkingsstasjoner i kirker. Den gir et e
 
 En Android TV-applikasjon som viser leksjonsinnhold i klasserom. Lærere kan sende leksjonslysbilder, videoer og aktiviteter til en TV-skjerm, slik at det blir enkelt å presentere undervisningsmateriell i timene.
 
-## Lokalt oppsett
+## Lokalt oppsett {#local-setup}
 
 Alle mobilappene deler den samme Expo-baserte verktøykjeden og følger lignende oppsettmønstre. Med B1 Checkin som eksempel:
 

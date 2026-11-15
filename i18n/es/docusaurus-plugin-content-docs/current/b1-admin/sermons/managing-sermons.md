@@ -1,84 +1,91 @@
 ---
-title: "Gestionar Sermones"
-description: "Administra tu biblioteca de sermones en B1 Admin: agrega sermones desde YouTube, Vimeo o Facebook, edita los detalles y obtén una fuente de podcast para tu iglesia."
+title: "Administrar sermones"
+description: "Administre su biblioteca de sermones en B1 Admin: agregue sermones desde YouTube, Vimeo o Facebook, edite los detalles y obtenga un feed de podcast para su iglesia."
 ---
 
-# Gestionar Sermones
+# Administrar sermones
 
 <div class="article-intro">
 
-La página de Sermones muestra tu biblioteca completa de sermones. Desde aquí puedes añadir nuevos sermones, editar entradas existentes y organizar tu contenido por lista de reproducción. Cada sermón puede vincularse a video o audio alojado en YouTube, Vimeo, Facebook o una URL personalizada.
+La página de Sermones muestra toda su biblioteca de sermones. Desde aquí puede agregar sermones nuevos, editar las entradas existentes y organizar su contenido por lista de reproducción. Cada sermón puede enlazar a video o audio alojado en YouTube, Vimeo, Facebook o una URL personalizada.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de empezar</h4>
 
-- Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Crea al menos una [lista de reproducción](./playlists.md) para organizar tus sermones
-- Ten listos tus ID de video o URLs de YouTube, Vimeo o Facebook
+- Necesita el permiso **Editar servicios** en la sección **Contenido** de su rol. Consulte [Roles y permisos](../settings/roles-permissions.md) si no tiene acceso.
+- Cree al menos una [lista de reproducción](./playlists.md) para organizar sus sermones
+- Tenga a mano los IDs o las URL de sus videos de YouTube, Vimeo o Facebook
 
 </div>
 
-## Visualizar Tu Biblioteca de Sermones
+## Ver su biblioteca de sermones {#viewing-your-sermon-library}
 
-1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Sermones** y haz clic en **Sermones**.
-2. La página de Sermones muestra tus entradas de sermones en una tabla con la **Lista de Reproducción**, el título y la **Fecha de Publicación** de cada sermón. Usa la caja de búsqueda sobre la tabla para filtrar la lista. Tus listas de reproducción aparecen en un panel **Listas de Reproducción** junto a la tabla.
-3. Haz clic en **Editar** en la fila de cualquier sermón para ver o editar sus detalles.
+1. En B1 Admin, abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Sermones** y haga clic en **Sermones**.
+2. La página de Sermones muestra sus entradas en una tabla, con la **Lista de reproducción**, el título (**Sermón**) y la **Fecha de publicación** de cada sermón, del más reciente al más antiguo, junto con un recuento como "11 de 11 sermones". Escriba en el cuadro **Buscar sermones por título o lista de reproducción...** para filtrar la lista. Sus listas de reproducción aparecen en un panel **Listas de reproducción** junto a la tabla, y el panel **Feed de podcast** está debajo.
+3. Pase el cursor sobre una fila de sermón y haga clic en **Editar** para ver o editar sus detalles.
 
-## Añadir un Sermón
+## Agregar un sermón {#adding-a-sermon}
 
-1. Haz clic en el botón **Añadir Sermón** en la esquina superior derecha y selecciona **Añadir Sermón** del menú desplegable.
-2. Selecciona una **Lista de Reproducción** para asignar el sermón.
-3. Elige tu **Proveedor de Video** -- YouTube, Vimeo, Facebook o URL Personalizada. Recomendamos YouTube ya que funciona mejor con el sistema B1.
-4. Ingresa el ID de video o URL y haz clic en **Descargar**. Para YouTube, el ID de video es la cadena de caracteres después de `v=` en la URL de YouTube.
-5. Cuando hagas clic en **Descargar**, los detalles del sermón se importan automáticamente, incluyendo la fecha de publicación, duración, título, descripción y miniatura.
-6. Realiza los cambios que desees y haz clic en **Guardar**.
+1. Haga clic en el botón **Agregar sermón** en la esquina superior derecha y seleccione **Agregar sermón** en el menú desplegable. Se abre un formulario **Editar sermón** encima de la lista.
+2. Seleccione una **Lista de reproducción** para asignarle el sermón (o déjela en **Ninguna**).
+3. Elija su **Proveedor de video**: **YouTube**, **Vimeo**, **Facebook** o **URL de incrustación personalizada**. Recomendamos YouTube porque funciona mejor con el sistema B1.
+4. Escriba el **ID de YouTube**, el **ID de Vimeo**, el **ID del sermón** (Facebook) o la **URL de incrustación del sermón** del video. Puede pegar el enlace completo del video; B1 guarda solo el ID. En YouTube, el ID del video es la cadena de caracteres que aparece después de `v=` en la URL de YouTube.
+5. En YouTube y Vimeo, haga clic en **Obtener** para importar automáticamente los detalles del sermón, incluidos la fecha de publicación, la duración, el título, la descripción y la miniatura. Si no se pueden cargar los detalles, aparecerá un mensaje y podrá completarlos usted mismo.
+6. Haga los cambios que desee y haga clic en **Guardar**.
 
 :::tip
-También puedes añadir una URL de transmisión en vivo permanente seleccionando **Añadir URL de Transmisión en Vivo Permanente** en el menú desplegable **Añadir Sermón**. Esto crea una conexión persistente al flujo en vivo del canal de YouTube usando tu ID de Canal. Consulta [Transmisión en Vivo](./live-streaming.md) para más detalles.
+También puede agregar una URL de transmisión en vivo permanente seleccionando **Agregar URL de transmisión en vivo permanente** en el menú desplegable **Agregar sermón**. Esto crea una conexión persistente con la transmisión en vivo de su canal de YouTube usando su ID de canal. Consulte [Transmisión en vivo](./live-streaming.md) para más detalles.
 :::
 
-## Editar un Sermón
+## Editar un sermón {#editing-a-sermon}
 
-1. Haz clic en **Editar** en la fila de cualquier sermón de tu biblioteca para abrir sus detalles.
-2. Actualiza el título, orador, fecha, descripción, miniatura o enlaces de medios según sea necesario.
-3. Haz clic en **Guardar** para aplicar tus cambios.
+1. Haga clic en **Editar** en cualquier fila de sermón de su biblioteca para abrir sus detalles.
+2. Actualice el título, la fecha, la descripción, la miniatura, la duración o los enlaces multimedia según sea necesario.
+3. Haga clic en **Guardar** para aplicar los cambios, o en **Cancelar** para cerrar el formulario.
 
-## Detalles del Sermón
+Para eliminar un sermón, ábralo, haga clic en **Eliminar** y confirme.
+
+### Agregar un sermón a otra lista de reproducción {#adding-a-sermon-to-another-playlist}
+
+Para incluir el mismo sermón en una segunda lista de reproducción (por ejemplo, un sermón que pertenece tanto a una serie como a una colección de "Lo mejor"), abra el sermón, haga clic en **Agregar a otra lista de reproducción**, elija la lista y haga clic en **Agregar**. Esto guarda una copia del sermón en esa lista.
+
+## Detalles del sermón {#sermon-details}
 
 Cada entrada de sermón puede incluir:
 
-- **Título** -- El nombre del sermón mostrado a los visitantes
-- **Orador** -- Quién predicó el sermón
-- **Fecha** -- La fecha de publicación o predicación
+- **Lista de reproducción** -- La serie a la que pertenece el sermón
+- **Proveedor de video** y ID del video -- Dónde está alojado el video del sermón: YouTube, Vimeo, Facebook o una URL de incrustación personalizada
+- **Fecha de publicación** -- La fecha en que se publica el sermón; los sermones sin fecha muestran **Sin programar** en la lista
+- **Duración total del sermón** -- La duración del sermón en minutos y segundos
+- **Miniatura** -- Una imagen de vista previa que se muestra en su biblioteca de sermones. Haga clic en la imagen para recortarla o reemplazarla (16:9).
+- **Título** -- El nombre del sermón que se muestra a los visitantes
 - **Descripción** -- Un resumen del contenido del sermón
-- **Miniatura** -- Una imagen de vista previa mostrada en tu biblioteca de sermones
-- **Enlaces de Video/Audio** -- URLs del sermón multimedia en YouTube, Vimeo, Facebook o un servidor personalizado
-- **URL de Archivo de Audio (para podcast)** -- Un enlace directo a un archivo MP3/M4A para este sermón. Puedes pegar una URL o hacer clic en **Cargar Audio** para cargar un archivo y completarlo automáticamente. Solo los sermones con este campo (o un enlace directo a archivo de video) establecido se incluyen en tu feed de podcast.
+- **URL del archivo de audio (para podcast)** -- Un enlace directo a un archivo MP3/M4A de este sermón. Puede pegar una URL o, una vez guardado el sermón, hacer clic en **Subir audio** para subir un archivo y completar el campo automáticamente. Solo los sermones con este campo (o con un enlace directo a un archivo de video) configurado se incluyen en su feed de podcast.
 
-## Tu Feed de Podcast {#your-podcast-feed}
+## Su feed de podcast {#your-podcast-feed}
 
-Una vez que al menos un sermón tenga un archivo de audio o video adjunto, B1 Admin genera un feed RSS de podcast para tu iglesia automáticamente -- no hay nada que activar. Encuéntralo en el panel **Feed de Podcast** debajo de la lista de sermones: haz clic en el icono de copiar para copiar la URL del feed y luego envía esa URL a Apple Podcasts, Spotify o cualquier otro directorio de podcasts.
+Una vez que al menos un sermón tenga un archivo de audio o video adjunto, B1 Admin genera automáticamente un feed RSS de podcast para su iglesia; no hay nada que activar. Lo encontrará en el panel **Feed de podcast** junto a la lista de sermones (debajo del panel **Listas de reproducción**): haga clic en el icono de copiar para copiar la URL del feed y luego envíe esa URL a Apple Podcasts, Spotify o cualquier otro directorio de podcasts.
 
 :::info
-Los sermones que solo enlazan a un reproductor incrustado (como un ID de video de YouTube o Vimeo) no aparecerán en el feed de podcast -- las aplicaciones de podcast necesitan un archivo multimedia directo y descargable. Añade una **URL de Archivo de Audio** para incluir un sermón.
+Los sermones que solo enlazan a un reproductor incrustado (como un ID de video de YouTube o Vimeo) no aparecerán en el feed de podcast, porque las aplicaciones de podcast necesitan un archivo multimedia directo y descargable. Agregue una **URL del archivo de audio** para incluir un sermón.
 :::
 
-## Programar un Sermón para Transmisión en Vivo
+## Programar un sermón para la transmisión en vivo {#scheduling-a-sermon-for-live-stream}
 
-Después de añadir un sermón, puedes programarlo para transmitirse en tu página de transmisión en vivo:
+Después de agregar un sermón, puede programarlo para transmitirlo en su página de transmisión en vivo:
 
-1. En el menú Saltar, elige **Sermones > Horarios de Transmisión en Vivo**.
-2. Edita un servicio y bajo **Configuración de Video**, selecciona tu sermón del menú desplegable.
+1. En el menú Salto, elija **Sermones > Horarios de transmisión en vivo**.
+2. Edite un servicio y, en **Configuración de video**, seleccione su sermón en el menú desplegable **Sermón**.
 3. El sermón se reproducirá a la hora programada del servicio.
 
 :::info
-Para importar múltiples sermones de una vez en lugar de añadirlos uno por uno, usa la herramienta [Importación Masiva](./bulk-import.md) para extraer videos directamente de tu cuenta de YouTube o Vimeo.
+Para importar varios sermones a la vez en lugar de agregarlos uno por uno, use la herramienta [Importación masiva](./bulk-import.md) para extraer videos directamente de su cuenta de YouTube o Vimeo.
 :::
 
-## Próximos Pasos
+## Próximos pasos {#next-steps}
 
-- [Listas de Reproducción](./playlists.md) -- Organiza sermones en series
-- [Transmisión en Vivo](./live-streaming.md) -- Configura tu horario de transmisión
-- [Importación Masiva](./bulk-import.md) -- Importa múltiples sermones de una vez
+- [Listas de reproducción](./playlists.md) -- Organice los sermones en series
+- [Transmisión en vivo](./live-streaming.md) -- Configure su calendario de transmisión
+- [Importación masiva](./bulk-import.md) -- Importe varios sermones a la vez

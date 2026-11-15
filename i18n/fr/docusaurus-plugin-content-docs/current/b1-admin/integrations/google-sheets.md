@@ -1,114 +1,118 @@
 ---
 title: "Google Sheets"
-description: "Reliez B1 Admin à Google Sheets avec le complément B1 Export pour importer les personnes, dons, groupes et présences dans des onglets de feuille de calcul à la demande."
+description: "Connectez B1 Admin à Google Sheets grâce au module complémentaire B1 Export pour importer les personnes, les dons, les groupes et la fréquentation dans des onglets de tableur, à la demande."
 ---
 
 # Google Sheets
 
 <div class="article-intro">
 
-**B1 Export** est le module complémentaire officiel Google Sheets pour B1.church. Il ajoute une barre latérale à n'importe quel tableur qui exporte Personnes, Donations, Groupes ou Présences de votre église B1 dans des onglets nommés — à la demande, en un clic. Le module complémentaire s'exécute entièrement dans le compte Google de l'utilisateur; rien à ce sujet ne touche les serveurs ChurchApps au-delà des appels API en lecture seule que chaque export effectue.
+**B1 Export** est le module complémentaire officiel de Google Sheets pour B1.church. Il ajoute un panneau latéral à n'importe quel tableur afin d'exporter les personnes, les dons, les groupes ou la fréquentation de votre église B1 vers des onglets nommés — à la demande, en un seul clic. Le module complémentaire fonctionne entièrement dans le compte Google de l'utilisateur ; il ne touche aux serveurs de ChurchApps qu'à travers les appels API en lecture seule effectués par chaque exportation.
 
 </div>
+
+:::caution Pas encore disponible
+Le module complémentaire B1 Export n'est pas encore publié sur la Google Workspace Marketplace : vous ne pouvez donc pas l'installer aujourd'hui. D'ici là, exportez les personnes depuis B1Admin (voir [Exporter des données](../people/exporting-data.md)) et importez le fichier CSV dans Google Sheets. Tout ce qui suit décrit le fonctionnement du module complémentaire une fois publié.
+:::
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Un compte Google avec accès en édition au tableur dans lequel vous souhaitez exporter
-- Un administrateur de l'église (ou quelqu'un ayant accès en lecture aux données que vous souhaitez exporter) capable de créer une clé API B1
-- Le module complémentaire B1 Export installé depuis Google Workspace Marketplace
+- Un compte Google disposant d'un accès en modification au tableur dans lequel vous souhaitez exporter
+- Un administrateur d'église (ou une personne ayant un accès en lecture aux données à exporter) capable de créer une clé API B1
+- Le module complémentaire B1 Export installé depuis la Google Workspace Marketplace
 
 </div>
 
-## Ce qu'il exporte
+## Ce qu'il exporte {#what-it-exports}
 
-| Élément du menu | Onglet du tableur | Données |
+| Élément de menu | Onglet du tableur | Données |
 |---|---|---|
-| Exporter les personnes | `B1 People` | ID, Nom d'affichage, Prénom, Nom, Email, Statut d'adhésion |
-| Exporter les donations | `B1 Donations` | ID, ID personne, Date, Montant, Méthode, ID lot |
-| Exporter les groupes | `B1 Groups` | ID, Nom, Catégorie, Nombre de membres |
-| Exporter les présences | `B1 Attendance` | ID, ID personne, Date de visite, ID service, ID groupe |
+| Exporter les personnes | `B1 People` | ID, Display Name, First, Last, Email, Membership Status |
+| Exporter les dons | `B1 Donations` | ID, Person ID, Date, Amount, Method, Batch ID |
+| Exporter les groupes | `B1 Groups` | ID, Name, Category, Member Count |
+| Exporter la fréquentation | `B1 Attendance` | ID, Person ID, Visit Date, Service ID, Group ID |
 
-Chaque export **remplace** le contenu de son onglet nommé — réexécuter un export vous donne un nouvel instantané, pas des lignes ajoutées. Les autres onglets du tableur ne sont pas affectés.
+Chaque exportation **remplace** le contenu de son onglet nommé — relancer une exportation donne un instantané à jour, et non des lignes ajoutées à la suite. Les autres onglets du tableur ne sont pas modifiés.
 
-## Configuration
+## Configuration {#setup}
 
-### 1. Créer une clé API B1 avec les bons scopes
+### 1. Créer une clé API B1 avec les bonnes autorisations {#1-create-a-b1-api-key-with-the-right-scopes}
 
-1. Dans B1Admin allez à **Paramètres → Développeur → Clés API**.
-2. Cliquez sur **Nouvelle clé API**, nommez-la « Sheets Export », et accordez les scopes **en lecture** pour tout ce que vous prévoyez d'exporter :
-   - `people:read` pour l'export Personnes
-   - `donations:read` pour Donations
-   - `groups:read` pour Groupes
-   - `attendance:read` pour Présences
-3. Une clé qui fait uniquement des exports **n'a pas besoin** de `settings:write` — ce scope est uniquement pour les connecteurs qui enregistrent des webhooks (Zapier / Make). Gardez cette clé étroite.
+1. Dans B1Admin, allez dans **Paramètres → Développeur → Clés API**.
+2. Cliquez sur **Nouvelle clé API**, nommez-la « Export Sheets », et accordez les autorisations **lecture** correspondant à ce que vous souhaitez exporter :
+   - `people:read` pour l'export des personnes
+   - `donations:read` pour les dons
+   - `groups:read` pour les groupes
+   - `attendance:read` pour la fréquentation
+3. Une clé qui ne sert qu'aux exportations n'a **pas** besoin de `settings:write` — cette autorisation est réservée aux connecteurs qui enregistrent des webhooks (Zapier / Make). Gardez cette clé aussi restreinte que possible.
 4. Enregistrez et copiez la clé `cak_…`.
 
-### 2. Installer le module complémentaire
+### 2. Installer le module complémentaire {#2-install-the-add-on}
 
 1. Ouvrez le tableur dans lequel vous souhaitez exporter.
 2. **Extensions → Modules complémentaires → Obtenir des modules complémentaires**.
-3. Recherchez **B1 Export** et installez-le. Google vous demande d'accorder l'accès à vos feuilles et au HTTP externe (pour que le module complémentaire puisse appeler l'API B1).
+3. Recherchez **B1 Export** et installez-le. Google vous demande d'accorder l'accès à vos feuilles de calcul et aux requêtes HTTP externes (afin que le module puisse appeler l'API B1).
 
-Après l'installation, une entrée **B1 Export** apparaît dans le menu **Extensions** de chaque tableur que vous ouvrez avec ce compte Google.
+Après l'installation, une entrée **B1 Export** apparaît dans le menu **Extensions** de chaque tableur ouvert avec ce compte Google.
 
-### 3. Connecter la clé
+### 3. Connecter la clé {#3-connect-the-key}
 
-1. **Extensions → B1 Export → Connecter…** (ou **B1 Export → Connecter…** du menu après la première ouverture).
-2. Collez la clé API dans la barre latérale, laissez l'URL de base comme `https://api.churchapps.org` (sauf si vous testez sur staging), et cliquez sur **Enregistrer**.
-3. Cliquez sur **Tester la connexion** — une vérification « Connexion OK » confirme que la clé fonctionne.
+1. **Extensions → B1 Export → Connecter…** (ou **B1 Export → Connecter…** dans la barre de menus après la première ouverture).
+2. Collez la clé API dans le panneau latéral, laissez l'URL de base sur `https://api.churchapps.org` (sauf si vous testez sur l'environnement de préproduction), puis cliquez sur **Enregistrer**.
+3. Cliquez sur **Tester la connexion** — un message vert « Connexion OK » confirme que la clé fonctionne.
 
-La clé est stockée dans les **propriétés par utilisateur** (`PropertiesService.getUserProperties()`) — elle est liée à votre compte Google, jamais écrite dans la feuille, et jamais visible aux autres éditeurs du tableur.
+La clé est stockée dans les **propriétés par utilisateur** (`PropertiesService.getUserProperties()`) : elle est liée à votre compte Google, n'est jamais écrite dans le tableur et n'est jamais visible par les autres éditeurs du tableur.
 
-## Exécuter une exportation
+## Lancer une exportation {#running-an-export}
 
-Soit :
+Au choix :
 
-- **Depuis le menu** — **Extensions → B1 Export → Exporter les personnes** (ou Donations / Groupes / Présences)
-- **Depuis la barre latérale** — ouvrez la barre latérale (Connecter…) et cliquez sur le bouton du jeu de données approprié
+- **Depuis le menu** — **Extensions → B1 Export → Exporter les personnes** (ou Dons / Groupes / Fréquentation)
+- **Depuis le panneau latéral** — ouvrez le panneau (Connecter…) et cliquez sur le bouton correspondant au jeu de données
 
-Une notification confirme quand c'est fait — « _N_ ligne(s) écrite(s) dans 'B1 People'. »
+Un message confirme la fin de l'opération : « _N_ ligne(s) écrite(s) dans 'B1 People' ».
 
-## Créer des rapports par-dessus
+## Créer des rapports à partir des données {#building-reports-on-top}
 
-Les onglets exportés sont des données Google Sheets ordinaires. Créez votre propre analyse en référençant les onglets :
+Les onglets exportés sont des données Google Sheets ordinaires. Créez vos propres analyses en faisant référence à ces onglets :
 
-- Un **onglet de résumé** avec `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` pour totaliser les dons par carte
-- Une **vue filtrée** uniquement les membres avec `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
-- Un **graphique** des tendances de présence tirant de `B1 Attendance`
+- Un **onglet de synthèse** avec `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` pour totaliser les dons par carte
+- Une **vue filtrée** des seuls membres avec `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
+- Un **graphique** des tendances de fréquentation à partir de `B1 Attendance`
 
-Réexécuter l'export actualise l'onglet sous-jacent; vos formules se mettent à jour automatiquement.
+Relancer l'exportation actualise l'onglet source ; vos formules se mettent à jour automatiquement.
 
-## Planifier les exportations récurrentes
+## Planifier des exportations récurrentes {#scheduling-recurring-exports}
 
-Le module complémentaire est à la demande par défaut. Pour les exportations hebdomadaires ou mensuelles, utilisez les déclencheurs horaires intégrés d'Apps Script :
+Le module complémentaire fonctionne à la demande par défaut. Pour des exportations hebdomadaires ou mensuelles, utilisez les déclencheurs temporels intégrés d'Apps Script :
 
-1. **Extensions → Apps Script** dans le tableur (cela ouvre le script lié du module complémentaire).
+1. **Extensions → Apps Script** dans le tableur (cela ouvre le script lié au module complémentaire).
 2. Cliquez sur l'icône **⏰ Déclencheurs** dans la barre latérale gauche.
-3. **Ajouter un déclencheur** pour `exportPeople` (ou toute fonction d'export) — choisissez *Piloté par le temps*, *Minuteur par semaine*, par exemple *Chaque lundi 6h*.
+3. **Ajouter un déclencheur** pour `exportPeople` (ou toute autre fonction d'exportation) — choisissez *Basé sur le temps*, *Minuteur hebdomadaire*, par exemple *Tous les lundis à 6 h*.
 
-L'export s'exécute en arrière-plan dans votre compte Google. Si la clé API est tournée ou révoquée, le déclencheur vous envoie un email la prochaine fois qu'il échoue.
+L'exportation s'exécute en arrière-plan sous votre compte Google. Si la clé API est remplacée ou révoquée, le déclencheur vous envoie un courriel la prochaine fois qu'il échoue.
 
-## Permissions et confidentialité
+## Autorisations et confidentialité {#permissions--privacy}
 
-- Le module complémentaire demande uniquement `spreadsheets.currentonly` (il ne peut toucher que le tableur dans lequel il est ouvert) et `script.external_request` (pour que `UrlFetchApp` puisse appeler l'API B1). Il **ne voit pas** votre Drive, Gmail ou autres données Google.
-- La clé API B1 est stockée par utilisateur — les autres éditeurs du même tableur ne peuvent pas la voir.
-- Tous les appels API B1 se font sur HTTPS avec `Authorization: Bearer cak_…`.
+- Le module complémentaire ne demande que `spreadsheets.currentonly` (il ne peut accéder qu'au tableur ouvert) et `script.external_request` (afin que `UrlFetchApp` puisse appeler l'API B1). Il **ne** voit **pas** votre Drive, votre Gmail ni vos autres données Google.
+- La clé API B1 est stockée par utilisateur : les autres éditeurs du même tableur ne peuvent pas la voir.
+- Tous les appels à l'API B1 sont effectués en HTTPS avec `Authorization: Bearer cak_…`.
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-- **« Aucune clé API définie »** — ouvrez **Extensions → B1 Export → Connecter…** et collez la clé.
-- **« B1 a rejeté la clé API (401) »** — la clé a été révoquée ou est incorrecte. Créez-en une nouvelle et re-collez-la.
-- **« Cette clé API manque la permission pour /giving/donations (403) »** — la clé n'a pas `donations:read`. Mettez à jour les scopes de la clé dans B1Admin.
-- **Le tableur ne s'actualise pas** après exécution — assurez-vous que vous regardez le *bon* nom d'onglet (`B1 People` etc.). L'export crée l'onglet s'il n'existait pas.
-- **« Quota dépassé »** — Apps Script impose des quotas quotidiens par utilisateur sur `UrlFetchApp` (généralement des milliers d'appels par jour). Une grande église avec beaucoup de dossiers peut avoir besoin de diviser les exportations sur plusieurs jours ou d'utiliser [Make](./make.md) / une intégration personnalisée pour la synchronisation à haut volume.
+- **« No API key set »** — ouvrez **Extensions → B1 Export → Connecter…** et collez la clé.
+- **« B1 rejected the API key (401) »** — la clé a été supprimée ou elle est erronée. Créez une nouvelle clé et collez-la.
+- **« This API key lacks permission for /giving/donations (403) »** — la clé ne dispose pas de `donations:read`. Les autorisations d'une clé existante ne peuvent pas être modifiées : créez une nouvelle clé avec les bonnes autorisations dans B1Admin.
+- **Le tableur ne s'actualise pas** après l'exécution — vérifiez que vous regardez le *bon* nom d'onglet (`B1 People`, etc.). L'exportation crée l'onglet s'il n'existe pas.
+- **« Quota exceeded »** — Apps Script impose des quotas quotidiens par utilisateur sur `UrlFetchApp` (généralement des milliers d'appels par jour). Une grande église avec de nombreux enregistrements peut devoir répartir ses exportations sur plusieurs jours, ou utiliser [Make](./make.md) ou une intégration personnalisée pour une synchronisation à grand volume.
 
-## Personnaliser le module complémentaire
+## Une colonne manque ? {#missing-a-column}
 
-Le module complémentaire est open source — le projet Apps Script vit dans le dépôt `B1Integrations/GoogleSheetsAddon/`. Si vous voulez une colonne que nous n'exportons pas, un jeu de données supplémentaire, ou un format de sortie différent, ouvrez une issue ou PR là.
+Si vous souhaitez une colonne que nous n'exportons pas, un jeu de données supplémentaire ou un autre format de sortie, écrivez à [support@churchapps.org](mailto:support@churchapps.org).
 
-## Voir aussi
+## Voir aussi {#see-also}
 
-- [Zapier](./zapier.md) — pour la synchronisation en temps réel plutôt que l'export à la demande
-- [Make](./make.md) — pour synchroniser avec des transformations plus complexes
+- [Zapier](./zapier.md) — pour une synchronisation en temps réel plutôt qu'une exportation à la demande
+- [Make](./make.md) — pour une synchronisation avec des transformations plus complexes
 - [Clés API (référence développeur)](/docs/developer/api/api-keys)

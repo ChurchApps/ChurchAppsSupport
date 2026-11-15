@@ -1,54 +1,62 @@
 ---
 title: "Donazioni"
-description: "Registra, organizza e rendiconta le offerte in B1 Admin, dai lotti e fondi agli attestati annuali e alle donazioni online tramite Stripe o PayPal."
+description: "Registra, organizza e rendiconta le donazioni della chiesa in B1 Admin, dai lotti, fondi e campagne fino alle ricevute di fine anno e ai regali online."
 ---
 
 # Donazioni
 
 <div class="article-intro">
 
-La sezione Donazioni di B1 Admin offre tutto ciò che serve per gestire le offerte della tua chiesa. Dalla registrazione delle offerte settimanali alla generazione delle attestazioni fiscali di fine anno, tutti gli strumenti per le donazioni sono raccolti in un unico posto, così puoi tenere sotto controllo le finanze della chiesa.
+La sezione Donazioni di B1 Admin ti offre tutto ciò che serve per gestire le donazioni della tua chiesa. Dalla registrazione delle offerte settimanali alla generazione delle ricevute fiscali di fine anno, tutti gli strumenti per le donazioni sono organizzati in un unico posto, così puoi tenere sotto controllo le finanze della tua chiesa.
 
 </div>
 
-## Sottosezioni
+## Sotto-sezioni {#sub-sections}
 
 Nella sezione Donazioni troverai le seguenti pagine:
 
-### Riepilogo
+### Riepilogo {#summary}
 
-La pagina **Riepilogo** ti offre una panoramica visiva di tutte le attività di donazione. Mostra grafici e report filtrati, così puoi vedere rapidamente le tendenze delle donazioni nella tua chiesa. Vedi [Report delle donazioni](donation-reports.md) per maggiori dettagli sull'uso del riepilogo e degli strumenti di report.
+La pagina **Riepilogo** ti offre una panoramica visiva di tutta l'attività di donazione. Mostra grafici e report filtrati, così puoi vedere rapidamente gli andamenti delle donazioni nella tua chiesa. Vedi [Report sulle donazioni](donation-reports.md) per maggiori dettagli sull'uso degli strumenti di riepilogo e report.
 
-### Lotti
+### Lotti {#batches}
 
-I **[Lotti](batches.md)** ti permettono di raggruppare le donazioni, ad esempio tutti gli assegni e il contante raccolti durante l'offerta della domenica. Ogni lotto tiene traccia del numero di donazioni e dell'importo totale, per una riconciliazione semplice. Una volta conteggiato, un lotto può essere chiuso da chi ha il permesso **Modifica donazioni**, così i volontari addetti al conteggio non possono più modificarlo. I volontari con il permesso **Inserisci donazioni** possono aggiungere offerte ai lotti aperti senza vedere il resto della sezione Donazioni.
+**[Lotti](batches.md)** ti permettono di raggruppare le donazioni -- ad esempio tutti gli assegni e il contante raccolti durante l'offerta di una domenica. Ogni lotto tiene traccia del numero di donazioni e dell'importo totale per una riconciliazione semplice. Una volta contato un lotto, chi ha **Modifica donazioni** può chiuderlo così i volontari addetti al conteggio non possono più modificarlo. I volontari con il permesso **Inserisci donazioni** possono aggiungere offerte ai lotti aperti senza vedere il resto della sezione Donazioni.
 
-### Fondi
+### Fondi {#funds}
 
-I **[Fondi](funds.md)** classificano le tue donazioni in base allo scopo. Esempi comuni sono Fondo generale, Fondo edificio e Missioni. Puoi indicare per ogni fondo se è deducibile fiscalmente o meno.
+**[Fondi](funds.md)** classificano le tue donazioni in base allo scopo. Esempi comuni sono il Fondo generale, il Fondo edificio e le Missioni. Puoi contrassegnare ciascun fondo come fiscalmente deducibile oppure no.
 
-### Rendiconti
+### Campagne {#campaigns}
 
-La pagina **[Rendiconti](giving-statements.md)** genera i rendiconti annuali delle offerte per i tuoi donatori. Puoi scaricare i singoli file CSV oppure stampare tutti i rendiconti in una volta.
+Le **[Campagne](campaigns.md)** monitorano una raccolta fondi verso un obiettivo, con gli impegni dei membri accanto alle offerte effettive al fondo della campagna.
 
-### Importazione Stripe
+### Ricevute di donazione {#giving-statements}
 
-Se accetti donazioni online tramite Stripe, lo strumento **[Importazione Stripe](stripe-import.md)** ti permette di importare quelle transazioni in B1 Admin, così tutto è in un unico sistema.
+La pagina **[Ricevute di donazione](giving-statements.md)** genera le ricevute di donazione di fine anno per i tuoi donatori. Puoi scaricare i file CSV individuali oppure stampare tutte le ricevute in una sola volta.
 
-## Donazioni online
+### Donazioni fallite {#failed-gifts}
 
-B1 Admin si integra con **Stripe** e **PayPal** per accettare donazioni online. Una volta configurati, i membri possono donare tramite il tuo sito B1.church e quelle donazioni compaiono automaticamente nei tuoi registri. Vedi [Configurazione delle donazioni online](online-giving-setup.md) per iniziare.
+**Donazioni fallite** elenca le donazioni online ricorrenti che il gateway di pagamento non è riuscito a riscuotere, con il donatore, l'importo, la data e il messaggio del gateway, e un pulsante **Riprova**. Vedi [Donazioni ricorrenti non riuscite](online-giving-setup.md#failed-recurring-gifts).
+
+### Importazione Stripe {#stripe-import}
+
+Se accetti donazioni online tramite Stripe, lo strumento **[Importazione Stripe](stripe-import.md)** ti permette di importare quelle transazioni in B1 Admin, così tutto resta in un unico sistema.
+
+## Donazioni online {#online-giving}
+
+B1 Admin si integra con **Stripe**, **Kingdom Funding** e **Paystack** per accettare donazioni online. Una volta configurato, i membri possono donare dal tuo sito B1.church e quelle donazioni compaiono automaticamente nei tuoi registri. Vedi [Configurazione delle donazioni online](online-giving-setup.md) per iniziare.
 
 :::tip
-Se non hai ancora familiarità con le donazioni in B1 Admin, inizia [configurando i tuoi fondi](funds.md), poi [crea il tuo primo lotto](batches.md) e [registra le donazioni](recording-donations.md) al suo interno.
+Se sei nuovo alle donazioni in B1 Admin, inizia [configurando i tuoi fondi](funds.md), poi [crea il tuo primo lotto](batches.md) e [registra le donazioni](recording-donations.md) al suo interno.
 :::
 
-## Passi successivi
+## Prossimi passi {#next-steps}
 
-- [Registrare le donazioni](recording-donations.md): inserisci le donazioni in un lotto
-- [Lotti di donazioni](batches.md): organizza le donazioni in gruppi
-- [Gestire i fondi](funds.md): configura e gestisci le categorie di offerta
-- [Rendiconti delle donazioni](giving-statements.md): genera le attestazioni fiscali per i donatori
-- [Configurazione delle donazioni online](online-giving-setup.md): collega Stripe o PayPal
-- [Importazione Stripe](stripe-import.md): importa le transazioni online
-- [Report delle donazioni](donation-reports.md): visualizza e filtra i riepiloghi delle donazioni
+- [Registrare le donazioni](recording-donations.md) -- inserisci le donazioni in un lotto
+- [Lotti di donazioni](batches.md) -- organizza le donazioni in gruppi
+- [Gestire i fondi](funds.md) -- configura e gestisci le categorie di donazione
+- [Ricevute di donazione](giving-statements.md) -- genera le ricevute fiscali per i donatori
+- [Configurazione delle donazioni online](online-giving-setup.md) -- collega Stripe, Kingdom Funding o Paystack
+- [Importazione Stripe](stripe-import.md) -- importa le transazioni online
+- [Report sulle donazioni](donation-reports.md) -- visualizza e filtra i riepiloghi delle donazioni

@@ -1,84 +1,95 @@
 ---
-title: "Log de Auditoria"
-description: "Revise o log de auditoria no B1 Admin para ver quem entrou, editou registros de pessoas ou alterou permissões, e exporte as entradas filtradas em CSV."
+title: "Log de auditoria"
+description: "Revise o log de auditoria no B1 Admin para ver quem fez login, editou registros de pessoas ou alterou permissões, e exporte as entradas filtradas para CSV."
 ---
 
-# Log de Auditoria
+# Log de auditoria
 
 <div class="article-intro">
 
-O log de auditoria rastreia todas as ações e alterações significativas em todo o seu sistema de gerenciamento de igrejas. Use-o para revisar atividades de login, rastrear quem fez alterações em registros de pessoas, monitorar atualizações de permissões e manter responsabilidade em toda a sua equipe.
+O log de auditoria registra todas as ações e alterações relevantes em todo o seu sistema de gestão da igreja. Use-o para revisar a atividade de login, acompanhar quem fez alterações nos registros de pessoas, monitorar atualizações de permissões e manter a responsabilidade dentro da sua equipe.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Conta B1 Admin com acesso de administrador de servidor
-- Navegue até **Configurações** para encontrar o Log de Auditoria
+- Uma função com a permissão **Editar configurações da igreja** (na seção **Conteúdo** das permissões de uma função; é a mesma permissão que abre **Configurações**). Veja [Funções e permissões](../settings/roles-permissions.md).
 
 </div>
 
-## Visualizando o Log de Auditoria
+## Visualizando o log de auditoria {#viewing-the-audit-log}
 
-1. Abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo do B1 Admin) e expanda **Configurações**.
-2. Clique em **Log de Auditoria**.
-3. O log exibe entradas recentes em uma tabela com as seguintes colunas:
+1. Abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo do B1 Admin) e expanda **Configurações**.
+2. Clique em **Log de auditoria**.
+3. O log exibe as entradas recentes em uma tabela com as seguintes colunas:
    - **Data** -- Quando a ação ocorreu.
-   - **Categoria** -- O tipo de ação (codificado por cores para varredura rápida).
-   - **Ação** -- O que foi feito (por exemplo, criar, atualizar, excluir, sucesso_login).
-   - **Entidade** -- O tipo e ID do registro que foi afetado.
+   - **Módulo** -- A parte do B1 em que a alteração foi feita (por exemplo, membros ou doações).
+   - **Categoria** -- O tipo de registro ou ação (com cores para facilitar a leitura rápida).
+   - **Ação** -- O que foi feito (por exemplo, Doação salva, Login realizado com sucesso, Anotação atualizada).
+   - **Entidade** -- O tipo e o ID do registro afetado.
    - **Endereço IP** -- O endereço IP do usuário que realizou a ação.
-   - **Detalhes** -- Um resumo das alterações específicas feitas.
+4. Clique na seta no início de uma linha para ver os detalhes: uma tabela com cada campo alterado, com o **Valor anterior** e o **Novo valor**, ou o **Registro excluído** no caso de uma exclusão.
 
-## Filtrando o Log
+## Filtrando o log {#filtering-the-log}
 
-Use os filtros na parte superior da página para reduzir os resultados:
+Use os filtros no topo da página para refinar os resultados:
 
-- **Categoria** -- Filtrar por tipo de ação:
-  - **Todas as Categorias** -- Mostrar tudo.
-  - **Login** -- Sucessos e falhas de login.
-  - **Pessoas** -- Criação, atualização ou exclusão de registros de pessoa.
+- **Módulo** -- Filtre por área: **Todos os módulos**, **Pessoas**, **Doações**, **Presença**, **Mensagens**, **Conteúdo**, **Escalas** ou **Lições**.
+- **Categoria** -- Filtre por tipo de ação:
+  - **Todas as categorias** -- Mostra tudo.
+  - **Login** -- Logins bem-sucedidos e com falha.
+  - **Pessoas** -- Criação, atualização ou exclusão de registros de pessoas.
   - **Permissões** -- Concessões e revogações de permissões.
-  - **Doações** -- Alterações de registro de doação.
-  - **Grupos** -- Ações de gerenciamento de grupo.
-  - **Formulários** -- Atividade de envio de formulário.
+  - **Doações** -- Alterações em registros de doações.
+  - **Grupos** -- Ações de gestão de grupos.
+  - **Formulários** -- Atividade de envio de formulários.
   - **Configurações** -- Alterações de configuração.
-- **Data de Início** -- Mostrar entradas a partir desta data em diante.
-- **Data de Término** -- Mostrar entradas até esta data.
+- **Data inicial** -- Mostra entradas a partir desta data.
+- **Data final** -- Mostra entradas até esta data.
 
-Clique em **Pesquisar** após definir seus filtros para atualizar os resultados.
+Clique em **Pesquisar** depois de definir os filtros para atualizar os resultados.
 
-## Compreendendo Categorias
+## Entendendo as categorias {#understanding-categories}
 
-Cada categoria é codificada por cores para identificação rápida:
+A categoria de cada entrada é mostrada como um marcador colorido, para identificação rápida:
 
-- **Login** -- Chip azul. Rastreia tentativas de login bem-sucedidas e falhadas.
-- **Pessoas** -- Chip roxo. Rastreia criações, atualizações e exclusões de registros de pessoa.
-- **Permissões** -- Chip vermelho. Rastreia quando direitos de acesso são concedidos ou revogados.
-- **Doações** -- Chip verde. Rastreia alterações de registro de doação.
-- **Grupos** -- Chip cinza. Rastreia operações de gerenciamento de grupo.
-- **Formulários** -- Chip laranja. Rastreia atividade de envio de formulário.
-- **Configurações** -- Chip amarelo. Rastreia alterações de configuração.
+- **login** -- Marcador azul. Registra tentativas de login bem-sucedidas e com falha.
+- **person** -- Marcador azul. Registra a criação, atualização e exclusão de registros de pessoas.
+- **permission** -- Marcador vermelho. Registra quando direitos de acesso são concedidos ou revogados.
+- **donation** -- Marcador verde. Registra alterações em registros de doações.
+- **form** -- Marcador laranja. Registra a atividade de envio de formulários.
+- **group**, **settings** e outras categorias (como **userchurch**) -- Marcador cinza.
 
-## Exportando o Log
+## Histórico de anotações de pessoas e grupos {#note-history-on-people-and-groups}
 
-Quando as entradas do log são exibidas, um botão **download de CSV** aparece. Clique nele para exportar os resultados filtrados atuais para uma planilha para revisão offline ou manutenção de registros.
+Se você pode abrir o log de auditoria, também verá um registro das anotações alteradas exatamente onde elas ficam, na aba **Anotações** de uma pessoa ou grupo:
 
-## Paginação
+1. Uma anotação editada mostra **(editada · ver histórico)** ao lado da data. Clique nesse texto para abrir o log de auditoria filtrado pelo histórico de anotações daquela pessoa ou grupo.
+2. Uma anotação excluída deixa um marcador acinzentado **Anotação excluída** no lugar, mostrando quem a escreveu, quando foi publicada e quando foi excluída. Clique em **Ver histórico** para abrir o mesmo log filtrado.
+3. No log filtrado, expanda uma entrada **Anotação atualizada** ou **Anotação excluída** para ver o texto antigo e a conta que fez a alteração. Clique em **Mostrar tudo** para limpar o filtro.
+4. Na coluna **Entidade**, o ID de uma anotação de pessoa ou grupo leva de volta às anotações dessa pessoa ou grupo.
 
-Use os controles de paginação na parte inferior da tabela para navegar pelos resultados. Você pode exibir 25, 50 ou 100 entradas por página.
+Membros da equipe que não podem abrir o log de auditoria veem a lista de anotações sem esses marcadores.
+
+## Exportando o log {#exporting-the-log}
+
+Quando as entradas do log estão exibidas, um botão **Exportar CSV** aparece no topo da página. Clique nele para exportar os resultados filtrados atuais para uma planilha, para revisão offline ou para manter registros.
+
+## Paginação {#pagination}
+
+Use os controles de paginação na parte inferior da tabela para navegar pelos resultados. Você pode exibir 25, 50 (o padrão) ou 100 entradas por página.
 
 :::info
-As entradas de log de auditoria são automaticamente retidas por um ano. Entradas com mais de 365 dias são removidas para manter o sistema performático.
+As entradas do log de auditoria são retidas automaticamente por um ano. Entradas com mais de 365 dias são removidas para manter o sistema com bom desempenho.
 :::
 
 :::tip
-Revise o log de auditoria regularmente, especialmente após integrar novos membros da equipe ou fazer alterações significativas de configuração. Isso ajuda a identificar atividades inesperadas no início.
+Revise o log de auditoria regularmente, especialmente depois de integrar novos membros da equipe ou fazer alterações significativas de configuração. Isso ajuda a identificar atividades inesperadas logo no início.
 :::
 
-## Artigos Relacionados
+## Artigos relacionados {#related-articles}
 
-- [Funções e Permissões](../settings/roles-permissions.md) -- Gerenciar quem tem acesso ao quê
-- [Segurança de Dados](../settings/data-security.md) -- Entender como seus dados são protegidos
-- [Visão Geral de Relatórios](./index.md) -- Veja todos os relatórios disponíveis
+- [Funções e permissões](../settings/roles-permissions.md) -- Gerencie quem tem acesso a quê
+- [Segurança de dados](../settings/data-security.md) -- Entenda como seus dados são protegidos
+- [Visão geral de relatórios](./index.md) -- Veja todos os relatórios disponíveis

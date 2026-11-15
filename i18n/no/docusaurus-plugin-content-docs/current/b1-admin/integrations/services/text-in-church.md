@@ -1,98 +1,97 @@
 ---
 title: "Text In Church"
-description: "Koble B1 Admin og Text In Church sammen med Zapier: lag en API-nøkkel, bygg en Zap fra kontaktkort til B1, og speil gruppemedlemskap."
+description: "Koble B1 Admin og Text In Church sammen med Zapier: lag en API-nøkkel, bygg en Zap fra connect-kort til B1, og speil gruppemedlemskap."
 ---
 
 # Text In Church
 
 <div class="article-intro">
 
-[Text In Church](https://textinchurch.com) pakker SMS pluss drypp-arbeidsflyter og connect-card-automatiseringer. Dens Zapier-app viser begge retninger — pipe B1-hendelser inn i en Text In Church-arbeidsflyt, og trekk connect-card eller ny-kontakt-utløsere ut den andre siden til B1.
+[Text In Church](https://textinchurch.com) samler SMS, dryppkampanjer (drip) og automatiseringer for connect-kort. Zapier-appen dekker begge retninger. Du kan sende B1-hendelser inn i en Text In Church-arbeidsflyt, og hente utløsere for connect-kort eller nye kontakter ut den andre veien og inn i B1.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En [Text In Church](https://textinchurch.com)-konto på en plan som inkluderer Zapier-integrasjonen
+- En [Text In Church](https://textinchurch.com)-konto på et abonnement som inkluderer Zapier-integrasjonen
 - En [Zapier](https://zapier.com)-konto
-- En B1Admin-bruker med tillatelsen **Rediger innstillinger**
+- En B1 Admin-bruker med tillatelsen **Rediger innstillinger**
 
 </div>
 
-## Hva du kan lede opp
+## Hva du kan koble sammen {#what-you-can-wire-up}
 
 | Retning | Utløser | Handling |
 |---|---|---|
-| B1 → Text In Church | B1 `person.created` | Opprett/oppdater person + legg til gruppe |
-| B1 → Text In Church | B1 `form.submission.created` | Send tekstmelding via relevante lag |
-| B1 → Text In Church | B1 `group.member.added` | legg til gruppe (speil gruppemedalemskap) |
-| Text In Church → B1 | Connect Card sendt | B1: opprett person + legg gruppemedalem |
-| Text In Church → B1 | Person opprettet | B1: opprett person |
-| Text In Church → B1 | Person tilsluttet gruppe | B1: legg gruppemedalem |
+| B1 → Text In Church | B1 `person.created` | Opprett/oppdater person + Legg til i gruppe |
+| B1 → Text In Church | B1 `form.submission.created` | Send tekstmelding via det relevante teamet |
+| B1 → Text In Church | B1 `group.member.added` | Legg til i gruppe (speil gruppemedlemskap) |
+| Text In Church → B1 | Connect-kort innsendt | B1: Opprett person + Legg til gruppemedlem |
+| Text In Church → B1 | Person opprettet | B1: Opprett person |
+| Text In Church → B1 | Person ble med i gruppe | B1: Legg til gruppemedlem |
 
-Text In Church-handlinger inkluderer også *send tekstmelding*, *send stemmesending*, *opprett oppgave*, *Finn person/gruppe*, og gruppemedalemskap add/remove.
+Handlingene i Text In Church omfatter også *Send tekstmelding*, *Send talebroadcast*, *Opprett oppgave*, *Finn person/gruppe*, og å legge til og fjerne gruppemedlemskap.
 
-## Oppsett
+## Oppsett {#setup}
 
-### 1. Lag en B1 API-nøkkel
+### 1. Lag en B1 API-nøkkel {#1-mint-a-b1-api-key}
 
-**Innstillinger → Utviklernavn → API-nøkler → Ny API-nøkkel**:
+**Innstillinger → Utvikler → API-nøkler → Ny API-nøkkel**:
 
-- `settings:write` — påkrevd for B1-utløst Zapier
-- `people:read`, `people:write` — for å finne eller opprette personen
-- `groups:write` — for gruppesykronisering
-- (Valgfritt) `donations:write` hvis du leder gave-bekrefter til TIC
+- `settings:write`: kreves for å koble nøkkelen til Zapier, og for Zapene som utløses av B1
+- `people:read`, `people:write`: for å finne eller opprette personen
+- `groups:write`: for synkronisering av grupper
+- (Valgfritt) `donations:write` hvis du kobler gavebekreftelser til TIC
 
-### 2. Koble Text In Church til Zapier
+### 2. Koble Text In Church til Zapier {#2-connect-text-in-church-to-zapier}
 
-Følg [Text In Churchs Zapier-integrasjonsguide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). De genererer en API-token fra innvendig TIC-dashbordet.
+Følg [Text In Churchs veiledning for Zapier-integrasjon](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration). De lager et API-token inne i TIC-dashbordet.
 
-### 3. Bygg connect-card-to-B1-Zap
+### 3. Bygg Zapen fra connect-kort til B1 {#3-build-the-connect-card-to-b1-zap}
 
-Den mest vanlige retningen. Connect kort avfyrt fra TIC blir nye B1-mennesker automatisk.
+Dette er den vanligste retningen. Connect-kort sendt fra TIC blir automatisk nye B1-personer.
 
-1. **Utløser** — Text In Church: Connect card sendt.
-2. **Handling** — B1.church: Finn person (etter e-post).
-3. **path** — branch på funnet / ikke funnet:
-   - Ikke funnet → B1.church: opprett person.
-   - Funnet → fortsett.
-4. **Handling** — B1.church: legg gruppemedalem til en "ny kontakt"-gruppe.
+1. **Utløser**: Text In Church: Connect-kort innsendt.
+2. **Handling**: B1.church: Finn person (etter e-post).
+3. **Handling**: B1.church: Legg til gruppemedlem i gruppen «Ny kontakt», med personens ID fra steg 2.
 
-Slå Zap-en på. Det neste connect-kort sendt gjennom TIC lander i **B1Admin → mennesker** automatisk.
+B1s *Finn person* stopper Zapen med feilen «No person found» når ingen samsvarer, så en Path kan ikke forgrene seg på det. For nye kontakter slår du på Zapiers feilhåndtering for steget Finn person, og kjører B1.church: Opprett person og deretter Legg til gruppemedlem i feilbanen.
 
-## Vanlige oppskrifter
+Slå på Zapen. Neste connect-kort som sendes inn gjennom TIC havner automatisk i **B1 Admin → Personer**.
 
-### Utløs en connect-card-stil arbeitsflyt fra et B1-skjema
+## Vanlige oppskrifter {#common-recipes}
 
-- **Utløser** — B1.church: ny skjemainnsending (filter på "Jeg er ny her"-skjema-id)
-- **Handling** — Text In Church: opprett/oppdater person, kartlegging av skjemaets e-post / telefon / navn-svar
-- **Handling** — Text In Church: legg til gruppe, hvor gruppen har en forhåndsbygget velkomst-arbeitsflyt vedlagt
+### Utløs en connect-kort-lignende arbeidsflyt fra et B1-skjema {#trigger-a-connect-card-style-workflow-from-a-b1-form}
 
-### Speil gruppemedalemskap
+- **Utløser**: B1.church: Ny skjemainnsending (filtrer på ID-en til skjemaet «Jeg er ny her»)
+- **Handling**: Text In Church: Opprett/oppdater person, og map e-post-, telefon- og navnesvarene fra skjemaet
+- **Handling**: Text In Church: Legg til i gruppe, der gruppen har en ferdig velkomstarbeidsflyt knyttet til seg
 
-- **Utløser** — B1.church: nytt gruppemedalem, filtrert på en spesifikk `groupId`
-- **Handling** — Text In Church: legg til gruppe (samme person, speil-gruppe). Pair med en `group.member.removed`-Zap hvis du vil full sync.
+### Speil gruppemedlemskap {#mirror-group-membership}
 
-### Page en leder når noen slutter seg til
+- **Utløser**: B1.church: Nytt gruppemedlem, filtrert på en bestemt `groupId`
+- **Handling**: Text In Church: Legg til i gruppe (samme person, speilgruppe). Kombiner med en Zap for `group.member.removed` hvis du vil ha full synkronisering.
 
-- **Utløser** — B1.church: nytt gruppemedalem
-- **Handling** — Text In Church: send tekstmelding, mottaker = gruppelederleder telefon, kropp = `"{first} {last} bare sluttet seg til {group}"`.
+### Varsle en leder når noen blir med {#page-a-leader-when-someone-joins}
 
-## Grenser og merknader
+- **Utløser**: B1.church: Nytt gruppemedlem
+- **Handling**: Text In Church: Send tekstmelding, mottaker = gruppelederens telefon, innhold = `"{first} {last} just joined {group}"`.
 
-- **TICs Zapier-app gate bak planlag.** Hvis Zapier-integrasjonen er gråt i TIC-dashbordet, kontakt TIC-support for å aktivere det på planen din.
-- **Gruppe-ID-er er TICs, ikke B1s.** Ved speilingen, vil du opprettholde et kartleggingsbord noe sted (et Zapier *oppslag-bord*, eller hardkodet per-Zap).
-- **send tekstmelding-kostnader kreditter.** Hver Zap som avfyrer *send tekst* forbruker fra TIC SMS-godtgjørelsen din.
+## Begrensninger og merknader {#limits--notes}
 
-## Problemløsing
+- **TICs Zapier-app er knyttet til abonnementsnivå.** Hvis Zapier-integrasjonen er nedtonet i TIC-dashbordet, kontakt TIC-støtte for å aktivere den på abonnementet ditt.
+- **Gruppe-ID-er er TICs, ikke B1s.** Ved speiling må du vedlikeholde en koblingstabell et sted (en Zapier *Lookup Table*, eller hardkodet per Zap).
+- **Send tekstmelding koster kreditter.** Hver Zap som utløser *Send tekst* bruker av SMS-kvoten din i TIC.
 
-- **Connect-card utløser avfyres ikke** — TIC trenger Zapier-integrasjons-toggle på. Bekreft også at skjemaet du testet med er konfigurert som et "connect-kort", ikke en generisk undersøkelse.
-- **opprett person i B1 mislykkes med 401** — API-nøkkelen er feil, tilbakekalt, eller mangler `people:write`. Re-mint.
-- **duplikat B1-mennesker** — TIC sender både *person opprettet* og *connect-card sendt* for samme hendelse. Velg en som din sannhetskilde og legg ett Zapier-filter på den andre.
+## Feilsøking {#troubleshooting}
 
-## Se også
+- **Connect-kort-utløseren starter ikke**: TIC må ha Zapier-integrasjonen slått på. Kontroller også at skjemaet du testet med er satt opp som et «Connect-kort», ikke en vanlig undersøkelse.
+- **Opprett person i B1 mislykkes med 401**: API-nøkkelen er feil, trukket tilbake, eller mangler `people:write`. Lag en ny.
+- **Dupliserte B1-personer**: TIC sender både *Person opprettet* og *Connect-kort innsendt* for samme hendelse. Velg én som hovedkilde, og legg til et Zapier-filter på den andre.
 
-- [Clearstream](./clearstream.md) — alternativ SMS-plattform med lignende Zapier-form
-- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
-- [Text In Church Zapier-guide](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TICs docs)
+## Se også {#see-also}
+
+- [Clearstream](./clearstream.md): alternativ SMS-plattform med lignende Zapier-oppsett
+- [Zapier (oversikt)](../zapier.md): B1-delen av hver Zapier-oppskrift
+- [Text In Church Zapier-veiledning](https://help.textinchurch.com/en/articles/3943363-text-in-church-s-zapier-integration) (TICs dokumentasjon)

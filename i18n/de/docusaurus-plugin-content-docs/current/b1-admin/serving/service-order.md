@@ -1,40 +1,40 @@
 ---
-title: "Gottesdienstablauf in B1 Admin"
-sidebar_label: "Gottesdienstablauf"
-description: "Gottesdienstablauf in B1 Admin einrichten: Lieder, Lektionen und eigene Punkte hinzufügen, in Abschnitte gliedern und den Ablaufplan drucken."
+title: "Gottesdienstordnung in B1 Admin"
+sidebar_label: "Gottesdienstordnung"
+description: "Richten Sie in B1 Admin eine Gottesdienstordnung für einen Anbetungsplan ein: Fügen Sie Lieder, Lektionen und eigene Punkte hinzu, ordnen Sie sie in Abschnitte und drucken Sie den Ablaufplan."
 ---
 
-# Gottesdienstablauf
+# Gottesdienstordnung
 
 <div class="article-intro">
 
-Der Gottesdienstablauf legt die Reihenfolge der Elemente Ihres Gottesdienstes fest. Damit planen Sie alles vom Eröffnungslied bis zum Schlussgebet, sodass Ihr gesamtes Team den Ablauf des Gottesdienstes im Voraus kennt.
+Die Gottesdienstordnung legt den Ablauf der Elemente in Ihrem Gottesdienst fest. Damit planen Sie alles vom Eröffnungslied bis zum Abschlussgebet, sodass Ihr gesamtes Team den Ablauf des Gottesdienstes im Voraus kennt.
 
 </div>
 
-## Schulungsvideo
+## Schulungsvideo {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Gottesdienstablauf und Liedbibliothek in B1 aufbauen" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="O-xjiLFPOvA" title="Gottesdienstordnung und Liedbibliothek in B1 aufbauen" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- [Legen Sie einen Dienstplan](./plans.md) für das Datum an, für das Sie einen Gottesdienstablauf erstellen möchten
-- Optional: Fügen Sie [Lieder](./songs.md) zu Ihrer Bibliothek hinzu, damit Sie sie direkt in den Gottesdienstablauf übernehmen können
+- [Erstellen Sie einen Dienstplan](./plans.md) für den Termin, für den Sie eine Gottesdienstordnung aufbauen möchten
+- Fügen Sie optional [Lieder](./songs.md) Ihrer Bibliothek hinzu, damit Sie sie direkt in die Gottesdienstordnung einfügen können
 
 </div>
 
-## Auf den Gottesdienstablauf zugreifen
+## Auf die Gottesdienstordnung zugreifen {#accessing-the-service-order}
 
-1. Gehen Sie zu **Dienst** und wählen Sie Ihren Dienstbereich.
-2. Klicken Sie auf einen **Plantyp** und öffnen Sie dann einen bestimmten **Plan**.
-3. Der Abschnitt **Gottesdienstablauf** befindet sich oben auf der Planseite, über **Einteilung des Dienstteams**.
+1. Gehen Sie zu **Dienste** und wählen Sie Ihren Dienstbereich.
+2. Klicken Sie auf eine **Planart** und öffnen Sie dann einen bestimmten **Plan**.
+3. Die Planseite zeigt eine Vorschau der **Gottesdienstordnung**. Klicken Sie auf **Gottesdienstordnung bearbeiten** (oder auf **Gottesdienstordnung ansehen**, wenn Sie den Plan nicht bearbeiten können), um die vollständige Gottesdienstordnung auf einer eigenen Seite zu öffnen. Mit **Zurück zum Plan** kehren Sie zurück.
 
-## Ihren Gottesdienstablauf aufbauen
+## Ihre Gottesdienstordnung aufbauen {#building-your-service-order}
 
-Der Gottesdienstablauf ist eine Liste von Elementen in der Reihenfolge, in der sie im Gottesdienst vorkommen. Übliche Elemente sind:
+Die Gottesdienstordnung ist eine Liste von Punkten, die in der Reihenfolge angeordnet sind, in der sie im Gottesdienst vorkommen. Übliche Elemente sind:
 
-- Lobpreislieder
+- Anbetungslieder
 - Gebete
 - Schriftlesungen
 - Ankündigungen
@@ -42,106 +42,108 @@ Der Gottesdienstablauf ist eine Liste von Elementen in der Reihenfolge, in der s
 - Kollekte
 - Abschluss
 
-## Elemente zum Gottesdienstablauf hinzufügen
+## Punkte zur Gottesdienstordnung hinzufügen {#adding-items-to-the-service-order}
 
-1. Klicken Sie im Abschnitt **Gottesdienstablauf** auf **Hinzufügen** und wählen Sie, was Sie hinzufügen möchten: **Abschnitt hinzufügen** (eine Überschrift, die Elemente gruppiert), **Element** (ein eigenes Element), **Lied** (aus Ihrer Bibliothek) oder **Aus Lektion hinzufügen**. Sie können auch direkt auf **Abschnitt hinzufügen** klicken.
-2. Um etwas innerhalb eines Abschnitts hinzuzufügen, verwenden Sie das Hinzufügen-Menü in der Kopfzeile des Abschnitts und wählen Sie **Lied**, **Element** oder **Externes Element**.
-3. Geben Sie die Angaben zum Element ein, etwa Titel und Notizen.
+1. Klicken Sie auf der Seite **Gottesdienstordnung** auf **Hinzufügen** und wählen Sie, was hinzugefügt werden soll: **Abschnitt hinzufügen** (eine Überschrift, die Punkte gruppiert), **Punkt** (ein eigener Punkt), **Lied** (aus Ihrer Bibliothek) oder **Aus Lektion hinzufügen**. Sie können auch direkt auf **Abschnitt hinzufügen** klicken.
+2. Um etwas innerhalb eines Abschnitts hinzuzufügen, verwenden Sie das Hinzufügen-Menü in der Kopfzeile dieses Abschnitts und wählen Sie **Lied**, **Punkt** oder **Externer Punkt**.
+3. Geben Sie die Angaben zum Punkt ein, etwa Titel und Notizen.
 4. Klicken Sie auf **Speichern**.
 
 :::tip
-Sie können Lieder direkt aus Ihrer Bibliothek [Lieder](./songs.md) hinzufügen. So werden die Angaben zum Lied, einschließlich Liedtext und Arrangements, mit Ihrem Dienstplan verknüpft, und Ihr Lobpreisteam hat alles, was es braucht. Wenn Sie ein Lied auswählen, zeigt jede Tonart den Namen des Arrangements neben der Tonart, sodass sich Arrangements mit gleicher Tonart leicht unterscheiden lassen.
+Sie können Lieder direkt aus Ihrer Bibliothek [Lieder](./songs.md) hinzufügen. Dadurch werden die Liedangaben, einschließlich Texten und Arrangements, mit Ihrem Dienstplan verknüpft, sodass Ihr Anbetungsteam alles hat, was es braucht. Wenn Sie ein Lied auswählen, zeigt jede Tonart den Namen des Arrangements neben der Tonart an, damit Arrangements mit derselben Tonart leicht zu unterscheiden sind.
 :::
 
-### Mehrere Elemente von einem externen Anbieter importieren
+### Mehrere Punkte von einem externen Anbieter importieren {#importing-multiple-items-from-an-external-provider}
 
-Wählen Sie **Externes Element** (oder **Aus Lektion hinzufügen**), öffnet sich statt eines Formulars für ein einzelnes Element ein Browser für Ihre verknüpften Lektionsanbieter. Blättern Sie (oder suchen Sie) in den Inhalten eines Anbieters und aktivieren Sie das Kästchen neben jedem Abschnitt oder jeder Aktion, die Sie möchten. Der Dialog zählt, wie viele Sie ausgewählt haben (zum Beispiel „3 ausgewählt“). Klicken Sie auf **Importieren (3)**, um alle auf einmal in den Gottesdienstablauf zu übernehmen, statt den Vorgang für jedes Element zu wiederholen.
+Wenn Sie **Externer Punkt** (oder **Aus Lektion hinzufügen**) wählen, öffnet sich statt eines Einzelpunkt-Formulars ein Durchsuchen-Fenster für Ihre verknüpften Lektionsanbieter. Durchsuchen (oder suchen) Sie die Inhalte eines Anbieters und aktivieren Sie das Kontrollkästchen neben jedem Abschnitt oder jeder Aktion, die Sie möchten. Das Dialogfeld zeigt an, wie viele Sie ausgewählt haben (zum Beispiel „3 ausgewählt“) – klicken Sie auf **Importieren (3)**, um alle gleichzeitig in die Gottesdienstordnung aufzunehmen, statt den Vorgang für jeden Punkt einzeln zu wiederholen.
 
-Einige Anbieter, etwa GO! Curriculum, Dropbox, Google Drive und OneDrive, stellen eine Lektion als Sammlung von Dateien bereit (Videos, Folien, Bilder) statt als Abschnitte. Wenn Sie in **Aus Lektion hinzufügen** eines dieser Angebote durchsuchen, erscheinen die Dateien neben den Ordnern – klicken Sie auf eine Datei, um sie als eigenes Element in den Gottesdienstablauf aufzunehmen.
+Einige Anbieter wie GO! Curriculum, Dropbox, Google Drive und OneDrive stellen eine Lektion als Satz von Dateien bereit (Videos, Folien, Bilder) statt als Abschnitte. Wenn Sie in **Aus Lektion hinzufügen** einen dieser Anbieter durchsuchen, erscheinen die Dateien neben den Ordnern – klicken Sie auf eine Datei, um sie als eigenen Punkt in die Gottesdienstordnung aufzunehmen.
 
 :::tip
-Dies ist der schnellste Weg, in einem Durchgang alle Abschnitte und Hinweise einer ganzen Lektion in den Gottesdienstablauf zu übernehmen, statt jedes Element einzeln hinzuzufügen.
+So bringen Sie die Abschnitte und Hinweise einer ganzen Lektion in einem Durchgang in die Gottesdienstordnung, statt jeden Punkt einzeln hinzuzufügen. Das ist der schnellste Weg.
 :::
 
-### Eine verknüpfte Lektion anpassen
+### Eine verknüpfte Lektion anpassen {#customizing-a-linked-lesson}
 
-Ist einem Plan eine Lektion zugeordnet, zeigt der Gottesdienstablauf zunächst eine **Vorschau der Lektion**. Klicken Sie auf **Anpassen** (oder fügen Sie einen Abschnitt, ein Element oder ein Lied hinzu), um die Abschnitte der Lektion in den Plan zu kopieren, damit Sie sie bearbeiten können. Bei Lektionen, die nur aus einer Liste von Dateien bestehen, etwa GO! Curriculum-Lektionen, werden die Dateien unter einem Abschnitt mit dem Namen der Lektion gruppiert, sodass Sie weiterhin eine Abschnittsleiste haben, in die Sie eigene Elemente einfügen können.
+Um eine ganze Lektion mit dem Plan zu verknüpfen, klicken Sie oberhalb der Gottesdienstordnung auf **Lektion zuordnen** und wählen Sie die Lektion aus. Der Name der Lektion erscheint dann oberhalb der Gottesdienstordnung mit einem Link **Verknüpfung aufheben**, um sie zu entfernen. (Pläne, die mit [Lektion planen](./scheduling-lessons.md) angelegt wurden, sind bereits verknüpft.)
 
-## Elemente neu anordnen
+Ist einem Plan eine Lektion zugeordnet, zeigt die Gottesdienstordnung zuerst eine **Lektionsvorschau** dieser Lektion. Klicken Sie auf **Anpassen** (oder fügen Sie einen Abschnitt, einen Punkt oder ein Lied hinzu), um die Abschnitte der Lektion in den Plan zu kopieren, damit Sie sie bearbeiten können. Bei Lektionen, die nur aus einer Dateiliste bestehen, etwa GO! Curriculum-Lektionen, werden die Dateien unter einem Abschnitt mit dem Namen der Lektion zusammengefasst, sodass Sie trotzdem eine Abschnittsleiste haben, in die Sie eigene Punkte einfügen können.
 
-Ziehen Sie Elemente am Griff links jeder Zeile, um die Reihenfolge zu ändern – lassen Sie sie auf der blauen Linie los, wo das Element landen soll, oder auf einer Abschnittsüberschrift, um es in diesen Abschnitt zu verschieben. Die Abfolge auf dem Bildschirm ist die Reihenfolge, der Ihr Team im Gottesdienst folgt.
+## Punkte neu anordnen {#reordering-items}
 
-## Einen Lektionsabschnitt bearbeiten
+Ziehen Sie Punkte am Griff links neben jeder Zeile, um die Reihenfolge zu ändern – legen Sie sie auf die blaue Linie, wo der Punkt landen soll, oder auf eine Abschnittsüberschrift, um ihn in diesen Abschnitt zu verschieben. Die Abfolge auf dem Bildschirm ist die Reihenfolge, der Ihr Team im Gottesdienst folgt.
 
-Abschnitte von Lektionen und Lehrmaterialien (zum Beispiel „Große Gruppe“ oder „Engage 1“) enthalten eigene Sprechzeilen, Folien und Videos. Um deren Inhalt zu ändern, klicken Sie im Gottesdienstablauf auf den Abschnitt. Der Abschnitt öffnet sich und zeigt alles darin: Sprech- und Anweisungszeilen erscheinen als vollständiger Text, markiert mit **Sagen**, **Tun** oder **Hinweis**, und Folien oder Videos erscheinen mit einer Vorschaubild.
+## Einen Lektionsabschnitt bearbeiten {#editing-a-lesson-section}
 
-- Klicken Sie auf das **x** neben einer Zeile, um sie aus Ihrem Plan zu nehmen. Sie bleibt durchgestrichen in der Liste und erhält einen Pfeil, um sie wiederherzustellen.
-- Klicken Sie auf einen Text, um ihn umzuformulieren. Eine umformulierte Zeile bietet **ursprünglichen Wortlaut wiederherstellen** an.
-- Klicken Sie auf **Speichern**. Der Abschnitt bleibt eine einzelne Zeile in Ihrem Gottesdienstablauf, mit einer kleinen Beschriftung wie **6 von 8 Elementen**, die zeigt, dass Sie ihn angepasst haben, und seine Laufzeit wird aktualisiert.
+Lektions- und Lehrplanabschnitte (zum Beispiel „Große Gruppe“ oder „Engage 1“) enthalten eigene Skriptzeilen, Folien und Videos. Um deren Inhalt zu ändern, klicken Sie in der Gottesdienstordnung auf den Abschnitt. Der Abschnitt öffnet sich und zeigt alles darin: Gesprochene und Anleitungszeilen erscheinen als vollständiger Text mit der Kennzeichnung **Sagen**, **Tun** oder **Hinweis**, Folien und Videos erscheinen mit einer Vorschau.
 
-Öffnen Sie den Abschnitt jederzeit erneut, um Ihre Änderungen zu sehen, Zeilen zurückzusetzen oder **Ursprünglichen Abschnitt wiederherstellen** zu wählen, um alles rückgängig zu machen. Ihre Änderungen betreffen nur Ihren Plan – die ursprüngliche Lektion wird nie verändert –, und sie werden auf gedruckte Pläne und auf das übernommen, was Ihre Ehrenamtlichen sehen.
+- Klicken Sie auf das **x** neben einer Zeile, um sie aus Ihrem Plan zu nehmen. Sie bleibt in der Liste, durchgestrichen, mit einem Pfeil, um sie wieder zurückzuholen.
+- Klicken Sie auf einen beliebigen Text, um ihn umzuformulieren. Eine umformulierte Zeile bietet **ursprünglichen Wortlaut wiederherstellen** an.
+- Klicken Sie auf **Speichern**. Der Abschnitt bleibt in Ihrer Gottesdienstordnung eine einzige Zeile; ein kleines Etikett wie **6 von 8 Punkten** zeigt, dass Sie ihn angepasst haben, und seine Laufzeit wird aktualisiert.
 
-Brauchen Sie ein Element des Abschnitts als eigene Zeile (zum Beispiel um ein Lied zwischen zwei Zeilen zu platzieren), klicken Sie auf den Pfeil am rechten Ende der Abschnittszeile, um seinen Inhalt als einzelne Zeilen anzuzeigen. Klicken Sie auf den Pfeil der ersten dieser Zeilen, um sie wieder zu einer einzigen zusammenzufassen. Das funktioniert genauso für Inhalte aus jedem verbundenen Anbieter.
+Öffnen Sie den Abschnitt jederzeit erneut, um Ihre Änderungen zu sehen, Zeilen zurückzuholen oder **Ursprünglichen Abschnitt wiederherstellen** zu wählen, um alle Änderungen rückgängig zu machen. Ihre Bearbeitungen betreffen nur Ihren Plan – die ursprüngliche Lektion wird nie verändert –, und sie wirken sich auf gedruckte Pläne und auf das aus, was Ihre Freiwilligen sehen.
 
-Ehrenamtliche, denen ein Element zugewiesen ist, erscheinen im Gottesdienstablauf neben diesem Element, sodass jeder, der den Plan prüft, auf einen Blick sieht, wer welchen Teil übernimmt.
+Wenn Sie einen Punkt aus dem Abschnitt als eigene Zeile benötigen (zum Beispiel, um ein Lied zwischen zwei Zeilen zu platzieren), klicken Sie auf den Pfeil am rechten Ende der Abschnittszeile, um den Inhalt als einzelne Zeilen anzuzeigen. Klicken Sie auf den Pfeil der ersten dieser Zeilen, um sie wieder zu einer einzigen zusammenzufassen. Das funktioniert genauso für Inhalte aus jedem verbundenen Anbieter.
 
-## Zeitplanung und Medien
+Freiwillige, die einem Punkt zugewiesen sind, erscheinen neben ihm in der Gottesdienstordnung. So sieht jeder, der den Plan prüft, auf einen Blick, wer welchen Teil übernimmt.
 
-Jedes Element und jeder Abschnitt zeigt, wie lange es dauert und wann es beginnt:
+## Zeitplanung und Medien {#timing-and-media}
 
-- Ist im Plan eine einzelne Gottesdienstzeit ausgewählt, zeigt die linke Leiste die tatsächliche **Uhrzeit**, zu der jedes Element beginnt (zum Beispiel 9:14 Uhr). Andernfalls zeigt sie die verstrichene Zeit ab Beginn des Gottesdienstes.
-- Abschnittsüberschriften summieren die Laufzeit aller darin enthaltenen Elemente.
-- Lieder und eigene Elemente zählen zu diesem Zeitplan, sobald Sie auf dem Bearbeitungsbildschirm des Elements **Minuten**/**Sekunden** eingeben.
-- Elemente, die Sie aus Ihrer Medienbibliothek (Bilder oder Videoclips) hinzufügen, zeigen eine **Vorschau** und werden automatisch eingeplant: Die Dauer eines Videos wird aus der Datei selbst gemessen, ein Bild fließt mit einer Planungsschätzung von etwa 5:00 ein (kursiv angezeigt), da es bis zum Weiterschalten durch eine Bedienungsperson auf dem Bildschirm bleibt. Sie können beides dennoch auf eine bestimmte Dauer setzen.
+Jeder Punkt und jeder Abschnitt zeigt an, wie lange er dauert und wann er beginnt:
 
-## Elemente bearbeiten und entfernen
+- Hat der Plan Gottesdienstzeiten, erscheint oberhalb der Gottesdienstordnung eine Liste **Ansicht für**. Ist eine Gottesdienstzeit ausgewählt (die erste wird automatisch gewählt), zeigt die linke Leiste die tatsächliche **Uhrzeit**, zu der jeder Punkt in diesem Gottesdienst beginnt (zum Beispiel 9:14 Uhr). Wählen Sie **Laufzeiten**, um stattdessen die verstrichene Zeit ab Beginn des Gottesdienstes zu sehen; das zeigt die Leiste auch dann, wenn der Plan keine Gottesdienstzeiten hat.
+- Abschnittskopfzeilen summieren die Laufzeit aller darin enthaltenen Punkte.
+- Lieder und eigene Punkte fließen in diesen Zeitplan ein, sobald Sie im Bearbeitungsbildschirm des Punkts **Minuten**/**Sekunden** eingeben.
+- Punkte, die Sie aus Ihrer Medienbibliothek (Bilder oder Videoclips) hinzufügen, zeigen eine **Vorschau** und werden automatisch berechnet: Die Dauer eines Videos wird aus der Datei selbst gemessen, während ein Bild eine Planungsschätzung von etwa 5:00 Minuten beiträgt (kursiv angezeigt), da es bleibt, bis eine Bedienperson weiterschaltet. Sie können beides trotzdem auf eine bestimmte Dauer ändern.
 
-- Klicken Sie auf ein beliebiges Element im Gottesdienstablauf, um seine Angaben zu **bearbeiten**.
-- Verwenden Sie die Option **Löschen**, um ein Element aus dem Ablauf zu entfernen.
+## Punkte bearbeiten und entfernen {#editing-and-removing-items}
+
+- Klicken Sie bei einem beliebigen Punkt (oder einer Abschnittsüberschrift) auf das Stiftsymbol, um dessen Angaben zu **bearbeiten**.
+- Klicken Sie im Bearbeitungsdialog auf **Löschen**, um den Punkt aus der Ordnung zu entfernen, oder auf **Duplizieren**, um eine Kopie davon hinzuzufügen.
 
 :::info
-Der Gottesdienstablauf ist für jeden Plan eigens. Änderungen hier betreffen nur den ausgewählten Plan und verändern weder andere Pläne noch Ihre Liedbibliothek.
+Die Gottesdienstordnung gehört jeweils zu einem bestimmten Plan. Änderungen, die Sie hier vornehmen, betreffen nur den ausgewählten Plan und verändern weder andere Pläne noch Ihre Liedbibliothek.
 :::
 
-### Mehrere Elemente auswählen und löschen
+### Mehrere Punkte gleichzeitig auswählen und löschen {#bulk-selecting-and-deleting-items}
 
-Um mehrere Elemente eines Abschnitts auf einmal zu entfernen, statt sie einzeln zu löschen:
+Um mehrere Punkte in einem Abschnitt auf einmal zu entfernen, statt sie einzeln zu löschen:
 
-1. Klicken Sie in der Kopfzeile des Abschnitts auf **Elemente auswählen**.
-2. Aktivieren Sie die Elemente, die Sie entfernen möchten, oder aktivieren Sie **Alle im Abschnitt auswählen**, um alles direkt unter diesem Abschnitt zu erfassen.
+1. Klicken Sie in der Abschnittskopfzeile auf **Punkte auswählen**.
+2. Aktivieren Sie die Punkte, die Sie entfernen möchten, oder aktivieren Sie **Alle im Abschnitt auswählen**, um alles direkt unter diesem Abschnitt zu erfassen.
 3. Klicken Sie auf **Ausgewählte löschen** und bestätigen Sie.
 4. Klicken Sie auf **Auswahl beenden**, um den Auswahlmodus zu verlassen.
 
 :::info
-Die Mehrfachauswahl gilt nur für die direkten Unterelemente eines Abschnitts, nicht für Elemente in einem untergeordneten Ordner.
+Die Mehrfachauswahl gilt nur für die direkten Einträge eines Abschnitts, nicht für Punkte innerhalb eines Unterabschnitt-Ordners.
 :::
 
-## Elemente in bestimmten Gottesdienstzeiten einbeziehen
+## Punkte für bestimmte Gottesdienstzeiten einschließen {#including-items-in-specific-service-times}
 
-Hat Ihr Plan mehr als eine Gottesdienstzeit (zum Beispiel einen Gottesdienst um 8 Uhr und einen um 10 Uhr), können Sie festlegen, in welchen Gottesdiensten jedes Element erscheinen soll. Das ist nützlich, wenn eine Ankündigung nur für einen Gottesdienst relevant ist oder ein Lied in einem Gottesdienst gesungen wird, aber im anderen nicht.
+Hat Ihr Plan mehr als eine Gottesdienstzeit (zum Beispiel einen Gottesdienst um 8 Uhr und einen um 10 Uhr), können Sie festlegen, in welchen Gottesdiensten jeder Punkt erscheinen soll. Das ist nützlich, wenn eine Ankündigung nur für einen Gottesdienst relevant ist oder ein Lied nur in einem Gottesdienst gesungen wird.
 
-1. Öffnen Sie einen Plan mit zwei oder mehr Gottesdienstzeiten. Klicken Sie im Abschnitt **Einteilung des Dienstteams** auf **Zeiten**, um sie anzuzeigen oder hinzuzufügen.
-2. Klicken Sie im Abschnitt **Gottesdienstablauf** auf ein Element, um es zu bearbeiten.
-3. Unter **In Gottesdienste einbeziehen** sehen Sie für jede Gottesdienstzeit ein Kontrollkästchen, beschriftet mit der Uhrzeit.
-4. Deaktivieren Sie jeden Gottesdienst, in dem das Element übersprungen werden soll.
+1. Öffnen Sie einen Plan mit zwei oder mehr Gottesdienstzeiten. Die Planseite listet sie unter **Zeiten** auf, wo Sie auch weitere hinzufügen können (siehe [Gottesdienstzeiten](./plans.md#service-times)).
+2. Klicken Sie auf der Seite **Gottesdienstordnung** auf das Stiftsymbol eines Punkts, um ihn zu bearbeiten.
+3. Unter **In Gottesdienste aufnehmen** sehen Sie für jede Gottesdienstzeit ein Kontrollkästchen, das mit der Uhrzeit beschriftet ist.
+4. Entfernen Sie den Haken bei jedem Gottesdienst, in dem der Punkt übersprungen werden soll.
 5. Klicken Sie auf **Speichern**.
 
-Standardmäßig ist jedes Element in jedem Gottesdienst enthalten. Ausgeschlossene Gottesdienstzeiten sind beim Drucken des Plans, gefiltert auf diesen Gottesdienst, ausgeblendet, sodass jeder Gottesdienst einen übersichtlichen Ablaufplan mit nur den relevanten Elementen erhält.
+Standardmäßig ist jeder Punkt in jedem Gottesdienst enthalten. Beim Drucken des Plans erhält jeder Gottesdienst eine eigene Zeitspalte, und ein Punkt, der aus einem Gottesdienst ausgelassen wurde, zeigt in dieser Spalte einen Strich statt einer Startzeit.
 
 :::tip
-Der Abschnitt **In Gottesdienste einbeziehen** erscheint nur, wenn der Plan mehr als eine Gottesdienstzeit hat. Sehen Sie nur einen Gottesdienst, klicken Sie zuerst im Abschnitt **Einteilung des Dienstteams** des Plans auf **Zeiten**, um weitere Gottesdienste hinzuzufügen.
+Der Bereich **In Gottesdienste aufnehmen** erscheint nur, wenn der Plan mehr als eine Gottesdienstzeit hat. Sehen Sie nur einen Gottesdienst, klicken Sie zuerst auf der Planseite unter **Zeiten** auf **Zeit hinzufügen**, um weitere Gottesdienste anzulegen.
 :::
 
-### Pro Gottesdienst eine andere Position anzeigen
+### Eine andere Position je Gottesdienst anzeigen {#showing-a-different-position-per-service}
 
-Ist für ein Element eine **Position** festgelegt, erhält jede angekreuzte Gottesdienstzeit unter **In Gottesdienste einbeziehen** außerdem ein eigenes Dropdown-Menü **Position für diesen Gottesdienst**. Verwenden Sie es, wenn derselbe Abschnitt in jedem Gottesdienst von einer anderen Person übernommen wird. Lassen Sie es auf **Wie oben**, um die Standardposition des Elements beizubehalten, oder wählen Sie eine andere Position, um sie nur für diese Gottesdienstzeit zu überschreiben.
+Hat ein Punkt eine **Position** festgelegt, erhält jede angekreuzte Gottesdienstzeit unter **In Gottesdienste aufnehmen** außerdem ein eigenes Dropdown-Menü **Position für diesen Gottesdienst**. Verwenden Sie es, wenn derselbe Abschnitt in jedem Gottesdienst von einer anderen freiwilligen Person übernommen wird – belassen Sie es auf **Wie oben**, um die Standardposition des Punkts beizubehalten, oder wählen Sie eine andere Position, um sie nur für diese Gottesdienstzeit zu überschreiben.
 
-## Den Gottesdienstablauf teilen
+## Die Gottesdienstordnung teilen {#sharing-the-service-order}
 
-Ist Ihr Gottesdienstablauf vollständig, können Sie den gesamten Plan (einschließlich des Gottesdienstablaufs) mit der Schaltfläche **Drucken** oben auf der Planseite drucken. Ihr Team erhält so einen vollständigen Ablauf des Gottesdienstes, mit dem Namen Ihrer Kirche und dem Namen des Plans als Kopf. Ist **Ehrenamtliche Namen anzeigen** für den Ausdruck aktiviert, wird bei jeder Abschnittsüberschrift außerdem die Position der zugewiesenen Ehrenamtlichen daneben gedruckt, sodass Ihr Team sieht, wer diesen Abschnitt übernimmt, ohne die App zu öffnen. Wird die Bezeichnung einer Position für bestimmte Gottesdienste überschrieben, zeigt der Ausdruck jeden verschiedenen Positionsnamen, der über die Gottesdienste dieses Plans hinweg auftritt (zum Beispiel „Lobpreisteam / Jugendteam“).
+Sobald Ihre Gottesdienstordnung fertig ist, können Sie den vollständigen Plan (einschließlich der Gottesdienstordnung) über die Schaltfläche **Drucken** oben auf der Planseite ausdrucken. Ihr Team erhält so einen vollständigen Ablauf des Gottesdienstes, mit dem Namen Ihrer Gemeinde und dem Namen des Plans als Kopfzeile. Ist die Einstellung **Namen der Freiwilligen auf der Anmeldeseite anzeigen** des Plans aktiviert (siehe [Planeinstellungen](./plans.md#plan-settings)), wird bei jedem Punkt und jeder Abschnittsüberschrift mit einer **Position** daneben auch der Name der dieser Position zugewiesenen Freiwilligen gedruckt (oder der Name der Position, falls noch niemand zugewiesen ist). So kann Ihr Team sehen, wer diesen Abschnitt übernimmt, ohne die App zu öffnen. Ist die Position einer Überschrift für bestimmte Gottesdienste überschrieben, zeigt der Ausdruck jedes unterschiedliche Ergebnis über die Gottesdienste dieses Plans hinweg (zum Beispiel „Anbetungsteam / Jugendteam“).
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- Verwalten Sie Ihr Lobpreis-Repertoire auf der Seite [Lieder](./songs.md)
-- Teilen Sie Ehrenamtliche im Abschnitt [Einteilung des Dienstteams](./plans.md#assigning-team-members) des Plans dem Gottesdienst zu
-- Erstellen Sie [Aufgaben](./tasks.md) für alle Nachfass-Punkte im Zusammenhang mit dem Gottesdienst
+- Verwalten Sie Ihr Anbetungsrepertoire auf der Seite [Lieder](./songs.md)
+- Weisen Sie Freiwillige dem Gottesdienst im Abschnitt [Zuweisung des Dienst-Teams](./plans.md#assigning-team-members) des Plans zu
+- Erstellen Sie [Aufgaben](./tasks.md) für alle Nachfassaufgaben rund um den Gottesdienst

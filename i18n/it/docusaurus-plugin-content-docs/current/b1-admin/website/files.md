@@ -1,62 +1,62 @@
 ---
 title: "File"
-description: "Carica, sfoglia e gestisci immagini e documenti per il sito della chiesa in B1 Admin, anche collegando uno spazio di archiviazione esterno per più capacità."
+description: "Carica, sfoglia e gestisci immagini e documenti per il sito web della tua chiesa in B1 Admin, incluso il collegamento di un archivio esterno per avere più spazio."
 ---
 
 # File
 
 <div class="article-intro">
 
-La pagina File è il repository centrale per tutti i media e i documenti utilizzati sul sito web della tua chiesa. Da qui puoi caricare, sfogliare e gestire ogni immagine, documento e file multimediale di cui il tuo sito ha bisogno.
+La pagina File è il deposito centrale di tutti i contenuti multimediali e i documenti usati sul sito web della tua chiesa. Da qui puoi caricare, sfogliare e gestire ogni immagine, documento e file multimediale di cui il sito ha bisogno.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Completa la [Configurazione Iniziale](./initial-setup.md) per il tuo sito web
-- Ottimizza le immagini prima di caricarle per tempi di caricamento della pagina più veloci
+- Completa la [configurazione iniziale](./initial-setup.md) del tuo sito
+- Ottimizza le immagini prima di caricarle, per tempi di caricamento più rapidi delle pagine
 - Prepara i tuoi file in formati web comuni (PNG, JPG, PDF, ecc.)
 
 </div>
 
-## Caricamento di File
+## Caricare file {#uploading-files}
 
-1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Website** e fai clic su **File**.
-2. Nel pannello **Upload Files** a destra, fai clic su **Choose File** e seleziona un file dal tuo computer. (Il pulsante **Upload Files** in alto nella pagina ti porta allo stesso pannello.)
-3. Il file viene caricato e appare nella tabella dei file.
+1. In B1 Admin, apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Sito web** e fai clic su **File**.
+2. Fai clic su **Carica file** in cima alla pagina, oppure su **Scegli file** nel pannello **Carica file** a destra, e seleziona un file dal tuo computer.
+3. Il file viene caricato non appena lo selezioni e compare nella tabella dei file.
 
-Il pannello Upload Files mostra anche quanto spazio di archiviazione stai usando. Sono disponibili gratuitamente 100 MB; per ottenerne di più, collega il tuo Google Drive, Dropbox, OneDrive o bucket S3 in **Settings**, nella sezione **File Storage**.
+Il pannello Carica file mostra anche quanto spazio di archiviazione stai usando. Sono forniti gratuitamente 100 MB; quando sono esauriti, i pulsanti di caricamento vengono nascosti finché non elimini dei file o non aggiungi spazio. Per ottenerne di più, collega il tuo Google Drive, Dropbox, OneDrive o bucket S3 nelle **Impostazioni**, nella sezione **Archiviazione file**. I file vanno allora sul tuo account collegato, e il pannello mostra **Archiviato nel tuo account collegato**.
 
 :::tip
-Per i migliori risultati, ottimizza le immagini prima di caricarle. Dimensioni di file più piccole aiutano il tuo sito web a caricarsi più velocemente per i visitatori. Strumenti come TinyPNG o Squoosh possono comprimere le immagini senza notevole perdita di qualità.
+Per i risultati migliori, ottimizza le immagini prima di caricarle. Dimensioni dei file più piccole fanno caricare più rapidamente il sito ai visitatori. Strumenti come TinyPNG o Squoosh possono comprimere le immagini senza una perdita di qualità evidente.
 :::
 
-## Sfogliare i File {#browsing-files}
+## Sfogliare i file {#browsing-files}
 
-La tabella dei file elenca tutti i file caricati con il loro **Nome** e la **Dimensione**. Fai clic sul nome di un file per aprirlo in una nuova scheda. Prima di caricare i file, dai loro nomi chiari e descrittivi in modo che il tuo team possa trovarli rapidamente.
+La tabella dei file elenca ogni file caricato con il suo **Nome** e la sua **Dimensione**. Fai clic sul nome di un file per aprirlo in una nuova scheda. Dai ai file nomi chiari e descrittivi prima di caricarli, così il team può trovarli rapidamente.
 
-## Utilizzo di File sul Tuo Sito Web
+## Usare i file nel sito {#using-files-on-your-website}
 
 1. Trova il file nella tabella dei file.
-2. Fai clic su **Copy link** per copiare l'URL del file. Puoi incollare questo URL in elementi immagine, link di download o ovunque accetti un URL di file.
-3. I file che carichi qui sono disponibili per l'uso su tutte le pagine del sito web e i blocchi di contenuto.
+2. Fai clic su **Copia collegamento** per copiare l'URL del file (il pulsante cambia in **Copiato**). Puoi incollare questo URL negli elementi immagine, nei collegamenti di download o in qualsiasi altro punto che accetti l'URL di un file.
+3. I file caricati qui sono disponibili per tutte le pagine del sito e per tutti i blocchi di contenuto.
 
 :::info
-Quando costruisci le pagine in [Gestione Pagine](./managing-pages.md), puoi fare riferimento a qualsiasi file caricato qui dal suo URL. Questo mantiene tutti i tuoi media organizzati in un'unica posizione centrale.
+Quando costruisci le pagine in [Gestire le pagine](./managing-pages.md), puoi fare riferimento a qualsiasi file caricato qui tramite il suo URL. Così tutti i tuoi contenuti multimediali restano organizzati in un unico punto centrale.
 :::
 
-## Eliminazione di File
+## Eliminare file {#deleting-files}
 
-1. Trova nella tabella dei file il file che desideri rimuovere.
-2. Fai clic su **Elimina** accanto al file e conferma per rimuoverlo permanentemente dalla tua libreria.
-3. Assicurati che il file non sia attualmente utilizzato su nessuna pagina prima di eliminarlo, poiché questo interromperà tutti i link o le immagini che lo referenziano.
+1. Trova il file che vuoi rimuovere nella tabella dei file.
+2. Fai clic su **Elimina** accanto ad esso e conferma per rimuoverlo in modo permanente dalla tua libreria.
+3. Assicurati che il file non sia attualmente usato in nessuna pagina prima di eliminarlo, perché così si romperebbero i collegamenti o le immagini che lo richiamano.
 
 :::warning
-I file eliminati non possono essere recuperati. Verifica due volte che un file non sia più utilizzato su nessuna pagina prima di rimuoverlo.
+I file eliminati non possono essere recuperati. Verifica due volte che un file non sia più usato in nessuna pagina prima di rimuoverlo.
 :::
 
-## Prossimi Passaggi
+## Passaggi successivi {#next-steps}
 
-- [Gestione Pagine](./managing-pages.md) -- Aggiungi i tuoi file caricati alle pagine del sito web
-- [Aspetto](./appearance.md) -- Personalizza il tema visivo del tuo sito
+- [Gestire le pagine](./managing-pages.md) -- Aggiungi i file caricati alle pagine del sito
+- [Aspetto](./appearance.md) -- Personalizza il tema visivo del sito

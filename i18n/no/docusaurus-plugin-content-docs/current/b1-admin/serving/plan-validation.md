@@ -1,72 +1,88 @@
 ---
 title: "Planvalidering og varsler"
-description: "Sjekk tjenesteplaner i B1 Admin for ubesatte posisjoner, planleggingskonflikter og frivillige som har blokkert datoen, og send push-varsel til hele teamet med ett klikk."
+description: "Sjekk gudstjenesteplaner i B1 Admin for ubesatte posisjoner, planleggingskonflikter og frivillige som har blokkert datoen, og send push-varsel til hele teamet med ett klikk."
 ---
 
 # Planvalidering og varsler til frivillige
 
 <div class="article-intro">
 
-B1 Admin kontrollerer planene dine automatisk for problemer før søndag: ubesatte posisjoner, planleggingskonflikter og frivillige som har blokkert datoen. Når alt ser bra ut, kan du varsle hele teamet med ett enkelt klikk.
+B1 Admin sjekker planene dine automatisk for problemer før søndag — ubesatte posisjoner, planleggingskonflikter og frivillige som har blokkert datoen. Når alt ser bra ut, kan du varsle hele teamet ditt med ett klikk.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Opprett en [tjenesteplan](./plans.md) og tildel frivillige til posisjoner
-- Legg til [gudstjenestetider](./plans.md) i planen, slik at konfliktsjekken kan finne overlapp
-- Sørg for at de frivillige har [B1 App installert](../../b1-church/getting-started/installing-pwa.md) for å kunne motta push-varsler
+- Opprett en [gudstjenesteplan](./plans.md) og tilordne frivillige til posisjoner
+- Legg til [gudstjenestetider](./plans.md) på planen, slik at konfliktdeteksjon kan se etter overlapp
+- Kontroller at de frivillige har [B1-appen installert](../../b1-church/getting-started/installing-pwa.md) for å motta push-varsler
 
 </div>
 
-## Valideringspanelet
+## Valideringspanelet {#the-validation-panel}
 
-Hver plan har et **Validering**-panel som kjører automatisk mens du lager planen. Det sjekker tre ting:
+Hver plan har et panel for **Validering** som kjører automatisk mens du bygger den. Åpne planen og klikk på **Administrer tjenesteteam** for å se det ved siden av posisjonene. Selve planssiden viser en oppsummeringslinje under **Tjenesteteam** (for eksempel «2 konflikter · 3 ikke varslet») med en lenke til **Gjennomgå** for hele panelet. Posisjoner som fortsatt trenger folk, listes også på planssiden, så oppsummeringslinjen teller bare konflikter og frivillige som ikke er varslet.
 
-### Ubesatte posisjoner
-Hvis en posisjon krever flere personer enn det som er tildelt, viser valideringspanelet nøyaktig hva som fortsatt mangler, for eksempel *«Lydtekniker: trenger 1 person til.»* Du ser med én gang om planen er fullt bemannet før uken starter.
+Panelet sjekker følgende:
 
-### Planleggingskonflikter
-Hvis en frivillig er tildelt to posisjoner som overlapper i tid innenfor samme plan, markerer valideringspanelet konflikten, for eksempel *«Jane Smith: tidskonflikt mellom Worship Leader og Barnesjekk under søndagsgudstjenesten.»* Dette fanger opp dobbeltbookinger før de blir et problem søndag morgen.
+### Ubesatte posisjoner {#unfilled-positions}
+Hvis en posisjon krever flere personer enn det som er tilordnet akkurat nå, lister valideringspanelet nøyaktig hva som fortsatt trengs — for eksempel *«Lydtekniker: 1 person til trengs.»* Du ser med et blikk om planen din er fullt bemannet før uken kommer.
 
-### Blokkerte datoer
-Frivillige kan angi datoer de ikke er tilgjengelige i B1 App. Hvis noen er tildelt en plan som faller innenfor en av deres blokkerte datoer, viser valideringspanelet konflikten automatisk, slik at du kan finne en erstatning.
+### Planleggingskonflikter {#scheduling-conflicts}
+Hvis en frivillig er tilordnet to posisjoner som overlapper i tid innenfor samme plan, markerer valideringspanelet konflikten — for eksempel *«Jane Smith: tidskonflikt mellom Lovsangsleder og Barnesjekk-inn under søndagsgudstjenesten.»* Dette fanger opp dobbeltbooking før det blir et problem en søndag morgen.
 
-### Konflikter på tvers av planer
-Valideringen sjekker også alle planene dine samtidig. Hvis samme frivillige er tildelt to ulike planer som overlapper i tid, for eksempel en gudstjeneste kl. 09.00 og en gudstjeneste kl. 10.00 som begge varer til kl. 10.30, markerer B1 Admin personen som dobbeltbooket på tvers av planer.
+### Blokkerte datoer {#blockout-dates}
+Frivillige kan angi datoer de ikke er tilgjengelige i B1-appen. Hvis noen er tilordnet en plan som faller innenfor en av deres blokkerte datoer, viser valideringspanelet konflikten automatisk, slik at du kan finne en erstatning.
+
+### Konflikter på tvers av planer {#cross-plan-conflicts}
+Valideringen sjekker også alle planene dine samtidig. Hvis den samme frivillige er tilordnet to ulike planer som overlapper i tid — for eksempel en gudstjeneste kl. 09 og en gudstjeneste kl. 10 som begge varer til kl. 10:30 — markerer B1 Admin personen som dobbeltbooket på tvers av planer.
+
+### Planleggingspreferanser {#scheduling-preferences}
+Hvis en frivillig har [planleggingspreferanser](./plans.md#scheduling-preferences), varsler panelet deg når et oppdrag strider mot dem: når de er planlagt flere ganger denne måneden enn deres **Maks antall ganger per måned**, når ingen av planens tider samsvarer med deres **Foretrukne gudstjenestetider**, eller når de har bedt om ikke å tjene samme dag som husstanden sin, og et familiemedlem også er planlagt.
+
+Når alt stemmer, står det **Planen er gyldig.** i panelet.
 
 :::tip
-Du trenger ikke gjøre noe for å kjøre validering. Den oppdateres automatisk hver gang du legger til eller endrer en tildeling. Hold bare øye med panelet mens du lager planen.
+Du trenger ikke gjøre noe for å kjøre validering — den oppdateres automatisk hver gang du legger til eller endrer et oppdrag. Følg bare med på panelet mens du bygger planen.
 :::
 
-## Varsle frivillige
+## Varsle frivillige {#notifying-volunteers}
 
-Når planen er klar, kan du varsle alle tildelte frivillige samtidig direkte fra valideringspanelet.
+Når planen er klar, kan du varsle alle tilordnede frivillige samtidig direkte fra valideringspanelet.
 
-1. Åpne planen og bla ned til **Validering**-panelet
-2. Hvis det finnes frivillige som ikke er varslet, ser du en lenke som viser hvor mange som må varsles (f.eks. *«Varsle 8 frivillige»*)
-3. Klikk på lenken for å sende push-varsler til alle som ikke har fått varsel ennå
-4. De frivillige får et varsel på telefonen som forteller at de er satt opp på planen, og som ber dem bekrefte oppgaven sin
+1. Åpne planen og klikk på **Administrer tjenesteteam** (eller **Gjennomgå** på planens oppsummeringslinje) for å se panelet **Validering**
+2. Hvis det finnes frivillige som ikke er varslet, ser du en lenke som viser hvor mange som må varsles (f.eks. *«Varsle 8 frivillige»*). Når alle er varslet, står det **Alle frivillige er varslet.** i panelet.
+3. Klikk på lenken for å sende push-varsler til alle som ikke er varslet ennå
+4. De frivillige får et varsel på telefonen sin som forteller at de er planlagt og ber dem bekrefte oppdraget sitt
 
 :::info
 Bare frivillige som ikke er varslet ennå, blir med. Hvis du legger til noen i planen senere, vises lenken igjen, slik at du kan varsle den nye personen uten å varsle resten av teamet på nytt.
 :::
 
-### Planer med en bekreftelsesarbeidsflyt
+### Publisere en foreløpig plan {#publishing-a-penciled-in-plan}
 
-Hvis innstillingene for planen angir en [bekreftelsesarbeidsflyt](./workflows.md#serving-assignment-confirmations), viser panelet meldingen *«Nye forespørsler bruker bekreftelsesarbeidsflyten. Varsler i appen forblir aktivert. Oppfølgingen stopper når hver forespørsel godtas eller avslås.»* I så fall gjelder følgende:
+Hvis planen er [foreløpig](./plans.md#plan-settings), kan ikke de frivillige se oppdragene sine ennå, og panelet viser *«Foreløpig — frivillige kan ikke se disse oppdragene ennå.»* med en knapp i stedet for varslingslenken:
+
+- **Publiser plan** gjør oppdragene synlige.
+- **Publiser og varsle** (vises når noen frivillige ikke er varslet, for eksempel *«Publiser og varsle 8 frivillige»*) gjør oppdragene synlige og varsler disse frivillige med en gang.
+
+Bekreft i dialogen for å publisere.
+
+### Planer med en bekreftelsesarbeidsflyt {#plans-with-a-confirmation-workflow}
+
+Hvis innstillingene for planen angir en [bekreftelsesarbeidsflyt](./workflows.md#serving-assignment-confirmations), viser panelet *«Nye forespørsler bruker bekreftelsesarbeidsflyten. Appvarsler er fortsatt aktivert. Oppfølging stopper når hver forespørsel er akseptert eller avslått.»* I så fall:
 
 - Varslingslenken teller bare frivillige som ikke er varslet og heller ikke har svart ennå.
-- Når du klikker på den, sendes det vanlige varselet i appen, og det opprettes ett kort per forespørsel på arbeidsflytens tavle. Deretter sender arbeidsflyten e-post- og tekstmeldingsoppfølging og, om nødvendig, overleverer forespørselen til noen som skal ringe.
-- Planen må være publisert (ikke bare en utkast-plan), og arbeidsflyten må være aktiv. Ellers viser panelet meldingen *«Forespørslene kunne ikke sendes. Kontroller at den valgte arbeidsflyten er aktiv og at planen er publisert, og prøv igjen.»*
+- Ved å klikke på den sendes det vanlige appvarselet, og det starter ett kort per forespørsel på arbeidsflytens tavle. Arbeidsflyten sender deretter oppfølging via e-post og tekstmelding og, hvis nødvendig, overleverer forespørselen til noen som skal ringe.
+- Planen må være publisert (ikke foreløpig), og arbeidsflyten må være aktiv. Ellers viser panelet *«Forespørslene kunne ikke sendes. Kontroller at den valgte arbeidsflyten er aktiv og at planen er publisert, og prøv igjen.»*
 
 :::warning
-De frivillige må ha B1 App installert på hjemmeskjermen og varsler aktivert for å kunne motta push-varsler. Se [Installere som app (PWA)](../../b1-church/getting-started/installing-pwa.md) for oppsettsinstruksjoner.
+Frivillige må ha B1-appen installert på startskjermen og varsler slått på for å motta push-varsler. Se [Installere som app (PWA)](../../b1-church/getting-started/installing-pwa.md) for oppsettinstruksjoner.
 :::
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Tjenesteplaner](./plans.md)
+- [Gudstjenesteplaner](./plans.md)
 - [Arbeidsflyter](./workflows.md)
 - [Installere B1.church PWA](/docs/b1-church/getting-started/installing-pwa)

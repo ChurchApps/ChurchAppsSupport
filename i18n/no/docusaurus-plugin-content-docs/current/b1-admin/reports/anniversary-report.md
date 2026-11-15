@@ -1,46 +1,46 @@
 ---
-title: "Bryllupsdagsliste"
-description: "Hent en liste over alle med bryllupsjubileum i en valgt måned i B1 Admin, med datoer i resultatene og eksport til regneark for menighetsbrev eller kort."
+title: "Liste over bryllupsdager"
+description: "Hent en liste over alle med bryllupsdag i en valgt måned i B1 Admin, med datoene vist i resultatene og eksporterbar til et regneark for kirkeblad eller kort."
 ---
 
-# Bryllupsdagsliste
+# Liste over bryllupsdager
 
 <div class="article-intro">
 
-Trenger du en liste over alle som har bryllupsdag i en bestemt måned — til menighetsbladet, kort eller kunngjøringer? I personsøket kan du filtrere på **Bryllupsdagsmåned** og vise datoene direkte i resultatene.
+Trenger du en liste over alle med bryllupsdag i en bestemt måned, til kirkebladet, kort eller kunngjøringer? Personsøket lar deg filtrere på **Bryllupsdag-måned** og vise datoene direkte i resultatene.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sørg for at bryllupsdatoer er lagt inn på hver persons profil. Se [Legge til personer](../people/adding-people.md) for detaljer.
+- Sørg for at bryllupsdatoer er registrert på hver persons profil. Se [Legge til personer](../people/adding-people.md) for detaljer.
 - Du trenger tillatelse til å se Personer. Se [Roller og tillatelser](../settings/roles-permissions.md).
 
 </div>
 
-## Hente en bryllupsdagsliste for en måned
+## Få en liste over bryllupsdager for en måned {#getting-an-anniversary-list-for-a-month}
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Personer** og klikk på **Personer**.
-2. Klikk på **Avansert** under søkefeltet.
-3. Utvid delen **Demografi**, huk av for **Bryllupsdagsmåned** og velg måneden.
-4. Kjør søket — alle som har bryllupsdag den måneden, vises i resultatene.
-5. For å se datoene setter du **Vis som** til **Tabell**, klikker deretter på ikonet **Velg kolonner** i sidehodet og slår på kolonnen **Bryllupsdag**. Bruk **Eksporter** for å laste ned listen som et regneark hvis du vil sortere eller skrive den ut.
+1. Åpne [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **Personer**, og klikk på **Personer**.
+2. Klikk på **Avansert** under søkeboksen.
+3. Utvid seksjonen **Demografi**, kryss av for **Bryllupsdag-måned**, og velg måneden.
+4. Resultatene oppdateres så snart filteret er avkrysset. Alle med bryllupsdag den måneden vises.
+5. For å se datoene bytter du **Vis som** til **Tabell**, klikker på ikonet **Velg kolonner** i sidetoppen og slår på kolonnen **Bryllupsdag**. Bruk **Eksporter** for å laste ned listen som et regneark hvis du heller vil sortere eller skrive den ut.
 
-## Praktiske bruksområder
+## Praktisk bruk {#practical-uses}
 
-- **Ukentlige menighetsblader** -- Kjør listen for inneværende måned og ta med bryllupsdagene i menighetsbladet eller kunngjøringene.
-- **Bryllupsdagskort** -- Eksporter månedens liste og gi den til teamet som skriver kort.
-- **Jubileumsmarkeringer** -- Kombiner med filteret **Antall år gift** for å finne runde bryllupsdager.
+- **Ukentlige kirkeblad**: Kjør listen for inneværende måned, og ta med bryllupsdager i kirkebladet eller kunngjøringene.
+- **Kort for bryllupsdager**: Eksporter månedens liste, og gi den til teamet som skriver kort.
+- **Merkedager**: Kombiner med filteret **Års ekteskap** for å finne runde bryllupsdager.
 
 :::tip
-Kjør dette i begynnelsen av hver måned, så du har tid til å forberede kort eller kunngjøringer før bryllupsdagene kommer.
+Kjør dette i begynnelsen av hver måned, slik at du har tid til å forberede kort eller kunngjøringer før bryllupsdagene kommer.
 :::
 
 :::info
-Bryllupsdagsdataene kommer fra feltet for bryllupsdag på hver persons profil. Hvis noen mangler, må datoen bare legges til i profilen. Se [Legge til personer](../people/adding-people.md).
+Bryllupsdata kommer fra bryllupsdagsfeltet på hver persons profil. Hvis noen mangler, må datoen bare legges til på profilen. Se [Legge til personer](../people/adding-people.md).
 :::
 
-## Se også
+## Se også {#also-see}
 
-Vil du ha fødselsdager samtidig? Se [Fødsels- og bryllupsdagslister](./birthday-report.md) for å hente begge i ett søk.
+Ser du etter bursdager samtidig? Se [Liste over bursdager og bryllupsdager](./birthday-report.md) for å hente begge i ett søk.

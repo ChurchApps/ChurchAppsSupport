@@ -1,62 +1,62 @@
 ---
 title: "Dateien"
-description: "Bilder und Dokumente für Ihre Gemeindewebsite in B1 Admin hochladen, durchsuchen und verwalten, auch mit angebundenem externem Speicher für mehr Platz."
+description: "Laden Sie Bilder und Dokumente für die Website Ihrer Gemeinde in B1 Admin hoch, durchsuchen und verwalten Sie sie, und verbinden Sie bei Bedarf externen Speicher für mehr Platz."
 ---
 
 # Dateien
 
 <div class="article-intro">
 
-Die Dateien-Seite ist das zentrale Repository für alle Medien und Dokumente, die auf Ihrer Kirchenwebsite verwendet werden. Von hier aus können Sie jede Datei, jedes Dokument und jede Mediendatei, die Ihre Website benötigt, hochladen, durchsuchen und verwalten.
+Die Seite Dateien ist die zentrale Ablage für alle Medien und Dokumente, die auf der Website Ihrer Gemeinde verwendet werden. Von hier aus laden Sie jedes Bild, Dokument und jede Mediendatei hoch, die Ihre Website benötigt, durchsuchen und verwalten sie.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Führen Sie die [Initiale Einrichtung](./initial-setup.md) für Ihre Website durch
-- Optimieren Sie Bilder vor dem Hochladen für schnellere Seitenladungszeiten
-- Bereiten Sie Ihre Dateien in gängigen Web-Formaten vor (PNG, JPG, PDF, usw.)
+- Schließen Sie die [Ersteinrichtung](./initial-setup.md) für Ihre Website ab
+- Optimieren Sie Bilder vor dem Hochladen, damit Seiten schneller laden
+- Bereiten Sie Ihre Dateien in gängigen Webformaten vor (PNG, JPG, PDF usw.)
 
 </div>
 
-## Dateien hochladen
+## Dateien hochladen {#uploading-files}
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Website** und klicken Sie auf **Files**.
-2. Klicken Sie im Bereich **Upload Files** auf der rechten Seite auf **Choose File** und wählen Sie eine Datei von Ihrem Computer aus. (Die Schaltfläche **Upload Files** oben auf der Seite öffnet denselben Bereich.)
-3. Ihre Datei wird hochgeladen und erscheint in der Dateitabelle.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Website** auf und klicken Sie auf **Dateien**.
+2. Klicken Sie oben auf der Seite auf **Dateien hochladen** oder im Bereich **Dateien hochladen** rechts auf **Datei auswählen** und wählen Sie eine Datei von Ihrem Computer.
+3. Die Datei wird hochgeladen, sobald Sie sie auswählen, und erscheint in der Dateitabelle.
 
-Der Bereich Upload Files zeigt außerdem an, wie viel Speicherplatz Sie belegen. 100 MB sind kostenlos enthalten; um mehr zu erhalten, verknüpfen Sie unter **Settings** im Abschnitt **File Storage** Ihren eigenen Google Drive-, Dropbox-, OneDrive- oder S3-Bucket.
+Der Bereich Dateien hochladen zeigt außerdem, wie viel Speicher Sie belegen. 100 MB sind kostenlos enthalten; ist dieser Platz voll, sind die Upload-Schaltflächen ausgeblendet, bis Sie Dateien löschen oder mehr Speicher hinzufügen. Um mehr Platz zu bekommen, verbinden Sie unter **Einstellungen** im Abschnitt **Dateispeicher** Ihr eigenes Google Drive, Dropbox, OneDrive oder einen S3-Bucket. Dateien landen dann in Ihrem verbundenen Konto, und der Bereich zeigt **In Ihrem verbundenen Konto gespeichert**.
 
 :::tip
-Optimieren Sie Bilder vor dem Hochladen für beste Ergebnisse. Kleinere Dateigrößen helfen Ihrer Website, schneller für Besucher zu laden. Tools wie TinyPNG oder Squoosh können Bilder ohne nennenswerten Qualitätsverlust komprimieren.
+Optimieren Sie Bilder für beste Ergebnisse vor dem Hochladen. Kleinere Dateigrößen sorgen dafür, dass Ihre Website für Besucher schneller lädt. Werkzeuge wie TinyPNG oder Squoosh können Bilder ohne deutlichen Qualitätsverlust komprimieren.
 :::
 
-## Dateien durchsuchen
+## Dateien durchsuchen {#browsing-files}
 
-Die Dateitabelle listet jede hochgeladene Datei mit ihrem **Name** und ihrer **Size** auf. Klicken Sie auf den Namen einer Datei, um sie in einem neuen Tab zu öffnen. Geben Sie Dateien vor dem Hochladen klare, aussagekräftige Namen, damit Ihr Team sie schnell finden kann.
+Die Dateitabelle listet jede hochgeladene Datei mit ihrem **Namen** und ihrer **Größe** auf. Klicken Sie auf den Namen einer Datei, um sie in einem neuen Tab zu öffnen. Vergeben Sie vor dem Hochladen klare, aussagekräftige Dateinamen, damit Ihr Team sie schnell findet.
 
-## Dateien auf Ihrer Website verwenden
+## Dateien auf Ihrer Website verwenden {#using-files-on-your-website}
 
 1. Suchen Sie die Datei in der Dateitabelle.
-2. Klicken Sie auf **Copy link**, um die URL der Datei zu kopieren. Sie können diese URL in Bildelemente, Download-Links oder überall dort einfügen, wo eine Datei-URL akzeptiert wird.
-3. Dateien, die Sie hier hochladen, stehen für die Verwendung auf allen Ihren Website-Seiten und Inhaltsblöcken zur Verfügung.
+2. Klicken Sie auf **Link kopieren**, um die URL der Datei zu kopieren (die Schaltfläche wechselt zu **Kopiert**). Sie können diese URL in Bildelemente, Download-Links oder überall dort einfügen, wo eine Datei-URL akzeptiert wird.
+3. Hier hochgeladene Dateien stehen auf allen Seiten und in allen Inhaltsblöcken Ihrer Website zur Verfügung.
 
 :::info
-Beim Erstellen von Seiten in [Managing Pages](./managing-pages.md) können Sie jede hier hochgeladene Datei über ihre URL referenzieren. Dies hält alle Ihre Medien an einem zentralen Ort organisiert.
+Beim Erstellen von Seiten unter [Seiten verwalten](./managing-pages.md) können Sie jede hier hochgeladene Datei über ihre URL referenzieren. So bleiben alle Ihre Medien an einem zentralen Ort geordnet.
 :::
 
-## Dateien löschen
+## Dateien löschen {#deleting-files}
 
 1. Suchen Sie die Datei, die Sie entfernen möchten, in der Dateitabelle.
-2. Klicken Sie daneben auf **Delete** und bestätigen Sie, um sie dauerhaft aus Ihrer Bibliothek zu entfernen.
-3. Stellen Sie sicher, dass die Datei nicht auf einer Seite verwendet wird, bevor Sie sie löschen, da dies Links oder Bilder, die darauf verweisen, unterbrechen wird.
+2. Klicken Sie daneben auf **Löschen** und bestätigen Sie, um sie dauerhaft aus Ihrer Bibliothek zu entfernen.
+3. Vergewissern Sie sich vor dem Löschen, dass die Datei auf keiner Seite mehr verwendet wird, da sonst alle Links oder Bilder, die darauf verweisen, nicht mehr funktionieren.
 
 :::warning
-Gelöschte Dateien können nicht wiederhergestellt werden. Überprüfen Sie doppelt, dass eine Datei nicht mehr auf einer Seite verwendet wird, bevor Sie sie entfernen.
+Gelöschte Dateien lassen sich nicht wiederherstellen. Prüfen Sie genau, ob eine Datei auf keiner Seite mehr verwendet wird, bevor Sie sie entfernen.
 :::
 
-## Nächste Schritte
+## Nächste Schritte {#next-steps}
 
-- [Managing Pages](./managing-pages.md) -- Fügen Sie Ihre hochgeladenen Dateien zu Website-Seiten hinzu
-- [Appearance](./appearance.md) -- Passen Sie das visuelle Design Ihrer Website an
+- [Seiten verwalten](./managing-pages.md) -- Hochgeladene Dateien auf Website-Seiten einfügen
+- [Erscheinungsbild](./appearance.md) -- Das visuelle Design Ihrer Website anpassen

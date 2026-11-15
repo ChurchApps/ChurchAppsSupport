@@ -1,99 +1,104 @@
 ---
-title: "Guía: Rastrear Asistencia de la Iglesia"
-description: "Registra la asistencia en B1 Admin configurando campus y horarios, anotándola manualmente o con autorregistro, y consulta los informes."
+title: "Guía: Registre la asistencia a la iglesia"
+description: "Registre la asistencia a la iglesia en B1 Admin configurando campus y horarios de servicio, registrándola manualmente o mediante el registro de entrada por autoservicio, y consultando los informes."
 ---
 
-# Rastrear Asistencia de la Iglesia
+# Registre la asistencia a la iglesia
 
 <div class="article-intro">
 
-Configura el rastreo de asistencia para tus servicios y grupos, desde configurar sedes y horarios de servicio, hasta registrar asistencia manualmente o a través de la aplicación de verificación de entrada de autoservicio, hasta ver tendencias en reportes. Al final, tendrás una imagen completa de quién asiste y cuándo.
+Configure el registro de asistencia para sus servicios y grupos: desde la configuración de campus y horarios de servicio, hasta el registro manual o mediante la aplicación de registro de entrada por autoservicio, y la consulta de tendencias en los informes. Al terminar, tendrá una visión completa de quién asiste y cuándo.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Cuenta B1 Admin con acceso de administrador
-- [Personas agregadas a tu directorio](../people/adding-people.md)
-- [Grupos creados](../groups/creating-groups.md) para los ministerios que deseas rastrear
+- Cuenta de B1 Admin con acceso de administrador
+- [Personas agregadas a su directorio](../people/adding-people.md)
+- [Grupos creados](../groups/creating-groups.md) para los ministerios que desea registrar
 
 </div>
 
-## Paso 1: Configurar Sedes y Servicios
+## Paso 1: Configure campus y servicios {#step-1-configure-campuses--services}
 
-Define dónde y cuándo se reúne tu iglesia.
+Defina dónde y cuándo se reúne su iglesia.
 
-Sigue la guía [Configuración de Asistencia](../attendance/setup.md) para:
+Siga la guía [Configuración de asistencia](../attendance/setup.md) para:
 
-1. Agregar tu sede (p. ej., "Sede Principal")
-2. Agregar horarios de servicio (p. ej., "Domingo 9:00 AM", "Domingo 11:00 AM", "Miércoles 7:00 PM")
-3. Asignar grupos a cada horario de servicio para definir qué clases/ministerios se reúnen durante ese servicio
+1. En el [menú Jump](../introduction.md#getting-around-with-the-jump-menu), elija **People > Attendance** y haga clic en **Setup**
+2. Agregue su campus (por ejemplo, "Campus principal") y sus servicios
+3. Agregue los horarios de servicio (por ejemplo, "Domingo 9:00 a. m.", "Domingo 11:00 a. m.", "Miércoles 7:00 p. m.")
 
-## Paso 2: Habilitar Rastreo de Asistencia de Grupo
+## Paso 2: Active el registro de asistencia de grupos {#step-2-enable-group-attendance-tracking}
 
-Activa el rastreo de asistencia para los grupos que deseas monitorear.
+Active el registro de asistencia para los grupos que desea supervisar.
 
-Sigue la guía [Crear Grupos](../groups/creating-groups.md) para:
+Siga la guía [Creación de grupos](../groups/creating-groups.md) para:
 
-1. Editar cada grupo que deseas rastrear y activar "Rastrear Asistencia"
-2. Asociar grupos con horarios de servicio para que la asistencia se registre en el servicio correcto
+1. Abra cada grupo que desee registrar, haga clic en **Edit** y configure **Track Attendance** en **Yes**
+2. Si el grupo se reúne durante un servicio, elija la hora en **Add Service Time** y haga clic en el botón de más para que la asistencia se registre en el servicio correcto, luego haga clic en **Save**
 
 :::info
-No todos los grupos necesitan rastreo de asistencia. Actívalo para grupos donde deseas monitorear la participación — clases de niños, grupos pequeños, escuela dominical, etc.
+No todos los grupos necesitan registro de asistencia. Actívelo para los grupos en los que desee supervisar la participación: clases infantiles, grupos pequeños, escuela dominical, etc.
 :::
 
-## Paso 3: Registrar Asistencia Manualmente
+## Paso 3: Registre la asistencia manualmente {#step-3-record-attendance-manually}
 
-Marca quién asistió a cada servicio y grupo.
+Marque quiénes asistieron a cada servicio y grupo.
 
-Sigue la guía [Registrar Asistencia](../attendance/recording-attendance.md) para:
+Siga la guía [Registro de asistencia](../attendance/recording-attendance.md) para:
 
-1. Abre un grupo, haz clic en **All sessions** en su sección **Sessions** y agrega una sesión para la fecha y horario de servicio. Marca **También agregar para los otros grupos** para crear sesiones para cada clase en ese horario de servicio de una vez.
-2. Marca quién asistió a cada grupo
+1. Abra un grupo, haga clic en **All sessions** en su sección **Sessions**, haga clic en **New** y elija el **Service Time** y la **Session Date**. Marque **Also add for the other _N_ groups in _service time_** para crear de una vez las sesiones de todas las clases en ese horario de servicio
+2. Marque quiénes asistieron y haga clic en **Save Attendance**
+
+Si solo necesita un total en lugar de nombres (por ejemplo, para el servicio principal), haga clic en **Enter headcount** en la página **Attendance** en su lugar; consulte [Ingreso de conteo total](../attendance/headcount-entry.md).
 
 :::tip
-El rastreo manual funciona muy bien para servicios para adultos, grupos pequeños y cualquier situación donde un quiosco de verificación de entrada no sea práctico.
+El registro manual funciona muy bien para los servicios de adultos, los grupos pequeños y cualquier situación en la que un quiosco de registro de entrada no sea práctico.
 :::
 
-## Paso 4: Configurar Verificación de Entrada Automática (Opcional)
+## Paso 4: Configure el registro de entrada por autoservicio (opcional) {#step-4-set-up-self-check-in-optional}
 
-Permite que los miembros se verifiquen a sí mismos usando un quiosco de tableta.
+Permita que los miembros se registren por sí mismos usando un quiosco con tableta.
 
-Sigue la guía [Verificación de Entrada](../attendance/check-in.md) para:
+Siga la guía [Registro de entrada](../attendance/check-in.md) para:
 
-1. Instala la aplicación B1 Checkin en una tableta para verificación de entrada de autoservicio
-2. Los miembros buscan su nombre y se verifican a sí mismos y a su familia
-3. Los registros de asistencia de verificación de entrada aparecen junto con los registros ingresados manualmente — sin diferencia en los datos
+1. Instale la aplicación B1 Checkin en una tableta para el registro de entrada por autoservicio
+2. Los miembros buscan su nombre y se registran ellos mismos y a su familia
+3. Los registros de asistencia del registro de entrada aparecen junto con los registros ingresados manualmente, sin ninguna diferencia en los datos
 
 :::info
-Para una configuración completa del ministerio infantil incluyendo hardware y configuración de impresora, ver la [Guía de Verificación de Entrada Infantil](./childrens-checkin.md).
+Para una configuración completa del ministerio infantil, incluidos el hardware y la configuración de la impresora, consulte la [Guía de registro de entrada infantil](./childrens-checkin.md).
 :::
 
-## Paso 5: Ver Reportes de Asistencia
+## Paso 5: Consulte los informes de asistencia {#step-5-view-attendance-reports}
 
-Ve el panorama general de la participación en toda tu iglesia.
+Obtenga una visión general de la participación en toda su iglesia.
 
-Sigue la guía [Reportes de Asistencia](../reports/attendance-reports.md). Hay tres vistas de reportes disponibles:
+Siga la guía [Informes de asistencia](../reports/attendance-reports.md). En la página **Attendance**, haga clic en **All years** para encontrar estos informes como pestañas:
 
-1. **Tendencia de Asistencia** — ve la asistencia a lo largo del tiempo para detectar crecimiento o declive
-2. **Asistencia por Grupo** — ve quién asistió a cada sesión de grupo en un rango de fechas, con descarga de CSV
-3. **Asistencia Diaria por Grupo** — desglose día a día para análisis detallado
+1. **Attendance Trend**: vea la asistencia a lo largo del tiempo para detectar crecimiento o descenso
+2. **Headcount Trend**: grafique los totales de conteo que ingresó manualmente
+3. **Group Attendance**: vea quiénes asistieron a cada sesión de grupo en un rango de fechas, con una descarga en CSV
+
+Para un conteo día por día de un grupo, abra el informe **Daily Group Attendance** en **admin.b1.church/reports/dailyGroupAttendance**.
 
 :::info
-Los reportes combinan asistencia registrada manualmente y de verificación de entrada automática. No hay diferencia en cómo aparecen los datos — ambos métodos alimentan los mismos reportes.
+Los informes de asistencia combinan la asistencia registrada manualmente y la del registro de entrada por autoservicio. Los datos se muestran de la misma forma; ambos métodos alimentan los mismos informes.
 :::
 
-## ¡Ya Está Listo!
+## ¡Listo! {#youre-done}
 
-Tu rastreo de asistencia está configurado. Ya sea que registres asistencia manualmente, uses la aplicación de verificación de entrada, o ambas — todos los datos fluyen hacia los mismos reportes para que tengas una imagen clara de la participación en toda tu iglesia.
+Su registro de asistencia está configurado. Ya sea que registre la asistencia manualmente, use la aplicación de registro de entrada o ambas, todos los datos alimentan los mismos informes para que tenga una visión clara de la participación en toda su iglesia.
 
-## Artículos Relacionados
+## Artículos relacionados {#related-articles}
 
-- [Configuración de Asistencia](../attendance/setup.md) — configura sedes y servicios
-- [Registrar Asistencia](../attendance/recording-attendance.md) — registra asistencia manualmente
-- [Rastrear Asistencia](../attendance/tracking-attendance.md) — revisa tendencias de asistencia
-- [Verificación de Entrada](../attendance/check-in.md) — aplicación de verificación de entrada de autoservicio
-- [Crear Grupos](../groups/creating-groups.md) — configura grupos con rastreo de asistencia
-- [Reportes de Asistencia](../reports/attendance-reports.md) — ver tendencias de asistencia
-- [Guía de Verificación de Entrada Infantil](./childrens-checkin.md) — configuración completa de verificación de entrada del ministerio infantil
+- [Configuración de asistencia](../attendance/setup.md): configure campus y servicios
+- [Ingreso de conteo total](../attendance/headcount-entry.md): registre totales sin nombres
+- [Registro de asistencia](../attendance/recording-attendance.md): registre la asistencia manualmente
+- [Seguimiento de asistencia](../attendance/tracking-attendance.md): revise las tendencias de asistencia
+- [Registro de entrada](../attendance/check-in.md): aplicación de registro de entrada por autoservicio
+- [Creación de grupos](../groups/creating-groups.md): configure grupos con registro de asistencia
+- [Informes de asistencia](../reports/attendance-reports.md): consulte las tendencias de asistencia
+- [Guía de registro de entrada infantil](./childrens-checkin.md): configuración completa del registro de entrada del ministerio infantil

@@ -36,7 +36,7 @@ Fanen **Leksjoner** ga deg tilgang til menighetens læreplaner og undervisningsm
 
 Innloggingen din følger automatisk med når du åpner Leksjoner-fanen. Du trenger ikke logge inn på nytt for Lessons.church.
 
-## Hva du kan gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
 Når du er inne i Leksjoner-fanen, kan du bla gjennom læreplanene som menigheten har gjort tilgjengelige. Avhengig av hva menigheten har satt opp, kan du finne:
 

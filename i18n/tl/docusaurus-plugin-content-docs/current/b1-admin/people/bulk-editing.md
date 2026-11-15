@@ -1,190 +1,175 @@
 ---
-title: "Pag-Bulk Edit ng mga Tao"
-description: "I-update nang sabay-sabay ang membership status, marital status, kasarian, opt-out, custom na Yes/No field, o membership sa grupo ng maraming tao sa B1 Admin."
+title: "Maramihang Pag-edit ng mga Tao"
+description: "I-update ang membership status, marital status, kasarian, directory opt-out, campus, Yes/No custom field, o grupo para sa maraming tao nang sabay-sabay sa B1 Admin."
 ---
 
-# Pag-Bulk Edit ng mga Tao
+# Maramihang Pag-edit ng mga Tao
 
 <div class="article-intro">
-Ang bulk editing ay nagpapahintulot sa inyong mag-update ng maraming tao nang sabay-sabay, na nakakatipid ng oras kapag gumagawa ng parehong pagbabago sa maraming indibidwal. Maaari ninyong i-update ang membership status, marital status, kasarian, mga kagustuhan sa opt-out, at mga pagiging miyembro ng grupo sa isang operasyon.
+Pinapayagan ka ng bulk editing na i-update ang maraming tao nang sabay-sabay, na nakakatipid ng oras kapag pareho ang pagbabagong ginagawa sa maraming indibidwal. Puwede mong i-update ang membership status, marital status, kasarian, directory opt-out, campus, Yes/No custom field, membership sa grupo, at mga workflow sa iisang operasyon, o magbura ng mga tao.
 </div>
 
 <div class="prereqs">
-<h4>Bago Kayo Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan ninyo ng pahintulot upang pamahalaan ang datos ng mga tao. Tingnan ang [Roles & Permissions](./roles-permissions.md) para sa mga detalye.
-- Dapat nang naidagdag o na-import ninyo ang mga taong gusto ninyong i-edit. Tingnan ang [Adding People](./adding-people.md) kung kinakailangan.
+- Kailangan mo ng pahintulot na mamahala ng datos ng mga tao. Tingnan ang [Roles & Permissions](./roles-permissions.md) para sa mga detalye.
+- Dapat ay naidagdag o na-import mo na ang mga taong gusto mong i-edit. Tingnan ang [Adding People](./adding-people.md) kung kailangan.
 </div>
 
-## Pagpili ng mga Tao para sa Bulk Editing
+## Pagpili ng mga Tao para sa Bulk Editing {#selecting-people-for-bulk-editing}
 
-1. Mag-navigate sa **People** sa B1 Admin
-2. Gamitin ang mga tool sa paghahanap o pag-filter upang makahanap ng mga taong gusto ninyong i-update
-3. I-check ang mga kahon upang piliin ang mga tao
-   - Sa view na **Households**, kapag na-check ninyo ang isang sambahayan, mapipili ang lahat ng nasa loob nito
-   - Sa view na **Table** (lumipat gamit ang toggle na **View as**), maaari ninyong piliin ang mga tao nang isa-isa
-   - O gamitin ang checkbox sa itaas ng listahan upang piliin lahat ng nakikitang tao
-4. Kapag nakapili na kayo ng kahit isang tao, ipinapakita ng bar sa itaas ng listahan kung ilan ang napili, kasama ang **Clear Selection** at button na **Actions**
+1. Pumunta sa **People** sa B1 Admin
+2. Gamitin ang search o mga filter para hanapin ang mga taong gusto mong i-update
+3. Lagyan ng check ang mga kahon para pumili ng mga tao
+   - Sa view na **Households**, kapag nag-check ka ng household, napipili ang lahat ng nasa loob nito
+   - Sa view na **Table** (lumipat gamit ang toggle na **View as**), maaari kang pumili ng mga tao nang isa-isa
+   - O gamitin ang checkbox sa itaas ng listahan para piliin ang lahat ng nakikitang tao
+4. Kapag napili mo na ang kahit isang tao, ipinapakita ng bar sa itaas ng listahan kung ilan ang napili, kasama ang **Clear Selection** at button na **Actions**
 
 :::tip
-Kung kailangan ninyong mag-update ng malaking grupo ng mga tao batay sa mga partikular na criteria, gamitin ang [AI Search](./ai-search.md) feature o mga filter upang papangkutin muna ang inyong listahan, pagkatapos ay piliin lahat ng tumutugmang mga tao.
+Kung kailangan mong i-update ang malaking grupo ng mga tao batay sa partikular na pamantayan, gamitin ang feature na [AI Search](./ai-search.md) o mga filter para paliitin muna ang listahan mo, pagkatapos ay piliin lahat ng tugmang tao.
 :::
 
-## Mga Available na Bulk Action
+## Mga Available na Bulk Action {#available-bulk-actions}
 
-Ang **Actions** menu ay nagbibigay ng ilang opsyon:
+Nagbibigay ang menu na **Actions** ng mga opsyong nasa ibaba. Bawat isa ay nagbubukas ng maliit na dialog na nagsasabi kung ilang tao ang babaguhin nito; pumili ng halaga at i-click ang **Apply**. Papalitan ng bagong halaga ang anumang dating halaga ng bawat napiling tao. Kapag tapos na, may mensaheng lalabas sa ibaba ng pahina na nagkukumpirma kung ilang tao ang na-update.
 
-### I-update ang Membership Status
-
-I-update ang membership status para sa lahat ng mga napiling tao:
+### Set Membership Status {#set-membership-status}
 
 1. I-click ang **Actions** → **Set Membership Status**
-2. Pumili ng bagong status:
-   - **Visitor** -- Mga unang pagkakataon o paminsan-minsang dumadalo
+2. Piliin ang bagong **Membership Status**:
+   - **Visitor** -- Mga unang beses o paminsan-minsang dumadalo
    - **Guest** -- Mga bisita, gaya ng mga pamilyang nagparehistro sa check-in kiosk
-   - **Regular Attendee** -- Mga madalas dumadalong hindi miyembro
+   - **Regular Attendee** -- Mga madalas dumalo na hindi miyembro
    - **Member** -- Mga opisyal na miyembro ng simbahan
-   - **Staff** -- Mga miyembro ng staff ng simbahan
-   - **Inactive** -- Mga taong hindi na dumaradalo
-   - **Deceased** -- Mga taong pumanaw na
-3. Pumili ng update mode:
-   - **Overwrite all** -- Palitan ang kasalukuyang status para sa lahat ng mga napiling tao
-   - **Only update empty** -- Itakda lamang ang status para sa mga taong walang isa
-4. I-click ang **Update**
+   - **Staff** -- Mga staff ng simbahan
+   - **Inactive** -- Mga taong hindi na dumadalo
+   - **Deceased** -- Mga taong namatay na
+3. I-click ang **Apply**
 
-### I-update ang Marital Status
-
-I-update ang marital status nang bulk:
+### Set Marital Status {#set-marital-status}
 
 1. I-click ang **Actions** → **Set Marital Status**
-2. Pumili ng bagong status:
-   - **Unknown**
-   - **Single**
-   - **Married**
-   - **Divorced**
-   - **Widowed**
-3. Pumili kung i-overwrite ang mga umiiral na halaga o i-update lamang ang mga walang laman na field
-4. I-click ang **Update**
+2. Piliin ang **Unknown**, **Single**, **Married**, **Divorced**, o **Widowed**
+3. I-click ang **Apply**
 
-### I-update ang Kasarian
-
-I-update ang impormasyon sa kasarian para sa maraming tao:
+### Set Gender {#set-gender}
 
 1. I-click ang **Actions** → **Set Gender**
-2. Pumili ng halaga:
-   - **Unspecified**
-   - **Male**
-   - **Female**
-3. Pumili ng update mode (overwrite all o only empty)
-4. I-click ang **Update**
+2. Piliin ang **Unspecified**, **Male**, o **Female**
+3. I-click ang **Apply**
 
-### I-update ang Opt-Out Status
+### Set Directory Opt-Out {#set-directory-opt-out}
 
-Kontrolin kung nag-opt out ang mga tao sa mga komunikasyon:
+Kinokontrol ng directory opt-out kung lumalabas ang mga tao sa member directory -- ang [naka-print na directory](./print-directory.md) at ang member directory sa B1 app. Ito ang parehong setting ng **Hide me from the member directory** sa record ng isang tao.
 
 1. I-click ang **Actions** → **Set Directory Opt-Out**
-2. Pumili:
-   - **No** -- Payagan ang mga komunikasyon (alisin ang opt-out)
-   - **Yes** -- Harangan ang mga komunikasyon (itakda ang opt-out)
-3. Pumili ng update mode
-4. I-click ang **Update**
+2. Piliin ang **Opted Out Yes** para itago ang mga napiling tao sa directory, o **Opted Out No** para ipakitang muli sila
+3. I-click ang **Apply**
 
 :::warning
-Mag-ingat kapag binabago ang opt-out status. Ang mga taong hayagang nag-opt out ay hindi dapat makatanggap ng mga komunikasyon maliban kung nagbigay sila ng bagong pahintulot.
+Ang mga taong pumili na itago ang sarili nila sa directory ay dapat manatiling nakatago maliban kung hilingin nilang ilista muli.
 :::
 
-### Idagdag sa Grupo
+### Set Campus {#set-campus}
 
-Idagdag ang lahat ng mga napiling tao sa isa o higit pang mga grupo:
+Lumalabas ang opsyong ito kapag may [mga campus](../settings/campuses.md) na naka-set up ang iyong simbahan.
 
-1. I-click ang **Actions** → **Add to Group**
-2. Maghanap at pumili ng (mga) grupo kung saan idadagdag ang mga tao
-3. Maaari kayong pumili ng maraming grupo upang idagdag ang mga tao sa lahat ng mga ito
-4. I-click ang **Add to Groups**
+1. I-click ang **Actions** → **Set Campus**
+2. Piliin ang campus
+3. I-click ang **Apply**
 
-Ang bawat tao ay idadagdag bilang regular na miyembro ng mga napiling grupo. Maaari ninyong i-promote ang mga indibidwal sa mga lider ng grupo kung kinakailangan mula sa pahina ng [Group Members](../groups/group-members.md).
+### Set Custom Field {#set-custom-field}
 
-### Alisin sa Grupo
+Magtakda ng halagang Yes/No [custom field](../settings/custom-fields.md) para sa lahat ng napiling tao nang sabay-sabay:
 
-Alisin ang lahat ng mga napiling tao mula sa isa o higit pang mga grupo:
-
-1. I-click ang **Actions** → **Remove from Group**
-2. Maghanap at pumili ng (mga) grupo kung saan aalisin ang mga tao
-3. Maaari kayong pumili ng maraming grupo
-4. I-click ang **Remove from Groups**
+1. I-click ang **Actions** → **Set Custom Field**.
+2. Piliin ang Yes/No **Custom Field** na gusto mong itakda.
+3. Piliin ang **Value** (**Yes** o **No**) na ilalapat.
+4. I-click ang **Apply**.
 
 :::info
-Ang aksyon na ito ay nag-aalis lamang ng mga tao sa mga tinukoy na grupo. Hindi nito binubura ang kanilang mga rekord ng tao.
+Yes/No custom field lang ang available para sa bulk action na ito. Para magtakda ng ibang uri ng field, i-edit ang bawat tao nang isa-isa. Kung walang Yes/No custom field ang iyong simbahan, sasabihin ito ng dialog.
 :::
 
-### Burahin ang mga Tao
+### Add to Group {#add-to-group}
 
-Permanenteng burahin ang mga napiling tao mula sa database ng inyong simbahan:
+1. I-click ang **Actions** → **Add to Group**
+2. Piliin ang **Group** na paglalagyan ng mga tao. Para ilagay sila sa bagong grupo, lagyan ng check ang **Create New Group** at i-type ang **New Group Name**.
+3. I-click ang **Apply**
+
+Idinadagdag ang bawat tao bilang regular na miyembro ng grupo. Maaari mo silang gawing group leader sa ibang pagkakataon mula sa pahinang [Group Members](../groups/group-members.md). Para magdagdag ng mga tao sa ilang grupo, ulitin ito para sa bawat grupo.
+
+### Remove from Group {#remove-from-group}
+
+1. I-click ang **Actions** → **Remove from Group**
+2. Piliin ang **Group** na aalisan ng mga tao
+3. I-click ang **Apply**
+
+:::info
+Inaalis lang ng aksyong ito ang mga tao sa grupo. Hindi nito binubura ang kanilang person record.
+:::
+
+### Add to Workflow {#add-to-workflow}
+
+Idagdag ang mga napiling tao sa isang [workflow](../serving/workflows.md) bilang mga card:
+
+1. I-click ang **Actions** → **Add to Workflow**
+2. Piliin ang workflow
+3. I-click ang **Apply**
+
+### Delete People {#delete-people}
+
+Burahin ang mga napiling tao sa database ng iyong simbahan:
 
 1. I-click ang **Actions** → **Delete**
-2. Lalabas ang dialog na **Delete Selected People** na nagtatanong kung ilang tao ang buburahin
+2. Hihingi ng kumpirmasyon ang dialog na **Delete Selected People** kung ilang tao ang buburahin
 3. I-click ang **Delete**
 
 :::danger
-Ang pagbura ng mga tao ay permanente at hindi maaaring i-undo. Ito ay mag-aalis ng lahat ng kanilang datos kabilang ang:
-- Personal na impormasyon
-- Mga pagiging miyembro ng grupo
-- Mga rekord ng pagdalo
-- Kasaysayan ng donasyon
-- Mga submission ng form
-
-Gamitin lamang ang aksyon na ito kung sigurado kayo na gusto ninyong alisin ang mga taong ito sa inyong sistema.
+Nawawala sa iyong directory, mga grupo, at mga search ang mga binurang tao. Gamitin lang ang aksyong ito kung sigurado kang gusto mong alisin ang mga taong ito sa iyong sistema.
 :::
 
-## Mga Resulta ng Bulk Edit
+Hindi mo maaaring piliin ang sarili mo, kaya hindi mo mabubura nang maramihan o mababago nang maramihan ang sarili mong record.
 
-Pagkatapos makumpleto ang isang bulk action, makikita ninyo ang isang buod na nagpapakita ng:
 
-- **Total selected** -- Ilang tao ang kasama sa operasyon
-- **Successfully updated** -- Ilang rekord ang nabago
-- **Failed** -- Anumang mga rekord na hindi ma-update (kung naaangkop)
-- **Unchanged** -- Mga rekord na hindi na kailangan ng mga pagbabago (hal., kapag gumagamit ng "only update empty" mode)
+## Mga Pinakamahusay na Gawi {#best-practices}
 
-Kung nabigo ang anumang mga update, makikita ninyo ang mga detalye ng error na nagpapaliwanag kung bakit.
+- **Magsimula nang maliit** -- Subukan muna ang mga bulk operation sa ilang record para matiyak na tama ang mga pagbabagong ginagawa mo
+- **Gumamit ng mga filter** -- Paliitin ang listahan mo gamit ang mga filter o AI search bago pumili ng mga tao para matiyak na ang tamang indibidwal lang ang ina-update mo
+- **I-double-check ang mga pinili** -- Suriin ang mga napiling tao bago ilapat ang mga bulk change
+- **Itala ang mga pangunahing pagbabago** -- Magtago ng mga tala tungkol sa mga bulk update kung sakaling kailanganin mo itong balikan
+- **Makipag-ugnayan sa iyong team** -- Ipaalam sa ibang administrator kapag gagawa ka ng malalaking bulk change
 
-## Mga Best Practice
+## Mga Karaniwang Gamit {#common-use-cases}
 
-- **Magsimula nang maliit** -- Subukan ang mga bulk operation sa ilang rekord muna upang matiyak na gumagawa kayo ng tamang mga pagbabago
-- **Gumamit ng mga filter** -- Papangkutin ang inyong listahan gamit ang mga filter o AI search bago pumili ng mga tao upang matiyak na ina-update ninyo lamang ang tamang mga indibidwal
-- **Doble-suriin ang mga pinili** -- Suriin ang mga napiling tao bago mag-apply ng mga bulk change
-- **Gumamit ng "only update empty" mode** -- Kapag gusto ninyong punan ang mga nawawalang datos nang hindi ino-overwrite ang umiiral na impormasyon
-- **Mag-dokumento ng mga pangunahing pagbabago** -- Magtago ng mga tala tungkol sa mga bulk update sakaling kailangan ninyong sumangguni sa mga ito mamaya
-- **Makipag-coordinate sa inyong koponan** -- Ipaalam sa ibang mga administrator kapag gumagawa ng malalaking bulk change
+### Pag-update ng mga Bagong Miyembro {#updating-new-members}
 
-## Mga Karaniwang Gamit
+Pagkatapos ng klase sa pagiging miyembro, i-update ang lahat ng dumalo bilang Member status:
 
-### Pag-update ng mga Bagong Miyembro
-
-Pagkatapos ng membership class, i-update ang lahat ng dumalo sa Member status:
-
-1. Maghanap ng mga taong dumalo sa klase
+1. Hanapin ang mga taong dumalo sa klase
 2. Piliin silang lahat
 3. Gamitin ang **Actions** → **Set Membership Status** → **Member**
 
-### Pag-organisa ng mga Maliliit na Grupo
+### Pag-aayos ng mga Small Group {#organizing-small-groups}
 
-Idagdag ang maraming tao sa isang bagong maliit na grupo:
+Magdagdag ng maraming tao sa bagong small group:
 
-1. Maghanap ng mga taong gusto ninyo sa grupo
+1. Hanapin ang mga taong gusto mo sa grupo
 2. Piliin sila
-3. Gamitin ang **Actions** → **Add to Group** at piliin ang maliit na grupo
+3. Gamitin ang **Actions** → **Add to Group** at piliin ang small group
 
-### Paglilinis ng Datos
+### Paglilinis ng Datos {#cleaning-up-data}
 
-Punan ang nawawalang marital status para sa mga mag-asawa:
+Markahan ang grupo ng mga dating dumadalo bilang inactive:
 
-1. Mag-filter para sa mga taong kasal (gamit ang impormasyon sa sambahayan)
-2. Piliin ang mga walang laman na marital status
-3. Gamitin ang **Actions** → **Set Marital Status** → **Married** → **Only update empty**
+1. Buksan ang **Advanced** search at i-filter ang mga taong gusto mong i-update (halimbawa, lahat ng hindi kamakailang dumalo)
+2. Piliin sila
+3. Gamitin ang **Actions** → **Set Membership Status** → **Inactive**
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Searching People](./searching-people.md) -- Maghanap ng mga tao upang i-edit
-- [AI Search](./ai-search.md) -- Gumamit ng natural language upang makahanap ng mga partikular na grupo ng mga tao
-- [Group Members](../groups/group-members.md) -- Pamahalaan ang pagiging miyembro ng grupo
-- [Exporting Data](./exporting-data.md) -- I-export ang datos ng mga tao bago gumawa ng mga bulk change
+- [Searching People](./searching-people.md) -- Hanapin ang mga taong ie-edit
+- [AI Search](./ai-search.md) -- Gumamit ng natural na wika para hanapin ang partikular na grupo ng mga tao
+- [Group Members](../groups/group-members.md) -- Pamahalaan ang membership sa grupo
+- [Exporting Data](./exporting-data.md) -- I-export ang datos ng mga tao bago gumawa ng bulk change

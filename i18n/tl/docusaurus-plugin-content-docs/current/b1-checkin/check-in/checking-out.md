@@ -51,7 +51,7 @@ Kailangan mo ba ng magulang habang may serbisyo — kailangang palitan ng diaper
 
 Kung nawala o nasira ang isang nametag o pickup label, maaaring **i-reprint** ng mga staff sa isang manned station ang mga label ng pamilya mula sa check-out screen matapos ilagay ang security code. Ginagamit ng reprint ang parehong printer at mga label template tulad ng orihinal na check-in.
 
-## Emergency Broadcast
+## Emergency Broadcast {#emergency-broadcast}
 
 Sa oras ng emergency, maaaring mag-text ang mga staff sa mga guardian ng **bawat batang naka-check in** para sa kasalukuyang serbisyo nang sabay-sabay:
 

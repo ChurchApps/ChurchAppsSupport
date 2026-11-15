@@ -1,13 +1,13 @@
 ---
 title: "Administrere innsendinger"
-description: "Gå gjennom, skriv ut og tildel skjemainnsendinger i B1 Admin, send svarene til riktig person, og følg opp besøkskort og bønneforespørsler."
+description: "Gjennomgå, skriv ut og flytt skjemainnsendinger i B1 Admin, slik at svarene havner hos rett person, og følg opp besøkskort og bønneforespørsler."
 ---
 
 # Administrere innsendinger
 
 <div class="article-intro">
 
-Når skjemaet ditt er i gang, begynner innsendingene å komme inn. Fanen **Form Submissions** lar deg gjennomgå alle svar, se hvem som har sendt inn, og bruke dataene til å følge opp menigheten din i tide.
+Når skjemaet ditt er tilgjengelig, begynner innsendingene å komme inn. Fanen **Form Submissions** lar deg gjennomgå alle svarene, følge med på hvem som har sendt inn, og bruke dataene til å følge opp menigheten i tide.
 
 </div>
 
@@ -15,73 +15,78 @@ Når skjemaet ditt er i gang, begynner innsendingene å komme inn. Fanen **Form 
 <h4>Før du begynner</h4>
 
 - [Opprett et skjema](./creating-forms.md) med minst ett spørsmål
-- Del skjemaet via den offentlige nettadressen, eller bygg det inn på [nettsiden din](../website/managing-pages.md)
+- Del skjemaet via den offentlige nettadressen eller bygg det inn på [nettstedet ditt](../website/managing-pages.md)
 
 </div>
 
-## Se innsendinger
+## Se innsendinger {#viewing-submissions}
 
-1. Åpne [Hopp til-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **People** og klikk på **Forms**.
+1. Åpne [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre i B1 Admin), utvid **People** og klikk **Forms**.
 2. Klikk på skjemaet du vil gjennomgå.
 3. Gå til fanen **Form Submissions**.
 
-Du ser en liste over alle svar som er mottatt for skjemaet. Hver innsending viser respondentens informasjon og datoen den ble sendt inn, etterfulgt av én kolonne for hvert spørsmål i skjemaet. Hvis skjemaet har mange spørsmål, kan du rulle tabellen sideveis for å se de resterende kolonnene.
+Fanen har to kort:
 
-## Gjennomgå enkeltinnsendinger
+- **Form Submission Summary** – for hvert spørsmål av typen Multiple Choice, Checkbox og Yes/No vises en oversikt over hvor mange som valgte hvert svar.
+- **Form Submission Results** – en tabell med alle svarene og et antall innsendinger. Hver rad viser hvem innsendingen gjelder for (**Submitted For** på skjemaer av typen People, **Submitted By** på frittstående skjemaer, eller **Anonymous**) og **Submission Date**, etterfulgt av én kolonne for hvert spørsmål på skjemaet, i skjemaets rekkefølge. Har skjemaet mange spørsmål, kan du rulle tabellen sideveis for å se de andre kolonnene. Klikk på en persons navn for å åpne posten deres.
 
-Klikk på en hvilken som helst innsending for å se alle detaljene. Du ser alle svarene personen ga på hvert spørsmål i skjemaet.
+Klikk **Export** på et av kortene for å laste ned svarene som en CSV-fil, med én rad per innsending. Klikk på **Print**-ikonet (skriver) for å skrive ut oppsummeringen og resultattabellen, med menighetens navn i toppteksten.
 
-Klikk på **utskriftsikonet** ved siden av innsendingen for å skrive ut personens utfylte svar -- nyttig for en papirmappe eller en signert frigivelse du må ha tilgjengelig. Utskriften viser menighetens logo (**Light Background Logo** fra [Website > Appearance](../website/appearance.md), hvis du har lastet opp en) midtstilt øverst, med menighetens navn under. Utskrifter bruker alltid mørk tekst på hvit bakgrunn, selv om du bruker B1 Admin i mørk modus. Dette er atskilt fra [utskrift av et tomt skjema](./creating-forms.md#printing-a-blank-form); det skriver ut svarene til én person som allerede er sendt inn, ikke en tom kopi. Det samme utskriftsikonet vises overalt der en innsending vises, også på [en persons profil](../people/adding-people.md#working-with-forms).
+## Gjennomgå enkeltinnsendinger {#reviewing-individual-submissions}
 
-## Endre personen på en innsending
+For å lese eller skrive ut svarene til én person, åpner du personens post i [People](../people/adding-people.md#working-with-forms) og klikker på skjemaet i seksjonen **Forms**. Du ser alle svarene vedkommende ga, ett spørsmål per linje.
 
-Hvis en innsending er knyttet til feil person -- for eksempel hvis to familiemedlemmer deler en e-postadresse -- kan du flytte den til riktig person, eller koble den fra.
+Klikk på **utskriftsikonet** ved siden av innsendingen for å skrive ut personens utfylte svar – nyttig for en papirarkivering eller en signert samtykkeerklæring du må ha tilgjengelig. Utskriften viser menighetens logo (**Light Background Logo** fra [Nettside > Utseende](../website/appearance.md), hvis du har lastet opp en) midtstilt øverst, med menighetens navn under. Utskrifter bruker alltid mørk tekst på hvit side, selv om du bruker B1 Admin i mørk modus. Dette er atskilt fra [utskrift av et tomt skjema](./creating-forms.md#printing-a-blank-form); det skriver ut en persons allerede innsendte svar, ikke en tom kopi.
 
-1. På fanen **Form Submissions** klikker du på ikonet **Change person** (to piler) ved siden av personens navn. Samme ikon vises ved siden av en innsending på [en persons profil](../people/adding-people.md#working-with-forms).
-2. I dialogen **Change person** søker du etter riktig person og klikker på **Move to this person**.
-3. Eller klikk på **Unlink (Anonymous)** for å koble innsendingen fra enhver person. Den vises da som **Anonymous**.
+## Endre personen på en innsending {#changing-the-person-on-a-submission}
 
-Det er bare koblingen som endres. Svarene forblir de samme, og det sendes ikke nye oppfølgingse-poster.
+Hvis en innsending er knyttet til feil person – for eksempel at to familiemedlemmer deler en e-postadresse – kan du flytte den til riktig person eller koble den fra.
+
+1. På fanen **Form Submissions** klikker du på ikonet **Change person** (to piler) ved siden av personens navn. Det samme ikonet vises ved siden av en innsending på [en persons profil](../people/adding-people.md#working-with-forms).
+2. I dialogen **Change person** søker du etter riktig person og klikker **Move to this person**.
+3. Eller klikk **Unlink (Anonymous)** for å koble innsendingen fra enhver person. Den vises da som **Anonymous**.
+
+Det er bare koblingen som endres. Svarene forblir de samme, og det sendes ikke nye oppfølgings-e-poster.
 
 :::info
-For skjemaer som er satt til å opprette en personprofil, blir innsendingen knyttet til vedkommendes egen profil når en person er logget inn på menighetens nettside mens de sender inn skjemaet, selv om en annen person i databasen din deler e-postadressen. Når du [slår sammen to personprofiler](../people/adding-people.md), flyttes innsendingene fra den fjernede personen til personen du beholder.
+På skjemaer som er satt til å opprette en personpost, blir innsendingen knyttet til personens egen post når vedkommende er innlogget på menighetens nettside når de sender inn, selv om en annen person i databasen din deler e-postadressen. Når du [slår sammen to personposter](../people/adding-people.md), flyttes innsendingene på skjemaer for den fjernede personen over til personen du beholder.
 :::
 
-## Hvordan innsendinger samles inn
+## Hvordan innsendinger samles inn {#how-submissions-are-collected}
 
-Innsendinger kan komme inn via flere kanaler:
+Innsendinger kan komme inn på flere måter:
 
-- **Offentlig nettadresse** -- Hvis skjemaet ditt har en offentlig nettadresse (Stand Alone-skjemaer), kan alle med lenken sende inn et svar. Del nettadressen via e-post, sosiale medier eller tekstmeldinger.
-- **Innebygd på nettsiden din** -- Skjemaer som er innebygd på B1-nettsiden din, samler automatisk inn innsendinger når besøkende fyller dem ut.
-- **Internt bruk** -- Ansatte og frivillige kan også sende inn skjemaer på vegne av andre direkte i B1 Admin.
+- **Offentlig nettadresse** – hvis skjemaet ditt har en offentlig nettadresse (frittstående skjemaer), kan hvem som helst med lenken sende inn et svar. Del adressen via e-post, sosiale medier eller tekstmeldinger.
+- **Innbygd på nettstedet ditt** – skjemaer som er bygget inn på B1-nettstedet ditt, samler inn innsendinger automatisk når besøkende fyller dem ut.
+- **Intern bruk** – ansatte kan fylle ut skjemaer av typen People for noen fra vedkommendes post i B1 Admin. Se [Arbeide med skjemaer](../people/adding-people.md#working-with-forms).
 
 :::tip
-Sjekk fanen **Form Submissions** regelmessig for skjemaer som besøkskort eller bønnebehov, slik at du kan følge opp raskt.
+Sjekk fanen **Form Submissions** jevnlig for skjemaer som besøkskort eller bønneforespørsler, slik at du kan følge opp raskt.
 :::
 
-## Bruke innsendingsdata
+## Bruke innsendingsdata {#using-submission-data}
 
 Dataene som samles inn gjennom skjemaer, kan hjelpe deg med å:
 
-- Følge med på påmeldinger til arrangementer og planlegge deretter
+- Følge påmeldinger til arrangementer og planlegge deretter
 - Følge opp besøkende eller nye medlemmer
-- Samle inn tilbakemeldinger fra undersøkelser til planlegging av tjenester
+- Samle inn tilbakemeldinger fra spørreundersøkelser til planlegging av tjenesten
 - Behandle betalinger for arrangementer eller programmer
 
 :::info
-Skjemamedlemmer med rollen **Admin** eller **View Only** kan åpne fanen **Form Submissions**. Sørg for at de riktige personene på teamet ditt har tilgang til skjemaene de trenger, ved å administrere roller på fanen **Form Members**.
+Skjemamedlemmer med rollen **Admin** eller **View Only** kan åpne fanen **Form Submissions**. Sørg for at de rette personene i teamet ditt har tilgang til skjemaene de trenger, ved å administrere roller i fanen **Form Members**.
 :::
 
 :::info
-Hvis et Stand Alone-skjema er [knyttet til en gruppe](./creating-forms.md#linking-a-form-to-a-group), kan gruppens ledere lese og skrive ut innsendingene fra gruppens side på B1.church, uten å være skjemamedlemmer. Ledere kan også lese svarene på påmeldingsspørsmål til gruppens arrangementer der. Se [Gruppedetaljer](../../b1-church/groups/group-details.md#linked-forms).
+Hvis et frittstående skjema er [knyttet til en gruppe](./creating-forms.md#linking-a-form-to-a-group), kan gruppens ledere lese og skrive ut innsendingene fra gruppens side på B1.church, uten å være skjemamedlemmer. Ledere kan også lese svarene på påmeldingsspørsmål til gruppens arrangementer der. Se [Gruppedetaljer](../../b1-church/groups/group-details.md#linked-forms).
 :::
 
 :::tip
-Hvis et **Stand Alone**-skjema er satt til å opprette en personprofil, vises alle innsendinger som er koblet til en eksisterende person også i seksjonen **Forms** på vedkommendes side i People -- ikke bare for People-skjemaer.
+Hvis et **frittstående** skjema er satt til å opprette en personpost, vises eventuelle innsendinger som er koblet til en eksisterende person også i seksjonen **Forms** på den personens side i People – ikke bare skjemaer av typen People.
 :::
 
-## Neste steg
+## Neste steg {#next-steps}
 
 - Lær hvordan du bygger og tilpasser skjemaer i [Opprette skjemaer](./creating-forms.md)
 - Legg til personer fra skjemainnsendinger i [personregisteret ditt](../people/adding-people.md) for videre oppfølging
-- [Knytt et skjema til en gruppe](./creating-forms.md#linking-a-form-to-a-group) slik at gruppens ledere kan lese svarene, eller [legg innsendere til gruppen automatisk](./creating-forms.md#automatically-adding-submitters-to-a-group) slik at et frittstående påmeldingsskjema bygger sin egen medlemsliste
+- [Knytt et skjema til en gruppe](./creating-forms.md#linking-a-form-to-a-group) slik at lederne kan lese svarene, eller [legg til innsendere i gruppen automatisk](./creating-forms.md#automatically-adding-submitters-to-a-group) slik at et frittstående påmeldingsskjema bygger sin egen deltakerliste

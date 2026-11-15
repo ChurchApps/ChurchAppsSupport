@@ -1,85 +1,85 @@
 ---
-title: "Buscar Miembros"
-description: "Encuentra a tu familia en el quiosco de B1 Checkin buscando los dígitos del teléfono o el nombre, y regístrate como invitado si eres visitante por primera vez."
+title: "Buscar miembros"
+description: "Encuentre a su familia en el kiosco de B1 Checkin buscando por los dígitos del teléfono o por el nombre, y regístrese como invitado si es su primera visita."
 ---
 
-# Buscar Miembros
+# Buscar miembros
 
 <div class="article-intro">
 
-Después de seleccionar un servicio, llegas a la pantalla de búsqueda de miembros. Aquí es donde buscas a tu familia para que puedas registrarte. La aplicación admite búsquedas por número de teléfono o por nombre.
+Después de seleccionar un servicio, llega a la pantalla de búsqueda de miembros. Aquí busca a su familia para poder registrar su entrada. La aplicación admite búsquedas por número de teléfono o por nombre.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- [Selecciona un servicio](./selecting-service.md) en la pantalla de servicios
-- Asegúrate de que tu hogar haya sido [añadido al sistema](../../b1-admin/people/adding-people.md) por un administrador de la iglesia
+- [Seleccione un servicio](./selecting-service.md) desde la pantalla de servicios
+- Asegúrese de que su hogar haya sido [agregado al sistema](../../b1-admin/people/adding-people.md) por un administrador de la iglesia
 
 </div>
 
-## Modos de Búsqueda
+## Modos de búsqueda {#search-modes}
 
-La pantalla de búsqueda ofrece dos modos de búsqueda. Puedes cambiar entre ellos tocando el interruptor en la parte superior de la pantalla:
+La pantalla de búsqueda ofrece dos modos. Puede cambiar entre ellos tocando el interruptor en la parte superior de la pantalla:
 
-- **Teléfono** -- Busca por número de teléfono. Este es el modo predeterminado.
-- **Nombre** -- Busca por nombre.
+- **Teléfono** -- Buscar por número de teléfono. Es el modo predeterminado.
+- **Nombre** -- Buscar por nombre.
 
-## Búsqueda por Número de Teléfono
+## Buscar por número de teléfono {#searching-by-phone-number}
 
-1. Asegúrate de que **Teléfono** sea el modo de búsqueda activo (está resaltado en la parte superior).
-2. Toca el campo de búsqueda e introduce al menos **4 dígitos** de tu número de teléfono usando el teclado en pantalla.
-3. Toca el botón **Buscar** o presiona la tecla de búsqueda en el teclado.
+1. Asegúrese de que **Teléfono** sea el modo de búsqueda activo (aparece resaltado en la parte superior).
+2. Toque el campo de búsqueda e ingrese al menos **4 dígitos** de su número de teléfono usando el teclado en pantalla.
+3. Toque el botón **Buscar** o presione la tecla de búsqueda del teclado.
 
-La aplicación busca miembros cuyo número de teléfono coincida con los dígitos que ingresaste. Si ingresas más de 4 dígitos, utiliza el número completo. Si ingresas exactamente 4, busca los últimos 4 dígitos de los números de teléfono registrados.
+La aplicación busca miembros cuyo número de teléfono coincida con los dígitos que ingresó. Si ingresa más de 4 dígitos, usa el número completo. Si ingresa exactamente 4, compara con los últimos 4 dígitos de los números de teléfono registrados.
 
-## Búsqueda por Nombre
+## Buscar por nombre {#searching-by-name}
 
-1. Toca el interruptor **Nombre** en la parte superior de la pantalla para cambiar al modo de búsqueda por nombre.
-2. Ingresa al menos **2 caracteres** del nombre de la persona en el campo de búsqueda.
-3. Toca el botón **Buscar**.
+1. Toque el interruptor **Nombre** en la parte superior de la pantalla para cambiar al modo de búsqueda por nombre.
+2. Ingrese al menos **2 caracteres** del nombre de la persona en el campo de búsqueda.
+3. Toque el botón **Buscar**.
 
-La aplicación busca miembros cuyo nombre coincida con lo que escribiste.
+La aplicación busca miembros cuyo nombre coincida con lo que escribió.
 
-## Seleccionar una Persona
+## Seleccionar una persona {#selecting-a-person}
 
-Los resultados de búsqueda aparecen como tarjetas debajo del campo de búsqueda. Cada tarjeta muestra el **nombre** y la **foto** de la persona (si hay una registrada).
+Los resultados de búsqueda aparecen como tarjetas debajo del campo de búsqueda. Cada tarjeta muestra el **nombre** de la persona y su **foto** (si hay una registrada).
 
-Toca la tarjeta de una persona para seleccionarla. La aplicación carga todos los miembros del hogar de esa persona y te lleva a la [pantalla de revisión del hogar](./household-review.md).
+Toque la tarjeta de una persona para seleccionarla. La aplicación carga a todos los miembros del hogar de esa persona y la lleva a la [pantalla de revisión del hogar](./household-review.md).
 
 :::tip
-Buscar por los últimos 4 dígitos del número de teléfono es la forma más rápida de buscar a tu familia. Anima a los miembros a usar este método para una experiencia de registro más rápida.
+Buscar por los últimos 4 dígitos de un número de teléfono es la forma más rápida de encontrar a su familia. Anime a los miembros a usar este método para un registro de entrada más ágil.
 :::
 
 :::warning
-Si no se encuentran resultados, la aplicación muestra un mensaje indicándotelo. Verifica nuevamente los dígitos o el nombre que ingresaste, o intenta el otro modo de búsqueda. Si eres un visitante por primera vez, pide ayuda a un voluntario para ser [añadido al sistema](../../b1-admin/people/adding-people.md).
+Si no se encuentran resultados, la aplicación muestra un mensaje para avisarle. Verifique los dígitos o el nombre que ingresó, o pruebe con el otro modo de búsqueda. Si es su primera visita, pida ayuda a un voluntario para que lo [agreguen al sistema](../../b1-admin/people/adding-people.md).
 :::
 
-## Registro como Invitado
+## Registrarse como invitado {#registering-as-a-guest}
 
-Si tu iglesia tiene el registro de invitados por código QR activado, un enlace **Registrarse como invitado** aparece debajo de la búsqueda en la pantalla de búsqueda. Los visitantes por primera vez pueden usarlo para añadir su familia al sistema de la iglesia antes de registrarse.
+Si su iglesia tiene activado el registro de invitados por código QR, aparece un enlace **Registrarse como invitado** debajo de la búsqueda en la pantalla de búsqueda. Las personas que visitan por primera vez pueden usarlo para agregar a su familia al sistema de la iglesia antes de registrar su entrada.
 
-1. Toca **Registrarse como invitado**. Se abre una ventana con un código QR y el mensaje "Escanea para registrarte como invitado."
-2. Elige cómo completar el [formulario de registro de invitado](../../b1-church/checkin/guest-registration.md):
-   - **En tu teléfono** -- Escanea el código QR, completa el formulario en tu teléfono, y toca **OK** para cerrar la ventana.
-   - **En el quiosco** -- Toca **Registrarse aquí** para abrir el mismo formulario directamente en la tableta. Complétalo y toca **Registrarse**, luego toca **Listo** (o la flecha hacia atrás) para volver a la pantalla de búsqueda.
-3. Una vez registrado, busca a tu familia por nombre o número de teléfono para registrarte.
+1. Toque **Registrarse como invitado**. Se abre una ventana con un código QR y el mensaje "Escanee para registrarse como invitado."
+2. Elija cómo completar el [formulario de registro de invitados](../../b1-church/checkin/guest-registration.md):
+   - **En su teléfono** -- Escanee el código QR, complete el formulario en su teléfono y toque **OK** para cerrar la ventana.
+   - **En el kiosco** -- Toque **Registrarse aquí** para abrir el mismo formulario directamente en la tableta. Complételo y toque **Registrarse**, y luego toque **Listo** (o la flecha de regreso) para volver a la pantalla de búsqueda.
+3. Una vez registrado, busque a su familia por nombre o número de teléfono para registrar su entrada.
 
 :::info
-El formulario abierto con **Registrarse aquí** permanece en la página de registro de invitados -- los visitantes no pueden navegar a otras partes del sitio web de la iglesia desde el quiosco. Si nadie toca o escribe en el formulario durante 2 minutos, el quiosco lo cierra y regresa a la pantalla de búsqueda. Cada vez que se cierra el formulario, todo lo que se escribió en él se borra para que la siguiente familia comience con un formulario en blanco.
+El formulario abierto con **Registrarse aquí** permanece en la página de registro de invitados: los visitantes no pueden navegar a otras partes del sitio web de la iglesia desde el kiosco. Si nadie toca ni escribe en el formulario durante 2 minutos, el kiosco lo cierra y regresa a la pantalla de búsqueda. Cada vez que el formulario se cierra, se borra lo que se haya escrito en él, para que la siguiente familia empiece con un formulario en blanco.
 :::
 
-## Impresión de Etiquetas para Registro desde Teléfono
+## Imprimir etiquetas para un registro de entrada desde el teléfono {#printing-labels-for-a-phone-check-in}
 
-Las familias que ya se registraron en su teléfono a través de [B1 Church auto-registro](../../b1-church/checkin/self-checkin.md) pueden imprimir sus etiquetas de nombre en el quiosco sin buscarse a sí mismas.
+Las familias que ya registraron su entrada en su teléfono mediante el [registro de entrada propio de B1 Church](../../b1-church/checkin/self-checkin.md) pueden imprimir sus gafetes en el kiosco sin buscarse a sí mismas.
 
-1. En la pantalla de búsqueda, toca el botón **Escanear código** (el icono de código QR).
-2. Sostén el código QR de tu teléfono frente a la cámara. Si la aplicación solicita acceso a la cámara, toca **Permitir Cámara**. La cámara frontal se usa de forma predeterminada; toca el botón de volteo para cambiar.
-3. El quiosco encuentra el registro y imprime las etiquetas, luego regresa a la pantalla de búsqueda.
+1. En la pantalla de búsqueda, toque el botón **Escanear código** (el icono de código QR).
+2. Acerque a la cámara el código QR de su teléfono. Si la aplicación pide acceso a la cámara, toque **Permitir cámara**. Por defecto se usa la cámara frontal; toque el botón de cambio para alternar.
+3. El kiosco encuentra el registro de entrada e imprime las etiquetas, y luego regresa a la pantalla de búsqueda.
 
-Escanear solo imprime etiquetas -- la asistencia ya fue registrada cuando la familia se registró en su teléfono. Si el código no coincide con un registro activo, el quiosco muestra un mensaje y regresa a la pantalla de búsqueda.
+Escanear solo imprime etiquetas: la asistencia ya se registró cuando la familia hizo el registro de entrada en su teléfono. Si el código no coincide con un registro de entrada activo, el kiosco muestra un mensaje y regresa a la pantalla de búsqueda.
 
-## Siguiente Paso
+## Siguiente paso {#next-step}
 
-Después de seleccionar una persona, [revisarás tu hogar](./household-review.md) y gestionarás las asignaciones de grupos.
+Después de seleccionar una persona, [revisará su hogar](./household-review.md) y administrará las asignaciones de grupo.

@@ -63,7 +63,7 @@ Jedes Element in der Wiedergabeliste sollte enthalten:
 | `thumbnail` | Empfohlen | Ein Miniaturbild für das Element |
 | `duration` | Empfohlen | Dauer in Sekunden (für Videos) |
 
-## Medienformate
+## Medienformate {#media-formats}
 
 FreePlay lädt Dateien direkt herunter, sodass jedes Medienelement einen **direkten Link** haben muss (keine eingebetteten Player oder Seitenweiterleitungen).
 

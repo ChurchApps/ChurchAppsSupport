@@ -1,46 +1,46 @@
 ---
 title: "Mga Listahan ng Kaarawan at Anibersaryo"
-description: "Gumawa ng listahan ng lahat ng may kaarawan o anibersaryo sa isang buwan gamit ang People search filter sa B1 Admin, saka tingnan o i-export ang mga petsa."
+description: "Gumawa ng listahan ng lahat ng may kaarawan o anibersaryo sa isang buwan gamit ang mga filter sa paghahanap ng People sa B1 Admin, pagkatapos tingnan o i-export ang mga petsa."
 ---
 
 # Mga Listahan ng Kaarawan at Anibersaryo
 
 <div class="article-intro">
 
-Kailangan ba ninyo ng listahan ng lahat ng may kaarawan o anibersaryo sa isang partikular na buwan — para sa bulletin, mga anunsyo, o mga card? Kaya ng People search na i-filter ang inyong kongregasyon ayon sa **Birth Month** at **Anniversary Month** at ipakita ang mga petsa mismo sa mga resulta.
+Kailangan mo ba ng listahan ng lahat ng may kaarawan o anibersaryo sa isang partikular na buwan -- para sa bulletin, announcement, o card? Maaaring i-filter ng People search ang iyong kongregasyon ayon sa **Birth Month** at **Anniversary Month**, at ipakita ang mga petsa mismo sa resulta.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Tiyaking nailagay ang mga petsa ng kapanganakan (at anibersaryo) sa profile ng bawat tao. Tingnan ang [Pagdaragdag ng mga Tao](../people/adding-people.md).
-- Kailangan ninyo ng pahintulot na tumingin ng People. Tingnan ang [Mga Role at Pahintulot](../settings/roles-permissions.md).
+- Tiyaking nailagay ang mga petsa ng kapanganakan (at mga anibersaryo) sa profile ng bawat tao. Tingnan ang [Adding People](../people/adding-people.md).
+- Kailangan mo ng permiso para makita ang People. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
-## Pagkuha ng Listahan ng Kaarawan para sa Isang Buwan
+## Pagkuha ng Listahan ng Kaarawan para sa Isang Buwan {#getting-a-birthday-list-for-a-month}
 
-1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin), palawakin ang **People**, at i-click ang **People**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas-kaliwa ng B1 Admin), palawakin ang **People**, at i-click ang **People**.
 2. Sa ilalim ng search box, i-click ang **Advanced**.
 3. Palawakin ang seksyong **Demographics** at lagyan ng check ang **Birth Month**, pagkatapos piliin ang buwan.
-4. Patakbuhin ang paghahanap — lalabas sa mga resulta ang lahat ng may kaarawan sa buwang iyon.
-5. Para makita ang mga petsa, piliin ang **View as** na **Table**, pagkatapos i-click ang icon na **Select columns** sa header ng pahina at i-enable ang column na **Birthday**. Gamitin ang **Export** para i-download ang listahan bilang spreadsheet kung mas gusto ninyong i-sort o i-print ito roon.
+4. Agad na mag-a-update ang mga resulta kapag na-check ang filter -- lalabas ang lahat ng may kaarawan sa buwang iyon.
+5. Para makita ang mga petsa, palitan ang **View as** sa **Table**, pagkatapos i-click ang icon na **Select columns** sa header ng pahina at i-enable ang column na **Birth Date** (o **Birthday (No Year)** kung ayaw mong isama ang taon). Gamitin ang **Export** para i-download ang listahan bilang spreadsheet kung mas gusto mong i-sort o i-print ito doon.
 
-## Pagkuha ng Listahan ng Anibersaryo
+## Pagkuha ng Listahan ng Anibersaryo {#getting-an-anniversary-list}
 
-Pareho ang mga hakbang — sa seksyong **Demographics**, lagyan na lang ng check ang **Anniversary Month** (o isama ito), piliin ang buwan, at i-enable ang column na **Anniversary** sa mga resulta.
+Pareho ang mga hakbang -- sa seksyong **Demographics**, lagyan ng check ang **Anniversary Month** sa halip (o bukod pa rito), piliin ang buwan, at i-enable ang column na **Anniversary** sa resulta.
 
-## Mga Praktikal na Gamit
+## Mga Praktikal na Gamit {#practical-uses}
 
-- **Lingguhang bulletin** -- Patakbuhin ang listahan ng kasalukuyang buwan at basahin nang diretso ang mga pangalan sa bulletin.
-- **Mga card sa kaarawan at anibersaryo** -- I-export ang listahan ng buwan at ibigay ito sa inyong team na sumusulat ng mga card.
-- **Mahahalagang taon** -- Isama sa filter na **Age** para mahanap ang mahahalagang kaarawan.
+- **Lingguhang bulletin** -- Patakbuhin ang listahan ng kasalukuyang buwan at basahin ang mga pangalan diretso sa bulletin.
+- **Mga card ng kaarawan at anibersaryo** -- I-export ang listahan ng buwan at ibigay sa iyong team na sumusulat ng card.
+- **Mga milestone** -- Pagsamahin sa **Age** filter para mahanap ang mga milestone na kaarawan.
 
 :::tip
-Parehong nagmumula ang dalawang listahan sa mga field ng petsa ng kapanganakan at anibersaryo sa profile ng bawat tao — kung may kulang na tao, kailangan lang idagdag ang petsa sa kanyang profile.
+Parehong galing sa mga field ng birth date at anniversary sa profile ng bawat tao ang dalawang listahan -- kung may kulang sa listahan, kailangan lang idagdag ang petsa sa profile niya.
 :::
 
 :::info
-Ang mga naunang bersyon ng B1 Admin ay may hiwalay na pahinang Reports para sa mga kaarawan. Wala na ang pahinang iyon — ang mga filter ng People search sa itaas ang kasalukuyang paraan, at sakop nito pati ang mga anibersaryo.
+Sa mga naunang bersyon ng B1 Admin, may naka-link na hiwalay na Birthdays report sa menu. Tinanggal na ang link na iyon -- ang mga filter sa People search sa itaas ang kasalukuyang paraan, at sakop na rin nila ang mga anibersaryo.
 :::

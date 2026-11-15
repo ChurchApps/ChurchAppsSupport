@@ -1,163 +1,156 @@
 ---
 title: "Styles de navigation"
-description: "Personnalisez les couleurs des barres de navigation pleines et transparentes de votre site dans B1 Admin, y compris les états lien, survol et actif."
+description: "Personnalisez les couleurs des barres de navigation pleines et transparentes du site web dans B1 Admin, y compris les états de lien, de survol et d'activité pour le site de votre église."
 ---
 
 # Styles de navigation
 
 <div class="article-intro">
 
-Personnalisez les couleurs de la barre de navigation de votre site web d'église pour correspondre à votre image de marque. Vous pouvez configurer les couleurs pour les fonds solides et les superpositions transparentes, vous donnant un contrôle total sur l'apparence de votre navigation sur différentes pages.
+Personnalisez les couleurs de la barre de navigation de votre site web d'église pour l'harmoniser avec votre image de marque. Vous pouvez configurer les couleurs pour les arrière-plans pleins et les superpositions transparentes, ce qui vous donne un contrôle total sur l'apparence de votre navigation sur les différentes pages.
 
 </div>
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
 
-- Vous avez besoin de la permission de gérer le site web de votre église. Consultez [Rôles et permissions](../people/roles-permissions.md) pour plus de détails.
-- Préparez vos couleurs de marque, y compris les codes de couleur hexadécimaux (par exemple, #03A9F4).
-- Comprenez la différence entre les styles de navigation solide et transparente sur votre site web.
+- Vous avez besoin de l'autorisation de modifier le contenu du site web. Voir [Rôles et autorisations](../settings/roles-permissions.md) pour plus de détails.
+- Ayez vos couleurs de marque à portée de main, y compris les codes couleur hexadécimaux (par ex. #03A9F4).
+- Comprenez la différence entre les styles de navigation pleine et transparente sur votre site web.
 
 </div>
 
-## Comprendre les modes de navigation
+## Comprendre les modes de navigation {#understanding-navigation-modes}
 
-La navigation de votre site web peut apparaître dans deux styles différents selon la page :
+La navigation de votre site web peut apparaître sous deux styles différents selon la page :
 
-- **Navigation solide** -- Barre de navigation avec une couleur de fond, généralement utilisée sur les pages de contenu
-- **Navigation transparente** -- Navigation qui s'affiche sur le contenu de la page, généralement utilisée sur les pages avec des images hero ou des fonds en plein écran
+- **Navigation pleine** -- Barre de navigation avec une couleur d'arrière-plan, généralement utilisée sur les pages de contenu
+- **Navigation transparente** -- Navigation superposée au contenu de la page, généralement utilisée sur les pages avec des images de bannière ou des arrière-plans plein écran
 
-Vous pouvez personnaliser les couleurs pour les deux modes indépendamment.
+Vous pouvez personnaliser les couleurs des deux modes indépendamment.
 
-## Accès aux styles de navigation
+## Accéder aux styles de navigation {#accessing-navigation-styles}
 
-1. Dans B1 Admin, ouvrez le [menu Sauter](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche) et développez **Site web**
+1. Dans B1 Admin, ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche) et développez **Site web**
 2. Cliquez sur **Apparence**
 3. Dans la liste **Paramètres de style**, cliquez sur **Navigation**
 
-L'éditeur **Style de navigation** comporte deux cartes : **En-tête (solide)** et **En-tête sur le héros (transparent)**.
+L'éditeur **Style de navigation** comporte deux cartes : **En-tête (plein)** et **En-tête au-dessus de la bannière (transparent)**.
 
-## Configuration de la navigation solide
+## Configurer la navigation pleine {#configuring-solid-navigation}
 
-La navigation solide apparaît avec une couleur de fond derrière la barre de navigation. Ces paramètres se trouvent dans la carte **En-tête (solide)**. Vous pouvez personnaliser :
+La navigation pleine apparaît avec une couleur d'arrière-plan derrière la barre de navigation. Ces réglages se trouvent dans la carte **En-tête (plein)**. Chaque couleur est facultative : tant que son commutateur **Remplacer** est désactivé, la navigation conserve les couleurs normales de votre site. Vous pouvez personnaliser :
 
-### Couleur de fond
+### Couleur d'arrière-plan {#background-color}
 
-1. Activez le commutateur **Remplacer** pour **Couleur de fond**
-2. Cliquez sur le sélecteur de couleur
-3. Choisissez votre couleur de fond souhaitée
-4. La valeur par défaut est blanc (#FFFFFF)
+1. Activez le commutateur **Remplacer** pour **Couleur d'arrière-plan**
+2. Cliquez sur le sélecteur de couleurs
+3. Choisissez la couleur d'arrière-plan souhaitée (le sélecteur démarre sur le blanc, #FFFFFF)
 
-### Couleur des liens
+### Couleur des liens {#link-color}
 
 1. Activez le commutateur **Remplacer** pour **Couleur des liens**
 2. Choisissez la couleur du texte des liens de navigation
-3. Cela affecte les liens dans leur état par défaut
-4. La valeur par défaut est gris foncé (#555555)
+3. Cela s'applique aux liens dans leur état par défaut (le sélecteur démarre sur le gris foncé, #555555)
 
-### Couleur de survol des liens
+### Couleur des liens au survol {#link-hover-color}
 
-1. Activez le commutateur **Remplacer** pour **Couleur de survol des liens**
-2. Choisissez la couleur dans laquelle les liens changent lorsque les utilisateurs les survolent
-3. Cela fournit un retour visuel pour les liens cliquables
-4. La valeur par défaut est bleu clair (#03A9F4)
+1. Activez le commutateur **Remplacer** pour **Couleur des liens au survol**
+2. Choisissez la couleur que prennent les liens lorsque les utilisateurs passent la souris dessus
+3. Cela donne un retour visuel pour les liens cliquables (le sélecteur démarre sur le bleu clair, #03A9F4)
 
-### Couleur active
+### Couleur active {#active-color}
 
-1. Activez le commutateur **Remplacer** pour **Couleur active**
-2. Choisissez la couleur du lien de page actuellement actif
-3. Cela aide les utilisateurs à savoir sur quelle page ils se trouvent
-4. La valeur par défaut est bleu clair (#03A9F4)
+1. Activez le commutateur **Remplacer** pour **Couleur du lien actif**
+2. Choisissez la couleur du lien de la page actuellement affichée
+3. Cela aide les utilisateurs à savoir sur quelle page ils se trouvent (le sélecteur démarre sur le bleu clair, #03A9F4)
 
-## Configuration de la navigation transparente
+## Configurer la navigation transparente {#configuring-transparent-navigation}
 
-La navigation transparente s'affiche sur votre contenu de page sans fond. Ces paramètres se trouvent dans la carte **En-tête sur le héros (transparent)**. Vous pouvez personnaliser :
+La navigation transparente se superpose au contenu de la page, sans arrière-plan. Ces réglages se trouvent dans la carte **En-tête au-dessus de la bannière (transparent)**. Tant qu'un commutateur **Remplacer** est désactivé, cette couleur correspond automatiquement à la couleur du texte de la section de bannière. Vous pouvez personnaliser :
 
-### Couleur des liens
+### Couleur des liens {#link-color-1}
 
 1. Activez le commutateur **Remplacer** pour **Couleur des liens**
-2. Choisissez une couleur qui contraste bien avec le fond de votre page
-3. Souvent, le blanc ou les couleurs claires fonctionnent mieux sur les fonds sombres
-4. La valeur par défaut est gris foncé (#555555)
+2. Choisissez une couleur qui contraste bien avec l'arrière-plan de votre page
+3. Le blanc ou les couleurs claires fonctionnent souvent mieux sur les arrière-plans foncés
 
-### Couleur de survol des liens
+### Couleur des liens au survol {#link-hover-color-1}
 
-1. Activez le commutateur **Remplacer** pour **Couleur de survol des liens**
-2. Choisissez la couleur d'état de survol
-3. Assurez-vous qu'elle est visible sur le fond de votre page
-4. La valeur par défaut est bleu clair (#03A9F4)
+1. Activez le commutateur **Remplacer** pour **Couleur des liens au survol**
+2. Choisissez la couleur de l'état survolé
+3. Assurez-vous qu'elle reste visible sur l'arrière-plan de votre page
 
-### Couleur active
+### Couleur active {#active-color-1}
 
-1. Activez le commutateur **Remplacer** pour **Couleur active**
+1. Activez le commutateur **Remplacer** pour **Couleur du lien actif**
 2. Choisissez la couleur de l'indicateur de page active
-3. Doit ressortir tout en s'adaptant à votre conception
-4. La valeur par défaut est bleu clair (#03A9F4)
+3. Elle doit ressortir tout en s'intégrant à votre design
 
 :::info
-La navigation transparente n'a pas de paramètre de couleur de fond puisqu'elle s'affiche directement sur le contenu de la page.
+La navigation transparente n'a pas de réglage de couleur d'arrière-plan, puisqu'elle se superpose directement au contenu de la page.
 :::
 
-## Enregistrement de vos modifications
+## Enregistrer vos modifications {#saving-your-changes}
 
-1. Après avoir configuré vos couleurs, cliquez sur **Enregistrer la navigation**
-2. Vos modifications s'appliquent immédiatement à votre site web en direct
+1. Une fois vos couleurs configurées, cliquez sur **Enregistrer la navigation**
+2. Vos modifications s'appliquent immédiatement à votre site web en ligne
 3. Visitez votre site web pour voir la navigation dans les deux modes
 
-## Réinitialisation aux paramètres par défaut
+## Revenir aux valeurs par défaut {#resetting-to-defaults}
 
-Si vous souhaitez revenir aux couleurs par défaut :
+Si vous voulez revenir aux couleurs par défaut :
 
-1. Désactivez les commutateurs **Remplacer** pour les couleurs personnalisées
+1. Désactivez les commutateurs **Remplacer** de toutes les couleurs personnalisées
 2. Cliquez sur **Enregistrer la navigation**
-3. La navigation revient au schéma de couleurs par défaut
+3. La navigation reprend les couleurs normales de votre site (et, sur une bannière, la couleur du texte de la bannière)
 
-Ou cliquez sur **Annuler** pour ignorer toutes les modifications sans les enregistrer.
+Vous pouvez aussi cliquer sur **Annuler** pour abandonner toutes les modifications sans les enregistrer.
 
-## Bonnes pratiques
+## Bonnes pratiques {#best-practices}
 
-### Contraste des couleurs
+### Contraste des couleurs {#color-contrast}
 
-- **Lisibilité** -- Assurez-vous que les couleurs des liens ont un contraste suffisant avec le fond
-- **Conformité WCAG** -- Visez au moins un rapport de contraste 4.5:1 pour l'accessibilité
-- **Testez les deux modes** -- Prévisualisez votre site avec la navigation solide et transparente
+- **Lisibilité** -- Assurez-vous que les couleurs des liens contrastent suffisamment avec l'arrière-plan
+- **Conformité WCAG** -- Visez un ratio de contraste d'au moins 4,5:1 pour l'accessibilité
+- **Testez les deux modes** -- Prévisualisez votre site avec la navigation pleine et transparente
 
-### Cohérence de la marque
+### Cohérence de la marque {#brand-consistency}
 
-- **Utilisez les couleurs de votre marque** -- Faites correspondre votre logo et le thème du site web
-- **Limitez votre palette** -- Restez avec 2-3 couleurs pour un aspect cohésif
-- **Considérez vos images** -- Si vous utilisez la navigation transparente, testez-la sur les fonds de page typiques
+- **Utilisez vos couleurs de marque** -- Harmonisez-les avec votre logo et le thème de votre site web
+- **Limitez votre palette** -- Restez sur 2 à 3 couleurs pour un ensemble cohérent
+- **Tenez compte de vos images** -- Si vous utilisez la navigation transparente, testez-la sur des arrière-plans de page typiques
 
-### États de survol et actifs
+### États de survol et d'activité {#hover-and-active-states}
 
-- **Retour clair** -- Rendez les états de survol clairement différents des liens par défaut
-- **Distinguez les pages actives** -- Utilisez une couleur distincte pour que les utilisateurs sachent où ils se trouvent
+- **Retour clair** -- Les états de survol doivent être nettement différents des liens par défaut
+- **Repérer les pages actives** -- Utilisez une couleur distincte pour que les utilisateurs sachent où ils se trouvent
 - **Transitions fluides** -- Le système anime automatiquement les changements de couleur
 
-## Dépannage
+## Dépannage {#troubleshooting}
 
-### Les couleurs ne semblent pas correctes
+### Les couleurs ne semblent pas correctes {#colors-dont-look-right}
 
-- **Videz votre cache** -- La mise en cache du navigateur peut afficher les anciennes couleurs
-- **Vérifiez les codes hexadécimaux** -- Assurez-vous d'avoir saisi des codes de couleur hexadécimaux valides
-- **Testez sur différents fonds** -- Les couleurs peuvent sembler différentes selon la page
+- **Videz votre cache** -- La mise en cache du navigateur peut afficher d'anciennes couleurs
+- **Vérifiez les codes hexadécimaux** -- Assurez-vous d'avoir saisi des codes couleur hexadécimaux valides
+- **Testez sur différents arrière-plans** -- Les couleurs peuvent varier selon la page
 
-### Navigation non visible
+### La navigation n'est pas visible {#navigation-not-visible}
 
-- **Mode transparent** -- Si vous utilisez la navigation transparente sur des images claires, le texte sombre peut être difficile à voir
-- **Solution** -- Ajustez vos couleurs de liens ou utilisez des fonds de page plus sombres
-- **Alternative** -- Ajoutez une ombre subtile ou une superposition de fond à la zone de navigation
+- **Mode transparent** -- Si vous utilisez la navigation transparente sur des images claires, le texte foncé peut être difficile à voir
+- **Solution** -- Ajustez les couleurs des liens ou utilisez des arrière-plans de page plus foncés
+- **Alternative** -- Ajoutez une ombre discrète ou une superposition d'arrière-plan à la zone de navigation
 
-## Détails techniques
+## Détails techniques {#technical-details}
 
-Les styles de navigation sont stockés en JSON et appliqués à l'aide de variables CSS :
+Les styles de navigation sont enregistrés au format JSON et appliqués à l'aide de variables CSS :
 
-- Les modifications prennent effet immédiatement sans reconstruire le site
-- Les couleurs s'appliquent à tous les éléments de navigation
-- Les remplacements sont optionnels ; les couleurs non définies utilisent les paramètres par défaut du thème
+- Les modifications prennent effet immédiatement, sans reconstruction du site
+- Les couleurs se propagent à tous les éléments de navigation
+- Les remplacements sont facultatifs ; les couleurs non définies utilisent les valeurs par défaut du thème
 
-## Articles connexes
+## Articles connexes {#related-articles}
 
-- [Apparence](./appearance.md) -- Personnalisez l'apparence générale et la sensation de votre site web
-- [Gestion des pages](./managing-pages.md) -- Créez et organisez vos pages de site web
-- [Éditeur de page](./page-editor.md) -- Concevez les mises en page et le contenu des pages
+- [Apparence](./appearance.md) -- Personnaliser l'allure générale de votre site web
+- [Gérer les pages](./managing-pages.md) -- Créer et organiser les pages de votre site web
+- [Éditeur de pages](./page-editor.md) -- Concevoir les mises en page et le contenu des pages

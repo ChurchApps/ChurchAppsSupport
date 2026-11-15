@@ -1,50 +1,50 @@
 ---
-title: "Mitgliederverzeichnis im B1.church-Mitgliederportal"
+title: "Mitgliederverzeichnis im B1.church Mitgliederportal"
 sidebar_label: "Mitgliederverzeichnis"
-description: "Mitglieder Ihrer Gemeinde im B1.church-Verzeichnis suchen und durchsuchen, ihre Profile und Haushaltsmitglieder ansehen und sehen, wer auf das Verzeichnis zugreifen kann."
+description: "Suche und durchsuche Gemeindemitglieder im B1.church-Verzeichnis, sieh dir ihre Profile und Haushaltsmitglieder an und erfahre, wer auf das Verzeichnis zugreifen kann."
 ---
 
 # Mitgliederverzeichnis
 
 <div class="article-intro">
 
-Das Mitgliederverzeichnis ermöglicht es Ihnen, nach Personen in Ihrer Gemeinde zu suchen und sie zu durchsuchen. Ob Sie ein anderes Gruppenmitglied finden oder jemand Neues kennenlernen möchten: Das Verzeichnis erleichtert den Kontakt zu Ihrer Gemeindefamilie.
+Mit dem Mitgliederverzeichnis kannst du Personen in deiner Gemeinde durchsuchen und finden. Ob du ein anderes Gruppenmitglied suchst oder jemanden Neues finden möchtest -- das Verzeichnis macht es einfach, mit deiner Gemeindefamilie in Kontakt zu treten.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie müssen in Ihrem B1.church-Konto [angemeldet](../getting-started/logging-in.md) sein.
-- Wer das Verzeichnis öffnen kann, richtet sich nach der Einstellung **In Verzeichnis anzeigen** Ihrer Gemeinde: **Nur Administratoren**, **Mitglieder und höher** (Standard), **Regelmäßige Besucher und höher** oder **Gäste und höher**. Personen unterhalb dieser Stufe sehen stattdessen die Meldung „Nur für Mitglieder“. Mitarbeitende mit der Berechtigung Personen > Anzeigen können es immer öffnen, und bei **Nur Administratoren** sind sie die Einzigen, die es können. Selbst Personen mit dem Mitgliedschaftsstatus Mitarbeiter können es nicht. Personen mit dem Status Gast oder Inaktiv können es nie. Siehe [Einstellungen für Mitgliederverzeichnis & Nachrichten](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
+- Du musst dich in deinem B1.church-Konto [angemeldet](../getting-started/logging-in.md) haben.
+- Wer das Verzeichnis öffnen kann, richtet sich nach der Einstellung **In Verzeichnis anzeigen** deiner Gemeinde: **Nur Administratoren**, **Mitglieder und höher** (Standard), **Regelmäßige Besucher und höher** oder **Gäste und höher**. Personen unterhalb dieser Stufe sehen stattdessen die Meldung "Nur für Mitglieder", und nicht angemeldete Besucher sehen "Anmeldung erforderlich" mit einer Schaltfläche **Anmelden**. Mitarbeiter mit der Berechtigung Personen > Anzeigen können das Verzeichnis immer öffnen, und bei **Nur Administratoren** sind nur sie berechtigt -- auch Personen mit dem Mitgliedsstatus Mitarbeiter können es nicht. Personen mit dem Status Gast oder Inaktiv können es nie öffnen. Siehe [Einstellungen für Mitgliederverzeichnis & Nachrichten](../../b1-admin/settings/mobile-app.md#member-directory--messaging-settings).
 
 </div>
 
-## Zugriff auf das Verzeichnis
+## Auf das Verzeichnis zugreifen {#accessing-the-directory}
 
-1. Tippen Sie in der [Tab-Leiste oder auf der Seite Mehr](../getting-started/navigating.md) auf **Community** (Ihre Gemeinde hat ihr möglicherweise einen anderen Namen gegeben).
-2. Das **Verzeichnis** wird geöffnet und zeigt die Anzahl der Personen sowie eine Liste aller sichtbaren Gemeindemitglieder.
+1. Tippe auf **Community** in der [Tab-Leiste oder auf der Seite Mehr](../getting-started/navigating.md) (deine Gemeinde hat ihm möglicherweise einen anderen Namen gegeben).
+2. Das **Verzeichnis** öffnet sich mit einer Anzahl an Personen und einer Liste aller sichtbaren Gemeindemitglieder.
 
-## Mitglieder suchen
+## Mitglieder suchen {#searching-for-members}
 
-Geben Sie einen Namen in das Feld **Mitglieder suchen** oben in der Liste ein. Die Liste wird während der Eingabe gefiltert, und der passende Teil jedes Namens wird hervorgehoben. Leeren Sie das Feld, um das vollständige Verzeichnis wieder anzuzeigen.
+Gib einen Namen in das Feld **Mitglieder suchen** oben in der Liste ein. Die Liste wird während der Eingabe gefiltert, und der passende Teil jedes Namens wird hervorgehoben. Leere das Feld, um das vollständige Verzeichnis wieder anzuzeigen.
 
-## Im Verzeichnis blättern
+## Im Verzeichnis blättern {#browsing-the-directory}
 
-Mitglieder sind unter Buchstabenüberschriften (A, B, C usw.) nach dem ersten Buchstaben ihres Vornamens gruppiert und innerhalb jedes Buchstabens nach Nachnamen sortiert. Jeder Eintrag zeigt das Foto, den Anzeigenamen und den Mitgliedschaftsstatus des Mitglieds, sodass sich die Liste leicht überfliegen lässt.
+Mitglieder sind unter Buchstabenüberschriften (A, B, C usw.) nach dem ersten Buchstaben ihres Nachnamens gruppiert und innerhalb jedes Buchstabens nach Nachname und dann Vorname sortiert. Namen, die nicht mit einem Buchstaben beginnen, stehen am Ende unter **Sonstige**. Jeder Eintrag zeigt das Foto, den Anzeigenamen und den Mitgliedsstatus des Mitglieds, sodass die Liste leicht zu überfliegen ist. Wenn nichts zu deiner Suche passt, erscheint die Meldung "Keine Mitglieder gefunden".
 
-## Ein Mitgliederprofil ansehen
+## Ein Mitgliederprofil ansehen {#viewing-a-member-profile}
 
-Tippen Sie auf ein beliebiges Mitglied in der Liste, um dessen Profil zu öffnen. Das Profil zeigt Name, Foto und Mitgliedschaftsstatus des Mitglieds sowie Schaltflächen, um eine **Nachricht** zu senden, **Anzurufen** oder eine **Textnachricht** zu verschicken, sofern diese Informationen verfügbar sind. Darunter zeigt der Abschnitt **Kontaktinformationen** die Angaben, die Ihre Gemeinde und das Mitglied freigegeben haben, etwa E-Mail, Telefonnummer und Adresse. Unter **Haushaltsmitglieder** werden die übrigen Personen aus dem Haushalt aufgelistet.
+Tippe auf ein beliebiges Mitglied in der Liste, um sein Profil zu öffnen. Das Profil zeigt den Namen, das Foto und den Mitgliedsstatus des Mitglieds mit Schaltflächen für **Nachricht**, **Anrufen** (die Mobilnummer oder, falls keine Mobilnummer hinterlegt ist, die Festnetznummer) oder **SMS** (nur Mobilnummer), sofern diese Angaben vorhanden sind. Darunter zeigt der Abschnitt **Kontaktinformationen** die Angaben, die deine Gemeinde und das Mitglied zum Teilen ausgewählt haben, zum Beispiel E-Mail, Telefon und Adresse. Unter **Haushaltsmitglieder** werden die anderen Personen aus seinem Haushalt aufgelistet. Tippe auf die E-Mail-Adresse, um ihm eine E-Mail zu schreiben, oder auf die Adresse, um sie in Google Maps zu öffnen. Wenn das Mitglied dir keine Kontaktdaten freigegeben hat, siehst du die Meldung "Kontaktinformationen nicht verfügbar".
 
-**Nachricht** öffnet eine private Unterhaltung mit dieser Person. Sie können Text fett oder kursiv formatieren oder eine Liste hinzufügen, indem Sie den Text markieren und die dann erscheinende Symbolleiste verwenden, genauso wie im [Gruppenchat](../groups/conversations.md#formatting-your-message).
+**Nachricht** öffnet eine private Unterhaltung mit dieser Person -- siehe [Nachrichten und Benachrichtigungen](./messages.md). Du kannst Text fett oder kursiv formatieren oder eine Liste hinzufügen, indem du ihn markierst und die Schaltflächenleiste unter dem Nachrichtenfeld verwendest -- genauso wie im [Gruppenchat](../groups/conversations.md#formatting-your-message).
 
-Sie können innerhalb eines Profils auf Haushaltsmitglieder tippen, um auch deren Profile aufzurufen. In Ihrem eigenen Profil führt Sie die Schaltfläche **Profil bearbeiten** zu [Ihr Profil bearbeiten](../getting-started/editing-your-profile.md).
+Du kannst innerhalb eines Profils auch auf Haushaltsmitglieder tippen, um zu deren Profilen zu gelangen. In deinem eigenen Profil erscheint anstelle der Schaltflächen **Nachricht**, **Anrufen** und **SMS** eine Schaltfläche **Profil bearbeiten**, die dich zu [Dein Profil bearbeiten](../getting-started/editing-your-profile.md) führt.
 
 :::info
-Welche Informationen in jedem Profil sichtbar sind, hängt von den Datenschutz- und Verzeichniseinstellungen Ihrer Gemeinde ab. Nicht für jedes Mitglied werden unbedingt alle Felder angezeigt.
+Welche Informationen in jedem Profil sichtbar sind, hängt von den Datenschutz- und Verzeichniseinstellungen deiner Gemeinde ab. Nicht alle Felder werden für jedes Mitglied angezeigt.
 :::
 
 :::info
-Mitglieder, die unter dem [Mindestalter für private Nachrichten](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) Ihrer Gemeinde liegen, bleiben im Verzeichnis sichtbar. Die Option, ihnen eine private Nachricht zu senden, ist für sie jedoch nicht verfügbar.
+Mitglieder unterhalb des [Mindestalters für private Nachrichten](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings) deiner Gemeinde bleiben im Verzeichnis sichtbar, aber die Option, ihnen eine private Nachricht zu senden, ist nicht verfügbar.
 :::

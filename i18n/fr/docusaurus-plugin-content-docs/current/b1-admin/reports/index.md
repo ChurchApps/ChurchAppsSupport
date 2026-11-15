@@ -1,33 +1,34 @@
-﻿---
+---
 title: "Rapports"
+description: "Trouvez et lancez les rapports intégrés de B1 Admin pour les anniversaires, les tendances de présence, les totaux de dons et le journal d'audit, selon la section dans laquelle vous vous trouvez."
 ---
 
 # Rapports
 
 <div class="article-intro">
 
-B1 Admin vous offre plusieurs moyens d'extraire des données sur votre assemblée, votre présence et vos dons. Les rapports sont intégrés aux sections pertinentes de l'application plutôt que regroupés sur une page unique.
+B1 Admin vous offre plusieurs façons d'extraire des données sur votre communauté, vos présences et vos dons. Les rapports sont intégrés aux sections pertinentes de l'application plutôt que regroupés sur une page unique.
 
 </div>
 
-## Vidéo de formation
+## Vidéo de formation {#training-video}
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="Générer des rapports dans B1" />
 
-## Où trouver les rapports
+## Où trouver les rapports {#where-to-find-reports}
 
-### Personnes
-- **[Listes d'anniversaires et d'anniversaires de mariage](./birthday-report.md)** : filtrez par mois de naissance ou mois d'anniversaire de mariage dans **Personnes → Recherche avancée** pour obtenir la liste des prochains anniversaires ou anniversaires de mariage.
+### Personnes {#people}
+- **[Listes des anniversaires et des anniversaires de mariage](./birthday-report.md)** -- Filtrez par Mois de naissance ou Mois d'anniversaire de mariage dans **Personnes → Recherche avancée** pour obtenir une liste des anniversaires ou anniversaires de mariage à venir.
 
-### Présence
-- **[Rapports de présence](./attendance-reports.md)** : les tendances de présence et les données de présence par groupe se trouvent dans la section **Présence**.
+### Présences {#attendance}
+- **[Rapports de présence](./attendance-reports.md)** -- Les tendances de présence et les données de présence par groupe se trouvent dans la section **Présences**.
 
-### Dons
-- **[Synthèse des dons](./donation-summary.md)** : les totaux des dons et la répartition par fonds se trouvent dans la section **Dons**.
+### Dons {#donations}
+- **[Sommaire des dons](./donation-summary.md)** -- Les totaux de dons et la ventilation par fonds se trouvent dans la section **Dons**.
 
-### Paramètres
-- **[Journal d'audit](./audit-log.md)** : suivez toutes les modifications et actions effectuées dans votre système de gestion d'église (disponible sous **Paramètres → Journal d'audit**).
+### Paramètres {#settings}
+- **[Journal d'audit](./audit-log.md)** -- Suivez toutes les modifications et actions de votre système de gestion d'église (se trouve sous **Paramètres → Journal d'audit**).
 
 :::info
-La fiabilité des rapports dépend de la qualité de la saisie des données. Assurez-vous que votre équipe [suit la présence](../attendance/tracking-attendance.md), [enregistre les dons](../donations/recording-donations.md) et maintient à jour les [fiches des personnes](../people/adding-people.md) pour obtenir des résultats les plus précis.
+La qualité des rapports dépend de la régularité de la saisie des données. Assurez-vous que votre équipe [suit les présences](../attendance/tracking-attendance.md), [enregistre les dons](../donations/recording-donations.md) et tient les [fiches des personnes](../people/adding-people.md) à jour pour obtenir les résultats les plus exacts.
 :::

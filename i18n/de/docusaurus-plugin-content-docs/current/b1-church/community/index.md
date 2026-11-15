@@ -1,32 +1,33 @@
 ---
-title: "Mitgliederverzeichnis in B1.church"
-sidebar_label: "Gemeinschaft"
-description: "Mitgliederverzeichnis in B1.church nach Name oder Gruppe durchsuchen, Profile ansehen und erfahren, wo die Timeline-Updates nun zu finden sind."
+title: "Mitgliederverzeichnis und Community in B1.church"
+sidebar_label: "Community"
+description: "Durchsuche das Mitgliederverzeichnis deiner Gemeinde in B1.church nach Namen, sende private Nachrichten, prüfe deine Benachrichtigungen und finde heraus, wo Timeline-Updates jetzt zu finden sind."
 ---
 
-# Gemeinschaft
+# Community
 
 <div class="article-intro">
 
-Der Bereich **Gemeinschaft** in B1.church hilft Ihnen, mit Ihrer Gemeindefamilie in Verbindung zu bleiben. Hier finden Sie ein Mitgliederverzeichnis, um andere Gemeindemitglieder zu finden und kennenzulernen, sowie eine Chronik, die Sie über die neuesten Ereignisse in Ihren Gruppen und Ihrer Gemeinde auf dem Laufenden hält.
+Der Bereich **Community** in B1.church hilft dir, mit deiner Gemeindefamilie in Verbindung zu bleiben. Er enthält das Mitgliederverzeichnis, in dem du andere Gemeindemitglieder finden und kennenlernen kannst.
 
 </div>
 
-## Was Sie hier finden
+## Was du hier findest {#what-you-will-find}
 
-- **[Mitgliederverzeichnis](./member-directory.md)** -- Durchsuchen Sie das Mitgliederverzeichnis Ihrer Gemeinde. Suchen Sie Personen nach Namen oder filtern Sie nach Gruppe, um die gesuchte Person zu finden. Klicken Sie auf ein Mitglied, um die Profildetails anzuzeigen.
-- **[Chronik](./timeline.md)** -- Ihr Aktivitäts-Feed mit den neuesten Aktualisierungen aus Ihren Gruppen und Ihrer Gemeinde. Die Chronik ist die Standard-Startseite, wenn Sie das Mitgliederportal besuchen.
+- **[Mitgliederverzeichnis](./member-directory.md)** -- Durchsuche das Mitgliederverzeichnis deiner Gemeinde. Suche Personen nach Namen, um die Menschen zu finden, die du suchst. Klicke auf ein Mitglied, um dessen Profildetails anzuzeigen.
+- **[Nachrichten und Benachrichtigungen](./messages.md)** -- Sende anderen Mitgliedern private Nachrichten und sieh dir deine Benachrichtigungen in deinem Posteingang an.
+- **[Timeline](./timeline.md)** -- Der frühere, kombinierte Aktivitätsfeed, der inzwischen abgeschaltet ist. Diese Seite erklärt, wo sich die einzelnen Arten von Updates heute befinden.
 
-## Erste Schritte
+## Erste Schritte {#getting-started}
 
-Sie müssen [angemeldet](../getting-started/logging-in.md) sein, um auf die Gemeinschaftsfunktionen zugreifen zu können. Wenn Sie nicht eingeloggt sind, werden Sie beim Navigieren zum **Gemeinschaft**-Tab oder zur **Chronik** aufgefordert, sich anzumelden.
+Du musst [angemeldet](../getting-started/logging-in.md) sein, um auf die Community-Funktionen zugreifen zu können. Wenn du nicht angemeldet bist, zeigt der Reiter **Community** eine Anmeldeaufforderung anstelle des Verzeichnisses.
 
-Der **Chronik**-Tab ist immer in der Seitenleiste verfügbar und dient als Startseite Ihres Mitgliederportals. Der **Gemeinschaft**-Tab bietet Zugang zum Mitgliederverzeichnis.
+Das Mitgliederportal öffnet sich auf dem [Startbildschirm](../getting-started/navigating.md). Der Reiter **Community** bietet Zugang zum Mitgliederverzeichnis, und die **Glocke** in der App-Leiste öffnet deine Nachrichten und Benachrichtigungen.
 
 :::info
-Welche Mitglieder und Informationen im Verzeichnis für Sie sichtbar sind, hängt von den Datenschutzeinstellungen Ihrer Gemeinde ab. Möglicherweise können Sie nicht das vollständige Profil jedes Mitglieds einsehen. Bei Fragen dazu, was geteilt wird, wenden Sie sich an Ihren Gemeindeadministrator.
+Welche Mitglieder und Informationen du im Verzeichnis siehst, hängt von den Datenschutzeinstellungen deiner Gemeinde ab. Möglicherweise kannst du nicht jedes vollständige Profil einsehen. Wenn du Fragen dazu hast, was geteilt wird, wende dich an deinen Gemeindeadministrator.
 :::
 
 :::tip
-Nutzen Sie die Gemeinschaftsfunktionen zusammen mit den [Gruppen](../groups/index.md), um sich unter der Woche aktiv in Ihrer Gemeinde zu engagieren.
+Nutze die Community-Funktionen zusammen mit [Gruppen](../groups/index.md), um dich während der ganzen Woche mit deiner Gemeinde verbunden zu fühlen.
 :::

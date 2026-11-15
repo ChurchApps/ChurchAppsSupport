@@ -44,7 +44,7 @@ Under **Individual CSV Files**, click **Download ZIP** (the button shows the num
 
 Under **Printable Statements**, click **Print All** (the button shows the number of statements) to open a printable view of every donor's statement for the selected year in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail, and the statements are in order by the donor's last name, then first name.
 
-If you have uploaded a **Light Background Logo** under [Website > Appearance](../website/appearance.md), it prints centered at the top of each statement, above the statement title. This applies to both **Print All** and a single donor's statement printed from their record.
+If you have uploaded a **Light Background Logo** under [Website > Appearance](../website/appearance.md), it prints centered at the top of each statement, above the statement title. This applies to **Print All**, a single donor's statement printed from their record, and the statements members print themselves from the **Giving** page of B1.church.
 
 :::tip
 Run your statements early in January while your records are fresh. Double-check that your funds are correctly marked as tax-deductible before generating statements -- only donations to tax-deductible funds are included.

@@ -19,13 +19,13 @@ La chat di gruppo è uno spazio in cui i membri del gruppo possono pubblicare me
 
 </div>
 
-## Accedere alle conversazioni
+## Accedere alle conversazioni {#accessing-conversations}
 
-1. Vai alla pagina di dettaglio del gruppo facendo clic su un gruppo dalla [pagina dei gruppi](./browsing-groups.md).
+1. Vai alla pagina di dettaglio del gruppo cliccando su un gruppo dalla [pagina dei gruppi](./browsing-groups.md).
 2. Assicurati di aver effettuato l'accesso.
 3. Tocca **Apri chat** sotto il nome del gruppo, oppure nella sezione **Messaggi**, che mostra in anteprima gli ultimi messaggi. La chat si apre a schermo intero; tocca la freccia indietro per tornare al gruppo.
 
-## Discussioni e annunci
+## Discussioni e annunci {#discussions-and-announcements}
 
 La chat di gruppo può avere due flussi, a seconda di quali la tua chiesa ha attivato per questo gruppo. L'etichetta sopra il nome del gruppo, in cima alla chat, indica in quale dei due ti trovi:
 
@@ -36,7 +36,7 @@ Quando entrambi i flussi sono attivi, una barra **Annuncio** in cima alla chat m
 
 Se la tua chiesa ha attivato solo uno dei due flussi per questo gruppo, la chat si apre direttamente su quel flusso. Se entrambi sono disattivati, il gruppo non ha una chat e non compare la sezione **Messaggi**.
 
-## Pubblicare un messaggio
+## Pubblicare un messaggio {#posting-a-message}
 
 1. Tocca **Apri chat** nella pagina del tuo gruppo.
 2. Assicurati di trovarti nel flusso **Chat** (tocca **Torna alla chat** se stai leggendo gli annunci).
@@ -49,15 +49,15 @@ Il tuo messaggio sarà visibile a tutti i membri del gruppo. Ogni messaggio most
 
 Puoi aggiungere grassetto, corsivo ed elenchi a un messaggio:
 
-1. Scrivi il tuo messaggio, poi seleziona le parole o le righe che vuoi formattare.
-2. Sopra la casella di testo compare una piccola barra degli strumenti con i pulsanti **Grassetto**, **Corsivo**, **Elenco puntato** ed **Elenco numerato**. Tocca un pulsante per applicare la formattazione. Tocca di nuovo lo stesso pulsante, con il testo ancora selezionato, per rimuoverla.
+1. Tocca la casella del messaggio. Mentre è selezionata, sotto di essa compare una fila di pulsanti **Grassetto**, **Corsivo**, **Elenco puntato** ed **Elenco numerato**.
+2. Scrivi il messaggio, seleziona le parole o le righe che vuoi formattare e tocca un pulsante per applicarlo. Tocca di nuovo lo stesso pulsante, con il testo ancora selezionato, per rimuoverlo. Senza alcuna selezione, i pulsanti degli elenchi formattano la riga in cui ti trovi.
 3. Invia il messaggio come di consueto.
 
 Su computer puoi anche premere **Ctrl+B** (o **Cmd+B** su Mac) per il grassetto e **Ctrl+I** (**Cmd+I**) per il corsivo.
 
-La barra degli strumenti aggiunge al tuo testo una semplice sintassi markdown: `**grassetto**`, `_corsivo_`, un `- ` all'inizio di una riga per un elenco puntato e `1. ` per un elenco numerato. Puoi digitarli anche tu direttamente. Tutti nella chat vedono il messaggio formattato, i link web restano cliccabili e le interruzioni di riga vengono mantenute. La stessa formattazione funziona anche negli annunci, nelle [note del leader](./group-details.md#leader-notes) e nei messaggi privati.
+La barra degli strumenti aggiunge al tuo testo una semplice sintassi markdown: `**bold**`, `_italic_`, un `- ` all'inizio di una riga per un elenco puntato e `1. ` per un elenco numerato. Puoi digitarli anche tu direttamente. Tutti nella chat vedono il messaggio formattato, i link web restano cliccabili (si aprono in una nuova scheda), un link a un'immagine (.jpg, .png, .gif e simili) mostra la figura sotto il messaggio e le interruzioni di riga vengono mantenute. La stessa formattazione funziona anche negli annunci, nelle [note del leader](./group-details.md#leader-notes) e nei messaggi privati.
 
-## Modificare o eliminare i tuoi messaggi
+## Modificare o eliminare i tuoi messaggi {#editing-or-deleting-your-messages}
 
 Puoi modificare o eliminare qualsiasi messaggio che hai pubblicato:
 
@@ -70,7 +70,7 @@ Puoi modificare o eliminare qualsiasi messaggio che hai pubblicato:
 Puoi modificare solo i tuoi messaggi. I leader del gruppo possono anche eliminare i messaggi degli altri membri; i membri normali vedono le opzioni solo sui propri messaggi.
 :::
 
-## Reagire ai messaggi
+## Reagire ai messaggi {#reacting-to-messages}
 
 Nella chat di gruppo puoi reagire a qualsiasi messaggio con un'emoji:
 
@@ -83,7 +83,7 @@ Le reazioni appaiono come piccole etichette sotto il messaggio, con il conteggio
 Le conversazioni di gruppo si svolgono nella chat di ciascun gruppo: la vecchia sezione [Timeline](../community/timeline.md), che riuniva tutte le attività, è stata ritirata. Le attività che richiedono la tua attenzione arrivano come notifica sotto l'icona **campanella** nella barra superiore dell'app.
 :::
 
-## Funzioni per i leader
+## Funzioni per i leader {#leader-features}
 
 Se sei un leader del gruppo, nella chat di gruppo hai funzioni aggiuntive:
 

@@ -1,66 +1,68 @@
 ---
-title: "Approvazione delle modifiche al profilo"
-description: "Esamina e approva le richieste di modifica del profilo dei membri in B1 Admin e configura il Gruppo di approvazione dell'elenco, che le riceve."
+title: "Approvare le modifiche ai profili"
+description: "Verifica e approva le richieste di modifica del profilo dei membri in B1 Admin, e configura il Gruppo di approvazione dell'anagrafe che le riceve."
 ---
 
-# Approvazione delle modifiche al profilo
+# Approvare le modifiche ai profili
 
 <div class="article-intro">
 
-Quando la tua chiesa richiede l'approvazione dell'amministratore per gli aggiornamenti del profilo, i membri inviano le modifiche tramite la B1 App e tali richieste compaiono come attività in B1 Admin. Questa guida spiega come esaminarle e approvarle.
+Quando la tua chiesa richiede l'approvazione dell'amministratore per gli aggiornamenti dei profili, i membri inviano le modifiche tramite l'app B1 e queste richieste compaiono come compiti in B1 Admin. Questa guida spiega come verificarle e approvarle.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Devi essere membro del gruppo designato come **Gruppo di approvazione dell'elenco** in **Mobile &rarr; Portale membri**
-- Se non è stato configurato alcun gruppo di approvazione, le modifiche al profilo vengono applicate immediatamente senza revisione
+- Devi essere membro del gruppo designato come **Gruppo di approvazione dell'anagrafe** in **Mobile &rarr; Portale membri**
+- Se non è stato configurato alcun gruppo di approvazione, le modifiche ai profili vengono applicate subito, senza revisione
 
 </div>
 
-## Dove trovare le richieste in sospeso
+## Dove trovare le richieste in attesa {#where-to-find-pending-requests}
 
-Quando un membro invia una modifica al profilo, questa compare come attività assegnata al tuo gruppo di approvazione. Puoi trovarla in due posti:
+Quando un membro invia una modifica al profilo, questa compare come compito assegnato al tuo gruppo di approvazione. Puoi trovarla in due posti:
 
 **Dalla Dashboard (la tua pagina iniziale):**
 1. Accedi a B1 Admin: la Dashboard si carica automaticamente.
-2. Nella sezione **Le mie attività**, fai clic su **Tutte le attività**. (Le mie attività elenca solo le attività aperte assegnate personalmente a te.)
-3. Fai clic sulla scheda **Assegnate ai miei gruppi**. Lì saranno elencate le eventuali richieste di modifica del profilo in sospeso.
+2. Nella sezione **I miei compiti**, clicca su **Tutti i compiti**. (I miei compiti elenca solo i compiti aperti assegnati personalmente a te.)
+3. Clicca sulla scheda **Assegnati ai miei gruppi**. Eventuali richieste di modifica del profilo in attesa saranno elencate lì.
 
 **Da Servizio &rarr; Il mio lavoro:**
-1. Apri il [menu Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Servizio**.
-2. Fai clic su **Il mio lavoro**.
-3. Fai clic sulla scheda **Assegnate ai miei gruppi** in Attività.
+1. Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin) ed espandi **Servizio**.
+2. Clicca su **Il mio lavoro**.
+3. Clicca sulla scheda **Assegnati ai miei gruppi** sotto Compiti.
 
-## Esaminare e approvare una richiesta
+## Verificare e approvare una richiesta {#reviewing-and-approving-a-request}
 
-1. Fai clic sull'attività **Aggiornamento profilo** per aprirla.
-2. In **Modifiche richieste** vedrai ogni campo che il membro vuole aggiornare, con il nuovo valore inviato.
-3. Esamina le modifiche.
-4. Fai clic su **Applica** per approvare e salvare le modifiche nel profilo del membro.
+1. Clicca sul compito **Aggiornamento profilo** per aprirlo.
+2. Sotto **Modifiche richieste** vedrai ogni campo che il membro vuole aggiornare, insieme al nuovo valore inviato.
+3. Verifica le modifiche.
+4. Clicca su **Applica** per approvare e salvare le modifiche nel suo profilo.
 
-L'attività si chiuderà automaticamente una volta applicate le modifiche.
+Una richiesta per aggiungere un familiare mostra il titolo, il nome, il ruolo nel nucleo e il cellulare della nuova persona su un'unica riga (ad esempio, *Sig. Mario Rossi · Figlio · 555-0100*). Applicandola, la persona viene creata nel nucleo familiare del membro con questi dati.
 
-## Configurare il gruppo di approvazione
+Il compito si chiude automaticamente una volta applicate le modifiche.
 
-Se la tua chiesa vuole che le modifiche al profilo richiedano un'approvazione, è necessario prima configurare un Gruppo di approvazione dell'elenco.
+## Configurare il gruppo di approvazione {#setting-up-the-approval-group}
 
-1. Apri il menu Salto ed espandi **Mobile**.
-2. Fai clic su **Portale membri** (la pagina "Impostazioni portale").
-3. In **Gruppo di approvazione dell'elenco**, seleziona il gruppo i cui membri dovranno esaminare le richieste di modifica del profilo.
-4. Fai clic su **Salva**.
+Se la tua chiesa vuole che le modifiche ai profili richiedano un'approvazione, è necessario prima configurare un Gruppo di approvazione dell'anagrafe.
 
-Ogni membro di quel gruppo vedrà le richieste di modifica del profilo in arrivo in **Assegnate ai miei gruppi** nella propria Dashboard.
+1. Apri il menu Jump ed espandi **Mobile**.
+2. Clicca su **Portale membri** (la pagina "Impostazioni del portale").
+3. Sotto **Gruppo di approvazione dell'anagrafe**, seleziona il gruppo i cui membri devono verificare le richieste di modifica dei profili.
+4. Clicca su **Salva**.
 
-Lo stesso Gruppo di approvazione dell'elenco esamina anche le **richieste di eliminazione account**: vedi [Esaminare le richieste di eliminazione account](./account-deletion.md).
+Ogni membro di quel gruppo vedrà le richieste di modifica dei profili in arrivo sotto **Assegnati ai miei gruppi** nella propria Dashboard.
+
+Lo stesso Gruppo di approvazione dell'anagrafe verifica anche le **richieste di eliminazione dell'account**: vedi [Verificare le richieste di eliminazione dell'account](./account-deletion.md).
 
 :::tip
 Assicurati che gli approvatori siano effettivamente membri del gruppo configurato: solo i membri del gruppo vedranno le richieste.
 :::
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Gestire il tuo profilo](./managing-profile.md) — Modifica le impostazioni del tuo account
-- [Esaminare le richieste di eliminazione account](./account-deletion.md) — Lo stesso flusso di revisione per l'approvazione delle eliminazioni account
-- [Modificare il tuo profilo](../../b1-church/getting-started/editing-your-profile.md) — Ciò che i membri vedono quando inviano una modifica al profilo
+- [Gestire il tuo profilo](./managing-profile.md) — modifica le impostazioni del tuo account
+- [Verificare le richieste di eliminazione dell'account](./account-deletion.md) — lo stesso flusso di verifica da parte del gruppo di approvazione per l'eliminazione dell'account
+- [Modificare il tuo profilo](../../b1-church/getting-started/editing-your-profile.md) — cosa vedono i membri quando inviano una modifica al profilo

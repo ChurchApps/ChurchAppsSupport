@@ -1,94 +1,95 @@
 ---
-title: "Guida: Generare i rendiconti annuali delle donazioni"
-description: "In B1 Admin, completa i registri delle donazioni dell'anno, verifica le impostazioni fiscali dei fondi e genera le ricevute di donazione detraibili per ogni donatore."
+title: "Guida: Genera le ricevute annuali delle donazioni"
+description: "In B1 Admin, completa le registrazioni delle donazioni dell'anno, verifica le impostazioni fiscali dei fondi e genera le ricevute di donazione detraibili per ogni donatore."
 ---
 
-# Generare i rendiconti annuali delle donazioni
+# Genera le ricevute annuali delle donazioni
 
 <div class="article-intro">
 
-Ti guidiamo attraverso il processo di fine anno: completare i registri delle donazioni, verificare le impostazioni dei fondi e generare le ricevute di donazione detraibili per ogni donatore. Di solito questa operazione si svolge all'inizio di gennaio per l'anno solare precedente.
+Segui il processo di fine anno per completare le registrazioni delle donazioni, verificare le impostazioni dei fondi e generare le ricevute di donazione detraibili per ogni donatore. Di solito si fa a inizio gennaio per l'anno solare precedente.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Account B1 Admin con accesso alla sezione finanziaria
+- Account B1 Admin con accesso alla gestione finanziaria
 - Donazioni registrate durante l'anno (online tramite Stripe e/o inserite manualmente)
 - Accesso al tuo account Stripe, se accetti donazioni online
 
 </div>
 
-## Passo 1: Importare le transazioni Stripe finali
+## Passaggio 1: Importa le ultime transazioni Stripe {#step-1-import-final-stripe-transactions}
 
-Assicurati che tutte le donazioni online di fine anno siano presenti nel sistema.
+Assicurati che tutte le donazioni online di fine anno siano nel sistema.
 
-Segui la guida [Importazione Stripe](../donations/stripe-import.md) per:
+Segui la guida [Importazione da Stripe](../donations/stripe-import.md) per:
 
-1. Accedere a Donazioni > Importazione Stripe
-2. Selezionare un intervallo di date che copra la fine dell'anno (ad esempio, dal 1° al 31 dicembre)
-3. Fare clic su Anteprima per controllare i dati, quindi su Importa mancanti per completare l'operazione
+1. Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu), scegli **Donazioni > Importazione Stripe** (compare solo se il tuo fornitore di donazioni è Stripe)
+2. Imposta la **Data di inizio** e la **Data di fine** per coprire la fine dell'anno (ad esempio, dal 1° al 31 dicembre)
+3. Clicca prima su **Anteprima** per controllare, poi su **Importa mancanti** per completare l'operazione
 
 :::warning
-Esegui questa importazione prima di generare i rendiconti. Le transazioni non importate non compariranno nelle ricevute dei donatori.
+Esegui questa importazione prima di generare le ricevute. Le transazioni che non hai importato non compariranno nelle ricevute dei donatori.
 :::
 
-## Passo 2: Verificare i rapporti sulle donazioni
+## Passaggio 2: Controlla i report sulle donazioni {#step-2-review-donation-reports}
 
-Controlla che i registri siano corretti prima di generare i rendiconti.
+Verifica che le registrazioni siano corrette prima di generare le ricevute.
 
-Segui la guida [Rapporti sulle donazioni](../donations/donation-reports.md) per:
+Segui la guida [Report sulle donazioni](../donations/donation-reports.md) per:
 
-1. Controllare la pagina di riepilogo delle donazioni per l'intero anno
-2. Verificare i totali per fondo e confrontarli con gli estratti conto bancari per individuare eventuali discrepanze
-3. Se necessario, fare clic sui singoli lotti per verificare i dettagli dei donatori
+1. Nel menu Jump, scegli **Donazioni > Riepilogo**, imposta la **Data di inizio** e la **Data di fine** in **Filtra report** sull'intero anno, e clicca su **Esegui report**
+2. Controlla i totali per fondo e confrontali con gli estratti conto bancari per individuare eventuali discrepanze. Clicca su **Opzioni di download** e scegli **Riepilogo** per ottenere un CSV
+3. Se necessario, apri i singoli lotti in **Donazioni > Lotti** per verificare i dettagli di ogni donatore
 
-## Passo 3: Verificare lo stato fiscale dei fondi
+## Passaggio 3: Verifica lo stato fiscale dei fondi {#step-3-verify-fund-tax-status}
 
-Assicurati che l'impostazione di detraibilità fiscale di ogni fondo sia corretta, così che i rendiconti risultino accurati.
+Assicurati che l'impostazione di detraibilità di ciascun fondo sia corretta, così le ricevute saranno accurate.
 
 Segui la guida [Fondi](../donations/funds.md) per:
 
-1. Aprire ciascun fondo e confermare che l'impostazione di detraibilità fiscale sia corretta
+1. Nel menu Jump, scegli **Donazioni > Fondi** e controlla lo **Stato fiscale** di ogni fondo
+2. Clicca su **Modifica** su un fondo per cambiare l'impostazione **Detraibile fiscalmente**
 
 :::info
-Nei rendiconti delle donazioni compaiono solo le donazioni destinate a fondi contrassegnati come detraibili. Se un fondo dovrebbe essere detraibile ma non è contrassegnato come tale, aggiornalo prima di generare i rendiconti.
+Nelle ricevute compaiono solo le donazioni destinate a fondi contrassegnati come detraibili. Se un fondo dovrebbe essere detraibile ma non è contrassegnato come tale, aggiornalo prima di generare le ricevute.
 :::
 
-## Passo 4: Generare i rendiconti delle donazioni
+## Passaggio 4: Genera le ricevute di donazione {#step-4-generate-giving-statements}
 
-Crea i rendiconti ufficiali delle donazioni per i tuoi donatori.
+Crea le ricevute ufficiali per i tuoi donatori.
 
-Segui la guida [Rendiconti delle donazioni](../donations/giving-statements.md) per:
+Segui la guida [Ricevute di donazione](../donations/giving-statements.md) per:
 
-1. Accedere a **Donazioni > Rendiconti delle donazioni**
-2. Selezionare l'anno dal menu a tendina e verificare le statistiche di riepilogo
-3. Scegliere il metodo di download:
-   - **Scarica ZIP** — singoli file CSV, uno per donatore
-   - **Stampa tutto** — vista stampabile con ogni rendiconto su una pagina separata, con il logo della chiesa in alto (se ne hai caricato uno)
+1. Nel menu Jump, scegli **Donazioni > Ricevute di donazione**
+2. Seleziona l'**Anno** e controlla le statistiche di riepilogo. Le chiese in Canada, Australia o Nuova Zelanda possono cliccare su **Formato ricevuta** per passare al modello ufficiale di ricevuta del loro paese
+3. Scegli il metodo di download:
+   - **Scarica ZIP** — file CSV individuali, uno per donatore
+   - **Stampa tutto** — vista stampabile con ogni ricevuta su una pagina nuova, con il logo della chiesa in alto (se ne hai caricato uno)
 
 :::tip
-Genera i rendiconti all'inizio di gennaio, quando i dati sono ancora aggiornati. Così avrai tempo per risolvere eventuali problemi prima di spedirli.
+Genera le ricevute a inizio gennaio, quando le registrazioni sono ancora fresche. Così hai tempo di risolvere eventuali problemi prima di spedirle.
 :::
 
-## Passo 5: Distribuire ai donatori
+## Passaggio 5: Consegna le ricevute ai donatori {#step-5-distribute-to-donors}
 
-Fai in modo che i rendiconti arrivino nelle mani dei donatori.
+Fai arrivare le ricevute nelle mani dei tuoi donatori.
 
-1. Stampa e spedisci i rendiconti, oppure invia via email i singoli file CSV ai donatori
-2. I membri possono anche consultare la propria cronologia delle donazioni e stampare i rendiconti su [B1.church o nella B1 App](../../b1-church/giving/donation-history.md)
+1. Stampa e spedisci le ricevute, oppure invia via email i singoli CSV ai donatori
+2. I membri possono anche consultare la propria cronologia delle donazioni e stampare le ricevute su [B1.church o nell'app B1](../../b1-church/giving/donation-history.md)
 
-## Operazione completata!
+## Hai finito! {#youre-done}
 
-I rendiconti annuali delle donazioni sono pronti. I donatori hanno le loro ricevute detraibili e i registri finanziari dell'anno sono chiusi.
+Le tue ricevute annuali delle donazioni sono complete. I donatori hanno le loro ricevute detraibili e le registrazioni finanziarie dell'anno sono chiuse.
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Importazione Stripe](../donations/stripe-import.md) — importa le transazioni online
-- [Rapporti sulle donazioni](../donations/donation-reports.md) — consulta le tendenze e i totali delle donazioni
-- [Fondi](../donations/funds.md) — gestisci i fondi e le impostazioni di detraibilità fiscale
-- [Rendiconti delle donazioni](../donations/giving-statements.md) — genera i rendiconti di fine anno
+- [Importazione da Stripe](../donations/stripe-import.md) — importa le transazioni online
+- [Report sulle donazioni](../donations/donation-reports.md) — consulta andamento e totali delle donazioni
+- [Fondi](../donations/funds.md) — gestisci i fondi e le impostazioni di detraibilità
+- [Ricevute di donazione](../donations/giving-statements.md) — genera le ricevute di fine anno
 - [Registrare le donazioni](../donations/recording-donations.md) — inserisci manualmente donazioni in contanti o con assegno
-- [Cronologia delle donazioni (web)](../../b1-church/giving/donation-history.md) — vista self-service per i membri
-- [Guida: configurare le donazioni online](./online-giving.md) — configurazione iniziale di Stripe e delle donazioni
+- [Cronologia donazioni (web)](../../b1-church/giving/donation-history.md) — vista self-service per i membri
+- [Guida alla configurazione delle donazioni online](./online-giving.md) — configurazione iniziale di Stripe e delle donazioni

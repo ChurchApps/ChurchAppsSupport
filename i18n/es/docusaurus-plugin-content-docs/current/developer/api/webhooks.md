@@ -73,7 +73,7 @@ La respuesta de creación — y **solo** la respuesta de creación — incluye e
 | `GET /membership/webhooks/deliveries/:deliveryId` | Payload completo y respuesta para una entrega |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Re-cola una entrega |
 
-## Catálogo de Eventos
+## Catálogo de Eventos {#event-catalog}
 
 Los nombres de eventos siguen el patrón `{entity}.{action}`. Obtén la lista en vivo de `GET /membership/webhooks/events`.
 
@@ -189,7 +189,7 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 
 Rechaza cualquier solicitud cuya firma no coincida. Opcionalmente también rechaza solicitudes cuyo `X-B1-Timestamp` tenga más de unos pocos minutos de antigüedad para limitar ventanas de reproducción.
 
-## Soporte de SDK
+## Soporte de SDK {#sdk-support}
 
 Para Node.js, `@churchapps/integration-sdk` proporciona un verificador tipado y middleware de Express que maneja la captura de cuerpo bruto, verificación de firma y análisis de envoltura para ti:
 

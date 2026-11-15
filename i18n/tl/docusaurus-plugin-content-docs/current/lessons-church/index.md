@@ -11,7 +11,7 @@ Ang Lessons.church ay isang ganap na libreng platform ng curriculum para sa mga 
 
 </div>
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
 Gamit ang Lessons.church, ang iyong simbahan ay maaaring:
 

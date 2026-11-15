@@ -60,7 +60,7 @@ Para sa isang live na kanta, i-click ang **Copy link** para ibahagi ang pahina n
 Kung idinagdag ka ng WorshipCommons team bilang co-publisher ng isang kanta -- halimbawa, kantang isinulat mo kasama ng iba at in-upload ng iba -- lalabas ito sa **My submissions** bilang **Live**, kahit hindi mo ito ipinadala mismo. Bilang publisher ng kanta, maaari kang gumawa ng mga pagbabago kahit sarado ito sa publiko dahil sa lisensya nito.
 :::
 
-## Mga Writer Page
+## Mga Writer Page {#writer-pages}
 
 Bawat writer sa library ay may writer page na naglilista ng kanilang mga kanta, kasama ang taon, key, tema, at lisensya ng bawat kanta. Naaabot ito ng mga simbahan sa pamamagitan ng pag-click sa pangalan ng writer sa pahina ng kanta. Kapag maraming writer ang isang kanta, bawat pangalan ay nagli-link sa sarili nitong pahina.
 

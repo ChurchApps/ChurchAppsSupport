@@ -167,7 +167,7 @@ File di esempio: `dotenv.sample.txt`
 
 ## Variabili d'ambiente delle app mobili
 
-### B1Checkin (React Native / Expo)
+### B1Checkin (React Native / Expo) {#b1checkin-react-native--expo}
 
 File di esempio: `dotenv.sample.txt`
 

@@ -11,7 +11,7 @@ Lessons.church 是一个完全免费的教会课程平台。没有订阅、没�
 
 </div>
 
-## 您可以做什么
+## 您可以做什么 {#what-you-can-do}
 
 使用 Lessons.church，您的教会可以：
 

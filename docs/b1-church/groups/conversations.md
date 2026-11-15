@@ -49,8 +49,8 @@ Your message will be visible to all members of the group. Each message shows whe
 
 You can add bold text, italics, and lists to a message:
 
-1. Type your message, then highlight the words or lines you want to format.
-2. A small toolbar appears above the message box with **Bold**, **Italic**, **Bulleted list**, and **Numbered list** buttons. Tap one to apply it. Tap the same button again with the text still highlighted to remove it.
+1. Tap into the message box. While it is selected, a row of **Bold**, **Italic**, **Bulleted list**, and **Numbered list** buttons shows under it.
+2. Type your message, highlight the words or lines you want to format, and tap a button to apply it. Tap the same button again with the text still highlighted to remove it. With nothing highlighted, the list buttons format the line you are on.
 3. Send the message as usual.
 
 On a computer you can also press **Ctrl+B** (or **Cmd+B** on a Mac) for bold and **Ctrl+I** (**Cmd+I**) for italic.

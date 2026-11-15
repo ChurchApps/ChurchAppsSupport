@@ -20,7 +20,7 @@ description: "B1 Admin에서 새 교회를 처음 설정하는 과정을 안내�
 
 </div>
 
-## 1단계: 교회 정보 설정하기
+## 1단계: 교회 정보 설정하기 {#step-1-configure-your-church-information}
 
 1. [점프 메뉴](../b1-admin/introduction.md#getting-around-with-the-jump-menu)(B1 Admin 왼쪽 상단의 검색창)를 열고 **Settings**를 펼친 다음 **Settings**를 클릭합니다.
 2. **Church Information** 섹션에서 **Edit**를 클릭합니다.

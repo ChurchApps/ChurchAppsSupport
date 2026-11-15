@@ -41,7 +41,7 @@ The Mobile menu also holds **App Theme**, **Member portal**, **B1 Check-In**, **
 2. Fill in the tab details:
    - **Tab Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
    - **Icon** -- Click the icon selector to choose an icon for your tab.
-   - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles).
+   - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles). To take a photo off, click **Remove Image** and save; the tab then appears as a plain tab, not a Home tile.
    - **Tab Type** -- **Bible**, **Live Stream**, **Verse of the Day**, **Sermons**, **Check-in**, **Donation**, **Member Directory**, **My Groups**, **Volunteer Opportunities**, **Serving Plans**, **Registrations**, **Requests**, **External URL**, **Internal Page**, or **Folder**. **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member.
    - **URL** -- Shown for **External URL** tabs: the web address the tab opens.
    - **Page** -- Shown for **Internal Page** tabs: pick one of your website's pages.
@@ -118,8 +118,8 @@ The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mo
 - **Scrolling row** -- One row of tiles that members swipe sideways.
 - **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and carrying on forward to the first tile again after the last one. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
 - **List** -- A list with a small photo thumbnail next to each tab's name.
-- **Grid and list** -- The first three photo tabs as a grid, with the first tile spanning the full width, and the rest listed beneath with a small thumbnail beside each name. When there are more than three, the section heading shows an **All** link that opens the app's **More** page, which lists every tab.
-- **Scrolling (automatic) and list** -- The first three photo tabs in the self-advancing row described above, and the rest listed beneath, with the same **All** link.
+- **Grid and list** -- The first three photo tabs as a grid, with the first tile spanning the full width, and the next three listed beneath with a small thumbnail beside each name. When there are more than three, the section heading shows an **All** link that opens the app's **More** page, which lists every tab.
+- **Scrolling (automatic) and list** -- Every photo tab in the self-advancing row described above, with the first three also listed beneath, and the same **All** link when there are more than three.
 
 In both scrolling layouts, when there are more tiles than fit across the screen, a row of dots appears under the tiles, one per tile, with the current tile's dot filled in. Members can tap a dot to jump to that tile.
 
@@ -143,12 +143,14 @@ Click **Save** to apply.
 **Mobile > Push Notifications** (`/mobile/notifications`) sends or schedules a push notification to people who have the B1 app installed with notifications turned on. You need **Edit Content** to send to everyone, or **Edit Group Members** to send to a group.
 
 1. Click **Send Notification**.
-2. Choose the **Audience**: **Everyone with the app**, or one of your groups.
-3. Enter a **Title** and **Message**, and optionally an **Open link or flyer URL** and an **Image URL** (the same fields as a [group notification](../groups/group-members.md#sending-push-notifications-to-group-members)).
+2. Choose the **Audience**: **Everyone with the app**, or one of your groups. B1 shows how many people the push will reach and how many have push turned off; you are left out of your own push.
+3. Enter a **Title** (up to 80 characters) and **Message** (up to 240 characters), and optionally an **Open link or flyer URL** and an **Image URL** (the same fields as a [group notification](../groups/group-members.md#sending-push-notifications-to-group-members)).
 4. Under **When**, keep **Send now**, or choose **Schedule for later** and pick a **Send at** time in the future.
 5. Click **Send Notification** (or **Schedule Notification**).
 
 The page lists **Scheduled** notifications (with **Edit**, **Send now**, and **Cancel** on each) and **Recent** ones with their status, such as *Sent: 12 of 15*, *Cancelled*, or *Missed (the send time passed)*. Click **Remove** to take a finished notification off the list, or **Clear all** to remove every sent, failed, and cancelled one. Times are shown in your church's [time zone](./church-settings.md#time-zone), or your computer's if the church has none set. Who receives a scheduled notification is worked out again when it goes out.
+
+A notification more than 30 minutes late when B1 tries to send it is marked *Missed* and not sent; one that fails three times shows *Failed* with the error. Removing a notification from the list does not take it back from people who already got it. When a push has no link, tapping it opens the app's notification list for a church-wide push, or the group's page for a group push. Members who turned off **Church Announcements** in their [notification preferences](../../b1-church/getting-started/notification-preferences.md) don't get these pushes, whether they go to everyone or to a group.
 
 ## Where These Tabs Appear
 

@@ -1,53 +1,56 @@
 ---
-title: "Events और Rooms का अनुरोध"
-description: "B1.church सदस्य पोर्टल से किसी कार्यक्रम के लिए कक्ष या उपकरण बुकिंग का अनुरोध करें, My Requests में उसकी स्थिति देखें, और लंबित रहते हुए रद्द करें।"
+title: "इवेंट और कमरों का अनुरोध"
+description: "B1.church सदस्य पोर्टल से किसी इवेंट के लिए कमरे या उपकरण बुकिंग का अनुरोध करें, My Requests में उसकी स्थिति देखें, और लंबित रहते हुए रद्द करें।"
 ---
 
-# Events और Rooms का अनुरोध
+# इवेंट और कमरों का अनुरोध
 
 <div class="article-intro">
 
-यदि आपका church bookable rooms और resources ट्रैक करता है, तो आप सीधे member portal से एक event का अनुरोध कर सकते हैं -- उसके लिए आवश्यक rooms और equipment के साथ। आप जैसे-जैसे चुनते हैं, मौजूदा bookings के साथ टकराव चिह्नित हो जाते हैं, आपका अनुरोध approval के लिए church को जाता है, और आप My Requests से उसे ट्रैक या cancel कर सकते हैं।
+यदि आपका चर्च बुक करने योग्य कमरों और संसाधनों का हिसाब रखता है, तो आप सीधे मेंबर पोर्टल से एक इवेंट का अनुरोध कर सकते हैं — उसके लिए आवश्यक कमरों और उपकरणों के साथ। जैसे-जैसे आप चुनते हैं, मौजूदा बुकिंग से टकराव चिह्नित हो जाते हैं, आपका अनुरोध स्वीकृति के लिए चर्च को जाता है, और आप My Requests से उसे ट्रैक या रद्द कर सकते हैं।
 
 </div>
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
 
-- आपको member portal में [logged in](../getting-started/logging-in.md) होना चाहिए
-- आपके church के B1 Admin में rooms या resources सेट होने चाहिए -- तभी अनुरोध के links दिखते हैं
+- आपको मेंबर पोर्टल में [लॉग इन](../getting-started/logging-in.md) होना चाहिए
+- आपके चर्च के B1 Admin में कमरे या संसाधन सेट होने चाहिए — अनुरोध के लिंक केवल तभी दिखते हैं
 
 </div>
 
-## अनुरोध जमा करना
+## अनुरोध जमा करना {#submitting-a-request}
 
-1. member portal में **Me** page खोलें और **Requests & registrations** section में **Request an Event** पर tap करें।
-2. event की मूल जानकारी भरें: **Event title**, वैकल्पिक **Description**, **Start** और **End** समय (या **All day**), और यह कि क्या यह **Repeats** होता है।
-3. जिन **Rooms** और **Resources** की आपको ज़रूरत है उन्हें चुनें। resources के लिए आप **Qty** सेट कर सकते हैं।
-4. टकराव की चेतावनियों पर ध्यान दें -- यदि आपका समय किसी room या resource की मौजूदा booking से overlap करता है, तो आपको *"This time conflicts with an existing booking."* दिखेगा। आप अपना समय बदल सकते हैं या कुछ और चुन सकते हैं।
-5. **Submit Request** पर tap करें।
+1. सदस्य पोर्टल में **Me** पेज खोलें और **Requests & registrations** अनुभाग में **Request an Event** पर टैप करें।
+2. इवेंट की मूल जानकारी भरें: **Event title**, वैकल्पिक **Description**, और **Start** और **End** समय। केवल तारीखें चुनने के लिए **All day** चालू करें।
+3. जिन **Rooms** और **Resources** की आपको ज़रूरत है उन्हें चुनें (हर एक में से कई चुन सकते हैं)। एक चुनने के बाद, आप **Setup (min before)** और **Teardown (min after)** मिनट जोड़ सकते हैं, या **Custom reservation window** चालू करके **Reserve from** और **Reserve until** स्वयं सेट कर सकते हैं।
+4. टकराव की चेतावनियों पर ध्यान दें — यदि आपका समय किसी कमरे या संसाधन की मौजूदा बुकिंग से overlap करता है, तो आपको *"Some selections may already be booked at this time."* दिखेगा। आप अपना समय बदल सकते हैं या कुछ और चुन सकते हैं।
+5. यदि इवेंट एक से अधिक बार होता है, तो **Repeats** चालू करें और पैटर्न सेट करें।
+6. **Submit Request** पर टैप करें। जब तक आप इवेंट का शीर्षक दर्ज नहीं करते, बटन धूसर रहता है। बिना जमा किए छोड़ने के लिए **Cancel** पर टैप करें।
 
-जमा करने के बाद, एक **Request submitted** सारांश आपके द्वारा मांगे गए हर room और resource की स्थिति दिखाता है:
+जमा करने के बाद, एक **Request submitted** सारांश दिखता है जो आपके द्वारा माँगे गए हर कमरे और संसाधन की स्थिति बताता है (अपनी सूची पर जाने के लिए **My Requests** पर टैप करें):
 
-- **Approved** -- तुरंत booked (room या resource का कोई approval group नहीं है)।
-- **Pending approval** -- पहले church का कोई व्यक्ति स्वीकृति देगा।
+- **Approved** -- तुरंत बुक हो गया (कमरे या संसाधन का कोई स्वीकृति समूह नहीं है)।
+- **Pending approval** -- पहले चर्च के किसी व्यक्ति को स्वीकृति देनी होगी।
 
-## अपने Requests ट्रैक करना
+## अपने अनुरोध ट्रैक करना {#tracking-your-requests}
 
-Me page से **My Requests** खोलें। हर request event, आपने उसे कब मांगा, और एक status pill दिखाता है:
+Me पेज से **My Requests** खोलें। अनुरोध इवेंट की तारीख के आधार पर **Upcoming** और **Past** में बँटे होते हैं (पुराने देखने के लिए **All past** पर टैप करें)। हर अनुरोध में इवेंट का शीर्षक और उसकी शुरुआत का समय, आपके द्वारा माँगे गए हर कमरे और संसाधन की स्थिति, और एक स्थिति पिल दिखती है:
 
 - **Pending** -- निर्णय की प्रतीक्षा में
-- **Approved** -- आपकी booking की पुष्टि हो गई है
+- **Approved** -- आपकी बुकिंग की पुष्टि हो गई है
 - **Rejected** -- अनुरोध अस्वीकार कर दिया गया
 
-जब तक कोई request pending है, आप **Cancel request** से उसे वापस ले सकते हैं (आपसे पुष्टि के लिए पूछा जाएगा -- cancel करना वापस नहीं किया जा सकता)।
+जब तक अनुरोध लंबित है, आप **Cancel request** से उसे वापस ले सकते हैं। एक पुष्टि पूछती है "Cancel this request? This cannot be undone." — पुष्टि के लिए **Cancel request** पर टैप करें या छोड़ने के लिए **Keep** पर।
+
+My Requests के शीर्ष पर **Request an Event** बटन से आप नया अनुरोध भी शुरू कर सकते हैं।
 
 :::info
-अनुरोधों की समीक्षा church के staff द्वारा B1 Admin के [Approvals page](../../b1-admin/calendars/approvals.md) पर की जाती है। कौन-से rooms और resources को approval चाहिए, यह आपके church पर निर्भर है -- देखें [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md)।
+अनुरोधों की समीक्षा चर्च के स्टाफ़ द्वारा B1 Admin के [Approvals page](../../b1-admin/calendars/approvals.md) पर की जाती है। कौन-से कमरों और संसाधनों को स्वीकृति चाहिए, यह आपके चर्च पर निर्भर है — देखें [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md)।
 :::
 
-## संबंधित लेख
+## संबंधित लेख {#related-articles}
 
-- [The Me Page](../getting-started/me-page.md) -- जहां अनुरोध के links रहते हैं
-- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals.md) -- staff अनुरोधों की समीक्षा कैसे करता है
-- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- churches bookable spaces कैसे कॉन्फ़िगर करते हैं
+- [The Me Page](../getting-started/me-page.md) -- जहाँ अनुरोध के लिंक रहते हैं
+- [Calendar Approvals (B1 Admin)](../../b1-admin/calendars/approvals.md) -- स्टाफ़ अनुरोधों की समीक्षा कैसे करता है
+- [Rooms & Resources (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- चर्च बुक करने योग्य स्थान कैसे कॉन्फ़िगर करते हैं

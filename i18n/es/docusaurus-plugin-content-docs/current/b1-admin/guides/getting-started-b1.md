@@ -1,13 +1,13 @@
 ---
-title: "Guía: Comienza con B1 en tu iglesia"
-description: "Recorre la configuración de una nueva iglesia en B1 Admin: crea tu cuenta, configura los ajustes, agrega roles, importa miembros y activa las funciones principales."
+title: "Guía: primeros pasos de su iglesia con B1"
+description: "Recorra la configuración de una nueva iglesia en B1 Admin: cree su cuenta, configure los ajustes, añada roles, importe miembros y active las funciones principales."
 ---
 
-# Comienza con B1 en tu iglesia
+# Primeros pasos de su iglesia con B1
 
 <div class="article-intro">
 
-Una guía completa de incorporación para nuevas iglesias, desde la creación de tu cuenta hasta la importación de tu directorio de miembros y la configuración de tus primeras funciones. Sigue estos pasos en orden para poner tu iglesia en marcha en B1.
+Una guía completa de incorporación para nuevas iglesias: desde crear su cuenta hasta importar su directorio de miembros y configurar sus primeras funciones. Siga estos pasos en orden para poner en marcha su iglesia en B1.
 
 </div>
 
@@ -15,93 +15,93 @@ Una guía completa de incorporación para nuevas iglesias, desde la creación de
 <h4>Antes de comenzar</h4>
 
 - Una dirección de correo electrónico válida
-- El logotipo de tu iglesia y tus recursos de marca (colores, imágenes): recomendado, pero no obligatorio para empezar
+- El logotipo de su iglesia y sus recursos de marca (colores, imágenes): recomendados, pero no obligatorios para empezar
 
 </div>
 
-## Paso 1: Crea tu cuenta
+## Paso 1: crear su cuenta {#step-1-create-your-account}
 
-Registra tu iglesia y conviértete en el primer administrador.
+Registre su iglesia y conviértase en el primer administrador.
 
-Sigue la guía [Crear cuenta](../../getting-started/create-account.md) para:
+Siga la guía [Crear cuenta](../../getting-started/create-account.md) para:
 
-1. Ir a b1.church y registrarte con tu correo electrónico
-2. Verificar tu dirección de correo electrónico
-3. Elegir "Crear una nueva iglesia" e ingresar el nombre de tu iglesia
-4. Quedar registrado automáticamente como Administrador de dominio, con acceso completo a todo
+1. Vaya a b1.church y regístrese con su correo electrónico
+2. Verifique su dirección de correo electrónico
+3. Elija "Crear una nueva iglesia" e introduzca el nombre de su iglesia
+4. Usted se convierte automáticamente en Administrador de dominio, con acceso completo a todo
 
-## Paso 2: Configura los ajustes de la iglesia
+## Paso 2: configurar los ajustes de la iglesia {#step-2-configure-church-settings}
 
-Ingresa la información básica y la imagen de marca de tu iglesia.
+Introduzca la información básica de su iglesia y su identidad visual.
 
-Sigue la guía [Ajustes de la iglesia](../settings/church-settings.md) para:
+Siga la guía [Configuración de la iglesia](../settings/church-settings.md) para:
 
-1. Ingresar el nombre, la dirección, el número de teléfono y el correo electrónico de tu iglesia
-2. Configurar tu subdominio (será yourchurch.b1.church)
-3. Subir el logotipo y las imágenes de tu iglesia
+1. En el [menú Jump](../introduction.md#getting-around-with-the-jump-menu), elija **Configuración > Configuración** y haga clic en **Editar** en la sección **Información de la iglesia**
+2. Introduzca el nombre y la dirección de su iglesia, y configure su **Subdominio** (esto será tuiglesia.b1.church)
+3. Suba el logotipo de su iglesia y elija sus colores en **Sitio web > Apariencia** (consulte [Logotipo e identidad visual](../website/appearance.md#logo-and-branding)), y configure los colores de la app de B1 en **Móvil > Tema de la app**
 
 :::tip
-Tu subdominio aparece en la URL de tu sitio web y en la URL de tu página de donaciones, así que elige algo corto y fácil de reconocer (por ejemplo, "grace" para Grace Community Church).
+Su subdominio aparece en la URL de su sitio web y en la URL de su página de donaciones, así que elija algo corto y reconocible (por ejemplo, "gracia" para la Iglesia Comunidad de Gracia).
 :::
 
-## Paso 3: Configura los roles e invita a tu equipo
+## Paso 3: configurar roles e invitar a su equipo {#step-3-set-up-roles--invite-your-team}
 
-Controla quién tiene acceso a qué y haz que tu equipo participe.
+Controle quién tiene acceso a qué y haga partícipe a su equipo.
 
-Sigue la guía [Roles y permisos](../settings/roles-permissions.md) para:
+Siga la guía [Roles y permisos](../settings/roles-permissions.md) para:
 
-1. Crear roles para tu equipo (por ejemplo, "Pastor", "Administrador de oficina", "Equipo de finanzas", "Líder de alabanza")
-2. Asignar permisos específicos a cada rol para que las personas vean solo lo que necesitan
-3. Invitar a los miembros del equipo agregándolos y asignándoles un rol
+1. En el menú Jump, elija **Configuración > Roles** y cree roles para su equipo (por ejemplo, "Pastor", "Administración de oficina", "Equipo financiero", "Líder de alabanza")
+2. Asigne permisos específicos a cada rol para que las personas solo vean lo que necesitan
+3. Invite a los miembros del equipo haciendo clic en **Añadir** en el panel **Miembros** de un rol; B1 le ofrece enviarles un correo de invitación (use **Crear nuevo usuario** para alguien que todavía no esté en su iglesia)
 
 :::info
-No tienes que hacerlo todo tú solo. Invita pronto al personal de oficina, a los pastores y a los líderes de ministerios para que puedan ayudar a configurar sus áreas.
+No tiene que hacerlo todo usted mismo. Invite pronto a su personal de oficina, a los pastores y a los líderes de ministerios para que puedan ayudar a configurar sus áreas.
 :::
 
-## Paso 4: Importa tu gente
+## Paso 4: importar a sus personas {#step-4-import-your-people}
 
-Trae tu directorio de miembros existente a B1.
+Traiga su directorio de miembros existente a B1.
 
-Sigue la guía [Importar datos](../people/importing-data.md). Tienes dos opciones:
+Siga la guía de [Importar datos](../people/importing-data.md). En **Configuración**, haga clic en **Importar/Exportar** para abrir la herramienta B1 Transfer y luego elija su origen:
 
-1. **Carga de CSV**: exporta desde tu sistema actual o tu hoja de cálculo, dale formato CSV y súbelo a B1
-2. **Migración desde Breeze**: importación con un solo clic que trae personas, fotos, grupos, donaciones y asistencia
+1. **CSV / Excel personalizado**: exporte desde su sistema actual o su hoja de cálculo, súbalo y asigne sus columnas a los campos de B1
+2. **Migración desde otro sistema**: suba una exportación de **Breeze**, **Planning Center**, **Tithe.ly** o **CCB / Pushpay**
 
 :::tip
-¿Vienes de Breeze? La herramienta de importación trae todo en un solo paso: personas, fotos, grupos, donaciones e historial de asistencia. Es la forma más rápida de empezar.
+¿Migra desde Breeze? Exporte sus archivos de **Personas**, **Etiquetas** y **Contribuciones**, comprímalos juntos en un zip y súbalo como **Zip de importación de Breeze**: sus personas, grupos y registros de donaciones se trasladan en un solo paso.
 :::
 
-## Paso 5: Configura la aplicación móvil
+## Paso 5: configurar la app móvil {#step-5-configure-the-mobile-app}
 
-Personaliza la experiencia de la aplicación B1 para tu congregación.
+Personalice la experiencia de la app de B1 para su congregación.
 
-Sigue la guía [Ajustes de la aplicación móvil](../settings/mobile-app.md) para:
+Siga la guía de [Configuración de la app móvil](../settings/mobile-app.md) para:
 
-1. Elegir qué pestañas aparecen en la aplicación B1 para tus miembros
-2. Configurar los nombres, los íconos y los tipos de pestañas (Biblia, transmisión en vivo, donación, sitio web, etc.)
-3. Controlar qué funciones son visibles para tu congregación
+1. En el menú Jump, elija **Móvil > Navegación** y haga clic en **Añadir pestaña** para elegir qué pestañas aparecen en la app de B1 para sus miembros
+2. Establezca el nombre, el icono y el **Tipo de pestaña** de cada una (Biblia, Transmisión en vivo, Sermones, Donación, URL externa, Página interna, etc.)
+3. Use la **Visibilidad** de cada pestaña para controlar quién la ve
 
-## Paso 6: Empieza a configurar las funciones
+## Paso 6: empezar a configurar las funciones {#step-6-start-setting-up-features}
 
-Ahora que tus cimientos están listos, sigue estas guías para configurar funciones específicas:
+Ahora que la base está lista, siga estas guías para configurar funciones específicas:
 
-- [Configura las donaciones en línea](./online-giving.md): acepta donaciones a través de tu sitio web y de la aplicación
-- [Lanza el sitio web de tu iglesia](./launch-website.md): crea el sitio web de tu iglesia
-- [Administra grupos pequeños](./small-groups.md): organiza grupos, estudios bíblicos y ministerios
-- [Configura el registro de entrada de niños](./childrens-checkin.md): registro en quiosco para el ministerio infantil
-- [Administra los voluntarios del domingo](./sunday-volunteers.md): coordina tus equipos de servicio
-- [Crea tu biblioteca de sermones](./sermon-library.md): pon los sermones en línea y configura la transmisión en vivo
-- [Registra la asistencia](./track-attendance.md): supervisa quién asiste a los servicios y a los grupos
+- [Configurar la donación en línea](./online-giving.md): acepte donaciones a través de su sitio web y su app
+- [Lanzar el sitio web de su iglesia](./launch-website.md): cree el sitio web de su iglesia
+- [Dirigir grupos pequeños](./small-groups.md): organice grupos, estudios bíblicos y ministerios
+- [Configurar el registro de entrada infantil](./childrens-checkin.md): registro en quiosco para el ministerio infantil
+- [Administrar voluntarios del domingo](./sunday-volunteers.md): coordine sus equipos de servicio
+- [Crear su biblioteca de sermones](./sermon-library.md): ponga los sermones en línea y configure la transmisión en vivo
+- [Seguimiento de asistencia](./track-attendance.md): supervise quién asiste a los servicios y grupos
 
-## ¡Listo!
+## ¡Listo! {#youre-done}
 
-Tu iglesia está configurada en B1. Tu equipo tiene acceso, tu gente está importada y estás listo para empezar a usar las funciones que más importan a tu ministerio. Explora las guías de funciones anteriores para configurar cada área.
+Su iglesia ya está configurada en B1. Su equipo tiene acceso, sus personas están importadas y usted está listo para empezar a usar las funciones que más importan a su ministerio. Explore las guías de funciones anteriores para configurar cada área.
 
-## Artículos relacionados
+## Artículos relacionados {#related-articles}
 
-- [Crear cuenta](../../getting-started/create-account.md): registro de cuenta
+- [Crear cuenta](../../getting-started/create-account.md): registro de la cuenta
 - [Configuración inicial](../../getting-started/initial-setup.md): resumen de la incorporación guiada
-- [Ajustes de la iglesia](../settings/church-settings.md): información de la iglesia y marca
+- [Configuración de la iglesia](../settings/church-settings.md): información de la iglesia y su identidad visual
 - [Roles y permisos](../settings/roles-permissions.md): control de acceso del equipo
 - [Importar datos](../people/importing-data.md): importación masiva de datos
-- [Ajustes de la aplicación móvil](../settings/mobile-app.md): personaliza la aplicación para miembros
+- [Configuración de la app móvil](../settings/mobile-app.md): personalice la app de los miembros

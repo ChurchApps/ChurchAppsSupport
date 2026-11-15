@@ -59,9 +59,9 @@ Set up an Approval Group on a room in [Rooms & Resources](./rooms-resources.md) 
 Approved and rejected requests stay on the page. Click **History** at the top of Approvals to see them; click **Pending** to go back to the open requests.
 
 - **Room & Resource Requests** lists each decided booking with the event, the room or resource, **Requested by**, an **Approved** or **Rejected** badge, and **Decided**, which shows who made the decision and on what date. The most recently decided requests are listed first.
-- **Event Requests** lists each decided event with its description, **Requested by**, and an **Approved** or **Rejected** badge. Who decided an event request, and when, is not recorded, so that column is not shown for events.
+- **Event Requests** lists each decided event with its description, **Requested by**, an **Approved** or **Rejected** badge, and **Decided**, which shows who made the decision and on what date. Older event requests, decided before B1 started recording this, show a dash instead.
 
-You can change your mind from History: an approved request has a **Reject** action and a rejected one has an **Approve** action. Event requests can also be edited or deleted here.
+You can change your mind from History: an approved request has a **Reject** action and a rejected one has an **Approve** action. Rejecting an event request you had approved takes it back off the public calendar. Event requests can also be edited or deleted here.
 
 Click a name under **Requested by** to open that person's record.
 

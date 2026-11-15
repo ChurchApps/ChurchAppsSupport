@@ -36,7 +36,7 @@ La scheda **Lezioni** ti ha dato accesso al curriculum e ai materiali di apprend
 
 Il tuo accesso viene trasferito automaticamente quando apri la scheda Lezioni. Non è necessario accedere di nuovo separatamente a Lessons.church.
 
-## Quello Che Puoi Fare
+## Quello Che Puoi Fare {#what-you-can-do}
 
 Una volta dentro la scheda Lezioni, puoi sfogliare il curriculum che la tua chiesa ha messo a disposizione. A seconda di come la tua chiesa ha impostato, potresti trovare:
 

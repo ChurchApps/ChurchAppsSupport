@@ -1,52 +1,53 @@
 ---
 title: "Formulare"
-description: "Finden, filtern, bearbeiten, archivieren und wiederherstellen Sie eigene Formulare in B1 Admin, außerdem erfahren Sie, wo Sie Formularmitglieder festlegen und Einsendungen prüfen."
+description: "Finden, filtern, bearbeiten, archivieren und wiederherstellen Sie eigene Formulare in B1 Admin und sehen Sie, wo Sie Formularmitglieder festlegen und Einsendungen prüfen."
 ---
 
 # Formulare
 
 <div class="article-intro">
 
-Der Bereich "Formulare" ermöglicht es Ihnen, benutzerdefinierte Formulare für Registrierungen, Umfragen, Datenerfassung und mehr zu erstellen. Unabhängig davon, ob Sie eine Besucherkarte, eine Veranstaltungsanmeldung oder ein Gebetsanfrageformular benötigen, können Sie es hier erstellen und über einen öffentlichen Link oder Ihre B1.church-Website mit Ihrer Gemeinde teilen.
+Der Bereich Formulare ermöglicht es Ihnen, eigene Formulare für Anmeldungen, Umfragen, Datenerfassung und mehr zu erstellen. Ob Sie eine Besucherkarte, eine Veranstaltungsanmeldung oder ein Formular für Gebetsanliegen benötigen – Sie bauen es hier und teilen es über einen öffentlichen Link oder Ihre B1.church-Website mit Ihrer Gemeinde.
 
 </div>
 
-## Die Seite "Formulare"
+## Die Seite Formulare {#the-forms-page}
 
-Wenn Sie **Forms** (Formulare) öffnen, werden diese Registerkarten angezeigt:
+Wenn Sie **Formulare** öffnen, sehen Sie diese Reiter:
 
-- **Forms** (Formulare) -- Zeigt alle Ihre aktiven Formulare an.
-- **Archived Forms** (Archivierte Formulare) -- Zeigt Formulare an, die archiviert wurden. Sie können archivierte Formulare jederzeit wiederherstellen. Diese Registerkarte wird nur angezeigt, nachdem mindestens ein Formular archiviert wurde.
+- **Formulare** – zeigt alle aktiven Formulare.
+- **Archivierte Formulare** – zeigt archivierte Formulare. Sie können archivierte Formulare jederzeit wiederherstellen. Dieser Reiter erscheint erst, wenn mindestens ein Formular archiviert wurde.
 
-Jedes Formular in der Liste zeigt seinen Namen und, falls konfiguriert, eine öffentliche URL, die Sie extern teilen können.
+Oberhalb der Liste wird die Anzahl der Formulare angezeigt. Jedes Formular in der Liste zeigt seinen Namen und bei eigenständigen Formularen die öffentliche URL, die Sie extern teilen können (Personenformulare zeigen stattdessen **Personenprofil-Formular**). Fahren Sie mit der Maus über eine Zeile (auf dem Handy sind die Links immer sichtbar), um deren Aktionen zu sehen: **Bearbeiten**, **Drucken**, **QR-Code** (nur eigenständige Formulare), **Duplizieren** und **Archivieren**. Archivierte Formulare zeigen **Drucken** und **Wiederherstellen**.
 
-## Was Sie tun können
+## Was Sie tun können {#what-you-can-do}
 
-Von der Seite "Formulare" aus können Sie:
+Auf der Seite Formulare können Sie:
 
-- **Ein Formular hinzufügen** -- Klicken Sie auf **Add Form** (Formular hinzufügen), um ein neues benutzerdefiniertes Formular zu erstellen.
-- **Ein Formular suchen** -- Geben Sie im Feld **Find a form** (Formular suchen) einen Namen ein, um die Liste zu filtern.
-- **Ein Formular bearbeiten** -- Klicken Sie auf einen Formularnamen, um ihn zu öffnen und seine Fragen, Mitglieder oder Einstellungen zu ändern.
-- **Ein Formular archivieren** -- Verschieben Sie Formulare, die Sie nicht mehr benötigen, zur Registerkarte **Archived Forms** (Archivierte Formulare), um Ihre Liste sauber zu halten.
-- **Ein Formular wiederherstellen** -- Wechseln Sie zur Registerkarte **Archived Forms** (Archivierte Formulare) und stellen Sie jedes Formular wieder her, das Sie wieder aktiv machen möchten.
+- **Ein Formular hinzufügen** – Klicken Sie auf **Formular hinzufügen**, um ein neues eigenes Formular zu erstellen.
+- **Ein Formular finden** – Geben Sie ins Feld **Formular suchen** einen Begriff ein, um die Liste nach Namen zu filtern.
+- **Ein Formular bearbeiten** – Klicken Sie auf den Namen eines Formulars, um es zu öffnen und Fragen, Mitglieder oder Einstellungen zu ändern, oder klicken Sie in seiner Zeile auf **Bearbeiten**, um die Einstellungen direkt auf der Seite Formulare zu ändern.
+- **Ein Formular drucken, teilen oder kopieren** – Siehe [Ein leeres Formular drucken](./creating-forms.md#printing-a-blank-form), [Ein Formular per QR-Code teilen](./creating-forms.md#sharing-a-form-with-a-qr-code) und [Ein Formular duplizieren](./creating-forms.md#duplicating-a-form).
+- **Ein Formular archivieren** – Klicken Sie auf **Archivieren** und bestätigen Sie, um ein nicht mehr benötigtes Formular in den Reiter **Archivierte Formulare** zu verschieben und Ihre Liste übersichtlich zu halten. Seine Einsendungen bleiben erhalten.
+- **Ein Formular wiederherstellen** – Wechseln Sie zum Reiter **Archivierte Formulare**, klicken Sie auf **Wiederherstellen** und bestätigen Sie, um das Formular wieder zu aktivieren.
 
-## Arbeiten mit einem Formular
+## Mit einem Formular arbeiten {#working-with-a-form}
 
-Klicken Sie auf einen beliebigen Formularnamen, um ihn zu öffnen. Der Formular-Editor hat bis zu drei Registerkarten:
+Klicken Sie auf einen beliebigen Formularnamen, um es zu öffnen. Auf der linken Seite der Seite stehen der Name des Formulars, sein Typ und der öffentliche Link, mit einer Schaltfläche **Formular bearbeiten** für die [Einstellungen](./creating-forms.md#configuring-form-properties) und einem Link **Formulare** zurück zur Liste. Je nach Ihrem Zugriff hat das Formular bis zu drei Reiter:
 
-- **Questions** (Fragen) -- Erstellen Sie die Formularstruktur, indem Sie Felder mit verschiedenen Typen hinzufügen. Siehe [Creating Forms](./creating-forms.md) für Details.
-- **Form Members** (Formularmitglieder) -- Kontrollieren Sie, wer auf das Formular zugreifen und es verwalten kann (nur Stand-Alone-Formulare).
-- **Form Submissions** (Formularübermittlungen) -- Zeigen Sie eingereichte Antworten an. Siehe [Managing Submissions](./managing-submissions.md) für Details.
+- **Fragen** – Bauen Sie den Aufbau des Formulars, indem Sie Felder verschiedener Typen hinzufügen. Details finden Sie unter [Formulare erstellen](./creating-forms.md).
+- **Mitglieder des Formulars** – Legen Sie fest, wer auf das Formular zugreifen und es verwalten kann (nur eigenständige Formulare).
+- **Einsendungen** – Sehen Sie die abgesendeten Antworten. Details finden Sie unter [Einsendungen verwalten](./managing-submissions.md).
 
 :::tip
-Formulare mit einer öffentlichen URL können per Link geteilt, auf Ihrer Website eingebettet oder in E-Mails eingefügt werden. Dies macht es einfach, Informationen von Personen zu sammeln, die möglicherweise kein Kirchenkonto haben.
+Formulare mit einer öffentlichen URL lassen sich per Link teilen, auf Ihrer Website einbetten oder in E-Mails aufnehmen. So sammeln Sie Informationen auch von Personen, die vielleicht kein Konto in Ihrer Kirche haben.
 :::
 
 :::info
-Sie können mithilfe der Registerkarte **Form Members** (Formularmitglieder) kontrollieren, wer Zugriff auf jedes Formular hat. Weisen Sie **Admin** oder **View Only** (Nur anzeigen) Rollen zu, um Ihrem Team die richtige Zugriffsstufe zu geben.
+Über den Reiter **Mitglieder des Formulars** steuern Sie, wer Zugriff auf jedes Formular hat. Weisen Sie die Rollen **Administrator** oder **Nur Anzeigen** zu, um Ihrem Team die passende Zugriffsstufe zu geben.
 :::
 
-## Weitere Informationen
+## Mehr erfahren {#learn-more}
 
-- [Creating Forms](./creating-forms.md) (Formulare erstellen) -- Schritt-für-Schritt-Anleitung zum Erstellen von Formularen und zum Hinzufügen von Fragen.
-- [Managing Submissions](./managing-submissions.md) (Übermittlungen verwalten) -- Wie Sie Formularantworten anzeigen und verwalten.
+- [Formulare erstellen](./creating-forms.md) – Schritt-für-Schritt-Anleitung zum Erstellen von Formularen und Hinzufügen von Fragen.
+- [Einsendungen verwalten](./managing-submissions.md) – So sehen und verwalten Sie Antworten auf Formulare.

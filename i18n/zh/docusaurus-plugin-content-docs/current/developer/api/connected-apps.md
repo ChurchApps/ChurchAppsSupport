@@ -182,7 +182,7 @@ OAuth 客户端（即第三方应用本身）是全局注册的。带有 `client
 | `POST /membership/oauth/clients` | Server.Admin | 创建或更新客户端 |
 | `DELETE /membership/oauth/clients/:id` | Server.Admin | 删除客户端 |
 
-### 动态客户端注册
+### 动态客户端注册 {#dynamic-client-registration}
 
 `POST /membership/oauth/register`（公开，RFC 7591）允许 claude.ai 的 MCP 连接器等客户端自行注册。该端点通过 API 的 `/.well-known/oauth-authorization-server` 文档进行公布——参见 [MCP 服务器 → OAuth 发现](./mcp.md#oauth-discovery)。
 
@@ -202,6 +202,6 @@ Content-Type: application/json
 
 在 B1Admin 的同意页面上，自行注册的客户端会显示一条通知，说明其为自行注册，其权限永远不会超过用户自己的 B1 账户，并且可以在**设置 → 开发者 → 已连接应用**中断开连接。
 
-## SDK 支持
+## SDK 支持 {#sdk-support}
 
 `@churchapps/integration-sdk` 包为每个 OAuth 流程提供了类型化的辅助方法——`B1OAuthClient.exchangeCode()`、`.refresh()`、`.startDeviceFlow()`、`.pollDeviceToken()`、`.awaitDeviceToken()`。端到端示例请参见该包的 README 以及 [Webhooks](./webhooks.md#sdk-support)。

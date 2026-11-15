@@ -20,7 +20,7 @@ description: "逐步介绍在 B1 Admin 中首次配置新教会的流程：教�
 
 </div>
 
-## 第 1 步：配置教会信息
+## 第 1 步：配置教会信息 {#step-1-configure-your-church-information}
 
 1. 打开[快速跳转菜单](../b1-admin/introduction.md#getting-around-with-the-jump-menu)（B1 Admin 左上角的搜索栏），展开 **设置**，然后点击 **设置**。
 2. 在 **教会信息** 部分，点击 **编辑**。

@@ -1,68 +1,78 @@
 ---
 title: "E-postmaler"
-description: "Sett opp e-post- og SMS-maler i B1 Admin med flettefelt, tekstmeldingsvalg og forhåndsvisninger for masseutsendelser."
+description: "Sett opp e-post- og tekstmeldingsmaler i B1 Admin, med flettefelt, valg for tekstmeldinger og forhåndsvisninger for masseutsendelser."
 ---
 
 # E-postmaler
 
 <div class="article-intro">
 
-E-postmaler lar deg lagre gjenbrukbart e-postinnhold -- en velkomstmelding, en påminnelse om et arrangement, en takk for en gave -- slik at du (eller en [arbeidsflyt](../serving/workflows.md)) kan sende det med ett klikk i stedet for å skrive det fra bunnen av hver gang. Den samme listen inneholder også SMS-maler for vinduene for å sende SMS til grupper og personer.
+E-postmaler lar deg lagre gjenbrukbart e-postinnhold -- en velkomstmelding, en påminnelse om et arrangement, en takk for gave -- slik at du (eller en [arbeidsflyt](../serving/workflows.md)) kan sende det med ett klikk i stedet for å skrive det fra bunnen av hver gang. Den samme listen inneholder også tekstmeldingsmaler for vinduene for tekst til gruppe og person, og handlingen **Send tekstmelding** i arbeidsflyter.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tilgang til området Innstillinger i B1 Admin.
+- Du trenger tillatelsen **Rediger kirkeinnstillinger** (menyvalget **E-postmaler** vises bare med den). Personer med **Rediger gruppemedlemmer** kan også åpne siden direkte på **/settings/email-templates**.
 
 </div>
 
-## Åpne e-postmaler
+## Åpne e-postmaler {#accessing-email-templates}
 
-1. I B1 Admin åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Innstillinger**.
-2. Klikk **E-postmaler**.
-3. Du ser en liste over eksisterende maler, med emne, kategori og dato for sist endret.
+1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) og utvider **Innstillinger**.
+2. Klikk på **E-postmaler**.
+3. Du ser en liste over eksisterende maler med **navn**, **emne**, **kategori** og datoen de sist ble **endret**.
 
-## Opprette en mal
+## Opprette en mal {#creating-a-template}
 
-1. Klikk **Ny mal**.
-2. Skriv inn et **malnavn** for å identifisere den i listen, og velg en **kategori** (Generelt, Arrangementer, Grupper, Gaver, Velkommen eller SMS) for å organisere malene dine. Velg **SMS** for å lage en SMS-mal i stedet (se [SMS-maler](#text-templates) nedenfor).
+1. Klikk på **Ny mal**.
+2. Skriv inn et **malnavn** for å identifisere den i listen, og velg en **kategori** (Generelt, Arrangementer, Grupper, Giving, Velkomst eller Tekst) for å organisere malene dine. Velg **Tekst** for å lage en tekstmeldingsmal i stedet (se [Tekstmaler](#text-templates) nedenfor).
 3. Skriv inn **emnelinjen**.
-4. Skriv **innholdet** i den rike tekst-editoren.
-5. Klikk **Lagre**.
+4. Skriv **innholdet** med tekstredigeringsverktøyet.
+5. Klikk på **Lagre**.
 
 ## Flettefelt {#merge-fields}
 
-Klikk på en flettefeltbrikke over emnet eller innholdet for å sette den inn der markøren står -- klikk først inn i teksten der du vil ha feltet, og klikk deretter brikken. Markøren står på samme sted, slik at du kan fortsette å skrive rett etter det innsatte feltet. Hvis du klikker en brikke for innhold uten først å klikke inn i innholdet, legges feltet til på slutten av innholdet. Når e-posten sendes, erstattes hvert flettefelt med mottakerens faktiske opplysninger:
+Klikk på en flettefeltbrikke over emnet eller innholdet for å sette den inn der markøren står -- klikk først i teksten der du vil ha feltet, og klikk deretter på brikken. Markøren blir stående på plass, så du kan fortsette å skrive rett etter feltet som er satt inn. Hvis du klikker på en brikke for innhold uten å klikke inn i innholdet først, legges feltet til på slutten av innholdet. Når e-posten sendes, erstattes hvert flettefelt med mottakerens faktiske opplysninger:
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- Mottakerens navn
 - `{{email}}` -- Mottakerens e-postadresse
-- `{{churchName}}` -- Kirkens navn
+- `{{churchName}}` -- Menighetens navn
 
-## SMS-maler {#text-templates}
+### Flettefelt for gaver {#gift-merge-fields}
 
-En mal med kategorien **SMS** er en ren tekstmelding for SMS i stedet for e-post:
+Disse feltene fylles bare inn når e-posten sendes av en [arbeidsflyt](../serving/workflows.md#sending-email) som ble startet av en **Gave · Opprettet**-utløser. I alle andre e-poster blir de tomme.
 
-- Den har ingen emnelinje. Den rike tekst-editoren erstattes med en enkel boks for **SMS-melding** som rommer opptil 1 600 tegn.
-- Flettefeltbrikkene over boksen setter inn `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{email}}` eller `{{churchName}}` der markøren står.
-- SMS-maler vises i nedtrekkslisten **Last inn mal (valgfritt)** i SMS-vinduet for en [gruppe](../groups/group-members.md#texting-group-members) eller en enkelt person. Når du velger en, fylles meldingen inn, og du kan fortsatt redigere den før du sender.
-- De utelates fra velgerne for e-postmaler, inkludert arbeidsflythandlingen **Send e-post**.
+- `{{amount}}` -- Beløpet for gaven, for eksempel $50.00
+- `{{giftDate}}` -- Datoen for gaven
+- `{{fund}}` -- Fondet eller fondene gaven gikk til
+- `{{receipt}}` -- Et gavesammendrag: datoen og metoden, en rad for hvert fond med beløp, og totalen. Bruk det til å sende giveren en kvittering i samme e-post som takken din. Det tilbys bare for innholdet, ikke emnet.
 
-For å kunne sende SMS må du ha koblet til en [SMS-leverandør](./church-settings.md#texting).
+## Tekstmaler {#text-templates}
 
-## Forhåndsvise en mal
+En mal med kategorien **Tekst** er en ren tekstmelding for tekstmeldinger, ikke e-post:
 
-Klikk **Forhåndsvis** for å se hvordan emnet og innholdet vil se ut med eksempeldata fylt inn i flettefeltene, før du lagrer eller sender.
+- Den har ikke emne. Tekstredigeringsverktøyet erstattes av en enkel boks for **tekstmelding** som tar opptil 1 600 tegn.
+- Brikkene for flettefelt over boksen setter inn `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}` eller [flettefeltene for gaver](#gift-merge-fields) der markøren står. I en tekst blir `{{receipt}}` til én linje, for eksempel *$50.00 til Generelt fond 8. nov. 2026*.
+- Tekstmaler vises i velgeren **Last inn mal (valgfritt)** i tekstvinduet for en [gruppe](../groups/group-members.md#texting-group-members) eller en enkelt person. Når du velger en, fylles meldingen inn, og du kan fortsatt redigere den før du sender.
+- De vises også i listen **Start fra en mal** i handlingen [Send tekstmelding](../serving/workflows.md#sending-a-text) i arbeidsflyter.
+- De utelates fra velgerne for e-postmaler, inkludert handlingen **Send e-post** i arbeidsflyter.
 
-## Bruke en mal
+Tekstmeldinger krever en tilkoblet [tekstmeldingsleverandør](./church-settings.md#texting).
 
-Lagrede maler kan velges når du skriver en e-post til personer eller en gruppe, og som en handling i [arbeidsflyter](../serving/workflows.md). Før kirken din kan sende dem, må ChurchApps-teamet godkjenne den for gruppe-e-post én gang. Se [Slå på gruppe-e-post for kirken din](../groups/group-members.md#turning-on-group-email-for-your-church).
+## Forhåndsvise en mal {#previewing-a-template}
 
-## Redigere og slette
+Klikk på **Forhåndsvis** for å se hvordan emnet og innholdet vil se ut med eksempeldata fylt inn for flettefeltene, før du lagrer eller sender.
 
-Klikk på **redigeringsikonet** ved siden av en mal for å oppdatere den, eller på **slettikonet** for å fjerne den permanent.
+## Bruke en mal {#using-a-template}
 
-## Neste steg
+Lagrede maler kan velges når du skriver en e-post til personer eller en gruppe, og brukes som handling i [arbeidsflyter](../serving/workflows.md). Før menigheten din kan sende dem, må ChurchApps-teamet godkjenne menigheten for gruppe-e-post én gang. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church).
+
+## Redigere og slette {#editing-and-deleting}
+
+Klikk på **Rediger** på en malrad for å oppdatere den, eller **Slett** for å fjerne den permanent. B1 ber deg bekrefte før sletting.
+
+## Neste steg {#next-steps}
 
 - [Arbeidsflyter](../serving/workflows.md) -- Utløs en malt e-post automatisk basert på regler

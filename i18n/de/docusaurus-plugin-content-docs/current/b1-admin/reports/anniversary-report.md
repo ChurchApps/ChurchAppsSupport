@@ -1,46 +1,46 @@
 ---
-title: "Jubiläumsliste"
-description: "Alle Personen mit Hochzeitstag in einem gewählten Monat in B1 Admin auflisten, mit Datum, und als Tabelle für Gemeindebrief oder Karten exportieren."
+title: "Hochzeitstagsliste"
+description: "Erstellen Sie in B1 Admin eine Liste aller Personen mit Hochzeitstag in einem gewählten Monat, mit den Daten in den Ergebnissen und als Tabelle exportierbar für Gemeindebriefe oder Karten."
 ---
 
-# Jubiläumsliste
+# Hochzeitstagsliste
 
 <div class="article-intro">
 
-Benötigen Sie eine Liste aller Personen mit einem Hochzeitstag in einem bestimmten Monat -- für das Gemeindebulletin, Karten oder Ankündigungen? Mit der Personensuche können Sie nach **Jubiläumsmonat** filtern und die Daten direkt in den Ergebnissen anzeigen.
+Sie brauchen eine Liste aller Personen mit Hochzeitstag in einem bestimmten Monat – für den Gemeindebrief, Karten oder Ankündigungen? Die Personensuche ermöglicht es Ihnen, nach **Hochzeitstag-Monat** zu filtern und die Daten direkt in den Ergebnissen anzuzeigen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Stellen Sie sicher, dass Jubiläumsdaten in den Profilen der einzelnen Personen eingegeben werden. Weitere Informationen finden Sie unter [Personen hinzufügen](../people/adding-people.md).
-- Sie benötigen Berechtigung zum Anzeigen von Personen. Weitere Informationen finden Sie unter [Rollen & Berechtigungen](../settings/roles-permissions.md).
+- Stellen Sie sicher, dass die Hochzeitstage im Profil jeder Person eingetragen sind. Details finden Sie unter [Personen hinzufügen](../people/adding-people.md).
+- Sie benötigen die Berechtigung, Personen einzusehen. Siehe [Rollen & Berechtigungen](../settings/roles-permissions.md).
 
 </div>
 
-## Jubiläumsliste für einen Monat abrufen
+## Eine Hochzeitstagsliste für einen Monat erstellen {#getting-an-anniversary-list-for-a-month}
 
-1. Öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), erweitern Sie **Personen** und klicken Sie auf **Personen**.
+1. Öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links in B1 Admin), klappen Sie **Personen** auf und klicken Sie auf **Personen**.
 2. Klicken Sie unter dem Suchfeld auf **Erweitert**.
-3. Erweitern Sie den Bereich **Demografische Daten** und aktivieren Sie **Jubiläumsmonat**, dann wählen Sie den Monat aus.
-4. Führen Sie die Suche aus -- alle Personen mit einem Jubiläum in diesem Monat werden in den Ergebnissen angezeigt.
-5. Um die Daten anzuzeigen, stellen Sie **Ansicht als** auf **Tabelle** um, klicken Sie dann auf das Symbol **Spalten auswählen** in der Seitenkopfzeile und aktivieren Sie die Spalte **Jubiläum**. Verwenden Sie **Exportieren**, um die Liste als Kalkulationstabelle herunterzuladen, falls Sie sie lieber sortieren oder drucken möchten.
+3. Klappen Sie den Abschnitt **Demografie** auf und markieren Sie **Hochzeitstag-Monat**. Wählen Sie dann den Monat.
+4. Die Ergebnisse aktualisieren sich, sobald der Filter markiert ist -- alle Personen mit Hochzeitstag in diesem Monat erscheinen.
+5. Um die Daten zu sehen, wechseln Sie **Anzeigen als** auf **Tabelle**, klicken Sie dann im Seitenkopf auf das Symbol **Spalten auswählen** und aktivieren Sie die Spalte **Hochzeitstag**. Mit **Exportieren** laden Sie die Liste als Tabelle herunter, wenn Sie sie lieber sortieren oder drucken möchten.
 
-## Praktische Anwendungen
+## Praktische Einsatzmöglichkeiten {#practical-uses}
 
-- **Wöchentliches Gemeindebulletin** -- Führen Sie die Liste des aktuellen Monats aus und nehmen Sie Jubiläen in Ihr Bulletin oder Ihre Ankündigungen auf.
-- **Jubiläumskarten** -- Exportieren Sie die Liste des Monats und übergeben Sie sie Ihrem Kartenschreib-Team.
-- **Meilenstein-Feiern** -- Kombinieren Sie mit dem Filter **Jahre verheiratet**, um Meilenstein-Jubiläen zu finden.
+- **Wöchentliche Gemeindebriefe** -- Erstellen Sie die Liste des laufenden Monats und nehmen Sie die Hochzeitstage in Ihren Gemeindebrief oder Ihre Ankündigungen auf.
+- **Glückwunschkarten** -- Exportieren Sie die Liste des Monats und übergeben Sie sie Ihrem Team, das die Karten schreibt.
+- **Meilensteine feiern** -- Kombinieren Sie den Filter **Ehejahre**, um runde Hochzeitstage zu finden.
 
 :::tip
-Führen Sie dies zu Beginn des Monats durch, damit Sie Zeit haben, Karten vorzubereiten oder Ankündigungen zu machen, bevor Jubiläen eintreten.
+Erstellen Sie die Liste zu Beginn jedes Monats, damit Sie Karten oder Ankündigungen rechtzeitig vorbereiten können, bevor die Hochzeitstage anstehen.
 :::
 
 :::info
-Jubiläumsdaten stammen aus dem Jubiläumsfeld im Profil jeder Person. Falls jemand fehlt, muss sein Profil einfach das Datum hinzugefügt bekommen. Weitere Informationen finden Sie unter [Personen hinzufügen](../people/adding-people.md).
+Die Hochzeitstagsdaten stammen aus dem Feld Hochzeitstag im Profil jeder Person. Fehlt jemand, muss im Profil lediglich das Datum ergänzt werden. Siehe [Personen hinzufügen](../people/adding-people.md).
 :::
 
-## Auch anschauen
+## Siehe auch {#also-see}
 
-Suchen Sie gleichzeitig nach Geburtstagen? Weitere Informationen finden Sie unter [Geburtstags- und Jubiläumslisten](./birthday-report.md), um beide in einer Suche zu finden.
+Sie möchten gleichzeitig Geburtstage sehen? Unter [Geburtstags- & Hochzeitstagslisten](./birthday-report.md) finden Sie, wie Sie beide mit einer einzigen Suche abrufen.

@@ -1,51 +1,54 @@
 ---
-title: "Resumo de Doações"
-description: "Execute o relatório Resumo de Doações no B1 Admin para ver o total doado, o número de doadores únicos e os valores por fundo, em qualquer período."
+title: "Resumo de doações"
+description: "Execute o relatório Resumo de doações no B1 Admin para ver o total de contribuições, a quantidade de doadores únicos e os valores por fundo, para o período de datas que você escolher."
 ---
 
-# Resumo de Doações
+# Resumo de doações
 
 <div class="article-intro">
 
-O relatório Resumo de Doações lhe dá uma visão clara da atividade de doação de sua igreja. Use-o para rastrear totais de doação, monitorar tendências de doação e preparar relatórios financeiros para sua equipe de liderança.
+O relatório Resumo de doações oferece uma visão clara da atividade de contribuições da sua igreja. Use-o para acompanhar os totais de doações, monitorar as tendências de contribuição e preparar relatórios financeiros para a sua liderança.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Certifique-se de que as doações estão sendo [registradas consistentemente](../donations/recording-donations.md) em seu sistema
-- Você precisa das [permissões](../settings/roles-permissions.md) apropriadas para acessar relatórios financeiros
+- Certifique-se de que as doações estão sendo [registradas de forma consistente](../donations/recording-donations.md) no seu sistema
+- Você precisa da [permissão](../settings/roles-permissions.md) **Visualizar resumos de doações**
 
 </div>
 
-## Executando o Relatório
+## Executando o relatório {#running-the-report}
 
-1. Vá diretamente para **admin.b1.church/reports/donationSummary** em seu navegador (relatórios não têm entrada no menu de navegação — marcador de endereço é a maneira mais fácil de voltar).
-2. Defina o **intervalo de datas** para definir o período de relatório.
-3. Aplique filtros adicionais como **fundo** ou outros critérios para estreitar os resultados.
-4. O relatório exibirá o resumo de doação para o período selecionado.
+1. Abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo do B1 Admin), expanda **Doações** e clique em **Resumo**. O relatório é executado imediatamente para o último ano.
+2. Escolha **Semanal**, **Mensal** ou **Trimestral** para definir como as contribuições são agrupadas.
+3. No painel **Filtrar relatório**, defina a **Data inicial** e a **Data final**, opcionalmente escolha um **Fundo** e clique em **Executar relatório**.
+4. Clique em **Opções de download** e escolha **Resumo** para baixar os totais em CSV, ou clique no ícone de impressão para imprimir o relatório.
 
-## O Que o Relatório Mostra
+Veja [Relatórios de doações](../donations/donation-reports.md#giving-dashboard) para mais informações sobre esta página.
 
-O relatório Resumo de Doações inclui:
+## O que o relatório mostra {#what-the-report-shows}
 
-- **Total de doações** -- O valor total de doação para o período selecionado.
-- **Contagem de doadores** -- O número de doadores únicos que contribuíram.
-- **Quantias por fundo** -- Um detalhamento de doação entre diferentes fundos, se aplicável.
+O Resumo de doações inclui:
 
-## Usos Práticos
+- **Total de contribuições** -- O valor total das contribuições no período selecionado.
+- **Doação média** e **Total de doações** -- O valor típico de uma doação e a quantidade de doações.
+- **Doadores únicos** -- A quantidade de doadores diferentes que contribuíram.
+- **Valores por fundo** -- Um gráfico de barras das contribuições por semana, mês ou trimestre, separadas por fundo.
 
-- **Planejamento financeiro** -- Revise tendências de doação para prever renda futura e planejar seu orçamento.
-- **Relatórios do conselho** -- Gere resumos para reuniões regulares do conselho ou liderança com dados de doação claros.
-- **Análises de fim de ano** -- Execute o relatório para o ano completo para preparar resumos financeiros anuais.
-- **Rastreamento de campanha** -- Filtre por fundo para rastrear progresso em campanhas de doação especiais ou projetos de construção.
-- **Análise sazonal** -- Compare doações entre diferentes períodos para entender padrões sazonais.
+## Usos práticos {#practical-uses}
+
+- **Planejamento financeiro** -- Analise as tendências de contribuição para prever a receita futura e planejar o orçamento.
+- **Relatórios para a diretoria** -- Gere resumos para as reuniões regulares da diretoria ou da liderança, com dados claros de contribuições.
+- **Balanço de fim de ano** -- Execute o relatório para o ano inteiro para preparar os resumos financeiros anuais.
+- **Acompanhamento de campanhas** -- Filtre por fundo para acompanhar o progresso de campanhas especiais de contribuição ou de projetos de construção.
+- **Análise sazonal** -- Compare as contribuições entre diferentes períodos para entender os padrões sazonais.
 
 :::tip
-Execute este relatório mensalmente para se manter informado sobre a saúde financeira de sua igreja. Comparar dados mês a mês ajuda você a identificar tendências cedo.
+Execute este relatório mensalmente para manter-se informado sobre a saúde financeira da sua igreja. Comparar os dados mês a mês ajuda a identificar tendências logo no início.
 :::
 
 :::warning
-Os dados de doação vêm de contribuições registradas em seu sistema. Certifique-se de que as doações sejam inseridas consistentemente -- seja através de doações online, processamento de cheque ou entrada manual -- para os relatórios mais precisos. Veja [Registrando Doações](../donations/recording-donations.md) para detalhes.
+Os dados de doações vêm das contribuições registradas no seu sistema. Certifique-se de que as doações são lançadas de forma consistente — seja por meio de contribuições online, processamento de cheques ou lançamento manual — para obter os relatórios mais precisos. Veja [Registrando doações](../donations/recording-donations.md) para mais detalhes.
 :::

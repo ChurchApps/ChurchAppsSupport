@@ -51,7 +51,7 @@ Alcuni provider usano un flusso con dispositivo, simile a quello che si usa per 
 Un indicatore pulsante **In attesa di conferma** mostra che FreePlay sta verificando il tuo accesso. La schermata mostra quanti minuti mancano alla scadenza del codice, quindi completa il processo in fretta. Seleziona **Genera nuovo codice** se scade.
 :::
 
-## Accesso con il telefono (solo codice QR)
+## Accesso con il telefono (solo codice QR) {#phone-sign-in-qr-code-only}
 
 **Dropbox**, **OneDrive** e **Go Curriculum** usano un accesso con codice QR leggermente diverso, senza alcun codice da digitare:
 

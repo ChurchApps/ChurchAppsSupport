@@ -11,7 +11,7 @@ Gjør prekenarkivet ditt tilgjengelig på nettet og sett opp direktesending, fra
 
 </div>
 
-## Opplæringsvideo
+## Opplæringsvideo {#training-video}
 
 <YouTube id="b3B3A25g2Sk" title="Bygge ditt prekenarkiv i B1" next="Sette opp direktesending i B1" nextUrl="/docs/b1-admin/sermons/live-streaming" />
 
@@ -19,68 +19,69 @@ Gjør prekenarkivet ditt tilgjengelig på nettet og sett opp direktesending, fra
 <h4>Før du begynner</h4>
 
 - B1 Admin-konto med tillatelse til innholdsadministrasjon
-- YouTube- eller Vimeo-kanal med prekenvideoer (for import av arkivet ditt)
+- YouTube- eller Vimeo-kanal med prekenvideoer, og kanal-ID-en (for import av arkivet ditt)
 - YouTube-kanal-ID (for direktesending, finnes i innstillingene i YouTube Studio)
 
 </div>
 
-## Steg 1: Opprett preken-spillelister
+## Steg 1: Opprett preken-spillelister {#step-1-create-sermon-playlists}
 
 Spillelister organiserer prekenene dine i serier og samlinger, slik at de er enkle å bla gjennom.
 
 Følg veiledningen [Spillelister](../sermons/playlists.md) for å:
 
-1. Opprette serier/samlinger som «Søndagsbudskap 2024», «Ekteskapsserien» og «Julegudstjenester»
-2. Legge til navn, beskrivelse, publiseringsdato og miniatyrbilde for hver spilleliste
+1. I [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu), velg **Prekener > Prekener** og finn panelet **Spillelister**
+2. Klikk på **Legg til spilleliste** (eller **Opprett første spilleliste**) for å lage serier/samlinger som «Søndagsbudskap 2024», «Ekteskapsserien» og «Julegudstjenester»
+3. Skriv inn en **Tittel på spilleliste**, **Beskrivelse** og **Publiseringsdato**, klikk på **Legg til miniatyrbilde** for å legge til et bilde, og klikk på **Lagre**
 
 :::tip
 Opprett spillelistene før du legger til prekener. Da blir det enklere å organisere prekenene i riktig serie etter hvert som du legger dem til.
 :::
 
-## Steg 2: Importer dine eksisterende prekener
+## Steg 2: Importer dine eksisterende prekener {#step-2-import-your-existing-sermons}
 
 Hvis du allerede har prekenvideoer på YouTube eller Vimeo, kan du hente dem alle inn samtidig.
 
 Følg veiledningen [Masseimport](../sermons/bulk-import.md) for å:
 
-1. Skrive inn URL-en til YouTube- eller Vimeo-kanalen din
-2. Forhåndsvise importen for å se hvilke videoer som blir hentet inn
-3. Klikke på Importer for å legge til alle på én gang
+1. Klikk på **Legg til preken** og velg **Masseimport**, og velg deretter YouTube eller Vimeo
+2. Skriv inn din **YouTube-kanal-ID** eller **Vimeo-kanal-ID** og klikk på **Hent** for å liste opp kanalens videoer
+3. Kryss av for videoene du vil ha, velg en spilleliste under **Importer til spilleliste**, og klikk på **Importer**
 
-## Steg 3: Legg til enkeltprekener
+## Steg 3: Legg til enkeltprekener {#step-3-add-individual-sermons}
 
 Til enkeltstående tillegg eller prekener som ikke er en del av en masseimport, legger du dem til én for én.
 
 Følg veiledningen [Administrere prekener](../sermons/managing-sermons.md) for å:
 
-1. Lime inn en video-URL (YouTube, Vimeo eller Facebook)
-2. La tittel, beskrivelse, miniatyrbilde og varighet fylles ut automatisk fra videoens metadata
-3. Knytte prekenen til en spilleliste
+1. Klikk på **Legg til preken** og velg **Legg til preken**
+2. Velg en **Spilleliste** og **Videoleverandør** (YouTube, Vimeo, Facebook eller egendefinert innbygd URL), og lim deretter inn videolenken eller -ID-en
+3. For YouTube og Vimeo, klikk på **Hent** for å fylle inn tittel, beskrivelse, miniatyrbilde, varighet og publiseringsdato fra videoen, og klikk deretter på **Lagre**
 
-## Steg 4: Sett opp direktesending
+## Steg 4: Sett opp direktesending {#step-4-set-up-live-streaming}
 
 Koble til YouTube-kanalen din, slik at B1-nettstedet ditt automatisk henter opp direktesendingen din.
 
 Følg veiledningen [Direktesending](../sermons/live-streaming.md) for å:
 
-1. Skrive inn YouTube-kanal-ID-en din i innstillingene for direktesending
-2. Konfigurere gudstjenesteplanen din som gjentas (f.eks. søndager kl. 10:00)
-3. Tilpasse fanene på direktesendingssiden (Chat, Bønneforespørsler og egendefinerte lenker) på siden **Prekener > Innstillinger**
+1. På siden **Prekener**, klikk på **Legg til preken**, velg **Legg til permanent direktesendings-URL**, skriv inn din **YouTube-kanal-ID**, og klikk på **Lagre**
+2. I hurtigmenyen, velg **Prekener > Direktesendingstider**, klikk på **Legg til gudstjeneste**, sett **Gudstjenestetid** (f.eks. søndager kl. 10:00) med **Gjentas ukentlig** slått på, og velg din permanente direktesendings-URL i nedtrekksmenyen **Preken**
+3. Tilpass fanene på direktesendingssiden (Chat, Bønn og eksterne lenker) på siden **Prekener > Innstillinger**
 
 :::info
 Når du starter en direktesending på YouTube, henter B1-direktesendingssiden automatisk opp strømmen. Ingen ekstra steg er nødvendige søndag morgen.
 :::
 
-## Steg 5: Vis på nettsiden din
+## Steg 5: Vis på nettsiden din {#step-5-display-on-your-website}
 
 Gjør prekenarkivet og direktesendingen din lett tilgjengelig for besøkende.
 
-Følg veiledningen [Administrere sider](../website/managing-pages.md) for å:
+Følg veiledningen [Sideredigering](../website/page-editor.md) for å:
 
-1. Legge til en Prekener-seksjon på B1-nettsiden din, slik at besøkende kan bla i arkivet
-2. Legge til en Direktesending-seksjon for direktesendt gudstjenesteopplevelse
+1. Legge til et **Prekener**-element på en side på B1-nettstedet ditt, slik at besøkende kan bla i arkivet
+2. Legge til et **Direktesending**-element for direktesendt gudstjenesteopplevelse
 
-## Steg 6: Mobiltilgang
+## Steg 6: Mobiltilgang {#step-6-mobile-access}
 
 Medlemmer kan se prekener og direktesendte gudstjenester fra alle enheter.
 
@@ -91,11 +92,11 @@ Medlemmer kan se prekener og direktesendte gudstjenester fra alle enheter.
 Chatfunksjonen i direktesendingen lar den nettbaserte menigheten din delta i sanntid, nesten som om de var i rommet.
 :::
 
-## Du er ferdig!
+## Du er ferdig! {#youre-done}
 
-Prekenarkivet ditt er nå på nettet, og direktesendingen din er konfigurert. Medlemmer kan ta igjen tidligere prekener når som helst og delta i direktesendte gudstjenester hvor som helst. Nye prekenopplastinger kan synkroniseres automatisk.
+Prekenarkivet ditt er nå på nettet, og direktesendingen din er konfigurert. Medlemmer kan ta igjen tidligere prekener når som helst og delta i direktesendte gudstjenester hvor som helst. Legg til hver ny preken med **Legg til preken** (eller en ny **Masseimport**) etter at den er publisert på YouTube eller Vimeo.
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
 - [Spillelister](../sermons/playlists.md) — organiser prekener i serier
 - [Masseimport](../sermons/bulk-import.md) — importer fra YouTube eller Vimeo

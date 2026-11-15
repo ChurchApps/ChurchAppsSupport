@@ -30,7 +30,7 @@ Eine speziell entwickelte Kiosk-Anwendung für Check-in-Stationen in Kirchen. Si
 
 Eine Android-TV-Anwendung, die Lerninhalte in Klassenräumen anzeigt. Lehrkräfte können Lektionsfolien, Videos und Aktivitäten auf einen Fernseher übertragen. So lässt sich Unterrichtsmaterial während des Unterrichts einfach präsentieren.
 
-## Lokale Einrichtung
+## Lokale Einrichtung {#local-setup}
 
 Alle mobilen Apps nutzen dieselbe Expo-basierte Toolchain und folgen ähnlichen Einrichtungsschritten. Am Beispiel von B1 Checkin:
 

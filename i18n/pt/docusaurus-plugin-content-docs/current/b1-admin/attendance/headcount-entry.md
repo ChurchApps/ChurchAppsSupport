@@ -1,51 +1,51 @@
 ---
-title: "Entrada de Contagem de Presentes e Tendência"
-description: "Lance o total de presentes de um culto ou grupo no B1 Admin, sem lista nominal, e acompanhe os totais semanais no relatório Tendência de Presença."
+title: "Lançamento de Contagem Total e Tendência"
+description: "Lance um total de pessoas para um culto ou grupo no B1 Admin, sem lista nominal, e acompanhe esses totais semana a semana no relatório Tendência de Contagem Total."
 ---
 
-# Entrada de Contagem de Presentes e Tendência
+# Lançamento de Contagem Total e Tendência
 
 <div class="article-intro">
 
-As contagens de presentes permitem que você registre um número de presença total simples -- para um serviço, um horário de serviço, ou um grupo -- sem fazer check-in de um elenco nomeado. Use isso quando você apenas precisa de "quantas pessoas estavam aqui", e combine com o relatório de Tendência de Contagem de Presentes para observar esse número ao longo do tempo.
+A contagem total permite registrar um número simples de presença -- para um culto, um horário de culto ou um grupo -- sem fazer check-in de uma lista nominal. Use-a quando você só precisar saber "quantas pessoas estiveram aqui" e combine-a com o relatório Tendência de Contagem Total para acompanhar esse número ao longo do tempo.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de Começar</h4>
 
-- Seus campi, serviços e horários de serviço devem ser configurados. Veja [Configuração de Presença](setup.md).
-- Entrar uma contagem de presentes requer a permissão **Presença > Editar**; visualizar o relatório de tendência requer **Presença > Visualizar**. Veja [Funções e Permissões](../settings/roles-permissions.md).
+- Suas unidades, cultos e horários de culto precisam estar configurados. Veja [Configuração de Presença](setup.md).
+- Lançar uma contagem total exige a permissão **Presença &gt; Editar**; visualizar o relatório de tendência exige **Presença &gt; Visualizar**. Veja [Funções e Permissões](../settings/roles-permissions.md).
 
 </div>
 
 :::info
-Contagens de presentes são uma alternativa apenas-total para [Registrando Presença](recording-attendance.md). Se você precisa saber **quem** compareceu -- por exemplo, para acompanhar pessoas que não voltaram -- continue usando presença de sessão nomeada nas sessões do grupo. Contagens de presentes apenas armazenam um número.
+A contagem total é uma alternativa que registra apenas o total, em vez do [Registro de Presença](recording-attendance.md). Se você precisar saber **quem** esteve presente -- por exemplo, para acompanhar pessoas que não voltaram -- continue usando a presença nominal por sessão na aba Sessões de um grupo. A contagem total armazena apenas um número.
 :::
 
-## Registrando uma Contagem de Presentes
+## Registrando uma Contagem Total {#recording-a-headcount}
 
-1. Abra **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Pessoas**, e clique em **Presença**.
-2. Clique em **Inserir contagem de presentes** na coluna da esquerda.
+1. Abra o **B1 Admin**, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Pessoas** e clique em **Presença**.
+2. Clique em **Lançar contagem total** na coluna da esquerda.
 3. Preencha o formulário:
-   - **Serviço** *(obrigatório)*
-   - **Horário do Serviço** -- deixe em branco para registrar um total em todos os horários de serviço
-   - **Grupo** -- opcional; apenas grupos com Rastrear Presença habilitado são listados. Deixe em branco para "Sem grupo (todo o serviço)."
+   - **Culto** *(obrigatório)*
+   - **Horário de culto** -- deixe em **Todos os horários de culto** para registrar um total de todos os horários do culto
+   - **Grupo** -- opcional; somente os grupos com Controlar presença ativado são listados. Deixe em branco para "Sem grupo (culto inteiro)."
    - **Data**
-   - **Contagem de Presentes** -- o número total de pessoas presentes
+   - **Contagem total** -- o número total de pessoas presentes (um número inteiro, 0 ou mais)
 4. Clique em **Salvar**.
 
-A tabela **Contagens de Presentes Recentes** ao lado do formulário lista suas últimas entradas com data, serviço, horário do serviço, grupo e contagem. Clique em uma linha para carregá-la de volta no formulário se precisar corrigi-la ou deletá-la.
+A tabela **Contagens recentes** ao lado do formulário lista seus últimos lançamentos com data, culto, horário de culto, grupo e quantidade. Clique em uma linha para carregá-la de volta no formulário caso precise corrigir ou excluir o registro.
 
-## Relatório de Tendência de Contagem de Presentes
+## Relatório de Tendência de Contagem Total {#headcount-trend-report}
 
-1. Da mesma página **Presença**, clique em **Todos os anos** na coluna da esquerda e depois selecione a aba **Tendência de Contagem de Presentes**.
-2. Use os filtros **Campus**, **Serviço**, **Horário do Serviço** e **Grupo** para estreitar o relatório.
+1. Na mesma página **Presença**, clique em **Todos os anos** na coluna da esquerda e, em seguida, selecione a aba **Tendência de Contagem Total**.
+2. O relatório é executado quando a aba é aberta. Para restringi-lo, escolha uma **Unidade**, **Culto**, **Horário de culto** ou **Grupo** e clique em **Executar relatório**. Não há filtro de data -- o relatório abrange todas as semanas que têm uma contagem total.
 
-O relatório mostra suas contagens de presentes registradas somadas por semana, tanto como um gráfico de linhas quanto como uma tabela -- o mesmo estilo de relatório usado pelas [abas Tendência de Presença e Presença de Grupos](tracking-attendance.md). Contagens de presentes registradas para a semana atual também aparecem em **Contagens de presentes esta semana** na página principal de Presença.
+O relatório mostra as contagens totais lançadas somadas por semana, tanto em um gráfico de linhas quanto em uma tabela -- no mesmo estilo de relatório usado pelas abas [Tendência de Presença e Presença por Grupo](tracking-attendance.md). As contagens lançadas para a semana atual também aparecem em **Contagens totais desta semana** na página principal de Presença.
 
-## Páginas Relacionadas
+## Páginas Relacionadas {#related-pages}
 
-- [Registrando Presença](recording-attendance.md) -- presença de sessão nomeada por pessoa
-- [Rastreando Presença](tracking-attendance.md) -- relatórios de tendência de presença e grupos
-- [Configuração de Presença](setup.md) -- configure campi, serviços e horários de serviço
+- [Registro de Presença](recording-attendance.md) -- presença nominal, por pessoa e por sessão
+- [Acompanhamento de Presença](tracking-attendance.md) -- relatórios de tendência de presença e de grupos
+- [Configuração de Presença](setup.md) -- configurar unidades, cultos e horários de culto

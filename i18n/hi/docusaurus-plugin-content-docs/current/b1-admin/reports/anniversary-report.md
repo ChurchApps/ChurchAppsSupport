@@ -1,46 +1,46 @@
 ---
-title: "वर्षगांठ सूची"
-description: "B1 Admin में चुने हुए महीने में विवाह वर्षगांठ वाले सभी लोगों की सूची निकालें। परिणामों में तारीखें दिखें और उन्हें बुलेटिन या कार्ड के लिए स्प्रेडशीट में निर्यात करें।"
+title: "वर्षगाँठ सूची"
+description: "B1 Admin में चुने हुए महीने में विवाह की वर्षगाँठ वाले सभी लोगों की सूची निकालें, परिणामों में तारीखें दिखें, और बुलेटिन या कार्डों के लिए spreadsheet में निर्यात करें।"
 ---
 
-# वर्षगांठ सूची
+# वर्षगाँठ सूची
 
 <div class="article-intro">
 
-किसी दिए गए महीने में wedding anniversary वाले सभी लोगों की एक सूची चाहिए — bulletin, cards, या announcements के लिए? People search आपको **Anniversary Month** के अनुसार filter करने देता है और dates को सीधे results में दिखाता है।
+किसी दिए गए महीने में विवाह की वर्षगाँठ वाले सभी लोगों की सूची चाहिए -- बुलेटिन, कार्ड, या घोषणाओं के लिए? People खोज आपको **Anniversary Month** से फ़िल्टर करने और परिणामों में ही तारीखें दिखाने देती है।
 
 </div>
 
 <div class="prereqs">
-<h4>शुरुआत करने से पहले</h4>
+<h4>शुरू करने से पहले</h4>
 
-- सुनिश्चित करें कि anniversary dates हर व्यक्ति के profile पर enter किए गए हैं। Details के लिए [लोगों को जोड़ना](../people/adding-people.md) देखें।
-- आपको People को देखने की अनुमति चाहिए। [Roles & Permissions](../settings/roles-permissions.md) देखें।
+- सुनिश्चित करें कि हर व्यक्ति के profile पर वर्षगाँठ की तारीखें दर्ज हों। विवरण के लिए [Adding People](../people/adding-people.md) देखें।
+- आपको People देखने की अनुमति चाहिए। देखें [Roles & Permissions](../settings/roles-permissions.md)।
 
 </div>
 
-## एक महीने के लिए वर्षगांठ सूची प्राप्त करना
+## किसी महीने की वर्षगाँठ सूची लेना {#getting-an-anniversary-list-for-a-month}
 
-1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपरी-बाएं में खोज बार), **People** को expand करें, और **People** पर क्लिक करें।
-2. Search box के नीचे, **Advanced** पर क्लिक करें।
-3. **Demographics** section को expand करें और **Anniversary Month** को check करें, फिर महीने को चुनें।
-4. Search को run करें — जिन सभी लोगों की वर्षगांठ उस महीने में है वे results में दिखाई देते हैं।
-5. Dates को देखने के लिए, **View as** को **Table** पर स्विच करें, फिर page header में **Select columns** icon पर क्लिक करें और **Anniversary** column को enable करें। यदि आप spreadsheet के रूप में sort या print करना पसंद करते हैं तो list को download करने के लिए **Export** का उपयोग करें।
+1. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (B1 Admin के ऊपर-बाईं ओर का सर्च बार), **People** खोलें, और **People** पर क्लिक करें।
+2. खोज बॉक्स के नीचे **Advanced** पर क्लिक करें।
+3. **Demographics** सेक्शन खोलें और **Anniversary Month** चेक करें, फिर महीना चुनें।
+4. फ़िल्टर चेक होते ही परिणाम अपडेट होते हैं -- उस महीने वर्षगाँठ वाले सभी लोग दिखते हैं।
+5. तारीखें देखने के लिए **View as** को **Table** पर स्विच करें, फिर पेज हेडर में **Select columns** आइकन पर क्लिक करें और **Anniversary** कॉलम सक्षम करें। अगर आप सूची को छाँटना या छापना पसंद करते हैं, तो उसे spreadsheet के रूप में डाउनलोड करने के लिए **Export** का उपयोग करें।
 
-## व्यावहारिक उपयोग
+## व्यावहारिक उपयोग {#practical-uses}
 
-- **Weekly bulletins** -- Current महीने की सूची को run करें और अपने bulletin या announcements में anniversaries को include करें।
-- **Anniversary cards** -- महीने की सूची को export करें और इसे अपनी card-writing team को दें।
-- **Milestone celebrations** -- Milestone anniversaries को खोजने के लिए **Years Married** filter के साथ combine करें।
+- **साप्ताहिक बुलेटिन** -- वर्तमान महीने की सूची चलाएँ और वर्षगाँठों को अपने बुलेटिन या घोषणाओं में शामिल करें।
+- **वर्षगाँठ कार्ड** -- महीने की सूची निर्यात करें और उसे अपनी कार्ड लिखने वाली टीम को दें।
+- **मील के पत्थर का उत्सव** -- मील के पत्थर वाली वर्षगाँठें ढूँढने के लिए **Years Married** फ़िल्टर के साथ मिलाएँ।
 
 :::tip
-हर महीने की शुरुआत में इसे run करें ताकि आपके पास anniversaries आने से पहले cards या announcements prepare करने का समय हो।
+इसे हर महीने की शुरुआत में चलाएँ ताकि वर्षगाँठें आने से पहले कार्ड या घोषणाएँ तैयार करने का समय मिले।
 :::
 
 :::info
-Anniversary data हर व्यक्ति के profile पर anniversary field से आता है। अगर कोई missing है, तो उनके profile को केवल date को add करने की आवश्यकता है। [लोगों को जोड़ना](../people/adding-people.md) देखें।
+वर्षगाँठ का डेटा हर व्यक्ति के profile पर वर्षगाँठ फ़ील्ड से आता है। अगर किसी का डेटा नहीं है, तो उसके profile में बस तारीख जोड़ने की ज़रूरत है। देखें [Adding People](../people/adding-people.md)।
 :::
 
-## भी देखें
+## यह भी देखें {#also-see}
 
-एक ही समय में birthdays खोज रहे हैं? एक ही search में दोनों को pull करने के लिए [Birthday & Anniversary Lists](./birthday-report.md) देखें।
+जन्मदिन भी उसी समय चाहिए? दोनों को एक ही खोज में लाने के लिए [Birthday & Anniversary Lists](./birthday-report.md) देखें।

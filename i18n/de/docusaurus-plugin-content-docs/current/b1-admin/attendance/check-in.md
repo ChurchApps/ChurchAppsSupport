@@ -1,14 +1,14 @@
 ---
-title: "Einrichtung des Selbst-Check-ins mit B1 Checkin und B1 Admin"
+title: "Selbst-Check-in einrichten mit B1 Checkin und B1 Admin"
 sidebar_label: "Check-In"
-description: "Richten Sie den Selbst-Check-in für Gottesdienste mit der App B1 Checkin in B1 Admin ein. Behandelt werden Geräte, Kiosk-Konten, Zeitpläne, Branding und die Gast-Anmeldung per QR-Code."
+description: "Richten Sie den Selbst-Check-in für Gottesdienste mit der App B1 Checkin in B1 Admin ein. Behandelt Geräte, Kiosk-Konten, Zeitpläne, Branding und QR-Gästeanmeldung."
 ---
 
 # Check-In
 
 <div class="article-intro">
 
-B1 Admin unterstützt den Selbst-Check-in bei Gottesdiensten über die zugehörige App **B1 Checkin**. Mitglieder können sich und ihre Familien bei der Ankunft an Kiosken oder auf dedizierten Geräten selbst einchecken. Das beschleunigt den Ablauf und entlastet Ihre Ehrenamtlichen. Jeder Check-in wird automatisch als Anwesenheit erfasst.
+B1 Admin unterstützt den Selbst-Check-in bei Gottesdiensten über die begleitende App **B1 Checkin**. Mitglieder können sich selbst und ihre Familien bei der Ankunft an Kiosken oder dedizierten Geräten einchecken. Das beschleunigt den Ablauf und entlastet Ihre Freiwilligen. Jeder Check-in wird automatisch als Anwesenheit erfasst.
 
 </div>
 
@@ -16,35 +16,35 @@ B1 Admin unterstützt den Selbst-Check-in bei Gottesdiensten über die zugehöri
 <h4>Bevor Sie beginnen</h4>
 
 - Ihre Standorte, Gottesdienstzeiten und Gruppen müssen in der [Anwesenheitseinrichtung](setup.md) konfiguriert sein.
-- Sie benötigen [Personen in Ihrer Datenbank](../people/adding-people.md) mit eingerichteten [Haushalten](../people/adding-people.md#managing-households), damit Familien gemeinsam einchecken können.
-- Sie benötigen ein Tablet und optional einen Brother-Etikettendrucker (siehe unten die [Hardwareempfehlungen](#recommended-hardware)).
+- Sie benötigen [Personen in Ihrer Datenbank](../people/adding-people.md) mit [Haushalten](../people/adding-people.md#managing-households), damit Familien gemeinsam einchecken können.
+- Sie benötigen ein Tablet und optional einen Brother-Etikettendrucker (siehe [Hardware-Empfehlungen](#recommended-hardware) unten).
 
 </div>
 
-## So funktioniert es
+## So funktioniert es {#how-it-works}
 
-Die App B1 Checkin ist mit Ihrer Anwesenheitseinrichtung in B1 Admin verbunden. Wenn sich ein Mitglied einchecken, wird die Anwesenheit automatisch dem richtigen Standort, der richtigen Gottesdienstzeit und der richtigen Gruppe zugeordnet. Für Personen, die das Check-in-System nutzen, müssen Sie die Anwesenheit nicht manuell erfassen.
+Die App B1 Checkin ist mit Ihrer Anwesenheitseinrichtung in B1 Admin verbunden. Wenn sich ein Mitglied einchecken, wird seine Anwesenheit automatisch dem richtigen Standort, der richtigen Gottesdienstzeit und der richtigen Gruppe zugeordnet. Für alle, die das Check-in-System nutzen, müssen Sie die Anwesenheit nicht manuell eingeben.
 
-## Check-In einrichten
+## Check-In einrichten {#setting-up-check-in}
 
-1. **Richten Sie zuerst Ihre Anwesenheitsstruktur ein.** Gehen Sie in B1 Admin zu **People > Attendance** und klicken Sie auf **Setup**, um sicherzustellen, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die Check-in-App baut auf dieser Konfiguration auf. Optional können Sie jeder Gottesdienstzeit einen [Check-in-Zeitplan](setup.md#setting-a-check-in-schedule) zuweisen, damit der Check-in jede Woche automatisch öffnet und schließt. Zeitpläne verwenden die Zeitzone des Standorts des Gottesdienstes oder, falls für den Standort keine festgelegt ist, die Zeitzone Ihrer Kirche. Der Kiosk zeigt Gottesdienstzeiten, deren Zeitfenster geschlossen ist, als **Closed** an und teilt Familien mit, wann der Check-in öffnet. Details finden Sie in der [Anwesenheitseinrichtung](setup.md).
-2. **Installieren Sie die App B1 Checkin** auf den Geräten, die Sie verwenden möchten. Die App ist für folgende Plattformen verfügbar:
+1. **Richten Sie zuerst Ihre Anwesenheitsstruktur ein.** Gehen Sie in B1 Admin zu **Personen > Anwesenheit** und klicken Sie auf **Einrichtung**, um sicherzustellen, dass Ihre Standorte, Gottesdienstzeiten und Gruppen vorhanden sind. Die Check-in-App baut auf dieser Konfiguration auf. Optional können Sie jeder Gottesdienstzeit einen [Check-in-Zeitplan](setup.md#setting-a-check-in-schedule) zuweisen, damit der Check-in jede Woche automatisch geöffnet und geschlossen wird. Zeitpläne verwenden die Zeitzone des Standorts des Gottesdienstes oder die Zeitzone Ihrer Kirche, falls für den Standort keine festgelegt ist. Der Kiosk zeigt Gottesdienstzeiten, deren Zeitfenster geschlossen ist, als **Geschlossen** an und teilt Familien mit, wann der Check-in öffnet. Weitere Informationen finden Sie unter [Anwesenheitseinrichtung](setup.md).
+2. **Installieren Sie die App B1 Checkin** auf den Geräten, die Sie verwenden möchten. Die App ist auf folgenden Plattformen verfügbar:
    - **iPad/iOS:** [Apple App Store](https://apps.apple.com/us/app/b1-church-check-in/id6775081998)
-   - **Android-Tablets und Samsung-Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
+   - **Android/Samsung-Tablets:** [Google Play Store](https://play.google.com/store/apps/details?id=church.b1.checkin)
    - **Amazon-Fire-Tablets:** [Amazon App Store](https://www.amazon.com/Live-Church-Solutions-B1-Check-In/dp/B0FW5HKRB5/)
-3. **Melden Sie sich in der App B1 Checkin an** mit einem Konto, das die Berechtigung **Checkin** (oder **Edit Attendance**) für die Anwesenheit besitzt. Siehe [Kiosk-Konten für den Check-in](../settings/roles-permissions.md#check-in-kiosk-accounts).
-4. **Wählen Sie den Standort und die Gottesdienstzeit** für die aktuelle Versammlung aus.
-5. Mitglieder können nun auf dem Gerät ihren Namen suchen und sich einchecken.
+3. **Melden Sie sich in der App B1 Checkin an** und verwenden Sie dafür ein Konto mit der Anwesenheitsberechtigung **Checkin** (oder **Anwesenheit bearbeiten**). Siehe [Check-In-Kiosk-Konten](../settings/roles-permissions.md#check-in-kiosk-accounts).
+4. **Wählen Sie den Standort und die Gottesdienstzeit** für die aktuelle Zusammenkunft aus.
+5. Mitglieder können jetzt auf dem Gerät nach ihrem Namen suchen und sich einchecken.
 
 :::tip
-Stellen Sie die Check-in-Geräte an gut sichtbaren und leicht erreichbaren Orten auf, etwa am Eingang des Foyers oder am Empfangstisch. Eine kurze Ankündigung während der Gottesdienste hilft Mitgliedern zu wissen, dass diese Möglichkeit besteht.
+Stellen Sie die Check-in-Geräte an gut sichtbaren, leicht erreichbaren Orten auf, etwa am Eingang der Lobby oder am Empfangstisch. Eine kurze Ankündigung während der Gottesdienste hilft Mitgliedern zu wissen, dass diese Möglichkeit besteht.
 :::
 
 :::tip
 Wenn Ihre Kirche mehrere Standorte hat, müssen Sie die Einrichtung für jeden Standort in der [Anwesenheitseinrichtung](setup.md) wiederholen. Jedes Check-in-Gerät kann für einen anderen Standort konfiguriert werden.
 :::
 
-## Empfohlene Hardware
+## Empfohlene Hardware {#recommended-hardware}
 
 **Tablets** – alle diese Geräte funktionieren gut mit der App:
 
@@ -55,127 +55,122 @@ Wenn Ihre Kirche mehrere Standorte hat, müssen Sie die Einrichtung für jeden S
 **Drucker** – Check-ins funktionieren mit Brother-Etikettendruckern zum Drucken von Namensschildern:
 
 - **Beste Wahl:** Brother QL-1110NWB (unterstützt mehrere Tablets über Bluetooth und WLAN)
-- **Gute Wahl:** Brother QL-810W (unterstützt mehrere Tablets über WLAN)
+- **Gut:** Brother QL-810W (unterstützt mehrere Tablets über WLAN)
 - **Preisgünstig:** Brother QL-1100 (nur WLAN)
 
 **Etiketten:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Nur Brother-Etikettendrucker sind mit der App B1 Checkin kompatibel. Drucker anderer Marken funktionieren nicht zum Drucken von Namensschildern.
+Nur Brother-Etikettendrucker sind mit der App B1 Checkin kompatibel. Drucker anderer Marken können keine Namensschilder drucken.
 :::
 
 :::info
-Folgen Sie der Einrichtungsanleitung Ihres Druckers, um ihn mit demselben WLAN-Netzwerk wie Ihr Tablet zu verbinden. Treiber und Einrichtungsanleitungen für Brother-Drucker finden Sie auf der [Brother-Support-Seite](https://support.brother.com).
+Folgen Sie der Einrichtungsanleitung Ihres Druckers, um ihn mit demselben WLAN-Netzwerk wie Ihr Tablet zu verbinden. Brother-Druckertreiber und Einrichtungsanleitungen finden Sie auf der [Brother-Support-Website](https://support.brother.com).
 :::
 
-## Aussehen des Kiosks anpassen
+## Das Erscheinungsbild des Kiosks anpassen {#customizing-the-kiosk-appearance}
 
-Sie können das Erscheinungsbild der App B1 Checkin an das Branding Ihrer Kirche anpassen. Gehen Sie in B1 Admin zu **Mobile > B1 CheckIn** und verwenden Sie die Karte **Kiosk Theme**, um Folgendes zu konfigurieren:
+Sie können das Aussehen der App B1 Checkin an das Branding Ihrer Kirche anpassen. Gehen Sie in B1 Admin zu **Mobil > B1 CheckIn** (oder klicken Sie auf der Seite Anwesenheit auf **Kiosk**) und verwenden Sie die Karte **Kiosk-Design**. Klicken Sie nach Änderungen auf der Karte auf **Speichern**.
 
-### Farben
+### Farben {#colors}
 
-Passen Sie acht Farbeinstellungen an das Branding Ihrer Kirche an:
+Der Kiosk verwendet dieselben Farben wie die App Ihrer Kirche. Legen Sie sie unter **Mobil > App-Design** fest. Die Karte Kiosk-Design hat keine eigenen Farbeinstellungen.
 
-- **Primary** und **Primary Contrast** – Hauptmarkenfarbe und ihre Textfarbe.
-- **Secondary** und **Secondary Contrast** – Akzentfarbe und ihre Textfarbe.
-- **Header Background** und **Subheader Background** – Farben für die Kopfbereiche des Kiosks.
-- **Button Background** und **Button Text** – Farben für interaktive Schaltflächen.
+### Hintergrundbild {#background-image}
 
-### Hintergrundbild
+Klicken Sie unter **Hintergrundbild** auf **Bild hochladen**, um ein optionales Hintergrundbild für die Begrüßungs- und Suchbildschirme des Kiosks hinzuzufügen. Empfohlen wird eine Größe von 1920x1080 Pixeln. Mit **Bild ändern** oder **Entfernen** ersetzen oder löschen Sie es.
 
-Laden Sie optional ein Hintergrundbild für die Begrüßungs- und Suchbildschirme des Kiosks hoch. Empfohlen wird eine Größe von 1920 x 1080 Pixeln.
+### Ruhebildschirm / Bildschirmschoner {#idle-screen--screensaver}
 
-### Ruhebildschirm / Bildschirmschoner
+Richten Sie einen Bildschirmschoner ein, der nach einer Zeit ohne Eingabe aktiviert wird:
 
-Konfigurieren Sie einen Bildschirmschoner, der nach einer Zeit der Inaktivität aktiviert wird:
-
-1. Schalten Sie den Ruhebildschirm **ein** oder **aus**.
-2. Legen Sie das **Timeout** fest (wie viele Sekunden Inaktivität vergehen, bevor der Bildschirmschoner startet; mindestens 10 Sekunden).
-3. Fügen Sie eine oder mehrere **Folien** hinzu – jede Folie hat ein Bild und eine Anzeigedauer (mindestens 3 Sekunden).
+1. Öffnen Sie **Ruhebildschirm / Bildschirmschoner** und aktivieren Sie **Ruhebildschirm aktivieren**.
+2. Legen Sie unter **Zeitlimit (Sekunden)** fest, wie viele Sekunden ohne Eingabe vergehen, bevor der Bildschirmschoner startet (mindestens 10).
+3. Klicken Sie für jede Folie auf **Folie hinzufügen**, klicken Sie auf **Hochladen**, um ihr Bild auszuwählen, und legen Sie unter **Dauer (s)** die Anzeigedauer fest (mindestens 3 Sekunden).
 
 :::tip
-Nutzen Sie den Ruhebildschirm, um Ankündigungen, bevorstehende Veranstaltungen oder Willkommensnachrichten anzuzeigen, wenn der Kiosk gerade nicht benutzt wird.
+Nutzen Sie den Ruhebildschirm, um Ankündigungen, bevorstehende Veranstaltungen oder Willkommensnachrichten anzuzeigen, wenn der Kiosk nicht aktiv genutzt wird.
 :::
 
-## Gast-Anmeldung per QR-Code
+## Gästeanmeldung per QR-Code {#guest-registration-via-qr-code}
 
-Der Check-in-Kiosk kann einen QR-Code anzeigen, den Besucher scannen, um sich und ihre Familie auf dem eigenen Smartphone anzumelden. Das beschleunigt den Check-in für Erstbesucher.
+Der Check-in-Kiosk kann einen QR-Code anzeigen, den Besucher scannen, um sich und ihre Familie selbst auf ihrem Handy anzumelden. Das beschleunigt den Check-in für Erstbesucher.
 
-Wenn ein Gast den QR-Code scannt, gelangt er zu einer [Anmeldeseite für Gäste](../../b1-church/checkin/guest-registration.md), auf der er die Namen seiner Familie und alle weiteren Angaben eintragen kann, die Sie abfragen möchten. Eine Ehrenamtliche oder ein Ehrenamtlicher kann den Gast dann am Kiosk suchen und einchecken.
+Wenn ein Gast den QR-Code scannt, gelangt er auf eine [Seite zur Gästeanmeldung](../../b1-church/checkin/guest-registration.md), auf der er die Namen seiner Familie und alle weiteren Angaben eintragen kann, die Sie abfragen. Ein Freiwilliger kann ihn dann am Kiosk suchen und einchecken.
 
-### QR-Gast-Anmeldung aktivieren
+### QR-Gästeanmeldung aktivieren {#enabling-qr-guest-registration}
 
 So schalten Sie die Anzeige des QR-Codes ein:
 
-1. Öffnen Sie in B1 Admin das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und erweitern Sie **Mobile**.
+1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links) und klappen Sie **Mobil** auf.
 2. Klicken Sie auf **B1 CheckIn**.
-3. Schalten Sie **QR Guest Registration** ein und klicken Sie auf **Save**.
+3. Aktivieren Sie **QR-Gästeanmeldung** und klicken Sie auf **Speichern**.
 
 :::note
-Diese Einstellung befindet sich unter **Mobile > B1 CheckIn** (auf derselben Seite wie die Karte **Kiosk Theme**), nicht unter Attendance. Die Aktion **Kiosk** auf der Seite Attendance enthält einen Link zu dieser Seite.
+Diese Einstellung finden Sie unter **Mobil > B1 CheckIn** (auf derselben Seite wie die Karte **Kiosk-Design**), nicht unter Anwesenheit. Die Aktion **Kiosk** auf der Seite Anwesenheit enthält einen Link zu dieser Seite.
 :::
 
-Sobald der Schalter eingeschaltet ist, erscheinen die übrigen Optionen unten in derselben Karte **QR Guest Registration**. Klicken Sie nach jeder Änderung auf **Save** der Karte.
+Sobald der Schalter aktiviert ist, erscheinen die folgenden Optionen auf derselben Karte **QR-Gästeanmeldung**. Klicken Sie nach Änderungen an diesen Optionen auf der Karte auf **Speichern**.
 
-### Anmeldefelder auswählen
+### Anmeldefelder auswählen {#choosing-sign-up-fields}
 
-Die Checkliste **Sign-up fields** legt fest, wonach das Anmeldeformular fragt. **First Name** und **Last Name** sind immer im Formular enthalten und für jedes Familienmitglied immer erforderlich. Bei allen anderen Feldern aktivieren Sie **Include**, um das Feld dem Formular hinzuzufügen, und anschließend **Required**, wenn Gäste es ausfüllen müssen. **Required** kann nur für ein eingeschlossenes Feld aktiviert werden. Wenn Sie **Include** deaktivieren, wird auch **Required** zurückgesetzt.
+Die Checkliste **Anmeldefelder** legt fest, wonach das Anmeldeformular fragt. **Vorname** und **Nachname** sind immer im Formular enthalten und für jedes Familienmitglied immer erforderlich. Für jedes andere Feld aktivieren Sie **Einbeziehen**, um es dem Formular hinzuzufügen, und anschließend **Pflichtfeld**, wenn Gäste es ausfüllen müssen. **Pflichtfeld** kann nur für ein einbezogenes Feld aktiviert werden. Wenn Sie **Einbeziehen** deaktivieren, wird auch **Pflichtfeld** zurückgesetzt.
 
-| Feld | Abgefragt für | Standardmäßig enthalten |
+| Feld | Abgefragt für | Standardmäßig einbezogen |
 |-------|-----------|---------------------|
-| **Title** | Jedes Familienmitglied, als Dropdown vor dem Namen (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | Nein |
-| **Email** | Nur den Hauptkontakt | Ja (optional) |
-| **Phone** | Jedes Familienmitglied. Wenn das Feld erforderlich ist, muss nur der Hauptkontakt es ausfüllen. | Ja (optional) |
-| **Household role** | Jedes Familienmitglied nach dem Hauptkontakt – Spouse, Child oder Other. Der Hauptkontakt ist Haupt eines neuen Haushalts. Wer keine Rolle hat, wird als Other gespeichert. | Ja (optional) |
-| **Home address** | Einmal für die Familie – Straße, Adresszeile 2, Stadt, Bundesland und Postleitzahl. Wenn das Feld erforderlich ist, müssen alle Angaben außer der Adresszeile 2 ausgefüllt werden. Die Adresse wird bei jedem Familienmitglied gespeichert. | Nein |
-| **Birth date** | Jedes Familienmitglied | Nein |
-| **Gender** | Jedes Familienmitglied | Nein |
-| **Marital status** | Nur den Hauptkontakt | Nein |
-| **Grade** | Jedes Familienmitglied (PreK bis 12 oder Graduated) | Nein |
-| **Comments** | Einmal, in einem Feld unterhalb der Familienmitglieder (bis zu 1.000 Zeichen) | Nein |
+| **Anrede** | Jedes Familienmitglied, als Auswahlliste vor dem Namen (Herr, Frau, Fräulein, Ms, Dr., Prof., Pfr., Pastor) | Nein |
+| **E-Mail** | Nur Hauptkontakt | Ja (optional) |
+| **Telefon** | Jedes Familienmitglied. Wenn ein Pflichtfeld, muss nur der Hauptkontakt es ausfüllen. | Ja (optional) |
+| **Rolle im Haushalt** | Jedes Familienmitglied nach dem Hauptkontakt – Ehepartner, Kind oder Sonstige. Der Hauptkontakt ist Haushaltsvorstand eines neuen Haushalts. Wer keine Rolle angibt, wird als Sonstige gespeichert. | Ja (optional) |
+| **Wohnadresse** | Einmal für die Familie – Straße, Adresszusatz, Ort, Bundesland und Postleitzahl. Wenn ein Pflichtfeld, müssen alle Angaben außer dem Adresszusatz ausgefüllt werden. Die Adresse wird bei jedem Familienmitglied gespeichert. | Nein |
+| **Geburtsdatum** | Jedes Familienmitglied | Nein |
+| **Geschlecht** | Jedes Familienmitglied | Nein |
+| **Familienstand** | Nur Hauptkontakt | Nein |
+| **Klassenstufe** | Jedes Familienmitglied (Vorschule bis 12, oder Abschluss) | Nein |
+| **Kommentare** | Einmal, in einem Feld unterhalb der Familienmitglieder (bis zu 1.000 Zeichen) | Nein |
 
-Deaktivierte Felder werden nie gespeichert, selbst wenn jemand sie auf anderem Weg an die Anmeldung übermittelt. Kommentare werden als Notiz im Datensatz des Hauptkontakts gespeichert (als „Guest sign-up“ vermerkt), sodass Sie sie im Abschnitt **Notes** des Profils lesen können.
+Deaktivierte Felder werden nie gespeichert, selbst wenn jemand sie auf anderem Weg an die Anmeldung übermittelt. Kommentare werden als Notiz im Datensatz des Hauptkontakts gespeichert (als „Gästeanmeldung“ gekennzeichnet), sodass Sie sie im Abschnitt **Notizen** seines Profils lesen können.
 
-### Gäste einer Gruppe hinzufügen
+### Gäste einer Gruppe hinzufügen {#adding-guests-to-a-group}
 
-Verwenden Sie **Add new guests to group**, um alle Personen, die sich anmelden, automatisch einer Ihrer Gruppen zuzuordnen – zum Beispiel einer Gruppe „Newcomers“ oder einer Gruppe für die Veranstaltung dieses Wochenendes. Wählen Sie **None** (die Standardeinstellung), um dies zu überspringen. Gäste sehen die Gruppe nie und können sie nicht auswählen; sie wird ausschließlich hier festgelegt. Ändern Sie sie vor jeder Veranstaltung, damit Sie die Gäste der jeweiligen Veranstaltung gemeinsam nachverfolgen können.
+Verwenden Sie **Neue Gäste der Gruppe hinzufügen**, um alle Personen, die sich anmelden, automatisch einer Ihrer Gruppen zuzuordnen, zum Beispiel einer Gruppe „Neue Gesichter“ oder einer Gruppe für die Veranstaltung dieses Wochenendes. Wählen Sie **Keine** (Standard), um dies zu überspringen. Gäste sehen die Gruppe nie und können sie nicht auswählen; sie wird nur hier festgelegt. Ändern Sie sie vor jeder Veranstaltung, damit Sie die Gäste dieser Veranstaltung gemeinsam nachverfolgen können.
 
-### Anwesenheit erfassen
+### Anwesenheit erfassen {#recording-attendance}
 
-Wenn eine Gruppe ausgewählt ist, erscheint der Schalter **Also record attendance**. Schalten Sie ihn ein, um Gäste sofort bei der Anmeldung als anwesend zu markieren, sodass Sie sie nicht separat einchecken müssen.
+Wenn eine Gruppe ausgewählt ist, erscheint der Schalter **Anwesenheit ebenfalls erfassen**. Aktivieren Sie ihn, damit Gäste im Moment der Anmeldung als anwesend markiert werden und Sie sie nicht separat einchecken müssen.
 
-Die Anwesenheit wird nur erfasst, wenn die Anmeldung während einer **geplanten** Gottesdienstzeit der ausgewählten Gruppe erfolgt:
+Anwesenheit wird nur erfasst, wenn die Anmeldung während einer **geplanten** Gottesdienstzeit der ausgewählten Gruppe erfolgt:
 
-- Die Gruppe muss mit einer oder mehreren Gottesdienstzeiten verknüpft sein, und diese Gottesdienstzeiten müssen einen [Check-in-Zeitplan](setup.md#setting-a-check-in-schedule) haben (einen **Day** und eine **Start Time**).
-- „Während“ bedeutet innerhalb des Check-in-Zeitfensters dieser Gottesdienstzeit – von den **Open check-in**-Minuten vor dem Beginn bis zu den **Close check-in**-Minuten nach dem Ende (bzw. nach dem Beginn, wenn keine Endzeit festgelegt ist; ohne Endzeit und ohne Schließminuten bis zum Ende des Tages), in derselben Zeitzone, die der Check-in-Zeitplan verwendet.
-- Jedes Familienmitglied wird für jede ihrer Gottesdienstzeiten, die in diesem Moment geöffnet ist, am heutigen Datum als in der Gruppe anwesend markiert.
-- Anmeldungen zu einer anderen Zeit oder für eine Gruppe, deren Gottesdienstzeiten keinen Zeitplan haben, werden der Gruppe hinzugefügt, aber nicht als Teilnahme gezählt.
+- Die Gruppe muss mit einer oder mehreren Gottesdienstzeiten verknüpft sein, und diese Gottesdienstzeiten müssen einen [Check-in-Zeitplan](setup.md#setting-a-check-in-schedule) haben (einen **Tag** und eine **Startzeit**).
+- „Während“ bedeutet innerhalb des Check-in-Zeitfensters dieser Gottesdienstzeit – von den **Minuten für das Öffnen des Check-ins** vor dem Beginn bis zu den **Minuten für das Schließen des Check-ins** nach dem Ende (oder nach dem Beginn, wenn keine Endzeit festgelegt ist; ohne Endzeit und ohne Schließminuten bis zum Ende dieses Tages), jeweils in der Zeitzone, die der Check-in-Zeitplan verwendet.
+- Jedes Familienmitglied wird für jede seiner Gottesdienstzeiten, die in diesem Moment geöffnet ist, am heutigen Datum als in der Gruppe anwesend markiert.
+- Anmeldungen zu anderen Zeiten oder für eine Gruppe, deren Gottesdienstzeiten keinen Zeitplan haben, werden der Gruppe hinzugefügt, aber nicht als Teilnahme gezählt.
 
-### Kopfbild
+### Kopfbild {#header-photo}
 
-Klicken Sie unter **Header photo** auf **Change photo**, um ein Bild auszuwählen oder hochzuladen (es wird auf ein 16:9-Format zugeschnitten). Dieses Bild wird oben auf der Anmeldeseite anstelle des Standardsymbols angezeigt. Klicken Sie auf **Remove**, um zum Symbol zurückzukehren.
+Klicken Sie unter **Kopfbild** auf **Foto ändern**, um ein Bild auszuwählen oder hochzuladen (im Format 16:9 zugeschnitten), das oben auf der Anmeldeseite anstelle des Standardsymbols angezeigt wird. Klicken Sie auf **Entfernen**, um wieder das Symbol zu verwenden.
 
-### Den Anmeldelink teilen
+### Den Anmeldelink teilen {#sharing-the-registration-link}
 
-Sobald die QR-Gast-Anmeldung aktiviert ist, erscheint unten auf der Karte der Abschnitt **Share registration QR code**. Er bietet zwei Möglichkeiten, Gäste außerhalb des QR-Codes am Kiosk zum Anmeldeformular zu führen:
+Sobald die QR-Gästeanmeldung aktiviert ist, erscheint unten auf der Karte der Abschnitt **Anmelde-QR-Code teilen**. Er bietet zwei Möglichkeiten, Gäste außerhalb des QR-Codes am Kiosk zum Anmeldeformular zu bringen:
 
-- **Copy link** – kopiert die Anmelde-URL, damit Sie sie auf Ihrer Kirchenwebsite, in E-Mails oder überall sonst online einfügen können.
-- **Download PNG** – lädt den QR-Code als Bild herunter, das Sie auf Flyern, in Gemeindebriefen oder auf Schildern drucken können.
+- **Link kopieren** – kopiert die Anmelde-URL, damit Sie sie auf Ihrer Kirchenwebsite, in E-Mails oder überall online einfügen können.
+- **PNG herunterladen** – lädt den QR-Code als Bild herunter, das Sie auf Flyern, in Gemeindebriefen oder auf Schildern drucken können.
 
 :::tip
-Fügen Sie den Anmeldelink auf der Seite „Plan Your Visit“ oder „I'm New“ Ihrer Kirchenwebsite hinzu, damit Gäste sich schon vor ihrer Ankunft anmelden können.
+Fügen Sie den Anmeldelink auf der Seite „Ihr Besuch“ oder „Ich bin neu“ Ihrer Kirchenwebsite hinzu, damit sich Gäste schon vor ihrer Ankunft anmelden können.
 :::
 
-### Was nach der Anmeldung eines Gastes geschieht
+### Was nach der Anmeldung eines Gastes passiert {#what-happens-after-a-guest-signs-up}
 
-B1 sucht zuerst nach Personen, die bereits unter **People** erfasst sind. Ein Familienmitglied wird einer bestehenden Person zugeordnet, wenn genau eine Person denselben Vornamen und dieselbe E-Mail-Adresse oder Telefonnummer hat. Ein Kind, das ohne E-Mail-Adresse oder Telefonnummer angegeben wurde, wird anhand des Vornamens innerhalb des zugeordneten Haushalts zugeordnet. Zugeordnete Personen werden unverändert übernommen – die Anmeldung ändert ihre Angaben oder ihren Mitgliedsstatus nie – und neue Personen werden dem zugeordneten Haushalt hinzugefügt.
+B1 sucht zuerst nach Personen, die bereits unter **Personen** erfasst sind. Ein Familienmitglied wird einer bestehenden Person zugeordnet, wenn genau eine Person denselben Vornamen und dieselbe E-Mail-Adresse oder Telefonnummer hat. Ein Kind, das ohne E-Mail-Adresse oder Telefonnummer eingetragen wird, wird anhand des Vornamens innerhalb des zugeordneten Haushalts zugeordnet. Zugeordnete Personen werden unverändert übernommen – die Anmeldung ändert ihre Angaben oder ihren Mitgliedsstatus nie – und neue Personen werden dem zugeordneten Haushalt hinzugefügt.
 
-Wenn keine Zuordnung gefunden wird, legt die Anmeldung einen neuen Haushalt an, der nach dem Nachnamen des Hauptkontakts benannt wird, mit einem Personendatensatz für jedes Familienmitglied. Alle neuen Personen werden unter **People** mit dem Mitgliedsstatus **Visitor** erfasst, wobei der Hauptkontakt als Haupt des Haushalts eingetragen wird.
+Wenn niemand zugeordnet werden kann, legt die Anmeldung einen neuen Haushalt an, der nach dem Nachnamen des Hauptkontakts benannt wird, mit einem Personendatensatz für jedes Familienmitglied. Alle neuen Personen werden unter **Personen** mit dem Mitgliedsstatus **Besucher** erfasst, wobei der Hauptkontakt Haushaltsvorstand ist.
 
-Zugeordnete und neue Personen werden der von Ihnen gewählten Gruppe hinzugefügt (sofern sie noch nicht Mitglied sind) und, wenn diese Option aktiviert ist, wird ihre Anwesenheit erfasst. Kommentare werden als Notiz beim Hauptkontakt gespeichert.
+Zugeordnete und neue Personen werden der von Ihnen gewählten Gruppe hinzugefügt (falls sie noch nicht Mitglied ist) und erhalten ihre Anwesenheit erfasst, wenn diese Option aktiviert ist. Kommentare werden als Notiz beim Hauptkontakt gespeichert.
 
-Um automatisch nachzufassen, fügen Sie einen [Workflow-Auslöser](../serving/workflows.md#triggers) hinzu, etwa **Person · Created** mit der Bedingung *Membership Status is Visitor*, oder **Group · Member Joined** für die von Ihnen oben gewählte Gruppe.
+Um automatisch nachzufassen, fügen Sie einen [Workflow-Auslöser](../serving/workflows.md#triggers) hinzu, etwa **Person · Erstellt** mit der Bedingung *Mitgliedsstatus ist Besucher*, oder **Gruppe · Mitglied beigetreten** für die oben gewählte Gruppe.
 
-## Was erfasst wird
+## Was erfasst wird {#what-gets-recorded}
 
-Jeder Check-in erzeugt einen Anwesenheitsdatensatz in B1 Admin. Sie können diese Datensätze auf der Seite [Attendance](tracking-attendance.md) sowie in den [Sitzungen jeder Gruppe](../groups/group-members.md) einsehen, genau wie manuell erfasste Anwesenheiten. Es gibt keinen Unterschied in der Darstellung der Daten – beide Methoden fließen in dieselben Berichte ein.
+Jeder Check-in erstellt einen Anwesenheitseintrag in B1 Admin. Sie können diese Einträge auf der Seite [Anwesenheit](tracking-attendance.md) und in den [Sitzungen jeder Gruppe](../groups/group-members.md) einsehen, genau wie manuell erfasste Anwesenheit. Es gibt keinen Unterschied in der Darstellung der Daten – beide Methoden fließen in dieselben Berichte ein.

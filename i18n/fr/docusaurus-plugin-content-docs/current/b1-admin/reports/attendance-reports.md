@@ -1,6 +1,6 @@
 ---
 title: "Rapports de présence"
-description: "Découvrez les trois rapports de présence de B1 Admin, leur contenu, et comment les lancer et les exporter."
+description: "Découvrez les trois rapports de présence de B1 Admin (Tendance de présence, Présences par groupe, Présences quotidiennes par groupe), leur contenu, et comment les lancer et les exporter."
 ---
 
 # Rapports de présence
@@ -20,7 +20,7 @@ B1 Admin propose trois rapports de présence pour vous aider à comprendre comme
 
 </div>
 
-## Tendance de présence
+## Tendance de présence {#attendance-trend}
 
 Le rapport Tendance de présence montre l'évolution de la fréquentation de vos services au fil du temps.
 
@@ -30,6 +30,10 @@ Le rapport Tendance de présence montre l'évolution de la fréquentation de vos
 4. Le rapport affiche un graphique à barres et un tableau du total des visites par semaine. Chaque semaine est étiquetée avec la date du dimanche de cette semaine, et la colonne **Dates de séance** du tableau énumère les dates réelles de cette semaine où il y a eu des présences (par exemple « 27/9, 30/9 »).
 
 Ce rapport est utile pour repérer des tendances comme les baisses saisonnières, la croissance ou l'effet d'événements spéciaux.
+
+:::tip
+L'onglet **Toutes les années** de la page Présences comporte aussi un onglet **Tendance des effectifs** entre les deux autres, qui présente sous forme de graphique les totaux d'effectifs que vous saisissez manuellement (plutôt que les pointages individuels) pour chaque semaine. Il comporte les mêmes filtres **Campus**, **Service**, **Horaire de service** et **Groupe**.
+:::
 
 ## Présences par groupe {#group-attendance}
 
@@ -50,7 +54,7 @@ Pour télécharger une feuille de calcul, cliquez sur **Options de téléchargem
 
 Utilisez ce rapport pour comparer la fréquentation entre les groupes et repérer ceux qui croissent ou qui requièrent une attention particulière.
 
-## Présences quotidiennes par groupe
+## Présences quotidiennes par groupe {#daily-group-attendance}
 
 Le rapport Présences quotidiennes par groupe (intitulé **Présences de groupe par jour**) donne un décompte jour par jour du nombre de personnes présentes à un groupe.
 
@@ -64,7 +68,7 @@ Ce rapport donne un détail précis, utile pour comprendre les variations d'une 
 Utilisez le rapport Tendance de présence pour une vue d'ensemble, et le rapport Présences quotidiennes par groupe lorsque vous devez examiner des dates précises.
 :::
 
-## Utilisations pratiques
+## Utilisations pratiques {#practical-uses}
 
 - **Planification** -- Utilisez les tendances de présence pour planifier les places assises, le personnel et les ressources des prochains services.
 - **Rayonnement** -- Repérez tôt les baisses de fréquentation pour pouvoir faire un suivi auprès des membres.

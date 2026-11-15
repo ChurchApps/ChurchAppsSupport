@@ -1,91 +1,92 @@
 ---
 title: "Etikettdesigner for innsjekking"
-description: "Tilpass merkelapp- og hentelappmaler som skrives ut ved innsjekk i B1 Admin, med felt, plassering og vilkår for bursdag eller notater."
+description: "Tilpass malene for navnelapper og hentelapper som skrives ut ved innsjekking i B1 Admin, inkludert felter, plassering og betingelser for bursdag eller merknader."
 ---
 
 # Etikettdesigner for innsjekking
 
 <div class="article-intro">
 
-Etikettdesigneren lar deg lage og tilpasse malene for navnelapper og hentelapper som skrives ut når familier sjekker inn barna sine. Du bestemmer nøyaktig hvilken informasjon som vises på hver etikett, hvor den plasseres og hvordan den ser ut.
+Etikettdesigneren lar deg lage og tilpasse malene for navnelapper og hentelapper som skrives ut når familier sjekker inn barna sine. Du kan styre nøyaktig hvilken informasjon som vises på hver etikett, hvor den er plassert og hvordan den ser ut.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Sett opp [Oppmøte](./setup.md) og konfigurer minst ett samlingstidspunkt med innsjekking aktivert
-- Sett opp [Innsjekking](./check-in.md) slik at etiketter skrives ut
-- Du trenger administratortilgang til Oppmøte-seksjonen
+- Sett opp [oppmøte](./setup.md) og konfigurer minst ett gudstjenestetidspunkt med innsjekking slått på
+- Sett opp [innsjekking](./check-in.md) slik at etikettene skrives ut
+- Du trenger tillatelsen **Edit Attendance**
 
 </div>
 
-## Åpne etikettdesigneren
+## Åpne etikettdesigneren {#opening-the-label-designer}
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre) i B1 Admin, utvid **Mobil** og klikk på **B1 CheckIn**. Klikk deretter på knappen **Design etiketter** på kortet Innsjekkingsetiketter. Du ser en liste over lagrede etikettmaler, delt etter type: **Navnelapp** og **Hentelapp**.
+Åpne [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Mobile** og klikk **Labels**. Du kan også klikke **B1 CheckIn** og deretter **Design Labels** på kortet **Check-in Labels**.
 
-## Etikettyper
+Siden **Check-in Labels** viser de lagrede malene dine med **Name**, **Type** (**Nametag** eller **Pickup Slip**) og **Size**. Hvis du ikke har laget noen ennå, står det **No label templates**, og B1 Checkin skriver ut sin innebygde navnelapp og hentelapp.
 
-- **Navnelapp** — skrives ut og festes på barnet. Inneholder vanligvis barnets navn, klasserom/økt og en sikkerhetskode.
-- **Hentelapp** — gis til forelderen eller den foresatte. Inneholder vanligvis sikkerhetskoden og en liste over barna som er sjekket inn.
+## Etikettyper {#label-types}
 
-B1 gir deg en standardmal for navnelapp og en for hentelapp, tilpasset vanlige termoetiketter på 3,5 × 1,1 tommer.
+- **Nametag** – skrives ut og festes på barnet. Inneholder vanligvis barnets navn, klasserom/samling og en sikkerhetskode.
+- **Pickup Slip** – gis til forelderen eller foresatte. Inneholder vanligvis sikkerhetskoden og en liste over barna de har sjekket inn.
 
-## Opprette en etikettmal
+Begge startmalene er tilpasset standard termoetiketter på 3,5 × 1,1 tommer (Brother DK-1201).
 
-1. Klikk på **Legg til** og velg et utgangspunkt fra menyen: **Navnelapp 3,5" x 1,1"**, **Hentelapp 3,5" x 1,1"** eller **Tom**.
-2. En ny mal åpnes i etikettredigeringen.
+## Lage en etikettmal {#creating-a-label-template}
 
-### Etikettredigering
+1. Klikk **Add label** og velg et utgangspunkt: **Nametag 3.5" x 1.1"**, **Pickup Slip 3.5" x 1.1"** eller **Blank**.
+2. Malen åpnes i etikettredigeringsprogrammet, med en forhåndsvisning av etiketten fylt ut med eksempeldata.
 
-Redigeringen viser en skalert forhåndsvisning av etiketten i den valgte størrelsen. I panelet til venstre kan du konfigurere:
+### Etikettredigeringsprogrammet {#label-editor}
 
-- **Navn** — malens navn (bare til eget bruk)
-- **Etikettype** — Navnelapp eller Hentelapp
-- **Bredde / Høyde** — etikettens størrelse i tommer
+Øverst i redigeringsprogrammet kan du angi:
 
-### Legge til blokker
+- **Name** – navnet på malen (kun for din egen referanse; påkrevd)
+- **Type** – Nametag eller Pickup Slip
+- **Width (in)** / **Height (in)** – etikettstørrelse i tommer
 
-En etikett bygges opp av blokker — enkeltstående innholdsdeler som plasseres på etikettflaten. Klikk på **Legg til blokk** for å sette inn en ny blokk og velg type:
+### Legge til blokker {#adding-blocks}
 
-- **Felt** — henter en dataverdi ved utskrift:
-  - `person.displayName` — personens fulle navn
-  - `sessions` — samlingen/klasserommet personen er sjekket inn i
-  - `securityCode` — den tilfeldig genererte sikkerhetskoden for henting
-  - `children` — liste over barn (for hentelapper)
-  - `person.nametagNotes` — spesielle merknader i personens oppføring
-  - `person.isBirthdayWeek` — sann hvis personens fødselsdag (måned og dag) er innenfor 3 dager før eller etter innsjekkingsdatoen
-  - `campus` — campusnavnet
-- **Tekst** — fast tekst du skriver inn selv (for overskrifter, ledetekster eller instruksjoner)
-- **Strekkode** — en strekkode som koder sikkerhetskoden
+En etikett er bygget opp av blokker – enkeltstående innholdselementer plassert på etiketten. Klikk på en knapp i panelet **Add Block** for å legge til en:
 
-### Plassere blokker
+- **Fields** – henter inn en verdi når etiketten skrives ut. Navnelapper tilbyr **Display Name**, **First Name**, **Last Name**, **Nickname**, **Nametag Notes** (merknadene på personens post), **Birthday This Week** (sann når personens bursdag faller innenfor 3 dager før eller etter innsjekkingsdatoen), **Sessions** (gudstjenestetidspunktene og rommene de har sjekket inn til), **Security Code**, **Date** og **Church Name**. Hentelapper tilbyr **Children**, **Children & Allergies**, **Security Code**, **Date** og **Church Name**.
+- **Text** – fast tekst du skriver inn (til overskrifter, etiketter eller instruksjoner)
+- **Barcode** – en strekkode av typen Code 128 eller Code 39 for et felt, for eksempel sikkerhetskoden
+- **QR Code** – en QR-kode for et felt
+- **Box** – et rektangel med valgfri fyllfarge og kantlinje
 
-Hver blokk har feltene **X**, **Y**, **Bredde** og **Høyde**, oppgitt som prosent av etikettflaten (0–100). Juster dem for å plassere innholdet nøyaktig. Du kan også angi:
+### Plassere og style blokker {#positioning-and-styling-blocks}
 
-- **Skriftstørrelse** — tekststørrelse i punkter
-- **Fet** — slå fet tekst av eller på
-- **Justering** — venstre-, sentrert eller høyrejustert tekst
-- **Betingelse** — skjul eventuelt blokken hvis et felt er tomt (for eksempel vis nametagNotes bare hvis det har en verdi). Dette fungerer også med `person.isBirthdayWeek` for å vise en bursdagsgrafikk eller -tekst bare på navnelapper til barn som har bursdag like før eller etter innsjekkingen.
+Dra en blokk på etiketten for å flytte den, eller klikk på den og bruk panelet **Properties**. **X**, **Y**, **W** og **H** er prosenter av etiketten (0–100). Avhengig av blokken kan du også angi:
 
-### Lagre
+- **Font Size** – tekststørrelse, i forhold til etikettens høyde
+- **Bold** og **Italic**
+- **Align** – Left, Center eller Right
+- **Symbology** og **Value** – for strekkoder og QR-koder
+- **Fill** og **Border** – for bokser
+- **Condition** – **Always** viser blokken. Velg et felt for å vise blokken bare når feltet **Is not blank**, **Is blank**, **Equals** eller **Does not equal** en verdi. For eksempel: vis merknader for navnelappen bare når de er fylt ut, eller vis en bursdagsgrafikk bare når **Birthday This Week** er lik `true`.
 
-Klikk på **Lagre** for å lagre malen. Den oppdaterte malen brukes neste gang etiketter skrives ut i B1 Checkin.
+Klikk **Remove Block** for å slette den valgte blokken.
 
-## Endre rekkefølgen på maler
+### Lagre {#saving}
 
-Hvis du har flere maler for navnelapper eller hentelapper, bruker B1 Checkin den første malen i listen som standard. Dra malene for å endre rekkefølgen.
+Klikk **Save** for å lagre malen, eller **Cancel** for å forkaste endringene dine. B1 Checkin bruker den oppdaterte malen neste gang den laster innstillingene sine.
 
-## Slette en mal
+## Velge standardmalen {#choosing-the-default-template}
 
-Klikk på sletteikonet på en malrad og bekreft. Hvis du sletter den siste malen av en type, gjenopprettes den innebygde standardmalen.
+Hvis du har mer enn én mal av samme type, klikker du **Set Default** på malen som B1 Checkin skal skrive ut. Den får et merke **Default**, og andre maler av samme type slutter å være standard. Hvis ingen mal av en type er merket som standard, bruker kiosken den første.
+
+## Slette en mal {#deleting-a-template}
+
+Klikk **Delete** på malens rad og bekreft. Hvis du sletter alle maler av en type, går B1 Checkin tilbake til sin innebygde etikett for den typen.
 
 :::tip
-Ta en prøveutskrift etter at du har redigert en mal, for å være sikker på at utformingen ser riktig ut før neste gudstjeneste.
+Skriv ut en testetikett etter at du har redigert en mal, for å bekrefte at layouten ser riktig ut før neste gudstjeneste.
 :::
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Oppsett av innsjekking](./setup.md) — sett opp gudstjenester og grupper for innsjekking
-- [Fullføre innsjekking](./check-in.md) — innsjekkingsforløpet for familier
-- [Kom i gang med B1 Checkin](../../b1-checkin/getting-started/index.md) — Checkin-kioskappen
+- [Oppmøteoppsett](./setup.md) – konfigurer gudstjenester og grupper for innsjekking
+- [Innsjekking](./check-in.md) – sett opp kioskappen B1 Checkin
+- [Komme i gang med B1 Checkin](../../b1-checkin/getting-started/index.md) – kioskappen Checkin

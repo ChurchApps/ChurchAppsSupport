@@ -1,79 +1,80 @@
 ---
-title: "Anmeldung zum Ehrenamt in B1.church"
-sidebar_label: "Ehrenamt-Anmeldung"
-description: "Offene Ehrenamtsstellen nach Kategorie finden, für kommende Gottesdienste anmelden oder die Anmeldung vor Fristende auf B1.church wieder entfernen."
+title: "Ehrenamtliche Anmeldung im B1.church-Mitgliederportal"
+sidebar_label: "Ehrenamtliche Anmeldung"
+description: "Durchsuche offene Ehrenamtspositionen nach Kategorie, melde dich für kommende Gottesdienste an oder entferne deine Anmeldung auf B1.church vor der Frist."
 ---
 
-# Ehrenamt-Anmeldung
+# Ehrenamtliche Anmeldung
 
 <div class="article-intro">
 
-Durchsuchen Sie die verfügbaren Ehrenamtsaufgaben und melden Sie sich direkt über B1.church für kommende Gottesdienste an. Die Positionen sind nach Kategorien geordnet, sodass Sie schnell finden, wo Hilfe benötigt wird, und einem Team beitreten können.
+Durchsuche verfügbare Ehrenamtspositionen und melde dich direkt über B1.church für kommende Gottesdienste an. Die Positionen sind nach Kategorie geordnet, sodass du schnell findest, wo Hilfe gebraucht wird, und einem Team beitreten kannst.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Ein B1.church-Konto – Sie müssen angemeldet sein, um sich anzumelden
-- Ihr Gemeindeadministrator muss die Selbstanmeldung für mindestens eine Position aktiviert haben
+- Ein B1.church-Konto -- du musst angemeldet sein, um dich anzumelden
+- Dein Gemeindeadministrator muss die Selbstanmeldung für mindestens eine Position aktiviert haben
 
 </div>
 
-## Verfügbare Positionen durchsuchen
+## Verfügbare Positionen durchsuchen {#browsing-available-positions}
 
-1. Rufen Sie die Seite **Ehrenamt** auf der Website Ihrer Gemeinde unter B1.church auf.
-2. Sie sehen eine Liste der kommenden Gottesdienstpläne mit offenen Ehrenamtspositionen. Innerhalb jedes Plans sind die Positionen zuerst nach Kategorie und dann nach Name geordnet. Zeigt Ihre Gemeinde nur die nächste Woche jedes Plantyps an, erscheinen spätere Wochen, sobald die aktuelle vorbei ist.
-3. Jeder Plan zeigt den **Namen des Plans**, das **Dienstdatum** und die **Gottesdienstzeiten**. Das Dienstdatum ist das tatsächliche Kalenderdatum des Plans, unabhängig von der Zeitzone, aus der Sie es betrachten.
+1. Rufe die Seite **Ehrenamtsmöglichkeiten** (`/volunteer`) auf der B1.church-Website deiner Gemeinde auf. Im Mitgliederportal tippst du stattdessen auf dem Bildschirm **Pläne** auf **Zum Dienst anmelden**, um den Bildschirm **Ehrenamt** zu öffnen.
+2. Du siehst eine Liste kommender Dienstpläne mit offenen Ehrenamtspositionen. Zeigt deine Gemeinde nur die nächste Woche jedes Plantyps, erscheinen spätere Wochen, sobald die aktuelle vorbei ist.
+3. Jeder Plan zeigt den **Plannamen**, das **Gottesdienstdatum** und die **Gottesdienstzeiten**, wie viele Plätze frei sind (oder **Voll**), und eine Leiste, wie viele Positionen besetzt sind. Das Gottesdienstdatum ist das tatsächliche Kalenderdatum des Plans, egal in welcher Zeitzone du dich befindest. Auf der Website wird jede offene Position mit der Anzahl ihrer freien Plätze aufgelistet; im Mitgliederportal tippe auf **Offene Plätze**, um bereits volle Pläne auszublenden.
+4. Klicke auf der Website auf **Ansehen & anmelden** (oder tippe im Mitgliederportal auf den Plan), um seine Positionen zu sehen.
 
-Die Positionen sind nach Kategorie gruppiert (zum Beispiel „Band“, „Gastfreundschaft“, „Kinderarbeit“). Jede Position zeigt:
+Innerhalb eines Plans sind die Positionen nach Kategorie gruppiert (zum Beispiel "Band", "Gastfreundschaft", "Kinderarbeit") und dann nach Namen aufgelistet. Jede Position zeigt:
 
-- **Name der Position** – Die Rolle, die Sie übernehmen würden (z. B. „Schlagzeuger“, „Begrüßungsdienst“, „Kaffeeausgabe“).
-- **Beschreibung** – Einzelheiten zur Aufgabe, sofern der Administrator sie angegeben hat.
-- **Freie Plätze** – Ein Fortschrittsbalken, der zeigt, wie viele Plätze besetzt sind und wie viele noch frei sind.
-- **Wer sich angemeldet hat** – Wenn Ihre Gemeinde für den Plan **Namen der Ehrenamtlichen auf der Anmeldeseite anzeigen** aktiviert hat, listet eine Zeile „Angemeldet:“ die Namen der Personen auf, die bereits in dieser Position dienen. Namen werden nur angezeigt, wenn Sie angemeldet sind.
+- **Positionsname** -- Die Rolle, die du übernehmen würdest (z. B. "Schlagzeuger", "Begrüßer", "Kaffeeausschank").
+- **Beschreibung** -- Einzelheiten zur Rolle, sofern der Administrator sie angegeben hat.
+- **Verfügbare Plätze** -- Wie viele Plätze besetzt sind und wie viele frei bleiben (zum Beispiel "2 von 2 Plätzen frei" auf der Website oder "0 von 2 besetzt" im Mitgliederportal).
+- **Wer angemeldet ist** -- Wenn deine Gemeinde für den Plan **Namen der Ehrenamtlichen auf der Anmeldeseite anzeigen** aktiviert hat, listet eine Zeile "Angemeldet:" die Namen der Personen auf, die diese Position bereits übernehmen. Namen werden nur angezeigt, wenn du angemeldet bist.
 
-## Sich anmelden
+## Anmelden {#signing-up}
 
-1. Suchen Sie eine Position, für die Sie sich engagieren möchten.
-2. Klicken Sie neben der Position auf die Schaltfläche **Anmelden**.
-3. Eine Bestätigung erscheint: „Sie sind angemeldet! Vielen Dank für Ihr Ehrenamt.“
-4. Die Position zeigt nun eine grüne Anzeige, die bestätigt, dass Sie angemeldet sind.
+1. Finde eine Position, für die du dich engagieren möchtest.
+2. Klicke neben der Position auf die Schaltfläche **Anmelden**.
+3. Eine Bestätigung erscheint: "Du bist angemeldet! Danke für dein Engagement." (im Mitgliederportal: "Du wurdest angemeldet!").
+4. Die Position zeigt nun eine grüne Markierung **Du bist angemeldet** (im Mitgliederportal **Angemeldet**) und eine Schaltfläche **Entfernen**.
 
 :::info
-Sie müssen angemeldet sein, um sich anmelden zu können. Wenn Sie nicht angemeldet sind, werden Sie zuerst zur Anmeldung aufgefordert.
+Du musst angemeldet sein, um dich anzumelden. Bist du nicht angemeldet, zeigt die Seite "Melde dich an, um dich für eine Position anzumelden." mit einem Link zur Anmeldung, und die Schaltflächen **Anmelden** sind deaktiviert.
 :::
 
-## Eine Anmeldung zurückziehen
+## Eine Anmeldung entfernen {#removing-a-signup}
 
-Wenn sich Ihre Pläne ändern und Sie nicht mehr dienen können:
+Ändern sich deine Pläne und du kannst nicht mehr dienen:
 
-1. Suchen Sie die Position, für die Sie sich angemeldet haben – sie zeigt eine grüne Anzeige „Sie sind angemeldet“.
-2. Klicken Sie auf die Schaltfläche **Entfernen**.
-3. Bestätigen Sie, dass Sie sich von der Position abmelden möchten.
-4. Eine Meldung bestätigt: „Sie wurden von dieser Position entfernt.“
+1. Finde die Position, für die du dich angemeldet hast -- sie zeigt eine grüne Markierung "Du bist angemeldet".
+2. Klicke auf die Schaltfläche **Entfernen**.
+3. Bestätige im Dialog **Dich selbst entfernen?** (im Mitgliederportal **Anmeldung entfernen?**) mit einem Klick auf **Entfernen**.
+4. Eine Meldung bestätigt: "Du wurdest von dieser Position entfernt." (im Mitgliederportal: "Deine Anmeldung wurde entfernt.").
 
-## Fristen
+## Fristen {#deadlines}
 
-Ihr Gemeindeadministrator kann für jeden Plan eine Anmeldefrist festlegen. Die Frist liegt eine festgelegte Anzahl von Stunden vor der ersten Gottesdienstzeit des Plans – zum Beispiel schließt eine Frist von 2 Stunden bei einem Gottesdienst um 10:00 Uhr die Anmeldungen am selben Morgen um 8:00 Uhr. Ist die Frist verstrichen:
+Dein Gemeindeadministrator kann für jeden Plan eine Anmeldefrist festlegen. Die Frist ist eine feste Anzahl von Stunden vor der ersten Gottesdienstzeit des Plans -- zum Beispiel schließt bei einer 2-Stunden-Frist für einen Gottesdienst um 10:00 Uhr die Anmeldung um 8:00 Uhr am selben Morgen. Ist die Frist abgelaufen:
 
-- Sie können sich nicht mehr für neue Positionen anmelden.
-- Sie können bestehende Anmeldungen nicht mehr entfernen.
-- Ein Hinweis oben im Plan zeigt an, dass die Anmeldefrist abgelaufen ist.
+- Kannst du dich nicht mehr für neue Positionen anmelden.
+- Kannst du bestehende Anmeldungen nicht mehr entfernen.
+- Erscheint oben im Plan der Hinweis "Die Anmeldefrist für diesen Plan ist abgelaufen." (im Mitgliederportal: "Anmeldefrist abgelaufen.").
 
-## Platzkapazität
+## Platzkapazität {#position-capacity}
 
-Jede Position hat eine begrenzte Anzahl an Plätzen. Sind alle Plätze belegt:
+Jede Position hat eine begrenzte Anzahl an Plätzen. Sind alle Plätze besetzt:
 
-- Die Position wird als **Voll** angezeigt.
-- Die Schaltfläche zum Anmelden ist deaktiviert.
-- Wenn jemand seine Anmeldung zurückzieht, wird der Platz wieder frei.
+- Zeigt die Schaltfläche der Position **Voll** und ist deaktiviert.
+- Auf der Website steht dort "Alle 2 Plätze besetzt" (mit der Anzahl der Plätze).
+- Entfernt jemand seine Anmeldung, wird der Platz wieder frei.
 
 :::tip
-Schauen Sie regelmäßig auf der Ehrenamtsseite nach, besonders zu Beginn der Woche. Beliebte Positionen sind schnell belegt, daher haben Sie bei einer frühen Anmeldung die größte Auswahl.
+Schau regelmäßig auf der Ehrenamtsseite nach, besonders früh in der Woche. Beliebte Positionen sind schnell belegt, daher hast du mit einer frühen Anmeldung die größte Auswahl.
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Übersicht Dienst](./index.md) – Überblick über die Dienstfunktionen auf B1.church
-- [Pläne anzeigen](../plans/viewing-plans.md) – Ihre zugewiesenen Pläne und Gottesdienstabläufe ansehen
+- [Dienst im Überblick](./index.md) -- Überblick über die Dienstfunktionen in B1.church
+- [Pläne anzeigen](../plans/viewing-plans.md) -- Deine zugewiesenen Pläne und Gottesdienstreihenfolgen ansehen

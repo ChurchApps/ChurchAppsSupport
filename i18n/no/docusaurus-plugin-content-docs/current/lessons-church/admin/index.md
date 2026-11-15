@@ -15,7 +15,7 @@ Administrasjonsområdet i Lessons.church er der innholdsskapere og administrator
 Tilgang til administrasjon krever riktige tillatelser. Hvis du ikke ser administrasjonsalternativene, kontakt kirkeadministratoren din for å be om tilgang.
 :::
 
-## Hva du kan gjøre
+## Hva du kan gjøre {#what-you-can-do}
 
 Administrasjonsområdet gir deg full kontroll over innholdet ditt:
 

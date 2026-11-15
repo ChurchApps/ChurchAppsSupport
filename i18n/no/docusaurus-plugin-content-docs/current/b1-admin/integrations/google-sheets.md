@@ -1,114 +1,118 @@
 ---
 title: "Google Sheets"
-description: "Koble B1 Admin til Google Sheets med B1 Export-tillegget for å hente People, Donations, Groups og Attendance inn i regnearkfaner når du trenger det."
+description: "Koble B1 Admin til Google Sheets med tillegget B1 Export for å hente personer, gaver, grupper og oppmøte inn i regnearkfaner på forespørsel."
 ---
 
 # Google Sheets
 
 <div class="article-intro">
 
-**B1 Export** er det offisielle Google Sheets-tillegget for B1.church. Det legger til en sidefelt til et regneark som eksporterer mennesker, donasjoner, grupper eller frammøte fra kirka di til navngitte faner — på etterspørsel, med ett klikk. Tillegget kjører helt inne i brukerens Google-konto; ingenting om det berører ChurchApps-servere utover de skrivebeskyttede API-kall hver eksport gjør.
+**B1 Export** er det offisielle Google Sheets-tillegget for B1.church. Det legger til en sidepanel i et hvilket som helst regneark, og eksporterer personer, gaver, grupper eller oppmøte fra kirken din i B1 til navngitte faner, på forespørsel, med ett klikk. Tillegget kjører helt inne i brukerens Google-konto. Det er ingen annen kontakt med ChurchApps' servere enn de skrivebeskyttede API-kallene hver eksport gjør.
 
 </div>
+
+:::caution Ikke tilgjengelig ennå
+B1 Export-tillegget er ikke publisert i Google Workspace Marketplace ennå, så du kan ikke installere det i dag. Inntil det er publisert, eksporter personer fra B1 Admin (se [Eksportere data](../people/exporting-data.md)) og importer CSV-filen til Google Sheets. Alt nedenfor beskriver hvordan tillegget vil fungere når det er lansert.
+:::
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- En Google-konto med redigeringsprivilegier til regnearket du vil eksportere til
-- En kirkeadministrator (eller noen med lesetilgang til dataene du vil eksportere) som kan opprette en B1 API-nøkkel
+- En Google-konto med redigeringstilgang til regnearket du vil eksportere til
+- En kirkeadministrator (eller noen med lesetilgang til dataene du vil eksportere) som kan lage en B1 API-nøkkel
 - B1 Export-tillegget installert fra Google Workspace Marketplace
 
 </div>
 
-## Hva det eksporterer
+## Hva det eksporterer {#what-it-exports}
 
 | Menyelement | Regnearkfane | Data |
 |---|---|---|
-| Eksporter mennesker | `B1 People` | ID, Visningsnavn, Fornavn, Etternavn, E-post, Medlemskapsstatus |
-| Eksporter donasjoner | `B1 Donations` | ID, Person-ID, Dato, Beløp, Metode, Batch-ID |
-| Eksporter grupper | `B1 Groups` | ID, Navn, Kategori, Antall medlemmer |
-| Eksporter frammøte | `B1 Attendance` | ID, Person-ID, Besøksdag, Service-ID, Gruppe-ID |
+| Eksporter personer | `B1 People` | ID, visningsnavn, fornavn, etternavn, e-post, medlemsstatus |
+| Eksporter gaver | `B1 Donations` | ID, person-ID, dato, beløp, metode, batch-ID |
+| Eksporter grupper | `B1 Groups` | ID, navn, kategori, antall medlemmer |
+| Eksporter oppmøte | `B1 Attendance` | ID, person-ID, besøksdato, gudstjeneste-ID, gruppe-ID |
 
-Hver eksport **erstatter** innholdet i sin navngitte fane — kjøring av en eksport på nytt gir deg et nytt øyeblikksbilde, ikke tilføyde rader. Andre faner i regnearket er uberørte.
+Hver eksport **erstatter** innholdet i den navngitte fanen. Kjører du eksporten på nytt, får du et nytt øyeblikksbilde, ikke nye rader lagt til under. Andre faner i regnearket blir ikke berørt.
 
-## Oppsett
+## Oppsett {#setup}
 
-### 1. Opprett en B1 API-nøkkel med riktige scoper
+### 1. Lag en B1 API-nøkkel med riktige omfang {#1-create-a-b1-api-key-with-the-right-scopes}
 
-1. I B1Admin gå til **Innstillinger → Utviklernavn → API-nøkler**.
-2. Klikk **Ny API-nøkkel**, gi den navnet "Sheets Export", og gi de **lese**-scopene for det du planlegger å eksportere:
-   - `people:read` for eksport av mennesker
-   - `donations:read` for donasjoner
+1. I B1 Admin går du til **Innstillinger → Utvikler → API-nøkler**.
+2. Klikk på **Ny API-nøkkel**, gi den navnet «Sheets Export», og gi **lese**-omfang for det du planlegger å eksportere:
+   - `people:read` for eksport av personer
+   - `donations:read` for gaver
    - `groups:read` for grupper
-   - `attendance:read` for frammøte
-3. En nøkkel som bare gjør eksporter behøver **ikke** `settings:write` — det scopet er bare for koblinger som registrerer webhooks (Zapier / Make). Behold denne nøkkelen snever.
+   - `attendance:read` for oppmøte
+3. En nøkkel som bare brukes til eksport trenger **ikke** `settings:write`. Det omfanget er bare for connectorer som registrerer webhooks (Zapier / Make). Hold denne nøkkelen smal.
 4. Lagre og kopier `cak_…`-nøkkelen.
 
-### 2. Installere tillegget
+### 2. Installer tillegget {#2-install-the-add-on}
 
 1. Åpne regnearket du vil eksportere til.
-2. **Utvidelser → Tillegg → Få tillegg**.
-3. Søk etter **B1 Export** og installere det. Google ber deg om å gi tilgang til arkene dine og til ekstern HTTP (slik at tillegget kan ringe B1 API).
+2. **Utvidelser → Tillegg → Hent tillegg**.
+3. Søk etter **B1 Export** og installer det. Google ber deg gi tilgang til regnearkene dine og til eksterne HTTP-kall (slik at tillegget kan kalle B1 API-et).
 
-Etter installasjon vises en **B1 Export**-oppføring under **Utvidelser**-menyen i hvert regneark du åpner med denne Google-kontoen.
+Etter installasjonen vises et **B1 Export**-punkt under menyen **Utvidelser** i alle regneark du åpner med denne Google-kontoen.
 
-### 3. Koble nøkkelen
+### 3. Koble til nøkkelen {#3-connect-the-key}
 
-1. **Utvidelser → B1 Export → Koble til…** (eller **B1 Export → Koble til…** fra menylinja etter første åpning).
-2. Lim inn API-nøkkelen i sidefeltet, la Base URL være `https://api.churchapps.org` (hvis du ikke tester mot staging), og klikk **Lagre**.
-3. Klikk **Testforbindelse** — en grønn "Forbindelse OK" bekrefter at nøkkelen fungerer.
+1. **Utvidelser → B1 Export → Koble til…** (eller **B1 Export → Koble til…** i menylinjen etter første åpning).
+2. Lim inn API-nøkkelen i sidepanelet, la basis-URL-en stå som `https://api.churchapps.org` (med mindre du tester mot staging), og klikk på **Lagre**.
+3. Klikk på **Test tilkobling**. En grønn «Tilkobling OK» bekrefter at nøkkelen fungerer.
 
-Nøkkelen er lagret i **per-bruker-egenskaper** (`PropertiesService.getUserProperties()`) — den er knyttet til Google-kontoen din, aldri skrevet inn i arket, og aldri synlig for andre redigerer av regnearket.
+Nøkkelen lagres i **brukerspesifikke egenskaper** (`PropertiesService.getUserProperties()`). Den er knyttet til Google-kontoen din, skrives aldri inn i regnearket, og er aldri synlig for andre redigerere av regnearket.
 
-## Kjør en eksport
+## Kjøre en eksport {#running-an-export}
 
 Enten:
 
-- **Fra menyen** — **Utvidelser → B1 Export → Eksporter mennesker** (eller donasjoner / grupper / frammøte)
-- **Fra sidefeltet** — åpne sidefeltet (Koble til…) og klikk på riktig datasett-knapp
+- **Fra menyen**: **Utvidelser → B1 Export → Eksporter personer** (eller gaver / grupper / oppmøte)
+- **Fra sidepanelet**: åpne sidepanelet (Koble til…) og klikk på riktig datasettknapp
 
-En kunngjøring bekrefter når det er ferdig — "_N_ rad(er) skrevet til 'B1 People'."
+En melding bekrefter når det er ferdig: «_N_ rad(er) skrevet til "B1 People"».
 
-## Bygge rapporter på toppen
+## Bygge rapporter oppå {#building-reports-on-top}
 
-De eksporterte fanene er vanlige Google Sheets-data. Bygg dine egne analyser på referanser-faner:
+De eksporterte fanene er vanlige Google Sheets-data. Bygg egne analyser ved å referere til fanene:
 
-- En **oppsummeringsfane** med `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` for å totalt kort-gaver
-- En **filtret visning** av bare medlemmer med `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
-- Et **diagram** over frammøte-trender som trekker fra `B1 Attendance`
+- En **oppsummeringsfane** med `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` for å summere kortgaver
+- En **filtrert visning** som bare viser medlemmer med `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
+- Et **diagram** over oppmøtetrender som henter data fra `B1 Attendance`
 
-Kjøring av eksport på nytt oppdaterer underliggende fane; formlene dine oppdateres automatisk.
+Kjører du eksporten på nytt, oppdateres den underliggende fanen. Formlene dine oppdateres automatisk.
 
-## Planlegging av gjentakende eksporter
+## Planlegge gjentakende eksporter {#scheduling-recurring-exports}
 
-Tillegget er på etterspørsel som standard. For ukentlige eller månedlige eksporter bruker du Apps Scripts innebygde tidsdrevne utløsere:
+Tillegget kjøres på forespørsel som standard. For ukentlige eller månedlige eksporter bruker du Apps Scripts innebygde tidsstyrte utløsere:
 
-1. **Utvidelser → Apps Script** i regnearket (dette åpner tilleggets bundne script).
-2. Klikk **⏰ Utløsere**-ikonet i venstre sidefelt.
-3. **Legg til utløser** for `exportPeople` (eller en annen eksportfunksjon) — velg *Tidsdrevet*, *Uketimer*, f.eks. *Hver mandag 06:00*.
+1. **Utvidelser → Apps Script** i regnearket (dette åpner tilleggets tilknyttede skript).
+2. Klikk på **⏰ Utløsere**-ikonet i venstre sidepanel.
+3. **Legg til utløser** for `exportPeople` (eller en annen eksportfunksjon). Velg *Tidsstyrt*, *Ukentlig timer*, f.eks. *Hver mandag kl. 06*.
 
-Eksport kjører i bakgrunnen under Google-kontoen din. Hvis API-nøkkelen roteres eller tilbakekalles, e-posten-utløseren deg neste gang den mislykkes.
+Eksporten kjører i bakgrunnen under Google-kontoen din. Hvis API-nøkkelen byttes ut eller trekkes tilbake, sender utløseren deg en e-post neste gang den mislykkes.
 
-## Tillatelser og personvern
+## Tillatelser og personvern {#permissions--privacy}
 
-- Tillegget ber bare om `spreadsheets.currentonly` (den kan bare berøre regnearket den er åpen i) og `script.external_request` (slik at `UrlFetchApp` kan ringe B1 API). Det **ser ikke** Drive-, Gmail- eller andre Google-data.
-- B1 API-nøkkelen er lagret per-bruker — andre redigerere av samme regneark kan ikke se den.
-- Alle B1 API-kall blir gjort over HTTPS med `Authorization: Bearer cak_…`.
+- Tillegget ber bare om `spreadsheets.currentonly` (det kan bare røre regnearket det er åpnet i) og `script.external_request` (slik at `UrlFetchApp` kan kalle B1 API-et). Det ser **ikke** Drive, Gmail eller andre Google-data dine.
+- B1 API-nøkkelen lagres per bruker. Andre redigerere av samme regneark kan ikke se den.
+- Alle B1 API-kall gjøres over HTTPS med `Authorization: Bearer cak_…`.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-- **"Ingen API-nøkkel satt"** — åpne **Utvidelser → B1 Export → Koble til…** og lim inn nøkkelen.
-- **"B1 avviste API-nøkkelen (401)"** — nøkkelen ble tilbakekalt eller er feil. Opprett på nytt og lim inn på nytt.
-- **"Denne API-nøkkelen mangler tillatelse for /giving/donations (403)"** — nøkkelen har ikke `donations:read`. Oppdater nøkkelens scoper i B1Admin.
-- **Arket ikke oppdatert** etter kjøring — kontroller at du ser på *riktig* fane-navn (`B1 People` osv.). Eksport oppretter fanen hvis den ikke eksisterte.
-- **"Kvote overskredet"** — Apps Script pålegger per-bruker daglige kvotaer på `UrlFetchApp` (vanligvis tusenvis av anrop per dag). En stor kirke med mange poster kan trenge å dele eksporter på tvers av flere dager eller bruke [Make](./make.md) / en tilpasset integrasjon for høyvolum-sync.
+- **«Ingen API-nøkkel er satt»**: åpne **Utvidelser → B1 Export → Koble til…** og lim inn nøkkelen.
+- **«B1 avviste API-nøkkelen (401)»**: nøkkelen er slettet eller feil. Lag en ny nøkkel og lim den inn.
+- **«Denne API-nøkkelen mangler tillatelse for /giving/donations (403)»**: nøkkelen har ikke `donations:read`. Omfang kan ikke endres på en eksisterende nøkkel, så lag en ny nøkkel med riktige omfang i B1 Admin.
+- **Regnearket oppdateres ikke** etter kjøring: sjekk at du ser på riktig fanenavn (`B1 People` osv.). Eksporten oppretter fanen hvis den ikke finnes.
+- **«Kvote overskredet»**: Apps Script setter daglige kvoter per bruker for `UrlFetchApp` (vanligvis tusenvis av kall per dag). En stor kirke med mange registreringer kan trenge å dele eksportene over flere dager, eller bruke [Make](./make.md) / en egen integrasjon for synkronisering med høyt volum.
 
-## Tilpasse tillegget
+## Mangler en kolonne? {#missing-a-column}
 
-Tillegget er åpen kildekode — Apps Script-prosjektet lever i `B1Integrations/GoogleSheetsAddon/`-repoet. Hvis du vil ha en kolonne vi ikke eksporterer, et ekstra datasett, eller et annet utdataformat, åpne en issue eller PR der.
+Hvis du vil ha en kolonne vi ikke eksporterer, et ekstra datasett eller et annet utdataformat, send e-post til [support@churchapps.org](mailto:support@churchapps.org).
 
-## Se også
+## Se også {#see-also}
 
-- [Zapier](./zapier.md) — for sanntidssync i stedet for eksport på etterspørsel
-- [Make](./make.md) — for sync med mer komplekse transformasjoner
-- [API-nøkler (utviklerreferanse)](/docs/developer/api/api-keys)
+- [Zapier](./zapier.md) for synkronisering i sanntid i stedet for eksport på forespørsel
+- [Make](./make.md) for synkronisering med mer kompliserte transformasjoner
+- [API-nøkler (referanse for utviklere)](/docs/developer/api/api-keys)

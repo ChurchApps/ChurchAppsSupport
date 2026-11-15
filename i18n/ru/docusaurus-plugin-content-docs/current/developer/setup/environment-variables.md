@@ -167,7 +167,7 @@ Next.js требует префикс `NEXT_PUBLIC_` для любой пере�
 
 ## Переменные окружения мобильных приложений
 
-### B1Checkin (React Native / Expo)
+### B1Checkin (React Native / Expo) {#b1checkin-react-native--expo}
 
 Файл-пример: `dotenv.sample.txt`
 

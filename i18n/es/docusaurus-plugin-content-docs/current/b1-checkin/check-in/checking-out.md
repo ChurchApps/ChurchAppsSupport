@@ -51,7 +51,7 @@ Las personas de recogida confiables y no autorizadas son administradas por el pe
 
 Si una etiqueta de nombre o etiqueta de recogida se pierde o daña, el personal en una estación atendida puede **reprint** las etiquetas de la familia desde la pantalla de registro de salida después de ingresar el código de seguridad. La reimpresión utiliza la misma impresora y plantillas de etiqueta que el registro de entrada original.
 
-## Transmisión de Emergencia
+## Transmisión de Emergencia {#emergency-broadcast}
 
 En una emergencia, el personal puede enviar un mensaje de texto a los tutores de cada niño registrado para el servicio actual a la vez:
 

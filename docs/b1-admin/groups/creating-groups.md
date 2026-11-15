@@ -42,7 +42,7 @@ Once your group is created, you can fill in additional details:
    - **Description** -- A brief summary of what the group is about, written in the formatting editor. This is visible to members.
    - **Photo** -- Click the photo box or **Add Photo** to pick or upload an image for the group.
    - **Slug** -- The short key name used in the group's web address on your church site.
-   - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply, or click **Add New Label** to create one. Labels can be used to filter groups in the Groups Browser website element.
+   - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply, or click **Add New Label** to create one. Labels can be used to filter groups in the Groups Browser website element, and a Group List website element can show only the groups that carry one label.
    - **Campus** -- The campus the group belongs to, if your church has more than one.
    - **Enrollment** -- Choose who can join this group:
      - **Open (members can join immediately)** -- Anyone can join without approval

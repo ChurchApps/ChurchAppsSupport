@@ -1,13 +1,13 @@
 ---
-title: "Skriv ut katalog"
-description: "Lag en utskrivbar medlemskatalog gruppert etter husstand fra B1 Admin, med bilder, kontaktinfo og bursdager, tilpasset A4-papir."
+title: "Utskriftskatalog"
+description: "Lag en utskrivbar medlemskatalog gruppert etter husstand fra B1 Admin, med bilder, kontaktinformasjon og bursdager, tilpasset papir i letter-størrelse."
 ---
 
-# Skriv ut katalog
+# Utskriftskatalog
 
 <div class="article-intro">
 
-Funksjonen Skriv ut katalog lager en formatert, utskrivbar medlemskatalog for menigheten. Den organiserer medlemmene etter husstand, inkluderer kontaktinformasjon og bilder, og er utformet for å se profesjonell ut når den skrives ut på papir i standard Letter-størrelse.
+Funksjonen Utskriftskatalog lager en formatert, utskrivbar medlemskatalog for kirken din. Den organiserer medlemmene etter husstand, inkluderer kontaktinformasjon og bilder, og er laget for å se profesjonell ut når den skrives ut på standard papir i letter-størrelse.
 
 </div>
 
@@ -15,76 +15,77 @@ Funksjonen Skriv ut katalog lager en formatert, utskrivbar medlemskatalog for me
 <h4>Før du begynner</h4>
 
 - Du trenger en aktiv B1 Admin-konto med tillatelse til å se personer.
-- Personene i registeret bør ha bilder og kontaktinformasjon utfylt for best resultat.
+- Personene i katalogen din bør ha bilder og kontaktinformasjon utfylt for best resultat.
 
 </div>
 
-## Åpne utskriftskatalogen
+## Åpne utskriftskatalogen {#opening-the-print-directory}
 
 1. Gå til **Personer** i B1 Admin.
-2. Klikk på **Skriv ut katalog** i sidetoppen på Personer-siden.
-3. Utskriftskatalogen åpnes i en ny nettleserfane og begynner å laste registerdataene.
-4. Etter omtrent 1,5 sekunder vises utskriftsdialogen i nettleseren automatisk.
+2. Klikk på **Utskriftskatalog** i sidetoppen på siden Personer.
+3. Utskriftskatalogen åpnes i en ny nettleserfane og begynner å laste katalogdataene dine.
+4. Etter omtrent 1,5 sekund vises nettleserens utskriftsdialog automatisk.
 
 :::tip
-Katalogen åpnes i en egen fane slik at du kan skrive den ut uten å forlate siden Personer. Når utskriftsdialogen har vist seg, går fanen automatisk tilbake.
+Katalogen åpnes i en egen fane, slik at du kan skrive den ut uten å forlate siden Personer. Når utskriftsdialogen lukkes, bytter fanen til siden Personer, slik at du kan lukke den eller fortsette å jobbe der.
 :::
 
-## Hva som tas med
+## Hva som tas med {#what-gets-included}
 
-Utskriftskatalogen inkluderer alle **aktive medlemmer** i menigheten. Nærmere bestemt:
+Utskriftskatalogen inkluderer alle **aktive medlemmer** i kirken din. Nærmere bestemt:
 
-- Personer med medlemsstatusen **Inaktiv**, **Besøkende** eller **Avdød** utelates automatisk.
-- Personer som har **reservert seg** mot å stå i katalogen, utelates.
+- Personer med medlemsstatus **Inaktiv**, **Besøkende** eller **Død** utelates automatisk.
+- Personer som har **valgt bort** katalogen, utelates.
 - Alle andre grupperes etter **husstand**.
 
-### Skrive ut bare søkeresultatene
+### Skrive ut bare søkeresultatene dine {#printing-only-your-search-results}
 
-Etter at du har kjørt et søk på siden Personer -- et hurtigsøk, et [avansert søk](./searching-people.md#advanced-search), en [lagret liste](./lists.md) eller et [AI-søk](./ai-search.md) -- endres knappen **Skriv ut katalog** til **Skriv ut resultater**. Når du klikker på den, skrives det ut en katalog med bare personene i resultatene i stedet for hele menigheten, med samme layout.
+Etter at du har kjørt et søk på siden Personer (et hurtigsøk, et [avansert søk](./searching-people.md#advanced-search), en [lagret liste](./lists.md) eller et [AI-søk](./ai-search.md)), endres knappen **Utskriftskatalog** til **Skriv ut resultater**. Når du klikker på den, skrives det ut en katalog over bare personene i resultatene dine i stedet for hele kirken, med samme oppsett.
 
-Når du skriver ut søkeresultater, gjelder ikke filteret for medlemsstatus ovenfor: alle du har søkt opp, tas med, også besøkende eller inaktive. Personer som har reservert seg mot å stå i katalogen, utelates fortsatt. For å gå tilbake til å skrive ut hele katalogen tømmer du søket først.
+Når du skriver ut søkeresultater, gjelder ikke filteret for medlemsstatus ovenfor. Alle du søkte etter, er med, også besøkende og inaktive personer. Personer som har valgt bort katalogen, utelates fortsatt. For å gå tilbake til å skrive ut hele katalogen, tøm søket først.
 
-## Katalogens oppsett
+## Katalogoppsettet {#directory-layout}
 
 Den utskrevne katalogen har to deler:
 
-### Forside
+### Forside {#cover-page}
 
 Den første siden inneholder:
-- Menighetens navn
+- Kirkens logo, hvis en er satt
+- Kirkens navn
 - Tittelen «Medlemskatalog»
 - Inneværende år
-- Menighetens sted
-- Antall husstander som er med
+- Kirkens by og region
+- Datoen den ble skrevet ut, og et antall husstander som er med
 
-### Medlemsoppføringer
+### Medlemsoppføringer {#member-listings}
 
-De resterende sidene viser husstandene alfabetisk etter etternavn. Hvert husstandskort viser:
+De resterende sidene lister husstandene alfabetisk etter etternavn. Hvert husstandskort viser:
 
-- **Bilder** -- Runde miniatyrbilder av hvert husstandsmedlem, med navnet under
-- **Husstandens visningsnavn** -- For eksempel «Familien Hansen», «Ola og Kari Nordmann» eller bare personens navn for enkeltpersoner
-- **Adresse** -- Gateadresse, postnummer og sted
-- **Telefon** -- Hjemme- eller mobilnummer
-- **E-post** -- Primær e-postadresse
-- **Bursdager** -- Formatert som enkeltdatoer for hvert husstandsmedlem
-- **Bryllupsdag** -- Hvis den er registrert
+- **Bilder**: Runde miniatyrbilder for hvert husstandsmedlem, med navnet under
+- **Visningsnavn for husstanden**: For eksempel «Familien Hansen», «John og Jane Doe», eller bare navnet til personen for enkeltpersoner
+- **Adresse**: Gateadresse, by, region og postnummer
+- **Telefon**: Hjemmenummeret, eller et mobilnummer hvis ingen i husstanden har et hjemmenummer
+- **E-post**: Primær e-postadresse
+- **Bursdager**: Hvert medlems fornavn og bursdag (måned og dag)
+- **Bryllupsdag**: Hvis registrert
 
-Husstandene er ordnet i **alfabetiske seksjoner** (A, B, C, ...) med en dekorativ seksjonsoverskrift før hver bokstavgruppe. To husstandskort vises side om side på hver rad.
+Husstandene er organisert i **alfabetiske seksjoner** (A, B, C, ...), med en dekorativ seksjonsoverskrift foran hver bokstavgruppe. To husstandskort vises side om side på hver rad.
 
-## Utskriftsinnstillinger
+## Utskriftsinnstillinger {#print-settings}
 
-Katalogen er formatert for papir i **Letter-størrelse** (8,5" × 11") med 0,5 tommers marger. Når utskriftsdialogen i nettleseren vises:
+Katalogen er formatert for **papir i letter-størrelse** (8,5" × 11") med 0,5 tommers marger. Når nettleserens utskriftsdialog vises:
 
-- La papirstørrelsen stå på **Letter**
-- Slå på **Bakgrunnsgrafikk** (noen ganger kalt «Skriv ut bakgrunner») i nettleserens utskriftsinnstillinger hvis du vil at seksjonsoverskriftene skal skrives ut med fargene sine
+- La papirstørrelsen være satt til **Letter**
+- Aktiver **Bakgrunnsgrafikk** (noen ganger kalt «Skriv ut bakgrunner») i nettleserens utskriftsinnstillinger hvis du vil at seksjonsoverskriftene skal skrives ut med fargene sine
 - Stående retning anbefales
 
 :::info
-Katalogen tar hensyn til sideskift — husstandskort og seksjonsoverskrifter deles ikke mellom sider.
+Katalogen respekterer sideskift. Husstandskort og seksjonsoverskrifter deles ikke over flere sider.
 :::
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Søke etter personer](./searching-people.md) -- Filtrer registeret før du skriver ut
-- [Eksportere data](./exporting-data.md) -- Eksporter registerdata som regneark i stedet
-- [Legge til personer](./adding-people.md) -- Legg til eller oppdater medlemsposter
+- [Søke etter personer](./searching-people.md): filtrer katalogen din før utskrift
+- [Eksportere data](./exporting-data.md): eksporter katalogdata som regneark i stedet
+- [Legge til personer](./adding-people.md): legg til eller oppdater medlemsposter

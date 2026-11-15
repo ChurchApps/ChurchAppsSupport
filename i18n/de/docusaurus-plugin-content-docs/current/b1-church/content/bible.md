@@ -1,52 +1,55 @@
 ---
 title: "Die Bibel auf B1.church lesen"
 sidebar_label: "Bibel"
-description: "Die Bibel im B1.church-Bibelleser lesen, mit Steuerung für Buch, Kapitel und Übersetzung sowie einer Bibelseite für tägliches Lesen."
+description: "Lies die Schrift im Bibelleser von B1.church mit Steuerelementen für Buch, Kapitel und Übersetzung sowie einer Bibelseite für das tägliche Lesen."
 ---
 
 # Bibel
 
 <div class="article-intro">
 
-B1.church enthält einen integrierten Bibelleser, sodass Sie Heilige Schrift lesen können, ohne die Website zu verlassen. Der Leser ist direkt in die Seite eingebettet und bietet Ihnen schnellen Zugriff auf jeden Vers neben Ihren anderen Kirchenwerkzeugen.
+B1.church enthält einen eingebauten Bibelleser, sodass du die Schrift lesen kannst, ohne die Website zu verlassen. Der Leser ist direkt in die Seite eingebettet und gibt dir schnellen Zugriff auf jeden Abschnitt, direkt neben deinen anderen Gemeindewerkzeugen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Für die Verwendung des Bibellesers ist keine Anmeldung erforderlich. Die Bibelseite ist öffentlich zugänglich.
-- Ihre Kirche muss eine Bibelseite zur Navigation ihrer Website hinzugefügt haben.
+- Für den Bibelleser ist keine Anmeldung erforderlich. Die Bibelseite ist öffentlich zugänglich.
+- Deine Gemeinde muss der Website-Navigation eine Bibelseite hinzugefügt haben.
 
 </div>
 
-## Die Bibel lesen
+## Die Bibel lesen {#reading-the-bible}
 
-1. Navigieren Sie zur Seite **Bible** aus der Navigation Ihrer Kirchenseite.
-2. Der Leser öffnet sich standardmäßig bei 1. Mose 1:1.
-3. Verwenden Sie die Navigationselemente im Leser, um zu einem anderen Buch, Kapitel oder Vers zu wechseln.
+1. Rufe die Seite **Bibel** über die Navigation der Website deiner Gemeinde auf.
+2. Der Leser öffnet sich standardmäßig bei Genesis 1.
+3. Nutze die Navigationssteuerung innerhalb des Lesers, um zu einem anderen Buch, Kapitel oder Vers zu wechseln.
 
-Der Bibelleser wird von **YouVersion** unterstützt und gibt Ihnen Zugriff auf eine große Auswahl von Bibelübersetzungen in vielen Sprachen.
+Der Bibelleser wird von **YouVersion** betrieben und bietet dir eine große Auswahl an Bibelübersetzungen in vielen Sprachen.
 
-## Navigieren durch Verse
+## Abschnitte durchblättern {#navigating-passages}
 
-Der eingebettete Leser bietet Steuerelemente zum Durchblättern der Heiligen Schrift. Sie können:
+Der eingebettete Leser bietet Steuerelemente zum Durchgehen der Schrift. Du kannst:
 
-- Zu einem bestimmten Bibelbuch navigieren
+- Zu einem bestimmten Buch der Bibel blättern
 - Zu einem bestimmten Kapitel springen
-- Durch Verse innerhalb eines Kapitels scrollen
-- Mit dem Versionswahlschalter zu einer anderen Bibelübersetzung wechseln
+- Durch die Verse eines Kapitels scrollen
+- Mit der Versionsauswahl zu einer anderen Bibelübersetzung wechseln
+- Auf der Website deiner Gemeinde mit den Schaltflächen **Vorheriges Kapitel** und **Nächstes Kapitel** über dem Text durch ein Buch blättern
 
-Der Leser füllt den Inhaltsbereich der Seite, um Ihnen viel Platz zum komfortablen Lesen zu geben.
-
-:::tip
-Ihr ausgewähltes Buch, Kapitel und Übersetzung werden gespeichert, sodass der Leser dort wieder geöffnet wird, wo Sie ihn verlassen haben.
-:::
+Der Leser füllt den Inhaltsbereich der Seite aus und bietet dir viel Platz für bequemes Lesen.
 
 :::tip
-Sie können die Bibelseite in Ihrem Browser mit Lesezeichen versehen, um schnell zu ihr zurückzukehren, um Ihre tägliche Lektüre zu machen. Kombinieren Sie sie mit dem [Vers des Tages](./verse-of-the-day.md) für tägliche Bibelinspiratione.
+Im Mitgliederportal (`/mobile/bible`) werden dein gewähltes Buch, Kapitel und deine Übersetzung auf diesem Gerät gespeichert, sodass der Leser dort wieder öffnet, wo du aufgehört hast. Der Leser auf der Website beginnt immer bei Genesis 1.
 :::
 
-## Verfügbarkeit
+Wenn der Leser nicht geladen werden kann, teilt die Seite dies mit und bietet eine Schaltfläche, um stattdessen auf Bible.com zu lesen (das Mitgliederportal bietet außerdem Biblia.com an).
 
-Die Bibelseite ist eine integrierte Inhaltsfunktion von B1.church. Wenn Sie keinen **Bible**-Link in der Navigation Ihrer Kirche sehen, hat Ihr Kirchenadministrator ihn möglicherweise nicht zum Sitemenü hinzugefügt. Kontaktieren Sie Ihren Kirchenadministrator, um dies anzufordern.
+:::tip
+Du kannst die Bibelseite in deinem Browser als Lesezeichen speichern, um für deine tägliche Lektüre schnell dorthin zurückzukehren. Kombiniere sie mit dem [Vers des Tages](./verse-of-the-day.md) für tägliche Inspiration aus der Schrift.
+:::
+
+## Verfügbarkeit {#availability}
+
+Die Bibelseite ist eine eingebaute Inhaltsfunktion von B1.church. Wenn du in der Navigation deiner Gemeinde keinen Link **Bibel** siehst, hat dein Gemeindeadministrator sie möglicherweise nicht zum Website-Menü hinzugefügt. Wende dich an deinen Gemeindeadministrator, um sie anzufordern.

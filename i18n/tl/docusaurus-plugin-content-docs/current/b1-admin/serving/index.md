@@ -1,42 +1,42 @@
 ---
-title: "Pangkalahatang-tanaw ng Serving sa B1 Admin"
+title: "Pangkalahatang-ideya ng Serving sa B1 Admin"
 sidebar_label: "Serving"
-description: "Ayusin ang mga boluntaryo at planuhin ang serbisyo sa Serving area ng B1 Admin, mula sa ministry tab at team hanggang sa service plan, kanta, at gawain."
+description: "I-coordinate ang mga volunteer at planuhin ang mga serbisyo ng simbahan sa Serving area ng B1 Admin, mula sa mga ministry tab at team hanggang sa mga service plan, kanta, at gawain."
 ---
 
 # Serving
 
 <div class="article-intro">
 
-Ang seksyong Serving ang sentro ninyo para sa pag-uugnay ng mga boluntaryo at pagpaplano ng mga service ng simbahan. Maging ito man ay pag-oorganisa ng pagsamba tuwing Linggo, mga pagtitipon sa kalagitnaan ng linggo, o mga espesyal na kaganapan, dito ninyo pinagsasama-sama ang lahat para alam ng inyong mga team kung sino ang maglilingkod at kailan.
+Ang seksyong Serving ang sentro mo para i-coordinate ang mga volunteer at planuhin ang mga serbisyo ng simbahan. Kung nag-oorganisa ka ng Linggong worship, midweek na pagtitipon, o mga espesyal na event, dito mo pinagsasama-sama ang lahat para malaman ng iyong mga team kung sino ang naglilingkod at kailan.
 
 </div>
 
-## Paano Gumagana ang Pahina ng Serving
+## Paano Gumagana ang Serving Page {#how-the-serving-page-works}
 
-Kapag binuksan ninyo ang pahina ng **Serving**, makikita ninyo ang inyong mga ministry bilang mga tab sa itaas. Ang bawat ministry ay may sariling mga plan type at team, kaya maaari ninyong pamahalaan nang hiwalay ang maraming ministry. Halimbawa, maaari kayong magkaroon ng magkakahiwalay na tab para sa Worship, Kids Ministry, at Hospitality.
+Kapag binuksan mo ang pahinang **Serving**, makikita mo ang iyong mga ministry bilang mga tab sa itaas. May sariling plan type at mga team ang bawat ministry, kaya maaari mong pamahalaan nang hiwalay ang maraming ministry. Halimbawa, maaaring may magkakahiwalay kang tab para sa Worship, Kids Ministry, at Hospitality.
 
-Ang mga hindi-admin na staff na miyembro ng isang ministry ay maaari ring mag-access sa pahina ng Serving. Makikita lamang nila ang mga ministry na kinabibilangan nila at maaari silang gumawa at mag-edit ng mga plano, assignment, plan type, at ng service order para sa kanilang ministry nang hindi nangangailangan ng buong pahintulot ng admin.
+Maaari ring i-access ng mga non-admin na staff na miyembro ng isang ministry ang Serving page. Ang makikita lamang nila ay ang mga ministry na kinabibilangan nila, at maaari silang gumawa at mag-edit ng mga plan, assignment, plan type, at service order para sa kanilang ministry nang hindi kailangan ang buong admin permission.
 
 :::tip
-Kung kayo ay admin, ang mga tab ay nagpapakita ng mga ministry na kinabibilangan ninyo (**Mine**). Piliin ang **All** para makita ang bawat ministry. Nakakatulong ito kapag kailangan ninyong suriin ang mga assignment sa maraming team. Kung maraming ministry ang simbahan ninyo, lalabas ang kahon na **Find a ministry** para ma-filter ang mga tab ayon sa pangalan.
+Kung admin ka, ang mga tab ay nagpapakita ng mga ministry na kinabibilangan mo, kasama ang anumang ministry na wala pang miyembro (**Mine**). Piliin ang **All** para makita ang bawat ministry. Nakakatulong ito kapag kailangan mong suriin ang mga assignment sa maraming team. Kung maraming ministry ang simbahan mo, may lalabas na kahong **Find a ministry** para i-filter ang mga tab ayon sa pangalan.
 :::
 
-## Mga Sub-Seksyon
+## Mga Sub-Seksyon {#sub-sections}
 
 Kasama sa seksyong Serving ang mga pangunahing bahaging ito:
 
-- **[Mga Plano](./plans.md)** -- Gumawa ng mga plano ng service para sa mga partikular na petsa at magtalaga ng mga boluntaryo sa mga team. Tinutulungan kayo ng mga plano na ayusin kung sino ang maglilingkod at kailan, para alam ng lahat ang kanilang tungkulin nang maaga. Mag-set up ng awtomatikong [paalala sa mga boluntaryo](./plans.md#volunteer-reminders) sa pamamagitan ng push, email, o text para maabisuhan ang inyong team bago ang bawat service, at gamitin ang **[Plans Overview](./plans-overview.md)** para makita ang lahat ng paparating na assignment sa maraming linggo sa iisang grid.
-- **[Mga Kanta](./songs.md)** -- Pamahalaan ang inyong library ng mga awit sa pagsamba kasama ang lyrics, arrangement, at mga external link. Magagamit ito ng inyong worship team sa paghahanda para sa mga paparating na service.
-- **[Mga Gawain](./tasks.md)** -- Magtalaga at subaybayan ang mga gawain para sa inyong mga miyembro ng team mula sa **My Work**.
-- **[Mga Workflow](./workflows.md)** -- Ihatid ang mga tao sa serye ng mga hakbang sa isang visual na Kanban board, tulad ng pag-follow up sa bagong bisita o proseso ng pagiging miyembro. Ang mga hakbang ay maaaring magpatakbo ng mga awtomatikong aksyon (magpadala ng email, maghintay ng ilang araw, magdagdag sa isang grupo), at umuusad ang mga card sa pamamagitan ng mga outcome button, conditional routing, o mga trigger ng event at iskedyul -- may kasamang mga built-in na ulat.
+- **[Plans](./plans.md)** -- Gumawa ng mga service plan para sa mga partikular na petsa at mag-assign ng mga volunteer sa mga team. Tinutulungan ka ng mga plan na ayusin kung sino ang naglilingkod kailan, para alam ng lahat ang kanilang papel nang maaga. Mag-set up ng awtomatikong [volunteer reminders](./plans.md#volunteer-reminders) sa pamamagitan ng push, email, o text para ma-notify ang iyong team bago ang bawat serbisyo, at gamitin ang **[Plans Overview](./plans-overview.md)** para makita ang lahat ng paparating na assignment sa maraming linggo sa iisang grid.
+- **[Songs](./songs.md)** -- Pamahalaan ang iyong library ng worship song na may lyrics, arrangement, at external links. Magagamit ito ng iyong worship team para maghanda sa mga paparating na serbisyo.
+- **[Tasks](./tasks.md)** -- Mag-assign at subaybayan ang mga gawain para sa mga miyembro ng team mula sa **My Work**.
+- **[Workflows](./workflows.md)** -- Ilipat ang mga tao sa serye ng mga hakbang sa isang visual na Kanban board, gaya ng follow-up sa mga bagong bisita o proseso ng membership. Maaaring magsagawa ng awtomatikong aksyon ang mga hakbang (magpadala ng email, maghintay ng ilang araw, magdagdag sa grupo), at sumusulong ang mga card sa pamamagitan ng mga outcome button, conditional routing, o event at schedule trigger -- kasama ang mga built-in na report.
 
-## Pagsisimula
+## Pagsisimula {#getting-started}
 
-1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Serving**, at i-click ang **Plans**.
-2. I-click ang **Add Ministry** para gumawa ng bagong ministry, o piliin ang **All** para makita ang bawat umiiral na ministry. Pumili ng **tab ng ministry** para makita ang mga plan type at serving team nito.
-3. I-click ang **Create Plan Type** (o **Add Plan Type**) o pumili ng kasalukuyang plan type para simulan ang [paggawa ng mga plano ng service](./plans.md), o tuklasin ang mga sub-seksyong [Mga Kanta](./songs.md) at [Mga Gawain](./tasks.md).
+1. Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa itaas-kaliwa), palawakin ang **Serving**, at i-click ang **Plans**.
+2. I-click ang **Add Ministry** para gumawa ng bagong ministry, o piliin ang **All** para makita ang bawat umiiral na ministry. Piliin ang isang **ministry tab** para makita ang mga plan type at serving team nito.
+3. I-click ang **Create Plan Type** (o **Add Plan Type**) o pumili ng umiiral na plan type para magsimulang [gumawa ng mga service plan](./plans.md), o tuklasin ang mga sub-seksyong [Songs](./songs.md) at [Tasks](./tasks.md).
 
 :::info
-Bago kayo makagawa ng mga plano, kailangan muna ninyong likhain ang inyong mga Ministry sa lugar ng Serving at ang mga Team sa loob ng bawat Ministry.
+Bago ka makagawa ng mga plan, kailangan mong gumawa ng iyong mga Ministry sa Serving area at mga Team sa loob ng bawat Ministry. Piliin ang isang ministry tab at i-click ang **Create Serving Team** (o **New Serving Team**) sa listahan ng **Serving Teams** para magdagdag ng isa.
 :::

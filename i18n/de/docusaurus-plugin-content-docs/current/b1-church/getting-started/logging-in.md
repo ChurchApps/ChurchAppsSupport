@@ -1,70 +1,78 @@
 ---
-title: "Anmeldung bei B1.church und im Mitgliederportal"
+title: "Anmelden bei B1.church und im Mitgliederportal"
 sidebar_label: "Anmelden"
-description: "Im B1.church-Mitgliederportal anmelden, Zwei-Faktor-Codes oder Single Sign-On nutzen, Passwort zurücksetzen und über das Kontomenü abmelden."
+description: "Melde dich in deinem B1.church-Mitgliederportal an, nutze Zwei-Faktor-Codes oder Single Sign-on, setze ein vergessenes Passwort zurück und melde dich über das Kontomenü ab."
 ---
 
 # Anmelden
 
 <div class="article-intro">
 
-Wenn Sie sich bei B1.church anmelden, erhalten Sie Zugang zum Mitgliederportal, in dem Sie sehen, was für Sie ansteht, Gruppen verwalten, online geben und alle Werkzeuge nutzen können, die Ihre Kirche eingerichtet hat. Dieser Artikel erklärt, wie Sie sich anmelden, Ihr Benutzermenü verwenden und sich abmelden.
+Die Anmeldung bei B1.church verschafft dir Zugang zum Mitgliederportal, in dem du siehst, was für dich ansteht, Gruppen verwaltest, online spendest und alle Werkzeuge nutzt, die deine Gemeinde eingerichtet hat. Dieser Artikel erklärt, wie du dich anmeldest, durch dein Benutzermenü navigierst und dich abmeldest.
 
 </div>
+
+## Schulungsvideo {#training-video}
+
+<YouTube id="Y5dVC9D6cLs" title="Anmelden und die B1.church-App installieren" next="Profil und Benachrichtigungen aktualisieren" nextUrl="/docs/b1-church/getting-started/editing-your-profile" />
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Sie benötigen ein ChurchApps-Konto. Informationen zum Erstellen finden Sie unter [Erste Schritte](./index.md).
-- Sie benötigen die B1.church-URL Ihrer Kirche (zum Beispiel `https://ihrekirchenname.b1.church`).
+- Du brauchst ein ChurchApps-Konto. Siehe [Erste Schritte](./index.md), um eines zu erstellen.
+- Du brauchst die B1.church-Adresse deiner Gemeinde (zum Beispiel `https://yourchurchname.b1.church`).
 
 </div>
 
-## So melden Sie sich an
+## So meldest du dich an {#how-to-log-in}
 
-1. Rufen Sie die B1.church-URL Ihrer Kirche auf (zum Beispiel `https://ihrekirchenname.b1.church`).
-2. Klicken Sie oben rechts in der Kopfzeile auf die Schaltfläche **Anmelden**.
-3. Geben Sie Ihre **E-Mail-Adresse** und Ihr **Passwort** ein oder klicken Sie auf **Mit Google fortfahren** oder **Mit Microsoft fortfahren**, sofern Ihre Kirche die Single-Sign-on-Anmeldung aktiviert hat.
-4. Klicken Sie auf **Anmelden**.
+1. Rufe die B1.church-Adresse deiner Gemeinde auf (zum Beispiel `https://yourchurchname.b1.church`).
+2. Klicke oben rechts in der Kopfzeile auf die Schaltfläche **Anmelden**. Hat deine Gemeinde die Schaltfläche **Anmelden** für ihre Website nicht aktiviert, rufe stattdessen `https://yourchurchname.b1.church/login` auf.
+3. Gib deine **E-Mail-Adresse** und dein **Passwort** ein oder klicke auf **Mit Google fortfahren** bzw. **Mit Microsoft fortfahren**, sofern deine Gemeinde Single Sign-on aktiviert hat.
+4. Klicke auf **Anmelden**.
 
-Wenn Sie die [Zwei-Faktor-Anmeldung](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert haben, fragt der nächste Bildschirm nach einem Code. Geben Sie den 6-stelligen Code aus Ihrer Authenticator-App oder einen Ihrer Backup-Codes ein und klicken Sie auf **Code bestätigen**. Die B1.church-App fragt auf die gleiche Weise nach dem Code.
+Wenn du die [Zwei-Faktor-Anmeldung](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) aktiviert hast, fragt der nächste Bildschirm nach einem Code. Gib den 6-stelligen Code aus deiner Authenticator-App oder einen deiner Backup-Codes ein und klicke auf **Code bestätigen**. Das Mitgliederportal fragt auf die gleiche Weise nach dem Code.
 
-Nach der Anmeldung gelangen Sie zurück zu der Seite, auf der Sie sich vor dem Klick auf „Anmelden“ befanden. Wenn Sie im abgemeldeten Zustand direkt eine Seite des Mitgliederportals aufgerufen haben, werden Sie nach der Anmeldung automatisch zu dieser Seite weitergeleitet.
+Nach der Anmeldung kehrst du zu der Seite zurück, auf der du dich vor dem Klick auf Anmelden befandest. Wenn du abgemeldet direkt eine Seite des Mitgliederportals aufgerufen hast, wirst du nach der Anmeldung automatisch zu dieser Seite weitergeleitet.
 
-## Angemeldet bleiben
+## Im Mitgliederportal anmelden {#signing-in-from-the-member-portal}
 
-Sie bleiben im selben Browser oder in der installierten App angemeldet, bis Sie sich abmelden — auch dann, wenn Sie eine Zeit lang nicht vorbeischauen. Ihre Sitzung wird bei Inaktivität für etwa 30 Tage aufrechterhalten. Wenn Sie sich einmal anmelden, bleiben Sie auch beim Wechsel zwischen der Website Ihrer Kirche und dem Mitgliederportal (`/mobile`) angemeldet, sodass Sie sich nicht an jeder Stelle erneut anmelden müssen.
+Das Mitgliederportal (`/mobile`) hat einen eigenen Anmeldebildschirm. Tippe auf **Anmelden** auf der Startseite, der Seite **Mehr** oder auf einem anderen Bildschirm, der ein Konto erfordert, gib deine E-Mail-Adresse und dein Passwort ein und tippe auf **Anmelden**. Von dort aus kannst du außerdem auf **Passwort vergessen?** tippen, um dein Passwort zurückzusetzen, oder auf **Konto erstellen**, falls du noch keines hast. Google- und Microsoft-Anmeldung werden nur auf der Anmeldeseite der Website angeboten.
 
-## Zugriff auf das Mitgliederportal
+## Angemeldet bleiben {#staying-signed-in}
 
-Nach der Anmeldung erreichen Sie das Mitgliederportal, indem Sie oben rechts auf der Seite auf Ihren **Namen** klicken und im Menü **Mitgliederportal** auswählen. Im Mitgliederportal befinden sich alle Ihre persönlichen Werkzeuge für die Kirche, darunter Ihr [Startbereich](./navigating.md), Ihre [Me-Seite](./me-page.md), [Gruppen](../groups/index.md), [Geben](../giving/index.md) und mehr.
+Du bleibst auf demselben Browser oder in derselben installierten App angemeldet, bis du dich abmeldest, auch wenn du längere Zeit nicht vorbeischaust -- deine Sitzung wird für bis zu etwa 30 Tage Inaktivität aufrechterhalten. Eine einmalige Anmeldung hält dich auch angemeldet, wenn du zwischen der Website deiner Gemeinde und dem Mitgliederportal (`/mobile`) wechselst, sodass du dich nicht an jeder Stelle erneut anmelden musst.
 
-## Ihr Benutzermenü
+## Auf das Mitgliederportal zugreifen {#accessing-the-member-portal}
 
-Nach der Anmeldung erscheint Ihr Name als Chip oben rechts. Klicken Sie darauf, um ein Menü mit folgenden Optionen zu öffnen:
+Sobald du angemeldet bist, erreichst du das Mitgliederportal, indem du oben rechts auf der Seite auf deinen **Namen** klickst und im Menü **Mitgliederportal** auswählst. Im Mitgliederportal befinden sich alle deine persönlichen Gemeindewerkzeuge, darunter dein [Startseiten-Dashboard](./navigating.md), deine [Ich-Seite](./me-page.md), [Gruppen](../groups/index.md), [Spenden](../giving/index.md) und mehr.
 
-- **Mitgliederportal** — Zu Ihrem persönlichen Startbereich im Mitgliederportal wechseln.
-- **Profil bearbeiten** — Ihre Kontoeinstellungen aktualisieren oder Ihr Kirchenprofil bearbeiten.
-- **Abmelden** — Sich von Ihrem Konto abmelden.
+## Dein Benutzermenü {#your-user-menu}
 
-## Administratorzugang
+Nach der Anmeldung erscheint dein Name als Chip oben rechts. Klicke darauf, um ein Menü mit den folgenden Optionen zu öffnen:
 
-Wenn Sie Kirchenadministrator mit den entsprechenden Berechtigungen sind, sehen Sie in Ihrem Benutzermenü außerdem die Option **Administratorportal**. Ein Klick darauf führt Sie zu B1 Admin, wo Sie die Einstellungen, Personen, Gruppen und Inhalte Ihrer Kirche verwalten können.
+- **Mitgliederportal** -- Zu deinem persönlichen Dashboard im Mitgliederportal.
+- **Profil bearbeiten** -- Öffnet zwei weitere Auswahlmöglichkeiten: **Konto bearbeiten** (deine Anmelde-E-Mail, dein Passwort und deine Zwei-Faktor-Einstellungen im B1 Admin) und **Gemeindeprofil bearbeiten** (dein Profil im [Verzeichnis](../community/member-directory.md) des Mitgliederportals).
+- **Abmelden** -- Melde dich von deinem Konto ab.
 
-## Passwort vergessen
+## Administratorzugang {#admin-access}
 
-Wenn Sie Ihr Passwort nicht mehr wissen:
+Wenn du Gemeindeadministrator mit den entsprechenden Berechtigungen bist, siehst du im Benutzermenü außerdem die Option **Administratorportal**. Ein Klick darauf führt dich zum B1 Admin, wo du die Einstellungen, Personen, Gruppen und Inhalte deiner Gemeinde verwalten kannst.
 
-1. Klicken Sie auf der Anmeldeseite auf **Passwort vergessen**.
-2. Geben Sie die E-Mail-Adresse ein, die mit Ihrem ChurchApps-Konto verknüpft ist, und senden Sie das Formular ab.
-3. Prüfen Sie Ihren E-Mail-Posteingang auf eine Nachricht mit einem **6-stelligen Bestätigungscode**. Der Code ist 15 Minuten gültig.
-4. Geben Sie den Code auf dem Bestätigungsbildschirm ein, um sich anzumelden.
-5. Sobald Sie angemeldet sind, öffnen Sie Ihr Profil, um ein neues Passwort festzulegen.
+## Passwort vergessen {#forgot-your-password}
+
+Wenn du dein Passwort nicht mehr weißt:
+
+1. Klicke auf der Anmeldeseite auf **Passwort vergessen** (im Mitgliederportal tippe auf **Passwort vergessen?**).
+2. Gib die E-Mail-Adresse ein, die mit deinem ChurchApps-Konto verknüpft ist, und klicke auf **Zurücksetzen** (im Mitgliederportal **Code senden**).
+3. Prüfe deine E-Mails auf eine Nachricht mit einem **6-stelligen Bestätigungscode**. Der Code ist 15 Minuten gültig.
+4. Gib den Code ein und klicke auf **Code bestätigen**. Ist er nicht angekommen, kannst du nach 30 Sekunden auf **Code erneut senden** tippen.
+5. Wähle ein neues Passwort (mindestens 8 Zeichen), gib es zur Bestätigung ein zweites Mal ein und klicke auf **Anmelden** (im Mitgliederportal **Speichern & anmelden**). Du bist nun mit deinem neuen Passwort angemeldet.
 
 :::tip
-Wenn der Code nicht innerhalb weniger Minuten ankommt, prüfen Sie Ihren Spam-Ordner. Nach fünf falschen Eingaben wird der Code gesperrt — in diesem Fall fordern Sie auf der Seite „Passwort vergessen“ einen neuen Code an.
+Kommt der Code nicht innerhalb von ein paar Minuten an, prüfe deinen Spam-Ordner. Nach fünf falschen Eingaben wird der Code gesperrt -- fordere in diesem Fall über die Seite Passwort vergessen einen neuen an.
 :::
 
-## Abmelden
+## Abmelden {#logging-out}
 
-Um sich abzumelden, klicken Sie oben rechts auf Ihren **Namen** und wählen Sie **Abmelden**. Sie werden abgemeldet und zur öffentlichen Website zurückgeleitet.
+Zum Abmelden klickst du oben rechts auf deinen **Namen** und wählst **Abmelden**. Du wirst abgemeldet und zur öffentlichen Website zurückgeleitet.

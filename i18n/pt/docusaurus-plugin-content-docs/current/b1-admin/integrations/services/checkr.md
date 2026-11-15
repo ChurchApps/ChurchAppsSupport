@@ -1,96 +1,100 @@
 ---
 title: "Checkr"
-description: "Conecte cadastros de voluntários do B1 Admin à Checkr via Make.com, com alertas opcionais de status ao coordenador de ministério seguro."
+description: "Conecte os cadastros de voluntários do B1 Admin às verificações de antecedentes da Checkr usando o Make.com, com alertas opcionais de status do relatório para o coordenador de ministério seguro."
 ---
 
 # Checkr
 
 <div class="article-intro">
 
-[Checkr](https://checkr.com) realiza triagem de antecedentes para funcionários e voluntários — uma necessidade quase universal para qualquer igreja que executa um programa de crianças ou jovens. B1 **não possui um recurso integrado de verificação de antecedentes** — pedir verificações, rastrear resultados e conformidade de triagem vivem no Checkr; a receita abaixo apenas conecta eventos B1 a ele. Checkr não tem um aplicativo Zapier, mas a [integração Checkr do Make.com](https://www.make.com/en/integrations/checkr) é verificada e expõe as ações que você precisa para iniciar uma verificação a partir de um evento B1.
+A [Checkr](https://checkr.com) realiza a triagem de antecedentes de funcionários e voluntários -- uma necessidade quase universal para qualquer igreja que tenha um programa infantil ou juvenil. O B1 **não tem um recurso de verificação de antecedentes integrado** -- solicitar as verificações, acompanhar os resultados e controlar a conformidade da triagem ficam todos na Checkr; a receita abaixo apenas conecta os eventos do B1 a ela. A Checkr não tem um app para o Zapier, mas a [integração da Checkr no Make.com](https://www.make.com/en/integrations/checkr) é verificada e expõe as ações necessárias para iniciar uma verificação a partir de um evento do B1.
 
 </div>
+
+:::caution
+Esta receita usa o aplicativo do B1.church para o Make, que ainda não foi lançado (veja [Make](../make.md)). Até lá, o lado do B1 desses cenários precisa ser montado com o módulo **HTTP** do Make chamando a [API REST](/docs/developer/api) do B1.
+:::
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Uma conta [Checkr](https://checkr.com) com acesso à API e pelo menos um pacote de triagem configurado
-- Uma conta [Make](https://www.make.com)
-- Um usuário B1Admin com permissão **Editar Configurações**
+- Uma conta na [Checkr](https://checkr.com) com acesso à API e pelo menos um pacote de triagem configurado
+- Uma conta no [Make](https://www.make.com)
+- Um usuário do B1Admin com a permissão **Editar configurações**
 
 </div>
 
-## O que Você Pode Conectar
+## O que você pode conectar {#what-you-can-wire-up}
 
-O aplicativo Checkr do Make expõe 1 gatilho e 6 ações:
+O app da Checkr no Make expõe 1 gatilho e 6 ações:
 
-| Direção | Gatilho B1 / Make | Ação |
+| Direção | Gatilho do B1 / Make | Ação |
 |---|---|---|
-| B1 → Checkr | B1 `group.member.added` (filtrado para um grupo de voluntários) | Checkr: Criar Candidato → Criar Convite de Verificação de Antecedentes |
-| Checkr → B1 | Webhook Checkr (evento de convite / relatório) | B1: Atualizar o registro da pessoa (por exemplo, etiquetar "Checkr autorizado") |
+| B1 → Checkr | B1 `group.member.added` (filtrado para um grupo de voluntários) | Checkr: Criar candidato → Criar convite de verificação de antecedentes |
+| Checkr → B1 | Webhook da Checkr (evento de convite / relatório) | B1: Atualizar o registro da pessoa (por exemplo, marcar "Checkr aprovado") |
 
-Ações Checkr do Make: Criar Candidato, Criar Convite de Verificação de Antecedentes, Obter Candidato, Obter Relatório, Obter ETA do Relatório, Obter um Convite. Mais 4 módulos de busca.
+Ações da Checkr no Make: Criar candidato, Criar convite de verificação de antecedentes, Obter candidato, Obter relatório, Obter previsão do relatório, Obter um convite. Além disso, 4 módulos de pesquisa.
 
-## Configuração
+## Configuração {#setup}
 
-### 1. Gere uma chave API B1
+### 1. Crie uma chave de API do B1 {#1-mint-a-b1-api-key}
 
-**Configurações → Desenvolvedor → Chaves de API → Nova Chave de API**:
+**Configurações → Desenvolvedor → Chaves de API → Nova chave de API**:
 
-- `settings:write` — para o webhook de gatilho
-- `people:read` — para procurar o nome/email da pessoa ao iniciar uma verificação
-- (Opcional) `people:write` se você quiser escrever o status do relatório de volta como um campo personalizado ou tag
+- `settings:write` -- para o webhook do gatilho
+- `people:read` -- para buscar o nome e o e-mail da pessoa ao iniciar uma verificação
+- (Opcional) `people:write`, se você quiser gravar o status do relatório de volta como um campo personalizado ou uma marcação
 
-### 2. Construa o cenário "iniciar uma verificação ao se inscrever como voluntário" no Make
+### 2. Monte o cenário "iniciar uma verificação no cadastro do voluntário" no Make {#2-build-the-kick-off-a-check-on-volunteer-signup-scenario-in-make}
 
-1. **Gatilho** — B1.church: Assistir Eventos (`group.member.added`).
-2. **Filtro** — continuar apenas se `data.groupId` corresponder ao seu grupo "Voluntários de Crianças" (ou equivalente).
-3. **Ação** — B1.church: Encontrar Pessoa (por `data.personId`) para obter email + nome/sobrenome.
-4. **Ação** — Checkr: Criar Candidato. Mapeie nome/sobrenome/email da etapa 3.
-5. **Ação** — Checkr: Criar Convite de Verificação de Antecedentes. Mapeie o novo id de candidato da etapa 4 para o campo *candidate_id*. Escolha o pacote de triagem (por exemplo, `tasker_standard` ou o que sua conta exponha).
-6. (Opcional) **Ação** — Slack: notifique seu coordenador de ministério seguro que uma verificação foi iniciada.
+1. **Gatilho** -- B1.church: Observar eventos (`group.member.added`).
+2. **Filtro** -- continue somente se `data.groupId` corresponder ao seu grupo "Voluntários infantis" (ou equivalente).
+3. **Ação** -- B1.church: Encontrar pessoa (por `data.personId`) para obter o e-mail e o nome e sobrenome.
+4. **Ação** -- Checkr: Criar candidato. Mapeie o nome, o sobrenome e o e-mail da etapa 3.
+5. **Ação** -- Checkr: Criar convite de verificação de antecedentes. Mapeie o ID do novo candidato da etapa 4 para o campo *candidate_id*. Escolha o pacote de triagem (por exemplo, `tasker_standard` ou o que a sua conta disponibilizar).
+6. (Opcional) **Ação** -- Slack: notifique o seu coordenador de ministério seguro de que uma verificação foi iniciada.
 
-Ligue o cenário. Novos voluntários no grupo direcionado recebem um convite automático do Checkr por e-mail; eles o completam em seu celular ou laptop; Checkr executa a triagem.
+Ative o cenário. Os novos voluntários do grupo indicado recebem automaticamente um convite da Checkr por e-mail; eles o preenchem no celular ou no notebook, e a Checkr executa a triagem.
 
-### 3. (Opcional) Receba o relatório de volta
+### 3. (Opcional) Receba o relatório de volta {#3-optional-receive-the-report-back}
 
-1. **Gatilho** — Checkr: Assistir Eventos (webhook). O Make registra um webhook Checkr na ativação.
-2. **Filtro** — continuar apenas se `event_type = report.completed`.
-3. **Ação** — Checkr: Obter Relatório (use o id do relatório do webhook).
-4. **Ação** — B1.church: Encontrar Pessoa (por email do candidato).
-5. **Ação** — Slack/Email Condicional: notifique o coordenador com status `claro` / `considerar` / `suspenso`.
+1. **Gatilho** -- Checkr: Observar eventos (webhook). O Make registra um webhook na Checkr quando o cenário é ativado.
+2. **Filtro** -- continue somente se `event_type = report.completed`.
+3. **Ação** -- Checkr: Obter relatório (use o ID do relatório que vem no webhook).
+4. **Ação** -- B1.church: Encontrar pessoa (pelo e-mail do candidato).
+5. **Ação** -- Slack / E-mail condicional: notifique o coordenador com o status `clear` / `consider` / `suspended`.
 
-Nota: B1 não possui um campo "status de verificação de antecedentes" integrado hoje. As opções pragmáticas são (a) postar o resultado em um canal Slack privado para revisão, (b) escrevê-lo em um Google Sheet para auditoria, ou (c) adicionar a pessoa a um grupo B1 "Voluntários Autorizados" em `claro`.
+Observação: hoje o B1 não tem um campo integrado de "status da verificação de antecedentes". As opções práticas são (a) publicar o resultado em um canal privado do Slack para revisão, (b) gravá-lo em uma planilha do Google para auditoria ou (c) adicionar a pessoa a um grupo do B1 "Voluntários aprovados" quando o resultado for `clear`.
 
-## Receitas Comuns
+## Receitas comuns {#common-recipes}
 
-### Verificar voluntários novamente a cada 2 anos
+### Refazer a triagem dos voluntários a cada 2 anos {#re-screen-volunteers-every-2-years}
 
-Combine o acima com um gatilho de cronograma do Make:
+Combine o fluxo acima com um gatilho de agendamento do Make:
 
-- **Gatilho** — Make: Agendar (mensal)
-- **Ação** — B1.church: Listar Membros do Grupo para "Voluntários Autorizados"
-- **Ação** — Filtrar pelo Make: data de autorização anterior a 22 meses
-- **Ação** — Checkr: Criar Convite de Verificação de Antecedentes (igual ao fluxo inicial)
+- **Gatilho** -- Make: Agendamento (mensal)
+- **Ação** -- HTTP -- Fazer uma requisição: GET em `/membership/groupmembers?groupId=…` do B1 para o seu grupo "Voluntários aprovados" (o app do B1.church não tem uma ação de listagem)
+- **Ação** -- Filtro no Make: data de aprovação anterior a 22 meses
+- **Ação** -- Checkr: Criar convite de verificação de antecedentes (igual ao fluxo inicial)
 
-### Bloquear acesso de estágio 1 até que a verificação seja concluída
+### Bloquear o acesso da etapa 1 até a conclusão da verificação {#block-stage-1-access-until-check-completes}
 
-Se sua igreja usa a associação de grupo B1 para bloquear acesso (por exemplo, apenas membros do grupo "Autorizado" aparecem em cronogramas de serviço), mantenha novos voluntários em um grupo de espera até que o evento `report.completed` do Checkr os mude.
+Se a sua igreja usa a participação em grupos do B1 para controlar o acesso (por exemplo, só os membros do grupo "Aprovados" aparecem nas escalas de serviço), mantenha os novos voluntários em um grupo de espera até que o evento `report.completed` da Checkr os libere.
 
-## Limites e Notas
+## Limites e observações {#limits--notes}
 
-- **Checkr é apenas EUA** para a maioria dos pacotes de triagem. Igrejas australianas, do Reino Unido e canadenses precisarão de uma alternativa.
-- **Preço** é por verificação — cada Criar Convite no Make queima uma verificação real. Primeiro teste em uma conta de sandbox/preparo do Checkr (o aplicativo Checkr do Make respeita as credenciais que você passa na conexão, então trocar credenciais muda sandbox/ao vivo).
-- **O acesso à API Checkr é baseado em plano.** Contas Checkr menores podem estar em um nível apenas de UI; entre em contato com Checkr para ativar a API.
+- **A Checkr atende apenas os EUA** para a maioria dos pacotes de triagem. Igrejas na Austrália, no Reino Unido e no Canadá precisarão de uma alternativa.
+- **O preço é cobrado por verificação** -- cada Criar convite no Make gera uma verificação real. Teste primeiro na conta de sandbox / homologação da Checkr (o app da Checkr no Make usa as credenciais informadas na conexão, então trocar as credenciais alterna entre sandbox e produção).
+- **O acesso à API da Checkr depende do plano.** Contas menores da Checkr podem estar em um plano somente com interface; entre em contato com a Checkr para habilitar a API.
 
-## Solução de Problemas
+## Solução de problemas {#troubleshooting}
 
-- **Criar Candidato falha com `403`** — o token da API Checkr é somente leitura ou não possui as permissões de conta corretas. Reemita-o a partir do painel Checkr com escopo de escrita.
-- **Convite nunca chega** — verifique o email do candidato na etapa 3; B1 pode ter um campo de email vazio para essa pessoa. Adicione um filtro obrigatório de email antes da etapa Checkr.
-- **O gatilho de webhook não dispara** — o registro de webhook do Checkr às vezes falha silenciosamente se sua conta Make não estiver em um nível pago que suporte webhooks de saída. Verifique na página **Webhooks** do painel Checkr que a URL do Make está listada.
+- **Criar candidato falha com `403`** -- o token da API da Checkr é somente leitura ou não tem as permissões corretas da conta. Gere-o novamente no painel da Checkr com escopo de escrita.
+- **O convite nunca chega** -- confira o e-mail do candidato na etapa 3; o B1 pode ter o campo de e-mail vazio para aquela pessoa. Adicione um filtro que exija e-mail antes da etapa da Checkr.
+- **O gatilho de webhook não dispara** -- o registro do webhook na Checkr às vezes falha em silêncio se a sua conta do Make não estiver em um plano pago que suporte webhooks de saída. Verifique na página *Webhooks* do painel da Checkr se a URL do Make aparece na lista.
 
-## Veja Também
+## Veja também {#see-also}
 
-- [Make (visão geral)](../make.md) — lado B1 de cada cenário Make
-- [Mensagem Móvel](./mobile-message.md) — para provedores de SMS sem aplicativos Zapier, mesmo padrão Webhooks/HTTP que a conexão Make Checkr
-- [Documentação da API Checkr](https://docs.checkr.com/)
+- [Make (visão geral)](../make.md) -- o lado do B1 de todos os cenários do Make
+- [Mobile Message](./mobile-message.md) -- para provedores de SMS sem apps no Zapier, com o mesmo padrão de Webhooks/HTTP da integração da Checkr com o Make
+- [Documentação da API da Checkr](https://docs.checkr.com/)

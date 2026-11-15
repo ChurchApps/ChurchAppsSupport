@@ -60,7 +60,7 @@ Pour un chant en ligne, cliquez sur **Copier le lien** pour partager sa page, su
 Si l'équipe WorshipCommons vous ajoute comme co-éditeur d'un chant -- par exemple un chant que vous avez co-écrit et que quelqu'un d'autre a téléversé --, il apparaît dans **Mes envois** avec le statut **En ligne**, même si vous ne l'avez pas envoyé vous-même. En tant qu'éditeur du chant, vous pouvez y apporter des modifications même lorsque sa licence en interdit les modifications publiques.
 :::
 
-## Pages d'auteur
+## Pages d'auteur {#writer-pages}
 
 Chaque auteur de la bibliothèque dispose d'une page d'auteur qui présente ses chants, avec l'année, la tonalité, les thèmes et la licence de chacun. Les églises y accèdent en cliquant sur le nom d'un auteur depuis une page de chant. Lorsqu'un chant a plusieurs auteurs, chaque nom mène à sa propre page.
 

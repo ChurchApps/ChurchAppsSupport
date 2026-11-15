@@ -1,13 +1,13 @@
 ---
 title: "Demander à rejoindre un groupe"
-description: "Demandez à rejoindre un groupe soumis à approbation sur B1.church, ajoutez une note facultative pour le responsable et suivez ou annulez la demande."
+description: "Demandez à rejoindre un groupe qui exige une approbation dans B1.church, ajoutez une note facultative pour le responsable, et suivez ou annulez votre demande en attente."
 ---
 
 # Demander à rejoindre un groupe
 
 <div class="article-intro">
 
-Certains groupes nécessitent une approbation avant que vous puissiez devenir membre. Lorsqu'un groupe a ce paramètre, vous soumettez une demande de rejoindre -- en incluant optionnellement un message au leader du groupe -- et attendez que le leader l'approuve ou la refuse. Vous pouvez consulter l'état de vos demandes en attente et les annuler à tout moment.
+Certains groupes exigent une approbation avant que vous puissiez en devenir membre. Lorsqu'un groupe a ce paramètre, vous envoyez une demande d'adhésion -- en joignant éventuellement un message au responsable du groupe -- puis vous attendez que le responsable l'approuve ou la refuse. Vous pouvez consulter le statut de vos demandes en attente et les annuler à tout moment.
 
 </div>
 
@@ -18,50 +18,50 @@ Certains groupes nécessitent une approbation avant que vous puissiez devenir me
 
 </div>
 
-## Rejoindre vs. Demander à rejoindre
+## Rejoindre ou demander à rejoindre {#joining-vs-requesting-to-join}
 
-Les groupes peuvent avoir différentes politiques de rejoindre définies par leurs administrateurs :
+Les groupes peuvent avoir différentes politiques d'adhésion définies par leurs administrateurs :
 
-- **Ouvert** -- Cliquez sur **Rejoindre le groupe** sur la page de détails du groupe et vous êtes immédiatement ajouté comme membre.
-- **Approbation requise** -- Cliquez sur **Demander à rejoindre** pour soumettre une demande qu'un leader du groupe doit approuver avant que vous deveniez un membre.
-- **Fermé** -- Aucun bouton de rejoindre n'apparaît. Les membres doivent être ajoutés manuellement par les leaders.
+- **Ouvert** -- Cliquez sur **Rejoindre le groupe** sur la page de détail du groupe et vous êtes immédiatement ajouté comme membre.
+- **Demande requise** -- Cliquez sur **Demander à rejoindre** pour envoyer une demande qu'un responsable du groupe doit approuver avant que vous en deveniez membre.
+- **Fermé** -- Aucun bouton d'adhésion n'apparaît. Les membres doivent être ajoutés manuellement par les responsables.
 
-## Comment soumettre une demande de rejoindre
+## Comment envoyer une demande d'adhésion {#how-to-submit-a-join-request}
 
-1. Parcourez vers le groupe que vous souhaitez rejoindre. Voir [Parcourir les groupes](./browsing-groups.md) si vous avez besoin d'aide pour le trouver.
-2. Ouvrez la page de détails du groupe.
+1. Accédez au groupe que vous souhaitez rejoindre. Consultez [Parcourir les groupes](./browsing-groups.md) si vous avez besoin d'aide pour le trouver.
+2. Ouvrez la page de détail du groupe.
 3. Cliquez sur **Demander à rejoindre**.
-4. Un dialogue apparaît où vous pouvez optionnellement écrire un message au leader du groupe expliquant pourquoi vous aimeriez rejoindre.
-5. Cliquez sur **Soumettre** pour envoyer votre demande.
+4. Une boîte de dialogue **Demande d'adhésion** apparaît, où vous pouvez éventuellement rédiger un **Message (facultatif)** au responsable du groupe, expliquant pourquoi vous souhaitez le rejoindre.
+5. Cliquez sur **Envoyer la demande** pour l'envoyer.
 
-La page du groupe affiche maintenant un avis **Demande en attente** à la place du bouton. Les leaders du groupe recevront une notification à propos de votre demande. Une fois qu'ils l'ont examinée, vous recevrez une notification avec le résultat.
+La page du groupe affiche désormais un avis **Demande en attente** à la place du bouton. Les responsables du groupe reçoivent une notification concernant votre demande. Une fois qu'ils l'ont examinée, vous recevrez une notification indiquant le résultat.
 
 :::tip
-Inclure un bref message -- comme la façon dont vous avez entendu parler du groupe ou ce que vous espérez en tirer -- peut aider le leader à prendre une décision plus rapide.
+Joindre un court message -- par exemple comment vous avez entendu parler du groupe ou ce que vous espérez en retirer -- peut aider le responsable à prendre sa décision plus rapidement.
 :::
 
-## Vérifier l'état de vos demandes
+## Vérifier le statut de vos demandes {#checking-the-status-of-your-requests}
 
-Après avoir soumis une demande, vous pouvez consulter son état à partir de la page **Groupes** :
+Après l'envoi d'une demande, vous pouvez en consulter le statut depuis l'écran **Groupes** du portail des membres (l'écran qui liste vos propres groupes, et non la page publique **Trouver un groupe**) :
 
-1. Accédez à la page **Groupes** sur le site B1.church de votre église.
-2. Faites défiler jusqu'à la section **Demandes en attente**.
-3. Chaque demande en attente affiche le nom du groupe et la date à laquelle vous l'avez soumise.
+1. Ouvrez **Groupes** dans le portail des membres.
+2. Faites défiler jusqu'à la section **Demandes en attente**. Elle n'apparaît que lorsqu'une demande attend une réponse.
+3. Chaque demande en attente affiche le nom du groupe et la date d'envoi (par exemple, « Demandé le 10/11/2026 »).
 
-Si une demande a été approuvée ou refusée, vous recevrez une notification -- les demandes approuvées vous placent dans le groupe en tant que membre.
+Si une demande est approuvée ou refusée, vous recevrez une notification -- une demande approuvée vous fait entrer dans le groupe en tant que membre.
 
-## Annuler une demande
+## Annuler une demande {#cancelling-a-request}
 
-Si vous changez d'avis avant qu'un leader examine votre demande :
+Si vous changez d'avis avant qu'un responsable n'examine votre demande :
 
-1. Allez à la page **Groupes**.
-2. Trouvez votre demande dans la section **Demandes en attente**.
-3. Cliquez sur **Annuler** à côté de la demande.
+1. Ouvrez **Groupes** dans le portail des membres.
+2. Repérez votre demande dans la section **Demandes en attente**.
+3. Cliquez sur **Annuler la demande** à côté de la demande.
 
-La demande est immédiatement retirée et le leader ne la verra plus.
+La demande est immédiatement retirée et le responsable ne la verra plus.
 
-## Articles connexes
+## Articles connexes {#related-articles}
 
 - [Parcourir les groupes](./browsing-groups.md) -- Trouver des groupes à rejoindre
 - [Détails du groupe](./group-details.md) -- Ce que vous pouvez voir et faire sur la page d'un groupe
-- [Conversations de groupe](./conversations.md) -- Participer à des discussions une fois que vous êtes un membre
+- [Conversations de groupe](./conversations.md) -- Participer aux discussions une fois membre

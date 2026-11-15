@@ -1,49 +1,56 @@
 ---
-title: "Bla i prekener på B1.church-nettstedet ditt"
-sidebar_label: "Prekener"
-description: "Bla i og se innspilte prekener fra menighetens bibliotek på B1.church-nettstedet, gruppert i serier eller spillelister. Ingen innlogging nødvendig."
+title: "Bla i preken på B1.church-nettstedet ditt"
+sidebar_label: "Preken"
+description: "Bla gjennom og se innspilte preken fra menighetens bibliotek på B1.church-nettstedet, sortert i serier eller spillelister. Ingen innlogging nødvendig."
 ---
 
-# Prekener
+# Preken
 
 <div class="article-intro">
 
-Prekensiden lar deg bla gjennom og se innspilte prekener fra kirken din. Kirkens prekenbibliotek vises med utseendet og oppsettet kirken din har konfigurert, slik at utseendet matcher kirkens merkevare.
+Sidene for preken lar deg bla gjennom og se innspilte preken fra menigheten din. Menighetens preken-bibliotek vises med det utseendet og oppsettet menigheten har valgt, slik at utseendet samsvarer med menighetens profil.
 
 </div>
 
 <div class="prereqs">
-<h4>Før Du Begynner</h4>
+<h4>Før du begynner</h4>
 
-- Ingen innlogging er nødvendig for å se prekener. Prekensiden er offentlig tilgjengelig.
-- Kirken din må ha lagt til prekeninnhold gjennom administrasjonsportalen.
+- Du trenger ikke å logge inn for å se preken. Siden Preken er offentlig tilgjengelig.
+- Menigheten din må ha lagt til preken-innhold via administrasjonsportalen.
 
 </div>
 
-## Bla Gjennom Prekener
+## Bla i preken på nettstedet {#browsing-sermons-on-the-website}
 
-1. Naviger til **Prekener**-siden fra kirkens nettstedsnavigasjon.
-2. Du vil se en liste over tilgjengelige prekener, vanligvis organisert etter spilleliste eller serie.
-3. Klikk på en preken for å se eller lytte til den.
+1. Gå til siden **Preken** fra navigasjonen på menighetens nettsted.
+2. Siden åpnes på **Spillelister**: et kort for hver av menighetens prekenserier, med bilde og tittel.
+3. Klikk på en spilleliste for å se prekenene i den, hver med bilde og tittel.
+4. Klikk på en preken for å spille den av på siden.
 
-Prekener kan inkludere video- eller lydinnhold som er hostet på plattformer som YouTube, Vimeo eller Facebook. Når du klikker på en preken, spilles mediet direkte på siden.
+Knappene over listen (**Spillelister**, deretter spillelistens navn, deretter prekenens tittel) tar deg ett steg tilbake. Preken kan være videoer som er lagt ut på plattformer som YouTube, Vimeo eller Facebook.
 
-## Hva Du Vil Se
+Hver preken har også en egen side på `/sermons/` etterfulgt av prekenens ID, som du kan dele eller lagre som bokmerke. Siden viser videoen, serienavnet, tittelen, datoen og beskrivelsen.
 
-Hver prekenoppføring kan vise:
-
-- **Tittel** -- Navnet på prekenen
-- **Taler** -- Hvem som holdt budskapet
-- **Dato** -- Når prekenen ble spilt inn eller publisert
-- **Beskrivelse** -- Et sammendrag av prekeninnholdet
-- **Miniatyrbilde** -- Et forhåndsvisningsbilde for prekenen
-
-Kirken din organiserer prekener i spillelister eller serier. Dette gjør det enkelt å følge en serie over flere uker eller finne prekener om et bestemt emne.
-
-:::tip
-Hvis du leter etter en direktesending i stedet for en innspilt preken, sjekk [Direktestrømming](./live-streaming.md)-siden i stedet.
+:::info Podkastfeed
+Menighetens preken publiseres også som en podkast (RSS)-feed. Podkastapper og feedlesere kan finne den fra siden til en hvilken som helst preken.
 :::
 
-## Tilgjengelighet
+## Preken i medlemsportalen {#sermons-in-the-member-portal}
 
-Prekensiden er tilgjengelig når kirken din har lagt til prekeninnhold gjennom administrasjonsportalen. Hvis du ikke ser en **Prekener**-lenke i kirkens navigasjon, har kanskje ikke kirken din konfigurert denne funksjonen ennå. Kontakt kirkens administrator for mer informasjon.
+Skjermen **Preken** i medlemsportalen (`/mobile/sermons`) er oppbygd som én side med seksjoner:
+
+- **Se det nyeste** øverst åpner den nyeste prekenen. Når menigheten er direkte, blir den til **Se direkte** og åpner [direktesendingen](./live-streaming.md).
+- **Nyeste** -- den nyeste prekenen med bilde, serie, dato og lengde.
+- **Direkte** -- vises når en sending pågår eller starter innen de neste 24 timene, med tidspunktet for neste gudstjeneste. Trykk på den for å åpne sendingen.
+- **Nylig** -- de neste tre prekenene. Trykk på **Alle preken** for å se alle prekenene, filtrere etter år eller søke i titler og beskrivelser på tvers av alle år.
+- **Serier** -- menighetens tre nyeste serier, med antall preken i hver. Trykk på **Alle serier** for hele listen, eller trykk på en serie for å se prekenene i den.
+
+Trykk på en preken for å åpne den. Trykk på bildet eller **Se preken** for å spille den av, **Del** for å sende en lenke, eller **Åpne lenke** for å åpne videoen på dens egen side. Under finner du en seksjon **Om** med beskrivelsen, og en liste **I denne serien** med en lenke til **Alle i serien**.
+
+:::tip
+Leter du etter en direktesending i stedet for en innspilt preken, kan du se på siden [Direktesending](./live-streaming.md).
+:::
+
+## Tilgjengelighet {#availability}
+
+Siden Preken er tilgjengelig når menigheten har lagt til preken-innhold via administrasjonsportalen. Hvis du ikke ser en lenke til **Preken** i navigasjonen til menigheten din, er det kanskje ikke satt opp ennå. Kontakt menighetens administrator for mer informasjon.

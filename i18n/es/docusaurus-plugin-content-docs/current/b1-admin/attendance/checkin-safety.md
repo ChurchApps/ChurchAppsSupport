@@ -20,7 +20,7 @@ B1 incluye un conjunto de controles de seguridad infantil para el registro de en
 
 </div>
 
-## Capacidad de la Sala y Cierre de una Sala
+## Capacidad de la Sala y Cierre de una Sala {#room-capacity-and-closing-a-room}
 
 Cada sala de registro (grupo) puede aplicar sus propios límites. Abra el grupo, haga clic en **Edit** para editar su configuración, y encuentre la sección **Check-In Capacity**:
 
@@ -28,7 +28,7 @@ Cada sala de registro (grupo) puede aplicar sus propios límites. Abra el grupo,
 - **Guest Capacity** -- Un límite opcional separado sobre cuántos huéspedes puede contener la sala.
 - **Closed for Check-In** -- Configure como **Yes** para detener todos los registros en esta sala inmediatamente (por ejemplo, cuando se cancela una clase o una sala no está disponible). Las salidas aún funcionan.
 
-## Ratios de Voluntarios
+## Ratios de Voluntarios {#volunteer-ratios}
 
 La misma sección **Check-In Capacity** en el grupo incluye reglas de personal:
 
@@ -50,11 +50,11 @@ Qué tan estrictamente se aplican las ratios es una configuración de toda la ig
 La capacidad y el cierre del registro son límites fijos -- la opción advertencia/bloqueo se aplica solo a los ratios de voluntarios.
 :::
 
-## Tipos de Registro
+## Tipos de Registro {#check-in-types}
 
 Cada registro registra si la persona es un **Member**, **Guest** o **Volunteer**. El tipo se elige con fichas en la pantalla del hogar del quiosco (Member es el predeterminado). Los tipos alimentan las reglas de seguridad — los voluntarios proporcionan cobertura de ratio, y los huéspedes cuentan contra la capacidad de huéspedes de la sala.
 
-## Orientación de Sala por Edad y Grado
+## Orientación de Sala por Edad y Grado {#age-and-grade-room-guidance}
 
 Puede dar a cada sala límites de edad o grado para que el quiosco guíe a las familias a salas apropiadas:
 
@@ -66,7 +66,7 @@ Los grados cambian en la **fecha de promoción de grado** de su iglesia:
 1. En B1 Admin, vaya a **Settings** y abra la sección **Grade Promotion**.
 2. Establezca el mes y día en que su iglesia promueve estudiantes (por ejemplo, 1 de agosto). Las edades y grados en el quiosco se calculan a partir de la fecha de promoción más reciente.
 
-## Personas de Recogida Confiables y No Autorizadas
+## Personas de Recogida Confiables y No Autorizadas {#trusted-and-not-authorized-pickup-people}
 
 Cada hogar puede tener una lista de personas que están — o no — autorizadas para recoger a sus hijos.
 

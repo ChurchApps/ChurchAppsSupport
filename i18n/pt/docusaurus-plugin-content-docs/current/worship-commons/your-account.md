@@ -60,7 +60,7 @@ Para uma música publicada, clique em **Copiar link** para compartilhar sua pág
 Se a equipe do WorshipCommons incluir você como coeditor de uma música -- por exemplo, uma música que você coescreveu e que outra pessoa enviou -- ela aparecerá em **Minhas submissões** como **Publicada**, mesmo que você não a tenha enviado. Como editor da música, você pode fazer alterações mesmo quando a licença dela não permite edições públicas.
 :::
 
-## Páginas de compositor
+## Páginas de compositor {#writer-pages}
 
 Todo compositor da biblioteca tem uma página de compositor que lista suas músicas, com o ano, o tom, os temas e a licença de cada uma. As igrejas chegam até ela clicando no nome de um compositor em uma página de música. Quando uma música tem vários compositores, cada nome leva à sua própria página.
 

@@ -48,7 +48,7 @@ Il selettore di trasporto è la configurazione `deliveryProvider`:
 
 Il client non ha mai bisogno di sapere quale sia in uso — parla lo stesso protocollo JSON in entrambi i casi.
 
-## Protocollo wire
+## Protocollo wire {#wire-protocol}
 
 Ogni frame è JSON nella forma `PayloadInterface`:
 

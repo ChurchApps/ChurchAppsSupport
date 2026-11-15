@@ -1,72 +1,74 @@
 ---
 title: "Mga Campaign at Pledge"
-description: "Gumawa ng fundraising campaign sa B1 Admin, itala ang pledge ng miyembro, at subaybayan ang progreso sa layunin laban sa aktuwal na donasyon ng bawat pondo."
+description: "Gumawa ng fundraising campaign sa B1 Admin, magtala ng pledge ng mga miyembro, at subaybayan ang progreso tungo sa layunin laban sa aktwal na donasyon sa bawat fund."
 ---
 
 # Mga Campaign at Pledge
 
 <div class="article-intro">
 
-Hinahayaan ka ng mga campaign na magpatakbo ng kampanya sa pangangalap ng pondo tungo sa isang partikular na layunin -- isang building fund, misyon, o espesyal na proyekto -- at subaybayan ang mga pledge ng mga miyembro kasama ang aktuwal na mga donasyon para makita mo ang tunay na progreso sa real time.
+Hinahayaan ka ng mga campaign na magsagawa ng fundraising drive tungo sa partikular na layunin -- isang building fund, missions trip, o espesyal na proyekto -- at subaybayan ang mga pledge ng mga miyembro kasabay ng aktwal na donasyon para makita mo ang iyong progreso sa real-time.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- I-set up ang iyong [donation funds](./funds.md) -- nakatali ang bawat campaign sa isang fund
-- Kailangan mong magkaroon ng access sa seksyong Donations ng B1 Admin
+- I-set up ang iyong [mga donation fund](./funds.md) -- nakatali ang bawat campaign sa isang fund
+- Kailangan mo ng **View Donation Summaries** na permission para makita ang mga campaign, at **Edit Donations** para magdagdag o magpalit ng campaign at pledge
 
 </div>
 
-## Pagbubukas ng Campaigns
+## Pagbubukas ng Campaigns {#opening-campaigns}
 
-Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Mga Donasyon**, at i-click ang **Mga Campaign**. Makikita mo ang isang talahanayan ng lahat ng campaign kasama ang fund, petsa, target na halaga, kabuuang na-pledge, at kabuuang naibigay hanggang ngayon. Sa itaas ng talahanayan, may linyang nagpapakita ng bilang ng mga campaign at ng pinagsamang halagang na-pledge at naibigay.
+Sa B1 Admin, buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), i-expand ang **Donations**, at i-click ang **Campaigns**. Makikita mo ang table ng lahat ng campaign kasama ang kanilang fund, mga petsa, goal amount, kabuuang na-pledge, at kabuuang naibigay hanggang ngayon. Ang linyang buod sa itaas ng table ay nagpapakita ng bilang ng campaign at pinagsamang halaga ng pledge at bigay.
 
-## Paggawa ng Campaign
+## Paggawa ng Campaign {#creating-a-campaign}
 
-1. I-click ang **Magdagdag ng Campaign** sa itaas ng pahina.
+1. I-click ang **Add Campaign** sa itaas ng pahina.
 2. Punan ang mga detalye ng campaign:
-   - **Pangalan** *(kinakailangan)* -- ang pangalang ipapakita para sa campaign na ito (halimbawa, "Building Fund 2026").
-   - **Pondo** -- ang donation fund na nauugnay sa campaign na ito.
-   - **Petsa ng Simula** / **Petsa ng Pagtatapos** -- ang panahon ng pangangalap ng pondo.
-   - **Target** -- ang target na halaga sa pera para sa campaign.
-3. I-click ang **I-save**.
+   - **Name** *(kinakailangan)* -- ang display name ng campaign (halimbawa, "Building Fund 2026").
+   - **Fund** *(kinakailangan)* -- ang donation fund na nauugnay sa campaign na ito.
+   - **Goal Amount** *(opsyonal)* -- ang target na halaga ng campaign. Kapag walang goal, walang progress bar na ipapakita ang campaign.
+   - **Start Date** *(kinakailangan, nagsisimula sa petsa ngayon)* at **End Date** *(opsyonal)* -- ang panahon ng fundraising. Kapag walang end date, lalabas na **Ongoing** ang campaign.
+   - **Description** -- maikling paglalarawan ng campaign.
+   - **Show progress on giving page** -- ipakita sa mga donor ang progreso ng campaign sa iyong giving page.
+   - **Allow donors to pledge** -- payagan ang mga donor na gumawa ng sarili nilang pledge sa campaign.
+3. I-click ang **Save**. Kung nawawala ang pangalan, fund, o start date, sasabihin ng form kung alin ang pupunan.
 
-## Pagsubaybay sa Progreso
+## Pagsubaybay ng Progreso {#tracking-progress}
 
 Ipinapakita ng bawat row ng campaign ang:
 
-- **Target** -- ang target mong halaga
-- **Naipangako** -- ang kabuuang halagang ipinangako ng mga miyembrong ibibigay
-- **Naibigay** -- ang kabuuang halagang aktuwal na naibigay sa fund ng campaign na ito sa loob ng panahon ng campaign
-- **Progreso** -- bar at porsyento na nagpapakita kung gaano ka na kalapit sa target mo
+- **Goal** -- ang target mong halaga
+- **Pledged** -- ang kabuuang halagang ipinangako ng mga miyembrong ibigay
+- **Given** -- ang kabuuang aktwal na naidonate sa fund ng campaign na ito sa loob ng panahon ng campaign
+- **Progress** -- bar at porsyento na nagpapakita kung gaano na kalayo ang narating mo tungo sa goal
 
-I-click ang pangalan ng campaign para buksan ang detail view. Ipinapakita nito ang porsyento ng naabot na target at inililista ang mga indibidwal na pledge kasama ang na-pledge at naibigay ng bawat donor at ang status (**Hindi pa Nagsisimula**, **Ginagawa**, **Natupad**, **Higit sa Pledge**, o **Walang Pledge** para sa mga donor na nagbigay nang walang pledge). Nakaayos ang mga donor ayon sa apelyido, pagkatapos ayon sa pangalan; i-click ang header ng column para i-sort ayon sa column na iyon sa halip. I-click ang **I-export** sa itaas ng detail view para i-download ang listahan ng pledge bilang CSV.
+I-click ang pangalan ng campaign para buksan ang detail view. Ipinapakita nito ang porsyento ng goal na naabot at inililista ang bawat pledge kasama ang ipinangakong halaga at naibigay ng bawat donor, at isang status (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged**, o **Non-Pledged** para sa mga donor na nagbigay nang walang pledge). Nakalista ang mga donor ayon sa apelyido, saka ayon sa pangalan; i-click ang column header para i-sort ayon sa column na iyon. I-click ang **Export** sa itaas ng detail view para i-download ang listahan ng pledge bilang CSV.
 
-## Pagdagdag ng Pledge
+## Pagdaragdag ng Pledge {#adding-pledges}
 
-Ang pledge ay mga pangako ng mga miyembro na magbigay para sa isang campaign. Para magtala ng pledge:
+Ang pledge ay pangako ng mga miyembro na magbigay para sa isang campaign. Para magtala ng pledge:
 
 1. Buksan ang isang campaign.
-2. I-click ang **Magdagdag ng Pledge** sa itaas ng pahina.
-3. Piliin ang **tao** na gagawa ng pledge.
-4. Ilagay ang **halaga** ng pledge.
-5. Opsyonal na magtakda ng **petsa** para sa pangakong pledge.
-6. I-click ang **I-save**.
+2. I-click ang **Add Pledge** sa itaas ng pahina.
+3. Hanapin ang **person** na gagawa ng pledge at idagdag sila.
+4. Ilagay ang **Pledge Amount**. Dapat itong mas malaki sa zero.
+5. I-click ang **Save**.
 
-Lumalabas ang mga pledge sa detail ng campaign at nag-aambag sa kabuuang **Naipangako** sa listahan ng campaign. Para baguhin ang pledge, i-click ang **I-edit** sa row nito.
+Lumalabas ang mga pledge sa detail ng campaign at nakakatulong sa kabuuang **Pledged** sa listahan ng campaign. Para baguhin ang halaga ng pledge, i-click ang **Edit** sa row nito; para alisin ang pledge, i-click ang **Edit** at pagkatapos ang **Delete**.
 
 :::tip
-Hiwalay ang mga pledge sa aktuwal na donasyon. Sinusubaybayan ng pledge ang pangako; itinatala ng donasyon ang aktuwal na kaloob. Ipinapakita ang dalawa sa campaign para makita mo kung gaano kahusay natutupad ang mga pledge.
+Hiwalay ang mga pledge sa aktwal na donasyon. Sinusubaybayan ng pledge ang pangako; itinatala naman ng donasyon ang aktwal na handog. Parehong ipinapakita sa campaign para makita mo kung gaano kahusay natutupad ang mga pledge.
 :::
 
-## Pag-edit o Pagbura ng Campaign
+## Pag-edit o Pagbura ng Campaign {#editing-or-deleting-a-campaign}
 
-I-click ang **I-edit** sa anumang row ng campaign (o ang **I-edit ang Campaign** sa itaas ng detail view ng campaign) para i-update ang pangalan, goal, petsa, o fund nito. I-click ang **Burahin** para tuluyang alisin ang campaign at ang mga pledge nito. Hindi nabubura ng pagbura ng campaign ang anumang donasyong naitala sa fund nito.
+I-click ang **Edit** sa anumang row ng campaign (o ang **Edit Campaign** sa itaas ng detail view ng campaign) para i-update ang alinman sa mga detalye nito. Sa edit form, i-click ang **Delete** para permanenteng alisin ang campaign at ang mga pledge nito; babalik ka sa listahan ng campaign. Hindi nabubura ng pagbura ng campaign ang anumang donasyong naitala sa fund nito.
 
-## Mga Kaugnay na Artikulo
+## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Recording Donations](./recording-donations.md) -- itala ang aktuwal na mga kaloob na tutupad sa mga pledge
-- [Funds](./funds.md) -- i-set up ang fund na ii-associate sa isang campaign
+- [Recording Donations](./recording-donations.md) -- itala ang aktwal na handog na tumutupad sa mga pledge
+- [Funds](./funds.md) -- i-set up ang fund na iuugnay sa campaign
 - [Donation Reports](./donation-reports.md) -- pag-uulat ng mga donasyon ayon sa fund

@@ -1,83 +1,91 @@
 ---
 title: "Rom, ressurser og planlegging"
-description: "Sett opp rom, utstyr, blokkeringer og arrangementsmaler i B1 Admin, slik at grupper kan be om booking og du kan godkjenne uten dobbeltbooking."
+description: "Sett opp rom, utstyr, sperringer og hendelsesmaler i B1 Admin slik at grupper kan be om booking, og du kan godkjenne dem for å unngå dobbeltbooking."
 ---
 
 # Rom, ressurser og planlegging
 
 <div class="article-intro">
 
-Med rom og ressurser kan du holde oversikt over menighetens lokaler og utstyr som kan bookes. Når en gruppe eller et team vil bruke et rom eller låne en ressurs til et arrangement, kan de be om det via B1 -- og du kan godkjenne eller avslå forespørslene for å unngå dobbeltbooking.
+Rom og ressurser lar deg følge med på menighetens lokaler og utstyr som kan bookes. Når en gruppe eller et team vil bruke et rom eller låne en ressurs til en hendelse, kan de be om det via B1 – og du kan godkjenne eller avslå forespørslene for å unngå dobbeltbooking.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger administratortilgang til Kalendere-delen i B1 Admin
+- Du trenger tillatelsen **Edit Content**
 - Sett opp [grupper](../groups/creating-groups.md) hvis medlemmer skal sende inn bookingforespørsler
 
 </div>
 
-## Åpne rom og ressurser
+## Åpne Rooms & Resources {#opening-rooms--resources}
 
-Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Kalendere** og klikk på **Rom og ressurser**. Siden har fire faner: **Rom**, **Ressurser**, **Sperrede perioder** og **Maler**. Knappen for å legge til øverst på siden endres etter hvilken fane som er valgt, og feltet **Finn** lar deg filtrere den aktuelle listen.
+I B1 Admin åpner du [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Calendars** og klikker **Rooms & Resources**. Siden har fire faner: **Rooms**, **Resources**, **Blockouts** og **Templates**. Legg-til-knappen øverst på siden endrer seg etter valgt fane, og boksen **Find** lar deg filtrere den gjeldende listen.
 
-## Rom
+## Rom {#rooms}
 
-Rom er fysiske lokaler som kan reserveres sammen med kalenderarrangementer -- et kirkerom, en menighetssal, et klasserom og så videre.
+Rom er fysiske lokaler som kan reserveres sammen med kalenderhendelser – et kirkerom, en fellesal, et klasserom osv.
 
-### Legge til et rom
+### Legge til et rom {#adding-a-room}
 
-1. Klikk på **Legg til rom** øverst på siden i fanen **Rom**.
-2. Skriv inn et **navn** på rommet.
-3. Du kan angi en **kapasitet** (maksimalt antall personer).
-4. Angi en **godkjenningsgruppe** -- når en gruppe ber om dette rommet, får lederne i den valgte gruppen beskjed og må godkjenne bookingen. La feltet stå tomt hvis det ikke trengs godkjenning.
-5. Klikk på **Lagre**.
+1. På fanen **Rooms** klikker du **Add Room** øverst på siden.
+2. Skriv inn et **Room Name**.
+3. Angi eventuelt en **Capacity** (maksimalt antall personer) og en **Description**. Begge vises ved siden av rommet når folk velger rom til en hendelse.
+4. Angi en **Approval Group** hvis bookinger må godkjennes. Bookinger som gjøres av medlemmer av den gruppen, godkjennes automatisk. Andres bookinger venter som **Pending** til de godkjennes på siden [Approvals](./approvals.md), og gruppens medlemmer får en e-post om nye forespørsler. La feltet stå på **No approval needed** for å godkjenne alle bookinger automatisk.
+5. Klikk **Save**.
 
-### Redigere eller slette et rom
+Listen over rom viser hvert rom med **Room Name**, **Capacity** og **Approval Group**.
 
-Klikk på **Rediger** ved siden av et rom, gjør endringene dine og klikk på **Lagre**. Bruk **Slett** for å fjerne et rom permanent.
+### Redigere eller slette et rom {#editing-or-deleting-a-room}
 
-## Ressurser
+Hold musepekeren over et rom og klikk **Edit**, gjør endringene dine og klikk **Save**. Bruk **Delete** for å fjerne et rom permanent.
 
-Ressurser er ting som kan bookes sammen med et arrangement -- AV-utstyr, prosjektorer, stoler, en varebil og så videre.
+## Ressurser {#resources}
 
-### Legge til en ressurs
+Ressurser er gjenstander som kan bookes sammen med en hendelse – AV-utstyr, prosjektorer, stoler, en minibuss osv.
 
-1. Klikk på fanen **Ressurser** og deretter på **Legg til ressurs**.
-2. Skriv inn et **navn** og eventuelt en **beskrivelse**.
-3. Angi en **godkjenningsgruppe** hvis noen må godkjenne utlån av ressurser.
-4. Klikk på **Lagre**.
+### Legge til en ressurs {#adding-a-resource}
 
-## Sperrede perioder
+1. Klikk på fanen **Resources**, og deretter **Add Resource**.
+2. Skriv inn et **Resource Name** og eventuelt en **Description**.
+3. Angi **Quantity** du eier (for eksempel 3 prosjektorer). Hver hendelse booker én, og B1 varsler når flere hendelser samtidig booker den enn det du har.
+4. Angi en **Approval Group** hvis noen må godkjenne utlån av ressurser. Dette fungerer på samme måte som for rom.
+5. Klikk **Save**.
 
-Sperrede perioder hindrer at rom eller ressurser bookes til bestemte tider -- for eksempel ved oppussing, reserverte perioder eller vedlikehold.
+Rediger eller slett en ressurs på samme måte som et rom.
 
-### Legge til en sperret periode
+## Sperringer {#blockouts}
 
-1. Klikk på fanen **Sperrede perioder** og deretter på **Legg til sperret periode**.
-2. Velg om du vil sperre et **rom**, en **ressurs** eller alle rom og ressurser.
-3. Angi **start** og **slutt** (dato og klokkeslett) for den sperrede perioden.
-4. Du kan legge til en merknad med **årsak**.
-5. Klikk på **Lagre**.
+Sperringer hindrer at rom eller ressurser blir booket i bestemte tidsrom – for renoveringer, reserverte perioder eller vedlikehold.
 
-## Arrangementsmaler
+### Legge til en sperring {#adding-a-blockout}
 
-Med maler kan du lagre en gjenbrukbar arrangementskonfigurasjon -- tittel, beskrivelse og tilknyttede grupper -- slik at gjentakende arrangementer kan opprettes på en ensartet måte.
+1. Klikk på fanen **Blockouts**, og deretter **Add Blockout**.
+2. Under **Applies To** velger du et rom, en ressurs eller **All rooms & resources**.
+3. Angi **Start** og **End** dato/klokkeslett for sperringen.
+4. Legg eventuelt til en **Reason**. Den vises i [Tilgjengelighetskalenderen](./availability.md) som *Blocked: reason*.
+5. Klikk **Save**.
 
-### Legge til en mal
+Hendelser som booker et sperret rom eller en sperret ressurs, viser en konfliktadvarsel i hendelsesredigeringen.
 
-1. Klikk på fanen **Maler** og deretter på **Legg til mal**.
-2. Skriv inn et **navn** på malen.
-3. Du kan knytte til en **gruppe**, slik at arrangementet automatisk kobles til gruppen når det opprettes fra malen.
-4. Klikk på **Lagre**.
+## Hendelsesmaler {#event-templates}
 
-Når de oppretter et nytt arrangement, kan de ansatte velge en eksisterende mal for å fylle ut arrangementsdetaljene på forhånd.
+Maler lar deg lagre et gjenbrukbart oppsett for hendelser – tittel, beskrivelse, varighet, rom og ressurser – slik at hendelser du oppretter ofte, alltid settes opp på samme måte.
 
-## Relaterte artikler
+### Legge til en mal {#adding-a-template}
 
-- [Tilgjengelighetskalender](./availability.md) — se alle bookinger på et blikk og book rom eller ressurser direkte
+1. Klikk på fanen **Templates**, og deretter **Add Template**.
+2. Skriv inn et **Template Name** (vises når du velger en mal).
+3. Fyll inn **Event Title**, **Event Description** og **Duration (minutes)** som skal brukes for nye hendelser.
+4. Velg eventuelt **Rooms** og **Resources** som skal bookes.
+5. Klikk **Save**.
+
+Når du oppretter en ny hendelse, velger du malen i boksen **Template** i hendelseseditoren for å fylle inn tittel, beskrivelse, rom og ressurser, og for å sette sluttidspunktet ut fra malens varighet (angi **Start** først). Du velger fortsatt hendelsens **Group** selv. Boksen **Template** vises først når det finnes minst én mal.
+
+## Relaterte artikler {#related-articles}
+
+- [Tilgjengelighetskalender](./availability.md) — se alle bookinger samlet og book rom eller ressurser direkte
 - [Kalendergodkjenninger](./approvals.md) — godkjenn eller avslå bookingforespørsler for rom og ressurser
-- [Opprette kalendere](./creating-calendars.md) — sett opp arrangementskalendere
+- [Opprette kalendere](./creating-calendars.md) — sett opp hendelseskalendere
 - [Opprette grupper](../groups/creating-groups.md) — sett opp grupper som kan booke rom og ressurser

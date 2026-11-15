@@ -1,13 +1,13 @@
 ---
 title: "Donorbox"
-description: "Koble Donorbox til B1 Admin med Zapier, slik at gaver på nett lager gaveposter og giverprofiler automatisk, uten manuell eksport."
+description: "Koble Donorbox til B1 Admin med Zapier, slik at nettgaver automatisk oppretter gaveregistreringer og giverprofiler som personer, uten manuell eksport."
 ---
 
 # Donorbox
 
 <div class="article-intro">
 
-Hvis kirka di tar imot donasjoner gjennom Donorbox men sporer mennesker og erklæringer i B1, kan du få Donorbox umiddelbar Zapier-utløsere til å opprette samsvarende donasjonsposter innenfor B1 — og opprette donoren som en B1-person hvis de ikke allerede eksisterer. Ingen manuell avstemming, ingen månedlig eksport.
+Hvis kirken din tar imot gaver gjennom Donorbox, men registrerer personer og oppgaver i B1, kan Donorbox' øyeblikkelige Zapier-utløsere opprette tilsvarende gaveregistreringer i B1. Giveren opprettes også som B1-person hvis de ikke finnes fra før. Ingen manuell avstemming og ingen månedlig eksport.
 
 </div>
 
@@ -16,76 +16,77 @@ Hvis kirka di tar imot donasjoner gjennom Donorbox men sporer mennesker og erkl�
 
 - En [Donorbox](https://donorbox.org)-konto med minst én kampanje
 - En [Zapier](https://zapier.com)-konto
-- En B1Admin-bruker med tillatelsen **Rediger innstillinger**
+- En B1 Admin-bruker med tillatelsen **Rediger innstillinger**
 
 </div>
 
-## Hva du kan lede opp
+## Hva du kan koble sammen {#what-you-can-wire-up}
 
-| Retning | Donorbox utløser | B1 handling |
+| Retning | Donorbox-utløser | B1-handling |
 |---|---|---|
-| Donorbox → B1 | Ny eller oppdatert donasjon (øyeblikkelig) | Finn person → legg til donasjon |
-| Donorbox → B1 | Ny eller oppdatert donor | Opprett person |
-| Donorbox → B1 | Ny eller oppdatert plan (gjentakende) | Finn person → legg til donasjon (bruk plan-id som merknad) |
+| Donorbox → B1 | Ny eller oppdatert gave (øyeblikkelig) | Finn person → Legg til gave |
+| Donorbox → B1 | Ny eller oppdatert giver | Opprett person |
+| Donorbox → B1 | Ny eller oppdatert plan (gjentakende) | Finn person → Legg til gave (bruk plan-ID-en som notat) |
 
-Donorbox publiserer sine utløsere som **øyeblikkelige** — de avfyres innen sekunder av en ekte donasjon. Ingen polling-forsinkelse.
+Donorbox publiserer utløserne sine som **øyeblikkelige**. De starter innen sekunder etter en ekte gave, uten ventetid på polling.
 
-## Oppsett
+## Oppsett {#setup}
 
-### 1. Lag en B1 API-nøkkel
+### 1. Lag en B1 API-nøkkel {#1-mint-a-b1-api-key}
 
-I B1Admin: **Innstillinger → Utviklernavn → API-nøkler → Ny API-nøkkel**. Scoper:
+I B1 Admin: **Innstillinger → Utvikler → API-nøkler → Ny API-nøkkel**. Omfang:
 
-- `people:read` — for å slå opp donoren etter e-post
-- `people:write` — for å opprette dem hvis de er nye
-- `donations:write` — for å registrere gaven
+- `people:read`: for å slå opp giveren etter e-post
+- `people:write`: for å opprette dem hvis de er nye
+- `donations:write`: for å registrere gaven
 
-Utløsere i denne retningen er Donorboxs, ikke B1s, så du trenger ikke `settings:write` her.
+- `settings:write`: Zapier sjekker hver B1-nøkkel mot B1s webhook-liste når du kobler den til. Tilkoblingen mislykkes uten dette, selv om det er Donorbox, ikke B1, som eier utløseren her
 
-### 2. Bygg "registrer en donasjon" Zap
+### 2. Bygg Zapen «registrer en gave» {#2-build-the-record-a-donation-zap}
 
-1. **Utløser** — Donorbox: Ny donasjon. Koble til med Donorboxs API-nøkkel (i Donorbox: *konto → profil → API-innstillinger*).
-2. **Handling** — B1.church: Finn person. Map donorens e-post fra utløseren til *e-post*-søkefeltet.
-3. **Handling** — Filter av Zapier (valgfritt): fortsett bare hvis donoren ikke ble funnet, deretter…
-4. **Handling** — B1.church: Opprett person. Map fornavn/etternavn/e-post slik at donoren lander som medlem, ikke bare gaveposter.
-5. **Handling** — B1.church: Legg til donasjon. Map:
-   - Beløp → `data.amount`
-   - Donasjonsdato → utløserens donasjonsdato
-   - Fond → velg B1-fondet som speilbilder Donorbox-kampanjen (Zapier lar deg bytte fonder basert på et filtertrinn eller formattertrinn)
-   - Metode → "Online"
-   - Merknader → Donorbox-transaksjon-id (praktisk ved avstemming)
+1. **Utløser**: Donorbox: Ny gave. Koble til med Donorbox' API-nøkkel (i Donorbox: *Konto → Profil → API-innstillinger*).
+2. **Handling**: B1.church: Finn person. Map giverens e-post fra utløseren til feltet *E-post*.
+3. **Handling**: B1.church: Legg til gave. Map:
+   - Person → ID-en fra steg 2
+   - Beløp → gavebeløpet fra utløseren
+   - Gavedato → gavedatoen fra utløseren
+   - Fond → velg B1-fondet som speiler Donorbox-kampanjen (Zapier lar deg bytte fond basert på et filter eller et formatteringssteg)
+   - Metode → «Online»
+   - Notater → Donorbox-transaksjons-ID-en (nyttig ved avstemming)
 
-Slå Zap-en på. Den neste live-donasjonen gjennom Donorbox lander i **B1Admin → donasjoner** automatisk.
+Slå på Zapen. Neste direkte gave via Donorbox havner automatisk i **B1 Admin → Gaver**.
 
-## Vanlige oppskrifter
+B1s *Finn person* stopper Zapen med feilen «No person found» når ingen har den e-postadressen. Et filtreringssteg kan derfor ikke forgrene seg på det. For å håndtere førstegangsgivere slår du på Zapiers feilhåndtering for steget Finn person, og i feilbanen kjører du B1.church: Opprett person (map fornavn, etternavn og e-post) og deretter Legg til gave med den nye personens ID. Alternativt kjører du Zapen *Ny giver* → *Opprett person* fra tabellen over, slik at giverne finnes i B1 før gaven kommer.
 
-### En Zap per fond
+## Vanlige oppskrifter {#common-recipes}
 
-Hvis du kjører flere Donorbox-kampanjer som kartlegges til separate B1-fonder, er den reneste layouten en Zap per kampanje med et Donorbox *kampanje*-filter øverst — på den måten er fondsabbildet hardkodet og du hopper over oppslåslssteget.
+### En Zap per fond {#one-zap-per-fund}
 
-### Behandle oppdatert donasjoner som korreksjoner
+Hvis du kjører flere Donorbox-kampanjer som tilsvarer separate B1-fond, er det ryddigste oppsettet én Zap per kampanje, med et filter for Donorbox-*kampanje* øverst. Da er fondkoblingen fast i oppsettet, og du slipper oppslagssteget.
 
-Donorboxs *ny eller oppdatert donasjon* avfyres på endringer for. Bruk et Zapier *path*-trinn på `event_type` for å fourche: "ny" → legg til donasjon, "oppdatert" → Finn donasjon + oppdater (merknad: B1s Zapier-app har for øyeblikket ikke en oppdatert donasjon-handling — for nå, logg "oppdatert" hendelser til en Slack-kanal for manuell gjennomgang).
+### Behandle oppdaterte gaver som rettelser {#treat-updated-donations-as-corrections}
 
-### Synkroniser gjentakende planendringer til en Slack-kanal
+Donorbox' *Ny eller oppdatert gave* utløses også ved redigeringer. Bruk et Zapier-steg *Path* på `event_type` for å dele opp flyten: «new» → Legg til gave, «updated» → Finn gave + Oppdater (merk: B1s Zapier-app har ikke en handling for å oppdatere gaver i dag. Foreløpig logger du hendelser med «updated» til en Slack-kanal for manuell gjennomgang).
 
-- **Utløser** — Donorbox: Ny eller oppdatert plan
-- **Handling** — Slack: Send melding til `#donations` (f.eks. "Plan endret — Sarahs månedlige gave er nå $200")
+### Synkroniser endringer i gjentakende planer til en Slack-kanal {#sync-recurring-plan-changes-to-a-slack-channel}
 
-## Grenser og merknader
+- **Utløser**: Donorbox: Ny eller oppdatert plan
+- **Handling**: Slack: Send melding til `#donations` (f.eks. «Plan endret: Saras månedlige gave er nå $200»)
 
-- **Match donorer etter e-post.** Donorbox deler ikke B1s person-id; den eneste holdbare sammenføyingsnøkkelen er e-post. Donorer som gir under en annen e-post vil opprette en ny B1-person — din månedlige avstemming bør se etter disse.
-- **Refusjoner er ikke separat eksponert** — Donorbox utsender en statusoppdatering på samme donasjon. B1s Zapier-app har for øyeblikket ikke en *oppdater donasjon*-handling; det sikre mønsteret i dag er å logge refusjons hendelser out-of-band og justere donasjonen manuelt.
-- **Test i Donorboxs sandkasse først** for å unngå å opprette falske gaver i produksjons-B1. Donorbox gir test-modustilleggsdata separat fra live.
+## Begrensninger og merknader {#limits--notes}
 
-## Problemløsing
+- **Koble giverne på e-post.** Donorbox deler ikke B1s person-ID. Den eneste varige koblingsnøkkelen er e-post. Givere som gir med en annen e-postadresse, får en ny B1-person. Den månedlige avstemmingen din bør se etter disse.
+- **Refusjoner vises ikke separat.** Donorbox sender en statusoppdatering på samme gave. B1s Zapier-app har i dag ingen handling *Oppdater gave*. Det trygge mønsteret i dag er å logge refusjonshendelser utenfor systemet og justere gaven manuelt.
+- **Test først i Donorboxs sandbox** for å unngå å opprette falske gaver i produksjons-B1. Donorbox gir testmodus-legitimasjon som er atskilt fra live.
 
-- **"Person ikke funnet" advarsel hver gang** — det er greit hvis du har ordnet trinnene slik at en *opprett person*-handling kjøres i ikke-funnet-grenen. Hvis oppretting av persontrinn aldri kjøres heller, dobbeltsjekk at API-nøkkelen har `people:write`.
-- **Donasjonsmengde ser 100 × for stor eller liten ut** — Donorbox sender cent i noen nyttelast-varianter og dollar i andre. Bruk et *formatttrinn av Zapier — tall* for å dele med 100 hvis det er nødvendig.
-- **Duplikat donasjoner fra en enkelt gave** — Donorbox avfyres både *ny donasjon* og *oppdatert donasjon*. Enten filter til `event_type = "donation.succeeded"` eller bygg to Zapier med ikke-overlappende filtre.
+## Feilsøking {#troubleshooting}
 
-## Se også
+- **Feil «No person found»**: giveren finnes ikke i B1 ennå (eller ga med en annen e-post). Legg til feilbanen beskrevet over, og kontroller at API-nøkkelen har `people:write`, slik at *Opprett person* kan kjøre.
+- **Gavebeløpet ser 100 ganger for stort eller lite ut**: Donorbox sender cent i noen nyttelastvarianter og dollar i andre. Bruk et steg *Formatter by Zapier: Numbers* for å dele på 100 om nødvendig.
+- **Dupliserte gaver fra én gave**: Donorbox utløser både *Ny gave* og *Oppdatert gave*. Enten filtrer til `event_type = "donation.succeeded"`, eller bygg to Zaper med ikke-overlappende filtre.
 
-- [Zapier (oversikt)](../zapier.md) — B1-siden av hver Zapier-oppskrift
-- [Subsplash](./subsplash.md) — en annen donasjon-plattform med en Zapier-app
-- [Mailchimp](./mailchimp.md) — kjede "ny gave" inn i en e-posttag
+## Se også {#see-also}
+
+- [Zapier (oversikt)](../zapier.md): B1-delen av hver Zapier-oppskrift
+- [Subsplash](./subsplash.md): en annen gaveplattform med Zapier-app
+- [Mailchimp](./mailchimp.md): koble «ny gave» til en e-postmerkelapp

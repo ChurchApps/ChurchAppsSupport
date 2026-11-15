@@ -202,6 +202,6 @@ Retorna 201 com `client_id`, `client_id_issued_at`, `client_name`, `redirect_uri
 
 Na página de consentimento do B1Admin, um cliente que se registrou sozinho recebe um aviso de que se registrou por conta própria, nunca pode fazer mais do que a conta B1 do próprio usuário e pode ser desconectado em **Configurações → Desenvolvedor → Aplicativos conectados**.
 
-## Suporte a SDK
+## Suporte a SDK {#sdk-support}
 
 O pacote `@churchapps/integration-sdk` encapsula cada fluxo OAuth com funções auxiliares tipadas -- `B1OAuthClient.exchangeCode()`, `.refresh()`, `.startDeviceFlow()`, `.pollDeviceToken()`, `.awaitDeviceToken()`. Veja o README do pacote e [Webhooks](./webhooks.md#sdk-support) para um exemplo completo.

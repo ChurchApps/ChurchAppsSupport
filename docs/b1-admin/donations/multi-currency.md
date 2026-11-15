@@ -15,7 +15,7 @@ B1's multi-currency feature allows your church to accept and track donations in 
 <h4>Before You Begin</h4>
 
 - You need permission to manage donations. See [Roles & Permissions](../people/roles-permissions.md) for details.
-- Set up your [online giving](./online-giving-setup.md) with Stripe, which supports multi-currency transactions.
+- Set up your [online giving](./online-giving-setup.md) with Stripe, which supports multi-currency transactions. A church without online giving can still choose the currency its hand-entered gifts are recorded in.
 - Understand your church's accounting needs for handling multiple currencies.
 
 </div>
@@ -104,7 +104,7 @@ When working with multiple currencies:
 
 ## Best Practices
 
-- **Default currency** -- Set your primary church currency as the default for most transactions
+- **Default currency** -- Set your primary church currency under **Settings > Giving** so hand-entered gifts and giving totals use it
 - **Clear communication** -- Tell donors what currency they're giving in during the checkout process
 - **Consistent reporting** -- Combined totals are always converted to your church currency automatically; open a batch or fund to see each gift's original amount and currency
 - **Regular reconciliation** -- Reconcile Stripe payouts with your donation records, accounting for currency conversions

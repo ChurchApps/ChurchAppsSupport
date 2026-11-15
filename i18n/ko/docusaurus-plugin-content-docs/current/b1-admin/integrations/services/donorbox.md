@@ -1,13 +1,13 @@
 ---
 title: "Donorbox"
-description: "Zapier로 Donorbox를 B1 Admin에 연결해, 온라인 헌금이 수동 내보내기 없이 헌금 기록과 헌금자 프로필을 자동으로 만들도록 합니다."
+description: "Zapier로 Donorbox를 B1 Admin에 연결하세요. 온라인 헌금이 헌금 기록과 헌금자 사람 프로필을 자동으로 만들어, 수동 내보내기가 필요하지 않습니다."
 ---
 
 # Donorbox
 
 <div class="article-intro">
 
-교회가 Donorbox를 통해 기부를 받지만 B1에서 사람과 명세서를 추적하는 경우 Donorbox의 즉시 Zapier 트리거를 사용하여 B1 내부에서 일치하는 기부 기록을 생성할 수 있습니다 — 기부자가 아직 존재하지 않으면 B1 사람으로 생성합니다. 수동 조정 없음, 월간 내보내기 없음.
+교회가 Donorbox로 헌금을 받고 사람과 명세서는 B1에서 관리한다면, Donorbox의 즉시 Zapier 트리거가 B1에 일치하는 헌금 기록을 만들도록 할 수 있습니다. 헌금자가 아직 없다면 B1 사람으로도 생성됩니다. 수동 대조나 월간 내보내기가 필요 없습니다.
 
 </div>
 
@@ -16,76 +16,77 @@ description: "Zapier로 Donorbox를 B1 Admin에 연결해, 온라인 헌금이 �
 
 - 최소 하나의 캠페인이 있는 [Donorbox](https://donorbox.org) 계정
 - [Zapier](https://zapier.com) 계정
-- **설정 편집** 권한이 있는 B1Admin 사용자
+- **Edit Settings** 권한이 있는 B1Admin 사용자
 
 </div>
 
-## 연결할 수 있는 것
+## 연결할 수 있는 항목 {#what-you-can-wire-up}
 
 | 방향 | Donorbox 트리거 | B1 작업 |
 |---|---|---|
-| Donorbox → B1 | 새 또는 업데이트된 기부(즉시) | 사람 찾기 → 기부 추가 |
-| Donorbox → B1 | 새 또는 업데이트된 기부자 | 사람 생성 |
-| Donorbox → B1 | 새 또는 업데이트된 계획(반복) | 사람 찾기 → 기부 추가(계획 id를 참고로 사용) |
+| Donorbox → B1 | New or Updated Donation (즉시) | Find Person → Add Donation |
+| Donorbox → B1 | New or Updated Donor | Create Person |
+| Donorbox → B1 | New or Updated Plan (정기) | Find Person → Add Donation (Plan id를 메모로 사용) |
 
-Donorbox는 **즉시** 트리거를 게시합니다 — 실제 기부 후 몇 초 내에 실행됩니다. 폴링 지연이 없습니다.
+Donorbox는 트리거를 **즉시** 방식으로 제공합니다. 실제 헌금이 들어온 지 몇 초 안에 실행되므로 폴링 지연이 없습니다.
 
-## 설정
+## 설정 {#setup}
 
-### 1. B1 API 키 발급
+### 1. B1 API 키 만들기 {#1-mint-a-b1-api-key}
 
-B1Admin에서: **설정 → 개발자 → API 키 → 새 API 키**. 범위:
+B1Admin에서: **Settings → Developer → API Keys → New API Key**. 권한 범위:
 
-- `people:read` — 이메일로 기부자를 찾아볼 때
-- `people:write` — 새 기부자를 생성할 때
-- `donations:write` — 선물을 기록할 때
+- `people:read` — 이메일로 헌금자를 찾기 위해
+- `people:write` — 새 헌금자를 만들기 위해
+- `donations:write` — 헌금을 기록하기 위해
 
-이 방향의 트리거는 Donorbox의 것이며 B1의 것이 아니므로 `settings:write`가 필요하지 않습니다.
+- `settings:write` — Zapier는 연결할 때 모든 B1 키를 B1의 웹훅 목록과 대조하므로, 이 권한이 없으면 연결이 실패합니다(여기서 트리거를 소유하는 것은 B1이 아니라 Donorbox이지만 필요합니다)
 
-### 2. "기부 기록" Zap 빌드
+### 2. "헌금 기록" Zap 만들기 {#2-build-the-record-a-donation-zap}
 
-1. **트리거** — Donorbox: 새로운 기부. Donorbox의 API 키로 연결합니다(Donorbox: *계정 → 프로필 → API 설정*).
-2. **작업** — B1.church: 사람 찾기. 기부자의 이메일을 트리거에서 *이메일* 검색 필드로 매핑합니다.
-3. **작업** — Zapier로 필터(선택 사항): 기부자가 발견되지 않은 경우에만 계속…
-4. **작업** — B1.church: 사람 생성. 이름/성/이메일을 매핑하면 기부자가 멤버로 착륙합니다, 단순히 선물 기록이 아님.
-5. **작업** — B1.church: 기부 추가. 매핑:
-   - 금액 → `data.amount`
-   - 기부 날짜 → 트리거의 기부 날짜
-   - 기금 → Donorbox 캠페인을 미러링하는 B1 기금을 선택합니다(Zapier는 필터 또는 형식화 단계를 기반으로 기금을 전환할 수 있게 합니다)
-   - 방법 → "온라인"
-   - 참고 → Donorbox 거래 id(조정할 때 유용)
+1. **Trigger** — Donorbox: New Donation. Donorbox의 API 키(Donorbox: *Account → Profile → API Settings*)로 연결하세요.
+2. **Action** — B1.church: Find Person. 트리거의 헌금자 이메일을 *Email* 필드에 매핑하세요.
+3. **Action** — B1.church: Add Donation. 다음과 같이 매핑하세요:
+   - Person → 2단계의 id
+   - Amount → 트리거의 헌금 금액
+   - Donation Date → 트리거의 헌금 날짜
+   - Fund → Donorbox 캠페인에 대응하는 B1 기금 선택(Zapier는 필터나 Formatter 단계를 기준으로 기금을 바꿀 수 있습니다)
+   - Method → "Online"
+   - Notes → Donorbox 거래 id(대조할 때 유용합니다)
 
-Zap을 켭니다. Donorbox를 통한 다음 실시간 기부는 **B1Admin → 기부** 내에서 자동으로 착륙합니다.
+Zap을 켜세요. Donorbox를 통한 다음 실제 헌금이 자동으로 **B1Admin → Donations**에 들어옵니다.
 
-## 일반적인 레시피
+B1의 *Find Person*은 해당 이메일을 가진 사람이 없으면 "No person found" 오류와 함께 Zap을 중단하므로, 필터 단계로는 분기할 수 없습니다. 첫 헌금자를 처리하려면 Find Person 단계에 Zapier의 오류 처리를 켜고, 오류 경로에서 B1.church: Create Person(이름/성/이메일 매핑)을 실행한 다음, 새 사람의 id로 Add Donation을 실행하세요. 또는 위 표의 *New Donor* → *Create Person* Zap을 실행하여 헌금이 도착하기 전에 헌금자가 B1에 존재하도록 하세요.
 
-### 기금별 하나의 Zap
+## 자주 쓰는 활용 예시 {#common-recipes}
 
-여러 Donorbox 캠페인을 별도 B1 기금으로 매핑하는 경우 가장 깔끔한 레이아웃은 캠페인별로 하나의 Zap이며 상단에 Donorbox *캠페인* 필터가 있습니다 — 이렇게 하면 기금 매핑이 하드코드되고 조회 단계를 건너뜁니다.
+### 기금마다 Zap 하나 {#one-zap-per-fund}
 
-### 업데이트된 기부를 수정으로 취급
+여러 Donorbox 캠페인을 각각 다른 B1 기금에 연결한다면, 가장 깔끔한 구성은 캠페인마다 Zap을 하나씩 두고 맨 위에 Donorbox *campaign* 필터를 두는 것입니다. 그러면 기금 매핑이 고정되어 조회 단계를 생략할 수 있습니다.
 
-Donorbox의 *새 또는 업데이트된 기부*는 편집 시에도 실행됩니다. Zapier *경로* 단계를 `event_type`에 사용합니다: "new" → 기부 추가, "updated" → 기부 찾기 + 업데이트(참고: B1의 Zapier 앱에는 현재 기부 업데이트 작업이 없습니다 — 지금은 "updated" 이벤트를 Slack 채널에 로깅하여 수동 검토).
+### 수정된 헌금은 정정으로 처리하기 {#treat-updated-donations-as-corrections}
 
-### 반복 계획 변경을 Slack 채널로 동기화
+Donorbox의 *New or Updated Donation*은 수정 시에도 실행됩니다. Zapier *Path* 단계에서 `event_type`으로 분기하세요. "new" → Add Donation, "updated" → Find Donation + Update로 나눕니다(참고: B1의 Zapier 앱에는 현재 Update Donation 작업이 없으므로, 지금은 "updated" 이벤트를 Slack 채널에 기록하여 수동 검토하세요).
 
-- **트리거** — Donorbox: 새 또는 업데이트된 계획
-- **작업** — Slack: `#donations` 메시지 전송(예: "계획 변경 — Sarah의 월간 기부는 이제 $200")
+### 정기 헌금 계획 변경을 Slack 채널에 알리기 {#sync-recurring-plan-changes-to-a-slack-channel}
 
-## 제한 및 주의사항
+- **Trigger** — Donorbox: New or Updated Plan
+- **Action** — Slack: `#donations`에 메시지 보내기(예: "Plan changed — Sarah's monthly gift is now $200")
 
-- **기부자를 이메일로 매칭합니다.** Donorbox는 B1의 사람 id를 공유하지 않습니다. 유일한 내구적인 조인 키는 이메일입니다. 다른 이메일로 기부하는 기부자는 새 B1 사람을 생성합니다 — 월간 조정은 이것들을 찾아야 합니다.
-- **환불은 별도로 노출되지 않습니다** — Donorbox는 동일한 기부에 대한 상태 업데이트를 내보냅니다. B1의 Zapier 앱에는 현재 *기부 업데이트* 작업이 없습니다. 오늘은 환불 이벤트를 대역 외로 로깅하고 기부를 수동으로 조정하는 것이 안전한 패턴입니다.
-- **먼저 Donorbox의 샌드박스에서 테스트합니다.** — 프로덕션 B1에서 가짜 선물을 생성하지 않도록. Donorbox는 라이브와 별도로 테스트 모드 자격 증명을 제공합니다.
+## 제한 사항 및 참고 {#limits--notes}
 
-## 문제 해결
+- **이메일로 헌금자를 맞추세요.** Donorbox는 B1의 사람 id를 공유하지 않으므로, 유일하게 지속적인 연결 키는 이메일입니다. 다른 이메일로 헌금하는 헌금자는 새 B1 사람으로 생성되므로, 월간 대조에서 이들을 찾아보세요.
+- **환불은 별도로 제공되지 않습니다** — Donorbox는 같은 헌금에 상태 업데이트를 보냅니다. B1의 Zapier 앱에는 현재 *Update Donation* 작업이 없으므로, 지금은 환불 이벤트를 별도로 기록하고 헌금을 수동으로 조정하는 것이 안전한 방법입니다.
+- **먼저 Donorbox의 샌드박스에서 테스트하세요.** 실제 B1에 가짜 헌금이 생기지 않도록 하기 위해서입니다. Donorbox는 실제 환경과 별도로 테스트 모드 인증 정보를 제공합니다.
 
-- **모든 실행에서 "사람을 찾을 수 없음" 경고** — 발견되지 않은 분기에서 *사람 생성*이 실행되도록 단계를 정렬하면 괜찮습니다. 사람 생성 단계도 실행되지 않으면 API 키에 `people:write`가 있는지 다시 확인합니다.
-- **기부 금액이 100배 너무 크거나 작음** — Donorbox는 일부 페이로드 변형에서 센트를 보내고 다른 변형에서는 달러를 보냅니다. 보장할 수 없으면 *Zapier 형식화 — 숫자* 단계를 사용하여 100으로 나눕니다.
-- **단일 선물에서 중복 기부** — Donorbox는 *새 기부*와 *업데이트된 기부*를 모두 실행합니다. `event_type = "donation.succeeded"`로 필터링하거나 겹치지 않는 필터가 있는 두 개의 Zap을 빌드하세요.
+## 문제 해결 {#troubleshooting}
 
-## 참고도 보기
+- **"No person found" 오류** — 헌금자가 아직 B1에 없거나 다른 이메일로 헌금했습니다. 위에서 설명한 오류 경로를 추가하고, *Create Person*이 실행될 수 있도록 API 키에 `people:write`가 있는지 확인하세요.
+- **헌금 금액이 100배 크거나 작게 보임** — Donorbox는 일부 페이로드 형식에서는 센트 단위로, 다른 형식에서는 달러 단위로 보냅니다. 필요하면 *Formatter by Zapier — Numbers* 단계로 100으로 나누세요.
+- **한 헌금이 중복으로 기록됨** — Donorbox는 *New Donation*과 *Updated Donation*을 모두 실행합니다. `event_type = "donation.succeeded"`로 필터링하거나, 겹치지 않는 필터를 가진 Zap 두 개를 만드세요.
 
-- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
-- [Subsplash](./subsplash.md) — 다른 기부 플랫폼, Zapier 앱 사용
-- [Mailchimp](./mailchimp.md) — "새 선물"을 이메일 태그로 연결
+## 함께 보기 {#see-also}
+
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 활용 예시의 B1 쪽 설정
+- [Subsplash](./subsplash.md) — Zapier 앱이 있는 다른 헌금 플랫폼
+- [Mailchimp](./mailchimp.md) — "새 헌금"을 이메일 태그로 연결

@@ -1,42 +1,42 @@
 ---
-title: "Panoramica di Serving in B1 Admin"
+title: "Panoramica del servizio in B1 Admin"
 sidebar_label: "Servizio"
-description: "Coordina i volontari e pianifica i culti nell'area Serving di B1 Admin, dalle schede dei ministeri e dai team ai piani di culto, brani e attività."
+description: "Coordina i volontari e pianifica i servizi della chiesa nell'area Servizio di B1 Admin, dalle schede dei ministeri e dai team fino a piani di servizio, canti e attività."
 ---
 
 # Servizio
 
 <div class="article-intro">
 
-La sezione Servizio è il tuo hub per coordinare i volontari e pianificare i servizi della chiesa. Che tu stia organizzando il culto domenicale, raduni infrasettimanali o eventi speciali, qui è dove riunisci tutto in modo che i tuoi team sappiano esattamente chi sta servendo e quando.
+La sezione Servizio è il tuo centro di coordinamento per i volontari e la pianificazione dei servizi della chiesa. Che tu stia organizzando la liturgia della domenica, gli incontri di metà settimana o eventi speciali, qui raccogli tutto, così i tuoi team sanno esattamente chi sta servendo e quando.
 
 </div>
 
-## Come Funziona la Pagina Servizio
+## Come funziona la pagina Servizio {#how-the-serving-page-works}
 
-Quando apri la pagina **Servizio**, vedrai i tuoi ministeri visualizzati come schede nella parte superiore. Ogni ministero ha i suoi tipi di piano e team, quindi puoi gestire più ministeri in modo indipendente. Ad esempio, potresti avere schede separate per Culto, Ministero per i Bambini e Ospitalità.
+Quando apri la pagina **Servizio**, vedi i tuoi ministeri visualizzati come schede in cima alla pagina. Ogni ministero ha i propri tipi di piano e i propri team, così puoi gestire più ministeri in modo indipendente. Ad esempio, potresti avere schede separate per Lode, Ministero dei bambini e Accoglienza.
 
-Lo staff non amministrativo che sono membri di un ministero possono accedere anche alla pagina Servizio. Vedranno solo i ministeri a cui appartengono e possono creare e modificare piani, incarichi, tipi di piano e l'ordine di servizio per il loro ministero senza avere bisogno di permessi di admin completi.
+Anche il personale non amministratore che fa parte di un ministero può accedere alla pagina Servizio. Vedrà solo i ministeri a cui appartiene e potrà creare e modificare piani, assegnazioni, tipi di piano e ordine del servizio per il proprio ministero, senza bisogno di autorizzazioni amministrative complete.
 
 :::tip
-Se sei un admin, le schede mostrano i ministeri a cui appartieni (**Mine**). Scegli **All** per vedere ogni ministero. Questo è utile quando hai bisogno di verificare gli incarichi tra più team. Se la tua chiesa ha molti ministeri, compare una casella **Find a ministry** per filtrare le schede per nome.
+Se sei un amministratore, le schede mostrano i ministeri a cui appartieni, più qualsiasi ministero che non ha ancora membri (**Miei**). Scegli **Tutti** per vedere ogni ministero. È utile quando devi controllare le assegnazioni su più team. Se la tua chiesa ha molti ministeri, compare una casella **Trova un ministero** per filtrare le schede per nome.
 :::
 
-## Sottosezioni
+## Sottosezioni {#sub-sections}
 
-La sezione Servizio include queste aree chiave:
+La sezione Servizio comprende queste aree principali:
 
-- **[Piani](./plans.md)** -- Crea piani di servizio per date specifiche e assegna i volontari ai team. I piani ti aiutano a organizzare chi sta servendo quando, in modo che tutti sappiano il loro ruolo in anticipo. Configura promemoria automatici per i [volontari](./plans.md#volunteer-reminders) tramite push, email o SMS in modo che il tuo team riceva una notifica prima di ogni servizio, e utilizza la **[Panoramica dei Piani](./plans-overview.md)** per vedere tutti gli incarichi imminenti su più settimane in una griglia.
-- **[Canzoni](./songs.md)** -- Gestisci la tua libreria di canzoni di culto con testi, arrangiamenti e link esterni. Il tuo team di culto può usare questo per prepararsi ai servizi imminenti.
-- **[Attività](./tasks.md)** -- Assegna e monitora i compiti per i tuoi membri del team da **Il Mio Lavoro**.
-- **[Flussi di Lavoro](./workflows.md)** -- Sposta le persone attraverso una serie di passaggi su una bacheca Kanban visuale, come il follow-up dei nuovi visitatori o un processo di appartenenza. I passaggi possono eseguire azioni automatizzate (inviare un'email, aspettare alcuni giorni, aggiungere a un gruppo), e le carte avanzano per pulsanti di risultato, instradamento condizionale o trigger di evento e pianificazione -- con report integrati.
+- **[Piani](./plans.md)** -- Crea piani di servizio per date specifiche e assegna i volontari ai team. I piani ti aiutano a organizzare chi serve e quando, così tutti conoscono in anticipo il proprio ruolo. Imposta i [promemoria automatici per i volontari](./plans.md#volunteer-reminders) tramite notifica push, email o SMS, così il tuo team viene avvisato prima di ogni servizio, e usa la **[Panoramica dei piani](./plans-overview.md)** per vedere tutte le assegnazioni future su più settimane in un'unica griglia.
+- **[Canti](./songs.md)** -- Gestisci la tua libreria di canti di lode con testi, arrangiamenti e collegamenti esterni. Il team di lode può usarla per prepararsi ai prossimi servizi.
+- **[Attività](./tasks.md)** -- Assegna e monitora le attività dei membri del team da **Il mio lavoro**.
+- **[Flussi di lavoro](./workflows.md)** -- Fai avanzare le persone attraverso una serie di passaggi su una bacheca Kanban visiva, ad esempio il follow-up dei nuovi visitatori o un processo di iscrizione. I passaggi possono eseguire azioni automatiche (inviare un'email, attendere alcuni giorni, aggiungere a un gruppo), e le schede avanzano tramite pulsanti di esito, instradamento condizionale o attivatori di evento e pianificazione -- con report integrati.
 
-## Iniziare
+## Per iniziare {#getting-started}
 
-1. In B1 Admin, apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Servizio** e fai clic su **Piani**.
-2. Fai clic su **Add Ministry** per creare un nuovo ministero, oppure scegli **All** per visualizzare tutti i ministeri esistenti. Seleziona una **scheda ministero** per visualizzare i suoi tipi di piano e i team di servizio.
-3. Fai clic su **Create Plan Type** (o **Add Plan Type**) oppure scegli un tipo di piano esistente per iniziare a [creare piani di servizio](./plans.md), o esplora le sottosezioni [Canzoni](./songs.md) e [Attività](./tasks.md).
+1. In B1 Admin, apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Servizio** e fai clic su **Piani**.
+2. Fai clic su **Aggiungi ministero** per creare un nuovo ministero, oppure scegli **Tutti** per vedere ogni ministero esistente. Seleziona una **scheda del ministero** per vedere i suoi tipi di piano e i team di servizio.
+3. Fai clic su **Crea tipo di piano** (o **Aggiungi tipo di piano**) oppure scegli un tipo di piano esistente per iniziare a [creare piani di servizio](./plans.md), oppure esplora le sottosezioni [Canti](./songs.md) e [Attività](./tasks.md).
 
 :::info
-Prima di poter creare piani, dovrai creare i tuoi Ministeri nell'area Servizio e Team all'interno di ogni Ministero.
+Prima di poter creare i piani, devi creare i tuoi Ministeri nell'area Servizio e i Team all'interno di ciascun Ministero. Seleziona una scheda del ministero e fai clic su **Crea team di servizio** (o **Nuovo team di servizio**) nell'elenco **Team di servizio** per aggiungerne uno.
 :::

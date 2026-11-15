@@ -1,190 +1,175 @@
 ---
 title: "Edición masiva de personas"
-description: "Actualiza en B1 Admin estado de membresía, estado civil, género, exclusiones, campos Sí/No o pertenencia a grupos de muchas personas a la vez."
+description: "Actualice el estado de membresía, el estado civil, el género, la exclusión del directorio, el campus, los campos personalizados de Sí/No o los grupos de muchas personas a la vez en B1 Admin."
 ---
 
 # Edición masiva de personas
 
 <div class="article-intro">
-La edición masiva le permite actualizar varias personas a la vez, ahorrando tiempo al realizar el mismo cambio en muchas personas. Puede actualizar el estado de membresía, estado civil, género, preferencias de exclusión y membresías de grupos en una sola operación.
+La edición masiva le permite actualizar varias personas a la vez, lo que ahorra tiempo cuando hace el mismo cambio a muchas personas. Puede actualizar el estado de membresía, el estado civil, el género, la exclusión del directorio, el campus, los campos personalizados de Sí/No, las membresías de grupo y los flujos de trabajo en una sola operación, o eliminar personas.
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- Necesita permiso para administrar datos de personas. Consulte [Roles y permisos](./roles-permissions.md) para obtener detalles.
-- Ya debería haber agregado o importado las personas que desea editar. Consulte [Agregar personas](./adding-people.md) si es necesario.
+- Necesita permiso para administrar los datos de personas. Consulte [Roles y permisos](./roles-permissions.md) para más detalles.
+- Ya debe haber agregado o importado a las personas que desea editar. Consulte [Cómo agregar personas](./adding-people.md) si lo necesita.
 </div>
 
-## Seleccionar personas para edición masiva
+## Cómo seleccionar personas para la edición masiva {#selecting-people-for-bulk-editing}
 
-1. Navegue a **Personas** en B1 Admin
-2. Use las herramientas de búsqueda o filtro para encontrar las personas que desea actualizar
+1. Vaya a **People** en B1 Admin
+2. Use las herramientas de búsqueda o filtro para encontrar a las personas que desea actualizar
 3. Marque las casillas para seleccionar personas
-   - En la vista **Households**, marcar un hogar selecciona a todos sus miembros
-   - En la vista **Table** (cambie con el selector **View as**), puede seleccionar personas individualmente
-   - O use la casilla de verificación encima de la lista para seleccionar todas las personas visibles
-4. Una vez que haya seleccionado al menos una persona, la barra encima de la lista mostrará cuántas están seleccionadas, junto con **Borrar selección** y un botón **Acciones**
+   - En la vista **Households**, al marcar un hogar se seleccionan todas las personas que lo integran
+   - En la vista **Table** (cambie con el botón **View as**), puede seleccionar personas individualmente
+   - O use la casilla sobre la lista para seleccionar a todas las personas visibles
+4. Una vez que haya seleccionado al menos una persona, la barra sobre la lista muestra cuántas están seleccionadas, junto con **Clear Selection** y un botón **Actions**
 
 :::tip
-Si necesita actualizar un grupo grande de personas según criterios específicos, use la función de [Búsqueda con IA](./ai-search.md) o filtros para reducir su lista primero, luego seleccione todas las personas coincidentes.
+Si necesita actualizar un grupo grande de personas según criterios específicos, use la función [Búsqueda con IA](./ai-search.md) o los filtros para reducir primero su lista, y luego seleccione a todas las personas que coincidan.
 :::
 
-## Acciones masivas disponibles
+## Acciones masivas disponibles {#available-bulk-actions}
 
-El menú de **Acciones** proporciona varias opciones:
+El menú **Actions** ofrece las opciones que se indican a continuación. Cada una abre un cuadro de diálogo pequeño que le indica cuántas personas va a cambiar; elija un valor y haga clic en **Apply**. El nuevo valor reemplaza lo que cada persona seleccionada tenía antes. Cuando termina, un mensaje en la parte inferior de la página confirma cuántas personas se actualizaron.
 
-### Actualizar estado de membresía
+### Set Membership Status {#set-membership-status}
 
-Actualice el estado de membresía de todas las personas seleccionadas:
+1. Haga clic en **Actions** → **Set Membership Status**
+2. Elija el nuevo **Membership Status**:
+   - **Visitor** -- Visitantes primerizos u ocasionales
+   - **Guest** -- Invitados, como familias registradas en un quiosco de registro de entrada
+   - **Regular Attendee** -- Asistentes frecuentes que no son miembros
+   - **Member** -- Miembros oficiales de la iglesia
+   - **Staff** -- Miembros del personal de la iglesia
+   - **Inactive** -- Personas que ya no asisten
+   - **Deceased** -- Personas que han fallecido
+3. Haga clic en **Apply**
 
-1. Haga clic en **Acciones** → **Establecer estado de membresía**
-2. Elija el nuevo estado:
-   - **Visitante** -- Asistentes por primera vez u ocasionales
-   - **Invitado** -- Invitados, como familias registradas en un quiosco de registro
-   - **Asistente regular** -- Asistentes frecuentes que no son miembros
-   - **Miembro** -- Miembros oficiales de la iglesia
-   - **Personal** -- Miembros del personal de la iglesia
-   - **Inactivo** -- Personas que ya no asisten
-   - **Fallecido** -- Personas que han fallecido
-3. Elija el modo de actualización:
-   - **Sobrescribir todo** -- Reemplazar el estado actual de todas las personas seleccionadas
-   - **Solo actualizar vacíos** -- Solo establecer el estado para personas que no tienen uno
-4. Haga clic en **Actualizar**
+### Set Marital Status {#set-marital-status}
 
-### Actualizar estado civil
+1. Haga clic en **Actions** → **Set Marital Status**
+2. Elija **Unknown**, **Single**, **Married**, **Divorced** o **Widowed**
+3. Haga clic en **Apply**
 
-Actualice el estado civil de forma masiva:
+### Set Gender {#set-gender}
 
-1. Haga clic en **Acciones** → **Establecer estado civil**
-2. Seleccione el nuevo estado:
-   - **Desconocido**
-   - **Soltero**
-   - **Casado**
-   - **Divorciado**
-   - **Viudo**
-3. Elija si desea sobrescribir los valores existentes o solo actualizar los campos vacíos
-4. Haga clic en **Actualizar**
+1. Haga clic en **Actions** → **Set Gender**
+2. Elija **Unspecified**, **Male** o **Female**
+3. Haga clic en **Apply**
 
-### Actualizar género
+### Set Directory Opt-Out {#set-directory-opt-out}
 
-Actualice la información de género de varias personas:
+La exclusión del directorio controla si las personas aparecen en el directorio de miembros: el [directorio impreso](./print-directory.md) y el directorio de miembros de la aplicación B1. Es la misma configuración que **Hide me from the member directory** en el registro de una persona.
 
-1. Haga clic en **Acciones** → **Establecer género**
-2. Seleccione el valor:
-   - **No especificado**
-   - **Masculino**
-   - **Femenino**
-3. Elija el modo de actualización (sobrescribir todo o solo vacíos)
-4. Haga clic en **Actualizar**
-
-### Actualizar estado de exclusión
-
-Controle si las personas han optado por no recibir comunicaciones:
-
-1. Haga clic en **Acciones** → **Establecer exclusión de directorio**
-2. Elija:
-   - **No** -- Permitir comunicaciones (eliminar exclusión)
-   - **Sí** -- Bloquear comunicaciones (establecer exclusión)
-3. Elija el modo de actualización
-4. Haga clic en **Actualizar**
+1. Haga clic en **Actions** → **Set Directory Opt-Out**
+2. Elija **Opted Out Yes** para ocultar a las personas seleccionadas del directorio, o **Opted Out No** para volver a mostrarlas
+3. Haga clic en **Apply**
 
 :::warning
-Tenga cuidado al cambiar el estado de exclusión. Las personas que se han excluido explícitamente no deben recibir comunicaciones a menos que hayan dado un nuevo consentimiento.
+Las personas que eligieron ocultarse del directorio deben permanecer ocultas, a menos que pidan volver a aparecer en él.
 :::
 
-### Agregar a grupo
+### Set Campus {#set-campus}
 
-Agregue todas las personas seleccionadas a uno o más grupos:
+Esta opción aparece cuando su iglesia tiene [campus](../settings/campuses.md) configurados.
 
-1. Haga clic en **Acciones** → **Agregar a grupo**
-2. Busque y seleccione el/los grupo(s) al que desea agregar personas
-3. Puede seleccionar múltiples grupos para agregar personas a todos ellos
-4. Haga clic en **Agregar a grupos**
+1. Haga clic en **Actions** → **Set Campus**
+2. Elija el campus
+3. Haga clic en **Apply**
 
-Cada persona se agregará como miembro regular del/los grupo(s) seleccionado(s). Más tarde puede promover a personas individuales a líderes de grupo si es necesario desde la página de [Miembros del grupo](../groups/group-members.md).
+### Set Custom Field {#set-custom-field}
 
-### Eliminar de grupo
+Establezca un valor de [campo personalizado](../settings/custom-fields.md) de Sí/No para todas las personas seleccionadas a la vez:
 
-Elimine todas las personas seleccionadas de uno o más grupos:
-
-1. Haga clic en **Acciones** → **Eliminar de grupo**
-2. Busque y seleccione el/los grupo(s) del que desea eliminar personas
-3. Puede seleccionar múltiples grupos
-4. Haga clic en **Eliminar de grupos**
+1. Haga clic en **Actions** → **Set Custom Field**.
+2. Elija el **Custom Field** de Sí/No que desea establecer.
+3. Elija el **Value** (**Yes** o **No**) que desea aplicar.
+4. Haga clic en **Apply**.
 
 :::info
-Esta acción solo elimina personas de los grupos especificados. No elimina sus registros de persona.
+Solo los campos personalizados de Sí/No están disponibles para esta acción masiva. Para establecer otros tipos de campos, edite cada persona individualmente. Si su iglesia no tiene campos personalizados de Sí/No, el cuadro de diálogo lo indicará.
 :::
 
-### Eliminar personas
+### Add to Group {#add-to-group}
 
-Elimine permanentemente las personas seleccionadas de su base de datos de la iglesia:
+1. Haga clic en **Actions** → **Add to Group**
+2. Elija el **Group** al que agregar a las personas. Para ponerlas en un grupo nuevo, marque **Create New Group** y escriba un **New Group Name**.
+3. Haga clic en **Apply**
 
-1. Haga clic en **Acciones** → **Eliminar**
-2. El cuadro **Eliminar personas seleccionadas** le pide que confirme cuántas personas se eliminarán
-3. Haga clic en **Eliminar**
+Cada persona se agrega como miembro regular del grupo. Más adelante puede promover a algunas personas a líderes de grupo desde la página [Miembros del grupo](../groups/group-members.md). Para agregar personas a varios grupos, repita esto para cada grupo.
+
+### Remove from Group {#remove-from-group}
+
+1. Haga clic en **Actions** → **Remove from Group**
+2. Elija el **Group** del que quitar a las personas
+3. Haga clic en **Apply**
+
+:::info
+Esta acción solo quita a las personas del grupo. No elimina sus registros de persona.
+:::
+
+### Add to Workflow {#add-to-workflow}
+
+Agregue las personas seleccionadas a un [flujo de trabajo](../serving/workflows.md) como tarjetas:
+
+1. Haga clic en **Actions** → **Add to Workflow**
+2. Elija el flujo de trabajo
+3. Haga clic en **Apply**
+
+### Delete People {#delete-people}
+
+Elimine de la base de datos de su iglesia a las personas seleccionadas:
+
+1. Haga clic en **Actions** → **Delete**
+2. El cuadro de diálogo **Delete Selected People** le pide que confirme cuántas personas se eliminarán
+3. Haga clic en **Delete**
 
 :::danger
-Eliminar personas es permanente y no se puede deshacer. Esto eliminará todos sus datos, incluidos:
-- Información personal
-- Membresías de grupos
-- Registros de asistencia
-- Historial de donaciones
-- Envíos de formularios
-
-Solo use esta acción si está absolutamente seguro de que desea eliminar estas personas de su sistema.
+Las personas eliminadas desaparecen de su directorio, sus grupos y sus búsquedas. Use esta acción solo si está seguro de que quiere quitar a estas personas de su sistema.
 :::
 
-## Resultados de edición masiva
+No puede seleccionarse a sí mismo, así que no puede eliminar ni editar masivamente su propio registro.
 
-Después de completar una acción masiva, verá un resumen que muestra:
 
-- **Total seleccionado** -- Cuántas personas se incluyeron en la operación
-- **Actualizado exitosamente** -- Cuántos registros se cambiaron
-- **Fallido** -- Registros que no se pudieron actualizar (si corresponde)
-- **Sin cambios** -- Registros que no necesitaban cambios (por ejemplo, al usar el modo "solo actualizar vacíos")
+## Buenas prácticas {#best-practices}
 
-Si alguna actualización falló, verá detalles de error que explican por qué.
+- **Empiece con pocos registros** -- Pruebe las operaciones masivas con unos pocos registros primero para asegurarse de que hace los cambios correctos
+- **Use filtros** -- Reduzca su lista con filtros o búsqueda con IA antes de seleccionar personas, para asegurarse de que solo actualiza a las personas correctas
+- **Revise bien la selección** -- Revise las personas seleccionadas antes de aplicar cambios masivos
+- **Documente los cambios importantes** -- Guarde notas sobre las actualizaciones masivas por si necesita consultarlas más adelante
+- **Coordínese con su equipo** -- Avise a los demás administradores cuando haga cambios masivos importantes
 
-## Mejores prácticas
+## Casos de uso comunes {#common-use-cases}
 
-- **Comience poco a poco** -- Pruebe las operaciones masivas en algunos registros primero para asegurarse de que está realizando los cambios correctos
-- **Use filtros** -- Reduzca su lista con filtros o búsqueda con IA antes de seleccionar personas para asegurarse de que solo está actualizando a las personas correctas
-- **Verifique las selecciones dos veces** -- Revise las personas seleccionadas antes de aplicar cambios masivos
-- **Use el modo "solo actualizar vacíos"** -- Cuando desee completar datos faltantes sin sobrescribir información existente
-- **Documente cambios importantes** -- Mantenga notas sobre actualizaciones masivas en caso de que necesite consultarlas más tarde
-- **Coordine con su equipo** -- Informe a otros administradores cuando realice cambios masivos grandes
+### Actualizar a miembros nuevos {#updating-new-members}
 
-## Casos de uso comunes
+Después de una clase de membresía, actualice a todos los asistentes al estado de Member:
 
-### Actualizar nuevos miembros
+1. Busque a las personas que asistieron a la clase
+2. Selecciónelas a todas
+3. Use **Actions** → **Set Membership Status** → **Member**
 
-Después de una clase de membresía, actualice a todos los asistentes al estado de Miembro:
+### Organizar grupos pequeños {#organizing-small-groups}
 
-1. Busque las personas que asistieron a la clase
-2. Selecciónelas todas
-3. Use **Acciones** → **Establecer estado de membresía** → **Miembro**
+Agregue varias personas a un grupo pequeño nuevo:
 
-### Organizar grupos pequeños
-
-Agregue varias personas a un nuevo grupo pequeño:
-
-1. Busque las personas que desea en el grupo
+1. Busque a las personas que quiere en el grupo
 2. Selecciónelas
-3. Use **Acciones** → **Agregar a grupo** y seleccione el grupo pequeño
+3. Use **Actions** → **Add to Group** y seleccione el grupo pequeño
 
-### Limpiar datos
+### Limpiar los datos {#cleaning-up-data}
 
-Complete el estado civil faltante para parejas casadas:
+Marque como inactivos a un grupo de antiguos asistentes:
 
-1. Filtre por personas que están casadas (usando información del hogar)
-2. Seleccione aquellas con estado civil en blanco
-3. Use **Acciones** → **Establecer estado civil** → **Casado** → **Solo actualizar vacíos**
+1. Abra la búsqueda **Advanced** y filtre a las personas que quiere actualizar (por ejemplo, todas las que no han asistido recientemente)
+2. Selecciónelas
+3. Use **Actions** → **Set Membership Status** → **Inactive**
 
-## Artículos relacionados
+## Artículos relacionados {#related-articles}
 
 - [Búsqueda de personas](./searching-people.md) -- Encuentre personas para editar
 - [Búsqueda con IA](./ai-search.md) -- Use lenguaje natural para encontrar grupos específicos de personas
-- [Miembros del grupo](../groups/group-members.md) -- Administre membresías de grupos
-- [Exportar datos](./exporting-data.md) -- Exporte datos de personas antes de realizar cambios masivos
+- [Miembros del grupo](../groups/group-members.md) -- Administre la membresía de grupos
+- [Exportación de datos](./exporting-data.md) -- Exporte los datos de personas antes de hacer cambios masivos

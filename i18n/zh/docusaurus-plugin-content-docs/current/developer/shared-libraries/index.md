@@ -35,7 +35,7 @@ yarn build
 
 该仓库使用 Yarn Berry（以根目录的 `packageManager` 字段为准），并只有一个 lockfile。`yarn build` 会按依赖顺序构建所有包；`yarn test` 会运行所有包的测试。
 
-## 使用 Changesets 发布
+## 使用 Changesets 发布 {#releasing-with-changesets}
 
 对包的每一次变更都需要附带一个 changeset：
 
@@ -47,7 +47,7 @@ yarn build
 切勿在单个包内直接运行 `npm publish`——这会跳过构建顺序以及发布脚本负责的版本记录工作。发布需要一个对 `@churchapps` 作用域拥有发布权限的 npm 账户。
 :::
 
-## 针对使用中应用的本地开发
+## 针对使用中应用的本地开发 {#local-development-against-a-consuming-app}
 
 在工作区内，各包会直接基于其同级包进行构建——无需链接。若要在使用中的应用（B1Admin、B1App 等）内测试尚未发布的包构建，请在使用方项目中临时添加一个 Yarn portal：
 

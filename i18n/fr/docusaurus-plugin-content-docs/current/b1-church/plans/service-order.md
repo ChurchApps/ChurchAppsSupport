@@ -1,14 +1,14 @@
 ---
-title: "Détails de l’ordre de service dans l’application B1.church"
-sidebar_label: "Ordre du service"
-description: "Consultez l’ordre de service d’un plan dans l’application B1.church : durée cumulée, paroles, transposition et aperçus des leçons pour votre équipe."
+title: "Détails de l'ordre du culte dans l'application B1.church"
+sidebar_label: "Ordre du culte"
+description: "Consultez l'ordre du culte d'un plan dans l'application B1.church, avec la durée cumulée, les paroles des chants, la transposition des tonalités et les aperçus de leçons pour votre équipe."
 ---
 
-# Ordre du service
+# Ordre du culte
 
 <div class="article-intro">
 
-Lorsque vous ouvrez un plan, la section **Ordre du service** affiche les premiers éléments de ce service -- appuyez sur **Ordre du service complet** pour voir toute la séquence. Cela donne à vous et à votre équipe une vue commune du déroulement du service, y compris la durée, les détails des chansons et les descriptions de chaque élément.
+Lorsque vous ouvrez un plan, la section **Ordre du culte** affiche les premiers éléments de ce culte -- appuyez sur **Ordre du culte complet** pour voir l'enchaînement complet. Cela offre à vous et à votre équipe une vue partagée du déroulement du culte, avec la durée, les détails des chants et les descriptions de chaque élément.
 
 </div>
 
@@ -16,30 +16,32 @@ Lorsque vous ouvrez un plan, la section **Ordre du service** affiche les premier
 <h4>Avant de commencer</h4>
 
 - Vous devez être [connecté](../getting-started/logging-in.md) à votre compte B1.church.
-- Ouvrez un plan depuis votre [liste des plans](./viewing-plans.md) pour voir son ordre du service.
+- Ouvrez un plan depuis votre [liste des plans](./viewing-plans.md) pour consulter son ordre du culte.
 
 </div>
 
-## Ce qu'affiche l'ordre du service
+## Ce que l'ordre du culte affiche {#what-the-service-order-shows}
 
-L'ordre du service est présenté sous forme de liste d'éléments, dans l'ordre où ils auront lieu pendant le service. Chaque élément comprend :
+L'ordre du culte se présente sous forme de liste d'éléments, dans l'ordre où ils se dérouleront pendant le culte. Chaque élément comprend :
 
-- **Temps cumulé** -- Le temps écoulé depuis le début du service, afin de savoir à quel moment chaque élément doit commencer.
-- **Libellé et description de l'élément** -- Le nom de l'élément (comme un titre de chanson, une prière ou une annonce) ainsi que les notes ou descriptions éventuelles.
+- **Durée cumulée** -- Le temps écoulé depuis le début du culte, afin que vous sachiez à quel moment chaque élément devrait commencer.
+- **Libellé et description de l'élément** -- Le nom de l'élément (comme un titre de chant, une prière ou une annonce) ainsi que les notes ou descriptions éventuelles.
 - **Durée** -- Le temps prévu pour cet élément.
 
-Les éléments sont organisés sous des **en-têtes** qui regroupent les éléments apparentés (par exemple, « Ensemble de louange » ou « Message »). Cela facilite la lecture de la structure générale du service.
+Les éléments sont organisés sous des **titres** qui regroupent les éléments liés (par exemple, « Louange » ou « Message »). Chaque titre affiche la durée totale de ses éléments. Cela facilite la lecture de la structure générale du culte.
 
-Les sections de leçon et de programme peuvent également se développer en un dossier d'actions individuelles imbriquées -- cliquez sur la section pour développer ou réduire ses actions et voir chaque étape que votre équipe devra suivre.
+Les chants affichent une note de musique et la tonalité dans laquelle ils seront joués (par exemple, « Tonalité de sol »). Un élément accompagné d'un lien affiche son nom sous forme de lien -- appuyez dessus pour ouvrir le lien (les liens audio se lisent directement dans la page).
 
-## Consulter les paroles et les accords des chansons
+Les sections de leçon et de programme peuvent aussi se développer en un dossier d'actions individuelles qui leur sont rattachées -- cliquez sur la section pour développer ou réduire ses actions et voir chaque étape que votre équipe suivra.
 
-Cliquez sur une chanson dans l'ordre du service pour ouvrir ses paroles et ses accords. Utilisez la liste déroulante **Tonalité** en haut pour transposer les accords à la volée -- pratique si votre instrument ou votre tessiture vocale nécessite une autre tonalité que celle prévue par le responsable de la louange.
+## Consulter les paroles et les accords d'un chant {#viewing-song-lyrics-and-chords}
 
-## Programme et contenu de leçon
+Cliquez sur un chant dans l'ordre du culte pour ouvrir ses détails : l'artiste, les boutons **Armure de clé**, les **Paroles** (avec les accords lorsque le chant en comporte), des informations sur le chant comme l'album, le tempo (BPM), la tonalité, la mesure et la durée, ainsi que des **Liens** vers le chant sur des services comme Spotify, YouTube ou PraiseCharts. Appuyez sur une tonalité sous **Armure de clé** pour transposer les accords à la volée -- pratique si votre instrument ou votre tessiture vocale exige une autre tonalité que celle prévue par le responsable de louange. Appuyez sur **Fermer** lorsque vous avez terminé.
 
-Si le plan est associé à un programme ou à du contenu de leçon provenant d'un fournisseur comme [Lessons.church](../content/lessons.md), vous verrez un aperçu de ce contenu dans l'ordre du service. Cela peut inclure des sections de leçon, des supports de présentation et d'autres ressources dont votre équipe a besoin pour le service.
+## Programmes et contenu de leçon {#curriculum-and-lesson-content}
 
-## Imprimer l'ordre du service
+Si le plan est associé à un programme ou à du contenu de leçon provenant d'un fournisseur comme [Lessons.church](../content/lessons.md), vous verrez un aperçu de ce contenu dans l'ordre du culte. Il peut s'agir de sections de leçon, de supports de présentation et d'autres ressources dont votre équipe a besoin pour le culte.
 
-L'application membre B1.church ne propose pas d'option d'impression pour les plans. Si vous avez besoin d'une copie imprimée avec la liste de l'équipe et l'ordre du service complet, demandez à un membre du personnel de l'imprimer depuis B1 Admin. Voir [Imprimer les plans](../../b1-admin/serving/plans.md#printing-plans).
+## Imprimer l'ordre du culte {#printing-the-service-order}
+
+L'application membre B1.church ne propose pas d'option d'impression pour les plans. Si vous avez besoin d'une copie imprimée avec la liste de l'équipe et l'ordre du culte complet, demandez à un membre du personnel de l'imprimer depuis B1 Admin. Voir [Imprimer les plans](../../b1-admin/serving/plans.md#printing-plans).

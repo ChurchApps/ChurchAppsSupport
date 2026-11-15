@@ -1,85 +1,85 @@
 ---
-title: "Slack & Discord"
-description: "I-post ang event ng B1 Admin, tulad ng bagong tao, donasyon, at form submission, sa Slack o Discord channel gamit ang incoming webhook, walang Zapier."
+title: "Slack at Discord"
+description: "I-post ang mga event ng B1 Admin gaya ng mga bagong tao, donasyon, at form submission sa isang Slack o Discord channel gamit ang incoming webhook, nang walang kailangang Zapier."
 ---
 
-# Slack & Discord
+# Slack at Discord
 
 <div class="article-intro">
 
-Mag-post ng readable notifications mula sa B1 direkta sa isang Slack o Discord channel — mga bagong tao, donations, group sign-ups, form submissions, calendar events, at marami pang iba. Walang third-party account, walang Zap na ina-asikaso: B1 ay muling nag-format ng events sa mga chat messages at nag-POST sa webhook URL ng channel mismo.
+Mag-post ng nababasang notification mula sa B1 diretso sa isang Slack o Discord channel — mga bagong tao, donasyon, group sign-up, form submission, event sa kalendaryo, at iba pa. Walang third-party account, walang Zap na kailangang alagaan: inaayos ng B1 ang mga event bilang mga chat message at siya mismo ang nagpo-POST ng mga ito sa webhook URL ng channel.
 
 </div>
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Kailangan mo ang **Edit Settings** permission sa B1Admin
-- Isang admin sa iyong Slack workspace o Discord server upang lumikha ng webhook ng channel
-- Magpasya kung aling channel ang gusto mo ng mga notification (maaari mong gamitin ang parehong channel para sa maraming uri ng kaganapan, o hatiin ang mga ito sa mga channels)
+- Kailangan mo ng pahintulot na **Edit Settings** sa B1Admin
+- Isang admin sa iyong Slack workspace o Discord server para gumawa ng Incoming Webhook ng channel
+- Pumili kung aling channel ang gusto mong pagpadalhan ng notification (puwede mong gamitin ang iisang channel para sa ilang uri ng event, o hatiin ang mga ito sa maraming channel)
 
 </div>
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-Ang B1 ay may built-in na **Connector Type** para sa mga chat platform. Kapag lumikha ka ng webhook na may tipo **Slack** o **Discord**, ang webhook engine ay gumagawa pa rin ng iyong dati na delivery + retry + signed-header dance, ngunit ang katawan na ipinapadala ay muling nabuo mula sa B1's normal `{event,churchId,data}` envelope sa maliit na `{text}` (Slack) o `{content}` (Discord) message na inaasahan ng mga serbisyong iyon.
+May built-in na **Connector Type** ang B1 para sa mga chat platform. Kapag gumawa ka ng webhook na may uri na **Slack** o **Discord**, ginagawa pa rin ng webhook engine ang karaniwang delivery + retry + signed-header, pero ang body na ipinapadala ay inaayos mula sa karaniwang envelope ng B1 na `{event,churchId,data}` tungo sa maliit na mensaheng `{text}` (Slack) o `{content}` (Discord) na inaasahan ng mga serbisyong iyon.
 
-Walang B1 servers na umaabot sa Slack sa isang per-church basis maliban sa umiiral na outbound webhook flow — walang bagong hosting, walang dagdag na babayaran.
+Walang server ng B1 na kumokontak sa Slack kada simbahan maliban sa umiiral nang outbound webhook flow — walang bagong ho-host, walang dagdag na babayaran.
 
-## Slack — Hakbang-hakbang
+## Slack — Hakbang-hakbang {#slack--step-by-step}
 
-### 1. Makakuha ng Slack Incoming Webhook URL
+### 1. Kumuha ng Slack Incoming Webhook URL {#1-get-a-slack-incoming-webhook-url}
 
-1. Buksan ang [api.slack.com/apps](https://api.slack.com/apps) sa Slack workspace na gusto mo ng mga notification.
-2. Mag-click ng **Create New App → From scratch**, pangalanan ito ng kung ano tulad ng "B1 Notifications", at piliin ang workspace.
-3. Sa left nav piliin ang **Incoming Webhooks** at i-toggle ang **Activate Incoming Webhooks** sa *On*.
-4. Mag-click ng **Add New Webhook to Workspace**, piliin ang channel (hal. `#donations`), pagkatapos **Allow**.
-5. Ang Slack ay nagdadalhin ka pabalik sa page na may bagong **Webhook URL** na mukhang `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Kopyahin ito — yan ang tanging piraso ng impormasyon na kailangan ng B1.
+1. Buksan ang [api.slack.com/apps](https://api.slack.com/apps) sa Slack workspace kung saan mo gustong makatanggap ng notification.
+2. I-click ang **Create New App → From scratch**, pangalanan ito ng halimbawang "B1 Notifications", at piliin ang workspace.
+3. Sa kaliwang nav, piliin ang **Incoming Webhooks** at i-toggle ang **Activate Incoming Webhooks** sa *On*.
+4. I-click ang **Add New Webhook to Workspace**, piliin ang channel (hal. `#donations`), pagkatapos ay **Allow**.
+5. Ibabalik ka ng Slack sa pahina na may bagong **Webhook URL** na mukhang `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Kopyahin ito — iyon lang ang impormasyong kailangan ng B1.
 
 :::caution
-I-treat ang Slack webhook URL bilang isang lihim. Ang sinuman na may ito ay maaaring mag-post ng arbitrary messages sa channel. Kung aksidenteng ito ay exposed, muling lumikha ito mula sa Slack app page (regenerating ay nag-rotate lamang ng URL; i-update ang B1 upang tumugma).
+Ituring na sikreto ang Slack webhook URL. Ang sinumang may hawak nito ay puwedeng mag-post ng kahit anong mensahe sa channel. Kung aksidente itong nalantad, i-regenerate ito mula sa pahina ng Slack app (ang pag-regenerate ay nagpapalit lang ng URL; i-update ang B1 para tumugma).
 :::
 
-### 2. Konektahan ito sa B1Admin
+### 2. Ikonekta ito sa B1Admin {#2-connect-it-in-b1admin}
 
-1. Sa B1Admin pumunta sa **Settings → Developer → Webhooks**.
-2. Mag-click ng **New Webhook**.
-3. Punan:
-   - **Name** — isang bagay na readable tulad ng "Donations → #donations". Nakikita lamang nito ang iyong team.
-   - **Connector Type** — pumili ng **Slack**.
+1. Sa B1Admin, pumunta sa **Settings → Developer → Webhooks**.
+2. I-click ang **New Webhook**.
+3. Punan ang:
+   - **Name** — isang nababasang pangalan tulad ng "Donations → #donations". Ang iyong team lang ang makakakita nito.
+   - **Connector Type** — piliin ang **Slack**.
    - **Payload URL** — i-paste ang Slack URL mula sa hakbang 1.
-   - **Events** — tiklutin ang mga events na gusto mo bilang mga mensahe. Para sa isang donations channel, lamang `donation.created`. Para sa isang #people channel, subukan ang `person.created` at `group.member.added`.
-4. Mag-click ng **Save**. Isang "Signing Secret" dialog ay lumalabas — maaari mong palampasin ito para sa Slack (ang Slack ay hindi nag-verify ng B1 signatures) at isarahan ito.
+   - **Events** — lagyan ng check ang mga event na gusto mong maging mensahe. Para sa channel ng donasyon, `donation.created` lang. Para sa #people channel, subukan ang `person.created` at `group.member.added`.
+4. I-click ang **Save**. Lalabas ang dialog na "Signing Secret" — puwede mo itong balewalain para sa Slack (hindi bine-verify ng Slack ang signature ng B1) at isara ito.
 
-### 3. Subukan ito
+### 3. Subukan ito {#3-test-it}
 
-Muling buksan ang webhook mula sa listahan at mag-click ng **Send Test Event**. Sa loob ng isang o dalawang segundo, isang mensahe tulad ng
+Buksan muli ang webhook mula sa listahan at i-click ang **Send Test Event**. Magpapadala ang B1 ng sample ng unang event na na-tick mo, kaya sa loob ng isa o dalawang segundo ay lalabas sa iyong Slack channel ang isang mensaheng gaya ng
 
 > 💝 New donation: $50.00
 
-ay lumalabas sa iyong Slack channel, at isang bagong row ay lumalabas sa **Recent Deliveries** table sa parehong screen na may status `succeeded`. Tapos ka na.
+at may lalabas na bagong hilera sa talahanayang **Recent Deliveries** sa parehong screen na may status na `succeeded`. Tapos ka na.
 
-## Discord — Hakbang-hakbang
+## Discord — Hakbang-hakbang {#discord--step-by-step}
 
-### 1. Makakuha ng Discord Webhook URL
+### 1. Kumuha ng Discord Webhook URL {#1-get-a-discord-webhook-url}
 
-1. Sa iyong Discord server, mag-hover sa channel na gusto mo ng mga notification at mag-click ng **⚙ gear** (Edit Channel).
+1. Sa iyong Discord server, i-hover ang channel kung saan mo gustong makatanggap ng notification at i-click ang **⚙ gear** (Edit Channel).
 2. Buksan ang **Integrations → Webhooks → New Webhook**.
-3. Bigyan ito ng isang pangalan at (optionally) isang avatar, pagkatapos mag-click ng **Copy Webhook URL** — mukhang `https://discord.com/api/webhooks/123…/abc…`.
+3. Bigyan ito ng pangalan at (opsyonal) avatar, pagkatapos ay i-click ang **Copy Webhook URL** — mukhang `https://discord.com/api/webhooks/123…/abc…`.
 
-### 2. Konektahan ito sa B1Admin
+### 2. Ikonekta ito sa B1Admin {#2-connect-it-in-b1admin-1}
 
-Kapwa sa Slack flow sa itaas, maliban na itakda ang **Connector Type** sa **Discord**. I-paste ang Discord URL sa **Payload URL** at i-save.
+Kapareho ng daloy ng Slack sa itaas, maliban na itakda ang **Connector Type** sa **Discord**. I-paste ang Discord URL sa **Payload URL** at i-save.
 
 :::tip
-Hindi mo kailangang idagdag ang `/slack` sa dulo ng Discord URL — nagpapadala ang B1 ng Discord-native `{content}` payloads, hindi Slack-compatible ones. Lamang i-paste ang URL na bigay ng Discord.
+**Hindi** mo kailangang idagdag ang `/slack` sa dulo ng Discord URL — nagpapadala ang B1 ng mga payload na `{content}` na katutubo sa Discord, hindi mga payload na compatible sa Slack. I-paste lang ang URL na ibinigay ng Discord.
 :::
 
-### 3. Subukan ito
+### 3. Subukan ito {#3-test-it-1}
 
-Parehong **Send Test Event** button — ipapakita ng Discord ang mensahe sa piniling channel at ang delivery log ay lumilipat sa `succeeded`.
+Ang parehong button na **Send Test Event** — ipinapakita ng Discord ang mensahe sa napiling channel at nagiging `succeeded` ang delivery log.
 
-## Ano ang Hitsura ng Mga Mensahe
+## Ano ang Hitsura ng mga Mensahe {#what-the-messages-look-like}
 
 | Event | Halimbawang mensahe |
 |---|---|
@@ -93,36 +93,36 @@ Parehong **Send Test Event** button — ipapakita ng Discord ang mensahe sa pini
 | `form.submission.created` | 📝 New form submission received |
 | `event.created` | 📅 New event: Easter Service |
 
-Ang buong listahan ay nabubuhay sa [webhook event catalog](/docs/developer/api/webhooks#event-catalog) — anumang kaganapan doon ay maaaring i-route sa Slack/Discord.
+Kumpleto ang listahan sa [webhook event catalog](/docs/developer/api/webhooks#event-catalog) — puwedeng ipadala sa Slack/Discord ang alinmang event doon.
 
-## Isang Channel Bawat Paksa
+## Isang Channel Bawat Paksa {#one-channel-per-topic}
 
-Hindi mo kailangang ilagay ang bawat event sa isang lugar. Ang karamihan ng mga churches ay nag-setup ng ilang webhooks:
+Hindi mo kailangang ilagay ang lahat ng event sa iisang lugar. Karamihan sa mga simbahan ay nagse-set up ng ilang webhook:
 
-- Isang **#donations** channel na nakinig lamang sa `donation.created`
+- Isang **#donations** channel na tanging `donation.created` lang ang pinapakinggan
 - Isang **#new-people** channel para sa `person.created` at `group.member.added`
-- Isang **#admin-alerts** channel para sa low-volume things tulad ng `form.submission.created`
+- Isang **#admin-alerts** channel para sa mga bagay na mababa ang volume gaya ng `form.submission.created`
 
-Walang limitasyon sa bilang ng webhooks bawat church. Bawat isa ay independyente — ang pag-delete o pag-disable ng isa ay hindi nakakaapekto sa iba.
+Walang limitasyon sa bilang ng webhook bawat simbahan. Malaya ang bawat isa — ang pagbura o pag-disable sa isa ay hindi nakakaapekto sa iba.
 
-## Pag-inspect ng Mga Deliveries
+## Pagsusuri ng mga Delivery {#inspecting-deliveries}
 
-Ang **Recent Deliveries** table ng webhook editor ay nagpapakita ng nakaraang 50 attempts. Mag-click ng row upang makita ang exact payload na ipinadala at ang response na bumalik. Para sa Slack connector ang payload ay `{"text":"💝 New donation: $50.00"}` — hindi ang raw `{event,churchId,...}` envelope — dahil muling-nag-format ang B1 bago ang delivery.
+Ipinapakita ng talahanayang **Recent Deliveries** ng webhook editor ang huling 50 pagtatangka. I-click ang isang hilera para makita ang eksaktong payload na ipinadala at ang response na bumalik. Para sa Slack connector, ang payload ay `{"text":"💝 New donation: $50.00"}` — hindi ang raw na envelope na `{event,churchId,...}` — dahil inaayos ito ng B1 bago i-deliver.
 
-Kung may nabigo (pulang `failed` o `exhausted` badge), ipinapakita ng dialog ang HTTP status at response body upang makita mo kung ano ang hindi gusto ng Slack o Discord — karaniwang isang copy/paste error sa URL.
+Kung may pumalya (isang amber na badge na `failed` habang patuloy pang sinusubukan ng B1, o pulang badge na `exhausted` kapag sumuko na ito), ipinapakita ng column na **Response** ang HTTP status, at ipinapakita ng dialog ng hilera ang response body, para makita mo kung ano ang hindi nagustuhan ng Slack o Discord — kadalasan ay pagkakamali sa pagkopya/pag-paste ng URL. I-click ang **Redeliver** para ipadala muli ang delivery na iyon.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
-- **Walang mensahe na lumalabas + delivery status `400`** — karaniwang ang Connector Type ay nakatakda sa **Standard** ngunit ang URL ay isang Slack/Discord isa. Ang Slack/Discord ay nagtatatangi ng raw envelope. Lumipat ang dropdown sa **Slack** o **Discord** at ipadala ang test.
-- **Webhook auto-disabled** — pagkatapos ng 3 sunod-sunod na failed deliveries, i-off ng B1 ang webhook. I-ayos ang URL (o i-rotate ito sa Slack/Discord) at i-toggle ang **Active** pabalik.
-- **Mensahe ay dumating ngunit nawawalan ng detalye** — bawat chat platform ay limitado ang laki ng mensahe. Ang mga mensahe ng B1 ay one-liners ng disenyo; para sa mas mayamang mga notification gumamit ng [Zapier](./zapier.md) o [Make](./make.md) upang bumuo ng mas puno na Slack message gamit ang kanilang Slack actions.
+- **Walang lumalabas na mensahe + delivery status na `400`** — kadalasan ay nakatakda ang Connector Type sa **Standard** pero Slack/Discord URL ang gamit. Tinatanggihan ng Slack/Discord ang raw na envelope. Palitan ang dropdown sa **Slack** o **Discord** at ipadala muli ang test.
+- **Awtomatikong na-disable ang webhook** — sinusubukan muli ng B1 ang bawat pumalyang delivery nang mga limang araw. Kapag tatlong delivery nang sunud-sunod ang naubusan ng retry, ino-off ito ng B1 (ang status nito ay **Disabled**). Ayusin ang URL (o palitan ito sa Slack/Discord), i-on muli ang **Active**, at i-save.
+- **Dumating ang mensahe pero kulang sa detalye** — may limitasyon sa laki ng mensahe ang bawat chat platform. Sadyang maikli ang mga mensahe ng B1; para sa mas mayayamang notification, gamitin ang [Zapier](./zapier.md) o [Make](./make.md) para buuin ang mas kumpletong mensahe sa Slack sa pamamagitan ng kanilang mga Slack action.
 
-## Pagbabago ng Connector Types Mamaya
+## Pagpapalit ng Connector Type sa Hinaharap {#switching-connector-types-later}
 
-Maaari mong baguhin ang Connector Type sa isang umiiral na webhook — ito ay may epekto sa susunod na delivery. Kung lumipat mula Slack hanggang Standard, ituro ang URL sa iyong sariling HTTPS endpoint at ang parehong signing secret (ito ay inisyu kapag ang webhook ay ginawa) ay nagsisimulang maging verifiable bilang raw envelope.
+Puwede mong palitan ang Connector Type ng umiiral nang webhook — magkakabisa ito sa susunod na delivery. Kung lilipat ka mula Slack patungong Standard, ituro ang URL sa sarili mong HTTPS endpoint, at ang parehong signing secret (inilabas noong ginawa ang webhook) ay magiging mabe-verify na bilang raw na envelope.
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Zapier](./zapier.md) — para sa multi-step workflows na nag-trigger mula sa B1 events
-- [Make](./make.md) — visual scenario builder
-- [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang buong payload + signature format kung kailanman mo ay ituro ang webhook sa iyong sariling server
+- [Zapier](./zapier.md) — para sa mga multi-step na workflow na tinatrigger ng mga event ng B1
+- [Make](./make.md) — visual na scenario builder
+- [Webhooks (developer reference)](/docs/developer/api/webhooks) — ang buong format ng payload at signature kung sakaling ituro mo ang isang webhook sa sarili mong server

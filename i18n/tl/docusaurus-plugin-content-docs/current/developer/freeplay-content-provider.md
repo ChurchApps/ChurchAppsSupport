@@ -62,7 +62,7 @@ Ang bawat item sa playlist ay dapat magsama ng:
 | `thumbnail` | Inirerekomenda | Isang thumbnail image para sa item |
 | `duration` | Inirerekomenda | Tagal sa segundo (para sa mga video) |
 
-## Media Formats
+## Media Formats {#media-formats}
 
 Ang FreePlay ay direktang nag-download ng mga file, kaya ang bawat media item ay dapat magkaroon ng **direktang link** (walang naka-embed na player o page redirect).
 

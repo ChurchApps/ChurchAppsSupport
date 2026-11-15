@@ -15,7 +15,7 @@ L'area di amministrazione di Lessons.church è il luogo in cui i creatori di con
 L'accesso all'amministrazione richiede le autorizzazioni appropriate. Se non vedi le opzioni di amministrazione, contatta l'amministratore della tua chiesa per richiedere l'accesso.
 :::
 
-## Cosa puoi fare
+## Cosa puoi fare {#what-you-can-do}
 
 L'area di amministrazione ti offre il pieno controllo sui tuoi contenuti:
 

@@ -1,48 +1,52 @@
 ---
 title: "Mga Sermon sa B1 Admin"
 sidebar_label: "Mga Sermon"
-description: "I-set up at pamahalaan ang sermon library, playlist, iskedyul ng live stream, at maramihang import mula sa YouTube o Vimeo sa iyong B1 Admin."
+description: "I-set up at pamahalaan ang iyong sermon library, mga playlist, iskedyul ng live stream, at bulk import mula sa YouTube o Vimeo sa B1 Admin."
 ---
 
 # Mga Sermon
 
 <div class="article-intro">
 
-Ang seksyon ng Mga Sermon sa B1 Admin ay nagbibigay-daan sa inyo na pamahalaan ang sermon library at live streaming ng inyong simbahan. Maaari kayong magdagdag ng mga indibidwal na sermon, ayusin ang mga ito sa mga playlist, i-configure ang mga iskedyul ng live stream, at mag-import ng kasalukuyang content nang maramihan mula sa YouTube o Vimeo.
+Hinahayaan ka ng seksyong Sermons sa B1 Admin na pamahalaan ang sermon library at live streaming ng iyong simbahan. Maaari kang magdagdag ng mga indibidwal na sermon, ayusin ang mga ito sa mga playlist, i-configure ang iskedyul ng live stream, at mag-import ng umiiral na content nang sabayan mula sa YouTube o Vimeo.
 
 </div>
 
 :::info
-Para ma-access ang seksyon ng Mga Sermon, kailangan ninyo ang **contentApi.streamingServices.edit** na pahintulot. Kung hindi ninyo nakikita ang Sermons sa inyong menu, hilingin sa administrator ng inyong simbahan na bigyan kayo ng naaangkop na tungkulin. Tingnan ang [Mga Tungkulin at Pahintulot](../settings/roles-permissions.md) para sa mga detalye sa pamamahala ng mga pahintulot.
+Para ma-access ang seksyong Sermons, kailangan mo ng permiso na **Edit Services** sa seksyong **Content** ng iyong role. Kung wala nito, wala ang Sermons sa iyong menu at magpapakita ng mensahe ng permiso ang mga pahina nito. Kung hindi mo makita ang Sermons sa iyong menu, hilingin sa administrator ng simbahan mo na bigyan ka ng angkop na role. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mga detalye tungkol sa pamamahala ng permiso.
 :::
 
-## Ano ang Maaari Ninyong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
-Ang seksyon ng Mga Sermon ay nakaayos sa apat na pangunahing bahagi:
+Sa [Jump menu](../introduction.md#getting-around-with-the-jump-menu), may tatlong pahina ang **Sermons**: **Sermons** (ang iyong library, mga playlist, at podcast feed), **Live Stream Times**, at **Settings**. Mapupuntahan ang Bulk Import mula sa button na **Add Sermon**. Sakop ng seksyong ito ang mga sumusunod na bahagi:
 
-### Mga Sermon
+### Sermons {#sermons}
 
-Magdagdag at pamahalaan ng mga indibidwal na sermon entry sa inyong library. Bawat sermon ay maaaring magsama ng pamagat, tagapagsalita, petsa, paglalarawan, thumbnail, at mga link sa video o audio content. Maaari ninyong i-link ang mga sermon sa YouTube, Vimeo, Facebook, o custom na video URL. Tingnan ang [Pamamahala ng mga Sermon](./managing-sermons.md) para sa buong detalye.
+Magdagdag at pamahalaan ang mga indibidwal na sermon entry sa iyong library. Maaaring maglaman ang bawat sermon ng pamagat, speaker, petsa, paglalarawan, thumbnail, at mga link sa video o audio content. Maaari kang mag-link ng mga sermon sa YouTube, Vimeo, Facebook, o custom na video URL. Tingnan ang [Managing Sermons](./managing-sermons.md) para sa buong detalye.
 
-### Mga Playlist
+### Playlists {#playlists}
 
-Ayusin ang inyong mga sermon sa mga serye o koleksyon. Pinapadali ng mga playlist para sa inyong kongregasyon na mag-browse sa isang serye ng sermon nang maayos. Ang bawat playlist ay may sariling pangalan, paglalarawan, at thumbnail. Tingnan ang [Mga Playlist](./playlists.md) para sa karagdagang impormasyon.
+Ayusin ang iyong mga sermon sa mga series o koleksyon. Pinapadali ng mga playlist para sa kongregasyon na mag-browse sa isang sermon series nang may tamang pagkakasunod-sunod. May sariling pangalan, paglalarawan, at thumbnail ang bawat playlist. Tingnan ang [Playlists](./playlists.md) para sa higit pang impormasyon.
 
-### Mga Oras ng Live Stream
+### Live Stream Times {#live-stream-times}
 
-I-configure ang iskedyul ng live streaming ng inyong simbahan. Mag-set up ng mga paulit-ulit na lingguhang serbisyo o isahang kaganapan, pamahalaan ang mga setting ng chat at video, at kontrolin kung kailan mag-live ang inyong stream. Makikita ng mga bisita ang susunod na naka-iskedyul na oras ng serbisyo sa inyong streaming page. Kinokontrol ng hiwalay na pahinang **Settings** sa ilalim ng **Sermons** ang mga tab (chat, prayer, at custom links) na makikita sa tabi ng inyong live stream. Tingnan ang [Live Streaming](./live-streaming.md) para sa mga tagubilin sa pag-setup.
+I-configure ang iskedyul ng live streaming ng iyong simbahan. Mag-set up ng paulit-ulit na lingguhang serbisyo o mga one-time na event, pamahalaan ang mga setting ng chat at video, at kontrolin kung kailan magla-live ang iyong stream. Makikita ng mga bisita ang susunod na nakatakdang oras ng serbisyo sa iyong streaming page. Tingnan ang [Live Streaming](./live-streaming.md) para sa mga tagubilin sa setup.
 
-### Bulk Import
+### Stream Settings {#stream-settings}
 
-Mabilis na mapunan ang inyong sermon library sa pamamagitan ng pag-import ng mga video nang maramihan mula sa YouTube o Vimeo. Ito ang pinakamabilis na paraan para i-migrate ang inyong kasalukuyang sermon content sa B1. Tingnan ang [Bulk Import](./bulk-import.md) para magsimula.
+Kinokontrol ng pahinang **Settings** sa ilalim ng **Sermons** (pinamagatang **Stream Settings**) ang **Content Tabs** -- chat, prayer, at custom links -- na lumalabas sa tabi ng iyong live stream. Tingnan ang [Streaming Page Settings](./live-streaming.md#streaming-page-settings).
+
+### Bulk Import {#bulk-import}
+
+Mabilis na punan ang iyong sermon library sa pamamagitan ng pag-import nang sabayan ng mga video mula sa YouTube o Vimeo. Ito ang pinakamabilis na paraan para ilipat ang umiiral mong sermon content papunta sa B1. Tingnan ang [Bulk Import](./bulk-import.md) para makapagsimula.
 
 :::tip
-Kung unang beses ninyong nagse-set up ng mga sermon, magsimula sa paggawa ng [playlist](./playlists.md), pagkatapos ay [magdagdag ng mga sermon nang isa-isa](./managing-sermons.md) o [i-import ang mga ito nang maramihan](./bulk-import.md) mula sa YouTube o Vimeo.
+Kung unang beses mong i-set up ang mga sermon, magsimula sa paggawa ng isang [playlist](./playlists.md), pagkatapos alinman sa [magdagdag ng sermon nang isa-isa](./managing-sermons.md) o [i-import ang mga ito nang sabayan](./bulk-import.md) mula sa YouTube o Vimeo.
 :::
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- [Pamamahala ng mga Sermon](./managing-sermons.md) -- Magdagdag at mag-edit ng mga indibidwal na sermon
-- [Mga Playlist](./playlists.md) -- Ayusin ang mga sermon sa mga serye
-- [Live Streaming](./live-streaming.md) -- I-set up ang inyong iskedyul at mga setting ng live stream
+- [Managing Sermons](./managing-sermons.md) -- Magdagdag at mag-edit ng mga indibidwal na sermon
+- [Playlists](./playlists.md) -- Ayusin ang mga sermon sa mga series
+- [Live Streaming](./live-streaming.md) -- I-set up ang iskedyul at settings ng iyong live stream
 - [Bulk Import](./bulk-import.md) -- Mag-import ng mga sermon mula sa YouTube o Vimeo

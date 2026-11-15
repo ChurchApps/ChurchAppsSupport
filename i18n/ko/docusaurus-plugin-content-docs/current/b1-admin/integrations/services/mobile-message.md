@@ -1,108 +1,108 @@
 ---
 title: "Mobile Message"
-description: "Zapier 또는 Make 웹훅으로 B1 Admin 이벤트를 호주 SMS API인 Mobile Message에 연결해 환영, 헌금, 알림 문자를 보냅니다."
+description: "Zapier 또는 Make 웹훅을 사용하여 B1 Admin 이벤트를 호주의 SMS API인 Mobile Message에 연결하고, 환영, 헌금, 알림 문자를 보내세요."
 ---
 
 # Mobile Message
 
 <div class="article-intro">
 
-[Mobile Message](https://mobilemessage.com.au)는 호주 SMS API입니다 — Clearstream과 Text In Church가 미국 중심이기 때문에 AU 교회에 인기가 있으며 경쟁력 있는 AU 가격을 제공합니다. Mobile Message는 오늘 1등급 Zapier 앱이 없지만 공개 REST API를 게시합니다. **Zapier 웹훅**(또는 Make의 HTTP 모듈)을 통해 몇 분 내에 B1 이벤트를 Mobile Message 텍스트로 연결할 수 있습니다.
+[Mobile Message](https://mobilemessage.com.au)는 호주의 SMS API입니다. Clearstream이나 Text In Church는 미국 중심인 반면, Mobile Message는 현지 번호를 제공하고 호주 요금이 경쟁력이 있어 호주 교회에서 인기가 많습니다. Mobile Message에는 현재 기본 Zapier 앱이 없지만, 공개 REST API를 제공하므로 **Webhooks by Zapier**(또는 Make의 HTTP 모듈)를 통해 몇 분 안에 B1 이벤트를 Mobile Message 문자에 연결할 수 있습니다.
 
 </div>
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
 
-- 등록된 발신자 ID와 API 자격 증명(API 사용자명 + *계정 → API 설정* 아래 암호)이 있는 [Mobile Message](https://mobilemessage.com.au) 계정
+- 등록된 발신자 ID와 API 인증 정보(*Account → API Settings*의 API 사용자 이름 + 비밀번호)가 있는 [Mobile Message](https://mobilemessage.com.au) 계정
 - [Zapier](https://zapier.com) 계정(또는 [Make](https://www.make.com))
-- **설정 편집** 권한이 있는 B1Admin 사용자
+- **Edit Settings** 권한이 있는 B1Admin 사용자
 
 </div>
 
-## 연결할 수 있는 것
+## 연결할 수 있는 항목 {#what-you-can-wire-up}
 
-Mobile Message의 API는 "SMS 전송" 모양입니다 — 트리거 없음, 아웃바운드 텍스트만. 따라서 레시피는 모두 B1 → SMS입니다:
+Mobile Message의 API는 "SMS 보내기" 형태이며, 트리거가 없고 발신 문자만 있습니다. 따라서 활용 예시는 모두 B1 → SMS 방향입니다:
 
 | 방향 | B1 트리거 | 결과 |
 |---|---|---|
-| B1 → Mobile Message | `person.created` | 새 사람에게 환영 텍스트 |
-| B1 → Mobile Message | `donation.created` | 기부자에게 감사 텍스트 |
-| B1 → Mobile Message | `form.submission.created` | 대기 중인 팀 페이징 |
-| B1 → Mobile Message | `event.created` | 목록에 미리 알림 방송 |
+| B1 → Mobile Message | `person.created` | 새 사람에게 환영 문자 |
+| B1 → Mobile Message | `donation.created` | 헌금자에게 감사 문자 |
+| B1 → Mobile Message | `form.submission.created` | 당직 팀 호출 |
+| B1 → Mobile Message | `event.created` | 목록에 알림 일괄 발송 |
 
-## 설정
+## 설정 {#setup}
 
-### 1. B1 API 키 발급
+### 1. B1 API 키 만들기 {#1-mint-a-b1-api-key}
 
-**설정 → 개발자 → API 키 → 새 API 키**:
+**Settings → Developer → API Keys → New API Key**에서 다음을 설정하세요:
 
 - `settings:write` — 트리거 웹훅을 등록하기 위해
-- `people:read` — `personId`에서 수신자의 전화 번호를 찾아보기 위해
+- `people:read` — `personId`로 수신자의 전화번호를 찾기 위해
 
-### 2. Zapier 웹훅으로 Zap 빌드
+### 2. Webhooks by Zapier로 Zap 만들기 {#2-build-the-zap-with-webhooks-by-zapier}
 
-1. **트리거** — B1.church: 원하는 이벤트를 선택합니다(예: 새로운 기부).
-2. **작업** — B1.church: 사람 찾기(`data.personId`를 사용하여) 전화 번호와 이름을 가져옵니다.
-3. **작업** — Zapier 웹훅: **POST**. 아래와 같이 구성합니다.
+1. **Trigger** — B1.church: 원하는 이벤트를 선택하세요(예: New Donation).
+2. **Action** — B1.church: Find Person(`data.personId` 사용)으로 전화번호와 이름을 가져오세요.
+3. **Action** — Webhooks by Zapier: **POST**. 아래와 같이 설정하세요.
 
 POST 단계의 설정:
 
 - **URL** — `https://api.mobilemessage.com.au/v1/messages`
-- **페이로드 유형** — JSON
-- **데이터** —
+- **Payload Type** — JSON
+- **Data** —
   ```json
   {
     "messages": [
       {
-        "to": "`{{step2_phone}}`",
-        "message": "선물해주셔서 감사합니다, `{{step2_first_name}}`!",
+        "to": "{{step2_phone}}",
+        "message": "Thanks for your gift, {{step2_first_name}}!",
         "sender": "YourChurch"
       }
     ]
   }
   ```
-- **헤더** — `Content-Type: application/json`(Zapier 웹훅이 자동으로 추가함)
-- **기본 인증** — *기본 인증* 필드를 `<api_username>|<api_password>`로 설정합니다(Zapier는 이것을 올바른 `Authorization: Basic …` 헤더로 변환합니다)
+- **Headers** — `Content-Type: application/json`(Webhooks by Zapier가 자동으로 추가합니다)
+- **Basic Auth** — *Basic Auth* 필드에 `<api_username>|<api_password>`를 입력하세요(Zapier가 올바른 `Authorization: Basic …` 헤더로 변환합니다)
 
-Zap을 켭니다. B1Admin에서 테스트 선물을 전송하여 텍스트가 도착하는 것을 확인합니다.
+Zap을 켜세요. B1Admin에서 테스트 헌금을 하나 입력해 문자가 도착하는지 확인하세요.
 
-## 일반적인 레시피
+## 자주 쓰는 활용 예시 {#common-recipes}
 
-### 당일 아침 이벤트 미리 알림
+### 행사 당일 아침 알림 {#event-reminders-the-morning-of}
 
-- **트리거** — Zapier로 스케줄(매일, 오전 7시)
-- **작업** — B1.church: 오늘 이벤트 찾기(또는 고정 날짜 필터와 함께 찾기 단계를 사용하거나 오늘 이벤트 목록을 Google 시트에 저장)
-- **작업** — Zapier 웹훅: 등록된 구독자 그룹에 이벤트 목록으로 Mobile Message에 POST합니다
+- **Trigger** — Schedule by Zapier(매일 오전 7시)
+- **Action** — 오늘의 행사 목록을 Google 시트(또는 Zapier가 읽을 수 있는 다른 앱)에 보관하고 오늘 행을 조회하세요. B1의 Zapier 앱에는 행사를 찾는 작업이 없습니다.
+- **Action** — Webhooks by Zapier: 등록된 구독자 그룹에게 행사 목록과 함께 Mobile Message로 POST
 
-### 목록 브로드캐스트에 배치 엔드포인트 사용
+### 목록 일괄 발송에 batch 엔드포인트 사용하기 {#use-the-batch-endpoint-for-a-list-broadcast}
 
-Mobile Message의 `/v1/messages` 엔드포인트는 호출당 최대 10,000개 메시지를 허용합니다. B1 그룹으로 브로드캐스트:
+Mobile Message의 `/v1/messages` 엔드포인트는 한 번의 호출에 최대 10,000개의 메시지를 받습니다. B1 그룹에 일괄 발송하려면:
 
-- **트리거** — B1.church: 새로운 양식 제출(특정 양식으로 필터)
-- **작업** — B1.church: 대상 그룹의 그룹 멤버 나열(*Zapier 웹훅 — GET* 단계 사용 `/membership/groupmembers?groupId=…`)
-- **작업** — Zapier 형식화 → 유틸리티 → 응답을 `messages` 배열로 라인 항목화
-- **작업** — Zapier 웹훅: 전체 배열을 `/v1/messages`에 POST합니다
+- **Trigger** — B1.church: New Form Submission(특정 양식으로 필터링)
+- **Action** — Webhooks by Zapier: `/membership/groupmembers?groupId=…`에 GET 요청을 보내 대상 그룹의 구성원을 가져오세요(B1의 Zapier 앱에는 이를 위한 목록 작업이 없습니다. API 키는 `Authorization: Bearer cak_…` 헤더로 보내세요)
+- **Action** — Formatter by Zapier → Utilities → Line-itemize: 응답을 `messages` 배열로 변환
+- **Action** — Webhooks by Zapier: 전체 배열을 `/v1/messages`에 POST
 
-### Make 대안
+### Make 대안 {#make-alternative}
 
-Make를 선호하는 경우 B1 Watch Events 트리거 후 **HTTP — 요청 만들기** 모듈을 놓고 동일하게 구성합니다(POST, 기본 인증, JSON 본문). B1 측은 [Make 개요](../make.md)를 참조하세요.
+Make를 선호한다면, B1 Watch Events 트리거 뒤에 **HTTP — Make a request** 모듈을 놓고 같은 방식(POST, Basic Auth, JSON 본문)으로 설정하세요. B1 쪽 설정은 [Make 개요](../make.md)를 참고하세요. B1.church Make 앱은 아직 출시되지 않았다는 점에 유의하세요.
 
-## 제한 및 주의사항
+## 제한 사항 및 참고 {#limits--notes}
 
-- **기본 인증이 유일한 인증 방법입니다** — Mobile Message는 대시보드에서 사용자명과 암호를 발급합니다. 둘 다 비밀로 취급하세요.
-- **`sender`는 등록된 발신자 ID여야 합니다** — Mobile Message 계정에 있거나 전송이 `400 Invalid sender`를 반환합니다. AU 규정에는 발신자 등록이 필요합니다.
-- **호주 전화 번호**는 `0412345678`(지역) 또는 `+61412345678`(국제)이 될 수 있습니다. API는 둘 다 허용하지만 해외로도 전송하는 경우 `+61…`로 정규화합니다.
-- **요청당 최대 10,000개 메시지** — 브로드캐스트에 유용하지만 단일 B1 웹훅 전달은 드물게 해당 크기의 목록을 내보냅니다. 예약된 벌크 Zap에 대해 배치 엔드포인트를 예약하세요.
+- **Basic Auth가 유일한 인증 방식입니다** — Mobile Message는 대시보드에서 사용자 이름과 비밀번호를 발급합니다. 두 가지 모두 비밀로 취급하세요.
+- **`sender`는 Mobile Message 계정에 등록된 발신자 ID여야 합니다.** 그렇지 않으면 `400 Invalid sender`가 반환됩니다. 호주 규정에 따라 발신자 등록이 필요합니다.
+- **호주 전화번호**는 `0412345678`(국내 형식) 또는 `+61412345678`(국제 형식)으로 입력할 수 있습니다. API는 둘 다 받아들이지만, 해외에도 보낸다면 `+61…` 형식으로 통일하세요.
+- **요청당 최대 10,000개 메시지** — 일괄 발송에 유용하지만, 단일 B1 웹훅 전송에서 이렇게 큰 목록이 나오는 경우는 드뭅니다. batch 엔드포인트는 예약된 대량 Zap을 위해 남겨 두세요.
 
-## 문제 해결
+## 문제 해결 {#troubleshooting}
 
-- **POST가 `401 Unauthorized` 반환** — 기본 인증 자격 증명이 잘못되었습니다. Mobile Message 대시보드 *계정 → API 설정*에서 다시 복사합니다. 사용자명은 기본적으로 계정 이메일이며 별도의 API 키가 아닙니다.
-- **POST가 `400 Invalid sender` 반환** — `sender` 값이 계정의 등록된 발신자 ID가 아닙니다. 먼저 Mobile Message 대시보드에서 등록합니다.
-- **텍스트가 도착하지만 잘려 있음** — Mobile Message는 메시지를 ~160자로 나눕니다. 여러 부분으로 분할되면 부분별로 청구됩니다. 응답 본문을 확인합니다 — 부분 수를 알려줍니다.
+- **POST가 `401 Unauthorized`를 반환함** — Basic Auth 인증 정보가 잘못되었습니다. Mobile Message 대시보드의 *Account → API Settings*에서 다시 복사하세요. 사용자 이름은 기본적으로 별도의 API 키가 아니라 계정 이메일이라는 점에 유의하세요.
+- **POST가 `400 Invalid sender`를 반환함** — `sender` 값이 계정에 등록된 발신자 ID가 아닙니다. 먼저 Mobile Message 대시보드에서 등록하세요.
+- **문자는 도착하지만 잘림** — Mobile Message는 약 160자를 넘는 메시지를 여러 부분으로 나누며, 부분마다 요금이 청구됩니다. 응답 본문에서 부분 수를 확인할 수 있습니다.
 
-## 참고도 보기
+## 함께 보기 {#see-also}
 
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — 네이티브 Zapier 앱이 있는 대체 SMS 제공자(Zapier 웹훅 단계 필요 없음)
-- [Zapier(개요)](../zapier.md) — 모든 Zapier 레시피의 B1 측
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) — 기본 Zapier 앱이 있는 대안 SMS 제공자(Webhooks by Zapier 단계가 필요 없습니다)
+- [Zapier(개요)](../zapier.md) — 모든 Zapier 활용 예시의 B1 쪽 설정
 - [Mobile Message API 문서](https://mobilemessage.com.au/api-documentation)

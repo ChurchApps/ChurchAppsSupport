@@ -1,99 +1,104 @@
 ---
-title: "Guida: Tracciare la Frequenza della Chiesa"
-description: "Monitora le presenze in B1 Admin impostando sedi e orari dei culti, registrandole a mano o con il self check-in, e leggendo i report."
+title: "Guida: Registrare le presenze in chiesa"
+description: "Registra le presenze in chiesa in B1 Admin configurando sedi e orari dei culti, registrandole manualmente o tramite self check-in, e consultando i report."
 ---
 
-# Tracciare la Frequenza della Chiesa
+# Registrare le presenze in chiesa
 
 <div class="article-intro">
 
-Configura il tracciamento della frequenza per i tuoi servizi e gruppi — dalla configurazione dei campus e degli orari dei servizi, alla registrazione della frequenza manualmente o tramite l'app di check-in self-service, alla visualizzazione delle tendenze nei report. Alla fine, avrai un quadro completo di chi sta frequentando e quando.
+Configura la rilevazione delle presenze per i tuoi culti e gruppi: dalla configurazione delle sedi e degli orari dei culti, alla registrazione manuale o tramite l'app self check-in, fino alla consultazione delle tendenze nei report. Alla fine, avrai un quadro completo di chi partecipa e quando.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Account B1 Admin con accesso amministrativo
-- [Persone aggiunte alla tua directory](../people/adding-people.md)
-- [Gruppi creati](../groups/creating-groups.md) per i ministeri che vuoi tracciare
+- Account B1 Admin con accesso amministratore
+- [Persone aggiunte alla tua anagrafica](../people/adding-people.md)
+- [Gruppi creati](../groups/creating-groups.md) per i ministeri che vuoi monitorare
 
 </div>
 
-## Passo 1: Configura Campus e Servizi
+## Passaggio 1: Configura sedi e culti {#step-1-configure-campuses--services}
 
-Definisci dove e quando la tua chiesa si riunisce.
+Definisci dove e quando si riunisce la tua chiesa.
 
-Segui la guida [Configurazione della Frequenza](../attendance/setup.md) per:
+Segui la guida [Configurazione presenze](../attendance/setup.md) per:
 
-1. Aggiungi il tuo campus (ad es. "Campus Principale")
-2. Aggiungi gli orari dei servizi (ad es. "Domenica 9:00", "Domenica 11:00", "Mercoledì 19:00")
-3. Assegna i gruppi a ogni orario di servizio per definire quali classi/ministeri si incontrano durante quel servizio
+1. Nel [menu Jump](../introduction.md#getting-around-with-the-jump-menu), scegli **Persone > Presenze** e clicca su **Configurazione**
+2. Aggiungi la tua sede (ad esempio, "Sede principale") e i suoi culti
+3. Aggiungi gli orari dei culti (ad esempio, "Domenica 9:00", "Domenica 11:00", "Mercoledì 19:00")
 
-## Passo 2: Abilita il Tracciamento della Frequenza dei Gruppi
+## Passaggio 2: Attiva la rilevazione delle presenze nei gruppi {#step-2-enable-group-attendance-tracking}
 
-Attiva il tracciamento della frequenza per i gruppi che desideri monitorare.
+Attiva la rilevazione delle presenze per i gruppi che vuoi monitorare.
 
-Segui la guida [Creazione di Gruppi](../groups/creating-groups.md) per:
+Segui la guida [Creare gruppi](../groups/creating-groups.md) per:
 
-1. Modifica ogni gruppo che desideri tracciare e attiva "Traccia Frequenza"
-2. Associa i gruppi agli orari dei servizi in modo che la frequenza sia registrata rispetto al servizio giusto
+1. Apri ogni gruppo che vuoi monitorare, clicca su **Modifica** e imposta **Registra presenze** su **Sì**
+2. Se il gruppo si riunisce durante un culto, scegli l'orario in **Aggiungi orario del culto** e clicca sul pulsante con il segno più, così le presenze vengono registrate sul culto giusto, poi clicca su **Salva**
 
 :::info
-Non tutti i gruppi hanno bisogno del tracciamento della frequenza. Abilitalo per i gruppi in cui desideri monitorare la partecipazione — classi per bambini, piccoli gruppi, scuola domenicale, ecc.
+Non tutti i gruppi hanno bisogno della rilevazione delle presenze. Attivala per i gruppi in cui vuoi monitorare la partecipazione: classi per bambini, piccoli gruppi, scuola domenicale, ecc.
 :::
 
-## Passo 3: Registra la Frequenza Manualmente
+## Passaggio 3: Registra le presenze manualmente {#step-3-record-attendance-manually}
 
-Contrassegna chi ha frequentato ogni servizio e gruppo.
+Spunta chi ha partecipato a ogni culto e gruppo.
 
-Segui la guida [Registrazione della Frequenza](../attendance/recording-attendance.md) per:
+Segui la guida [Registrare le presenze](../attendance/recording-attendance.md) per:
 
-1. Apri un gruppo, fai clic su **Tutte le sessioni** nella sezione **Sessioni**, e aggiungi una sessione per la data e l'orario del servizio. Seleziona **Aggiungi anche per gli altri gruppi** per creare sessioni per ogni classe a quel orario di servizio contemporaneamente.
-2. Contrassegna chi ha frequentato ogni gruppo
+1. Apri un gruppo, clicca su **Tutte le sessioni** nella sezione **Sessioni**, clicca su **Nuova** e scegli l'**Orario del culto** e la **Data della sessione**. Spunta **Aggiungi anche per gli altri _N_ gruppi in _orario del culto_** per creare in una sola volta le sessioni di tutte le classi in quell'orario di culto.
+2. Spunta chi ha partecipato e clicca su **Salva presenze**
+
+Se ti serve solo un totale invece dei nomi (ad esempio, per il culto principale), clicca su **Inserisci numero presenti** nella pagina **Presenze** — vedi [Inserimento del numero di presenti](../attendance/headcount-entry.md).
 
 :::tip
-Il tracciamento manuale funziona bene per i servizi per adulti, piccoli gruppi e qualsiasi situazione in cui un chiosco di check-in non è pratico.
+La registrazione manuale funziona benissimo per i culti per adulti, i piccoli gruppi e ogni situazione in cui un chiosco di check-in non è pratico.
 :::
 
-## Passo 4: Configura Self Check-In (Facoltativo)
+## Passaggio 4: Configura il self check-in (facoltativo) {#step-4-set-up-self-check-in-optional}
 
-Consenti ai membri di eseguire il check-in da soli utilizzando un chiosco tablet.
+Permetti ai membri di registrarsi da soli tramite un chiosco con tablet.
 
-Segui la guida [Check-In](../attendance/check-in.md) per:
+Segui la guida [Check-in](../attendance/check-in.md) per:
 
 1. Installa l'app B1 Checkin su un tablet per il check-in self-service
-2. I membri cercano il loro nome e eseguono il check-in per se stessi e per la loro famiglia
-3. I record di frequenza del check-in appaiono insieme ai record inseriti manualmente — nessuna differenza nei dati
+2. I membri cercano il proprio nome e registrano da soli sé stessi e la propria famiglia
+3. Le presenze registrate con il check-in compaiono insieme a quelle inserite manualmente, senza differenze nei dati
 
 :::info
-Per una configurazione completa del ministero per bambini inclusa la configurazione hardware e stampante, consulta la [Guida ai Check-In per Bambini](./childrens-checkin.md).
+Per una configurazione completa del ministero dei bambini, comprensiva di hardware e stampante, vedi la [Guida al check-in dei bambini](./childrens-checkin.md).
 :::
 
-## Passo 5: Visualizza i Report di Frequenza
+## Passaggio 5: Consulta i report sulle presenze {#step-5-view-attendance-reports}
 
-Vedi il quadro generale della partecipazione in tutta la tua chiesa.
+Osserva il quadro generale della partecipazione in tutta la chiesa.
 
-Segui la guida [Report di Frequenza](../reports/attendance-reports.md). Sono disponibili tre visualizzazioni di report:
+Segui la guida [Report sulle presenze](../reports/attendance-reports.md). Nella pagina **Presenze**, clicca su **Tutti gli anni** per trovare questi report come schede:
 
-1. **Trend di Frequenza** — visualizza la frequenza nel tempo per individuare la crescita o il declino
-2. **Frequenza del Gruppo** — visualizza chi ha frequentato ogni sessione di gruppo in un intervallo di date, con download CSV
-3. **Frequenza Giornaliera del Gruppo** — analisi giorno per giorno per un'analisi dettagliata
+1. **Andamento presenze** — osserva le presenze nel tempo per individuare crescita o calo
+2. **Andamento numero presenti** — grafico dei totali di presenti che hai inserito a mano
+3. **Presenze gruppi** — vedi chi ha partecipato a ogni sessione di gruppo in un intervallo di date, con download in CSV
+
+Per un conteggio giornaliero di un singolo gruppo, apri il report **Presenze giornaliere dei gruppi** all'indirizzo **admin.b1.church/reports/dailyGroupAttendance**.
 
 :::info
-I report combinano sia la frequenza registrata manualmente che quella del check-in self-service. Non c'è alcuna differenza nel modo in cui i dati appaiono — entrambi i metodi confluiscono negli stessi report.
+I report sulle presenze combinano sia le presenze registrate manualmente sia quelle del self check-in. I dati appaiono allo stesso modo: entrambi i metodi alimentano gli stessi report.
 :::
 
-## Fatto!
+## Hai finito! {#youre-done}
 
-Il tracciamento della tua frequenza è configurato. Che tu registri la frequenza manualmente, usi l'app di check-in o entrambi — tutti i dati confluiscono negli stessi report in modo da avere un quadro chiaro della partecipazione in tutta la tua chiesa.
+La rilevazione delle presenze è configurata. Che tu registri le presenze manualmente, usi l'app di check-in o entrambe le cose, tutti i dati confluiscono negli stessi report, così hai un quadro chiaro della partecipazione in tutta la chiesa.
 
-## Articoli Correlati
+## Articoli correlati {#related-articles}
 
-- [Configurazione della Frequenza](../attendance/setup.md) — configura campus e servizi
-- [Registrazione della Frequenza](../attendance/recording-attendance.md) — registra la frequenza manualmente
-- [Tracciamento della Frequenza](../attendance/tracking-attendance.md) — esamina le tendenze di frequenza
-- [Check-In](../attendance/check-in.md) — app di check-in self-service
-- [Creazione di Gruppi](../groups/creating-groups.md) — configura gruppi con tracciamento della frequenza
-- [Report di Frequenza](../reports/attendance-reports.md) — visualizza le tendenze di frequenza
-- [Guida ai Check-In per Bambini](./childrens-checkin.md) — configurazione completa del check-in per il ministero dei bambini
+- [Configurazione presenze](../attendance/setup.md) — configura sedi e culti
+- [Inserimento del numero di presenti](../attendance/headcount-entry.md) — registra i totali senza nomi
+- [Registrare le presenze](../attendance/recording-attendance.md) — registra le presenze manualmente
+- [Monitorare le presenze](../attendance/tracking-attendance.md) — consulta le tendenze di presenza
+- [Check-in](../attendance/check-in.md) — app di check-in self-service
+- [Creare gruppi](../groups/creating-groups.md) — configura i gruppi con la rilevazione delle presenze
+- [Report sulle presenze](../reports/attendance-reports.md) — consulta le tendenze di presenza
+- [Guida al check-in dei bambini](./childrens-checkin.md) — configurazione completa del check-in per il ministero dei bambini

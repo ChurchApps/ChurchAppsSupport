@@ -1,66 +1,69 @@
 ---
-title: "Varslingsinnstillinger"
-description: "Angi varselkanaler, e-postfrekvens, stille timer og SMS-avmeldinger for hver varseltype i B1 Admin og B1-appen, fra ett skjermbilde."
+title: "Varselinnstillinger"
+description: "Angi varselkanaler, e-postfrekvens, stille timer og reservasjon mot tekstmeldinger for hver varseltype i B1 Admin og B1-appen, fra ett skjermbilde."
 ---
 
-# Varslingsinnstillinger
+# Varselinnstillinger
 
 <div class="article-intro">
 
-Varslingsinnstillingene lar deg bestemme hvilke varsler du får fra kirken din og hvordan du mottar dem – push-varsler, e-post, klokken i appen eller (hvis kirken din sender tekstmeldinger) tekstmeldinger. Du kan finjustere hver type varsel, angi stille tider eller dempe alt på én gang, alt fra ett skjermbilde.
+Varselinnstillingene lar deg bestemme hvilke varsler du får fra menigheten din, og hvordan du får dem -- push-varsler, e-post, klokken i appen eller (hvis menigheten sender tekstmeldinger) tekstmeldinger. Du kan finjustere hver type varsel, angi stille timer eller slå av alle varsler på en gang, alt fra ett skjermbilde.
 
 </div>
 
-## Åpne innstillingene dine
+## Åpne innstillingene dine {#opening-your-preferences}
 
-1. Gå til siden **Meg** og trykk på **Innstillinger** under navnet ditt.
+1. Gå til siden **Me** og trykk på **Innstillinger** under navnet ditt.
 
-Du kan også trykke på klokkeikonet, trykke på **Se alle** for å åpne innboksen din, og deretter trykke på **Varslingsinnstillinger** øverst på den siden.
+Du kan også trykke på klokkeikonet, trykke på **Se alle** for å åpne innboksen din, og deretter trykke på **Varselinnstillinger** øverst på den siden.
 
-## Globale innstillinger
+## Globale innstillinger {#global-controls}
 
 Øverst på skjermen finner du innstillinger som gjelder alt:
 
-- **Demp alt** – Setter midlertidig på pause alle varsler som ikke er nødvendige.
-- **Push-varsler** – Slår push-varsler av eller på for enheten din.
-- **Tekstmeldinger** – Vises bare hvis kirken din har satt opp tekstmeldinger. Slå dette på for å få påminnelser om tjeneste og arrangementer som tekstmelding på mobilnummeret på profilen din. Det er av til du slår det på.
-- **E-postfrekvens** – Velg hvordan e-postvarsler kommer:
-  - **Per varsel** – Send en e-post etter hvert som ting skjer.
-  - **Daglig sammendrag** – Samle dem i én daglig e-post.
-  - **Aldri** – Ikke send varsels-e-poster.
-- **Stille tider** – Angi et starttidspunkt og et sluttidspunkt (og tidssonen din) når du heller ikke vil bli forstyrret. Ikke-hastende varsler venter til de stille tidene er over.
+- **Levering**
+  - **Push-varsler** -- Slår push-varsler på eller av for kontoen din. For å sette opp push på enheten du bruker, slår du den på fra innboksen din -- se [Push-varsler på denne enheten](#push-notifications-on-this-device).
+  - **Tekstmeldinger** -- Vises bare hvis menigheten din har satt opp tekstmeldinger. Slå dette på for å få tjeneste- og arrangementspåminnelser som tekstmelding til mobilnummeret på profilen din. Det er av inntil du slår det på.
+  - **Demp alle varsler** -- Demper alle kanaler midlertidig til du slår det av igjen.
+- **E-post** -- Velg en **E-postfrekvens**:
+  - **Per varsel** -- Send en e-post etter hvert som ting skjer.
+  - **Daglig sammendrag** -- Samle dem i én daglig e-post.
+  - **Aldri** -- Ikke send varsels-e-poster.
+- **Stille timer** -- Viser **Av** eller de gjeldende stille timene dine. Trykk på **Endre** for å angi **Start**- og **Slutt**-tidspunkt i 24-timersformat (for eksempel 22:00 og 07:00) og velge **Tidssone**, og trykk deretter på **Ferdig**. La begge tidspunktene stå tomme for å slå av stille timer. I stille timer venter push-varsler og tekstmeldinger for gruppechat, kunngjøringer og gruppeaktivitet til de stille timene er over.
 
-## Velge varsler etter type
+## Velge varsler etter type {#choosing-notifications-by-type}
 
-Under de globale innstillingene finner du et rutenett med varseltyper. For hver kan du slå av eller på kanalene du ønsker:
+Under de globale innstillingene finner du et rutenett med varseltyper. For hver kan du slå av eller på kanalene du vil ha:
 
-- **Push** – Et varsel på enheten din.
-- **E-post** – En melding i innboksen din.
-- **I appen** – Klokken/merket inne i appen.
-- **Tekst** – En tekstmelding til mobiltelefonen din. Denne kolonnen vises bare hvis kirken din har satt opp tekstmeldinger, og bare noen typer (for eksempel **Påminnelser om arrangementer**, **Tjeneste og plan** og **Oppgaver og oppfølging**) kan sendes som tekst. Tekstmeldinger kommer bare når **Tekstmeldinger** også er slått på.
+- **Push** -- Et varsel på enheten din.
+- **E-post** -- En melding til innboksen din.
+- **I appen** -- Klokken/merket inne i appen.
+- **Tekst** -- En tekstmelding til mobiltelefonen din. Dette alternativet vises bare hvis menigheten din har satt opp tekstmeldinger, og bare **Arrangementspåminnelser**, **Tjeneste og plan**, **Oppgaver og oppfølginger** og **Kunngjøringer fra menigheten** kan sendes som tekst. Tekstmeldinger kommer bare når **Tekstmeldinger** også er slått på.
 
-Vanlige typer er **Påminnelser om arrangementer**, **Tjeneste og plan**, **Direktemeldinger**, **Gruppechat**, **Bønneforespørsler** og **Kunngjøringer fra kirken**. Du kan for eksempel beholde push-varsler på for Direktemeldinger, men slå dem av for kunngjøringer.
+Typene er **Direktemeldinger**, **Arrangementspåminnelser**, **Tjeneste og plan**, **Oppgaver og oppfølginger**, **Gruppechat**, **Kunngjøringer fra menigheten** og **Gruppeaktivitet** (for eksempel forespørsler om å bli med i en gruppe du leder). Hver kanal vises som en brikke du trykker på for å slå den av eller på. Du kan for eksempel ha push-varsler på for Direktemeldinger, men av for Kunngjøringer fra menigheten.
 
-:::info
-Noen få varseltyper er **alltid på** og kan ikke slås av – **Konto og sikkerhet**, **Gavekvitteringer og oversikter** og **Sikkerhetsvarsler for innsjekking**. Disse er nødvendige for din sikkerhet og av juridiske grunner, så de vises med et lite låsikon. Alt annet bestemmer du selv.
-:::
+Alle typer starter med push, e-post og varsler i appen slått på. Tekstmeldinger starter på for påminnelser, tjeneste og oppgaver, og av for kunngjøringer.
 
-Noen typer er **av som standard** (for eksempel markedsførings- eller innsamlingsmeldinger) og når bare deg hvis du velger å si ja.
+## Slutte å få tekstmeldinger {#stopping-text-messages}
 
-## Stoppe tekstmeldinger
+For å slutte å få tekstmeldinger slår du av **Tekstmeldinger** og lagrer. Du kan også svare **STOP** på en hvilken som helst tekstmelding fra menigheten din for å melde nummeret ditt av tekstmeldingene.
 
-For å slutte å få tekstmeldinger, slå av **Tekstmeldinger** og lagre. Du kan også svare **STOP** på en hvilken som helst tekstmelding fra kirken din for å melde nummeret ditt av dens tekstmeldinger.
+## Lagre endringene dine {#saving-your-changes}
 
-## Lagre endringene dine
-
-Etter at du har justert innstillingene dine, trykk på **Lagre innstillinger**. Endringene trer i kraft med en gang og gjelder overalt der du bruker B1.
+Når du har justert innstillingene, trykker du på **Lagre innstillinger**. Endringene trer i kraft med en gang og gjelder overalt der du bruker B1. For å angre endringer du ikke har lagret ennå, trykker du på **Forkast**.
 
 :::tip
-Tidskritiske varsler – for eksempel et sikkerhetsvarsel eller en sikkerhetsmelding for barn ved innsjekking – når deg fortsatt i stille tider. Vanlige oppdateringer venter til de stille tidene er over.
+Tidskritiske varsler -- direktemeldinger, arrangements- og tjenestepåminnelser og oppgaver -- når deg fortsatt i stille timer. Gruppechat, kunngjøringer og gruppeaktivitet venter til de stille timene er over.
 :::
 
-## Relatert
+## Push-varsler på denne enheten {#push-notifications-on-this-device}
 
-- [Frivillig påmelding](../serving/volunteer-signup.md) – Påminnelser om tjeneste og svar på forespørsler om planen
-- [Melde seg på arrangementer](../events/registering.md) – Meld deg på arrangementer som sender påminnelser
-- [Installere appen](./installing-pwa.md) – Legg B1 til på enheten din slik at du kan motta push-varsler
+Push-varsler når hver telefon eller datamaskin for seg. Når du er logget inn og denne enheten ikke er satt opp ennå, viser Hjem et kort med **Slå på varsler** -- trykk på **Aktiver varsler** og velg **Tillat** når nettleseren spør. Du kan også trykke på klokkeikonet, trykke på **Se alle** for å åpne innboksen din, og trykke på **Slå på** i seksjonen **Push-varsler** nederst (trykk på **Slå av** der for å stoppe push på denne enheten).
+
+På en iPhone fungerer varsler bare når appen er [installert på startskjermen](./installing-pwa.md), så knappen heter **Installer appen** til da. Hvis du har blokkert varsler tidligere, forklarer appen hvordan du tillater dem igjen i nettleserens eller telefonens innstillinger.
+
+## Relatert {#related}
+
+- [Frivillig påmelding](../serving/volunteer-signup.md) -- Tjenestepåminnelser og svar på forespørsler om plan
+- [Påmelding til arrangementer](../events/registering.md) -- Meld deg på arrangementer som sender påminnelser
+- [Installere appen](./installing-pwa.md) -- Legg B1 på enheten din slik at du kan få push-varsler

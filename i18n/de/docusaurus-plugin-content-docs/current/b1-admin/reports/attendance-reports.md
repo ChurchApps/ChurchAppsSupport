@@ -20,7 +20,7 @@ B1 Admin bietet drei Anwesenheitsberichte, die Ihnen helfen zu verstehen, wie Me
 
 </div>
 
-## Anwesenheitstrend
+## Anwesenheitstrend {#attendance-trend}
 
 Der Bericht Anwesenheitstrend zeigt, wie sich die Anwesenheit bei Ihren Gottesdiensten im Zeitverlauf verändert.
 
@@ -30,6 +30,10 @@ Der Bericht Anwesenheitstrend zeigt, wie sich die Anwesenheit bei Ihren Gottesdi
 4. Der Bericht zeigt ein Balkendiagramm und eine Tabelle mit den Gesamtbesuchen pro Woche. Jede Woche ist mit dem Datum des Sonntags dieser Woche beschriftet, und die Spalte **Sitzungsdaten** in der Tabelle listet die tatsächlichen Daten dieser Woche auf, an denen Anwesenheit erfasst wurde (zum Beispiel „27.9., 30.9.“).
 
 Dieser Bericht ist hilfreich, um Muster zu erkennen, etwa saisonale Einbrüche, Wachstumstrends oder die Wirkung besonderer Veranstaltungen.
+
+:::tip
+Die Ansicht **Alle Jahre** der Seite Anwesenheit hat zwischen den beiden anderen Registerkarten außerdem eine Registerkarte **Besucherzahlentrend**. Sie zeigt die Gesamtzahlen der Besucher, die Sie von Hand eingeben (statt einzelner Check-ins), für jede Woche als Diagramm. Sie hat dieselben Filter **Standort**, **Gottesdienst**, **Gottesdienstzeit** und **Gruppe**.
+:::
 
 ## Gruppenanwesenheit {#group-attendance}
 
@@ -50,7 +54,7 @@ Um eine Tabelle herunterzuladen, klicken Sie auf **Download-Optionen** und wähl
 
 Nutzen Sie diesen Bericht, um die Anwesenheit verschiedener Gruppen zu vergleichen und zu erkennen, welche Gruppen wachsen oder Aufmerksamkeit brauchen.
 
-## Tägliche Gruppenanwesenheit
+## Tägliche Gruppenanwesenheit {#daily-group-attendance}
 
 Der Bericht Tägliche Gruppenanwesenheit (mit dem Titel **Gruppenanwesenheit nach Tag**) zeigt die Anzahl der Teilnehmenden einer einzelnen Gruppe Tag für Tag.
 
@@ -64,7 +68,7 @@ Dieser Bericht bietet feine Details, die hilfreich sind, um Schwankungen von Woc
 Nutzen Sie den Bericht Anwesenheitstrend für einen Überblick und den Bericht Tägliche Gruppenanwesenheit, wenn Sie bestimmte Termine genauer untersuchen müssen.
 :::
 
-## Praktische Anwendungen
+## Praktische Anwendungen {#practical-uses}
 
 - **Planung** – Nutzen Sie Anwesenheitstrends, um Sitzplätze, Personal und Ressourcen für kommende Gottesdienste zu planen.
 - **Aufsuchende Arbeit** – Erkennen Sie frühzeitig sinkende Anwesenheit, damit Sie Mitglieder nachfassen können.

@@ -20,7 +20,7 @@ B1 har en rekke sikkerhetsfunksjoner for barn ved innsjekking: kapasitetsgrenser
 
 </div>
 
-## Romkapasitet og stenging av rom
+## Romkapasitet og stenging av rom {#room-capacity-and-closing-a-room}
 
 Hvert innsjekkingsrom (gruppe) kan ha sine egne grenser. Åpne gruppen, klikk på **Rediger** for å redigere innstillingene og finn seksjonen **Innsjekkingskapasitet**:
 
@@ -28,7 +28,7 @@ Hvert innsjekkingsrom (gruppe) kan ha sine egne grenser. Åpne gruppen, klikk p�
 - **Gjestekapasitet** -- En valgfri, egen grense for hvor mange gjester rommet kan romme.
 - **Stengt for innsjekking** -- Sett til **Ja** for å stoppe all innsjekking til rommet umiddelbart (for eksempel når en klasse er avlyst eller et rom ikke er tilgjengelig). Utsjekking fungerer fortsatt.
 
-## Forholdstall for frivillige
+## Forholdstall for frivillige {#volunteer-ratios}
 
 Den samme seksjonen **Innsjekkingskapasitet** på gruppen inneholder regler for bemanning:
 
@@ -50,11 +50,11 @@ Hvor strengt forholdstallene håndheves, er en innstilling for hele menigheten:
 Kapasitet og Stengt for innsjekking er alltid harde grenser – valget mellom advarsel og blokkering gjelder bare forholdstallene for frivillige.
 :::
 
-## Innsjekkingstyper
+## Innsjekkingstyper {#check-in-types}
 
 Hver innsjekking registrerer om personen er **Medlem**, **Gjest** eller **Frivillig**. Typen velges med knapper på kioskens husstandsskjerm (Medlem er standard). Typene inngår i sikkerhetsreglene – frivillige gir dekning for forholdstallene, og gjester teller mot rommets gjestekapasitet.
 
-## Veiledning om alder og klassetrinn for rom
+## Veiledning om alder og klassetrinn for rom {#age-and-grade-room-guidance}
 
 Du kan angi alders- eller klassetrinnsgrenser for hvert rom, slik at kiosken veileder familiene til passende rom:
 
@@ -66,7 +66,7 @@ Klassetrinn rulleres på menighetens **dato for opprykk**:
 1. Gå til **Innstillinger** i B1 Admin og åpne seksjonen **Opprykk**.
 2. Angi måneden og dagen menigheten rykker elever opp (for eksempel 1. august). Alder og klassetrinn på kiosken beregnes ut fra den siste opprykksdatoen.
 
-## Betrodde og ikke-autoriserte hentepersoner
+## Betrodde og ikke-autoriserte hentepersoner {#trusted-and-not-authorized-pickup-people}
 
 Hver husstand kan ha en liste over personer som har – eller ikke har – lov til å hente barna.
 

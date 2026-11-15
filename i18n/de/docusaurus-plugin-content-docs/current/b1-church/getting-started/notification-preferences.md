@@ -1,66 +1,69 @@
 ---
 title: "Benachrichtigungseinstellungen"
-description: "Kanäle, E-Mail-Häufigkeit, Ruhezeiten und SMS-Abmeldung je Benachrichtigungstyp in B1 Admin und der B1-App auf einem Bildschirm festlegen."
+description: "Lege Benachrichtigungskanäle, die E-Mail-Häufigkeit, Ruhezeiten und Textnachrichten-Abmeldungen für jeden Benachrichtigungstyp im B1 Admin und in der B1-App auf einem Bildschirm fest."
 ---
 
 # Benachrichtigungseinstellungen
 
 <div class="article-intro">
 
-Mit den Benachrichtigungseinstellungen legen Sie fest, welche Benachrichtigungen Sie von Ihrer Gemeinde erhalten und wie: als Push-Nachricht, per E-Mail, über die Glocke in der App oder (sofern Ihre Gemeinde Textnachrichten versendet) als Textnachricht. Sie können jede Benachrichtigungsart fein abstimmen, Ruhezeiten festlegen oder alles auf einmal stummschalten, und zwar alles auf einem einzigen Bildschirm.
+Mit den Benachrichtigungseinstellungen legst du fest, welche Benachrichtigungen du von deiner Gemeinde erhältst und wie du sie empfängst -- als Push-Benachrichtigung, per E-Mail, in der Glocke der App oder (falls deine Gemeinde Textnachrichten versendet) als SMS. Du kannst jede Benachrichtigungsart fein abstimmen, Ruhezeiten festlegen oder alles auf einmal stummschalten -- alles auf einem Bildschirm.
 
 </div>
 
-## Ihre Einstellungen öffnen
+## Deine Einstellungen öffnen {#opening-your-preferences}
 
-1. Gehen Sie zur Seite **Ich** und tippen Sie unter Ihrem Namen auf **Einstellungen**.
+1. Gehe zur Seite **Ich** und tippe auf **Einstellungen** unter deinem Namen.
 
-Alternativ tippen Sie auf das Glockensymbol, dann auf **Alle anzeigen**, um Ihren Posteingang zu öffnen, und anschließend oben auf dieser Seite auf **Benachrichtigungseinstellungen**.
+Du kannst auch auf das Glockensymbol tippen, auf **Alle anzeigen** tippen, um deinen Posteingang zu öffnen, und dann oben auf dieser Seite auf **Benachrichtigungseinstellungen** tippen.
 
-## Allgemeine Steuerung
+## Globale Steuerung {#global-controls}
 
-Oben auf dem Bildschirm finden Sie Einstellungen, die für alles gelten:
+Oben auf dem Bildschirm findest du Einstellungen, die für alles gelten:
 
-- **Alle stummschalten** -- Pausiert vorübergehend alle nicht wesentlichen Benachrichtigungen.
-- **Push-Benachrichtigungen** -- Schaltet Push-Benachrichtigungen für Ihr Gerät ein oder aus.
-- **Textnachrichten** -- Wird nur angezeigt, wenn Ihre Gemeinde Textnachrichten eingerichtet hat. Schalten Sie dies ein, um Dienst- und Veranstaltungserinnerungen per Textnachricht an die Mobilnummer in Ihrem Profil zu erhalten. Die Option ist ausgeschaltet, bis Sie sie einschalten.
-- **Häufigkeit der E-Mails** -- Wählen Sie, wie Benachrichtigungen per E-Mail eintreffen:
-  - **Pro Benachrichtigung** -- Eine E-Mail, sobald etwas passiert.
-  - **Tägliche Zusammenfassung** -- Alles in einer täglichen E-Mail gebündelt.
+- **Zustellung**
+  - **Push-Benachrichtigungen** -- Schaltet Push-Benachrichtigungen für dein Konto ein oder aus. Um Push auf dem Gerät einzurichten, das du gerade verwendest, schalte es in deinem Posteingang ein -- siehe [Push-Benachrichtigungen auf diesem Gerät](#push-notifications-on-this-device).
+  - **Textnachrichten** -- Wird nur angezeigt, wenn deine Gemeinde den Textversand eingerichtet hat. Schalte dies ein, um Dienst- und Veranstaltungserinnerungen per SMS an die Mobilnummer in deinem Profil zu erhalten. Es ist ausgeschaltet, bis du es einschaltest.
+  - **Alle Benachrichtigungen stummschalten** -- Schaltet jeden Kanal vorübergehend stumm, bis du es wieder ausschaltest.
+- **E-Mail** -- Wähle eine **E-Mail-Häufigkeit**:
+  - **Pro Benachrichtigung** -- Sende eine E-Mail, sobald etwas passiert.
+  - **Tägliche Zusammenfassung** -- Bündle sie in einer täglichen E-Mail.
   - **Nie** -- Keine Benachrichtigungs-E-Mails senden.
-- **Ruhezeiten** -- Legen Sie eine Start- und eine Endzeit (sowie Ihre Zeitzone) fest, wenn Sie nicht gestört werden möchten. Nicht dringende Benachrichtigungen warten, bis die Ruhezeit vorbei ist.
+- **Ruhezeiten** -- Zeigt **Aus** oder deine aktuellen Ruhezeiten. Tippe auf **Ändern**, um eine **Start-** und **Endzeit** im 24-Stunden-Format einzugeben (zum Beispiel 22:00 und 07:00) und deine **Zeitzone** auszuwählen, und tippe dann auf **Fertig**. Lass beide Zeiten leer, um die Ruhezeiten auszuschalten. Während der Ruhezeiten warten Push-Benachrichtigungen und Textnachrichten für Gruppenchat, Ankündigungen und Gruppenaktivitäten, bis die Ruhezeiten vorbei sind.
 
-## Benachrichtigungen nach Art auswählen
+## Benachrichtigungen nach Typ auswählen {#choosing-notifications-by-type}
 
-Unterhalb der allgemeinen Steuerung finden Sie ein Raster mit Benachrichtigungsarten. Für jede Art können Sie die gewünschten Kanäle ein- oder ausschalten:
+Unterhalb der globalen Steuerung befindet sich ein Raster mit Benachrichtigungstypen. Bei jedem kannst du die gewünschten Kanäle ein- oder ausschalten:
 
-- **Push** -- Eine Benachrichtigung auf Ihrem Gerät.
-- **E-Mail** -- Eine Nachricht in Ihrem Posteingang.
+- **Push** -- Eine Benachrichtigung auf deinem Gerät.
+- **E-Mail** -- Eine Nachricht in deinem Posteingang.
 - **In der App** -- Die Glocke bzw. Markierung innerhalb der App.
-- **Text** -- Eine Textnachricht an Ihr Mobiltelefon. Diese Spalte erscheint nur, wenn Ihre Gemeinde Textnachrichten eingerichtet hat, und nur einige Arten (etwa **Veranstaltungserinnerungen**, **Dienst & Plan** und **Aufgaben & Nachfassen**) können per Textnachricht versendet werden. Textnachrichten kommen nur an, wenn auch **Textnachrichten** eingeschaltet ist.
+- **Text** -- Eine Textnachricht an dein Mobiltelefon. Diese Option erscheint nur, wenn deine Gemeinde den Textversand eingerichtet hat, und nur **Veranstaltungserinnerungen**, **Dienst & Plan**, **Aufgaben & Nachbetreuung** und **Ankündigungen der Gemeinde** können als Text gesendet werden. Textnachrichten kommen nur an, wenn auch **Textnachrichten** eingeschaltet ist.
 
-Zu den üblichen Arten gehören **Veranstaltungserinnerungen**, **Dienst & Plan**, **Direktnachrichten**, **Gruppenchat**, **Gebetsanliegen** und **Ankündigungen der Gemeinde**. Sie könnten zum Beispiel Push-Benachrichtigungen für Direktnachrichten eingeschaltet lassen, sie bei Ankündigungen aber ausschalten.
+Die Typen sind **Direktnachrichten**, **Veranstaltungserinnerungen**, **Dienst & Plan**, **Aufgaben & Nachbetreuung**, **Gruppenchat**, **Ankündigungen der Gemeinde** und **Gruppenaktivität** (etwa Beitrittsanfragen für eine Gruppe, die du leitest). Jeder Kanal erscheint als Chip, den du antippst, um ihn ein- oder auszuschalten. Du könntest zum Beispiel Push-Benachrichtigungen für Direktnachrichten eingeschaltet lassen, aber für Ankündigungen der Gemeinde ausschalten.
 
-:::info
-Einige Benachrichtigungsarten sind **immer eingeschaltet** und können nicht deaktiviert werden -- **Konto & Sicherheit**, **Spendenquittungen & Abrechnungen** und **Sicherheitswarnungen beim Kinder-Check-in**. Diese sind aus Gründen der Sicherheit und aus rechtlichen Gründen erforderlich. Sie erkennen sie an einem kleinen Schlosssymbol. Alles Übrige können Sie selbst steuern.
-:::
+Jeder Typ startet mit eingeschaltetem Push, E-Mail und In-App. Texte sind für Erinnerungen, Dienste und Aufgaben eingeschaltet und für Ankündigungen ausgeschaltet.
 
-Einige Arten sind **standardmäßig ausgeschaltet** (etwa Werbe- oder Spendenaufrufe) und erreichen Sie nur, wenn Sie sich bewusst dafür entscheiden.
+## Textnachrichten abbestellen {#stopping-text-messages}
 
-## Textnachrichten beenden
+Um keine Textnachrichten mehr zu erhalten, schalte **Textnachrichten** aus und speichere. Du kannst auch auf jede Textnachricht deiner Gemeinde mit **STOP** antworten, um deine Nummer von ihren Textnachrichten abzumelden.
 
-Um keine Textnachrichten mehr zu erhalten, schalten Sie **Textnachrichten** aus und speichern Sie. Sie können außerdem auf jede Textnachricht Ihrer Gemeinde mit **STOP** antworten, um Ihre Nummer von deren Textnachrichten abzumelden.
+## Änderungen speichern {#saving-your-changes}
 
-## Änderungen speichern
-
-Nachdem Sie Ihre Einstellungen angepasst haben, tippen Sie auf **Einstellungen speichern**. Ihre Änderungen wirken sofort und gelten überall dort, wo Sie B1 nutzen.
+Nachdem du deine Einstellungen angepasst hast, tippe auf **Einstellungen speichern**. Deine Änderungen gelten sofort und überall, wo du B1 verwendest. Um noch nicht gespeicherte Änderungen rückgängig zu machen, tippe auf **Verwerfen**.
 
 :::tip
-Zeitkritische Benachrichtigungen -- etwa eine Sicherheitswarnung oder eine Sicherheitsnachricht zum Kinder-Check-in -- erreichen Sie auch während der Ruhezeiten. Alltägliche Aktualisierungen warten, bis die Ruhezeiten enden.
+Zeitkritische Benachrichtigungen -- Direktnachrichten, Veranstaltungs- und Dienstserinnerungen sowie Aufgaben -- erreichen dich auch während der Ruhezeiten. Gruppenchat, Ankündigungen und Gruppenaktivitäten warten, bis die Ruhezeiten enden.
 :::
 
-## Verwandte Artikel
+## Push-Benachrichtigungen auf diesem Gerät {#push-notifications-on-this-device}
 
-- [Freiwilligen-Anmeldung](../serving/volunteer-signup.md) -- Dienst-Erinnerungen und Antworten auf Anfragen zum Dienstplan
-- [Anmeldung zu Veranstaltungen](../events/registering.md) -- Melden Sie sich für Veranstaltungen an, die Erinnerungen versenden
-- [App installieren](./installing-pwa.md) -- Fügen Sie B1 Ihrem Gerät hinzu, damit Sie Push-Benachrichtigungen erhalten können
+Push-Benachrichtigungen erreichen jedes Telefon oder jeden Computer einzeln. Bist du angemeldet und dieses Gerät ist noch nicht eingerichtet, zeigt die Startseite eine Karte **Benachrichtigungen aktivieren** -- tippe auf **Benachrichtigungen aktivieren** und wähle **Zulassen**, wenn dein Browser nachfragt. Du kannst auch auf das Glockensymbol tippen, auf **Alle anzeigen** tippen, um deinen Posteingang zu öffnen, und unten im Abschnitt **Push-Benachrichtigungen** auf **Einschalten** tippen (dort auf **Ausschalten** tippen, um Push auf diesem Gerät zu beenden).
+
+Auf dem iPhone funktionieren Benachrichtigungen erst, wenn die App [auf deinem Startbildschirm installiert](./installing-pwa.md) ist. Bis dahin lautet die Schaltfläche **App installieren**. Hast du Benachrichtigungen früher blockiert, erklärt dir die App, wie du sie in den Einstellungen deines Browsers oder Telefons wieder zulässt.
+
+## Verwandt {#related}
+
+- [Ehrenamtliche Anmeldung](../serving/volunteer-signup.md) -- Dienst-Erinnerungen und Antworten auf Plananfragen
+- [Für Veranstaltungen anmelden](../events/registering.md) -- Melde dich für Veranstaltungen an, die Erinnerungen senden
+- [Die App installieren](./installing-pwa.md) -- Füge B1 deinem Gerät hinzu, damit du Push-Benachrichtigungen erhalten kannst

@@ -130,7 +130,7 @@ const repos = await RepoManager.getRepos<Repos>("membership");
 const people = await repos.person.loadAll(churchId);
 ```
 
-## 跨模块通信
+## 跨模块通信 {#cross-module-communication}
 
 每个模块拥有自己的数据库（参见 [数据库](./database.md)），模块永远不会直接查询另一个模块的表。当一个模块需要另一个模块拥有的数据时——例如，doing 模块从 membership 解析人员——它通过拥有模块的 **gateway** 在 `src/shared/modules/` 中进行：
 

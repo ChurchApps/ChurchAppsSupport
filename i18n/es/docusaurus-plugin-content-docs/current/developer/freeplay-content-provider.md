@@ -63,7 +63,7 @@ Cada elemento de la lista de reproducción debe incluir:
 | `thumbnail` | Recomendado | Imagen en miniatura del elemento |
 | `duration` | Recomendado | Duración en segundos (para videos) |
 
-## Formatos multimedia
+## Formatos multimedia {#media-formats}
 
 FreePlay descarga los archivos directamente, así que cada elemento multimedia debe tener un **enlace directo** (sin reproductores incrustados ni redirecciones de página).
 

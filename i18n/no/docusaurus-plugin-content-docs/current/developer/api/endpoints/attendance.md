@@ -58,7 +58,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Tjenestetider
+## Tjenestetider {#service-times}
 
 Basissti: `/attendance/servicetimes`
 

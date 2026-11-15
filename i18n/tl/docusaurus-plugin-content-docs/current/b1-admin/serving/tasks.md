@@ -1,91 +1,91 @@
 ---
 title: "Mga Gawain"
-description: "Gumawa, magtalaga, at isara ang mga gawain sa B1 Admin, hanapin sa Serving > My Work, at magtakda ng paalala sa due date para hindi malampasan ang follow-up."
+description: "Gumawa, mag-assign, at magsara ng mga gawain sa B1 Admin, hanapin ang mga ito sa ilalim ng Serving > My Work, at mag-set ng paalala sa petsa ng due para hindi malampasan ang mga follow-up na item."
 ---
 
 # Mga Gawain
 
 <div class="article-intro">
 
-Hinahayaan ka ng mga task na magtalaga ng mga action item sa mga tao o grupo sa iyong simbahan. Maging isang beses na to-do o paulit-ulit na responsibilidad, nakakatulong ang mga task para masubaybayan kung ano ang kailangang gawin at kung sino ang may pananagutan, para walang makaligtaan.
+Hinahayaan ka ng mga gawain (tasks) na mag-assign ng mga action item sa mga tao o grupo sa iyong simbahan. Isa mang one-time na to-do o paulit-ulit na responsibilidad, tinutulungan ka ng mga gawain na subaybayan kung ano ang kailangang gawin at kung sino ang responsable, para walang makaligtaan.
 
 </div>
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
 
-- Siguraduhing umiiral sa B1 Admin ang mga taong o [grupo](../groups/creating-groups.md) na gusto mong pagtalagahan ng mga task
-- Sa [Jump menu](../introduction.md#getting-around-with-the-jump-menu), piliin ang **Serving > My Work** para makita ang mga task
+- Siguraduhing umiiral sa B1 Admin ang mga taong o [grupong](../groups/creating-groups.md) gusto mong pagtalagahan ng gawain
+- Sa [Jump menu](../introduction.md#getting-around-with-the-jump-menu), piliin ang **Serving > My Work** para makita ang mga gawain
 
 </div>
 
-## Pagtingin sa Mga Task
+## Pagtingin sa mga Gawain {#viewing-tasks}
 
-Sa Jump menu, piliin ang **Serving > My Work** (o maghanap ng "My Work"). Ipinapakita ng listahang **Tasks** ang pamagat ng bawat task, kung kanino ito nauugnay, kung kanino itinalaga, kailan ito binuksan, at ang status nito. Lumalabas sa tabi nito ang iyong [workflow](./workflows.md) card sa ilalim ng **My Cards**.
+Sa Jump menu, piliin ang **Serving > My Work** (o maghanap ng "My Work"). Ipinapakita ng listahan ng **Tasks** ang pamagat ng bawat gawain, kung kanino ito nauugnay, kung kanino ito naitalaga, kung kailan ito binuksan, at ang status nito. Lumalabas sa tabi nito ang iyong mga [workflow](./workflows.md) card sa ilalim ng **My Cards**. Maaari ring makita at magtrabaho ang mga naitalagang tao sa kanilang mga card at bukas na gawain mula sa screen na **Me** sa B1 app.
 
-Gamitin ang mga tab sa itaas ng listahan para lumipat sa pagitan ng mga task na **Assigned to Me**, **Assigned to My Groups**, at **Requested by Me**. Ipinapakita ng bawat tab kung ilang task ang nilalaman nito.
+Gamitin ang mga tab sa itaas ng listahan para lumipat sa pagitan ng mga gawaing **Assigned to Me**, **Assigned to My Groups**, at **Requested by Me**. Ipinapakita ng bawat tab kung ilang gawain ang laman nito. Nakalista ang mga gawain at **My Cards** mula sa pinakabago, kaya nasa itaas ang kakarating lang.
 
 :::tip
-Bilang default, bukas na task lang ang ipinapakita. Piliin ang **Closed** sa itaas ng listahan para makita ang mga natapos nang task.
+Bukas na gawain lamang ang ipinapakita bilang default. Piliin ang **Closed** sa itaas ng listahan para makita naman ang mga natapos na gawain.
 :::
 
-## Paggawa ng Task
+## Paggawa ng Gawain {#creating-a-task}
 
-1. Sa pahinang **My Work**, i-click ang **Add Task**. Bubukas ang form na **New Task**.
-2. I-click ang kahong **Associate with** at piliin ang taong tinutukoy ng task.
+1. Sa pahinang **My Work**, i-click ang **Add Task**. Magbubukas ang form na **New Task**.
+2. Opsyonal na i-click ang kahong **Associate with** at piliin ang taong o grupong tungkol sa gawain. Iwanang blangko kung simpleng to-do ito na hindi tungkol sa sinuman, gaya ng paalala para sa sarili mo.
 3. I-click ang kahong **Assign to**. Sa window na **Select a Person or Group**, maghanap sa tab na **Person**, o lumipat sa tab na **Group** at maghanap ng grupo, pagkatapos piliin ang resulta.
-4. Maglagay ng **Title** para sa task.
+4. Ilagay ang **Title** ng gawain.
 5. Opsyonal na pumili ng **Due date**.
-6. Magdagdag ng **Notes** na may anumang detalye o tagubilin para sa pinagtalagahan.
+6. Magdagdag ng **Notes** na may anumang detalye o tagubilin para sa taong naitalaga.
 7. I-click ang **Save**.
 
-Lalabas na ngayon ang task sa listahan ng task at makikita ito ng pinagtalagahan sa kanyang dashboard at mobile app.
+Lalabas na ngayon ang gawain sa listahan ng gawain at makikita ito ng naitalagang tao sa kanyang dashboard at mobile app.
 
-## Pamamahala ng Task
+## Pamamahala ng Gawain {#managing-a-task}
 
-I-click ang alinmang task para buksan ang detail page nito. Mula rito, maaari mo:
+I-click ang alinmang gawain para buksan ang detail page nito. Mula rito, maaari kang:
 
-- **Isara o buksang muli ang task** -- I-click ang **Close task** kapag tapos na ang gawain, o **Reopen task** para buksan ulit ito.
-- **Ilipat ang task sa iba** -- I-click ang **Assign** para pumili ng ibang tao o grupo.
-- **Baguhin kung sino ang tinutukoy nito** -- I-click ang **Associate** para pumili ng ibang tao.
-- **Baguhin ang due date** -- Pumili ng petsa sa field na **Due**; nase-save ito kapag nag-click ka sa labas. (Ang mga task na ginawa para sa [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) ay nagpapakita ng kanilang due date pero hindi ito mababago dito.)
-- **Magdagdag ng note** -- Mag-post ng mga update o detalye para sa pinagtalagahan sa mga note ng task.
-- **Magtakda ng paalala** -- Tingnan ang [Task Reminders](#task-reminders) sa ibaba.
+- **Isara o buksang muli ang gawain** -- I-click ang **Close task** kapag tapos na ang trabaho, o **Reopen task** para buksan itong muli.
+- **Ilipat ang pag-assign ng gawain** -- I-click ang **Assign** para pumili ng ibang tao o grupo.
+- **Baguhin kung sino ang tungkol dito** -- I-click ang **Associate** para pumili ng ibang tao o grupo, o piliin ang **No person or group** para alisin ito.
+- **Baguhin ang due date** -- Pumili ng petsa sa field na **Due**; nagse-save ito kapag nag-click ka sa labas. (Ang mga gawaing ginawa para sa [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) ay nagpapakita ng kanilang due date pero hindi ito mababago dito.)
+- **Magdagdag ng notes** -- Mag-post ng mga update o detalye para sa naitalagang tao sa notes ng gawain.
+- **Mag-set ng paalala** -- Tingnan ang [Task Reminders](#task-reminders) sa ibaba.
 
-## Mga Paalala sa Task {#task-reminders}
+## Mga Paalala sa Gawain {#task-reminders}
 
-Ang task na may due date ay maaaring magpaalala sa pinagtalagahan nito bago ito ma-due.
+Ang gawaing may due date ay maaaring magpaalala sa naitalagang tao bago ito sumapit.
 
-1. Sa pahina ng task, i-click ang **Edit** sa tabi ng **Reminders**.
+1. Sa pahina ng gawain, i-click ang **Edit** sa tabi ng **Reminders**.
 2. I-on ang **Send reminders for this task**.
 3. Sa ilalim ng **When should reminders go out?**, pumili ng hanggang tatlong timing: **7 days before**, **3 days before**, **1 day before**, o **Day of**.
 4. Itakda ang **Time of Day** at, opsyonal, isang **Message**.
-5. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakonektang [texting provider](../settings/church-settings.md#texting) ang iyong simbahan, **Text**.
+5. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakabit na [texting provider](../settings/church-settings.md#texting) ang simbahan mo, **Text**.
 6. I-click ang **Save Reminders**.
 
-Kung walang due date ang task, babalaan ka ng B1 na walang paalalang ipapadala hanggang may maitakda sa field na **Due**. Umaabot lang ang mga text na paalala sa mga taong nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at maaaring magastusan ng iyong simbahan ang bawat text.
+Kung walang due date ang gawain, babalaan ka ng B1 na walang paalalang ipapadala hanggang may nakatakdang petsa sa field na **Due**. Ang mga text reminder ay umaabot lamang sa mga taong nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at maaaring magkaroon ng gastos ang simbahan mo sa bawat text.
 
-## Ikot ng Buhay ng Task
+## Buhay ng Gawain {#task-lifecycle}
 
-1. Ang bagong task ay nagsisimula sa status na **Open**.
-2. Makakatanggap ang pinagtalagahan ng notification at makikita niya ang task mula sa kanyang dashboard, sa **Serving > My Work**, o sa mobile app.
-3. Kapag tapos na ang gawain, isinasara ito ng pinagtalagahan (o ng admin) sa pamamagitan ng pag-click sa **Close task**.
-4. Ang mga sarado nang task ay inaalis sa karaniwang view pero makikita pa rin sa pamamagitan ng pagpili ng **Closed** sa itaas ng listahan ng task.
+1. Ang bagong gawain ay nagsisimula sa status na **Open**.
+2. Makakatanggap ng notification ang naitalagang tao at makikita niya ang gawain mula sa kanyang dashboard, sa **Serving > My Work**, o sa mobile app.
+3. Kapag natapos na ang trabaho, ang naitalagang tao (o isang admin) ang mag-i-click ng **Close task**.
+4. Inaalis sa default na view ang mga saradong gawain pero makikita pa rin ang mga ito sa pamamagitan ng pagpili sa **Closed** sa itaas ng listahan ng gawain.
 
 :::info
-Hindi na gumagawa ng mga paulit-ulit na task ayon sa iskedyul ang B1 Admin. Para sa paulit-ulit na follow-up sa mga tao, gumamit ng [workflow](./workflows.md) na may [schedule trigger](./workflows.md#schedule-triggers).
+Hindi na gumagawa ang B1 Admin ng mga paulit-ulit na gawain ayon sa iskedyul. Para sa paulit-ulit na follow-up sa mga tao, gumamit ng [workflow](./workflows.md) na may [schedule trigger](./workflows.md#schedule-triggers).
 :::
 
 :::tip
-Kapag kailangan mong ilipat ang maraming tao sa parehong hanay ng yugto -- gaya ng follow-up ng bagong bisita o proseso ng membership -- gamitin ang [Workflows](./workflows.md). Ginagawang card sa isang drag-and-drop board na may mga hakbang, due date, at routing ang mga task ng Workflows.
+Kapag kailangan mong dalhin ang maraming tao sa iisang hanay ng mga yugto -- gaya ng follow-up sa mga bagong bisita o proseso ng membership -- gamitin ang [Workflows](./workflows.md). Ginagawang card ng mga workflow ang mga gawain sa isang drag-and-drop na board, na may mga hakbang, due date, at routing.
 :::
 
 :::info
-May ilang task na awtomatikong ginagawa ng ibang bahagi ng B1 at nagbubukas sa espesyal na review card sa halip na karaniwang note/reassign view -- [mga group join request](../groups/group-join-requests.md#approving-from-the-tasks-page), [mga profile change request](../profile/approving-profile-changes.md), at [mga account deletion request](../profile/account-deletion.md) ay pawang ganito ang gumagana.
+Ang ilang gawain ay awtomatikong nililikha ng ibang bahagi ng B1 at nagbubukas bilang espesyal na review card sa halip na karaniwang note/reassign view -- ang [group join requests](../groups/group-join-requests.md#approving-from-the-tasks-page), [profile change requests](../profile/approving-profile-changes.md), at [account deletion requests](../profile/account-deletion.md) ay gumagana sa ganitong paraan.
 :::
 
-## Mga Susunod na Hakbang
+## Mga Susunod na Hakbang {#next-steps}
 
-- Ilipat ang mga tao sa isang multi-step na proseso gamit ang [Workflows](./workflows.md)
-- Gamitin ang [Workflows](./workflows.md) para awtomatikong ilipat ang mga tao sa mga paulit-ulit na proseso
-- Gamitin ang mga task kasabay ng [Service Plans](./plans.md) para subaybayan ang mga action item sa paghahanda ng serbisyo
+- Dalhin ang mga tao sa isang multi-step na proseso gamit ang [Workflows](./workflows.md)
+- Gamitin ang [Workflows](./workflows.md) para awtomatikong dalhin ang mga tao sa mga paulit-ulit na proseso
+- Gamitin ang mga gawain kasama ng [Service Plans](./plans.md) para subaybayan ang mga action item sa paghahanda ng serbisyo

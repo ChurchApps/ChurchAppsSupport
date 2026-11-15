@@ -20,7 +20,7 @@ Dopo aver creato il tuo account e la tua chiesa, ci sono alcuni passaggi importa
 
 </div>
 
-## Passaggio 1: configura le informazioni della chiesa
+## Passaggio 1: configura le informazioni della chiesa {#step-1-configure-your-church-information}
 
 1. Apri il [menu Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Impostazioni** e fai clic su **Impostazioni**.
 2. Nella sezione **Informazioni sulla chiesa**, fai clic su **Modifica**.

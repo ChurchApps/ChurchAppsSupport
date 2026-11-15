@@ -1,97 +1,98 @@
 ---
 title: "VOMO"
-description: "Verbinden Sie VOMO-Freiwilligenanmeldungen und Kiosk-Check-ins über Zapier mit Personen und Gruppen in B1 Admin, inklusive API-Schlüssel-Berechtigungen und Einrichtungsschritten."
+description: "Verbinden Sie Anmeldungen von Ehrenamtlichen und Kiosk-Check-ins von VOMO über Zapier mit Personen und Gruppen in B1 Admin – inklusive Berechtigungen der API-Schlüssel und Einrichtungsschritten."
 ---
 
 # VOMO
 
 <div class="article-intro">
 
-VOMO ist eine Freiwilligenengagement-Plattform – Personen melden sich für Projekte an, geben sich im Kiosk ab und sammeln Stunden. Wenn Sie VOMO für Freiwilligenplanung verwenden, aber B1 für Personendatensätze, kann Zapier Mitgliedschaft und Check-Ins zwischen ihnen synchronisieren, damit keine Seite driftet.
+VOMO ist eine Plattform für das Engagement von Ehrenamtlichen – Menschen melden sich für Projekte an, checken am Kiosk ein und sammeln Stunden. Wenn Sie VOMO für die Planung von Ehrenamtlichen nutzen, B1 aber für die Personendaten, kann Zapier Mitgliedschaften und Check-ins zwischen beiden synchronisieren, damit keine Seite auseinanderläuft.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie Beginnen</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Ein [VOMO](https://vomo.org)-Konto auf einem Plan, der Zapier (check mit VOMO Support, wenn unsicher) offenlegt
+- Ein [VOMO](https://vomo.org)-Konto mit einem Tarif, der Zapier unterstützt (fragen Sie im Zweifel den VOMO-Support)
 - Ein [Zapier](https://zapier.com)-Konto
 - Ein B1Admin-Benutzer mit der Berechtigung **Einstellungen bearbeiten**
 
 </div>
 
-## Was Sie verkabeln können
+## Was Sie verbinden können {#what-you-can-wire-up}
 
-VOVOs Zapier-App stellt vier sofortige Auslöser und vier Aktionen zur Verfügung. Die Rezepte, die meisten Gemeinden möchten:
+Die Zapier-App von VOMO bietet vier sofortige Auslöser und vier Aktionen. Die Rezepte, die sich die meisten Gemeinden wünschen:
 
 | Richtung | Auslöser | Aktion |
 |---|---|---|
-| VOMO → B1 | VOMO Mitgliedschaft (erstellt) | B1: Person suchen → Person erstellen (wenn neu) |
-| VOMO → B1 | VOMO Kiosk Check-In | B1: Gruppenmitglied zu einer „Currently Serving"-Gruppe hinzufügen, oder als Anwesenheit zeichnen |
-| B1 → VOMO | B1 `person.created` | VOMO: Organizer suchen (nach E-Mail); sonst benutzerdefinierten Schritt |
-| Beide | VOMO Partizipation (Anmeldungen) | B1: Gruppenmitglied zu Projekt-Gruppe hinzufügen |
+| VOMO → B1 | VOMO-Mitgliedschaft (erstellt) | B1: Person suchen → Person erstellen (falls neu) |
+| VOMO → B1 | VOMO-Kiosk-Check-in | B1: Gruppenmitglied zur Gruppe „Derzeit im Dienst“ hinzufügen oder als Anwesenheit erfassen |
+| B1 → VOMO | B1 `person.created` | VOMO: Organisator suchen (anhand der E-Mail-Adresse); sonst eigener Schritt |
+| Beides | VOMO-Teilnahme (Anmeldungen) | B1: Gruppenmitglied zur projektbezogenen Gruppe hinzufügen |
 
-Die VOMO-Aktionen sind auf **Entwurfsprojekte** und **Suchen** nach vorhandenen Organisatoren/Projekten begrenzt – es gibt heute keine „Fügen Sie diese Person zu einem VOMO-Projekt hinzu"-Aktion. Die interessante Verkabelung ist meistens VOMO → B1.
+Die Aktionen von VOMO beschränken sich auf **Projektentwürfe** und das **Suchen** vorhandener Organisatoren bzw. Projekte – eine Aktion „Diese Person einem VOMO-Projekt hinzufügen“ gibt es derzeit nicht. Die spannende Verbindung verläuft vor allem von VOMO → B1.
 
-## Setup
+## Einrichtung {#setup}
 
-### 1. Prägen Sie einen B1 API-Schlüssel
+### 1. Einen B1-API-Schlüssel erstellen {#1-mint-a-b1-api-key}
 
-**Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Geltungsbereiche:
+**Einstellungen → Entwickler → API-Schlüssel → Neuer API-Schlüssel**. Berechtigungen:
 
-- `people:read`, `people:write` – um Freiwillige als B1-Personen zu suchen und zu erstellen
-- `groups:write` – um sie zu Serving-Team-Gruppen hinzuzufügen
-- (Optional) `attendance:write` wenn Sie Kiosk-Check-Ins als Anwesenheit behandeln
+- `settings:write` – Zapier prüft beim Verbinden jeden B1-Schlüssel gegen die Webhook-Liste von B1; ohne diese Berechtigung schlägt die Verbindung fehl
+- `people:read`, `people:write` – um Ehrenamtliche als Personen in B1 nachzuschlagen und anzulegen
+- `groups:write` – um sie Dienst-Teams als Gruppen hinzuzufügen
+- (Optional) `attendance:write`, wenn Sie Kiosk-Check-ins als Anwesenheit behandeln
 
-### 2. Erstellen Sie den Mitgliedschafts-Sync-Zap
+### 2. Den Zap zur Synchronisation der Mitgliedschaft erstellen {#2-build-the-membership-sync-zap}
 
 1. **Auslöser** – VOMO: Mitgliedschaft (Ereignis = `created`).
-2. **Aktion** – B1.church: Person suchen, abgeglichen auf E-Mail.
-3. **Filter / Path** – Gabelung auf gefunden vs. nicht gefunden:
-   - Nicht gefunden → B1.church: Person erstellen, dann Gruppenmitglied zur entsprechenden Freiwilligengruppe hinzufügen.
-   - Gefunden → B1.church: Gruppenmitglied direkt hinzufügen.
-4. Schalten Sie ein. Neue VOMO-Freiwillige erscheinen jetzt in B1 mit der richtigen Gruppenmitgliedschaft.
+2. **Aktion** – B1.church: Person suchen, abgeglichen über die E-Mail-Adresse.
+3. **Aktion** – B1.church: Gruppenmitglied hinzufügen und die Person aus Schritt 2 der passenden Ehrenamtsgruppe zuordnen.
 
-### 3. (Optional) Erstellen Sie den Kiosk-Check-In-Zap
+   Die Funktion *Person suchen* von B1 bricht den Zap mit dem Fehler „No person found“ ab, wenn niemand passt. Für Ehrenamtliche, die noch nicht in B1 sind, aktivieren Sie die Fehlerbehandlung von Zapier für den Schritt Person suchen und führen Sie im Fehlerpfad B1.church: Person erstellen und danach Gruppenmitglied hinzufügen aus.
+4. Einschalten. Neue Ehrenamtliche von VOMO erscheinen nun in B1 mit der richtigen Gruppenzugehörigkeit.
+
+### 3. (Optional) Den Zap für Kiosk-Check-ins erstellen {#3-optional-build-the-kiosk-check-in-zap}
 
 1. **Auslöser** – VOMO: Kiosk
-2. **Aktion** – B1.church: Person suchen (nach E-Mail)
-3. **Aktion** – Ihre Wahl:
-   - *Wenn als Anwesenheit behandelt* – Webhooks by Zapier POST zu B1s `/attendance/visits` Endpoint (B1s Zapier-App hat noch keine First-Class *Record Attendance* Aktion). Der B1 [API-Schlüssel](/docs/developer/api/api-keys) geht in den `Authorization: Bearer cak_…` Header.
-   - *Wenn als Gruppenmitgliedschaft behandelt* – B1.church: Gruppenmitglied mit einer „Currently Serving (Today)"-Gruppe hinzufügen, und ein zweiter Zap später am Tag entfernt sie via geplante Bereinigung.
+2. **Aktion** – B1.church: Person suchen (anhand der E-Mail-Adresse)
+3. **Aktion** – je nach Bedarf:
+   - *Wenn Sie es als Anwesenheit behandeln* – Webhooks by Zapier POST an den Endpunkt `/attendance/visits` der B1-API (die Zapier-App von B1 hat noch keine eigene Aktion *Anwesenheit erfassen*). Der B1-[API-Schlüssel](/docs/developer/api/api-keys) wird im Header `Authorization: Bearer cak_…` übergeben.
+   - *Wenn Sie es als Gruppenmitgliedschaft behandeln* – B1.church: Gruppenmitglied hinzufügen mit der Gruppe „Derzeit im Dienst (heute)“. Ein zweiter Zap später am Tag entfernt sie über eine geplante Bereinigung wieder.
 
-## Häufige Rezepte
+## Häufige Rezepte {#common-recipes}
 
-### Pro-Projekt-Gruppensynchronisierung
+### Synchronisation je Projekt {#per-project-group-sync}
 
-- **Auslöser** – VOMO: Partizipation (erstellt)
-- **Aktion** – Filter by Zapier auf Projekt-ID, dann
-- **Aktion** – B1.church: Gruppenmitglied zu einer B1-Gruppe hinzufügen, deren Name das VOMO-Projekt spiegelt.
+- **Auslöser** – VOMO: Teilnahme (erstellt)
+- **Aktion** – Filter von Zapier auf die Projekt-ID, danach
+- **Aktion** – B1.church: Gruppenmitglied zu einer B1-Gruppe hinzufügen, deren Name dem VOMO-Projekt entspricht.
 
-Wenn das VOMO-Projekt endet, löschen Sie die B1-Gruppe manuell (oder koppeln Sie dies mit einem *Partizipation gelöscht* Auslöser, der sie entfernt).
+Wenn das VOMO-Projekt endet, leeren Sie die B1-Gruppe manuell (oder kombinieren Sie dies mit einem Auslöser *Teilnahme gelöscht*, der die Personen entfernt).
 
-### Senden Sie einen „Thanks for signing up" Text über SMS
+### Eine Dank-SMS für die Anmeldung senden {#send-a-thanks-for-signing-up-text-via-sms}
 
-Kettenverkettung VOMO-Partizipation → Clearstream-Textnachricht senden oder Text In Church Nachricht senden im gleichen Zap. Beide haben First-Class Zapier-Aktionen – siehe [Clearstream](./clearstream.md) und [Text In Church](./text-in-church.md).
+Verketten Sie im selben Zap VOMO-Teilnahme → Clearstream *Textnachricht senden* oder Text In Church *Nachricht senden*. Beide haben eigene Zapier-Aktionen – siehe [Clearstream](./clearstream.md) und [Text In Church](./text-in-church.md).
 
-### Erkennen Sie Dropout
+### Abbrecher erkennen {#detect-drop-off}
 
-Führen Sie einen täglichen Zapier *Schedule* Auslöser aus, der Find Organizer in VOMO für eine Liste von B1-Personen aufruft, die sich diesen Monat dem Serving Team anschlossen – wenn VOMO „nicht gefunden" gibt, haben sie VOMO nicht aktiviert und benötigen einen Anstoß.
+Führen Sie täglich einen Zapier-Auslöser *Zeitplan* aus, der in VOMO *Organisator suchen* für eine Liste von B1-Personen aufruft, die diesen Monat dem Dienst-Team beigetreten sind. Meldet VOMO „not found“, haben sie VOMO nicht aktiviert und brauchen eine Erinnerung.
 
-## Limits & Notizen
+## Einschränkungen und Hinweise {#limits--notes}
 
-- **E-Mail ist der Join-Schlüssel.** VOVOs Payloads stellen eine Benutzer-E-Mail zur Verfügung, aber keine B1-Personen-ID. Spender, die verschiedene E-Mails in jedem System verwenden, erstellen Duplikate.
-- **Keine „Zu Projekt hinzufügen"-Aktion in VOVOs Zapier-App heute.** Wenn Sie B1 → VOMO Projekteintragung benötigen, würden Sie zu VOVOs REST-API von einem *Webhooks by Zapier*-Schritt posten, was eine benutzerdefinierte Integration ist.
-- **VOVOs kostenlos / niedrigere Tiers können Zapier nicht enthalten.** Bestätigen Sie mit VOMO Support vor dem Versprechen eines Verkabelungsdatums.
+- **Die E-Mail-Adresse ist der Verknüpfungsschlüssel.** Die Nutzdaten von VOMO enthalten eine E-Mail-Adresse, aber keine Personen-ID von B1. Spender, die in beiden Systemen unterschiedliche E-Mail-Adressen verwenden, erzeugen Dubletten.
+- **Derzeit keine Aktion „Zum Projekt hinzufügen“ in der Zapier-App von VOMO.** Wenn Sie B1-Personen in VOMO-Projekte einschreiben möchten, müssten Sie von einem Schritt *Webhooks by Zapier* aus per POST an die REST-API von VOMO senden. Das ist eine eigene Integration.
+- **Die kostenlosen bzw. niedrigeren Tarife von VOMO enthalten Zapier unter Umständen nicht.** Klären Sie dies mit dem VOMO-Support, bevor Sie einen Termin für die Anbindung zusagen.
 
-## Fehlerbehebung
+## Fehlerbehebung {#troubleshooting}
 
-- **Auslöser wird niemals ausgelöst** – VOVOs sofortige Auslöser erfordern, dass das API-Token gültig bleibt. Testen Sie den Zap erneut; verbinden Sie VOMO, wenn das Token rotiert wurde.
-- **B1 *Gruppenmitglied hinzufügen* fehlgeschlagen mit 422** – die Gruppen-ID in der Aktion existiert nicht. Öffnen Sie **B1Admin → Gruppen**, klicken Sie auf die Gruppe und kopieren Sie das URL-ID-Segment in den Zap-Schritt.
-- **Doppelte B1-Personen von einem einzelnen VOMO-Freiwilligen** – sie haben sich wahrscheinlich unter einer anderen E-Mail angemeldet, als sie bereits in B1 hatten. Entweder standardisieren Sie E-Mails oder fügen Sie einen Zapier *Path* hinzu, der auch nach Telefon sucht, bevor er erstellt.
+- **Der Auslöser startet nie** – die sofortigen Auslöser von VOMO benötigen ein gültiges API-Token. Testen Sie den Zap erneut; verbinden Sie VOMO neu, falls das Token rotiert wurde.
+- **B1 *Gruppenmitglied hinzufügen* schlägt fehl** – die Gruppe in der Aktion existiert nicht mehr. Wählen Sie die Gruppe im Dropdown **Gruppe** des Schritts erneut aus oder öffnen Sie die Gruppe in B1Admin (**Personen > Gruppen**) und kopieren Sie die ID vom Ende ihrer Web-Adresse.
+- **Doppelte Personen in B1 aus einer einzigen VOMO-Ehrenamtlichen** – sie haben sich vermutlich mit einer anderen E-Mail-Adresse angemeldet als in B1 hinterlegt. Vereinheitlichen Sie entweder die E-Mail-Adressen oder fügen Sie einen Zapier-*Pfad* hinzu, der vor dem Anlegen auch nach der Telefonnummer sucht.
 
-## Siehe auch
+## Siehe auch {#see-also}
 
-- [Zapier (Übersicht)](../zapier.md) – B1-Seite jedes Zapier-Rezepts
-- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) – koppeln Sie Freiwilligenanmeldungen mit SMS-Bestätigungen
+- [Zapier (Überblick)](../zapier.md) – die B1-Seite jedes Zapier-Rezepts
+- [Clearstream](./clearstream.md), [Text In Church](./text-in-church.md) – Anmeldungen von Ehrenamtlichen mit SMS-Bestätigungen verbinden
 - [Webhooks (Entwickler-Referenz)](/docs/developer/api/webhooks) – die Ereignisse, die VOMO auslösen kann

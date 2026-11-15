@@ -1,63 +1,74 @@
 ---
-title: "Gestione dei dispositivi"
-description: "Abbina, rinomina e rimuovi in B1 Admin gli schermi ChurchAppsPlayer e FreePlay collegati al tuo account, per display aggiornati e sicuri."
+title: "Gestire i dispositivi"
+description: "Abbina, etichetta e rimuovi gli schermi ChurchAppsPlayer e FreePlay collegati al tuo account in B1 Admin, così i display della chiesa restano aggiornati e sicuri."
 ---
 
-# Gestione dei dispositivi
+# Gestire i dispositivi
 
 <div class="article-intro">
 
-La pagina Dispositivi ti permette di gestire i dispositivi ChurchAppsPlayer e FreePlay collegati al tuo account. Questi dispositivi vengono usati per trasmettere contenuti in streaming e mostrare i media della chiesa su schermi presso la tua sede.
+La pagina Dispositivi ti permette di gestire i dispositivi ChurchAppsPlayer e FreePlay collegati al tuo account. Questi dispositivi servono a trasmettere contenuti e a mostrare i contenuti multimediali della chiesa sugli schermi della tua sede.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Avere un dispositivo ChurchAppsPlayer acceso e connesso a internet
-- Prendere nota del codice di associazione mostrato sullo schermo del dispositivo
-- Rivedi le tue [impostazioni del profilo](./managing-profile.md) se non l'hai già fatto
+- Accendi un dispositivo ChurchAppsPlayer o FreePlay e collegalo a internet
+- Annota il codice di abbinamento mostrato sullo schermo del dispositivo
+- Controlla le [impostazioni del profilo](./managing-profile.md) se non l'hai già fatto
 
 </div>
 
-## Visualizzazione dei tuoi dispositivi
+## Aprire la pagina Dispositivi {#opening-the-devices-page}
 
-Quando apri la pagina Dispositivi, vedrai una tabella che elenca tutti i dispositivi registrati con le seguenti informazioni:
+Apri il [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), scrivi **Dispositivi** e selezionalo. Mentre sei nella pagina del tuo Profilo, il menu Jump elenca anche **Profilo** e **Dispositivi** affiancati.
 
-- **Etichetta** -- Il nome che hai assegnato al dispositivo.
-- **Data di registrazione** -- Quando il dispositivo è stato associato per la prima volta al tuo account.
-- **Data ultima attività** -- L'ultima volta che il dispositivo si è connesso al tuo account.
+## Visualizzare i tuoi dispositivi {#viewing-your-devices}
 
-## Aggiunta di un nuovo dispositivo
+Quando apri la pagina Dispositivi, vedrai una tabella con gli schermi ChurchAppsPlayer e FreePlay abbinati al tuo account, con le seguenti informazioni:
 
-1. Fai clic sul pulsante **Aggiungi schermo** in cima alla pagina Dispositivi.
-2. Ti verrà chiesto di inserire un **codice di associazione**.
-3. Trova il codice di associazione mostrato sul dispositivo ChurchAppsPlayer o FreePlay che vuoi collegare.
-4. Inserisci il codice. Se si tratta di una TV FreePlay, un menu a tendina **Mostra piani per** ti permette di scegliere il tipo di piano che lo schermo deve seguire — lascialo su **Nessuno** per usare il dispositivo solo per navigazione e notifiche.
-5. Conferma. Il dispositivo apparirà nella tua tabella dei dispositivi una volta associato con successo.
+- **Etichetta** -- Il nome che hai assegnato al dispositivo (**Dispositivo** finché non ne dai uno).
+- **Data di registrazione** -- Quando il dispositivo è stato abbinato per la prima volta al tuo account.
+- **Ultima attività** -- L'ultima volta in cui il dispositivo si è collegato al tuo account.
 
-:::tip
-Assicurati che il dispositivo sia acceso e connesso a internet prima di provare ad associarlo. Il codice di associazione è mostrato sullo schermo del dispositivo.
-:::
+## Aggiungere un nuovo dispositivo {#adding-a-new-device}
 
-## Modifica dell'etichetta di un dispositivo
-
-1. Fai clic su **Modifica** accanto al dispositivo nella tabella dei dispositivi.
-2. Aggiorna l'etichetta con qualcosa di descrittivo (ad esempio, "Schermo Principale Santuario" o "Display Ingresso").
-3. Salva le tue modifiche.
+1. Clicca sul pulsante **Aggiungi schermo** in cima alla pagina Dispositivi.
+2. Trova il codice di abbinamento mostrato sul dispositivo ChurchAppsPlayer o FreePlay che vuoi collegare.
+3. Inseriscilo nel campo **Codice di abbinamento**.
+4. Se la tua chiesa ha configurato i [tipi di piano](../serving/plans.md), un menu a tendina **Mostra i piani per** ti permette di scegliere il tipo di piano che uno schermo FreePlay deve seguire: lascialo su **Nessuno (solo notifiche)** per usare il dispositivo solo per la navigazione e le notifiche.
+5. Clicca su **Salva**. Il dispositivo compare nella tabella dei dispositivi una volta abbinato. Se il codice è errato o scaduto, vedrai il messaggio *"Codice di abbinamento non valido"*.
 
 :::tip
-Usare etichette chiare e descrittive rende facile identificare quale dispositivo è quale, specialmente quando hai più schermi configurati nella tua chiesa.
+Assicurati che il dispositivo sia acceso e collegato a internet prima di tentare l'abbinamento. Il codice di abbinamento è mostrato sullo schermo del dispositivo.
 :::
 
-## Gestione dell'accesso dei dispositivi
+## Modificare l'etichetta di un dispositivo {#editing-a-device-label}
 
-Usa la pagina Dispositivi per tenere traccia di quali dispositivi hanno accesso allo streaming e ai contenuti della tua chiesa. Se un dispositivo non è più in uso, puoi rimuoverlo dal tuo account per mantenere il tuo elenco di dispositivi pulito e sicuro.
+1. Clicca su **Modifica** accanto al dispositivo nella tabella dei dispositivi.
+2. Aggiorna l'**Etichetta** con un nome descrittivo (ad esempio, "Schermo principale del santuario" oppure "Display dell'atrio").
+3. Clicca su **Salva**.
+
+Il modulo **Modifica dispositivo** contiene anche un elenco **Contenuti associati** delle aule di Lessons.church della tua chiesa. Seleziona un'aula per associarla allo schermo: ogni casella viene salvata appena la selezioni.
+
+:::tip
+Usare etichette chiare e descrittive rende facile capire quale dispositivo è quale, soprattutto quando hai più schermi nella tua chiesa.
+:::
+
+## Gestire l'accesso dei dispositivi {#managing-device-access}
+
+Usa la pagina Dispositivi per tenere traccia di quali dispositivi hanno accesso alle trasmissioni e ai contenuti della tua chiesa. Se un dispositivo non è più in uso, rimuovilo dal tuo account:
+
+1. Clicca su **Modifica** accanto al dispositivo.
+2. Clicca su **Rimuovi**, poi di nuovo su **Rimuovi** per confermare.
+
+Lo schermo avrà bisogno di un nuovo codice di abbinamento per collegarsi di nuovo.
 
 :::warning
-Rivedi regolarmente i tuoi dispositivi collegati per assicurarti che solo dispositivi attivi e autorizzati siano collegati al tuo account. Rimuovi qualsiasi dispositivo non più in uso per mantenere la sicurezza.
+Controlla regolarmente i dispositivi collegati per assicurarti che solo i dispositivi attivi e autorizzati siano collegati al tuo account. Rimuovi quelli non più in uso per mantenere la sicurezza.
 :::
 
-## Prossimi passi
+## Passaggi successivi {#next-steps}
 
-- [Gestione del tuo profilo](./managing-profile.md) -- Modifica le impostazioni del tuo account personale
+- [Gestire il tuo profilo](./managing-profile.md) -- Modifica le impostazioni personali del tuo account

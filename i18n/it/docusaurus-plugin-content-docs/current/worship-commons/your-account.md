@@ -60,7 +60,7 @@ Per un canto pubblicato, fai clic su **Copia link** per condividere la sua pagin
 Se il team di WorshipCommons ti aggiunge come co-editore di un canto -- ad esempio un canto che hai scritto insieme a qualcun altro che lo ha caricato -- questo compare in **I miei invii** come **Pubblicato**, anche se non sei stato tu a inviarlo. In qualità di editore del canto, puoi apportare modifiche anche quando la sua licenza ne impedisce le modifiche pubbliche.
 :::
 
-## Pagine degli autori
+## Pagine degli autori {#writer-pages}
 
 Ogni autore presente nella libreria ha una pagina che elenca i suoi canti, con l'anno, la tonalità, i temi e la licenza di ciascun canto. Le chiese vi accedono facendo clic sul nome di un autore in una pagina di un canto. Quando un canto ha più autori, ogni nome rimanda alla propria pagina.
 

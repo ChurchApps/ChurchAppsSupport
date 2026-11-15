@@ -1,60 +1,60 @@
 ---
 title: "Demografía"
-description: "Consulta la edad, género, membresía, estado civil y campus de tu congregación en los gráficos interactivos de B1 Admin, y profundiza en cualquier grupo."
+description: "Vea la composición de su congregación por edad, género, tipo de membresía, estado civil y campus en los gráficos interactivos de B1 Admin, y profundice en cualquier grupo."
 ---
 
 # Demografía
 
 <div class="article-intro">
 
-El panel de **Demografía** te ofrece una vista visual de tu congregación: quiénes son, cuántos son y cómo se distribuyen los miembros por grupos de edad, géneros, estados civiles y campus. Cada gráfico es interactivo: haz clic en cualquier segmento para ir directamente a una búsqueda filtrada de Personas que muestre exactamente a esas personas.
+El panel de **Demographics** le ofrece una vista visual de su congregación: quiénes son, cuántos son y cómo se distribuye su membresía por grupos de edad, géneros, estados civiles y campus. Cada gráfico es interactivo: haga clic en cualquier segmento para ir directamente a una búsqueda filtrada de People que muestra exactamente esas personas.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de empezar</h4>
+<h4>Antes de comenzar</h4>
 
-- Deben existir personas en tu directorio. Consulta [Agregar personas](./adding-people.md) o [Importar datos](./importing-data.md) para comenzar.
-- Para ver el gráfico de Campus, primero necesitas tener campus configurados en [Configuración → Campus](../settings/campuses.md).
+- Las personas deben existir en su directorio. Consulte [Cómo agregar personas](./adding-people.md) o [Importar datos](./importing-data.md) para empezar.
+- Para desglosar el gráfico de Campus por campus, primero necesita tener los campus configurados en [Configuración → Campus](../settings/campuses.md).
 
 </div>
 
-## Abrir Demografía
+## Cómo abrir Demographics {#opening-demographics}
 
-Desde la página de **Personas**, haz clic en **Demografía** en el encabezado de la página. La página muestra el total de personas en la parte superior, seguido de los gráficos que se describen a continuación.
+Desde la página **People**, haga clic en **Demographics** en el encabezado de la página. La página muestra en la parte superior su total de personas (**Total**), seguido de los gráficos que se describen a continuación. Cada gráfico de dona también muestra su total debajo. Haga clic en **People** en la parte superior derecha para volver al directorio.
 
-## Gráficos
+## Gráficos {#charts}
 
-### Distribución por edad
+### Edad {#age}
 
-Un gráfico de barras agrupadas que muestra cuántas personas caen en cada rango de edad (por ejemplo, 0–9, 10–17, 18–24, y así sucesivamente hasta 65+). Cada barra se divide en tres series: **Mujeres**, **Hombres** y **Sin asignar**, para que puedas ver de un vistazo la distribución por género dentro de cada grupo de edad.
+Un gráfico de barras apiladas que muestra cuántas personas caen en cada rango de edad: 0–3, 4–11, 12–18, 19–25, 26–35, 36–50, 51–64 y 65+. Cada barra se divide por género: **Female**, **Male** y, cuando alguien en ese rango no tiene género registrado, **Unassigned**, para que pueda ver de un vistazo la distribución por género dentro de cada grupo de edad. Las personas sin fecha de nacimiento no se cuentan en este gráfico.
 
-### Estado de membresía
+### Membership Types {#membership-types}
 
-Un gráfico de dona que desglosa tu congregación por estado de membresía (por ejemplo, Miembro, Asistente regular, Visitante, etc.).
+Un gráfico de dona que desglosa su congregación por estado de membresía (por ejemplo, Member, Regular Attendee, Visitor, etc.). Las personas sin estado aparecen como **Unassigned**.
 
-### Género
+### Gender {#gender}
 
-Un gráfico de dona que muestra la proporción de registros de mujeres, hombres y sin asignar en tu directorio.
+Un gráfico de dona que muestra la proporción de registros femeninos, masculinos y sin asignar en su directorio.
 
-### Estado civil
+### Marital Status {#marital-status}
 
-Un gráfico de dona que muestra la distribución entre los valores de estado civil (por ejemplo, Casado, Soltero, Viudo).
+Un gráfico de dona que muestra la distribución entre los valores de estado civil (por ejemplo, Married, Single, Widowed).
 
-### Campus
+### Campus {#campus}
 
-Un gráfico de dona que muestra cómo se distribuyen las personas entre los campus de tu iglesia. Este gráfico solo aparece si tienes campus configurados y al menos una persona asignada a un campus. Las personas sin campus asignado aparecen como **Sin asignar**.
+Un gráfico de dona que muestra cómo se distribuyen las personas entre los campus de su iglesia. Las personas sin campus asignado aparecen como **Unassigned**, así que una iglesia sin campus ve una sola porción **Unassigned**.
 
-## Explorar los datos
+## Cómo profundizar en los datos {#drilling-into-the-data}
 
-Haz clic en cualquier porción de un gráfico de dona o en cualquier segmento de barra del gráfico de edades para ir a la página de **Personas** prefiltrada con exactamente esas personas. El filtro permanece aplicado cuando la página termina de cargar, y el conteo sobre la lista muestra cuántos hogares y personas coinciden. Úsalo para crear rápidamente una lista de contactos, ejecutar una acción masiva o exportar un segmento; por ejemplo, haz clic en la porción **Visitante** del gráfico de Estado de membresía para ver a todos los visitantes y luego enviarlos a un flujo de trabajo.
+Haga clic en cualquier porción de un gráfico de dona (o en su nombre en la leyenda) o en cualquier segmento de barra del gráfico de edad para ir a la página **People** prefiltrada con exactamente esas personas. El filtro permanece aplicado cuando la página termina de cargar, y el conteo sobre la lista muestra cuántos hogares y personas coinciden. Use esto para crear rápidamente una lista de contactos, ejecutar una acción masiva o exportar un segmento; por ejemplo, haga clic en la porción **Visitor** de Membership Status para ver a todos los visitantes y luego enviarlos a un flujo de trabajo.
 
 :::tip
-Después de explorar un resultado filtrado, usa **Guardar como lista** en la búsqueda de Personas para guardar ese filtro para uso futuro. Consulta [Listas guardadas](./lists.md).
+Después de profundizar en un resultado filtrado, use **Save as List** en la búsqueda de People para guardar ese filtro para usarlo en el futuro. Consulte [Listas guardadas](./lists.md).
 :::
 
-## Artículos relacionados
+## Artículos relacionados {#related-articles}
 
-- [Buscar personas](./searching-people.md): la página de Personas a la que llegas al explorar un gráfico
-- [Listas guardadas](./lists.md): guarda un segmento demográfico como lista reutilizable
-- [Campus](../settings/campuses.md): configura los campus para que aparezca el gráfico de Campus
+- [Búsqueda de personas](./searching-people.md): la página People a la que llega al profundizar en un gráfico
+- [Listas guardadas](./lists.md): guarde un segmento demográfico como lista reutilizable
+- [Campus](../settings/campuses.md): configure los campus para que aparezca el gráfico de Campus

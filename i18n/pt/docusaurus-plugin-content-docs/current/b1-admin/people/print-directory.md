@@ -1,90 +1,91 @@
 ---
-title: "Imprimir Diretório"
-description: "Gere um diretório de membros para impressão, agrupado por domicílio, com fotos, contatos e aniversários, no formato carta, pelo B1 Admin."
+title: "Diretório impresso"
+description: "Gere um diretório de membros imprimível, agrupado por domicílio, com fotos, dados de contato e aniversários, no formato carta, pelo B1 Admin."
 ---
 
-# Imprimir Diretório
+# Diretório impresso
 
 <div class="article-intro">
 
-O recurso Print Directory gera um diretório de membros formatado e imprimível para sua igreja. Organiza membros por família, inclui informações de contato e fotos, e é projetado para parecer profissional quando impresso em papel de tamanho padrão.
+O recurso Diretório impresso gera um diretório de membros formatado e imprimível para a sua igreja. Ele organiza os membros por domicílio, inclui dados de contato e fotos e foi desenhado para ter boa aparência quando impresso em papel carta padrão.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Começar</h4>
+<h4>Antes de começar</h4>
 
-- Você precisa de uma conta B1 Admin ativa com permissão para visualizar pessoas.
-- Pessoas em seu diretório devem ter fotos e informações de contato preenchidas para melhores resultados.
+- Você precisa de uma conta ativa no B1 Admin com permissão para visualizar pessoas.
+- As pessoas do seu diretório devem ter fotos e dados de contato preenchidos para obter os melhores resultados.
 
 </div>
 
-## Abrindo o Imprimir Diretório
+## Abrindo o diretório impresso {#opening-the-print-directory}
 
-1. Navegue até **Pessoas** em B1 Admin.
-2. Clique em **Imprimir Diretório** no cabeçalho da página Pessoas.
-3. O Print Directory abre em uma nova aba do navegador e começa a carregar dados do seu diretório.
-4. Após cerca de 1,5 segundos, o diálogo de impressão do seu navegador aparecerá automaticamente.
+1. Acesse **Pessoas** no B1 Admin.
+2. Clique em **Diretório impresso** no cabeçalho da página Pessoas.
+3. O diretório impresso abre em uma nova aba do navegador e começa a carregar os dados do diretório.
+4. Após cerca de 1,5 segundo, a caixa de diálogo de impressão do navegador aparecerá automaticamente.
 
 :::tip
-O diretório abre em uma aba separada para que você possa imprimi-lo sem sair da página de Pessoas. Após o diálogo de impressão aparecer, a aba navega de volta automaticamente.
+O diretório abre em uma aba separada, para que você possa imprimi-lo sem sair da página Pessoas. Depois que a caixa de diálogo de impressão for fechada, essa aba volta para a página Pessoas, e você pode fechá-la ou continuar trabalhando ali.
 :::
 
-## O Que Está Incluído
+## O que é incluído {#what-gets-included}
 
 O diretório impresso inclui todos os **membros ativos** da sua igreja. Especificamente:
 
-- Pessoas com status de filiação **Inactive**, **Visitor** ou **Deceased** são automaticamente excluídas.
-- Pessoas que **optaram por não participar** do diretório são excluídas.
-- Todos os outros estão agrupados por **família**.
+- Pessoas com situação de membro **Inativo**, **Visitante** ou **Falecido** são excluídas automaticamente.
+- Pessoas que **optaram por sair** do diretório são excluídas.
+- Todas as demais são agrupadas por **domicílio**.
 
-### Imprimindo Apenas Seus Resultados de Pesquisa
+### Imprimindo apenas os resultados da sua pesquisa {#printing-only-your-search-results}
 
-Após você executar uma pesquisa na página de Pessoas — uma pesquisa rápida, uma [Pesquisa Avançada](./searching-people.md#advanced-search), uma [Lista Salva](./lists.md) ou uma [Pesquisa por IA](./ai-search.md) — o botão **Imprimir Diretório** muda para **Print Results**. Clicando nele imprime um diretório de apenas as pessoas em seus resultados em vez de toda a igreja, usando o mesmo layout.
+Depois de fazer uma pesquisa na página Pessoas -- uma pesquisa rápida, uma [Pesquisa avançada](./searching-people.md#advanced-search), uma [Lista salva](./lists.md) ou uma [Pesquisa com IA](./ai-search.md) --, o botão **Diretório impresso** muda para **Imprimir resultados**. Clicando nele, você imprime um diretório apenas com as pessoas dos seus resultados, em vez da igreja inteira, usando o mesmo layout.
 
-Ao imprimir resultados de pesquisa, o filtro de status de filiação acima não se aplica: todos que você pesquisou estão incluídos, mesmo Visitantes ou pessoas Inativas. Pessoas que optaram por não participar do diretório ainda são deixadas de fora. Para voltar a imprimir o diretório completo, limpe sua pesquisa primeiro.
+Ao imprimir resultados de pesquisa, o filtro de situação de membro acima não se aplica: todas as pessoas pesquisadas são incluídas, mesmo Visitantes ou pessoas Inativas. Pessoas que optaram por sair do diretório continuam de fora. Para voltar a imprimir o diretório completo, limpe a pesquisa primeiro.
 
-## Layout do Diretório
+## Layout do diretório {#directory-layout}
 
 O diretório impresso tem duas partes:
 
-### Página de Capa
+### Página de capa {#cover-page}
 
 A primeira página inclui:
+- O logotipo da sua igreja, se houver um cadastrado
 - O nome da sua igreja
-- O título "Member Directory"
+- O título "Diretório de membros"
 - O ano atual
-- A localização da sua igreja
-- Uma contagem de famílias totais incluídas
+- A cidade e o estado da sua igreja
+- A data de impressão e a contagem de domicílios incluídos
 
-### Listagens de Membros
+### Listagem de membros {#member-listings}
 
-As páginas restantes listam famílias alfabeticamente pelo sobrenome. Cada cartão de família mostra:
+As páginas seguintes listam os domicílios em ordem alfabética pelo sobrenome. Cada cartão de domicílio mostra:
 
-- **Fotos** — Miniaturas circulares para cada membro da família, com seu nome abaixo
-- **Nome de exibição da família** — Por exemplo, "The Smith Family", "John & Jane Doe" ou apenas o nome da pessoa para indivíduos
-- **Endereço** — Endereço de rua, cidade, estado e CEP
-- **Telefone** — Número de casa ou celular
-- **Email** — Endereço de email principal
-- **Aniversários** — Formatado como datas individuais para cada membro da família
-- **Aniversário de Casamento** — Se registrado
+- **Fotos** -- Miniaturas circulares de cada membro do domicílio, com o nome abaixo
+- **Nome de exibição do domicílio** -- Por exemplo, "Família Silva", "João & Maria Souza", ou apenas o nome da pessoa, no caso de indivíduos
+- **Endereço** -- Logradouro, cidade, estado e CEP
+- **Telefone** -- O telefone residencial ou, se ninguém no domicílio tiver telefone residencial, um celular
+- **E-mail** -- Endereço de e-mail principal
+- **Aniversários** -- O primeiro nome e o aniversário (dia e mês) de cada membro
+- **Aniversário de casamento** -- Se estiver registrado
 
-As famílias são organizadas em **seções alfabéticas** (A, B, C, ...) com um cabeçalho de seção decorativo antes de cada grupo de letras. Dois cartões de família aparecem lado a lado em cada linha.
+Os domicílios são organizados em **seções alfabéticas** (A, B, C, ...), com um cabeçalho decorativo antes de cada grupo de letra. Dois cartões de domicílio aparecem lado a lado em cada linha.
 
-## Configurações de Impressão
+## Configurações de impressão {#print-settings}
 
-O diretório é formatado para **papel tamanho carta** (8.5" × 11") com margens de 0,5 polegada. Quando o diálogo de impressão do navegador aparecer:
+O diretório é formatado para papel **carta** (8,5" × 11") com margens de 0,5 polegada. Quando a caixa de diálogo de impressão do navegador aparecer:
 
-- Deixe o tamanho do papel definido como **Letter**
-- Ative **Background graphics** (às vezes chamado de "Print backgrounds") nas configurações de impressão do seu navegador se você quiser que os cabeçalhos de seção sejam impressos com seu estilo de cor
-- A orientação retrato é recomendada
+- Mantenha o tamanho do papel em **Carta**
+- Ative **Gráficos de fundo** (às vezes chamado de "Imprimir plano de fundo") nas configurações de impressão do navegador, se quiser que os cabeçalhos de seção sejam impressos com a cor deles
+- Recomenda-se a orientação retrato
 
 :::info
-O diretório respeita quebras de página — cartões de família e cabeçalhos de seção não serão divididos entre páginas.
+O diretório respeita as quebras de página -- os cartões de domicílio e os cabeçalhos de seção não são divididos entre páginas.
 :::
 
-## Artigos Relacionados
+## Artigos relacionados {#related-articles}
 
-- [Pesquisando Pessoas](./searching-people.md) — Filtre seu diretório antes de imprimir
-- [Exportando Dados](./exporting-data.md) — Exporte dados do diretório como uma planilha
-- [Adicionando Pessoas](./adding-people.md) — Adicione ou atualize registros de membros
+- [Pesquisando pessoas](./searching-people.md) -- filtre o seu diretório antes de imprimir
+- [Exportando dados](./exporting-data.md) -- exporte os dados do diretório como planilha
+- [Como adicionar pessoas](./adding-people.md) -- adicione ou atualize registros de membros

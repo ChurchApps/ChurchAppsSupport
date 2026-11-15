@@ -61,7 +61,7 @@ Ne conserver les identifiants masqués que lors de la modification du même four
 
 Limiter chaque chargement ou mise à jour au compte B1 authentifié de l'église. Lier les rappels à une intégration enregistrée et au compte, au service ou à l'expéditeur Twilio attendu, et rejeter les affectations contradictoires entre églises. La rotation des identifiants et la déconnexion d'un fournisseur doivent invalider l'état de disponibilité et suspendre les envois en file d'attente, sans effacer le consentement ni l'historique de livraison.
 
-## Le consentement et la suppression sont un travail obligatoire avant mise en production
+## Le consentement et la suppression sont un travail obligatoire avant mise en production {#consent-and-suppression-are-required-release-work}
 
 Introduire des enregistrements d'abonnement liés au téléphone pour le programme Twilio, ainsi que des événements de consentement et de suppression en ajout seul. Le minimum de preuves suggéré est : ID de l'église, ID du programme, téléphone normalisé, association facultative et vérifiée avec une personne, action affirmative, ID du formulaire ou de la soumission source (ou preuve externe examinée), horodatage serveur, texte et version de la mention d'information, URL source, URL des politiques, et événements de retrait ou de reprise. Limiter l'accès et la conservation selon la politique existante de sécurité des données de l'église.
 

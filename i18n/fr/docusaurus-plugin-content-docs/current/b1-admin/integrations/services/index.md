@@ -1,53 +1,53 @@
 ---
 title: "Services connectés"
-description: "Reliez B1 Admin à Mailchimp, Donorbox, Subsplash, VOMO, Clearstream et d'autres outils à l'aide des recettes Zapier ou Make, avec un guide de configuration pour chacun."
+description: "Connectez B1 Admin à Mailchimp, Donorbox, Subsplash, VOMO, Clearstream et d'autres outils grâce aux recettes Zapier ou Make, avec un guide de configuration pour chacun."
 ---
 
 # Services connectés
 
 <div class="article-intro">
 
-La façon la plus rapide de connecter B1 à un autre outil de technologie d'église est généralement une recette Zapier ou Make — vous n'avez pas besoin d'une nouvelle infrastructure B1, et le tiers héberge le workflow. Cette page est une liste organisée de services que nous avons confirmés comme filables aujourd'hui, avec un court guide de configuration copier-coller pour chacun.
+Le moyen le plus rapide de relier B1 à un autre outil technologique d'église est généralement une recette Zapier ou Make : vous n'avez besoin d'aucune nouvelle infrastructure B1, et le tiers héberge le flux de travail. Cette page présente une liste sélectionnée de services dont nous avons confirmé qu'ils peuvent être reliés dès aujourd'hui, avec un guide de configuration court à copier-coller pour chacun.
 
 </div>
 
-## En un coup d'œil
+## En bref {#at-a-glance}
 
-| Service | Catégorie | Pont | Ce que vous pouvez connecter |
+| Service | Catégorie | Passerelle | Ce que vous pouvez relier |
 |---|---|---|---|
-| [Mailchimp](./mailchimp.md) | Email | Zapier ou Make | Synchroniser les nouvelles personnes B1 / donateurs dans une audience Mailchimp |
-| [Donorbox](./donorbox.md) | Donations | Zapier | Repousser les donations et donateurs Donorbox dans B1 |
-| [Subsplash](./subsplash.md) | App / Donations | Zapier | Tirer les donations et personnes Subsplash dans B1 |
+| [Mailchimp](./mailchimp.md) | Courriel | Intégrée à B1 (onglet Webhooks) | Maintenir une audience Mailchimp synchronisée avec les personnes, groupes et listes enregistrées de B1 |
+| [Donorbox](./donorbox.md) | Dons | Zapier | Renvoyer les dons et donateurs Donorbox vers B1 |
+| [Subsplash](./subsplash.md) | Application / Dons | Zapier | Importer les dons et les personnes de Subsplash dans B1 |
 | [VOMO](./vomo.md) | Bénévolat | Zapier | Synchroniser les inscriptions de bénévoles entre les groupes B1 et les projets VOMO |
-| [Clearstream](./clearstream.md) | SMS | Zapier | Déclencher un texte Clearstream à partir des événements B1; ingérer les réponses en tant que dossiers B1 |
-| [Text In Church](./text-in-church.md) | SMS / Workflows | Zapier | Déclencher les workflows Text In Church à partir de B1; recevoir les données Connect Card |
-| [Mobile Message](./mobile-message.md) | SMS (AU) | Webhooks by Zapier ou Make | Envoyer des SMS à partir de n'importe quel événement B1 |
-| [Checkr](./checkr.md) | Vérifications d'antécédents | Make | Déclencher une vérification d'antécédents quand quelqu'un rejoint une équipe de service |
+| [Clearstream](./clearstream.md) | SMS | Zapier | Déclencher un SMS Clearstream à partir d'événements B1 ; intégrer les réponses comme enregistrements B1 |
+| [Text In Church](./text-in-church.md) | SMS / Flux de travail | Zapier | Déclencher des flux de travail Text In Church depuis B1 ; recevoir les données de la fiche de contact |
+| [Mobile Message](./mobile-message.md) | SMS (Australie) | Webhooks by Zapier ou Make | Envoyer des SMS à partir de n'importe quel événement B1 |
+| [Checkr](./checkr.md) | Vérifications d'antécédents | Make | Lancer une vérification d'antécédents lorsqu'une personne rejoint une équipe de service |
 
-## Ce que tous ces éléments ont en commun
+## Ce que tous ces services ont en commun {#what-all-of-these-have-in-common}
 
-1. **Le côté B1 du câblage est identique** — créez une clé API avec les bons scopes dans **B1Admin → Paramètres → Développeur → Clés API**, puis soit laissez le pont enregistrer un webhook pour le déclencheur (Zapier / Make font cela automatiquement, nécessitent `settings:write`) ou appelez les points de terminaison REST B1 à partir d'une action en aval.
-2. **Le pont vous facture, pas nous.** ChurchApps est gratuit; Zapier et Make ont tous deux des niveaux gratuits qui couvrent une poignée de recettes.
-3. **Vous pouvez tester le câblage sans aller en direct.** Les deux ponts ont un bouton « Étape de test » qui déclenche le déclencheur une fois contre B1 et vous montre la forme des données avant que vous n'activiez la recette.
+1. **Le volet B1 de la liaison est identique** — créez une clé API avec les bonnes portées dans **B1Admin → Paramètres → Développeur → Clés API**, puis laissez soit la passerelle enregistrer un webhook pour le déclencheur (Zapier / Make le font automatiquement, avec `settings:write`), soit appelez les points de terminaison REST de B1 depuis une action en aval. L'application Zapier de B1.church exige `settings:write` sur chaque clé, car elle vérifie la clé par rapport à la liste des webhooks de B1 lors de la connexion. (Mailchimp fait exception : sa synchronisation est intégrée à B1 et se configure dans l'onglet **Webhooks**, sans clé API ni passerelle.)
+2. **La passerelle vous facture, pas nous.** ChurchApps est gratuit ; Zapier et Make proposent tous deux des offres gratuites qui couvrent quelques recettes.
+3. **Vous pouvez tester la liaison sans la mettre en production.** Zapier dispose d'un bouton « Tester l'étape » qui récupère des données d'exemple depuis B1 et vous montre la structure des données avant d'activer la recette.
 
-## Choisir un pont
+## Choisir une passerelle {#picking-a-bridge}
 
-- **Zapier** est plus convivial et a le plus grand catalogue d'applications — utilisez-le par défaut sauf si le coût est un problème.
-- **Make** est moins cher à grande échelle et a une logique de routage/filtrage plus flexible — utilisez-le quand un seul workflow a fan-out, des conditions, ou beaucoup d'étapes.
-- **Webhooks by Zapier** (utilisé pour le doc Mobile Message) est un adaptateur générique qui vous permet de POSTER à n'importe quel point de terminaison HTTP d'un Zap quand la destination n'est pas une application Zapier de première classe.
+- **Zapier** est plus convivial et propose un catalogue d'applications plus vaste — utilisez-le par défaut, sauf si le coût pose problème.
+- **Make** est moins cher à grande échelle et offre une logique de routage et de filtrage plus souple — utilisez-le lorsqu'un flux de travail comporte des ramifications, des conditions ou de nombreuses étapes.
+- **Webhooks by Zapier** (utilisé pour la documentation Mobile Message) est un adaptateur générique qui vous permet d'envoyer des requêtes POST vers n'importe quel point de terminaison HTTP depuis un Zap lorsque la destination n'est pas une application Zapier de premier plan.
 
-Si vous voulez quelque chose qui n'est pas sur cette liste, l'[API REST](/docs/developer/api) et les [webhooks](/docs/developer/api/webhooks) de B1 sont ouverts — vous pouvez construire un pont unique avec le [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk) en quelques heures.
+Si vous cherchez quelque chose qui ne figure pas dans cette liste, l'[API REST](/docs/developer/api) et les [webhooks](/docs/developer/api/webhooks) de B1 sont ouverts : vous pouvez créer une passerelle sur mesure avec le [`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk) en quelques heures.
 
-## Ce qui n'est pas ici (et pourquoi)
+## Ce qui ne figure pas ici (et pourquoi) {#whats-not-here-and-why}
 
-Plusieurs outils de technologie d'église populaires — Tithe.ly, Pushpay, Vanco, PastorsLine, Gloo, Notebird, KidCheck, MinistrySafe — n'ont pas d'application Zapier ou de module Make publiés aujourd'hui. Ils ont leurs propres API mais les connecter à B1 est un travail de code personnalisé, pas une recette, donc ils ne rentrent pas dans cette liste. Si un vendeur ajoute une application Zapier ou un module Make, nous ajouterons le doc.
+Plusieurs outils technologiques d'église populaires — Tithe.ly, Pushpay, Vanco, PastorsLine, Gloo, Notebird, KidCheck, MinistrySafe — ne disposent pas, à ce jour, d'application Zapier ou de module Make publié. Ils ont leurs propres API, mais les relier à B1 relève d'un développement sur mesure et non d'une simple recette ; ils ne correspondent donc pas à cette liste. Si un éditeur ajoute une application Zapier ou un module Make, nous ajouterons la documentation correspondante.
 
-Nous avons aussi délibérément ignoré les outils spécifiques à Planning Center-Services (musique, présentation), les produits ChMS concurrents, les consultants en migration, et les outils qui ne nettoient que les données spécifiques à PCO — aucun d'eux n'a un chemin de câblage utile dans B1.
+Nous avons aussi délibérément écarté les outils propres à Planning Center Services (musique, présentation), les logiciels concurrents de gestion de la vie de l'église, les consultants en migration et les outils qui ne nettoient que les données spécifiques à PCO — aucun d'entre eux n'offre de liaison utile avec B1.
 
-## Voir aussi
+## Voir aussi {#see-also}
 
-- [Zapier (aperçu)](../zapier.md) — le côté B1 de chaque recette Zapier est identique; ce doc le couvre une fois
-- [Make (aperçu)](../make.md) — idem pour les scénarios Make
-- [Slack & Discord](../slack-discord.md) — notifications de chat sans aucun pont
-- [Google Sheets](../google-sheets.md) — exports à la demande
-- [Webhooks (référence développeur)](/docs/developer/api/webhooks) — le catalogue d'événements sur lequel chaque recette s'appuie
+- [Zapier (présentation)](../zapier.md) — le volet B1 de chaque recette Zapier est identique ; cette documentation le couvre une seule fois
+- [Make (présentation)](../make.md) — idem pour les scénarios Make
+- [Slack et Discord](../slack-discord.md) — notifications de messagerie sans aucune passerelle
+- [Google Sheets](../google-sheets.md) — exportations à la demande
+- [Webhooks (référence développeur)](/docs/developer/api/webhooks) — le catalogue d'événements sur lequel repose chaque recette

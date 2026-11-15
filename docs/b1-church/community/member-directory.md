@@ -37,7 +37,7 @@ Members are grouped under letter headings (A, B, C, and so on) by the first lett
 
 Tap any member in the list to open their profile. The profile shows the member's name, photo, and membership status, with buttons to **Message** them, **Call** them (their mobile phone, or their home phone if there's no mobile number), or send a **Text** (mobile phone only) when that information is available. Below that, the **Contact Information** section shows the details your church and the member have chosen to share, such as email, phone, and address, and **Household Members** lists the other people in their household. Tap the email address to write them an email, or the address to open it in Google Maps. If they haven't shared any contact details with you, you'll see "Contact info not available".
 
-**Message** opens a private conversation with that person -- see [Messages and Notifications](./messages.md). You can make text bold or italic, or add a list, by highlighting it and using the toolbar that appears -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
+**Message** opens a private conversation with that person -- see [Messages and Notifications](./messages.md). You can make text bold or italic, or add a list, by highlighting it and using the row of buttons under the message box -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
 
 You can tap household members within a profile to navigate to their profiles as well. On your own profile, an **Edit profile** button takes you to [Editing Your Profile](../getting-started/editing-your-profile.md) in place of the **Message**, **Call**, and **Text** buttons.
 

@@ -73,7 +73,7 @@ Die Erstellungsantwort – **und nur** die Erstellungsantwort – enthält das `
 | `GET /membership/webhooks/deliveries/:deliveryId` | Vollständige Nutzlast und Antwort für eine Zustellung |
 | `POST /membership/webhooks/deliveries/:deliveryId/redeliver` | Eine Zustellung erneut in die Warteschlange stellen |
 
-## Ereigniskatalog
+## Ereigniskatalog {#event-catalog}
 
 Ereignisnamen folgen dem Muster `{entity}.{action}`. Rufen Sie die Live-Liste aus `GET /membership/webhooks/events` ab.
 
@@ -189,7 +189,7 @@ function isValid(string $rawBody, string $signatureHeader, string $secret): bool
 
 Lehnen Sie jede Anfrage ab, deren Signatur nicht übereinstimmt. Optional lehnen Sie auch Anfragen ab, deren `X-B1-Timestamp` älter als einige Minuten ist, um Replay-Fenster zu begrenzen.
 
-## SDK-Unterstützung
+## SDK-Unterstützung {#sdk-support}
 
 Für Node.js versand `@churchapps/integration-sdk` ein typisierter Verifizier und eine Express-Middleware, die die Erfassung des rohen Texts, die Signaturprüfung und das Umschlag-Parsing für Sie handhabt:
 

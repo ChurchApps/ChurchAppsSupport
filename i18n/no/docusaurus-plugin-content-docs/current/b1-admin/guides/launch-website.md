@@ -1,91 +1,102 @@
 ---
-title: "Veiledning: Start kirchens nettsted"
-description: "Sett opp en menighetsnettside i B1 Admin: bygg startsiden, tilpass farger og logo, legg til sentrale sider, koble til eget domene og legg til givingskjemaer."
+title: "Veiledning: Lansere menighetens nettsted"
+description: "Sett opp et menighetsnettsted i B1 Admin: bygg forsiden, tilpass farger og logo, legg til sentrale sider, koble til eget domene og legg til skjemaer for giving."
 ---
 
-# Start kirchens nettsted
+# Lansere menighetens nettsted
 
 <div class="article-intro">
 
-B1.church inkluderer en full nettstedbygger uten ekstra kostnader. Denne veiledningen leder deg gjennom opprettelse av kirchens nettsted fra bunnen av -- innstilling av hjemmesiden, konfigurering av utseende og følelse, tillegg av nøkkelsider, og valgfritt tilkobling av online donasjon og eventregistreringsskjemaer.
+B1.church inkluderer en fullstendig nettsidebygger uten ekstra kostnad. Denne veiledningen går gjennom hvordan du lager menighetens nettsted fra bunnen av – du setter opp forsiden, konfigurerer utseendet, legger til sentrale sider og kobler eventuelt til skjemaer for nettbasert giving og påmelding til arrangementer.
 
 </div>
+
+## Opplæringsvideo {#training-video}
+
+<YouTube id="aA4UahZpmXg" title="Launching Your Church Website in B1" next="Editing Pages and Navigation in B1" nextUrl="/docs/b1-admin/website/page-editor" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Ha kirchens logo klart (PNG med gjennomsiktig bakgrunn fungerer best)
-- Velg 2–3 merkefarger for nettstedet ditt
-- Hvis du bruker et egendefinert domene (f.eks. dinkirke.no), ha tilgang til DNS-leverandøren din (GoDaddy, Cloudflare, osv.)
-- Hvis du vil ha online donasjon på nettstedet ditt, fullfør [Online donasjonoppsett](../donations/online-giving-setup.md) (Stripe) først
+- Ha menighetens logo klar (PNG med gjennomsiktig bakgrunn fungerer best)
+- Velg 2–3 merkevarefarger for nettstedet ditt
+- Hvis du bruker et eget domene (f.eks. yourchurch.com), må du ha tilgang til DNS-leverandøren din (GoDaddy, Cloudflare osv.)
+- Hvis du vil ha nettbasert giving på nettstedet ditt, fullfør først [oppsettet for nettbasert giving](../donations/online-giving-setup.md) (Stripe)
 
 </div>
 
-## Trinn 1: Innledende nettstedsoppsett
+## Steg 1: Førstegangsoppsett av nettstedet {#step-1-initial-website-setup}
 
-Start med å opprette hjemmesiden og den grunnleggende nettstedstrukturen.
+Start med å lage forsiden og den grunnleggende strukturen på nettstedet.
 
-Følg [Innledende nettstedsoppsett](../website/initial-setup.md)-veiledningen for å:
+Følg veiledningen [Førstegangsoppsett av nettsted](../website/initial-setup.md) for å:
 
-1. Navigere til **Nettsted** i B1 Admin
-2. Opprett hjemmesiden med en heltaktseksjon, velkomstmelding og nøkkelinformasjon
-3. Legg til kirchens navn og tagline
-
-## Trinn 2: Konfigurer utseende
-
-Angi nettstedets visuelle identitet -- farger, skrifter, logo og bunntekst.
-
-Følg [Utseende](../website/appearance.md)-veiledningen for å:
-
-1. Last opp kirchens logo
-2. Angi primær og aksent-farger
-3. Konfigurer navigasjonslinjen og bunnteksten
-4. Forhåndsvis endringene dine
+1. I [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) velger du **Website > Pages**
+2. Klikk **Add Page**, velg **Blank**, skriv inn «Home» som **Page Title**, og klikk **Save**. Under **Page Settings** setter du **URL Path** til `/`
+3. Klikk **Edit Content**, legg til en **Section**, og legg deretter til banneret, velkomstmeldingen, menighetens navn og slagord, og annen sentral informasjon
 
 :::tip
-Hold fargepaletten enkel -- en primærfarge pluss en aksent-farge er vanligvis nok. Nettstedbyggeren vil håndtere resten.
+Starter du fra bunnen av? En [nettstedsmal](../website/managing-pages.md#starting-from-a-site-template) lager et sett med ferdige sider (hjem, om oss, koble til, gi og flere) med navigasjonslenker allerede koblet opp – erstatt plassholderinnholdet med ditt eget.
 :::
 
-## Trinn 3: Legg til innholdssider
+## Steg 2: Konfigurer utseendet {#step-2-configure-appearance}
 
-Bygge ut sidene besøkende trenger mest.
+Angi nettstedets visuelle identitet – farger, skrifter, logo og bunntekst.
 
-Følg [Administrer sider](../website/managing-pages.md)-veiledningen for å opprette sider som:
+Følg veiledningen [Utseende](../website/appearance.md) for å:
 
-- **Om** -- Kirchens historie, tro og lederskap
-- **Prekener** -- Lenke til [prekenbiblioteket ditt](../sermons/managing-sermons.md)
-- **Arrangementer** -- Kommende arrangementer og registrering
-- **Doner** -- Online donasjonsside (krever [Stripe-oppsett](../donations/online-giving-setup.md))
-- **Kontakt** -- Plassering, servicetider og kontaktinformasjon
+1. I hurtigmenyen velger du **Website > Appearance**
+2. Under **Logo** laster du opp en **Light Background Logo** og en **Dark Background Logo**
+3. Under **Color Palette** angir du merkevarefargene dine og klikker **Save Palette**, og velger deretter **Fonts**
+4. Bruk **Navigation** til å style navigasjonsfeltet, og **Site Footer** til å bygge bunnteksten som vises på hver side
 
-## Trinn 4: Koble domenet ditt
+:::tip
+Hold fargepaletten enkel – en primærfarge pluss én aksentfarge er vanligvis nok. Nettsidebyggeren tar seg av resten.
+:::
 
-Hvis du vil bruke ditt eget domenenavn (som dinkirke.no) i stedet for standard-B1-URLen:
+## Steg 3: Legg til innholdssider {#step-3-add-content-pages}
 
-1. Gå til **Innstillinger** i B1 Admin og åpne **Domener**-seksjonen
-2. Skriv inn egendefinert domene ditt
-3. Oppdater DNS-oppføringene hos domeneleverandøren din til å peke på B1
+Bygg opp sidene besøkende trenger mest.
+
+Følg veiledningen [Administrere sider](../website/managing-pages.md) for å lage sider som:
+
+- **About** – menighetens historie, tro og ledelse
+- **Sermons** – lenke til [preken-arkivet ditt](../sermons/managing-sermons.md)
+- **Events** – kommende arrangementer og påmelding
+- **Give** – side for nettbasert giving (krever [Stripe-oppsett](../donations/online-giving-setup.md))
+- **Contact** – adresse, gudstjenestetidspunkter og kontaktinformasjon
+
+## Steg 4: Koble til domenet ditt {#step-4-connect-your-domain}
+
+Hvis du vil bruke ditt eget domenenavn (for eksempel yourchurch.com) i stedet for standard B1-adresse:
+
+Følg veiledningen [Eget domene](../settings/custom-domain.md) for å:
+
+1. Hos domeneleverandøren din legger du til en **CNAME**-post for `www` som peker til `proxy.b1.church` (eller en **A**-post for rotdomenet ditt som peker til `3.23.251.61`)
+2. I hurtigmenyen velger du **Settings > Settings**, klikker **Edit** i seksjonen **Domains**, skriver inn domenet ditt og klikker **Save**
 
 :::info
-DNS-endringer kan ta opptil 48 timer å forplante. Nettstedet ditt er kanskje ikke tilgjengelig fra egendefinert domene umiddelbart. Standard B1-URLen vil fortsette å fungere i denne tiden.
+Sett opp DNS først: B1 lagrer domenet med en gang, men nettstedet ditt lastes ikke (og SSL-sertifikatet får ikke utstedt) før DNS peker til B1. DNS-endringer kan ta fra noen minutter til et par timer. Standard B1-adressen fungerer hele tiden.
 :::
 
-## Trinn 5: Legg til donasjon og skjemaer
+## Steg 5: Legg til giving og skjemaer {#step-5-add-giving-and-forms}
 
-Forbedre nettstedet ditt med interaktive elementer:
+Gjør nettstedet ditt mer interaktivt:
 
-- **Online donasjon** -- Legg til en doneringsseksjon slik at medlemmer kan donere direkte fra nettstedet ditt. Se [Online donasjonoppsett](../donations/online-giving-setup.md) for å konfigurere Stripe først.
-- **Registreringsskjemaer** -- Inneby [frittstående skjemaer](../forms/creating-forms.md) for påmeldinger til arrangementer, besøkskort eller frivillig søknader. Se [Administrer sider](../website/managing-pages.md) for hvordan du legger til et skjemaelement på en hvilken som helst side.
+- **Nettbasert giving** – legg til et **Donation**-element slik at medlemmene kan gi direkte fra nettstedet ditt. Se [Oppsett av nettbasert giving](../donations/online-giving-setup.md) for å konfigurere Stripe først.
+- **Påmeldingsskjemaer** – bygg inn [frittstående skjemaer](../forms/creating-forms.md) til påmelding til arrangementer, besøkskort eller frivilligsøknader med elementet **Form**. Se [Sidebygger](../website/page-editor.md) for hvordan du legger til elementer på en hvilken som helst side.
 
-## Du er ferdig!
+## Ferdig! {#youre-done}
 
-Kirchens nettsted er live. Del URLen med menigheten din og på sosiale medier. Du kan oppdatere innhold, legge til nye sider og justere utseendet når som helst fra B1 Admin-instrumentbordet.
+Menighetens nettsted er live. Del adressen med menigheten din og på sosiale medier. Du kan oppdatere innhold, legge til nye sider og justere utseendet når som helst fra seksjonen **Website** i B1 Admin.
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
-- [Innledende nettstedsoppsett](../website/initial-setup.md) -- detaljert oppsettsvandring
-- [Administrer sider](../website/managing-pages.md) -- legg til og rediger sider
-- [Utseende](../website/appearance.md) -- farger, logo og oppsett
-- [Administrer filer](../website/files.md) -- last opp bilder og dokumenter
-- [Online donasjonoppsett](../donations/online-giving-setup.md) -- konfigurer Stripe
-- [Opprett skjemaer](../forms/creating-forms.md) -- bygg registrerings- og spørreundersøkelsesskjemaer
+- [Førstegangsoppsett av nettsted](../website/initial-setup.md) — detaljert gjennomgang av oppsettet
+- [Administrere sider](../website/managing-pages.md) — legg til og rediger sider
+- [Utseende](../website/appearance.md) — farger, logo og layout
+- [Sidebygger](../website/page-editor.md) — legg til seksjoner, tekst, bilder, skjemaer og giving
+- [Eget domene](../settings/custom-domain.md) — bruk din egen webadresse
+- [Administrere filer](../website/files.md) — last opp bilder og dokumenter
+- [Oppsett av nettbasert giving](../donations/online-giving-setup.md) — konfigurer Stripe
+- [Opprette skjemaer](../forms/creating-forms.md) — lag påmeldings- og spørreundersøkelsesskjemaer

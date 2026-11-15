@@ -1,60 +1,64 @@
 ---
-title: "Listas de Reproducción"
-description: "Agrupa tus sermones en series en B1 Admin para que los visitantes de tu sitio web de B1.church puedan explorar y seguir cada serie de sermones en orden."
+title: "Listas de reproducción"
+description: "Agrupe sus sermones en series en B1 Admin para que los visitantes de su sitio web B1.church puedan explorar y seguir cada serie de sermones en orden."
 ---
 
-# Listas de Reproducción
+# Listas de reproducción
 
 <div class="article-intro">
 
-Las listas de reproducción te permiten organizar tus sermones en series o colecciones. Cuando los visitantes exploran tu biblioteca de sermones en tu sitio web de B1.church, las listas de reproducción les ayudan a encontrar y seguir una serie completa de sermones en el orden correcto.
+Las listas de reproducción le permiten organizar sus sermones en series o colecciones. Cuando los visitantes exploran su biblioteca de sermones en su sitio web B1.church, las listas de reproducción les ayudan a encontrar y seguir una serie completa de sermones en el orden correcto.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de empezar</h4>
 
-- Necesitas el permiso **contentApi.streamingServices.edit**. Consulta [Roles y Permisos](../settings/roles-permissions.md) si no tienes acceso.
-- Ten listo un nombre, descripción e imagen en miniatura para tu lista de reproducción
+- Necesita el permiso **Editar servicios** en la sección **Contenido** de su rol. Consulte [Roles y permisos](../settings/roles-permissions.md) si no tiene acceso.
+- Tenga listos un nombre, una descripción y una imagen en miniatura para su lista de reproducción
 
 </div>
 
-## Visualizar Listas de Reproducción
+## Ver las listas de reproducción {#viewing-playlists}
 
-1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Sermones** y haz clic en **Sermones**.
-2. Encuentra el panel **Listas de Reproducción** en la página **Sermones** (junto a la lista de sermones).
-3. Verás una lista de todas tus listas de reproducción existentes con sus nombres y descripciones.
+1. En B1 Admin, abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Sermones** y haga clic en **Sermones**.
+2. Busque el panel **Listas de reproducción** en la página **Sermones** (junto a la lista de sermones).
+3. Verá una lista de todas sus listas de reproducción por nombre, con un recuento junto al encabezado **Listas de reproducción**. Cuando tiene más de cinco, aparece un cuadro **Buscar listas de reproducción...** encima de la lista.
 
-## Crear una Lista de Reproducción
+## Crear una lista de reproducción {#creating-a-playlist}
 
-1. Haz clic en el botón **Crear Primera Lista de Reproducción** (si aún no tienes listas de reproducción) o haz clic en el botón **Añadir lista de reproducción** en el panel **Listas de Reproducción**.
-2. Ingresa un **nombre** para la lista de reproducción -- por ejemplo, el título de la serie de sermones como "Fundamentos de la Fe" o "Verano en los Salmos."
-3. Añade una **descripción** para dar a los visitantes un breve resumen de la serie.
-4. Establece una **fecha de publicación** para controlar cuándo la lista de reproducción se vuelve visible.
-5. Carga una **imagen en miniatura** para representar la serie visualmente.
-6. Haz clic en **Guardar** para crear tu lista de reproducción.
+1. Haga clic en el botón **Crear primera lista de reproducción** (si todavía no tiene ninguna) o en el botón **Agregar lista de reproducción** del panel **Listas de reproducción**. Se abre un formulario **Crear nueva lista de reproducción** encima del panel.
+2. Escriba un **Título de la lista de reproducción**, por ejemplo, el título de la serie de sermones como "Fundamentos de la fe" o "Verano en los Salmos".
+3. Agregue una **Descripción** para dar a los visitantes un breve resumen de la serie.
+4. Establezca una **Fecha de publicación** para controlar cuándo se hace visible la lista de reproducción.
+5. Haga clic en **Agregar miniatura** para subir y recortar una **Imagen en miniatura** que represente visualmente la serie (se recomienda 1280x720 píxeles, 16:9).
+6. Haga clic en **Guardar** para crear su lista de reproducción.
+
+## Editar o eliminar una lista de reproducción {#editing-or-deleting-a-playlist}
+
+Pase el cursor sobre una lista de reproducción en el panel **Listas de reproducción** y haga clic en **Editar**. Cambie cualquiera de los campos (use **Cambiar miniatura** para una imagen nueva) y haga clic en **Guardar**, o haga clic en **Eliminar** y confirme para quitar la lista de reproducción.
 
 :::tip
-Crea tus listas de reproducción primero antes de añadir sermones. De esta manera puedes asignar cada sermón a la lista de reproducción correcta mientras avanzas, en lugar de reorganizar más tarde.
+Cree primero sus listas de reproducción antes de agregar sermones. Así puede asignar cada sermón a la lista correcta a medida que avanza, en lugar de reorganizarlos después.
 :::
 
-## Añadir Sermones a una Lista de Reproducción
+## Agregar sermones a una lista de reproducción {#adding-sermons-to-a-playlist}
 
-Cuando [añadas o edites un sermón](./managing-sermons.md), asignas a una lista de reproducción usando el menú desplegable **Lista de Reproducción**. Todos los sermones asignados a la misma lista de reproducción se agrupan juntos y se muestran en orden en tu sitio web.
+Cuando [agrega o edita un sermón](./managing-sermons.md), lo asigna a una lista de reproducción con el menú desplegable **Lista de reproducción**. Todos los sermones asignados a la misma lista se agrupan y se muestran en orden en su sitio web.
 
 :::info
-También puedes asignar sermones a listas de reproducción durante [Importación Masiva](./bulk-import.md). Cuando importas desde YouTube o Vimeo, selecciona una lista de reproducción del menú desplegable **Importar en Lista de Reproducción** antes de hacer clic en **Importar**.
+También puede asignar sermones a listas de reproducción durante la [Importación masiva](./bulk-import.md). Al importar desde YouTube o Vimeo, seleccione una lista de reproducción en el menú desplegable **Importar a la lista de reproducción** antes de hacer clic en **Importar**.
 :::
 
-## Cómo Aparecen las Listas de Reproducción en Tu Sitio Web
+## Cómo aparecen las listas de reproducción en su sitio web {#how-playlists-appear-on-your-website}
 
-Las listas de reproducción se muestran en tu sitio web de B1.church como colecciones explorables. Los visitantes pueden:
+Las listas de reproducción se muestran en su sitio web B1.church como colecciones que se pueden explorar. Los visitantes pueden:
 
-- Ver todas las series de sermones disponibles de un vistazo
-- Hacer clic en una lista de reproducción para ver todos los sermones de esa serie
-- Ver o escuchar sermones en orden
+- Ver de un vistazo todas las series de sermones disponibles
+- Entrar en una lista de reproducción para ver todos los sermones de esa serie
+- Ver o escuchar los sermones en orden
 
-## Próximos Pasos
+## Próximos pasos {#next-steps}
 
-- [Gestionar Sermones](./managing-sermons.md) -- Añade sermones individuales a tus listas de reproducción
-- [Importación Masiva](./bulk-import.md) -- Importa múltiples sermones y asígnalos a listas de reproducción
+- [Administrar sermones](./managing-sermons.md) -- Agregue sermones individuales a sus listas de reproducción
+- [Importación masiva](./bulk-import.md) -- Importe varios sermones y asígnelos a listas de reproducción

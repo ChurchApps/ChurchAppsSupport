@@ -1,116 +1,120 @@
 ---
 title: "Make"
-description: "将 B1 Admin 连接到 Make 以自动化工作流程：创建 API 密钥、设置 B1.church 触发器和操作，并排查常见错误。"
+description: "将 B1 Admin 连接到 Make 以自动化工作流程：建立 API 密钥、设置 B1.church 触发器与操作，并排除常见错误。"
 ---
 
 # Make
 
 <div class="article-intro">
 
-[Make](https://www.make.com)（以前称为 Integromat）是一个可视化工作流自动化平台 — 在精神上与 Zapier 相似，但逻辑更灵活，规模上成本更低。官方的 B1.church Make 应用让您构建"场景"，即时响应 B1 事件并将记录写回 B1。
+[Make](https://www.make.com)（前身为 Integromat）是一个可视化的工作流程自动化平台——与 Zapier 思路相近，但逻辑更灵活，规模较大时费用也更低。官方的 B1.church Make 应用程序让你可以建立"场景"，即时响应 B1 事件，并将记录写回 B1。
 
 </div>
+
+:::caution 尚未推出
+B1.church Make 应用程序尚未发布到 Make 的应用程序目录中，因此你今天无法在场景中添加下方的 **B1.church** 模块。在此之前，请使用 [Zapier](./zapier.md)，或在 Make 的 **HTTP — Make a request** 模块中，使用 [API 密钥](/docs/developer/api/api-keys)调用 B1 的 [REST API](/docs/developer/api)。以下内容说明的是该应用程序正式推出后的运作方式。
+:::
 
 <div class="prereqs">
-<h4>开始前</h4>
+<h4>开始之前</h4>
 
-- 一个 [Make](https://www.make.com) 账户（免费层覆盖小型工作流）
-- 在 B1Admin 中拥有 **编辑设置** 权限的教会管理员
-- 大致了解您想构建的场景
+- [Make](https://www.make.com) 账户（免费方案即可应付小型工作流程）
+- 在 B1Admin 中具有 **Edit Settings** 权限的教会管理员
+- 对你想建立的场景有一个大致的构想
 
 </div>
 
-## 模块
+## 模块 {#modules}
 
-| 类型 | 功能 | B1 事件/端点 |
+| 类型 | 内容 | B1 事件 / 端点 |
 |---|---|---|
-| **即时触发器** | 观察事件 | 任何订阅的 B1 事件（`person.created`、`donation.created` 等） |
-| **操作** | 创建人员 | 添加一个新人员 |
-| **操作** | 添加捐款 | 记录一个捐款 |
-| **操作** | 添加小组成员 | 将一个人添加到小组 |
-| **搜索** | 搜索人员 | 按名称或电子邮件查找人员 |
+| **Instant Trigger** | Watch Events | 任何已订阅的 B1 事件（`person.created`、`donation.created` 等） |
+| **Action** | Create Person | 新增一位人员 |
+| **Action** | Add Donation | 记录一笔奉献 |
+| **Action** | Add Group Member | 将人员加入小组 |
+| **Search** | Search People | 按姓名或电子邮件查找人员 |
 
-即时触发器让您选择要监听的事件 — 每个场景一个触发器模块，按事件配置。
+即时触发器让你选择要监听的事件——每个场景使用一个触发器模块，并针对每个事件进行设置。
 
-## 设置
+## 设置 {#setup}
 
-### 1. 创建 B1 API 密钥
+### 1. 建立 B1 API 密钥 {#1-create-a-b1-api-key}
 
-1. 在 B1Admin 中转到 **设置 → 开发者 → API 密钥**。
-2. 点击 **新建 API 密钥**，将其命名为"Make"，并授予您需要的 scopes。
-3. **包括 `settings:write`** 如果您的任何场景使用即时触发器 — Make 在场景打开时代表您注册一个 webhook。
-4. 也授予操作模块需要的 scopes（例如添加捐款模块的 `donations:write`）。
+1. 在 B1Admin 中前往 **Settings → Developer → API Keys**。
+2. 点击 **New API Key**，将其命名为"Make"，并授予你所需的权限范围。
+3. 如果你的任何场景使用即时触发器，请**包含 `settings:write`**——开启场景时，Make 会代你注册 webhook。
+4. 同时授予操作模块所需的权限范围（例如 Add Donation 模块需要 `donations:write`）。
 5. 保存并复制 `cak_…` 密钥。
 
-### 2. 安装连接
+### 2. 安装连接 {#2-install-the-connection}
 
-1. 在 Make 中，构建一个新场景并将 **B1.church** 触发器模块放到画布上。
-2. 提示时，**创建连接**。将 API 密钥粘贴到 *API 密钥* 字段中，将 *API 基础 URL* 保留为 `https://api.churchapps.org`（除非您正在测试暂存）。
-3. 点击 **保存** — Make 通过读取您的教会资料来测试密钥。
+1. 在 Make 中建立新场景，并将 **B1.church** 触发器模块拖到画布上。
+2. 出现提示时，**创建连接**。将 API 密钥粘贴到 *API Key* 字段中，并将 *API Base URL* 保留为 `https://api.churchapps.org`（除非你正在测试 staging 环境）。
+3. 点击 **Save**——Make 会通过读取你的教会资料来测试密钥。
 
-连接保存在您的 Make 账户上，并在场景中重用。
+该连接会保存在你的 Make 账户中，并可在各个场景之间重复使用。
 
-### 3. 配置触发器
+### 3. 设置触发器 {#3-configure-the-trigger}
 
-1. 打开 **观察事件** 模块的设置。
-2. 选择您想要的事件 — 例如 `donation.created`。
-3. 保存。Make 生成一个唯一的 webhook URL 并在内部存储它。
+1. 打开 **Watch Events** 模块的设置。
+2. 选择你想要的事件，例如 `donation.created`。
+3. 保存。Make 会生成一个唯一的 webhook 网址，并在内部存储。
 
-### 4. 添加下游模块
+### 4. 添加后续模块 {#4-add-downstream-modules}
 
-将 Make 的数百个应用模块放到画布上 — Mailchimp、Google Sheets、Slack、HubSpot、您自己的 HTTP 端点等。将触发器的输出（`event`、`churchId`、`data.id`、`data.amount` 等）映射到它们的输入字段。Make 的平展/迭代器/路由器/聚合器模块让您构建在 Zapier 中很难做到的分支和并行流。
+将 Make 数百种应用程序模块中的任何一个拖到画布上——Mailchimp、Google Sheets、Slack、HubSpot、你自己的 HTTP 端点等。将触发器的输出（`event`、`churchId`、`data.id`、`data.amount` 等）映射到它们的输入字段。Make 的 flatten / iterator / router / aggregator 模块，让你能够建立在 Zapier 中难以实现的分支与并行流程。
 
-### 5. 打开场景
+### 5. 开启场景 {#5-turn-the-scenario-on}
 
-在场景标题中切换 **激活**。Make 调用 B1 的 `POST /membership/webhooks` 来注册 URL。从那一刻起，每个匹配的 B1 事件实时流过场景。
+在场景标题栏中切换 **Active**。Make 会调用 B1 的 `POST /membership/webhooks` 来注册网址。从那一刻起，每个符合条件的 B1 事件都会即时流经该场景。
 
-关闭场景调用 `DELETE /membership/webhooks/{id}` 以使没有孤立的订阅。
+关闭场景时会调用 `DELETE /membership/webhooks/{id}`，因此不会留下任何孤立的订阅。
 
-## 常见方案
+## 常见范例 {#common-recipes}
 
-### 将捐款同步到 Google Sheet 进行财务审查
+### 将奉献同步到 Google Sheet 供财务审核 {#sync-donations-to-a-google-sheet-for-finance-review}
 
-- **触发器** — B1：观察事件（`donation.created`）
-- **操作** — Google Sheets：添加一行。将 `data.donationDate`、`data.amount`、`data.personId`、`data.method`、`data.batchId` 映射到工作表的列。
+- **触发器**——B1：Watch Events（`donation.created`）
+- **操作**——Google Sheets：Add a Row。将 `data.donationDate`、`data.amount`、`data.personId`、`data.method`、`data.batchId` 映射到工作表的各个栏位中。
 
-### 按捐款金额条件 Slack 通知
+### 依奉献金额条件式发送 Slack 通知 {#conditional-slack-notification-by-donation-amount}
 
-- **触发器** — B1：观察事件（`donation.created`）
-- **路由器**：
-  - 分支 A — 过滤：`data.amount >= 1000` → Slack：发布到 `#major-gifts`
-  - 分支 B — 贯穿 → Slack：发布到 `#donations`
+- **触发器**——B1：Watch Events（`donation.created`）
+- **Router**：
+  - 分支 A——Filter：`data.amount >= 1000` → Slack：发布到 `#major-gifts`
+  - 分支 B——其余情况 → Slack：发布到 `#donations`
 
-### 新人员 → CRM + 欢迎邮件 + Slack
+### 新人员 → CRM + 欢迎电子邮件 + Slack {#new-person--crm--welcome-email--slack}
 
-- **触发器** — B1：观察事件（`person.created`）
-- **操作** — HubSpot：创建联系人
-- **操作** — Mailgun：发送欢迎邮件
-- **操作** — Slack：通知 `#new-people`（并行 — 使用 Make 的路由器）
+- **触发器**——B1：Watch Events（`person.created`）
+- **操作**——HubSpot：Create Contact
+- **操作**——Mailgun：Send Welcome Email
+- **操作**——Slack：通知 `#new-people`（并行执行——使用 Make 的 router）
 
-## 即时触发器工作原理
+## 即时触发器的运作方式 {#how-the-instant-trigger-works}
 
-即时触发器是 webhook 支持的，而不是轮询 — 激活时，Make 调用 `POST /membership/webhooks` 和它生成的 URL 和您选择的事件。当事件在 B1 中触发时，B1 将信封 POST 到 Make 的 URL，您的场景在几秒内运行。停用场景删除 webhook。
+即时触发器基于 webhook，而非轮询——启用时，Make 会以其生成的网址和你选择的事件调用 `POST /membership/webhooks`。当该事件在 B1 中发生时，B1 会将数据包 POST 到 Make 的网址，你的场景会在数秒内执行。停用场景时会移除该 webhook。
 
-触发器只为 **场景激活时发生的** 事件触发。没有补齐。
+触发器只会针对场景**处于启用状态时**发生的事件触发。不会回溯补发之前的事件。
 
-## 限制和注释
+## 限制与注意事项 {#limits--notes}
 
-- **每个观察事件模块一个事件。** 要在一个场景中监听多个事件，将多个触发器模块放到单独的场景中（或使用单个模块和并联事件列表 — 见下文）。
-- **签名验证未暴露** — Make 不通过 `X-B1-Signature` 传递给场景；信任边界是 Make 的不可猜测的按场景 webhook URL。这是普通 Make 实践。如果您需要显式签名检查，改用 [SDK](/docs/developer/api/webhooks#sdk-support) 构建自定义集成。
-- **操作计数** — 来自操作模块的每个 API 调用都计入您的 Make 操作配额，而不是 B1 侧的任何东西。
+- **每个 Watch Events 模块一个事件**。若要监听多个事件，请为每个事件建立一个场景。
+- **不提供签名验证**——Make 不会将 `X-B1-Signature` 传递给场景；其信任边界是 Make 中每个场景那个无法猜测的 webhook 网址。这是 Make 的常规做法。如果你需要明确的签名检查，请改用 [SDK](/docs/developer/api/webhooks#sdk-support) 建立自定义整合。
+- **操作次数**——操作模块的每次 API 调用都会计入你的 Make 操作配额，而不会计入 B1 这一端的任何用量。
 
-## 故障排查
+## 故障排除 {#troubleshooting}
 
-- **连接测试失败** — 通常是 API 密钥中的打字错误。从 B1Admin 重新复制它（完整密钥仅显示一次；如果您丢失了它，创建一个新密钥）。
-- **触发器模块不激活** — 检查 B1Admin 中的 **设置 → 开发者 → Webhooks**。如果激活场景后您没有看到"Make — &lt;event&gt;"行，密钥丢失 `settings:write`。更新密钥并重新激活。
-- **操作返回 `403 禁止`** — API 密钥缺少该端点的 scope。例如，添加捐款需要 `donations:write`。在 B1Admin 中更新密钥并重新测试。
+- **连接测试失败**——最常见的原因是 API 密钥输入有误。请从 B1Admin 重新复制（完整密钥只会显示一次；如果你已遗失，请建立新的密钥）。
+- **触发器模块无法启用**——请在 B1Admin 中查看 **Settings → Developer → Webhooks**。如果在启用场景后没有看到"Make — &lt;event&gt;"项目，表示该密钥缺少 `settings:write`。请更新密钥并重新启用。
+- **操作返回 `403 Forbidden`**——API 密钥缺少该端点的权限范围。例如，Add Donation 需要 `donations:write`。请在 B1Admin 中更新密钥并重新测试。
 
-## 自定义应用
+## 缺少模块？ {#missing-a-module}
 
-B1.church Make 应用是开源的 — JSON 定义位于 `B1Integrations/Make/` 仓库。如果您需要不存在的模块（例如我们尚未覆盖的端点的新操作），请在那里打开问题或 PR。
+如果你需要的模块并不存在（例如针对我们尚未涵盖的端点的新操作），请发送电子邮件至 [support@churchapps.org](mailto:support@churchapps.org)。在此期间，Make 的 **HTTP — Make a request** 模块可以通过 `Authorization: Bearer cak_…` 标头调用任何 B1 端点。
 
-## 另请参阅
+## 另见 {#see-also}
 
-- [Zapier](./zapier.md) — 相同模式，更简单的 UI 和更大的应用目录
-- [Slack 和 Discord](./slack-discord.md) — 内置聊天通知，不需要 Make
-- [Webhooks（开发者参考）](/docs/developer/api/webhooks)
+- [Zapier](./zapier.md)：相同的模式，界面更简单，应用程序目录更庞大
+- [Slack 与 Discord](./slack-discord.md)：无需 Make 即可使用的内置聊天通知
+- [Webhook（开发者参考）](/docs/developer/api/webhooks)

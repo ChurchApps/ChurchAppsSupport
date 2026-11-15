@@ -35,7 +35,7 @@ yarn build
 
 Le dépôt utilise Yarn Berry (le champ `packageManager` de la racine fait foi) avec un fichier de verrouillage unique. `yarn build` compile chaque paquet dans l'ordre des dépendances ; `yarn test` exécute les tests de tous les paquets.
 
-## Publier avec Changesets
+## Publier avec Changesets {#releasing-with-changesets}
 
 Chaque modification d'un paquet est livrée avec un changeset :
 
@@ -47,7 +47,7 @@ Chaque modification d'un paquet est livrée avec un changeset :
 N'exécutez jamais de `npm publish` brut dans un paquet individuel — cela contourne l'ordre de compilation et la gestion des versions prise en charge par le script de publication. La publication exige un compte npm disposant des droits de publication sur le périmètre `@churchapps`.
 :::
 
-## Développement local avec une application cliente
+## Développement local avec une application cliente {#local-development-against-a-consuming-app}
 
 Dans l'espace de travail, les paquets se compilent directement à partir de leurs voisins — aucun lien n'est nécessaire. Pour tester une version non publiée d'un paquet dans une application cliente (B1Admin, B1App, etc.), ajoutez un portail Yarn temporaire dans l'application cliente :
 

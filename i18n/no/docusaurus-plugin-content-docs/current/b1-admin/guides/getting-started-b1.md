@@ -1,13 +1,13 @@
 ---
-title: "Guide: Kom i gang med B1 for din menighet"
-description: "Gå gjennom oppsettet av en ny menighet i B1 Admin: opprett konto, konfigurer innstillinger, legg til roller, importer medlemmer og start kjernefunksjonene."
+title: "Veiledning: Kom i gang med B1 for menigheten din"
+description: "Gå gjennom oppsettet av en ny menighet i B1 Admin: opprett konto, konfigurer innstillinger, legg til roller, importer medlemmer og ta i bruk kjernefunksjonene."
 ---
 
-# Kom i gang med B1 for din menighet
+# Kom i gang med B1 for menigheten din
 
 <div class="article-intro">
 
-En komplett veiledning for nye menigheter — fra å opprette konto til å importere medlemsregisteret og konfigurere de første funksjonene. Følg disse trinnene i rekkefølge for å få menigheten din i gang på B1.
+En fullstendig veiledning for nye menigheter – fra å opprette kontoen din til å importere medlemsregisteret og konfigurere de første funksjonene. Følg disse stegene i rekkefølge for å få menigheten din i gang på B1.
 
 </div>
 
@@ -15,11 +15,11 @@ En komplett veiledning for nye menigheter — fra å opprette konto til å impor
 <h4>Før du begynner</h4>
 
 - En gyldig e-postadresse
-- Menighetens logo og profilmateriell (farger, bilder) — anbefalt, men ikke nødvendig for å starte
+- Menighetens logo og merkevareelementer (farger, bilder) – anbefalt, men ikke nødvendig for å starte
 
 </div>
 
-## Trinn 1: Opprett kontoen din
+## Steg 1: Opprett kontoen din {#step-1-create-your-account}
 
 Registrer menigheten din og bli den første administratoren.
 
@@ -27,81 +27,81 @@ Følg veiledningen [Opprett konto](../../getting-started/create-account.md) for 
 
 1. Gå til b1.church og registrer deg med e-postadressen din
 2. Bekreft e-postadressen din
-3. Velg «Opprett en ny menighet» og skriv inn navnet på menigheten
-4. Du blir automatisk Domeneadministrator med full tilgang til alt
+3. Velg «Create a new church» og skriv inn menighetens navn
+4. Du blir automatisk Domain Admin med full tilgang til alt
 
-## Trinn 2: Konfigurer menighetsinnstillinger
+## Steg 2: Konfigurer menighetsinnstillingene {#step-2-configure-church-settings}
 
-Legg inn menighetens grunnleggende informasjon og profil.
+Skriv inn menighetens grunnleggende informasjon og merkevarebygging.
 
 Følg veiledningen [Menighetsinnstillinger](../settings/church-settings.md) for å:
 
-1. Legg inn menighetens navn, adresse, telefonnummer og e-postadresse
-2. Angi underdomenet ditt (dette blir minmenighet.b1.church)
-3. Last opp menighetens logo og bilder
+1. I [hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) velger du **Settings > Settings** og klikker **Edit** i seksjonen **Church Information**
+2. Skriv inn menighetens navn og adresse, og angi **Subdomain** din (dette blir yourchurch.b1.church)
+3. Last opp menighetens logo og velg farger under **Website > Appearance** (se [Logo og merkevarebygging](../website/appearance.md#logo-and-branding)), og angi fargene for B1-appen under **Mobile > App Theme**
 
 :::tip
-Underdomenet ditt vises i nettsideadressen og adressen til gavesiden, så velg noe kort og lett gjenkjennelig (for eksempel «nåde» for Grace Community Church).
+Underdomenet ditt vises i nettadressen til nettstedet ditt og giving-siden din, så velg noe kort og lett gjenkjennelig (f.eks. «grace» for Grace Community Church).
 :::
 
-## Trinn 3: Sett opp roller og inviter teamet ditt
+## Steg 3: Sett opp roller og inviter teamet ditt {#step-3-set-up-roles--invite-your-team}
 
-Bestem hvem som har tilgang til hva, og få teamet ditt med på laget.
+Styr hvem som har tilgang til hva, og få med teamet ditt.
 
 Følg veiledningen [Roller og tillatelser](../settings/roles-permissions.md) for å:
 
-1. Opprett roller for teamet ditt (for eksempel «Pastor», «Kontoradministrator», «Økonomiteam», «Lovsangsleder»)
-2. Tildel spesifikke tillatelser til hver rolle, slik at folk bare ser det de trenger
-3. Inviter teammedlemmer ved å legge dem til og tildele roller
+1. I hurtigmenyen velger du **Settings > Roles** og oppretter roller for teamet ditt (f.eks. «Pastor», «Kontoradministrator», «Økonomiteam», «Lovsangsleder»)
+2. Gi hver rolle bestemte tillatelser, slik at folk bare ser det de trenger
+3. Inviter teammedlemmer ved å klikke **Add** i en rolles panel **Members** – B1 tilbyr å sende dem en invitasjon på e-post (bruk **Create New User** for noen som ikke er i menigheten din ennå)
 
 :::info
-Du trenger ikke gjøre alt selv. Inviter kontorpersonale, pastorer og menighetsledere tidlig, slik at de kan hjelpe til med å sette opp sine områder.
+Du trenger ikke gjøre alt selv. Inviter kontorpersonalet, pastorene og lederne for tjenestene tidlig, slik at de kan hjelpe til med å sette opp sine områder.
 :::
 
-## Trinn 4: Importer medlemmene dine
+## Steg 4: Importer medlemmene dine {#step-4-import-your-people}
 
 Før det eksisterende medlemsregisteret ditt inn i B1.
 
-Følg veiledningen [Importere data](../people/importing-data.md). Du har to alternativer:
+Følg veiledningen [Importere data](../people/importing-data.md). Under **Settings** klikker du **Import/Export** for å åpne verktøyet B1 Transfer, og velger deretter kilde:
 
-1. **CSV-opplasting** — eksporter fra ditt nåværende system eller regneark, formater som CSV, last opp til B1
-2. **Breeze-migrering** — import med ett klikk som henter over personer, bilder, grupper, gaver og oppmøte
+1. **Egendefinert CSV / Excel** – eksporter fra ditt nåværende system eller regneark, last opp filen, og koble kolonnene dine til B1-feltene
+2. **Flytting fra et annet system** – last opp en eksport fra **Breeze**, **Planning Center**, **Tithe.ly** eller **CCB / Pushpay**
 
 :::tip
-Flytter du fra Breeze? Importverktøyet henter alt over i ett steg — personer, bilder, grupper, gaver og oppmøtehistorikk. Det er den raskeste måten å komme i gang på.
+Flytter du fra Breeze? Eksporter filene **People**, **Tags** og **Contributions**, pakk dem sammen i en zip-fil, og last opp zip-filen som **Breeze Import Zip** – personene, gruppene og gaveregistreringene dine kommer over i ett steg.
 :::
 
-## Trinn 5: Konfigurer mobilappen
+## Steg 5: Konfigurer mobilappen {#step-5-configure-the-mobile-app}
 
 Tilpass B1-appopplevelsen for menigheten din.
 
-Følg veiledningen [Innstillinger for mobilappen](../settings/mobile-app.md) for å:
+Følg veiledningen [Innstillinger for mobilapp](../settings/mobile-app.md) for å:
 
-1. Tilpass hvilke faner som vises i B1-appen for medlemmene dine
-2. Angi fanenavn, ikoner og typer (Bibel, Direktesending, Gave, Nettside osv.)
-3. Kontroller hvilke funksjoner som er synlige for menigheten din
+1. I hurtigmenyen velger du **Mobile > Navigation** og klikker **Add Tab** for å velge hvilke faner som vises i B1-appen for medlemmene dine
+2. Angi navn, ikon og **Tab Type** for hver fane (Bible, Live Stream, Sermons, Donation, External URL, Internal Page osv.)
+3. Bruk **Visibility** på hver fane til å styre hvem som ser den
 
-## Trinn 6: Begynn å sette opp funksjoner
+## Steg 6: Begynn å sette opp funksjonene {#step-6-start-setting-up-features}
 
 Nå som grunnlaget er på plass, følg disse veiledningene for å sette opp bestemte funksjoner:
 
-- [Sett opp nettgivning](./online-giving.md) — ta imot gaver via nettsiden og appen din
-- [Lanser menighetens nettside](./launch-website.md) — bygg menighetens nettside
-- [Kjør smågrupper](./small-groups.md) — organiser grupper, bibelstudier og tjenester
-- [Sett opp barneinnsjekking](./childrens-checkin.md) — innsjekking ved kiosk for barnearbeidet
-- [Administrer frivillige på søndager](./sunday-volunteers.md) — koordiner tjenerteamene dine
-- [Bygg preken-biblioteket ditt](./sermon-library.md) — få prekener på nett og sett opp direktesending
-- [Før oppmøte](./track-attendance.md) — følg med på hvem som kommer til gudstjenester og grupper
+- [Sett opp nettbasert giving](./online-giving.md) – ta imot gaver via nettstedet og appen din
+- [Lansere menighetens nettsted](./launch-website.md) – bygg menighetens nettsted
+- [Kjør smågrupper](./small-groups.md) – organiser grupper, bibelstudier og tjenester
+- [Sett opp innsjekking for barnearbeidet](./childrens-checkin.md) – kioskinnsjekking for barnearbeidet
+- [Administrer søndagsfrivillige](./sunday-volunteers.md) – koordiner tjenesteteamene dine
+- [Bygg opp et preken-arkiv](./sermon-library.md) – få prekener på nett og sett opp direktesending
+- [Følg oppmøte](./track-attendance.md) – se hvem som kommer til gudstjenester og grupper
 
-## Du er ferdig!
+## Ferdig! {#youre-done}
 
-Menigheten din er satt opp på B1. Teamet ditt har tilgang, medlemmene dine er importert, og du er klar til å bruke funksjonene som betyr mest for tjenesten din. Utforsk funksjonsveiledningene ovenfor for å sette opp hvert område.
+Menigheten din er satt opp på B1. Teamet ditt har tilgang, medlemmene dine er importert, og du er klar til å ta i bruk funksjonene som betyr mest for tjenesten din. Utforsk veiledningene for funksjonene ovenfor for å sette opp hvert område.
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
 - [Opprett konto](../../getting-started/create-account.md) — registrering av konto
-- [Første oppsett](../../getting-started/initial-setup.md) — veiledet oversikt over oppstart
-- [Menighetsinnstillinger](../settings/church-settings.md) — informasjon om menigheten og profil
+- [Første oppsett](../../getting-started/initial-setup.md) — oversikt over veiledet oppstart
+- [Menighetsinnstillinger](../settings/church-settings.md) — menighetsinformasjon og merkevarebygging
 - [Roller og tillatelser](../settings/roles-permissions.md) — tilgangskontroll for teamet
-- [Importere data](../people/importing-data.md) — masseimport av data
-- [Innstillinger for mobilappen](../settings/mobile-app.md) — tilpass medlemsappen
+- [Importere data](../people/importing-data.md) — massimport av data
+- [Innstillinger for mobilapp](../settings/mobile-app.md) — tilpass medlemsappen

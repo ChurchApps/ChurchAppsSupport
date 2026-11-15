@@ -1,128 +1,128 @@
 ---
-title: "Slack & Discord"
-description: "Send B1 Admin-hendelser som nye personer, gaver og skjemainnsendinger til en Slack- eller Discord-kanal med en innkommende webhook, uten Zapier."
+title: "Slack og Discord"
+description: "Publiser hendelser fra B1 Admin, som nye personer, gaver og skjemainnsendinger, til en Slack- eller Discord-kanal med en innkommende webhook. Ingen Zapier nødvendig."
 ---
 
-# Slack & Discord
+# Slack og Discord
 
 <div class="article-intro">
 
-Post lesbare meldinger fra B1 direkte til en Slack- eller Discord-kanal — nye mennesker, donasjoner, gruppepåmeldinger, skjemainnsendinger, kalender-hendelser, og mer. Ingen tredjepartskonto, ingen Zap å vedlikeholde: B1 omformer hendelser til chat-meldinger og POSTs dem til kanalens webhook-URL selv.
+Publiser lesbare varsler fra B1 direkte til en Slack- eller Discord-kanal: nye personer, gaver, påmeldinger til grupper, skjemainnsendinger, kalenderhendelser og mer. Ingen tredjepartskonto og ingen Zap å vedlikeholde. B1 formaterer hendelsene om til chatmeldinger og sender dem selv til kanalens webhook-URL.
 
 </div>
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
 
-- Du trenger tillatelsen **Rediger innstillinger** i B1Admin
-- En admin i Slack-arbeidsplassen eller Discord-serveren for å opprette kanalens innkommende webhook
-- Bestem hvilken kanal du vil meldinger i (du kan bruke samme kanal for flere hendelsestyper, eller dele dem på tvers av kanaler)
+- Du trenger tillatelsen **Rediger innstillinger** i B1 Admin
+- En administrator i Slack-arbeidsområdet eller Discord-serveren din, som kan opprette kanalens innkommende webhook
+- Bestem hvilken kanal du vil ha varslene i (du kan bruke samme kanal for flere hendelsestyper, eller dele dem på flere kanaler)
 
 </div>
 
-## Hvordan det fungerer
+## Slik fungerer det {#how-it-works}
 
-B1 har en innebygd **koblertype** for chat-plattformer. Når du oppretter en webhook med type **Slack** eller **Discord**, gjør webhook-motoren sitt vanlige leveranseleveranse + gjøre forsøk på nytt + signert-overskrift-dans, men kroppen den sender blir omformet fra B1s normal `{event,churchId,data}`-konvolutt til den lille `{text}` (Slack) eller `{content}` (Discord) melding disse tjenestene forventer.
+B1 har en innebygd **Connector-type** for chatplattformer. Når du lager en webhook med typen **Slack** eller **Discord**, gjør webhook-motoren fortsatt sin vanlige levering, nytt forsøk og signerte headere. Men innholdet som sendes, omformes fra B1s vanlige `{event,churchId,data}`-konvolutt til den lille `{text}`-meldingen (Slack) eller `{content}`-meldingen (Discord) som disse tjenestene forventer.
 
-Ingen B1-servere strekker seg til Slack på per-kirke-basis utover den eksisterende utgående webhook-flyten — der er ingenting nytt å hoste, ingenting ekstra å betale for.
+B1-servere kontakter ikke Slack per kirke utover den eksisterende utgående webhook-flyten. Det er ingenting nytt å drifte og ingenting ekstra å betale for.
 
-## Slack — trinn for trinn
+## Slack, steg for steg {#slack--step-by-step}
 
-### 1. Få en Slack innkommende webhook-URL
+### 1. Skaff en innkommende webhook-URL for Slack {#1-get-a-slack-incoming-webhook-url}
 
-1. Åpne [api.slack.com/apps](https://api.slack.com/apps) i Slack-arbeidsplassen du vil meldinger i.
-2. Klikk **opprett ny app → fra bunnen av**, gi det navn som "B1 meldinger", og velg arbeidsplassen.
-3. I venstre nav velg **innkommende webhooks** og veksle **aktivere innkommende webhooks** til *på*.
-4. Klikk **legg ny webhook til arbeidsplassen**, velg kanalen (f.eks. `#donations`), deretter **tillate**.
-5. Slack lander deg tilbake på siden med en frisk **webhook-URL** som ser ut som `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Kopier den — det er det eneste informasjonsstykket B1 trenger.
+1. Åpne [api.slack.com/apps](https://api.slack.com/apps) i Slack-arbeidsområdet du vil ha varslene i.
+2. Klikk på **Create New App → From scratch**, gi den et navn som «B1 Notifications», og velg arbeidsområdet.
+3. Velg **Incoming Webhooks** i venstremenyen, og slå **Activate Incoming Webhooks** til *On*.
+4. Klikk på **Add New Webhook to Workspace**, velg kanalen (f.eks. `#donations`), og deretter **Allow**.
+5. Slack sender deg tilbake til siden med en ny **Webhook URL** som ser ut slik: `https://hooks.slack.com/services/T0XXXXXXX/B0YYYYYYY/zzz…`. Kopier den. Det er den eneste informasjonen B1 trenger.
 
 :::caution
-behandle Slack webhook-URL-en som en hemmelighet. Hvem som helst med den kan sende vilkårlige meldinger til kanalen. Hvis du utilsiktet utsetter det, generer det på nytt fra Slack-app-siden (regenerering bare roterer URL-en; oppdater B1 for å matche).
+Behandle Slack-webhook-URL-en som en hemmelighet. Alle som har den, kan publisere vilkårlige meldinger i kanalen. Hvis den blir eksponert ved et uhell, lag en ny fra Slack-appsiden. Ny generering bytter bare URL-en. Oppdater B1 slik at den samsvarer.
 :::
 
-### 2. Koble det i B1Admin
+### 2. Koble til i B1 Admin {#2-connect-it-in-b1admin}
 
-1. I B1Admin gå til **Innstillinger → Utviklernavn → webhooks**.
-2. Klikk **ny webhook**.
-3. Fyll inn:
-   - **navn** — noe lesbart som "donasjoner → #donations". Bare ditt lag ser det.
-   - **koblertype** — velg **Slack**.
-   - **nyttelast-URL** — lim inn Slack-URL-en fra trinn 1.
-   - **hendelser** — kryss av hendelsene du vil som meldinger. For en donations-kanal, bare `donation.created`. For en #people-kanal, prøv `person.created` og `group.member.added`.
-4. Klikk **lagre**. En "signeringshemmelighet"-dialog vises — du kan ignorere det for Slack (Slack bekrefter ikke B1-signaturer) og lukke det.
+1. I B1 Admin går du til **Innstillinger → Utvikler → Webhooks**.
+2. Klikk på **Ny webhook**.
+3. Fyll ut:
+   - **Navn**: noe lesbart som «Gaver → #donations». Bare teamet ditt ser det.
+   - **Connector-type**: velg **Slack**.
+   - **Payload-URL**: lim inn Slack-URL-en fra steg 1.
+   - **Hendelser**: kryss av hendelsene du vil ha som meldinger. For en gavekanal er det bare `donation.created`. For en #people-kanal kan du prøve `person.created` og `group.member.added`.
+4. Klikk på **Lagre**. Et dialogvindu om «Signeringshemmelighet» vises. Du kan ignorere det for Slack (Slack verifiserer ikke B1-signaturer), og lukke det.
 
-### 3. test det
+### 3. Test den {#3-test-it}
 
-Åpne webhoken igjen fra listen og klikk **send test-hendelse**. Innen et sekund eller to en melding som
+Åpne webhooken på nytt fra listen, og klikk på **Send testhendelse**. B1 sender et eksempel på den første hendelsen du krysset av for. Innen et sekund eller to vises en melding som
 
-> 💝 ny donasjon: $50.00
+> 💝 New donation: $50.00
 
-vises i Slack-kanalen, og en ny rad vises i **nylige leveranser**-tabellen på samme skjerm med status `suksess`. Du er ferdig.
+i Slack-kanalen din, og en ny rad dukker opp i tabellen **Nylige leveranser** på samme skjerm med status `succeeded`. Da er du ferdig.
 
-## Discord — trinn for trinn
+## Discord, steg for steg {#discord--step-by-step}
 
-### 1. Få en Discord webhook-URL
+### 1. Skaff en Discord-webhook-URL {#1-get-a-discord-webhook-url}
 
-1. I Discord-serveren din, hover over kanalen du vil meldinger i og klikk **⚙ gear** (rediger kanal).
-2. Åpne **integrasjoner → webhooks → ny webhook**.
-3. Gi det et navn og (valgfritt) en avatar, deretter klikk **kopier webhook-URL** — ser ut som `https://discord.com/api/webhooks/123…/abc…`.
+1. I Discord-serveren din, hold musepekeren over kanalen du vil ha varslene i, og klikk på **⚙-tannhjulet** (Rediger kanal).
+2. Åpne **Integrasjoner → Webhooks → Ny webhook**.
+3. Gi den et navn og (valgfritt) et avatarbilde, og klikk deretter på **Kopier webhook-URL**. Den ser ut slik: `https://discord.com/api/webhooks/123…/abc…`.
 
-### 2. Koble det i B1Admin
+### 2. Koble til i B1 Admin {#2-connect-it-in-b1admin-1}
 
-Identisk til Slack-flyten ovenfor, bortsett fra set **koblertype** til **Discord**. Lim inn Discord-URL-en i **nyttelast-URL** og lagre.
+Samme som Slack-flyten over, bortsett fra at du setter **Connector-type** til **Discord**. Lim inn Discord-URL-en i **Payload-URL** og lagre.
 
 :::tip
-Du trenger **ikke** å legge til `/slack` på slutten av Discord-URL-en — B1 sender Discord-egne `{content}`-nyttelaster, ikke Slack-kompatible. Bare lim inn URL-en Discord ga deg.
+Du trenger **ikke** å legge til `/slack` på slutten av Discord-URL-en. B1 sender Discord-native `{content}`-nyttelaster, ikke Slack-kompatible. Lim bare inn URL-en Discord ga deg.
 :::
 
-### 3. test det
+### 3. Test den {#3-test-it-1}
 
-Samme **send test-hendelse**-knapp — Discord viser meldingen i valgt kanal og leveranselandet flipper til `suksess`.
+Samme knapp **Send testhendelse**. Discord viser meldingen i den valgte kanalen, og leveranseloggen går til `succeeded`.
 
-## Hva meldingene ser ut som
+## Slik ser meldingene ut {#what-the-messages-look-like}
 
-| Hendelse | eksempel melding |
+| Hendelse | Eksempelmelding |
 |---|---|
-| `person.created` | 👤 ny person lagt til: Jordan Rivera |
-| `person.updated` | 👤 person oppdatert: Jordan Rivera |
-| `group.created` | 👥 ny gruppe opprettet: tirsdag bibeltekst |
-| `group.member.added` | ➕ noen ble lagt til en gruppe |
-| `donation.created` | 💝 ny donasjon: $50.00 |
-| `donation.updated` | 💝 donasjon oppdatert: $75.00 |
-| `attendance.recorded` | ✅ frammøte registrert |
-| `form.submission.created` | 📝 ny skjemainnsending mottatt |
-| `event.created` | 📅 ny hendelse: påske-tjeneste |
+| `person.created` | 👤 New person added: Jordan Rivera |
+| `person.updated` | 👤 Person updated: Jordan Rivera |
+| `group.created` | 👥 New group created: Tuesday Bible Study |
+| `group.member.added` | ➕ Someone was added to a group |
+| `donation.created` | 💝 New donation: $50.00 |
+| `donation.updated` | 💝 Donation updated: $75.00 |
+| `attendance.recorded` | ✅ Attendance recorded |
+| `form.submission.created` | 📝 New form submission received |
+| `event.created` | 📅 New event: Easter Service |
 
-hele listen lever i [webhook hendelseskatalog](/docs/developer/api/webhooks#event-catalog) — enhver hendelse der kan rutes til Slack/Discord.
+Hele listen finner du i [hendelseskatalogen for webhooks](/docs/developer/api/webhooks#event-catalog). Alle hendelser der kan sendes til Slack eller Discord.
 
-## en kanal per emne
+## Én kanal per tema {#one-channel-per-topic}
 
-Du trenger ikke å legge alle hendelser på ett sted. De fleste kirker setter opp en håndfull webhooks:
+Du må ikke legge alle hendelser på ett sted. De fleste kirker setter opp en håndfull webhooks:
 
-- en **#donations**-kanal som bare lytter til `donation.created`
-- en **#new-people**-kanal for `person.created` og `group.member.added`
-- en **#admin-alerts**-kanal for lavvolum-ting som `form.submission.created`
+- En kanal **#donations** som bare lytter til `donation.created`
+- En kanal **#new-people** for `person.created` og `group.member.added`
+- En kanal **#admin-alerts** for hendelser med lite volum, som `form.submission.created`
 
-der er ingen grense for antall webhooks per kirke. Hver en er uavhengig — sletting eller deaktivering av en påvirker ikke de andre.
+Det er ingen grense for hvor mange webhooks en kirke kan ha. Hver enkelt er uavhengig. Å slette eller deaktivere én påvirker ikke de andre.
 
-## inspeksjon av leveranser
+## Inspiser leveranser {#inspecting-deliveries}
 
-webhook-redigeringens **nylige leveranser**-tabell viser de siste 50 forsøkene. Klikk en rad for å se den nøyaktige nyttelasaten som ble sendt og svaret som kom tilbake. For en Slack-kobler er nyttelasaten `{"text":"💝 ny donasjon: $50.00"}` — ikke den rå `{event,churchId,...}`-konvolutten — fordi B1 omformer det før leveransen.
+Tabellen **Nylige leveranser** i webhook-editoren viser de siste 50 forsøkene. Klikk på en rad for å se nøyaktig nyttelast som ble sendt, og svaret som kom tilbake. For en Slack-connector er nyttelasten `{"text":"💝 New donation: $50.00"}`, ikke den rå `{event,churchId,...}`-konvolutten, fordi B1 formaterer den om før levering.
 
-Hvis noe mislyktes (rødt `mislyktes` eller `uttømt` badge), viser dialogen HTTP-status og svarkropp slik at du kan se nøyaktig hva Slack eller Discord ikke likte — vanligvis en copy/paste-feil i URL-en.
+Hvis noe mislyktes (et gult merke `failed` mens B1 fortsatt prøver på nytt, eller et rødt merke `exhausted` når den har gitt opp), viser kolonnen **Respons** HTTP-statusen. Dialogen for raden viser responsteksten, slik at du kan se nøyaktig hva Slack eller Discord ikke likte. Det er vanligvis en kopierings- eller limfeil i URL-en. Klikk på **Send på nytt** for å sende leveransen på nytt.
 
-## Problemløsing
+## Feilsøking {#troubleshooting}
 
-- **Ingen melding vises + leveranses status `400`** — vanligvis koblertypen er satt til **standard** men URL-en er en Slack/Discord-en. Slack/Discord avviser rå konvolutten. Bytt dropdown til **Slack** eller **Discord** og generer testen på nytt.
-- **webhook auto-deaktivert** — etter 3 påfølgende mislykkede leveranser B1 slår webhoken av. Fikser URL-en (eller roter den på Slack/Discord) og veksle **aktiv** tilbake på.
-- **melding ankom men mangler detalj** — hver chat-plattform begrenser meldingsstørrelse. B1s meldinger er en-linjer ved design; for rikere meldinger bruk [Zapier](./zapier.md) eller [Make](./make.md) for å komponere en fullere Slack-melding via deres Slack-handlinger.
+- **Ingen melding vises, og leveransestatusen er `400`**: vanligvis er Connector-typen satt til **Standard**, men URL-en er en Slack- eller Discord-URL. Slack og Discord avviser den rå konvolutten. Bytt nedtrekksmenyen til **Slack** eller **Discord**, og send testen på nytt.
+- **Webhooken er deaktivert automatisk**: B1 prøver hver mislykket leveranse på nytt i omtrent fem dager. Hvis tre leveranser på rad går tom for forsøk, slår B1 av webhooken (statusen viser **Disabled**). Rett URL-en (eller bytt den på Slack/Discord), slå **Active** på igjen, og lagre.
+- **Meldingen kom frem, men mangler detaljer**: alle chatplattformer begrenser størrelsen på meldinger. B1s meldinger er korte med vilje. For rikere varsler bruker du [Zapier](./zapier.md) eller [Make](./make.md) til å lage en mer fullstendig Slack-melding med deres Slack-handlinger.
 
-## bytte koblertyper senere
+## Bytte Connector-type senere {#switching-connector-types-later}
 
-Du kan endre koblertypen på en eksisterende webhook — den tar virkning ved neste leveranse. Hvis du bytter fra Slack til standard, pek URL-en på ditt eget HTTPS-endepunkt og samme signeringshemmelighet (det ble utstedt når webhoken ble opprettet) begynner å være verifiserbar som rå konvolutten.
+Du kan endre Connector-typen på en eksisterende webhook. Endringen gjelder fra neste levering. Hvis du bytter fra Slack til Standard, peker du URL-en mot ditt eget HTTPS-endepunkt. Den samme signeringshemmeligheten (den ble utstedt da webhooken ble opprettet) kan da verifiseres som den rå konvolutten.
 
-## Se også
+## Se også {#see-also}
 
-- [Zapier](./zapier.md) — for multi-trinns arbeidsflyter utløst av B1-hendelser
-- [Make](./make.md) — visuell scenario-bygger
-- [webhooks (utviklerreferanse)](/docs/developer/api/webhooks) — hele nyttelast + signaturformat hvis du noen gang peker en webhook på din egen server
+- [Zapier](./zapier.md): for flertrinnsarbeidsflyter utløst av B1-hendelser
+- [Make](./make.md): visuell scenariobygger
+- [Webhooks (referanse for utviklere)](/docs/developer/api/webhooks): fullt format for nyttelast og signatur, hvis du noen gang peker en webhook mot din egen server

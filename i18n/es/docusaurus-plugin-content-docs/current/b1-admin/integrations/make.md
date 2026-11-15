@@ -1,116 +1,120 @@
 ---
 title: "Make"
-description: "Conecta B1 Admin con Make para automatizar flujos: crea una clave API, configura el disparador y las acciones de B1.church y resuelve errores comunes."
+description: "Conecte B1 Admin con Make para automatizar flujos de trabajo: cree una clave de API, configure el disparador y las acciones de B1.church, y resuelva los errores comunes."
 ---
 
 # Make
 
 <div class="article-intro">
 
-[Make](https://www.make.com) (anteriormente Integromat) es una plataforma de automatización de flujos de trabajo visuales — similar en espíritu a Zapier, con lógica más flexible y una factura más económica a escala. La aplicación oficial de B1.church Make te permite construir "escenarios" que reaccionan al instante a eventos de B1 y escriben registros de vuelta a B1.
+[Make](https://www.make.com) (antes Integromat) es una plataforma visual de automatización de flujos de trabajo, similar en espíritu a Zapier, con una lógica más flexible y una factura más económica a gran escala. La aplicación oficial de Make para B1.church le permite crear "escenarios" que reaccionan al instante a los eventos de B1 y escriben registros de vuelta en B1.
 
 </div>
+
+:::caution Todavía no disponible
+La aplicación de Make para B1.church todavía no está publicada en el directorio de aplicaciones de Make, así que hoy no puede agregar los módulos de **B1.church** que aparecen más abajo a un escenario. Mientras tanto, use [Zapier](./zapier.md), o llame a la [API REST](/docs/developer/api) de B1 desde el módulo **HTTP — Make a request** de Make con una [clave de API](/docs/developer/api/api-keys). Todo lo que aparece a continuación describe cómo funcionará la aplicación una vez publicada.
+:::
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de comenzar</h4>
 
-- Una cuenta de [Make](https://www.make.com) (el nivel gratuito cubre flujos de trabajo pequeños)
-- Un administrador de iglesia con el permiso **Editar Configuración** en B1Admin
-- Una idea aproximada del escenario que deseas construir
+- Una cuenta de [Make](https://www.make.com) (el plan gratuito cubre flujos de trabajo pequeños)
+- Un administrador de la iglesia con el permiso **Edit Settings** en B1Admin
+- Una idea general del escenario que desea crear
 
 </div>
 
-## Módulos
+## Módulos {#modules}
 
-| Tipo | Qué | Evento / punto final B1 |
+| Tipo | Qué es | Evento / endpoint de B1 |
 |---|---|---|
-| **Disparador instantáneo** | Ver eventos | cualquier evento de B1 suscrito (`person.created`, `donation.created`, …) |
-| **Acción** | Crear persona | agrega una nueva persona |
-| **Acción** | Agregar donación | registra una donación |
-| **Acción** | Agregar miembro de grupo | agrega una persona a un grupo |
-| **Búsqueda** | Buscar personas | encuentra personas por nombre o correo |
+| **Instant Trigger** | Watch Events | cualquier evento de B1 suscrito (`person.created`, `donation.created`, …) |
+| **Action** | Create Person | agrega una persona nueva |
+| **Action** | Add Donation | registra una donación |
+| **Action** | Add Group Member | agrega una persona a un grupo |
+| **Search** | Search People | busca personas por nombre o correo electrónico |
 
-El disparador instantáneo te permite elegir qué evento escuchar — un módulo de disparador por escenario, configurado por evento.
+El disparador instantáneo le permite elegir qué evento escuchar: un módulo disparador por escenario, configurado para cada evento.
 
-## Configuración
+## Configuración {#setup}
 
-### 1. Crear una clave de API B1
+### 1. Cree una clave de API de B1 {#1-create-a-b1-api-key}
 
-1. En B1Admin ve a **Configuración → Desarrollador → Claves de API**.
-2. Haz clic en **Nueva Clave de API**, nómbrala "Make", y otorga los alcances que necesitas.
-3. **Incluye `settings:write`** si alguno de tus escenarios usa el disparador instantáneo — Make registra un webhook en tu nombre cuando el escenario se activa.
-4. También otorga los alcances que los módulos de acción necesitan (p. ej. `donations:write` para el módulo Agregar donación).
-5. Guarda y copia la clave `cak_…`.
+1. En B1Admin vaya a **Settings → Developer → API Keys**.
+2. Haga clic en **New API Key**, póngale el nombre "Make" y otorgue los scopes que necesite.
+3. **Incluya `settings:write`** si alguno de sus escenarios usa el disparador instantáneo: Make registra un webhook en su nombre cuando se activa el escenario.
+4. Otorgue también los scopes que necesiten los módulos de acción (por ejemplo, `donations:write` para el módulo Add Donation).
+5. Guarde y copie la clave `cak_…`.
 
-### 2. Instalar la conexión
+### 2. Instale la conexión {#2-install-the-connection}
 
-1. En Make, construye un nuevo escenario y coloca el módulo de disparador **B1.church** en el lienzo.
-2. Cuando se te pida, **Crear una conexión**. Pega la clave de API en el campo *Clave de API* y deja *URL base de API* como `https://api.churchapps.org` (a menos que estés probando contra staging).
-3. Haz clic en **Guardar** — Make prueba la clave leyendo tu perfil de iglesia.
+1. En Make, cree un escenario nuevo y arrastre el módulo disparador **B1.church** al lienzo.
+2. Cuando se le pida, haga clic en **Create a connection**. Pegue la clave de API en el campo *API Key* y deje *API Base URL* como `https://api.churchapps.org` (a menos que esté haciendo pruebas en el entorno de staging).
+3. Haga clic en **Save**: Make prueba la clave leyendo el perfil de su iglesia.
 
-La conexión se guarda en tu cuenta de Make y se reutiliza en escenarios.
+La conexión se guarda en su cuenta de Make y se reutiliza en todos los escenarios.
 
-### 3. Configurar el disparador
+### 3. Configure el disparador {#3-configure-the-trigger}
 
-1. Abre la configuración del módulo **Ver eventos**.
-2. Elige el evento que deseas — p. ej. `donation.created`.
-3. Guarda. Make genera una URL de webhook única y la almacena internamente.
+1. Abra la configuración del módulo **Watch Events**.
+2. Elija el evento que desea, por ejemplo, `donation.created`.
+3. Guarde. Make genera una URL de webhook única y la almacena internamente.
 
-### 4. Agregar módulos posteriores
+### 4. Agregue módulos posteriores {#4-add-downstream-modules}
 
-Coloca cualquiera de los cientos de módulos de aplicaciones de Make en el lienzo — Mailchimp, Google Sheets, Slack, HubSpot, tu propio punto final HTTP, etc. Asigna la salida del disparador (`event`, `churchId`, `data.id`, `data.amount`, …) a sus campos de entrada. Los módulos aplanar / iterador / enrutador / agregador de Make te permiten construir flujos de ramificación y paralelos que serían difíciles en Zapier.
+Arrastre al lienzo cualquiera de los cientos de módulos de aplicaciones de Make: Mailchimp, Google Sheets, Slack, HubSpot, su propio endpoint HTTP, etc. Asigne la salida del disparador (`event`, `churchId`, `data.id`, `data.amount`, …) a sus campos de entrada. Los módulos de aplanado, iterador, enrutador y agregador de Make le permiten crear flujos ramificados y paralelos que serían difíciles en Zapier.
 
-### 5. Activar el escenario
+### 5. Active el escenario {#5-turn-the-scenario-on}
 
-Alterna **Activo** en el encabezado del escenario. Make llama a `POST /membership/webhooks` de B1 para registrar la URL. A partir de ese momento, cada evento de B1 coincidente fluye a través del escenario en tiempo real.
+Active **Active** en el encabezado del escenario. Make llama a `POST /membership/webhooks` de B1 para registrar la URL. A partir de ese momento, cada evento de B1 que coincida fluye por el escenario en tiempo real.
 
-Desactivar el escenario llama a `DELETE /membership/webhooks/{id}` para que no haya suscripciones huérfanas.
+Al desactivar el escenario se llama a `DELETE /membership/webhooks/{id}`, de modo que no quedan suscripciones huérfanas.
 
-## Recetas Comunes
+## Recetas comunes {#common-recipes}
 
-### Sincronizar donaciones a una hoja de Google para revisión de finanzas
+### Sincronizar donaciones con una hoja de Google para la revisión financiera {#sync-donations-to-a-google-sheet-for-finance-review}
 
-- **Disparador** — B1: Ver eventos (`donation.created`)
-- **Acción** — Google Sheets: Agregar una fila. Asigna `data.donationDate`, `data.amount`, `data.personId`, `data.method`, `data.batchId` a las columnas de la hoja.
+- **Disparador**: B1: Watch Events (`donation.created`)
+- **Acción**: Google Sheets: Add a Row. Asigne `data.donationDate`, `data.amount`, `data.personId`, `data.method` y `data.batchId` a las columnas de la hoja.
 
-### Notificación Slack condicional por cantidad de donación
+### Notificación condicional de Slack según el monto de la donación {#conditional-slack-notification-by-donation-amount}
 
-- **Disparador** — B1: Ver eventos (`donation.created`)
+- **Disparador**: B1: Watch Events (`donation.created`)
 - **Enrutador**:
-  - Rama A — Filtro: `data.amount >= 1000` → Slack: publicar a `#major-gifts`
-  - Rama B — fallthrough → Slack: publicar a `#donations`
+  - Rama A: Filter: `data.amount >= 1000` → Slack: publicar en `#major-gifts`
+  - Rama B: caso alternativo → Slack: publicar en `#donations`
 
-### Persona nueva → CRM + correo de bienvenida + Slack
+### Persona nueva → CRM + correo de bienvenida + Slack {#new-person--crm--welcome-email--slack}
 
-- **Disparador** — B1: Ver eventos (`person.created`)
-- **Acción** — HubSpot: Crear contacto
-- **Acción** — Mailgun: Enviar correo de bienvenida
-- **Acción** — Slack: Notificar `#new-people` (en paralelo — usa el enrutador de Make)
+- **Disparador**: B1: Watch Events (`person.created`)
+- **Acción**: HubSpot: Create Contact
+- **Acción**: Mailgun: Send Welcome Email
+- **Acción**: Slack: Notificar a `#new-people` (en paralelo, usando el enrutador de Make)
 
-## Cómo Funciona el Disparador Instantáneo
+## Cómo funciona el disparador instantáneo {#how-the-instant-trigger-works}
 
-El disparador instantáneo es respaldado por webhook, no por sondeo — cuando se activa, Make llama a `POST /membership/webhooks` con su URL generada y el evento que elegiste. Cuando el evento se dispara en B1, B1 POST la envolvente a la URL de Make y tu escenario se ejecuta en segundos. Desactivar el escenario elimina el webhook.
+El disparador instantáneo se basa en webhooks, no en sondeo: al activarse, Make llama a `POST /membership/webhooks` con la URL generada y el evento que usted eligió. Cuando el evento ocurre en B1, B1 envía la carga a la URL de Make y su escenario se ejecuta en cuestión de segundos. Al desactivar el escenario se elimina el webhook.
 
-El disparador solo se activa para eventos que ocurren **mientras el escenario está activo**. No hay relleno hacia atrás.
+El disparador solo se activa con eventos que ocurren **mientras el escenario está activo**. No hay recuperación de eventos anteriores.
 
-## Límites y Notas
+## Límites y notas {#limits--notes}
 
-- **Un evento por módulo Ver eventos.** Para escuchar varios eventos en un escenario, coloca múltiples módulos de disparador en escenarios separados (o usa un único módulo con la lista de eventos unida — ve a continuación).
-- **La verificación de firma no está expuesta** — Make no pasa `X-B1-Signature` a través del escenario; el límite de confianza es la URL de webhook impredecible por escenario de Make. Esta es la práctica normal de Make. Si necesitas verificaciones de firma explícitas, construye una integración personalizada con el [SDK](/docs/developer/api/webhooks#sdk-support) en su lugar.
-- **Recuento de operación** — cada llamada de API desde un módulo de acción se cuenta en tu cuota de operaciones de Make, no en nada del lado de B1.
+- **Un evento por módulo Watch Events.** Para escuchar varios eventos, cree un escenario por evento.
+- **La verificación de firma no está expuesta**: Make no pasa `X-B1-Signature` al escenario; el límite de confianza es la URL de webhook por escenario, que es imposible de adivinar. Esta es una práctica normal en Make. Si necesita verificaciones de firma explícitas, cree una integración personalizada con el [SDK](/docs/developer/api/webhooks#sdk-support).
+- **Cantidad de operaciones**: cada llamada a la API desde un módulo de acción cuenta contra su cuota de operaciones de Make, no contra nada del lado de B1.
 
-## Solución de Problemas
+## Solución de problemas {#troubleshooting}
 
-- **La prueba de conexión falla** — la mayoría de las veces un error tipográfico en la clave de API. Vuelve a copiarla de B1Admin (la clave completa solo se muestra una vez; si la has perdido, crea una clave nueva).
-- **El módulo disparador no se activa** — verifica **Configuración → Desarrollador → Webhooks** en B1Admin. Si no ves una fila "Make — &lt;event&gt;" después de activar el escenario, la clave no tiene `settings:write`. Actualiza la clave y reactiva.
-- **La acción devuelve `403 Forbidden`** — la clave de API carece del alcance para ese punto final. Por ejemplo, Agregar donación necesita `donations:write`. Actualiza la clave en B1Admin y vuelve a probar.
+- **Falla la prueba de conexión**: casi siempre es un error de escritura en la clave de API. Cópiela de nuevo desde B1Admin (la clave completa solo se muestra una vez; si la perdió, cree una clave nueva).
+- **El módulo disparador no se activa**: revise **Settings → Developer → Webhooks** en B1Admin. Si después de activar el escenario no ve una fila "Make — &lt;event&gt;", la clave no tiene `settings:write`. Actualice la clave y vuelva a activar el escenario.
+- **La acción devuelve `403 Forbidden`**: la clave de API no tiene el scope para ese endpoint. Por ejemplo, Add Donation necesita `donations:write`. Actualice la clave en B1Admin y vuelva a probarla.
 
-## Personalizar la Aplicación
+## ¿Falta un módulo? {#missing-a-module}
 
-La aplicación B1.church Make es código abierto — las definiciones JSON viven en el repositorio `B1Integrations/Make/`. Si necesitas un módulo que no existe (p. ej. una nueva acción para un punto final que no hemos cubierto), abre un problema o PR allí.
+Si necesita un módulo que no existe (por ejemplo, una acción nueva para un endpoint que todavía no cubrimos), escriba a [support@churchapps.org](mailto:support@churchapps.org). Mientras tanto, el módulo **HTTP — Make a request** de Make puede llamar a cualquier endpoint de B1 con un encabezado `Authorization: Bearer cak_…`.
 
-## Ver También
+## Vea también {#see-also}
 
-- [Zapier](./zapier.md) — el mismo patrón con una interfaz más simple y un catálogo de aplicaciones más grande
-- [Slack y Discord](./slack-discord.md) — notificaciones de chat integradas sin Make
-- [Webhooks (referencia de desarrollador)](/docs/developer/api/webhooks)
+- [Zapier](./zapier.md): el mismo patrón con una interfaz más sencilla y un catálogo de aplicaciones más amplio
+- [Slack y Discord](./slack-discord.md): notificaciones de chat integradas, sin Make
+- [Webhooks (referencia para desarrolladores)](/docs/developer/api/webhooks)

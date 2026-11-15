@@ -1,114 +1,118 @@
 ---
 title: "Google Sheets"
-description: "Ikonekta ang B1 Admin sa Google Sheets gamit ang B1 Export add-on para hilahin ang People, Donations, Groups, at Attendance sa spreadsheet tuwing kailangan."
+description: "Ikonekta ang B1 Admin sa Google Sheets gamit ang B1 Export add-on para kunin ang People, Donations, Groups, at Attendance papunta sa mga tab ng spreadsheet kapag kailangan."
 ---
 
 # Google Sheets
 
 <div class="article-intro">
 
-Ang **B1 Export** ay ang opisyal na Google Sheets add-on para sa B1.church. Nagdadagdag ito ng sidebar sa anumang spreadsheet na nag-export ng People, Donations, Groups, o Attendance mula sa iyong B1 church sa mga named tabs — on demand, na may isang click. Ang add-on ay tumatakbo nang buo sa loob ng Google account ng user; wala tungkol dito na umabot sa ChurchApps' servers maliban sa read-only API calls na ginagawa ng bawat export.
+Ang **B1 Export** ang opisyal na add-on ng Google Sheets para sa B1.church. Naglalagay ito ng sidebar sa alinmang spreadsheet para i-export ang People, Donations, Groups, o Attendance mula sa iyong B1 church papunta sa mga pinangalanang tab — kapag kailangan, sa isang click lang. Ganap na tumatakbo ang add-on sa loob ng Google account ng user; walang ginagawa ito sa mga server ng ChurchApps maliban sa mga read-only na API call na ginagawa ng bawat export.
 
 </div>
+
+:::caution Hindi pa available
+Hindi pa nailalathala ang B1 Export add-on sa Google Workspace Marketplace, kaya hindi mo pa ito maii-install ngayon. Hanggang sa maging available ito, i-export ang mga tao mula sa B1Admin (tingnan ang [Exporting Data](../people/exporting-data.md)) at i-import ang CSV sa Google Sheets. Inilalarawan ng lahat ng nasa ibaba kung paano gagana ang add-on kapag nailabas na ito.
+:::
 
 <div class="prereqs">
-<h4>Bago Magsimula</h4>
+<h4>Bago Ka Magsimula</h4>
 
-- Isang Google account na may edit access sa spreadsheet na gusto mong mag-export
-- Isang church admin (o isang may read access sa data na gusto mong i-export) na maaaring lumikha ng isang B1 API key
-- Ang B1 Export add-on ay naka-install mula sa Google Workspace Marketplace
+- Isang Google account na may edit access sa spreadsheet na gusto mong pagexport-an
+- Isang church admin (o sinumang may read access sa datos na gusto mong i-export) na kayang gumawa ng B1 API key
+- Ang B1 Export add-on na naka-install mula sa Google Workspace Marketplace
 
 </div>
 
-## Ano ang I-export Nito
+## Ano ang Ine-export Nito {#what-it-exports}
 
-| Menu item | Sheet tab | Data |
+| Menu item | Tab ng sheet | Datos |
 |---|---|---|
 | Export People | `B1 People` | ID, Display Name, First, Last, Email, Membership Status |
 | Export Donations | `B1 Donations` | ID, Person ID, Date, Amount, Method, Batch ID |
 | Export Groups | `B1 Groups` | ID, Name, Category, Member Count |
 | Export Attendance | `B1 Attendance` | ID, Person ID, Visit Date, Service ID, Group ID |
 
-Bawat export **ay nagpapalit** ng contents ng naka-named tab — ang pag-run ng isang export ay nagbibigay sa iyo ng fresh snapshot, hindi appended rows. Ang ibang mga tabs sa spreadsheet ay untouched.
+Bawat export ay **pumapalit** sa laman ng pinangalanang tab nito — ang pag-ulit ng export ay nagbibigay ng bagong snapshot, hindi dinadagdag na mga row. Hindi naaapektuhan ang ibang tab sa spreadsheet.
 
-## Setup
+## Setup {#setup}
 
-### 1. Lumikha ng isang B1 API key na may tamang scopes
+### 1. Gumawa ng B1 API key na may tamang scope {#1-create-a-b1-api-key-with-the-right-scopes}
 
-1. Sa B1Admin pumunta sa **Settings → Developer → API Keys**.
-2. Mag-click ng **New API Key**, pangalanan ito "Sheets Export", at bigyan ng **read** scopes para sa anumang plano mong i-export:
+1. Sa B1Admin, pumunta sa **Settings → Developer → API Keys**.
+2. I-click ang **New API Key**, pangalanan itong "Sheets Export", at bigyan ng **read** scope ang anumang ie-export mo:
    - `people:read` para sa People export
    - `donations:read` para sa Donations
    - `groups:read` para sa Groups
    - `attendance:read` para sa Attendance
-3. Ang key na nag-export lamang ay **hindi kailangang** `settings:write` — ang scope na ito ay para lamang sa connectors na nag-register ng webhooks (Zapier / Make). Panatilihin ang key na ito na makitid.
-4. I-save at kopyahin ang `cak_…` key.
+3. Hindi kailangan ng key na para lang sa export ang `settings:write` — para lang ito sa mga connector na nagrerehistro ng webhook (Zapier / Make). Panatilihing makitid ang key na ito.
+4. I-save at i-copy ang `cak_…` key.
 
-### 2. I-install ang add-on
+### 2. I-install ang add-on {#2-install-the-add-on}
 
-1. Buksan ang spreadsheet na gusto mong mag-export.
+1. Buksan ang spreadsheet na gusto mong pagexport-an.
 2. **Extensions → Add-ons → Get add-ons**.
-3. Maghanap ng **B1 Export** at i-install ito. Hinihiling ng Google na bigyan ng access sa iyong sheets at sa external HTTP (upang ang add-on ay maaaring tawarang ang B1 API).
+3. Maghanap ng **B1 Export** at i-install ito. Hihingi ang Google ng pahintulot na i-access ang iyong mga sheet at ang external HTTP (para matawag ng add-on ang B1 API).
 
-Pagkatapos ng installation, ang isang **B1 Export** entry ay lumalabas sa **Extensions** menu ng bawat spreadsheet na bubuksan mo gamit ang Google account na ito.
+Pagkatapos ng install, lalabas ang entry na **B1 Export** sa ilalim ng menu na **Extensions** ng bawat spreadsheet na bubuksan mo gamit ang Google account na ito.
 
-### 3. Konektahan ang key
+### 3. Ikonekta ang key {#3-connect-the-key}
 
-1. **Extensions → B1 Export → Connect…** (o **B1 Export → Connect…** mula sa menu bar pagkatapos ng unang open).
-2. I-paste ang API key sa sidebar, iwanan ang Base URL bilang `https://api.churchapps.org` (maliban kung ikaw ay nag-test laban sa staging), at mag-click ng **Save**.
-3. Mag-click ng **Test Connection** — ang berdeng "Connection OK" ay nagko-confirm na ang key ay gumagana.
+1. **Extensions → B1 Export → Connect…** (o **B1 Export → Connect…** mula sa menu bar pagkatapos ng unang pagbukas).
+2. I-paste ang API key sa sidebar, iwanang `https://api.churchapps.org` ang Base URL (maliban kung nagte-test ka sa staging), at i-click ang **Save**.
+3. I-click ang **Test Connection** — kinukumpirma ng berdeng "Connection OK" na gumagana ang key.
 
-Ang key ay naka-store sa **per-user properties** (`PropertiesService.getUserProperties()`) — ito ay nakatali sa iyong Google account, hindi kailanman nakaisulat sa sheet, at hindi kailanman makikita sa ibang mga editor ng spreadsheet.
+Nakaimbak ang key sa **per-user properties** (`PropertiesService.getUserProperties()`) — nakatali ito sa iyong Google account, hindi kailanman isinusulat sa sheet, at hindi nakikita ng ibang editor ng spreadsheet.
 
-## Pag-run ng isang Export
+## Pagpapatakbo ng Export {#running-an-export}
 
-Isa man:
+Alinman sa:
 
 - **Mula sa menu** — **Extensions → B1 Export → Export People** (o Donations / Groups / Attendance)
-- **Mula sa sidebar** — buksan ang sidebar (Connect…) at mag-click ng appropriate dataset button
+- **Mula sa sidebar** — buksan ang sidebar (Connect…) at i-click ang angkop na dataset button
 
-Ang toast ay nagko-confirm kapag tapos na — "_N_ row(s) written to 'B1 People'."
+Kinukumpirma ng toast kapag tapos na — "_N_ row(s) written to 'B1 People'."
 
-## Pagbuo ng Mga Reports Sa Itaas
+## Paggawa ng Mga Ulat Gamit Ito {#building-reports-on-top}
 
-Ang exported tabs ay plain Google Sheets data. Bumuo ng iyong sariling analytics sa pamamagitan ng pagsasanggot sa mga tabs:
+Ang mga na-export na tab ay simpleng datos ng Google Sheets. Gumawa ng sarili mong analytics sa pamamagitan ng pag-reference sa mga tab:
 
-- Isang **summary tab** na may `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` upang kabuuhin ang card gifts
-- Isang **filtered view** ng mga members lamang na may `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
-- Isang **chart** ng attendance trends na kumukuha mula sa `B1 Attendance`
+- Isang **summary tab** na may `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` para i-total ang mga regalong card
+- Isang **filtered view** ng mga miyembro lang gamit ang `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
+- Isang **chart** ng mga trend ng attendance na kumukuha mula sa `B1 Attendance`
 
-Ang pag-run ng export ay nag-refresh ng underlying tab; ang iyong mga formula ay nag-update nang automatic.
+Kapag inulit mo ang export, nare-refresh ang pinagbabatayang tab; awtomatikong nag-a-update ang iyong mga formula.
 
-## Pag-schedule ng Recurring Exports
+## Pag-iskedyul ng Paulit-ulit na Export {#scheduling-recurring-exports}
 
-Ang add-on ay on-demand bilang default. Para sa weekly o monthly exports, gamitin ang Apps Script's built-in time-driven triggers:
+Ang add-on ay on-demand bilang default. Para sa lingguhan o buwanang export, gamitin ang mga built-in na time-driven trigger ng Apps Script:
 
-1. **Extensions → Apps Script** sa spreadsheet (ito ay nagbubukas ng bound script ng add-on).
-2. Mag-click ng **⏰ Triggers** icon sa left sidebar.
+1. **Extensions → Apps Script** sa spreadsheet (magbubukas ito ng naka-bind na script ng add-on).
+2. I-click ang icon na **⏰ Triggers** sa kaliwang sidebar.
 3. **Add Trigger** para sa `exportPeople` (o anumang export function) — piliin ang *Time-driven*, *Week timer*, hal. *Every Monday 6am*.
 
-Ang export ay tumatakbo sa background sa ilalim ng iyong Google account. Kung ang API key ay ino-rotate o na-revoke, ang trigger ay nag-email sa iyo sa susunod na pagkakataon na ito ay nabigo.
+Tumatakbo ang export sa background sa ilalim ng iyong Google account. Kung napalitan o nabawi ang API key, magpapadala sa iyo ng email ang trigger sa susunod na pagkabigo nito.
 
-## Mga Permiso at Privacy
+## Pahintulot at Privacy {#permissions--privacy}
 
-- Ang add-on ay humihiling lamang ng `spreadsheets.currentonly` (maaari lamang nito hawakan ang spreadsheet na ito ay open) at `script.external_request` (upang `UrlFetchApp` ay maaaring tawarang ang B1 API). Ito ay **hindi** nakikita ang iyong Drive, Gmail, o ibang Google data.
-- Ang B1 API key ay naka-store per-user — ang ibang mga editor ng parehong spreadsheet ay hindi ito makikita.
-- Ang lahat ng B1 API calls ay ginawa sa pamamagitan ng HTTPS na may `Authorization: Bearer cak_…`.
+- Humihingi lang ang add-on ng `spreadsheets.currentonly` (ang spreadsheet lang na bukas dito ang puwede nitong galawin) at `script.external_request` (para matawag ng `UrlFetchApp` ang B1 API). Hindi nito nakikita ang iyong Drive, Gmail, o iba pang datos ng Google.
+- Naka-imbak ang B1 API key kada user — hindi ito makikita ng ibang editor ng parehong spreadsheet.
+- Lahat ng tawag sa B1 API ay ginagawa sa HTTPS gamit ang `Authorization: Bearer cak_…`.
 
-## Troubleshooting
+## Troubleshooting {#troubleshooting}
 
 - **"No API key set"** — buksan ang **Extensions → B1 Export → Connect…** at i-paste ang key.
-- **"B1 rejected the API key (401)"** — ang key ay na-revoke o mali. Muling lumikha at muling i-paste ito.
-- **"This API key lacks permission for /giving/donations (403)"** — ang key ay walang `donations:read`. I-update ang scopes ng key sa B1Admin.
-- **Sheet doesn't refresh** pagkatapos ng pag-run — siguraduhin na titingin ka sa *correct* tab name (`B1 People` atbp.). Ang export ay lumilikha ng tab kung ito ay hindi umiiral.
-- **"Quota exceeded"** — Ang Apps Script ay naglalaan ng per-user daily quotas sa `UrlFetchApp` (karaniwang libu-libong calls bawat araw). Isang malaking church na may maraming records ay maaaring kailangang hatiin ang exports sa maraming araw o gamitin ang [Make](./make.md) / isang custom integration para sa high-volume sync.
+- **"B1 rejected the API key (401)"** — nabura ang key o mali ito. Gumawa ng bagong key at i-paste ito.
+- **"This API key lacks permission for /giving/donations (403)"** — walang `donations:read` ang key. Hindi mababago ang scope ng umiiral na key, kaya gumawa ng bagong key na may tamang scope sa B1Admin.
+- **Hindi nagre-refresh ang sheet** pagkatapos tumakbo — siguraduhing tinitingnan mo ang *tamang* pangalan ng tab (`B1 People` atbp.). Ginagawa ng export ang tab kung wala pa ito.
+- **"Quota exceeded"** — nagpapataw ang Apps Script ng araw-araw na quota kada user sa `UrlFetchApp` (karaniwang libu-libong tawag kada araw). Maaaring kailangang hatiin ng malaking simbahan na maraming record ang mga export sa maraming araw, o gumamit ng [Make](./make.md) / custom na integration para sa high-volume na sync.
 
-## Pag-customize ng Add-On
+## Kulang ang Isang Column? {#missing-a-column}
 
-Ang add-on ay open source — ang Apps Script project ay nasa `B1Integrations/GoogleSheetsAddon/` repo. Kung gusto mo ng isang column na hindi namin i-export, isang extra dataset, o isang iba't ibang output format, magbukas ng isang issue o PR doon.
+Kung gusto mo ng column na hindi namin ine-export, dagdag na dataset, o ibang output format, mag-email sa [support@churchapps.org](mailto:support@churchapps.org).
 
-## Makita Din
+## Tingnan Din {#see-also}
 
-- [Zapier](./zapier.md) — para sa real-time sync sa halip na on-demand export
-- [Make](./make.md) — para sa sync na may mas kumplikadong transformations
+- [Zapier](./zapier.md) — para sa real-time sync sa halip na on-demand na export
+- [Make](./make.md) — para sa sync na may mas kumplikadong transformation
 - [API Keys (developer reference)](/docs/developer/api/api-keys)

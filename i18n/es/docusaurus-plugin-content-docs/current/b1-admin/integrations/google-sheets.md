@@ -1,114 +1,118 @@
 ---
 title: "Google Sheets"
-description: "Conecta B1 Admin con Google Sheets usando el complemento B1 Export para importar personas, donaciones, grupos y asistencia bajo demanda."
+description: "Conecte B1 Admin con Google Sheets mediante el complemento B1 Export para extraer personas, donaciones, grupos y asistencia a pestañas de hojas de cálculo cuando lo necesite."
 ---
 
 # Google Sheets
 
 <div class="article-intro">
 
-**B1 Export** es el complemento oficial de Google Sheets para B1.church. Agrega una barra lateral a cualquier hoja de cálculo que exporte Personas, Donaciones, Grupos o Asistencia de tu iglesia B1 a pestañas nombradas — bajo demanda, con un clic. El complemento se ejecuta completamente dentro de la cuenta de Google del usuario; nada sobre él toca los servidores de ChurchApps más allá de las llamadas de API de solo lectura que cada exportación realiza.
+**B1 Export** es el complemento oficial de Google Sheets para B1.church. Agrega una barra lateral a cualquier hoja de cálculo que exporta personas, donaciones, grupos o asistencia de su iglesia en B1 a pestañas con nombre, cuando usted lo necesite, con un solo clic. El complemento se ejecuta por completo dentro de la cuenta de Google del usuario; no interactúa con los servidores de ChurchApps más allá de las llamadas de solo lectura a la API que hace cada exportación.
 
 </div>
 
-<div class="prereqs">
-<h4>Antes de Comenzar</h4>
+:::caution Todavía no disponible
+El complemento B1 Export todavía no se ha publicado en Google Workspace Marketplace, así que hoy no se puede instalar. Mientras tanto, exporte las personas desde B1Admin (consulte [Exportación de datos](../people/exporting-data.md)) e importe el CSV en Google Sheets. Todo lo que aparece a continuación describe cómo funcionará el complemento una vez publicado.
+:::
 
-- Una cuenta de Google con acceso de edición a la hoja de cálculo en la que deseas exportar
-- Un administrador de iglesia (o alguien con acceso de lectura a los datos que deseas exportar) capaz de crear una clave de API B1
+<div class="prereqs">
+<h4>Antes de comenzar</h4>
+
+- Una cuenta de Google con acceso de edición a la hoja de cálculo en la que desea exportar
+- Un administrador de la iglesia (o alguien con acceso de lectura a los datos que desea exportar) que pueda crear una clave de API de B1
 - El complemento B1 Export instalado desde Google Workspace Marketplace
 
 </div>
 
-## Qué Exporta
+## Qué exporta {#what-it-exports}
 
-| Elemento del menú | Pestaña de hoja | Datos |
+| Elemento del menú | Pestaña de la hoja | Datos |
 |---|---|---|
-| Exportar Personas | `B1 People` | ID, Nombre para mostrar, Nombre, Apellido, Correo electrónico, Estado de membresía |
-| Exportar Donaciones | `B1 Donations` | ID, ID de persona, Fecha, Cantidad, Método, ID de lote |
-| Exportar Grupos | `B1 Groups` | ID, Nombre, Categoría, Número de miembros |
-| Exportar Asistencia | `B1 Attendance` | ID, ID de persona, Fecha de visita, ID de servicio, ID de grupo |
+| Export People | `B1 People` | ID, Display Name, First, Last, Email, Membership Status |
+| Export Donations | `B1 Donations` | ID, Person ID, Date, Amount, Method, Batch ID |
+| Export Groups | `B1 Groups` | ID, Name, Category, Member Count |
+| Export Attendance | `B1 Attendance` | ID, Person ID, Visit Date, Service ID, Group ID |
 
-Cada exportación **reemplaza** el contenido de su pestaña nombrada — volver a ejecutar una exportación te da una instantánea nueva, no filas añadidas. Otras pestañas en la hoja de cálculo no se ven afectadas.
+Cada exportación **reemplaza** el contenido de su pestaña con nombre: al volver a ejecutar una exportación obtiene una copia nueva, no filas agregadas. Las demás pestañas de la hoja de cálculo no se modifican.
 
-## Configuración
+## Configuración {#setup}
 
-### 1. Crear una clave de API B1 con los alcances correctos
+### 1. Cree una clave de API de B1 con los permisos correctos {#1-create-a-b1-api-key-with-the-right-scopes}
 
-1. En B1Admin ve a **Configuración → Desarrollador → Claves de API**.
-2. Haz clic en **Nueva Clave de API**, nómbrala "Sheets Export", y otorga los alcances de **lectura** para lo que planeas exportar:
+1. En B1Admin vaya a **Settings → Developer → API Keys**.
+2. Haga clic en **New API Key**, póngale el nombre "Sheets Export" y otorgue los permisos **read** para lo que vaya a exportar:
    - `people:read` para la exportación de Personas
    - `donations:read` para Donaciones
    - `groups:read` para Grupos
    - `attendance:read` para Asistencia
-3. Una clave que solo hace exportaciones **no necesita** `settings:write` — ese alcance es solo para conectores que registran webhooks (Zapier / Make). Mantén esta clave estrecha.
-4. Guarda y copia la clave `cak_…`.
+3. Una clave que solo hace exportaciones **no** necesita `settings:write`; ese permiso es solo para los conectores que registran webhooks (Zapier / Make). Mantenga esta clave lo más limitada posible.
+4. Guarde y copie la clave `cak_…`.
 
-### 2. Instalar el complemento
+### 2. Instale el complemento {#2-install-the-add-on}
 
-1. Abre la hoja de cálculo en la que deseas exportar.
-2. **Extensiones → Complementos → Obtener complementos**.
-3. Busca **B1 Export** e instálalo. Google te pide que otorgues acceso a tus hojas y a HTTP externo (para que el complemento pueda llamar a la API B1).
+1. Abra la hoja de cálculo en la que desea exportar.
+2. **Extensions → Add-ons → Get add-ons**.
+3. Busque **B1 Export** e instálelo. Google le pedirá que otorgue acceso a sus hojas y a HTTP externo (para que el complemento pueda llamar a la API de B1).
 
-Después de la instalación, una entrada **B1 Export** aparece bajo el menú **Extensiones** de cada hoja de cálculo que abras con esta cuenta de Google.
+Después de la instalación, aparecerá una entrada **B1 Export** en el menú **Extensions** de cada hoja de cálculo que abra con esta cuenta de Google.
 
-### 3. Conectar la clave
+### 3. Conecte la clave {#3-connect-the-key}
 
-1. **Extensiones → B1 Export → Conectar…** (o **B1 Export → Conectar…** desde la barra de menú después de la primera apertura).
-2. Pega la clave de API en la barra lateral, deja la URL base como `https://api.churchapps.org` (a menos que estés probando contra staging), y haz clic en **Guardar**.
-3. Haz clic en **Probar conexión** — un "Conexión OK" en verde confirma que la clave funciona.
+1. **Extensions → B1 Export → Connect…** (o **B1 Export → Connect…** desde la barra de menú después de la primera vez que lo abra).
+2. Pegue la clave de API en la barra lateral, deje la Base URL como `https://api.churchapps.org` (a menos que esté haciendo pruebas en el entorno de staging) y haga clic en **Save**.
+3. Haga clic en **Test Connection**: un mensaje verde "Connection OK" confirma que la clave funciona.
 
-La clave se almacena en **propiedades por usuario** (`PropertiesService.getUserProperties()`) — está vinculada a tu cuenta de Google, nunca se escribe en la hoja, y nunca es visible para otros editores de la hoja de cálculo.
+La clave se guarda en las **propiedades por usuario** (`PropertiesService.getUserProperties()`): está vinculada a su cuenta de Google, nunca se escribe en la hoja de cálculo y no es visible para otros editores de la hoja.
 
-## Ejecutar una Exportación
+## Cómo ejecutar una exportación {#running-an-export}
 
-Ya sea:
+Puede hacerlo de cualquiera de estas formas:
 
-- **Desde el menú** — **Extensiones → B1 Export → Exportar Personas** (o Donaciones / Grupos / Asistencia)
-- **Desde la barra lateral** — abre la barra lateral (Conectar…) y haz clic en el botón del conjunto de datos apropiado
+- **Desde el menú**: **Extensions → B1 Export → Export People** (o Donations / Groups / Attendance)
+- **Desde la barra lateral**: abra la barra lateral (Connect…) y haga clic en el botón del conjunto de datos correspondiente
 
-Un tostado confirma cuando está completo — "_N_ fila(s) escriba en 'B1 People'."
+Un aviso confirma cuando termina: "_N_ fila(s) escrita(s) en 'B1 People'."
 
-## Construir Reportes Encima
+## Cómo crear informes a partir de los datos {#building-reports-on-top}
 
-Las pestañas exportadas son datos simples de Google Sheets. Construye tu propio análisis en pestañas que hacen referencia:
+Las pestañas exportadas son datos normales de Google Sheets. Cree sus propios análisis haciendo referencia a esas pestañas:
 
-- Una **pestaña de resumen** con `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` para totalizar regalos con tarjeta
-- Una **vista filtrada** de solo miembros con `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
-- Un **gráfico** de tendencias de asistencia que extrae de `B1 Attendance`
+- Una **pestaña de resumen** con `=SUMIF('B1 Donations'!E:E, "card", 'B1 Donations'!D:D)` para totalizar las donaciones con tarjeta
+- Una **vista filtrada** solo de miembros con `=FILTER('B1 People'!A:F, 'B1 People'!F:F = "Member")`
+- Un **gráfico** de tendencias de asistencia que tome datos de `B1 Attendance`
 
-Volver a ejecutar la exportación actualiza la pestaña subyacente; tus fórmulas se actualizan automáticamente.
+Al volver a ejecutar la exportación se actualiza la pestaña subyacente, y sus fórmulas se actualizan automáticamente.
 
-## Programar Exportaciones Recurrentes
+## Programación de exportaciones recurrentes {#scheduling-recurring-exports}
 
-El complemento está bajo demanda por defecto. Para exportaciones semanales o mensuales, usa los disparadores de tiempo integrados de Apps Script:
+El complemento funciona a demanda de forma predeterminada. Para exportaciones semanales o mensuales, use los disparadores basados en tiempo integrados de Apps Script:
 
-1. **Extensiones → Apps Script** en la hoja de cálculo (esto abre el script vinculado del complemento).
-2. Haz clic en el icono **⏰ Disparadores** en la barra lateral izquierda.
-3. **Agregar disparador** para `exportPeople` (o cualquier función de exportación) — elige *Controlado por tiempo*, *Temporizador de semana*, p. ej. *Cada lunes a las 6am*.
+1. **Extensions → Apps Script** en la hoja de cálculo (esto abre el script vinculado al complemento).
+2. Haga clic en el icono **⏰ Triggers** en la barra lateral izquierda.
+3. Haga clic en **Add Trigger** para `exportPeople` (o cualquier otra función de exportación): elija *Time-driven*, *Week timer*, por ejemplo, *Every Monday 6am*.
 
-La exportación se ejecuta en segundo plano bajo tu cuenta de Google. Si la clave de API se rota o revoca, el disparador te envía un correo la próxima vez que falla.
+La exportación se ejecuta en segundo plano con su cuenta de Google. Si la clave de API se rota o se revoca, el disparador le enviará un correo electrónico la próxima vez que falle.
 
-## Permisos y Privacidad
+## Permisos y privacidad {#permissions--privacy}
 
-- El complemento solicita solo `spreadsheets.currentonly` (solo puede tocar la hoja de cálculo en la que está abierto) y `script.external_request` (para que `UrlFetchApp` pueda llamar a la API B1). **No ve** tu Drive, Gmail u otros datos de Google.
-- La clave de API B1 se almacena por usuario — otros editores de la misma hoja de cálculo no pueden verla.
-- Todas las llamadas de API B1 se realizan por HTTPS con `Authorization: Bearer cak_…`.
+- El complemento solicita únicamente `spreadsheets.currentonly` (solo puede tocar la hoja de cálculo que tiene abierta) y `script.external_request` (para que `UrlFetchApp` pueda llamar a la API de B1). **No** accede a su Drive, Gmail ni a otros datos de Google.
+- La clave de API de B1 se guarda por usuario: otros editores de la misma hoja de cálculo no pueden verla.
+- Todas las llamadas a la API de B1 se hacen por HTTPS con `Authorization: Bearer cak_…`.
 
-## Solución de Problemas
+## Solución de problemas {#troubleshooting}
 
-- **"No hay clave de API configurada"** — abre **Extensiones → B1 Export → Conectar…** y pega la clave.
-- **"B1 rechazó la clave de API (401)"** — la clave fue revocada o es incorrecta. Recrea y vuelve a pegar.
-- **"Esta clave de API carece de permiso para /giving/donations (403)"** — la clave no tiene `donations:read`. Actualiza los alcances de la clave en B1Admin.
-- **La hoja no se actualiza** después de ejecutar — asegúrate de que estés mirando el nombre de pestaña *correcto* (`B1 People` etc.). La exportación crea la pestaña si no existía.
-- **"Cuota excedida"** — Apps Script impone cuotas diarias por usuario en `UrlFetchApp` (típicamente miles de llamadas por día). Una iglesia grande con muchos registros puede necesitar dividir exportaciones en múltiples días o usar [Make](./make.md) / una integración personalizada para sincronización de alto volumen.
+- **"No API key set"**: abra **Extensions → B1 Export → Connect…** y pegue la clave.
+- **"B1 rejected the API key (401)"**: la clave fue eliminada o es incorrecta. Cree una clave nueva y péguela.
+- **"This API key lacks permission for /giving/donations (403)"**: la clave no tiene `donations:read`. Los permisos no se pueden cambiar en una clave existente, así que cree una nueva clave con los permisos correctos en B1Admin.
+- **La hoja no se actualiza** después de ejecutar la exportación: asegúrese de estar mirando el nombre de pestaña *correcto* (`B1 People`, etc.). La exportación crea la pestaña si no existía.
+- **"Quota exceeded"**: Apps Script impone cuotas diarias por usuario para `UrlFetchApp` (normalmente miles de llamadas al día). Una iglesia grande con muchos registros puede necesitar dividir las exportaciones en varios días, o usar [Make](./make.md) o una integración personalizada para una sincronización de gran volumen.
 
-## Personalizar el Complemento
+## ¿Falta una columna? {#missing-a-column}
 
-El complemento es código abierto — el proyecto de Apps Script vive en el repositorio `B1Integrations/GoogleSheetsAddon/`. Si quieres una columna que no exportamos, un conjunto de datos adicional, o un formato de salida diferente, abre un problema o PR allí.
+Si quiere una columna que no exportamos, un conjunto de datos adicional o un formato de salida diferente, escriba a [support@churchapps.org](mailto:support@churchapps.org).
 
-## Ver También
+## Vea también {#see-also}
 
-- [Zapier](./zapier.md) — para sincronización en tiempo real en lugar de exportación bajo demanda
-- [Make](./make.md) — para sincronización con transformaciones más complejas
-- [Claves de API (referencia de desarrollador)](/docs/developer/api/api-keys)
+- [Zapier](./zapier.md): para sincronización en tiempo real en lugar de exportación a demanda
+- [Make](./make.md): para sincronización con transformaciones más complejas
+- [Claves de API (referencia para desarrolladores)](/docs/developer/api/api-keys)

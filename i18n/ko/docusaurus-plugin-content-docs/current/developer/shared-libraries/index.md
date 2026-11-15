@@ -35,7 +35,7 @@ yarn build
 
 이 저장소는 Yarn Berry를 사용하며(루트의 `packageManager` 필드가 기준입니다), 잠금 파일은 하나입니다. `yarn build`는 의존 순서에 따라 모든 패키지를 빌드하고, `yarn test`는 모든 패키지의 테스트를 실행합니다.
 
-## Changesets로 릴리스하기
+## Changesets로 릴리스하기 {#releasing-with-changesets}
 
 패키지의 모든 변경은 changeset과 함께 배포됩니다.
 
@@ -47,7 +47,7 @@ yarn build
 단일 패키지 안에서 `npm publish`를 직접 실행하지 마세요. 빌드 순서와 릴리스 스크립트가 처리하는 버전 관리 작업을 건너뛰게 됩니다. 배포하려면 `@churchapps` 범위에 대한 배포 권한이 있는 npm 계정이 필요합니다.
 :::
 
-## 연동 앱에서 로컬 개발하기
+## 연동 앱에서 로컬 개발하기 {#local-development-against-a-consuming-app}
 
 워크스페이스 안에서는 패키지가 형제 패키지에 직접 연결되어 빌드되므로 별도의 링크가 필요 없습니다. 연동된 앱(B1Admin, B1App 등)에서 아직 배포되지 않은 패키지 빌드를 테스트하려면, 소비 측 프로젝트에 임시 Yarn portal을 추가합니다.
 

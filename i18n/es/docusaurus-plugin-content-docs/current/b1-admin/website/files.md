@@ -1,62 +1,62 @@
 ---
 title: "Archivos"
-description: "Sube, explora y administra imágenes y documentos para el sitio web de tu iglesia en B1 Admin, incluyendo la vinculación de almacenamiento externo para más espacio."
+description: "Suba, explore y administre imágenes y documentos para el sitio web de su iglesia en B1 Admin, incluida la vinculación de almacenamiento externo para obtener más espacio."
 ---
 
 # Archivos
 
 <div class="article-intro">
 
-La página Archivos es el repositorio central para todos los medios y documentos utilizados en tu sitio web de iglesia. Desde aquí puedes cargar, explorar y administrar cada imagen, documento y archivo multimedia que tu sitio necesita.
+La página de Archivos es el repositorio central de todos los recursos multimedia y documentos que usa el sitio web de su iglesia. Desde aquí puede subir, explorar y administrar cada imagen, documento y archivo multimedia que necesite su sitio.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Comenzar</h4>
+<h4>Antes de empezar</h4>
 
-- Completa la [Configuración Inicial](./initial-setup.md) de tu sitio web
-- Optimiza las imágenes antes de cargarlas para tiempos de carga más rápidos
-- Prepara tus archivos en formatos web comunes (PNG, JPG, PDF, etc.)
+- Complete la [configuración inicial](./initial-setup.md) de su sitio web
+- Optimice las imágenes antes de subirlas para que las páginas carguen más rápido
+- Prepare sus archivos en formatos web comunes (PNG, JPG, PDF, etc.)
 
 </div>
 
-## Carga de Archivos
+## Subir archivos {#uploading-files}
 
-1. En B1 Admin, abre el [menú Jump](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Website** y haz clic en **Files**.
-2. En el panel **Upload Files** de la derecha, haz clic en **Choose File** y selecciona un archivo de tu computadora. (El botón **Upload Files** en la parte superior de la página lleva al mismo panel).
-3. Tu archivo se cargará y aparecerá en la tabla de archivos.
+1. En B1 Admin, abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Sitio web** y haga clic en **Archivos**.
+2. Haga clic en **Subir archivos** en la parte superior de la página, o en **Elegir archivo** en el panel **Subir archivos** de la derecha, y seleccione un archivo de su computadora.
+3. El archivo se sube en cuanto lo selecciona y aparece en la tabla de archivos.
 
-El panel Upload Files también muestra cuánto almacenamiento estás usando. Se incluyen 100 MB gratis; para obtener más, vincula tu propio Google Drive, Dropbox, OneDrive o bucket de S3 en **Settings**, en la sección **File Storage**.
+El panel Subir archivos también muestra cuánto almacenamiento está usando. Se incluyen 100 MB gratis; cuando se llenan, los botones de subida se ocultan hasta que elimine archivos o agregue espacio. Para obtener más, vincule su propio Google Drive, Dropbox, OneDrive o bucket de S3 en **Configuración**, en la sección **Almacenamiento de archivos**. Los archivos se guardan entonces en su cuenta vinculada, y el panel muestra **Almacenado en su cuenta vinculada**.
 
 :::tip
-Para obtener los mejores resultados, optimiza las imágenes antes de cargarlas. Los tamaños de archivo más pequeños ayudan a que tu sitio web cargue más rápido para los visitantes. Herramientas como TinyPNG o Squoosh pueden comprimir imágenes sin pérdida de calidad notable.
+Para mejores resultados, optimice las imágenes antes de subirlas. Los archivos más pequeños ayudan a que su sitio web cargue más rápido para los visitantes. Herramientas como TinyPNG o Squoosh pueden comprimir imágenes sin una pérdida de calidad notable.
 :::
 
-## Exploración de Archivos
+## Explorar archivos {#browsing-files}
 
-La tabla de archivos muestra todos los archivos cargados con su **Name** y **Size**. Haz clic en el nombre de un archivo para abrirlo en una nueva pestaña. Asigna nombres claros y descriptivos a los archivos antes de cargarlos para que tu equipo pueda encontrarlos rápidamente.
+La tabla de archivos enumera cada archivo subido con su **Nombre** y su **Tamaño**. Haga clic en el nombre de un archivo para abrirlo en una nueva pestaña. Antes de subir, dé a los archivos nombres claros y descriptivos para que su equipo pueda encontrarlos rápidamente.
 
-## Uso de Archivos en tu Sitio Web
+## Usar archivos en su sitio web {#using-files-on-your-website}
 
-1. Busca el archivo en la tabla de archivos.
-2. Haz clic en **Copy link** para copiar la URL del archivo. Puedes pegar esta URL en elementos de imagen, enlaces de descarga o cualquier otro lugar que acepte una URL de archivo.
-3. Los archivos que cargues aquí están disponibles para usarse en todas tus páginas web y bloques de contenido.
+1. Busque el archivo en la tabla de archivos.
+2. Haga clic en **Copiar enlace** para copiar la URL del archivo (el botón cambia a **Copiado**). Puede pegar esta URL en elementos de imagen, enlaces de descarga o en cualquier otro lugar que acepte una URL de archivo.
+3. Los archivos que sube aquí están disponibles para usarse en todas las páginas y bloques de contenido de su sitio web.
 
 :::info
-Al construir páginas en [Administración de Páginas](./managing-pages.md), puedes referenciar cualquier archivo cargado aquí por su URL. Esto mantiene todos tus medios organizados en una ubicación central.
+Al construir páginas en [Gestionar páginas](./managing-pages.md), puede hacer referencia a cualquier archivo subido aquí mediante su URL. Así todo su contenido multimedia queda organizado en una sola ubicación central.
 :::
 
-## Eliminación de Archivos
+## Eliminar archivos {#deleting-files}
 
-1. Busca el archivo que deseas eliminar en la tabla de archivos.
-2. Haz clic en **Delete** junto a él y confirma para eliminarlo permanentemente de tu biblioteca.
-3. Asegúrate de que el archivo no esté siendo utilizado actualmente en ninguna página antes de eliminarlo, ya que esto romperá cualquier enlace o imagen que lo referencie.
+1. Busque el archivo que desea quitar en la tabla de archivos.
+2. Haga clic en **Eliminar** junto a él y confirme para quitarlo de forma permanente de su biblioteca.
+3. Asegúrese de que el archivo no se esté usando en ninguna página antes de eliminarlo, ya que esto romperá los enlaces o imágenes que lo referencian.
 
 :::warning
-Los archivos eliminados no pueden ser recuperados. Verifica dos veces que un archivo ya no esté en uso en ninguna página antes de eliminarlo.
+Los archivos eliminados no se pueden recuperar. Verifique dos veces que un archivo ya no esté en uso en ninguna página antes de quitarlo.
 :::
 
-## Próximos Pasos
+## Próximos pasos {#next-steps}
 
-- [Administración de Páginas](./managing-pages.md) -- Agrega tus archivos cargados a las páginas web
-- [Apariencia](./appearance.md) -- Personaliza el tema visual de tu sitio
+- [Gestionar páginas](./managing-pages.md) -- Agregue sus archivos subidos a las páginas del sitio web
+- [Apariencia](./appearance.md) -- Personalice el tema visual de su sitio

@@ -1,46 +1,46 @@
 ---
-title: "Elenchi di Compleanni e Anniversari"
-description: "Crea un elenco di tutti i compleanni o anniversari di un mese specifico usando i filtri di ricerca Persone in B1 Admin, poi visualizza o esporta le date."
+title: "Elenchi di compleanni e anniversari"
+description: "Crea un elenco di tutte le persone con un compleanno o un anniversario in un dato mese usando i filtri di ricerca Persone in B1 Admin, poi visualizza o esporta le date."
 ---
 
-# Elenchi di Compleanni e Anniversari
+# Elenchi di compleanni e anniversari
 
 <div class="article-intro">
 
-Hai bisogno di un elenco di tutti coloro che hanno un compleanno o un anniversario in un determinato mese -- per il bollettino, gli annunci o i biglietti? La ricerca People può filtrare la tua congregazione per **Birth Month** e **Anniversary Month** e mostrare le date direttamente nei risultati.
+Ti serve un elenco di tutte le persone con un compleanno o un anniversario in un dato mese, per il bollettino, gli annunci o i biglietti? La ricerca Persone può filtrare la tua comunità per **Mese di nascita** e **Mese dell'anniversario** e mostrare le date direttamente nei risultati.
 
 </div>
 
 <div class="prereqs">
-<h4>Prima di Iniziare</h4>
+<h4>Prima di iniziare</h4>
 
-- Assicurati che le date di nascita (e gli anniversari) siano inseriti nel profilo di ogni persona. Vedi [Aggiunta di Persone](../people/adding-people.md).
-- Hai bisogno di autorizzazione per visualizzare People. Vedi [Ruoli e Autorizzazioni](../settings/roles-permissions.md).
+- Assicurati che le date di nascita (e gli anniversari) siano inserite nella scheda di ogni persona. Vedi [Aggiungere persone](../people/adding-people.md).
+- Ti serve l'autorizzazione per visualizzare le Persone. Vedi [Ruoli e autorizzazioni](../settings/roles-permissions.md).
 
 </div>
 
-## Ottenimento di un Elenco di Compleanni per un Mese
+## Ottenere un elenco dei compleanni per un mese {#getting-a-birthday-list-for-a-month}
 
-1. Apri il [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **People**, e fai clic su **People**.
-2. Sotto la casella di ricerca, fai clic su **Advanced**.
-3. Espandi la sezione **Demographics** e seleziona **Birth Month**, quindi scegli il mese.
-4. Esegui la ricerca — tutti coloro che hanno un compleanno in quel mese appaiono nei risultati.
-5. Per vedere le date, imposta **View as** su **Table**, quindi fai clic sull'icona **Select columns** nell'intestazione della pagina e abilita la colonna **Birthday**. Usa **Export** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
+1. Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Persone** e fai clic su **Persone**.
+2. Sotto la casella di ricerca, fai clic su **Avanzata**.
+3. Espandi la sezione **Dati demografici** e seleziona **Mese di nascita**, quindi scegli il mese.
+4. I risultati si aggiornano non appena selezioni il filtro: compaiono tutte le persone che hanno un compleanno in quel mese.
+5. Per vedere le date, imposta **Visualizza come** su **Tabella**, quindi fai clic sull'icona **Seleziona colonne** nell'intestazione della pagina e attiva la colonna **Data di nascita** (oppure **Compleanno (senza anno)** per omettere l'anno). Usa **Esporta** per scaricare l'elenco come foglio di calcolo se preferisci ordinarlo o stamparlo lì.
 
-## Ottenimento di un Elenco Anniversari
+## Ottenere un elenco degli anniversari {#getting-an-anniversary-list}
 
-Stessi passaggi -- nella sezione **Demographics**, seleziona **Anniversary Month** invece (o anche), scegli il mese, e abilita la colonna **Anniversary** nei risultati.
+Stessi passaggi: nella sezione **Dati demografici**, seleziona invece (o anche) **Mese dell'anniversario**, scegli il mese e attiva la colonna **Anniversario** nei risultati.
 
-## Usi Pratici
+## Usi pratici {#practical-uses}
 
-- **Bollettini settimanali** -- Esegui l'elenco del mese corrente e leggi i nomi direttamente nel bollettino.
-- **Biglietti di compleanno e anniversario** -- Esporta l'elenco del mese e consegnalo al tuo team di scrittura di biglietti.
-- **Pietre miliari** -- Combinalo con il filtro **Age** per trovare compleanni di pietre miliari.
+- **Bollettini settimanali** -- Esegui l'elenco del mese in corso e leggi i nomi direttamente nel bollettino.
+- **Biglietti di compleanno e anniversario** -- Esporta l'elenco del mese e consegnalo al team che scrive i biglietti.
+- **Traguardi** -- Combinalo con il filtro **Età** per trovare i compleanni importanti.
 
 :::tip
-Entrambi gli elenchi provengono dai campi data di nascita e anniversario sul profilo di ogni persona -- se qualcuno manca, il suo profilo ha solo bisogno che la data sia aggiunta.
+Entrambi gli elenchi derivano dai campi data di nascita e anniversario presenti nella scheda di ogni persona: se manca qualcuno, basta aggiungere la data nella sua scheda.
 :::
 
 :::info
-Le versioni precedenti di B1 Admin avevano una pagina Report separata per i compleanni. Quella pagina è stata ritirata -- i filtri di ricerca People sopra sono il modo attuale, e coprono anche gli anniversari.
+Le versioni precedenti di B1 Admin collegavano dal menu un report separato dei compleanni. Quel collegamento è stato rimosso: i filtri di ricerca Persone descritti sopra sono ora il modo attuale, e includono anche gli anniversari.
 :::

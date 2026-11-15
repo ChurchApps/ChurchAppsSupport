@@ -1,13 +1,13 @@
 ---
 title: "Filer"
-description: "Last opp, bla gjennom og administrer bilder og dokumenter for menighetens nettsted i B1 Admin, inkludert kobling til ekstern lagring for mer plass."
+description: "Last opp, bla gjennom og administrer bilder og dokumenter til menighetens nettside i B1 Admin, inkludert kobling til ekstern lagring for mer plass."
 ---
 
 # Filer
 
 <div class="article-intro">
 
-Siden Filer er det sentrale arkivet for alle medier og dokumenter som brukes på kirkens nettsted. Herfra kan du laste opp, bla gjennom og administrere alle bilder, dokumenter og mediefiler nettstedet trenger.
+Siden Filer er det sentrale lageret for all media og alle dokumenter som brukes på menighetens nettside. Herfra kan du laste opp, bla gjennom og administrere hvert bilde, dokument og mediefil nettstedet ditt trenger.
 
 </div>
 
@@ -15,48 +15,48 @@ Siden Filer er det sentrale arkivet for alle medier og dokumenter som brukes på
 <h4>Før du begynner</h4>
 
 - Fullfør [førstegangsoppsettet](./initial-setup.md) for nettstedet ditt
-- Optimaliser bilder før opplasting, så sidene lastes raskere
-- Gjør filene klare i vanlige nettformater (PNG, JPG, PDF osv.)
+- Optimaliser bilder før du laster dem opp, for raskere sidelasting
+- Klargjør filene dine i vanlige webformater (PNG, JPG, PDF osv.)
 
 </div>
 
-## Laste opp filer
+## Laste opp filer {#uploading-files}
 
-1. Åpne [Jump-menyen](../introduction.md#getting-around-with-the-jump-menu) i B1 Admin (søkefeltet øverst til venstre), utvid **Nettsted** og klikk på **Filer**.
-2. I panelet **Last opp filer** til høyre klikker du på **Velg fil** og velger en fil fra datamaskinen. (Knappen **Last opp filer** øverst på siden tar deg til det samme panelet.)
-3. Filen lastes opp og vises i filtabellen.
+1. I B1 Admin åpner du [Hurtigmenyen](../introduction.md#getting-around-with-the-jump-menu) (søkefeltet øverst til venstre), utvider **Nettside** og klikker på **Filer**.
+2. Klikk på **Last opp filer** øverst på siden, eller på **Velg fil** i panelet **Last opp filer** til høyre, og velg en fil fra datamaskinen din.
+3. Filen lastes opp med en gang du velger den, og vises i filtabellen.
 
-Last opp-panelet viser også hvor mye lagringsplass du bruker. 100 MB er gratis. For å få mer kobler du til din egen Google Drive, Dropbox, OneDrive eller S3-bucket under **Innstillinger**, i delen **Fillagring**.
+Panelet Last opp filer viser også hvor mye lagringsplass du bruker. 100 MB er gratis; når den er full, skjules opplastingsknappene til du sletter filer eller legger til plass. For å få mer kobler du til din egen Google Drive, Dropbox, OneDrive eller S3-bøtte under **Innstillinger**, i delen **Fillagring**. Filer går da til din tilkoblede konto, og panelet viser **Lagret i din tilkoblede konto**.
 
 :::tip
-For best resultat bør du optimalisere bilder før opplasting. Mindre filer gjør at nettstedet lastes raskere for besøkende. Verktøy som TinyPNG eller Squoosh kan komprimere bilder uten merkbart kvalitetstap.
+For best resultat bør du optimalisere bilder før du laster dem opp. Mindre filstørrelser gjør at nettstedet ditt laster raskere for besøkende. Verktøy som TinyPNG eller Squoosh kan komprimere bilder uten merkbart kvalitetstap.
 :::
 
 ## Bla gjennom filer {#browsing-files}
 
-Filtabellen viser alle opplastede filer med **Navn** og **Størrelse**. Klikk på navnet til en fil for å åpne den i en ny fane. Gi filene klare, beskrivende navn før du laster dem opp, slik at teamet ditt raskt finner dem.
+Filtabellen lister hver opplastet fil med **navn** og **størrelse**. Klikk på navnet til en fil for å åpne den i en ny fane. Gi filene tydelige, beskrivende navn før du laster dem opp, slik at teamet ditt raskt finner dem.
 
-## Bruke filer på nettstedet
+## Bruke filer på nettstedet ditt {#using-files-on-your-website}
 
 1. Finn filen i filtabellen.
-2. Klikk på **Kopier lenke** for å kopiere filens URL. Du kan lime inn URL-en for å bruke den på nettsidene dine. Du kan lime inn URL-en i bildeelementer, nedlastingslenker eller andre steder som godtar en fil-URL.
-3. Filer du laster opp her, kan brukes på alle nettsidene og innholdsblokkene dine.
+2. Klikk på **Kopier lenke** for å kopiere URL-en til filen (knappen endres til **Kopiert**). Du kan lime inn denne URL-en i bildeelementer, nedlastingslenker eller hvor som helst annet som godtar en fil-URL.
+3. Filer du laster opp her, er tilgjengelige for bruk på alle sidene og innholdsblokkene på nettstedet ditt.
 
 :::info
-Når du bygger sider under [Administrere sider](./managing-pages.md), kan du henvise til enhver fil som er lastet opp her, med URL-en. Da har du alle mediene organisert på ett sted.
+Når du bygger sider i [Administrere sider](./managing-pages.md), kan du referere til enhver fil som er lastet opp her, med URL-en. Dette holder all media organisert på ett sentralt sted.
 :::
 
-## Slette filer
+## Slette filer {#deleting-files}
 
 1. Finn filen du vil fjerne i filtabellen.
-2. Klikk på **Slett** ved siden av den og bekreft for å fjerne den permanent fra biblioteket.
-3. Pass på at filen ikke er i bruk på noen side før du sletter den, for sletting ødelegger alle lenker og bilder som henviser til den.
+2. Klikk på **Slett** ved siden av den og bekreft for å fjerne den permanent fra biblioteket ditt.
+3. Pass på at filen ikke brukes på en side akkurat nå før du sletter den, siden dette vil ødelegge lenker eller bilder som refererer til den.
 
 :::warning
-Slettede filer kan ikke gjenopprettes. Dobbeltsjekk at filen ikke lenger er i bruk på noen side før du fjerner den.
+Slettede filer kan ikke gjenopprettes. Kontroller dobbelt at en fil ikke lenger brukes på noen side før du fjerner den.
 :::
 
-## Neste steg
+## Neste steg {#next-steps}
 
-- [Administrere sider](./managing-pages.md) -- Legg de opplastede filene til nettsidene
+- [Administrere sider](./managing-pages.md) -- Legg til opplastede filer på nettstedets sider
 - [Utseende](./appearance.md) -- Tilpass nettstedets visuelle tema

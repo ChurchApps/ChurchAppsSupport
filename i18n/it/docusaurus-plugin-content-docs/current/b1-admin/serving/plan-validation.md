@@ -1,72 +1,88 @@
 ---
-title: "Convalida dei piani e notifiche"
-description: "Controlla i piani di culto in B1 Admin per posizioni non coperte, conflitti di pianificazione e volontari non disponibili, quindi invia una notifica push a tutto il team con un solo clic."
+title: "Verifica dei piani e notifiche"
+description: "Controlla in B1 Admin i piani di servizio per posizioni non coperte, conflitti di pianificazione e volontari non disponibili, poi invia una notifica push a tutto il team con un solo clic."
 ---
 
-# Convalida dei piani e notifiche ai volontari
+# Verifica dei piani e notifiche ai volontari
 
 <div class="article-intro">
 
-B1 Admin controlla automaticamente i tuoi piani prima della domenica: posizioni non coperte, conflitti di pianificazione e volontari che hanno segnalato l'indisponibilità per quella data. Quando tutto è in ordine, puoi avvisare l'intero team con un solo clic.
+B1 Admin controlla automaticamente i tuoi piani alla ricerca di problemi prima della domenica: posizioni non coperte, conflitti di pianificazione e volontari che hanno bloccato la data. Quando tutto è in ordine, puoi avvisare l'intero team con un solo clic.
 
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Crea un [piano di culto](./plans.md) e assegna i volontari alle posizioni
-- Aggiungi gli [orari delle funzioni](./plans.md) al piano, così il rilevamento dei conflitti può verificare le sovrapposizioni
-- Assicurati che i volontari abbiano [installato la B1 App](../../b1-church/getting-started/installing-pwa.md) per ricevere le notifiche push
+- Crea un [piano di servizio](./plans.md) e assegna i volontari alle posizioni
+- Aggiungi gli [orari del servizio](./plans.md) al piano, così il rilevamento dei conflitti può verificare le sovrapposizioni
+- Assicurati che i volontari abbiano [installato l'app B1](../../b1-church/getting-started/installing-pwa.md) per ricevere le notifiche push
 
 </div>
 
-## Il pannello di convalida
+## Il pannello di verifica {#the-validation-panel}
 
-Ogni piano ha un pannello **Convalida** che si avvia automaticamente mentre lo costruisci. Verifica tre aspetti:
+Ogni piano ha un pannello **Verifica** che si avvia automaticamente mentre lo compili. Apri il piano e fai clic su **Gestisci il team di servizio** per vederlo accanto alle posizioni. La pagina del piano mostra un riepilogo di una riga sotto **Team di servizio** (ad esempio, "2 conflitti · 3 non notificati") con un collegamento **Verifica** al pannello completo. Anche le posizioni che hanno ancora bisogno di persone sono elencate nella pagina del piano, quindi la riga di riepilogo conta solo i conflitti e i volontari non ancora notificati.
 
-### Posizioni non coperte
-Se una posizione richiede più persone di quelle attualmente assegnate, il pannello di convalida elenca esattamente ciò che manca, ad esempio *"Tecnico del suono: manca 1 persona."* Puoi vedere a colpo d'occhio se il piano è completo prima dell'arrivo della settimana.
+Il pannello controlla quanto segue:
 
-### Conflitti di pianificazione
-Se un volontario è assegnato a due posizioni che si sovrappongono nel tempo all'interno dello stesso piano, il pannello di convalida segnala il conflitto, ad esempio *"Jane Smith: conflitto di orario tra Guida di lode e Accoglienza bambini durante la Funzione domenicale."* Questo individua le doppie prenotazioni prima che diventino un problema la domenica mattina.
+### Posizioni non coperte {#unfilled-positions}
+Se una posizione richiede più persone di quelle attualmente assegnate, il pannello di verifica elenca esattamente ciò che manca, ad esempio *"Tecnico audio: serve 1 persona in più."* Puoi vedere a colpo d'occhio se il piano è completo prima dell'arrivo della settimana.
 
-### Date di indisponibilità
-I volontari possono impostare nella B1 App le date in cui non sono disponibili. Se qualcuno è assegnato a un piano che cade in una delle sue date di indisponibilità, il pannello di convalida segnala automaticamente il conflitto, così puoi trovare un sostituto.
+### Conflitti di pianificazione {#scheduling-conflicts}
+Se un volontario è assegnato a due posizioni che si sovrappongono nel tempo all'interno dello stesso piano, il pannello di verifica segnala il conflitto, ad esempio *"Jane Smith: conflitto di orario tra Guida di lode e Accoglienza bambini durante il Servizio domenicale."* In questo modo individui le doppie prenotazioni prima che diventino un problema della domenica mattina.
 
-### Conflitti tra piani diversi
-La convalida controlla anche tutti i tuoi piani contemporaneamente. Se lo stesso volontario è assegnato a due piani diversi che si sovrappongono nel tempo, ad esempio una funzione alle 9 e una alle 10 che terminano entrambe alle 10:30, B1 Admin segnalerà quella persona come doppiamente impegnata tra i piani.
+### Date di indisponibilità {#blockout-dates}
+I volontari possono impostare nell'app B1 le date in cui non sono disponibili. Se qualcuno è assegnato a un piano che cade in una delle sue date di indisponibilità, il pannello di verifica segnala automaticamente il conflitto, così puoi trovare un sostituto.
+
+### Conflitti tra piani diversi {#cross-plan-conflicts}
+La verifica controlla anche tutti i tuoi piani contemporaneamente. Se lo stesso volontario è assegnato a due piani diversi che si sovrappongono nel tempo (ad esempio, un servizio alle 9 e uno alle 10 che durano entrambi fino alle 10:30), B1 Admin segnala quella persona come prenotata due volte tra piani diversi.
+
+### Preferenze di pianificazione {#scheduling-preferences}
+Se un volontario ha delle [preferenze di pianificazione](./plans.md#scheduling-preferences), il pannello ti avvisa quando un'assegnazione va contro di esse: quando è programmato più volte in questo mese rispetto al suo **Massimo di volte al mese**, quando nessuno degli orari del piano corrisponde ai suoi **Orari di servizio preferiti**, oppure quando ha chiesto di non servire nello stesso giorno della sua famiglia e un familiare è anch'esso programmato.
+
+Quando tutti i controlli sono superati, il pannello riporta **Il piano è valido.**
 
 :::tip
-Non devi fare nulla per avviare la convalida: si aggiorna automaticamente ogni volta che aggiungi o modifichi un'assegnazione. Basta tenere d'occhio il pannello mentre costruisci il piano.
+Non devi fare nulla per avviare la verifica: si aggiorna automaticamente ogni volta che aggiungi o modifichi un'assegnazione. Tieni d'occhio il pannello mentre componi il piano.
 :::
 
-## Notificare i volontari
+## Notificare i volontari {#notifying-volunteers}
 
-Una volta definito il piano, puoi avvisare tutti i volontari assegnati in una sola volta direttamente dal pannello di convalida.
+Una volta completato il piano, puoi notificare contemporaneamente tutti i volontari assegnati direttamente dal pannello di verifica.
 
-1. Apri il piano e scorri fino al pannello **Convalida**
-2. Se ci sono volontari non ancora notificati, vedrai un link che indica quanti devono essere avvisati, ad esempio *"Notifica 8 volontari"*
-3. Clicca sul link per inviare le notifiche push a tutti quelli che non sono ancora stati avvisati
-4. I volontari ricevono una notifica sul telefono che li informa di essere stati programmati e li invita a confermare la loro assegnazione
+1. Apri il piano e fai clic su **Gestisci il team di servizio** (oppure su **Verifica** nella riga di riepilogo del piano) per vedere il pannello **Verifica**
+2. Se ci sono volontari non notificati, vedrai un collegamento che indica quanti devono essere notificati (ad esempio, *"Notifica 8 volontario/i"*). Quando tutti sono stati notificati, il pannello riporta **Tutti i volontari sono stati notificati.**
+3. Fai clic sul collegamento per inviare le notifiche push a tutti quelli che non sono ancora stati notificati
+4. I volontari ricevono sul telefono una notifica che li informa di essere stati programmati e li invita a confermare la loro assegnazione
 
 :::info
-Vengono inclusi solo i volontari che non sono ancora stati notificati. Se aggiungi qualcuno al piano in un secondo momento, il link ricompare così potrai notificare la nuova persona senza avvisare di nuovo il resto del team.
+Vengono inclusi solo i volontari che non sono ancora stati notificati. Se aggiungi qualcuno al piano in un secondo momento, il collegamento ricompare così puoi notificare la nuova persona senza notificare di nuovo il resto del team.
 :::
 
-### Piani con un flusso di conferma
+### Pubblicare un piano in bozza {#publishing-a-penciled-in-plan}
 
-Se le impostazioni del piano indicano un [flusso di conferma](./workflows.md#serving-assignment-confirmations), il pannello mostra *"Le nuove richieste usano il flusso di conferma. Gli avvisi nell'app restano attivi. I solleciti si interrompono quando ciascuna richiesta viene accettata o rifiutata."* In questo caso:
+Se il piano è [in bozza](./plans.md#plan-settings), i volontari non possono ancora vedere le proprie assegnazioni, e il pannello mostra *"In bozza: i volontari non possono ancora vedere queste assegnazioni."* con un pulsante al posto del collegamento di notifica:
 
-- Il link di notifica conta solo i volontari che non sono stati ancora notificati e non hanno ancora risposto.
-- Cliccandolo si invia il solito avviso nell'app e si crea una scheda per ogni richiesta nella bacheca del flusso. Il flusso invia poi i solleciti via email e SMS e, se necessario, affida la richiesta a qualcuno che telefonerà.
-- Il piano deve essere pubblicato (non in bozza) e il flusso deve essere attivo. Altrimenti il pannello mostra *"Impossibile inviare le richieste. Verifica che il flusso selezionato sia attivo e che il piano sia pubblicato, quindi riprova."*
+- **Pubblica piano** rende visibili le assegnazioni.
+- **Pubblica e notifica** (mostrato quando alcuni volontari non sono stati notificati, ad esempio *"Pubblica e notifica 8 volontario/i"*) rende visibili le assegnazioni e notifica subito quei volontari.
+
+Conferma nella finestra per pubblicare.
+
+### Piani con un flusso di conferma {#plans-with-a-confirmation-workflow}
+
+Se le impostazioni del piano indicano un [flusso di conferma](./workflows.md#serving-assignment-confirmations), il pannello mostra *"Le nuove richieste usano il flusso di conferma. Gli avvisi nell'app restano attivi. I solleciti si fermano quando ogni richiesta viene accettata o rifiutata."* In questo caso:
+
+- Il collegamento di notifica conta solo i volontari che non sono stati notificati e non hanno ancora risposto.
+- Facendo clic su di esso viene inviato il consueto avviso nell'app e si avvia una scheda per ogni richiesta nella bacheca del flusso di lavoro. Il flusso di lavoro invia poi i solleciti via email e SMS e, se necessario, affida la richiesta a qualcuno che la contatti telefonicamente.
+- Il piano deve essere pubblicato (non in bozza) e il flusso di lavoro deve essere attivo. Altrimenti il pannello mostra *"Impossibile inviare le richieste. Verifica che il flusso di lavoro selezionato sia attivo e che il piano sia pubblicato, quindi riprova."*
 
 :::warning
-Per ricevere le notifiche push, i volontari devono avere la B1 App installata nella schermata Home con le notifiche attivate. Consulta [Installazione come app (PWA)](../../b1-church/getting-started/installing-pwa.md) per le istruzioni di configurazione.
+Per ricevere le notifiche push, i volontari devono avere l'app B1 installata nella schermata Home con le notifiche attive. Per le istruzioni di configurazione, vedi [Installare come app (PWA)](../../b1-church/getting-started/installing-pwa.md).
 :::
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
-- [Piani di culto](./plans.md)
+- [Piani di servizio](./plans.md)
 - [Flussi di lavoro](./workflows.md)
 - [Installare la PWA di B1.church](/docs/b1-church/getting-started/installing-pwa)

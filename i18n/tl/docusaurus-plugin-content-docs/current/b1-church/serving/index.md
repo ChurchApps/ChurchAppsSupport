@@ -1,34 +1,34 @@
 ---
-title: "Paglilingkod at Pagpapatala sa B1.church"
-sidebar_label: "Serving"
-description: "Tumingin ng oportunidad sa pagboboluntaryo sa B1.church, magpatala sa bakanteng posisyon, tingnan ang takda, at kanselahin bago ang deadline."
+title: "Pagboboluntaryo at Pag-sign Up sa B1.church"
+sidebar_label: "Paglilingkod"
+description: "Mag-browse ng mga oportunidad sa pagboboluntaryo sa B1.church, mag-sign up sa mga bukas na posisyon, tingnan ang iyong mga takdang paglilingkod, at kanselahin ang mga sign-up bago ang deadline."
 ---
 
-# Serving
+# Paglilingkod
 
 <div class="article-intro">
 
-Hinahayaan ka ng seksyong Serving sa B1.church na mag-browse ng mga oportunidad sa pagboboluntaryo at mag-sign up para sa mga posisyon sa iyong simbahan. Bukod sa pagtingin ng iyong mga naka-assign na plano at order of service, maaari mo na ring piliin mismo ang mga posisyong kailangang punan.
+Hinahayaan ka ng seksyong Serving sa B1.church na mag-browse ng mga oportunidad sa pagboboluntaryo at mag-sign up sa mga posisyon sa iyong simbahan. Bukod sa pagtingin sa mga plano at service order na naka-assign sa iyo, maaari ka na ngayong pumili ng sarili mong posisyon na kailangang punan.
 
 </div>
 
-## Ano ang Maaari Mong Gawin
+## Ano ang Maaari Mong Gawin {#what-you-can-do}
 
-- **Mag-browse ng mga oportunidad sa pagboboluntaryo** -- Tingnan ang mga paparating na service plan na may bukas na posisyon na nangangailangan ng volunteer.
-- **Mag-sign up para sa mga posisyon** -- Pumili ng posisyon at isali ang sarili mo sa isang click lamang.
-- **Tingnan ang iyong mga plano** -- Tingnan ang iyong mga paparating at nakaraang [serving assignment](../plans/viewing-plans.md).
-- **Tumugon sa mga assignment** -- Tanggapin o tanggihan ang mga posisyong naka-iskedyul sa iyo, mula sa pahina ng Plans o sa seksyong **You're serving** sa Home. Kung magbago ang iyong mga plano pagkatapos mong mag-accept, maaari mong [tanggihan ang isang naka-accept na assignment](../plans/viewing-plans.md#declining-an-accepted-assignment) hanggang matapos ang serbisyo.
-- **Mag-alis ng signup** -- Kanselahin ang iyong self-signup kung magbago ang iyong mga plano (bago ang deadline).
+- **Mag-browse ng mga oportunidad sa pagboboluntaryo** -- Tingnan ang mga paparating na service plan na may bukas na posisyon na nangangailangan ng boluntaryo.
+- **Mag-sign up sa mga posisyon** -- Pumili ng posisyon at i-sign up ang sarili mo sa isang click.
+- **Tingnan ang iyong mga plano** -- Makita ang iyong paparating at nakaraang [mga takdang paglilingkod](../plans/viewing-plans.md).
+- **Tumugon sa mga takda** -- Tumanggap o tumanggi sa mga posisyong naka-iskedyul ka, mula sa pahina ng Plans o sa seksyong **You're serving** sa Home. Kung magbago ang iyong mga plano pagkatapos mong tumanggap, maaari mong [i-decline ang takdang tinanggap na](../plans/viewing-plans.md#declining-an-accepted-assignment) hanggang matapos ang serbisyo.
+- **Mag-alis ng sign-up** -- Kanselahin ang sarili mong sign-up kung magbago ang iyong mga plano (bago ang deadline).
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
-Gumagawa ang iyong administrator ng simbahan ng mga service plan at minamarkahan ang ilang posisyon bilang available para sa self-signup. Lumilitaw ang mga posisyong ito sa volunteer signup page, nakaayos ayon sa kategorya (gaya ng "Band", "Hospitality", o "Kids Ministry"). Makikita mo kung ilang puwesto ang bukas sa bawat posisyon at makakapag-sign up ka sa mga posisyong available ka.
+Gumagawa ang administrator ng iyong simbahan ng mga service plan at minarkahan ang ilang posisyon bilang available para sa self-signup. Lumalabas ang mga planong ito sa pahinang **Volunteer Opportunities** ng website ng iyong simbahan at sa screen na **Volunteer** sa member portal (i-tap ang **Sign up to serve** sa screen ng Plans). Buksan ang isang plano para makita ang mga posisyon nito, nakaayos ayon sa kategorya (gaya ng "Band", "Hospitality", o "Kids Ministry"), kasama kung ilan ang bakanteng puwesto sa bawat isa, at mag-sign up sa mga posisyong available ka.
 
 :::info
-Tanging ang mga posisyong in-enable ng administrator ng iyong simbahan para sa self-signup ang lumilitaw sa volunteer page. Ang ilang posisyon ay maaaring punan lamang sa pamamagitan ng direktang assignment.
+Ang mga posisyon lamang na pinagana ng administrator ng iyong simbahan para sa self-signup ang lumilitaw sa pahina ng volunteer. Maaaring ang ilang posisyon ay mapupunan lamang sa pamamagitan ng direktang takda.
 :::
 
-## Alamin Pa
+## Alamin Pa {#learn-more}
 
-- [Volunteer Signup](./volunteer-signup.md) -- Hakbang-hakbang na gabay sa pag-browse at pag-sign up para sa mga posisyon sa pagboboluntaryo
-- [Viewing Plans](../plans/viewing-plans.md) -- Tingnan ang iyong mga naka-assign na service plan at order of service
+- [Volunteer Signup](./volunteer-signup.md) -- Hakbang-hakbang na gabay sa pag-browse at pag-sign up sa mga posisyon ng boluntaryo
+- [Pagtingin sa mga Plano](../plans/viewing-plans.md) -- Tingnan ang iyong mga takdang service plan at service order

@@ -30,7 +30,7 @@ Isang espesyal na idinisenyong kiosk application para sa mga check-in station sa
 
 Isang Android TV application na nagpapakita ng nilalaman ng aralin sa mga silid-aralan. Maaaring ipadala ng mga guro ang mga lesson slide, video, at aktibidad sa TV screen, kaya madali nilang maipresenta ang materyal ng kurikulum habang may klase.
 
-## Lokal na Pag-setup
+## Lokal na Pag-setup {#local-setup}
 
 Lahat ng mobile app ay gumagamit ng iisang Expo-based na toolchain at sumusunod sa magkakatulad na pattern ng pag-setup. Gamit ang B1 Checkin bilang halimbawa:
 

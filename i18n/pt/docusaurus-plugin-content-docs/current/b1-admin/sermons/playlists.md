@@ -1,60 +1,64 @@
 ---
-title: "Listas de Reprodução"
-description: "Agrupe seus sermões em séries no B1 Admin para que visitantes do seu site no B1.church possam navegar e acompanhar cada série na ordem."
+title: "Playlists"
+description: "Agrupe seus sermões em séries no B1 Admin para que os visitantes do seu site no B1.church possam navegar e acompanhar cada série de sermões em ordem."
 ---
 
-# Listas de Reprodução
+# Playlists
 
 <div class="article-intro">
 
-Listas de reprodução permitem que você organize seus sermões em séries ou coleções. Quando os visitantes navegam sua biblioteca de sermões no seu site B1.church, as listas de reprodução os ajudam a encontrar e acompanhar uma série de sermões completa na ordem correta.
+As playlists permitem organizar seus sermões em séries ou coleções. Quando os visitantes navegam pela sua biblioteca de sermões no seu site B1.church, as playlists os ajudam a encontrar e acompanhar uma série de sermões completa, na ordem certa.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
 
-- Você precisa da permissão **contentApi.streamingServices.edit**. Veja [Funções e Permissões](../settings/roles-permissions.md) se você não tiver acesso.
-- Tenha um nome, descrição e imagem de miniatura prontos para sua lista de reprodução
+- Você precisa da permissão **Editar cultos** na seção **Conteúdo** da sua função. Veja [Funções e permissões](../settings/roles-permissions.md) se você não tiver acesso.
+- Tenha em mãos um nome, uma descrição e uma imagem de miniatura para a sua playlist
 
 </div>
 
-## Visualizando Listas de Reprodução
+## Visualizando playlists {#viewing-playlists}
 
-1. Em B1 Admin, abra o [menu Jump](../introduction.md#getting-around-with-the-jump-menu) (a barra de pesquisa no canto superior esquerdo), expanda **Sermões** e clique em **Sermões**.
-2. Encontre o painel **Listas de Reprodução** na página **Sermões** (ao lado da lista de sermões).
-3. Você verá uma lista de todas as suas listas de reprodução existentes com seus nomes e descrições.
+1. No B1 Admin, abra o [Menu de atalhos](../introduction.md#getting-around-with-the-jump-menu) (a barra de busca no canto superior esquerdo), expanda **Sermões** e clique em **Sermões**.
+2. Encontre o painel **Playlists** na página Sermões (ao lado da lista de sermões).
+3. Você verá uma lista de todas as suas playlists existentes pelo nome, com uma contagem ao lado do título **Playlists**. Quando houver mais de cinco, uma caixa **Pesquisar playlists...** aparece acima da lista.
 
-## Criando uma Lista de Reprodução
+## Criando uma playlist {#creating-a-playlist}
 
-1. Clique no botão **Criar Primeira Lista de Reprodução** (se você não tiver listas de reprodução ainda) ou clique no botão **Adicionar lista de reprodução** no painel **Listas de Reprodução**.
-2. Digite um **nome** para a lista de reprodução -- por exemplo, o título da série de sermões como "Fundações da Fé" ou "Verão nos Salmos".
-3. Adicione uma **descrição** para dar aos visitantes uma breve visão geral da série.
-4. Defina uma **data de publicação** para controlar quando a lista de reprodução fica visível.
-5. Carregue uma **imagem de miniatura** para representar a série visualmente.
-6. Clique em **Salvar** para criar sua lista de reprodução.
+1. Clique no botão **Criar primeira playlist** (se você ainda não tiver nenhuma playlist) ou clique no botão **Adicionar playlist** no painel **Playlists**. Um formulário **Criar nova playlist** é aberto acima do painel.
+2. Digite um **Título da playlist** -- por exemplo, o título de uma série de sermões, como "Alicerces da fé" ou "Verão nos Salmos".
+3. Adicione uma **Descrição** para oferecer aos visitantes uma breve visão geral da série.
+4. Defina uma **Data de publicação** para controlar quando a playlist fica visível.
+5. Clique em **Adicionar miniatura** para enviar e recortar uma **Imagem de miniatura** que represente a série visualmente (recomenda-se 1280x720 pixels, 16:9).
+6. Clique em **Salvar** para criar sua playlist.
+
+## Editando ou excluindo uma playlist {#editing-or-deleting-a-playlist}
+
+Passe o mouse sobre uma playlist no painel **Playlists** e clique em **Editar**. Altere qualquer um dos campos (use **Trocar miniatura** para uma nova imagem) e clique em **Salvar**, ou clique em **Excluir** e confirme para remover a playlist.
 
 :::tip
-Crie suas listas de reprodução primeiro antes de adicionar sermões. Dessa forma você pode atribuir cada sermão à lista de reprodução correta conforme avança, em vez de reorganizar depois.
+Crie suas playlists antes de adicionar os sermões. Assim, você pode atribuir cada sermão à playlist correta conforme avança, em vez de reorganizar tudo depois.
 :::
 
-## Adicionando Sermões a uma Lista de Reprodução
+## Adicionando sermões a uma playlist {#adding-sermons-to-a-playlist}
 
-Quando você [adiciona ou edita um sermão](./managing-sermons.md), você o atribui a uma lista de reprodução usando o menu suspenso **Lista de Reprodução**. Todos os sermões atribuídos à mesma lista de reprodução são agrupados e exibidos em ordem no seu site.
+Ao [adicionar ou editar um sermão](./managing-sermons.md), você o atribui a uma playlist usando a lista suspensa **Playlist**. Todos os sermões atribuídos à mesma playlist são agrupados e exibidos em ordem no seu site.
 
 :::info
-Você também pode atribuir sermões a listas de reprodução durante [Importação em Lote](./bulk-import.md). Ao importar do YouTube ou Vimeo, selecione uma lista de reprodução no menu suspenso **Importar Para Lista de Reprodução** antes de clicar em **Importar**.
+Você também pode atribuir sermões a playlists durante a [Importação em massa](./bulk-import.md). Ao importar do YouTube ou do Vimeo, selecione uma playlist na lista suspensa **Importar para a playlist** antes de clicar em **Importar**.
 :::
 
-## Como Listas de Reprodução Aparecem no Seu Site
+## Como as playlists aparecem no seu site {#how-playlists-appear-on-your-website}
 
-Listas de reprodução são exibidas no seu site B1.church como coleções navegáveis. Os visitantes podem:
+As playlists são exibidas no seu site B1.church como coleções navegáveis. Os visitantes podem:
 
 - Ver todas as séries de sermões disponíveis de relance
-- Clicar em uma lista de reprodução para visualizar todos os sermões naquela série
-- Assistir ou ouvir sermões em ordem
+- Clicar em uma playlist para ver todos os sermões dessa série
+- Assistir ou ouvir os sermões em ordem
 
-## Próximas Etapas
+## Próximos passos {#next-steps}
 
-- [Gerenciando Sermões](./managing-sermons.md) -- Adicione sermões individuais às suas listas de reprodução
-- [Importação em Lote](./bulk-import.md) -- Importe vários sermões e atribua-os às listas de reprodução
+- [Gerenciando sermões](./managing-sermons.md) -- Adicione sermões individuais às suas playlists
+- [Importação em massa](./bulk-import.md) -- Importe vários sermões e atribua-os a playlists

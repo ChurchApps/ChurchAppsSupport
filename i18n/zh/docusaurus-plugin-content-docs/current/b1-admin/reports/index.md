@@ -1,34 +1,34 @@
 ---
-title: "报告"
-description: "根据您所在的版块，在 B1 Admin 中查找并运行内置报告，包括生日、出席趋势、捐款总额和审计日志。"
+title: "报表"
+description: "根据您所在的版块，在 B1 Admin 中查找并运行内置报表，包括生日、出勤趋势、奉献总额和审计日志。"
 ---
 
-# 报告
+# 报表
 
 <div class="article-intro">
 
-B1 Admin 提供多种方式让您获取有关会众、考勤和奉献的数据。报告功能内置于应用的相关板块中，而非集中在单独的报告页面中。
+B1 Admin 提供多种方式让你提取会众、出勤和奉献的相关数据。报表功能内置于应用的相关版块中，而不是集中在单独的报表页面。
 
 </div>
 
-## 培训视频
+## 培训视频 {#training-video}
 
-<YouTube id="q3k8ty_V610" title="Running Reports in B1" />
+<YouTube id="vn5SonVe94Q" title="在 B1 中运行报表" />
 
-## 报告位置
+## 报表位置 {#where-to-find-reports}
 
-### 人员
-- **[生日与纪念日列表](./birthday-report.md)**：在 **People → Advanced Search** 中按 Birth Month（出生月份）或 Anniversary Month（纪念日月份）筛选，即可获得即将到来的生日或纪念日列表。
+### 人员 {#people}
+- **[生日和周年纪念列表](./birthday-report.md)** -- 在 **People → Advanced Search**（人员 → 高级搜索）中按 Birth Month（出生月份）或 Anniversary Month（纪念日月份）筛选，即可获得即将到来的生日或纪念日列表。
 
-### 考勤
-- **[考勤报告](./attendance-reports.md)**：考勤趋势和小组考勤数据位于 **Attendance**（考勤）板块中。
+### 出勤 {#attendance}
+- **[出勤报表](./attendance-reports.md)** -- 出勤趋势和小组出勤数据位于 **Attendance**（出勤）版块中。
 
-### 奉献
-- **[奉献摘要](./donation-summary.md)**：奉献总额和基金明细位于 **Donations**（奉献）板块中。
+### 奉献 {#donations}
+- **[奉献汇总](./donation-summary.md)** -- 奉献总额和基金明细位于 **Donations**（奉献）版块中。
 
-### 设置
-- **[审计日志](./audit-log.md)**：跟踪您教会管理系统中的所有更改和操作（位于 **Settings → Audit Log** 下）。
+### 设置 {#settings}
+- **[审计日志](./audit-log.md)** -- 追踪教会管理系统中的所有更改和操作（位于 **Settings → Audit Log**（设置 → 审计日志）下）。
 
 :::info
-报告数据依赖于一致的数据录入。请确保您的团队[跟踪考勤](../attendance/tracking-attendance.md)、[记录奉献](../donations/recording-donations.md)，并保持[人员记录](../people/adding-people.md)的更新，以获得最准确的结果。
+报表数据依赖于持续、准确的数据录入。请确保你的团队[持续追踪出勤](../attendance/tracking-attendance.md)、[录入奉献](../donations/recording-donations.md)，并及时更新[人员记录](../people/adding-people.md)，以获得最准确的结果。
 :::

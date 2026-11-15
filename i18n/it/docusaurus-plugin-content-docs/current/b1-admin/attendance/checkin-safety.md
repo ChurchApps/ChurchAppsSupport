@@ -20,7 +20,7 @@ B1 include una serie di controlli di sicurezza per i bambini per il check-in: li
 
 </div>
 
-## Capacità della stanza e chiusura di una stanza
+## Capacità della stanza e chiusura di una stanza {#room-capacity-and-closing-a-room}
 
 Ogni stanza di check-in (gruppo) può applicare i propri limiti. Aprite il gruppo, fate clic su **Modifica** per modificare le sue impostazioni, e trovate la sezione **Capacità del Check-In**:
 
@@ -28,7 +28,7 @@ Ogni stanza di check-in (gruppo) può applicare i propri limiti. Aprite il grupp
 - **Capacità ospiti** -- Un limite opzionale separato su quanti ospiti la stanza può contenere.
 - **Chiusa per Check-In** -- Impostate su **Sì** per interrompere immediatamente tutti i check-in in questa stanza (ad esempio, quando una lezione viene cancellata o una stanza non è disponibile). I check-out continuano a funzionare.
 
-## Rapporti dei volontari
+## Rapporti dei volontari {#volunteer-ratios}
 
 La stessa sezione **Capacità del Check-In** sul gruppo include regole di staffing:
 
@@ -50,11 +50,11 @@ Come vengono applicate rigorosamente le proporzioni è un'impostazione a livello
 La capacità e la chiusura per check-in sono sempre limiti vincolanti -- la scelta avvertimento/blocco si applica solo ai rapporti dei volontari.
 :::
 
-## Tipi di Check-In
+## Tipi di Check-In {#check-in-types}
 
 Ogni check-in registra se la persona è un **Membro**, un **Ospite**, o un **Volontario**. Il tipo viene scelto con chip sulla schermata del nucleo familiare del chiosco (Membro è il valore predefinito). I tipi alimentano le regole di sicurezza -- i volontari forniscono copertura della proporzione, e gli ospiti contano contro la Capacità ospiti della stanza.
 
-## Indicazioni su età e grado della stanza
+## Indicazioni su età e grado della stanza {#age-and-grade-room-guidance}
 
 Potete dare a ogni stanza limiti di età o grado in modo che il chiosco guidi le famiglie nelle stanze appropriate:
 
@@ -66,7 +66,7 @@ I gradi si rinnovano nella vostra data di **promozione di grado della chiesa**:
 1. In B1 Admin, andate a **Impostazioni** e aprite la sezione **Promozione di grado**.
 2. Impostate il mese e il giorno in cui la vostra chiesa promuove gli studenti (ad esempio, 1 agosto). Le età e i gradi al chiosco vengono calcolati alla data di promozione più recente.
 
-## Persone autorizzate al ritiro e non autorizzate
+## Persone autorizzate al ritiro e non autorizzate {#trusted-and-not-authorized-pickup-people}
 
 Ogni nucleo familiare può avere un elenco di persone che sono -- o non sono -- autorizzate a ritirare i suoi bambini.
 

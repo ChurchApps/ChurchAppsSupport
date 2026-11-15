@@ -60,7 +60,7 @@ Bei einem veröffentlichten Lied klicken Sie auf **Link kopieren**, um seine Sei
 Wenn das WorshipCommons-Team Sie als Mitveröffentlicher eines Liedes hinzufügt – zum Beispiel bei einem Lied, das Sie mitverfasst haben und das jemand anderes hochgeladen hat –, erscheint es unter **Meine Einreichungen** als **Veröffentlicht**, obwohl Sie es nicht selbst eingereicht haben. Als Mitveröffentlicher des Liedes können Sie Änderungen vornehmen, auch wenn seine Lizenz öffentliche Bearbeitungen ausschließt.
 :::
 
-## Autorenseiten
+## Autorenseiten {#writer-pages}
 
 Jeder Autor in der Bibliothek hat eine Autorenseite, die seine Lieder mit Jahr, Tonart, Themen und Lizenz jedes Liedes auflistet. Gemeinden gelangen dorthin, indem sie auf der Seite eines Liedes den Namen eines Autors anklicken. Hat ein Lied mehrere Autoren, führt jeder Name zu einer eigenen Seite.
 

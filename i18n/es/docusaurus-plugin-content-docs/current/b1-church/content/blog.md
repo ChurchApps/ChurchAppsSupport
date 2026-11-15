@@ -1,43 +1,48 @@
 ---
-title: "Cómo explorar el blog de B1.church y las fuentes RSS"
+title: "Explorar el blog de B1.church y las fuentes RSS"
 sidebar_label: "Blog"
-description: "Explora y filtra el blog de B1.church de tu iglesia por categoría o etiqueta, navega entre entradas antiguas o sigue las nuevas mediante fuentes RSS."
+description: "Explora y filtra el blog de B1.church de tu iglesia por categoría o etiqueta, navega por las publicaciones anteriores o sigue las nuevas a través de fuentes RSS."
 ---
 
 # Blog
 
 <div class="article-intro">
 
-La página Blog comparte noticias, novedades y devocionales de tu iglesia. Las publicaciones están organizadas por categoría y etiqueta, para que puedas explorar los temas que más te interesan.
+La página del Blog comparte noticias, novedades y devocionales de tu iglesia. Las publicaciones se organizan por categoría y etiqueta, para que puedas explorar los temas que más te interesan.
 
 </div>
 
 <div class="prereqs">
 <h4>Antes de comenzar</h4>
 
-- No se requiere iniciar sesión para leer las publicaciones del blog. La página Blog es de acceso público.
-- Tu iglesia debe haber publicado al menos una publicación para que aparezca la página Blog.
+- No se requiere inicio de sesión para leer las publicaciones del blog. La página del Blog es de acceso público.
+- Tu iglesia debe haber publicado al menos una publicación. Hasta entonces, la página del Blog muestra "Aún no hay publicaciones".
 
 </div>
 
-## Explorar publicaciones
+## Explorar las publicaciones {#browsing-posts}
 
-1. Navega a la página **Blog** desde la navegación del sitio de tu iglesia.
-2. Las publicaciones se enumeran de más reciente a más antigua, 10 por página. Usa los enlaces **Older**/**Newer** en la parte inferior para recorrer el archivo.
-3. Haz clic en una publicación para leerla completa.
+1. Ve a la página **Blog** desde la navegación del sitio de tu iglesia.
+2. Las publicaciones se muestran de la más reciente a la más antigua, 10 por página. Cada una muestra su foto, categoría, título, autor, fecha y un breve extracto. Usa los enlaces **Publicaciones anteriores** y **Publicaciones más recientes** en la parte inferior para pasar por el archivo.
+3. Haz clic en el título o la foto de una publicación para leerla completa.
 
-## Filtrar por categoría o etiqueta
+## Filtrar por categoría o etiqueta {#filtering-by-category-or-tag}
 
-Haz clic en un chip de **categoría** o **etiqueta** en cualquier publicación, o en la lista del blog, para filtrar el listado a las publicaciones que coinciden. Esto facilita ponerte al día con un tema o serie específica.
+Para reducir la lista a un solo tema:
 
-## Publicaciones relacionadas
+- **Categoría** -- haz clic en una categoría sobre la lista de publicaciones, en la etiqueta de categoría de una publicación en la lista, o en la categoría sobre el título de una publicación. Haz clic de nuevo en la categoría resaltada para mostrar todas las publicaciones.
+- **Etiqueta** -- haz clic en una etiqueta al final de una publicación.
 
-Al final de cada publicación, encontrarás una sección de **Related Posts** que sugiere otras publicaciones de la misma categoría.
+La lista filtrada lleva como encabezado el nombre de la categoría o etiqueta. Haz clic en **Todas las publicaciones** debajo del encabezado para quitar el filtro.
 
-## Suscribirse por RSS
+## Publicaciones relacionadas {#related-posts}
 
-Cada blog de iglesia publica un feed RSS al que los lectores de feeds y las herramientas de automatización pueden suscribirse, para que te notifiquen automáticamente cuando se publique una nueva entrada en lugar de tener que revisar manualmente.
+Al final de una publicación que tiene categoría, la sección **Más en** *categoría* sugiere hasta tres otras publicaciones de la misma categoría.
 
-## Disponibilidad
+## Suscribirse por RSS {#subscribing-via-rss}
 
-La página Blog está disponible cuando tu iglesia ha publicado al menos una publicación. Si no ves un enlace de **Blog** en la navegación de tu iglesia, es posible que tu iglesia aún no haya configurado esto. Contacta al administrador de tu iglesia para más información.
+Cada blog de iglesia publica una fuente RSS que los lectores de fuentes y las herramientas de automatización pueden seguir, así te avisan automáticamente cuando se publica una nueva entrada en lugar de revisarla manualmente. Para suscribirte, pega la dirección del blog de tu iglesia (por ejemplo, `https://yourchurch.b1.church/blog`) en tu lector de fuentes; la página le indica al lector dónde está la fuente.
+
+## Disponibilidad {#availability}
+
+La página del Blog se encuentra en `/blog` en el sitio web de tu iglesia. Si no ves un enlace **Blog** en la navegación de tu iglesia, es posible que aún no esté configurado. Comunícate con el administrador de tu iglesia para más información.

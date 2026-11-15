@@ -1,55 +1,67 @@
 ---
 title: "Live-Streams auf B1.church ansehen"
-sidebar_label: "Livestreaming"
-description: "Gottesdienste Ihrer Gemeinde auf der Stream-Seite von B1.church ansehen und dem Chat neben der Übertragung beitreten, ohne Anmeldung."
+sidebar_label: "Live-Streaming"
+description: "Verfolge die Live-Gottesdienste deiner Gemeinde auf der Stream-Seite von B1.church und tritt dem Chat neben der Übertragung bei, ohne Anmeldung."
 ---
 
-# Livestreaming
+# Live-Streaming
 
 <div class="article-intro">
 
-Die Livestream-Seite ermöglicht es Ihnen, die Gottesdienste Ihrer Gemeinde in Echtzeit direkt auf B1.church anzuschauen. Wenn Ihre Gemeinde überträgt, können Sie einschalten und über interaktive Funktionen neben dem Video teilnehmen.
+Auf der Seite Live-Stream kannst du die Gottesdienste deiner Gemeinde verfolgen, während sie stattfinden -- direkt auf B1.church. Wenn deine Gemeinde überträgt, kannst du einschalten und dich mit interaktiven Funktionen neben dem Video beteiligen.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor Sie beginnen</h4>
+<h4>Bevor du beginnst</h4>
 
-- Zum Anschauen eines Livestreams ist keine Anmeldung erforderlich. Die Stream-Seite ist öffentlich zugänglich.
-- Ihre Gemeinde muss einen Streaming-Zeitplan konfiguriert haben. Prüfen Sie die Gottesdienstzeiten Ihrer Gemeinde, um zu erfahren, wann Live-Übertragungen verfügbar sind.
+- Zum Ansehen eines Live-Streams ist keine Anmeldung erforderlich. Die Stream-Seite ist öffentlich zugänglich.
+- Deine Gemeinde muss einen Streaming-Zeitplan eingerichtet haben. Prüfe die Gottesdienstzeiten deiner Gemeinde, um zu sehen, wann Live-Übertragungen verfügbar sind.
 
 </div>
 
-## Einen Livestream ansehen
+## Einen Live-Stream ansehen {#watching-a-live-stream}
 
-1. Navigieren Sie über die Seitennavigation Ihrer Gemeinde zur **Stream**-Seite.
-2. Wenn ein Gottesdienst gerade live oder kurz vor dem Start ist, wird der Videoplayer automatisch geladen.
-3. Schauen Sie die Übertragung direkt auf der Seite.
+1. Rufe die Seite **Stream** über die Navigation der Website deiner Gemeinde auf.
+2. Läuft gerade ein Gottesdienst, startet das Video automatisch auf der Seite.
+3. Verfolge die Übertragung direkt auf der Seite.
 
-Wenn derzeit kein Livestream aktiv ist, sehen Sie möglicherweise Offline-Inhalte oder Informationen über die nächste geplante Gottesdienstzeit.
+Wenn gerade kein Gottesdienst läuft, zeigt der Player stattdessen eines der folgenden an:
 
-## Interaktive Funktionen
+- **Vor einem Gottesdienst** -- den Titel des Gottesdienstes (oder **Nächste Gottesdienstzeit**) mit einem Countdown. Liegt der Gottesdienst mehr als einen Tag entfernt, werden stattdessen Datum und Uhrzeit angezeigt. Das Video startet von selbst, wenn der Countdown endet; du musst die Seite nicht neu laden.
+- **Nach einem Gottesdienst** -- "Der aktuelle Gottesdienst ist beendet."
+- **Kein Gottesdienst geplant** -- das Logo deiner Gemeinde oder andere Inhalte, die deine Gemeinde während der Offline-Zeit anzeigen möchte.
 
-Die Livestream-Seite kann neben dem Video interaktive Tabs enthalten, abhängig davon, was Ihre Gemeinde konfiguriert hat. Dazu können gehören:
+## Interaktive Funktionen {#interactive-features}
 
-- **Chat** -- Senden Sie Nachrichten und interagieren Sie während der Übertragung mit anderen Zuschauern. Der Chat wird in der Regel einige Minuten vor Gottesdienstbeginn aktiviert und bleibt noch eine Weile nach dem Ende verfügbar.
-- **Gebet** -- Reichen Sie während des Gottesdienstes ein Gebetsanliegen ein. Ein Streaming-Moderator aus dem Team Ihrer Gemeinde kann privat antworten.
-- **Weitere Tabs** -- Ihre Gemeinde kann benutzerdefinierte Tabs mit Links zu Programmheften, Predigtnotizen, [Spendenseiten](../giving/making-donations.md) oder anderen Ressourcen hinzufügen.
+Die Stream-Seite kann je nach Einrichtung deiner Gemeinde interaktive Reiter neben dem Video enthalten. Dazu können gehören:
 
-Klicken Sie auf die Tab-Symbole oder -Beschriftungen, um während des Anschauens zwischen den verfügbaren Funktionen zu wechseln.
+- **Chat** -- Sende Nachrichten und interagiere während der Übertragung mit anderen Zuschauern. Oben im Chat wird angezeigt, wie viele Personen zusehen; klicke darauf, um ihre Namen zu sehen. Schreibe in das Feld **Nachricht** und klicke auf **Senden** (die Smiley-Schaltfläche fügt Emojis hinzu). Der Chat öffnet sich eine festgelegte Zeit vor Beginn des Gottesdienstes und bleibt nach dessen Ende noch eine Weile geöffnet; bis dahin wird das Nachrichtenfeld durch "Chat öffnet um" und die Uhrzeit ersetzt.
+- **Gastgeber-Chat** -- Wenn du angemeldet bist und deine Gemeinde dich als Chat-Gastgeber eingetragen hat, kannst du über einen eigenen Reiter **Gastgeber-Chat** vertraulich mit den anderen Gastgebern sprechen.
+- **Zusätzliche Reiter** -- Deine Gemeinde kann eigene Reiter mit Links zu Gottesdienstzetteln, Predigtnotizen, [Spendenseiten](../giving/making-donations.md) oder anderen Ressourcen hinzufügen.
 
-## Vor und nach dem Gottesdienst
+Klicke während des Zuschauens auf die Symbole oder Bezeichnungen der Reiter, um zwischen den verfügbaren Funktionen zu wechseln.
 
-Ihre Gemeinde legt fest, zu welchen Zeiten der Stream und die interaktiven Funktionen verfügbar werden. Möglicherweise können Sie dem Chat bereits vor offiziellem Gottesdienstbeginn beitreten, um andere zu begrüßen. Nach dem Gottesdienst bleibt der Chat eventuell noch kurz für weitere Gespräche geöffnet.
+### Dein Name im Chat {#your-name-in-chat}
+
+Du kannst chatten, ohne dich anzumelden. Du trittst als **Anonym** gefolgt von einer Nummer bei; klicke auf das Stift-Symbol neben diesem Namen, um deinen eigenen Anzeigenamen zu wählen, und klicke dann auf **Aktualisieren**. Wenn du angemeldet bist, verwenden deine Chatnachrichten den Namen aus deinem Konto.
+
+## Im Mitgliederportal ansehen {#watching-in-the-member-portal}
+
+Der Bildschirm **Stream** im Mitgliederportal (`/mobile/stream`) zeigt neben seinem Titel ein Abzeichen **Live** oder **Offline** und, wenn gerade nichts läuft, wann der nächste Stream beginnt. Unter dem Player hat jeder Chat einen Abschnitt mit den neuesten Nachrichten; tippe auf **Chat öffnen**, um Nachrichten zu lesen und zu senden. Die übrigen Stream-Reiter deiner Gemeinde sind darunter aufgelistet -- tippe auf einen, um ihn zu öffnen.
+
+## Vor und nach dem Gottesdienst {#before-and-after-the-service}
+
+Deine Gemeinde legt fest, zu welchen Zeiten der Stream und die interaktiven Funktionen verfügbar werden. Möglicherweise kannst du dem Chat schon vor dem offiziellen Beginn des Gottesdienstes beitreten und hast so Zeit, andere zu begrüßen. Nach dem Ende des Gottesdienstes kann der Chat für eine kurze Zeit weiter offen bleiben, damit das Gespräch weitergehen kann.
 
 :::info
-Wenn die Stream-Seite Offline-Inhalte oder einen Countdown anzeigt, hat der nächste geplante Gottesdienst noch nicht begonnen. Schauen Sie zur angegebenen Gottesdienstzeit wieder vorbei.
+Wenn die Stream-Seite Offline-Inhalte oder einen Countdown zeigt, hat der nächste geplante Gottesdienst noch nicht begonnen. Schau zur angegebenen Gottesdienstzeit wieder vorbei.
 :::
 
 :::tip
-Suchen Sie eine aufgezeichnete Predigt, die Sie verpasst haben? Besuchen Sie die [Predigten](./sermons.md)-Seite, um vergangene Botschaften Ihrer Gemeinde zu durchstöbern.
+Suchst du nach einer aufgezeichneten Predigt, die du verpasst hast? Besuche die Seite [Predigten](./sermons.md), um frühere Botschaften deiner Gemeinde zu durchsuchen.
 :::
 
-## Verfügbarkeit
+## Verfügbarkeit {#availability}
 
-Die Livestream-Seite ist verfügbar, wenn Ihre Gemeinde einen Streaming-Zeitplan konfiguriert hat. Wenn Sie keinen **Stream**-Link in Ihrer Navigation sehen, hat Ihre Gemeinde möglicherweise kein Livestreaming eingerichtet. Wenden Sie sich für Details an Ihren Gemeindeadministrator.
+Die Seite Live-Stream ist verfügbar, wenn deine Gemeinde einen Streaming-Zeitplan eingerichtet hat. Wenn du in deiner Navigation keinen Link **Stream** siehst, hat deine Gemeinde Live-Streaming möglicherweise nicht eingerichtet. Wende dich für Einzelheiten an deinen Gemeindeadministrator.

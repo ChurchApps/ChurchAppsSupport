@@ -1,6 +1,6 @@
 ---
 title: "Relatórios de presença"
-description: "Veja os três relatórios de presença do B1 Admin (Attendance Trend, Group Attendance, Daily Group Attendance), o que mostram e como exportá-los."
+description: "Veja os três relatórios de presença do B1 Admin (Tendência de presença, Presença por grupo e Presença diária por grupo), o que cada um mostra e como executá-los e exportá-los."
 ---
 
 # Relatórios de presença
@@ -20,16 +20,20 @@ O B1 Admin oferece três relatórios de presença para ajudar você a entender c
 
 </div>
 
-## Tendência de presença
+## Tendência de presença {#attendance-trend}
 
 O relatório de Tendência de presença mostra como a presença muda ao longo do tempo nos seus cultos.
 
 1. Acesse diretamente **admin.b1.church/reports/attendanceTrend** no seu navegador (os relatórios não têm entrada no menu de navegação — salvar o endereço nos favoritos é a forma mais fácil de voltar a ele). O mesmo relatório também está na página Presença: clique em **Todos os anos** e depois escolha a aba **Tendência de presença**.
-2. Opcionalmente, selecione um **Campus**, **Culto**, **Horário de culto** ou **Grupo** para filtrar os resultados.
+2. Opcionalmente, selecione um **Campus**, **Culto**, **Horário do culto** ou **Grupo** para filtrar os resultados.
 3. Defina a **Data inicial** e a **Data final**. Por padrão, o relatório abrange o último ano, de um ano atrás até hoje, e a data final é incluída por completo. Clique em **Executar relatório**.
 4. O relatório exibe um gráfico de barras e uma tabela com o total de visitas por semana. Cada semana é identificada pela data do domingo daquela semana, e a coluna **Datas das sessões** da tabela lista as datas reais daquela semana que tiveram presença (por exemplo, "9/27, 9/30").
 
 Este relatório é útil para identificar padrões como quedas sazonais, tendências de crescimento ou o impacto de eventos especiais.
+
+:::tip
+A visualização **Todos os anos** da página Presença também tem uma aba **Tendência de contagem**, entre as outras duas, que mostra em gráfico os totais de contagem que você insere manualmente (em vez de check-ins individuais) para cada semana. Ela tem os mesmos filtros de **Campus**, **Culto**, **Horário do culto** e **Grupo**.
+:::
 
 ## Presença por grupo {#group-attendance}
 
@@ -40,22 +44,22 @@ O relatório de Presença por grupo mostra quem compareceu a cada sessão de gru
 3. Defina a **Data inicial** e a **Data final**. Por padrão, o relatório abrange do último domingo até hoje, e a data final é incluída por completo.
 4. Clique em **Executar relatório**.
 
-Os resultados são agrupados por data da sessão, depois por horário de culto e depois por grupo, com as pessoas que compareceram listadas em cada grupo. Horários de culto, grupos e nomes são ordenados em ordem alfabética. Ao lado do nome de cada pessoa, a coluna **Check-in feito** mostra o horário em que a presença foi registrada (em branco quando não há horário registrado), e a coluna **Situação de membro** mostra a situação dela, como Membro ou Visitante. Sessões de grupos que não se reúnem em um horário de culto também são incluídas; elas aparecem sem horário de culto.
+Os resultados são agrupados por data da sessão, depois por horário do culto e depois por grupo, com as pessoas que compareceram listadas em cada grupo. Horários de culto, grupos e nomes são ordenados em ordem alfabética. Ao lado do nome de cada pessoa, a coluna **Check-in feito** mostra o horário em que a presença foi registrada (em branco quando não há horário registrado), e a coluna **Situação de membro** mostra a situação dela, como Membro ou Visitante. Sessões de grupos que não se reúnem em um horário de culto também são incluídas; elas aparecem sem horário de culto.
 
 Para baixar uma planilha, clique em **Opções de download** e escolha **Resumo**. O CSV contém:
 
 - Uma linha por membro de cada grupo que se reuniu no intervalo de datas, ordenadas por grupo e depois por nome.
 - O nome da pessoa e o nome do grupo nas primeiras colunas.
-- Uma coluna por sessão datada, nomeada com o culto, o horário de culto e a data (por exemplo, "Domingo - 9:00 (2026-09-27)"), com cada pessoa marcada como **presente** ou **ausente**. Uma sessão sem horário de culto é identificada somente pela data.
+- Uma coluna por sessão datada, nomeada com o culto, o horário do culto e a data (por exemplo, "Domingo - 9:00 AM (2026-09-27)"), com cada pessoa marcada como **presente** ou **ausente**. Uma sessão sem horário de culto é identificada somente pela data.
 
 Use este relatório para comparar a presença entre grupos e identificar quais grupos estão crescendo ou precisam de atenção.
 
-## Presença diária por grupo
+## Presença diária por grupo {#daily-group-attendance}
 
 O relatório de Presença diária por grupo (intitulado **Presença do grupo por dia**) mostra, dia a dia, quantas pessoas compareceram a um grupo.
 
 1. Acesse diretamente **admin.b1.church/reports/dailyGroupAttendance** no seu navegador.
-2. Use as listas **Campus**, **Culto** e **Horário de culto** para reduzir a lista e depois escolha o **Grupo** que deseja revisar.
+2. Use as listas **Campus**, **Culto** e **Horário do culto** para reduzir a lista e depois escolha o **Grupo** que deseja revisar.
 3. Execute o relatório. Ele lista todos os dias em que o grupo se reuniu, do mais antigo para o mais recente, com a **Data** e a quantidade de **Participantes** registrada naquele dia.
 
 Este relatório oferece um detalhamento fino, útil para entender variações de uma semana para outra ou para identificar dias específicos com presença incomumente alta ou baixa.
@@ -64,7 +68,7 @@ Este relatório oferece um detalhamento fino, útil para entender variações de
 Use o relatório de Tendência de presença para uma visão geral e o relatório de Presença diária por grupo quando precisar detalhar datas específicas.
 :::
 
-## Usos práticos
+## Usos práticos {#practical-uses}
 
 - **Planejamento** -- Use as tendências de presença para planejar a disposição dos assentos, a escala de equipe e os recursos dos próximos cultos.
 - **Alcance** -- Identifique cedo os padrões de queda na presença para que você possa fazer um acompanhamento com os membros.

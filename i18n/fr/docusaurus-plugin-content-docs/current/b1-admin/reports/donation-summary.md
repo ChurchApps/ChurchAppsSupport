@@ -1,13 +1,13 @@
 ---
-title: "Résumé des dons"
-description: "Lancez le Résumé des dons dans B1 Admin : total des dons, nombre de donateurs uniques et montants par fonds, pour la période de votre choix."
+title: "Sommaire des dons"
+description: "Lancez le rapport Sommaire des dons dans B1 Admin pour voir le total des dons, le nombre de donateurs uniques et les montants par fonds pour la période de votre choix."
 ---
 
-# Résumé des dons
+# Sommaire des dons
 
 <div class="article-intro">
 
-Le rapport Résumé des dons vous donne une image claire de l'activité de don de votre église. Utilisez-le pour suivre les totaux de don, surveiller les tendances de donation et préparer les rapports financiers pour votre équipe de direction.
+Le rapport Sommaire des dons vous donne une image claire de l'activité de dons de votre église. Utilisez-le pour suivre les totaux des dons, surveiller les tendances, et préparer les rapports financiers destinés à votre équipe de direction.
 
 </div>
 
@@ -15,37 +15,40 @@ Le rapport Résumé des dons vous donne une image claire de l'activité de don d
 <h4>Avant de commencer</h4>
 
 - Assurez-vous que les dons sont [enregistrés régulièrement](../donations/recording-donations.md) dans votre système
-- Vous devez avoir les [permissions](../settings/roles-permissions.md) appropriées pour accéder aux rapports financiers
+- Vous avez besoin de l'[autorisation](../settings/roles-permissions.md) **Voir les sommaires de dons**
 
 </div>
 
-## Exécution du rapport
+## Lancer le rapport {#running-the-report}
 
-1. Allez directement à **admin.b1.church/reports/donationSummary** dans votre navigateur (les rapports n'ont pas d'entrée dans le menu de navigation — mettre en signet l'adresse est le moyen le plus facile d'y revenir).
-2. Définissez la **plage de dates** pour définir la période de rapport.
-3. Appliquez des filtres supplémentaires tels que **fonds** ou d'autres critères pour affiner les résultats.
-4. Le rapport affichera le résumé de donation pour la période sélectionnée.
+1. Ouvrez le [menu de navigation rapide](../introduction.md#getting-around-with-the-jump-menu) (la barre de recherche en haut à gauche de B1 Admin), développez **Dons** et cliquez sur **Sommaire**. Le rapport s'exécute immédiatement pour l'année passée.
+2. Choisissez **Hebdomadaire**, **Mensuel** ou **Trimestriel** pour définir le regroupement des dons.
+3. Dans le panneau **Filtrer le rapport**, définissez la **Date de début** et la **Date de fin**, sélectionnez éventuellement un **Fonds**, puis cliquez sur **Générer le rapport**.
+4. Cliquez sur **Options de téléchargement** et choisissez **Sommaire** pour télécharger les totaux au format CSV, ou cliquez sur l'icône d'impression pour imprimer le rapport.
 
-## Ce que le rapport affiche
+Voir [Rapports de dons](../donations/donation-reports.md#giving-dashboard) pour en savoir plus sur cette page.
 
-Le rapport Résumé des dons inclut :
+## Contenu du rapport {#what-the-report-shows}
 
-- **Total des dons** -- Le montant de donation globale pour la période sélectionnée.
-- **Nombre de donateurs** -- Le nombre de donateurs uniques qui ont contribué.
-- **Montants par fonds** -- Une ventilation de la donation par différents fonds, le cas échéant.
+Le Sommaire des dons comprend :
 
-## Utilisations pratiques
+- **Total des dons** -- Le montant total des dons pour la période sélectionnée.
+- **Don moyen** et **Total des dons** -- La taille typique d'un don et le nombre de dons.
+- **Donateurs uniques** -- Le nombre de donateurs distincts ayant contribué.
+- **Montants par fonds** -- Un graphique à barres des dons par semaine, par mois ou par trimestre, ventilés par fonds.
 
-- **Planification financière** -- Examinez les tendances de donation pour prévoir les revenus futurs et planifier votre budget.
-- **Rapports de conseil** -- Générez des résumés pour les réunions régulières du conseil ou de direction avec des données de donation claires.
-- **Examens de fin d'année** -- Exécutez le rapport pour l'année complète pour préparer les résumés financiers annuels.
-- **Suivi de campagne** -- Filtrez par fonds pour suivre la progression des campagnes de donation spéciales ou des projets de construction.
-- **Analyse saisonnière** -- Comparez la donation pendant différentes périodes pour comprendre les modèles saisonniers.
+## Utilisations pratiques {#practical-uses}
+
+- **Planification financière** -- Examinez les tendances des dons pour prévoir les revenus futurs et planifier votre budget.
+- **Rapports au conseil** -- Produisez des sommaires pour les réunions régulières du conseil ou de la direction, avec des données de dons claires.
+- **Bilans de fin d'année** -- Lancez le rapport pour l'année complète afin de préparer les bilans financiers annuels.
+- **Suivi des campagnes** -- Filtrez par fonds pour suivre la progression des campagnes de dons spéciales ou des projets de construction.
+- **Analyse saisonnière** -- Comparez les dons sur différentes périodes pour comprendre les tendances saisonnières.
 
 :::tip
-Exécutez ce rapport mensuellement pour rester informé de la santé financière de votre église. Comparer les données mois après mois vous aide à repérer les tendances tôt.
+Lancez ce rapport chaque mois pour rester informé de la santé financière de votre église. Comparer les données d'un mois à l'autre permet de repérer les tendances tôt.
 :::
 
 :::warning
-Les données de donation proviennent des contributions enregistrées dans votre système. Assurez-vous que les dons sont saisis régulièrement -- que ce soit par donation en ligne, traitement de chèques ou saisie manuelle -- pour les rapports les plus précis. Voir [Enregistrement des dons](../donations/recording-donations.md) pour plus de détails.
+Les données de dons proviennent des contributions enregistrées dans votre système. Assurez-vous que les dons sont saisis de façon cohérente -- qu'il s'agisse de dons en ligne, de traitement de chèques ou de saisie manuelle -- pour obtenir les rapports les plus exacts. Voir [Enregistrer les dons](../donations/recording-donations.md) pour plus de détails.
 :::

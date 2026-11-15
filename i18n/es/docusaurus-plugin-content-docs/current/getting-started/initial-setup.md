@@ -20,7 +20,7 @@ Después de crear tu cuenta y tu iglesia, hay algunos pasos importantes que debe
 
 </div>
 
-## Paso 1: Configura la información de tu iglesia
+## Paso 1: Configura la información de tu iglesia {#step-1-configure-your-church-information}
 
 1. Abre el [menú Jump](../b1-admin/introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda de B1 Admin), expande **Configuración** y haz clic en **Configuración**.
 2. En la sección **Información de la iglesia**, haz clic en **Editar**.

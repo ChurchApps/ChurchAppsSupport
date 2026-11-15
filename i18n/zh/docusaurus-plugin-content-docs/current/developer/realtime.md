@@ -48,7 +48,7 @@ ChurchApps 使用单一的基于 WebSocket 的传递框架处理每个实时表�
 
 客户端永远不必知道正在使用哪一个——无论哪种方式，它都使用相同的 JSON 协议。
 
-## 有线协议
+## 有线协议 {#wire-protocol}
 
 每个帧都是 `PayloadInterface` 形式的 JSON：
 

@@ -15,7 +15,7 @@ Der Verwaltungsbereich in Lessons.church ist der Ort, an dem Inhaltsersteller un
 Für den Zugriff auf den Verwaltungsbereich sind entsprechende Berechtigungen erforderlich. Wenn Sie die Verwaltungsoptionen nicht sehen, wenden Sie sich an Ihren Gemeindeadministrator, um Zugriff anzufordern.
 :::
 
-## Was Sie tun können
+## Was Sie tun können {#what-you-can-do}
 
 Der Verwaltungsbereich gibt Ihnen die volle Kontrolle über Ihre Inhalte:
 

@@ -1,105 +1,105 @@
 ---
-title: "Descripción General de Planes"
-description: "Obtén una vista general de las asignaciones de voluntarios en muchas fechas de servicio en B1 Admin, detecta posiciones sin cubrir y completa o envía correos a tu equipo desde una sola cuadrícula."
+title: "Resumen de planes"
+description: "Obtenga una vista panorámica de las asignaciones de voluntarios de muchas fechas de servicio en B1 Admin, detecte puestos sin cubrir y llene o envíe correos a su equipo desde una sola cuadrícula."
 ---
 
-# Descripción General de Planes
+# Resumen de planes
 
 <div class="article-intro">
 
-La Descripción General de Planes te da una vista de pájaro de todas tus asignaciones de voluntarios en múltiples fechas de servicio de una vez. En lugar de abrir cada plan individualmente, puedes ver quién está sirviendo en cada posición en las próximas semanas en una sola cuadrícula -- y detectar rápidamente cualquier brecha que aún necesite llenar.
+El Resumen de planes le ofrece una vista panorámica de todas sus asignaciones de voluntarios en varias fechas de servicio a la vez. En lugar de abrir cada plan por separado, puede ver quién sirve en cada puesto a lo largo de las próximas semanas en una sola cuadrícula, y detectar rápidamente los huecos que todavía deben cubrirse.
 
 </div>
 
 <div class="prereqs">
-<h4>Antes de Empezar</h4>
+<h4>Antes de empezar</h4>
 
-- Crea al menos un Ministerio y Tipo de Plan en el área de Servicio
-- Crea [planes de servicio](./plans.md) con fechas y asignaciones de voluntarios
-- Asegúrate de que tus voluntarios hayan sido añadidos a tu [directorio de personas](../people/adding-people.md)
+- Cree al menos un Ministerio y un Tipo de plan en el área de Servicio
+- Cree [planes de servicio](./plans.md) con fechas y asignaciones de voluntarios
+- Asegúrese de que sus voluntarios se hayan agregado a su [directorio de personas](../people/adding-people.md)
 
 </div>
 
-## Acceder a la Descripción General
+## Acceder al resumen {#accessing-the-overview}
 
-1. En B1 Admin, abre el [menú Saltar](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la esquina superior izquierda), expande **Servicio** y haz clic en **Planes**.
-2. Selecciona una **pestaña de ministerio** en la parte superior de la página.
-3. Haz clic en **Descripción General** junto al tipo de plan en la lista **Tipos de Plan**, o abre el tipo de plan y haz clic en **Descripción General** en la parte superior de la página.
+1. En B1 Admin, abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Servicio** y haga clic en **Planes**.
+2. Seleccione una **pestaña de ministerio** en la parte superior de la página.
+3. Haga clic en **Resumen** junto al tipo de plan en la lista **Tipos de plan**, o abra el tipo de plan y haga clic en **Resumen** en la parte superior de la página.
 
-La descripción general cubre el tipo de plan desde el que la abriste. Haz clic en el nombre del tipo de plan en la parte superior de la descripción general para volver a su lista de planes.
+El resumen abarca el tipo de plan desde el que lo abrió. Haga clic en el nombre del tipo de plan en la parte superior del resumen para volver a su lista de planes.
 
-## Leer la Cuadrícula de Descripción General
+## Leer la cuadrícula del resumen {#reading-the-overview-grid}
 
-La descripción general muestra una cuadrícula donde:
+El resumen muestra una cuadrícula donde:
 
-- **Filas** representan cada posición (por ejemplo, "Música: Guitarra", "Técnica: Proyección") agrupadas por categoría
-- **Columnas** representan fechas de servicio próximas (por ejemplo, "14 de Abril", "21 de Abril")
-- **Celdas** muestran el nombre del voluntario asignado a esa posición en esa fecha
+- Las **filas** representan cada puesto (por ejemplo, "Música: Guitarra", "Técnico: Proyección") agrupados por categoría
+- Las **columnas** representan las próximas fechas de servicio (por ejemplo, "14 abr", "21 abr")
+- Las **celdas** muestran el nombre del voluntario asignado a ese puesto en esa fecha
 
-Las celdas resaltadas en **rojo** están sin llenar -- no se ha asignado ningún voluntario aún. Esto facilita ver las brechas de personal de un vistazo sin abrir cada plan individualmente.
+Las celdas resaltadas en **rojo** no están cubiertas: todavía no se ha asignado ningún voluntario. Así es fácil ver los huecos de personal de un vistazo, sin abrir cada plan individualmente.
 
 :::tip
-Los nombres de voluntarios se muestran en formato abreviado (nombre y inicial del apellido, por ejemplo, "John D.") para mantener la cuadrícula compacta cuando tienes muchas posiciones.
+Los nombres de los voluntarios se muestran en formato abreviado (nombre y la inicial del apellido, por ejemplo, "Juan P.") para que la cuadrícula sea compacta cuando hay muchos puestos.
 :::
 
-## Asignar Voluntarios Directamente desde la Descripción General
+## Asignar voluntarios directamente desde el resumen {#assigning-volunteers-directly-from-the-overview}
 
-No necesitas abrir planes individuales para llenar ranuras vacías. Haz clic en cualquier celda de la cuadrícula para abrir un panel de asignación para esa posición y fecha. Desde allí puedes:
+No necesita abrir cada plan para llenar los espacios vacíos. Haga clic en cualquier celda de la cuadrícula para abrir un panel de asignación para ese puesto y esa fecha. Desde ahí puede:
 
-- Seleccionar una persona de tu equipo para asignar a la posición
-- Hacer clic en **Eliminar** al lado de cualquiera ya asignado para quitarlo de esa ranura
-- Guardar el cambio sin salir de la descripción general
+- Hacer clic en el nombre de un miembro del equipo para asignarlo al puesto (o, en un puesto sin Grupo de voluntarios, buscar a cualquier persona de su iglesia)
+- Hacer clic en el icono **Quitar** (X) junto a cualquier persona ya asignada, y confirmar, para sacarla de ese espacio
+- Hacer clic en **Listo** para cerrar el panel sin salir del resumen
 
-Esto hace posible estar sirviendo un cronograma completo en una sola pasada -- trabaja en semanas y posiciones sin navegar dentro y fuera de planes individuales.
+Esto permite programar un calendario completo en una sola pasada: trabajar por semanas y puestos sin entrar y salir de cada plan individual.
 
-## Auto-Programación desde la Descripción General
+## Asignación automática desde el resumen {#auto-scheduling-from-the-overview}
 
-Haz clic en **Auto-Programación** para que B1 llene cada ranura abierta y sin llenar en la cuadrícula actual a la vez. Para cada plan en vista, extrae candidatos del grupo vinculado a cada posición y llena las ranuras vacías automáticamente, informando cuántos de los planes visibles fue capaz de llenar. Los planes se llenan uno a la vez para que el mismo voluntario no sea reservado dos veces en dos fechas diferentes en la misma pasada.
+Haga clic en **Asignación automática** y confirme para que B1 llene de una vez todos los espacios abiertos de la cuadrícula actual. Para cada plan visible, toma candidatos del grupo vinculado a cada puesto y llena los espacios vacíos automáticamente, e informa cuántos de los planes visibles pudo llenar (por ejemplo, "Se programaron automáticamente 3 de 4 planes"). Los puestos sin Grupo de voluntarios se omiten. Los planes se llenan uno a uno para que el mismo voluntario no quede doblemente programado en dos fechas durante la misma pasada.
 
 :::info
-Auto-Programación solo llena ranuras que ya están vacías -- nunca reemplaza una asignación existente.
+La asignación automática solo llena los espacios que ya están vacíos; nunca reemplaza una asignación existente.
 :::
 
-## Enviar Correo a Todos los Programados
+## Enviar correo a todas las personas programadas {#emailing-everyone-scheduled}
 
-Haz clic en **Enviar Correo a Voluntarios** para enviar una notificación a cada voluntario asignado en cualquier lugar del rango de fechas actualmente filtrado y ministerio, en una acción, en lugar de enviar correo plan por plan. B1 informa cuántos correos fueron enviados y cuántos fallaron.
+Haga clic en **Enviar correo a voluntarios** y confirme para enviar una notificación a cada voluntario asignado en cualquier punto del rango de fechas y del ministerio filtrados actualmente, en una sola acción, en lugar de enviar correos plan por plan. B1 informa cuántos correos se enviaron y cuántos fallaron.
 
-## Enviar Mensaje de Texto a Todos los Programados {#texting-everyone-scheduled}
+## Enviar mensajes de texto a todas las personas programadas {#texting-everyone-scheduled}
 
-Si tu iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado y puedes editar planes y enviar mensajes de texto, aparece un botón **Enviar Texto a Voluntarios** en la parte superior de la descripción general.
+Si su iglesia tiene conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting) y usted puede tanto editar planes como enviar mensajes, aparece un botón **Enviar mensaje a voluntarios** en la parte superior del resumen.
 
-1. Haz clic en **Enviar Texto a Voluntarios**.
-2. El cuadro de diálogo muestra cuántos voluntarios recibirán el texto (por ejemplo, "12 de 14 voluntarios recibirán este texto"), además de cuántos han optado por no recibir textos y cuántos no tienen un número de teléfono registrado.
-3. Escribe tu **Mensaje**. Puedes hacer clic en un marcador de posición para insertar el nombre de cada voluntario o el nombre de tu iglesia.
-4. Haz clic en **Enviar**. B1 informa cuántos textos fueron enviados.
+1. Haga clic en **Enviar mensaje a voluntarios**.
+2. El diálogo muestra cuántos voluntarios recibirán el mensaje (por ejemplo, "12 de 14 voluntarios recibirán este mensaje"), además de cuántos han cancelado la suscripción a los mensajes y cuántos no tienen número de teléfono registrado.
+3. Escriba su **Mensaje**. Puede hacer clic en un marcador para insertar el nombre de cada voluntario o el nombre de su iglesia.
+4. Haga clic en **Enviar**. B1 informa cuántos mensajes se enviaron.
 
-Cada voluntario asignado en el rango de fechas recibe un texto en el número de móvil de su perfil, incluso si sirve en varias fechas. Las personas que comparten un número de teléfono (como un teléfono familiar) reciben solo un texto. Los voluntarios que respondieron STOP a un texto anterior se omiten.
+Cada voluntario asignado en el rango de fechas recibe un mensaje en el número de celular de su perfil, aunque sirva en varias fechas. Las personas que comparten un número de teléfono (como el teléfono de una familia) reciben solo un mensaje. Los voluntarios que respondieron STOP a un mensaje anterior se omiten.
 
 :::info
-Los textos se envían a través del proveedor de mensajes de texto de tu iglesia, por lo que se aplica su tarifa. Si tu iglesia se queda sin créditos de mensajes de texto, el envío se detiene y el cuadro de diálogo te lo indica. Un solo envío llega a un máximo de 200 voluntarios; reduce el rango de fechas si tienes más.
+Los mensajes se envían a través del propio proveedor de mensajes de texto de su iglesia, por lo que se aplica su tarifa. Si su iglesia se queda sin créditos de mensajes, el envío se detiene y el diálogo se lo indica. Un solo envío llega a un máximo de 200 voluntarios; reduzca el rango de fechas si tiene más.
 :::
 
-## Resaltar el Horario de un Voluntario
+## Resaltar el calendario de un voluntario {#highlighting-a-volunteers-schedule}
 
-Usa el menú desplegable **Resaltar** para elegir una persona de tu equipo -- cada celda donde está asignada se resalta en la cuadrícula, para que puedas ver en todas partes donde ya están sirviendo antes de añadirlos a otra ranura. Elige **Todos** para apagar el resaltado.
+Use el menú desplegable **Resaltar** para elegir a una persona de su equipo: cada celda donde está asignada se destaca en la cuadrícula, para que pueda ver en qué otros lugares ya sirve antes de agregarla a otro espacio. Elija **Todos** para desactivar el resaltado.
 
-## Filtrar la Descripción General
+## Filtrar el resumen {#filtering-the-overview}
 
-Puedes ajustar lo que la descripción general muestra usando los controles situados encima de la cuadrícula. La cuadrícula se actualiza en cuanto los cambias.
+Puede ajustar lo que muestra el resumen con los controles encima de la cuadrícula. La cuadrícula se actualiza en cuanto los cambia.
 
-- **Todas las posiciones / Solo sin llenar** -- Elige **Solo sin llenar** para ocultar las filas donde cada fecha ya está llena, para que puedas enfocarte solo en posiciones que aún necesitan un voluntario.
-- **Fecha de Inicio / Fecha de Finalización** -- Por defecto la descripción general muestra 12 semanas en el futuro. Ingresa fechas personalizadas para expandir o reducir el rango.
+- **Todos los puestos / Solo sin cubrir** — Elija **Solo sin cubrir** para ocultar las filas en las que todas las fechas ya están cubiertas, y concentrarse solo en los puestos que todavía necesitan un voluntario.
+- **Fecha de inicio / Fecha de fin** — De forma predeterminada, el resumen muestra 12 semanas hacia el futuro. Escriba fechas personalizadas para ampliar o reducir el rango.
 
-## Exportar a CSV
+## Exportar a CSV {#exporting-to-csv}
 
-Haz clic en **Exportar CSV** para descargar la cuadrícula actual como una hoja de cálculo. La exportación incluye todas las posiciones y asignaciones de voluntarios para el rango de fechas filtrado, facilitando compartir con líderes de ministerio o imprimir para reuniones de planificación.
+Haga clic en **Exportar CSV** para descargar la cuadrícula actual como hoja de cálculo. La exportación incluye todos los puestos y asignaciones de voluntarios del rango de fechas filtrado, lo que facilita compartirla con los líderes de ministerio o imprimirla para las reuniones de planificación.
 
 :::info
-La exportación CSV refleja los filtros que están actualmente aplicados -- solo las fechas y tipo de plan mostrados en la cuadrícula se incluyen en la descarga.
+La exportación CSV refleja los filtros aplicados en ese momento: solo se incluyen en la descarga las fechas y el tipo de plan que se muestran en la cuadrícula.
 :::
 
-## Artículos Relacionados
+## Artículos relacionados {#related-articles}
 
-- [Planes de Servicio](./plans.md) -- Crea y gestiona planes de servicio individuales
-- [Orden del Servicio](./service-order.md) -- Construye el orden del servicio dentro de un plan
-- [Programar Lecciones](./scheduling-lessons.md) -- Programa lecciones junto con tus planes de servicio
+- [Planes de servicio](./plans.md) — Cree y administre planes de servicio individuales
+- [Orden del servicio](./service-order.md) — Construya el orden del servicio dentro de un plan
+- [Programar lecciones](./scheduling-lessons.md) — Programe lecciones junto con sus planes de servicio

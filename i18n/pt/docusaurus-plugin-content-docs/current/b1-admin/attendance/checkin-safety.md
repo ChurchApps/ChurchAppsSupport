@@ -20,7 +20,7 @@ O B1 inclui um conjunto de controles de segurança infantil para check-in: limit
 
 </div>
 
-## Capacidade de Sala e Fechamento de Uma Sala
+## Capacidade de Sala e Fechamento de Uma Sala {#room-capacity-and-closing-a-room}
 
 Cada sala de check-in (grupo) pode aplicar seus próprios limites. Abra o grupo, clique em **Editar** para editar suas configurações, e encontre a seção **Capacidade de Check-In**:
 
@@ -28,7 +28,7 @@ Cada sala de check-in (grupo) pode aplicar seus próprios limites. Abra o grupo,
 - **Capacidade de Hóspedes** -- Um limite opcional separado sobre quantos hóspedes a sala pode acomodar.
 - **Fechado para Check-In** -- Defina como **Sim** para parar todos os check-ins para esta sala imediatamente (por exemplo, quando uma classe é cancelada ou uma sala não está disponível). Check-outs ainda funcionam.
 
-## Proporções de Voluntários
+## Proporções de Voluntários {#volunteer-ratios}
 
 A mesma seção **Capacidade de Check-In** no grupo inclui regras de pessoal:
 
@@ -50,11 +50,11 @@ Como as proporções são aplicadas rigorosamente é uma configuração de toda 
 Capacidade e Fechado para Check-In são sempre limites rígidos — a escolha de avisar/bloquear se aplica apenas às proporções de voluntários.
 :::
 
-## Tipos de Check-In
+## Tipos de Check-In {#check-in-types}
 
 Cada check-in registra se a pessoa é um **Membro**, **Hóspede** ou **Voluntário**. O tipo é escolhido com fichas na tela do quiosque da família (Membro é o padrão). Os tipos alimentam as regras de segurança — voluntários fornecem cobertura de proporção, e hóspedes contam contra a Capacidade de Hóspedes da sala.
 
-## Orientação de Sala de Idade e Série
+## Orientação de Sala de Idade e Série {#age-and-grade-room-guidance}
 
 Você pode dar a cada sala limites de idade ou série para que o quiosque oriente famílias para salas apropriadas:
 
@@ -66,7 +66,7 @@ As séries mudam na **data de promoção de série** da sua igreja:
 1. No B1 Admin, vá para **Configurações** e abra a seção **Promoção de Série**.
 2. Defina o mês e o dia em que sua igreja promove alunos (por exemplo, 1º de agosto). As idades e séries no quiosque são computadas a partir da data de promoção mais recente.
 
-## Pessoas Autorizadas e Não Autorizadas para Buscar
+## Pessoas Autorizadas e Não Autorizadas para Buscar {#trusted-and-not-authorized-pickup-people}
 
 Cada núcleo familiar pode ter uma lista de pessoas que são — ou não — autorizadas a buscar suas crianças.
 

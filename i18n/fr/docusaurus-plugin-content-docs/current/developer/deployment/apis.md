@@ -46,7 +46,7 @@ npm run deploy-prod
 
 En pratique, l'API est déployée par GitHub Actions : **Deploy Demo** s'exécute à chaque push sur `main`, et **Deploy Prod** est lancé manuellement (déclenchement du workflow). Il n'existe plus d'environnement de préproduction.
 
-## Migrations de base de données
+## Migrations de base de données {#database-migrations}
 
 **Deploy Prod** applique les migrations de base de données en attente dans le cadre du déploiement. Les bases de données de production n'acceptent les connexions que depuis l'intérieur du VPC ; juste après `serverless deploy`, le workflow invoque la fonction Lambda `migrate` (`api-Prod-migrate`), qui exécute les migrations en attente de chaque module et renvoie `{ ok, environment, modules }`. Si un module échoue ou est refusé (par exemple une base de données sans historique de migrations), le job échoue afin que le schéma ne soit jamais en retard par rapport au code. **Rollback Prod** ne rétablit que le code de la fonction Lambda ; les migrations restent appliquées. Gardez donc les migrations additives. Voir [Administration serveur -- Migrations de base de données](../server-admin.md#database-migrations) pour vérifier leur état ou les exécuter manuellement.
 

@@ -1,76 +1,76 @@
 ---
-title: "Teilnahme verfolgen"
-description: "Prüfen Sie Anwesenheitstrends, filtern Sie Berichte nach Gemeinde, Gottesdienst oder Gruppe und exportieren Sie Gruppenanwesenheiten von der Anwesenheitsseite in B1 Admin."
+title: "Anwesenheit verfolgen"
+description: "Werten Sie Anwesenheitsverläufe aus, filtern Sie Berichte nach Standort, Gottesdienst oder Gruppe und exportieren Sie die Gruppenanwesenheit von der Seite Anwesenheit in B1 Admin."
 ---
 
-# Teilnahme verfolgen
+# Anwesenheit verfolgen
 
 <div class="article-intro">
 
-Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, macht es B1 Admin einfach, Teilnahmendaten zu überprüfen und Trends zu erkennen. Die Seite "Teilnahme" öffnet sich mit einer Zusammenfassung der Teilnahme dieser Woche, und ihre Berichte unter **Alle Jahre** bieten zwei Hauptansichten – die Registerkarte **Teilnahme-Trend** für kirchenweite Trends und die Registerkarte **Gruppenteilnahme** für Gruppenebenen-Details. Verwenden Sie diese Tools, um Wachstumsmuster zu verstehen, rückläufiges Engagement zu erkennen und datengesteuerte Entscheidungen für Ihre Kirche zu treffen.
+Sobald Ihre Standorte, Gottesdienstzeiten und Gruppen konfiguriert sind, macht es B1 Admin einfach, Anwesenheitsdaten auszuwerten und Trends zu erkennen. Die Seite Anwesenheit öffnet sich mit einer Übersicht über die Anwesenheit dieser Woche, und ihre Berichte unter **Alle Jahre** bieten zwei Hauptansichten: den Reiter **Verlauf der Anwesenheit** für kirchenweite Trends und den Reiter **Anwesenheit in Gruppen** für Details auf Gruppenebene. Dazu kommt der Reiter **Verlauf der Personenzahl** für [Summen der Personenzahlen](headcount-entry.md). Mit diesen Werkzeugen erkennen Sie Wachstumsmuster und nachlassendes Engagement und können datenbasierte Entscheidungen für Ihre Kirche treffen.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Ihre Anwesenheitsstruktur muss mit mindestens einem Standort und einer Gottesdienstzeit eingerichtet werden. Siehe [Anwesenheitseinrichtung](setup.md), falls Sie dies noch nicht getan haben.
-- Teilnahmendaten müssen aufgezeichnet werden, bevor Berichte Ergebnisse zeigen. Daten können aus [manuellen Einträgen](recording-attendance.md) oder [Selbstanmeldung](check-in.md) stammen.
+- Ihre Anwesenheitsstruktur muss mit mindestens einem Standort und einer Gottesdienstzeit eingerichtet sein. Siehe [Anwesenheitseinrichtung](setup.md), falls Sie das noch nicht getan haben.
+- Anwesenheitsdaten müssen erfasst sein, bevor Berichte Ergebnisse anzeigen. Die Daten können über die [manuelle Erfassung](recording-attendance.md) oder den [Selbst-Check-in](check-in.md) entstehen.
 
 </div>
 
-## Teilnahe-Trends anzeigen
+## Anwesenheitsverläufe ansehen {#viewing-attendance-trends}
 
-1. Öffnen Sie **B1 Admin**, öffnen Sie das [Jump-Menü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), erweitern Sie **Personen**, und klicken Sie auf **Teilnahme**.
-2. Klicken Sie links auf **Alle Jahre**. Die Registerkarte **Teilnahme-Trend** ist standardmäßig ausgewählt.
-3. Der Bericht wird automatisch ausgeführt, wenn die Registerkarte geöffnet wird, und zeigt die Gesamtteilnahme für jede Woche.
+1. Öffnen Sie **B1 Admin**, öffnen Sie das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Personen** auf und klicken Sie auf **Anwesenheit**.
+2. Klicken Sie in der linken Spalte auf **Alle Jahre**. Der Reiter **Verlauf der Anwesenheit** ist standardmäßig ausgewählt.
+3. Der Bericht wird automatisch ausgeführt, sobald der Reiter geöffnet wird, und zeigt die Gesamtanwesenheit für jede Woche.
 
 :::tip
-Für einen schnellen Überblick über die aktuelle Woche zeigt die Hauptseite Teilnahme, wie viele Personen diese Woche im Raum sind, eine Aufschlüsselung nach Raum (Gruppe), eventuelle Gäste und ein 13-Wochen-Balkendiagramm der Anmeldungen – ohne dass ein Bericht nötig ist.
+Für einen schnellen Blick auf die laufende Woche zeigt die Hauptseite Anwesenheit, wie viele Personen diese Woche im Raum sind, eine Aufschlüsselung nach Raum (Gruppe), eventuelle Gäste und ein 13-Wochen-Balkendiagramm der Check-ins – ganz ohne Bericht.
 :::
 
-## Ihre Daten filtern
+## Ihre Daten filtern {#filtering-your-data}
 
-Verwenden Sie die Filter im Feld **Bericht filtern**, um die Ergebnisse einzugrenzen, und klicken Sie auf **Bericht ausführen**:
+Verwenden Sie die Filter im Feld **Bericht filtern**, um die Ergebnisse einzugrenzen, und klicken Sie dann auf **Bericht ausführen**:
 
-- **Standort** – wählen Sie einen Standort aus, um Teilnahmen nur für diesen Ort anzuzeigen.
-- **Service** – beschränken Sie den Bericht auf einen Service.
-- **Gottesdienstzeit** – wählen Sie eine Gottesdienstzeit, um einen bestimmten Service genauer zu untersuchen.
-- **Gruppe** – zeigen Sie Teilnahme für eine Einzelgruppe an.
-- **Startdatum** und **Enddatum** – der einzubeziehende Datumsbereich. Der Bericht deckt standardmäßig das vergangene Jahr ab, von vor einem Jahr bis heute, und das Enddatum ist vollständig enthalten.
+- **Standort** – wählen Sie einen Standort, um nur die Anwesenheit an diesem Ort zu sehen.
+- **Gottesdienst** – beschränkt den Bericht auf einen Gottesdienst.
+- **Gottesdienstzeit** – wählen Sie eine Gottesdienstzeit, um eine bestimmte Zusammenkunft genauer zu betrachten.
+- **Gruppe** – zeigt die Anwesenheit für eine einzelne Gruppe.
+- **Startdatum** und **Enddatum** – der einzubeziehende Zeitraum. Standardmäßig umfasst der Bericht das vergangene Jahr, vom Datum vor einem Jahr bis heute, und das Enddatum ist vollständig enthalten.
 
-Der Bericht zeigt ein Balkendiagramm und eine Tabelle der Gesamtbesuche pro Woche. Jede Woche wird mit dem Datum des Sonntags dieser Woche gekennzeichnet. Die Tabelle hat auch eine Spalte **Sitzungsdaten**, die die tatsächlichen Daten in dieser Woche auflistet, an denen Teilnahmen aufgezeichnet wurden (z.B. "27.09., 30.09."), sodass Sie sehen können, wenn eine Mittwochveranstaltung in der gleichen Woche wie Sonntag gezählt wird.
+Der Bericht zeigt ein Balkendiagramm und eine Tabelle mit den Gesamtbesuchen pro Woche. Mit dem Drucksymbol drucken Sie ihn aus, über **Download-Optionen** speichern Sie die Daten. Jede Woche ist mit dem Datum des Sonntags dieser Woche beschriftet. Die Tabelle enthält außerdem eine Spalte **Sitzungsdaten** mit den tatsächlichen Daten innerhalb dieser Woche, an denen Anwesenheit erfasst wurde (zum Beispiel „9/27, 9/30“). So sehen Sie, wann ein Zusammenkommen unter der Woche in derselben Woche wie der Sonntag gezählt wird.
 
 :::info
-Berichte werden automatisch ausgeführt, wenn Sie die Registerkarte Teilnahme-Trend öffnen, sodass Sie immer aktuelle Zahlen sehen, ohne einen Aktualisierungsschaltfläche klicken zu müssen.
+Berichte werden jedes Mal automatisch ausgeführt, wenn Sie den Reiter Verlauf der Anwesenheit öffnen. Sie sehen daher immer aktuelle Zahlen, ohne auf eine Schaltfläche zum Aktualisieren klicken zu müssen.
 :::
 
-## Gruppenteilnahme
+## Anwesenheit in Gruppen {#group-attendance}
 
-Die Registerkarte **Gruppenteilnahme** zeigt, wer jede Gruppensiezzung besucht hat. Dies ist nützlich, wenn Sie eine bestimmte Klasse, ein Ministerium-Team oder eine kleine Gruppe überwachen möchten, anstatt auf die allgemeinen Service-Zahlen zu schauen.
+Der Reiter **Anwesenheit in Gruppen** zeigt, wer an welcher Gruppensitzung teilgenommen hat. Das ist nützlich, wenn Sie eine bestimmte Klasse, ein Dienstteam oder einen Hauskreis im Blick behalten möchten, statt die Gesamtzahlen der Gottesdienste zu betrachten.
 
-1. Wählen Sie in den Berichten unter **Alle Jahre** die Registerkarte **Gruppenteilnahme**.
-2. Wählen Sie optional einen **Standort** und einen **Service**.
-3. Legen Sie das **Startdatum** und **Enddatum** fest. Der Bericht deckt standardmäßig den letzten Sonntag bis heute ab.
+1. Wählen Sie bei den Berichten unter **Alle Jahre** den Reiter **Anwesenheit in Gruppen**.
+2. Wählen Sie optional einen **Standort** und einen **Gottesdienst**.
+3. Legen Sie das **Startdatum** und das **Enddatum** fest. Standardmäßig umfasst der Bericht den letzten Sonntag bis heute.
 4. Klicken Sie auf **Bericht ausführen**.
 
-Ergebnisse werden nach Sitzungsdatum, dann nach Gottesdienstzeit und Gruppe gruppiert, mit den Personen, die jede Gruppe besucht hat, aufgelistet darunter. Gottesdienstzeiten, Gruppen und Namen werden alphabetisch sortiert, damit jede Überschrift einmal angezeigt wird. Jede Personenzeile zeigt auch eine Spalte **Angemeldet** mit der Zeit, zu der ihre Teilnahme aufgezeichnet wurde (leer, wenn keine Zeit vorhanden ist) und eine Spalte **Mitgliedschaftsstatus** (z.B. Mitglied oder Besucher), sodass Sie Gäste auf einen Blick erkennen können.
+Die Ergebnisse sind nach Sitzungsdatum gruppiert, dann nach Gottesdienstzeit und Gruppe, wobei unter jeder Gruppe die teilnehmenden Personen aufgeführt sind. Gottesdienstzeiten, Gruppen und Namen sind alphabetisch sortiert, damit jede Überschrift nur einmal erscheint. Die Zeile jeder Person zeigt außerdem eine Spalte **Eingecheckt** mit der Uhrzeit, zu der ihre Anwesenheit erfasst wurde (leer, wenn keine Uhrzeit vorliegt), und eine Spalte **Mitgliedsstatus** (zum Beispiel Mitglied oder Besucher), damit Sie Gäste auf einen Blick erkennen.
 
-Um die Daten herunterzuladen, klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**. Die CSV hat eine Zeile pro Gruppenmitglied, sortiert nach Gruppe und dann nach Name, und eine Spalte für jede datierte Sitzung in dem Bereich (z.B. "Sonntag - 9:00 Uhr (27.09.2026)") markiert **anwesend** oder **abwesend**.
+Um die Daten herunterzuladen, klicken Sie auf **Download-Optionen** und wählen Sie **Zusammenfassung**. Die CSV-Datei enthält eine Zeile pro Gruppenmitglied, sortiert nach Gruppe und dann nach Name, sowie eine Spalte für jede datierte Sitzung im Zeitraum (zum Beispiel „Sonntag - 9:00 Uhr (2026-09-27)“), markiert als **anwesend** oder **abwesend**.
 
 :::tip
-Gruppenteilnahme ist besonders wertvoll für [kleine Gruppen](../groups/creating-groups.md)-Leiter, die Engagement innerhalb ihrer Gruppe im Laufe der Zeit verfolgen möchten.
+Die Gruppenanwesenheit ist besonders wertvoll für Leiter von [Hauskreisen](../groups/creating-groups.md), die das Engagement in ihrer Gruppe über die Zeit verfolgen möchten.
 :::
 
-## Tipps zur Verwendung von Teilnahmendaten
+## Tipps zur Nutzung der Anwesenheitsdaten {#tips-for-using-attendance-data}
 
-- Überprüfen Sie Trends monatlich, um saisonale Muster frühzeitig zu erkennen.
-- Vergleichen Sie Daten auf Standortebene, um zu verstehen, welche Orte wachsen.
-- Verwenden Sie Berichte auf Gruppenebene, um [Gruppen](../groups/group-members.md) zu befolgen, die rückläufige Teilnahmen zeigen.
-- Kombinieren Sie Teilnahme-Erkenntnisse mit dem [KI-Suche](../people/ai-search.md)-Tool, um Personen zu finden, die kürzlich nicht anwesend waren.
+- Werten Sie die Verläufe monatlich aus, um saisonale Muster früh zu erkennen.
+- Vergleichen Sie die Daten auf Standortebene, um zu verstehen, welche Orte wachsen.
+- Nutzen Sie die Berichte auf Gruppenebene, um [Gruppen](../groups/group-members.md) nachzufassen, deren Anwesenheit zurückgeht.
+- Kombinieren Sie die Erkenntnisse zur Anwesenheit mit dem Werkzeug [KI-Suche](../people/ai-search.md), um Personen zu finden, die in letzter Zeit nicht mehr gekommen sind.
 
-## Verwandte Seiten
+## Verwandte Seiten {#related-pages}
 
-- [Teilnahme aufzeichnen](recording-attendance.md) – Teilnahme für eine Gruppensiezzung manuell eingeben
-- [Kopfzahl Erfassung & Trend](headcount-entry.md) – eine einfachere nur-Total-Alternative mit eigenem wöchentlichen Trendbericht
-- [Anmeldung](check-in.md) – richten Sie Selbstanmeldung ein, damit Teilnahme automatisch aufgezeichnet wird
+- [Anwesenheit erfassen](recording-attendance.md) – Anwesenheit für eine Gruppensitzung manuell eingeben
+- [Personenzahl erfassen & Verlauf](headcount-entry.md) – eine einfachere Alternative mit Gesamtzahlen und eigenem wöchentlichem Verlaufsdiagramm
+- [Check-In](check-in.md) – Selbst-Check-in einrichten, damit die Anwesenheit automatisch erfasst wird

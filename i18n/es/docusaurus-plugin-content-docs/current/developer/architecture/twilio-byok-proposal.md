@@ -61,7 +61,7 @@ Conserve las credenciales enmascaradas solo al editar el mismo proveedor guardad
 
 Limite cada carga o actualización a la iglesia de B1 autenticada. Vincule las devoluciones de llamada a una integración guardada y a la cuenta/servicio/remitente de Twilio esperados, y rechace las asignaciones cruzadas en conflicto entre iglesias. La rotación de credenciales y la desconexión del proveedor deben invalidar la preparación y pausar los envíos en cola, sin borrar el consentimiento ni los registros históricos de entrega.
 
-## El consentimiento y la supresión son trabajo obligatorio para el lanzamiento
+## El consentimiento y la supresión son trabajo obligatorio para el lanzamiento {#consent-and-suppression-are-required-release-work}
 
 Introduzca registros de suscripción vinculados al teléfono para el programa de Twilio, además de eventos de consentimiento/supresión solo de adición. El mínimo sugerido como prueba es: ID de la iglesia, ID del programa, teléfono normalizado, asociación opcional y verificada con una persona, acción afirmativa, ID del formulario/envío de origen o prueba externa revisada, marca de tiempo del servidor, texto y versión de la divulgación, URL de origen, URL de las políticas y eventos de retirada/reinicio. Limite el acceso y la retención según la política de seguridad de datos existente de la iglesia.
 

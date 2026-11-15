@@ -1,203 +1,175 @@
 ---
-title: "Modifica multipla delle persone"
-description: "Aggiorna in B1 Admin in blocco stato di membro, stato civile, genere, opt-out, campi Sì/No personalizzati o appartenenza ai gruppi per più persone."
+title: "Modifica in blocco delle persone"
+description: "Aggiorna stato di membership, stato civile, genere, esclusione dall'anagrafe, sede, campi personalizzati Sì/No o gruppi per molte persone in una volta in B1 Admin."
 ---
 
-# Modifica multipla delle persone
+# Modifica in blocco delle persone
 
 <div class="article-intro">
-La modifica multipla ti permette di aggiornare più persone contemporaneamente, risparmiando tempo quando devi applicare la stessa modifica a molti individui. Puoi aggiornare lo stato di appartenenza, lo stato civile, il genere, le preferenze di esclusione dalle comunicazioni e le appartenenze ai gruppi in un'unica operazione.
+La modifica in blocco ti permette di aggiornare più persone insieme, risparmiando tempo quando applichi la stessa modifica a molti individui. Puoi aggiornare stato di membership, stato civile, genere, esclusione dall'anagrafe, sede, campi personalizzati Sì/No, appartenenze ai gruppi e flussi di lavoro in un'unica operazione, oppure eliminare persone.
 </div>
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
 
-- Ti serve l'autorizzazione per gestire i dati delle persone. Consulta [Ruoli e permessi](./roles-permissions.md) per i dettagli.
-- Dovresti aver già aggiunto o importato le persone che vuoi modificare. Consulta [Aggiungere persone](./adding-people.md) se necessario.
+- Ti serve il permesso di gestire i dati delle persone. Vedi [Ruoli e permessi](./roles-permissions.md) per i dettagli.
+- Dovresti aver già aggiunto o importato le persone che vuoi modificare. Se serve, vedi [Aggiungere persone](./adding-people.md).
 </div>
 
-## Selezionare le persone per la modifica multipla
+## Selezionare le persone per la modifica in blocco {#selecting-people-for-bulk-editing}
 
-1. Vai su **People** in B1 Admin
+1. Vai su **Persone** in B1 Admin
 2. Usa gli strumenti di ricerca o i filtri per trovare le persone che vuoi aggiornare
-3. Seleziona le caselle per scegliere le persone
-   - Nella vista **Households**, selezionare un nucleo familiare seleziona tutte le persone che ne fanno parte
-   - Nella vista **Table** (da cambiare con l'interruttore **View as**), puoi selezionare le persone una per una
+3. Spunta le caselle per selezionare le persone
+   - Nella vista **Nuclei familiari**, spuntare un nucleo seleziona tutti i suoi membri
+   - Nella vista **Tabella** (cambia con il pulsante **Visualizza come**), puoi selezionare le persone una alla volta
    - Oppure usa la casella sopra l'elenco per selezionare tutte le persone visibili
-4. Una volta selezionata almeno una persona, la barra sopra l'elenco mostra quante persone sono selezionate, insieme a **Clear Selection** e a un pulsante **Actions**
+4. Una volta selezionata almeno una persona, la barra sopra l'elenco mostra quante sono selezionate, insieme a **Cancella selezione** e a un pulsante **Azioni**
 
 :::tip
-Se devi aggiornare un gruppo numeroso di persone in base a criteri specifici, usa la funzione [AI Search](./ai-search.md) oppure i filtri per restringere prima l'elenco, poi seleziona tutte le persone corrispondenti.
+Se devi aggiornare un gruppo numeroso di persone in base a criteri specifici, usa la funzione [Ricerca AI](./ai-search.md) o i filtri per restringere prima l'elenco, poi seleziona tutte le persone corrispondenti.
 :::
 
-## Azioni multiple disponibili
+## Azioni in blocco disponibili {#available-bulk-actions}
 
-Il menu **Actions** offre diverse opzioni:
+Il menu **Azioni** offre le opzioni seguenti. Ognuna apre una piccola finestra che indica quante persone verranno modificate; scegli un valore e clicca su **Applica**. Il nuovo valore sostituisce quello che ogni persona selezionata aveva prima. Al termine, un messaggio in fondo alla pagina conferma quante persone sono state aggiornate.
 
-### Aggiornare lo stato di appartenenza
+### Imposta stato di membership {#set-membership-status}
 
-Aggiorna lo stato di appartenenza di tutte le persone selezionate:
+1. Clicca su **Azioni** → **Imposta stato di membership**
+2. Scegli il nuovo **Stato di membership**:
+   - **Visitatore** -- Persone alla prima visita o occasionali
+   - **Ospite** -- Ospiti, come le famiglie registrate a un chiosco di check-in
+   - **Frequentatore abituale** -- Frequentatori assidui che non sono membri
+   - **Membro** -- Membri ufficiali della chiesa
+   - **Staff** -- Membri dello staff della chiesa
+   - **Inattivo** -- Persone che non frequentano più
+   - **Deceduto** -- Persone che sono scomparse
+3. Clicca su **Applica**
 
-1. Fai clic su **Actions** → **Set Membership Status**
-2. Scegli il nuovo stato:
-   - **Visitor** -- Visitatori alla prima visita o occasionali
-   - **Guest** -- Ospiti, come le famiglie registrate a un kiosk di check-in
-   - **Regular Attendee** -- Frequentatori abituali che non sono membri
-   - **Member** -- Membri ufficiali della chiesa
-   - **Staff** -- Collaboratori della chiesa
-   - **Inactive** -- Persone che non frequentano più
-   - **Deceased** -- Persone che sono decedute
-3. Scegli la modalità di aggiornamento:
-   - **Overwrite all** -- Sostituisce lo stato attuale di tutte le persone selezionate
-   - **Only update empty** -- Imposta lo stato solo per le persone che non ne hanno uno
-4. Fai clic su **Update**
+### Imposta stato civile {#set-marital-status}
 
-### Aggiornare lo stato civile
+1. Clicca su **Azioni** → **Imposta stato civile**
+2. Scegli **Sconosciuto**, **Single**, **Sposato**, **Divorziato** o **Vedovo**
+3. Clicca su **Applica**
 
-Aggiorna lo stato civile in blocco:
+### Imposta genere {#set-gender}
 
-1. Fai clic su **Actions** → **Set Marital Status**
-2. Seleziona il nuovo stato:
-   - **Unknown**
-   - **Single**
-   - **Married**
-   - **Divorced**
-   - **Widowed**
-3. Scegli se sovrascrivere i valori esistenti o aggiornare solo i campi vuoti
-4. Fai clic su **Update**
+1. Clicca su **Azioni** → **Imposta genere**
+2. Scegli **Non specificato**, **Maschio** o **Femmina**
+3. Clicca su **Applica**
 
-### Aggiornare il genere
+### Imposta esclusione dall'anagrafe {#set-directory-opt-out}
 
-Aggiorna le informazioni sul genere per più persone:
+L'esclusione dall'anagrafe controlla se le persone compaiono nell'anagrafe dei membri, cioè nell'[anagrafe stampata](./print-directory.md) e nell'anagrafe dei membri dell'app B1. È la stessa impostazione di **Nascondi me dall'anagrafe dei membri** nella scheda di una persona.
 
-1. Fai clic su **Actions** → **Set Gender**
-2. Seleziona il valore:
-   - **Unspecified**
-   - **Male**
-   - **Female**
-3. Scegli la modalità di aggiornamento (sovrascrivi tutto oppure solo i campi vuoti)
-4. Fai clic su **Update**
-
-### Aggiornare lo stato di esclusione dalle comunicazioni
-
-Controlla se le persone hanno scelto di escludersi dalle comunicazioni:
-
-1. Fai clic su **Actions** → **Set Directory Opt-Out**
-2. Scegli:
-   - **No** -- Consenti le comunicazioni (rimuove l'esclusione)
-   - **Sì** -- Blocca le comunicazioni (imposta l'esclusione)
-3. Scegli la modalità di aggiornamento
-4. Fai clic su **Update**
+1. Clicca su **Azioni** → **Imposta esclusione dall'anagrafe**
+2. Scegli **Escluso Sì** per nascondere le persone selezionate dall'anagrafe, oppure **Escluso No** per mostrarle di nuovo
+3. Clicca su **Applica**
 
 :::warning
-Fai attenzione quando modifichi lo stato di esclusione dalle comunicazioni. Le persone che hanno scelto esplicitamente di escludersi non dovrebbero ricevere comunicazioni, a meno che non abbiano dato un nuovo consenso.
+Le persone che hanno scelto di nascondersi dall'anagrafe devono restare nascoste, a meno che non chiedano di essere di nuovo inserite.
 :::
 
-### Impostare un campo personalizzato
+### Imposta sede {#set-campus}
 
-Imposta un valore Sì/No di un [campo personalizzato](../settings/custom-fields.md) per tutte le persone selezionate in una volta sola:
+Questa opzione compare quando la tua chiesa ha configurato le [sedi](../settings/campuses.md).
 
-1. Fai clic su **Actions** → **Set Custom Field**.
-2. Scegli il campo personalizzato Sì/No che vuoi impostare.
-3. Scegli il valore (**Sì** o **No**) da applicare.
-4. Fai clic su **Update**.
+1. Clicca su **Azioni** → **Imposta sede**
+2. Scegli la sede
+3. Clicca su **Applica**
+
+### Imposta campo personalizzato {#set-custom-field}
+
+Imposta in una sola volta il valore Sì/No di un [campo personalizzato](../settings/custom-fields.md) per tutte le persone selezionate:
+
+1. Clicca su **Azioni** → **Imposta campo personalizzato**.
+2. Scegli il **Campo personalizzato** Sì/No che vuoi impostare.
+3. Scegli il **Valore** (**Sì** o **No**) da applicare.
+4. Clicca su **Applica**.
 
 :::info
-Per questa azione multipla sono disponibili solo i campi personalizzati Sì/No. Per impostare altri tipi di campo, modifica ogni persona individualmente.
+Per questa azione in blocco sono disponibili solo i campi personalizzati Sì/No. Per impostare altri tipi di campo, modifica ogni persona singolarmente. Se la tua chiesa non ha campi personalizzati Sì/No, la finestra lo segnala.
 :::
 
-### Aggiungere a un gruppo
+### Aggiungi al gruppo {#add-to-group}
 
-Aggiungi tutte le persone selezionate a uno o più gruppi:
+1. Clicca su **Azioni** → **Aggiungi al gruppo**
+2. Scegli il **Gruppo** a cui aggiungere le persone. Per inserirle invece in un gruppo nuovo, spunta **Crea nuovo gruppo** e scrivi un **Nuovo nome gruppo**.
+3. Clicca su **Applica**
 
-1. Fai clic su **Actions** → **Add to Group**
-2. Cerca e seleziona il gruppo o i gruppi a cui aggiungere le persone
-3. Puoi selezionare più gruppi per aggiungere le persone a tutti
-4. Fai clic su **Add to Groups**
+Ogni persona viene aggiunta come membro normale del gruppo. In seguito puoi promuovere singole persone a leader di gruppo dalla pagina [Membri del gruppo](../groups/group-members.md). Per aggiungere le persone a più gruppi, ripeti l'operazione per ciascun gruppo.
 
-Ogni persona verrà aggiunta come membro normale del gruppo o dei gruppi selezionati. In seguito, se necessario, puoi promuovere alcune persone a leader del gruppo dalla pagina [Membri del gruppo](../groups/group-members.md).
+### Rimuovi dal gruppo {#remove-from-group}
 
-### Rimuovere da un gruppo
-
-Rimuovi tutte le persone selezionate da uno o più gruppi:
-
-1. Fai clic su **Actions** → **Remove from Group**
-2. Cerca e seleziona il gruppo o i gruppi da cui rimuovere le persone
-3. Puoi selezionare più gruppi
-4. Fai clic su **Remove from Groups**
+1. Clicca su **Azioni** → **Rimuovi dal gruppo**
+2. Scegli il **Gruppo** da cui rimuovere le persone
+3. Clicca su **Applica**
 
 :::info
-Questa azione rimuove le persone solo dai gruppi indicati. Non elimina le loro schede persona.
+Questa azione rimuove soltanto le persone dal gruppo. Non elimina le loro schede.
 :::
 
-### Eliminare persone
+### Aggiungi a flusso di lavoro {#add-to-workflow}
 
-Elimina definitivamente le persone selezionate dal database della tua chiesa:
+Aggiungi le persone selezionate a un [flusso di lavoro](../serving/workflows.md) come schede:
 
-1. Fai clic su **Actions** → **Elimina**
-2. La finestra **Delete Selected People** chiede di confermare quante persone verranno eliminate
-3. Fai clic su **Elimina**
+1. Clicca su **Azioni** → **Aggiungi a flusso di lavoro**
+2. Scegli il flusso di lavoro
+3. Clicca su **Applica**
+
+### Elimina persone {#delete-people}
+
+Elimina le persone selezionate dal database della chiesa:
+
+1. Clicca su **Azioni** → **Elimina**
+2. La finestra **Elimina persone selezionate** ti chiede di confermare quante persone verranno eliminate
+3. Clicca su **Elimina**
 
 :::danger
-L'eliminazione delle persone è definitiva e non può essere annullata. Verranno rimossi tutti i loro dati, tra cui:
-- Informazioni personali
-- Appartenenze ai gruppi
-- Registrazioni di presenza
-- Cronologia delle donazioni
-- Invii di moduli
-
-Usa questa azione solo se sei assolutamente certo di voler rimuovere queste persone dal sistema.
+Le persone eliminate scompaiono dall'anagrafe, dai gruppi e dalle ricerche. Usa questa azione solo se sei certo di voler rimuovere queste persone dal sistema.
 :::
 
-## Risultati della modifica multipla
+Non puoi selezionare te stesso, quindi non puoi eliminare o modificare in blocco la tua scheda.
 
-Al termine di un'azione multipla, vedrai un riepilogo che mostra:
 
-- **Total selected** -- Quante persone sono state incluse nell'operazione
-- **Successfully updated** -- Quanti record sono stati modificati
-- **Failed** -- Eventuali record che non è stato possibile aggiornare (se applicabile)
-- **Unchanged** -- Record che non richiedevano modifiche (ad esempio, con la modalità "only update empty")
+## Buone pratiche {#best-practices}
 
-Se alcuni aggiornamenti non sono riusciti, vedrai i dettagli dell'errore che ne spiegano il motivo.
+- **Inizia con poco** -- Prova le operazioni in blocco su pochi record prima, per essere sicuro di fare le modifiche giuste
+- **Usa i filtri** -- Restringi l'elenco con filtri o con la ricerca AI prima di selezionare le persone, così aggiorni solo gli individui giusti
+- **Ricontrolla le selezioni** -- Rivedi le persone selezionate prima di applicare le modifiche in blocco
+- **Documenta le modifiche importanti** -- Tieni note sugli aggiornamenti in blocco, nel caso ti servano in seguito
+- **Coordinati con il team** -- Avvisa gli altri amministratori quando fai modifiche in blocco di grandi dimensioni
 
-## Buone pratiche
+## Casi d'uso comuni {#common-use-cases}
 
-- **Inizia in piccolo** -- Prova le operazioni multiple su pochi record prima, per essere sicuro di applicare le modifiche corrette
-- **Usa i filtri** -- Restringi l'elenco con filtri o con AI Search prima di selezionare le persone, per essere sicuro di aggiornare solo le persone giuste
-- **Ricontrolla la selezione** -- Verifica le persone selezionate prima di applicare modifiche multiple
-- **Usa la modalità "only update empty"** -- Quando vuoi completare i dati mancanti senza sovrascrivere le informazioni esistenti
-- **Documenta le modifiche importanti** -- Conserva note sugli aggiornamenti multipli, nel caso ti servano in seguito
-- **Coordinati con il tuo team** -- Avvisa gli altri amministratori quando esegui modifiche multiple di grandi dimensioni
+### Aggiornare i nuovi membri {#updating-new-members}
 
-## Casi d'uso comuni
-
-### Aggiornare i nuovi membri
-
-Dopo un corso per i membri, imposta come **Member** tutti i partecipanti:
+Dopo un corso per nuovi membri, imposta come Membro lo stato di tutti i partecipanti:
 
 1. Cerca le persone che hanno frequentato il corso
 2. Selezionale tutte
-3. Usa **Actions** → **Set Membership Status** → **Member**
+3. Usa **Azioni** → **Imposta stato di membership** → **Membro**
 
-### Organizzare i piccoli gruppi
+### Organizzare i piccoli gruppi {#organizing-small-groups}
 
 Aggiungi più persone a un nuovo piccolo gruppo:
 
-1. Cerca le persone che vuoi inserire nel gruppo
+1. Cerca le persone che vuoi nel gruppo
 2. Selezionale
-3. Usa **Actions** → **Add to Group** e seleziona il piccolo gruppo
+3. Usa **Azioni** → **Aggiungi al gruppo** e scegli il piccolo gruppo
 
-### Pulire i dati
+### Pulire i dati {#cleaning-up-data}
 
-Completa lo stato civile mancante per le coppie sposate:
+Segna come inattivo un gruppo di ex frequentatori:
 
-1. Filtra le persone sposate (usando le informazioni sul nucleo familiare)
-2. Seleziona quelle con lo stato civile vuoto
-3. Usa **Actions** → **Set Marital Status** → **Married** → **Only update empty**
+1. Apri la ricerca **Avanzata** e filtra le persone che vuoi aggiornare (ad esempio, tutte quelle che non frequentano da tempo)
+2. Selezionale
+3. Usa **Azioni** → **Imposta stato di membership** → **Inattivo**
 
-## Articoli correlati
+## Articoli correlati {#related-articles}
 
 - [Cercare persone](./searching-people.md) -- Trova le persone da modificare
-- [AI Search](./ai-search.md) -- Usa il linguaggio naturale per trovare gruppi specifici di persone
-- [Membri del gruppo](../groups/group-members.md) -- Gestisci l'appartenenza ai gruppi
-- [Esportare i dati](./exporting-data.md) -- Esporta i dati delle persone prima di fare modifiche multiple
+- [Ricerca AI](./ai-search.md) -- Usa il linguaggio naturale per trovare gruppi specifici di persone
+- [Membri del gruppo](../groups/group-members.md) -- Gestisci le appartenenze ai gruppi
+- [Esportare dati](./exporting-data.md) -- Esporta i dati delle persone prima di fare modifiche in blocco
