@@ -115,7 +115,7 @@ Alege **Înregistrează prezența** și apasă **Alege grupul** pentru a selecta
 
 Alege **Notifică persoana**, apasă **Alege persoana** și, opțional, scrie un **Mesaj**. Când un card intră în etapă, persoana aleasă primește un e-mail și o notificare B1 cu numele persoanei de pe card, numele fluxului și al etapei, mesajul tău și un link pentru a deschide cardul. Folosește-o pentru a-i da unui membru al personalului sau unui lider de slujire un semnal de avertizare, de exemplu: *„Anunță pastorul când cineva ajunge la etapa Interviul pentru membru.”* Istoricul cardului înregistrează **Notificat**, urmat de numele persoanei.
 
-### Trimiterea unui mesaj text
+### Trimiterea unui mesaj text {#sending-a-text}
 
 Alege **Trimite mesaj text** și scrie **Mesajul text** (până la 1.600 de caractere). Când un card intră în etapă, persoana primește mesajul pe telefonul mobil. Pentru a personaliza mesajul, apasă pe un element de sub caseta mesajului (**Prenume**, **Nume**, **Nume afișat** sau **Numele bisericii**) pentru a insera `{{firstName}}`, `{{lastName}}`, `{{displayName}}` sau `{{churchName}}` la cursor. Fiecare dintre acestea este completat cu datele persoanei când mesajul este trimis.
 
@@ -149,7 +149,7 @@ Există mai multe moduri de a pune persoane pe o tablă:
 
 Adăugarea unei persoane manual sau printr-o acțiune de etapă **Adaugă în flux de lucru** nu îi creează niciodată un al doilea card deschis în același flux. Dacă are deja un card deschis, este omisă (la o adăugare în masă, doar persoanele fără card primesc unul nou). Odată ce cardul lor este închis, le poți adăuga din nou. Declanșatorii urmează în schimb propria setare **O singură dată per persoană**.
 
-## Lucrul pe tablă
+## Lucrul pe tablă {#working-the-board}
 
 Deschide un flux pentru a-i vedea tabla. Fiecare card arată numele persoanei, cui este atribuit și un indicator de dată scadentă sau de stare (**Întârziat** sau **Amânat**). O coloană de etapă afișează și mici insigne pentru acțiunile automate pe care le rulează și adnotări pentru rutarea sa, oferindu-ți o hartă rapidă a modului în care circulă cardurile.
 

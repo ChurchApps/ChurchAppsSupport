@@ -115,7 +115,7 @@ Chọn **Ghi nhận tham dự** và nhấp **Chọn nhóm** để chọn nhóm m
 
 Chọn **Thông báo cho người**, nhấp **Chọn người**, và tùy chọn nhập một **Tin nhắn**. Khi một thẻ đi vào bước, người được chọn sẽ nhận một email và một thông báo B1 có tên của người trên thẻ, tên quy trình và bước, tin nhắn của bạn, cùng một liên kết để mở thẻ. Hãy dùng tính năng này để thông báo trước cho nhân viên hoặc người lãnh đạo mục vụ -- ví dụ: *"Thông báo cho mục sư khi có người đến bước Phỏng vấn thành viên."* Lịch sử thẻ ghi **Đã thông báo** kèm theo tên của người đó.
 
-### Gửi tin nhắn
+### Gửi tin nhắn {#sending-a-text}
 
 Chọn **Gửi tin nhắn** và nhập **Nội dung tin nhắn** (tối đa 1.600 ký tự). Khi một thẻ đi vào bước, người đó sẽ nhận tin nhắn đó trên điện thoại di động. Để cá nhân hóa tin nhắn, nhấp vào một nút bên dưới ô tin nhắn -- **Tên**, **Họ**, **Tên hiển thị** hoặc **Tên nhà thờ** -- để chèn `{{firstName}}`, `{{lastName}}`, `{{displayName}}` hoặc `{{churchName}}` vào vị trí con trỏ. Mỗi trường sẽ được điền bằng thông tin của người đó khi tin nhắn được gửi.
 
@@ -149,7 +149,7 @@ Có nhiều cách để đưa người vào bảng:
 
 Việc thêm một người thủ công, hoặc bằng hành động **Thêm vào quy trình** của bước, sẽ không bao giờ cho họ thêm một thẻ mở thứ hai trên cùng một quy trình. Nếu họ đã có thẻ đang mở, họ sẽ bị bỏ qua (khi thêm hàng loạt, chỉ những người chưa có thẻ mới được tạo thẻ mới). Khi thẻ của họ đã đóng, bạn có thể thêm lại họ. Các trigger thay vào đó tuân theo cài đặt **Chỉ một lần cho mỗi người** riêng của chúng.
 
-## Làm việc trên bảng
+## Làm việc trên bảng {#working-the-board}
 
 Mở một quy trình để xem bảng của nó. Mỗi thẻ hiển thị tên người, người được giao, và một nhãn ngày đến hạn hoặc trạng thái (**Quá hạn** hoặc **Đang tạm ẩn**). Một cột bước cũng hiển thị các huy hiệu nhỏ cho bất kỳ hành động tự động nào nó chạy và chú thích cho định tuyến của nó, giúp bạn nắm bắt nhanh cách các thẻ di chuyển.
 

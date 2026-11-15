@@ -115,7 +115,7 @@ Pilih **Catat Kehadiran** dan klik **Pilih grup** untuk memilih grup yang kehadi
 
 Pilih **Beri tahu Orang**, klik **Pilih orang**, dan opsional ketik **Pesan**. Ketika kartu masuk ke langkah ini, orang yang dipilih menerima email dan notifikasi B1 yang berisi nama orang pada kartu, nama alur kerja dan langkah, pesan Anda, serta tautan untuk membuka kartu. Gunakan fitur ini untuk memberi tahu staf atau pemimpin pelayanan -- misalnya, *"Beri tahu pendeta ketika seseorang mencapai langkah Wawancara Keanggotaan."* Riwayat kartu mencatat **Diberi tahu** diikuti nama orang tersebut.
 
-### Mengirim teks
+### Mengirim teks {#sending-a-text}
 
 Pilih **Kirim Teks** dan ketik **Pesan teks** (maksimal 1.600 karakter). Ketika kartu masuk ke langkah ini, orang tersebut menerima pesan teks di ponsel. Untuk mempersonalisasi pesan, klik chip di bawah kotak pesan -- **Nama Depan**, **Nama Belakang**, **Nama Tampilan**, atau **Nama Gereja** -- untuk menyisipkan `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, atau `{{churchName}}` di posisi kursor Anda. Masing-masing akan diisi dengan data orang tersebut saat teks dikirim.
 
@@ -149,7 +149,7 @@ Ada beberapa cara untuk menempatkan orang di papan:
 
 Menambahkan seseorang secara manual, atau dengan tindakan langkah **Tambah ke alur kerja**, tidak pernah memberi mereka kartu terbuka kedua pada alur kerja yang sama. Jika mereka sudah memiliki kartu terbuka, mereka dilewati (dalam penambahan massal, hanya orang yang belum memiliki kartu yang mendapatkan kartu baru). Setelah kartu mereka ditutup, Anda dapat menambahkan mereka lagi. Pemicu mengikuti pengaturan **Hanya sekali per orang** sendiri.
 
-## Mengelola Papan
+## Mengelola Papan {#working-the-board}
 
 Buka alur kerja untuk melihat papannya. Setiap kartu menampilkan nama orang, siapa yang ditugaskan, serta chip jatuh tempo atau status (**Terlambat** atau **Ditunda**). Kolom langkah juga menampilkan lencana kecil untuk tindakan otomatis yang dijalankannya dan anotasi untuk perutean-nya, sehingga Anda dapat melihat sekilas bagaimana kartu mengalir.
 

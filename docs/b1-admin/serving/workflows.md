@@ -115,7 +115,7 @@ Choose **Record Attendance** and click **Pick group** to choose the group whose 
 
 Choose **Notify Person**, click **Pick person**, and optionally type a **Message**. When a card enters the step, that person gets an email and a B1 notification with the name of the person on the card, the workflow and step names, your message, and a link to open the card. Use it to give a staff member or ministry leader a heads-up -- for example, *"Notify the pastor when someone reaches the Membership Interview step."* The card's history records **Notified** followed by the person's name.
 
-### Sending a text
+### Sending a text {#sending-a-text}
 
 Choose **Send Text** and type the **Text message** (up to 1,600 characters). If your church has saved [text templates](../settings/email-templates.md), a **Start from a template** list appears above the box. Picking one copies the template's text into the message, and you can still edit it. The step keeps its own copy, so later changes to the template do not change the step. When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
@@ -149,7 +149,7 @@ There are several ways to put people on a board:
 
 Adding someone by hand, or with an **Add to workflow** step action, never gives them a second open card on the same workflow. If they already have an open card, they're skipped (in a bulk add, only the people without one get new cards). Once their card is closed, you can add them again. Triggers follow their own **Only once per person** setting instead.
 
-## Working the Board
+## Working the Board {#working-the-board}
 
 Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow. Within each column, the card that entered the step most recently is at the top.
 

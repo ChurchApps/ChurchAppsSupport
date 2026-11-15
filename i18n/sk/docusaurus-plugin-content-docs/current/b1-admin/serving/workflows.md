@@ -115,7 +115,7 @@ Vyberte **Zaznamenať účasť** a kliknite na **Vybrať skupinu**, aby ste zvol
 
 Vyberte **Upozorniť osobu**, kliknite na **Vybrať osobu** a voliteľne napíšte **Správu**. Keď karta vstúpi do kroku, daná osoba dostane e-mail a upozornenie B1 s menom osoby na karte, názvami pracovného postupu a kroku, vašou správou a odkazom na otvorenie karty. Použite to na to, aby ste člena personálu alebo vedúceho služby upozornili vopred -- napríklad *„Upozorni pastora, keď sa niekto dostane do kroku Pohovor o členstve.“* História karty zaznamená **Upozornený** a za ním meno danej osoby.
 
-### Odosielanie textovej správy
+### Odosielanie textovej správy {#sending-a-text}
 
 Vyberte **Odoslať textovú správu** a napíšte **Textovú správu** (až 1 600 znakov). Keď karta vstúpi do kroku, osoba dostane túto správu na svoj mobilný telefón. Ak chcete správu personalizovať, kliknite na štítok pod poľom správy -- **Meno**, **Priezvisko**, **Zobrazované meno** alebo **Názov cirkvi** -- a vložte `{{firstName}}`, `{{lastName}}`, `{{displayName}}` alebo `{{churchName}}` na miesto kurzora. Každé z nich sa pri odoslaní správy vyplní údajmi danej osoby.
 
@@ -149,7 +149,7 @@ Akcia **Čakať** podrží kartu na počet dní, ktorý nastavíte. Počas čaka
 
 Ak niekoho pridáte ručne alebo akciou kroku **Pridať do pracovného postupu**, nikdy mu nevznikne druhá otvorená karta v tom istom pracovnom postupe. Ak už otvorenú kartu má, preskočí sa (pri hromadnom pridávaní dostanú nové karty len ľudia, ktorí ju nemajú). Keď sa jeho karta uzavrie, môžete ho pridať znova. Spúšťače sa riadia vlastným nastavením **Len raz pre každú osobu**.
 
-## Práca s tabuľou
+## Práca s tabuľou {#working-the-board}
 
 Otvorte pracovný postup a uvidíte jeho tabuľu. Každá karta zobrazuje meno osoby, komu je priradená, a štítok termínu alebo stavu (**Po termíne** alebo **Odložená**). Stĺpec kroku zobrazuje aj malé odznaky pre automatizované akcie, ktoré spúšťa, a poznámky k jeho smerovaniu, čo vám dáva prehľad o tom, ako karty prechádzajú.
 

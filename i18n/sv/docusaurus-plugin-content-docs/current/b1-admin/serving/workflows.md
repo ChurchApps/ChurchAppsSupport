@@ -115,7 +115,7 @@ Välj **Registrera närvaro** och klicka på **Välj grupp** för att välja den
 
 Välj **Meddela person**, klicka på **Välj person** och skriv eventuellt ett **Meddelande**. När ett kort kommer in i steget får den personen ett e-postmeddelande och ett B1-meddelande med namnet på personen på kortet, arbetsflödets och stegets namn, ditt meddelande och en länk för att öppna kortet. Använd det för att ge en medarbetare eller ledare för en tjänst en förvarning -- till exempel *"Meddela pastorn när någon når steget Medlemsintervju."* Kortets historik registrerar **Meddelad** följt av personens namn.
 
-### Skicka ett sms
+### Skicka ett sms {#sending-a-text}
 
 Välj **Skicka sms** och skriv **Sms-meddelandet** (upp till 1 600 tecken). När ett kort kommer in i steget får personen sms:et i sin mobiltelefon. För att personifiera meddelandet klickar du på en bricka under meddelanderutan -- **Förnamn**, **Efternamn**, **Visningsnamn** eller **Kyrkans namn** -- för att infoga `{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}` vid markören. Varje fält fylls i med personens uppgifter när sms:et skickas.
 
@@ -149,7 +149,7 @@ Det finns flera sätt att lägga till personer på en tavla:
 
 Att lägga till någon för hand, eller med en stegåtgärd **Lägg till i arbetsflöde**, ger aldrig en andra öppen kort på samma arbetsflöde. Om de redan har ett öppet kort hoppas de över (vid massvis tillägg får bara de personer utan kort nya kort). När deras kort har stängts kan du lägga till dem igen. Utlösare följer i stället sin egen inställning **Endast en gång per person**.
 
-## Arbeta med tavlan
+## Arbeta med tavlan {#working-the-board}
 
 Öppna ett arbetsflöde för att se dess tavla. Varje kort visar personens namn, vem det är tilldelat, och en förfallodatum- eller statusbricka (**Försenad** eller **Pausat**). En stegkolumn visar också små märken för eventuella automatiska åtgärder den kör och annotationer för dess routing, vilket ger dig en överblick över hur kort flödar.
 

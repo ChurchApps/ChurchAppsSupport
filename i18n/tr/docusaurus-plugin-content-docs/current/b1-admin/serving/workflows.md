@@ -115,7 +115,7 @@ E-posta gönderildiğinde kartın geçmişine **E-posta gönderildi** kaydedilir
 
 **Kişiye bildir**'i seçin, **Kişi seç**'e tıklayın ve isterseniz bir **Mesaj** yazın. Bir kart adıma girdiğinde, o kişi kartta yer alan kişinin adı, iş akışı ve adım adları, mesajınız ve kartı açmak için bir bağlantı ile birlikte bir e-posta ve bir B1 bildirimi alır. Bunu bir personele veya ekip liderine önceden haber vermek için kullanın. Örneğin: *"Biri Üyelik Görüşmesi adımına ulaştığında papaza haber ver."* Kartın geçmişine, kişinin adının önüne **Bildirildi** yazılarak kaydedilir.
 
-### Metin mesajı gönderme
+### Metin mesajı gönderme {#sending-a-text}
 
 **Metin gönder**'i seçin ve **Metin mesajını** yazın (en fazla 1.600 karakter). Bir kart adıma girdiğinde kişi bu metni cep telefonuna alır. Mesajı kişiselleştirmek için mesaj kutusunun altındaki bir çipe tıklayın: **Ad**, **Soyad**, **Görünen Ad** veya **Kilise Adı**. Çip, imlecinizin olduğu yere `{{firstName}}`, `{{lastName}}`, `{{displayName}}` veya `{{churchName}}` ekler. Metin gönderildiğinde her biri kişinin bilgileriyle doldurulur.
 
@@ -149,7 +149,7 @@ Panoya kişi eklemenin birkaç yolu vardır:
 
 Bir kişiyi elle veya bir **İş akışına ekle** adım işlemiyle eklemek, aynı iş akışında ikinci bir açık kart oluşturmaz. Kişinin zaten açık bir kartı varsa atlanır (toplu eklemede yalnızca kartı olmayan kişilere yeni kart verilir). Kartı kapatıldıktan sonra kişiyi yeniden ekleyebilirsiniz. Tetikleyiciler bunun yerine kendi **Kişi başına yalnızca bir kez** ayarını izler.
 
-## Panoda Çalışma
+## Panoda Çalışma {#working-the-board}
 
 Panosunu görmek için bir iş akışını açın. Her kart, kişinin adını, kime atandığını ve bir son tarih ya da durum çipini (**Gecikmiş** veya **Ertelendi**) gösterir. Bir adım sütunu, çalıştırdığı otomatik işlemler için küçük rozetleri ve yönlendirmesi için açıklamaları da gösterir. Böylece kartların nasıl aktığını bir bakışta görebilirsiniz.
 

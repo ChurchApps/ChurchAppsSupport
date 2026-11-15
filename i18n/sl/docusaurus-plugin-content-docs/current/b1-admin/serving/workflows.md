@@ -115,7 +115,7 @@ Izberite **Zabeleži udeležbo** in kliknite **Izberi skupino**, da izberete sku
 
 Izberite **Obvesti osebo**, kliknite **Izberi osebo** in po želji vnesite **Sporočilo**. Ko kartica vstopi v korak, ta oseba prejme e-pošto in obvestilo v B1 z imenom osebe na kartici, imeni delovnega toka in koraka, vašim sporočilom ter povezavo za odpiranje kartice. Uporabite ga, da član osebja ali vodja službe dobi vnaprejšnje obvestilo, na primer: *"Obvesti pastorja, ko nekdo doseže korak Razgovor za članstvo."* Zgodovina kartice zabeleži **Obveščen/a** in ime osebe.
 
-### Pošiljanje SMS-a
+### Pošiljanje SMS-a {#sending-a-text}
 
 Izberite **Pošlji SMS** in vnesite **Besedilo sporočila** (do 1.600 znakov). Ko kartica vstopi v korak, oseba prejme to besedilo na svoj mobilni telefon. Če želite sporočilo personalizirati, kliknite čip pod poljem za sporočilo (**Ime**, **Priimek**, **Prikazno ime** ali **Ime cerkve**), da se na vaš kazalec vstavi `{{firstName}}`, `{{lastName}}`, `{{displayName}}` ali `{{churchName}}`. Ob pošiljanju se vsako polje zapolni s podatki osebe.
 
@@ -149,7 +149,7 @@ Osebe na tablo lahko dodate na več načinov:
 
 Ročno dodajanje osebe ali dodajanje z dejanjem **Dodaj v delovni tok** ji nikoli ne dodeli druge odprte kartice na istem delovnem toku. Če že ima odprto kartico, je preskočena (pri množičnem dodajanju dobijo nove kartice le osebe brez nje). Ko je njena kartica zaprta, jo lahko ponovno dodate. Sprožilci namesto tega upoštevajo svojo nastavitev **Samo enkrat na osebo**.
 
-## Delo na tabli
+## Delo na tabli {#working-the-board}
 
 Odprite delovni tok, da vidite njegovo tablo. Vsaka kartica prikazuje ime osebe, komu je dodeljena, ter čip z rokom ali stanjem (**Zamujeno** ali **Odloženo**). Stolpec koraka prikazuje tudi majhne značke za samodejna dejanja, ki jih izvede, in oznake za njegovo usmerjanje, kar vam daje pregled nad tokom kartic.
 

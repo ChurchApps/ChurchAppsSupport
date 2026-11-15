@@ -115,7 +115,7 @@ Zvolte **Zaznamenat účast** a klikněte na **Vybrat skupinu**, abyste zvolili 
 
 Zvolte **Upozornit osobu**, klikněte na **Vybrat osobu** a volitelně napište **Zprávu**. Když karta vstoupí do kroku, tato osoba dostane e-mail a upozornění B1 se jménem člověka na kartě, názvy pracovního postupu a kroku, vaší zprávou a odkazem na otevření karty. Použijte to, když chcete zaměstnance nebo vedoucího služby včas upozornit -- například *„Upozorni pastora, když někdo dosáhne kroku Pohovor o členství.“* Historie karty zaznamená **Upozorněn** a za ním jméno osoby.
 
-### Odesílání textové zprávy
+### Odesílání textové zprávy {#sending-a-text}
 
 Zvolte **Odeslat textovou zprávu** a napište **Text zprávy** (až 1 600 znaků). Když karta vstoupí do kroku, osoba dostane tuto zprávu na svůj mobilní telefon. Chcete-li zprávu personalizovat, klikněte na štítek pod polem zprávy -- **Jméno**, **Příjmení**, **Zobrazované jméno** nebo **Název církve** -- a vložíte tak na místo kurzoru `{{firstName}}`, `{{lastName}}`, `{{displayName}}` nebo `{{churchName}}`. Každé z těchto polí se při odeslání zprávy doplní údaji dané osoby.
 
@@ -149,7 +149,7 @@ Lidi na nástěnku můžete dostat několika způsoby:
 
 Přidání člověka ručně nebo akcí kroku **Přidat do pracovního postupu** mu nikdy nedá druhou otevřenou kartu ve stejném pracovním postupu. Pokud už otevřenou kartu má, je přeskočen (při hromadném přidání dostanou nové karty jen lidé, kteří žádnou nemají). Jakmile je jeho karta uzavřena, můžete ho přidat znovu. Spouštěče se místo toho řídí vlastním nastavením **Pouze jednou na osobu**.
 
-## Práce s nástěnkou
+## Práce s nástěnkou {#working-the-board}
 
 Otevřete pracovní postup a zobrazíte jeho nástěnku. Každá karta ukazuje jméno osoby, komu je přiřazena, a štítek termínu nebo stavu (**Po termínu** nebo **Odložená**). Sloupec kroku také zobrazuje malé odznaky pro automatické akce, které spouští, a poznámky k jeho směrování, takže máte přehled o tom, jak karty proudí.
 

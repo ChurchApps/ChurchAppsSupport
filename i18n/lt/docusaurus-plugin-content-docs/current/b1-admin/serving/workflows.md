@@ -115,7 +115,7 @@ Pasirinkite **Įrašyti lankomumą** ir spustelėkite **Pasirinkti grupę**, kad
 
 Pasirinkite **Pranešti asmeniui**, spustelėkite **Pasirinkti asmenį** ir pasirinktinai įveskite **Žinutę**. Kai kortelė patenka į žingsnį, tas asmuo gauna el. laišką ir B1 pranešimą, kuriame nurodomas kortelėje esančio asmens vardas, darbo eigos ir žingsnio pavadinimai, jūsų žinutė ir nuoroda atidaryti kortelę. Tai naudinga, norint įspėti darbuotoją ar tarnystės vadovą -- pavyzdžiui, *„Pranešti pastoriui, kai kas nors pasiekia Narystės pokalbio žingsnį.“* Kortelės istorijoje įrašoma **Pranešta**, o po to -- asmens vardas.
 
-### SMS siuntimas
+### SMS siuntimas {#sending-a-text}
 
 Pasirinkite **Siųsti SMS** ir įveskite **SMS žinutę** (iki 1 600 simbolių). Kai kortelė patenka į žingsnį, asmuo gauna šią SMS žinutę savo mobiliajame telefone. Norėdami individualizuoti žinutę, spustelėkite žetoną po žinutės lauku -- **Vardas**, **Pavardė**, **Rodomas vardas** arba **Bažnyčios pavadinimas** -- ir žymeklio vietoje bus įterpta `{{firstName}}`, `{{lastName}}`, `{{displayName}}` arba `{{churchName}}`. Kiekvienas jų užpildomas asmens duomenimis, kai SMS išsiunčiama.
 
@@ -149,7 +149,7 @@ Yra keletas būdų įtraukti žmones į lentą:
 
 Pridėjus asmenį rankiniu būdu arba su žingsnio veiksmu **Pridėti į darbo eigą**, jis niekada negaus antros atviros kortelės toje pačioje darbo eigoje. Jei asmuo jau turi atvirą kortelę, jis praleidžiamas (masinio pridėjimo metu nauja kortelė sukuriama tik tiems, kurie jos neturi). Uždarius kortelę, asmenį galima pridėti iš naujo. Paleidikliai vadovaujasi savo nustatymu **Tik vieną kartą kiekvienam asmeniui**.
 
-## Darbas su lenta
+## Darbas su lenta {#working-the-board}
 
 Atidarykite darbo eigą, kad pamatytumėte jos lentą. Kiekviena kortelė rodo asmens vardą, kam ji priskirta, ir termino ar būsenos žymę (**Pradelsta** arba **Atidėta**). Žingsnio stulpelyje taip pat rodomi maži ženkleliai apie automatinius veiksmus, kuriuos jis vykdo, ir jo maršrutavimo pastabos, todėl galite greitai matyti, kaip kortelės juda.
 

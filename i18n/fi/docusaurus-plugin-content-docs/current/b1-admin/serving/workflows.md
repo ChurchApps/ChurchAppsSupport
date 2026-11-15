@@ -115,7 +115,7 @@ Valitse **Kirjaa osallistuminen** ja napsauta **Valitse ryhmä** valitaksesi ryh
 
 Valitse **Ilmoita henkilölle**, napsauta **Valitse henkilö** ja kirjoita halutessasi **Viesti**. Kun kortti saapuu vaiheeseen, kyseinen henkilö saa sähköpostin ja B1-ilmoituksen, jossa on kortilla olevan henkilön nimi, työnkulun ja vaiheen nimet, viestisi sekä linkki kortin avaamiseen. Käytä tätä antamaan työntekijälle tai seurakunnan vastuuhenkilölle tiedoksi asiasta -- esimerkiksi *”Ilmoita pastorille, kun joku saavuttaa Jäsenyyshaastattelu-vaiheen.”* Kortin historiaan kirjataan **Ilmoitettu** ja henkilön nimi.
 
-### Tekstiviestin lähettäminen
+### Tekstiviestin lähettäminen {#sending-a-text}
 
 Valitse **Lähetä tekstiviesti** ja kirjoita **Tekstiviesti** (enintään 1 600 merkkiä). Kun kortti saapuu vaiheeseen, henkilö saa tekstiviestin matkapuhelimeensa. Voit personoida viestin napsauttamalla viestikentän alla olevaa merkkiä -- **Etunimi**, **Sukunimi**, **Näyttönimi** tai **Kirkon nimi** -- jolloin kohdistimen kohtaan lisätään `{{firstName}}`, `{{lastName}}`, `{{displayName}}` tai `{{churchName}}`. Jokainen täytetään henkilön tiedoilla, kun viesti lähetetään.
 
@@ -149,7 +149,7 @@ Ihmisiä voi lisätä tauluille useilla tavoilla:
 
 Henkilön lisääminen käsin tai vaiheen **Lisää työnkulkuun** -toiminnolla ei koskaan anna hänelle toista avointa korttia samaan työnkulkuun. Jos hänellä on jo avoin kortti, hänet ohitetaan (massalisäyksessä uusia kortteja saavat vain ne henkilöt, joilla ei ole sellaista). Kun kortti on suljettu, henkilön voi lisätä uudelleen. Laukaisimet noudattavat sen sijaan omaa asetustaan **Vain kerran henkilöä kohden**.
 
-## Taulun käsitteleminen
+## Taulun käsitteleminen {#working-the-board}
 
 Avaa työnkulku nähdäksesi sen taulun. Jokainen kortti näyttää henkilön nimen, kenelle kortti on määrätty sekä eräpäivän tai tilan merkin (**Myöhässä** tai **Lykätty**). Vaihesarake näyttää myös pienet merkit niistä automaattisista toiminnoista, joita se suorittaa, sekä reititystietoja. Näin näet yhdellä silmäyksellä, miten kortit kulkevat.
 

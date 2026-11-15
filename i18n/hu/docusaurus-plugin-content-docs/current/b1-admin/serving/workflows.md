@@ -115,7 +115,7 @@ Válassza a **Részvétel rögzítése** műveletet, majd kattintson a **Csoport
 
 Válassza a **Személy értesítése** műveletet, kattintson a **Személy kiválasztása** gombra, és ha szeretné, írjon egy **Üzenetet**. Amikor egy kártya belép a lépésbe, az adott személy e-mailt és B1-értesítést kap, amely tartalmazza a kártyán lévő személy nevét, a munkafolyamat és a lépés nevét, az Ön üzenetét, valamint egy hivatkozást a kártya megnyitásához. Használja arra, hogy előre tájékoztasson egy munkatársat vagy szolgálati vezetőt – például: *„Értesítsd a lelkészt, amikor valaki eléri a Tagsági interjú lépést.”* A kártya előzményei a **Értesítve** bejegyzést rögzítik, mellette a személy nevével.
 
-### SMS küldése
+### SMS küldése {#sending-a-text}
 
 Válassza a **SMS küldése** műveletet, és írja be a **Szöveges üzenetet** (legfeljebb 1600 karakter). Amikor egy kártya belép a lépésbe, a személy ezt az üzenetet kapja a mobiltelefonján. Az üzenet személyre szabásához kattintson az üzenetmező alatti egyik gombra – **Keresztnév**, **Vezetéknév**, **Megjelenített név** vagy **Egyház neve** –, hogy a kurzor helyére beillessze a `{{firstName}}`, `{{lastName}}`, `{{displayName}}` vagy `{{churchName}}` mezőt. Az SMS elküldésekor mindegyiket a személy adataival tölti ki a rendszer.
 
@@ -149,7 +149,7 @@ Többféleképpen helyezhet embereket a táblára:
 
 Ha valakit kézzel adja hozzá, vagy egy **Hozzáadás munkafolyamathoz** lépésművelettel, a személynek soha nem lesz második nyitott kártyája ugyanazon a munkafolyamaton. Ha már van nyitott kártyája, kimarad (tömeges hozzáadásnál csak azok kapnak új kártyát, akiknek még nincs). Miután a kártyájuk le lett zárva, újra hozzáadhatja őket. Az eseményindítók ehelyett a saját **Csak egyszer személyenként** beállításukat követik.
 
-## A tábla kezelése
+## A tábla kezelése {#working-the-board}
 
 Nyisson meg egy munkafolyamatot a tábla megtekintéséhez. Minden kártya megmutatja a személy nevét, azt, hogy kinek van kiosztva, valamint egy határidő- vagy állapotcímkét (**Lejárt** vagy **Elnapolva**). A lépésoszlopok apró jelvényekkel mutatják, milyen automatikus műveleteket futtatnak, és feliratokkal az útválasztásukat, így egy pillantással láthatja, hogyan haladnak a kártyák.
 
