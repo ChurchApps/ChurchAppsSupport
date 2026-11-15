@@ -174,7 +174,7 @@ Opombe se shranijo s kartico. Kdorkoli lahko odpre kartico, vključno z osebo al
 
 Označite potrditvena polja na več karticah, da z njimi delujete skupaj. Če želite izbrati vse kartice na koraku naenkrat, označite polje **Izberi vse** v glavi stolpca tega koraka. Ponovno ga označite, da izbiro počistite. Pojavi se orodna vrstica, ki vam omogoča, da za vse izbrane kartice hkrati **Zaključite**, **Odložite**, **Dodelite** (ponovna dodelitev) ali **Premaknete v…** drug korak.
 
-## Usmerjanje kartic z rezultati in pogoji
+## Usmerjanje kartic z rezultati in pogoji {#routing-cards-with-outcomes-and-conditions}
 
 Usmerjanje določa, kam gre kartica, ko zapusti korak. Odprite urejevalnik koraka, da nastavite dve vrsti usmerjanja.
 
@@ -202,7 +202,7 @@ Skupina pogojev **Darovanje** ima **Prenehal/a redni dajalec**, ki najde osebe, 
 Na tabli vsak stolpec koraka prikazuje majhne oznake, ki opisujejo njegovo usmerjanje, na primer oznako rezultata ali "če ustreza", ki mu sledi puščica do ciljnega koraka ali delovnega toka.
 :::
 
-## Popolnoma samodejni koraki
+## Popolnoma samodejni koraki {#fully-automated-steps}
 
 Korak lahko naredite popolnoma samostojen, brez da bi ga kdo obdeloval. Dajte koraku njegova **samodejna dejanja** in dodajte **samodejno pot** (brez pogojev), ki kaže na naslednji korak. Ko kartica vstopi, se dejanja izvedejo, nato pa pot kartico takoj premakne naprej.
 
@@ -210,7 +210,7 @@ Korak lahko naredite popolnoma samostojen, brez da bi ga kdo obdeloval. Dajte ko
 Kombinirajte to s **Počakaj**: *Pošlji dobrodošlo e-pošto → Počakaj 3 dni → samodejno premakni na korak "Osebni klic"*. E-pošto in čas poskrbi sistem, prostovoljec pa kartico vidi šele, ko je čas za človeški stik.
 :::
 
-## Sprožilci
+## Sprožilci {#triggers}
 
 Sprožilci samodejno dodajajo osebe v delovni tok, ko se nekaj zgodi, zato vam ni treba kartic dodajati ročno. Na tabli delovnega toka kliknite zavihek **Sprožilci**, nato **Dodaj sprožilec**. Obstajata dve vrsti.
 
@@ -223,7 +223,7 @@ Sprožijo se takoj, ko se zapis v B1 spremeni. Izberite dogodek in po želji dod
 - **Skupina · Član se je pridružil** / **Skupina · Ustvarjena**.
 - **Obrazec · Oddan** -- dodajte vsakogar, ki odda izbrani obrazec (odlično za kartico "Sem nov/a" ali "Povežimo se").
 
-### Urni sprožilci
+### Urni sprožilci {#schedule-triggers}
 
 Izvajajo se ponavljajoče (dnevno, tedensko, mesečno ali letno) glede na niz pogojev. Uporabite jih za časovno odvisna sporočila, kot je *vsakdo, katerega rojstni dan je danes* (Datum rojstva · Dan v mesecu = **Danes**, z mesecem, ki ustreza **Tekoči mesec**), ali *mesečni* pregled. Tudi brez **Samo enkrat na osebo** urni sprožilec iste osebe ne bo dodal znova v enem obdobju ponavljanja (dan, teden, mesec ali leto, odvisno od pogostosti izvajanja).
 
@@ -238,7 +238,7 @@ Za vsak sprožilec lahko nastavite tudi:
 Sprožilec **Obrazec · Oddan** povežite s predlogo **Nadaljnje sledenje novemu obiskovalcu**, da vaš obrazec "Kartica za povezavo" ali "Sem nov/a" postane samodejni nadaljnji postopek.
 :::
 
-## Potrditve dodelitev služenja
+## Potrditve dodelitev služenja {#serving-assignment-confirmations}
 
 Posebna vrsta delovnega toka lahko sledi [zahtevam za služenje](./plans.md#assigning-team-members), dokler vsak prostovoljec ne sprejme ali zavrne. Namesto oseb vsaka kartica na tej tabli spremlja **eno dodelitev**, to je eno osebo na enem položaju v enem načrtu. Dve vlogi ali dve storitvi za isto osebo imata ločeni kartici. To je izbirno: za načrt se nič ne spremeni, dokler v njegovih nastavitvah ne izberete delovnega toka za potrditev.
 

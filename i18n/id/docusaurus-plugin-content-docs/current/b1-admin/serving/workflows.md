@@ -174,7 +174,7 @@ Catatan disimpan bersama kartu. Siapa pun yang dapat membuka kartu -- termasuk o
 
 Pilih kotak centang pada beberapa kartu untuk menanganinya bersama-sama. Untuk memilih setiap kartu dalam satu langkah sekaligus, centang kotak **Pilih semua** di header kolom langkah tersebut; centang lagi untuk menghapus pilihan. Sebuah bilah alat muncul, memungkinkan Anda **Selesaikan**, **Tunda**, **Tugaskan** (tugaskan ulang), atau **Pindahkan ke…** langkah lain untuk semua kartu yang dipilih sekaligus.
 
-## Perutean Kartu dengan Hasil dan Kondisi
+## Perutean Kartu dengan Hasil dan Kondisi {#routing-cards-with-outcomes-and-conditions}
 
 Perutean mengatur ke mana kartu pergi saat meninggalkan sebuah langkah. Buka editor langkah untuk mengonfigurasi dua jenis perutean.
 
@@ -202,7 +202,7 @@ Jika kondisi sebuah rute tidak dapat diperiksa karena alasan tertentu, rute ters
 Pada papan, setiap kolom langkah menampilkan anotasi kecil yang menjelaskan perutean-nya -- misalnya, label hasil atau "jika cocok" diikuti panah menuju langkah atau alur kerja tujuan.
 :::
 
-## Langkah Sepenuhnya Otomatis
+## Langkah Sepenuhnya Otomatis {#fully-automated-steps}
 
 Anda dapat membuat sebuah langkah berjalan sepenuhnya sendiri, tanpa ada yang menanganinya. Berikan langkah itu **tindakan otomatis** dan tambahkan **rute otomatis** (tanpa kondisi) yang mengarah ke langkah berikutnya. Ketika kartu masuk, tindakan dijalankan, dan kemudian rute langsung memajukan kartu -- kartu melewati langkah ini begitu saja.
 
@@ -210,7 +210,7 @@ Anda dapat membuat sebuah langkah berjalan sepenuhnya sendiri, tanpa ada yang me
 Gabungkan ini dengan **Tunggu**: *Kirim email selamat datang → Tunggu 3 hari → otomatis lanjut ke langkah "Panggilan pribadi".* Email dan waktunya diurus untuk Anda, dan relawan hanya melihat kartu saat sudah waktunya sentuhan manusia.
 :::
 
-## Pemicu
+## Pemicu {#triggers}
 
 Pemicu menambahkan orang ke alur kerja secara otomatis ketika sesuatu terjadi, sehingga Anda tidak perlu menambahkan kartu secara manual. Pada papan alur kerja, klik tab **Pemicu**, lalu **Tambah Pemicu**. Ada dua jenis:
 
@@ -223,7 +223,7 @@ Aktif segera setelah data berubah di B1. Pilih peristiwanya, lalu opsional tamba
 - **Grup · Anggota Bergabung** / **Grup · Dibuat**.
 - **Formulir · Dikirim** -- tambahkan siapa pun yang mengirim formulir yang dipilih (cocok untuk kartu "Saya Baru" atau "Terhubung").
 
-### Pemicu jadwal
+### Pemicu jadwal {#schedule-triggers}
 
 Berjalan secara berulang -- harian, mingguan, bulanan, atau tahunan -- berdasarkan sekumpulan kondisi. Gunakan ini untuk jangkauan berbasis waktu, seperti *semua orang yang ulang tahunnya hari ini* (Tanggal Lahir · Tanggal dalam Bulan = **Hari Ini**, dengan bulan dicocokkan ke **Bulan Ini**) atau pemeriksaan *bulanan*. Bahkan tanpa **Hanya sekali per orang**, pemicu jadwal tidak akan menambahkan orang yang sama lagi dalam satu periode pengulangan (satu hari, minggu, bulan, atau tahun, sesuai frekuensi jalannya).
 
@@ -238,7 +238,7 @@ Untuk pemicu apa pun, Anda juga dapat mengatur:
 Pasangkan pemicu **Formulir · Dikirim** dengan templat **Tindak Lanjut Pengunjung Baru** untuk mengubah formulir "Kartu Koneksi" atau "Saya Baru" menjadi alur tindak lanjut otomatis.
 :::
 
-## Konfirmasi Penugasan Pelayanan
+## Konfirmasi Penugasan Pelayanan {#serving-assignment-confirmations}
 
 Jenis alur kerja khusus dapat menindaklanjuti [permintaan pelayanan](./plans.md#assigning-team-members) hingga setiap relawan menerima atau menolak. Alih-alih orang, setiap kartu pada papan ini melacak **satu penugasan** -- satu orang dalam satu posisi pada satu rencana. Dua peran atau dua layanan untuk orang yang sama mendapatkan kartu terpisah. Fitur ini bersifat opt-in: tidak ada yang berubah untuk sebuah rencana sampai Anda memilih alur kerja konfirmasi di pengaturannya.
 

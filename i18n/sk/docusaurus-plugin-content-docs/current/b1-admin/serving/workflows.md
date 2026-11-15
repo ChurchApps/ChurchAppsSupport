@@ -174,7 +174,7 @@ Poznámky sa ukladajú spolu s kartou. Každý, kto môže kartu otvoriť -- vr�
 
 Označte začiarkavacie políčka na viacerých kartách, aby ste s nimi mohli pracovať spoločne. Ak chcete naraz vybrať všetky karty v kroku, zaškrtnite políčko **Vybrať všetko** v hlavičke stĺpca daného kroku; zaškrtnutím znova výber zrušíte. Objaví sa panel nástrojov, v ktorom môžete pre všetky vybrané karty naraz **Dokončiť**, **Odložiť**, **Priradiť** (preradiť) alebo **Presunúť do…** iného kroku.
 
-## Smerovanie kariet pomocou výsledkov a podmienok
+## Smerovanie kariet pomocou výsledkov a podmienok {#routing-cards-with-outcomes-and-conditions}
 
 Smerovanie určuje, kam karta putuje, keď krok opustí. Otvorte editor kroku, ak chcete nastaviť dva druhy smerovania.
 
@@ -202,7 +202,7 @@ Ak sa podmienky trasy z nejakého dôvodu nedajú overiť, táto trasa sa považ
 Na tabuli každý stĺpec kroku zobrazuje malé poznámky popisujúce jeho smerovanie -- napríklad štítok výsledku alebo „ak zodpovedá“ a za ním šípku k cieľovému kroku či pracovnému postupu.
 :::
 
-## Plne automatizované kroky
+## Plne automatizované kroky {#fully-automated-steps}
 
 Krok môžete nastaviť tak, aby bežal úplne samostatne, bez toho, aby ho niekto spracúval. Dajte kroku jeho **automatizované akcie** a pridajte **automatickú trasu** (bez podmienok) smerujúcu na ďalší krok. Keď karta vstúpi, akcie sa spustia a trasa ju hneď posunie ďalej -- karta prejde priamo cez krok.
 
@@ -210,7 +210,7 @@ Krok môžete nastaviť tak, aby bežal úplne samostatne, bez toho, aby ho niek
 Skombinujte to s **Čakať**: *Odoslať uvítací e-mail → Čakať 3 dni → automaticky posunúť do kroku „Osobný telefonát“.* E-mail a načasovanie sa zvládnu za vás a dobrovoľník uvidí kartu až vtedy, keď je čas na osobný kontakt.
 :::
 
-## Spúšťače
+## Spúšťače {#triggers}
 
 Spúšťače automaticky pridávajú ľudí do pracovného postupu, keď sa niečo stane, takže karty nikdy nemusíte pridávať ručne. Na tabuli pracovného postupu kliknite na záložku **Spúšťače** a potom na **Pridať spúšťač**. Existujú dva druhy:
 
@@ -223,7 +223,7 @@ Spustia sa hneď, ako sa záznam v B1 zmení. Vyberte udalosť a potom môžete 
 - **Skupina · Člen sa pripojil** / **Skupina · Vytvorená**.
 - **Formulár · Odoslaný** -- pridať každého, kto odošle vybraný formulár (výborné pre kartu „Som tu nový“ alebo „Spojte sa“).
 
-### Plánované spúšťače
+### Plánované spúšťače {#schedule-triggers}
 
 Spúšťajú sa pravidelne -- denne, týždenne, mesačne alebo ročne -- podľa sady podmienok. Používajte ich na oslovenie viazané na čas, napríklad *všetkých, ktorí majú dnes narodeniny* (Dátum narodenia · Deň v mesiaci = **Dnes**, s mesiacom zhodným s **Aktuálnym mesiacom**) alebo *mesačné* stretnutie. Aj bez **Len raz pre každú osobu** plánovaný spúšťač nepridá tú istú osobu znova v rámci jedného opakovacieho obdobia (dňa, týždňa, mesiaca alebo roka, podľa toho, ako často beží).
 
@@ -238,7 +238,7 @@ Pri ľubovoľnom spúšťači môžete tiež nastaviť:
 Spojte spúšťač **Formulár · Odoslaný** so šablónou **Následná starostlivosť o novú návštevu** a váš formulár „Connect Card“ alebo „Som tu nový“ sa stane automatickým postupom následnej starostlivosti.
 :::
 
-## Potvrdenia služobných úloh
+## Potvrdenia služobných úloh {#serving-assignment-confirmations}
 
 Špeciálny druh pracovného postupu môže sledovať [žiadosti o službu](./plans.md#assigning-team-members), kým každý dobrovoľník úlohu neprijme alebo neodmietne. Namiesto osôb každá karta na tejto tabuli sleduje **jednu úlohu** -- jednu osobu na jednej pozícii v jednom pláne. Dve roly alebo dve služby pre tú istú osobu dostanú samostatné karty. Ide o voliteľnú funkciu: pre plán sa nič nemení, kým v jeho nastaveniach nevyberiete pracovný postup na potvrdenie.
 

@@ -174,7 +174,7 @@ Notatki są zapisywane razem z kartą. Każdy, kto może otworzyć kartę -- w t
 
 Zaznacz pola wyboru przy wielu kartach, aby wykonać na nich działania razem. Aby zaznaczyć wszystkie karty na etapie naraz, zaznacz pole **Zaznacz wszystkie** w nagłówku kolumny tego etapu; ponowne zaznaczenie je odznacza. Pojawia się pasek narzędzi, który pozwala **Zakończyć**, **Uśpić**, **Przypisać** (przypisać ponownie) lub **Przenieść do…** inny etap dla wszystkich zaznaczonych kart naraz.
 
-## Trasowanie kart za pomocą wyników i warunków
+## Trasowanie kart za pomocą wyników i warunków {#routing-cards-with-outcomes-and-conditions}
 
 Trasowanie określa, dokąd trafia karta po opuszczeniu etapu. Otwórz edytor etapu, aby skonfigurować dwa rodzaje trasowania.
 
@@ -202,7 +202,7 @@ Jeśli warunków trasy nie da się sprawdzić z jakiegoś powodu, trasa jest tra
 Na tablicy każda kolumna etapu pokazuje małe adnotacje opisujące jego trasowanie -- na przykład etykietę wyniku albo „jeśli pasuje" i strzałkę do etapu lub przepływu pracy docelowego.
 :::
 
-## Etapy w pełni zautomatyzowane
+## Etapy w pełni zautomatyzowane {#fully-automated-steps}
 
 Możesz sprawić, by etap działał całkowicie samodzielnie, bez niczyjej pracy. Dodaj etapowi jego **zautomatyzowane działania** i dodaj **automatyczną trasę** (bez warunków) wskazującą na następny etap. Gdy karta wejdzie, działania się wykonają, a trasa natychmiast ją przesunie -- karta przejdzie przez etap bez zatrzymania.
 
@@ -210,7 +210,7 @@ Możesz sprawić, by etap działał całkowicie samodzielnie, bez niczyjej pracy
 Połącz to z **Czekaj**: *Wyślij e-mail powitalny → Czekaj 3 dni → automatycznie przejdź do etapu „Telefon osobisty".* E-mail i czas są obsługiwane za Ciebie, a wolontariusz widzi kartę dopiero wtedy, gdy nadchodzi czas na osobisty kontakt.
 :::
 
-## Wyzwalacze
+## Wyzwalacze {#triggers}
 
 Wyzwalacze automatycznie dodają osoby do przepływu pracy, gdy coś się wydarzy, więc nigdy nie musisz dodawać kart ręcznie. Na tablicy przepływu pracy kliknij kartę **Wyzwalacze**, a następnie **Dodaj wyzwalacz**. Są dwa rodzaje:
 
@@ -223,7 +223,7 @@ Uruchamiają się, gdy tylko rekord zmieni się w B1. Wybierz zdarzenie, a nast�
 - **Grupa · Członek dołączył** / **Grupa · Utworzona**.
 - **Formularz · Wysłany** -- dodaj każdego, kto wyśle wybrany formularz (świetne dla karty „Jestem nowy" lub „Połącz się").
 
-### Wyzwalacze harmonogramu
+### Wyzwalacze harmonogramu {#schedule-triggers}
 
 Działają cyklicznie -- codziennie, co tydzień, co miesiąc lub co roku -- względem zestawu warunków. Używaj ich do kontaktów zależnych od czasu, np. *wszyscy, których urodziny przypadają dziś* (Data urodzenia · Dzień miesiąca = **Dzisiaj**, z miesiącem dopasowanym do **Bieżący miesiąc**) lub *miesięcznego* sprawdzenia. Nawet bez **Tylko raz na osobę** wyzwalacz harmonogramu nie doda tej samej osoby ponownie w obrębie jednego okresu powtarzania (dnia, tygodnia, miesiąca lub roku, zgodnie z częstotliwością uruchamiania).
 
@@ -238,7 +238,7 @@ Dla każdego wyzwalacza możesz też ustawić:
 Połącz wyzwalacz **Formularz · Wysłany** z szablonem **Obsługa nowego odwiedzającego**, aby zamienić formularz „Karta kontaktowa" lub „Jestem nowy" w automatyczny proces kontaktu.
 :::
 
-## Potwierdzenia przydziałów do służby
+## Potwierdzenia przydziałów do służby {#serving-assignment-confirmations}
 
 Specjalny rodzaj przepływu pracy może śledzić [prośby o służbę](./plans.md#assigning-team-members), aż każdy wolontariusz zaakceptuje lub odrzuci przydział. Zamiast osób każda karta na tej tablicy śledzi **jeden przydział** -- jedną osobę na jednym stanowisku w jednym planie. Dwie role lub dwa nabożeństwa dla tej samej osoby mają osobne karty. Jest to opcjonalne: nic nie zmienia się w planie, dopóki nie wybierzesz przepływu pracy potwierdzeń w jego ustawieniach.
 

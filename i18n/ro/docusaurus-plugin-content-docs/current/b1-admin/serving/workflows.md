@@ -174,7 +174,7 @@ Notele se salvează împreună cu cardul. Oricine poate deschide cardul, inclusi
 
 Bifează căsuțele de pe mai multe carduri pentru a acționa asupra lor împreună. Pentru a selecta deodată toate cardurile dintr-o etapă, bifează căsuța **Selectează tot** din antetul coloanei acelei etape; bifeaz-o din nou pentru a le deselecta. Apare o bară de instrumente care îți permite să **Finalizezi**, **Amânezi**, **Atribui** (reatribui) sau **Muți la…** o altă etapă pentru toate cardurile selectate deodată.
 
-## Rutarea cardurilor cu rezultate și condiții
+## Rutarea cardurilor cu rezultate și condiții {#routing-cards-with-outcomes-and-conditions}
 
 Rutarea controlează unde merge un card când părăsește o etapă. Deschide editorul unei etape pentru a configura două tipuri de rutare.
 
@@ -202,7 +202,7 @@ Dacă condițiile unei rute nu pot fi verificate dintr-un anumit motiv, ruta est
 Pe tablă, fiecare coloană de etapă afișează mici adnotări care descriu rutarea, de exemplu o etichetă de rezultat sau „dacă se potrivește”, urmată de o săgeată către etapa sau fluxul de destinație.
 :::
 
-## Etapele complet automatizate
+## Etapele complet automatizate {#fully-automated-steps}
 
 Poți face ca o etapă să ruleze în întregime singură, fără ca cineva să se ocupe de ea. Dă etapei **acțiunile automate** și adaugă o **rută automată** (fără condiții) care indică etapa următoare. Când un card intră, acțiunile rulează, iar apoi ruta îl avansează imediat, deci cardul trece direct mai departe.
 
@@ -210,7 +210,7 @@ Poți face ca o etapă să ruleze în întregime singură, fără ca cineva să 
 Combină aceasta cu **Așteptare**: *Trimite e-mail de bun venit → Așteaptă 3 zile → avansează automat la etapa „Apel personal”.* E-mailul și momentul sunt gestionate pentru tine, iar un voluntar vede cardul doar când a sosit momentul pentru contactul uman.
 :::
 
-## Declanșatori
+## Declanșatori {#triggers}
 
 Declanșatorii adaugă automat persoane într-un flux când se întâmplă ceva, astfel încât nu trebuie să adaugi niciodată cardurile manual. Pe tabla unui flux, apasă pe fila **Declanșatori**, apoi pe **Adaugă declanșator**. Există două tipuri:
 
@@ -223,7 +223,7 @@ Se activează imediat ce o înregistrare se schimbă în B1. Alege evenimentul �
 - **Grup · Membru s-a alăturat** / **Grup · Creat**.
 - **Formular · Trimis**: adaugă pe oricine trimite un formular ales (excelent pentru un card „Sunt nou” sau „Conectare”).
 
-### Declanșatori programați
+### Declanșatori programați {#schedule-triggers}
 
 Rulează periodic, zilnic, săptămânal, lunar sau anual, pe baza unui set de condiții. Folosește-i pentru contactul în funcție de timp, precum *toți cei a căror zi de naștere este azi* (Data nașterii · Ziua din lună = **Azi**, cu luna potrivită cu **Luna curentă**) sau o verificare *lunară*. Chiar fără **O singură dată per persoană**, un declanșator programat nu adaugă din nou aceeași persoană în aceeași perioadă de repetare (o zi, o săptămână, o lună sau un an, în funcție de frecvența de rulare).
 
@@ -238,7 +238,7 @@ Pentru orice declanșator poți seta și:
 Asociază un declanșator **Formular · Trimis** cu șablonul **Urmărirea unui vizitator nou** pentru a transforma formularul tău „Cardul de conectare” sau „Sunt nou” într-un proces automat de urmărire.
 :::
 
-## Confirmările atribuirilor de serviciu
+## Confirmările atribuirilor de serviciu {#serving-assignment-confirmations}
 
 Un tip special de flux poate urmări [solicitările de servire](./plans.md#assigning-team-members) până când fiecare voluntar acceptă sau refuză. În loc de persoane, fiecare card de pe această tablă urmărește **o atribuire**: o persoană într-o poziție, pentru un plan. Două roluri sau două servicii pentru aceeași persoană primesc carduri separate. Este opțional: nimic nu se schimbă pentru un plan până nu selectezi un flux de confirmare în setările sale.
 

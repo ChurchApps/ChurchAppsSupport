@@ -174,7 +174,7 @@ Poznámky se ukládají spolu s kartou. Každý, kdo může kartu otevřít -- v
 
 Zaškrtněte políčka u více karet a jednejte s nimi společně. Chcete-li vybrat všechny karty v kroku najednou, zaškrtněte políčko **Vybrat vše** v záhlaví sloupce kroku; dalším zaškrtnutím výběr zrušíte. Objeví se panel nástrojů, který umožňuje pro všechny vybrané karty najednou **Dokončit**, **Odložit**, **Přiřadit** (změnit řešitele) nebo **Přesunout do…** jiného kroku.
 
-## Směrování karet pomocí výsledků a podmínek
+## Směrování karet pomocí výsledků a podmínek {#routing-cards-with-outcomes-and-conditions}
 
 Směrování určuje, kam karta půjde, když krok opustí. Chcete-li nastavit dva druhy směrování, otevřete editor kroku.
 
@@ -202,7 +202,7 @@ Pokud podmínky trasy z nějakého důvodu nelze vyhodnotit, trasa se považuje 
 Na nástěnce každý sloupec kroku zobrazuje malé poznámky popisující jeho směrování -- například popisek výsledku nebo „pokud odpovídá“ a za ním šipku k cílovému kroku nebo pracovnímu postupu.
 :::
 
-## Plně automatické kroky
+## Plně automatické kroky {#fully-automated-steps}
 
 Můžete nastavit, aby krok běžel zcela sám, bez něčí práce. Přiřaďte kroku jeho **automatické akce** a přidejte **automatickou trasu** (bez podmínek) směřující na další krok. Když karta vstoupí, akce proběhnou a trasa ji hned posune dál -- karta projde krokem přímo.
 
@@ -210,7 +210,7 @@ Můžete nastavit, aby krok běžel zcela sám, bez něčí práce. Přiřaďte 
 Kombinujte to s **Čekáním**: *Odeslat uvítací e-mail → Počkat 3 dny → automaticky přejít na krok „Osobní hovor“.* E-mail i načasování se zvládnou za vás a dobrovolník kartu uvidí až ve chvíli, kdy je čas na osobní kontakt.
 :::
 
-## Spouštěče
+## Spouštěče {#triggers}
 
 Spouštěče přidávají lidi do pracovního postupu automaticky, když se něco stane, takže karty nikdy nemusíte přidávat ručně. Na nástěnce pracovního postupu klikněte na záložku **Spouštěče** a poté na **Přidat spouštěč**. Existují dva druhy:
 
@@ -223,7 +223,7 @@ Spustí se, jakmile se záznam v B1 změní. Zvolte událost a volitelně přide
 - **Skupina · Člen se připojil** / **Skupina · Vytvořena**.
 - **Formulář · Odeslán** -- přidat každého, kdo odešle vybraný formulář (skvělé pro kartu „Jsem nový“ nebo „Spojit se“).
 
-### Plánované spouštěče
+### Plánované spouštěče {#schedule-triggers}
 
 Běží pravidelně -- denně, týdně, měsíčně nebo ročně -- podle sady podmínek. Používejte je pro oslovování založené na čase, například *každého, kdo má dnes narozeniny* (Datum narození · Den v měsíci = **Dnes**, s měsícem odpovídajícím **Aktuálnímu měsíci**), nebo *měsíční* kontrolu. I bez volby **Pouze jednou na osobu** plánovaný spouštěč nepřidá stejného člověka znovu během jednoho opakovacího období (den, týden, měsíc nebo rok podle toho, jak často běží).
 
@@ -238,7 +238,7 @@ U libovolného spouštěče můžete také nastavit:
 Spouštěč **Formulář · Odeslán** spojte se šablonou **Následná péče o nového návštěvníka** a vaše formulář „Karta spojení“ nebo „Jsem nový“ se promění v automatický postup následné péče.
 :::
 
-## Potvrzení služebních úkolů
+## Potvrzení služebních úkolů {#serving-assignment-confirmations}
 
 Zvláštní druh pracovního postupu může sledovat [žádosti o službu](./plans.md#assigning-team-members), dokud každý dobrovolník nepřijme nebo neodmítne. Místo lidí každá karta na této nástěnce sleduje **jeden úkol** -- jednu osobu na jedné pozici v jednom plánu. Dvě role nebo dvě služby pro stejnou osobu mají oddělené karty. Jde o volitelnou funkci: u plánu se nic nemění, dokud v jeho nastavení nevyberete pracovní postup pro potvrzení.
 

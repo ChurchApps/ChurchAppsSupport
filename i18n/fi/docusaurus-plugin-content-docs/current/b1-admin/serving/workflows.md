@@ -174,7 +174,7 @@ Muistiinpanot tallennetaan kortin yhteyteen. Kuka tahansa, joka voi avata kortin
 
 Valitse useiden korttien valintaruudut toimiakseen niihin yhdessä. Jos haluat valita kaikki vaiheen kortit kerralla, valitse **Valitse kaikki** -ruutu vaihesarakkeen otsikossa. Valinnan voi poistaa valitsemalla ruudun uudelleen. Työkalupalkki tulee näkyviin ja sen avulla voit **Merkitse valmiiksi**, **Lykkää**, **Määritä** (uudelleenmääritys) tai **Siirrä…** toiseen vaiheeseen kaikille valituille korteille kerralla.
 
-## Reititys tuloksilla ja ehdoilla
+## Reititys tuloksilla ja ehdoilla {#routing-cards-with-outcomes-and-conditions}
 
 Reititys määrittää, minne kortti siirtyy, kun se poistuu vaiheesta. Avaa vaiheen editori määrittääksesi kahden tyyppisen reitityksen.
 
@@ -202,7 +202,7 @@ Jos reitin ehtoja ei voida tarkistaa jostain syystä, reitin katsotaan olevan t�
 Taulussa jokainen vaihesarake näyttää pieniä merkintöjä, jotka kuvaavat sen reititystä -- esimerkiksi tuloksen nimen tai ”jos täsmää” ja nuolen kohdevaiheeseen tai työnkulkuun.
 :::
 
-## Täysin automaattiset vaiheet
+## Täysin automaattiset vaiheet {#fully-automated-steps}
 
 Voit tehdä vaiheesta täysin itsenäisen, jota kukaan ei käsittele. Anna vaiheelle sen **automaattiset toiminnot** ja lisää **automaattinen reitti** (ilman ehtoja), joka osoittaa seuraavaan vaiheeseen. Kun kortti saapuu, toiminnot suoritetaan ja reitti siirtää kortin heti eteenpäin -- kortti kulkee suoraan läpi.
 
@@ -210,7 +210,7 @@ Voit tehdä vaiheesta täysin itsenäisen, jota kukaan ei käsittele. Anna vaihe
 Yhdistä tämä **Odota**-toimintoon: *Lähetä tervetulosähköposti → Odota 3 päivää → siirry automaattisesti vaiheeseen ”Henkilökohtainen puhelu”.* Sähköposti ja ajoitus hoidetaan puolestasi, ja vapaaehtoinen näkee kortin vasta, kun on aika inhimilliselle kosketukselle.
 :::
 
-## Laukaisimet
+## Laukaisimet {#triggers}
 
 Laukaisimet lisäävät ihmisiä työnkulkuun automaattisesti, kun jokin tapahtuu, joten sinun ei tarvitse koskaan lisätä kortteja käsin. Avaa työnkulun taulu, napsauta **Laukaisimet**-välilehteä ja sitten **Lisää laukaisin**. Laukaisimia on kahta tyyppiä:
 
@@ -223,7 +223,7 @@ Käynnistyvät heti, kun tietue muuttuu B1:ssä. Valitse tapahtuma ja lisää ha
 - **Ryhmä · Jäsen liittyi** / **Ryhmä · Luotu**.
 - **Lomake · Lähetetty** -- lisää jokainen, joka lähettää valitun lomakkeen (sopii hyvin kortille ”Olen uusi” tai ”Ota yhteyttä”).
 
-### Aikataululaukaisimet
+### Aikataululaukaisimet {#schedule-triggers}
 
 Toimivat toistuvasti -- päivittäin, viikoittain, kuukausittain tai vuosittain -- asetettujen ehtojen perusteella. Käytä näitä ajoitettuun tavoittamiseen, kuten *kaikki, joilla on syntymäpäivä tänään* (Syntymäpäivä · Kuukauden päivä = **Tänään**, kuukausi täsmää **Nykyiseen kuukauteen**) tai *kuukausittainen* tarkistus. Vaikka **Vain kerran henkilöä kohden** ei olisi päällä, aikataululaukaisin ei lisää samaa henkilöä uudelleen saman toistojakson sisällä (päivä, viikko, kuukausi tai vuosi sen mukaan, kuinka usein laukaisin toimii).
 
@@ -238,7 +238,7 @@ Jokaiselle laukaisimelle voit myös asettaa:
 Yhdistä **Lomake · Lähetetty** -laukaisin **Uuden vierailijan seuranta** -pohjaan, niin ”Yhteystietolomakkeesi” tai ”Olen uusi” -lomake muuttuu automaattiseksi seurantaputkeksi.
 :::
 
-## Palvelutehtävien vahvistukset
+## Palvelutehtävien vahvistukset {#serving-assignment-confirmations}
 
 Erityinen työnkulun tyyppi voi seurata [palvelupyyntöjä](./plans.md#assigning-team-members), kunnes jokainen vapaaehtoinen hyväksyy tai hylkää ne. Ihmisten sijaan jokainen tämän taulun kortti seuraa **yhtä tehtävää** -- yhtä henkilöä yhdessä tehtävässä yhdessä suunnitelmassa. Kaksi roolia tai kaksi palvelua samalle henkilölle saavat erilliset kortit. Tämä on valinnainen: mikään ei muutu suunnitelmalle, ennen kuin valitset vahvistustyönkulun sen asetuksista.
 

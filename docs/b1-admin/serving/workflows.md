@@ -174,7 +174,7 @@ Notes are saved with the card. Anyone who can open the card -- including the per
 
 Select the checkboxes on multiple cards to act on them together. To pick every card in a step at once, check the **Select all** box in that step's column header; check it again to clear them. A toolbar appears letting you **Complete**, **Snooze**, **Assign** (reassign), or **Move to…** another step for all selected cards at once.
 
-## Routing Cards with Outcomes and Conditions
+## Routing Cards with Outcomes and Conditions {#routing-cards-with-outcomes-and-conditions}
 
 Routing controls where a card goes when it leaves a step. Open a step's editor to configure two kinds of routing.
 
@@ -202,7 +202,7 @@ If a route's conditions can't be checked for some reason, that route is treated 
 On the board, each step column shows small annotations describing its routing -- for example, an outcome label or "if matches" followed by an arrow to the destination step or workflow.
 :::
 
-## Fully Automated Steps
+## Fully Automated Steps {#fully-automated-steps}
 
 You can make a step run entirely on its own, with no one working it. Give the step its **automated actions** and add an **automatic route** (with no conditions) pointing to the next step. When a card enters, the actions run, and then the route advances it immediately -- the card passes straight through.
 
@@ -210,7 +210,7 @@ You can make a step run entirely on its own, with no one working it. Give the st
 Combine this with **Wait**: *Send welcome email → Wait 3 days → automatically advance to the "Personal call" step.* The email and the timing are handled for you, and a volunteer only sees the card when it's time for the human touch.
 :::
 
-## Triggers
+## Triggers {#triggers}
 
 Triggers add people to a workflow automatically when something happens, so you never have to add cards by hand. On a workflow board, click the **Triggers** tab, then **Add Trigger**. There are two kinds:
 
@@ -223,7 +223,7 @@ Fire as soon as a record changes in B1. Choose the event, then optionally add **
 - **Group · Member Joined** / **Group · Created**.
 - **Form · Submitted** -- add anyone who submits a chosen form (great for an "I'm New" or "Connect" card).
 
-### Schedule triggers
+### Schedule triggers {#schedule-triggers}
 
 Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set of conditions. Use these for time-based outreach such as *everyone whose birthday is today* (Birth Date · Day of Month = **Today**, with the month matched to **Current Month**) or a *monthly* check-in. Even without **Only once per person**, a schedule trigger won't add the same person again within one repeat period (a day, week, month, or year, matching how often it runs).
 
@@ -238,7 +238,7 @@ For any trigger you can also set:
 Pair a **Form · Submitted** trigger with the **New Visitor Follow-up** template to turn your "Connect Card" or "I'm New" form into an automatic follow-up pipeline.
 :::
 
-## Serving Assignment Confirmations
+## Serving Assignment Confirmations {#serving-assignment-confirmations}
 
 A special kind of workflow can follow up on [serving requests](./plans.md#assigning-team-members) until each volunteer accepts or declines. Instead of people, each card on this board tracks **one assignment** -- one person in one position on one plan. Two roles or two services for the same person get separate cards. This is opt-in: nothing changes for a plan until you select a confirmation workflow in its settings.
 
