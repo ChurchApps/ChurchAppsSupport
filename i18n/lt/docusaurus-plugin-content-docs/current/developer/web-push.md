@@ -11,7 +11,7 @@ ChurchApps žiniatinklio programėlės siunčia pranešimus per W3C Web Push API
 
 </div>
 
-## Kada siunčiami push pranešimai
+## Kada siunčiami push pranešimai {#when-push-fires}
 
 Push yra viena pristatymo pakopa vienoje pristatymo eigoje `NotificationHelper.attemptDeliveryWithEscalation()` funkcijoje (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Pirmiausia tikrinamas programos viduje nustatytas pranešimų nustatymas, tada tuo pačiu etapu bandoma pristatyti per socket ir push (kiekvienas turi savo nustatymų patikrinimą), o galiausiai siunčiamas el. laiškas. Gavėjas, kuris išjungė kategoriją, į push nepatenka. Sėkmingas socket pristatymas nebesustabdo push: visi pranešimų tipai dabar elgiasi taip, kaip privačios žinutės visada elgėsi. Todėl įdiegta PWA, veikianti fone, vis tiek parodo operacinės sistemos pranešimą, net jei socket pristatymas jau įvyko. Dublikatus pranešimus slopina paslaugų darbuotojas (service worker) naršyklės pusėje (žr. [Paslaugų darbuotojo reikalavimas](#service-worker-requirement)). Planuojami priminimai ir personalo inicijuojami masiniai pranešimai pradedami tiesiai nuo push pakopos, todėl socket žingsnis praleidžiamas. El. laiškai ir toliau siunčiami pagal laikmatį: neperskaitytos eilutės eskaluojamos pagal savo tvarkaraštį, o ne šios eigos dalimi.
 
@@ -103,7 +103,7 @@ Vartotojai gauna šias funkcijas be papildomų pastangų:
 - **Įdiegtos PWA aptikimas** — `isStandalone()` leidžia programoms riboti iOS push užklausas vartotojams, kurie įdiegė PWA į pagrindinį ekraną (iOS leidžia push tik iš įdiegtų PWA).
 - **Pakartotinis įregistravimas keičiant bažnyčią** — `refreshEnrollment()` iš naujo siunčia esamą naršyklės prenumeratą su nauju `userChurch`, neprašydamas vartotojo dar kartą patvirtinti. Kviečiama iš `userChurch` pakeitimo apdorojimo funkcijos.
 
-### Paslaugų darbuotojo reikalavimas
+### Paslaugų darbuotojo reikalavimas {#service-worker-requirement}
 
 Naršyklės `PushManager` išsprendžia prenumeratą tik tada, kai sukonfigūruotame diapazone (scope) užregistruotas paslaugų darbuotojas. ChurchApps PWA paslaugų darbuotojus generuoja [Serwist](https://serwist.dev/) (Next.js programoms) arba workbox. Kadangi serveris dabar visada bando siųsti push kartu su socket pristatymu (žr. [Kada siunčiami push pranešimai](#when-push-fires)), dublikatus šalina paslaugų darbuotojas. Jo `push` apdorojimo funkcija turi nerodyti `showNotification`, kai fokusuotas arba matomas langas jau atidarytas ties pranešimo nuorodos tikslu. Programos ženklelis (badge) vis tiek visada atnaujinamas, nepriklausomai nuo to, ar pranešimas buvo parodytas:
 

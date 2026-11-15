@@ -11,7 +11,7 @@ ChurchApps web uygulamaları, W3C Web Push API üzerinden push bildirimleri gön
 
 </div>
 
-## Push bildirimleri ne zaman gönderilir
+## Push bildirimleri ne zaman gönderilir {#when-push-fires}
 
 Push, `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`) içindeki tek bir iletim sürecinde bir aşamadır. Bu süreç şu sırayla çalışır: önce uygulama içi tercih kontrolü, ardından aynı turda denenen soket iletimi ve push (her biri kendi tercih kontrolüne tabidir), en son e-posta. Kategoriyi sessize almış bir alıcıya push hiç ulaşmaz. Soket iletimi başarılı olsa bile push artık durdurulmaz. Her bildirim türü artık özel mesajların her zaman davrandığı gibi davranır. Bu sayede arka planda duran yüklü bir PWA, bildirim soket üzerinden zaten ulaşmış olsa bile işletim sistemi düzeyinde bir bildirim gösterir. Yinelenen bildirim pankartları, bunun yerine hizmet çalışanı (service worker) tarafından istemci tarafında bastırılır (bkz. [Hizmet çalışanı gereksinimi](#service-worker-requirement)). Zamanlanmış hatırlatıcılar ve personel tarafından başlatılan yayınlar doğrudan push aşamasından başlar ve soket adımını tamamen atlar. E-posta ise bu süreçten bağımsız olarak zamanlayıcıyla çalışır. Okunmamış kayıtları kendi takvimine göre yükseltir.
 
@@ -103,7 +103,7 @@ Tüketicilerin ek bir çaba harcamadan kazandığı davranışlar:
 - **Bağımsız PWA algılama**: `isStandalone()`, uygulamaların iOS push istemlerini "kullanıcı PWA'yı ana ekrana yükledi" koşuluna bağlamasını sağlar. iOS yalnızca yüklü PWA'lardan push'a izin verir.
 - **Kilise değişiminde yeniden kayıt**: `refreshEnrollment()`, mevcut tarayıcı aboneliğini kullanıcıya yeniden sormadan yeni `userChurch` için yeniden gönderir. Bunu `userChurch` değişiklik işleyicisinden çağırın.
 
-### Hizmet çalışanı gereksinimi
+### Hizmet çalışanı gereksinimi {#service-worker-requirement}
 
 Tarayıcının `PushManager` arayüzü, bir abonelik ancak yapılandırılmış kapsamda bir hizmet çalışanı kayıtlıysa çözümlenir. ChurchApps PWA'ları, hizmet çalışanı üretimi için [Serwist](https://serwist.dev/) (Next.js uygulamaları) veya workbox kullanır. Sunucu artık push'u her zaman soket iletimiyle birlikte denediği için (bkz. [Push bildirimleri ne zaman gönderilir](#when-push-fires)), hizmet çalışanı tekrarları önleme noktasıdır. Açık veya görünür bir istemci zaten bildirimin derin bağlantı hedefindeyse, `push` işleyicisi `showNotification` çağrısını bastırmalıdır. Ancak pankart gösterilip gösterilmediğine bakılmaksızın uygulama rozetini her zaman güncellemelidir:
 

@@ -11,7 +11,7 @@ A ChurchApps webalkalmazások push-értesítéseket a W3C Web Push API-n kereszt
 
 </div>
 
-## Mikor küldünk push-értesítést
+## Mikor küldünk push-értesítést {#when-push-fires}
 
 A push a `NotificationHelper.attemptDeliveryWithEscalation()` egyetlen kézbesítési körének egyik szintje (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). A kör sorrendje: először az alkalmazáson belüli beállítások ellenőrzése, majd ugyanabban a körben a socket-kézbesítés és a push-kísérlet (mindkettő saját beállítási kapuval), végül az e-mail. Aki némította a kategóriát, soha nem jut el a push-szintig. A socket-kézbesítés sikere már nem állítja meg a push-ot: minden értesítéstípus ugyanúgy viselkedik, mint a privát üzenetek mindig is. A háttérben futó, telepített PWA így akkor is megjelenít operációs rendszerszintű értesítést, ha a socket-kézbesítés már megtörtént. A duplikált bannereket ehelyett a kliensoldali service worker szűri ki (lásd [Service worker követelmény](#service-worker-requirement)). Az ütemezett emlékeztetők és a munkatársak által indított körüzenetek közvetlenül a push szinten indulnak, a socket-lépést kihagyva. Az e-mail továbbra is időzítésvezérelt: az olvasatlan sorokat a saját ütemezése szerint kezeli, nem ennek a körnek a részeként.
 
@@ -103,7 +103,7 @@ A fogyasztók ingyen kapják a következő viselkedéseket:
 - **Telepített PWA felismerése** — az `isStandalone()` lehetővé teszi, hogy a hosztok az iOS push-kéréseket ahhoz kössék, hogy a felhasználó telepítette-e a PWA-t a kezdőképernyőre (az iOS csak telepített PWA-tól enged push-ot).
 - **Újraregisztráció gyülekezetváltáskor** — a `refreshEnrollment()` a meglévő böngészőfeliratkozást az új `userChurch`-höz küldi újra, anélkül hogy újra kérdezné a felhasználót. Hívd a `userChurch` változáskezelőjéből.
 
-### Service worker követelmény
+### Service worker követelmény {#service-worker-requirement}
 
 A böngésző `PushManager`-e csak akkor old fel egy feliratkozást, ha a konfigurált hatókörben be van regisztrálva egy service worker. A ChurchApps PWA-k a [Serwist](https://serwist.dev/) (Next.js alkalmazások) vagy a workbox eszközt használják a service worker generálásához. Mivel a szerver most mindig megkísérli a push-ot a socket-kézbesítéssel együtt (lásd [Mikor küldünk push-értesítést](#when-push-fires)), a service worker a duplikáció szűrésének helye. A `push` kezelőjének el kell nyomnia a `showNotification` hívást, ha egy fókuszált vagy látható kliens már az értesítés mélylinkjén van. Az alkalmazásjelvényt viszont mindig frissítenie kell, függetlenül attól, hogy a banner megjelent-e:
 

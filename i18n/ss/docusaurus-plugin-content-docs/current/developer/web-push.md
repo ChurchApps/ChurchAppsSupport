@@ -11,7 +11,7 @@ Ti-app te-web te-ChurchApps tiletsa tatiso te-push ngekusebentisa i-W3C Web Push
 
 </div>
 
-## Nini Lapho I-Push Idubula Khona
+## Nini Lapho I-Push Idubula Khona {#when-push-fires}
 
 I-Push sigaba sinye kuludzingo lunye lwekuletsa ngekhatsi kwe-`NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): sango sekukhetsa ngekhatsi kwe-app, bese kuletsiwa nge-socket kanye ne-push kuzanywa kuludzingo lolufanako (ngamunye ngemuva kwesango sakhe sekukhetsa), bese ku-imeyili. Umemukeli losacishe sigaba akaze afinyelele ku-push. Kuphumelela kwekuletsiwa nge-socket akusayimisi i-push — luhlobo ngalunye lwesatiso nyalo lutiphatsa njengobe imilayeto yangasese beyihlala ihamba ngayo, ngako i-PWA lefakiwe lehleti emuva isavela satiso ku-OS ngisho nome kuletsiwa nge-socket sekufike; ema-banner laphindzaphindzako acindzetelwa hlangotsini lwe-client yi-service worker kunaloko (bona [Sidzingo Se-Service Worker](#service-worker-requirement)). Tikhumbuto letihleliwe kanye nekusakata lokucaliswa ngumsebenti kucala ngalokucondzile esigabeni se-push, kweca inyatselo ye-socket ngalokuphelele. I-imeyili ihlala icaliswa yisikhatsi, ikhulisa emalayini langakafundvwa ngeschedule yayo kunekuba yincenye yalolu ludzingo.
 
@@ -103,7 +103,7 @@ Kutiphatsa lokutfolwa ngalabasebentisako simahla:
 - **Kutfolwa Kwe-Standalone-PWA** — `isStandalone()` ivumela ema-host kuvala tiphakamiso te-push te-iOS ngemuva kwe-"umsebentisi ufakele i-PWA kusikrini sakhe sasekhaya" (i-iOS ivumela kuphela i-push letivela kuma-PWA lafakiwe).
 - **Kuphindze Kubhalise Nangabe Kushintjwa Libandla** — `refreshEnrollment()` iphindze itfumele kubhaliswa lokukhona kwebrawuza kubhekiswa ku-`userChurch` lomusha ngaphandle kwekuphindze kuphakamise umsebentisi. Yibite kusuka ku-handler yeshintjo ye-`userChurch`.
 
-### Sidzingo Se-Service Worker
+### Sidzingo Se-Service Worker {#service-worker-requirement}
 
 I-`PushManager` yebrawuza icala kuxatjiswa kubhaliswa kuphela nangabe i-service worker ibhalisiwe ku-scope lehleliwe. Ema-PWA e-ChurchApps asebentisa i-[Serwist](https://serwist.dev/) (ti-app te-Next.js) nobe i-workbox ekwakheni i-service worker. Njengobe i-server nyalo ihlala izama i-push kanye nekuletsiwa nge-socket (bona [Nini Lapho I-Push Idubula Khona](#when-push-fires)), i-service worker iyipoyinti yekususa kuphindzaphindza (dedup point): i-handler yayo ye-`push` kufanele icindzetele `showNotification` nangabe i-client lecondzile/lebonakalako sekuvele ikumgomo we-deep-link wesatiso, kodvwa kufanele njalo ibuyekete i-badge ye-app kungakhatsaliseki kutsi i-banner iboniswe yini:
 

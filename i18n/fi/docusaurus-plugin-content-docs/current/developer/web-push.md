@@ -11,7 +11,7 @@ ChurchApps-verkkosovellukset toimittavat push-ilmoituksia W3C Web Push API:n kau
 
 </div>
 
-## Milloin push-ilmoitus lähetetään
+## Milloin push-ilmoitus lähetetään {#when-push-fires}
 
 Push on yksi porras yhdessä toimituskierroksessa `NotificationHelper.attemptDeliveryWithEscalation()`-funktiossa (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Ensin tarkistetaan sovelluksen sisäiset asetukset, sitten yritetään samalla kierroksella sekä socket-toimitusta että push-ilmoitusta (kumpikin oman asetustarkistuksensa takana), ja lopuksi lähetetään sähköposti. Vastaanottaja, joka on mykistänyt kategorian, ei koskaan saa push-ilmoitusta. Socket-toimituksen onnistuminen ei enää estä push-ilmoitusta. Kaikki ilmoitustyypit toimivat nyt samoin kuin yksityisviestit aina ovat toimineet, joten taustalla oleva asennettu PWA näyttää silti käyttöjärjestelmän ilmoituksen, vaikka socket-toimitus olisi jo onnistunut. Päällekkäiset ilmoitukset estää sen sijaan palvelutyöntekijä selaimessa (katso [Palvelutyöntekijän vaatimus](#service-worker-requirement)). Ajastetut muistutukset ja henkilökunnan käynnistämät yleislähetykset alkavat suoraan push-portaalta ja ohittavat socket-vaiheen kokonaan. Sähköposti pysyy ajastimen ohjaamana: se nostaa lukemattomat rivit omalla aikataulullaan eikä osana tätä kierrosta.
 
@@ -103,7 +103,7 @@ Kuluttajat saavat seuraavat toiminnot valmiina:
 - **Asennetun PWA:n tunnistus**: `isStandalone()` antaa isäntäsovelluksille mahdollisuuden rajata iOS-push-kehotukset tilanteeseen, jossa käyttäjä on asentanut PWA:n kotinäytölleen (iOS sallii push-ilmoitukset vain asennetuista PWA-sovelluksista).
 - **Uudelleenrekisteröinti seurakuntaa vaihdettaessa**: `refreshEnrollment()` lähettää olemassa olevan selaimen tilauksen uudelleen uudelle `userChurch`-tietueelle kysymättä käyttäjältä uudelleen. Kutsu sitä `userChurch`-muutoksen käsittelijästä.
 
-### Palvelutyöntekijän vaatimus
+### Palvelutyöntekijän vaatimus {#service-worker-requirement}
 
 Selaimen `PushManager` ratkaisee tilauksen vain, jos määritetyssä laajuudessa on rekisteröity palvelutyöntekijä. ChurchApps-PWA:t käyttävät palvelutyöntekijöiden generointiin [Serwistiä](https://serwist.dev/) (Next.js-sovellukset) tai workboxia. Koska palvelin yrittää nyt aina push-ilmoitusta socket-toimituksen rinnalla (katso [Milloin push-ilmoitus lähetetään](#when-push-fires)), palvelutyöntekijä on päällekkäisyyksien estokohta. Sen `push`-käsittelijän on estettävä `showNotification`, kun fokusoitu tai näkyvä asiakas on jo ilmoituksen syväreitin kohteessa. Sovelluksen merkin päivitys on kuitenkin aina tehtävä, riippumatta siitä, näytettiinkö banneri:
 

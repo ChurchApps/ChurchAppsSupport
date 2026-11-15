@@ -11,7 +11,7 @@ ChurchApps-webapps leverer push-notifikationer via W3C Web Push API, den samme m
 
 </div>
 
-## Hvornår push udløses
+## Hvornår push udløses {#when-push-fires}
 
 Push er ét trin i en enkelt leveringsproces inde i `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): først en præferencekontrol for notifikationer i appen, derefter socket-levering og push, som begge forsøges i samme proces (hver bag sin egen præferencekontrol), og til sidst e-mail. En modtager, der har slået kategorien fra, når aldrig frem til push. Hvis socket-leveringen lykkes, stopper push ikke længere. Alle notifikationstyper opfører sig nu, som private beskeder altid har gjort, så en installeret PWA, der kører i baggrunden, stadig viser en notifikation på operativsystemniveau, selv når en socket-levering allerede er landet. Dubletter af banner undertrykkes i stedet på klientsiden af service workeren (se [Krav til service worker](#service-worker-requirement)). Planlagte påmindelser og udsendelser startet af medarbejdere begynder direkte på push-trinnet og springer socket-trinnet over. E-mail er fortsat timerstyret og eskalerer ulæste rækker efter sin egen tidsplan og ikke som en del af denne proces.
 
@@ -103,7 +103,7 @@ Disse funktioner får forbrugerne gratis:
 - **Registrering af standalone-PWA**: `isStandalone()` lader værter styre iOS-push-forespørgsler, så de kun vises, når brugeren har installeret PWA'en på startskærmen (iOS tillader kun push fra installerede PWA'er).
 - **Genregistrering ved skift af kirke**: `refreshEnrollment()` sender det eksisterende browserabonnement igen for den nye `userChurch` uden at spørge brugeren igen. Kald den fra handleren for ændring af `userChurch`.
 
-### Krav til service worker
+### Krav til service worker {#service-worker-requirement}
 
 Browserens `PushManager` løser kun et abonnement, når der er registreret en service worker på den konfigurerede scope. ChurchApps-PWA'er bruger [Serwist](https://serwist.dev/) (Next.js-apps) eller workbox til at generere service workeren. Fordi serveren nu altid forsøger push sammen med socket-levering (se [Hvornår push udløses](#when-push-fires)), er service workeren dedup-punktet. Dens `push`-handler skal undertrykke `showNotification`, når en fokuseret eller synlig klient allerede står på notifikationens deep link-mål. Den skal dog altid opdatere app-badgen, uanset om banneret blev vist:
 

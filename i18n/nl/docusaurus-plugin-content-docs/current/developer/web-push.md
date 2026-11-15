@@ -11,7 +11,7 @@ ChurchApps-webapps leveren pushmeldingen via de W3C Web Push API. Dit is hetzelf
 
 </div>
 
-## Wanneer een push wordt verstuurd
+## Wanneer een push wordt verstuurd {#when-push-fires}
 
 Push is één laag in één afleverronde binnen `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`). Eerst is er een voorkeurscontrole voor in-app meldingen, daarna worden socketaflevering en push in dezelfde ronde geprobeerd (elk met een eigen voorkeurscontrole), en tot slot volgt e-mail. Een ontvanger die de categorie heeft gedempt, krijgt nooit een push. Het succesvol afleveren via de socket stopt push niet langer. Elk meldingstype werkt nu zoals privéberichten altijd al deden, zodat een geïnstalleerde PWA die op de achtergrond draait toch een melding op systeemniveau toont, ook als de socketaflevering al is gelukt. Dubbele banners worden in plaats daarvan aan de clientkant onderdrukt door de service worker (zie [Vereiste service worker](#service-worker-requirement)). Geplande herinneringen en uitzendingen die door medewerkers worden gestart, beginnen direct bij de pushlaag en slaan de socketstap volledig over. E-mail blijft tijdgestuurd: ongelezen rijen worden volgens een eigen schema opgeschaald, los van deze ronde.
 
@@ -103,7 +103,7 @@ Gedrag dat consumenten gratis krijgen:
 - **Detectie van zelfstandige PWA**: `isStandalone()` laat hosts iOS-pushvragen afschermen totdat de gebruiker de PWA op het startscherm heeft geïnstalleerd (iOS staat alleen push toe vanuit geïnstalleerde PWA's).
 - **Opnieuw aanmelden bij kerkwissel**: `refreshEnrollment()` stuurt het bestaande browserabonnement opnieuw naar de nieuwe `userChurch`, zonder de gebruiker opnieuw te vragen. Roep dit aan vanuit de handler voor wijzigingen van `userChurch`.
 
-### Vereiste service worker
+### Vereiste service worker {#service-worker-requirement}
 
 De `PushManager` van de browser levert alleen een abonnement op als er op het geconfigureerde bereik een service worker is geregistreerd. ChurchApps-PWA's gebruiken [Serwist](https://serwist.dev/) (Next.js-apps) of workbox om de service worker te genereren. Omdat de server nu altijd push probeert naast socketaflevering (zie [Wanneer een push wordt verstuurd](#when-push-fires)), is de service worker het punt waar dubbele meldingen worden voorkomen. De `push`-handler moet `showNotification` onderdrukken wanneer een actief of zichtbaar venster al op het deep-linkdoel van de melding staat. De app-badge moet echter altijd worden bijgewerkt, ongeacht of de banner is getoond:
 

@@ -11,7 +11,7 @@ ChurchApps web apps deliver push notifications via the W3C Web Push API — the 
 
 </div>
 
-## When push fires
+## When push fires {#when-push-fires}
 
 Push is one tier in a single delivery pass inside `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`): an in-app preference gate, then socket delivery and push attempted in the same pass (each behind its own preference gate), then email. A recipient who has muted the category never reaches push. Socket delivery succeeding no longer stops push — every notification type now behaves the way private messages always did, so an installed PWA sitting in the background still surfaces an OS-level notification even when a socket delivery already landed; duplicate banners are suppressed client-side by the service worker instead (see [Service worker requirement](#service-worker-requirement)). Scheduled reminders and staff-triggered broadcasts start directly at the push tier, skipping the socket step altogether. Email remains timer-driven, escalating unread rows on its own schedule rather than as part of this pass.
 
@@ -104,7 +104,7 @@ Behaviors that consumers get for free:
 - **Standalone-PWA detection** — `isStandalone()` lets hosts gate iOS push prompts behind "user has installed the PWA to their home screen" (iOS only allows push from installed PWAs).
 - **Re-enroll on church switch** — `refreshEnrollment()` reposts the existing browser subscription against the new `userChurch` without re-prompting the user. Call it from the `userChurch` change handler.
 
-### Service worker requirement
+### Service worker requirement {#service-worker-requirement}
 
 The browser's `PushManager` only resolves a subscription when a service worker is registered at the configured scope. ChurchApps PWAs use [Serwist](https://serwist.dev/) (Next.js apps) or workbox for service worker generation. Because the server now always attempts push alongside socket delivery (see [When push fires](#when-push-fires)), the service worker is the dedup point: its `push` handler must suppress `showNotification` when a focused/visible client is already on the notification's deep-link target, but should always update the app badge regardless of whether the banner was shown:
 
