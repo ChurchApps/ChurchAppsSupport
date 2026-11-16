@@ -33,13 +33,17 @@ By default, only open tasks are shown. Choose **Closed** above the list to see c
 
 1. On the **My Work** page, click **Add Task**. A **New Task** form opens.
 2. Optionally click the **Associate with** box and choose the person or group the task is about. Leave it blank for a plain to-do that is not about anyone, such as a reminder for yourself.
-3. Click the **Assign to** box. In the **Select a Person or Group** window, search on the **Person** tab, or switch to the **Group** tab and search for a group, then select the result.
+3. Click the **Assign to** box. In the **Select people or a group** window, search on the **Person** tab, or switch to the **Group** tab and search for a group, then select the result.
 4. Enter a **Title** for the task.
 5. Optionally pick a **Due date**.
 6. Add **Notes** with any details or instructions for the assignee.
 7. Click **Save**.
 
 The task will now appear in the task list and will be visible to the assignee on their dashboard and mobile app.
+
+:::tip
+Both **Associate with** and **Assign to** take several people. Keep picking people in the window, then click **Done**; they show as chips under the box. On the **Group** tab, check **Create a separate task for each member** to add everyone in a group. **Save** creates one task for each person, and when both boxes hold several people every assignee gets a task for each associated person (two assignees and three people makes six tasks). Editing a task you already created still changes one person at a time.
+:::
 
 ## Managing a Task
 
