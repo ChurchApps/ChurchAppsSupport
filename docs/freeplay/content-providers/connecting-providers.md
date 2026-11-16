@@ -53,11 +53,11 @@ A pulsing **Waiting for confirmation** indicator shows that FreePlay is checking
 
 ## Phone Sign-In (QR Code Only)
 
-**Dropbox**, **OneDrive**, and **Go Curriculum** use a slightly different QR-code sign-in, with no code to type:
+**Dropbox**, **OneDrive**, and **GO! Curriculum** use a slightly different QR-code sign-in, with no code to type:
 
 1. Select the provider card on the **Content Providers** screen
 2. FreePlay shows a **Connect to** screen with the provider's name and a QR code
-3. Scan the QR code with your phone and sign in to your account with that provider (your Microsoft account for OneDrive, or your gocurriculum.com account for Go Curriculum)
+3. Scan the QR code with your phone and sign in to your account with that provider (your Microsoft account for OneDrive, or your gocurriculum.com account for GO! Curriculum)
 4. Approve access. The TV connects automatically and displays **Connected!**
 
 The screen shows how many minutes you have left to finish signing in.

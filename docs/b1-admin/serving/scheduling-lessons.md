@@ -45,7 +45,7 @@ This is a one-time setup per ministry. You need to connect your Lessons.church a
 The Content Providers section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
 :::
 
-Lessons.church is not the only option. The same **Link New Provider** list also offers other curriculum and file sources, including SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive, and OneDrive. Link any of them the same way, and they appear as providers you can switch to when selecting a lesson.
+Lessons.church is not the only option. The same **Link New Provider** list also offers other curriculum and file sources, including SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive, and OneDrive. Link any of them the same way, and they appear as providers you can switch to when selecting a lesson.
 
 ## Step 2 — Schedule a Lesson
 
@@ -63,7 +63,7 @@ Once linked, you can schedule lessons directly from Plans.
    - Select the specific **Lesson**
    - Select the **Venue** — this is the age-group version of the lesson
 
-   Other providers organize content differently. For example, **Go Curriculum** starts with **Elementary** or **Preschool**, then a series, then the lesson itself — there is no venue to pick.
+   Other providers organize content differently. For example, **GO! Curriculum** starts with **Elementary** or **Preschool**, then a series, then the lesson itself — there is no venue to pick.
 8. Click **Associate Lesson** to confirm
 9. Choose your **copy option** for volunteers:
    - **Nothing** — fresh plan, no volunteers carried over
@@ -87,7 +87,7 @@ To schedule several lessons from the same series at once, click **Schedule Lesso
 4. Review the list — the starting lesson and the rest of its series, each with a date. Uncheck any you want to skip
 5. Click **Save** to create one plan per lesson
 
-For Lessons.church, the list also shows the **Venue** each lesson will use, matched by name to the venue you picked for the starting lesson (if a lesson doesn't have that venue, another is used and marked **substituted**). Providers whose lessons have no venue level, such as Go Curriculum, schedule the lessons directly and the Venue column is hidden.
+For Lessons.church, the list also shows the **Venue** each lesson will use, matched by name to the venue you picked for the starting lesson (if a lesson doesn't have that venue, another is used and marked **substituted**). Providers whose lessons have no venue level, such as GO! Curriculum, schedule the lessons directly and the Venue column is hidden.
 
 ## Keeping Only Part of Every Lesson
 
@@ -105,9 +105,9 @@ When a lesson doesn't fit the pattern (a part is missing, has no video or image 
 
 Plans that already have an order of service are not changed when they are scheduled. To change the saved trim, customize another plan and click **Replace the saved trim for Elementary** (again named for your plan type). To stop trimming, open the plan type's **Edit** dialog and click **Clear** next to **Lesson trim**.
 
-## Go Curriculum Leader Guides
+## GO! Curriculum Leader Guides
 
-When you schedule a Go Curriculum lesson, the plan's service order is built from the lesson's **Large Group** leader guide: each part of the guide becomes a section, and each step inside it is listed with its type (such as say, do, play, or note) and its text. Steps that play a video or other media carry that file with them, so it plays in order. (A lesson without a Large Group guide falls back to a plain list of its media files.)
+When you schedule a GO! Curriculum lesson, the plan's service order is built from the lesson's **Large Group** leader guide: each part of the guide becomes a section, and each step inside it is listed with its type (such as say, do, play, or note) and its text. Steps that play a video or other media carry that file with them, so it plays in order. (A lesson without a Large Group guide falls back to a plain list of its media files.)
 
 Each series that has small group material also starts with a **Small Group Guides** folder. Open it and pick a lesson to schedule that lesson's **Small Group** guide, named like "Lesson Name - Small Group" -- useful for a separate small group plan type. Small Group guides are mostly discussion steps and usually have no media. Because the folder is listed first, bulk scheduling a series from one of its lessons never picks it up.
 ## Apply a Year Plan
