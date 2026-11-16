@@ -94,6 +94,12 @@ Texting works best when numbers include the country code. If you send texts from
 
 Your region applies to dates and times across B1 Admin and on your B1.church website and member portal, including sermons, blog posts, group calendars, and serving plans, so members see dates in the same format your staff do.
 
+### Worship Day
+
+The Region section also has a **Worship day** setting for the day your main service meets. It is **Sunday** unless you change it. Churches that worship on Saturday (or another day) can choose that day, and the Dashboard follows it: the main heading reads "This Saturday", the side panels say "Serving Saturday" and "Last Saturday", the service date shown is the coming Saturday, and the live "in the room" count lights up on Saturday check-ins.
+
+When the worship day is not Sunday, the Region entry in the left-hand list also shows the day next to your region.
+
 ## Texting {#texting}
 
 Connect a texting provider to send SMS messages to a person or a whole group from B1 Admin. Texts are sent through your own account with the provider, so their pricing and limits apply.
