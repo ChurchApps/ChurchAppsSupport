@@ -3,7 +3,7 @@ title: "Paghiling ng mga Event at Kwarto"
 description: "Humiling ng booking ng kwarto o kagamitan para sa event mula sa B1.church member portal, subaybayan ang status nito sa My Requests, at kanselahin ito habang pending pa."
 ---
 
-# Paghiling ng mga Event at Kwarto
+# Paghiling ng mga Event at Kwarto {#requesting-events--rooms}
 
 <div class="article-intro">
 
@@ -22,6 +22,7 @@ Kung nagta-track ang iyong simbahan ng mga kwarto at resources na maaaring i-boo
 ## Pagsusumite ng Kahilingan {#submitting-a-request}
 
 1. Buksan ang pahinang **Me** sa member portal at i-tap ang **Request an Event** sa seksyong **Requests & registrations**.
+   Nasa itaas ng pahina ang *"Staff will approve each room and item."* maliban kung may sarili nang isinulat na tagubilin ang iyong simbahan -- tulad ng mga alituntunin sa booking o kung gaano kaagang dapat ipaalam -- kung saan ang mga iyon ang makikita mo (tingnan ang [Event Request Page](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Punan ang pangunahing detalye ng event: **Event title**, opsyonal na **Description**, at ang mga oras ng **Start** at **End**. I-on ang **All day** para mga petsa lamang ang piliin.
 3. Piliin ang mga **Rooms** at **Resources** na kailangan mo (maaari kang pumili ng marami sa bawat isa). Kapag may napili ka na, maaari kang maglagay ng **Setup (min before)** at **Teardown (min after)** na minuto, o i-on ang **Custom reservation window** at ikaw mismo ang magtakda ng **Reserve from** at **Reserve until**.
 4. Bantayan ang mga babala ng banggaan -- kung ang iyong oras ay nagko-overlap sa umiiral na booking ng isang kwarto o resource, makikita mo ang *"Some selections may already be booked at this time."* Maaari mong baguhin ang iyong oras o pumili ng iba.
@@ -35,11 +36,13 @@ Pagkatapos magsumite, lalabas ang buod na **Request submitted** na nagpapakita n
 
 ## Pagsubaybay sa Iyong Mga Kahilingan {#tracking-your-requests}
 
-Buksan ang **My Requests** mula sa pahinang Me. Hinahati ang mga kahilingan sa **Upcoming** at **Past** ayon sa petsa ng event (i-tap ang **All past** para makita ang mas luma). Ipinapakita ng bawat kahilingan ang pamagat ng event at kung kailan ito magsisimula, ang status ng bawat kwarto at resource na hiniling mo, at isang status pill:
+Buksan ang **My Requests** mula sa pahinang Me. Hinahati ang mga kahilingan sa **Upcoming** at **Past** ayon sa petsa ng event (i-tap ang **All past** para makita ang mas luma). Ipinapakita ng bawat kahilingan ang pamagat ng event at kung kailan ito magsisimula, ang paglalarawang inilagay mo, ang status ng bawat kwarto at resource na hiniling mo, at isang status pill:
 
 - **Pending** -- Naghihintay ng desisyon
 - **Approved** -- Kumpirmado ang iyong booking
 - **Rejected** -- Tinanggihan ang kahilingan
+
+Kung nagbigay ng dahilan ang staff nang tanggihan nila ang kahilingan, o isa sa mga kwarto o resource nito, lalabas ito sa pulang kulay sa ilalim ng kahilingan -- halimbawa, *Rejected: The gym is booked that weekend.* Kasama rin ang parehong dahilan sa abisong matatanggap mo tungkol sa desisyon.
 
 Habang pending pa ang kahilingan, maaari mo itong bawiin gamit ang **Cancel request**. Magtatanong ang kumpirmasyon ng "Cancel this request? This cannot be undone." -- i-tap ang **Cancel request** para kumpirmahin o **Keep** para iwan ito.
 

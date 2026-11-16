@@ -3,7 +3,7 @@ title: "Validation des plans et notifications"
 description: "Vérifiez les plans de service dans B1 Admin pour repérer les postes non pourvus, les conflits d'horaire et les bénévoles indisponibles, puis avisez toute votre équipe en un clic."
 ---
 
-# Validation des plans et notifications aux bénévoles
+# Validation des plans et notifications aux bénévoles {#plan-validation-volunteer-notifications}
 
 <div class="article-intro">
 
@@ -34,6 +34,16 @@ Si un bénévole est affecté à deux postes qui se chevauchent dans le temps au
 
 ### Dates de blocage {#blockout-dates}
 Les bénévoles peuvent indiquer les dates où ils ne sont pas disponibles dans l'application B1. Si une personne est affectée à un plan tombant pendant une de ces dates de blocage, le panneau de validation signale automatiquement le conflit afin que vous puissiez trouver un remplaçant.
+
+Les bénévoles bloqués sont aussi signalés pendant que vous planifiez. Sur la page de l'équipe de service et dans la boîte de dialogue **Affecter un poste**, leur nom affiche un badge rouge **Indisponible** ; survolez-le pour voir les dates (par exemple, *Bloqué : 22 nov. 2026 – 29 nov. 2026*). Dans la boîte de dialogue **Affecter un poste**, ils sont listés après tous les autres membres de l'équipe, et vous pouvez tout de même les affecter. Sur la grille de la [vue d'ensemble des plans](./plans-overview.md), une petite icône de calendrier rouge à côté d'un nom indique la même chose.
+
+Pour les bénévoles qui n'utilisent pas l'application, le personnel peut saisir des dates de blocage à leur place. Ouvrez l'équipe (depuis la liste **Équipes de service** du ministère) et faites défiler jusqu'à la carte **Dates de blocage** sous la liste des membres, qui affiche les blocages à venir de chaque membre de l'équipe avec **Membre de l'équipe**, **Du** et **Au** :
+
+1. Cliquez sur **Ajouter un blocage**.
+2. Choisissez le **Membre de l'équipe**, puis définissez les dates **Du** et **Au**.
+3. Cliquez sur **Enregistrer**.
+
+Pour en retirer un, cliquez sur l'icône de suppression de sa ligne et confirmez. L'ajout et la suppression de blocages exigent l'autorisation de modifier les plans ; toute autre personne qui ouvre l'équipe ne voit que la liste.
 
 ### Conflits entre plans {#cross-plan-conflicts}
 La validation vérifie aussi l'ensemble de vos plans à la fois. Si le même bénévole est affecté à deux plans différents qui se chevauchent dans le temps (par exemple, un service à 9 h et un service à 10 h qui se terminent tous deux à 10 h 30), B1 Admin signale cette personne comme ayant une double réservation entre plans.
@@ -74,7 +84,7 @@ Confirmez dans la boîte de dialogue pour publier.
 Si les paramètres du plan désignent un [flux de confirmation](./workflows.md#serving-assignment-confirmations), le panneau affiche *« Les nouvelles demandes utilisent le flux de confirmation. Les alertes de l'application restent activées. Les relances s'arrêtent lorsque chaque demande est acceptée ou refusée. »* Dans ce cas :
 
 - Le lien d'avis ne compte que les bénévoles qui n'ont pas encore été avisés et n'ont pas encore répondu.
-- Cliquer dessus envoie l'alerte habituelle dans l'application et crée une carte par demande sur le tableau du flux de travail. Le flux envoie ensuite les relances par courriel et par message texte et, si nécessaire, transmet la demande à quelqu'un pour un appel.
+- Cliquer dessus envoie l'alerte habituelle dans l'application et crée une carte par demande sur le tableau du flux de travail. Le flux envoie ensuite les relances par courriel et par texto et, si nécessaire, transmet la demande à quelqu'un pour un appel.
 - Le plan doit être publié (et non provisoire) et le flux de travail doit être actif. Sinon, le panneau affiche *« Les demandes n'ont pas pu être envoyées. Vérifiez que le flux de travail sélectionné est actif et que le plan est publié, puis réessayez. »*
 
 :::warning

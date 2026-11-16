@@ -4,7 +4,7 @@ sidebar_label: "Histórico de doações"
 description: "Veja suas doações anteriores, filtre por ano e imprima extratos de contribuição para o imposto de renda na página Ofertas do portal de membros do B1.church."
 ---
 
-# Histórico de doações
+# Histórico de doações {#donation-history}
 
 <div class="article-intro">
 
@@ -60,7 +60,7 @@ Mesmo que sua igreja não tenha configurado ofertas online, você ainda pode ver
 
 Toque em **Imprimir extrato** no topo da página Ofertas para abrir um extrato de contribuição para impressão, referente ao ano civil atual (ou ao ano mais recente liberado pela sua igreja), em uma nova aba. O botão aparece assim que você tiver pelo menos uma contribuição registrada. Para imprimir outro ano, abra **Todo o histórico**, escolha o ano e toque em **Imprimir extrato** ao lado do total.
 
-O extrato fica centralizado na página e começa com o logotipo da sua igreja (quando ela tiver enviado um), o ano, o período que cobre (de 1º de janeiro a 31 de dezembro) e a data de emissão. Abaixo, seu nome e dados de contato aparecem ao lado do nome e do endereço da sua igreja, seguidos de um resumo com o total das suas contribuições e um total por fundo, e de uma tabela com todas as doações, com data, método, fundo e valor. Na parte inferior, uma nota confirma que o extrato abrange todas as contribuições que a igreja recebeu de você naquele ano, seguida de um breve aviso de que a igreja é uma organização sem fins lucrativos registrada e de que nenhum bem ou serviço foi fornecido em troca das contribuições, além de benefícios religiosos intangíveis. A nota sobre ofertas da sua igreja, se houver, é impressa depois disso.
+O extrato fica centralizado na página e começa com o logotipo da sua igreja (quando ela tiver enviado um), o ano, o período que cobre (de 1º de janeiro a 31 de dezembro) e a data de emissão. Abaixo, seu nome e dados de contato aparecem ao lado do nome e do endereço da sua igreja, seguidos de um resumo com o total das suas contribuições e um total por fundo, e de uma tabela com todas as doações, com data, método, fundo e valor. Se alguma das suas doações daquele ano tiver um memorando (a observação digitada ao doar online, ou uma que sua igreja tenha adicionado), uma coluna **Memorando** mostra o texto ao lado do fundo. Na parte inferior, uma nota confirma que o extrato abrange todas as contribuições que a igreja recebeu de você naquele ano, seguida de um breve aviso de que a igreja é uma organização sem fins lucrativos registrada e de que nenhum bem ou serviço foi fornecido em troca das contribuições, além de benefícios religiosos intangíveis. A nota sobre ofertas da sua igreja, se houver, é impressa depois disso.
 
 :::tip
 Imprima seu extrato no começo do novo ano, antes de precisar dele para a declaração de imposto de renda, enquanto as doações do ano anterior ainda estão frescas no seu histórico.

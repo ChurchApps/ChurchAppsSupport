@@ -3,7 +3,7 @@ title: "考勤接口"
 description: "B1 Admin 和 B1 Checkin 中考勤 API 的参考文档：校区、礼拜、礼拜时间、场次、到访记录、签到规则和导出端点。"
 ---
 
-# 考勤接口
+# 考勤接口 {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ description: "B1 Admin 和 B1 Checkin 中考勤 API 的参考文档：校区、�
 
 **基础路径：** `/attendance`
 
-## 校区
+## 校区 {#campuses}
 
 基础路径：`/attendance/campuses`
 
@@ -26,7 +26,7 @@ description: "B1 Admin 和 B1 Checkin 中考勤 API 的参考文档：校区、�
 | POST | `/` | JWT | Services.Edit | 创建或更新校区 |
 | DELETE | `/:id` | JWT | Services.Edit | 删除校区 |
 
-## 服务
+## 服务 {#services}
 
 基础路径：`/attendance/services`
 
@@ -40,7 +40,7 @@ description: "B1 Admin 和 B1 Checkin 中考勤 API 的参考文档：校区、�
 | POST | `/` | JWT | Services.Edit | 创建或更新服务 |
 | DELETE | `/:id` | JWT | Services.Edit | 删除服务 |
 
-### 示例：按校区搜索服务
+### 示例：按校区搜索服务 {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Services.Edit | 创建或更新服务时间。可选的时间表字段：`dayOfWeek`（0 = 周日 … 6 = 周六）、`startTime` / `endTime`（`HH:mm`）、`checkinOpenMinutes`（开始之前）、`checkinCloseMinutes`（结束之后）。只有同时设置了 `dayOfWeek` 和 `startTime` 时，签到才会受时间限制 |
 | DELETE | `/:id` | JWT | Services.Edit | 删除服务时间 |
 
-## 小组服务时间
+## 小组服务时间 {#group-service-times}
 
 基础路径：`/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Services.Edit | 创建或更新小组服务时间关联 |
 | DELETE | `/:id` | JWT | Services.Edit | 删除小组服务时间关联 |
 
-## 考勤记录
+## 考勤记录 {#attendance-records}
 
 基础路径：`/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ Authorization: Bearer <token>
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | 对于分配给该服务时间的每个小组，返回该日期的 `{ groupId, sessionId, attendanceCount }`（`date` 格式为 `YYYY-MM-DD`；若小组没有会话，则 `sessionId` 为 null）。为 B1Admin 中的 **谁还需要考勤** 对话框提供数据 |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | 按筛选条件（校区、服务、服务时间、小组、日期范围）搜索考勤记录 |
 
-### 示例：考勤趋势
+### 示例：考勤趋势 {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 会话
+## 会话 {#sessions}
 
 基础路径：`/attendance/sessions`
 
@@ -130,7 +130,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Attendance.Edit 或小组负责人 | 创建或更新会话。小组负责人可保存其所负责小组的会话 |
 | DELETE | `/:id` | JWT | Attendance.Edit | 删除会话 |
 
-## 访问记录
+## 访问记录 {#visits}
 
 基础路径：`/attendance/visits`
 
@@ -141,11 +141,12 @@ Authorization: Bearer <token>
 | GET | `/` | JWT | Attendance.View | 列出所有访问记录。可使用 `?personId=` 筛选 |
 | GET | `/:id` | JWT | Attendance.View | 按 ID 获取访问记录 |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View 或 Attendance.Checkin | 加载某服务中指定人员的签到数据。返回包含最近一次记录日期的访问会话的访问记录 |
+| GET | `/active?peopleIds=` | JWT | Attendance.View 或 Attendance.Checkin | 列出指定人员今天尚未签出的访问记录，并填充访问会话和会话信息。`peopleIds`（逗号分隔）为必填项；未提供时返回 400。由 B1Checkin 的按姓名签出功能使用 |
 | POST | `/` | JWT | Attendance.Edit | 创建或更新访问记录 |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit 或 Attendance.Checkin | 提交签到数据。创建或更新访问记录及访问会话，并删除过期记录 |
 | DELETE | `/:id` | JWT | Attendance.Edit | 删除访问记录 |
 
-### 示例：签到流程
+### 示例：签到流程 {#example-check-in-flow}
 
 **第 1 步 -- 加载现有签到数据：**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 如果目标服务时间设有签到时间表且其时间窗口已关闭（按与 `checkinOpen` 相同的校区优先时区顺序计算），则不会保存任何数据，响应为 `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`。容量和志愿者比例超限同样返回 409（`error: "capacity"` 或 `"ratio"`）。某人今天已持有的会话（每次签到时重新提交）会跳过时间窗口检查，因此家庭成员可以在之前某个服务时间的窗口关闭后，仍然添加一个开放中的服务时间。
 
-## 访问会话
+## 访问会话 {#visit-sessions}
 
 基础路径：`/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Authorization: Bearer <token>
 | DELETE | `/:id` | JWT | Attendance.Edit | 按 ID 删除访问会话 |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit 或小组负责人 | 将某人从会话中移除。删除该访问会话，若其父访问记录已无剩余会话，则一并删除。小组负责人可移除其所负责小组的考勤 |
 
-### 示例：快速记录考勤
+### 示例：快速记录考勤 {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### 示例：下载会话考勤
+### 示例：下载会话考勤 {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 连续出勤
+## 连续出勤 {#streaks}
 
 基础路径：`/attendance/streaks`
 
@@ -269,7 +270,7 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/person/:personId` | JWT | — | 加载某人的考勤连续记录 |
 
-## 相关页面
+## 相关页面 {#related-pages}
 
 - [成员接口](./membership.md) —— 人员、小组、角色和教会管理
 - [身份验证与权限](./authentication.md) —— 登录流程、JWT、权限模型

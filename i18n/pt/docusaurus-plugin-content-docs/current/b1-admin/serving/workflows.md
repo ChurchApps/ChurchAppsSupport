@@ -3,7 +3,7 @@ title: "Fluxos de trabalho"
 description: "Crie quadros no estilo Kanban no B1 Admin para acompanhar pessoas em etapas de acompanhamento, com e-mails e SMS automáticos e gatilhos que adicionam pessoas automaticamente."
 ---
 
-# Fluxos de trabalho
+# Fluxos de trabalho {#workflows}
 
 <div class="article-intro">
 
@@ -55,7 +55,7 @@ Cada quadro de fluxo de trabalho é formado por **etapas**, exibidas como coluna
 Ao adicionar ou editar uma etapa, você pode configurar:
 
 - **Nome da etapa** -- o cabeçalho da coluna (por exemplo, "Ligação de boas-vindas" ou "Aguardando inscrição").
-- **Vence em (dias)** -- define automaticamente uma data de vencimento quando um card entra nesta etapa. Cards que passam da data de vencimento são sinalizados como **Atrasados**.
+- **Vence em (dias)** -- define automaticamente uma data de vencimento quando um card entra nesta etapa. Cards que passam da data de vencimento são sinalizados como **Atrasados**. Deixe em branco para não ter data de vencimento; você também pode apagar um número definido antes.
 - **Responsável padrão** -- a pessoa ou o grupo ao qual os novos cards desta etapa são atribuídos automaticamente. Quando o responsável padrão é uma pessoa, ela recebe uma notificação de que um card foi atribuído a ela.
 - **Ações automatizadas** -- coisas que o sistema faz por conta própria quando um card chega (veja abaixo).
 - **Roteamento** -- para onde o card vai quando sai da etapa (veja [Roteamento](#routing-cards-with-outcomes-and-conditions)).
@@ -158,7 +158,7 @@ Abra um fluxo de trabalho para ver o quadro. Cada card mostra o nome da pessoa, 
 
 No painel do card, você pode:
 
-- **Atribuir** o card a outra pessoa ou grupo.
+- **Atribuir** o card a outra pessoa ou grupo. A alteração é registrada na **Atividade** do card, por exemplo "Reatribuído de Jane Smith para John Doe".
 - **Adiar** o card por 1 dia, 3 dias ou 1 semana, para ocultar temporariamente a data de vencimento.
 - **Devolver** à etapa anterior ou **Pular** para a próxima etapa.
 - **Fixar atribuição** -- manter o mesmo responsável pelo card mesmo quando ele se move entre etapas. Por padrão, ao mover um card para uma nova etapa, ele é reatribuído ao responsável padrão dessa etapa; fixar mantém a pessoa atual responsável do início ao fim.
@@ -253,7 +253,7 @@ Um tipo especial de fluxo de trabalho pode acompanhar [solicitações de serviç
 
 Estes fluxos de trabalho usam uma ação **Enviar solicitação de serviço** em vez de **Enviar e-mail** e **Enviar SMS**. Escolha **E-mail** ou **Mensagem de texto** e, opcionalmente, escreva uma **Mensagem da solicitação**. A solicitação sempre inclui a função, o plano, a data do culto e um link para responder; você pode usar `{{planName}}`, `{{positionName}}` e `{{serviceDate}}` na sua mensagem. Deixe a mensagem vazia para usar a solicitação padrão. As preferências de notificação dos voluntários, o consentimento para SMS, o seu provedor de SMS e a aprovação de e-mail da sua igreja se aplicam, e qualquer tentativa ignorada ou bloqueada é registrada no card. **Enviar e-mail**, **Enviar SMS** e **Adicionar ao fluxo de trabalho** não estão disponíveis nestes quadros.
 
-A aba **Gatilhos** de um fluxo de confirmação explica como os cards são iniciados, em vez de oferecer gatilhos, e esses fluxos de trabalho não aparecem nas listas **Adicionar ao fluxo de trabalho** das pessoas.
+A aba **Gatilhos** de um fluxo de confirmação explica como os cards são iniciados, em vez de oferecer gatilhos, e esses fluxos de trabalho não aparecem nas listas **Adicionar ao fluxo de trabalho** das pessoas. O quadro não tem o botão **Adicionar card**, já que os cards só são criados a partir de solicitações de serviço de um plano.
 
 ### Como os cards são iniciados e fechados {#how-cards-are-started-and-closed}
 

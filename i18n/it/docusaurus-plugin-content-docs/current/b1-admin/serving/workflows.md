@@ -3,7 +3,7 @@ title: "Flussi di lavoro"
 description: "Crea bacheche in stile Kanban in B1 Admin per accompagnare le persone attraverso i passaggi di follow-up, con email e SMS automatici e attivatori che aggiungono le persone in automatico."
 ---
 
-# Flussi di lavoro
+# Flussi di lavoro {#workflows}
 
 <div class="article-intro">
 
@@ -24,11 +24,11 @@ I flussi di lavoro fanno avanzare le persone attraverso una serie di passaggi su
 
 ## Visualizzare i flussi di lavoro {#viewing-workflows}
 
-Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Servizio** e fai clic su **Flussi di lavoro**. I tuoi flussi di lavoro sono elencati in una tabella che mostra per ciascuno la **Categoria** e lo **Stato** (**Attivo** oppure **Inattivo**). Se usi le categorie, le schede sopra l'elenco ti permettono di filtrarlo per categoria. Fai clic su un flusso di lavoro qualsiasi per aprire la sua bacheca.
+Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra di B1 Admin), espandi **Servizio** e clicca su **Flussi di lavoro**. I tuoi flussi di lavoro sono elencati in una tabella che mostra per ciascuno la **Categoria** e lo **Stato** (**Attivo** oppure **Inattivo**). Se usi le categorie, le schede sopra l'elenco ti permettono di filtrarlo per categoria. Clicca su un flusso di lavoro qualsiasi per aprire la sua bacheca.
 
 ## Creare un flusso di lavoro {#creating-a-workflow}
 
-1. Nella pagina Flussi di lavoro, fai clic su **Aggiungi flusso di lavoro**.
+1. Nella pagina Flussi di lavoro, clicca su **Aggiungi flusso di lavoro**.
 2. Scegli come iniziare:
    - **Flusso di lavoro vuoto** -- parti da zero e costruisci i tuoi passaggi.
    - **Da un modello** -- parti da un insieme di passaggi già pronto che puoi modificare. I modelli integrati includono:
@@ -42,7 +42,7 @@ Apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (l
 4. Se vuoi, assegna una **Categoria** per raggruppare i flussi di lavoro correlati. Puoi creare una nuova categoria direttamente dal menu a discesa.
    Per un flusso di lavoro vuoto, scegli anche la sua **Finalità**: **Follow-up delle persone** (il tipo abituale) oppure **Conferma assegnazione di servizio**. La finalità non può essere modificata dopo la creazione del flusso di lavoro.
 5. Lascia il flusso di lavoro **Attivo** così che le persone possano esserci aggiunte, oppure impostalo su **Inattivo** per nasconderlo dagli elenchi di aggiunta ai flussi di lavoro.
-6. Fai clic su **Salva**.
+6. Clicca su **Salva**.
 
 :::tip
 Usa il pulsante **Duplica** nell'elenco dei Flussi di lavoro per copiare un flusso di lavoro esistente -- inclusi i suoi passaggi, le azioni automatiche e l'instradamento -- come punto di partenza per uno nuovo.
@@ -55,7 +55,7 @@ Ogni bacheca di un flusso di lavoro è composta da **passaggi**, mostrati come c
 Quando aggiungi o modifichi un passaggio, puoi configurare:
 
 - **Nome passaggio** -- l'intestazione della colonna (ad esempio, "Telefonata di benvenuto" oppure "In attesa di iscrizione").
-- **Scadenza tra (giorni)** -- imposta automaticamente una data di scadenza quando una scheda entra in questo passaggio. Le schede oltre la data di scadenza vengono contrassegnate come **In ritardo**.
+- **Scadenza tra (giorni)** -- imposta automaticamente una data di scadenza quando una scheda entra in questo passaggio. Le schede oltre la data di scadenza vengono contrassegnate come **In ritardo**. Lascia il campo vuoto per nessuna data di scadenza; puoi anche cancellare un numero impostato in precedenza.
 - **Assegnatario predefinito** -- la persona o il gruppo a cui vengono assegnate automaticamente le nuove schede di questo passaggio. Quando l'assegnatario predefinito è una persona, riceve una notifica che una scheda le è stata assegnata.
 - **Azioni automatiche** -- operazioni che il sistema esegue da solo quando una scheda arriva (vedi sotto).
 - **Instradamento** -- dove va la scheda quando lascia il passaggio (vedi [Instradamento](#routing-cards-with-outcomes-and-conditions)).
@@ -70,7 +70,7 @@ Salva prima un nuovo passaggio. Le azioni automatiche e l'instradamento sono col
 
 Ogni passaggio può contenere un elenco di **azioni automatiche** che vengono eseguite da sole nel momento in cui una scheda **entra** nel passaggio -- prima che qualcuno la tocchi. È così che un passaggio sollecita un volontario *e* si occupa del lavoro di routine intorno al follow-up.
 
-Nell'editor del passaggio, apri **Azioni automatiche**, fai clic su **Aggiungi azione**, scegli un tipo e compila le sue impostazioni. Aggiungine quante ne servono: vengono eseguite **dall'alto verso il basso, in ordine**. Fai clic su **Salva** nel passaggio per salvare insieme il passaggio e tutte le sue azioni. Rimuovere un'azione con la sua icona del cestino ha effetto immediato.
+Nell'editor del passaggio, apri **Azioni automatiche**, clicca su **Aggiungi azione**, scegli un tipo e compila le sue impostazioni. Aggiungine quante ne servono: vengono eseguite **dall'alto verso il basso, in ordine**. Clicca su **Salva** nel passaggio per salvare insieme il passaggio e tutte le sue azioni. Rimuovere un'azione con la sua icona del cestino ha effetto immediato.
 
 | Azione | Cosa fa |
 |---|---|
@@ -105,7 +105,7 @@ Le email dei flussi di lavoro vengono inviate solo dopo che la tua chiesa è sta
 
 ### Registrare la presenza {#recording-attendance}
 
-Scegli **Registra presenza** e fai clic su **Scegli gruppo** per selezionare il gruppo di cui registrare la presenza. Quando l'azione viene eseguita, la persona viene segnata come presente all'orario di servizio in corso di quel gruppo -- esattamente come se avesse fatto il check-in. È utile insieme a un attivatore che aggiunge le persone al flusso di lavoro man mano che arrivano, così vengono conteggiate senza un check-in separato.
+Scegli **Registra presenza** e clicca su **Scegli gruppo** per selezionare il gruppo di cui registrare la presenza. Quando l'azione viene eseguita, la persona viene segnata come presente all'orario di servizio in corso di quel gruppo -- esattamente come se avesse fatto il check-in. È utile insieme a un attivatore che aggiunge le persone al flusso di lavoro man mano che arrivano, così vengono conteggiate senza un check-in separato.
 
 - La presenza viene misurata nel momento in cui la scheda è stata **creata**, quindi un'**Attesa** precedente nel flusso di lavoro non la sposta oltre la durata del servizio.
 - Contano solo gli orari di servizio con un giorno e un orario di inizio. Se in quel momento nessun orario di servizio del gruppo è in corso, non viene registrato nulla e lo storico della scheda riporta **Nessun servizio programmato in corso -- presenza non registrata**.
@@ -113,11 +113,11 @@ Scegli **Registra presenza** e fai clic su **Scegli gruppo** per selezionare il 
 
 ### Notificare una persona {#notifying-a-person}
 
-Scegli **Notifica persona**, fai clic su **Scegli persona** e, se vuoi, digita un **Messaggio**. Quando una scheda entra nel passaggio, quella persona riceve un'email e una notifica di B1 con il nome della persona nella scheda, i nomi del flusso di lavoro e del passaggio, il tuo messaggio e un collegamento per aprire la scheda. Usala per avvisare con anticipo un membro dello staff o un responsabile del ministero -- ad esempio, *"Avvisa il pastore quando qualcuno raggiunge il passaggio Colloquio per l'iscrizione."* Lo storico della scheda registra **Notificato** seguito dal nome della persona.
+Scegli **Notifica persona**, clicca su **Scegli persona** e, se vuoi, digita un **Messaggio**. Quando una scheda entra nel passaggio, quella persona riceve un'email e una notifica di B1 con il nome della persona nella scheda, i nomi del flusso di lavoro e del passaggio, il tuo messaggio e un collegamento per aprire la scheda. Usala per avvisare con anticipo un membro dello staff o un responsabile del ministero -- ad esempio, *"Avvisa il pastore quando qualcuno raggiunge il passaggio Colloquio per l'iscrizione."* Lo storico della scheda registra **Notificato** seguito dal nome della persona.
 
 ### Inviare un SMS {#sending-a-text}
 
-Scegli **Invia SMS** e digita il **Messaggio di testo** (fino a 1.600 caratteri). Se la tua chiesa ha salvato dei [modelli di testo](../settings/email-templates.md), sopra la casella compare un elenco **Inizia da un modello**. Scegliendone uno, il testo del modello viene copiato nel messaggio, che puoi comunque modificare. Il passaggio mantiene una propria copia, quindi le modifiche successive al modello non cambiano il passaggio. Quando una scheda entra nel passaggio, la persona riceve quel messaggio sul cellulare. Per personalizzare il messaggio, fai clic su un'etichetta sotto la casella del messaggio -- **Nome**, **Cognome**, **Nome visualizzato** oppure **Nome della chiesa** -- per inserire `{{firstName}}`, `{{lastName}}`, `{{displayName}}` o `{{churchName}}` nel punto del cursore. Ognuno viene compilato con i dati della persona quando l'SMS viene inviato. Le etichette **Importo**, **Data donazione**, **Fondo** e **Ricevuta** inseriscono i campi della donazione, che vengono compilati solo quando un attivatore **Donazione · Creata** ha avviato il flusso di lavoro. Ad esempio: `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
+Scegli **Invia SMS** e digita il **Messaggio di testo** (fino a 1.600 caratteri). Se la tua chiesa ha salvato dei [modelli di testo](../settings/email-templates.md), sopra la casella compare un elenco **Inizia da un modello**. Scegliendone uno, il testo del modello viene copiato nel messaggio, che puoi comunque modificare. Il passaggio mantiene una propria copia, quindi le modifiche successive al modello non cambiano il passaggio. Quando una scheda entra nel passaggio, la persona riceve quel messaggio sul cellulare. Per personalizzare il messaggio, clicca su un'etichetta sotto la casella del messaggio -- **Nome**, **Cognome**, **Nome visualizzato** oppure **Nome della chiesa** -- per inserire `{{firstName}}`, `{{lastName}}`, `{{displayName}}` o `{{churchName}}` nel punto del cursore. Ognuno viene compilato con i dati della persona quando l'SMS viene inviato. Le etichette **Importo**, **Data donazione**, **Fondo** e **Ricevuta** inseriscono i campi della donazione, che vengono compilati solo quando un attivatore **Donazione · Creata** ha avviato il flusso di lavoro. Ad esempio: `Grazie {{firstName}} per il tuo dono di {{amount}} a {{fund}}!`
 
 - Se la persona non ha un cellulare registrato, non viene inviato alcun SMS e lo storico della scheda registra **SMS saltato: nessun cellulare**.
 - Se la persona ha annullato l'iscrizione, non viene inviato alcun SMS e lo storico della scheda registra **SMS saltato: disiscritto**.
@@ -142,7 +142,7 @@ Un'**Attesa** all'inizio di un passaggio è un modo semplice per "trattenere" un
 
 Ci sono diversi modi per mettere le persone su una bacheca:
 
-- **Dalla bacheca** -- Fai clic su **Aggiungi scheda** in fondo a una colonna di passaggio e scegli una persona. Puoi anche scegliere un gruppo, e ogni membro di quel gruppo viene aggiunto come scheda.
+- **Dalla bacheca** -- Clicca su **Aggiungi scheda** in fondo a una colonna di passaggio e scegli una persona. Puoi anche scegliere un gruppo, e ogni membro di quel gruppo viene aggiunto come scheda.
 - **Dalla scheda di una persona** -- Usa **Aggiungi a flusso di lavoro** nella pagina di una persona per inserirla in un flusso di lavoro.
 - **Dalla ricerca Persone** -- Seleziona più persone e usa l'azione multipla **Aggiungi a flusso di lavoro** per aggiungerle tutte insieme.
 - **Automaticamente con un attivatore** -- Aggiungi persone quando succede qualcosa, come l'invio di un modulo o un primo dono (vedi [Attivatori](#triggers) più sotto).
@@ -158,7 +158,7 @@ Apri un flusso di lavoro per vedere la sua bacheca. Ogni scheda mostra il nome d
 
 Dal pannello della scheda puoi:
 
-- **Assegnare** la scheda a un'altra persona o a un altro gruppo.
+- **Assegnare** la scheda a un'altra persona o a un altro gruppo. La modifica viene registrata nell'**Attività** della scheda, ad esempio "Riassegnata da Jane Smith a John Doe".
 - **Posticipare** la scheda di 1 giorno, 3 giorni o 1 settimana per nasconderne temporaneamente la scadenza.
 - **Rimandare indietro** la scheda al passaggio precedente oppure **Saltare** al passaggio successivo.
 - **Blocca assegnazione** -- mantiene lo stesso responsabile sulla scheda anche quando si sposta tra i passaggi. Per impostazione predefinita, spostare una scheda in un nuovo passaggio la riassegna all'assegnatario predefinito di quel passaggio; il blocco mantiene la persona attuale responsabile per tutto il percorso.
@@ -166,7 +166,7 @@ Dal pannello della scheda puoi:
 - **Rimuovi scheda** -- toglie una scheda dalla bacheca senza completarla, ad esempio quando qualcuno è stato aggiunto per errore. Dopo la conferma, la scheda viene chiusa e rimossa dall'elenco di tutti. Non viene eseguito alcun esito, percorso o azione del passaggio, e lo storico viene conservato con una voce **Rimossa**. Per una scheda di [conferma di un'assegnazione di servizio](#serving-assignment-confirmations), rimuoverla chiude la richiesta nello stesso modo.
 - **Aggiungere note** e rivedere l'**Attività** della scheda -- un registro delle azioni automatiche eseguite (email inviate, attese e così via), ciascuna con la data e l'ora in cui è avvenuta.
 
-Per una scheda relativa a una persona, il pannello mostra anche il cellulare e l'email di quella persona come collegamenti su cui puoi fare clic per chiamarla o scriverle, insieme a un collegamento **Visualizza profilo** se hai l'autorizzazione per vedere le persone. La persona a cui è assegnata la scheda vede il telefono e l'email anche senza accesso alle Persone.
+Per una scheda relativa a una persona, il pannello mostra anche il cellulare e l'email di quella persona come collegamenti su cui puoi cliccare per chiamarla o scriverle, insieme a un collegamento **Visualizza profilo** se hai l'autorizzazione per vedere le persone. La persona a cui è assegnata la scheda vede il telefono e l'email anche senza accesso alle Persone.
 
 Le note vengono salvate con la scheda. Chiunque possa aprire la scheda -- compresa la persona o il gruppo a cui è assegnata -- può leggere le note e aggiungerne di proprie. Chi non può aprire la scheda non ne vede le note.
 
@@ -212,7 +212,7 @@ Combinalo con **Attesa**: *Invia email di benvenuto → Attendi 3 giorni → ava
 
 ## Attivatori {#triggers}
 
-Gli attivatori aggiungono automaticamente le persone a un flusso di lavoro quando succede qualcosa, così non devi mai aggiungere schede a mano. Su una bacheca di un flusso di lavoro, fai clic sulla scheda **Attivatori**, poi su **Aggiungi attivatore**. Ci sono due tipi:
+Gli attivatori aggiungono automaticamente le persone a un flusso di lavoro quando succede qualcosa, così non devi mai aggiungere schede a mano. Su una bacheca di un flusso di lavoro, clicca sulla scheda **Attivatori**, poi su **Aggiungi attivatore**. Ci sono due tipi:
 
 ### Attivatori di evento {#event-triggers}
 
@@ -244,7 +244,7 @@ Un tipo speciale di flusso di lavoro può seguire le [richieste di servizio](./p
 
 ### Come configurarne uno {#setting-one-up}
 
-1. Nella pagina Flussi di lavoro, fai clic su **Aggiungi flusso di lavoro** e scegli il modello **Conferma assegnazione di servizio**. (Oppure parti da un **Flusso di lavoro vuoto** e imposta la sua **Finalità** su **Conferma assegnazione di servizio**.) Creare dal modello richiede l'autorizzazione per inviare SMS, perché include un passaggio di SMS.
+1. Nella pagina Flussi di lavoro, clicca su **Aggiungi flusso di lavoro** e scegli il modello **Conferma assegnazione di servizio**. (Oppure parti da un **Flusso di lavoro vuoto** e imposta la sua **Finalità** su **Conferma assegnazione di servizio**.) Creare dal modello richiede l'autorizzazione per inviare SMS, perché include un passaggio di SMS.
 2. Controlla i passaggi. Il modello inizia con:
    - **Invia la richiesta e attendi risposta** -- invia la richiesta di servizio via email e via SMS, attende 2 giorni, invia un'email di promemoria, attende ancora 1 giorno, poi sposta automaticamente la scheda avanti.
    - **Telefona al volontario per la richiesta senza risposta** -- un passaggio in cui una persona telefona al volontario, con scadenza tra 1 giorno. Imposta un **Assegnatario predefinito** su questo passaggio. Se non ne ha uno, la scheda va al responsabile del ministero, oppure al team del ministero se non ce n'è uno.
@@ -253,14 +253,14 @@ Un tipo speciale di flusso di lavoro può seguire le [richieste di servizio](./p
 
 Questi flussi di lavoro usano un'azione **Invia richiesta di servizio** al posto di **Invia email** e **Invia SMS**. Scegli **Email** oppure **Messaggio di testo** e, se vuoi, scrivi un **Messaggio di richiesta**. La richiesta include sempre il ruolo, il piano, la data del servizio e un collegamento per rispondere; nel tuo messaggio puoi usare `{{planName}}`, `{{positionName}}` e `{{serviceDate}}`. Lascia vuoto il messaggio per usare la richiesta predefinita. Valgono le preferenze di notifica dei volontari, il loro consenso agli SMS, il tuo fornitore di SMS e l'approvazione della tua chiesa per le email, e ogni tentativo saltato o bloccato viene registrato sulla scheda. Le azioni **Invia email**, **Invia SMS** e **Aggiungi a flusso di lavoro** non sono disponibili su queste bacheche.
 
-La scheda **Attivatori** di un flusso di lavoro di conferma spiega come vengono avviate le schede invece di offrire attivatori, e questi flussi di lavoro non compaiono negli elenchi **Aggiungi a flusso di lavoro** delle persone.
+La scheda **Attivatori** di un flusso di lavoro di conferma spiega come vengono avviate le schede invece di offrire attivatori, e questi flussi di lavoro non compaiono negli elenchi **Aggiungi a flusso di lavoro** delle persone. La bacheca non ha il pulsante **Aggiungi scheda**, perché le schede arrivano solo dalle richieste di servizio di un piano.
 
 ### Come vengono avviate e chiuse le schede {#how-cards-are-started-and-closed}
 
 - Le schede partono quando **notifichi** i volontari di un piano pubblicato (vedi [Notificare i volontari](./plan-validation.md#notifying-volunteers)). Ogni nuova assegnazione senza risposta ottiene una scheda. Salvare, pubblicare, copiare o riempire automaticamente un piano non contatta nessuno da solo, e i piani in bozza non inviano nulla.
 - I volontari ricevono comunque il consueto avviso nell'app. Il follow-up via email e SMS arriva dal flusso di lavoro.
 - Quando il volontario **accetta o rifiuta**, la sua scheda si chiude automaticamente, insieme a eventuali attività di follow-up collegate.
-- Il pannello della scheda mostra la posizione, la data del servizio e un collegamento al piano. Invece di **Completa**, il pulsante riporta **Registra follow-up effettuato**. Facendo clic, si registra che qualcuno ha fatto il follow-up, ma la scheda resta aperta e assegnata (mostrata come **In attesa di risposta**) finché il volontario non risponde o non scade il termine di risposta.
+- Il pannello della scheda mostra la posizione, la data del servizio e un collegamento al piano. Invece di **Completa**, il pulsante riporta **Registra follow-up effettuato**. Cliccando, si registra che qualcuno ha fatto il follow-up, ma la scheda resta aperta e assegnata (mostrata come **In attesa di risposta**) finché il volontario non risponde o non scade il termine di risposta.
 - Il termine di risposta è la fine dell'ultimo orario di servizio in cui il team della posizione presta servizio. Se il piano non ha orari corrispondenti, è la fine della giornata di servizio. Se nessuno ha risposto entro quel momento, la scheda si chiude con **Termine di risposta scaduto** e un'attività **Verifica richiesta di servizio senza risposta** va al responsabile attuale della scheda o al responsabile del ministero, così qualcuno può decidere come coprire il posto. L'assegnazione resta **Non confermata**.
 - Rimuovere l'assegnazione, cambiarne la persona, la posizione o la data del piano, riportare il piano in bozza oppure passare il piano a un altro flusso di lavoro di conferma chiude la scheda. Una scheda chiusa non viene mai riaperta da un altro **Notifica**; per inviare una nuova richiesta, aggiungi una nuova assegnazione.
 
@@ -270,11 +270,11 @@ Per le richieste inviate tramite un flusso di lavoro di conferma, i [promemoria 
 
 ## Le mie schede {#my-cards}
 
-I volontari e lo staff non devono cercare tra tutte le bacheche per trovare il proprio lavoro. L'elenco **Le mie schede** nella pagina **Il mio lavoro** mostra ogni scheda assegnata all'utente corrente in tutti i flussi di lavoro. Per arrivarci, fai clic su **Le mie schede** in cima alla pagina Flussi di lavoro, oppure apri **Servizio > Il mio lavoro** nel menu di salto. Facendo clic su una scheda si apre il suo pannello dei dettagli direttamente nella pagina Il mio lavoro, dove puoi lavorarla o rimuoverla senza lasciare la pagina. Se puoi visualizzare i flussi di lavoro, il pannello include anche un collegamento **Apri bacheca del flusso di lavoro** alla bacheca a cui appartiene la scheda.
+I volontari e lo staff non devono cercare tra tutte le bacheche per trovare il proprio lavoro. L'elenco **Le mie schede** nella pagina **Il mio lavoro** mostra ogni scheda assegnata all'utente corrente in tutti i flussi di lavoro. Per arrivarci, clicca su **Le mie schede** in cima alla pagina Flussi di lavoro, oppure apri **Servizio > Il mio lavoro** nel menu di salto. Cliccando su una scheda si apre il suo pannello dei dettagli direttamente nella pagina Il mio lavoro, dove puoi lavorarla o rimuoverla senza lasciare la pagina. Se puoi visualizzare i flussi di lavoro, il pannello include anche un collegamento **Apri bacheca del flusso di lavoro** alla bacheca a cui appartiene la scheda.
 
 ## Report {#reports}
 
-Apri un flusso di lavoro e fai clic su **Report** per vedere le statistiche di quel flusso di lavoro:
+Apri un flusso di lavoro e clicca su **Report** per vedere le statistiche di quel flusso di lavoro:
 
 - **In ritardo** -- il numero di schede oltre la data di scadenza.
 - **Schede per passaggio** -- quante schede si trovano attualmente su ciascun passaggio, mostrate come grafico a colonne.

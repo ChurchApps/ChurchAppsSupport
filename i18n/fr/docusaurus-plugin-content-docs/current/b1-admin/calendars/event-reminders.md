@@ -3,7 +3,7 @@ title: "Rappels d'événements"
 description: "Configurez les rappels d'événements dans B1 Admin par notification push, courriel et texto, en choisissant le calendrier, les destinataires et un message personnalisé pour que les personnes soient avisées à temps."
 ---
 
-# Rappels d'événements
+# Rappels d'événements {#event-reminders}
 
 <div class="article-intro">
 
@@ -16,7 +16,7 @@ Les rappels d'événements avisent automatiquement les bonnes personnes avant un
 
 - Créez l'événement pour lequel vous voulez envoyer des rappels (voir [Création de calendriers](./creating-calendars.md))
 - Pour joindre les participants inscrits, [activez l'inscription](./creating-calendars.md) sur l'événement
-- Pour joindre un groupe entier, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups.md) comptant des membres
+- Pour joindre tout un groupe, assurez-vous que l'événement appartient à un [groupe](../groups/creating-groups.md) comptant des membres
 
 </div>
 
@@ -25,28 +25,34 @@ Les rappels d'événements avisent automatiquement les bonnes personnes avant un
 Vous configurez les rappels dans la section **Rappels** de l'événement. Développez-la pour voir les paramètres.
 
 - Lorsque vous **créez un nouvel événement**, développez la section **Rappels** au bas de l'éditeur **Nouvel événement** ; le rappel est enregistré lorsque vous enregistrez l'événement.
-- Pour un **événement existant**, utilisez la section **Rappels** à l'un de ces endroits, puis cliquez sur le bouton **Enregistrer** à l'intérieur de la section : la boîte de dialogue qui s'ouvre lorsque vous cliquez sur l'événement dans un calendrier, l'éditeur **Modifier l'événement**, ou la page d'inscription de l'événement (**Calendriers > Inscriptions**, puis l'événement).
+- Pour un **événement existant**, utilisez la section **Rappels** à l'un de ces endroits, et cliquez sur le bouton **Enregistrer** à l'intérieur de la section : la boîte de dialogue qui s'ouvre lorsque vous cliquez sur l'événement dans un calendrier, l'éditeur **Modifier l'événement**, ou la page d'inscription de l'événement (**Calendriers > Inscriptions**, puis l'événement).
 
 1. Activez **Activer les rappels**.
 2. Choisissez **Quand (jusqu'à 3)** pour envoyer : **7 jours avant**, **3 jours avant**, **1 jour avant** et **Le jour même**. Une fois trois choix faits, les autres sont désactivés jusqu'à ce que vous en décochiez un.
 3. Définissez l'**Heure d'envoi** du rappel (par défaut **9 h 00**, dans le [fuseau horaire](../settings/church-settings.md#time-zone) de votre église).
 4. Choisissez **Destinataires** -- qui doit être rappelé (voir [Qui reçoit les rappels](#who-gets-reminded) ci-dessous).
 5. Ajoutez éventuellement un **Message (facultatif)**. Laissez-le vide pour utiliser la formulation par défaut, ou rédigez le vôtre -- vous pouvez inclure `{{eventTitle}}`, qui sera remplacé par le nom de l'événement.
-6. Choisissez les **Canaux** : **Notification push** et **Courriel** (tous deux activés par défaut), et, si votre église a un [fournisseur de messagerie texte](../settings/church-settings.md#texting) connecté, **Texto**.
+6. Choisissez les **Canaux** : **Notification push** et **Courriel** (tous deux activés par défaut) et, si votre église a un [fournisseur de messagerie texte](../settings/church-settings.md#texting) connecté, **Texto**.
 7. Cliquez sur **Enregistrer** (ou enregistrez le nouvel événement).
 
 Pour arrêter les rappels d'un événement, désactivez **Activer les rappels** et enregistrez.
 
-Pour un événement déjà enregistré, un **aperçu en direct** indique approximativement combien de personnes seront rappelées, combien de participants ne peuvent pas être joints, et les prochaines dates d'envoi prévues à mesure que vous modifiez les paramètres -- afin que vous puissiez vérifier que le rappel est correct avant de l'enregistrer. Un événement tout juste créé n'a pas d'aperçu tant qu'il n'a pas été enregistré.
+### Envoyer un rappel maintenant {#sending-a-reminder-now}
+
+Pour un événement déjà enregistré, cliquez sur **Envoyer maintenant** à côté de **Enregistrer** pour envoyer le rappel tout de suite -- par exemple après un changement de dernière minute. Il utilise les paramètres enregistrés et s'adresse aux mêmes personnes, pour la prochaine date à venir de l'événement. B1 indique ensuite le nombre de personnes atteintes, par exemple **Envoyé à 12 personnes**. Vos rappels programmés sont toujours envoyés comme prévu.
+
+**Envoyer maintenant** n'est disponible que lorsque les rappels sont activés et enregistrés ; enregistrez donc d'abord vos modifications. Si le rappel comprend le **Texto**, vous devez aussi avoir l'autorisation d'envoyer des textos.
+
+Pour un événement déjà enregistré, un **aperçu en direct** indique approximativement combien de personnes recevront le rappel, combien de participants ne peuvent pas être joints, et les prochaines dates d'envoi programmées à mesure que vous modifiez les paramètres -- afin que vous puissiez vérifier que le rappel est correct avant de l'enregistrer. Un événement tout juste créé n'a pas d'aperçu tant qu'il n'a pas été enregistré.
 
 ## Qui reçoit les rappels {#who-gets-reminded}
 
 Le paramètre **Destinataires** détermine à qui le rappel est envoyé :
 
 - **Inscrits seulement** -- Toutes les personnes inscrites à l'événement et liées à une fiche personne. C'est la valeur par défaut lorsque l'inscription est activée pour l'événement, afin qu'un rappel pour un petit événement avec inscriptions ne soit jamais envoyé accidentellement à un groupe entier.
-- **Responsables / inscrits seulement** -- Un rappel par inscription (la personne qui s'est inscrite), plutôt qu'à chaque membre de la famille figurant sur l'inscription.
-- **Membres du groupe** -- Toutes les personnes du groupe de l'événement. C'est la valeur par défaut lorsque l'événement n'utilise pas les inscriptions.
-- **Automatique** -- Utilise les inscrits lorsque l'inscription est activée, sinon le groupe.
+- **Chefs de foyer / inscrits seulement** -- Un rappel par inscription (la personne qui s'est inscrite), plutôt qu'à chaque membre de la famille figurant sur l'inscription.
+- **Membres du groupe** -- Toutes les personnes du groupe de l'événement. C'est la valeur par défaut lorsque l'événement n'utilise pas l'inscription.
+- **Auto** -- Utilise les inscrits lorsque l'inscription est activée, sinon le groupe.
 
 :::info
 Les invités ajoutés seulement par leur nom (sans fiche personne liée) ne peuvent pas recevoir de rappel, car il n'existe ni compte, ni appareil, ni courriel vers lequel l'envoyer. L'aperçu vous indique combien de participants entrent dans cette catégorie afin qu'il n'y ait pas de surprises. Les membres qui ont refusé les communications sont aussi ignorés.

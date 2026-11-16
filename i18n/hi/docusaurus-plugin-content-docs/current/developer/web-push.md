@@ -3,7 +3,7 @@ title: "वेब Push सूचनाएँ"
 description: "VAPID कुंजियाँ, WebPushHelper क्लाइंट और सर्विस वर्कर हैंडलिंग सेट करें, ताकि B1.church और B1 Admin सदस्यों को ब्राउज़र पुश सूचनाएँ भेज सकें।"
 ---
 
-# वेब Push सूचनाएँ
+# वेब Push सूचनाएँ {#web-push-notifications}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ ChurchApps वेब ऐप्स W3C Web Push API के माध्यम स
 
 ## Push कब चलता है {#when-push-fires}
 
-Push `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`) में एक एकल डिलीवरी पास के भीतर एक स्तर है: पहले एक इन-ऐप प्राथमिकता गेट, फिर socket डिलीवरी और push एक ही पास में प्रयास किए जाते हैं (हर एक अपने प्राथमिकता गेट के पीछे), फिर ईमेल। जिस प्राप्तकर्ता ने श्रेणी को म्यूट किया है, वह कभी push तक नहीं पहुँचता। Socket डिलीवरी सफल होने पर भी अब push नहीं रुकता -- हर सूचना प्रकार अब वैसे ही व्यवहार करता है जैसे निजी संदेश हमेशा करते थे, इसलिए पृष्ठभूमि में बैठा इंस्टॉल किया हुआ PWA भी OS-स्तरीय सूचना दिखाता है, भले ही socket डिलीवरी पहले ही पहुँच गई हो; डुप्लिकेट बैनर इसके बजाय service worker द्वारा क्लाइंट-साइड पर दबाए जाते हैं (देखें [Service worker आवश्यकता](#service-worker-requirement))। निर्धारित रिमाइंडर और staff द्वारा ट्रिगर किए गए प्रसारण सीधे push स्तर से शुरू होते हैं, socket चरण पूरी तरह छोड़ते हुए। ईमेल अब भी टाइमर-चालित है, अपनी अलग शेड्यूल पर अपठित पंक्तियों को आगे बढ़ाता है, इस पास के हिस्से के रूप में नहीं।
+Push `NotificationHelper.attemptDeliveryWithEscalation()` (`Api/src/modules/messaging/helpers/NotificationHelper.ts`) में एक एकल डिलीवरी पास के भीतर एक स्तर है: पहले एक इन-ऐप प्राथमिकता गेट, फिर socket डिलीवरी और push एक ही पास में प्रयास किए जाते हैं (हर एक अपने प्राथमिकता गेट के पीछे), फिर ईमेल। जिस प्राप्तकर्ता ने श्रेणी को म्यूट किया है, वह कभी push तक नहीं पहुँचता। Socket डिलीवरी सफल होने पर भी अब push नहीं रुकता -- हर सूचना प्रकार अब वैसे ही व्यवहार करता है जैसे निजी संदेश हमेशा करते थे, इसलिए पृष्ठभूमि में बैठा इंस्टॉल किया हुआ PWA भी OS-स्तरीय सूचना दिखाता है, भले ही socket डिलीवरी पहले ही पहुँच गई हो; डुप्लिकेट बैनर इसके बजाय service worker द्वारा क्लाइंट-साइड पर दबाए जाते हैं (देखें [Service worker आवश्यकता](#service-worker-requirement))। निर्धारित रिमाइंडर और staff द्वारा ट्रिगर किए गए प्रसारण सीधे push स्तर से शुरू होते हैं, socket चरण पूरी तरह छोड़ते हुए। ईमेल अब भी टाइमर-चालित है, अपठित पंक्तियों को अपने अलग शेड्यूल पर आगे बढ़ाता है, इस पास के हिस्से के रूप में नहीं।
 
 Push तक पहुँचने वाले सबसे आम पथ:
 
@@ -21,7 +21,7 @@ Push तक पहुँचने वाले सबसे आम पथ:
 2. **निजी संदेश** -- एक सीधा संदेश उसी डिलीवरी फ़ंक्शन से जाता है और हमेशा socket डिलीवरी के साथ push का प्रयास करता है।
 3. **निर्धारित रिमाइंडर** -- इवेंट, कार्य, और सेवा रिमाइंडर जिन्हें रिमाइंडर इंजन विस्तारित और भेजता है, जो नई घटनाएँ सीधे push स्तर पर शुरू करता है।
 4. **Staff-ट्रिगर push** -- एक-बारगी या समूह प्रसारण के लिए `POST /messaging/notifications/create`, `/ping`, और `/group/send`।
-5. **निर्धारित staff push** -- `POST /messaging/scheduledNotifications` ऐप वाले सभी लोगों (`audience: "church"`) या किसी एक समूह के लिए push सहेजता है, और देय होने पर 1-मिनट का टाइमर उसे भेजता है (देखें [सूचना आर्किटेक्चर](./architecture/notifications.md))। बिना लिंक वाला चर्च-व्यापी push `/mobile/notifications` खोलता है; बिना लिंक वाला समूह push उस समूह को खोलता है।
+5. **निर्धारित staff push** -- `POST /messaging/scheduledNotifications` ऐप वाले सभी लोगों (`audience: "church"`) या किसी एक समूह के लिए push सहेजता है, और देय होने पर 1-मिनट का टाइमर उसे भेजता है (देखें [Notifications architecture](./architecture/notifications.md))। बिना लिंक वाला चर्च-व्यापी push `/mobile/notifications` खोलता है; बिना लिंक वाला समूह push उस समूह को खोलता है।
 
 ## सर्वर प्रवाह {#server-flow}
 
@@ -45,7 +45,7 @@ VAPID keys `Environment` में संग्रहीत होती है�
 | पर्यावरण चर | `Environment` सेटिंग | विवरण |
 |----------|----------|-------------|
 | `WEB_PUSH_PUBLIC_KEY` | `webPushPublicKey` | VAPID सार्वजनिक key (base64url)। `GET /messaging/webpush/publicKey` के माध्यम से क्लाइंट्स को लौटाई जाती है |
-| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | VAPID निजी key। हर बाहरी push पर हस्ताक्षर के लिए उपयोग |
+| `WEB_PUSH_PRIVATE_KEY` | `webPushPrivateKey` | VAPID निजी key। हर बाहरी push पर हस्ताक्षर के लिए उपयोग होती है |
 | `WEB_PUSH_SUBJECT` | `webPushSubject` | Push सेवाओं को रिपोर्ट किया गया `mailto:` URI। डिफ़ॉल्ट `mailto:support@churchapps.org` |
 
 `WebPushHelper.isEnabled()` तब `false` लौटाता है जब कोई भी key गायब हो -- messaging मॉड्यूल चलता रहता है, push डिलीवरी बस no-op होती हैं। B1App का मोबाइल साइट तब सदस्यों को बताता है कि push चालू नहीं है, सेटअप की पेशकश करने के बजाय।
@@ -101,12 +101,12 @@ await WebPushHelper.subscribe();
 - **क्षमता जाँच** -- `isSupported()` उन ब्राउज़रों पर `false` लौटाता है जिनमें `serviceWorker` / `PushManager` / `Notification` नहीं है।
 - **कूलडाउन** -- `canPromptNow()` `localStorage` के माध्यम से प्रॉम्प्ट्स के बीच 7-दिन का कूलडाउन लागू करता है, ताकि OS प्रॉम्प्ट खारिज करने वाले उपयोगकर्ताओं से हर सत्र पर फिर न पूछा जाए।
 - **Opt-out** -- `setOptedOut(true)` और `unsubscribe()` फिर से प्रॉम्प्ट करना रोकते हैं और सर्वर-साइड डिवाइस पंक्ति हटाते हैं।
-- **Standalone-PWA पहचान** -- `isStandalone()` होस्ट्स को iOS push प्रॉम्प्ट्स को "उपयोगकर्ता ने PWA को होम स्क्रीन पर इंस्टॉल किया है" के पीछे गेट करने देता है (iOS केवल इंस्टॉल किए गए PWAs से push की अनुमति देता है)।
+- **Standalone-PWA पहचान** -- `isStandalone()` होस्ट्स को iOS push प्रॉम्प्ट्स को "उपयोगकर्ता ने PWA को होम स्क्रीन पर इंस्टॉल किया है" की शर्त के पीछे रखने देता है (iOS केवल इंस्टॉल किए गए PWAs से push की अनुमति देता है)।
 - **चर्च बदलने पर फिर से नामांकन** -- `refreshEnrollment()` उपयोगकर्ता से फिर प्रॉम्प्ट किए बिना मौजूदा ब्राउज़र सदस्यता को नए `userChurch` के विरुद्ध फिर पोस्ट करता है। इसे `userChurch` बदलाव handler से कॉल करें।
 
 ### Service worker आवश्यकता {#service-worker-requirement}
 
-ब्राउज़र का `PushManager` केवल तभी सदस्यता हल करता है जब कॉन्फ़िगर किए गए scope पर एक service worker पंजीकृत हो। ChurchApps PWAs service worker उत्पन्न करने के लिए [Serwist](https://serwist.dev/) (Next.js ऐप्स) या workbox उपयोग करते हैं। चूँकि सर्वर अब हमेशा socket डिलीवरी के साथ push का प्रयास करता है (देखें [Push कब चलता है](#when-push-fires)), service worker डुप्लिकेशन बिंदु है: इसका `push` handler `showNotification` को दबाना चाहिए जब कोई फ़ोकस्ड/दिखने वाला क्लाइंट पहले से सूचना के deep-link लक्ष्य पर हो, लेकिन बैनर दिखाया गया था या नहीं, इसकी परवाह किए बिना ऐप बैज हमेशा अपडेट करना चाहिए:
+ब्राउज़र का `PushManager` केवल तभी सदस्यता हल करता है जब कॉन्फ़िगर किए गए scope पर एक service worker पंजीकृत हो। ChurchApps PWAs service worker उत्पन्न करने के लिए [Serwist](https://serwist.dev/) (Next.js ऐप्स) या workbox उपयोग करते हैं। चूँकि सर्वर अब हमेशा socket डिलीवरी के साथ push का प्रयास करता है (देखें [Push कब चलता है](#when-push-fires)), service worker डुप्लिकेशन बिंदु है: इसका `push` handler `showNotification` को दबाना चाहिए जब कोई फ़ोकस्ड/दिखने वाला क्लाइंट पहले से सूचना के deep-link लक्ष्य पर हो, लेकिन ऐप बैज हमेशा अपडेट करना चाहिए, चाहे बैनर दिखाया गया हो या नहीं:
 
 ```javascript
 // public/sw.js (or whatever Serwist/workbox emits)
@@ -157,7 +157,7 @@ self.addEventListener("notificationclick", (event) => {
 
 - **`gone: true` परिणाम** -- `WebPushHelper.sendBulk` प्रति प्राप्तकर्ता `{ token, success, gone, errorMessage }` लौटाता है। `gone: true` परिणाम (push सेवा ने `404` या `410` दिया) का मतलब है कि सदस्यता स्थायी रूप से अमान्य है; `NotificationHelper` में बाद का कोड उन डिवाइस पंक्तियों को हटाता है ताकि उन्हें फिर से प्रयास न किया जाए।
 - **TTL** -- push संदेश `TTL: 86400` (24 घंटे) के साथ भेजे जाते हैं। यदि उपयोगकर्ता का ब्राउज़र 24 घंटों के भीतर push सेवा से नहीं जुड़ता, तो push छोड़ दिया जाता है।
-- **कोई पुनः प्रयास नहीं** -- एक क्षणिक विफलता (timeout, 5xx) लॉग होती है और दोबारा प्रयास नहीं होता। Push सर्वोत्तम-प्रयास है; पेज के भीतर का socket और ईमेल सूचना स्तर स्थायित्व की कहानी संभालते हैं।
+- **कोई पुनः प्रयास नहीं** -- एक क्षणिक विफलता (timeout, 5xx) लॉग होती है और दोबारा प्रयास नहीं होता। Push सर्वोत्तम-प्रयास है; पेज के भीतर का socket और ईमेल सूचना स्तर स्थायित्व की ज़िम्मेदारी संभालते हैं।
 - **अक्षम वातावरण** -- डेव वातावरण VAPID keys खाली छोड़ सकते हैं; `WebPushHelper.isEnabled()` `false` लौटाएगा और push short-circuit होंगे। उन वातावरणों के लिए जिनकी अपनी VAPID पहचान नहीं है, यही इच्छित व्यवहार है।
 
 ## संबंधित पेज {#related-pages}

@@ -3,7 +3,7 @@ title: "Mga Giving Statement"
 description: "Gumawa ng taunang giving statement para sa bawat donor sa B1 Admin, pagkatapos i-download ang mga ito bilang CSV file o i-print para ipadala sa koreo na may tax-deductible na kabuuan."
 ---
 
-# Mga Giving Statement
+# Giving Statements {#giving-statements}
 
 <div class="article-intro">
 
@@ -27,7 +27,7 @@ Sa pagtatapos ng bawat taon, kailangan ng iyong mga donor ng buod ng kanilang ta
 ## Paggawa ng Mga Statement {#generating-statements}
 
 1. Sa **Select Year** panel, piliin ang **Year** mula sa dropdown. Maaari mong piliin ang kasalukuyang taon o alinman sa limang nakaraang taon.
-2. Tanging ang mga donasyong may petsa sa taóng iyon (Enero 1 hanggang Disyembre 31) ang kinukuha ng pahina, kaya mabilis itong bumubukas kahit maraming taon na ng kasaysayan ng giving ang iyong simbahan. Kapag pumili ka ng ibang taon, nire-refresh ang buod gamit ang mga donasyon ng taóng iyon. Ang **Summary** panel sa ibaba ng taon ay nagpapakita ng estadistika para sa taóng iyon, binibilang ang parehong handog na kasama sa mga statement (hindi kasama ang mga handog na para lamang sa non-deductible na fund):
+2. Tanging ang mga donasyong may petsa sa taóng iyon (Enero 1 hanggang Disyembre 31) ang kinukuha ng pahina, kaya mabilis itong bumubukas kahit maraming taon na ng kasaysayan ng giving ang iyong simbahan. Kapag pumili ka ng ibang taon, nire-refresh ang buod gamit ang mga donasyon ng taóng iyon. Ipinapakita ng **Summary** panel sa ibaba ng taon ang estadistika para sa taóng iyon, binibilang ang parehong handog na kasama sa mga statement (hindi kasama ang mga handog na para lamang sa non-deductible na fund):
    - **Total Donors** -- ang bilang ng mga taong nagbigay
    - **Total Donations** -- ang bilang ng indibidwal na talaan ng donasyon
    - **Total Amount** -- ang pinagsamang halaga ng kanilang giving
@@ -42,17 +42,23 @@ Sa ilalim ng **Individual CSV Files**, i-click ang **Download ZIP** (ipinapakita
 
 ### I-print ang Lahat ng Statement {#print-all-statements}
 
-Sa ilalim ng **Printable Statements**, i-click ang **Print All** (ipinapakita ng button ang bilang ng mga statement) para buksan sa iyong browser ang printable na view ng statement ng bawat donor para sa napiling taon. Mula roon, gamitin ang print function ng iyong browser para ipadala ang mga ito sa printer. Nagsisimula ang bawat statement sa bagong pahina para handa nang tiklupin at ipadala sa koreo, at nakaayos ang mga statement ayon sa apelyido ng donor, saka ayon sa pangalan.
+Sa ilalim ng **Printable Statements**, i-click ang **Print All** (ipinapakita ng button ang bilang ng mga statement) para buksan sa iyong browser ang printable na view ng statement ng bawat donor para sa napiling taon. Mula roon, gamitin ang print function ng iyong browser para ipadala ang mga ito sa printer. Nagsisimula ang bawat statement sa bagong pahina para handa nang tupiin at ipadala sa koreo, at nakaayos ang mga statement ayon sa apelyido ng donor, saka ayon sa unang pangalan.
 
-Kung nag-upload ka ng **Light Background Logo** sa [Website > Appearance](../website/appearance.md), ito ay ipi-print sa gitna ng itaas ng bawat statement, sa itaas ng pamagat ng statement. Nalalapat ito sa **Print All**, sa statement ng isang donor na naka-print mula sa kanyang record, at sa mga statement na sariling iprint ng mga miyembro mula sa **Giving** page ng B1.church.
+Kung nag-upload ka ng **Light Background Logo** sa [Website > Appearance](../website/appearance.md), ito ay ipi-print sa gitna ng itaas ng bawat statement, sa itaas ng pamagat ng statement. Nalalapat ito sa **Print All**, sa statement ng isang donor na naka-print mula sa kanyang record, at sa mga statement na sariling iniimprenta ng mga miyembro mula sa **Giving** page ng B1.church.
 
 :::tip
 Patakbuhin ang iyong mga statement nang maaga sa Enero habang sariwa pa ang iyong mga talaan. Suriing mabuti na tama ang pagkakamarka ng iyong mga fund bilang tax-deductible bago gumawa ng mga statement -- tanging ang mga donasyon sa tax-deductible na fund ang kasama.
 :::
 
 :::info
-Ang mga giving statement ay kinabibilangan lamang ng mga donasyong itinalaga sa mga fund na may naka-enable na **Tax Deductible** setting. Kung hindi markado ang isang fund bilang tax-deductible, hindi lalabas sa statement ang mga donasyon nito. Maaari mong pamahalaan ang setting na ito sa pahinang [Funds](funds.md).
+Kasama sa mga giving statement ang mga donasyong nakatalaga lamang sa mga fund na naka-enable ang setting na **Tax Deductible**. Kung hindi markado ang isang fund bilang tax-deductible, hindi lilitaw sa statement ang mga donasyon nito. Maaari mong pamahalaan ang setting na ito sa pahinang [Funds](funds.md).
 :::
+
+## Mga Gift Memo sa Statement {#gift-memos-on-statements}
+
+Inililista ng bawat statement ang bawat handog kasama ang petsa, paraan, fund, at halaga nito. Kapag may kahit isang handog sa statement na may **Memo**, idinadagdag ang column na **Memo** pagkatapos ng fund para makita ng donor kung para saan ang bawat handog. Ang mga statement na walang memo ay nananatili sa apat-na-column na layout. Ang **Notes** ng handog ay pang-loob lamang at hindi kailanman lumalabas sa statement. Kasama sa mga CSV file sa ZIP ang memo bilang huling column nito.
+
+Para ilagay ang layunin sa statement, ilagay ito bilang **Memo** ng handog kapag [itinatala ang donasyon](recording-donations.md), o bigyan ito ng sariling [fund](funds.md) kung gusto mong ma-total ito nang hiwalay.
 
 ## Mga Format ng Resibo para sa Canada, Australia at New Zealand {#receipt-formats-for-canada-australia-and-new-zealand}
 
@@ -64,7 +70,7 @@ Pagkatapos, dadalhin ng mga statement ang wording na inaasahan ng iyong tax auth
 
 Kinokontrol ng parehong seksyong **Giving** ng settings kung ano ang makikita ng mga miyembro sa sarili nilang giving page sa B1.church:
 
-- Pinipili ng **Member Giving History** kung aling mga taon ang makikita ng mga miyembro. Ang **All years** ang default. Ang **Through 2025** (o anumang ibang taon) ay titigil sa taóng iyon, kaya hindi makikita o maipi-print ng mga miyembro ang mas huling taon hanggang payagan mo ito. Gamitin ito para pigilan muna ang kasalukuyang taon habang tinatapos mo ang mga pagwawasto at refund. Inaalis ng **Hidden** nang buo ang giving history, taunang kabuuan, at pag-print ng statement. Makakapagbigay pa rin ang mga miyembro.
+- Pinipili ng **Member Giving History** kung aling mga taon ang makikita ng mga miyembro. Ang **All years** ang default. Ang **Through 2025** (o anumang ibang taon) ay humihinto sa taong iyon, kaya hindi makikita o maipi-print ng mga miyembro ang mas huling taon hanggang payagan mo ito. Gamitin ito para pigilan muna ang kasalukuyang taon habang tinatapos mo ang mga pagwawasto at refund. Ganap na inaalis ng **Hidden** ang giving history, taunang kabuuan, at pag-print ng statement. Makakapagbigay pa rin ang mga miyembro.
 - Ang **Giving Note** ay maikling mensaheng ipinapakita sa giving page at giving history ng miyembro, at ipinapi-print sa ibaba ng bawat giving statement, kasama ang mga statement na iniimprenta mo rito. Gamitin ito para sa mga bagay tulad ng iyong refund policy.
 
 Mga pagbabago lamang sa nakikita ng mga miyembro ang ginagawa ng mga setting na ito. Maaari mo pa ring i-print ang anumang taon mula sa pahinang ito.

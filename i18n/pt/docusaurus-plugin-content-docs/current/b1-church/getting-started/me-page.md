@@ -3,7 +3,7 @@ title: "A página Eu"
 description: "O que a página Eu do portal de membros B1App mostra: serviço, eventos e inscrições próximos, suas tarefas, família, grupos, ofertas, formulários e caixa de entrada."
 ---
 
-# A página Eu
+# A página Eu {#the-me-page}
 
 <div class="article-intro">
 
@@ -46,7 +46,7 @@ Se a equipe da igreja tiver atribuído a você um trabalho de acompanhamento, du
 - **Meus cartões** -- cartões de fluxo de trabalho atribuídos a você (por exemplo, acompanhar um novo visitante). Cada um mostra sua data de vencimento, com um selo **Atrasado** ou **Adiado** quando aplicável.
 - **Minhas tarefas** -- outras tarefas atribuídas a você, com a pessoa a quem cada uma se refere.
 
-Cada seção mostra seus três itens mais recentes; toque em **Todos os cartões** ou **Todas as tarefas** para abrir a lista completa **Minhas tarefas**. Toque em um cartão para ver a etapa, a data de vencimento e a pessoa a quem ele se refere, e para adicionar **Anotações**. Toque em **Concluir** (ou no botão de resultado que sua igreja configurou para aquela etapa) quando terminar, ou toque em **1 dia**, **3 dias** ou **7 dias** em **Adiar** para deixá-lo de lado por um tempo. As tarefas abrem aqui somente para leitura, com as anotações que já tiverem -- feche-as no B1 Admin.
+Cada seção mostra seus três itens mais recentes; toque em **Todos os cartões** ou **Todas as tarefas** para abrir a lista completa **Minhas tarefas**. Toque em um cartão para ver a etapa, a data de vencimento, a pessoa a quem ele se refere e quando foi criado (data e hora), e para adicionar **Anotações**. Quando um cartão ou tarefa se refere a uma pessoa, as linhas **Ligar** e **E-mail** mostram o celular e o e-mail dessa pessoa -- toque em uma delas para ligar ou enviar um e-mail. Toque em **Concluir** (ou no botão de resultado que sua igreja configurou para aquela etapa) quando terminar, ou toque em **1 dia**, **3 dias** ou **7 dias** em **Adiar** para deixá-lo de lado por um tempo. As tarefas abrem aqui somente para leitura, mostrando de quem são, a quem se referem e quando foram criadas -- feche-as no B1 Admin. Se uma tarefa já tiver anotações, você pode lê-las e adicionar as suas.
 
 As seções ficam ocultas quando nada está atribuído a você.
 

@@ -3,7 +3,7 @@ title: "Arbeidsflyter"
 description: "Bygg Kanban-lignende tavler i B1 Admin for å føre personer gjennom oppfølgingssteg med automatiske e-poster, tekstmeldinger og utløsere som legger til personer automatisk."
 ---
 
-# Arbeidsflyter
+# Arbeidsflyter {#workflows}
 
 <div class="article-intro">
 
@@ -55,7 +55,7 @@ Hver arbeidsflyttavle består av **steg**, vist som kolonner fra venstre til hø
 Når du legger til eller redigerer et steg, kan du konfigurere:
 
 - **Stegnavn** -- kolonneoverskriften (for eksempel «Velkomstsamtale» eller «Venter på registrering»).
-- **Forfaller om (dager)** -- setter automatisk en forfallsdato når et kort kommer inn i dette steget. Kort som er forbi forfallsdatoen, merkes **Forfalt**.
+- **Forfaller om (dager)** -- setter automatisk en forfallsdato når et kort kommer inn i dette steget. Kort som er forbi forfallsdatoen, merkes **Forfalt**. La feltet stå tomt for ingen forfallsdato; du kan også fjerne et tall du har satt tidligere.
 - **Standard mottaker** -- personen eller gruppen nye kort på dette steget tildeles automatisk. Når standardmottakeren er en person, får de et varsel om at et kort er tildelt dem.
 - **Automatiske handlinger** -- ting systemet gjør på egen hånd når et kort kommer inn (se nedenfor).
 - **Ruting** -- hvor kortet går når det forlater steget (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
@@ -95,9 +95,9 @@ Automatiske handlinger kjører bare når et kort kommer inn gjennom den vanlige 
 
 ### Sende e-post {#sending-email}
 
-Velg **Send e-post**, velg en av e-postmalene dine, og skriv eventuelt inn et eget emne. Når et kort kommer inn i steget, mottar personen e-posten automatisk. (Hvis personen ikke har en e-postadresse registrert, hopper steget bare over denne handlingen.) [Flettefelt](../settings/email-templates.md#merge-fields) i malen, som `{{firstName}}`, fylles inn med personens egne opplysninger. Hvis en **Gave · Opprettet**-utløser startet arbeidsflyten, fylles gavefeltene `{{amount}}`, `{{giftDate}}`, `{{fund}}` og `{{receipt}}` inn fra den gaven, også på steg som kjører etter en Vent. Se [Flettefelt for gaver](../settings/email-templates.md#gift-merge-fields).
+Velg **Send e-post**, velg en av e-postmalene dine, og skriv eventuelt inn et eget emne. Når et kort kommer inn i steget, mottar personen e-posten automatisk. (Hvis personen ikke har en e-postadresse registrert, hopper steget bare over denne handlingen.) [Flettefelt](../settings/email-templates.md#merge-fields) i malen, som `{{firstName}}`, fylles inn med personens egne opplysninger. Hvis en utløser for **Gave · Opprettet** startet arbeidsflyten, fylles gavefeltene `{{amount}}`, `{{giftDate}}`, `{{fund}}` og `{{receipt}}` inn fra den gaven, også på steg som kjører etter en Vent. Se [Flettefelt for gaver](../settings/email-templates.md#gift-merge-fields).
 
-Når e-posten sendes, registrerer kortets historikk **E-post sendt**. Hvis den ikke kan sendes — for eksempel fordi menighetens e-post ikke er godkjent ennå eller den daglige grensen er nådd — legges det ikke til noen oppføring om «E-post sendt».
+Når e-posten sendes, registrerer kortets historikk **E-post sendt**. Hvis den ikke kan sendes — for eksempel fordi menighetens e-post ikke er godkjent ennå, eller den daglige grensen er nådd — legges det ikke til noen oppføring om «E-post sendt».
 
 :::info
 E-poster fra arbeidsflyter sendes først etter at menigheten din er godkjent for å sende gruppe-e-post, og de teller mot menighetens daglige e-postgrense. Se [Slå på gruppe-e-post for menigheten din](../groups/group-members.md#turning-on-group-email-for-your-church). Handlingen **Send e-post** advarer deg i steg-redigeringsverktøyet når disse e-postene ikke sendes: *«Menighetens e-post er ikke godkjent ennå...»* hvis godkjenningen fortsatt venter, eller *«Menighetens e-post er satt på pause...»* hvis nylige meldinger har studsa eller blitt rapportert som spam.
@@ -113,15 +113,15 @@ Velg **Registrer oppmøte** og klikk på **Velg gruppe** for å velge gruppen op
 
 ### Varsle en person {#notifying-a-person}
 
-Velg **Varsle person**, klikk på **Velg person**, og skriv eventuelt inn en **melding**. Når et kort kommer inn i steget, får den personen en e-post og et B1-varsel med navnet på personen på kortet, navnene på arbeidsflyten og steget, meldingen din og en lenke for å åpne kortet. Bruk den til å gi en medarbeider eller tjenesteleder en forhåndsvarsling — for eksempel *«Varsle pastoren når noen når steget Medlemsintervju.»* Kortets historikk registrerer **Varslet** etterfulgt av personens navn.
+Velg **Varsle person**, klikk på **Velg person**, og skriv eventuelt inn en **Melding**. Når et kort kommer inn i steget, får den personen en e-post og et B1-varsel med navnet på personen på kortet, navnene på arbeidsflyten og steget, meldingen din og en lenke for å åpne kortet. Bruk den til å gi en medarbeider eller tjenesteleder en forhåndsvarsling — for eksempel *«Varsle pastoren når noen når steget Medlemsintervju.»* Kortets historikk registrerer **Varslet** etterfulgt av personens navn.
 
 ### Sende en tekstmelding {#sending-a-text}
 
-Velg **Send tekstmelding** og skriv inn **tekstmeldingen** (opptil 1 600 tegn). Hvis menigheten din har lagret [tekstmaler](../settings/email-templates.md), vises en liste **Start fra en mal** over boksen. Når du velger en, kopieres malens tekst inn i meldingen, og du kan fortsatt redigere den. Steget beholder sin egen kopi, så senere endringer i malen endrer ikke steget. Når et kort kommer inn i steget, mottar personen den tekstmeldingen på mobiltelefonen sin. For å tilpasse meldingen klikker du på en brikke under meldingsboksen — **Fornavn**, **Etternavn**, **Visningsnavn** eller **Menighetsnavn** — for å sette inn `{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}` der markøren står. Hver fylles inn med personens opplysninger når meldingen sendes. Brikkene **Beløp**, **Gavedato**, **Fond** og **Kvittering** setter inn gavefeltene, som bare fylles inn når en **Gave · Opprettet**-utløser startet arbeidsflyten. For eksempel: `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
+Velg **Send tekstmelding** og skriv inn **tekstmeldingen** (opptil 1 600 tegn). Hvis menigheten din har lagret [tekstmaler](../settings/email-templates.md), vises en liste **Start fra en mal** over boksen. Når du velger en, kopieres malens tekst inn i meldingen, og du kan fortsatt redigere den. Steget beholder sin egen kopi, så senere endringer i malen endrer ikke steget. Når et kort kommer inn i steget, mottar personen den tekstmeldingen på mobiltelefonen sin. For å tilpasse meldingen klikker du på en brikke under meldingsboksen — **Fornavn**, **Etternavn**, **Visningsnavn** eller **Menighetsnavn** — for å sette inn `{{firstName}}`, `{{lastName}}`, `{{displayName}}` eller `{{churchName}}` der markøren står. Hver fylles inn med personens opplysninger når meldingen sendes. Brikkene **Beløp**, **Gavedato**, **Fond** og **Kvittering** setter inn gavefeltene, som bare fylles inn når en utløser for **Gave · Opprettet** startet arbeidsflyten. For eksempel: `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
-- Hvis personen ikke har et mobilnummer registrert, sendes ingen tekstmelding, og kortets historikk registrerer **Tekstmelding hoppet over: ingen mobiltelefon**.
-- Hvis personen har reservert seg, sendes ingen tekstmelding, og kortets historikk registrerer **Tekstmelding hoppet over: reservert**.
-- Når tekstmeldingen sendes, registrerer kortets historikk **Tekstmelding sendt**. Hvis sendingen mislykkes — for eksempel fordi ingen tekstmeldingsleverandør er koblet til, eller menigheten er tom for tekstmeldingskreditt — logges feilen i kortets historikk, og de gjenværende handlingene i steget kjører fortsatt.
+- Hvis personen ikke har et mobilnummer registrert, sendes ingen tekstmelding, og kortets historikk registrerer **Tekst hoppet over: ingen mobiltelefon**.
+- Hvis personen har reservert seg, sendes ingen tekstmelding, og kortets historikk registrerer **Tekst hoppet over: reservert**.
+- Når tekstmeldingen sendes, registrerer kortets historikk **Tekst sendt**. Hvis sendingen mislykkes — for eksempel fordi ingen tekstmeldingsleverandør er koblet til, eller menigheten er tom for tekstmeldingskreditt — logges feilen i kortets historikk, og de gjenværende handlingene i steget kjører fortsatt.
 
 :::warning
 Tekstmeldinger sendes gjennom menighetens egen [tekstmeldingsleverandør](../settings/church-settings.md#texting). Hvis ingen leverandør er koblet til, advarer handlingsredigeringsverktøyet *«Ingen tekstmeldingsleverandør er satt opp»*, og tekstmeldinger vil ikke sendes.
@@ -147,7 +147,7 @@ Det finnes flere måter å legge personer på en tavle:
 - **Fra personsøket** -- Velg flere personer og bruk den samlede handlingen **Legg til i arbeidsflyt** for å legge dem til alle samtidig.
 - **Automatisk med en utløser** -- Legg til personer når noe skjer, for eksempel en skjemainnsending eller en første gave (se [Utløsere](#triggers) nedenfor).
 
-Å legge til noen manuelt, eller med handlingen **Legg til i arbeidsflyt** i et steg, gir aldri en annen person et andre åpent kort på samme arbeidsflyt. Hvis de allerede har et åpent kort, hoppes de over (ved masseinnlegging får bare personene uten kort nye kort). Når kortet deres er lukket, kan du legge dem til igjen. Utløsere følger i stedet sin egen innstilling for **Bare én gang per person**.
+Å legge til noen manuelt, eller med handlingen **Legg til i arbeidsflyt** i et steg, gir aldri en person et andre åpent kort på samme arbeidsflyt. Hvis de allerede har et åpent kort, hoppes de over (ved masseinnlegging får bare personene uten kort nye kort). Når kortet deres er lukket, kan du legge dem til igjen. Utløsere følger i stedet sin egen innstilling for **Bare én gang per person**.
 
 ## Jobbe med tavlen {#working-the-board}
 
@@ -158,21 +158,21 @@ Det finnes flere måter å legge personer på en tavle:
 
 Fra kortpanelet kan du:
 
-- **Tildele** kortet til en annen person eller gruppe.
+- **Tildele** kortet til en annen person eller gruppe. Endringen registreres i kortets **Aktivitet**, for eksempel «Tildelt på nytt fra Jane Smith til John Doe».
 - **Utsette** kortet i 1 dag, 3 dager eller 1 uke for midlertidig å skjule forfallsdatoen.
 - **Send tilbake** til forrige steg eller **Hopp over** til neste steg.
 - **Fest tildelingen** -- behold samme eier på kortet selv når det flyttes mellom steg. Som standard tildeles kortet på nytt til det nye stegets standardmottaker når det flyttes; festing beholder den nåværende personen ansvarlig hele veien.
 - **Fullfør** kortet for å avslutte det, eller velg en **utfallsknapp** hvis steget har utfall konfigurert (se [Ruting](#routing-cards-with-outcomes-and-conditions)).
 - **Fjern kort** -- ta et kort av tavlen uten å fullføre det, for eksempel når noen ble lagt til ved en feil. Etter bekreftelse lukkes kortet og fjernes fra alles liste. Ingen utfall, ruter eller stegshandlinger kjøres, og historikken beholdes med en oppføring om **Fjernet**. For et [kort for bekreftelse av tjenesteoppdrag](#serving-assignment-confirmations) lukker fjerning av kortet forespørselen på samme måte.
-- **Legg til notater** og se kortets **aktivitet** -- en logg over automatiske handlinger som har kjørt (e-poster sendt, ventetider osv.), hver med dato og klokkeslett.
+- **Legg til notater** og se kortets **Aktivitet** -- en logg over automatiske handlinger som har kjørt (e-poster sendt, ventetider osv.), hver med dato og klokkeslett.
 
-For et kort om en person viser panelet også personens mobiltelefon og e-post som lenker du kan trykke på for å ringe eller sende e-post, pluss en lenke **Vis profil** hvis du har tilgang til å se personer. Personen kortet er tildelt, ser telefonnummeret og e-posten selv uten tilgang til Personer.
+For et kort om en person viser panelet også personens mobiltelefon og e-post som lenker du kan trykke på for å ringe eller sende e-post, pluss en lenke **Vis profil** hvis du har tillatelse til å se personer. Personen kortet er tildelt, ser telefonnummeret og e-posten selv uten tilgang til Personer.
 
 Notater lagres sammen med kortet. Alle som kan åpne kortet — inkludert personen eller gruppen det er tildelt — kan lese notatene og legge til sine egne. Personer som ikke kan åpne kortet, kan ikke se notatene.
 
 ### Massehandlinger {#bulk-actions}
 
-Velg avkrysningsboksene på flere kort for å utføre handlinger på dem samlet. For å velge alle kortene i et steg samtidig, kryss av for boksen **Velg alle** i stegkolonnens overskrift; kryss av igjen for å fjerne valget. En verktøylinje dukker opp, slik at du kan **Fullfør**, **Utsett**, **Tildel** (tildel på nytt) eller **Flytt til…** et annet steg for alle valgte kort samtidig.
+Kryss av i avkrysningsboksene på flere kort for å utføre handlinger på dem samlet. For å velge alle kortene i et steg samtidig, kryss av for boksen **Velg alle** i stegkolonnens overskrift; kryss av igjen for å fjerne valget. En verktøylinje dukker opp, slik at du kan **Fullfør**, **Utsett**, **Tildel** (tildel på nytt) eller **Flytt til…** et annet steg for alle valgte kort samtidig.
 
 ## Ruting av kort med utfall og betingelser {#routing-cards-with-outcomes-and-conditions}
 
@@ -192,7 +192,7 @@ Dette lar én beslutning dele personen inn i ulike veier.
 
 Automatiske ruter flytter et kort videre **i det øyeblikket det kommer inn i et steg** (og etter at de automatiske handlingene er ferdige), uten at noen klikker, hvis personen samsvarer med et sett betingelser. Legg til en rute, velg målsteget, og definer én eller flere **betingelser** (for eksempel en persons menighetsenhet, alder eller medlemsstatus). Tekstfelt kan matches eksakt eller med **inneholder**, **starter med** eller **slutter med**. En rute uten betingelser gjelder for alle.
 
-Datobetingelser (Dagens dato, Fødselsdato eller Jubileum) kan sammenligne hele datoen eller bare deler av den — ukedagen, **Dag i måneden**, **Måned** eller antall år som har gått. For en persons fødselsdato eller jubileum tilbyr **Dag i måneden** et relativt valg **I dag**, slik at en betingelse som *Fødselsdato · Dag i måneden = I dag* matcher personer hvis bursdag faller på dagens dato i måneden. **Måned** tilbyr **Forrige måned**, **Gjeldende måned** og **Neste måned**. Relative verdier som disse beregnes ut fra menighetens tidssone, slik at de stemmer med menighetens kalenderdag og ikke serverens.
+Datobetingelser (Dagens dato, Fødselsdato eller Jubileum) kan sammenligne hele datoen eller bare deler av den — ukedagen, **Dag i måneden**, **Måned** eller antall år som har gått. For en persons fødselsdato eller jubileum tilbyr **Dag i måneden** et relativt valg, **I dag**, slik at en betingelse som *Fødselsdato · Dag i måneden = I dag* matcher personer hvis bursdag faller på dagens dato i måneden. **Måned** tilbyr **Forrige måned**, **Gjeldende måned** og **Neste måned**. Relative verdier som disse beregnes ut fra menighetens tidssone, slik at de stemmer med menighetens kalenderdag og ikke serverens.
 
 Gruppen **Giving** av betingelser har **Tidligere fast giver**, som finner personer som pleide å gi jevnlig, og som så sluttet. Sett tre tall: *Gav i minst* **3** *av de siste* **12** *ukene, deretter ingenting de siste* **3** *ukene* (dette er standardverdiene). Ukene telles bakover fra i dag i menighetens tidssone, og en refundert gave telles ikke. Den er mest nyttig sammen med en [tidsplanutløser](#schedule-triggers) — for eksempel en ukentlig regel som legger tidligere faste givere til en oppfølgingstavle for omsorg. Betingelsen ser bare på gavedatoer, aldri beløp, og kort og varsler viser aldri beløp. Fordi den avslører hvem som har sluttet å gi, ser bare personer som kan se gaver dette alternativet, og bare de kan legge til, endre eller fjerne det.
 
@@ -235,7 +235,7 @@ For alle utløsere kan du også angi:
 - **Aktiv** -- slå utløseren av eller på uten å slette den.
 
 :::tip
-Kombiner en **Skjema · Sendt inn**-utløser med malen **Oppfølging av nye gjester** for å gjøre kontaktkortet eller «Jeg er ny»-skjemaet ditt om til en automatisk oppfølgingsprosess.
+Kombiner en utløser for **Skjema · Sendt inn** med malen **Oppfølging av nye gjester** for å gjøre kontaktkortet eller «Jeg er ny»-skjemaet ditt om til en automatisk oppfølgingsprosess.
 :::
 
 ## Bekreftelse av tjenesteoppdrag {#serving-assignment-confirmations}
@@ -251,9 +251,9 @@ En spesiell type arbeidsflyt kan følge opp [tjenesteforespørsler](./plans.md#a
 3. Rediger ventetider, meldinger og steg slik at de passer til menigheten din.
 4. Åpne [innstillingene for en plan](./plans.md#plan-settings) og velg denne arbeidsflyten under **Bekreftelsesarbeidsflyt**.
 
-Disse arbeidsflytene bruker handlingen **Send tjenesteforespørsel** i stedet for **Send e-post** og **Send tekstmelding**. Velg **E-post** eller **Tekstmelding** og skriv eventuelt en **forespørselsmelding**. Forespørselen inkluderer alltid rollen, planen, tjenestedatoen og en lenke for å svare; du kan bruke `{{planName}}`, `{{positionName}}` og `{{serviceDate}}` i meldingen din. La meldingen stå tom for å bruke standardforespørselen. Frivilliges varslingsinnstillinger, samtykke til tekstmeldinger, tekstmeldingsleverandøren din og menighetens e-postgodkjenning gjelder alle, og ethvert forsøk som hoppes over eller blokkeres, registreres på kortet. **Send e-post**, **Send tekstmelding** og **Legg til i arbeidsflyt** er ikke tilgjengelige på disse tavlene.
+Disse arbeidsflytene bruker handlingen **Send tjenesteforespørsel** i stedet for **Send e-post** og **Send tekstmelding**. Velg **E-post** eller **Tekstmelding** og skriv eventuelt en **Forespørselsmelding**. Forespørselen inkluderer alltid rollen, planen, tjenestedatoen og en lenke for å svare; du kan bruke `{{planName}}`, `{{positionName}}` og `{{serviceDate}}` i meldingen din. La meldingen stå tom for å bruke standardforespørselen. Frivilliges varslingsinnstillinger, samtykke til tekstmeldinger, tekstmeldingsleverandøren din og menighetens e-postgodkjenning gjelder alle, og ethvert forsøk som hoppes over eller blokkeres, registreres på kortet. **Send e-post**, **Send tekstmelding** og **Legg til i arbeidsflyt** er ikke tilgjengelige på disse tavlene.
 
-Fanen **Utløsere** på en bekreftelsesarbeidsflyt forklarer hvordan kort startes i stedet for å tilby utløsere, og disse arbeidsflytene vises ikke i listene **Legg til i arbeidsflyt** for personer.
+Fanen **Utløsere** på en bekreftelsesarbeidsflyt forklarer hvordan kort startes i stedet for å tilby utløsere, og disse arbeidsflytene vises ikke i listene **Legg til i arbeidsflyt** for personer. Tavlen har ingen **Legg til kort**-knapp, siden kort bare kommer fra tjenesteforespørsler på en plan.
 
 ### Hvordan kort startes og lukkes {#how-cards-are-started-and-closed}
 

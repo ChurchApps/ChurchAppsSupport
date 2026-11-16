@@ -3,7 +3,7 @@ title: "Guide : Gérer les bénévoles du dimanche"
 description: "Configurez les équipes de bénévoles, les plans de service hebdomadaires, l'ordre des cultes et les tâches du dimanche dans B1 Admin, afin que les bénévoles voient leurs affectations et y répondent sur B1.church et dans l'application mobile."
 ---
 
-# Gérer les bénévoles du dimanche
+# Gérer les bénévoles du dimanche {#manage-sunday-volunteers}
 
 <div class="article-intro">
 
@@ -56,8 +56,8 @@ Suivez le guide [Plans](../serving/plans.md) pour :
 1. Dans le menu Accès rapide, choisir **Service > Plans**, sélectionner l'onglet de votre ministère et ouvrir votre type de plan (cliquez sur **Créer un type de plan** si vous n'en avez pas encore)
 2. Cliquer sur **Nouveau plan** et choisir la **Date du service**. Pour configurer plusieurs dimanches d'un coup, copiez un plan précédent, choisissez **Répéter tous les** et la **Fréquence**, puis indiquez le nombre de plans dans **Nombre de plans**
 3. Sur la page du plan, cliquer sur **Gérer l'équipe de service**, cliquer sur **Ajouter un poste** pour chaque poste, puis cliquer sur le lien **Personnes nécessaires** pour y affecter des bénévoles
-4. Dans le panneau **Validation**, cliquer sur le lien **Notifier _N_ bénévole(s)** pour que les bénévoles reçoivent leurs demandes (voir [Notifier les bénévoles](../serving/plan-validation.md#notifying-volunteers)). Un point vert sur la photo d'un bénévole indique qu'il a accepté, un point rouge qu'il a refusé ; la case **Réponses** de la page du plan compte les acceptations, les réponses en attente et les refus
-5. Activez les [rappels aux bénévoles](../serving/plans.md#volunteer-reminders) pour le type de plan afin que les bénévoles soient rappelés par notification push, par courriel ou par SMS avant chaque culte
+4. Dans le panneau **Validation**, cliquer sur le lien **Notifier _N_ bénévole(s)** pour que les bénévoles reçoivent leurs demandes (voir [Notifier les bénévoles](../serving/plan-validation.md#notifying-volunteers)). Un point vert sur la photo d'un bénévole indique qu'il a accepté et un point rouge qu'il a refusé ; la tuile **Réponses** de la page du plan compte les acceptations, les réponses en attente et les refus
+5. Activez les [rappels aux bénévoles](../serving/plans.md#volunteer-reminders) pour le type de plan afin que les bénévoles soient rappelés par notification push, par courriel ou par texto avant chaque culte
 
 ## Étape 4 : Composer l'ordre du culte {#step-4-build-the-service-order}
 
@@ -108,7 +108,7 @@ Les bénévoles affectés voient automatiquement leurs plans et peuvent y répon
 
 1. Les bénévoles consultent leurs plans sur [B1.church et dans l'application B1](../../b1-church/plans/viewing-plans.md)
 2. Ils peuvent accepter ou refuser les affectations directement depuis leur téléphone ou leur ordinateur
-3. Ils peuvent indiquer des dates d'indisponibilité pour les semaines où ils ne sont pas disponibles
+3. Ils peuvent indiquer des dates d'indisponibilité pour les semaines où ils ne sont pas disponibles. Le personnel peut aussi les saisir sur la carte **Dates d'indisponibilité** de l'équipe ; les bénévoles indisponibles affichent un badge **Indisponible** lorsque vous attribuez les postes -- voir [Dates d'indisponibilité](../serving/plan-validation.md#blockout-dates)
 4. Les plans peuvent être imprimés pour les répétitions ou affichés en coulisses
 5. Les bénévoles peuvent parcourir les postes ouverts et s'y inscrire via la [page d'inscription des bénévoles](../../b1-church/serving/volunteer-signup.md)
 

@@ -3,7 +3,7 @@ title: "Apparence"
 description: "Définissez les couleurs, les polices, l'espacement, le logo et la navigation de votre site web d'église dans B1 Admin, ainsi que les widgets, l'analytique GA4, les redirections et le CSS personnalisé."
 ---
 
-# Apparence
+# Apparence {#appearance}
 
 <div class="article-intro">
 
@@ -67,7 +67,7 @@ Pour de meilleurs résultats, utilisez un logo au fond transparent, au format PN
 Personnalisez les couleurs de la barre de navigation de votre site pour les modes plein et transparent :
 
 1. Cliquez sur **Navigation** dans le panneau Paramètres de style
-2. Configurez les couleurs de **l'en-tête (plein)** et de **l'en-tête au-dessus de la bannière (transparent)**
+2. Configurez les couleurs de **En-tête (plein)** et de **En-tête au-dessus de la bannière (transparent)**
 3. Cliquez sur **Enregistrer la navigation** pour appliquer vos couleurs de navigation
 
 Pour des instructions détaillées, voir [Styles de navigation](./navigation-styles.md).
@@ -89,6 +89,14 @@ Les widgets du site apparaissent sur chaque page de votre site, flottant au-dess
 4. Cliquez sur **Enregistrer**.
 
 Décochez **Activé** puis cliquez sur **Enregistrer** pour désactiver un widget. Ces widgets s'appliquent à tous les sites web de votre église.
+
+Le bandeau d'annonce s'affiche aussi en haut de l'écran d'accueil de l'application B1 de votre église (le portail des membres à `/mobile`, y compris l'application installée), au-dessus de la salutation, avec le même texte, le même lien, les mêmes couleurs et les mêmes dates. Dans l'application, une **URL du lien** qui pointe vers l'une de vos propres pages (par exemple, `/food`) ouvre cette page dans l'application au lieu de charger votre site web. Voir [Naviguer dans B1App](../../b1-church/getting-started/navigating.md#home).
+
+Quelques précisions sur le fonctionnement du bandeau :
+
+- Sur les téléphones, un long texte passe à la ligne, et le lien passe sur sa propre ligne s'il ne tient pas.
+- Sur votre site web, la barre de menu se place juste sous le bandeau d'annonce, de sorte que le bouton de menu reste visible. Les menus et les fenêtres contextuelles s'ouvrent au-dessus du bandeau.
+- Lorsqu'une personne ferme le bandeau avec son bouton **×**, il reste masqué sur cet appareil pendant un jour, puis réapparaît. Si vous modifiez le **texte**, la nouvelle annonce s'affiche immédiatement, même pour les personnes qui ont fermé l'ancienne.
 
 ## Redirections et analytique {#redirects--analytics}
 

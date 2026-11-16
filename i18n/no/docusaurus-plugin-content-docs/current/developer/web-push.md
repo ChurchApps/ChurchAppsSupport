@@ -3,7 +3,7 @@ title: "Web Push-varsler"
 description: "Sett opp VAPID-nøkler, WebPushHelper-klienten og håndtering av service worker, slik at B1.church og B1 Admin kan levere nettleserbaserte push-varsler til medlemmer."
 ---
 
-# Web Push-varsler
+# Web Push-varsler {#web-push-notifications}
 
 <div class="article-intro">
 

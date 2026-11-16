@@ -3,7 +3,7 @@ title: "प्रोफ़ाइल बदलावों को स्वीक
 description: "B1 Admin में सदस्यों के प्रोफ़ाइल बदलाव के अनुरोधों की समीक्षा करें और उन्हें स्वीकृत करें, और वह Directory Approval Group सेट करें जो उन्हें प्राप्त करता है।"
 ---
 
-# प्रोफ़ाइल बदलावों को स्वीकृत करना
+# प्रोफ़ाइल बदलावों को स्वीकृत करना {#approving-profile-changes}
 
 <div class="article-intro">
 
@@ -40,7 +40,7 @@ description: "B1 Admin में सदस्यों के प्रोफ़
 3. बदलावों की समीक्षा करें।
 4. स्वीकृति देने और उनके प्रोफ़ाइल में बदलाव सहेजने के लिए **Apply** पर क्लिक करें।
 
-परिवार के किसी सदस्य को जोड़ने के अनुरोध में नए व्यक्ति का title, नाम, household भूमिका, और मोबाइल फ़ोन एक पंक्ति में दिखता है (उदाहरण के लिए, *Mr John Smith · Child · 555-0100*)। इसे लागू करने पर उस सदस्य के household में उन विवरणों के साथ वह व्यक्ति बन जाता है।
+परिवार के किसी सदस्य को जोड़ने के अनुरोध में नए व्यक्ति का title, नाम, household भूमिका, मोबाइल फ़ोन, और ईमेल एक पंक्ति में दिखते हैं (उदाहरण के लिए, *Mr John Smith · Child · 555-0100 · john@example.com*)। अगर सदस्य ने फ़ोटो जोड़ी है, तो वह उसके बगल में दिखती है। इसे लागू करने पर उस सदस्य के household में उन विवरणों और फ़ोटो के साथ वह व्यक्ति बन जाता है।
 
 बदलाव लागू होते ही task अपने-आप बंद हो जाता है।
 
@@ -55,14 +55,14 @@ description: "B1 Admin में सदस्यों के प्रोफ़
 
 उस group का कोई भी सदस्य अपने Dashboard पर **Assigned to My Groups** के अंतर्गत आने वाले प्रोफ़ाइल बदलाव अनुरोध देखेगा।
 
-वही Directory Approval Group **खाता हटाने के अनुरोधों** की भी समीक्षा करता है -- देखें [Reviewing Account Deletion Requests](./account-deletion.md)।
+वही Directory Approval Group **खाता हटाने के अनुरोधों** की भी समीक्षा करता है — देखें [Reviewing Account Deletion Requests](./account-deletion.md)।
 
 :::tip
-सुनिश्चित करें कि आपके approvers वास्तव में कॉन्फ़िगर किए गए group के सदस्य हैं -- केवल group के सदस्य ही अनुरोध देखेंगे।
+सुनिश्चित करें कि आपके approvers वास्तव में कॉन्फ़िगर किए गए group के सदस्य हैं — केवल group के सदस्य ही अनुरोध देखेंगे।
 :::
 
 ## संबंधित लेख {#related-articles}
 
-- [Managing Your Profile](./managing-profile.md) -- अपने खाते की सेटिंग्स संपादित करें
-- [Reviewing Account Deletion Requests](./account-deletion.md) -- खाता हटाने के लिए वही approval-group समीक्षा प्रवाह
-- [Editing Your Profile](../../b1-church/getting-started/editing-your-profile.md) -- प्रोफ़ाइल बदलाव भेजने पर सदस्य क्या देखते हैं
+- [Managing Your Profile](./managing-profile.md) — अपने खाते की सेटिंग्स संपादित करें
+- [Reviewing Account Deletion Requests](./account-deletion.md) — खाता हटाने के लिए वही approval-group समीक्षा प्रवाह
+- [Editing Your Profile](../../b1-church/getting-started/editing-your-profile.md) — प्रोफ़ाइल बदलाव भेजने पर सदस्य क्या देखते हैं

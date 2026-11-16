@@ -3,7 +3,7 @@ title: "헌금 명세서"
 description: "B1 Admin에서 모든 헌금자를 위한 연말 헌금 명세서를 만든 뒤, 세금 공제 합계가 포함된 CSV 파일로 내려받거나 우편 발송을 위해 인쇄하세요."
 ---
 
-# 헌금 명세서
+# 헌금 명세서 {#giving-statements}
 
 <div class="article-intro">
 
@@ -54,6 +54,12 @@ description: "B1 Admin에서 모든 헌금자를 위한 연말 헌금 명세서�
 헌금 명세서에는 **Tax Deductible** 설정이 켜진 기금에 배정된 헌금만 포함됩니다. 기금이 세금 공제 대상으로 표시되지 않았다면 그 기금의 헌금은 명세서에 나타나지 않습니다. 이 설정은 [기금](funds.md) 페이지에서 관리할 수 있습니다.
 :::
 
+## 명세서의 헌금 메모 {#gift-memos-on-statements}
+
+각 명세서에는 모든 헌금이 날짜, 방법, 기금, 금액과 함께 나열됩니다. 명세서의 헌금 중 하나 이상에 **Memo**가 있으면, 헌금자가 각 헌금의 용도를 알 수 있도록 기금 뒤에 **Memo** 열이 추가됩니다. 메모가 없는 명세서는 네 개 열 레이아웃을 그대로 유지합니다. 헌금의 **Notes**는 내부용이므로 명세서에 절대 나타나지 않습니다. ZIP 안의 CSV 파일에서는 메모가 마지막 열에 들어갑니다.
+
+명세서에 용도를 표시하려면 [헌금을 기록할](recording-donations.md) 때 헌금의 **Memo**로 입력하세요. 용도별로 따로 합계를 내고 싶다면 별도의 [기금](funds.md)을 만들어 주세요.
+
 ## 캐나다, 호주, 뉴질랜드의 영수증 형식 {#receipt-formats-for-canada-australia-and-new-zealand}
 
 미국 밖의 교회는 명세서를 해당 국가의 공식 영수증 양식으로 바꿀 수 있습니다. 헌금 명세서 페이지 상단의 **Statement format**을 클릭하거나(또는 **Settings**로 가서 **Giving** 섹션을 엽니다), **Statement Format**(기본값은 **Standard**)을 **Canada - CRA official receipt**, **Australia**, 또는 **New Zealand**로 설정한 뒤, 나타나는 항목을 입력합니다. 등록 번호(**CRA Registration Number**, **ABN**, 또는 **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name**, 캐나다의 경우 **City of Issue**입니다. **Save**를 클릭하세요.
@@ -62,7 +68,7 @@ description: "B1 Admin에서 모든 헌금자를 위한 연말 헌금 명세서�
 
 ## 성도가 B1.church에서 보는 내용 {#what-members-see-in-b1church}
 
-같은 **Giving** 설정 섹션이 B1.church에서 성도가 자기 헌금 페이지에서 보는 내용도 제어합니다.
+같은 **Giving** 설정 섹션이 B1.church에서 성도가 자신의 헌금 페이지에서 보는 내용도 제어합니다.
 
 - **Member Giving History**는 성도가 볼 수 있는 연도를 정합니다. 기본값은 **All years**입니다. **Through 2025**(또는 다른 연도)를 고르면 그 연도까지만 볼 수 있으므로, 여러분이 허용하기 전까지 성도는 이후 연도를 보거나 인쇄할 수 없습니다. 정정과 환불을 마무리하는 동안 올해 내역을 보류하고 싶을 때 이 설정을 사용하세요. **Hidden**을 고르면 헌금 이력, 연간 합계, 명세서 인쇄 기능이 모두 제거됩니다. 성도는 여전히 헌금할 수 있습니다.
 - **Giving Note**는 성도의 헌금 페이지와 헌금 이력에 표시되는 짧은 메시지이며, 여기에서 인쇄하는 명세서를 포함한 모든 헌금 명세서 하단에 인쇄됩니다. 환불 정책 같은 내용을 넣는 데 사용하세요.

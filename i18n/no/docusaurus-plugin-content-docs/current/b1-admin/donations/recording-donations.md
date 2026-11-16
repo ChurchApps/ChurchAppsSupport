@@ -32,9 +32,15 @@ Gaver registreres i B1 Admin gjennom batchsystemet. Du oppretter en batch som re
 ## Legge inn enkeltgaver {#entering-individual-donations}
 
 1. På detaljsiden for batchen vises panelet for innlegging av gaver ved siden av gavelisten. Under **Select Person or Anonymous** skriver du giverens navn i søkefeltet for å finne vedkommende, eller klikker **Anonymous**. (Å klikke **Add Donation** øverst på siden hopper til dette panelet.)
-2. Etter at du har valgt en person, viser skjemaet feltene **Date** (starter på batchdatoen), **Method** (Check, Cash, Card eller In-Kind), **Fund** (vises når menigheten din har mer enn ett fond), **Notes**, **Amount** og **Check #** (eller **Last 4 digits** for kortgaver, eller **Item** for å beskrive en gave i naturalier; kontantgaver har ikke et detaljfelt). Klikk **Change** ved siden av giverens navn for å velge noen andre.
+2. Etter at du har valgt en person, viser skjemaet feltene **Date** (starter på batchdatoen), **Method** (Check, Cash, Card eller In-Kind), **Fund** (vises når menigheten din har mer enn ett fond), **Memo (prints on statement)**, **Notes (internal)**, **Amount** og **Check #** (eller **Last 4 digits** for kortgaver, eller **Item** for å beskrive en gave i naturalier; kontantgaver har ikke et detaljfelt). Klikk **Change** ved siden av giverens navn for å velge noen andre.
 3. Fyll inn detaljene og klikk **Add Donation** (eller trykk Enter). Hvis beløpet er tomt eller null, ber skjemaet deg om å skrive inn et beløp større enn null i stedet for å lagre.
-4. Gaven legges til i gavelisten, og skjemaet nullstilles slik at du kan legge inn neste. Datoen, metoden, fondet og notatene beholder verdiene du har satt, så en stabel med lignende sjekker krever bare giver, beløp og sjekknummer.
+4. Gaven legges til i gavelisten, og skjemaet nullstilles slik at du kan legge inn neste. Datoen, metoden, fondet, memoet og notatene beholder verdiene du har satt, så en stabel med lignende sjekker krever bare giver, beløp og sjekknummer.
+
+Datoen starter alltid på batchdatoen når du åpner en batch. Hvis du endrer den, følger den nye datoen med til neste gave du legger inn i batchen – både i innleggingspanelet og i den fullstendige gaveeditoren – til du endrer den igjen eller forlater batchen.
+
+:::tip Memo eller Notes?
+**Memo** skrives ut på giverens gaveoversikt og kvittering, ved siden av gaven. Bruk det til det giveren bør se, for eksempel formålet med en øremerket gave («Ungdomstur»). **Notes** er bare for personalet ditt og skrives aldri ut. Når noen gir på nett, lagres det de skriver i memo-feltet på giveskjemaet, som gavens memo.
+:::
 
 :::info
 Hvis batchen er [lukket](batches.md#closing-and-reopening-a-batch), er innleggingspanelet og lenkene **Edit** skjult for alle uten **Edit Donations**, og en melding øverst i batchen sier at den er lukket. Be noen med **Edit Donations** om å gjenåpne den.
@@ -91,7 +97,17 @@ Noen ganger gir en giver til flere fond i én transaksjon. Slik håndterer du de
 
 ## Redigere eller fjerne gaver {#editing-or-removing-donations}
 
-For å redigere en gave klikker du på knappen **Edit** på raden i batchen. Du kan endre datoen, beløpet, fondet, betalingsmetoden (Check, Cash, Card eller In-Kind) eller andre detaljer. For en gave i naturalier merker editoren detaljfeltet **Item**, slik at du kan beskrive hva som ble gitt. Klikk **Save** når du er ferdig.
+For å redigere en gave klikker du på knappen **Edit** på raden i batchen. Du kan endre datoen, beløpet, fondet, betalingsmetoden (Check, Cash, Card eller In-Kind) eller andre detaljer, inkludert **Memo** og **Notes**. For en gave i naturalier merker editoren detaljfeltet **Item**, slik at du kan beskrive hva som ble gitt. Klikk **Save** når du er ferdig.
+
+### Flytte en gave til en annen batch {#moving-a-gift-to-another-batch}
+
+Hvis en gave ble lagt inn i feil batch, kan du flytte den i stedet for å slette den og skrive den inn på nytt:
+
+1. Klikk **Edit** på gavens rad.
+2. I nedtrekkslisten **Batch** velger du batchen den hører til. Listen viser hver batchs dato og navn, nyeste først. Lukkede batcher vises ikke, bortsett fra gavens nåværende batch.
+3. Klikk **Save**.
+
+Gaven forlater den nåværende batchen og vises i den du valgte, og totalene for begge batchene oppdateres. Å flytte en gave er en redigering, så det starter ikke en **Donation · Created**-[arbeidsflyt](../serving/workflows.md#triggers) slik det ville gjort om du registrerte den på nytt.
 
 :::tip
 Linjen under batchnavnet øverst på siden oppdateres automatisk og viser batchdatoen, antall gaver og det samlede beløpet i dollar når du legger til eller endrer registreringer. Bruk den til å avstemme mot innskuddsseddelen din.
@@ -123,7 +139,7 @@ Når noen leverer inn en sjekk, betaler for et arrangement eller en T-skjorte, e
 2. Klikk **Receipt** ved siden av **Edit** på gavens rad. Du kan også klikke **Receipt** nederst i skjemaet Edit Donation.
 3. Klikk **Print**, eller **Close** for å gå tilbake.
 
-Kvitteringen bruker samme oppsett som gaveoversikten: menigheten din og giveren (eller «Anonymous»), gavens dato og metode, hvert fond og beløp, notatet, Giving Note og kvitteringsblokken fra skatteetaten hvis du har angitt et **Statement format** (se [Gaveoversikter](giving-statements.md)). Kvitteringsnummeret i den blokken er gavens ID.
+Kvitteringen bruker samme oppsett som gaveoversikten: menigheten din og giveren (eller «Anonymous»), gavens dato og metode, hvert fond og beløp, gavens memo (hvis den har ett), Giving Note og kvitteringsblokken fra skatteetaten hvis du har angitt et **Statement format** (se [Gaveoversikter](giving-statements.md)). Kvitteringsnummeret i den blokken er gavens ID.
 
 :::info
 Teksten «no goods or services» skrives bare ut når alle fond på gaven er merket som skattefradragsberettiget. Hvis noen del av gaven gikk til et fond som ikke er skattefradragsberettiget, for eksempel et arrangementsgebyr eller et kjøp, utelates den teksten, slik at kvitteringen leses som en betaling og ikke som en gave til et veldedig formål.

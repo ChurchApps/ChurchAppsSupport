@@ -4,7 +4,7 @@ sidebar_label: "Modificare il tuo profilo"
 description: "Aggiorna i tuoi dati di contatto, i membri del nucleo familiare, l'email e la password di accesso e le impostazioni sulla privacy nel portale membri di B1.church."
 ---
 
-# Modificare il tuo profilo
+# Modificare il tuo profilo {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -25,7 +25,7 @@ La pagina del profilo nel portale membri ti permette di aggiornare i tuoi dati d
 
 ## Aprire il tuo profilo {#opening-your-profile}
 
-Tocca la foto del profilo nella barra superiore dell'app, oppure tocca **Modifica profilo** in cima alla pagina **Altro** o nella tua [pagina Io](./me-page.md), per aprire **Il tuo profilo** all'indirizzo `/mobile/profileEdit`. La pagina è un unico foglio composto da sezioni -- **Foto e nome**, **Contatto**, **Nucleo familiare**, **Account** e **Privacy** -- ognuna delle quali mostra le tue informazioni attuali con un link **Modifica** (oppure **Aggiungi membro della famiglia** / **Cambia**) che apre un pannello in cui apportare le modifiche.
+Tocca la foto del profilo nella barra superiore dell'app, oppure tocca **Modifica profilo** in cima alla pagina **Altro** o nella tua [pagina Io](./me-page.md), per aprire **Il tuo profilo** all'indirizzo `/mobile/profileEdit`. La pagina è un unico foglio di sezioni — **Foto e nome**, **Contatto**, **Nucleo familiare**, **Account** e **Privacy** — ognuna delle quali mostra le tue informazioni attuali con un link **Modifica** (oppure **Aggiungi membro della famiglia** / **Cambia**) che apre un pannello in cui fare le modifiche.
 
 ## Foto e nome e Contatto {#photo--name-and-contact}
 
@@ -37,7 +37,7 @@ Queste sezioni contengono le informazioni che la tua chiesa vede nella tua sched
 Apporta le modifiche nel pannello e tocca **Salva modifiche**.
 
 :::info
-Se la tua chiesa richiede l'approvazione per le modifiche alla rubrica, la pagina mostra il messaggio "Le modifiche al tuo profilo vengono inviate al personale della chiesa per l'approvazione." e il pulsante riporta **Invia per approvazione** -- le tue modifiche vengono inviate come richiesta invece di essere applicate subito. Consulta [Approvazione delle modifiche al profilo](/docs/b1-admin/profile/approving-profile-changes) per sapere come la tua chiesa le esamina.
+Se la tua chiesa richiede l'approvazione per le modifiche alla rubrica, la pagina mostra il messaggio "Le modifiche al tuo profilo vengono inviate al personale della chiesa per l'approvazione." e il pulsante riporta **Invia per approvazione** — le tue modifiche vengono inviate come richiesta invece di essere applicate subito. Consulta [Approvazione delle modifiche al profilo](/docs/b1-admin/profile/approving-profile-changes) per sapere come la tua chiesa le esamina.
 :::
 
 ## Nucleo familiare {#household}
@@ -48,10 +48,11 @@ Per aggiungere un familiare che non è ancora nel sistema:
 
 1. Tocca **Aggiungi membro della famiglia**.
 2. Inserisci il suo **Nome**. Il **Cognome** è precompilato con il tuo; modificalo se il suo è diverso.
-3. Facoltativamente, aggiungi il suo **Titolo** e il **Cellulare**.
+3. Facoltativamente, aggiungi il suo **Titolo**, **Email** e **Cellulare**.
 4. Scegli il suo **Ruolo familiare**: **Capofamiglia**, **Coniuge**, **Figlio** o **Altro** (l'impostazione predefinita).
-5. Tocca **Aggiungi**. Compariranno sotto **Membri della famiglia in attesa** con il loro ruolo; tocca **Rimuovi** per eliminare qualcuno dall'elenco. Ripeti per chiunque altro.
-6. Tocca **Salva modifiche** (oppure **Invia per approvazione**).
+5. Facoltativamente, tocca **Aggiungi foto** per scegliere un'immagine di lui o lei (tocca **Cambia foto** per sceglierne un'altra).
+6. Tocca **Aggiungi**. Compariranno sotto **Membri della famiglia in attesa** con il loro ruolo e la loro email; tocca **Rimuovi** per eliminare qualcuno dall'elenco. Ripeti per chiunque altro.
+7. Tocca **Salva modifiche** (oppure **Invia per approvazione**).
 
 Se la tua chiesa esamina le modifiche alla rubrica, i nuovi membri della famiglia vengono inviati insieme alle altre modifiche affinché la chiesa le approvi. In caso contrario, vengono aggiunti al tuo nucleo non appena salvi.
 

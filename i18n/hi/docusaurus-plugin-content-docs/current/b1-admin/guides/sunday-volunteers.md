@@ -3,7 +3,7 @@ title: "गाइड: Sunday Volunteers प्रबंधित करें"
 description: "B1 Admin में volunteer teams, साप्ताहिक service plans, service orders, और Sunday tasks सेट करें, ताकि volunteers B1.church और mobile app पर अपने assignments देखें और उनका जवाब दें।"
 ---
 
-# Sunday Volunteers प्रबंधित करें
+# Sunday Volunteers प्रबंधित करें {#manage-sunday-volunteers}
 
 <div class="article-intro">
 
@@ -108,7 +108,7 @@ assign किए गए volunteers अपने plans अपने-आप दे
 
 1. volunteers [B1.church और B1 App पर](../../b1-church/plans/viewing-plans.md) अपने plans देखते हैं
 2. वे अपने फ़ोन या कंप्यूटर से सीधे assignments स्वीकार या अस्वीकार कर सकते हैं
-3. वे उन हफ़्तों के लिए blockout dates सेट कर सकते हैं जब वे उपलब्ध नहीं हैं
+3. वे उन हफ़्तों के लिए blockout dates सेट कर सकते हैं जब वे उपलब्ध नहीं हैं। Staff team के **Block-out dates** card पर भी इन्हें दर्ज कर सकते हैं, और positions assign करते समय blocked-out volunteers पर **Unavailable** badge दिखता है -- देखें [Blockout Dates](../serving/plan-validation.md#blockout-dates)
 4. rehearsals के लिए plans प्रिंट किए जा सकते हैं या backstage पर लगाए जा सकते हैं
 5. volunteers [volunteer signup पेज](../../b1-church/serving/volunteer-signup.md) के माध्यम से खुली positions ब्राउज़ और उनमें signup कर सकते हैं
 

@@ -3,7 +3,7 @@ title: "Pagpaparehistro ng Guest"
 description: "Irehistro ang iyong sarili at ang iyong pamilya bilang mga unang beses na guest gamit ang QR form sa B1 Checkin para masuri ka ng mga volunteer pagdating mo."
 ---
 
-# Pagpaparehistro ng Guest
+# Pagpaparehistro ng Guest {#guest-registration}
 
 <div class="article-intro">
 
@@ -37,8 +37,9 @@ Ang pahina ay bubukas na may titulong **Guest Registration**. Kung nagdagdag ang
    - **Home Address** -- **Street Address**, **Address Line 2**, **City**, **State**, at **Zip**. Pinagsasaluhan ito ng buong pamilya.
 3. Nagsisimula ang form sa pangalawang card para sa **Family Member 2**. Ilagay ang una at huling pangalan nila, o i-tap ang **X** sa sulok ng card para alisin ito kung ikaw lang ang magpaparehistro.
 4. Para magdagdag ng mas maraming tao, i-tap ang **Add Family Member**. Awtomatikong nilalagyan ng apelyido ng primary contact ang bagong card. Maaari kang magparehistro ng hanggang 10 tao nang sabay.
-5. Kung hinihingi ng simbahan mo, maaaring may kasama ring **Title**, **Phone**, **Birth Date**, **Gender**, at **Grade** ang card ng bawat tao. Ang bawat card pagkatapos ng primary contact ay maaari ding humingi ng **Household Role** -- **Spouse**, **Child**, o **Other** -- para malaman ng simbahan kung paano konektado ang bawat tao sa primary contact.
-6. Kung may kahon na **Comments** sa ibaba ng mga miyembro ng pamilya, gamitin ito para ibahagi ang anumang gusto mong malaman ng simbahan (hanggang 1,000 karakter).
+5. Kung hinihingi ng simbahan mo, maaaring may kasama ring **Title**, **Email**, **Phone**, **Birth Date**, **Gender**, at **Grade** ang card ng bawat tao. Ang bawat card pagkatapos ng primary contact ay maaari ding humingi ng **Household Role** -- **Spouse**, **Child**, o **Other** -- para malaman ng simbahan kung paano konektado ang bawat tao sa primary contact.
+   Kung humihingi ng larawan ang simbahan mo, may button na **Add Photo** ang bawat card. I-tap ito, pumili o kumuha ng larawan, i-crop, at i-save; lalabas ang larawan sa card. I-tap ang **Change Photo** para pumili ng iba, o ang **Remove Photo** para alisin ito. Ang larawan ay sine-save bilang profile photo ng taong iyon kapag nagawa na ang kanyang talaan.
+6. Kung may kahon na **Comments** sa ibaba ng mga miyembro ng pamilya ang simbahan mo, gamitin ito para ibahagi ang anumang gusto mong malaman ng simbahan (hanggang 1,000 karakter).
 7. I-tap ang **Register** para isumite.
 
 Ang mga field na may asterisk (`*`) ay kinakailangan. Kailangan ng bawat card ng una at huling pangalan -- kung may kulang, magpapakita ang form ng "First name and last name are required for each member." Kung may iba pang kinakailangang field na blangko, magpapakita ito ng "Please fill in every required field." Walang isinusumite hangga't hindi mo ito napupunan.

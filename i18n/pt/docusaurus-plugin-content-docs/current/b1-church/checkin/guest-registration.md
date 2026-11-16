@@ -3,7 +3,7 @@ title: "Cadastro de visitantes"
 description: "Cadastre você e a sua família como visitantes de primeira vez pelo formulário de QR code do B1 Checkin, para que os voluntários possam fazer o seu check-in quando você chegar."
 ---
 
-# Cadastro de visitantes
+# Cadastro de visitantes {#guest-registration}
 
 <div class="article-intro">
 
@@ -37,7 +37,8 @@ A página abre com o título **Cadastro de visitantes**. Se a igreja tiver adici
    - **Endereço residencial** -- **Endereço**, **Complemento**, **Cidade**, **Estado** e **CEP**. Este endereço é compartilhado por toda a família.
 3. O formulário começa com um segundo cartão para o **Membro da família 2**. Informe o nome e o sobrenome dele, ou toque no **X** no canto do cartão para removê-lo, caso esteja se cadastrando sozinho.
 4. Para adicionar mais pessoas, toque em **Adicionar membro da família**. O novo cartão preenche automaticamente o sobrenome do contato principal para você. Você pode cadastrar até 10 pessoas de uma vez.
-5. Se a sua igreja solicitar, o cartão de cada pessoa também pode incluir **Título**, **Telefone**, **Data de nascimento**, **Gênero** e **Série**. Todos os cartões depois do contato principal também podem pedir um **Papel na família** -- **Cônjuge**, **Filho(a)** ou **Outro** -- para que a igreja saiba qual é a relação de cada pessoa com o contato principal.
+5. Se a sua igreja solicitar, o cartão de cada pessoa também pode incluir **Título**, **E-mail**, **Telefone**, **Data de nascimento**, **Gênero** e **Série**. Todos os cartões depois do contato principal também podem pedir um **Papel na família** -- **Cônjuge**, **Filho(a)** ou **Outro** -- para que a igreja saiba qual é a relação de cada pessoa com o contato principal.
+   Se a sua igreja pedir uma foto, cada cartão tem um botão **Adicionar foto**. Toque nele, escolha ou tire uma foto, recorte-a e salve; a foto aparece no cartão. Toque em **Alterar foto** para escolher outra ou em **Remover foto** para retirá-la. A foto é salva como a foto de perfil da pessoa quando o cadastro dela é criado.
 6. Se a sua igreja incluir uma caixa de **Comentários** abaixo dos membros da família, use-a para compartilhar o que quiser que a igreja saiba (até 1.000 caracteres).
 7. Toque em **Cadastrar** para enviar.
 

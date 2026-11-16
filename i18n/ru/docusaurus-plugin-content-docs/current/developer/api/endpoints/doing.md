@@ -3,7 +3,7 @@ title: "Эндпоинты Doing"
 description: "Справочник эндпоинтов Doing API для планов служения, назначений волонтёров, задач и автоматизаций в B1 Admin: пути, аутентификация, права."
 ---
 
-# Эндпоинты Doing
+# Эндпоинты Doing {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ description: "Справочник эндпоинтов Doing API для пла�
 
 **Базовый путь:** `/doing`
 
-## Планы
+## Планы {#plans}
 
 Базовый путь: `/doing/plans`
 
@@ -36,7 +36,7 @@ description: "Справочник эндпоинтов Doing API для пла�
 | POST | `/autofill/:id` | JWT | — | Автоматически заполнить назначения волонтёров для плана. Тело: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Удалить план и все связанные времена, назначения, позиции и элементы плана |
 
-### Пример: копирование плана
+### Пример: копирование плана {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Типы планов
+## Типы планов {#plan-types}
 
 Базовый путь: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить типы планов |
 | DELETE | `/:id` | JWT | — | Удалить тип плана |
 
-## Элементы плана
+## Элементы плана {#plan-items}
 
 Базовый путь: `/doing/planItems`
 
@@ -88,7 +88,7 @@ Authorization: Bearer <token>
 | POST | `/sort` | JWT | — | Обновить порядок сортировки элемента плана (пересортировывает соседние элементы) |
 | DELETE | `/:id` | JWT | — | Удалить элемент плана |
 
-## Лента плана
+## Лента плана {#plan-feed}
 
 Базовый путь: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/presenter/:churchId/:planId` | Public | — | Получить ленту плана для презентатора (автоматически заполняется из ленты площадки, если она пуста) |
 
-## Позиции
+## Позиции {#positions}
 
 Базовый путь: `/doing/positions`
 
@@ -113,7 +113,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить позиции |
 | DELETE | `/:id` | JWT | — | Удалить позицию |
 
-## Времена
+## Времена {#times}
 
 Базовый путь: `/doing/times`
 
@@ -126,7 +126,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить времена |
 | DELETE | `/:id` | JWT | — | Удалить время |
 
-## Назначения
+## Назначения {#assignments}
 
 Базовый путь: `/doing/assignments`
 
@@ -144,7 +144,7 @@ Authorization: Bearer <token>
 | DELETE | `/signup/:id` | JWT | — | Отменить собственную самозапись. Отклоняется с сообщением "Removal deadline has passed" после срока самозаписи плана |
 | DELETE | `/:id` | JWT | — | Удалить назначение |
 
-### Пример: принятие назначения
+### Пример: принятие назначения {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Даты недоступности
+## Даты недоступности {#blockout-dates}
 
 Базовый путь: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить даты недоступности (если `personId` не передан, по умолчанию — текущий пользователь) |
 | DELETE | `/:id` | JWT | — | Удалить дату недоступности |
 
-## Задачи
+## Задачи {#tasks}
 
 Базовый путь: `/doing/tasks`
 
@@ -188,11 +188,12 @@ Authorization: Bearer <token>
 | GET | `/closed` | JWT | — | Получить закрытые задачи текущего пользователя |
 | GET | `/timeline?taskIds=` | JWT | — | Получить данные временной шкалы для задач по ID задач, перечисленным через запятую |
 | GET | `/directoryUpdate/:personId` | JWT | — | Получить задачу обновления каталога для человека |
-| POST | `/` | JWT | — | Создать или обновить задачи. Добавьте `?type=directoryUpdate`, чтобы обрабатывать задачи обновления каталога (фото загружаются автоматически) |
+| POST | `/` | JWT | — | Создать или обновить задачи. Добавьте `?type=directoryUpdate`, чтобы обрабатывать задачи обновления каталога (фото загружаются автоматически). Изменение `assignedToId` у существующей задачи добавляет запись «Reassigned from ... to ...» в историю в её поле `data` |
 | POST | `/:id/conversation` | JWT | `tasks.edit` или исполнитель карточки | Прикрепить беседу с заметками к карточке. Тело: `{ conversationId }`. Побеждает первая прикреплённая беседа; последующие вызовы возвращают карточку без изменений |
 | POST | `/loadForGroups` | JWT | — | Загрузить задачи для конкретных групп. Тело: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | Безвозвратно удалить обычную задачу. Возвращает 400 для карточек рабочего процесса (используйте эндпоинты карточек) и запросов на удаление учётной записи (решайте их через действие проверки) |
 
-## Автоматизации
+## Автоматизации {#automations}
 
 Базовый путь: `/doing/automations`
 
@@ -204,7 +205,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить автоматизации |
 | DELETE | `/:id` | JWT | — | Удалить автоматизацию |
 
-## Действия
+## Действия {#actions}
 
 Базовый путь: `/doing/actions`
 
@@ -217,7 +218,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить действия |
 | DELETE | `/:id` | JWT | — | Удалить действие |
 
-## Условия
+## Условия {#conditions}
 
 Базовый путь: `/doing/conditions`
 
@@ -230,7 +231,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить условия |
 | DELETE | `/:id` | JWT | — | Удалить условие |
 
-## Связки условий
+## Связки условий {#conjunctions}
 
 Базовый путь: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить связки |
 | DELETE | `/:id` | JWT | — | Удалить связку |
 
-## Аутентификации поставщиков контента
+## Аутентификации поставщиков контента {#content-provider-auths}
 
 Базовый путь: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | Создать или обновить аутентификации поставщиков контента |
 | DELETE | `/:id` | JWT | — | Удалить аутентификацию поставщика контента |
 
-## Прокси поставщика
+## Прокси поставщика {#provider-proxy}
 
 Базовый путь: `/doing/providerProxy`
 
@@ -277,7 +278,7 @@ Authorization: Bearer <token>
 | POST | `/getInstructions` | JWT | — | Получить инструкции для элемента контента. Тело: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | Получить развёрнутые инструкции для элемента контента. Тело: `{ ministryId, providerId, path }` |
 
-## Связанные страницы
+## Связанные страницы {#related-pages}
 
 - [Эндпоинты Membership](./membership.md) — люди, группы, роли и права
 - [Эндпоинты Attendance](./attendance.md) — учёт служений и посещений

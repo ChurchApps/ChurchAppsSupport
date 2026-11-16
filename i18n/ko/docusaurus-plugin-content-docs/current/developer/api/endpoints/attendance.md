@@ -3,7 +3,7 @@ title: "출석 엔드포인트"
 description: "B1 Admin과 B1 Checkin의 출석 API 참조: 캠퍼스, 예배, 예배 시간, 세션, 방문, 체크인 규칙, 내보내기 엔드포인트를 다룹니다."
 ---
 
-# 출석 엔드포인트
+# 출석 엔드포인트 {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ description: "B1 Admin과 B1 Checkin의 출석 API 참조: 캠퍼스, 예배, �
 
 **기본 경로:** `/attendance`
 
-## 캠퍼스
+## 캠퍼스 {#campuses}
 
 기본 경로: `/attendance/campuses`
 
@@ -26,7 +26,7 @@ description: "B1 Admin과 B1 Checkin의 출석 API 참조: 캠퍼스, 예배, �
 | POST | `/` | JWT | Services.Edit | 캠퍼스 생성 또는 수정 |
 | DELETE | `/:id` | JWT | Services.Edit | 캠퍼스 삭제 |
 
-## 예배
+## 예배 {#services}
 
 기본 경로: `/attendance/services`
 
@@ -40,7 +40,7 @@ GenericCrudController를 확장하며 `getById`, `getAll`, `post`, `delete` CRUD
 | POST | `/` | JWT | Services.Edit | 예배 생성 또는 수정 |
 | DELETE | `/:id` | JWT | Services.Edit | 예배 삭제 |
 
-### 예제: 캠퍼스별 예배 검색
+### 예제: 캠퍼스별 예배 검색 {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ GenericCrudController를 확장하며 `getById`, `post`, `delete` CRUD 라우트
 | POST | `/` | JWT | Services.Edit | 예배 시간 생성 또는 수정. 선택적 일정 필드: `dayOfWeek`(0 = 일요일 … 6), `startTime` / `endTime`(`HH:mm`), `checkinOpenMinutes`(시작 전), `checkinCloseMinutes`(종료 후). 체크인은 `dayOfWeek`와 `startTime`이 모두 설정된 경우에만 시간으로 제한됨 |
 | DELETE | `/:id` | JWT | Services.Edit | 예배 시간 삭제 |
 
-## 그룹 예배 시간
+## 그룹 예배 시간 {#group-service-times}
 
 기본 경로: `/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ GenericCrudController를 확장하며 `getById`, `post`, `delete` CRUD 라우트
 | POST | `/` | JWT | Services.Edit | 그룹-예배 시간 연결 생성 또는 수정 |
 | DELETE | `/:id` | JWT | Services.Edit | 그룹-예배 시간 연결 삭제 |
 
-## 출석 기록
+## 출석 기록 {#attendance-records}
 
 기본 경로: `/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ GenericCrudController를 확장하며 `getById`, `post`, `delete` CRUD 라우트
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | 예배 시간에 배정된 모든 그룹에 대해 해당 날짜의 `{ groupId, sessionId, attendanceCount }`를 반환(`date`는 `YYYY-MM-DD` 형식, 그룹에 세션이 없으면 `sessionId`는 null). B1Admin의 **아직 출석이 필요한 그룹** 대화상자에 데이터를 제공 |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | 필터(캠퍼스, 예배, 예배 시간, 그룹, 날짜 범위)로 출석 기록 검색 |
 
-### 예제: 출석 추세
+### 예제: 출석 추세 {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 세션
+## 세션 {#sessions}
 
 기본 경로: `/attendance/sessions`
 
@@ -130,7 +130,7 @@ GenericCrudController를 확장하며 `getById`와 `delete` CRUD 라우트를 �
 | POST | `/` | JWT | Attendance.Edit 또는 그룹 리더 | 세션 생성 또는 수정. 그룹 리더는 자신이 맡은 그룹의 세션을 저장할 수 있음 |
 | DELETE | `/:id` | JWT | Attendance.Edit | 세션 삭제 |
 
-## 방문
+## 방문 {#visits}
 
 기본 경로: `/attendance/visits`
 
@@ -141,11 +141,12 @@ GenericCrudController를 확장하며 `getById`와 `delete` CRUD 라우트를 �
 | GET | `/` | JWT | Attendance.View | 모든 방문 목록 조회. `?personId=`로 필터링 |
 | GET | `/:id` | JWT | Attendance.View | ID로 방문 조회 |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View 또는 Attendance.Checkin | 예배에 참석한 사람들의 체크인 데이터 조회. 마지막으로 기록된 날짜의 방문 세션이 포함된 방문 정보를 반환 |
+| GET | `/active?peopleIds=` | JWT | Attendance.View 또는 Attendance.Checkin | 아직 체크아웃하지 않은 지정 인원의 오늘 방문을 방문 세션 및 세션 정보와 함께 반환. `peopleIds`(쉼표로 구분)는 필수이며, 없으면 400. B1Checkin의 이름으로 체크아웃 기능에서 사용됨 |
 | POST | `/` | JWT | Attendance.Edit | 방문 생성 또는 수정 |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit 또는 Attendance.Checkin | 체크인 데이터 제출. 방문과 방문 세션을 생성 또는 수정하고 오래된 기록은 제거 |
 | DELETE | `/:id` | JWT | Attendance.Edit | 방문 삭제 |
 
-### 예제: 체크인 흐름
+### 예제: 체크인 흐름 {#example-check-in-flow}
 
 **1단계 -- 기존 체크인 데이터 불러오기:**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 대상 예배 시간에 체크인 일정이 있고 그 기간이 닫혀 있으면(`checkinOpen`과 같은 캠퍼스 우선 시간대 순서로 측정), 아무것도 저장되지 않고 응답은 `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`가 됩니다. 정원 및 자원봉사자 비율 위반도 409를 반환합니다(`error: "capacity"` 또는 `"ratio"`). 사람이 오늘 이미 보유하고 있는 세션(체크인할 때마다 다시 전송됨)은 기간 확인을 건너뛰므로, 한 가구가 앞선 예배 시간의 기간이 닫힌 뒤에도 열려 있는 다른 예배 시간을 추가할 수 있습니다.
 
-## 방문 세션
+## 방문 세션 {#visit-sessions}
 
 기본 경로: `/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Authorization: Bearer <token>
 | DELETE | `/:id` | JWT | Attendance.Edit | ID로 방문 세션 삭제 |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit 또는 그룹 리더 | 세션에서 한 사람을 제거. 방문 세션을 삭제하고, 남은 세션이 없으면 상위 방문도 삭제. 그룹 리더는 자신이 맡은 그룹의 출석을 제거할 수 있음 |
 
-### 예제: 출석 빠른 기록
+### 예제: 출석 빠른 기록 {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### 예제: 세션 출석 다운로드
+### 예제: 세션 출석 다운로드 {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## 연속 출석
+## 연속 출석 {#streaks}
 
 기본 경로: `/attendance/streaks`
 
@@ -269,7 +270,7 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/person/:personId` | JWT | — | 한 사람의 연속 출석 기록 조회 |
 
-## 관련 페이지
+## 관련 페이지 {#related-pages}
 
 - [멤버십 엔드포인트](./membership.md) — 사람, 그룹, 역할, 교회 관리
 - [인증 및 권한](./authentication.md) — 로그인 흐름, JWT, 권한 모델

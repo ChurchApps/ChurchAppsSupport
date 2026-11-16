@@ -29,7 +29,7 @@ Når du går til **Donations > Batches**, ser du en liste over batchene dine. Hv
 - **Total** – samlet beløp i dollar
 - **Status** – **Open** eller **Closed** (se [Lukke og gjenåpne en batch](#closing-and-reopening-a-batch))
 
-Over listen lar årsknapper deg vise bare batcher fra ett år, eller alle batcher med **All**. Et sammendrag på én linje viser antall batcher, antall gaver og totalbeløpet for batchene som vises.
+Over listen lar årsknapper deg vise bare batcher fra ett år, eller alle batcher med **All**. Ved siden av dem innsnevrer statusknappene – **All**, **Open** og **Closed** – listen til batcher som fortsatt jobbes med, eller til dem du er ferdig med. De to filtrene fungerer sammen, slik at du kan velge **2026** og **Open** for å se årets åpne batcher. Et sammendrag på én linje viser antall batcher, antall gaver og totalbeløpet for batchene som vises.
 
 ## Opprette en ny batch {#creating-a-new-batch}
 

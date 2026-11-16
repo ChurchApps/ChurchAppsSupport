@@ -1,38 +1,39 @@
 ---
 title: "Visão geral do B1 Church Checkin"
-description: "Configure o app B1 Church Checkin em iPads ou tablets Android para o autoatendimento das famílias, atribuição de grupos e impressão de etiquetas."
+description: "Configure o app B1 Church Checkin em iPads ou tablets Android para o autoatendimento das famílias, atribuição de grupos e impressão de etiquetas e comprovantes de busca."
 ---
 
-# Visão geral do B1 Church Checkin
+# Visão geral do B1 Church Checkin {#b1-church-checkin-overview}
 
 <div class="article-intro">
 
-O B1 Church Checkin é um aplicativo de quiosque de autoatendimento para iPads e tablets Android. Ele permite que os membros da igreja procurem a sua família, designem as crianças para grupos ou turmas e imprimam etiquetas com nomes e comprovantes de busca dos pais — tudo sem precisar de um voluntário na mesa.
+O B1 Church Checkin é um aplicativo de quiosque de autoatendimento para iPads e tablets Android. Ele permite que os membros da igreja procurem a sua família, designem as crianças para grupos ou turmas e imprimam etiquetas com nomes e comprovantes de busca dos pais -- tudo sem precisar de um voluntário na mesa.
 
 </div>
 
-## Vídeo de apresentação
+## Vídeo de apresentação {#tour-video}
 
 <YouTube id="fNZsJi9F-jc" title="Um tour pelo B1 Check-In" next="Configurando cultos e presença no B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Como funciona
+## Como funciona {#how-it-works}
 
 Coloque um iPad ou tablet Android no saguão ou na área de recepção. Os membros se aproximam, pesquisam a sua família pelo número de telefone ou pelo sobrenome, revisam a família, escolhem a qual grupo cada pessoa deve ir e tocam em **Fazer check-in**. O aplicativo imprime automaticamente as etiquetas com nomes e os comprovantes de busca, e então se reinicia para a próxima família.
 
-## Principais recursos
+## Principais recursos {#key-features}
 
 - **Busca de membros por autoatendimento** -- Pesquise pelo número de telefone ou pelo sobrenome para encontrar a sua família rapidamente.
 - **Revisão da família** -- Veja todos os membros da família com fotos e as atribuições atuais de grupo de relance.
 - **Atribuição de grupo** -- Designe cada membro da família à turma ou grupo certo para o horário de culto selecionado.
-- **Check-in de visitantes** -- Adicione um visitante ao domicílio na hora, com nome e sobrenome.
+- **Check-in de visitantes** -- Adicione um visitante ao domicílio na hora, com nome, sobrenome e, opcionalmente, e-mail.
 - **Cadastro de visitantes por QR code** -- Exiba um QR code que os visitantes podem escanear para [se cadastrar](../b1-church/checkin/guest-registration.md) no próprio celular antes de fazer o check-in, ou deixe que toquem em **Cadastrar aqui** para preencher o mesmo formulário no quiosque.
 - **Impressão de etiquetas** -- Imprima etiquetas com nomes para as crianças e comprovantes de busca para os pais, com códigos de segurança exclusivos.
+- **[Check-out](./check-in/checking-out.md)** -- Em estações gerenciadas, faça o check-out das crianças com o código de retirada, ou procure a família pelo sobrenome ou pelo telefone quando a etiqueta for perdida.
 - **Suporte a impressoras de rede** -- Encontre e configure impressoras de rede diretamente pelo aplicativo.
 - **Login automático** -- Depois do primeiro login, o aplicativo lembra as suas credenciais e vai direto para a tela de cultos nas próximas aberturas.
 - **Suporte a várias igrejas** -- Se a sua conta estiver vinculada a mais de uma igreja, você pode escolher em qual fazer o check-in.
 - **Identidade visual da igreja** -- O aplicativo exibe o logotipo da sua igreja no cabeçalho depois que uma igreja é selecionada.
 
-## Seções da documentação
+## Seções da documentação {#documentation-sections}
 
 - **[Primeiros passos](./getting-started/index.md)** -- Instalação do aplicativo, login e configuração da impressora.
 - **[Fluxo de check-in](./check-in/index.md)** -- O fluxo completo de check-in, desde a seleção de um culto até a impressão das etiquetas.

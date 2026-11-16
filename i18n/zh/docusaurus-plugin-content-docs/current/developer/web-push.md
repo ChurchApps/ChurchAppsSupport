@@ -3,7 +3,7 @@ title: "Web 推送通知"
 description: "设置 VAPID 密钥、WebPushHelper 客户端和 Service Worker 处理，使 B1.church 和 B1 管理后台能够向成员投递浏览器推送通知。"
 ---
 
-# Web 推送通知
+# Web 推送通知 {#web-push-notifications}
 
 <div class="article-intro">
 

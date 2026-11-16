@@ -3,7 +3,7 @@ title: "그룹 구성원"
 description: "B1 Admin에서 그룹 구성원을 추가하고 제거하며 리더를 지정하세요. 그룹 페이지에서 구성원 목록을 이메일, 문자, 인쇄, 내보내기 할 수 있습니다."
 ---
 
-# 그룹 구성원
+# 그룹 구성원 {#group-members}
 
 <div class="article-intro">
 
@@ -39,7 +39,7 @@ description: "B1 Admin에서 그룹 구성원을 추가하고 제거하며 리�
 
 ## 그룹 리더 지정하기 {#designating-group-leaders}
 
-그룹 리더에게는 특별한 권한이 있습니다. [그룹 캘린더](group-calendar.md)를 편집하고, 행사를 관리하며, 그룹 조정을 도울 수 있습니다.
+그룹 리더에게는 특별한 권한이 있습니다. [그룹 캘린더](group-calendar.md)를 편집하고, 행사를 관리하며, 그룹 운영을 도울 수 있습니다.
 
 1. 그룹 구성원 목록에서 리더로 지정할 사람을 찾습니다.
 2. 이름 옆의 **별 아이콘**(**Make Leader**)을 클릭합니다.
@@ -64,18 +64,18 @@ Stand Alone 양식이 [그룹에 연결되면](../forms/creating-forms.md#linkin
 **Leader notes** 섹션은 그 그룹의 리더에게만 그룹 페이지에 나타납니다. 가장 최근의 메모, 작성자와 작성 시각, 메모의 총 개수가 표시됩니다.
 
 1. 그룹 페이지의 **Leader notes** 섹션에서 **All notes**를 클릭합니다.
-2. 상자에 메모를 입력하고 게시합니다. 서식을 적용하려면 글을 드래그하여 선택한 뒤, 나타나는 팝업에서 **Bold**(굵게), **Italic**(기울임꼴), **Bulleted list**(글머리 기호 목록), **Numbered list**(번호 목록)를 고르세요(또는 **Ctrl+B** / **Ctrl+I**를 누릅니다). 메모는 작성자의 이름과 사진, 게시한 날짜와 시각과 함께 나열됩니다.
+2. 상자에 메모를 입력하고 게시합니다. 서식을 적용하려면 입력 중 상자 아래에 나타나는 **Bold**, **Italic**, **Bulleted list**, **Numbered list** 버튼 줄을 사용하세요. 글을 드래그하여 선택한 뒤 버튼을 클릭하거나(또는 **Ctrl+B** / **Ctrl+I**를 누릅니다). 목록에서 **Enter**를 누르면 다음 항목이 시작되고, 빈 항목에서 **Enter**를 누르면 목록이 끝납니다. 메모는 작성자의 이름과 사진, 게시한 날짜와 시각과 함께 나열됩니다.
 3. 그룹 이름이 적힌 **Back to** 링크를 클릭하여 그룹 페이지로 돌아갑니다.
 
 :::info
-리더 메모는 그룹의 리더에게만 보입니다. 다른 구성원은 볼 수 없으며, 직원이나 관리자도 전체 권한이 있더라도 그 그룹의 리더가 아니라면 볼 수 없습니다. 다른 사람에게 접근 권한을 주려면 [그 사람을 리더로 지정](#designating-group-leaders)하세요. 리더는 [B1.church의 그룹 페이지](../../b1-church/groups/group-details.md#leader-notes)의 **Leader notes** 섹션과 B1 Admin의 [메모](../people/notes.md) 페이지 **Groups** 탭에서도 이 메모를 볼 수 있습니다.
+리더 메모는 그룹의 리더에게만 보입니다. 다른 구성원은 볼 수 없으며, 직원이나 관리자도 전체 권한이 있더라도 그 그룹의 리더가 아니라면 볼 수 없습니다. 다른 사람에게 접근 권한을 주려면 [그 사람을 리더로 지정](#designating-group-leaders)하세요. 리더는 [B1.church의 그룹 페이지](../../b1-church/groups/group-details.md#leader-notes)의 **Leader notes** 섹션과 B1 Admin의 [Notes](../people/notes.md) 페이지 **Groups** 탭에서도 이 메모를 볼 수 있습니다.
 :::
 
 ## 그룹 구성원에게 메시지 보내기 {#sending-messages-to-group-members}
 
 B1 Admin에서 그룹의 모든 구성원에게 직접 메시지를 보낼 수 있습니다.
 
-1. 그룹의 구성원 목록에서 목록 위의 **Send a message to members**(구성원에게 메시지 보내기) 아이콘을 클릭합니다.
+1. 그룹의 구성원 목록 위에 있는 **Send a message to members**(구성원에게 메시지 보내기) 아이콘을 클릭합니다.
 2. 텍스트 상자에 최대 140자까지 메시지를 입력합니다. 미리 준비된 메시지로 시작하려면 **Show Templates**를 클릭하고 **Templates**에서 하나를 고릅니다.
 3. **Send**를 클릭합니다. **Message sent.** 알림이 전송되었음을 확인해 줍니다.
 
@@ -119,7 +119,7 @@ B1의 모든 교회는 같은 주소에서 이메일을 보내며(교회 이름�
 
 1. 그룹 세부 정보 페이지에서 **Text**를 클릭합니다.
 2. 문자를 받을 구성원 수가 표시됩니다. 휴대폰 번호가 없거나 수신을 거부한 구성원은 건너뜁니다.
-3. 선택 사항으로 **Load Template (optional**)에서 저장된 문자 메시지를 골라 메시지를 채울 수 있습니다. 이 선택기는 교회에 [문자 템플릿](../settings/email-templates.md#text-templates)이 생기면 나타나며, 설정을 편집할 수 있는 사람에게는 **Manage Templates** 링크도 보입니다.
+3. 선택 사항으로 **Load Template (optional)**에서 저장된 문자 메시지를 골라 메시지를 채울 수 있습니다. 이 선택기는 교회에 [문자 템플릿](../settings/email-templates.md#text-templates)이 생기면 나타나며, 설정을 편집할 수 있는 사람에게는 **Manage Templates** 링크도 보입니다.
 4. 메시지를 입력하거나 수정합니다. 개인화하려면 메시지 상자 아래의 자리 표시자 칩 **First Name**, **Last Name**, **Display Name**, **Church Name**, **Group Name** 중 하나를 클릭하면 커서 위치에 들어갑니다. 각 자리 표시자는 문자를 보낼 때 받는 사람의 정보로 채워지며, **Group Name**은 그룹의 이름이 됩니다.
 5. **Send**를 클릭합니다.
 
@@ -139,7 +139,7 @@ CSV 내보내기는 다른 도구로 데이터를 가져오거나 오프라인 �
 그룹의 구성원 목록에서 목록 위의 **Print Roll Sheet**(프린터) 아이콘을 클릭하고 레이아웃을 고르세요. 이 아이콘은 그룹 구성원을 볼 수 있는 사람과 그룹 리더에게 나타납니다. 페이지는 새 탭에서 열리며 브라우저의 인쇄 대화상자가 자동으로 나타납니다.
 
 - **Attendance Sheet**(출석표) -- 날짜가 없는 수업 명단이며, 교사가 손으로 **Present**(출석)와 **Absent**(결석) 상자에 표시할 수 있습니다. [출석부 인쇄하기](../attendance/recording-attendance.md#printing-a-roll-sheet)를 참조하세요.
-- **Contact Roster**(연락처 명단) -- 그룹의 연락처 명단이며, 오늘 날짜가 찍히고 맨 위에 교회 로고([웹사이트 > 외관](../website/appearance.md)에서 올린 **Light Background Logo**가 있는 경우)와 그 아래 교회 이름, 그리고 그룹 이름이 나옵니다. 각 구성원은 **Name**(이름), **Phone**(전화), **Email**(이메일), **Address**(주소) 행을 가집니다. 리더가 먼저 **Leader**로 표시되어 나열되고, 나머지 구성원은 성 순서로 나옵니다. 표시되는 전화번호는 구성원의 휴대폰 번호이며, 휴대폰이 없으면 집이나 직장 번호입니다. 수신을 거부한 사람의 연락처는 비워 둡니다.
+- **Contact Roster**(연락처 명단) -- 그룹의 연락처 명단입니다. 오늘 날짜가 찍히고, 맨 위에 교회 로고([웹사이트 > 외관](../website/appearance.md)에서 올린 **Light Background Logo**가 있는 경우)와 교회 이름, 그 아래 그룹 이름이 나옵니다. 각 구성원은 **Name**(이름), **Phone**(전화), **Email**(이메일), **Address**(주소) 행을 가집니다. 리더가 먼저 **Leader**로 표시되어 나열되고, 나머지 구성원은 성 순서로 나옵니다. 표시되는 전화번호는 구성원의 휴대폰 번호이며, 휴대폰이 없으면 집이나 직장 번호입니다. 수신을 거부한 사람의 연락처는 비워 둡니다.
 
 :::warning
 연락처 명단에는 구성원의 개인 연락처 정보가 들어 있습니다. 인쇄본은 그룹 리더와 필요한 사람에게만 공유하세요.
@@ -151,14 +151,14 @@ B1.church 앱을 기기에 설치하고 푸시 알림을 켠 모든 그룹 구�
 
 1. 그룹 세부 정보 페이지에서 **Notify**를 클릭합니다(**Email**과 **Text** 버튼 아래에 있습니다. **Text** 버튼은 [문자 제공업체](../settings/church-settings.md#texting)가 연결되어 있을 때 나타납니다).
 2. 푸시가 켜진 구성원이 몇 명인지 보여 주는 대화상자가 열립니다. 보내는 사람인 여러분은 포함되지 않습니다.
-3. **When**에서 **Send now**(지금 보내기)를 그대로 두거나 **Schedule for later**(나중에 예약)를 고른 뒤 **Send at** 날짜와 시각을 정합니다. 예약된 알림은 **Mobile > [Push Notifications](../settings/mobile-app.md#push-notifications)** 에서 보거나, 수정하거나, 취소할 수 있습니다.
+3. **When**에서 **Send now**(지금 보내기)를 그대로 두거나 **Schedule for later**(나중에 예약)를 고른 뒤 **Send at** 날짜와 시각을 정합니다. 예약된 알림은 **Mobile > [Push Notifications](../settings/mobile-app.md#push-notifications)**에서 보거나, 수정하거나, 취소할 수 있습니다.
 4. 알림 세부 정보를 입력합니다.
    - **Title**(제목) *(필수)* -- 80자 이내의 짧은 요약입니다.
    - **Message**(메시지) *(필수)* -- 알림 본문이며, 240자 이내입니다.
    - **Open link or flyer URL**(열 링크 또는 전단 URL) *(선택)* -- 알림을 탭하면 열리는 상대 앱 경로(예: `/mobile/groups`) 또는 전체 `https://` URL입니다.
    - **Image URL**(이미지 URL) *(선택)* -- 지원되는 기기에서 알림과 함께 표시되는 이미지의 `https://` URL입니다.
 5. 실시간 미리 보기에서 알림이 기기에 어떻게 보이는지 확인합니다.
-6. **Send Notification**(알림 보내기)(또는 **Schedule Notification**(알림 예약하기))을 클릭합니다.
+6. **Send Notification**(또는 **Schedule Notification**)을 클릭합니다.
 
 :::info
 푸시 알림은 B1.church PWA가 설치되어 있고 푸시 알림을 끄지 않은 그룹 구성원에게만 전달됩니다. 등록된 푸시 기기가 없거나 푸시를 끈 구성원은 건너뛴 것으로 집계되며, 발송 요약에는 도달한 사람과 건너뛴 사람의 수가 표시됩니다.

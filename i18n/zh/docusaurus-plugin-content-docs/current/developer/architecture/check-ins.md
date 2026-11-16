@@ -3,7 +3,7 @@ title: "签到"
 description: "签到在 B1Checkin、B1App 和 B1 Admin 中的工作方式：考勤数据模型、将小组作为房间、容量限制和接送安全规则。"
 ---
 
-# 签到
+# 签到 {#check-ins}
 
 <div class="article-intro">
 
@@ -11,29 +11,29 @@ description: "签到在 B1Checkin、B1App 和 B1 Admin 中的工作方式：考�
 
 </div>
 
-## 概览
+## 概览 {#overview}
 
 ```
 ┌──────────────────────────┐
-│ B1Checkin（Expo 自助机）  │──┐         ┌──────────────────────────────────────────────┐
-│  查找 → 家庭 →           │  │         │ Api                                          │
-│  小组 → 完成/打印         │  │  HTTPS  │  ┌─ membership 模块 ──────────────────────┐ │
-├──────────────────────────┤  ├───────▶ │  │ people · households · groups          │ │
-│ B1App（自助签到）         │──┤         │  └─────────────────────────────────────────┘ │
-│  /mobile/checkin 屏幕     │  │         │  ┌─ attendance 模块 ───────────────────────┐ │
+│ B1Checkin (Expo kiosk)   │──┐         ┌──────────────────────────────────────────────┐
+│  lookup → household →    │  │         │ Api                                          │
+│  groups → complete/print │  │  HTTPS  │  ┌─ membership module ─────────────────────┐ │
+├──────────────────────────┤  ├───────▶ │  │ people · households · groups            │ │
+│ B1App (self check-in)    │──┤         │  └─────────────────────────────────────────┘ │
+│  /mobile/checkin screen  │  │         │  ┌─ attendance module ─────────────────────┐ │
 ├──────────────────────────┤  │         │  │ campuses → services → serviceTimes      │ │
-│ B1Admin（工作人员）       │──┘         │  │ groupServiceTimes  （房间路由）          │ │
-│  设置 · 报表 ·            │            │  │ sessions ← visitSessions → visits       │ │
-│  标签设计器               │            │  │ labelTemplates                          │ │
+│ B1Admin (staff)          │──┘         │  │ groupServiceTimes  (room routing)       │ │
+│  setup · reports ·       │            │  │ sessions ← visitSessions → visits       │ │
+│  label designer          │            │  │ labelTemplates                          │ │
 └──────────────────────────┘            │  └─────────────────────────────────────────┘ │
                                         └──────────────────────────────────────────────┘
 
-标签打印路径（仅限自助机）：
+Label print path (kiosk only):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
-  └▶ LabelHelper（标签模板，或内置的 HTML 备用模板）
-       └▶ LabelRenderer → HTML 文档 + 内联 SVG 条码
-            └▶ PrintUI：WebView 渲染 → ViewShot JPG 截图
-                 └▶ printer-helper 原生模块 → Brother QL / Zebra
+  └▶ LabelHelper (label templates, or bundled HTML fallback)
+       └▶ LabelRenderer → HTML doc + inline SVG barcodes
+            └▶ PrintUI: WebView render → ViewShot JPG capture
+                 └▶ printer-helper native module → Brother QL / Zebra
 ```
 
 | 入口 | 代码仓库 | 技术栈 | 角色 |
@@ -44,7 +44,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 这三者都通过 `ApiHelper` 调用同样的两个 API 模块：**MembershipApi**（`/membership`）用于人员、家庭和小组；**AttendanceApi**（`/attendance`）用于下文中的其他所有功能。
 
-## 数据模型（`Api/src/modules/attendance`）
+## 数据模型（`Api/src/modules/attendance`） {#data-model-apisrcmodulesattendance}
 
 | 实体 / 数据表 | 关键字段 | 含义 |
 |----------------|-----------|---------|
@@ -57,7 +57,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 | `visitSessions` | visitId, sessionId | 某次到访涵盖哪些场次——签到两个礼拜时间的儿童会获得两行记录（`models/VisitSession.ts`） |
 | `labelTemplates` | name, labelType（`nametag`/`pickup`）, width, height, isDefault, content（JSON 区块） | 可设计的标签布局（`models/LabelTemplate.ts`） |
 
-### 完成签到如何持久化
+### 完成签到如何持久化 {#how-a-completed-check-in-is-persisted}
 
 `VisitController.postCheckin`（`Api/src/modules/attendance/controllers/VisitController.ts`）处理 `POST /attendance/visits/checkin?serviceId=&peopleIds=`。请求体是一个 `Visit` 对象数组，每个对象都带有 `visitSessions`，其中嵌入的 `session` 仅指定一个 `(serviceTimeId, groupId)` 组合。服务器随后会：
 
@@ -69,16 +69,17 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 每条保存的到访记录还会触发一个 `attendance.recorded` webhook。读取端 `GET /attendance/visits/checkin` 会返回这些人员自**最近一次记录日期**起的到访记录——如果该日期是上一周，则会去掉 ID，因此客户端收到的是上周房间选择的预填副本，保存后将作为新记录写入。
 
-### 离场
+### 离场 {#check-out}
 
-两个端点完成整个流程（`VisitController`）：
+三个端点完成整个流程（`VisitController`）：
 
-- `GET /attendance/visits/code/:code` —— 返回今天尚未签离、带有该安全码的到访记录，并填充其场次。
-- `POST /attendance/visits/checkout` —— 请求体为 `{ visitIds, checkedOutBy?, checkedOutById? }`；盖上 `checkoutTime` 以及接走人的信息，并为每条到访记录触发一个 `attendance.checkout` webhook。
+- `GET /attendance/visits/code/:code` —— 今天尚未签离、带有该安全码的到访记录，并填充其场次。
+- `GET /attendance/visits/active?peopleIds=` —— 列出指定人员今天尚未签离的到访记录（不限安全码），并填充其场次；当 `peopleIds` 为空时返回 400。用于按姓名签离。
+- `POST /attendance/visits/checkout` —— 请求体为 `{ visitIds, checkedOutBy?, checkedOutById? }`；盖上 `checkoutTime` 并记录接走人的信息，并为每条到访记录触发一个 `attendance.checkout` webhook。
 
-权限：自助机使用 `attendance.checkin` 进行身份验证，该权限恰好授予签到/签离/标签模板相关的接口，外加自助机所需的、无需 `people.view` 的家庭查询（电话/姓名搜索、签到模型中的家庭成员，以及家庭接送人名单）。B1Checkin 的 `SessionHelper.filterChurches` 只会提供账号拥有 `Attendance/Checkin` 或 `Attendance/Edit` 权限的教会。`Checkin` 已不再属于 Everyone（null 角色）的权限（`RoleHelper` 以及迁移脚本 `2026-11-01_remove_everyone_checkin`），因此必须通过真正的角色授予；`attendance.view`/`attendance.edit` 涵盖报表和手动录入；礼拜结构（礼拜、礼拜时间、小组分配）则需要 `services.edit`。成员自助签到（B1App）无需任何权限：任何在本教会拥有已关联人员的已登录用户，都可以调用 `GET`/`POST /attendance/visits/checkin`，服务器会将提交的 `personId` 限制在调用者自己的家庭范围内（否则返回 403——正是这一限制防止了其他家庭的 `securityCode` 被读取）。成员资格即是授权；成员是否能看到该功能，则由教会的 B1App 导航标签页控制。其他签到端点（`code/:code`、`checkout`、`guardians`、`CheckinController`）仍仅限自助机/工作人员使用。
+权限：自助机使用 `attendance.checkin` 进行身份验证，该权限恰好授予签到/签离/标签模板相关的接口，外加自助机所需的、无需 `people.view` 的家庭查询（电话/姓名搜索、签到模型中的家庭成员，以及家庭接送人名单）。B1Checkin 的 `SessionHelper.filterChurches` 只会提供账号拥有 `Attendance/Checkin` 或 `Attendance/Edit` 权限的教会。`Checkin` 已不再属于 Everyone（null 角色）的权限（`RoleHelper` 以及迁移脚本 `2026-11-01_remove_everyone_checkin`），因此必须通过真正的角色授予；`attendance.view`/`attendance.edit` 涵盖报表和手动录入；礼拜结构（礼拜、礼拜时间、小组分配）则需要 `services.edit`。成员自助签到（B1App）无需任何权限：任何在本教会拥有已关联人员的已登录用户，都可以调用 `GET`/`POST /attendance/visits/checkin`，服务器会将提交的 `personId` 限制在调用者自己的家庭范围内（否则返回 403——正是这一限制防止了其他家庭的 `securityCode` 被读取）。成员资格即是授权；成员是否能看到该功能，则由教会的 B1App 导航标签页控制。其他签到端点（`code/:code`、`active`、`checkout`、`guardians`、`CheckinController`）仍仅限自助机/工作人员使用。
 
-## 小组驱动房间路由
+## 小组驱动房间路由 {#groups-drive-room-routing}
 
 系统中的任何地方都没有房间或教室实体。"房间"就是启用了 `trackAttendance` 的会员**小组**，并通过 `groupServiceTimes` 关联到一个或多个礼拜时间。影响自助机行为的小组字段（位于 `Api/src/modules/membership/models/Group.ts`）如下：
 
@@ -99,7 +100,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 由于小组是唯一的事实来源，同一套小组成员资格同时驱动自助机路由、B1Admin 小组页面中类似名册的出勤功能以及出勤报表——将小组分配到礼拜时间，是使其成为签到目的地所需的唯一步骤。
 :::
 
-## 儿童安全
+## 儿童安全 {#child-safety}
 
 ### 签到类型 {#check-in-types}
 
@@ -131,7 +132,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 在离场（`B1Checkin/app/checkout.tsx`）时，自助机会加载该家庭的接送人名单：`trusted` 的条目会显示为可点击的接送卡片，与家庭成年人的照片网格并列显示；自由输入的"其他"姓名会与 `notAuthorized` 条目进行模糊匹配（Levenshtein 距离，`src/helpers/PickupMatchHelper.ts`）——一旦匹配，离场将被阻止，并弹出警告面板，同时提供工作人员的 **Override**（覆盖）按钮。覆盖操作会记录在到访记录本身上：它通过常规的 `POST /attendance/visits/checkout` 提交 `checkedOutBy` 为 `"OVERRIDE: {name}"`，因此它会出现在出勤记录和 `attendance.checkout` webhook 中，而不是单独的审计表。
 
-### 呼叫家长与紧急广播
+### 呼叫家长与紧急广播 {#page-a-parent-and-emergency-broadcast}
 
 `CheckinController`（`Api/src/modules/attendance/controllers/CheckinController.ts`，路由 `/attendance/checkin`）提供两个短信端点：
 
@@ -140,16 +141,16 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 两者都会通过会员网关解析家庭成年人，然后将投递交给 **`MessagingModuleGateway.sendBulkText`**（`Api/src/shared/modules/MessagingModuleGateway.ts`）——这是通往教会已配置短信服务商（`@churchapps/texting`：TextInChurch、Clearstream 或 MutualMinistry；系统中没有内置的短信发送器）的跨模块入口。网关会记录一行 `sentText` 以及每位收件人的 `deliveryLog` 条目，并将单批次限制为 500 名收件人；如果未配置任何服务商，则返回 `no_provider`，自助机会将其显示为"No SMS provider configured"（未配置短信服务商）。控制器的 `dispatch()` 会对电话号码去重，并跳过没有手机号码或已设置 `optedOut` 的人员，返回 `{ sent, failed, skippedOptedOut, skippedNoPhone }`，以便自助机显示被跳过的内容。
 
-## 自助机（B1Checkin）
+## 自助机（B1Checkin） {#the-kiosk-b1checkin}
 
 各屏幕是 `B1Checkin/app/` 下的 expo-router 文件；跨屏幕的状态保存在静态的 `CachedData` 类（`src/helpers/CachedData.ts`）中，而非 React 状态。
 
 ```
-index（启动/自动登录）→ selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
+index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
                                           │             │  ▲         │ │            │
-             加载 serviceTimes、groups、  │             │  └─────────┘ └▶ addGuest  └▶ 打印标签，
-             groupServiceTimes、          │             └▶ checkout（有人值守）          自动返回
-             labelTemplates               │                                            至 lookup
+             loads serviceTimes, groups,  │             │  └─────────┘ └▶ addGuest  └▶ print labels,
+             groupServiceTimes,           │             └▶ checkout (manned)           auto-return
+             labelTemplates               │                                            to lookup
 ```
 
 1. **查找**（`app/lookup.tsx`）—— 按电话（`GET /membership/people/search/phone?number=`，后四位或完整号码）或按姓名（`GET /membership/people/search?term=`）搜索。选中某个匹配项后，会加载家庭（`GET /membership/people/household/{householdId}`）和已有的到访记录（`GET /attendance/visits/checkin`），并以上周的选择预填 `pendingVisits`。
@@ -157,31 +158,31 @@ index（启动/自动登录）→ selectChurch → services ──▶ lookup ─
 3. **小组分配**（`app/selectGroup.tsx`）—— 根据 `serviceTime.groups` 构建的分类树，符合年龄/年级的房间会被高亮显示，不符合的房间会被淡化，并需要工作人员确认（参见[年龄/年级资格](#agegrade-eligibility-kiosk-side)）；选择房间会在该人员的待定到访记录中写入一条 `{ session: { serviceTimeId, groupId } }` 形式的 visitSession（`src/helpers/VisitSessionHelper.ts`）。选择"None"（无）则会清除。
 4. **完成**（`app/checkinComplete.tsx`）—— 以 `pendingVisits`（每条都盖有其 `checkinType`）调用 `POST /attendance/visits/checkin`，如果配置了打印机则打印标签，然后自动返回 lookup。若返回 `409` 的容量或 `notOpen` 响应，会显示相关房间及原因（已满/已关闭，或签到未开放）；比例警告则会提供工作人员确认选项，确认后携带 `acknowledgeWarnings=true` 重新提交。
 
-**离场**屏幕（`app/checkout.tsx`）通过一个自动聚焦的输入框接受 4 位安全码——因此 USB/蓝牙键盘模拟的条码扫描枪无需摄像头即可使用——或使用同一字符集的屏幕键盘，输入满 4 位后自动提交。**扫描**按钮会打开一个面板，其中包含共享的 `src/components/CodeScanner.tsx` 摄像头（默认使用后置摄像头，支持 QR、Code 128 和 Code 39），因此没有键盘扫描枪的站点也能读取接送标签；扫描到的安全码会进入与手动输入相同的 `handleCode()` 处理路径。它会查询安全码，显示正在被接走的儿童，并将家庭的**可信接送人**以可点击卡片的形式展示，同时还有家庭成年人的照片网格（以及一个"其他"自由文本选项，该选项会与未授权姓名进行模糊检查——参见[可信接送与未授权接送](#trusted-and-not-authorized-pickup)），然后以选择人员的姓名/ID 调用 `POST /attendance/visits/checkout`。在有人值守模式下，该屏幕还提供 **Page a parent**（呼叫家长，`POST /attendance/checkin/page`）以及**安全标签重新打印**功能——`reprint()` 会使用 `LabelHelper.getAllLabelsFor(...)` 重建该家庭的标签，并将其交给与签到相同的 `PrintUI` 流程。
+**离场**屏幕（`app/checkout.tsx`）通过一个自动聚焦的输入框接受 4 位安全码——因此 USB/蓝牙键盘模拟的条码扫描枪无需摄像头即可使用——或使用同一字符集的屏幕键盘，输入满 4 位后自动提交。**Scan**（扫描）按钮会打开一个面板，其中包含共享的 `src/components/CodeScanner.tsx` 摄像头（默认使用后置摄像头，支持 QR、Code 128 和 Code 39），因此没有键盘扫描枪的站点也能读取接送标签；扫描到的安全码会进入与手动输入相同的 `handleCode()` 处理路径。**Search by name**（按姓名搜索）按钮会将安全码输入切换为 `src/components/HouseholdSearch.tsx`（按姓或电话搜索，使用与 lookup 相同的 `/membership/people/search` 端点）；选中某人后会加载其家庭（`GET /membership/people/household/{householdId}`），并以每位成员的 ID 调用 `GET /attendance/visits/active?peopleIds=`，因此丢失标签不会阻碍接送。无论哪种方式，屏幕都会显示正在被接走的儿童，并将家庭的**可信接送人**以可点击卡片的形式展示，同时还有家庭成年人的照片网格（以及一个"Other"（其他）自由文本选项，该选项会与未授权姓名进行模糊检查——参见[可信接送与未授权接送](#trusted-and-not-authorized-pickup)），然后以选择人员的姓名/ID 调用 `POST /attendance/visits/checkout`。在有人值守模式下，该屏幕还提供 **Page a parent**（呼叫家长，`POST /attendance/checkin/page`）以及**安全标签重新打印**功能——`reprint()` 会使用 `LabelHelper.getAllLabelsFor(...)` 重建该家庭的标签，并将其交给与签到相同的 `PrintUI` 流程。
 
 站点模式通过 AsyncStorage 标志 `@StationMode`（`"self"` 或 `"manned"`，在 `app/adminSettings.tsx` 中切换）设置。有人值守模式会在 lookup 屏幕上增加离场入口，并在家庭屏幕中增加逐个成员的资料编辑功能（`POST /membership/people`）。自助机内置了安全加固措施：可选的 PIN 码（`app/setPin.tsx`、`src/components/PinEntryModal.tsx`）用于保护管理员和打印机屏幕；管理员屏幕仅能通过快速连续点击标题栏标志 7 次打开；另外，空闲时的吸引屏幕（`src/hooks/useInactivityTimer.ts`）会在家庭之间接管屏幕。
 
-## 自助签到（B1App）
+## 自助签到（B1App） {#self-check-in-b1app}
 
-成员在 b1.church 门户的 `/mobile/checkin` 屏幕上签到（由 `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` 路由至 `screens/CheckinPage.tsx`）。该功能需要已登录的用户，并针对完全相同的端点执行与自助机相同的四个步骤——礼拜 → 家庭 → 小组 → 完成——状态保存在 `B1App/src/helpers/CheckinHelper.ts` 中。与自助机的区别在于：家庭来自已登录用户自己的 `householdId`（没有搜索步骤），并且不支持标签打印——取而代之，完成屏幕会将该批次的安全码以二维码（`qrcode.react`）形式显示，并附有"请在签到站出示此码"的提示。如果页面加载时家庭已经签到，则会显示"Show check-in code"（显示签到码）按钮，从 `GET /attendance/visits/checkin` 返回的第一条带有 `securityCode` 的已有到访记录重新显示二维码。签到在提交时即被立即记录（没有待定状态）；二维码仅用于在自助机上打印标签。
+成员在 b1.church 门户的 `/mobile/checkin` 屏幕上签到（由 `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` 路由至 `screens/CheckinPage.tsx`）。该功能需要已登录的用户，并针对完全相同的端点执行与自助机相同的四个步骤——礼拜 → 家庭 → 小组 → 完成——状态保存在 `B1App/src/helpers/CheckinHelper.ts` 中。与自助机的区别在于：家庭来自已登录用户自己的 `householdId`（没有搜索步骤），并且不支持标签打印——取而代之，完成屏幕会将该批次的安全码以二维码（`qrcode.react`）形式显示，并附有"show this at a check-in station"（请在签到站出示此码）的提示。如果页面加载时家庭已经签到，则会显示"Show check-in code"（显示签到码）按钮，从 `GET /attendance/visits/checkin` 返回的第一条带有 `securityCode` 的已有到访记录重新显示二维码。签到在提交时即被立即记录（没有待定状态）；二维码仅用于在自助机上打印标签。
 
 **手机到自助机的标签打印**（`B1Checkin/app/scan.tsx`，从 lookup 屏幕上的二维码"Scan code"（扫描码）按钮进入）：自助机显示 `CodeScanner`（一个 `expo-camera` 的 `CameraView`，默认使用前置摄像头，可翻转），扫描二维码。`ScanCodeHelper.parse()` 只接受纯 4 位、属于安全码字符集的码，`ScanCodeHelper.isRepeat()` 会在 4 秒内忽略同一个码，因此 B1App 的二维码和打印标签上的二维码区域都可以使用。随后，该屏幕会执行与离场重新打印相同的路径——`GET /attendance/visits/code/{code}` → `GET /membership/people/ids` → `LabelHelper.getAllLabelsFor(visits, people, code)` → `PrintUI`——然后返回 lookup。扫描时不会写入任何出勤记录；仅打印标签。没有有效到访记录的安全码、没有打印机的站点，以及没有标签的小组，都会显示一条提示并返回 lookup。
 
 类型以及 `ApiHelper`/`ArrayHelper` 来自 `@churchapps/helpers` 和 `@churchapps/apphelper`；没有任何 React 组件与 B1Admin 共享。
 
-## 管理端出勤（B1Admin）
+## 管理端出勤（B1Admin） {#admin-side-attendance-b1admin}
 
 - **设置** —— `/attendance`（`B1Admin/src/attendance/AttendancePage.tsx`）渲染结构树，并创建礼拜（`ServiceEdit.tsx`）和礼拜时间（`ServiceTimeEdit.tsx`）。校区数据通过 `useCampuses()` 钩子从会员模块获取。
 - **手动出勤**位于小组一侧，而非出勤板块：`B1Admin/src/groups/components/GroupSessionsTab.tsx` 创建场次（`POST /attendance/sessions`；添加时，`SessionEdit.tsx` 可以为与所选礼拜时间共享的每个其他小组各创建一个场次，并跳过在该日期已有场次的小组），并通过 `POST /attendance/visitsessions/log` 标记人员出席，该接口会为该人员和场次查找或创建到访记录。小组负责人无需 `attendance.edit` 权限即可为自己的小组录入出勤——控制器会检查 `au.leaderGroupIds`。
 - **报表**——出勤趋势和小组出勤是服务器端定义的报表（`B1Admin/src/components/reporting/ReportWithFilter.tsx` 对接 ReportingApi；定义位于 `Api/reports/*.json`）。两者都接受 `startDate`/`endDate`（结束日期包含在内）；趋势报表默认为一年前至今，并增加一个每周的 `sessionDates` 列；屏幕上的小组出勤树包含每条到访记录的 `checkinTime` 以及人员的 `membershipStatus`。小组出勤的 CSV 来自配套的 `groupAttendanceDownload` 报表，由 `GroupAttendanceDownloadHelper` 透视为每位小组成员一行，每个带日期的场次一列（标记出席/缺席）；个人历史记录则通过 `GET /attendance/attendancerecords?personId=` 获取（`B1Admin/src/people/components/PersonAttendance.tsx`）。
 
-## 标签打印
+## 标签打印 {#label-printing}
 
-### 模板与设计器
+### 模板与设计器 {#templates-and-the-designer}
 
 教会可以在 B1Admin 的 `/mobile/checkin/labels`（`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`，从签到设置页面进入）中设计自己的标签。模板即 `labelTemplates` 中的一行，其 `content` 是一个 JSON 数组，由区块组成——`text`、`field`、`barcode`、`qrcode` 或 `box`——每个区块都以百分比坐标定位，并可设置字体、对齐方式、编码方式（`code39`/`code128`/`qr`），以及可选的显示条件（例如仅当 `person.nametagNotes` 非空时才渲染过敏信息框）。标签有两种 `labelType`：`nametag`（每位已签到人员一张；字段包括 `person.displayName`、`sessions`、`securityCode`，以及 `person.isBirthdayWeek`——当生日的月/日在今天前后 3 天之内时为 `"true"`，并可跨越年末，由 `LabelHelper.isBirthdayWithin()` 计算）和 `pickup`（每个家庭一张；字段包括 `children`、`childrenAllergies`）。服务器会确保每个教会的每种类型只有一个默认模板（`LabelTemplateController.save`）。设计器附带了与自助机内置标签相对应的入门模板，并可使用示例数据进行预览。
 
-### 自助机上的渲染与打印
+### 自助机上的渲染与打印 {#rendering-and-printing-on-the-kiosk}
 
 在完成签到时，`B1Checkin/src/helpers/LabelHelper.ts` 会根据每条待定到访记录上的小组标志决定要打印的内容：`printNametag` 小组打印名牌，若任何到访记录命中了 `parentPickup` 小组，则额外打印一张家庭接送标签。`checkinType` 为 `volunteer` 的到访记录会被 `LabelHelper.selectChildVisits()` 跳过，因此在家长接送房间工作的托儿工作人员永远不会触发接送标签。签到响应中的安全码会被印在儿童名牌和接送标签上；成人名牌则不印安全码。如果教会配置了模板，`LabelRenderer`（`src/helpers/LabelRenderer.ts`）会将区块和字段上下文转换为独立的 HTML 文档；否则，将使用 `B1Checkin/assets/labels/` 中的内置 HTML 标签，并进行占位符替换。
 
@@ -196,7 +197,7 @@ index（启动/自动登录）→ selectChurch → services ──▶ lookup ─
 
 打印机选择位于 `app/printers.tsx`（网络扫描返回 `brand~model~ip` 格式的条目；所选项持久化到 AsyncStorage），`src/helpers/PrinterLog.ts` 保存一份设备端诊断日志，并通过自助机页眉中的实时状态指示点展示。
 
-## 访客登记
+## 访客登记 {#guest-registration}
 
 有两种途径可以在签到过程中创建人员：
 
@@ -215,9 +216,9 @@ index（启动/自动登录）→ selectChurch → services ──▶ lookup ─
 
 B1App 的 `src/components/checkin/GuestRegister.tsx` 通过匿名的 `GET /membership/people/guest-register/options?churchId=` 获取检查清单，并仅渲染已包含的字段（主要联系人的电子邮件、电话、婚姻状况和地址；每位成员的出生日期、性别和年级；以及一个备注框），并且只提交这些字段。服务器在 `PersonHelper.registerGuestHousehold()` 运行之前，通过 `GuestRegistrationHelper.sanitize()` 再次应用检查清单——关闭的字段会被丢弃，缺少必填项或取值不在列表中的情况返回 400。之后，它会对每位带有电子邮件或电话的成员调用 `PersonRepo.findGuestMatch()`：恰好一名未删除的人员具有相同的名字，并且电子邮件或电话数字相同，则复用该人员（零个或多个匹配则创建新人员，因此系统从不猜测）。没有任何联系方式的成员会在已匹配的家庭内按名字匹配。被复用的人员永远不会被编辑，因此匿名表单无法覆盖已存储的信息；响应会回显提交的姓名。未匹配的成员会加入已匹配的家庭或新建的家庭，会籍状态为 `membershipStatus: "Visitor"`，并为每位新人员触发 `person.created`。之后，失败会被记录日志，而不会返回给客户端：成员会被加入已配置的小组（`group.member.added`）；如果开启了出勤记录，`AttendanceModuleGateway.recordAttendance()` 会为该小组每个已排期且当前签到窗口（`CheckinGateHelper.isServiceTimeOpen`）已开放的礼拜时间，将每位成员标记为出席，并在需要时按教会当地日期创建当天的场次——未排期的礼拜时间以及窗口之外的登记不会记录任何内容；备注则会作为隐藏的人员备注讨论串附加到户主上（留言作者为"Guest sign-up"），并通过 `person.conversationId` 关联。
 
-## 相关页面
+## 相关页面 {#related-pages}
 
-- [出勤端点](../api/endpoints/attendance.md) —— 校区、礼拜、场次、到访记录和到访场次的完整 REST 接口
-- [会员端点](../api/endpoints/membership.md) —— 人员、家庭和小组
-- [Webhooks](../api/webhooks.md) —— `session.created`、`attendance.recorded` 和 `attendance.checkout` 事件
-- [模块结构](../api/module-structure.md) —— 出勤模块在服务端的组织方式
+- [出勤端点](../api/endpoints/attendance.md) -- 校区、礼拜、场次、到访记录和到访场次的完整 REST 接口
+- [会员端点](../api/endpoints/membership.md) -- 人员、家庭和小组
+- [Webhooks](../api/webhooks.md) -- `session.created`、`attendance.recorded` 和 `attendance.checkout` 事件
+- [模块结构](../api/module-structure.md) -- 出勤模块在服务端的组织方式

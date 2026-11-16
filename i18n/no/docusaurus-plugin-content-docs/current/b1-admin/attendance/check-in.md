@@ -1,7 +1,7 @@
 ---
 title: "Selvinnsjekking med B1 Checkin og B1 Admin"
 sidebar_label: "Innsjekking"
-description: "Sett opp selvinnsjekking til gudstjenester med appen B1 Checkin i B1 Admin, med enheter, kioskkontoer, tidsplaner, profilering og QR-registrering av gjester."
+description: "Sett opp selvinnsjekking til gudstjenester med appen B1 Checkin i B1 Admin, med enheter, kioskkontoer, tidsplaner, utseende og QR-registrering av gjester."
 ---
 
 # Innsjekking
@@ -114,24 +114,25 @@ Når bryteren er på, vises de andre alternativene nedenfor i kortet **QR Guest 
 
 ### Velge registreringsfelter {#choosing-sign-up-fields}
 
-Sjekklisten **Sign-up fields** styrer hva registreringsskjemaet spør om. **First Name** og **Last Name** er alltid med på skjemaet og alltid påkrevd for hvert familiemedlem. For hvert av de andre feltene slår du på **Include** for å legge det til i skjemaet, og deretter på **Required** dersom gjestene må fylle det ut. **Required** kan bare slås på for et felt som er tatt med, og når du slår av **Include**, blir **Required** fjernet.
+Sjekklisten **Sign-up fields** styrer hva registreringsskjemaet spør om. **First Name** og **Last Name** er alltid med på skjemaet og alltid påkrevd for hvert familiemedlem. For hvert av de andre feltene slår du på **Include** for å legge det til i skjemaet, og deretter på **Required** dersom gjestene må fylle det ut. **Required** kan bare slås på for et felt som er tatt med, og når du slår av **Include**, fjernes **Required**.
 
 | Felt | Spørres etter | Med som standard |
 |-------|-----------|---------------------|
 | **Title** | Hvert familiemedlem, som en nedtrekksliste foran navnet (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | Nei |
-| **Email** | Kun hovedkontakten | Ja (valgfritt) |
+| **Email** | Hvert familiemedlem. Når feltet er påkrevd, må bare hovedkontakten fylle det ut. | Ja (valgfritt) |
 | **Phone** | Hvert familiemedlem. Når feltet er påkrevd, må bare hovedkontakten fylle det ut. | Ja (valgfritt) |
 | **Household role** | Hvert familiemedlem etter hovedkontakten – Spouse, Child eller Other. Hovedkontakten er leder av en ny husstand. Den som ikke har en rolle, lagres som Other. | Ja (valgfritt) |
 | **Home address** | Én gang for familien – gate, adresselinje 2, by, delstat og postnummer. Når feltet er påkrevd, må alt unntatt adresselinje 2 fylles ut. Adressen lagres på alle familiemedlemmene. | Nei |
 | **Birth date** | Hvert familiemedlem | Nei |
 | **Gender** | Hvert familiemedlem | Nei |
-| **Marital status** | Kun hovedkontakten | Nei |
+| **Marital status** | Bare hovedkontakten | Nei |
 | **Grade** | Hvert familiemedlem (PreK til 12, eller Graduated) | Nei |
 | **Comments** | Én gang, i en boks under familiemedlemmene (opptil 1 000 tegn) | Nei |
+| **Photo** | Hvert familiemedlem, med en knapp **Add Photo** som åpner et beskjæringsverktøy. Bildet blir den nye personens profilbilde. Når feltet er påkrevd, må bare hovedkontakten legge til et bilde. | Nei |
 
-Felter du slår av, lagres aldri, selv om noen sender dem til registreringen på en annen måte. Kommentarer lagres som et notat på hovedkontaktens post (registrert som "Guest sign-up"), slik at du kan lese dem i delen **Notes** på profilen deres.
+Felter du slår av, lagres aldri, selv om noen sender dem til registreringen på en annen måte. Kommentarer lagres som et notat på hovedkontaktens post (registrert som «Guest sign-up»), slik at du kan lese dem i delen **Notes** på profilen deres.
 
-### Legge gjester til en gruppe {#adding-guests-to-a-group}
+### Legge gjester til i en gruppe {#adding-guests-to-a-group}
 
 Bruk **Add new guests to group** for å legge alle som registrerer seg, automatisk i en av gruppene dine – for eksempel en gruppe for «Nykommere» eller en gruppe for helgens arrangement. Velg **None** (standard) for å hoppe over dette. Gjester ser eller velger aldri gruppen; den settes bare her. Endre den før hvert arrangement, slik at du kan følge opp arrangementets gjester samlet.
 
@@ -163,9 +164,9 @@ Legg registreringslenken til på menighetens nettside, for eksempel siden «Plan
 
 ### Hva som skjer etter at en gjest har registrert seg {#what-happens-after-a-guest-signs-up}
 
-B1 ser først etter personer som allerede finnes i **People**. Et familiemedlem blir koblet til en eksisterende person når nøyaktig én person har samme fornavn og samme e-postadresse eller telefonnummer. Et barn som er oppgitt uten e-post eller telefon, kobles etter fornavn innenfor den husstanden som ble funnet. Personer som finnes fra før, brukes uendret – registreringen endrer aldri detaljene eller medlemsstatusen deres – og alle nye personer blir med i den matchede husstanden.
+B1 ser først etter personer som allerede finnes i **People**. Et familiemedlem kobles til en eksisterende person når nøyaktig én person har samme fornavn og samme e-postadresse eller telefonnummer. Et barn som er oppgitt uten e-post eller telefon, kobles etter fornavn innenfor den husstanden som ble funnet. Personer som finnes fra før, brukes uendret – registreringen endrer aldri detaljene eller medlemsstatusen deres – og alle nye personer blir med i den matchede husstanden.
 
-Når ingen treff, oppretter registreringen en ny husstand som får navnet til hovedkontaktens etternavn, med en personpost for hvert familiemedlem. Alle nye blir lagt til i **People** med medlemsstatusen **Visitor**, og hovedkontakten er leder av husstanden.
+Når ingen treffer, oppretter registreringen en ny husstand som får navnet til hovedkontaktens etternavn, med en personpost for hvert familiemedlem. Alle nye blir lagt til i **People** med medlemsstatusen **Visitor**, og hovedkontakten er leder av husstanden.
 
 Både eksisterende og nye personer blir lagt til i gruppen du valgte (hvis de ikke allerede er med), og oppmøtet deres registreres når det er slått på. Kommentarer lagres som et notat på hovedkontakten.
 

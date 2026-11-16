@@ -1,6 +1,6 @@
 ---
 title: "Aprobaciones del calendario"
-description: "Revise las solicitudes pendientes de reserva de salas y recursos en B1 Admin, compruebe los conflictos, apruébelas o recházelas, y consulte las decisiones anteriores en Historial."
+description: "Revise las solicitudes pendientes de reserva de salas y recursos en B1 Admin, compruebe los conflictos, apruébelas o rechácelas, y consulte las decisiones anteriores en Historial."
 ---
 
 # Aprobaciones del calendario
@@ -38,7 +38,7 @@ Si una solicitud se superpone con otra reserva o bloqueo de la misma sala o recu
 
 ### Aprobar o rechazar {#approving-or-rejecting}
 
-Pase el cursor sobre una solicitud de reserva y haga clic en **Aprobar** o **Rechazar** (al rechazar se le pedirá que confirme primero). Se notifica a quien hizo la solicitud sobre la decisión. Las reservas aprobadas bloquean esa sala o recurso para el evento; las reservas rechazadas liberan el espacio para otros.
+Pase el cursor sobre una solicitud de reserva y haga clic en **Aprobar** o **Rechazar**. Se notifica a quien hizo la solicitud sobre la decisión. Las reservas aprobadas bloquean esa sala o recurso para el evento; las reservas rechazadas liberan el espacio para otros.
 
 Al hacer clic en **Aprobar**, se abre un cuadro de diálogo **Aprobar reserva** para que también pueda publicar el evento en el mismo paso:
 
@@ -46,9 +46,16 @@ Al hacer clic en **Aprobar**, se abre un cuadro de diálogo **Aprobar reserva** 
 2. Una vez marcado **Publicar en el calendario público**, puede elegir opcionalmente un calendario seleccionado en **Añadir también al calendario** para incluir el evento también en uno de sus [calendarios seleccionados](./curated-calendar.md). Déjelo en **Ninguno** para omitir este paso. (Esta opción solo aparece si tiene el permiso **content.edit**).
 3. Haga clic en **Aprobar**.
 
+Al hacer clic en **Rechazar**, se abre un cuadro de diálogo **Rechazar solicitud**:
+
+1. Opcionalmente, escriba un motivo en **Motivo (opcional)** (hasta 500 caracteres); por ejemplo, *"El gimnasio está reservado ese fin de semana."*
+2. Haga clic en **Rechazar** para confirmar, o en **Cancelar** para dejar la solicitud pendiente.
+
+El motivo se añade al final de la notificación que recibe quien hizo la solicitud (por ejemplo, *Su solicitud de evento "Noche de jóvenes" fue rechazada: El gimnasio está reservado ese fin de semana.*), y los miembros también lo ven en su página **Mis solicitudes** en la app de B1. Déjelo en blanco para enviar el aviso sin motivo.
+
 ## Eventos pendientes {#pending-events}
 
-Los eventos que los miembros solicitan (por ejemplo, desde **Mis solicitudes** en la app de B1) aparecen en la sección **Solicitudes de eventos** con su fecha, **Descripción** y **Solicitado por**. Haga clic en **Aprobar** para publicar un evento en el calendario, o en **Rechazar** para notificar a quien lo envió que se necesitan cambios. Haga clic en **Editar** para corregir los detalles de la solicitud antes de decidir, o en **Eliminar** para borrarla.
+Los eventos que los miembros solicitan (por ejemplo, desde **Mis solicitudes** en la app de B1) aparecen en la sección **Solicitudes de eventos** con su fecha, **Descripción** y **Solicitado por**. Haga clic en **Aprobar** para publicar un evento en el calendario, o en **Rechazar** para notificar a quien lo envió que se necesitan cambios (puede añadir un motivo, como se describió antes). Haga clic en **Editar** para corregir los detalles de la solicitud antes de decidir, o en **Eliminar** para borrarla. Las solicitudes de eventos que los miembros envían desde la app no tienen grupo, así que la lista **Grupo** del cuadro de edición muestra **(sin grupo)** para ellas, y puede guardar sus cambios sin elegir ninguno.
 
 :::tip
 Configure un Grupo de aprobación en una sala desde [Salas y recursos](./rooms-resources.md) para requerir aprobación para esa sala. Los grupos con acceso podrán entonces solicitar la sala al crear eventos, y esas solicitudes llegarán a esta página.

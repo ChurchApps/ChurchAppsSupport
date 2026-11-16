@@ -3,7 +3,7 @@ title: "Planos de culto"
 description: "Configure a escala de voluntários no B1 Admin: crie planos de culto por data, copie de semanas anteriores, atribua membros da equipe às posições e gerencie prazos de inscrição e lembretes."
 ---
 
-# Planos de culto
+# Planos de culto {#service-plans}
 
 <div class="article-intro">
 
@@ -60,7 +60,7 @@ Ao abrir um plano, o ministério e o tipo de plano, o nome e a data do culto apa
 - **Horários** lista os horários de culto e de ensaio do plano. Veja [Horários do culto](#service-times).
 - **Observações** guarda notas para toda a equipe. Clique em **Editar**, digite suas observações e clique em **Salvar observações**.
 
-As páginas da ordem do culto e da equipe de serviço têm um link **Voltar ao plano** que retorna à visão geral.
+As páginas da ordem do culto e da equipe de serviço têm um link **Voltar ao plano** que retorna à visão geral do plano.
 
 ## Horários do culto {#service-times}
 
@@ -80,8 +80,8 @@ Clique no nome de um horário para editá-lo ou excluí-lo.
 1. Abra um plano e clique em **Gerenciar equipe de serviço**.
 2. Clique em **Adicionar posição**. Na caixa de diálogo **Adicionar uma posição**, escolha ou digite um **Nome da categoria** (por exemplo, Louvor ou Recepção), informe o **Nome** da posição e a **Quantidade de voluntários**, e escolha um **Grupo de voluntários**. Para que qualquer pessoa da sua igreja possa preencher a posição (e não apenas os membros de uma equipe), deixe o **Grupo de voluntários** em **Nenhum**. Marque **Permitir inscrição própria** para que os voluntários possam se inscrever nas vagas abertas, e adicione uma **Descrição** opcional, que os voluntários veem ao navegar pelas oportunidades de inscrição. Clique em **Salvar**.
 3. Clique no link **Pessoas necessárias** ao lado da posição (por exemplo, "2 pessoas necessárias").
-4. Na caixa de diálogo **Atribuir posição**, clique no nome de um membro da equipe para atribuí-lo. Se o Grupo de voluntários da posição estiver em **Nenhum**, pesquise qualquer pessoa da sua igreja e clique no ícone de adicionar pessoa ao lado dela. Clique em **Concluído** quando terminar.
-5. Os voluntários atribuídos aparecem ao lado da posição. Um ponto verde na foto significa que aceitaram, e um ponto vermelho significa que recusaram.
+4. Na caixa de diálogo **Atribuir posição**, clique no nome de um membro da equipe para atribuí-lo. Para uma equipe grande, digite parte de um nome em **Pesquisar equipe** para reduzir a lista; a lista rola sozinha para que **Concluído** fique visível. Membros da equipe com uma [data de indisponibilidade](./plan-validation.md#blockout-dates) na data do plano mostram um selo **Indisponível** e aparecem por último. Se o Grupo de voluntários da posição estiver em **Nenhum**, pesquise qualquer pessoa da sua igreja e clique no ícone de adicionar pessoa ao lado dela. Clique em **Concluído** quando terminar.
+5. Os voluntários atribuídos aparecem ao lado da posição. Um ponto verde na foto significa que aceitaram, e um ponto vermelho significa que recusaram. Um selo **Indisponível** indica que eles bloquearam a data do plano.
 6. Notifique os voluntários pelo painel **Validação** (veja [Notificando voluntários](./plan-validation.md#notifying-volunteers)). Se o plano usar um [fluxo de confirmação](#plan-settings), notificar também inicia um card de fluxo de trabalho que acompanha cada solicitação até que o voluntário responda.
 
 Para alterar ou remover uma atribuição, clique no nome do voluntário e clique em **Excluir** na caixa de diálogo **Editar atribuição**. Para alterar uma posição, clique no nome dela; o botão **Excluir** na caixa de diálogo **Editar posição** remove a posição e desagenda quem estiver atribuído a ela.
@@ -106,9 +106,9 @@ Se um plano ainda não tiver posições e houver um plano anterior do mesmo tipo
 
 ## Configurações do plano {#plan-settings}
 
-Cada plano tem configurações adicionais, que podem ser ajustadas clicando em **Editar** ao lado do plano na lista do tipo de plano, ou em **Editar detalhes** no topo da página do plano. Clique em **Concluído** (ou no nome do plano acima do formulário) para voltar ao plano. O mesmo formulário tem um botão **Excluir**, que exclui o plano, incluindo suas posições, escalas e a ordem do culto. As configurações incluem:
+Cada plano tem configurações adicionais, que você pode ajustar clicando em **Editar** ao lado do plano na lista do tipo de plano, ou em **Editar detalhes** no topo da página do plano. Clique em **Concluído** (ou no nome do plano acima do formulário) para voltar ao plano. O mesmo formulário tem um botão **Excluir**, que exclui o plano, incluindo suas posições, escalas e a ordem do culto. As configurações incluem:
 
-- **Prazo de inscrição (horas antes do culto)** — o número de horas antes do culto em que as inscrições dos voluntários são encerradas. As horas são contadas a partir do primeiro horário de **Culto** do plano (ensaios e outros horários são ignorados, a menos que o plano não tenha mais nada), de modo que um prazo de 2 horas em um culto às 10:00 AM encerra as inscrições às 8:00 AM daquela manhã. Se o plano não tiver horários, o prazo é contado a partir das 9:00 AM da data do culto, no fuso horário da sua igreja. Depois que o prazo passa, os voluntários não podem se inscrever nem se retirar. Digite um número negativo para manter as inscrições abertas após o início do culto. Deixe em branco, ou apague o valor, para não ter prazo.
+- **Prazo de inscrição (horas antes do culto)** — o número de horas antes do culto em que as inscrições dos voluntários são encerradas. As horas são contadas a partir do primeiro horário de **Culto** do plano (ensaios e outros horários são ignorados, a menos que o plano não tenha mais nada), de modo que um prazo de 2 horas em um culto às 10h encerra as inscrições às 8h daquela manhã. Se o plano não tiver horários, o prazo é contado a partir das 9h da data do culto, no fuso horário da sua igreja. Depois que o prazo passa, os voluntários não podem se inscrever nem se retirar. Digite um número negativo para manter as inscrições abertas após o início do culto. Deixe em branco, ou apague o valor, para não ter prazo.
 - **Fluxo de confirmação** — escolha um [fluxo de trabalho de confirmação de escala de serviço](./workflows.md#serving-assignment-confirmations) para acompanhar as solicitações de serviço deste plano por e-mail e SMS até que cada voluntário aceite ou recuse. Quando você **Notifica** os voluntários de um plano publicado, cada nova solicitação ganha seu próprio card no quadro desse fluxo de trabalho, e uma nota acima do link de notificação diz *"Novas solicitações usam o fluxo de confirmação."* Deixe em **Usar notificações de escala existentes** para manter as notificações habituais. Somente os fluxos de confirmação ativos aparecem na lista; crie um antes em **Servindo > Fluxos de trabalho**.
 - **Mostrar nomes dos voluntários na página de inscrição** — quando marcada, os voluntários conectados podem ver quem mais já se inscreveu em cada posição na página de inscrição do B1.church. Os nomes nunca são mostrados a visitantes que não estão conectados. Esta opção também controla se os voluntários responsáveis por cada item da ordem do culto são impressos ao lado dele (veja [Imprimindo planos](#printing-plans)).
 - **Em análise** — oculta as escalas dos voluntários até que você esteja pronto para publicar a escala. Enquanto um plano está em análise, o painel **Validação** na página da equipe de serviço mostra um botão **Publicar plano** (ou **Publicar e notificar**, quando os voluntários ainda não foram notificados), que torna as escalas visíveis.
@@ -141,7 +141,7 @@ Voluntários que ainda não confirmaram recebem os botões **Aceitar** e **Recus
 
 ### Lembretes por SMS {#text-reminders}
 
-A opção **SMS** só aparece quando a sua igreja tem um provedor de SMS conectado. Os SMS são enviados pelo provedor de SMS da sua igreja, e cada mensagem pode gerar custos para a igreja. Um voluntário só recebe um lembrete por SMS se tiver ativado **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) e tiver um número de celular no perfil. Cada SMS começa com o nome da sua igreja, é mantido em uma única mensagem e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber SMS da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de mensagens recebidas (STOP)** das suas [configurações de SMS](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
+A opção **SMS** só aparece quando a sua igreja tem um provedor de SMS conectado. Os SMS são enviados pelo provedor da sua igreja, e cada mensagem pode gerar custos para a igreja. Um voluntário só recebe um lembrete por SMS se tiver ativado **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) e tiver um número de celular no perfil. Cada SMS começa com o nome da sua igreja, é mantido em uma única mensagem e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber SMS da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de mensagens recebidas (STOP)** das suas [configurações de SMS](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
 
 Para enviar SMS imediatamente a todos os escalados em um intervalo de datas, use **Enviar SMS aos voluntários** na [Visão geral dos planos](./plans-overview.md#texting-everyone-scheduled).
 
@@ -154,19 +154,19 @@ Cada lembrete é enviado uma única vez. Os lembretes por SMS são enviados alé
 Abaixo da lista de planos na página do tipo de plano, a seção **Grupos associados** permite definir quais grupos podem ver os planos deste tipo pelo portal de membros. É uma forma rápida de divulgar os próximos cultos para as equipes certas, sem dar acesso de administrador a elas.
 
 1. Na página do tipo de plano, clique em **Grupos associados** no topo da página (ou role até essa seção).
-2. Clique em **Adicionar grupo** e escolha um grupo na lista.
+2. Clique em **Adicionar grupo** e escolha um grupo na lista suspensa.
 3. Na coluna **Exibe**, escolha se os membros desse grupo devem ver **Somente planos passados**, **Somente planos futuros** ou **Planos passados e futuros** para este tipo de plano.
-4. Repita para associar outros grupos, ou clique no ícone de lixeira para remover um grupo.
+4. Repita para associar outros grupos ou clique no ícone de lixeira para remover um grupo.
 
 :::info
 Somente grupos marcados como **Padrão** aparecem na lista de seleção. Os membros de um grupo associado veem automaticamente os planos deste tipo na página do grupo, no portal de membros do B1 — limitados à janela de datas que você selecionou.
 :::
 
-Se os planos forem lições do Lessons.church, os membros do grupo associado também veem um card **Lição desta semana** na página do grupo (linha de base, versículo e uma pergunta para os pais). Associe aqui um grupo de pais e defina o filtro como **Somente planos passados** para que a lição de hoje seja incluída. As equipes de voluntários normalmente usam **Somente planos futuros** ou **Planos passados e futuros**.
+Se os planos forem lições do Lessons.church, os membros do grupo associado também veem um card **Lição desta semana** na página do grupo (com a ideia central, o versículo e uma pergunta para os pais). Associe aqui um grupo de pais e defina o filtro como **Somente planos passados** para que a lição de hoje seja incluída. As equipes de voluntários normalmente usam **Somente planos futuros** ou **Planos passados e futuros**.
 
 ## Imprimindo planos {#printing-plans}
 
-Você pode imprimir um plano para distribuir à sua equipe. Abra o plano e clique em **Imprimir** no topo da página para gerar uma versão para impressão que inclui as escalas e a ordem do culto. No topo da impressão aparecem o logo da sua igreja (o **Logo para fundo claro** de [Site > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da igreja logo abaixo, e o nome do plano, para que as folhas avulsas sejam fáceis de identificar. Isso é útil para entregar nos ensaios ou afixar em uma área comum.
+Você pode imprimir um plano para distribuir à sua equipe. Abra o plano e clique em **Imprimir** no topo da página para gerar uma versão para impressão que inclui as escalas e a ordem do culto. No topo da impressão aparecem o logotipo da sua igreja (o **Logo para fundo claro** de [Site > Aparência](../website/appearance.md), se você tiver enviado um) com o nome da igreja logo abaixo, e o nome do plano, para que as folhas avulsas sejam fáceis de identificar. Isso é útil para entregar nos ensaios ou afixar em uma área comum.
 
 Quando o plano tem mais de um horário de culto, a impressão tem uma coluna de horário para cada culto, com o horário de início no cabeçalho. Um item excluído de um culto (veja [Incluindo itens em horários de culto específicos](./service-order.md#including-items-in-specific-service-times)) mostra um traço na coluna daquele culto.
 

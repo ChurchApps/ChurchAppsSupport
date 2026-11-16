@@ -4,7 +4,7 @@ sidebar_label: "Pag-edit ng Iyong Profile"
 description: "I-update ang iyong mga detalye sa contact, mga miyembro ng sambahayan, login email at password, at mga setting ng privacy sa B1.church member portal."
 ---
 
-# Pag-edit ng Iyong Profile
+# Pag-edit ng Iyong Profile {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -27,7 +27,7 @@ Hinahayaan ka ng pahina ng iyong profile sa member portal na i-update ang iyong 
 
 I-tap ang larawan ng iyong profile sa itaas na app bar, o i-tap ang **Edit Profile** sa itaas ng pahinang **More** o sa iyong [Me page](./me-page.md), para buksan ang **Your profile** sa `/mobile/profileEdit`. Ang pahina ay iisang sheet ng mga seksyon -- **Photo & name**, **Contact**, **Household**, **Account**, at **Privacy** -- na bawat isa ay nagpapakita ng iyong kasalukuyang impormasyon kasama ang link na **Edit** (o **Add Family Member** / **Change**) na nagbubukas ng panel kung saan ka gagawa ng mga pagbabago.
 
-## Photo & Name at Contact {#photo--name-and-contact}
+## Photo & Name and Contact {#photo--name-and-contact}
 
 Ang mga seksyong ito ay naglalaman ng impormasyong nakikita ng iyong simbahan sa iyong talaan ng tao:
 
@@ -48,10 +48,11 @@ Para magdagdag ng miyembro ng pamilya na wala pa sa sistema:
 
 1. I-tap ang **Add Family Member**.
 2. Ilagay ang kanyang **First Name**. Ang **Last Name** ay nakapunan na ng apelyido mo; palitan ito kung iba ang sa kanya.
-3. Opsyonal na idagdag ang kanyang **Title** at **Mobile Phone**.
+3. Opsyonal na idagdag ang kanyang **Title**, **Email**, at **Mobile Phone**.
 4. Piliin ang kanyang **Household Role**: **Head**, **Spouse**, **Child**, o **Other** (ang default).
-5. I-tap ang **Add**. Lilitaw sila sa ilalim ng **Pending Family Members** kasama ang kanilang tungkulin; i-tap ang **Remove** para alisin ang sinuman sa listahan. Ulitin para sa iba pa.
-6. I-tap ang **Save Changes** (o **Submit for Approval**).
+5. Opsyonal na i-tap ang **Add Photo** para pumili ng larawan niya (i-tap ang **Change Photo** para pumili ng iba).
+6. I-tap ang **Add**. Lilitaw sila sa ilalim ng **Pending Family Members** kasama ang kanilang tungkulin at email; i-tap ang **Remove** para alisin ang sinuman sa listahan. Ulitin para sa iba pa.
+7. I-tap ang **Save Changes** (o **Submit for Approval**).
 
 Kung sinusuri ng iyong simbahan ang mga pagbabago sa direktoryo, ipapadala ang mga bagong miyembro ng pamilya kasama ng iba mo pang pagbabago para aprubahan ng iyong simbahan. Kung hindi, idadagdag sila sa iyong sambahayan agad pagkatapos mong mag-save.
 

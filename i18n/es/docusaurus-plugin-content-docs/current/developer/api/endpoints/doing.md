@@ -3,7 +3,7 @@ title: "Endpoints de Doing"
 description: "Referencia de endpoints de la API de Doing que gestiona planes de servicio, asignaciones de voluntarios, tareas y automatizaciones en B1 Admin, con rutas, autenticación y permisos."
 ---
 
-# Endpoints de Doing
+# Endpoints de Doing {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ El módulo Doing administra la planeación de servicios, la programación de vol
 
 **Ruta base:** `/doing`
 
-## Planes
+## Planes {#plans}
 
 Ruta base: `/doing/plans`
 
@@ -36,7 +36,7 @@ Ruta base: `/doing/plans`
 | POST | `/autofill/:id` | JWT | — | Completa automáticamente las asignaciones de voluntarios de un plan. Cuerpo: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Elimina un plan y todos sus horarios, asignaciones, puestos y elementos relacionados |
 
-### Ejemplo: copiar un plan
+### Ejemplo: copiar un plan {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Tipos de plan
+## Tipos de plan {#plan-types}
 
 Ruta base: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ Extiende la clase base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id`; sin v
 | POST | `/` | JWT | — | Crea o actualiza tipos de plan |
 | DELETE | `/:id` | JWT | — | Elimina un tipo de plan |
 
-## Elementos del plan
+## Elementos del plan {#plan-items}
 
 Ruta base: `/doing/planItems`
 
@@ -88,7 +88,7 @@ Administra los elementos del orden de servicio (encabezados, secciones, cancione
 | POST | `/sort` | JWT | — | Actualiza el orden de un elemento del plan (reordena los hermanos) |
 | DELETE | `/:id` | JWT | — | Elimina un elemento del plan |
 
-## Fuente del plan
+## Fuente del plan {#plan-feed}
 
 Ruta base: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ Proporciona las fuentes de elementos del plan para el presentador. Si no existen
 |--------|------|---------------|---------|-------------|
 | GET | `/presenter/:churchId/:planId` | Pública | — | Obtiene la fuente del plan para el presentador (se llena automáticamente desde la fuente de venue si está vacía) |
 
-## Puestos
+## Puestos {#positions}
 
 Ruta base: `/doing/positions`
 
@@ -113,7 +113,7 @@ Extiende la clase base CRUD (GET `/:id`, POST `/`, DELETE `/:id`; sin verificaci
 | POST | `/` | JWT | — | Crea o actualiza puestos |
 | DELETE | `/:id` | JWT | — | Elimina un puesto |
 
-## Horarios
+## Horarios {#times}
 
 Ruta base: `/doing/times`
 
@@ -126,7 +126,7 @@ Ruta base: `/doing/times`
 | POST | `/` | JWT | — | Crea o actualiza horarios |
 | DELETE | `/:id` | JWT | — | Elimina un horario |
 
-## Asignaciones
+## Asignaciones {#assignments}
 
 Ruta base: `/doing/assignments`
 
@@ -144,7 +144,7 @@ Ruta base: `/doing/assignments`
 | DELETE | `/signup/:id` | JWT | — | Elimina tu propia autoinscripción. Se rechaza con "Removal deadline has passed" después de la fecha límite de inscripción del plan |
 | DELETE | `/:id` | JWT | — | Elimina una asignación |
 
-### Ejemplo: aceptar una asignación
+### Ejemplo: aceptar una asignación {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Fechas de no disponibilidad
+## Fechas de no disponibilidad {#blockout-dates}
 
 Ruta base: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ Extiende la clase base CRUD (GET `/:id`, DELETE `/:id`; sin verificaciones de pe
 | POST | `/` | JWT | — | Crea o actualiza fechas de no disponibilidad (usa el usuario actual como personId si no se indica) |
 | DELETE | `/:id` | JWT | — | Elimina una fecha de no disponibilidad |
 
-## Tareas
+## Tareas {#tasks}
 
 Ruta base: `/doing/tasks`
 
@@ -188,11 +188,12 @@ Ruta base: `/doing/tasks`
 | GET | `/closed` | JWT | — | Obtiene las tareas cerradas del usuario actual |
 | GET | `/timeline?taskIds=` | JWT | — | Obtiene los datos de la línea de tiempo de tareas por IDs de tarea separados por comas |
 | GET | `/directoryUpdate/:personId` | JWT | — | Obtiene la tarea de actualización de directorio de una persona |
-| POST | `/` | JWT | — | Crea o actualiza tareas. Agregue `?type=directoryUpdate` para manejar tareas de actualización de directorio (sube fotos automáticamente) |
+| POST | `/` | JWT | — | Crea o actualiza tareas. Agregue `?type=directoryUpdate` para manejar tareas de actualización de directorio (sube fotos automáticamente). Al cambiar el `assignedToId` de una tarea existente, se agrega a su historial en `data` una entrada "Reassigned from ... to ..." |
 | POST | `/:id/conversation` | JWT | `tasks.edit` o el asignado de la tarjeta | Adjunta la conversación de notas a una tarjeta. Cuerpo: `{ conversationId }`. Gana la primera conversación adjuntada; las llamadas posteriores devuelven la tarjeta sin cambios |
 | POST | `/loadForGroups` | JWT | — | Carga las tareas de grupos específicos. Cuerpo: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | Elimina de forma permanente una tarea simple. Devuelve 400 para las tarjetas de flujo (use los endpoints de tarjetas) y para las solicitudes de eliminación de cuenta (decídalas con la acción de revisión) |
 
-## Automatizaciones
+## Automatizaciones {#automations}
 
 Ruta base: `/doing/automations`
 
@@ -204,7 +205,7 @@ Ruta base: `/doing/automations`
 | POST | `/` | JWT | — | Crea o actualiza automatizaciones |
 | DELETE | `/:id` | JWT | — | Elimina una automatización |
 
-## Acciones
+## Acciones {#actions}
 
 Ruta base: `/doing/actions`
 
@@ -217,7 +218,7 @@ Las acciones definen lo que ocurre cuando se dispara una automatización.
 | POST | `/` | JWT | — | Crea o actualiza acciones |
 | DELETE | `/:id` | JWT | — | Elimina una acción |
 
-## Condiciones
+## Condiciones {#conditions}
 
 Ruta base: `/doing/conditions`
 
@@ -230,7 +231,7 @@ Las condiciones definen los criterios que disparan una automatización.
 | POST | `/` | JWT | — | Crea o actualiza condiciones |
 | DELETE | `/:id` | JWT | — | Elimina una condición |
 
-## Conjunciones
+## Conjunciones {#conjunctions}
 
 Ruta base: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ Las conjunciones unen varias condiciones dentro de una automatización (lógica 
 | POST | `/` | JWT | — | Crea o actualiza conjunciones |
 | DELETE | `/:id` | JWT | — | Elimina una conjunción |
 
-## Autenticaciones de proveedores de contenido
+## Autenticaciones de proveedores de contenido {#content-provider-auths}
 
 Ruta base: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ Administra los registros de autenticación OAuth para proveedores de contenido e
 | POST | `/` | JWT | — | Crea o actualiza autenticaciones de proveedores de contenido |
 | DELETE | `/:id` | JWT | — | Elimina una autenticación de proveedor de contenido |
 
-## Proxy de proveedores
+## Proxy de proveedores {#provider-proxy}
 
 Ruta base: `/doing/providerProxy`
 
@@ -277,8 +278,8 @@ Reenvía solicitudes a proveedores de contenido externos (por ejemplo, ProPresen
 | POST | `/getInstructions` | JWT | — | Obtiene las indicaciones de un elemento de contenido. Cuerpo: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | Obtiene las indicaciones ampliadas de un elemento de contenido. Cuerpo: `{ ministryId, providerId, path }` |
 
-## Páginas relacionadas
+## Páginas relacionadas {#related-pages}
 
-- [Endpoints de Membership](./membership.md): personas, grupos, roles y permisos
-- [Endpoints de Attendance](./attendance.md): seguimiento de servicios y visitas
-- [Estructura de módulos](../module-structure.md): patrones de organización del código
+- [Endpoints de Membresía](./membership.md) — Personas, grupos, roles y permisos
+- [Endpoints de Asistencia](./attendance.md) — Seguimiento de servicios y visitas
+- [Estructura del módulo](../module-structure.md) — Patrones de organización del código

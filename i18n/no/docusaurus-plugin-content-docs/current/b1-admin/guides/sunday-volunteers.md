@@ -108,7 +108,7 @@ Tildelte frivillige ser planene sine automatisk og kan svare.
 
 1. Frivillige ser planene sine på [B1.church og i B1 App](../../b1-church/plans/viewing-plans.md)
 2. De kan godta eller takke nei til oppdrag direkte fra telefonen eller datamaskinen
-3. De kan angi blokkeringsdatoer for uker de ikke er tilgjengelige
+3. De kan angi blokkeringsdatoer for uker de ikke er tilgjengelige. Ansatte kan også legge dem inn på teamets kort **Block-out dates**, og frivillige som er blokkert, viser et merke **Ikke tilgjengelig** når du tildeler posisjoner – se [Blokkeringsdatoer](../serving/plan-validation.md#blockout-dates)
 4. Planer kan skrives ut til øvelser eller henges opp bak scenen
 5. Frivillige kan bla i og melde seg på ledige posisjoner via [påmeldingssiden for frivillige](../../b1-church/serving/volunteer-signup.md)
 

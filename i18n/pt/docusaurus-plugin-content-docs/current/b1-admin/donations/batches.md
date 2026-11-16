@@ -3,7 +3,7 @@ title: "Lotes de Doações"
 description: "Agrupe as ofertas em lotes de doações no B1 Admin e, em seguida, feche, imprima ou exporte cada lote para que os totais batam com os depósitos bancários."
 ---
 
-# Lotes de Doações
+# Lotes de Doações {#donation-batches}
 
 <div class="article-intro">
 
@@ -29,7 +29,7 @@ Ao acessar **Doações > Lotes**, você verá uma lista dos seus lotes. Cada lin
 - **Total** -- o valor total em dinheiro
 - **Situação** -- **Aberto** ou **Fechado** (veja [Fechando e Reabrindo um Lote](#closing-and-reopening-a-batch))
 
-Acima da lista, botões de ano permitem mostrar apenas os lotes de um ano específico, ou **Todos** os lotes. Um resumo em uma linha mostra a quantidade de lotes, o número de contribuições e o valor total dos lotes exibidos.
+Acima da lista, botões de ano permitem mostrar apenas os lotes de um ano específico, ou **Todos** os lotes. Ao lado deles, os botões de situação -- **Todos**, **Aberto** e **Fechado** -- restringem a lista aos lotes que ainda estão em andamento ou aos que você já concluiu. Os dois filtros funcionam em conjunto; assim, você pode escolher **2026** e **Aberto** para ver os lotes abertos deste ano. Um resumo em uma linha mostra a quantidade de lotes, o número de contribuições e o valor total dos lotes exibidos.
 
 ## Criando um Novo Lote {#creating-a-new-batch}
 

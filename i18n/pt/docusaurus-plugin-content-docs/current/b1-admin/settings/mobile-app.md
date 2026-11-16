@@ -3,7 +3,7 @@ title: "Configurações do aplicativo móvel"
 description: "Configure as abas de navegação, os blocos da tela inicial, a mensagem de login e as configurações de privacidade do diretório de membros do aplicativo de membros do B1.church no B1 Admin."
 ---
 
-# Configurações do aplicativo móvel
+# Configurações do aplicativo móvel {#mobile-app-settings}
 
 <div class="article-intro">
 
@@ -108,6 +108,15 @@ Visitantes que abrem a [tela inicial](/docs/b1-church/getting-started/navigating
 
 Clique em **Salvar** para aplicar. Uma mensagem **Salvo** confirma a alteração. Salvar atualiza as configurações em cache do aplicativo, então a mudança aparece na próxima vez que a tela inicial for carregada.
 
+### Página de solicitação de evento {#event-request-page}
+
+Membros que [solicitam um evento](../../b1-church/events/requesting-events.md) no aplicativo veem uma linha curta no topo da página **Solicitar um evento** -- por padrão, *"A equipe aprovará cada sala e item."* A configuração **Página de solicitação de evento**, na mesma página Portal de membros (`/mobile/b1-mobile`), permite substituí-la pelas suas próprias instruções, como diretrizes de reserva, com quanta antecedência pedir ou condições:
+
+1. Digite o seu texto em **Instruções para solicitação de evento** (até 1.000 caracteres). As quebras de linha são mantidas.
+2. Clique em **Salvar**.
+
+Deixe a caixa em branco para manter a linha padrão.
+
 ### Blocos da tela inicial {#home-screen-tiles}
 
 As abas que têm foto (veja **Imagem** em [Adicionando uma nova aba](#adding-a-new-tab)) aparecem na [tela inicial](/docs/b1-church/getting-started/navigating#home) do aplicativo como blocos com foto, em uma seção com o nome da sua igreja no cabeçalho. Isso inclui a aba Versículo do dia, se você der a ela uma foto. As abas com foto também continuam aparecendo na barra de abas.
@@ -119,7 +128,7 @@ A configuração **Blocos da tela inicial**, na mesma página Portal de membros 
 - **Rolagem (automática)** -- A mesma linha lateral, mas que também se move sozinha, avançando um bloco a cada quatro segundos e voltando ao primeiro bloco depois do último. Ela pausa enquanto um membro toca, passa o mouse ou navega com a tecla Tab até a linha, e retoma alguns segundos depois. Em dispositivos com a opção de reduzir movimento ativada, a linha fica parada e funciona como **Linha com rolagem**.
 - **Lista** -- Uma lista com uma pequena miniatura da foto ao lado do nome de cada aba.
 - **Grade e lista** -- As três primeiras abas com foto em grade, com o primeiro bloco ocupando a largura toda, e as três seguintes listadas abaixo, com uma pequena miniatura ao lado de cada nome. Quando há mais de três, o cabeçalho da seção mostra um link **Todas**, que abre a página **Mais** do aplicativo, listando todas as abas.
-- **Rolagem (automática) e lista** -- Todas as abas com foto na linha de rolagem automática descrita acima, com as três primeiras também listadas abaixo, e o mesmo link **Todas** quando há mais de três.
+- **Rolagem (automática) e lista** -- Todas as abas com foto na linha de rolagem automática descrita acima, com as três primeiras que ainda não estão no menu do aplicativo (a barra de abas no celular, ou o cabeçalho no computador) também listadas abaixo, e o mesmo link **Todas** quando há mais de três.
 
 Nos dois layouts com rolagem, quando há mais blocos do que cabem na largura da tela, aparece uma fileira de pontos abaixo dos blocos, um para cada bloco, com o ponto do bloco atual preenchido. Os membros podem tocar em um ponto para ir até aquele bloco.
 
@@ -158,7 +167,7 @@ As abas que você configura aqui são exibidas no **PWA do B1.church** que os se
 
 No celular, a barra de abas inferior mostra **Início**, até três das suas abas e **Mais**; no computador, o cabeçalho mostra até cinco. As telas integradas (como Sermões, Doações ou Grupos) têm prioridade nesses espaços, e as abas de **Página interna** preenchem os espaços que sobrarem. As abas de **URL externa** e de **Versículo do dia** nunca ocupam um espaço. Todas as abas, inclusive as que não cabem, são listadas na página **Mais** do aplicativo.
 
-As abas colocadas dentro de uma aba **Pasta** são a exceção: elas aparecem somente na própria tela da pasta, que os membros abrem tocando na pasta. Essa tela mostra as abas como blocos com foto quando todas têm imagem, ou como uma lista caso contrário. Uma pasta que não contenha abas que um membro possa ver fica oculta para esse membro. Veja [Abas de pasta](../../b1-church/getting-started/navigating.md#folder-tabs). Veja [Navegando no B1App](../../b1-church/getting-started/navigating.md) para saber o que os membros veem.
+As abas colocadas dentro de uma aba **Pasta** são a exceção: elas aparecem somente na própria tela da pasta, que os membros abrem tocando na pasta. Quando a pasta não recebe um espaço na barra de abas ou no cabeçalho, a seção **Mais de** da Início também mostra o nome da pasta com as abas dela como botões abaixo, na ordem definida aqui. Essa tela mostra as abas como blocos com foto quando todas têm imagem, ou como uma lista caso contrário. Uma pasta que não contenha abas que um membro possa ver fica oculta para esse membro. Veja [Abas de pasta](../../b1-church/getting-started/navigating.md#folder-tabs). Veja [Navegando no B1App](../../b1-church/getting-started/navigating.md) para saber o que os membros veem.
 
 ## Próximos passos {#next-steps}
 

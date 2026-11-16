@@ -4,7 +4,7 @@ sidebar_label: "Dettagli del gruppo"
 description: "Trova, apri e gestisci la pagina di dettaglio di un gruppo nella vista per i membri di B1.church in B1 Admin: consulta eventi, incontri, moduli e membri, e unisciti o richiedi di entrare."
 ---
 
-# Dettagli del gruppo
+# Dettagli del gruppo {#group-details}
 
 <div class="article-intro">
 
@@ -58,7 +58,7 @@ Se guidi il gruppo, hai funzioni di modifica aggiuntive:
 - **Creare e modificare eventi** -- Tocca **Tutti gli eventi**, poi **Aggiungi evento** per aggiungere un evento al calendario del gruppo. Quando crei un evento, puoi prenotare sale e risorse insieme ad esso: seleziona tra le sale e le risorse disponibili, imposta eventualmente i tempi di allestimento e smontaggio, e la richiesta di prenotazione viene inviata automaticamente per l'approvazione.
 - **Modificare eventi ricorrenti** -- Quando apri un evento ricorrente per modificarlo, B1 chiede prima quali date cambiare: **Solo questa data**, **Questa e tutte le date successive** oppure **Tutte le date**. Scegline una e clicca su **Salva** per aprire l'evento. Se hai scelto **Solo questa data**, l'interruttore **Ricorrente** è nascosto e le tue modifiche (o l'eliminazione) si applicano solo a quella data.
 - **Eliminare eventi** -- Tocca l'icona della matita accanto a un evento, poi tocca **Elimina evento** e conferma. Per un evento ricorrente, l'eliminazione segue le date che hai scelto all'apertura -- solo questa data, questa e tutte le date successive, oppure l'intera serie. Una data eliminata non compare più nel calendario del gruppo né negli eventi imminenti dei membri.
-- **Impostare promemoria per gli eventi** -- Quando modifichi un evento esistente, attiva **Invia promemoria** per ricordare alle persone l'evento prima che inizi. Scegli quando inviarli, l'**Orario del giorno**, **Chi deve ricevere il promemoria?** e un **Messaggio** facoltativo, poi scegli **Push**, **Email** oppure, se la tua chiesa ha attivato gli SMS, **Testo** in **Invia tramite**. I messaggi di testo arrivano solo a chi ha attivato i promemoria via SMS nelle proprie [Preferenze di notifica](../getting-started/notification-preferences.md).
+- **Impostare promemoria per gli eventi** -- Quando modifichi un evento esistente, attiva **Invia promemoria** per ricordare alle persone l'evento prima che inizi. Scegli quando inviarli, l'**Orario del giorno**, **Chi deve ricevere il promemoria?** e un **Messaggio** facoltativo, poi scegli **Push**, **Email** oppure, se la tua chiesa ha attivato gli SMS, **Testo** in **Invia tramite**. I messaggi di testo arrivano solo a chi ha attivato i promemoria via SMS nelle proprie [Preferenze di notifica](../getting-started/notification-preferences.md). Dopo aver salvato i promemoria, tocca **Invia ora** per inviarne uno subito; B1 mostra quante persone ha raggiunto, ad esempio **Inviato a 8 persone**, e i promemoria programmati vengono comunque inviati.
 - **Gestire le risorse** -- Carica file (fino a 100 MB di spazio), aggiungi link o elimina risorse esistenti.
 - **Scrivere note degli incontri e registrare le presenze** -- Usa **Aggiungi nota** e **Registra presenze** nella sezione **Incontri**. Vedi [Note degli incontri e presenze](#meeting-notes-and-attendance).
 - **Tenere note private dei leader** -- Usa la sezione **Note dei leader**. Vedi [Note dei leader](#leader-notes).
@@ -99,7 +99,7 @@ I leader possono anche leggere e stampare le risposte:
 3. Tocca una persona per vedere le sue risposte, con ogni domanda mostrata sopra la relativa risposta.
 4. Tocca **Stampa** per stampare le risposte di quella persona, oppure tocca **Stampa tutto** sopra l'elenco per stampare tutte le risposte del modulo.
 
-La stampa riporta in alto, centrati, il logo della chiesa (il **Logo per sfondo chiaro** impostato in B1 Admin, se ne è stato caricato uno) e il nome della chiesa, poi il nome del modulo, poi le risposte di ogni persona, intestate con il nome e la data di invio. I leader possono leggere le risposte ma non modificarle né modificare il modulo. Tocca **Tutti i moduli** per tornare all'elenco.
+La stampa riporta in alto, centrati, il logo della chiesa (il **Logo per sfondo chiaro** impostato in B1 Admin, se ne è stato caricato uno) e il nome della chiesa, poi il nome del modulo, poi le risposte di ogni persona, intestate con il nome e la data di invio. I leader possono leggere le risposte ma non modificarle né cambiare il modulo. Tocca **Tutti i moduli** per tornare all'elenco.
 
 ## Unirsi a un gruppo {#joining-a-group}
 

@@ -108,7 +108,7 @@ Assigned volunteers automatically see their plans and can respond.
 
 1. Volunteers see their plans on [B1.church and in the B1 App](../../b1-church/plans/viewing-plans.md)
 2. They can accept or decline assignments directly from their phone or computer
-3. They can set blockout dates for weeks they're unavailable
+3. They can set blockout dates for weeks they're unavailable. Staff can also enter them on the team's **Block-out dates** card, and blocked-out volunteers show an **Unavailable** badge when you assign positions -- see [Blockout Dates](../serving/plan-validation.md#blockout-dates)
 4. Plans can be printed for rehearsals or posted backstage
 5. Volunteers can browse and sign up for open positions via the [volunteer signup page](../../b1-church/serving/volunteer-signup.md)
 

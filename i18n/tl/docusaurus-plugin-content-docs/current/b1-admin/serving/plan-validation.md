@@ -3,7 +3,7 @@ title: "Pagsusuri ng Plan at mga Notification"
 description: "Suriin ang mga service plan sa B1 Admin para sa mga hindi napunang posisyon, banggaan sa iskedyul, at mga volunteer na naka-block out, pagkatapos i-push-notify ang buong team sa isang click."
 ---
 
-# Pagsusuri ng Plan at mga Notification sa Volunteer
+# Pagsusuri ng Plan at mga Notification sa Volunteer {#plan-validation-volunteer-notifications}
 
 <div class="article-intro">
 
@@ -34,6 +34,16 @@ Kung naitalaga ang isang volunteer sa dalawang posisyon na nagkakapatong sa oras
 
 ### Mga Blockout Date {#blockout-dates}
 Maaaring magtakda ang mga volunteer ng mga petsang hindi sila available sa B1 App. Kung may naitalagang tao sa plan na nasa loob ng isa sa kanyang blockout date, awtomatikong ipapakita ng validation panel ang conflict para makahanap ka ng kapalit.
+
+Namamarkahan din ang mga volunteer na naka-block out habang nag-iiskedyul ka. Sa serving team page at sa dialog na **Assign Position**, may pulang badge na **Unavailable** ang kanilang pangalan; i-hover ito para makita ang mga petsa (halimbawa, *Blocked out: Nov 22, 2026 – Nov 29, 2026*). Sa dialog na **Assign Position**, nakalista sila pagkatapos ng iba pa sa team, at maaari mo pa rin silang i-assign. Sa grid ng [Plans Overview](./plans-overview.md), may maliit na pulang calendar icon sa tabi ng pangalan na nagpapahiwatig ng parehong bagay.
+
+Para sa mga volunteer na hindi gumagamit ng app, maaaring maglagay ang staff ng block-out date para sa kanila. Buksan ang team (mula sa listahang **Serving Teams** ng ministry) at mag-scroll pababa sa card na **Block-out dates** sa ilalim ng listahan ng miyembro, na nagpapakita ng mga paparating na block-out ng bawat miyembro ng team kasama ang **Team member**, **From**, at **To**:
+
+1. I-click ang **Add block-out**.
+2. Piliin ang **Team member**, pagkatapos itakda ang mga petsang **From** at **To**.
+3. I-click ang **Save**.
+
+Para mag-alis ng isa, i-click ang delete icon sa row nito at kumpirmahin. Ang pagdaragdag at pag-alis ng block-out ay nangangailangan ng pahintulot na mag-edit ng plan; ang iba pang magbubukas ng team ay makakakita lamang ng listahan.
 
 ### Mga Conflict sa Pagitan ng Plan {#cross-plan-conflicts}
 Sinusuri rin ng validation ang lahat ng plan mo nang sabay-sabay. Kung ang parehong volunteer ay naitalaga sa dalawang magkaibang plan na nagkakapatong sa oras -- halimbawa, isang 9am na serbisyo at isang 10am na serbisyo na parehong tumatagal hanggang 10:30am -- mamarkahan ng B1 Admin ang taong iyon bilang double-booked sa pagitan ng mga plan.

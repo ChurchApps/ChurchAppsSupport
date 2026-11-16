@@ -3,7 +3,7 @@ title: "Inscription des invités"
 description: "Inscrivez-vous, vous et votre famille, comme premiers invités grâce au formulaire par code QR de B1 Checkin afin que les bénévoles puissent pointer votre arrivée."
 ---
 
-# Inscription des invités
+# Inscription des invités {#guest-registration}
 
 <div class="article-intro">
 
@@ -37,7 +37,8 @@ La page s'ouvre avec le titre **Inscription des invités**. Si l'église a ajout
    - **Adresse domiciliaire** -- **Adresse**, **Adresse, ligne 2**, **Ville**, **Province** et **Code postal**. Elle est commune à toute la famille.
 3. Le formulaire commence par une deuxième carte pour le **membre de la famille 2**. Saisissez son prénom et son nom, ou touchez le **X** dans le coin de la carte pour la retirer si vous vous inscrivez seul.
 4. Pour ajouter d'autres personnes, touchez **Ajouter un membre de la famille**. La nouvelle carte reprend automatiquement le nom de famille du contact principal. Vous pouvez inscrire jusqu'à 10 personnes à la fois.
-5. Si votre église le demande, la carte de chaque personne peut aussi comporter **Titre**, **Téléphone**, **Date de naissance**, **Genre** et **Niveau scolaire**. Chaque carte après celle du contact principal peut aussi demander un **Rôle dans le foyer** -- **Conjoint**, **Enfant** ou **Autre** -- afin que l'église sache quel est le lien de chaque personne avec le contact principal.
+5. Si votre église le demande, la carte de chaque personne peut aussi comporter **Titre**, **Courriel**, **Téléphone**, **Date de naissance**, **Genre** et **Niveau scolaire**. Chaque carte après celle du contact principal peut aussi demander un **Rôle dans le foyer** -- **Conjoint**, **Enfant** ou **Autre** -- afin que l'église sache quel est le lien de chaque personne avec le contact principal.
+   Si votre église demande une photo, chaque carte comporte un bouton **Ajouter une photo**. Touchez-le, choisissez ou prenez une photo, recadrez-la et enregistrez-la ; la photo apparaît sur la carte. Touchez **Changer la photo** pour en choisir une autre ou **Retirer la photo** pour la supprimer. La photo est enregistrée comme photo de profil de la personne lorsque sa fiche est créée.
 6. Si votre église comporte une case **Commentaires** sous les membres de la famille, utilisez-la pour partager ce que vous souhaitez que l'église sache (jusqu'à 1 000 caractères).
 7. Touchez **S'inscrire** pour envoyer le formulaire.
 
@@ -66,5 +67,5 @@ Si le formulaire vous demande votre adresse courriel, la fournir aide l'église 
 ## Articles connexes {#related-articles}
 
 - [Pointage autonome](./self-checkin.md) -- Pointer votre arrivée après l'inscription
-- [Ajouter des invités (borne)](../../b1-checkin/check-in/adding-guests.md) -- Comment les bénévoles ajoutent des invités sur la borne
+- [Ajouter des visiteurs (borne)](../../b1-checkin/check-in/adding-guests.md) -- Comment les bénévoles ajoutent des visiteurs sur la borne
 - [Pointage](../../b1-admin/attendance/check-in.md#guest-registration-via-qr-code) -- Comment les administrateurs de l'église configurent l'inscription des invités par code QR

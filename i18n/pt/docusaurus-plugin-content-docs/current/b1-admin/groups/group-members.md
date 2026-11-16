@@ -3,7 +3,7 @@ title: "Membros do Grupo"
 description: "Adicione, remova e designe líderes entre os membros do grupo no B1 Admin e, em seguida, envie e-mails, textos, imprima ou exporte a lista de membros a partir da página do grupo."
 ---
 
-# Membros do Grupo
+# Membros do Grupo {#group-members}
 
 <div class="article-intro">
 
@@ -64,11 +64,11 @@ Os líderes do grupo podem manter anotações privadas sobre o grupo -- por exem
 A seção **Anotações do líder** aparece na página do grupo somente para as pessoas que são líderes desse grupo. Ela mostra a anotação mais recente, quem a escreveu e quando, e quantas anotações existem.
 
 1. Na página do grupo, clique em **Todas as anotações** na seção **Anotações do líder**.
-2. Digite a sua anotação na caixa e publique-a. Para formatá-la, selecione o texto e escolha **Negrito**, **Itálico**, **Lista com marcadores** ou **Lista numerada** no menu que aparece (ou pressione **Ctrl+B** / **Ctrl+I**). As anotações são listadas com o nome e a foto do autor e a data e a hora de cada publicação.
+2. Digite a sua anotação na caixa e publique-a. Para formatá-la, use a linha de botões **Negrito**, **Itálico**, **Lista com marcadores** e **Lista numerada** que aparece abaixo da caixa enquanto você digita: selecione o texto e clique em um botão (ou pressione **Ctrl+B** / **Ctrl+I**). Em uma lista, **Enter** inicia o próximo item, e **Enter** em um item vazio encerra a lista. As anotações são listadas com o nome e a foto do autor e a data e a hora de cada publicação.
 3. Clique no link **Voltar para** com o nome do grupo para retornar à página do grupo.
 
 :::info
-As anotações do líder são visíveis somente para os líderes do grupo. Os outros membros não podem vê-las, e nem a equipe nem os administradores -- mesmo com permissões completas -- podem vê-las, a menos que também sejam líderes desse grupo. Para dar acesso a outra pessoa, [torne-a líder](#designating-group-leaders). Os líderes também veem essas anotações na seção **Anotações do líder** da página do grupo no [B1.church](../../b1-church/groups/group-details.md#leader-notes) e na aba **Grupos** da página de [Anotações](../people/notes.md) no B1 Admin.
+As anotações do líder são visíveis somente para os líderes do grupo. Os outros membros não podem vê-las, e nem a equipe nem os administradores -- mesmo com permissões completas -- podem vê-las, a menos que também sejam líderes desse grupo. Para dar acesso a outra pessoa, [torne-a líder](#designating-group-leaders). Os líderes também veem essas anotações na seção **Anotações do líder** da página do grupo no [B1.church](../../b1-church/groups/group-details.md#leader-notes), e na aba **Grupos** da página de [Anotações](../people/notes.md) no B1 Admin.
 :::
 
 ## Enviando Mensagens aos Membros do Grupo {#sending-messages-to-group-members}

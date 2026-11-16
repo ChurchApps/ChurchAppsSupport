@@ -3,7 +3,7 @@ title: "Utseende"
 description: "Angi farger, skrifter, avstand, logo og navigasjon for menighetens nettside i B1 Admin, samt widgets, GA4-analyse, omdirigeringer og egendefinert CSS."
 ---
 
-# Utseende
+# Utseende {#appearance}
 
 <div class="article-intro">
 
@@ -90,12 +90,20 @@ Nettstedwidgets vises på alle sider på nettstedet ditt, svevende over sidens i
 
 Fjern avkryssingen for **Aktivert** og klikk på **Lagre** for å slå av en widget. Disse widgetene gjelder for alle menighetens nettsider.
 
+Kunngjøringsbanneret vises også øverst på startskjermen i menighetens B1-app (medlemsportalen på `/mobile`, inkludert den installerte appen), over hilsenen, med samme tekst, lenke, farger og datoer. I appen åpner en **lenke-URL** som peker til en av dine egne sider (for eksempel `/food`), siden inne i appen i stedet for å laste nettstedet ditt. Se [Navigere i B1App](../../b1-church/getting-started/navigating.md#home).
+
+Noen detaljer om hvordan banneret oppfører seg:
+
+- På telefoner bryter lang tekst over flere linjer, og lenken flytter til egen linje hvis den ikke får plass.
+- På nettstedet ditt ligger menylinjen rett under kunngjøringsbanneret, slik at menyknappen alltid er synlig. Menyer og popup-vinduer åpnes over banneret.
+- Når noen lukker banneret med **×**-knappen, forblir det skjult på den enheten i én dag, og kommer så tilbake. Hvis du endrer **teksten**, vises den nye kunngjøringen med en gang, også for personer som lukket den gamle.
+
 ## Omdirigeringer og analyse {#redirects--analytics}
 
 Kortet **Omdirigeringer og analyse** (under panelet Stilinnstillinger) inneholder to ulike, men ofte nødvendige innstillinger:
 
 - **Analyse** -- Legg til din **GA4-måle-ID** (format `G-XXXXXXXXXX`) og klikk på **Lagre** for å spore besøkstrafikken på nettstedet ditt. Den samme ID-en sporer også sidevisninger i menighetens B1-app (medlemsportalen på `/mobile`, inkludert den installerte appen), merket med en `display_mode` på `installed` eller `browser`, slik at du kan skille besøk fra den installerte appen fra besøk i nettleseren i Google Analytics.
-- **Omdirigeringer** -- Knytt en gammel URL-sti til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn fortsatt fungerer i stedet for å gi 404. Skriv inn den gamle **Fra-sti** og den nye **Til-sti**, og klikk deretter på **Legg til**. Omdirigeringen lagres med en gang og listes over feltene; klikk på slettikonet for å fjerne den. Stier lagres med små bokstaver, med en innledende skråstrek og uten etterfølgende skråstrek. En omdirigering har også forrang over B1s innebygde sider (`/sermons`, `/stream`, `/donate`, `/bible` og `/votd`), slik at du kan sende den adressen et annet sted (for eksempel til din egen prekenside eller en YouTube-kanal). Den overstyrer ikke en side du har laget selv på samme adresse. Slett den siden først hvis du vil at omdirigeringen skal gjelde.
+- **Omdirigeringer** -- Knytt en gammel URL-sti til en ny, slik at lenker til en side du har flyttet eller gitt nytt navn, fortsatt fungerer i stedet for å gi 404. Skriv inn den gamle **Fra-sti** og den nye **Til-sti**, og klikk deretter på **Legg til**. Omdirigeringen lagres med en gang og listes over feltene; klikk på slettikonet for å fjerne den. Stier lagres med små bokstaver, med en innledende skråstrek og uten etterfølgende skråstrek. En omdirigering har også forrang over B1s innebygde sider (`/sermons`, `/stream`, `/donate`, `/bible` og `/votd`), slik at du kan sende den adressen et annet sted (for eksempel til din egen prekenside eller en YouTube-kanal). Den overstyrer ikke en side du har laget selv på samme adresse. Slett den siden først hvis du vil at omdirigeringen skal gjelde.
 
 ## Egendefinert CSS og JavaScript {#custom-css-and-javascript}
 
@@ -109,7 +117,7 @@ Egendefinert CSS er kraftig, men kan ødelegge oppsettet på nettstedet ditt hvi
 :::
 
 :::info
-Nettstedet ditt håndhever en innholdssikkerhetspolicy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egendefinert HTML** her, og [HTML-elementet](./page-editor.md#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der kjøres som den er, så lim bare inn skript fra kilder du stoler på (sporingskoder for analyse, chat-widgeter og lignende innbygginger).
+Nettstedet ditt håndhever en innholdssikkerhetspolicy som blokkerer innebygde skript fra alle andre kilder. Feltet **Egendefinert HTML** her, og [HTML-elementet](./page-editor.md#using-the-html-element) på enkeltsider, er de betrodde unntakene -- kode du lagrer der, kjøres som den er, så lim bare inn skript fra kilder du stoler på (sporingskoder for analyse, chat-widgeter og lignende innbygginger).
 :::
 
 ## Stiltemaer {#style-themes}

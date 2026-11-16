@@ -3,7 +3,7 @@ title: "Registrar donaciones"
 description: "Registre donaciones de la iglesia en B1 Admin creando un lote, ingresando los donativos uno por uno, importando un CSV o registrando un donativo desde el perfil de un donante."
 ---
 
-# Registrar donaciones
+# Registrar donaciones {#recording-donations}
 
 <div class="article-intro">
 
@@ -32,9 +32,15 @@ Registrar donaciones en B1 Admin se hace a través del sistema de lotes. Usted c
 ## Ingresar donaciones individuales {#entering-individual-donations}
 
 1. En la página de detalle del lote, el panel de ingreso de donaciones aparece junto a la lista de donaciones. En **Seleccionar persona o anónimo**, escriba el nombre del donante en el campo de búsqueda para encontrarlo, o haga clic en **Anónimo**. (Al hacer clic en **Añadir donación** en la parte superior de la página, se va directamente a este panel).
-2. Después de seleccionar una persona, el formulario de ingreso muestra los campos **Fecha** (que comienza con la fecha del lote), **Método** (Cheque, Efectivo, Tarjeta o En especie), **Fondo** (se muestra cuando su iglesia tiene más de un fondo), **Notas**, **Monto** y **N.º de cheque** (o **Últimos 4 dígitos** para donativos con tarjeta, o **Artículo** para describir un donativo en especie; los donativos en efectivo no tienen campo de detalle). Haga clic en **Cambiar** junto al nombre del donante para elegir a otra persona.
+2. Después de seleccionar una persona, el formulario de ingreso muestra los campos **Fecha** (que comienza con la fecha del lote), **Método** (Cheque, Efectivo, Tarjeta o En especie), **Fondo** (se muestra cuando su iglesia tiene más de un fondo), **Memo (se imprime en el estado)**, **Notas (internas)**, **Monto** y **N.º de cheque** (o **Últimos 4 dígitos** para donativos con tarjeta, o **Artículo** para describir un donativo en especie; los donativos en efectivo no tienen campo de detalle). Haga clic en **Cambiar** junto al nombre del donante para elegir a otra persona.
 3. Complete los datos y haga clic en **Añadir donación** (o presione Enter). Si el monto está vacío o es cero, el formulario le pedirá ingresar un monto mayor que cero en lugar de guardar.
-4. La donación se añade a la lista de donaciones, y el formulario se reinicia para que pueda ingresar la siguiente. La fecha, el método, el fondo y las notas se mantienen como los configuró, así que una pila de cheques similares solo necesita el donante, el monto y el número de cheque.
+4. La donación se añade a la lista de donaciones, y el formulario se reinicia para que pueda ingresar la siguiente. La fecha, el método, el fondo, el memo y las notas se mantienen como los configuró, así que una pila de cheques similares solo necesita el donante, el monto y el número de cheque.
+
+La **Fecha** siempre comienza con la fecha del lote al abrir un lote. Si la cambia, la nueva fecha se conserva para el siguiente donativo que ingrese en ese lote (en el panel de ingreso y en el editor completo de donaciones) hasta que la cambie de nuevo o salga del lote.
+
+:::tip ¿Memo o Notas?
+El **Memo** se imprime en el estado de donación y en el recibo del donante, junto al donativo. Úselo para lo que el donante debe ver, como el propósito de un donativo destinado a un fin específico ("Viaje de jóvenes"). Las **Notas** son solo para su personal y nunca se imprimen. Cuando alguien da en línea, lo que escriba en el cuadro de memo del formulario de donación se guarda como el memo del donativo.
+:::
 
 :::info
 Si el lote ha sido [cerrado](batches.md#closing-and-reopening-a-batch), el panel de ingreso y los enlaces de **Editar** se ocultan para quien no tenga **Editar donaciones**, y un aviso en la parte superior del lote indica que está cerrado. Pida a alguien con **Editar donaciones** que lo reabra.
@@ -91,7 +97,17 @@ Dividir donaciones entre fondos es común cuando un donante escribe un solo cheq
 
 ## Editar o quitar donaciones {#editing-or-removing-donations}
 
-Para editar una donación, haga clic en el botón **Editar** de su fila en el lote. Puede cambiar la fecha, el monto, el fondo, el método de pago (Cheque, Efectivo, Tarjeta o En especie) o cualquier otro detalle. En un donativo en especie, el editor etiqueta el campo de detalle como **Artículo** para que pueda describir lo que se entregó. Haga clic en **Guardar** cuando termine.
+Para editar una donación, haga clic en el botón **Editar** de su fila en el lote. Puede cambiar la fecha, el monto, el fondo, el método de pago (Cheque, Efectivo, Tarjeta o En especie) o cualquier otro detalle, incluidos el **Memo** y las **Notas**. En un donativo en especie, el editor etiqueta el campo de detalle como **Artículo** para que pueda describir lo que se entregó. Haga clic en **Guardar** cuando termine.
+
+### Mover un donativo a otro lote {#moving-a-gift-to-another-batch}
+
+Si un donativo se ingresó en el lote equivocado, puede moverlo en lugar de eliminarlo y escribirlo de nuevo:
+
+1. Haga clic en **Editar** en la fila del donativo.
+2. En el menú desplegable **Lote**, elija el lote al que pertenece. La lista muestra la fecha y el nombre de cada lote, del más reciente al más antiguo. Los lotes cerrados no aparecen en la lista, excepto el lote actual del donativo.
+3. Haga clic en **Guardar**.
+
+El donativo sale del lote actual y aparece en el que eligió, y los totales de ambos lotes se actualizan. Mover un donativo es una edición, así que no inicia un [flujo de trabajo](../serving/workflows.md#triggers) de **Donación · Creada** como ocurriría si lo ingresara de nuevo.
 
 :::tip
 La línea debajo del nombre del lote en la parte superior de la página se actualiza automáticamente para mostrar la fecha del lote, el número de donativos y el monto combinado en dólares a medida que añade o edita registros. Úselo para conciliar con su boleta de depósito.
@@ -123,7 +139,7 @@ Cuando alguien entrega un cheque, paga un evento o una camiseta, o una organizac
 2. Haga clic en **Recibo** junto a **Editar** en la fila de la donación. También puede hacer clic en **Recibo** en la parte inferior del formulario Editar donación.
 3. Haga clic en **Imprimir**, o en **Cerrar** para volver.
 
-El recibo usa el mismo diseño que el estado de donación: su iglesia y el donante (o "Anónimo"), la fecha y el método del donativo, cada fondo y monto, la nota, su Nota de donación, y el bloque de recibo oficial si ha configurado un **Formato del estado** (consulte [Estados de donación](giving-statements.md)). El número de recibo de ese bloque es el ID de la donación.
+El recibo usa el mismo diseño que el estado de donación: su iglesia y el donante (o "Anónimo"), la fecha y el método del donativo, cada fondo y monto, el memo del donativo (si tiene uno), su Nota de donación, y el bloque de recibo oficial si ha configurado un **Formato del estado** (consulte [Estados de donación](giving-statements.md)). El número de recibo de ese bloque es el ID de la donación.
 
 :::info
 La redacción "sin bienes ni servicios" solo se imprime cuando todos los fondos del donativo están marcados como deducibles de impuestos. Si alguna parte del donativo fue a un fondo no deducible de impuestos, como una cuota de evento o una compra, el recibo omite esa redacción para que se lea como un pago y no como un donativo caritativo.

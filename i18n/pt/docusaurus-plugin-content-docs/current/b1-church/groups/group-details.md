@@ -4,7 +4,7 @@ sidebar_label: "Detalhes do grupo"
 description: "Encontre, abra e gerencie a página de detalhes de um grupo na visão do B1.church voltada aos membros, no B1 Admin: veja eventos, encontros, formulários e membros, e entre ou solicite participação."
 ---
 
-# Detalhes do grupo
+# Detalhes do grupo {#group-details}
 
 <div class="article-intro">
 
@@ -58,7 +58,7 @@ Se você é líder do grupo, tem recursos adicionais de edição:
 - **Criar e editar eventos** -- Toque em **Todos os eventos** e depois em **Adicionar evento** para incluir um evento no calendário do grupo. Ao criar um evento, você pode reservar salas e recursos junto com ele -- selecione entre as salas e recursos disponíveis, defina horários opcionais de montagem e desmontagem, e a solicitação de reserva é enviada automaticamente para aprovação.
 - **Editar eventos recorrentes** -- Ao abrir um evento recorrente para editá-lo, o B1 pergunta primeiro quais datas alterar: **Apenas esta data**, **Esta e todas as datas seguintes** ou **Todas as datas**. Escolha uma opção e clique em **Salvar** para abrir o evento. Se você escolheu **Apenas esta data**, a chave **Recorrente** fica oculta e suas alterações (ou uma exclusão) se aplicam apenas a essa data.
 - **Excluir eventos** -- Toque no ícone de lápis ao lado de um evento, depois toque em **Excluir evento** e confirme. Para um evento recorrente, a exclusão segue as datas que você escolheu ao abri-lo -- apenas esta data, esta e todas as datas seguintes, ou a série inteira. Uma data excluída não aparece mais no calendário do grupo nem nos próximos eventos dos membros.
-- **Definir lembretes de eventos** -- Ao editar um evento existente, ative **Enviar lembretes** para avisar as pessoas antes de ele começar. Escolha quando os lembretes são enviados, o **Horário do dia**, **Quem deve ser lembrado?** e uma **Mensagem** opcional, e depois escolha **Push**, **E-mail** ou, se sua igreja tiver o envio de SMS configurado, **Texto** em **Enviar por**. Mensagens de texto só são enviadas para quem ativou os lembretes por texto em suas [Preferências de notificação](../getting-started/notification-preferences.md).
+- **Definir lembretes de eventos** -- Ao editar um evento existente, ative **Enviar lembretes** para avisar as pessoas antes de ele começar. Escolha quando os lembretes são enviados, o **Horário do dia**, **Quem deve ser lembrado?** e uma **Mensagem** opcional, e depois escolha **Push**, **E-mail** ou, se sua igreja tiver o envio de SMS configurado, **Texto** em **Enviar por**. Mensagens de texto só são enviadas para quem ativou os lembretes por texto em suas [Preferências de notificação](../getting-started/notification-preferences.md). Depois de salvar os lembretes, toque em **Enviar agora** para enviar um imediatamente; o B1 mostra quantas pessoas ele alcançou, como **Enviado para 8 pessoas**, e os lembretes agendados continuam sendo enviados.
 - **Gerenciar recursos** -- Envie arquivos (até 100 MB de armazenamento), adicione links ou exclua recursos existentes.
 - **Registrar anotações de encontro e acompanhar a presença** -- Use **Adicionar anotação** e **Registrar presença** na seção **Encontros**. Veja [Anotações de encontro e presença](#meeting-notes-and-attendance).
 - **Manter anotações privadas do líder** -- Use a seção **Anotações do líder**. Veja [Anotações do líder](#leader-notes).

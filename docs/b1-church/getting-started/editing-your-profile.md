@@ -48,10 +48,11 @@ To add a family member who isn't in the system yet:
 
 1. Tap **Add Family Member**.
 2. Enter their **First Name**. **Last Name** starts filled in with your last name; change it if theirs is different.
-3. Optionally add their **Title** and **Mobile Phone**.
+3. Optionally add their **Title**, **Email**, and **Mobile Phone**.
 4. Pick their **Household Role**: **Head**, **Spouse**, **Child**, or **Other** (the default).
-5. Tap **Add**. They appear under **Pending Family Members** with their role; tap **Remove** to take someone off the list. Repeat for anyone else.
-6. Tap **Save Changes** (or **Submit for Approval**).
+5. Optionally tap **Add Photo** to choose a picture of them (tap **Change Photo** to pick a different one).
+6. Tap **Add**. They appear under **Pending Family Members** with their role and email; tap **Remove** to take someone off the list. Repeat for anyone else.
+7. Tap **Save Changes** (or **Submit for Approval**).
 
 If your church reviews directory changes, the new family members are submitted with your other changes for your church to approve. Otherwise they are added to your household as soon as you save.
 

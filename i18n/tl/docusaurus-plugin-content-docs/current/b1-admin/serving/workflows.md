@@ -3,7 +3,7 @@ title: "Mga Workflow"
 description: "Gumawa ng mga Kanban-style na board sa B1 Admin para dalhin ang mga tao sa mga follow-up na hakbang, gamit ang mga awtomatikong email, text, at trigger na awtomatikong nagdaragdag ng mga tao."
 ---
 
-# Mga Workflow
+# Mga Workflow {#workflows}
 
 <div class="article-intro">
 
@@ -55,7 +55,7 @@ Ang bawat workflow board ay binubuo ng **mga hakbang**, na ipinapakita bilang mg
 Kapag nagdagdag o nag-edit ka ng hakbang, maaari mong i-configure ang:
 
 - **Step Name** -- ang heading ng column (halimbawa, "Welcome Call" o "Awaiting Registration").
-- **Due in (days)** -- awtomatikong nagtatakda ng due date kapag pumasok ang isang card sa hakbang na ito. Ang mga card na lampas na sa due date ay mamarkahang **Overdue**.
+- **Due in (days)** -- awtomatikong nagtatakda ng due date kapag pumasok ang isang card sa hakbang na ito. Ang mga card na lampas na sa due date ay mamarkahang **Overdue**. Iwanang blangko kung walang due date; maaari mo ring burahin ang numerong itinakda mo dati.
 - **Default assignee** -- ang tao o grupong awtomatikong itinatalaga sa mga bagong card sa hakbang na ito. Kapag tao ang default assignee, makakatanggap siya ng notification na may card na naitalaga sa kanya.
 - **Automated actions** -- mga bagay na awtomatikong ginagawa ng sistema kapag dumating ang card (tingnan sa ibaba).
 - **Routing** -- kung saan pupunta ang card kapag umalis ito sa hakbang (tingnan ang [Routing](#routing-cards-with-outcomes-and-conditions)).
@@ -158,7 +158,7 @@ Buksan ang isang workflow para makita ang board nito. Ipinapakita ng bawat card 
 
 Mula sa card drawer, maaari mo:
 
-- **I-assign** ang card sa ibang tao o grupo.
+- **I-assign** ang card sa ibang tao o grupo. Itinatala ang pagbabago sa **Activity** ng card, halimbawa "Reassigned from Jane Smith to John Doe".
 - **I-snooze** ang card nang 1 araw, 3 araw, o 1 linggo para pansamantalang itago ang due date nito.
 - **Send Back** sa nakaraang hakbang o **Skip** papunta sa susunod na hakbang.
 - **Pin assignment** -- panatilihin ang parehong may-ari ng card kahit lumilipat ito sa pagitan ng mga hakbang. Bilang default, kapag inilipat ang card sa bagong hakbang, muling itinatalaga ito sa default assignee ng hakbang na iyon; pinapanatili ng pin ang kasalukuyang tao na responsable sa buong proseso.
@@ -253,7 +253,7 @@ Isang espesyal na uri ng workflow ang maaaring mag-follow up sa [mga serving req
 
 Ang mga workflow na ito ay gumagamit ng aksyong **Send serving request** sa halip na **Send email** at **Send text**. Piliin ang **Email** o **Text message** at, opsyonal, sumulat ng **Request message**. Laging kasama sa request ang papel, plan, service date, at link para tumugon; maaari mong gamitin ang `{{planName}}`, `{{positionName}}`, at `{{serviceDate}}` sa iyong mensahe. Iwanang walang laman ang mensahe para gamitin ang default na request. Nalalapat sa mga volunteer ang kanilang mga notification preference, text opt-in, texting provider mo, at pag-apruba ng email ng simbahan, at anumang nilaktawan o na-block na pagsubok ay itatala sa card. Hindi available sa mga board na ito ang **Send email**, **Send text**, at **Add to workflow**.
 
-Ang tab na **Triggers** sa isang confirmation workflow ay nagpapaliwanag kung paano sinisimulan ang mga card sa halip na nag-aalok ng mga trigger, at hindi lumalabas ang mga workflow na ito sa listahan ng **Add to Workflow** para sa mga tao.
+Ang tab na **Triggers** sa isang confirmation workflow ay nagpapaliwanag kung paano sinisimulan ang mga card sa halip na nag-aalok ng mga trigger, at hindi lumalabas ang mga workflow na ito sa listahan ng **Add to Workflow** para sa mga tao. Walang button na **Add Card** ang board, dahil sa mga serving request lamang sa isang plan nanggagaling ang mga card.
 
 ### Paano sinisimulan at isinasara ang mga card {#how-cards-are-started-and-closed}
 

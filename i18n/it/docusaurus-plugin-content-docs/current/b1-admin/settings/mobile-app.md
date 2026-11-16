@@ -3,7 +3,7 @@ title: "Impostazioni dell'app mobile"
 description: "Configura le schede di navigazione, i riquadri della schermata Home, il messaggio di accesso e le impostazioni di privacy dell'elenco membri per l'app dei membri B1.church in B1 Admin."
 ---
 
-# Impostazioni dell'app mobile
+# Impostazioni dell'app mobile {#mobile-app-settings}
 
 <div class="article-intro">
 
@@ -46,7 +46,7 @@ Il menu Mobile contiene anche **Tema dell'app**, **Portale membri**, **Check-in 
    - **URL** -- Mostrato per le schede **URL esterno**: l'indirizzo web che la scheda apre.
    - **Pagina** -- Mostrato per le schede **Pagina interna**: scegli una delle pagine del tuo sito web.
    - **Scheda padre** -- Inserisci la scheda in una scheda **Cartella**, oppure lasciala su **Nessuna (primo livello)**. Vedi [Dove compaiono queste schede](#where-these-tabs-appear).
-   - **Visibilità** -- Chi può vedere questa scheda: **Tutti (anche anonimi)**, **Utenti con accesso**, **Membri e personale**, **Solo personale**, **Membri del team di servizio** oppure **Gruppi specifici...** (poi seleziona i gruppi). Per una scheda **Elenco membri**, questo controlla solo chi vede la scheda; chi può aprire l'elenco è impostato da **Mostra nell'elenco** nella pagina Portale membri (vedi [Impostazioni dell'elenco membri e dei messaggi](#member-directory--messaging-settings)).
+   - **Visibilità** -- Chi può vedere questa scheda: **Tutti (anche anonimi)**, **Utenti con accesso**, **Membri e personale**, **Solo personale**, **Membri del team di servizio** oppure **Gruppi specifici...** (poi seleziona i gruppi). Per una scheda **Elenco membri**, questo controlla solo chi vede la scheda stessa; chi può aprire l'elenco è impostato da **Mostra nell'elenco** nella pagina Portale membri (vedi [Impostazioni dell'elenco membri e dei messaggi](#member-directory--messaging-settings)).
 3. Fai clic su **Salva scheda** per aggiungerla alla tua app.
 
 ## Modificare una scheda esistente {#editing-an-existing-tab}
@@ -108,6 +108,15 @@ I visitatori che aprono la [schermata Home](/docs/b1-church/getting-started/navi
 
 Fai clic su **Salva** per applicare. Un messaggio **Salvato** conferma la modifica. Salvare aggiorna le impostazioni memorizzate nella cache dell'app, quindi la modifica compare la prossima volta che si carica la schermata Home.
 
+### Pagina richiesta evento {#event-request-page}
+
+I membri che [richiedono un evento](../../b1-church/events/requesting-events.md) nell'app vedono una breve riga in cima alla pagina **Richiedi un evento** -- per impostazione predefinita, *"Il personale approva ogni sala e ogni elemento."* L'impostazione **Pagina richiesta evento** della stessa pagina Portale membri (`/mobile/b1-mobile`) ti permette di sostituirla con le tue istruzioni, come linee guida per le prenotazioni, con quanto preavviso richiedere o con le condizioni:
+
+1. Scrivi il testo in **Istruzioni per la richiesta evento** (fino a 1.000 caratteri). Gli a capo vengono mantenuti.
+2. Fai clic su **Salva**.
+
+Lascia vuota la casella per mantenere la riga predefinita.
+
 ### Riquadri della schermata Home {#home-screen-tiles}
 
 Le schede con una foto (vedi **Immagine** in [Aggiungere una nuova scheda](#adding-a-new-tab)) compaiono nella [schermata Home](/docs/b1-church/getting-started/navigating#home) dell'app come riquadri fotografici, in una sezione intitolata con il nome della tua chiesa. Questo include anche la scheda Versetto del giorno, se le assegni una foto. Le schede con foto compaiono comunque anche nella barra delle schede.
@@ -119,7 +128,7 @@ L'impostazione **Riquadri della schermata Home** nella stessa pagina Portale mem
 - **Scorrimento (automatico)** -- La stessa riga laterale, che però si sposta da sola, avanzando di un riquadro circa ogni quattro secondi e tornando al primo riquadro dopo l'ultimo. Si ferma mentre un membro la tocca, ci passa sopra o vi naviga con la tastiera, e riprende qualche secondo dopo. Sui dispositivi impostati per ridurre le animazioni, la riga resta ferma e funziona come **Riga scorrevole**.
 - **Elenco** -- Un elenco con una piccola miniatura della foto accanto al nome di ciascuna scheda.
 - **Griglia ed elenco** -- Le prime tre schede con foto in una griglia, con il primo riquadro che occupa tutta la larghezza, e le successive tre elencate sotto con una piccola miniatura accanto a ogni nome. Quando sono più di tre, l'intestazione della sezione mostra un collegamento **Tutte** che apre la pagina **Altro** dell'app, con l'elenco di tutte le schede.
-- **Scorrimento (automatico) ed elenco** -- Tutte le schede con foto nella riga auto-scorrevole descritta sopra, con le prime tre elencate anche sotto, e lo stesso collegamento **Tutte** quando sono più di tre.
+- **Scorrimento (automatico) ed elenco** -- Tutte le schede con foto nella riga auto-scorrevole descritta sopra, con le prime tre che non sono già nel menu dell'app (la barra delle schede sui telefoni, l'intestazione sui computer) elencate anche sotto, e lo stesso collegamento **Tutte** quando sono più di tre.
 
 In entrambi i layout a scorrimento, quando i riquadri sono più di quelli che stanno nella larghezza dello schermo, sotto i riquadri compare una fila di puntini, uno per riquadro, con il puntino del riquadro corrente pieno. I membri possono toccare un puntino per saltare a quel riquadro.
 
@@ -158,7 +167,7 @@ Le schede che configuri qui vengono mostrate nella **PWA B1.church** che i tuoi 
 
 Su telefono, la barra delle schede in basso mostra **Home**, fino a tre delle tue schede e **Altro**; su computer, l'intestazione mostra fino a cinque schede. Le schermate integrate (come Prediche, Donazioni o Gruppi) occupano per prime gli spazi disponibili, e le schede **Pagina interna** riempiono quelli rimasti liberi. Le schede **URL esterno** e **Versetto del giorno** non ottengono mai uno spazio. Ogni scheda, comprese quelle che non entrano, è elencata nella pagina **Altro** dell'app.
 
-Fanno eccezione le schede inserite in una scheda **Cartella**: compaiono solo nella schermata della cartella stessa, che i membri aprono toccando la cartella. Quella schermata mostra le schede come riquadri fotografici quando ognuna ha un'immagine, oppure come elenco in caso contrario. Una cartella che non contiene schede visibili a un membro è nascosta a quel membro. Vedi [Schede cartella](../../b1-church/getting-started/navigating.md#folder-tabs). Vedi [Navigare nella B1App](../../b1-church/getting-started/navigating.md) per ciò che vedono i membri.
+Fanno eccezione le schede inserite in una scheda **Cartella**: compaiono solo nella schermata della cartella stessa, che i membri aprono toccando la cartella. Quando il riquadro della cartella non ottiene uno spazio nella barra delle schede o nell'intestazione, la sezione **Altro da** della Home elenca anche il nome della cartella con le sue schede come pulsanti sotto di esso, nell'ordine impostato qui. Quella schermata mostra le schede come riquadri fotografici quando ognuna ha un'immagine, oppure come elenco in caso contrario. Una cartella che non contiene schede visibili a un membro è nascosta a quel membro. Vedi [Schede cartella](../../b1-church/getting-started/navigating.md#folder-tabs). Vedi [Navigare nella B1App](../../b1-church/getting-started/navigating.md) per ciò che vedono i membri.
 
 ## Passaggi successivi {#next-steps}
 

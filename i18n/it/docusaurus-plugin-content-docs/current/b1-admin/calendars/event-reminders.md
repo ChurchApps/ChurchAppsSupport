@@ -3,7 +3,7 @@ title: "Promemoria degli eventi"
 description: "Configura in B1 Admin i promemoria degli eventi per notifiche push, email e SMS, scegliendo tempistica, destinatari e un messaggio personalizzato così le persone vengono avvisate in tempo."
 ---
 
-# Promemoria degli eventi
+# Promemoria degli eventi {#event-reminders}
 
 <div class="article-intro">
 
@@ -29,13 +29,19 @@ Configuri i promemoria nella sezione **Promemoria** dell'evento. Espandila per v
 
 1. Attiva **Abilita promemoria**.
 2. Scegli **Quando (fino a 3)** per l'invio: **7 giorni prima**, **3 giorni prima**, **1 giorno prima** e **Il giorno stesso**. Una volta scelti tre, gli altri sono disabilitati finché non ne deselezioni uno.
-3. Imposta l'**Ora del giorno** in cui deve partire il promemoria (il valore predefinito è **9:00**, nel [fuso orario](../settings/church-settings.md#time-zone) della tua chiesa).
+3. Imposta l'**Ora del giorno** in cui deve partire il promemoria (il valore predefinito è **9:00 AM**, nel [fuso orario](../settings/church-settings.md#time-zone) della tua chiesa).
 4. Scegli **Chi** deve ricevere il promemoria (vedi [Chi riceve il promemoria](#who-gets-reminded) più sotto).
 5. Facoltativamente aggiungi un **Messaggio (facoltativo)**. Lascialo vuoto per usare il testo predefinito, oppure scrivi il tuo -- puoi includere `{{eventTitle}}` e verrà sostituito con il nome dell'evento.
 6. Scegli i **Canali**: notifica **Push** ed **Email** (entrambi attivi per impostazione predefinita) e, se la tua chiesa ha collegato un [fornitore di SMS](../settings/church-settings.md#texting), **SMS**.
 7. Fai clic su **Salva** (oppure salva il nuovo evento).
 
 Per interrompere i promemoria di un evento, disattiva **Abilita promemoria** e salva.
+
+### Inviare subito un promemoria {#sending-a-reminder-now}
+
+Su un evento già salvato, fai clic su **Invia ora** accanto a **Salva** per inviare subito il promemoria -- ad esempio dopo una modifica last-minute. Usa le impostazioni salvate e raggiunge le stesse persone, per la prossima data dell'evento. B1 mostra poi quante persone ha raggiunto, ad esempio **Inviato a 12 persone**. I promemoria programmati continuano a essere inviati come previsto.
+
+**Invia ora** è disponibile solo quando i promemoria sono attivi e salvati, quindi salva prima eventuali modifiche. Se il promemoria include **SMS**, ti serve anche il permesso di inviare SMS.
 
 Su un evento già salvato, un'**anteprima in tempo reale** mostra approssimativamente quante persone riceveranno il promemoria, quanti partecipanti non possono essere raggiunti e i prossimi orari di invio previsti mentre apporti modifiche -- così puoi verificare che il promemoria sia corretto prima di salvarlo. Un evento appena creato non ha anteprima finché non viene salvato.
 

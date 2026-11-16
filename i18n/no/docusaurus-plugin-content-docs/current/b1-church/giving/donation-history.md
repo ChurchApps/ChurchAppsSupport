@@ -4,7 +4,7 @@ sidebar_label: "Givehistorikk"
 description: "Se tidligere gaver, filtrer etter år, og skriv ut givekvitteringer til skattemeldingen fra givesiden i B1.church-medlemsportalen."
 ---
 
-# Givehistorikk
+# Givehistorikk {#donation-history}
 
 <div class="article-intro">
 
@@ -60,7 +60,7 @@ Selv om menigheten din ikke har satt opp giving på nett, kan du fortsatt se gav
 
 Trykk på **Skriv ut kvittering** øverst på siden Giving for å åpne en utskrivbar givekvittering for inneværende kalenderår (eller det siste året menigheten har frigitt) i en ny fane. Knappen vises når du har minst én registrert gave. For å skrive ut et annet år åpner du **Hele historikken**, velger året og trykker på **Skriv ut kvittering** ved siden av totalen.
 
-Kvitteringen er sentrert på siden og starter med menighetens logo (hvis menigheten har lastet opp en), året, perioden den dekker (1. januar til 31. desember) og datoen den ble utstedt. Under det står navnet og kontaktopplysningene dine ved siden av menighetens navn og adresse, et sammendrag med de samlede bidragene dine og en total for hvert fond, og en tabell med alle gavene med dato, metode, fond og beløp. Nederst bekrefter et notat at kvitteringen dekker alle bidrag menigheten har mottatt fra deg det året, etterfulgt av en kort ansvarsfraskrivelse om at menigheten er en registrert ideell organisasjon, og at det ikke er gitt varer eller tjenester i bytte mot gavene, bortsett fra immaterielle religiøse goder. Menighetens givenotat, hvis den har ett, skrives ut etter det.
+Kvitteringen er sentrert på siden og starter med menighetens logo (hvis menigheten har lastet opp en), året, perioden den dekker (1. januar til 31. desember) og datoen den ble utstedt. Under det står navnet og kontaktopplysningene dine ved siden av menighetens navn og adresse, et sammendrag med de samlede bidragene dine og en total for hvert fond, og en tabell med alle gavene med dato, metode, fond og beløp. Hvis en av gavene dine det året har et notat (merknaden du skrev da du ga på nett, eller en menigheten har lagt til), vises en kolonne **Memo** med notatet ved siden av fondet. Nederst bekrefter et notat at kvitteringen dekker alle bidrag menigheten har mottatt fra deg det året, etterfulgt av en kort ansvarsfraskrivelse om at menigheten er en registrert ideell organisasjon, og at det ikke er gitt varer eller tjenester i bytte mot gavene, bortsett fra immaterielle religiøse goder. Menighetens givenotat, hvis den har ett, skrives ut etter det.
 
 :::tip
 Skriv ut kvitteringen tidlig i det nye året, før du trenger den til skattemeldingen, mens gavene fra i fjor fortsatt er friske i historikken din.

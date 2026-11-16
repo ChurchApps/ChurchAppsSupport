@@ -3,7 +3,7 @@ title: "Endpoints de Doing"
 description: "Referência de endpoints da API Doing (escalas de culto, voluntários, tarefas e automações no B1 Admin), com caminhos, autenticação e permissões."
 ---
 
-# Endpoints de Doing
+# Endpoints de Doing {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ O módulo Doing gerencia o planejamento de cultos, a escala de voluntários, o g
 
 **Caminho base:** `/doing`
 
-## Planos
+## Planos {#plans}
 
 Caminho base: `/doing/plans`
 
@@ -36,7 +36,7 @@ Caminho base: `/doing/plans`
 | POST | `/autofill/:id` | JWT | — | Preenche automaticamente as atribuições de voluntários de um plano. Corpo: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Exclui um plano e todos os horários, atribuições, posições e itens do plano relacionados |
 
-### Exemplo: copiar um plano
+### Exemplo: copiar um plano {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Tipos de plano
+## Tipos de plano {#plan-types}
 
 Caminho base: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ Estende a classe base CRUD (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — sem
 | POST | `/` | JWT | — | Cria ou atualiza tipos de plano |
 | DELETE | `/:id` | JWT | — | Exclui um tipo de plano |
 
-## Itens do plano
+## Itens do plano {#plan-items}
 
 Caminho base: `/doing/planItems`
 
@@ -88,7 +88,7 @@ Gerencia os itens da ordem do culto (cabeçalhos, seções, músicas etc.), orga
 | POST | `/sort` | JWT | — | Atualiza a ordem de um item do plano (reordena os irmãos) |
 | DELETE | `/:id` | JWT | — | Exclui um item do plano |
 
-## Feed do plano
+## Feed do plano {#plan-feed}
 
 Caminho base: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ Fornece os feeds de itens do plano para o apresentador. Se não houver itens do 
 |--------|---------|--------------|-----------|-----------|
 | GET | `/presenter/:churchId/:planId` | Pública | — | Obtém o feed do plano para o apresentador (preenche automaticamente a partir do feed de venue se estiver vazio) |
 
-## Posições
+## Posições {#positions}
 
 Caminho base: `/doing/positions`
 
@@ -113,7 +113,7 @@ Estende a classe base CRUD (GET `/:id`, POST `/`, DELETE `/:id` — sem verifica
 | POST | `/` | JWT | — | Cria ou atualiza posições |
 | DELETE | `/:id` | JWT | — | Exclui uma posição |
 
-## Horários
+## Horários {#times}
 
 Caminho base: `/doing/times`
 
@@ -126,7 +126,7 @@ Caminho base: `/doing/times`
 | POST | `/` | JWT | — | Cria ou atualiza horários |
 | DELETE | `/:id` | JWT | — | Exclui um horário |
 
-## Atribuições
+## Atribuições {#assignments}
 
 Caminho base: `/doing/assignments`
 
@@ -144,7 +144,7 @@ Caminho base: `/doing/assignments`
 | DELETE | `/signup/:id` | JWT | — | Remove a sua própria inscrição. Rejeitada com "Removal deadline has passed" depois do prazo de inscrição do plano |
 | DELETE | `/:id` | JWT | — | Exclui uma atribuição |
 
-### Exemplo: aceitar uma atribuição
+### Exemplo: aceitar uma atribuição {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Datas de indisponibilidade
+## Datas de indisponibilidade {#blockout-dates}
 
 Caminho base: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ Estende a classe base CRUD (GET `/:id`, DELETE `/:id` — sem verificações de 
 | POST | `/` | JWT | — | Cria ou atualiza datas de indisponibilidade (define o personId como o usuário atual se não informado) |
 | DELETE | `/:id` | JWT | — | Exclui uma data de indisponibilidade |
 
-## Tarefas
+## Tarefas {#tasks}
 
 Caminho base: `/doing/tasks`
 
@@ -188,11 +188,12 @@ Caminho base: `/doing/tasks`
 | GET | `/closed` | JWT | — | Obtém as tarefas fechadas do usuário atual |
 | GET | `/timeline?taskIds=` | JWT | — | Obtém os dados de linha do tempo das tarefas por IDs separados por vírgula |
 | GET | `/directoryUpdate/:personId` | JWT | — | Obtém a tarefa de atualização de diretório de uma pessoa |
-| POST | `/` | JWT | — | Cria ou atualiza tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (envia fotos automaticamente) |
+| POST | `/` | JWT | — | Cria ou atualiza tarefas. Adicione `?type=directoryUpdate` para tratar tarefas de atualização de diretório (envia fotos automaticamente). Alterar o `assignedToId` de uma tarefa existente acrescenta uma entrada "Reassigned from ... to ..." ao histórico em seu `data` |
 | POST | `/:id/conversation` | JWT | `tasks.edit` ou responsável pelo cartão | Anexa a conversa de notas ao cartão. Corpo: `{ conversationId }`. A primeira conversa anexada prevalece; chamadas posteriores retornam o cartão sem alteração |
 | POST | `/loadForGroups` | JWT | — | Carrega tarefas de grupos específicos. Corpo: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | Exclui permanentemente uma tarefa simples. Retorna 400 para cartões de fluxo de trabalho (use os endpoints de cartões) e para solicitações de exclusão de conta (decida-as pela ação de revisão) |
 
-## Automações
+## Automações {#automations}
 
 Caminho base: `/doing/automations`
 
@@ -204,7 +205,7 @@ Caminho base: `/doing/automations`
 | POST | `/` | JWT | — | Cria ou atualiza automações |
 | DELETE | `/:id` | JWT | — | Exclui uma automação |
 
-## Ações
+## Ações {#actions}
 
 Caminho base: `/doing/actions`
 
@@ -217,7 +218,7 @@ As ações definem o que acontece quando uma automação é disparada.
 | POST | `/` | JWT | — | Cria ou atualiza ações |
 | DELETE | `/:id` | JWT | — | Exclui uma ação |
 
-## Condições
+## Condições {#conditions}
 
 Caminho base: `/doing/conditions`
 
@@ -230,7 +231,7 @@ As condições definem os critérios que disparam uma automação.
 | POST | `/` | JWT | — | Cria ou atualiza condições |
 | DELETE | `/:id` | JWT | — | Exclui uma condição |
 
-## Conjunções
+## Conjunções {#conjunctions}
 
 Caminho base: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ As conjunções vinculam várias condições em uma automação (lógica E/OU).
 | POST | `/` | JWT | — | Cria ou atualiza conjunções |
 | DELETE | `/:id` | JWT | — | Exclui uma conjunção |
 
-## Autenticações de provedores de conteúdo
+## Autenticações de provedores de conteúdo {#content-provider-auths}
 
 Caminho base: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ Gerencia os registros de autenticação OAuth de provedores externos de conteúd
 | POST | `/` | JWT | — | Cria ou atualiza autenticações de provedores de conteúdo |
 | DELETE | `/:id` | JWT | — | Exclui uma autenticação de provedor de conteúdo |
 
-## Proxy de provedor
+## Proxy de provedor {#provider-proxy}
 
 Caminho base: `/doing/providerProxy`
 
@@ -277,7 +278,7 @@ Encaminha requisições para provedores externos de conteúdo (por exemplo, ProP
 | POST | `/getInstructions` | JWT | — | Obtém as instruções de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | Obtém as instruções expandidas de um item de conteúdo. Corpo: `{ ministryId, providerId, path }` |
 
-## Páginas relacionadas
+## Páginas relacionadas {#related-pages}
 
 - [Endpoints de Membership](./membership.md) — Pessoas, grupos, funções e permissões
 - [Endpoints de Attendance](./attendance.md) — Rastreamento de cultos e visitas

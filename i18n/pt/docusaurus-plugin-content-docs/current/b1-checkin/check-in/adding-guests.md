@@ -3,7 +3,7 @@ title: "Adicionando Visitantes"
 description: "Adicione uma criança visitante, parente ou amigo a uma família no quiosque do B1 Checkin, depois atribua grupos e conclua o check-in."
 ---
 
-# Adicionando Visitantes
+# Adicionando Visitantes {#adding-guests}
 
 <div class="article-intro">
 
@@ -19,28 +19,29 @@ Se alguém está visitando sua família e precisa fazer check-in com seu domicí
 
 </div>
 
-## Como Adicionar um Visitante
+## Como Adicionar um Visitante {#how-to-add-a-guest}
 
 1. Na **tela de revisão do domicílio**, toque no botão **Adicionar Visitante** localizado abaixo da lista de membros do domicílio.
-2. O formulário de adição de visitante aparece com dois campos:
+2. O formulário de adição de visitante aparece com estes campos:
    - **Nome** -- Insira o primeiro nome do visitante.
    - **Sobrenome** -- Insira o sobrenome do visitante.
+   - **E-mail** -- Opcional. Insira o e-mail do visitante para que a igreja possa fazer o acompanhamento após a visita.
 3. Toque no botão **Adicionar Visitante** para salvar.
 
 O visitante é adicionado ao seu domicílio e você retorna à tela de revisão do domicílio. O novo visitante aparecerá na sua lista de membros junto com os outros membros da família.
 
 :::info
-Se o nome do visitante corresponder a alguém que já está no sistema e não é membro, o aplicativo vinculará ao registro existente em vez de criar um duplicado. Isso ajuda a manter o banco de dados da sua igreja limpo.
+Se o nome do visitante corresponder a alguém que já está no sistema e não é membro, o aplicativo vinculará ao registro existente em vez de criar um duplicado. Isso ajuda a manter o banco de dados da sua igreja limpo. Nesse caso, o e-mail que você digitou não é salvo; ele é adicionado apenas aos visitantes recém-criados.
 :::
 
-## Após Adicionar um Visitante
+## Após Adicionar um Visitante {#after-adding-a-guest}
 
 Uma vez que o visitante apareça na lista do seu domicílio, você pode:
 
 - **Expandir o cartão** e [atribuí-lo a um grupo](./group-assignment.md), assim como qualquer outro membro da família.
 - **[Fazer check-in](./completing-checkin.md)** de todo o domicílio incluindo o visitante.
 
-## Cancelando
+## Cancelando {#canceling}
 
 Se você mudar de ideia, toque no botão **Cancelar** na parte inferior do formulário de adição de visitante para retornar à tela de revisão do domicílio sem adicionar ninguém.
 
@@ -48,6 +49,6 @@ Se você mudar de ideia, toque no botão **Cancelar** na parte inferior do formu
 Adicionar um visitante no quiosque cria um registro de pessoa no banco de dados da sua igreja. O administrador da igreja pode atualizar os detalhes completos do visitante posteriormente no B1 Admin em [Pessoas](../../b1-admin/people/adding-people.md).
 :::
 
-## Próximo Passo
+## Próximo Passo {#next-step}
 
 Após adicionar visitantes e [atribuir grupos](./group-assignment.md) conforme necessário, você está pronto para [concluir o check-in](./completing-checkin.md).

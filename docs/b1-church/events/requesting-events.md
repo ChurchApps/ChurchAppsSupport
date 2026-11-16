@@ -22,6 +22,7 @@ If your church tracks bookable rooms and resources, you can request an event —
 ## Submitting a Request
 
 1. Open the **Me** page in the member portal and tap **Request an Event** in the **Requests & registrations** section.
+   The top of the page shows *"Staff will approve each room and item."* unless your church has written its own instructions -- such as booking guidelines or how much notice to give -- in which case you see those instead (see [Event Request Page](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Fill in the event basics: **Event title**, an optional **Description**, and the **Start** and **End** times. Turn on **All day** to pick dates only.
 3. Pick the **Rooms** and **Resources** you need (you can choose several of each). Once you pick one, you can add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** and set **Reserve from** and **Reserve until** yourself.
 4. Watch for conflict warnings — if your time overlaps an existing booking for a room or resource, you'll see *"Some selections may already be booked at this time."* You can adjust your time or choose something else.
@@ -35,11 +36,13 @@ After submitting, a **Request submitted** summary shows the status of each room 
 
 ## Tracking Your Requests
 
-Open **My Requests** from the Me page. Requests are split into **Upcoming** and **Past** by the event's date (tap **All past** to see older ones). Each request shows the event title and when it starts, the status of each room and resource you asked for, and a status pill:
+Open **My Requests** from the Me page. Requests are split into **Upcoming** and **Past** by the event's date (tap **All past** to see older ones). Each request shows the event title and when it starts, the description you entered, the status of each room and resource you asked for, and a status pill:
 
 - **Pending** -- Awaiting a decision
 - **Approved** -- Your booking is confirmed
 - **Rejected** -- The request was declined
+
+If staff gave a reason when they declined the request, or one of its rooms or resources, it appears in red under the request -- for example, *Rejected: The gym is booked that weekend.* The same reason is included in the notification you get about the decision.
 
 While a request is still pending, you can withdraw it with **Cancel request**. A confirmation asks "Cancel this request? This cannot be undone." — tap **Cancel request** to confirm or **Keep** to leave it.
 

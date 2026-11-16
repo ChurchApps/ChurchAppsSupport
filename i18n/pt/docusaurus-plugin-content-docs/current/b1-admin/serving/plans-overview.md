@@ -3,7 +3,7 @@ title: "Visão geral dos planos"
 description: "Tenha uma visão panorâmica das escalas de voluntários em muitas datas de culto no B1 Admin, identifique posições não preenchidas e preencha ou envie e-mails para sua equipe a partir de uma única grade."
 ---
 
-# Visão geral dos planos
+# Visão geral dos planos {#plans-overview}
 
 <div class="article-intro">
 
@@ -34,7 +34,7 @@ A visão geral exibe uma grade em que:
 
 - **Linhas** representam cada posição (por exemplo, "Música: Guitarra", "Técnica: Projeção"), agrupadas por categoria
 - **Colunas** representam as próximas datas de culto (por exemplo, "14 abr", "21 abr")
-- **Células** mostram o nome do voluntário atribuído àquela posição naquela data
+- **Células** mostram o nome do voluntário atribuído àquela posição naquela data. Um pequeno ícone vermelho de calendário depois de um nome indica que esse voluntário tem uma [data de indisponibilidade](./plan-validation.md#blockout-dates) naquele dia; passe o mouse sobre ele para ver as datas
 
 As células destacadas em **vermelho** não estão preenchidas — nenhum voluntário foi atribuído ainda. Isso facilita enxergar lacunas na escala de relance, sem abrir cada plano individualmente.
 
@@ -46,7 +46,7 @@ Os nomes dos voluntários aparecem em formato abreviado (primeiro nome e inicial
 
 Você não precisa abrir planos individuais para preencher vagas vazias. Clique em qualquer célula da grade para abrir um painel de atribuição para aquela posição e data. A partir dele, você pode:
 
-- Clicar no nome de um membro da equipe para atribuí-lo à posição (ou, para uma posição sem Grupo de voluntários, pesquisar qualquer pessoa da sua igreja)
+- Clicar no nome de um membro da equipe para atribuí-lo à posição (ou, para uma posição sem Grupo de voluntários, pesquisar qualquer pessoa da sua igreja). Use **Pesquisar equipe** para encontrar alguém em uma equipe grande. Quem estiver indisponível naquele dia mostra um selo **Indisponível** e aparece por último
 - Clicar no ícone **Remover** (X) ao lado de qualquer pessoa já atribuída, e confirmar, para retirá-la daquela vaga
 - Clicar em **Concluído** para fechar o painel sem sair da visão geral
 
@@ -54,7 +54,7 @@ Isso permite montar a escala inteira em uma única passagem — trabalhar entre 
 
 ## Agendamento automático pela visão geral {#auto-scheduling-from-the-overview}
 
-Clique em **Agendamento automático** e confirme para que o B1 preencha de uma vez todas as vagas abertas e não preenchidas da grade atual. Para cada plano visível, ele busca candidatos no grupo vinculado a cada posição e preenche automaticamente as vagas vazias, informando quantos dos planos visíveis conseguiu preencher (por exemplo, "Agendamento automático em 3 de 4 planos"). Posições sem Grupo de voluntários são ignoradas. Os planos são preenchidos um de cada vez, para que o mesmo voluntário não seja agendado duas vezes em datas diferentes na mesma passagem.
+Clique em **Agendamento automático** e confirme para que o B1 preencha de uma vez todas as vagas abertas e não preenchidas da grade atual. Para cada plano visível, ele busca candidatos no grupo vinculado a cada posição e preenche automaticamente as vagas vazias, informando quantos dos planos visíveis conseguiu preencher (por exemplo, "Agendamento automático em 3 de 4 planos"). Posições sem Grupo de voluntários são ignoradas. Os planos são preenchidos um de cada vez, para que o mesmo voluntário não seja escalado em duas datas diferentes na mesma passagem.
 
 :::info
 O agendamento automático preenche apenas as vagas que já estão vazias — nunca substitui uma atribuição existente.
@@ -76,7 +76,7 @@ Se a sua igreja tiver um [provedor de SMS](../settings/church-settings.md#textin
 Cada voluntário escalado no intervalo de datas recebe um SMS no número de celular do perfil dele, mesmo que sirva em várias datas. Pessoas que compartilham o mesmo número de telefone (como um telefone de família) recebem apenas um SMS. Voluntários que responderam STOP a um SMS anterior são ignorados.
 
 :::info
-Os SMS são enviados pelo provedor de SMS da própria igreja, e os preços dele se aplicam. Se a sua igreja estiver sem créditos de SMS, o envio é interrompido e a caixa de diálogo avisa. Um único envio atinge no máximo 200 voluntários; restrinja o intervalo de datas se tiver mais do que isso.
+Os SMS são enviados pelo provedor de SMS da própria igreja, e os custos desse provedor se aplicam. Se a sua igreja estiver sem créditos de SMS, o envio é interrompido e a caixa de diálogo avisa. Um único envio atinge no máximo 200 voluntários; restrinja o intervalo de datas se tiver mais do que isso.
 :::
 
 ## Destacando a escala de um voluntário {#highlighting-a-volunteers-schedule}

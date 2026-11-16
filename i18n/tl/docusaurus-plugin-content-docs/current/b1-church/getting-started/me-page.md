@@ -3,7 +3,7 @@ title: "Ang Me Page"
 description: "Ang makikita sa pahinang Me ng B1App member portal: paparating na serving, event at pagpaparehistro, iyong mga task, sambahayan, grupo, pagbibigay, form, at inbox."
 ---
 
-# Ang Me Page
+# Ang Me Page {#the-me-page}
 
 <div class="article-intro">
 
@@ -46,7 +46,7 @@ Kung nagtalaga sa iyo ang staff ng simbahan ng follow-up na gawain, may dalawa p
 - **My cards** -- mga workflow card na naka-assign sa iyo (halimbawa, pag-follow up sa bagong bisita). Ipinapakita ng bawat isa ang takdang petsa nito, kasama ang badge na **Overdue** o **Snoozed** kapag naaangkop.
 - **My tasks** -- iba pang task na naka-assign sa iyo, kasama ang taong tungkol sa bawat isa.
 
-Ipinapakita ng bawat seksyon ang tatlong pinakabago mong item; i-tap ang **All cards** o **All tasks** para buksan ang buong listahan ng **My tasks**. I-tap ang isang card para makita ang hakbang nito, takdang petsa, at kung sino ang tungkol dito, at para magdagdag ng **Notes**. I-tap ang **Complete** (o ang button ng kinalabasang itinakda ng iyong simbahan para sa hakbang na iyon) kapag tapos ka na, o i-tap ang **1 day**, **3 days**, o **7 days** sa ilalim ng **Snooze** para pansamantalang itabi ito. Read-only na nagbubukas dito ang mga task, kasama ang mga notes na mayroon na sila -- isara ang mga ito sa B1 Admin.
+Ipinapakita ng bawat seksyon ang tatlong pinakabago mong item; i-tap ang **All cards** o **All tasks** para buksan ang buong listahan ng **My tasks**. I-tap ang isang card para makita ang hakbang nito, takdang petsa, kung sino ang tungkol dito, at kung kailan ito ginawa (petsa at oras), at para magdagdag ng **Notes**. Kapag ang isang card o task ay tungkol sa isang tao, ipinapakita ng mga hilerang **Call** at **Email** ang mobile phone at email ng taong iyon -- i-tap ang isa para tumawag o mag-email sa kanila. I-tap ang **Complete** (o ang button ng kinalabasang itinakda ng iyong simbahan para sa hakbang na iyon) kapag tapos ka na, o i-tap ang **1 day**, **3 days**, o **7 days** sa ilalim ng **Snooze** para pansamantalang itabi ito. Read-only na nagbubukas dito ang mga task, na nagpapakita kung sino ang nagpadala, kung sino ang tungkol dito, at kung kailan ito ginawa -- isara ang mga ito sa B1 Admin. Kung may mga notes na ang isang task, mababasa mo ang mga ito at makakapagdagdag ka ng sarili mo.
 
 Nakatago ang mga seksyong ito kapag walang naka-assign sa iyo.
 

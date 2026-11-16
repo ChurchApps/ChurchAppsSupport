@@ -119,21 +119,22 @@ La lista de **Campos de registro** controla lo que pide el formulario de registr
 | Campo | Se solicita | Incluido por defecto |
 |-------|-----------|---------------------|
 | **Título** | A cada miembro de la familia, como un menú desplegable delante del nombre (Sr., Sra., Srta., Ms., Dr., Prof., Rev., Pastor) | No |
-| **Correo electrónico** | Solo al contacto principal | Sí (opcional) |
+| **Correo electrónico** | A cada miembro de la familia. Cuando es obligatorio, solo el contacto principal debe completarlo. | Sí (opcional) |
 | **Teléfono** | A cada miembro de la familia. Cuando es obligatorio, solo el contacto principal debe completarlo. | Sí (opcional) |
-| **Rol en el hogar** | A cada miembro de la familia después del contacto principal: Cónyuge, Hijo o Otro. El contacto principal es el jefe de un nuevo hogar. Quien no tenga un rol se guarda como Otro. | Sí (opcional) |
+| **Rol en el hogar** | A cada miembro de la familia después del contacto principal: Cónyuge, Hijo u Otro. El contacto principal es el jefe de un nuevo hogar. Quien no tenga un rol se guarda como Otro. | Sí (opcional) |
 | **Dirección particular** | Una vez para la familia: calle, línea de dirección 2, ciudad, estado y código postal. Cuando es obligatoria, todo excepto la línea de dirección 2 debe completarse. La dirección se guarda en cada miembro de la familia. | No |
 | **Fecha de nacimiento** | A cada miembro de la familia | No |
 | **Género** | A cada miembro de la familia | No |
 | **Estado civil** | Solo al contacto principal | No |
 | **Grado** | A cada miembro de la familia (de PreK a 12, o Graduado) | No |
 | **Comentarios** | Una vez, en un cuadro debajo de los miembros de la familia (hasta 1,000 caracteres) | No |
+| **Foto** | A cada miembro de la familia, con un botón **Añadir foto** que abre un recortador. La foto se convierte en la foto de perfil de la nueva persona. Cuando es obligatoria, solo el contacto principal debe añadir una. | No |
 
 Los campos que desactive nunca se guardan, incluso si alguien los envía al formulario de otra forma. Los comentarios se guardan como una nota en el registro del contacto principal (publicada como "Registro de invitado"), para que pueda leerlos en la sección **Notas** de su perfil.
 
 ### Añadir invitados a un grupo {#adding-guests-to-a-group}
 
-Use **Añadir nuevos invitados al grupo** para incluir automáticamente a todos los que se registren en uno de sus grupos, por ejemplo, un grupo de "Nuevos" o un grupo para el evento de este fin de semana. Elija **Ninguno** (la opción predeterminada) para omitir este paso. Los invitados nunca ven ni eligen el grupo; se establece únicamente aquí. Cámbielo antes de cada evento para poder dar seguimiento juntos a los invitados de ese evento.
+Use **Añadir nuevos invitados al grupo** para incluir automáticamente a todos los que se registren en uno de sus grupos, por ejemplo, un grupo de "Recién llegados" o un grupo para el evento de este fin de semana. Elija **Ninguno** (la opción predeterminada) para omitir este paso. Los invitados nunca ven ni eligen el grupo; se establece únicamente aquí. Cámbielo antes de cada evento para poder dar seguimiento juntos a los invitados de ese evento.
 
 ### Registro de asistencia {#recording-attendance}
 

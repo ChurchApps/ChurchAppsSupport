@@ -3,7 +3,7 @@ title: "Lots de dons"
 description: "Regroupez les offrandes en lots de dons dans B1 Admin, puis fermez, imprimez ou exportez chacun d'eux afin que les totaux correspondent à vos dépôts bancaires."
 ---
 
-# Lots de dons
+# Lots de dons {#donation-batches}
 
 <div class="article-intro">
 
@@ -29,7 +29,7 @@ Lorsque vous accédez à **Dons > Lots**, vous voyez la liste de vos lots. Chaqu
 - **Total** -- le montant total en dollars
 - **Statut** -- **Ouvert** ou **Fermé** (voir [Fermer et rouvrir un lot](#closing-and-reopening-a-batch))
 
-Au-dessus de la liste, des boutons par année vous permettent d'afficher uniquement les lots d'une année, ou **Tous** les lots. Un résumé sur une ligne indique le nombre de lots, le nombre de dons et le montant total des lots affichés.
+Au-dessus de la liste, des boutons d'année vous permettent d'afficher uniquement les lots d'une année, ou **Tous** les lots. À côté, les boutons de statut -- **Tous**, **Ouvert** et **Fermé** -- restreignent la liste aux lots encore en cours ou à ceux que vous avez terminés. Les deux filtres se combinent : vous pouvez choisir **2026** et **Ouvert** pour voir les lots ouverts de cette année. Un résumé sur une ligne indique le nombre de lots, le nombre de dons et le montant total des lots affichés.
 
 ## Créer un nouveau lot {#creating-a-new-batch}
 
@@ -51,7 +51,7 @@ Votre nouveau lot apparaît dans la liste, prêt à recevoir des dons.
 
 ## Qui a saisi chaque don {#who-entered-each-gift}
 
-Chaque don saisi dans un lot affiche **Saisi par** et le nom de la personne sous le nom du donateur, afin que vous sachiez qui l'a saisi sans feuille de signatures. B1 l'enregistre automatiquement à partir de la personne connectée, et la modification ultérieure du don ne change pas cette information. Les dons importés avec **Importer un CSV** affichent la personne qui a lancé l'importation.
+Chaque don saisi dans un lot affiche **Saisi par** et le nom de la personne sous le nom du donateur, afin que vous sachiez qui l'a saisi sans feuille de signatures. B1 l'enregistre automatiquement à partir de la personne connectée, et modifier le don par la suite ne change pas cette information. Les dons importés avec **Importer un CSV** affichent la personne qui a lancé l'importation.
 
 Les dons en ligne, les dons ajoutés par l'outil [Importation Stripe](stripe-import.md) et les dons saisis avant l'ajout de cette fonctionnalité en novembre 2026 n'affichent pas de nom.
 

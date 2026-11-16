@@ -1,9 +1,9 @@
 ---
 title: "Panoramica di B1 Church Checkin"
-description: "Configura l'app chiosco B1 Church Checkin su iPad o tablet Android: self check-in per le famiglie, assegnazione dei bambini ai gruppi e stampa di etichette."
+description: "Configura l'app chiosco B1 Church Checkin su iPad o tablet Android così le famiglie possono fare il self check-in, assegnare i bambini ai gruppi e stampare etichette e ricevute di ritiro."
 ---
 
-# Panoramica di B1 Church Checkin
+# Panoramica di B1 Church Checkin {#b1-church-checkin-overview}
 
 <div class="article-intro">
 
@@ -11,28 +11,29 @@ B1 Church Checkin è un'app self-service a chiosco per iPad e tablet Android. Pe
 
 </div>
 
-## Video di presentazione
+## Video di presentazione {#tour-video}
 
 <YouTube id="fNZsJi9F-jc" title="Un tour di B1 Check-In" next="Configurare culti e presenze in B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Come funziona
+## Come funziona {#how-it-works}
 
 Colloca un iPad o un tablet Android nella hall o nell'area di accoglienza. I membri si avvicinano, cercano il proprio nucleo familiare tramite numero di telefono o cognome, controllano la propria famiglia, scelgono a quale gruppo deve partecipare ciascuna persona e toccano **Check-in**. L'app stampa automaticamente i cartellini con il nome e le ricevute per il ritiro, poi si azzera per la famiglia successiva.
 
-## Funzionalità principali
+## Funzionalità principali {#key-features}
 
 - **Ricerca self-service dei membri** — Cerca per numero di telefono o cognome per trovare rapidamente il tuo nucleo familiare.
 - **Verifica del nucleo familiare** — Vedi tutti i membri della famiglia con le foto e le assegnazioni ai gruppi attuali a colpo d'occhio.
 - **Assegnazione ai gruppi** — Assegna ogni membro della famiglia alla classe o al gruppo giusto per l'orario del culto selezionato.
-- **Check-in degli ospiti** — Aggiungi al volo un ospite al tuo nucleo familiare, con nome e cognome.
+- **Check-in degli ospiti** — Aggiungi al volo un ospite al tuo nucleo familiare, con nome, cognome ed email facoltativa.
 - **Registrazione ospiti tramite codice QR** — Mostra un codice QR che i visitatori possono scansionare per [registrarsi](../b1-church/checkin/guest-registration.md) autonomamente sul proprio telefono prima del check-in, oppure lascia che tocchino **Registrati qui** per compilare lo stesso modulo sul chiosco.
 - **Stampa delle etichette** — Stampa cartellini con il nome per i bambini e ricevute per il ritiro con codici di sicurezza unici.
+- **[Check-out](./check-in/checking-out.md)** — Sulle postazioni presidiate, registra l'uscita dei bambini con il codice di ritiro, oppure cerca la famiglia per cognome o numero di telefono se l'etichetta è stata smarrita.
 - **Supporto alle stampanti di rete** — Individua e configura le stampanti di rete direttamente dall'app.
 - **Accesso automatico** — Dopo il primo accesso, l'app ricorda le tue credenziali e va direttamente alla schermata dei culti nelle aperture successive.
 - **Supporto multi-chiesa** — Se il tuo account è collegato a più di una chiesa, puoi scegliere in quale effettuare il check-in.
 - **Identità visiva della chiesa** — L'app mostra il logo della tua chiesa nell'intestazione una volta selezionata una chiesa.
 
-## Sezioni della documentazione
+## Sezioni della documentazione {#documentation-sections}
 
 - **[Per iniziare](./getting-started/index.md)** — Installazione dell'app, accesso e configurazione della stampante.
 - **[Flusso di check-in](./check-in/index.md)** — Il flusso completo di check-in, dalla selezione di un culto alla stampa delle etichette.

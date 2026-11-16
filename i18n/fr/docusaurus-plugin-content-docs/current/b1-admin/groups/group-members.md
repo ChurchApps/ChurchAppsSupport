@@ -3,7 +3,7 @@ title: "Membres du groupe"
 description: "Ajoutez, retirez et désignez les responsables des membres d'un groupe dans B1 Admin, puis envoyez un courriel ou un texto, imprimez ou exportez la liste des membres depuis la page du groupe."
 ---
 
-# Membres du groupe
+# Membres du groupe {#group-members}
 
 <div class="article-intro">
 
@@ -53,7 +53,7 @@ Tout membre du groupe peut consulter le calendrier et les événements du groupe
 
 ## Formulaires liés {#linked-forms}
 
-Lorsqu'un formulaire Autonome est [lié au groupe](../forms/creating-forms.md#linking-a-form-to-a-group), la page du groupe affiche une section **Formulaires liés** avec le nom de chaque formulaire, indiquant s'il est **Ouvert** ou **Fermé**, ainsi que le nombre de formulaires liés. La section n'apparaît que pour les responsables du groupe et pour les personnes qui peuvent administrer les formulaires, et seulement lorsqu'au moins un formulaire est lié. Les administrateurs des formulaires peuvent cliquer sur le nom d'un formulaire pour l'ouvrir, ou cliquer sur **Tous les formulaires** pour accéder à la page Formulaires.
+Lorsqu'un formulaire autonome est [lié au groupe](../forms/creating-forms.md#linking-a-form-to-a-group), la page du groupe affiche une section **Formulaires liés** avec le nom de chaque formulaire, indiquant s'il est **Ouvert** ou **Fermé**, ainsi que le nombre de formulaires liés. La section n'apparaît que pour les responsables du groupe et pour les personnes qui peuvent administrer les formulaires, et seulement lorsqu'au moins un formulaire est lié. Les administrateurs des formulaires peuvent cliquer sur le nom d'un formulaire pour l'ouvrir, ou cliquer sur **Tous les formulaires** pour accéder à la page Formulaires.
 
 Les responsables du groupe lisent et impriment les réponses à ces formulaires depuis la page du groupe sur [B1.church](../../b1-church/groups/group-details.md#linked-forms).
 
@@ -64,7 +64,7 @@ Les responsables de groupe peuvent conserver des notes privées sur le groupe --
 La section **Notes des responsables** n'apparaît sur la page du groupe que pour les personnes qui sont responsables de ce groupe. Elle affiche la note la plus récente, son auteur et sa date, ainsi que le nombre total de notes.
 
 1. Sur la page du groupe, cliquez sur **Toutes les notes** dans la section **Notes des responsables**.
-2. Saisissez votre note dans la zone et publiez-la. Pour la mettre en forme, sélectionnez du texte puis choisissez **Gras**, **Italique**, **Liste à puces** ou **Liste numérotée** dans le menu contextuel qui apparaît (ou appuyez sur **Ctrl+B** / **Ctrl+I**). Les notes sont listées avec le nom et la photo de leur auteur ainsi que la date et l'heure de publication.
+2. Saisissez votre note dans la zone et publiez-la. Pour la mise en forme, utilisez la rangée de boutons **Gras**, **Italique**, **Liste à puces** et **Liste numérotée** qui apparaît sous la zone pendant la rédaction : sélectionnez du texte et cliquez sur un bouton (ou appuyez sur **Ctrl+B** / **Ctrl+I**). Dans une liste, **Entrée** démarre l'élément suivant, et **Entrée** sur un élément vide termine la liste. Les notes sont listées avec le nom et la photo de leur auteur ainsi que la date et l'heure de publication.
 3. Cliquez sur le lien **Retour à** avec le nom du groupe pour revenir à la page du groupe.
 
 :::info

@@ -3,7 +3,7 @@ title: "Registro de invitados"
 description: "Regístrese a usted y a su familia como invitados de primera vez con el formulario de código QR de B1 Checkin, para que los voluntarios puedan registrar su entrada cuando llegue."
 ---
 
-# Registro de invitados
+# Registro de invitados {#guest-registration}
 
 <div class="article-intro">
 
@@ -37,7 +37,8 @@ La página se abre con el título **Registro de invitados**. Si la iglesia ha ag
    - **Dirección particular** -- **Calle**, **Línea de dirección 2**, **Ciudad**, **Estado** y **Código postal**. Se comparte entre toda la familia.
 3. El formulario empieza con una segunda tarjeta para el **Miembro de familia 2**. Ingrese su nombre y apellido, o toque la **X** en la esquina de la tarjeta para quitarla si se registra solo.
 4. Para agregar más personas, toque **Agregar miembro de la familia**. La nueva tarjeta completa automáticamente el apellido del contacto principal. Puede registrar hasta 10 personas a la vez.
-5. Si su iglesia lo pide, la tarjeta de cada persona también puede incluir **Título**, **Teléfono**, **Fecha de nacimiento**, **Género** y **Grado**. Cada tarjeta después del contacto principal también puede pedir un **Rol en el hogar**: **Cónyuge**, **Hijo/a** u **Otro**, para que la iglesia sepa cómo se relaciona cada persona con el contacto principal.
+5. Si su iglesia lo pide, la tarjeta de cada persona también puede incluir **Título**, **Correo electrónico**, **Teléfono**, **Fecha de nacimiento**, **Género** y **Grado**. Cada tarjeta después del contacto principal también puede pedir un **Rol en el hogar** -- **Cónyuge**, **Hijo/a** u **Otro** --, para que la iglesia sepa cómo se relaciona cada persona con el contacto principal.
+   Si su iglesia pide una foto, cada tarjeta tiene un botón **Agregar foto**. Tóquelo, elija o tome una imagen, recórtela y guárdela; la foto aparecerá en la tarjeta. Toque **Cambiar foto** para elegir otra o **Quitar foto** para eliminarla. La foto se guarda como foto de perfil de esa persona cuando se crea su registro.
 6. Si su iglesia incluye un cuadro de **Comentarios** debajo de los miembros de la familia, úselo para compartir lo que quiera que la iglesia sepa (hasta 1.000 caracteres).
 7. Toque **Registrarse** para enviar.
 

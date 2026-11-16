@@ -1,9 +1,9 @@
 ---
 title: "La pagina Me"
-description: "Cosa mostra la pagina Me del portale membri B1App: incarichi di servizio, eventi e iscrizioni in arrivo, le tue attività, il nucleo familiare, i gruppi, le donazioni, i moduli, le presenze e la posta in arrivo."
+description: "Cosa mostra la pagina Me nel portale membri B1App: servizi, eventi e iscrizioni in arrivo, le tue attività, il nucleo familiare, i gruppi, le donazioni, i moduli e la posta in arrivo."
 ---
 
-# La pagina Me
+# La pagina Me {#the-me-page}
 
 <div class="article-intro">
 
@@ -46,7 +46,7 @@ Se il personale della chiesa ti ha assegnato attività di follow-up, sotto **In 
 - **Le mie schede** -- schede di flusso di lavoro assegnate a te (ad esempio, il follow-up con un nuovo visitatore). Ognuna mostra la scadenza, con un badge **In ritardo** o **Rinviata** quando applicabile.
 - **Le mie attività** -- altre attività assegnate a te, con la persona a cui ciascuna si riferisce.
 
-Ogni sezione mostra i tre elementi più recenti; tocca **Tutte le schede** o **Tutte le attività** per aprire l'elenco completo **Le mie attività**. Tocca una scheda per vederne il passaggio, la scadenza e la persona a cui si riferisce, e per aggiungere **Note**. Tocca **Completa** (oppure il pulsante dell'esito che la tua chiesa ha impostato per quel passaggio) quando hai finito, oppure tocca **1 giorno**, **3 giorni** o **7 giorni** sotto **Rinvia** per metterla da parte per un po'. Qui le attività si aprono in sola lettura, con le note che hanno già -- chiudile in B1 Admin.
+Ogni sezione mostra i tre elementi più recenti; tocca **Tutte le schede** o **Tutte le attività** per aprire l'elenco completo **Le mie attività**. Tocca una scheda per vederne il passaggio, la scadenza, la persona a cui si riferisce e il momento della creazione (data e ora), e per aggiungere **Note**. Quando una scheda o un'attività riguarda una persona, le righe **Chiama** ed **Email** mostrano il cellulare e l'email di quella persona -- tocca una riga per chiamarla o scriverle. Tocca **Completa** (oppure il pulsante dell'esito che la tua chiesa ha impostato per quel passaggio) quando hai finito, oppure tocca **1 giorno**, **3 giorni** o **7 giorni** sotto **Rinvia** per metterla da parte per un po'. Le attività qui si aprono in sola lettura, con l'indicazione di chi le ha assegnate, della persona a cui si riferiscono e della data di creazione -- chiudile in B1 Admin. Se un'attività ha già delle note, puoi leggerle e aggiungere le tue.
 
 Le sezioni sono nascoste quando non ti è assegnato nulla.
 

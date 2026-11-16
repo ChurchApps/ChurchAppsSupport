@@ -3,7 +3,7 @@ title: "Doing-endepunkter"
 description: "Endepunktreferanse for Doing-API-et bak gudstjenesteplaner, frivillige oppdrag, oppgaver og automatiseringer i B1 Admin, med stier og tillatelser."
 ---
 
-# Doing-endepunkter
+# Doing-endepunkter {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ Doing-modulen administrerer gudstjenesteplanlegging, planlegging av frivillige, 
 
 **Basisti:** `/doing`
 
-## Planer
+## Planer {#plans}
 
 Basisti: `/doing/plans`
 
@@ -30,13 +30,13 @@ Basisti: `/doing/plans`
 | GET | `/public/signup/:churchId` | Offentlig | — | Planer som er åpne for selvpåmelding, tidligste først, hver med sine selvpåmeldingsposisjoner (sortert etter `categoryName`, deretter `name`, pluss `filledCount` for Accepted/Unconfirmed-tildelinger) og tider. Ingen frivilliges navn. Når kirkeinnstillingen `volunteerSignupNextOnly` er `"true"`, returneres bare den første planen for hver plantype. Hver `plan` inkluderer en beregnet `signupDeadline` (ISO-tidspunkt, eller `null`): `signupDeadlineHours` før planens tidligste tid av typen `service` (eventuell tidsbestemt oppføring hvis det ikke finnes noen gudstjenestetid; 9:00 i kirkens tidssone på `serviceDate` hvis planen ikke har noen tider) |
 | GET | `/signup/:planId/volunteers` | JWT | — | `[{ positionId, names }]` for planens selvpåmeldingsposisjoner (visningsnavn for Accepted/Unconfirmed-tildelte). Returnerer `[]` med mindre planens `showVolunteerNames` er på |
 | POST | `/` | JWT | — | Opprett eller oppdater planer (godtar ett objekt eller en matrise). Sett `confirmationWorkflowId` for å melde planen på en bekreftelsesarbeidsflyt for tjenesteoppdrag, eller `null` for å melde den av for fremtidige forespørsler. Send `signupDeadlineHours: null` for å fjerne en frist; hvis feltet utelates, beholdes den lagrede verdien |
-| POST | `/copy/:id` | JWT | Redigering av tjeneste | Kopier en plan med posisjoner, tider, tildelinger og elementer i gudstjenesteorden. Body inkluderer `ministryId`, `serviceDate`, `copyMode` (`"none"`, `"positions"`, `"all"`) og `copyServiceOrder` (boolsk). Uten `targetPlanId` opprettes en ny plan, og `notes`, `signupDeadlineHours`, `showVolunteerNames` og `autoReplaceOnDecline` overføres fra kildeplanen med mindre body angir dem. Med `targetPlanId` fylles den eksisterende planen i stedet (den som kaller må kunne redigere den). B1Admins alternativ **Gjenta ukentlig** kaller dette én gang per uke, hver gang med kopiering fra planen som ble opprettet uken før |
+| POST | `/copy/:id` | JWT | Redigering av tjeneste | Kopier en plan med posisjoner, tider, tildelinger og elementer i gudstjenesteordenen. Body inkluderer `ministryId`, `serviceDate`, `copyMode` (`"none"`, `"positions"`, `"all"`) og `copyServiceOrder` (boolsk). Uten `targetPlanId` opprettes en ny plan, og `notes`, `signupDeadlineHours`, `showVolunteerNames` og `autoReplaceOnDecline` overføres fra kildeplanen med mindre body angir dem. Med `targetPlanId` fylles den eksisterende planen i stedet (den som kaller må kunne redigere den). B1Admins alternativ **Gjenta ukentlig** kaller dette én gang per uke, hver gang med kopiering fra planen som ble opprettet uken før |
 | POST | `/textRange` | JWT | `texting.send` + redigering av tjeneste | Send SMS til hver frivillig som er tilordnet i et datointervall, via kirkens SMS-leverandør. Body: `{ startDate, endDate, ministryId, planTypeId?, message }` (melding på opptil 1600 tegn; flettefelt løses per mottaker). Returnerer forhåndsvisningstallene pluss `recipientCount`, `successCount`, `failCount` og `error` (`no_provider` eller `insufficient_credits`) når sendingen stopper tidlig |
 | POST | `/:id/issueRequests` | JWT | Redigering av plan | Send planens nye Unconfirmed, ennå ikke varslede tildelinger gjennom bekreftelsesarbeidsflyten: merker hver som varslet og starter ett arbeidsflytkort per tildeling. Tom body; returnerer `{ issued }`. Mislykkes med mindre planen er publisert (ikke `prepared`), har en aktiv `confirmationWorkflowId` med minst ett steg, og svarfristen ikke har passert |
 | POST | `/autofill/:id` | JWT | — | Fyll automatisk ut frivillige tildelinger for en plan. Body: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | Slett en plan og alle tilhørende tider, tildelinger, posisjoner og planelementer |
 
-### Eksempel: Kopier en plan
+### Eksempel: Kopier en plan {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Plantyper
+## Plantyper {#plan-types}
 
 Basisti: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ Utvider CRUD-basisklassen (GET `/`, GET `/:id`, POST `/`, DELETE `/:id` — inge
 | POST | `/` | JWT | — | Opprett eller oppdater plantyper |
 | DELETE | `/:id` | JWT | — | Slett en plantype |
 
-## Planelementer
+## Planelementer {#plan-items}
 
 Basisti: `/doing/planItems`
 
@@ -88,7 +88,7 @@ Administrerer elementer i gudstjenesteordenen (overskrifter, seksjoner, sanger o
 | POST | `/sort` | JWT | — | Oppdater sorteringsrekkefølgen for et planelement (sorterer søsken på nytt) |
 | DELETE | `/:id` | JWT | — | Slett et planelement |
 
-## Planstrøm
+## Planstrøm {#plan-feed}
 
 Basisti: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ Gir planelementstrømmer til presentatøren. Hvis det ikke finnes noen planeleme
 |--------|------|------|------------|-------------|
 | GET | `/presenter/:churchId/:planId` | Offentlig | — | Hent planstrøm for presentatøren (fylles automatisk fra stedsstrømmen hvis den er tom) |
 
-## Posisjoner
+## Posisjoner {#positions}
 
 Basisti: `/doing/positions`
 
@@ -113,7 +113,7 @@ Utvider CRUD-basisklassen (GET `/:id`, POST `/`, DELETE `/:id` — ingen tillate
 | POST | `/` | JWT | — | Opprett eller oppdater posisjoner |
 | DELETE | `/:id` | JWT | — | Slett en posisjon |
 
-## Tider
+## Tider {#times}
 
 Basisti: `/doing/times`
 
@@ -126,7 +126,7 @@ Basisti: `/doing/times`
 | POST | `/` | JWT | — | Opprett eller oppdater tider |
 | DELETE | `/:id` | JWT | — | Slett en tid |
 
-## Tildelinger
+## Tildelinger {#assignments}
 
 Basisti: `/doing/assignments`
 
@@ -144,7 +144,7 @@ Basisti: `/doing/assignments`
 | DELETE | `/signup/:id` | JWT | — | Fjern din egen selvpåmelding. Avvises med "Removal deadline has passed" etter planens påmeldingsfrist |
 | DELETE | `/:id` | JWT | — | Slett en tildeling |
 
-### Eksempel: Godta en tildeling
+### Eksempel: Godta en tildeling {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## Blokkeringsdatoer
+## Blokkeringsdatoer {#blockout-dates}
 
 Basisti: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ Utvider CRUD-basisklassen (GET `/:id`, DELETE `/:id` — ingen tillatelsessjekke
 | POST | `/` | JWT | — | Opprett eller oppdater blokkeringsdatoer (setter personId til innlogget bruker hvis den ikke er oppgitt) |
 | DELETE | `/:id` | JWT | — | Slett en blokkeringsdato |
 
-## Oppgaver
+## Oppgaver {#tasks}
 
 Basisti: `/doing/tasks`
 
@@ -188,11 +188,12 @@ Basisti: `/doing/tasks`
 | GET | `/closed` | JWT | — | Hent lukkede oppgaver for den innloggede brukeren |
 | GET | `/timeline?taskIds=` | JWT | — | Hent tidslinjedata for oppgaver etter kommaseparerte oppgave-ID-er |
 | GET | `/directoryUpdate/:personId` | JWT | — | Hent oppgave for katalogoppdatering for en person |
-| POST | `/` | JWT | — | Opprett eller oppdater oppgaver. Legg til `?type=directoryUpdate` for å håndtere oppgaver for katalogoppdatering (laster automatisk opp bilder) |
+| POST | `/` | JWT | — | Opprett eller oppdater oppgaver. Legg til `?type=directoryUpdate` for å håndtere oppgaver for katalogoppdatering (laster automatisk opp bilder). Å endre en eksisterende oppgaves `assignedToId` legger til en oppføring "Reassigned from ... to ..." i historikken i dens `data` |
 | POST | `/:id/conversation` | JWT | `tasks.edit` eller kortets tildelte | Knytt notatsamtalen til et kort. Body: `{ conversationId }`. Den første samtalen som knyttes, vinner; senere kall returnerer kortet uendret |
 | POST | `/loadForGroups` | JWT | — | Last oppgaver for bestemte grupper. Body: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | Slett en vanlig oppgave permanent. Returnerer 400 for arbeidsflytkort (bruk kort-endepunktene) og forespørsler om kontosletting (avgjør dem fra gjennomgangshandlingen) |
 
-## Automatiseringer
+## Automatiseringer {#automations}
 
 Basisti: `/doing/automations`
 
@@ -204,7 +205,7 @@ Basisti: `/doing/automations`
 | POST | `/` | JWT | — | Opprett eller oppdater automatiseringer |
 | DELETE | `/:id` | JWT | — | Slett en automatisering |
 
-## Handlinger
+## Handlinger {#actions}
 
 Basisti: `/doing/actions`
 
@@ -217,7 +218,7 @@ Handlinger definerer hva som skjer når en automatisering utløses.
 | POST | `/` | JWT | — | Opprett eller oppdater handlinger |
 | DELETE | `/:id` | JWT | — | Slett en handling |
 
-## Betingelser
+## Betingelser {#conditions}
 
 Basisti: `/doing/conditions`
 
@@ -230,7 +231,7 @@ Betingelser definerer kriteriene som utløser en automatisering.
 | POST | `/` | JWT | — | Opprett eller oppdater betingelser |
 | DELETE | `/:id` | JWT | — | Slett en betingelse |
 
-## Konjunksjoner
+## Konjunksjoner {#conjunctions}
 
 Basisti: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ Konjunksjoner kobler flere betingelser sammen i en automatisering (OG/ELLER-logi
 | POST | `/` | JWT | — | Opprett eller oppdater konjunksjoner |
 | DELETE | `/:id` | JWT | — | Slett en konjunksjon |
 
-## Autentiseringer for innholdsleverandører
+## Autentiseringer for innholdsleverandører {#content-provider-auths}
 
 Basisti: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ Administrerer OAuth-autentiseringsposter for eksterne innholdsleverandører (f.e
 | POST | `/` | JWT | — | Opprett eller oppdater autentiseringer for innholdsleverandører |
 | DELETE | `/:id` | JWT | — | Slett en autentisering for innholdsleverandør |
 
-## Leverandørproxy
+## Leverandørproxy {#provider-proxy}
 
 Basisti: `/doing/providerProxy`
 
@@ -277,7 +278,7 @@ Videresender forespørsler til eksterne innholdsleverandører (f.eks. ProPresent
 | POST | `/getInstructions` | JWT | — | Hent instrukser for et innholdselement. Body: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | Hent utvidede instrukser for et innholdselement. Body: `{ ministryId, providerId, path }` |
 
-## Relaterte sider
+## Relaterte sider {#related-pages}
 
 - [Medlemskapsendepunkter](./membership.md) — Personer, grupper, roller og tillatelser
 - [Oppmøteendepunkter](./attendance.md) — Sporing av gudstjenester og besøk

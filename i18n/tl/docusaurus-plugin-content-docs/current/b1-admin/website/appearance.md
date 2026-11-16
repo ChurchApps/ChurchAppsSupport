@@ -3,7 +3,7 @@ title: "Appearance"
 description: "I-set ang mga kulay, font, spacing, logo, at navigation ng website ng iyong simbahan sa B1 Admin, kasama ang mga widget, GA4 analytics, redirect, at custom CSS."
 ---
 
-# Appearance
+# Appearance {#appearance}
 
 <div class="article-intro">
 
@@ -89,6 +89,14 @@ Lumalabas ang mga site widget sa bawat pahina ng iyong site, lumulutang sa ibaba
 4. I-click ang **Save**.
 
 Alisin ang check sa **Enabled** at i-click ang **Save** para i-off ang isang widget. Nalalapat ang mga widget na ito sa bawat isa sa mga website ng iyong simbahan.
+
+Lumalabas din ang Announcement Bar sa itaas ng Home screen ng B1 app ng simbahan mo (ang member portal sa `/mobile`, kasama ang naka-install na app), sa itaas ng pagbati, na may parehong text, link, kulay, at petsa. Sa app, ang **Link URL** na tumuturo sa isa sa sarili mong pahina (halimbawa, `/food`) ay bubukas sa pahinang iyon sa loob ng app sa halip na i-load ang iyong website. Tingnan ang [Navigating B1App](../../b1-church/getting-started/navigating.md#home).
+
+Ilang detalye kung paano kumikilos ang bar:
+
+- Sa mga telepono, babalot sa mas maraming linya ang mahabang text, at mapupunta sa sarili nitong linya ang link kung hindi ito kasya.
+- Sa iyong website, nasa ibaba mismo ng announcement bar ang menu bar, kaya nananatiling nakikita ang menu button. Ang mga menu at pop-up window ay bumubukas sa ibabaw ng bar.
+- Kapag isinara ng isang tao ang bar gamit ang **×** button nito, mananatili itong nakatago sa device na iyon nang isang araw at pagkatapos ay babalik. Kapag binago mo ang **Text**, lalabas agad ang bagong announcement, kahit sa mga taong isinara ang luma.
 
 ## Redirects at Analytics {#redirects--analytics}
 

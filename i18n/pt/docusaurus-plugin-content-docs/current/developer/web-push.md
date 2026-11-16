@@ -3,7 +3,7 @@ title: "Notificações push na web"
 description: "Configure chaves VAPID, o cliente WebPushHelper e o tratamento do service worker para que o B1.church e o B1 Admin entreguem notificações push do navegador aos membros."
 ---
 
-# Notificações push na web
+# Notificações push na web {#web-push-notifications}
 
 <div class="article-intro">
 

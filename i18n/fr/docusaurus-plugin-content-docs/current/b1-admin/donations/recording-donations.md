@@ -3,7 +3,7 @@ title: "Enregistrer des dons"
 description: "Enregistrez les dons de votre église dans B1 Admin en créant un lot, en saisissant les dons un à un, en important un CSV ou en consignant un don depuis le profil d'un donateur."
 ---
 
-# Enregistrer des dons
+# Enregistrer des dons {#recording-donations}
 
 <div class="article-intro">
 
@@ -32,9 +32,15 @@ L'enregistrement des dons dans B1 Admin se fait par le système de lots. Vous cr
 ## Saisir les dons individuels {#entering-individual-donations}
 
 1. Sur la page de détail du lot, le panneau de saisie des dons apparaît à côté de la liste des dons. Sous **Sélectionner une personne ou anonyme**, saisissez le nom du donateur dans le champ de recherche pour le trouver, ou cliquez sur **Anonyme**. (Cliquer sur **Ajouter un don** en haut de la page vous amène directement à ce panneau.)
-2. Après avoir sélectionné une personne, le formulaire de saisie affiche les champs **Date** (qui commence à la date du lot), **Mode** (Chèque, Espèces, Carte ou En nature), **Fonds** (affiché lorsque votre église a plus d'un fonds), **Notes**, **Montant** et **N° de chèque** (ou **4 derniers chiffres** pour les dons par carte, ou **Article** pour décrire un don en nature ; les dons en espèces n'ont pas de champ de détail). Cliquez sur **Changer** à côté du nom du donateur pour choisir quelqu'un d'autre.
+2. Après avoir sélectionné une personne, le formulaire de saisie affiche les champs **Date** (qui commence à la date du lot), **Mode** (Chèque, Espèces, Carte ou En nature), **Fonds** (affiché lorsque votre église a plus d'un fonds), **Mémo (imprimé sur le relevé)**, **Notes (interne)**, **Montant** et **N° de chèque** (ou **4 derniers chiffres** pour les dons par carte, ou **Article** pour décrire un don en nature ; les dons en espèces n'ont pas de champ de détail). Cliquez sur **Changer** à côté du nom du donateur pour choisir quelqu'un d'autre.
 3. Remplissez les détails et cliquez sur **Ajouter le don** (ou appuyez sur Entrée). Si le montant est vide ou égal à zéro, le formulaire vous demande de saisir un montant supérieur à zéro au lieu d'enregistrer.
-4. Le don est ajouté à la liste des dons, et le formulaire se réinitialise pour que vous puissiez saisir le suivant. La date, le mode, le fonds et les notes restent tels que vous les avez définis ; une pile de chèques semblables ne nécessite donc que le donateur, le montant et le numéro de chèque.
+4. Le don est ajouté à la liste des dons, et le formulaire se réinitialise pour que vous puissiez saisir le suivant. La date, le mode, le fonds, le mémo et les notes restent tels que vous les avez définis ; une pile de chèques semblables ne nécessite donc que le donateur, le montant et le numéro de chèque.
+
+La **Date** commence toujours à la date du lot lorsque vous ouvrez un lot. Si vous la modifiez, la nouvelle date est reprise pour le don suivant saisi dans ce lot -- dans le panneau de saisie comme dans l'éditeur de don complet -- jusqu'à ce que vous la modifiiez à nouveau ou que vous quittiez le lot.
+
+:::tip Mémo ou notes ?
+Le **Mémo** est imprimé sur le relevé de dons et le reçu du donateur, à côté du don. Utilisez-le pour ce que le donateur doit voir, comme la destination d'un don affecté (« Voyage des jeunes »). Les **Notes** sont réservées à votre personnel et ne sont jamais imprimées. Lorsqu'une personne donne en ligne, ce qu'elle saisit dans la case mémo du formulaire de don est enregistré comme mémo du don.
+:::
 
 :::info
 Si le lot a été [fermé](batches.md#closing-and-reopening-a-batch), le panneau de saisie et les liens **Modifier** sont masqués pour quiconque ne dispose pas de **Modifier les dons**, et un avis en haut du lot indique qu'il est fermé. Demandez à une personne disposant de **Modifier les dons** de le rouvrir.
@@ -52,15 +58,15 @@ Si vos dons figurent déjà dans un tableur -- par exemple un export d'un autre 
 2. Cliquez sur **Choisir un fichier CSV** et sélectionnez votre fichier. Le fichier doit comporter une ligne d'en-tête, et les colonnes peuvent être dans n'importe quel ordre :
    - **Montant** (obligatoire ; `Total` fonctionne aussi) -- Les symboles monétaires et les virgules sont ignorés, de sorte que `$1,250.00` convient. Le montant doit être supérieur à zéro.
    - **Date** -- Utilisez un format comme `2026-10-25` ou `10/25/2026`. Si elle est vide, la date du lot est utilisée.
-   - **Fonds** -- Le nom du fonds, sans tenir compte des majuscules. S'il est vide, votre premier fonds est utilisé.
+   - **Fonds** -- Le nom du fonds, sans tenir compte de la casse. S'il est vide, votre premier fonds est utilisé.
    - **Mode** -- **Chèque**, **Espèces**, **Carte** ou **En nature**. S'il est vide, **Chèque** est utilisé.
-   - **Numéro de chèque** -- Le numéro du chèque (ou un autre détail de paiement).
+   - **N° de chèque** -- Le numéro du chèque (ou un autre détail de paiement).
    - **Notes**
-   - **Courriel**, **Nom**, ou **Prénom** et **Nom** -- Utilisés pour associer le donateur à quelqu'un de votre base de données. Un nom écrit « Tremblay, Jean » est lu comme « Jean Tremblay ».
+   - **Courriel**, **Nom**, ou **Prénom** et **Nom** -- Utilisés pour associer le donateur à une personne de votre base de données. Un nom écrit « Tremblay, Jean » est lu comme « Jean Tremblay ».
 3. Vérifiez l'aperçu. Chaque ligne affiche son numéro, le donateur tel qu'il figure dans le fichier, la **Correspondance**, le fonds et le montant :
    - Le nom d'une personne signifie que le donateur a été associé. B1 fait d'abord la correspondance par courriel, puis par nom exact, et seulement lorsqu'une seule personne correspond.
    - **Introuvable — anonyme** signifie qu'aucune correspondance unique n'a été trouvée. Le don est importé comme anonyme, et « Importé comme : » suivi du nom du donateur est ajouté à ses notes afin que vous puissiez l'attribuer plus tard.
-   - Un message en rouge comme **Montant invalide**, **Fonds inconnu**, **Mode inconnu** ou **Date invalide** signifie que cette ligne sera ignorée. Corrigez le fichier et sélectionnez-le de nouveau pour l'inclure.
+   - Un message en rouge comme **Montant invalide**, **Fonds inconnu**, **Mode inconnu** ou **Date invalide** signifie que cette ligne sera ignorée. Corrigez le fichier et sélectionnez-le à nouveau pour l'inclure.
 4. Cliquez sur **Importer** (le bouton indique le nombre de lignes qui seront importées). Les dons sont ajoutés au lot.
 
 :::tip
@@ -91,7 +97,17 @@ La répartition d'un don entre plusieurs fonds est courante lorsqu'un donateur r
 
 ## Modifier ou retirer des dons {#editing-or-removing-donations}
 
-Pour modifier un don, cliquez sur le bouton **Modifier** sur sa ligne dans le lot. Vous pouvez changer la date, le montant, le fonds, le mode de paiement (Chèque, Espèces, Carte ou En nature) ou tout autre détail. Pour un don en nature, l'éditeur intitule le champ de détail **Article** afin que vous puissiez décrire ce qui a été donné. Cliquez sur **Enregistrer** lorsque vous avez terminé.
+Pour modifier un don, cliquez sur le bouton **Modifier** sur sa ligne dans le lot. Vous pouvez changer la date, le montant, le fonds, le mode de paiement (Chèque, Espèces, Carte ou En nature), ou tout autre détail, y compris le **Mémo** et les **Notes**. Pour un don en nature, l'éditeur intitule le champ de détail **Article** afin que vous puissiez décrire ce qui a été donné. Cliquez sur **Enregistrer** lorsque vous avez terminé.
+
+### Déplacer un don vers un autre lot {#moving-a-gift-to-another-batch}
+
+Si un don a été saisi dans le mauvais lot, vous pouvez le déplacer au lieu de le supprimer et de le saisir à nouveau :
+
+1. Cliquez sur **Modifier** sur la ligne du don.
+2. Dans la liste déroulante **Lot**, choisissez le lot auquel il appartient. La liste affiche la date et le nom de chaque lot, du plus récent au plus ancien. Les lots fermés ne sont pas listés, sauf le lot actuel du don.
+3. Cliquez sur **Enregistrer**.
+
+Le don quitte le lot actuel et apparaît dans celui que vous avez choisi ; les totaux des deux lots sont mis à jour. Déplacer un don est une modification : cela ne déclenche donc pas de [flux de travail](../serving/workflows.md#triggers) **Don · Créé**, contrairement à une nouvelle saisie.
 
 :::tip
 La ligne sous le nom du lot, en haut de la page, se met à jour automatiquement pour afficher la date du lot, le nombre de dons et le montant total en dollars à mesure que vous ajoutez ou modifiez des saisies. Utilisez-la pour rapprocher les montants de votre bordereau de dépôt.
@@ -123,7 +139,7 @@ Lorsqu'une personne remet un chèque, paie un événement ou un t-shirt, ou qu'u
 2. Cliquez sur **Reçu** à côté de **Modifier** sur la ligne du don. Vous pouvez aussi cliquer sur **Reçu** au bas du formulaire Modifier le don.
 3. Cliquez sur **Imprimer**, ou sur **Fermer** pour revenir en arrière.
 
-Le reçu utilise la même mise en page que le relevé de dons : votre église et le donateur (ou « Anonyme »), la date et le mode du don, chaque fonds et son montant, la note, votre Note sur les dons, et le bloc de reçu officiel si vous avez défini un **Format du relevé** (voir [Relevés de dons](giving-statements.md)). Le numéro de reçu de ce bloc correspond à l'identifiant du don.
+Le reçu utilise la même mise en page que le relevé de dons : votre église et le donateur (ou « Anonyme »), la date et le mode du don, chaque fonds et son montant, le mémo du don (s'il en a un), votre Note sur les dons, et le bloc de reçu officiel si vous avez défini un **Format du relevé** (voir [Relevés de dons](giving-statements.md)). Le numéro de reçu de ce bloc correspond à l'identifiant du don.
 
 :::info
 La mention « aucun bien ni service fourni » n'est imprimée que lorsque chaque fonds du don est marqué comme déductible d'impôt. Si une partie du don est allée à un fonds non déductible, comme des frais d'événement ou un achat, le reçu omet cette mention afin de se lire comme un paiement plutôt que comme un don de bienfaisance.

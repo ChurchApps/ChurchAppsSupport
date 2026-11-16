@@ -3,7 +3,7 @@ title: "Guida: Gestire i volontari della domenica"
 description: "Configura team di volontari, piani di servizio settimanali, ordine del culto e compiti domenicali in B1 Admin, così i volontari vedono e rispondono alle assegnazioni su B1.church e nell'app mobile."
 ---
 
-# Gestire i volontari della domenica
+# Gestire i volontari della domenica {#manage-sunday-volunteers}
 
 <div class="article-intro">
 
@@ -108,7 +108,7 @@ I volontari assegnati vedono automaticamente i propri piani e possono rispondere
 
 1. I volontari vedono i propri piani su [B1.church e nell'app B1](../../b1-church/plans/viewing-plans.md)
 2. Possono accettare o rifiutare le assegnazioni direttamente dal telefono o dal computer
-3. Possono indicare le date di indisponibilità per le settimane in cui non sono disponibili
+3. Possono indicare le date di indisponibilità per le settimane in cui non sono disponibili. Anche il personale può inserirle nella scheda **Date di indisponibilità** del team, e i volontari indisponibili mostrano un badge **Non disponibile** quando assegni le posizioni -- vedi [Date di indisponibilità](../serving/plan-validation.md#blockout-dates)
 4. I piani possono essere stampati per le prove o affissi dietro le quinte
 5. I volontari possono sfogliare e iscriversi alle posizioni aperte tramite la [pagina di iscrizione dei volontari](../../b1-church/serving/volunteer-signup.md)
 

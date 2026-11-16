@@ -3,7 +3,7 @@ title: "日历审批"
 description: "在 B1 Admin 中审阅待处理的房间和资源预订申请，检查冲突，批准或拒绝申请，并在历史记录中回顾过去的决定。"
 ---
 
-# 日历审批
+# 日历审批 {#calendar-approvals}
 
 <div class="article-intro">
 
@@ -14,7 +14,7 @@ description: "在 B1 Admin 中审阅待处理的房间和资源预订申请，�
 <div class="prereqs">
 <h4>开始之前</h4>
 
-- 在[房间与资源](./rooms-resources.md)中为房间或资源配置**审批小组（Approval Group）**
+- 在[房间与资源](./rooms-resources.md)中为房间或资源配置 **Approval Group**（审批小组）
 - 你需要 **Edit Content** 权限，或 **Resolve Calendar Conflicts & Approvals** 权限（两者均位于[角色与权限](../settings/roles-permissions.md)的 **Content** 部分）。若没有 **Edit Content** 权限，则不会显示 **Calendars** 菜单——此时可改从**仪表板**中的待审批链接或审批电子邮件打开审批页面。
 
 </div>
@@ -25,11 +25,11 @@ description: "在 B1 Admin 中审阅待处理的房间和资源预订申请，�
 
 ## 预订申请 {#booking-requests}
 
-当有人预订设有**审批小组**的房间或资源，而其本人又不属于该小组时，该申请会出现在 **Room & Resource Requests** 部分。（审批小组成员的预订将自动获得批准。）审批小组成员还会收到一封电子邮件，列出新的待处理申请，并附有通往本页面的链接。每一行显示以下内容：
+当有人预订设有 **Approval Group** 的房间或资源，而其本人又不属于该小组时，该申请会出现在 **Room & Resource Requests** 部分。（审批小组成员的预订将自动获得批准。）审批小组成员还会收到一封电子邮件，列出新的待处理申请，并附有通往本页面的链接。每一行显示以下内容：
 
 - 活动名称和日期/时间
 - 所申请的房间或资源（对于多单位资源，还会显示数量）
-- **Requested by**——提出申请的人员，可点击链接查看其记录
+- **Requested by**，即提出申请的人员，可点击链接查看其记录
 - 状态标记，显示该申请是否存在冲突
 
 ### 冲突提示 {#conflict-indicators}
@@ -38,7 +38,7 @@ description: "在 B1 Admin 中审阅待处理的房间和资源预订申请，�
 
 ### 批准或拒绝 {#approving-or-rejecting}
 
-将鼠标悬停在某个预订申请上，然后点击 **Approve** 或 **Reject**（拒绝时会先要求你确认）。申请人会收到该决定的通知。已批准的预订会锁定该房间或资源在该活动时段的使用；被拒绝的预订则会释放该时段供他人使用。
+将鼠标悬停在某个预订申请上，然后点击 **Approve** 或 **Reject**。申请人会收到该决定的通知。已批准的预订会锁定该房间或资源在该活动时段的使用；被拒绝的预订则会释放该时段供他人使用。
 
 当你点击 **Approve** 时，会打开 **Approve booking** 对话框，以便你在同一步骤中同时发布该活动：
 
@@ -46,9 +46,16 @@ description: "在 B1 Admin 中审阅待处理的房间和资源预订申请，�
 2. 勾选 **Publish to public calendar** 后，你可以选择从 **Also add to calendar** 中选择一个精选日历，同时将该活动添加到你的[精选日历](./curated-calendar.md)之一。保持为 **None** 则跳过此步骤。（仅当你拥有 **content.edit** 权限时才会显示此选项。）
 3. 点击 **Approve**。
 
+当你点击 **Reject** 时，会打开 **Reject Request** 对话框：
+
+1. 可选择在 **Reason (optional)** 中输入拒绝理由（最多 500 个字符），例如 *"The gym is booked that weekend."*（那个周末体育馆已被预订。）
+2. 点击 **Reject** 确认，或点击 **Cancel** 使申请保持待处理状态。
+
+该理由会添加到申请人收到的通知末尾（例如 *Your event request "Youth Lock-In" was rejected: The gym is booked that weekend.*），成员也会在 B1 应用的 **My Requests** 页面中看到该理由。若留空，则只发送普通通知。
+
 ## 待处理活动 {#pending-events}
 
-成员提交的活动申请（例如来自 B1 应用中的 **My Requests**）会出现在 **Event Requests** 部分，并显示日期、**Description** 和 **Requested by**。点击 **Approve** 可将活动发布到日历上，或点击 **Reject** 通知提交人需要进行修改。在做决定之前，可点击 **Edit** 修正申请的详细信息，或点击 **Delete** 将其删除。
+成员提交的活动申请（例如来自 B1 应用中的 **My Requests**）会出现在 **Event Requests** 部分，并显示日期、**Description** 和 **Requested by**。点击 **Approve** 可将活动发布到日历上，或点击 **Reject** 通知提交人需要进行修改（你可以如上所述添加理由）。在做决定之前，可点击 **Edit** 修正申请的详细信息，或点击 **Delete** 将其删除。成员从应用提交的活动申请没有所属小组，因此编辑对话框中的 **Group** 列表会为其显示 **(no group)**，你可以不选择小组直接保存更改。
 
 :::tip
 在[房间与资源](./rooms-resources.md)中为某个房间设置审批小组，即可要求该房间的预订需经审批。之后，有权限的小组在创建活动时即可申请使用该房间，这些申请会进入本页面。

@@ -35,6 +35,16 @@ If a volunteer is assigned to two positions that overlap in time within the same
 ### Blockout Dates
 Volunteers can set dates they are unavailable in the B1 App. If someone is assigned to a plan that falls within one of their blockout dates, the validation panel surfaces the conflict automatically so you can find a replacement.
 
+Blocked-out volunteers are also flagged while you schedule. On the serving team page and in the **Assign Position** dialog, their name shows a red **Unavailable** badge; hover over it to see the dates (for example, *Blocked out: Nov 22, 2026 – Nov 29, 2026*). In the **Assign Position** dialog they're listed after everyone else on the team, and you can still assign them. On the [Plans Overview](./plans-overview.md) grid, a small red calendar icon next to a name marks the same thing.
+
+For volunteers who don't use the app, staff can enter block-out dates for them. Open the team (from the ministry's **Serving Teams** list) and scroll to the **Block-out dates** card under the member list, which shows each team member's upcoming block-outs with **Team member**, **From**, and **To**:
+
+1. Click **Add block-out**.
+2. Choose the **Team member**, then set the **From** and **To** dates.
+3. Click **Save**.
+
+To remove one, click the delete icon on its row and confirm. Adding and removing block-outs needs permission to edit plans; anyone else who opens the team sees the list only.
+
 ### Cross-Plan Conflicts
 The validation also checks across all your plans at once. If the same volunteer is assigned in two different plans that overlap in time — for example, a 9am service and a 10am service that both run until 10:30am — B1 Admin will flag that person as double-booked across plans.
 

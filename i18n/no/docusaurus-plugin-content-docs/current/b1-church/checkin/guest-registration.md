@@ -3,7 +3,7 @@ title: "Gjesteregistrering"
 description: "Registrer deg selv og familien din som førstegangsgjester med QR-skjemaet i B1 Checkin, slik at frivillige kan sjekke dere inn når dere kommer."
 ---
 
-# Gjesteregistrering
+# Gjesteregistrering {#guest-registration}
 
 <div class="article-intro">
 
@@ -30,22 +30,23 @@ Siden åpnes med tittelen **Gjesteregistrering**. Hvis menigheten har lagt til e
 ## Registrere familien din {#registering-your-family}
 
 1. **Skann QR-koden** på innsjekkingskiosken, eller åpne lenken for gjesteregistrering på telefonen din. (Hvis du trykket på **Registrer her** på kiosken, er skjemaet allerede åpent.)
-2. Fyll ut kortet **Hovedkontakt**. **Fornavn** og **etternavn** er alltid obligatoriske. Avhengig av hva menigheten din ber om, kan du også se:
+2. Fyll ut kortet **Hovedkontakt**. **Fornavn** og **Etternavn** er alltid obligatoriske. Avhengig av hva menigheten din ber om, kan du også se:
    - **Tittel** (for eksempel Mr, Mrs, Dr eller Pastor), foran navnet
    - **E-post** og **Telefon**
    - **Sivilstatus**
    - **Hjemmeadresse** -- **Gateadresse**, **Adresselinje 2**, **By**, **Stat** og **Postnummer**. Dette deles av hele familien.
 3. Skjemaet starter med et andre kort for **familiemedlem 2**. Skriv inn fornavn og etternavn, eller trykk på **X**-en i hjørnet på kortet for å fjerne det hvis du registrerer deg selv.
 4. For å legge til flere personer trykker du på **Legg til familiemedlem**. Det nye kortet fyller inn hovedkontaktens etternavn for deg. Du kan registrere opptil 10 personer samtidig.
-5. Hvis menigheten din ber om det, kan hvert personkort også inneholde **Tittel**, **Telefon**, **Fødselsdato**, **Kjønn** og **Klassetrinn**. Alle kort etter hovedkontakten kan også be om en **husstandsrolle** -- **Ektefelle**, **Barn** eller **Annen** -- slik at menigheten vet hvordan hver person er i slekt med hovedkontakten.
+5. Hvis menigheten din ber om det, kan hvert personkort også inneholde **Tittel**, **E-post**, **Telefon**, **Fødselsdato**, **Kjønn** og **Klassetrinn**. Alle kort etter hovedkontakten kan også be om en **husstandsrolle** -- **Ektefelle**, **Barn** eller **Annen** -- slik at menigheten vet hvordan hver person er i slekt med hovedkontakten.
+   Hvis menigheten din ber om et bilde, har hvert kort en knapp for **Legg til bilde**. Trykk på den, velg eller ta et bilde, beskjær det og lagre; bildet vises på kortet. Trykk på **Endre bilde** for å velge et annet, eller **Fjern bilde** for å fjerne det. Bildet lagres som personens profilbilde når posten opprettes.
 6. Hvis menigheten din har en boks for **Kommentarer** under familiemedlemmene, kan du bruke den til å dele det du vil at menigheten skal vite (opptil 1 000 tegn).
 7. Trykk på **Registrer** for å sende inn.
 
-Felt merket med en stjerne (`*`) er obligatoriske. Alle kort må ha fornavn og etternavn -- hvis ett mangler, viser skjemaet «Fornavn og etternavn er obligatorisk for hvert medlem.» Hvis et annet obligatorisk felt er tomt, vises «Fyll ut alle obligatoriske felt.» Ingenting sendes før du har fylt dem ut.
+Felt merket med en stjerne (`*`) er obligatoriske. Alle kort må ha fornavn og etternavn — hvis ett mangler, viser skjemaet «Fornavn og etternavn er obligatorisk for hvert medlem.» Hvis et annet obligatorisk felt er tomt, vises «Fyll ut alle obligatoriske felt.» Ingenting sendes før du har fylt dem ut.
 
 ## Etter registrering {#after-registering}
 
-Når du sender inn skjemaet, vises en bekreftelsesskjerm med meldingen: «Registrering fullført -- Alt er klart! En medarbeider sjekker deg inn snart.»
+Når du sender inn skjemaet, vises en bekreftelsesskjerm med meldingen: «Registrering fullført — Alt er klart! En medarbeider sjekker deg inn snart.»
 
 Registreringen din oppretter poster i menighetens database:
 

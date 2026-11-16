@@ -3,7 +3,7 @@ title: "Solicitar eventos y salas"
 description: "Solicita una reserva de sala o equipo para un evento desde el portal de miembros de B1.church, consulta su estado en Mis solicitudes y cancélala mientras esté pendiente."
 ---
 
-# Solicitar eventos y salas
+# Solicitar eventos y salas {#requesting-events--rooms}
 
 <div class="article-intro">
 
@@ -22,6 +22,7 @@ Si tu iglesia administra salas y recursos reservables, puedes solicitar un event
 ## Enviar una solicitud {#submitting-a-request}
 
 1. Abre la página **Yo** del portal de miembros y toca **Solicitar un evento** en la sección **Solicitudes e inscripciones**.
+   En la parte superior de la página se muestra *"El personal aprobará cada sala y artículo."*, a menos que tu iglesia haya escrito sus propias instrucciones -- como las pautas de reserva o con cuánta anticipación hay que avisar --, en cuyo caso verás esas instrucciones (consulta [Página de solicitud de eventos](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Completa los datos básicos del evento: **Título del evento**, una **Descripción** opcional, y las horas de **Inicio** y **Fin**. Activa **Todo el día** para elegir solo fechas.
 3. Elige las **Salas** y los **Recursos** que necesitas (puedes elegir varios de cada uno). Una vez que eliges uno, puedes agregar los minutos de **Preparación (min antes)** y **Limpieza (min después)**, o activar **Ventana de reserva personalizada** y establecer tú mismo **Reservar desde** y **Reservar hasta**.
 4. Presta atención a las advertencias de conflicto: si tu horario se superpone con una reserva existente de una sala o recurso, verás *"Algunas selecciones podrían estar ya reservadas a esta hora."* Puedes ajustar tu horario o elegir otra opción.
@@ -35,11 +36,13 @@ Después de enviar, aparece un resumen de **Solicitud enviada** con el estado de
 
 ## Seguimiento de tus solicitudes {#tracking-your-requests}
 
-Abre **Mis solicitudes** desde la página Yo. Las solicitudes se dividen en **Próximas** y **Pasadas** según la fecha del evento (toca **Todas las pasadas** para ver las anteriores). Cada solicitud muestra el título del evento y cuándo comienza, el estado de cada sala y recurso que pediste, y una etiqueta de estado:
+Abre **Mis solicitudes** desde la página Yo. Las solicitudes se dividen en **Próximas** y **Pasadas** según la fecha del evento (toca **Todas las pasadas** para ver las anteriores). Cada solicitud muestra el título del evento y cuándo comienza, la descripción que escribiste, el estado de cada sala y recurso que pediste, y una etiqueta de estado:
 
 - **Pendiente** -- En espera de una decisión
 - **Aprobada** -- Tu reserva está confirmada
 - **Rechazada** -- La solicitud fue denegada
+
+Si el personal indicó un motivo al rechazar la solicitud, o alguna de sus salas o recursos, aparece en rojo debajo de la solicitud -- por ejemplo, *Rechazada: el gimnasio está reservado ese fin de semana.* El mismo motivo se incluye en la notificación que recibes sobre la decisión.
 
 Mientras una solicitud siga pendiente, puedes retirarla con **Cancelar solicitud**. Una confirmación pregunta "¿Cancelar esta solicitud? Esta acción no se puede deshacer." -- toca **Cancelar solicitud** para confirmar o **Conservar** para dejarla.
 

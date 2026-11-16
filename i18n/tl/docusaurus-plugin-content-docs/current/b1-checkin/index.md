@@ -3,7 +3,7 @@ title: "Pangkalahatang-tanaw ng B1 Church Checkin"
 description: "I-set up ang B1 Church Checkin kiosk app sa iPad o Android tablet para makapag-self check-in ang pamilya, at makapag-print ng label at pickup slip."
 ---
 
-# Pangkalahatang-tanaw ng B1 Church Checkin
+# Pangkalahatang-tanaw ng B1 Church Checkin {#b1-church-checkin-overview}
 
 <div class="article-intro">
 
@@ -11,28 +11,29 @@ Ang B1 Church Checkin ay isang self-service na kiosk app para sa iPad at Android
 
 </div>
 
-## Tour Video
+## Tour Video {#tour-video}
 
 <YouTube id="fNZsJi9F-jc" title="A Tour of B1 Check-In" next="Setting Up Services and Attendance in B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Paano Ito Gumagana
+## Paano Ito Gumagana {#how-it-works}
 
 Maglagay ng iPad o Android tablet sa iyong lobby o welcome area. Lalapit ang mga miyembro, hahanapin ang kanilang household gamit ang numero ng telepono o apelyido, susuriin ang kanilang pamilya, pipiliin kung aling grupo ang dadaluhan ng bawat tao, at i-tap ang **Check-in**. Awtomatikong nagpi-print ng name label at pickup slip ang app, pagkatapos mag-reset para sa susunod na pamilya.
 
-## Mga Pangunahing Feature
+## Mga Pangunahing Feature {#key-features}
 
 - **Self-service na paghahanap ng miyembro** -- Maghanap gamit ang numero ng telepono o apelyido para mabilis mahanap ang iyong household.
 - **Pagrepaso ng household** -- Makita ang lahat ng miyembro ng pamilya na may mga larawan at kasalukuyang takda sa grupo sa isang tingin.
 - **Pagtatalaga ng grupo** -- Italaga ang bawat miyembro ng pamilya sa tamang klase o grupo para sa napiling oras ng serbisyo.
-- **Guest check-in** -- Magdagdag ng bisita sa iyong household agad gamit ang unang at apelyido.
+- **Guest check-in** -- Magdagdag ng bisita sa iyong household agad gamit ang unang at apelyido, at opsyonal na email.
 - **QR guest registration** -- Magpakita ng QR code na maaaring i-scan ng mga bisita para [magparehistro sa sarili nilang telepono](../b1-church/checkin/guest-registration.md) bago mag-check in, o hayaang i-tap nila ang **Register here** para punan ang parehong form sa kiosk.
 - **Pag-print ng label** -- Mag-print ng name label para sa mga bata at parent pickup slip na may natatanging security code.
+- **[Check-out](./check-in/checking-out.md)** -- Sa mga manned station, i-check out ang mga bata gamit ang pickup code, o hanapin ang pamilya sa pamamagitan ng apelyido o numero ng telepono kapag nawala ang label.
 - **Suporta sa network printer** -- Hanapin at i-configure ang mga network printer nang direkta mula sa app.
 - **Auto-login** -- Pagkatapos ng unang pag-log in, naaalala ng app ang iyong mga kredensyal at dumidiretso sa services screen sa mga susunod na pagbukas.
 - **Suporta sa maraming simbahan** -- Kung naka-link ang iyong account sa higit sa isang simbahan, maaari mong piliin kung alin ang gusto mong pag-check-in-an.
 - **Branding ng simbahan** -- Ipinapakita ng app ang logo ng iyong simbahan sa header kapag napili na ang simbahan.
 
-## Mga Seksyon ng Dokumentasyon
+## Mga Seksyon ng Dokumentasyon {#documentation-sections}
 
 - **[Getting Started](./getting-started/index.md)** -- Pag-install ng app, pag-log in, at pag-set up ng iyong printer.
 - **[Check-In Workflow](./check-in/index.md)** -- Ang buong daloy ng check-in mula sa pagpili ng serbisyo hanggang sa pag-print ng mga label.

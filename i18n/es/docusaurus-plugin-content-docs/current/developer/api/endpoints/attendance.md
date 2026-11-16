@@ -1,9 +1,9 @@
 ---
 title: "Endpoints de Asistencia"
-description: "Referencia de la API de asistencia en B1 Admin y B1 Checkin: campus, servicios, horarios de servicio, sesiones, visitas, reglas de registro y endpoints de exportación."
+description: "Referencia de la API de asistencia en B1 Admin y B1 Checkin: campus, servicios, horarios de servicio, sesiones, visitas, reglas de check-in y endpoints de exportación."
 ---
 
-# Endpoints de Asistencia
+# Endpoints de Asistencia {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ El módulo de Asistencia gestiona las ubicaciones de campus, los servicios, los 
 
 **Ruta base:** `/attendance`
 
-## Campus
+## Campus {#campuses}
 
 Ruta base: `/attendance/campuses`
 
@@ -26,7 +26,7 @@ Controlador CRUD estándar (extiende GenericCrudController). Proporciona las rut
 | POST | `/` | JWT | Services.Edit | Crear o actualizar campus |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar un campus |
 
-## Servicios
+## Servicios {#services}
 
 Ruta base: `/attendance/services`
 
@@ -40,7 +40,7 @@ Extiende GenericCrudController con las rutas CRUD `getById`, `getAll`, `post` y 
 | POST | `/` | JWT | Services.Edit | Crear o actualizar servicios |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar un servicio |
 
-### Ejemplo: Buscar servicios por campus
+### Ejemplo: Buscar servicios por campus {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ Extiende GenericCrudController con las rutas CRUD `getById`, `post` y `delete`. 
 | POST | `/` | JWT | Services.Edit | Crear o actualizar horarios de servicio. Campos de programación opcionales: `dayOfWeek` (0 = domingo … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (antes del inicio), `checkinCloseMinutes` (después del final). El check-in solo se limita por tiempo cuando están definidos tanto `dayOfWeek` como `startTime` |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar un horario de servicio |
 
-## Horarios de servicio de grupos
+## Horarios de servicio de grupos {#group-service-times}
 
 Ruta base: `/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ Vincula grupos con horarios de servicio específicos.
 | POST | `/` | JWT | Services.Edit | Crear o actualizar asociaciones grupo-horario de servicio |
 | DELETE | `/:id` | JWT | Services.Edit | Eliminar una asociación grupo-horario de servicio |
 
-## Registros de asistencia
+## Registros de asistencia {#attendance-records}
 
 Ruta base: `/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ Proporciona vistas agregadas de solo lectura de los datos de asistencia para inf
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | Para cada grupo asignado al horario de servicio, devolver `{ groupId, sessionId, attendanceCount }` en esa fecha (`date` es `YYYY-MM-DD`; `sessionId` es null cuando el grupo no tiene sesión). Alimenta el cuadro de diálogo **Quién aún necesita asistencia** de B1Admin |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Buscar registros de asistencia con filtros (campus, servicio, horario de servicio, grupo, rango de fechas) |
 
-### Ejemplo: Tendencia de asistencia
+### Ejemplo: Tendencia de asistencia {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sesiones
+## Sesiones {#sessions}
 
 Ruta base: `/attendance/sessions`
 
@@ -130,7 +130,7 @@ Extiende GenericCrudController con las rutas CRUD `getById` y `delete`. Los endp
 | POST | `/` | JWT | Attendance.Edit o líder de grupo | Crear o actualizar sesiones. Los líderes de grupo pueden guardar sesiones de sus propios grupos |
 | DELETE | `/:id` | JWT | Attendance.Edit | Eliminar una sesión |
 
-## Visitas
+## Visitas {#visits}
 
 Ruta base: `/attendance/visits`
 
@@ -141,11 +141,12 @@ Gestiona los registros de visita individuales (una persona que asiste en una fec
 | GET | `/` | JWT | Attendance.View | Listar todas las visitas. Filtrar con `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Obtener una visita por ID |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View o Attendance.Checkin | Cargar los datos de check-in de personas en un servicio. Devuelve las visitas con sus sesiones de visita de la última fecha registrada |
+| GET | `/active?peopleIds=` | JWT | Attendance.View o Attendance.Checkin | Visitas de hoy de las personas indicadas que aún no han hecho check-out, con las sesiones de visita y las sesiones incluidas. `peopleIds` (separados por comas) es obligatorio; sin él devuelve 400. Lo usa el check-out por nombre de B1Checkin |
 | POST | `/` | JWT | Attendance.Edit | Crear o actualizar visitas |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit o Attendance.Checkin | Enviar los datos de check-in. Crea/actualiza visitas y sesiones de visita, y elimina los registros obsoletos |
 | DELETE | `/:id` | JWT | Attendance.Edit | Eliminar una visita |
 
-### Ejemplo: Flujo de check-in
+### Ejemplo: Flujo de check-in {#example-check-in-flow}
 
 **Paso 1 -- Cargar los datos de check-in existentes:**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 Si un horario de servicio de destino tiene un calendario de check-in y su ventana está cerrada (medida con el mismo orden de zonas horarias, primero el campus, que `checkinOpen`), no se guarda nada y la respuesta es `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Las infracciones de capacidad y de proporción de voluntarios también devuelven 409 (`error: "capacity"` o `"ratio"`). Las sesiones que una persona ya tiene hoy (que se reenvían con cada check-in) omiten la comprobación de la ventana, de modo que un hogar puede añadir un horario de servicio abierto después de que haya cerrado la ventana de uno anterior.
 
-## Sesiones de visita
+## Sesiones de visita {#visit-sessions}
 
 Ruta base: `/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Gestiona la asociación entre visitas y sesiones (a qué sesión concreta asisti
 | DELETE | `/:id` | JWT | Attendance.Edit | Eliminar una sesión de visita por ID |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit o líder de grupo | Quitar a una persona de una sesión. Elimina la sesión de visita y la visita principal si no quedan sesiones. Los líderes de grupo pueden quitar la asistencia de sus propios grupos |
 
-### Ejemplo: Registro rápido de asistencia
+### Ejemplo: Registro rápido de asistencia {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Ejemplo: Descargar la asistencia de una sesión
+### Ejemplo: Descargar la asistencia de una sesión {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Rachas
+## Rachas {#streaks}
 
 Ruta base: `/attendance/streaks`
 
@@ -269,7 +270,7 @@ Registra las rachas de asistencia de las personas: semanas consecutivas en las q
 |--------|------|---------------|---------|-------------|
 | GET | `/person/:personId` | JWT | — | Cargar las rachas de asistencia de una persona |
 
-## Páginas relacionadas
+## Páginas relacionadas {#related-pages}
 
 - [Endpoints de Membresía](./membership.md) — Personas, grupos, roles y gestión de la iglesia
 - [Autenticación y permisos](./authentication.md) — Flujo de inicio de sesión, JWT, modelo de permisos

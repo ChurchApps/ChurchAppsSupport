@@ -3,7 +3,7 @@ title: "Approuver les modifications de profil"
 description: "Examinez et approuvez les demandes de modification de profil des membres dans B1 Admin, et configurez le groupe d'approbation de l'annuaire qui les reçoit."
 ---
 
-# Approuver les modifications de profil
+# Approuver les modifications de profil {#approving-profile-changes}
 
 <div class="article-intro">
 
@@ -40,7 +40,7 @@ Lorsqu'un membre soumet une modification de profil, celle-ci apparaît sous form
 3. Examinez les modifications.
 4. Cliquez sur **Appliquer** pour approuver et enregistrer les modifications dans son profil.
 
-Une demande d'ajout d'un membre de la famille affiche le titre, le nom, le rôle dans le foyer et le téléphone mobile de la nouvelle personne sur une même ligne (par exemple, *M. John Smith · Enfant · 555-0100*). L'application de la demande crée cette personne dans le foyer du membre avec ces informations.
+Une demande d'ajout d'un membre de la famille affiche le titre, le nom, le rôle dans le foyer, le téléphone mobile et le courriel de la nouvelle personne sur une même ligne (par exemple, *M. John Smith · Enfant · 555-0100 · john@example.com*), avec sa photo à côté si le membre en a ajouté une. L'application de la demande crée cette personne dans le foyer du membre avec ces informations et cette photo.
 
 La tâche se ferme automatiquement une fois les modifications appliquées.
 

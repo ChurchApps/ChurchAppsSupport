@@ -3,7 +3,7 @@ title: "Mga Setting ng Mobile App"
 description: "I-configure ang mga navigation tab, Home screen tile, sign-in prompt, at privacy setting ng member directory para sa member app ng B1.church sa B1 Admin."
 ---
 
-# Mga Setting ng Mobile App
+# Mga Setting ng Mobile App {#mobile-app-settings}
 
 <div class="article-intro">
 
@@ -108,6 +108,15 @@ Ang mga bisitang magbubukas ng [Home screen](/docs/b1-church/getting-started/nav
 
 I-click ang **Save** para ilapat. Kukumpirmahin ng mensaheng **Saved** ang pagbabago. Ang pag-save ay nagre-refresh sa mga naka-cache na setting ng app, kaya lalabas ang pagbabago sa susunod na mag-load ang Home screen.
 
+### Event Request Page {#event-request-page}
+
+Ang mga miyembrong [nagre-request ng event](../../b1-church/events/requesting-events.md) sa app ay makakakita ng maikling linya sa itaas ng pahinang **Request an Event** -- bilang default, *"Staff will approve each room and item."* Hinahayaan ka ng setting na **Event request page** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) na palitan ito ng sarili mong tagubilin, gaya ng mga patakaran sa booking, gaano kaaga dapat mag-request, o mga tuntunin:
+
+1. I-type ang iyong teksto sa **Event request instructions** (hanggang 1,000 karakter). Pinananatili ang mga line break.
+2. I-click ang **Save**.
+
+Iwanang blangko ang kahon para panatilihin ang default na linya.
+
 ### Home Screen Tiles {#home-screen-tiles}
 
 Ang mga tab na may larawan (tingnan ang **Image** sa ilalim ng [Adding a New Tab](#adding-a-new-tab)) ay lumalabas sa [Home screen](/docs/b1-church/getting-started/navigating#home) ng app bilang photo tile, sa seksyong may heading na pangalan ng iyong simbahan. Kasama rito ang tab na Verse of the Day, kung bibigyan mo ito ng larawan. Lumalabas pa rin sa tab bar ang mga photo tab.
@@ -119,15 +128,15 @@ Kinokontrol ng setting na **Home screen tiles** sa parehong pahina ng Member por
 - **Scrolling (automatic)** -- Ang parehong pahalang na row, pero gumagalaw din ito nang kusa, umuusad ng isang tile kada mga apat na segundo at bumabalik sa unang tile pagkatapos ng huli. Humihinto ito habang hinahawakan, hina-hover, o tina-tab ng miyembro ang row, at muling nagpapatuloy pagkalipas ng ilang segundo. Sa mga device na naka-set sa reduce motion, nananatiling tahimik ang row at gumagana gaya ng **Scrolling row**.
 - **List** -- Isang listahan na may maliit na photo thumbnail sa tabi ng pangalan ng bawat tab.
 - **Grid and list** -- Ang unang tatlong photo tab bilang grid, kung saan sasakupin ng unang tile ang buong lapad, at ang susunod na tatlo ay nakalista sa ibaba na may maliit na thumbnail sa tabi ng bawat pangalan. Kapag higit sa tatlo, ang heading ng seksyon ay magpapakita ng link na **All** na nagbubukas sa pahinang **More** ng app, na naglilista ng bawat tab.
-- **Scrolling (automatic) and list** -- Bawat photo tab sa self-advancing na row na inilarawan sa itaas, kasama ang unang tatlo na nakalista sa ibaba, at ang parehong link na **All** kapag higit sa tatlo.
+- **Scrolling (automatic) and list** -- Bawat photo tab sa self-advancing na row na inilarawan sa itaas, kasama ang unang tatlong hindi pa nasa menu ng app (ang tab bar sa telepono, ang header sa computer) na nakalista rin sa ibaba, at ang parehong link na **All** kapag higit sa tatlo.
 
-Sa parehong scrolling layout, kapag mas maraming tile kaysa kasya sa lapad ng screen, may lalabas na hilera ng tuldok sa ilalim ng mga tile, isa para sa bawat tile, at pinupunan ang tuldok ng kasalukuyang tile. Maaaring i-tap ng mga miyembro ang isang tuldok para tumalon sa tile na iyon.
+Sa parehong scrolling layout, kapag mas maraming tile kaysa kasya sa lapad ng screen, may lalabas na hilera ng tuldok sa ilalim ng mga tile, isa para sa bawat tile, at pinupuno ng tuldok ang kasalukuyang tile. Maaaring i-tap ng mga miyembro ang isang tuldok para tumalon sa tile na iyon.
 
 I-click ang **Save** para ilapat.
 
 ### Home Screen Sections {#home-screen-sections}
 
-Palaging nakikita ng mga naka-sign-in na miyembro ang sarili nilang kasaysayan ng attendance at mga naisumiteng form sa [Me page](/docs/b1-church/getting-started/me-page). Maaaring ipakita rin ito ng mga switch ng **Home screen sections** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) sa Home screen:
+Palaging nakikita ng mga naka-sign-in na miyembro ang sarili nilang kasaysayan ng attendance at mga naisumiteng form sa [Me page](/docs/b1-church/getting-started/me-page). Maaari ring ipakita ng mga switch ng **Home screen sections** sa parehong pahina ng Member portal (`/mobile/b1-mobile`) ang mga ito sa Home screen:
 
 - **Show My Attendance on Home** -- Nagdaragdag ng seksyong **My Attendance** na may bilang kung ilang beses dumalo ang miyembro sa nakaraang 90 araw, ang dalawang pinakahuling pagbisita niya, at link na **History** papunta sa buong listahan ng attendance niya.
 - **Show My Forms on Home** -- Nagdaragdag ng seksyong **My Forms** na may dalawang pinakahuling form submission ng miyembro at link na **All forms**.
@@ -158,7 +167,7 @@ Ang mga tab na iyong ini-configure dito ay ipinapakita sa **B1.church PWA** na i
 
 Sa telepono, ipinapakita ng bottom tab bar ang **Home**, hanggang tatlo sa iyong mga tab, at **More**; sa computer, hanggang lima ang ipinapakita ng header. Ang mga built-in na screen (gaya ng Sermons, Giving, o Groups) ang unang nakakakuha ng mga slot, at ang mga **Internal Page** tab ang pumupuno sa mga natitirang slot. Hindi kailanman nakakakuha ng slot ang mga tab na **External URL** at **Verse of the Day**. Nakalista sa pahinang **More** ng app ang bawat tab, kasama ang mga hindi nagkasya.
 
-Ang eksepsyon ay ang mga tab na nasa loob ng **Folder** tab: lumilitaw lamang ang mga ito sa sariling screen ng folder, na binubuksan ng miyembro sa pamamagitan ng pag-tap sa folder. Ipinapakita ng screen na iyon ang mga tab bilang photo tile kapag bawat isa ay may larawan, o bilang listahan kung hindi. Ang folder na walang tab na nakikita ng isang miyembro ay nakatago sa miyembrong iyon. Tingnan ang [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). Tingnan ang [Navigating B1App](../../b1-church/getting-started/navigating.md) para sa makikita ng mga miyembro.
+Ang eksepsyon ay ang mga tab na nasa loob ng **Folder** tab: lumilitaw lamang ang mga ito sa sariling screen ng folder, na binubuksan ng miyembro sa pamamagitan ng pag-tap sa folder. Kapag hindi nakakuha ng slot ang folder sa tab bar o header, nakalista rin sa seksyong **More from** ng Home ang pangalan ng folder kasama ang mga tab nito bilang mga button sa ilalim, ayon sa pagkakasunod-sunod na itinakda dito. Ipinapakita ng screen na iyon ang mga tab bilang photo tile kapag bawat isa ay may larawan, o bilang listahan kung hindi. Ang folder na walang tab na nakikita ng isang miyembro ay nakatago sa miyembrong iyon. Tingnan ang [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). Tingnan ang [Navigating B1App](../../b1-church/getting-started/navigating.md) para sa makikita ng mga miyembro.
 
 ## Mga Susunod na Hakbang {#next-steps}
 

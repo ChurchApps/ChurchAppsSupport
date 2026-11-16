@@ -34,7 +34,7 @@ The overview displays a grid where:
 
 - **Rows** represent each position (e.g., "Music: Guitar", "Tech: Projection") grouped by category
 - **Columns** represent upcoming service dates (e.g., "Apr 14", "Apr 21")
-- **Cells** show the name of the volunteer assigned to that position on that date
+- **Cells** show the name of the volunteer assigned to that position on that date. A small red calendar icon after a name means that volunteer has a [block-out date](./plan-validation.md#blockout-dates) on that day; hover over it to see the dates
 
 Cells highlighted in **red** are unfilled — no volunteer has been assigned yet. This makes it easy to see staffing gaps at a glance without opening each plan individually.
 
@@ -46,7 +46,7 @@ Volunteer names are shown in a shortened format (first name and last initial, e.
 
 You do not need to open individual plans to fill empty slots. Click any cell in the grid to open an assignment panel for that position and date. From there you can:
 
-- Click a team member's name to assign them to the position (or, for a position without a Volunteer Group, search for anyone in your church)
+- Click a team member's name to assign them to the position (or, for a position without a Volunteer Group, search for anyone in your church). Use **Search team** to find someone on a long team. Anyone blocked out that day shows an **Unavailable** badge and is listed last
 - Click the **Remove** (X) icon next to anyone already assigned, and confirm, to pull them off that slot
 - Click **Done** to close the panel without leaving the overview
 

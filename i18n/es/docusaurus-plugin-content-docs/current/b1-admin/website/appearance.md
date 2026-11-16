@@ -3,7 +3,7 @@ title: "Apariencia"
 description: "Configure colores, fuentes, espaciado, logotipo y navegación de su sitio web de iglesia en B1 Admin, además de widgets, analítica GA4, redirecciones y CSS personalizado."
 ---
 
-# Apariencia
+# Apariencia {#appearance}
 
 <div class="article-intro">
 
@@ -89,6 +89,14 @@ Los widgets del sitio aparecen en todas las páginas, flotando sobre el contenid
 4. Haga clic en **Guardar**.
 
 Desmarque **Habilitado** y haga clic en **Guardar** para desactivar un widget. Estos widgets se aplican a todos los sitios web de su iglesia.
+
+La barra de anuncios también aparece en la parte superior de la pantalla de inicio en la aplicación B1 de su iglesia (el portal de miembros en `/mobile`, incluida la aplicación instalada), encima del saludo, con el mismo texto, enlace, colores y fechas. En la aplicación, una **URL del enlace** que apunte a una de sus propias páginas (por ejemplo, `/food`) abre esa página dentro de la aplicación en lugar de cargar su sitio web. Consulte [Navegar por B1App](../../b1-church/getting-started/navigating.md#home).
+
+Algunos detalles sobre cómo se comporta la barra:
+
+- En los teléfonos, el texto largo se divide en más líneas, y el enlace pasa a su propia línea si no cabe.
+- En su sitio web, la barra de menú se ubica justo debajo de la barra de anuncios, para que el botón del menú siempre permanezca visible. Los menús y las ventanas emergentes se abren encima de la barra.
+- Cuando alguien cierra la barra con su botón **×**, permanece oculta en ese dispositivo durante un día y luego vuelve a aparecer. Si cambia el **Texto**, el nuevo anuncio se muestra de inmediato, incluso a las personas que cerraron el anterior.
 
 ## Redirecciones y analítica {#redirects--analytics}
 

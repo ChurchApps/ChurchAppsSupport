@@ -37,6 +37,12 @@ You configure reminders in the **Reminders** section of the event. Expand it to 
 
 To stop reminders for an event, turn off **Enable reminders** and save.
 
+### Sending a Reminder Now
+
+On an event that's already saved, click **Send now** next to **Save** to send the reminder right away -- for example, after a last-minute change. It uses the saved settings and goes to the same people, for the event's next upcoming date. B1 then shows how many people it reached, such as **Sent to 12 people**. Your scheduled reminders still go out as planned.
+
+**Send now** is only available once reminders are turned on and saved, so save any changes first. If the reminder includes **Text**, you also need permission to send texts.
+
 On an event that's already saved, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times as you make changes -- so you can confirm the reminder looks right before you save. A brand-new event has no preview until it's been saved.
 
 ## Who Gets Reminded

@@ -3,7 +3,7 @@ title: "Lotti di donazioni"
 description: "Raggruppa le offerte in lotti di donazioni in B1 Admin, poi chiudi, stampa o esporta ciascun lotto così i totali corrispondono ai tuoi versamenti in banca."
 ---
 
-# Lotti di donazioni
+# Lotti di donazioni {#donation-batches}
 
 <div class="article-intro">
 
@@ -29,7 +29,7 @@ Quando vai su **Donazioni > Lotti**, vedi un elenco dei tuoi lotti. Ogni riga mo
 - **Totale** -- l'importo complessivo in dollari
 - **Stato** -- **Aperto** o **Chiuso** (vedi [Chiudere e riaprire un lotto](#closing-and-reopening-a-batch))
 
-Sopra l'elenco, i pulsanti degli anni ti permettono di mostrare solo i lotti di un anno, oppure **Tutti** i lotti. Un riepilogo su una riga mostra il numero di lotti, il numero di offerte e l'importo totale dei lotti visualizzati.
+Sopra l'elenco, i pulsanti degli anni ti permettono di mostrare solo i lotti di un anno, oppure **Tutti** i lotti. Accanto, i pulsanti di stato -- **Tutti**, **Aperto** e **Chiuso** -- restringono l'elenco ai lotti ancora in lavorazione o a quelli completati. I due filtri funzionano insieme: puoi scegliere **2026** e **Aperto** per vedere i lotti aperti di quest'anno. Un riepilogo su una riga mostra il numero di lotti, il numero di offerte e l'importo totale dei lotti visualizzati.
 
 ## Creare un nuovo lotto {#creating-a-new-batch}
 

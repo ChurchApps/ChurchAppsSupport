@@ -3,7 +3,7 @@ title: "Resumen de planes"
 description: "Obtenga una vista panorámica de las asignaciones de voluntarios de muchas fechas de servicio en B1 Admin, detecte puestos sin cubrir y llene o envíe correos a su equipo desde una sola cuadrícula."
 ---
 
-# Resumen de planes
+# Resumen de planes {#plans-overview}
 
 <div class="article-intro">
 
@@ -34,7 +34,7 @@ El resumen muestra una cuadrícula donde:
 
 - Las **filas** representan cada puesto (por ejemplo, "Música: Guitarra", "Técnico: Proyección") agrupados por categoría
 - Las **columnas** representan las próximas fechas de servicio (por ejemplo, "14 abr", "21 abr")
-- Las **celdas** muestran el nombre del voluntario asignado a ese puesto en esa fecha
+- Las **celdas** muestran el nombre del voluntario asignado a ese puesto en esa fecha. Un pequeño icono de calendario rojo después de un nombre indica que ese voluntario tiene una [fecha de bloqueo](./plan-validation.md#blockout-dates) ese día; pase el cursor sobre él para ver las fechas
 
 Las celdas resaltadas en **rojo** no están cubiertas: todavía no se ha asignado ningún voluntario. Así es fácil ver los huecos de personal de un vistazo, sin abrir cada plan individualmente.
 
@@ -46,7 +46,7 @@ Los nombres de los voluntarios se muestran en formato abreviado (nombre y la ini
 
 No necesita abrir cada plan para llenar los espacios vacíos. Haga clic en cualquier celda de la cuadrícula para abrir un panel de asignación para ese puesto y esa fecha. Desde ahí puede:
 
-- Hacer clic en el nombre de un miembro del equipo para asignarlo al puesto (o, en un puesto sin Grupo de voluntarios, buscar a cualquier persona de su iglesia)
+- Hacer clic en el nombre de un miembro del equipo para asignarlo al puesto (o, en un puesto sin Grupo de voluntarios, buscar a cualquier persona de su iglesia). Use **Buscar en el equipo** para encontrar a alguien en un equipo grande. Las personas bloqueadas ese día muestran una insignia **No disponible** y aparecen al final de la lista
 - Hacer clic en el icono **Quitar** (X) junto a cualquier persona ya asignada, y confirmar, para sacarla de ese espacio
 - Hacer clic en **Listo** para cerrar el panel sin salir del resumen
 
@@ -54,7 +54,7 @@ Esto permite programar un calendario completo en una sola pasada: trabajar por s
 
 ## Asignación automática desde el resumen {#auto-scheduling-from-the-overview}
 
-Haga clic en **Asignación automática** y confirme para que B1 llene de una vez todos los espacios abiertos de la cuadrícula actual. Para cada plan visible, toma candidatos del grupo vinculado a cada puesto y llena los espacios vacíos automáticamente, e informa cuántos de los planes visibles pudo llenar (por ejemplo, "Se programaron automáticamente 3 de 4 planes"). Los puestos sin Grupo de voluntarios se omiten. Los planes se llenan uno a uno para que el mismo voluntario no quede doblemente programado en dos fechas durante la misma pasada.
+Haga clic en **Asignación automática** y confirme para que B1 llene de una vez todos los espacios abiertos de la cuadrícula actual. Para cada plan visible, toma candidatos del grupo vinculado a cada puesto y llena los espacios vacíos automáticamente, e informa cuántos de los planes visibles pudo llenar (por ejemplo, "Se asignaron automáticamente 3 de 4 planes"). Los puestos sin Grupo de voluntarios se omiten. Los planes se llenan uno a uno para que el mismo voluntario no quede asignado dos veces en dos fechas durante la misma pasada.
 
 :::info
 La asignación automática solo llena los espacios que ya están vacíos; nunca reemplaza una asignación existente.

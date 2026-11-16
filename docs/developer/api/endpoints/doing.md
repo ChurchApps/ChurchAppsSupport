@@ -188,9 +188,10 @@ Base path: `/doing/tasks`
 | GET | `/closed` | JWT | — | Get closed tasks for the current user |
 | GET | `/timeline?taskIds=` | JWT | — | Get timeline data for tasks by comma-separated task IDs |
 | GET | `/directoryUpdate/:personId` | JWT | — | Get directory update task for a person |
-| POST | `/` | JWT | — | Create or update tasks. Add `?type=directoryUpdate` to handle directory update tasks (auto-uploads photos) |
+| POST | `/` | JWT | — | Create or update tasks. Add `?type=directoryUpdate` to handle directory update tasks (auto-uploads photos). Changing an existing task's `assignedToId` appends a "Reassigned from ... to ..." entry to the history in its `data` |
 | POST | `/:id/conversation` | JWT | `tasks.edit` or card assignee | Attach the notes conversation to a card. Body: `{ conversationId }`. The first conversation attached wins; later calls return the card unchanged |
 | POST | `/loadForGroups` | JWT | — | Load tasks for specific groups. Body: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | Permanently delete a plain task. Returns 400 for workflow cards (use the card endpoints) and account deletion requests (decide them from the review action) |
 
 ## Automations
 

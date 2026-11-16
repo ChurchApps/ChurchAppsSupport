@@ -46,7 +46,7 @@ If church staff have assigned you follow-up work, two more sections appear under
 - **My cards** -- workflow cards assigned to you (for example, following up with a new visitor). Each shows its due date, with an **Overdue** or **Snoozed** badge when that applies.
 - **My tasks** -- other tasks assigned to you, with the person each one is about.
 
-Each section shows your three newest items; tap **All cards** or **All tasks** to open the full **My tasks** list. Tap a card to see its step, due date, and who it is about, and to add **Notes**. Tap **Complete** (or the outcome button your church set up for that step) when you are done, or tap **1 day**, **3 days**, or **7 days** under **Snooze** to set it aside for a while. Tasks open read-only here, with any notes they already have -- close them in B1 Admin.
+Each section shows your three newest items; tap **All cards** or **All tasks** to open the full **My tasks** list. Tap a card to see its step, due date, who it is about, and when it was created (date and time), and to add **Notes**. When a card or task is about a person, its **Call** and **Email** rows show that person's mobile phone and email -- tap one to call or email them. Tap **Complete** (or the outcome button your church set up for that step) when you are done, or tap **1 day**, **3 days**, or **7 days** under **Snooze** to set it aside for a while. Tasks open read-only here, showing who it is from, who it is about, and when it was created -- close them in B1 Admin. If a task already has notes, you can read them and add your own.
 
 The sections are hidden when nothing is assigned to you.
 

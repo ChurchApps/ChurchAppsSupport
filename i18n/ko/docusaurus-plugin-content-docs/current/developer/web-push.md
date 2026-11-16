@@ -3,7 +3,7 @@ title: "웹 푸시 알림"
 description: "VAPID 키, WebPushHelper 클라이언트, 서비스 워커 처리를 설정하여 B1.church와 B1 Admin이 교인에게 브라우저 푸시 알림을 전달할 수 있게 합니다."
 ---
 
-# 웹 푸시 알림
+# 웹 푸시 알림 {#web-push-notifications}
 
 <div class="article-intro">
 

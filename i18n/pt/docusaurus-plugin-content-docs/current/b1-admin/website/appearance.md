@@ -3,7 +3,7 @@ title: "Aparência"
 description: "Defina cores, fontes, espaçamento, logo e navegação do site da sua igreja no B1 Admin, além de widgets, análises GA4, redirecionamentos e CSS personalizado."
 ---
 
-# Aparência
+# Aparência {#appearance}
 
 <div class="article-intro">
 
@@ -89,6 +89,14 @@ Os widgets do site aparecem em todas as páginas, flutuando acima do conteúdo d
 4. Clique em **Salvar**.
 
 Desmarque **Ativada** e clique em **Salvar** para desligar um widget. Esses widgets se aplicam a todos os sites da sua igreja.
+
+A Faixa de anúncio também aparece no topo da Início do aplicativo B1 da sua igreja (o portal de membros em `/mobile`, incluindo o aplicativo instalado), acima da saudação, com o mesmo texto, link, cores e datas. No aplicativo, um **URL do link** que aponta para uma das suas próprias páginas (por exemplo, `/food`) abre essa página dentro do aplicativo, em vez de carregar o seu site. Veja [Navegando no B1App](../../b1-church/getting-started/navigating.md#home).
+
+Alguns detalhes sobre o funcionamento da faixa:
+
+- Em celulares, textos longos se distribuem em mais linhas, e o link vai para uma linha própria caso não caiba.
+- No seu site, a barra de menu fica logo abaixo da faixa de anúncio, de modo que o botão do menu continua visível. Menus e janelas pop-up abrem por cima da faixa.
+- Quando alguém fecha a faixa pelo botão **×**, ela continua oculta naquele dispositivo por um dia e depois volta. Se você alterar o **Texto**, o novo anúncio aparece imediatamente, mesmo para quem fechou o anterior.
 
 ## Redirecionamentos e análises {#redirects--analytics}
 

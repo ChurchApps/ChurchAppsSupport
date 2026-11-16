@@ -3,7 +3,7 @@ title: "新增人员"
 description: "在 B1 Admin 中将人员新增到教会资料库、填写其详细信息，并将家庭成员连结为住户，以用于报到与报表。"
 ---
 
-# 新增人员
+# 新增人员 {#adding-people}
 
 <div class="article-intro">
 
@@ -26,7 +26,7 @@ description: "在 B1 Admin 中将人员新增到教会资料库、填写其详�
 ## 新增人员 {#adding-a-person}
 
 1. 前往 B1.church Admin 仪表板。
-2. 打开[快速菜单](../introduction.md#getting-around-with-the-jump-menu)（位于左上角的搜索栏），展开**People**，然后点击**People**。
+2. 打开[快速菜单](../introduction.md#getting-around-with-the-jump-menu)（位于左上角的搜索栏），展开 **People**，然后点击 **People**。
 3. 点击页面标题中的 **Add Person** 按钮。页面会向下滚动到通讯录下方的 **Add a New Person** 表单。
 4. 填写该人员的 **First Name** 与 **Last Name**（两者皆为必填）。也可以选择性地填写 **Title**、**Email** 和 **Mobile Phone**，然后点击 **Add**（或按下 **Enter**）。
 
@@ -62,9 +62,9 @@ B1 会为该人员建立一个新的住户，并以其姓氏命名。
 - **Attendance**——显示该人员在最近数周中出席了哪些礼拜，以及其最近的几次到访。点击 **All years** 可查看完整的到访记录，包括校区、礼拜、礼拜时间、小组，以及一个 **Checked In** 栏位（会显示报到机的报到时间；如果到访记录并非通过报到机登记，则以破折号表示）；或点击 **Print** 进行打印（打印件顶端中央会显示你的教会标志与名称，位于该人员姓名的上方）。若要查看全教会的趋势，而非单一人员的历史记录，请参阅[统计出席](../attendance/tracking-attendance.md)。
 - **Donations**——显示今年的奉献，包括对不可抵税基金的奉献。点击 **All years** 可查看完整的[奉献历史](../donations/recording-donations.md)，或点击 **Log a gift** 记录新的奉献。如果你的教会开启了[奉献隐私](../settings/church-settings.md#giving-privacy)，金额会保持隐藏，直到你点击 **Show giving**。
 - **Groups**——列出该人员的[小组成员资格](../groups/group-members.md)；如果档案中有记录，还会显示 **Joined** 以及每个小组的加入日期。
-- **Notes**——显示关于该人员的最近备注（牧养关怀、后续跟进等）。点击 **All notes** 即可阅读与新增备注。每则备注都会显示撰写者，以及发布的日期和时间。若要为备注设置格式，请在备注框中选取文字，然后从小型弹出菜单中选择 **Bold**、**Italic**、**Bulleted list** 或 **Numbered list**（或按下 **Ctrl+B** / **Ctrl+I**，Mac 上则为 **Cmd**）；发布后，备注会显示格式。删除备注前会要求你先确认，因为无法复原。若要一次查看所有人的最近备注，请使用[备注](./notes.md)页面。
+- **Notes**——显示关于该人员的最近备注（牧养关怀、后续跟进等）。点击 **All notes** 即可阅读与新增备注。每则备注都会显示撰写者，以及发布的日期和时间。若要为备注设置格式，请在备注框中点击进入——备注框被选取时，下方会出现一排 **Bold**、**Italic**、**Bulleted list** 和 **Numbered list** 按钮——然后选取文字并点击某个按钮（或按下 **Ctrl+B** / **Ctrl+I**，Mac 上则为 **Cmd**）。在列表中按下 **Enter** 会开始下一个项目符号或编号；在空白项目上按下 **Enter** 则会结束列表。发布后，备注会显示其格式，包括项目符号与编号。删除备注前会要求你先确认，因为无法复原。若要一次查看所有人的最近备注，请使用[备注](./notes.md)页面。
 - **Forms**——列出该人员的表单，以及每份表单是否已提交（见下方的[处理表单](#working-with-forms)）。
-- **Requests & registrations**——列出该人员的房间与资源[活动申请](../calendars/approvals.md)（包括所申请的房间或资源，以及 **Pending**、**Approved** 或 **Rejected** 状态），以及其[活动报名](../calendars/paid-registrations.md)（包括其报名的人数，以及 **Registered**、**Pending**、**Waitlisted** 或 **Cancelled** 状态），依最新排序。会显示最近的五笔；点击 **All requests** 可查看完整列表。如果你可以使用[审批](../calendars/approvals.md)页面，就能看到活动申请；如果你可以查看报名，就能看到报名记录；两者皆无权限时，此区块会被隐藏。
+- **Requests & registrations**——列出该人员的房间与资源[活动申请](../calendars/approvals.md)（包括其所描述的内容、所申请的房间或资源，以及 **Pending**、**Approved** 或 **Rejected** 状态），以及其[活动报名](../calendars/paid-registrations.md)（包括其报名的人数，以及 **Registered**、**Pending**、**Waitlisted** 或 **Cancelled** 状态），依最新排序。会显示最近的五笔；点击 **All requests** 可查看完整列表。如果你可以使用[审批](../calendars/approvals.md)页面，就能看到活动申请；如果你可以查看报名，就能看到报名记录；两者皆无权限时，此区块会被隐藏。
 
 当你打开其中一个完整的检视页面时，请点击顶端显示该人员姓名的 **Back to** 链接，即可返回个人资料。
 

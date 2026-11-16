@@ -3,7 +3,7 @@ title: "사람 추가하기"
 description: "B1 Admin의 교회 데이터베이스에 사람을 추가하고, 세부 정보를 입력하고, 가족 구성원을 체크인과 보고를 위해 가구로 연결하세요."
 ---
 
-# 사람 추가하기
+# 사람 추가하기 {#adding-people}
 
 <div class="article-intro">
 
@@ -62,9 +62,9 @@ B1은 사람의 성을 따서 이름을 붙인 새 가구를 그 사람을 위�
 - **Attendance** — 사람이 최근 몇 주 중 어느 주에 출석했는지와 가장 최근 방문을 보여 줍니다. **All years**를 클릭하면 캠퍼스, 예배, 예배 시간, 그룹과, 키오스크 체크인 시각이 표시되는 **Checked In** 열(키오스크 체크인 없이 기록된 방문은 대시로 표시)을 포함한 전체 방문 기록을 볼 수 있습니다. 또는 **Print**를 클릭하여 인쇄할 수 있습니다(인쇄물에는 사람의 이름 위 가운데에 교회 로고와 이름이 표시됩니다). 한 사람의 기록이 아니라 교회 전체의 추세를 보려면 [출석 추적](../attendance/tracking-attendance.md)을 참고하세요.
 - **Donations** — 올해의 헌금을 보여 주며, 비공제 기금에 대한 헌금도 포함됩니다. **All years**를 클릭하면 전체 [헌금 내역](../donations/recording-donations.md)을, **Log a gift**를 클릭하면 새 헌금을 기록할 수 있습니다. 교회에서 [헌금 개인정보 보호](../settings/church-settings.md#giving-privacy)를 켰다면, **Show giving**을 클릭하기 전까지 금액은 가려져 있습니다.
 - **Groups** — 사람의 [그룹 구성원 자격](../groups/group-members.md)을 나열하며, 기록이 있는 경우 각 그룹에 **Joined**와 가입 날짜를 표시합니다.
-- **Notes** — 사람에 대한 최근 메모(목회 돌봄, 후속 조치 등)를 보여 줍니다. **All notes**를 클릭하면 메모를 읽고 추가할 수 있습니다. 각 메모에는 작성자와 게시된 날짜 및 시간이 표시됩니다. 메모의 서식을 바꾸려면 메모 상자에서 텍스트를 드래그하여 선택한 다음, 작은 팝업에서 **Bold**, **Italic**, **Bulleted list**, **Numbered list**를 고르세요(또는 **Ctrl+B** / **Ctrl+I**를 누르세요. Mac에서는 **Cmd**). 게시된 메모에는 서식이 표시됩니다. 메모를 삭제하려면 되돌릴 수 없으므로 먼저 확인을 요청합니다. 모든 사람의 최근 메모를 한꺼번에 보려면 [메모](./notes.md) 페이지를 사용하세요.
+- **Notes** — 사람에 대한 최근 메모(목회 돌봄, 후속 조치 등)를 보여 줍니다. **All notes**를 클릭하면 메모를 읽고 추가할 수 있습니다. 각 메모에는 작성자와 게시된 날짜 및 시간이 표시됩니다. 메모의 서식을 바꾸려면 메모 상자를 클릭하세요. 상자가 선택되어 있는 동안 그 아래에 **Bold**, **Italic**, **Bulleted list**, **Numbered list** 버튼 줄이 나타납니다. 그다음 글을 드래그하여 선택하고 버튼을 클릭하거나(또는 **Ctrl+B** / **Ctrl+I**를 누르세요. Mac에서는 **Cmd**) 누릅니다. 목록에서 **Enter**를 누르면 다음 글머리 기호나 번호가 시작되고, 빈 항목에서 **Enter**를 누르면 목록이 끝납니다. 게시된 메모에는 글머리 기호와 번호를 포함한 서식이 표시됩니다. 메모를 삭제하면 되돌릴 수 없으므로 먼저 확인을 요청합니다. 모든 사람의 최근 메모를 한꺼번에 보려면 [메모](./notes.md) 페이지를 사용하세요.
 - **Forms** — 사람의 양식과 각 양식의 제출 여부를 나열합니다(아래 [양식 사용하기](#working-with-forms) 참고).
-- **Requests & registrations** — 사람의 방과 자원 [행사 요청](../calendars/approvals.md)(요청한 방이나 자원과 **Pending**, **Approved**, **Rejected** 상태 포함)과 [행사 등록](../calendars/paid-registrations.md)(등록한 인원 수와 **Registered**, **Pending**, **Waitlisted**, **Cancelled** 상태 포함)을 최신순으로 나열합니다. 최근 다섯 개가 표시되며, 전체 목록은 **All requests**를 클릭하세요. [승인](../calendars/approvals.md) 페이지를 사용할 수 있다면 행사 요청이, 등록을 볼 수 있다면 행사 등록이 보입니다. 둘 다 없으면 이 섹션은 숨겨집니다.
+- **Requests & registrations** — 사람의 방과 자원 [행사 요청](../calendars/approvals.md)(요청한 설명, 요청한 방이나 자원과 **Pending**, **Approved**, **Rejected** 상태 포함)과 [행사 등록](../calendars/paid-registrations.md)(등록한 인원 수와 **Registered**, **Pending**, **Waitlisted**, **Cancelled** 상태 포함)을 최신순으로 나열합니다. 최근 다섯 개가 표시되며, 전체 목록은 **All requests**를 클릭하세요. [승인](../calendars/approvals.md) 페이지를 사용할 수 있다면 행사 요청이, 등록을 볼 수 있다면 행사 등록이 보입니다. 둘 다 없으면 이 섹션은 숨겨집니다.
 
 이 전체 보기 중 하나를 열었다면, 상단의 사람 이름과 함께 있는 **Back to** 링크를 클릭하여 프로필로 돌아가세요.
 
@@ -74,7 +74,7 @@ B1은 사람의 성을 따서 이름을 붙인 새 가구를 그 사람을 위�
 
 1. 사람의 프로필에서 **Email**을 클릭하세요.
 2. 사람의 이름이 제목인 **Email** 대화상자가 열리며, **Sending to** 아래에 사람의 주소가 표시됩니다.
-3. 필요하다면 **Load Template (optional**)에서 저장된 템플릿을 고르세요.
+3. 필요하다면 **Load Template (optional)**에서 저장된 템플릿을 고르세요.
 4. **Subject**를 입력하고 메시지를 작성하세요.
 5. **Send Email**을 클릭하세요.
 

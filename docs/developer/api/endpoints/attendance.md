@@ -141,6 +141,7 @@ Manages individual visit records (a person attending on a specific date) and pro
 | GET | `/` | JWT | Attendance.View | List all visits. Filter by `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Get a visit by ID |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View or Attendance.Checkin | Load check-in data for people at a service. Returns visits with visit sessions from the last logged date |
+| GET | `/active?peopleIds=` | JWT | Attendance.View or Attendance.Checkin | Today's visits for the listed people that are not checked out yet, with visit sessions and sessions populated. `peopleIds` (comma-separated) is required; 400 without it. Used by B1Checkin's check-out by name |
 | POST | `/` | JWT | Attendance.Edit | Create or update visits |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit or Attendance.Checkin | Submit check-in data. Creates/updates visits and visit sessions, removes stale records |
 | DELETE | `/:id` | JWT | Attendance.Edit | Delete a visit |

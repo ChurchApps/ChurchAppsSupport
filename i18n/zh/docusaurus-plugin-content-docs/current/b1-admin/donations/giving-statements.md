@@ -3,7 +3,7 @@ title: "奉献收据"
 description: "在 B1 Admin 中为每位捐赠人生成年终奉献收据，然后以 CSV 文件下载或打印出来邮寄，并附上可免税的合计金额。"
 ---
 
-# 奉献收据
+# 奉献收据 {#giving-statements}
 
 <div class="article-intro">
 
@@ -53,6 +53,12 @@ description: "在 B1 Admin 中为每位捐赠人生成年终奉献收据，然�
 :::info
 奉献收据仅包含分配到已启用 **Tax Deductible** 设置的基金的奉献。如果某个基金未标记为可免税，其奉献将不会出现在收据上。你可以在[基金](funds.md)页面管理此设置。
 :::
+
+## 收据中的礼物备注 {#gift-memos-on-statements}
+
+每份收据都会列出每笔奉献的日期、方式、基金和金额。当收据上至少有一笔奉献带有 **Memo**（备注）时，基金栏之后会增加一列 **Memo**，使捐赠人能够看到每笔奉献的用途。没有备注的收据则保持四列版式。奉献的 **Notes**（内部备注）仅供内部使用，绝不会出现在收据上。ZIP 中的 CSV 文件会将备注作为最后一列。
+
+若要在收据上注明用途，请在[登记奉献](recording-donations.md)时将其填写为该笔奉献的 **Memo**；如果希望单独汇总，则可为其设置独立的[基金](funds.md)。
 
 ## 加拿大、澳大利亚和新西兰的收据格式 {#receipt-formats-for-canada-australia-and-new-zealand}
 

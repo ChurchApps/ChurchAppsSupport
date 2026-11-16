@@ -4,7 +4,7 @@ sidebar_label: "Modifier votre profil"
 description: "Mettez à jour vos coordonnées, les membres de votre foyer, votre courriel et mot de passe de connexion, ainsi que vos paramètres de confidentialité dans le portail des membres de B1.church."
 ---
 
-# Modifier votre profil
+# Modifier votre profil {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -48,10 +48,11 @@ Pour ajouter un membre de la famille qui n'est pas encore dans le système :
 
 1. Appuyez sur **Ajouter un membre de la famille**.
 2. Saisissez son **prénom**. Le **nom** est prérempli avec votre nom de famille ; modifiez-le si le sien est différent.
-3. Ajoutez éventuellement son **Titre** et son **téléphone mobile**.
+3. Ajoutez éventuellement son **Titre**, son **courriel** et son **téléphone mobile**.
 4. Choisissez son **rôle dans le foyer** : **Chef de famille**, **Conjoint**, **Enfant** ou **Autre** (par défaut).
-5. Appuyez sur **Ajouter**. Il ou elle apparaît sous **Membres de la famille en attente** avec son rôle ; appuyez sur **Retirer** pour retirer quelqu'un de la liste. Répétez l'opération pour les autres personnes.
-6. Appuyez sur **Enregistrer les modifications** (ou **Soumettre pour approbation**).
+5. Facultatif : appuyez sur **Ajouter une photo** pour choisir une image de cette personne (appuyez sur **Changer la photo** pour en choisir une autre).
+6. Appuyez sur **Ajouter**. Il ou elle apparaît sous **Membres de la famille en attente** avec son rôle et son courriel ; appuyez sur **Retirer** pour retirer quelqu'un de la liste. Répétez l'opération pour les autres personnes.
+7. Appuyez sur **Enregistrer les modifications** (ou **Soumettre pour approbation**).
 
 Si votre église examine les modifications de l'annuaire, les nouveaux membres de la famille sont soumis avec vos autres modifications pour approbation par votre église. Sinon, ils sont ajoutés à votre foyer dès que vous enregistrez.
 

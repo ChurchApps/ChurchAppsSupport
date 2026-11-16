@@ -3,7 +3,7 @@ title: "Doing Endpoints"
 description: "सेवा योजनाओं, स्वयंसेवा नियुक्तियों, कार्यों और स्वचालन के पीछे Doing API का एंडपॉइंट संदर्भ, B1 Admin के लिए पथ, प्रमाणीकरण और अनुमतियों सहित।"
 ---
 
-# Doing Endpoints
+# Doing Endpoints {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ Doing मॉड्यूल सेवा योजना, स्वयंसे�
 
 **Base path:** `/doing`
 
-## योजनाएँ (Plans)
+## योजनाएँ (Plans) {#plans}
 
 Base path: `/doing/plans`
 
@@ -36,7 +36,7 @@ Base path: `/doing/plans`
 | POST | `/autofill/:id` | JWT | — | योजना के लिए स्वयंसेवक असाइनमेंट स्वतः भरें। बॉडी: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | योजना और उससे जुड़े सभी समय, असाइनमेंट, पद और योजना आइटम हटाएँ |
 
-### उदाहरण: योजना कॉपी करना
+### उदाहरण: योजना कॉपी करना {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## योजना प्रकार (Plan Types)
+## योजना प्रकार (Plan Types) {#plan-types}
 
 Base path: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ CRUD बेस क्लास का विस्तार (GET `/`, GET `/:id`
 | POST | `/` | JWT | — | योजना प्रकार बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | योजना प्रकार हटाएँ |
 
-## योजना आइटम (Plan Items)
+## योजना आइटम (Plan Items) {#plan-items}
 
 Base path: `/doing/planItems`
 
@@ -88,7 +88,7 @@ Base path: `/doing/planItems`
 | POST | `/sort` | JWT | — | योजना आइटम का सॉर्ट क्रम अपडेट करें (भाई-बहनों को पुनः क्रमबद्ध करता है) |
 | DELETE | `/:id` | JWT | — | योजना आइटम हटाएँ |
 
-## योजना फ़ीड (Plan Feed)
+## योजना फ़ीड (Plan Feed) {#plan-feed}
 
 Base path: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ presenter के लिए योजना आइटम फ़ीड प्र�
 |------|------|------|------------|-------------|
 | GET | `/presenter/:churchId/:planId` | Public | — | presenter के लिए योजना फ़ीड प्राप्त करें (खाली होने पर venue फ़ीड से अपने आप भरता है) |
 
-## पद (Positions)
+## पद (Positions) {#positions}
 
 Base path: `/doing/positions`
 
@@ -113,7 +113,7 @@ CRUD बेस क्लास का विस्तार (GET `/:id`, POST `/
 | POST | `/` | JWT | — | पद बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | पद हटाएँ |
 
-## समय (Times)
+## समय (Times) {#times}
 
 Base path: `/doing/times`
 
@@ -126,7 +126,7 @@ Base path: `/doing/times`
 | POST | `/` | JWT | — | समय बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | समय हटाएँ |
 
-## असाइनमेंट (Assignments)
+## असाइनमेंट (Assignments) {#assignments}
 
 Base path: `/doing/assignments`
 
@@ -144,7 +144,7 @@ Base path: `/doing/assignments`
 | DELETE | `/signup/:id` | JWT | — | अपना स्व-साइनअप हटाएँ। योजना की साइनअप समय-सीमा के बाद "Removal deadline has passed" के साथ अस्वीकार |
 | DELETE | `/:id` | JWT | — | असाइनमेंट हटाएँ |
 
-### उदाहरण: असाइनमेंट स्वीकार करना
+### उदाहरण: असाइनमेंट स्वीकार करना {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## ब्लॉकआउट तारीखें (Blockout Dates)
+## ब्लॉकआउट तारीखें (Blockout Dates) {#blockout-dates}
 
 Base path: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ CRUD बेस क्लास का विस्तार (GET `/:id`, DELETE 
 | POST | `/` | JWT | — | ब्लॉकआउट तारीखें बनाएँ या अपडेट करें (personId न मिलने पर डिफ़ॉल्ट रूप से वर्तमान उपयोगकर्ता) |
 | DELETE | `/:id` | JWT | — | ब्लॉकआउट तारीख हटाएँ |
 
-## कार्य (Tasks)
+## कार्य (Tasks) {#tasks}
 
 Base path: `/doing/tasks`
 
@@ -188,11 +188,12 @@ Base path: `/doing/tasks`
 | GET | `/closed` | JWT | — | वर्तमान उपयोगकर्ता के बंद कार्य प्राप्त करें |
 | GET | `/timeline?taskIds=` | JWT | — | अल्पविराम से अलग कार्य IDs द्वारा कार्यों का टाइमलाइन डेटा प्राप्त करें |
 | GET | `/directoryUpdate/:personId` | JWT | — | किसी व्यक्ति का डायरेक्टरी अपडेट कार्य प्राप्त करें |
-| POST | `/` | JWT | — | कार्य बनाएँ या अपडेट करें। डायरेक्टरी अपडेट कार्यों को संभालने के लिए `?type=directoryUpdate` जोड़ें (फ़ोटो अपने आप अपलोड होती हैं) |
+| POST | `/` | JWT | — | कार्य बनाएँ या अपडेट करें। डायरेक्टरी अपडेट कार्यों को संभालने के लिए `?type=directoryUpdate` जोड़ें (फ़ोटो अपने आप अपलोड होती हैं)। मौजूदा कार्य का `assignedToId` बदलने पर उसके `data` के इतिहास में "Reassigned from ... to ..." प्रविष्टि जुड़ती है |
 | POST | `/:id/conversation` | JWT | `tasks.edit` या कार्ड असाइनी | कार्ड से नोट्स बातचीत जोड़ें। बॉडी: `{ conversationId }`। पहली जुड़ी बातचीत मान्य होती है; बाद की कॉल कार्ड को बिना बदले लौटाती हैं |
 | POST | `/loadForGroups` | JWT | — | विशिष्ट समूहों के लिए कार्य लोड करें। बॉडी: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | सामान्य कार्य को स्थायी रूप से हटाएँ। वर्कफ़्लो कार्ड के लिए 400 लौटाता है (कार्ड एंडपॉइंट उपयोग करें) और खाता हटाने के अनुरोधों के लिए भी 400 (उन्हें समीक्षा क्रिया से तय करें) |
 
-## स्वचालन (Automations)
+## स्वचालन (Automations) {#automations}
 
 Base path: `/doing/automations`
 
@@ -204,7 +205,7 @@ Base path: `/doing/automations`
 | POST | `/` | JWT | — | स्वचालन बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | स्वचालन हटाएँ |
 
-## क्रियाएँ (Actions)
+## क्रियाएँ (Actions) {#actions}
 
 Base path: `/doing/actions`
 
@@ -217,7 +218,7 @@ Base path: `/doing/actions`
 | POST | `/` | JWT | — | क्रियाएँ बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | क्रिया हटाएँ |
 
-## शर्तें (Conditions)
+## शर्तें (Conditions) {#conditions}
 
 Base path: `/doing/conditions`
 
@@ -230,7 +231,7 @@ Base path: `/doing/conditions`
 | POST | `/` | JWT | — | शर्तें बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | शर्त हटाएँ |
 
-## संयोजन (Conjunctions)
+## संयोजन (Conjunctions) {#conjunctions}
 
 Base path: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ Base path: `/doing/conjunctions`
 | POST | `/` | JWT | — | संयोजन बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | संयोजन हटाएँ |
 
-## सामग्री प्रदाता प्रमाणीकरण (Content Provider Auths)
+## सामग्री प्रदाता प्रमाणीकरण (Content Provider Auths) {#content-provider-auths}
 
 Base path: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ CRUD बेस क्लास का विस्तार (GET `/`, GET `/:id`
 | POST | `/` | JWT | — | सामग्री प्रदाता प्रमाणीकरण बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | — | सामग्री प्रदाता प्रमाणीकरण हटाएँ |
 
-## प्रदाता प्रॉक्सी (Provider Proxy)
+## प्रदाता प्रॉक्सी (Provider Proxy) {#provider-proxy}
 
 Base path: `/doing/providerProxy`
 
@@ -277,7 +278,7 @@ Base path: `/doing/providerProxy`
 | POST | `/getInstructions` | JWT | — | किसी सामग्री आइटम के निर्देश प्राप्त करें। बॉडी: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | किसी सामग्री आइटम के विस्तृत निर्देश प्राप्त करें। बॉडी: `{ ministryId, providerId, path }` |
 
-## संबंधित पृष्ठ
+## संबंधित पृष्ठ {#related-pages}
 
 - [Membership Endpoints](./membership.md) — लोग, समूह, भूमिकाएँ और अनुमतियाँ
 - [Attendance Endpoints](./attendance.md) — सेवा और विज़िट ट्रैकिंग

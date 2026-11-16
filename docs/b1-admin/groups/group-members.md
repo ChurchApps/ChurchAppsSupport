@@ -64,7 +64,7 @@ Group leaders can keep private notes about the group -- for example, follow-ups,
 The **Leader notes** section appears on the group page only for people who are leaders of that group. It shows the newest note, who wrote it and when, and how many notes there are.
 
 1. On the group page, click **All notes** in the **Leader notes** section.
-2. Type your note in the box and post it. To format it, highlight text and pick **Bold**, **Italic**, **Bulleted list**, or **Numbered list** from the popup that appears (or press **Ctrl+B** / **Ctrl+I**). Notes are listed with the author's name and photo and the date and time each was posted.
+2. Type your note in the box and post it. To format it, use the row of **Bold**, **Italic**, **Bulleted list**, and **Numbered list** buttons that appears under the box while you're typing: highlight text and click a button (or press **Ctrl+B** / **Ctrl+I**). In a list, **Enter** starts the next item, and **Enter** on an empty item ends the list. Notes are listed with the author's name and photo and the date and time each was posted.
 3. Click the **Back to** link with the group's name to return to the group page.
 
 :::info

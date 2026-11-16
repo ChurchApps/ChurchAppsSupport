@@ -3,7 +3,7 @@ title: "Pagdaragdag ng mga Tao"
 description: "Magdagdag ng tao sa database ng iyong simbahan sa B1 Admin, punan ang kanilang mga detalye, at i-link ang mga miyembro ng pamilya sa mga household para sa check-in at pag-uulat."
 ---
 
-# Pagdaragdag ng mga Tao
+# Pagdaragdag ng mga Tao {#adding-people}
 
 <div class="article-intro">
 
@@ -26,7 +26,7 @@ Ang seksyong People ang pundasyon ng B1 Admin — ito ang database ng mga miyemb
 ## Pagdaragdag ng Tao {#adding-a-person}
 
 1. Pumunta sa B1.church Admin dashboard.
-2. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), buksan ang **People**, at i-click ang **People**.
+2. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas), palawakin ang **People**, at i-click ang **People**.
 3. I-click ang button na **Add Person** sa header ng pahina. Mag-i-scroll pababa ang pahina sa form na **Add a New Person** sa ilalim ng directory.
 4. Punan ang **First Name** at **Last Name** ng tao (parehong kailangan). Opsyonal na magdagdag ng **Title**, **Email**, at **Mobile Phone**, pagkatapos ay i-click ang **Add** (o pindutin ang **Enter**).
 
@@ -40,7 +40,7 @@ Kung lilipat ka mula sa ibang church management system, hinahayaan ka ng feature
 
 ### Mga Babala sa Duplicate {#duplicate-warnings}
 
-Kapag naglagay ka ng email address sa form na **Add a New Person**, tinitingnan ng B1 ang mga duplicate bago i-save. Kung tumutugma ang email address (o, kapag gumagawa ng tao mula sa buong Edit form, ang numero ng telepono o tugmang first name + last name + birth date) sa taong nasa database mo na, lalabas ang dialog na **Possible Duplicate** bago i-save ang bagong record. Inililista nito ang bawat tumutugmang tao kasama ang kanilang email, telepono, at birth date para maikumpara mo.
+Kapag naglagay ka ng email address sa form na **Add a New Person**, tinitingnan ng B1 ang mga duplicate bago i-save. Kung tumutugma ang email address (o, kapag gumagawa ng tao mula sa buong Edit form, ang phone number o tugmang first name + last name + birth date) sa taong nasa database mo na, lalabas ang dialog na **Possible Duplicate** bago i-save ang bagong record. Inililista nito ang bawat tumutugmang tao kasama ang kanilang email, telepono, at birth date para maikumpara mo.
 
 - I-click ang **Use Existing** sa tabi ng isang tumutugma para gamitin ang record ng taong iyon sa halip na gumawa ng bago.
 - I-click ang **Create Anyway** para idagdag ang bagong tao kahit may nakitang posibleng tumutugma.
@@ -62,9 +62,9 @@ Ang natitirang bahagi ng profile ay nagpapakita ng buod na seksyon para sa bawat
 - **Attendance** — Ipinapakita kung aling mga linggo sa huling ilang linggo ang dinaluhan ng tao at ang kanilang mga pinakabagong pagbisita. I-click ang **All years** para sa kumpletong kasaysayan ng pagbisita, kasama ang campus, service, service time, grupo, at column na **Checked In** na may oras ng kiosk check-in (ipinapakitang dash para sa mga pagbisitang naitala nang walang kiosk check-in), o **Print** para i-print ito (may logo at pangalan ng iyong simbahan sa gitna sa itaas ng printout, sa itaas ng pangalan ng tao). Para sa mga trend ng buong simbahan sa halip na kasaysayan ng isang tao, tingnan ang [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — Ipinapakita ang mga regalo ngayong taon, kasama ang mga regalo sa mga pondong hindi tax-deductible. I-click ang **All years** para sa kumpletong [kasaysayan ng donasyon](../donations/recording-donations.md), o **Log a gift** para magtala ng bago. Kung ini-on ng iyong simbahan ang [Giving Privacy](../settings/church-settings.md#giving-privacy), mananatiling nakatago ang mga halaga hanggang i-click mo ang **Show giving**
 - **Groups** — Inililista ang [membership sa grupo](../groups/group-members.md) ng tao, na may **Joined** at ang petsa ng pagsali sa bawat grupo kapag nakatala ito
-- **Notes** — Ipinapakita ang mga kamakailang note tungkol sa tao (pastoral care, follow-up, atbp.). I-click ang **All notes** para basahin at magdagdag ng mga note. Ipinapakita ng bawat note kung sino ang sumulat nito at ang petsa at oras ng pag-post. Para i-format ang note, i-highlight ang teksto sa note box at piliin ang **Bold**, **Italic**, **Bulleted list**, o **Numbered list** mula sa maliit na popup (o pindutin ang **Ctrl+B** / **Ctrl+I**, **Cmd** sa Mac); ipinapakita ng note ang formatting pagkatapos i-post. Kapag binura ang isang note, hihingi muna ng kumpirmasyon dahil hindi na ito maibabalik. Para makita ang mga kamakailang note para sa lahat nang sabay-sabay, gamitin ang pahinang [Notes](./notes.md)
+- **Notes** — Ipinapakita ang mga kamakailang note tungkol sa tao (pastoral care, follow-up, atbp.). I-click ang **All notes** para basahin at magdagdag ng mga note. Ipinapakita ng bawat note kung sino ang sumulat nito at ang petsa at oras ng pag-post. Para i-format ang note, i-click ang loob ng note box -- lalabas sa ilalim nito ang hanay ng mga button na **Bold**, **Italic**, **Bulleted list**, at **Numbered list** habang nakapili ang box -- pagkatapos ay i-highlight ang teksto at i-click ang button (o pindutin ang **Ctrl+B** / **Ctrl+I**, **Cmd** sa Mac). Sa loob ng listahan, ang pagpindot sa **Enter** ay nagsisimula ng susunod na bullet o numero; ang pagpindot sa **Enter** sa walang lamang item ay nagtatapos sa listahan. Ipinapakita ng note ang formatting, kasama ang mga bullet at numero nito, pagkatapos i-post. Kapag binura ang isang note, hihingi muna ng kumpirmasyon dahil hindi na ito maibabalik. Para makita ang mga kamakailang note para sa lahat nang sabay-sabay, gamitin ang pahinang [Notes](./notes.md)
 - **Forms** — Inililista ang mga form ng tao at kung naisumite na ang bawat isa (tingnan ang [Working with Forms](#working-with-forms) sa ibaba)
-- **Requests & registrations** — Inililista ang mga [kahilingan sa event](../calendars/approvals.md) ng tao para sa kuwarto at resource (kasama ang mga kuwarto o resource na hiniling at **Pending**, **Approved**, o **Rejected**) at ang kanilang [mga event registration](../calendars/paid-registrations.md) (kasama ang bilang ng taong nirehistro nila at **Registered**, **Pending**, **Waitlisted**, o **Cancelled**), pinakabago muna. Ang limang pinakabago ang ipinapakita; i-click ang **All requests** para sa buong listahan. Makikita mo ang mga kahilingan sa event kung kaya mong gamitin ang pahinang [Approvals](../calendars/approvals.md), at ang mga registration kung kaya mong tingnan ang mga registration; kapag wala sa dalawa, nakatago ang seksyon
+- **Requests & registrations** — Inililista ang mga [kahilingan sa event](../calendars/approvals.md) ng tao para sa kuwarto at resource (kasama ang paglalarawan na ibinigay nila, ang mga kuwarto o resource na hiniling, at **Pending**, **Approved**, o **Rejected**) at ang kanilang [mga event registration](../calendars/paid-registrations.md) (kasama ang bilang ng taong nirehistro nila at **Registered**, **Pending**, **Waitlisted**, o **Cancelled**), pinakabago muna. Ang limang pinakabago ang ipinapakita; i-click ang **All requests** para sa buong listahan. Makikita mo ang mga kahilingan sa event kung kaya mong gamitin ang pahinang [Approvals](../calendars/approvals.md), at ang mga registration kung kaya mong tingnan ang mga registration; kapag wala sa dalawa, nakatago ang seksyon
 
 Kapag binuksan mo ang isa sa mga buong view na ito, i-click ang link na **Back to** kasama ang pangalan ng tao sa itaas para bumalik sa profile.
 

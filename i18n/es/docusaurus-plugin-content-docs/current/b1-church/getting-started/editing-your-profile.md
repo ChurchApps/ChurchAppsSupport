@@ -4,7 +4,7 @@ sidebar_label: "Editar tu perfil"
 description: "Actualiza tus datos de contacto, los miembros de tu hogar, el correo y la contraseña de inicio de sesión, y tu configuración de privacidad en el portal de miembros de B1.church."
 ---
 
-# Editar tu perfil
+# Editar tu perfil {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -48,10 +48,11 @@ Para agregar a un familiar que todavía no está en el sistema:
 
 1. Toca **Agregar familiar**.
 2. Ingresa su **Nombre**. El **Apellido** aparece con tu apellido; cámbialo si el suyo es diferente.
-3. Opcionalmente, agrega su **Título** y su **Teléfono móvil**.
+3. Opcionalmente, agrega su **Título**, su **Correo electrónico** y su **Teléfono móvil**.
 4. Elige su **Rol en el hogar**: **Jefe de familia**, **Cónyuge**, **Hijo** u **Otro** (la opción predeterminada).
-5. Toca **Agregar**. Aparecerá en **Familiares pendientes** con su rol; toca **Quitar** para eliminar a alguien de la lista. Repite el proceso para cualquier otra persona.
-6. Toca **Guardar cambios** (o **Enviar para aprobación**).
+5. Opcionalmente, toca **Agregar foto** para elegir una imagen de esa persona (toca **Cambiar foto** para elegir otra).
+6. Toca **Agregar**. Aparecerá en **Familiares pendientes** con su rol y su correo electrónico; toca **Quitar** para eliminar a alguien de la lista. Repite el proceso para cualquier otra persona.
+7. Toca **Guardar cambios** (o **Enviar para aprobación**).
 
 Si tu iglesia revisa los cambios en el directorio, los nuevos familiares se envían junto con tus otros cambios para que tu iglesia los apruebe. De lo contrario, se agregan a tu hogar en cuanto guardas.
 

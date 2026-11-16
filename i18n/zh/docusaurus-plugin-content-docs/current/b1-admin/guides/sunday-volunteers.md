@@ -3,7 +3,7 @@ title: "指南：管理主日志愿者"
 description: "在 B1 Admin 中设置志愿者团队、每周礼拜计划、礼拜程序和主日任务，让志愿者在 B1.church 和手机应用程序上查看并回应分派的工作。"
 ---
 
-# 管理主日志愿者
+# 管理主日志愿者 {#manage-sunday-volunteers}
 
 <div class="article-intro">
 
@@ -108,7 +108,7 @@ B1 Admin 不再建立定期重复的任务。若要处理需要让人员逐步�
 
 1. 志愿者可在 [B1.church 和 B1 App](../../b1-church/plans/viewing-plans.md) 中查看自己的计划
 2. 他们可以直接用手机或电脑接受或婉拒分派的工作
-3. 他们可以为无法服事的周次设置不可服事日期
+3. 他们可以为无法服事的周次设置不可服事日期。工作人员也可以在团队的 **Block-out dates** 卡片中为其填写；在你分派岗位时，被标记为不可服事的志愿者会显示 **Unavailable** 标记（参见[不可服事日期](../serving/plan-validation.md#blockout-dates)）
 4. 计划可以打印出来用于排练，或张贴在后台
 5. 志愿者可以通过[志愿者报名页面](../../b1-church/serving/volunteer-signup.md)浏览并报名开放的岗位
 

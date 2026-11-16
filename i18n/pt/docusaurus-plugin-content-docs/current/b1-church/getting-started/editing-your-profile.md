@@ -4,7 +4,7 @@ sidebar_label: "Editando seu perfil"
 description: "Atualize seus dados de contato, membros da família, e-mail e senha de login e configurações de privacidade no portal de membros do B1.church."
 ---
 
-# Editando seu perfil
+# Editando seu perfil {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -31,7 +31,7 @@ Toque na sua foto de perfil na barra superior, ou toque em **Editar perfil** no 
 
 Estas seções contêm as informações que sua igreja vê no seu cadastro de pessoa:
 
-- **Foto e nome** — toque em **Alterar foto** para enviar uma nova imagem, e edite seu **Título**, o **Nome**, o **Nome do meio** e o **Sobrenome**. Para o **Título**, escolha uma sugestão (Sr., Sra., Srta., Dr., Dra., Prof., Rev. ou Pastor) ou digite o seu, com até 10 caracteres.
+- **Foto e nome** — toque em **Alterar foto** para enviar uma nova imagem, e edite seu **Título**, Nome, Nome do meio e Sobrenome. Para o **Título**, escolha uma sugestão (Mr, Mrs, Miss, Ms, Dr, Prof, Rev ou Pastor) ou digite o seu, com até 10 caracteres.
 - **Contato** — E-mail, Celular, Telefone residencial, Telefone comercial, Data de nascimento e seu Endereço (rua, cidade, estado e CEP). Se você ativar lembretes por mensagem de texto em [Preferências de notificação](./notification-preferences.md), eles serão enviados para o seu número de celular.
 
 Faça as alterações no painel e toque em **Salvar alterações**.
@@ -48,10 +48,11 @@ Para adicionar um familiar que ainda não está no sistema:
 
 1. Toque em **Adicionar membro da família**.
 2. Informe o **Nome**. O **Sobrenome** já vem preenchido com o seu; altere-o se for diferente.
-3. Opcionalmente, informe o **Título** e o **Celular**.
+3. Opcionalmente, informe o **Título**, o **E-mail** e o **Celular**.
 4. Escolha o **Papel na família**: **Responsável**, **Cônjuge**, **Filho(a)** ou **Outro** (o padrão).
-5. Toque em **Adicionar**. A pessoa aparece em **Membros da família pendentes** com o papel escolhido; toque em **Remover** para tirá-la da lista. Repita para quem mais precisar.
-6. Toque em **Salvar alterações** (ou **Enviar para aprovação**).
+5. Opcionalmente, toque em **Adicionar foto** para escolher uma foto dele (toque em **Alterar foto** para escolher outra).
+6. Toque em **Adicionar**. A pessoa aparece em **Membros da família pendentes** com o papel e o e-mail; toque em **Remover** para tirá-la da lista. Repita para quem mais precisar.
+7. Toque em **Salvar alterações** (ou **Enviar para aprovação**).
 
 Se sua igreja revisar alterações no diretório, os novos membros da família são enviados junto com suas outras alterações para aprovação da igreja. Caso contrário, eles são adicionados à sua família assim que você salvar.
 

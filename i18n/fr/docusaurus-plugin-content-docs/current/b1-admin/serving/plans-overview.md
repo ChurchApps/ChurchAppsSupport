@@ -3,7 +3,7 @@ title: "Vue d'ensemble des plans"
 description: "Obtenez une vue d'ensemble des affectations des bénévoles sur de nombreuses dates de service dans B1 Admin, repérez les postes non pourvus, et comblez-les ou écrivez à votre équipe depuis une seule grille."
 ---
 
-# Vue d'ensemble des plans
+# Vue d'ensemble des plans {#plans-overview}
 
 <div class="article-intro">
 
@@ -34,7 +34,7 @@ La vue d'ensemble affiche une grille où :
 
 - Les **lignes** représentent chaque poste (par exemple, « Musique : guitare », « Technique : projection ») regroupés par catégorie
 - Les **colonnes** représentent les prochaines dates de service (par exemple, « 14 avr. », « 21 avr. »)
-- Les **cellules** indiquent le nom du bénévole affecté à ce poste à cette date
+- Les **cellules** indiquent le nom du bénévole affecté à ce poste à cette date. Une petite icône de calendrier rouge après un nom signifie que ce bénévole a une [date de blocage](./plan-validation.md#blockout-dates) ce jour-là ; survolez-la pour voir les dates
 
 Les cellules surlignées en **rouge** ne sont pas pourvues : aucun bénévole n'y a encore été affecté. Vous repérez ainsi les lacunes de personnel d'un coup d'œil, sans ouvrir chaque plan individuellement.
 
@@ -46,7 +46,7 @@ Les noms des bénévoles sont affichés sous forme abrégée (prénom et initial
 
 Vous n'avez pas besoin d'ouvrir chaque plan pour combler les postes vacants. Cliquez sur n'importe quelle cellule de la grille pour ouvrir un panneau d'affectation pour ce poste et cette date. Vous pouvez alors :
 
-- Cliquer sur le nom d'un membre de l'équipe pour l'affecter au poste (ou, pour un poste sans groupe de bénévoles, rechercher n'importe quelle personne de votre église)
+- Cliquer sur le nom d'un membre de l'équipe pour l'affecter au poste (ou, pour un poste sans groupe de bénévoles, rechercher n'importe quelle personne de votre église). Utilisez **Rechercher dans l'équipe** pour trouver quelqu'un dans une longue équipe. Toute personne bloquée ce jour-là affiche un badge **Indisponible** et est placée en dernier
 - Cliquer sur l'icône **Retirer** (X) à côté d'une personne déjà affectée, puis confirmer, pour la retirer de ce poste
 - Cliquer sur **Terminé** pour fermer le panneau sans quitter la vue d'ensemble
 
@@ -64,13 +64,13 @@ La planification automatique ne remplit que les postes déjà vides : elle ne re
 
 Cliquez sur **Écrire aux bénévoles** et confirmez pour envoyer une notification à chaque bénévole affecté à n'importe quel moment de la plage de dates et du ministère filtrés, en une seule action, plutôt que plan par plan. B1 indique combien de courriels ont été envoyés et combien ont échoué.
 
-## Envoyer un message texte à toutes les personnes planifiées {#texting-everyone-scheduled}
+## Envoyer un texto à toutes les personnes planifiées {#texting-everyone-scheduled}
 
 Si votre église a connecté un [fournisseur de messages texte](../settings/church-settings.md#texting) et que vous pouvez à la fois modifier les plans et envoyer des messages texte, un bouton **Envoyer un texto aux bénévoles** apparaît en haut de la vue d'ensemble.
 
 1. Cliquez sur **Envoyer un texto aux bénévoles**.
 2. La boîte de dialogue indique combien de bénévoles recevront le message (par exemple, « 12 bénévoles sur 14 recevront ce message »), ainsi que le nombre de personnes qui ont refusé les messages texte et le nombre de personnes sans numéro de téléphone au dossier.
-3. Saisissez votre **message**. Vous pouvez cliquer sur un espace réservé pour insérer le nom de chaque bénévole ou celui de votre église.
+3. Saisissez votre **Message**. Vous pouvez cliquer sur un espace réservé pour insérer le nom de chaque bénévole ou celui de votre église.
 4. Cliquez sur **Envoyer**. B1 indique combien de messages ont été envoyés.
 
 Chaque bénévole affecté dans la plage de dates reçoit un seul message au numéro de téléphone mobile de son profil, même s'il sert à plusieurs dates. Les personnes qui partagent un même numéro de téléphone (comme un téléphone familial) ne reçoivent qu'un seul message. Les bénévoles ayant répondu STOP à un message précédent sont ignorés.

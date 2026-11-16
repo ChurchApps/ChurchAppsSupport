@@ -37,6 +37,12 @@ Configura los recordatorios en la sección **Recordatorios** del evento. Expánd
 
 Para detener los recordatorios de un evento, desactive **Habilitar recordatorios** y guarde.
 
+### Enviar un recordatorio ahora {#sending-a-reminder-now}
+
+En un evento que ya está guardado, haga clic en **Enviar ahora** junto a **Guardar** para enviar el recordatorio de inmediato, por ejemplo, después de un cambio de última hora. Usa la configuración guardada y llega a las mismas personas, para la próxima fecha del evento. B1 muestra entonces cuántas personas recibieron el aviso, por ejemplo **Enviado a 12 personas**. Sus recordatorios programados se siguen enviando según lo previsto.
+
+**Enviar ahora** solo está disponible una vez activados y guardados los recordatorios, así que guarde primero cualquier cambio. Si el recordatorio incluye **Texto**, también necesita permiso para enviar mensajes de texto.
+
 En un evento que ya está guardado, una **vista previa en vivo** muestra aproximadamente cuántas personas recibirán el recordatorio, cuántos asistentes no se pueden contactar y los próximos envíos programados a medida que realiza cambios, para que pueda confirmar que el recordatorio se ve bien antes de guardar. Un evento recién creado no tiene vista previa hasta que se haya guardado.
 
 ## A quién se recuerda {#who-gets-reminded}

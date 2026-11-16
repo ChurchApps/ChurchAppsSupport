@@ -3,7 +3,7 @@ title: "उपस्थिति एंडपॉइंट्स"
 description: "B1 Admin और B1 Checkin के लिए उपस्थिति API संदर्भ: परिसर, सेवाएँ, सेवा समय, सत्र, विज़िट, चेक-इन नियम और निर्यात एंडपॉइंट।"
 ---
 
-# उपस्थिति एंडपॉइंट्स
+# उपस्थिति एंडपॉइंट्स {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ description: "B1 Admin और B1 Checkin के लिए उपस्थित�
 
 **Base path:** `/attendance`
 
-## Campuses
+## Campuses {#campuses}
 
 Base path: `/attendance/campuses`
 
@@ -26,7 +26,7 @@ Base path: `/attendance/campuses`
 | POST | `/` | JWT | Services.Edit | कैंपस बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | Services.Edit | कैंपस हटाएँ |
 
-## Services
+## Services {#services}
 
 Base path: `/attendance/services`
 
@@ -40,7 +40,7 @@ GenericCrudController का विस्तार करता है, जि�
 | POST | `/` | JWT | Services.Edit | सेवाएँ बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | Services.Edit | सेवा हटाएँ |
 
-### उदाहरण: कैंपस के आधार पर सेवाएँ खोजें
+### उदाहरण: कैंपस के आधार पर सेवाएँ खोजें {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ GenericCrudController का विस्तार करता है, जि�
 | POST | `/` | JWT | Services.Edit | सेवा समय बनाएँ या अपडेट करें। वैकल्पिक शेड्यूल फ़ील्ड: `dayOfWeek` (0 = रविवार … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (आरंभ से पहले), `checkinCloseMinutes` (समाप्ति के बाद)। चेक-इन का समय तभी सीमित होता है जब `dayOfWeek` और `startTime` दोनों सेट हों |
 | DELETE | `/:id` | JWT | Services.Edit | सेवा समय हटाएँ |
 
-## Group Service Times
+## Group Service Times {#group-service-times}
 
 Base path: `/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ Base path: `/attendance/groupservicetimes`
 | POST | `/` | JWT | Services.Edit | समूह-सेवा समय संबंध बनाएँ या अपडेट करें |
 | DELETE | `/:id` | JWT | Services.Edit | समूह-सेवा समय संबंध हटाएँ |
 
-## Attendance Records
+## Attendance Records {#attendance-records}
 
 Base path: `/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ Base path: `/attendance/attendancerecords`
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | सेवा समय पर असाइन हर समूह के लिए, उस तारीख का `{ groupId, sessionId, attendanceCount }` लौटाएँ (`date` का प्रारूप `YYYY-MM-DD` है; यदि समूह का कोई सत्र नहीं है तो `sessionId` null होता है)। B1Admin के **Who Still Needs Attendance** डायलॉग को डेटा देता है |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | फ़िल्टर (कैंपस, सेवा, सेवा समय, समूह, तारीख सीमा) के साथ उपस्थिति रिकॉर्ड खोजें |
 
-### उदाहरण: उपस्थिति रुझान
+### उदाहरण: उपस्थिति रुझान {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sessions
+## Sessions {#sessions}
 
 Base path: `/attendance/sessions`
 
@@ -130,7 +130,7 @@ GenericCrudController का विस्तार करता है, जि�
 | POST | `/` | JWT | Attendance.Edit या Group Leader | सत्र बनाएँ या अपडेट करें। समूह लीडर अपने समूहों के सत्र सहेज सकते हैं |
 | DELETE | `/:id` | JWT | Attendance.Edit | सत्र हटाएँ |
 
-## Visits
+## Visits {#visits}
 
 Base path: `/attendance/visits`
 
@@ -141,11 +141,12 @@ Base path: `/attendance/visits`
 | GET | `/` | JWT | Attendance.View | सभी विज़िट सूचीबद्ध करें। `?personId=` से फ़िल्टर करें |
 | GET | `/:id` | JWT | Attendance.View | ID के आधार पर विज़िट प्राप्त करें |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View या Attendance.Checkin | किसी सेवा में लोगों के लिए चेक-इन डेटा लोड करें। अंतिम दर्ज की गई तारीख के विज़िट सत्रों सहित विज़िट लौटाता है |
+| GET | `/active?peopleIds=` | JWT | Attendance.View या Attendance.Checkin | सूचीबद्ध लोगों की आज की वे विज़िट जो अभी तक चेक-आउट नहीं हुई हैं, विज़िट सत्र और सत्र सहित। `peopleIds` (अल्पविराम से अलग) आवश्यक है; इसके बिना 400। B1Checkin के नाम से चेक-आउट में उपयोग होता है |
 | POST | `/` | JWT | Attendance.Edit | विज़िट बनाएँ या अपडेट करें |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit या Attendance.Checkin | चेक-इन डेटा सबमिट करें। विज़िट और विज़िट सत्र बनाता/अपडेट करता है, और पुराने रिकॉर्ड हटाता है |
 | DELETE | `/:id` | JWT | Attendance.Edit | विज़िट हटाएँ |
 
-### उदाहरण: चेक-इन प्रवाह
+### उदाहरण: चेक-इन प्रवाह {#example-check-in-flow}
 
 **चरण 1 -- मौजूदा चेक-इन डेटा लोड करें:**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 यदि लक्षित सेवा समय का चेक-इन शेड्यूल है और उसकी विंडो बंद है (उसी कैंपस-प्राथमिकता वाले समय क्षेत्र क्रम में मापी गई जैसे `checkinOpen` के लिए), तो कुछ भी सहेजा नहीं जाता और प्रतिक्रिया `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }` होती है। क्षमता (capacity) और स्वयंसेवक-अनुपात (volunteer-ratio) के उल्लंघन पर भी 409 लौटता है (`error: "capacity"` या `"ratio"`)। जिन सत्रों पर कोई व्यक्ति आज पहले से है (हर चेक-इन पर फिर से पोस्ट किए गए), उनके लिए विंडो जाँच छोड़ दी जाती है, ताकि किसी परिवार के सदस्य किसी पहले वाले सेवा समय की विंडो बंद होने के बाद भी खुले सेवा समय को जोड़ सकें।
 
-## Visit Sessions
+## Visit Sessions {#visit-sessions}
 
 Base path: `/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Base path: `/attendance/visitsessions`
 | DELETE | `/:id` | JWT | Attendance.Edit | ID के आधार पर विज़िट सत्र हटाएँ |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit या Group Leader | किसी व्यक्ति को सत्र से हटाएँ। विज़िट सत्र हटाता है, और यदि कोई सत्र शेष न रहे तो मूल विज़िट भी हटाता है। समूह लीडर अपने समूहों की उपस्थिति हटा सकते हैं |
 
-### उदाहरण: उपस्थिति त्वरित लॉग करें
+### उदाहरण: उपस्थिति त्वरित लॉग करें {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### उदाहरण: सत्र की उपस्थिति डाउनलोड करें
+### उदाहरण: सत्र की उपस्थिति डाउनलोड करें {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Streaks
+## Streaks {#streaks}
 
 Base path: `/attendance/streaks`
 
@@ -269,7 +270,7 @@ Base path: `/attendance/streaks`
 |--------|------|------|------------|-------------|
 | GET | `/person/:personId` | JWT | — | किसी व्यक्ति के लिए उपस्थिति स्ट्रीक लोड करें |
 
-## Related Pages
+## Related Pages {#related-pages}
 
 - [Membership Endpoints](./membership.md) — व्यक्ति, समूह, भूमिकाएँ और चर्च प्रबंधन
 - [Authentication & Permissions](./authentication.md) — लॉगिन प्रवाह, JWT, अनुमति मॉडल

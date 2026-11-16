@@ -90,6 +90,14 @@ Site widgets appear on every page of your site, floating above the page content:
 
 Uncheck **Enabled** and click **Save** to turn a widget off. These widgets apply to every one of your church's websites.
 
+The Announcement Bar also shows at the top of the Home screen in your church's B1 app (the member portal at `/mobile`, including the installed app), above the greeting, with the same text, link, colors, and dates. In the app, a **Link URL** that points to one of your own pages (for example, `/food`) opens that page inside the app instead of loading your website. See [Navigating B1App](../../b1-church/getting-started/navigating.md#home).
+
+A few details about how the bar behaves:
+
+- On phones, long text wraps onto more lines, and the link drops to its own line if it doesn't fit.
+- On your website, the menu bar sits just below the announcement bar, so the menu button stays visible. Menus and pop-up windows open on top of the bar.
+- When someone closes the bar with its **×** button, it stays hidden on that device for one day and then comes back. If you change the **Text**, the new announcement shows right away, even to people who closed the old one.
+
 ## Redirects & Analytics
 
 The **Redirects & analytics** card (below the Style Settings) holds two unrelated but commonly-needed settings:

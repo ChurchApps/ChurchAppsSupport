@@ -4,7 +4,7 @@ sidebar_label: "Rediger profilen din"
 description: "Oppdater kontaktopplysningene, husstandsmedlemmene, innloggings-e-posten og passordet, og personverninnstillingene dine i B1.church-medlemsportalen."
 ---
 
-# Rediger profilen din
+# Rediger profilen din {#editing-your-profile}
 
 <div class="article-intro">
 
@@ -48,10 +48,11 @@ Slik legger du til et familiemedlem som ikke finnes i systemet ennå:
 
 1. Trykk på **Legg til familiemedlem**.
 2. Skriv inn **fornavnet** deres. **Etternavn** er fylt ut med ditt etternavn; endre det hvis deres er et annet.
-3. Legg eventuelt til **Tittel** og **mobiltelefon**.
-4. Velg **husstandsrollen** deres: **Hovedperson**, **Ektefelle**, **Barn** eller **Annet** (standard).
-5. Trykk på **Legg til**. De vises under **Ventende familiemedlemmer** med rollen sin. Trykk på **Fjern** for å ta noen av listen. Gjenta for alle andre.
-6. Trykk på **Lagre endringer** (eller **Send inn for godkjenning**).
+3. Legg eventuelt til **Tittel**, **E-post** og **mobiltelefon**.
+4. Velg **husstandsrollen** deres: **Hovedperson**, **Ektefelle**, **Barn** eller **Annen** (standard).
+5. Trykk eventuelt på **Legg til bilde** for å velge et bilde av dem (trykk på **Endre bilde** for å velge et annet).
+6. Trykk på **Legg til**. De vises under **Ventende familiemedlemmer** med rollen og e-posten sin; trykk på **Fjern** for å ta noen av listen. Gjenta for alle andre.
+7. Trykk på **Lagre endringer** (eller **Send inn for godkjenning**).
 
 Hvis menigheten din gjennomgår endringer i katalogen, sendes de nye familiemedlemmene inn sammen med de andre endringene dine, slik at menigheten kan godkjenne dem. Ellers legges de til i husstanden din så snart du lagrer.
 
@@ -80,7 +81,7 @@ Seksjonen Personvern viser hvem som kan se kontaktopplysningene dine på tvers a
 | **Mine gruppeledere og ansatte** | Synlig bare for menighetens ansatte og lederne i gruppene du er med i. |
 | **Bare ansatte** | Synlig bare for menighetens ansatte (personer med medlemsstatusen Ansatt eller tillatelsen til å se personer). |
 
-Trykk på **Lagre** for å bruke valgene dine. Menigheten din setter en standard for hvert av disse tre feltene. Se [Innstillinger for mobilappen](/docs/b1-admin/settings/mobile-app). Det du velger her, overstyrer standarden for din egen post.
+Trykk på **Lagre** for å bruke valgene dine. Menigheten din setter en standard for hvert av disse tre feltene — se [Innstillinger for mobilappen](/docs/b1-admin/settings/mobile-app) — men det du velger her, overstyrer standarden for din egen post.
 
 :::tip
 Du ser alltid din egen informasjon uavhengig av disse innstillingene, og ansatte med tillatelsen til å se personer kan alltid se den også.

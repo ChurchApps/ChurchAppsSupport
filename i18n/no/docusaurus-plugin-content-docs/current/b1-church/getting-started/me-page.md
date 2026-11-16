@@ -3,7 +3,7 @@ title: "Me-siden"
 description: "Hva Me-siden i B1App-medlemsportalen viser: kommende tjeneste, arrangementer og påmeldinger, oppgavene dine, husstand, grupper, giving, skjemaer og innboks."
 ---
 
-# Me-siden
+# Me-siden {#the-me-page}
 
 <div class="article-intro">
 
@@ -46,7 +46,7 @@ Hvis ansatte i menigheten har tildelt deg oppfølgingsarbeid, vises to seksjoner
 - **Mine kort** -- arbeidsflytkort tildelt deg (for eksempel oppfølging av en ny gjest). Hvert viser forfallsdatoen, med merket **Forfalt** eller **Utsatt** når det gjelder.
 - **Mine oppgaver** -- andre oppgaver tildelt deg, med personen hver enkelt handler om.
 
-Hver seksjon viser de tre nyeste elementene. Trykk på **Alle kort** eller **Alle oppgaver** for å åpne hele listen **Mine oppgaver**. Trykk på et kort for å se steget, forfallsdatoen og hvem det gjelder, og for å legge til **Notater**. Trykk på **Fullført** (eller utfallsknappen menigheten har satt opp for steget) når du er ferdig, eller trykk på **1 dag**, **3 dager** eller **7 dager** under **Utsett** for å legge det til side en stund. Oppgaver åpnes skrivebeskyttet her, med eventuelle notater de allerede har. Lukk dem i B1 Admin.
+Hver seksjon viser de tre nyeste elementene. Trykk på **Alle kort** eller **Alle oppgaver** for å åpne hele listen **Mine oppgaver**. Trykk på et kort for å se steget, forfallsdatoen og hvem det gjelder, og for å legge til **Notater**. Når et kort eller en oppgave gjelder en person, viser radene **Ring** og **E-post** personens mobilnummer og e-postadresse -- trykk på en av dem for å ringe eller sende e-post. Trykk på **Fullført** (eller utfallsknappen menigheten har satt opp for steget) når du er ferdig, eller trykk på **1 dag**, **3 dager** eller **7 dager** under **Utsett** for å legge det til side en stund. Oppgaver åpnes skrivebeskyttet her, med hvem de kommer fra, hvem de gjelder og når de ble opprettet. Lukk dem i B1 Admin. Hvis en oppgave allerede har notater, kan du lese dem og legge til dine egne.
 
 Seksjonene skjules når ingenting er tildelt deg.
 

@@ -3,11 +3,11 @@ title: "Flux de travail"
 description: "Créez des tableaux de type Kanban dans B1 Admin pour accompagner les personnes à travers des étapes de suivi, avec des courriels et messages texte automatisés et des déclencheurs qui ajoutent les personnes automatiquement."
 ---
 
-# Flux de travail
+# Flux de travail {#workflows}
 
 <div class="article-intro">
 
-Les flux de travail font progresser les personnes à travers une série d'étapes sur un tableau visuel. Chaque personne devient une carte qui passe d'une étape à la suivante -- du suivi d'un premier visiteur à un processus d'adhésion, en passant par un remerciement à un premier donateur, et tout autre cas où vous devez suivre de nombreuses personnes à travers les mêmes étapes. Une étape peut demander à un bénévole de faire quelque chose (passer un appel, avoir une conversation) **et** exécuter elle-même des actions automatisées -- envoyer un courriel ou un message texte, attendre quelques jours, ajouter la personne à un groupe. Les flux de travail prennent donc en charge à la fois le suivi humain et les tâches routinières qui l'entourent. Ils étendent les [tâches](./tasks.md) à un tableau Kanban glisser-déposer afin que personne ne passe entre les mailles du filet.
+Les flux de travail font progresser les personnes à travers une série d'étapes sur un tableau visuel. Chaque personne devient une carte qui passe d'une étape à la suivante -- du suivi d'un premier visiteur à un processus d'adhésion, en passant par un remerciement à un premier donateur, et tout autre cas où vous devez suivre de nombreuses personnes à travers les mêmes étapes. Une étape peut demander à un bénévole de faire quelque chose (passer un appel, avoir une conversation) **et** exécuter elle-même des actions automatisées -- envoyer un courriel ou un texto, attendre quelques jours, ajouter la personne à un groupe. Les flux de travail prennent donc en charge à la fois le suivi humain et les tâches routinières qui l'entourent. Ils étendent les [tâches](./tasks.md) à un tableau Kanban glisser-déposer afin que personne ne passe entre les mailles du filet.
 
 </div>
 
@@ -54,8 +54,8 @@ Chaque tableau de flux de travail est composé d'**étapes**, affichées sous fo
 
 Lorsque vous ajoutez ou modifiez une étape, vous pouvez configurer :
 
-- **Nom de l'étape** -- l'en-tête de la colonne (par exemple, « Appel de bienvenue » ou « En attente d'inscription »).
-- **Échéance dans (jours)** -- définit automatiquement une date d'échéance lorsqu'une carte entre dans cette étape. Les cartes dépassant leur date d'échéance sont signalées **En retard**.
+- **Nom de l'étape** -- l'en-tête de la colonne (par exemple « Appel de bienvenue » ou « En attente d'inscription »).
+- **Échéance dans (jours)** -- définit automatiquement une date d'échéance lorsqu'une carte entre dans cette étape. Les cartes dépassant leur date d'échéance sont signalées **En retard**. Laissez le champ vide pour aucune date d'échéance ; vous pouvez aussi effacer un nombre défini précédemment.
 - **Responsable par défaut** -- la personne ou le groupe auquel les nouvelles cartes de cette étape sont assignées automatiquement. Lorsque le responsable par défaut est une personne, elle reçoit une notification indiquant qu'une carte lui a été assignée.
 - **Actions automatisées** -- ce que le système fait de lui-même lorsqu'une carte arrive (voir ci-dessous).
 - **Acheminement** -- l'endroit où la carte va lorsqu'elle quitte l'étape (voir [Acheminement](#routing-cards-with-outcomes-and-conditions)).
@@ -117,10 +117,10 @@ Choisissez **Aviser une personne**, cliquez sur **Choisir une personne** et sais
 
 ### Envoyer un texto {#sending-a-text}
 
-Choisissez **Envoyer un texto** et saisissez le **message texte** (jusqu'à 1 600 caractères). Si votre église a enregistré des [modèles de textes](../settings/email-templates.md), une liste **Démarrer à partir d'un modèle** apparaît au-dessus de la zone. En choisir un copie le texte du modèle dans le message, que vous pouvez encore modifier. L'étape conserve sa propre copie ; les modifications ultérieures du modèle ne changent donc pas l'étape. Lorsqu'une carte entre dans l'étape, la personne reçoit ce texte sur son téléphone mobile. Pour personnaliser le message, cliquez sur une puce sous la zone de message -- **Prénom**, **Nom**, **Nom d'affichage** ou **Nom de l'église** -- pour insérer `{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}` à l'emplacement de votre curseur. Chacun est rempli avec les renseignements de la personne au moment de l'envoi. Les puces **Montant**, **Date du don**, **Fonds** et **Reçu** insèrent les champs de don, qui ne se remplissent que lorsqu'un déclencheur **Don · Créé** a démarré le flux de travail. Par exemple : `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
+Choisissez **Envoyer un texto** et saisissez le **message texte** (jusqu'à 1 600 caractères). Si votre église a enregistré des [modèles de textes](../settings/email-templates.md), une liste **Démarrer à partir d'un modèle** apparaît au-dessus de la zone. En choisir un copie le texte du modèle dans le message, que vous pouvez encore modifier. L'étape conserve sa propre copie ; les modifications ultérieures du modèle ne changent donc pas l'étape. Lorsqu'une carte entre dans l'étape, la personne reçoit ce texto sur son téléphone mobile. Pour personnaliser le message, cliquez sur une puce sous la zone de message -- **Prénom**, **Nom**, **Nom d'affichage** ou **Nom de l'église** -- pour insérer `{{firstName}}`, `{{lastName}}`, `{{displayName}}` ou `{{churchName}}` à l'emplacement de votre curseur. Chacun est rempli avec les renseignements de la personne au moment de l'envoi. Les puces **Montant**, **Date du don**, **Fonds** et **Reçu** insèrent les champs de don, qui ne se remplissent que lorsqu'un déclencheur **Don · Créé** a démarré le flux de travail. Par exemple : `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
-- Si la personne n'a pas de téléphone mobile au dossier, aucun texte n'est envoyé et l'historique de la carte enregistre **Texto ignoré : aucun téléphone mobile**.
-- Si la personne s'est désabonnée, aucun texte n'est envoyé et l'historique de la carte enregistre **Texto ignoré : désabonné**.
+- Si la personne n'a pas de téléphone mobile au dossier, aucun texto n'est envoyé et l'historique de la carte enregistre **Texto ignoré : aucun téléphone mobile**.
+- Si la personne s'est désabonnée, aucun texto n'est envoyé et l'historique de la carte enregistre **Texto ignoré : désabonné**.
 - Lorsque le texto part, l'historique de la carte enregistre **Texto envoyé**. Si l'envoi échoue -- par exemple, parce qu'aucun fournisseur de messages texte n'est connecté ou que votre église n'a plus de crédits de messages -- l'échec est consigné dans l'historique de la carte, et les autres actions de l'étape s'exécutent tout de même.
 
 :::warning
@@ -158,7 +158,7 @@ Ouvrez un flux de travail pour voir son tableau. Chaque carte affiche le nom de 
 
 Depuis le tiroir de la carte, vous pouvez :
 
-- **Assigner** la carte à une autre personne ou à un autre groupe.
+- **Assigner** la carte à une autre personne ou à un autre groupe. Le changement est consigné dans l'**Activité** de la carte, par exemple « Réassignée de Jane Smith à John Doe ».
 - **Mettre en veille** la carte pendant 1 jour, 3 jours ou 1 semaine pour masquer temporairement son échéance.
 - **Renvoyer** à l'étape précédente ou **Passer** à l'étape suivante.
 - **Épingler l'assignation** -- conserver le même responsable sur la carte même lorsqu'elle passe d'une étape à l'autre. Par défaut, déplacer une carte vers une nouvelle étape la réassigne au responsable par défaut de cette étape ; l'épingler maintient la personne actuelle responsable du début à la fin.
@@ -253,7 +253,7 @@ Un type particulier de flux de travail peut assurer le suivi des [demandes de se
 
 Ces flux utilisent une action **Envoyer une demande de service** au lieu de **Envoyer un courriel** et **Envoyer un texto**. Choisissez **Courriel** ou **Message texte** et, facultativement, rédigez un **message de demande**. La demande comprend toujours le rôle, le plan, la date du service et un lien pour répondre ; vous pouvez utiliser `{{planName}}`, `{{positionName}}` et `{{serviceDate}}` dans votre message. Laissez le message vide pour utiliser la demande par défaut. Les préférences de notification des bénévoles, leur consentement aux textos, votre fournisseur de messages texte et l'approbation de courriel de votre église s'appliquent tous, et toute tentative ignorée ou bloquée est consignée sur la carte. **Envoyer un courriel**, **Envoyer un texto** et **Ajouter au flux de travail** ne sont pas disponibles sur ces tableaux.
 
-L'onglet **Déclencheurs** d'un flux de confirmation explique comment les cartes sont démarrées plutôt que d'offrir des déclencheurs, et ces flux n'apparaissent pas dans les listes **Ajouter au flux de travail** des personnes.
+L'onglet **Déclencheurs** d'un flux de confirmation explique comment les cartes sont démarrées plutôt que d'offrir des déclencheurs, et ces flux n'apparaissent pas dans les listes **Ajouter au flux de travail** des personnes. Le tableau ne comporte pas de bouton **Ajouter une carte**, puisque les cartes ne proviennent que des demandes de service d'un plan.
 
 ### Comment les cartes sont démarrées et fermées {#how-cards-are-started-and-closed}
 

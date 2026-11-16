@@ -3,7 +3,7 @@ title: "Pangkalahatang-ideya ng Plans"
 description: "Tingnan nang buo ang mga assignment ng volunteer sa maraming petsa ng serbisyo sa B1 Admin, tukuyin ang mga hindi napunang posisyon, at punan o i-email ang iyong team mula sa iisang grid."
 ---
 
-# Pangkalahatang-ideya ng Plans
+# Pangkalahatang-ideya ng Plans {#plans-overview}
 
 <div class="article-intro">
 
@@ -34,7 +34,7 @@ Ipinapakita ng overview ang isang grid kung saan:
 
 - **Mga row** ang kumakatawan sa bawat posisyon (hal., "Music: Guitar", "Tech: Projection") na pinagpangkat ayon sa kategorya
 - **Mga column** ang kumakatawan sa paparating na petsa ng serbisyo (hal., "Apr 14", "Apr 21")
-- **Mga cell** ang nagpapakita ng pangalan ng volunteer na naitalaga sa posisyong iyon sa petsang iyon
+- **Mga cell** ang nagpapakita ng pangalan ng volunteer na naitalaga sa posisyong iyon sa petsang iyon. Ang maliit na pulang calendar icon sa tabi ng pangalan ay nangangahulugang may [block-out date](./plan-validation.md#blockout-dates) ang volunteer na iyon sa araw na iyon; i-hover ito para makita ang mga petsa
 
 Ang mga cell na may **pulang** highlight ay hindi pa napupunan -- wala pang naitatalagang volunteer. Dahil dito, madaling makita ang mga puwang sa staffing sa isang tingin nang hindi binubuksan ang bawat plan.
 
@@ -46,7 +46,7 @@ Ipinapakita ang mga pangalan ng volunteer sa pinaikling format (unang pangalan a
 
 Hindi mo kailangang buksan ang bawat plan para punan ang mga bakanteng puwesto. I-click ang alinmang cell sa grid para buksan ang assignment panel para sa posisyon at petsang iyon. Mula roon, maaari kang:
 
-- I-click ang pangalan ng miyembro ng team para i-assign siya sa posisyon (o, para sa posisyong walang Volunteer Group, maghanap ng sinuman sa simbahan mo)
+- I-click ang pangalan ng miyembro ng team para i-assign siya sa posisyon (o, para sa posisyong walang Volunteer Group, maghanap ng sinuman sa simbahan mo). Gamitin ang **Search team** para makahanap ng tao sa mahabang team. Ang sinumang naka-block out sa araw na iyon ay may badge na **Unavailable** at nakalista sa dulo
 - I-click ang icon na **Remove** (X) sa tabi ng sinumang naitalaga na, at kumpirmahin, para alisin siya sa puwestong iyon
 - I-click ang **Done** para isara ang panel nang hindi umaalis sa overview
 
@@ -57,7 +57,7 @@ Dahil dito, posible nang punan ang buong iskedyul sa isang pagdaan lang -- magtr
 I-click ang **Auto-schedule** at kumpirmahin para punan nang sabay-sabay ang bawat bakante at hindi napunang puwesto sa kasalukuyang grid. Para sa bawat plan na nakikita, kumukuha ito ng mga kandidato mula sa grupong naka-link sa bawat posisyon at awtomatikong pinupunan ang mga bakanteng puwesto, at ipinapaalam kung ilan sa mga nakikitang plan ang napunan nito (halimbawa, "Auto-scheduled 3 of 4 plans"). Nilalaktawan ang mga posisyong walang Volunteer Group. Isa-isang pinupunan ang mga plan para hindi mai-double-book ang parehong volunteer sa dalawang petsa sa isang pagdaan.
 
 :::info
-Pinupunan lamang ng auto-schedule ang mga puwestong bakante na -- hindi nito kailanman pinapalitan ang umiiral na assignment.
+Pinupunan lamang ng auto-schedule ang mga puwestong bakante pa -- hindi nito kailanman pinapalitan ang umiiral na assignment.
 :::
 
 ## Pag-email sa Lahat ng Naka-iskedyul {#emailing-everyone-scheduled}
@@ -73,7 +73,7 @@ Kung may nakakabit na [texting provider](../settings/church-settings.md#texting)
 3. I-type ang iyong **Message**. Maaari kang mag-click ng placeholder para ipasok ang pangalan ng bawat volunteer o pangalan ng simbahan mo.
 4. I-click ang **Send**. Ipinapaalam ng B1 kung ilang text ang naipadala.
 
-Bawat volunteer na naitalaga sa saklaw ng petsa ay makakatanggap ng isang text sa mobile number ng kanyang profile, kahit na naglilingkod siya sa ilang petsa. Ang mga taong may iisang phone number (gaya ng family phone) ay isang text lang ang natatanggap. Nilalaktawan ang mga volunteer na sumagot ng STOP sa naunang text.
+Bawat volunteer na naitalaga sa saklaw ng petsa ay makakatanggap ng isang text sa mobile number sa kanyang profile, kahit na naglilingkod siya sa ilang petsa. Ang mga taong may iisang phone number (gaya ng family phone) ay isang text lang ang natatanggap. Nilalaktawan ang mga volunteer na sumagot ng STOP sa naunang text.
 
 :::info
 Ipinapadala ang mga text sa sarili mong texting provider ng simbahan, kaya naaangkop ang presyo nito. Kung nauubusan ng texting credits ang simbahan mo, titigil ang pagpapadala at sasabihin ito ng dialog. Hanggang 200 volunteer lamang ang maaabot ng isang pagpapadala; paliitin ang saklaw ng petsa kung mas marami pa.
@@ -100,6 +100,6 @@ Sinasalamin ng CSV export ang anumang filter na kasalukuyang nakalapat -- tangin
 
 ## Mga Kaugnay na Artikulo {#related-articles}
 
-- [Service Plans](./plans.md) -- Gumawa at pamahalaan ang mga indibidwal na service plan
-- [Service Order](./service-order.md) -- Buuin ang order of service sa loob ng isang plan
-- [Scheduling Lessons](./scheduling-lessons.md) -- Mag-iskedyul ng mga aralin kasama ng iyong mga service plan
+- [Service Plans](./plans.md) — Gumawa at pamahalaan ang mga indibidwal na service plan
+- [Service Order](./service-order.md) — Buuin ang order of service sa loob ng isang plan
+- [Scheduling Lessons](./scheduling-lessons.md) — Mag-iskedyul ng mga aralin kasama ng iyong mga service plan

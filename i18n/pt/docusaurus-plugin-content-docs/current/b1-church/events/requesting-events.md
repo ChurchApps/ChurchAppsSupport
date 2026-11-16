@@ -3,7 +3,7 @@ title: "Solicitando eventos e salas"
 description: "Solicite a reserva de uma sala ou equipamento para um evento pelo portal de membros do B1.church, acompanhe o status em Minhas solicitações e cancele enquanto estiver pendente."
 ---
 
-# Solicitando eventos e salas
+# Solicitando eventos e salas {#requesting-events--rooms}
 
 <div class="article-intro">
 
@@ -22,6 +22,7 @@ Se sua igreja controla salas e recursos reserváveis, você pode solicitar um ev
 ## Enviando uma solicitação {#submitting-a-request}
 
 1. Abra a página **Eu** no portal de membros e toque em **Solicitar um evento** na seção **Solicitações e inscrições**.
+   No topo da página aparece *"A equipe aprovará cada sala e item."*, a menos que sua igreja tenha escrito as próprias instruções -- como diretrizes de reserva ou com quanta antecedência pedir -- caso em que você verá essas instruções (veja [Página de solicitação de evento](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Preencha os dados básicos do evento: **Título do evento**, uma **Descrição** opcional, e os horários de **Início** e **Término**. Ative **Dia inteiro** para escolher apenas datas.
 3. Escolha as **Salas** e os **Recursos** de que precisa (você pode escolher vários de cada). Depois de escolher um, você pode adicionar minutos de **Montagem (min antes)** e **Desmontagem (min depois)**, ou ativar **Janela de reserva personalizada** e definir você mesmo **Reservar a partir de** e **Reservar até**.
 4. Fique atento aos avisos de conflito -- se o seu horário se sobrepõe a uma reserva existente de uma sala ou recurso, você verá *"Algumas seleções podem já estar reservadas neste horário."* Você pode ajustar o horário ou escolher outra opção.
@@ -35,11 +36,13 @@ Depois do envio, um resumo de **Solicitação enviada** mostra o status de cada 
 
 ## Acompanhando suas solicitações {#tracking-your-requests}
 
-Abra **Minhas solicitações** na página Eu. As solicitações são divididas em **Próximas** e **Anteriores** conforme a data do evento (toque em **Todas as anteriores** para ver as mais antigas). Cada solicitação mostra o título do evento e quando começa, o status de cada sala e recurso solicitado, e um selo de status:
+Abra **Minhas solicitações** na página Eu. As solicitações são divididas em **Próximas** e **Anteriores** conforme a data do evento (toque em **Todas as anteriores** para ver as mais antigas). Cada solicitação mostra o título do evento e quando começa, a descrição que você informou, o status de cada sala e recurso solicitado, e um selo de status:
 
 - **Pendente** -- Aguardando uma decisão
 - **Aprovada** -- Sua reserva está confirmada
 - **Recusada** -- A solicitação foi negada
+
+Se a equipe informou um motivo ao recusar a solicitação, ou uma de suas salas ou recursos, o motivo aparece em vermelho abaixo da solicitação -- por exemplo, *Recusada: O ginásio está reservado naquele fim de semana.* O mesmo motivo consta na notificação que você recebe sobre a decisão.
 
 Enquanto a solicitação ainda estiver pendente, você pode retirá-la com **Cancelar solicitação**. Uma confirmação pergunta "Cancelar esta solicitação? Isso não pode ser desfeito." -- toque em **Cancelar solicitação** para confirmar ou em **Manter** para deixá-la.
 

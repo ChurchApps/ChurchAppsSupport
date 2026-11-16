@@ -3,7 +3,7 @@ title: "Lembretes de Eventos"
 description: "Configure lembretes de eventos no B1 Admin por notificação push, e-mail e SMS, escolhendo o momento, os destinatários e uma mensagem personalizada para que as pessoas sejam avisadas a tempo."
 ---
 
-# Lembretes de Eventos
+# Lembretes de Eventos {#event-reminders}
 
 <div class="article-intro">
 
@@ -36,6 +36,12 @@ Você configura os lembretes na seção **Lembretes** do evento. Expanda-a para 
 7. Clique em **Salvar** (ou salve o novo evento).
 
 Para interromper os lembretes de um evento, desative **Habilitar lembretes** e salve.
+
+### Enviando um Lembrete Agora {#sending-a-reminder-now}
+
+Em um evento já salvo, clique em **Enviar agora** ao lado de **Salvar** para enviar o lembrete imediatamente -- por exemplo, após uma mudança de última hora. Ele usa as configurações salvas e vai para as mesmas pessoas, considerando a próxima data do evento. Em seguida, o B1 mostra quantas pessoas foram alcançadas, como **Enviado para 12 pessoas**. Seus lembretes programados continuam sendo enviados conforme o planejado.
+
+**Enviar agora** só está disponível depois que os lembretes são ativados e salvos, então salve primeiro quaisquer alterações. Se o lembrete incluir **SMS**, você também precisa de permissão para enviar mensagens de texto.
 
 Em um evento já salvo, uma **prévia ao vivo** mostra aproximadamente quantas pessoas serão lembradas, quantos participantes não podem ser alcançados e os próximos horários de envio programados, conforme você faz alterações -- assim você pode confirmar que o lembrete está correto antes de salvar. Um evento recém-criado não tem prévia até ser salvo.
 

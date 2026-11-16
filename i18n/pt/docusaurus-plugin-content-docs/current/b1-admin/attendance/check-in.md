@@ -4,7 +4,7 @@ sidebar_label: "Check-In"
 description: "Configure o autoatendimento nos cultos com o aplicativo B1 Checkin no B1 Admin, incluindo dispositivos, contas de quiosque, horários, personalização visual e cadastro de visitantes por QR code."
 ---
 
-# Check-In
+# Check-In {#check-in}
 
 <div class="article-intro">
 
@@ -118,8 +118,8 @@ A lista **Campos do cadastro** controla o que o formulário de cadastro solicita
 
 | Campo | Solicitado | Incluído por padrão |
 |-------|-----------|---------------------|
-| **Título** | Para cada integrante da família, como uma lista suspensa antes do nome (Sr., Sra., Srta., Dr., Dra., Prof., Rev., Pastor) | Não |
-| **E-mail** | Somente para o contato principal | Sim (opcional) |
+| **Título** | Para cada integrante da família, como uma lista suspensa antes do nome (Sr., Sra., Srta., Ms., Dr., Prof., Rev., Pastor) | Não |
+| **E-mail** | Para cada integrante da família. Quando obrigatório, somente o contato principal precisa preenchê-lo. | Sim (opcional) |
 | **Telefone** | Para cada integrante da família. Quando obrigatório, somente o contato principal precisa preenchê-lo. | Sim (opcional) |
 | **Papel na família** | Para cada integrante da família após o contato principal -- Cônjuge, Filho(a) ou Outro. O contato principal é o responsável pelo novo domicílio. Quem não tiver um papel é salvo como Outro. | Sim (opcional) |
 | **Endereço residencial** | Uma vez para a família -- rua, complemento, cidade, estado e CEP. Quando obrigatório, tudo exceto o complemento precisa ser preenchido. O endereço é salvo em cada integrante da família. | Não |
@@ -128,6 +128,7 @@ A lista **Campos do cadastro** controla o que o formulário de cadastro solicita
 | **Estado civil** | Somente para o contato principal | Não |
 | **Série** | Para cada integrante da família (do Pré-escolar ao 12º ano, ou Formado) | Não |
 | **Comentários** | Uma vez, em uma caixa abaixo dos integrantes da família (até 1.000 caracteres) | Não |
+| **Foto** | Para cada integrante da família, com um botão **Adicionar Foto** que abre um recorte de imagem. A foto se torna a foto de perfil da nova pessoa. Quando obrigatório, somente o contato principal precisa adicionar uma. | Não |
 
 Os campos desativados nunca são salvos, mesmo que alguém os envie ao cadastro por outro meio. Os comentários são salvos como uma anotação no registro do contato principal (publicada como "Cadastro de visitante"), para que você possa lê-los na seção **Anotações** do perfil dele.
 

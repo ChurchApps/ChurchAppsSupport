@@ -3,7 +3,7 @@ title: "Aprovando alterações de perfil"
 description: "Revise e aprove as solicitações de alteração de perfil dos membros no B1 Admin e configure o Grupo de aprovação do diretório que as recebe."
 ---
 
-# Aprovando alterações de perfil
+# Aprovando alterações de perfil {#approving-profile-changes}
 
 <div class="article-intro">
 
@@ -40,9 +40,9 @@ Quando um membro envia uma alteração de perfil, ela aparece como uma tarefa at
 3. Revise as alterações.
 4. Clique em **Aplicar** para aprovar e salvar as alterações no perfil dele.
 
-Uma solicitação para incluir um familiar mostra o título, o nome, a função no domicílio e o celular da nova pessoa em uma única linha (por exemplo, *Sr. João Silva · Filho · 555-0100*). Ao aplicá-la, a pessoa é criada no domicílio do membro com esses dados.
+Uma solicitação para incluir um familiar mostra o título, o nome, a função no domicílio, o celular e o e-mail da nova pessoa em uma única linha (por exemplo, *Sr. João Silva · Filho · 555-0100 · john@example.com*), com a foto ao lado, se o membro a tiver adicionado. Ao aplicá-la, a pessoa é criada no domicílio do membro com esses dados e essa foto.
 
-A tarefa é fechada automaticamente assim que as alterações forem aplicadas.
+A tarefa será fechada automaticamente assim que as alterações forem aplicadas.
 
 ## Configurando o grupo de aprovação {#setting-up-the-approval-group}
 
@@ -53,7 +53,7 @@ Se a sua igreja quiser que as alterações de perfil exijam aprovação, é prec
 3. Em **Grupo de aprovação do diretório**, selecione o grupo cujos membros devem revisar as solicitações de alteração de perfil.
 4. Clique em **Salvar**.
 
-Qualquer membro desse grupo verá as solicitações de alteração de perfil recebidas em **Atribuídas aos meus grupos**, no Painel.
+Qualquer membro desse grupo verá as solicitações de alteração de perfil recebidas em **Atribuídas aos meus grupos** no seu Painel.
 
 O mesmo Grupo de aprovação do diretório também revisa as **solicitações de exclusão de conta** -- veja [Revisando solicitações de exclusão de conta](./account-deletion.md).
 
@@ -63,6 +63,6 @@ Certifique-se de que os aprovadores sejam de fato membros do grupo configurado -
 
 ## Artigos relacionados {#related-articles}
 
-- [Gerenciando seu perfil](./managing-profile.md) -- edite as configurações da sua própria conta
-- [Revisando solicitações de exclusão de conta](./account-deletion.md) -- o mesmo fluxo de revisão pelo grupo de aprovação, para exclusão de contas
-- [Editando seu perfil](../../b1-church/getting-started/editing-your-profile.md) -- o que os membros veem ao enviar uma alteração de perfil
+- [Gerenciando seu perfil](./managing-profile.md) — edite as configurações da sua própria conta
+- [Revisando solicitações de exclusão de conta](./account-deletion.md) — o mesmo fluxo de revisão pelo grupo de aprovação, para exclusão de contas
+- [Editando seu perfil](../../b1-church/getting-started/editing-your-profile.md) — o que os membros veem ao enviar uma alteração de perfil

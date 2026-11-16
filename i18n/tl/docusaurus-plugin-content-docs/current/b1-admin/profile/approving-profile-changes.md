@@ -3,7 +3,7 @@ title: "Pag-aprubah ng mga Pagbabago sa Profile"
 description: "Suriin at aprubahan ang mga kahilingan sa pagbabago ng profile ng miyembro sa B1 Admin, at i-set up ang Directory Approval Group na tumatanggap ng mga ito."
 ---
 
-# Pag-aprubah ng mga Pagbabago sa Profile
+# Pag-aprubah ng mga Pagbabago sa Profile {#approving-profile-changes}
 
 <div class="article-intro">
 
@@ -29,7 +29,7 @@ Kapag nagsumite ang isang miyembro ng pagbabago sa profile, lalabas ito bilang t
 3. I-click ang tab na **Assigned to My Groups**. Nakalista roon ang anumang nakabinbing kahilingan sa pagbabago ng profile.
 
 **Mula sa Serving &rarr; My Work:**
-1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at buksan ang **Serving**.
+1. Buksan ang [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (ang search bar sa kaliwang itaas ng B1 Admin) at palawakin ang **Serving**.
 2. I-click ang **My Work**.
 3. I-click ang tab na **Assigned to My Groups** sa ilalim ng Tasks.
 
@@ -40,7 +40,7 @@ Kapag nagsumite ang isang miyembro ng pagbabago sa profile, lalabas ito bilang t
 3. Suriin ang mga pagbabago.
 4. I-click ang **Apply** para aprubahan at i-save ang mga pagbabago sa kanilang profile.
 
-Ang kahilingang magdagdag ng miyembro ng pamilya ay nagpapakita ng title, pangalan, household role, at mobile phone ng bagong tao sa iisang linya (halimbawa, *Mr John Smith · Child · 555-0100*). Kapag in-apply ito, gagawin ang taong iyon sa household ng miyembro na may mga detalyeng iyon.
+Ang kahilingang magdagdag ng miyembro ng pamilya ay nagpapakita ng title, pangalan, household role, mobile phone, at email ng bagong tao sa iisang linya (halimbawa, *Mr John Smith · Child · 555-0100 · john@example.com*), kasama ang kanilang larawan sa tabi nito kung idinagdag ito ng miyembro. Kapag in-apply ito, gagawin ang taong iyon sa household ng miyembro na may mga detalyeng iyon at larawan.
 
 Awtomatikong magsasara ang task kapag na-apply na ang mga pagbabago.
 
@@ -48,7 +48,7 @@ Awtomatikong magsasara ang task kapag na-apply na ang mga pagbabago.
 
 Kung gusto ng iyong simbahan na nangangailangan ng pag-apruba ang mga pagbabago sa profile, kailangan munang i-configure ang Directory Approval Group.
 
-1. Buksan ang Jump menu at buksan ang **Mobile**.
+1. Buksan ang Jump menu at palawakin ang **Mobile**.
 2. I-click ang **Member portal** (ang pahinang "Portal settings").
 3. Sa ilalim ng **Directory Approval Group**, piliin ang grupong ang mga miyembro ay dapat magsuri ng mga kahilingan sa pagbabago ng profile.
 4. I-click ang **Save**.

@@ -3,7 +3,7 @@ title: "Aspetto"
 description: "Imposta colori, caratteri, spaziature, logo e navigazione per il sito web della tua chiesa in B1 Admin, oltre a widget, analisi GA4, reindirizzamenti e CSS personalizzato."
 ---
 
-# Aspetto
+# Aspetto {#appearance}
 
 <div class="article-intro">
 
@@ -89,6 +89,14 @@ I widget del sito compaiono su ogni pagina del sito, sovrapposti al contenuto de
 4. Fai clic su **Salva**.
 
 Deseleziona **Attivato** e fai clic su **Salva** per disattivare un widget. Questi widget si applicano a tutti i siti web della tua chiesa.
+
+La barra degli annunci compare anche in cima alla schermata Home dell'app B1 della tua chiesa (il portale membri su `/mobile`, inclusa l'app installata), sopra il saluto, con lo stesso testo, collegamento, colori e date. Nell'app, un **URL del collegamento** che punta a una delle tue pagine (ad esempio, `/food`) apre quella pagina dentro l'app invece di caricare il tuo sito web. Vedi [Navigare nella B1App](../../b1-church/getting-started/navigating.md#home).
+
+Alcuni dettagli sul comportamento della barra:
+
+- Su telefono, il testo lungo va a capo su più righe, e il collegamento scende su una propria riga se non ci sta.
+- Sul tuo sito web, la barra dei menu si trova subito sotto la barra degli annunci, così il pulsante del menu resta visibile. Menu e finestre popup si aprono sopra la barra.
+- Quando qualcuno chiude la barra con il pulsante **×**, resta nascosta su quel dispositivo per un giorno e poi ricompare. Se modifichi il **Testo**, il nuovo annuncio compare subito, anche per chi ha chiuso quello vecchio.
 
 ## Reindirizzamenti e statistiche {#redirects--analytics}
 

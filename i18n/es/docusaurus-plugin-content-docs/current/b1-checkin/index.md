@@ -3,7 +3,7 @@ title: "Descripción general de B1 Church Checkin"
 description: "Configura la app del quiosco de B1 Church Checkin en tabletas iPad o Android para que las familias se registren solas, asignen a los niños a grupos e impriman etiquetas y comprobantes de recogida."
 ---
 
-# Descripción general de B1 Church Checkin
+# Descripción general de B1 Church Checkin {#b1-church-checkin-overview}
 
 <div class="article-intro">
 
@@ -11,28 +11,29 @@ B1 Church Checkin es una aplicación de quiosco de autoservicio para iPad y tabl
 
 </div>
 
-## Video de recorrido
+## Video de recorrido {#tour-video}
 
 <YouTube id="fNZsJi9F-jc" title="Recorrido por B1 Check-In" next="Configuración de servicios y asistencia en B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Cómo funciona
+## Cómo funciona {#how-it-works}
 
 Coloque un iPad o una tableta Android en el vestíbulo o en el área de bienvenida. Los miembros se acercan, buscan a su hogar por número de teléfono o apellido, revisan a su familia, eligen a qué grupos debe asistir cada persona y tocan **Registrar entrada**. La aplicación imprime automáticamente las etiquetas con nombre y los comprobantes de recogida, y luego se reinicia para la siguiente familia.
 
-## Funciones principales
+## Funciones principales {#key-features}
 
 - **Búsqueda de miembros por autoservicio**: busque por número de teléfono o apellido para encontrar a su hogar rápidamente.
 - **Revisión del hogar**: vea de un vistazo a todos los miembros de la familia con sus fotos y sus asignaciones de grupo actuales.
 - **Asignación de grupos**: asigne a cada miembro de la familia a la clase o grupo correcto para el horario de servicio seleccionado.
-- **Registro de invitados**: agregue a un invitado a su hogar en el momento, con nombre y apellido.
+- **Registro de invitados**: agregue a un invitado a su hogar en el momento, con nombre y apellido, y un correo electrónico opcional.
 - **Registro de invitados por código QR**: muestre un código QR que los visitantes pueden escanear para [registrarse por sí mismos](../b1-church/checkin/guest-registration.md) en su teléfono antes de registrar su entrada, o permita que toquen **Regístrese aquí** para llenar el mismo formulario en el quiosco.
 - **Impresión de etiquetas**: imprima etiquetas con nombre para los niños y comprobantes de recogida para padres con códigos de seguridad únicos.
+- **[Salida](./check-in/checking-out.md)**: en las estaciones atendidas, registre la salida de los niños con el código de recogida, o busque a la familia por apellido o número de teléfono cuando se pierda la etiqueta.
 - **Compatibilidad con impresoras de red**: detecte y configure impresoras de red directamente desde la aplicación.
 - **Inicio de sesión automático**: después del primer inicio de sesión, la aplicación recuerda sus credenciales y va directamente a la pantalla de servicios en los siguientes inicios.
 - **Compatibilidad con varias iglesias**: si su cuenta está vinculada a más de una iglesia, puede elegir en cuál registrar entradas.
 - **Identidad visual de la iglesia**: la aplicación muestra el logotipo de su iglesia en el encabezado una vez seleccionada una iglesia.
 
-## Secciones de la documentación
+## Secciones de la documentación {#documentation-sections}
 
 - **[Primeros pasos](./getting-started/index.md)**: instalar la aplicación, iniciar sesión y configurar su impresora.
 - **[Flujo de registro de entrada](./check-in/index.md)**: el flujo completo de registro de entrada, desde seleccionar un servicio hasta imprimir etiquetas.

@@ -3,7 +3,7 @@ title: "Pagdaragdag ng mga Bisita"
 description: "Magdagdag ng batang bisita, kamag-anak, o kaibigan sa isang household sa B1 Checkin kiosk, saka magtakda ng grupo at tapusin ang check-in."
 ---
 
-# Pagdaragdag ng mga Bisita
+# Pagdaragdag ng mga Bisita {#adding-guests}
 
 <div class="article-intro">
 
@@ -19,28 +19,29 @@ Kung may bumibisita sa iyong pamilya at kailangang mag-check in kasama ng iyong 
 
 </div>
 
-## Paano Magdagdag ng Bisita
+## Paano Magdagdag ng Bisita {#how-to-add-a-guest}
 
 1. Mula sa **household review screen**, i-tap ang **Add Guest** button na nasa ibaba ng listahan ng mga miyembro ng household.
-2. Lalabas ang add guest form na may dalawang field:
+2. Lalabas ang add guest form na may mga sumusunod na field:
    - **First Name** -- Ilagay ang pangalan ng bisita.
    - **Last Name** -- Ilagay ang apelyido ng bisita.
+   - **Email** -- Opsyonal. Ilagay ang email ng bisita para makapag-follow up ang simbahan pagkatapos ng pagbisita.
 3. I-tap ang **Add Guest** button para i-save.
 
 Ang bisita ay idadagdag sa iyong household at ibabalik ka sa household review screen. Ang bagong bisita ay lalabas sa iyong member list kasama ng iba pang miyembro ng iyong pamilya.
 
 :::info
-Kung ang pangalan ng bisita ay tumutugma sa isang tao na nasa sistema na at hindi miyembro, ili-link ng app ang existing record sa halip na gumawa ng duplicate. Nakakatulong ito na panatilihing malinis ang database ng iyong simbahan.
+Kung ang pangalan ng bisita ay tumutugma sa isang tao na nasa sistema na at hindi miyembro, ili-link ng app ang existing record sa halip na gumawa ng duplicate. Nakakatulong ito na panatilihing malinis ang database ng iyong simbahan. Sa ganitong kaso, hindi nase-save ang email na inilagay mo; idinadagdag lamang ito sa mga bagong gawang bisita.
 :::
 
-## Pagkatapos Magdagdag ng Bisita
+## Pagkatapos Magdagdag ng Bisita {#after-adding-a-guest}
 
 Kapag lumabas na ang bisita sa iyong household list, maaari kang:
 
 - **I-expand ang kanilang card** at [i-assign sila sa isang grupo](./group-assignment.md), katulad ng ibang miyembro ng pamilya.
 - **[Mag-check in](./completing-checkin.md)** ng buong household kasama ang bisita.
 
-## Pagkansela
+## Pagkansela {#canceling}
 
 Kung nagbago ang iyong isip, i-tap ang **Cancel** button sa ibaba ng add guest form para bumalik sa household review screen nang hindi nagdadagdag ng sinuman.
 
@@ -48,6 +49,6 @@ Kung nagbago ang iyong isip, i-tap ang **Cancel** button sa ibaba ng add guest f
 Ang pagdaragdag ng bisita sa kiosk ay gumagawa ng person record sa database ng iyong simbahan. Maaaring i-update ng administrator ng iyong simbahan ang buong detalye ng bisita sa ibang pagkakataon sa B1 Admin sa ilalim ng [People](../../b1-admin/people/adding-people.md).
 :::
 
-## Susunod na Hakbang
+## Susunod na Hakbang {#next-step}
 
 Pagkatapos magdagdag ng mga bisita at [mag-assign ng mga grupo](./group-assignment.md) kung kinakailangan, handa ka nang [kumpletuhin ang check-in](./completing-checkin.md).

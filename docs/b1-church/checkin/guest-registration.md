@@ -37,7 +37,8 @@ The page opens with the title **Guest Registration**. If the church has added a 
    - **Home Address** -- **Street Address**, **Address Line 2**, **City**, **State**, and **Zip**. This is shared by the whole family.
 3. The form starts with a second card for **Family Member 2**. Enter their first and last name, or tap the **X** in the card's corner to remove it if you're registering on your own.
 4. To add more people, tap **Add Family Member**. The new card fills in the primary contact's last name for you. You can register up to 10 people at once.
-5. If your church asks for them, each person's card may also include **Title**, **Phone**, **Birth Date**, **Gender**, and **Grade**. Every card after the primary contact may also ask for a **Household Role** -- **Spouse**, **Child**, or **Other** -- so the church knows how each person is related to the primary contact.
+5. If your church asks for them, each person's card may also include **Title**, **Email**, **Phone**, **Birth Date**, **Gender**, and **Grade**. Every card after the primary contact may also ask for a **Household Role** -- **Spouse**, **Child**, or **Other** -- so the church knows how each person is related to the primary contact.
+   If your church asks for a photo, each card has an **Add Photo** button. Tap it, pick or take a picture, crop it, and save it; the photo appears on the card. Tap **Change Photo** to pick a different one or **Remove Photo** to take it off. The photo is saved as that person's profile photo when their record is created.
 6. If your church includes a **Comments** box below the family members, use it to share anything you'd like the church to know (up to 1,000 characters).
 7. Tap **Register** to submit.
 

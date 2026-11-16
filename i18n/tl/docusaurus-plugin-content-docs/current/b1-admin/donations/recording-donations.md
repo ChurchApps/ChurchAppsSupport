@@ -3,11 +3,11 @@ title: "Pagtatala ng Mga Donasyon"
 description: "Magtala ng donasyon ng simbahan sa B1 Admin sa pamamagitan ng paggawa ng batch, pagpasok ng handog nang isa-isa, pag-import ng CSV, o pagtala ng isang handog mula sa profile ng donor."
 ---
 
-# Pagtatala ng Mga Donasyon
+# Recording Donations {#recording-donations}
 
 <div class="article-intro">
 
-Ang pagtatala ng donasyon sa B1 Admin ay ginagawa sa pamamagitan ng sistema ng Batches. Gagawa ka ng batch para kumatawan sa isang koleksyon (gaya ng handog tuwing Linggo), pagkatapos magdadagdag ng indibidwal na donasyon sa batch na iyon. Pinananatiling organisado nito ang iyong mga talaan ng giving at madaling i-reconcile.
+Ang pagtatala ng donasyon sa B1 Admin ay ginagawa sa pamamagitan ng sistema ng Batches. Gagawa ka ng batch para kumatawan sa isang koleksyon (gaya ng handog tuwing Linggo), pagkatapos ay magdadagdag ng indibidwal na donasyon sa batch na iyon. Pinananatiling organisado nito ang iyong mga talaan ng giving at madaling i-reconcile.
 
 </div>
 
@@ -32,16 +32,22 @@ Ang pagtatala ng donasyon sa B1 Admin ay ginagawa sa pamamagitan ng sistema ng B
 ## Pagpasok ng Indibidwal na Donasyon {#entering-individual-donations}
 
 1. Sa batch detail page, lalabas ang donation entry panel sa tabi ng listahan ng donasyon. Sa ilalim ng **Select Person or Anonymous**, i-type ang pangalan ng donor sa search field para mahanap sila, o i-click ang **Anonymous**. (Ang pag-click sa **Add Donation** sa itaas ng pahina ay dadalhin ka sa panel na ito.)
-2. Pagkatapos pumili ng tao, ipinapakita ng entry form ang mga field para sa **Date** (nagsisimula sa petsa ng batch), **Method** (Check, Cash, Card, o In-Kind), **Fund** (lumalabas kapag higit sa isang fund ang iyong simbahan), **Notes**, **Amount**, at **Check #** (o **Last 4 digits** para sa card na handog, o **Item** para ilarawan ang in-kind na handog; walang detail field ang cash na handog). I-click ang **Change** sa tabi ng pangalan ng donor para pumili ng iba.
+2. Pagkapili ng tao, ipinapakita ng entry form ang mga field para sa **Date** (nagsisimula sa petsa ng batch), **Method** (Check, Cash, Card, o In-Kind), **Fund** (lumalabas kapag higit sa isang fund ang iyong simbahan), **Memo (prints on statement)**, **Notes (internal)**, **Amount**, at **Check #** (o **Last 4 digits** para sa card na handog, o **Item** para ilarawan ang in-kind na handog; walang detail field ang cash na handog). I-click ang **Change** sa tabi ng pangalan ng donor para pumili ng iba.
 3. Punan ang mga detalye at i-click ang **Add Donation** (o pindutin ang Enter). Kung walang laman o zero ang halaga, hihilingin ng form na maglagay ng halagang mas malaki sa zero bago mag-save.
-4. Idinadagdag ang donasyon sa listahan ng donasyon, at nire-reset ang form para makapaglagay ka ng susunod. Nananatili ang petsa, method, fund, at notes gaya ng itinakda mo, kaya ang sunud-sunod na magkakatulad na tseke ay kailangan lamang ng donor, halaga, at numero ng tseke.
+4. Idinadagdag ang donasyon sa listahan ng donasyon, at nire-reset ang form para makapaglagay ka ng susunod. Nananatili ang petsa, method, fund, memo, at notes gaya ng itinakda mo, kaya ang sunud-sunod na magkakatulad na tseke ay kailangan lamang ng donor, halaga, at numero ng tseke.
+
+Laging nagsisimula sa petsa ng batch ang **Date** kapag binuksan mo ang isang batch. Kapag binago mo ito, dadalhin ang bagong petsa sa susunod na handog na ilalagay mo sa batch na iyon -- sa entry panel at sa buong donation editor -- hanggang baguhin mo itong muli o umalis sa batch.
+
+:::tip Memo o Notes?
+Ang **Memo** ay ipinapi-print sa giving statement at resibo ng donor, sa tabi ng handog. Gamitin ito para sa dapat makita ng donor, gaya ng layunin ng handog na may tiyak na gamit ("Youth trip"). Para sa staff lamang ang **Notes** at hindi kailanman ipinapi-print. Kapag nagbigay ang isang tao online, anumang isulat niya sa memo box ng giving form ay sine-save bilang memo ng handog.
+:::
 
 :::info
-Kapag [nakasara](batches.md#closing-and-reopening-a-batch) na ang batch, nakatago ang entry panel at mga link na **Edit** para sa sinumang walang **Edit Donations**, at may paalalang lalabas sa itaas ng batch na sarado na ito. Hilingin sa may **Edit Donations** na buksan muli ito.
+Kapag [nakasara](batches.md#closing-and-reopening-a-batch) na ang batch, nakatago ang entry panel at mga link na **Edit** para sa sinumang walang **Edit Donations**, at may paalalang lalabas sa itaas ng batch na sarado na ito. Hilingin sa may **Edit Donations** na buksan itong muli.
 :::
 
 :::tip
-Mabilis kang makapaglagay ng maraming donasyon nang sunud-sunod nang hindi umaalis sa pahina ng batch. Nire-reset ang form pagkatapos ng bawat entry para mabilis mong maproseso ang isang tumpok ng tseke o sobre.
+Mabilis kang makapagpasok ng maraming donasyon nang sunud-sunod nang hindi umaalis sa batch page. Nire-reset ang form pagkatapos ng bawat entry para mabilis mong maproseso ang tumpok ng tseke o sobre.
 :::
 
 ## Pag-import ng Donasyon mula sa CSV File {#importing-donations-from-a-csv-file}
@@ -58,13 +64,13 @@ Kung nasa spreadsheet na ang iyong mga donasyon -- halimbawa, export mula sa iba
    - **Notes**
    - **Email**, **Name**, o **First Name** at **Last Name** -- Ginagamit para itugma ang donor sa isang tao sa iyong database. Ang pangalang nakasulat na "Smith, John" ay binabasang "John Smith".
 3. Suriin ang preview. Ipinapakita ng bawat row ang numero ng linya nito, ang donor mula sa file, ang **Match**, ang fund, at ang halaga:
-   - Ang pangalan ng tao ay nangangahulugang natugmaan ang donor. Itinutugma ng B1 ayon sa email muna, saka ayon sa eksaktong pangalan, at kapag eksaktong isang tao lamang ang bagay.
+   - Ang pangalan ng tao ay nangangahulugang natugmaan ang donor. Itinutugma ng B1 ayon sa email muna, saka ayon sa eksaktong pangalan, at kapag isang tao lamang ang tugma.
    - Ang **Not found — anonymous** ay nangangahulugang walang iisang natugmang tao. Ini-import ang handog bilang anonymous, at idinadagdag ang "Imported as:" kasama ang pangalan ng donor sa notes nito para maitalaga mo ito sa ibang pagkakataon.
    - Ang pulang mensahe gaya ng **Invalid amount**, **Unknown fund**, **Unknown method**, o **Invalid date** ay nangangahulugang lalaktawan ang row na iyon. Ayusin ang file at piliin itong muli para maisama.
 4. I-click ang **Import** (ipinapakita ng button kung ilang row ang ii-import). Idinadagdag ang mga donasyon sa batch.
 
 :::tip
-Pagkatapos mag-import, gamitin ang **Edit** sa sinumang anonymous na donasyon para piliin ang tamang tao. Sinasabi ng "Imported as:" na note kung sino ang sinabi ng file na nagbigay nito.
+Pagkatapos mag-import, gamitin ang **Edit** sa anumang anonymous na donasyon para piliin ang tamang tao. Sinasabi ng "Imported as:" na note kung sino ang sinabi ng file na nagbigay nito.
 :::
 
 ## Pagtatala ng Handog mula sa Record ng Tao {#logging-a-gift-from-a-persons-record}
@@ -75,31 +81,41 @@ Para magtala ng iisang handog nang hindi binubuksan ang batch, buksan ang record
 2. Piliin ang **Fund** at **Method** (Check, Cash, Card, o In-Kind), at ilagay ang **Check #**, **Last 4 digits**, o **Item** (para sa in-kind na handog) kung kailangan.
 3. Opsyonal na magdagdag ng **Notes**, pagkatapos i-click ang **Save**.
 
-Naka-save ang handog sa batch para sa petsang iyon. Kung wala pang batch para sa petsang iyon, awtomatiko itong gagawin para sa iyo, at papangalanan ayon sa petsa.
+Nase-save ang handog sa batch para sa petsang iyon. Kung wala pang batch para sa petsang iyon, awtomatiko itong gagawin para sa iyo, at papangalanan ayon sa petsa.
 
 ## Paghahati ng Donasyon sa Maraming Fund {#splitting-a-donation-across-multiple-funds}
 
-Minsan, sa iisang transaksyon, nagbibigay ang isang donor sa higit sa isang fund. Para ito hawakan:
+Minsan, sa iisang transaksyon, nagbibigay ang isang donor sa higit sa isang fund. Para hawakan ito:
 
 1. Sa ibaba ng entry panel, i-click ang link na **full donation editor** (o i-click ang **Edit** sa umiiral na row ng donasyon). Nagsisimula ang bagong handog sa petsa ng batch.
-2. Sa buong editor, maglagay ng halaga at fund, pagkatapos i-click ang **Add More** para magdagdag ng isa pang fund at halaga. Kinukuwenta ang kabuuan mula sa mga halaga ng bawat fund.
+2. Sa full editor, maglagay ng halaga at fund, pagkatapos i-click ang **Add More** para magdagdag ng isa pang fund at halaga. Kinukuwenta ang kabuuan mula sa mga halaga ng bawat fund.
 3. I-click ang **Save**. Hindi nase-save ang handog na walang halaga sa alinmang fund; hihilingin ng editor ang halagang mas malaki sa zero.
 
 :::info
-Karaniwan ang paghahati ng donasyon sa maraming fund kapag isang tseke ang isinulat ng donor para sa maraming layunin, gaya ng General Fund at Missions.
+Karaniwan ang paghahati ng donasyon sa maraming fund kapag isinulat ng donor ang isang tseke na itinalaga para sa maraming layunin, gaya ng General Fund at Missions.
 :::
 
 ## Pag-edit o Pag-alis ng Donasyon {#editing-or-removing-donations}
 
-Para i-edit ang donasyon, i-click ang button na **Edit** sa row nito sa batch. Maaari mong palitan ang petsa, halaga, fund, paraan ng bayad (Check, Cash, Card, o In-Kind), o ibang detalye. Para sa in-kind na handog, lalagyan ng label ng editor ang detail field ng **Item** para mailarawan mo kung ano ang ibinigay. I-click ang **Save** kapag tapos ka na.
+Para i-edit ang donasyon, i-click ang **Edit** button sa row nito sa batch. Maaari mong baguhin ang petsa, halaga, fund, paraan ng bayad (Check, Cash, Card, o In-Kind), o anumang ibang detalye, kasama ang **Memo** at **Notes**. Para sa in-kind na handog, lalagyan ng label ng editor ang detail field ng **Item** para mailarawan mo kung ano ang ibinigay. I-click ang **Save** kapag tapos ka na.
+
+### Paglipat ng Handog sa Ibang Batch {#moving-a-gift-to-another-batch}
+
+Kung nailagay ang handog sa maling batch, maaari mo itong ilipat sa halip na burahin at i-type muli:
+
+1. I-click ang **Edit** sa row ng donasyon.
+2. Sa **Batch** dropdown, piliin ang batch kung saan ito dapat mapunta. Ipinapakita ng listahan ang petsa at pangalan ng bawat batch, pinakabago muna. Hindi nakalista ang mga saradong batch, maliban sa kasalukuyang batch ng handog.
+3. I-click ang **Save**.
+
+Aalis ang handog sa kasalukuyang batch at lilitaw sa napili mo, at maa-update ang mga kabuuan ng dalawang batch. Ang paglipat ng handog ay isang edit, kaya hindi nito sinisimulan ang [workflow](../serving/workflows.md#triggers) na **Donation · Created**, na mangyayari kung ilalagay itong muli.
 
 :::tip
-Awtomatikong nag-a-update ang linya sa ilalim ng pangalan ng batch sa itaas ng pahina para ipakita ang petsa ng batch, bilang ng handog, at pinagsamang halaga habang nagdadagdag o nag-e-edit ka ng entry. Gamitin ito para mag-reconcile sa iyong deposit slip.
+Awtomatikong nag-a-update ang linya sa ilalim ng pangalan ng batch sa itaas ng pahina para ipakita ang petsa ng batch, bilang ng handog, at pinagsamang halaga habang nagdadagdag o nag-e-edit ka ng entry. Gamitin ito para i-reconcile laban sa iyong deposit slip.
 :::
 
 ## Pag-refund ng Donasyon {#refunding-a-donation}
 
-Kung nasingil ang donor nang mali o humiling ng pagbabalik ng kanyang pera, maaari mong i-refund ang natapos na donasyon nang direkta mula sa edit screen nito -- hindi na kailangang pumunta sa dashboard ng iyong payment gateway.
+Kung nasingil nang mali ang donor o humiling ng pagbabalik ng kanyang pera, maaari mong i-refund ang natapos na donasyon nang direkta mula sa edit screen nito -- hindi na kailangang pumunta sa dashboard ng iyong payment gateway.
 
 1. Buksan ang donasyon at i-click ang **Edit**.
 2. I-click ang **Refund** button sa tabi ng Delete sa ibaba ng form.
@@ -112,7 +128,7 @@ Buong refund lamang ang pinapayagan -- walang paraan para mag-refund ng bahagi n
 :::
 
 :::info
-Lumalabas lamang ang **Refund** button para sa mga donasyong binayaran online (may gateway transaction) at nasa **Complete** status pa rin. Ang mga manu-manong inilagay na donasyon (cash, check) ay walang gateway transaction na ire-refund -- i-edit o burahin na lamang ang mga iyon.
+Lumalabas lamang ang **Refund** button para sa mga donasyong binayaran online (may gateway transaction) at nasa **Complete** status pa rin. Ang mga manwal na inilagay na donasyon (cash, check) ay walang gateway transaction na ire-refund -- i-edit o burahin na lamang ang mga iyon.
 :::
 
 ## Pag-print ng Resibo para sa Isang Handog {#printing-a-receipt-for-one-gift}
@@ -123,17 +139,17 @@ Kapag may nag-abot ng tseke, nagbayad para sa event o t-shirt, o may bisitang or
 2. I-click ang **Receipt** sa tabi ng **Edit** sa row ng donasyon. Maaari ka ring mag-click ng **Receipt** sa ibaba ng Edit Donation form.
 3. I-click ang **Print**, o ang **Close** para bumalik.
 
-Gumagamit ang resibo ng parehong layout ng giving statement: ang iyong simbahan at ang donor (o "Anonymous"), petsa at paraan ng handog, bawat fund at halaga, ang note, ang iyong Giving Note, at ang official receipt block kung nagtakda ka ng **Statement format** (tingnan ang [Giving Statements](giving-statements.md)). Ang numero ng resibo sa block na iyon ay ang ID ng donasyon.
+Gumagamit ang resibo ng parehong layout ng giving statement: ang iyong simbahan at ang donor (o "Anonymous"), petsa at paraan ng handog, bawat fund at halaga, ang memo ng handog (kung mayroon), ang iyong Giving Note, at ang official receipt block kung nagtakda ka ng **Statement format** (tingnan ang [Giving Statements](giving-statements.md)). Ang numero ng resibo sa block na iyon ay ang ID ng donasyon.
 
 :::info
-Ang wording na "no goods or services" ay iniimprenta lamang kapag bawat fund sa handog ay markado bilang tax-deductible. Kung may bahaging napunta sa fund na hindi tax-deductible, gaya ng bayad sa event o pagbili, inaalis ng resibo ang wording na iyon para mabasa itong bayad at hindi kawanggawang handog.
+Ang wording na "no goods or services" ay ipi-print lamang kapag bawat fund sa handog ay markado bilang tax-deductible. Kung may bahaging napunta sa fund na hindi tax-deductible, gaya ng bayad sa event o pagbili, inaalis ng resibo ang wording na iyon para mabasa itong bayad at hindi kawanggawang handog.
 :::
 
 :::tip
-Ang mga online na handog ay may awtomatikong thank-you email na, kaya pangunahing kapaki-pakinabang ang resibo para sa mga handog na manu-manong inilagay mo.
+Awtomatikong nagpapadala na ng thank-you email ang mga online na handog, kaya pangunahing kapaki-pakinabang ang resibo para sa mga handog na manwal mong inilagay.
 :::
 
 ## Mga Susunod na Hakbang {#next-steps}
 
-- Suriin ang iyong mga entry gamit ang [Donation Reports](donation-reports.md) para i-verify ang katumpakan
+- Suriin ang iyong mga entry gamit ang [Donation Reports](donation-reports.md) para i-verify ang katumpakan nito
 - Sa katapusan ng taon, gumawa ng [Giving Statements](giving-statements.md) para sa iyong mga donor

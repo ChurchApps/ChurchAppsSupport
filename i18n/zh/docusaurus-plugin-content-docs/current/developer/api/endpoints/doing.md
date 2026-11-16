@@ -3,7 +3,7 @@ title: "Doing 端点"
 description: "B1 Admin 中 Doing API 的端点参考，该 API 支撑礼拜计划、志愿者分配、任务和自动化，包含路径、认证和权限。"
 ---
 
-# Doing 端点
+# Doing 端点 {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ Doing 模块负责服事计划、志愿者排班、任务管理和自动化。�
 
 **基础路径：** `/doing`
 
-## 计划
+## 计划 {#plans}
 
 基础路径：`/doing/plans`
 
@@ -36,7 +36,7 @@ Doing 模块负责服事计划、志愿者排班、任务管理和自动化。�
 | POST | `/autofill/:id` | JWT | — | 为计划自动填充志愿者安排。请求体：`{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | 删除计划及所有相关的时间、安排、岗位和计划项目 |
 
-### 示例：复制计划
+### 示例：复制计划 {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## 计划类型
+## 计划类型 {#plan-types}
 
 基础路径：`/doing/planTypes`
 
@@ -72,7 +72,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新计划类型 |
 | DELETE | `/:id` | JWT | — | 删除计划类型 |
 
-## 计划项目
+## 计划项目 {#plan-items}
 
 基础路径：`/doing/planItems`
 
@@ -88,7 +88,7 @@ Authorization: Bearer <token>
 | POST | `/sort` | JWT | — | 更新计划项目的排序（会重新排列同级项目） |
 | DELETE | `/:id` | JWT | — | 删除计划项目 |
 
-## 计划 Feed
+## 计划 Feed {#plan-feed}
 
 基础路径：`/doing/planFeed`
 
@@ -98,7 +98,7 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/presenter/:churchId/:planId` | Public | — | 获取展示者的计划 Feed（若为空则从场地 Feed 自动填充） |
 
-## 岗位
+## 岗位 {#positions}
 
 基础路径：`/doing/positions`
 
@@ -113,7 +113,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新岗位 |
 | DELETE | `/:id` | JWT | — | 删除岗位 |
 
-## 时间
+## 时间 {#times}
 
 基础路径：`/doing/times`
 
@@ -126,14 +126,14 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新时间 |
 | DELETE | `/:id` | JWT | — | 删除时间 |
 
-## 安排
+## 安排 {#assignments}
 
 基础路径：`/doing/assignments`
 
 | 方法 | 路径 | 身份验证 | 权限 | 说明 |
 |--------|------|------|------------|-------------|
 | GET | `/my` | JWT | — | 获取当前用户的安排 |
-| GET | `/my/upcoming` | JWT | — | 当前用户在今天及以后日期的计划中最多 20 项安排（跳过待定或 `prepared` 状态的计划），最近的排在最前：`{ assignmentId, status, positionName, planId, planName, serviceDate }`。为成员主页上的服事预览提供数据 |
+| GET | `/my/upcoming` | JWT | — | 当前用户在日期为昨天及以后的计划中的最多 20 项安排（待定或 `prepared` 状态的计划会被跳过），最近的排在最前：`{ assignmentId, status, positionName, planId, planName, serviceDate }`。为成员主页上的服事预览提供数据 |
 | GET | `/:id` | JWT | — | 根据 ID 获取安排 |
 | GET | `/plan/ids?planIds=` | JWT | — | 根据逗号分隔的计划 ID 获取多个计划的安排 |
 | GET | `/plan/:planId` | JWT | — | 获取某计划的所有安排 |
@@ -144,7 +144,7 @@ Authorization: Bearer <token>
 | DELETE | `/signup/:id` | JWT | — | 取消你自己的自助报名。计划报名截止时间过后将返回 "Removal deadline has passed" |
 | DELETE | `/:id` | JWT | — | 删除安排 |
 
-### 示例：接受安排
+### 示例：接受安排 {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## 不可服事日期
+## 不可服事日期 {#blockout-dates}
 
 基础路径：`/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新不可服事日期（若未提供 personId，则默认为当前用户） |
 | DELETE | `/:id` | JWT | — | 删除不可服事日期 |
 
-## 任务
+## 任务 {#tasks}
 
 基础路径：`/doing/tasks`
 
@@ -188,11 +188,12 @@ Authorization: Bearer <token>
 | GET | `/closed` | JWT | — | 获取当前用户已关闭的任务 |
 | GET | `/timeline?taskIds=` | JWT | — | 根据逗号分隔的任务 ID 获取任务的时间线数据 |
 | GET | `/directoryUpdate/:personId` | JWT | — | 获取某人员的目录更新任务 |
-| POST | `/` | JWT | — | 创建或更新任务。添加 `?type=directoryUpdate` 可处理目录更新任务（自动上传照片） |
+| POST | `/` | JWT | — | 创建或更新任务。添加 `?type=directoryUpdate` 可处理目录更新任务（自动上传照片）。更改现有任务的 `assignedToId` 时，会在其 `data` 的历史记录中追加一条 "Reassigned from ... to ..." 条目 |
 | POST | `/:id/conversation` | JWT | `tasks.edit` 或卡片的被分配人 | 将备注讨论串附加到卡片上。请求体：`{ conversationId }`。第一个附加的讨论串会生效；之后的调用将原样返回卡片 |
 | POST | `/loadForGroups` | JWT | — | 加载特定小组的任务。请求体：`{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | 永久删除普通任务。对于工作流卡片返回 400（请使用卡片相关接口），对于账户删除请求同样返回 400（请根据审核操作进行处理） |
 
-## 自动化
+## 自动化 {#automations}
 
 基础路径：`/doing/automations`
 
@@ -204,7 +205,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新自动化 |
 | DELETE | `/:id` | JWT | — | 删除自动化 |
 
-## 动作
+## 动作 {#actions}
 
 基础路径：`/doing/actions`
 
@@ -217,7 +218,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新动作 |
 | DELETE | `/:id` | JWT | — | 删除动作 |
 
-## 条件
+## 条件 {#conditions}
 
 基础路径：`/doing/conditions`
 
@@ -230,7 +231,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新条件 |
 | DELETE | `/:id` | JWT | — | 删除条件 |
 
-## 连接词
+## 连接词 {#conjunctions}
 
 基础路径：`/doing/conjunctions`
 
@@ -243,7 +244,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新连接词 |
 | DELETE | `/:id` | JWT | — | 删除连接词 |
 
-## 内容服务商授权
+## 内容服务商授权 {#content-provider-auths}
 
 基础路径：`/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | — | 创建或更新内容服务商授权 |
 | DELETE | `/:id` | JWT | — | 删除内容服务商授权 |
 
-## 服务商代理
+## 服务商代理 {#provider-proxy}
 
 基础路径：`/doing/providerProxy`
 
@@ -277,7 +278,7 @@ Authorization: Bearer <token>
 | POST | `/getInstructions` | JWT | — | 获取内容项的说明。请求体：`{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | 获取内容项的扩展说明。请求体：`{ ministryId, providerId, path }` |
 
-## 相关页面
+## 相关页面 {#related-pages}
 
 - [会员端点](./membership.md) —— 人员、小组、角色和权限
 - [出勤端点](./attendance.md) —— 礼拜和到访记录

@@ -3,7 +3,7 @@ title: "Paramètres de l'application mobile"
 description: "Configurez les onglets de navigation, les tuiles de l'écran d'accueil, l'invitation à se connecter et les paramètres de confidentialité de l'annuaire des membres pour l'application des membres B1.church dans B1 Admin."
 ---
 
-# Paramètres de l'application mobile
+# Paramètres de l'application mobile {#mobile-app-settings}
 
 <div class="article-intro">
 
@@ -42,11 +42,11 @@ Le menu Mobile comprend aussi **Thème de l'application**, **Portail des membres
    - **Nom de l'onglet** -- L'étiquette affichée sur l'onglet (par exemple, « Prédications » ou « Donner »).
    - **Icône** -- Cliquez sur le sélecteur d'icônes pour choisir une icône pour votre onglet.
    - **Image** -- Cliquez sur **Choisir une image** (ou **Changer l'image**) pour attribuer une photo à l'onglet. Les onglets avec une photo apparaissent sous forme de tuiles photo sur l'écran d'accueil de l'application -- voir [Tuiles de l'écran d'accueil](#home-screen-tiles). Pour retirer une photo, cliquez sur **Retirer l'image** puis enregistrez ; l'onglet apparaît alors comme un onglet simple, et non comme une tuile d'accueil.
-   - **Type d'onglet** -- **Bible**, **Diffusion en direct**, **Verset du jour**, **Prédications**, **Pointage**, **Don**, **Annuaire des membres**, **Mes groupes**, **Occasions de bénévolat**, **Plans de service**, **Inscriptions**, **Demandes**, **URL externe**, **Page interne** ou **Dossier**. **Inscriptions** ouvre les inscriptions aux événements du membre ; **Demandes** ouvre Mes demandes, où un membre peut demander un événement et voir l'état de ses demandes passées. Réglez la visibilité sur Utilisateurs connectés ou Membres et personnel pour ces onglets, car ils exigent un membre connecté.
+   - **Type d'onglet** -- **Bible**, **Diffusion en direct**, **Verset du jour**, **Prédications**, **Pointage**, **Don**, **Annuaire des membres**, **Mes groupes**, **Occasions de bénévolat**, **Plans de service**, **Inscriptions**, **Demandes**, **URL externe**, **Page interne** ou **Dossier**. **Inscriptions** ouvre les inscriptions aux événements du membre ; **Demandes** ouvre Mes demandes, où un membre peut demander un événement et consulter l'état de ses demandes passées. Réglez la visibilité sur Utilisateurs connectés ou Membres et personnel pour ces onglets, car ils exigent un membre connecté.
    - **URL** -- Affiché pour les onglets **URL externe** : l'adresse web que l'onglet ouvre.
    - **Page** -- Affiché pour les onglets **Page interne** : choisissez l'une des pages de votre site web.
    - **Onglet parent** -- Placez l'onglet dans un onglet **Dossier**, ou laissez **Aucun (niveau supérieur)**. Voir [Emplacement de ces onglets](#where-these-tabs-appear).
-   - **Visibilité** -- Qui peut voir cet onglet : **Tout le monde (y compris anonymes)**, **Utilisateurs connectés**, **Membres et personnel**, **Personnel seulement**, **Membres de l'équipe de service** ou **Groupes précis...** (puis cochez les groupes). Pour un onglet **Annuaire des membres**, cette option ne contrôle que qui voit l'onglet lui-même ; qui peut ouvrir l'annuaire se règle avec **Afficher dans l'annuaire** sur la page Portail des membres (voir [Paramètres de l'annuaire des membres et de la messagerie](#member-directory--messaging-settings)).
+   - **Visibilité** -- Qui peut voir cet onglet : **Tout le monde (y compris anonymes)**, **Utilisateurs connectés**, **Membres et personnel**, **Personnel seulement**, **Membres de l'équipe de service** ou **Groupes précis...** (puis cochez les groupes). Pour un onglet **Annuaire des membres**, ce réglage contrôle seulement qui voit l'onglet lui-même ; qui peut ouvrir l'annuaire se règle avec **Afficher dans l'annuaire** sur la page Portail des membres (voir [Paramètres de l'annuaire des membres et de la messagerie](#member-directory--messaging-settings)).
 3. Cliquez sur **Enregistrer l'onglet** pour l'ajouter à votre application.
 
 ## Modifier un onglet existant {#editing-an-existing-tab}
@@ -108,18 +108,27 @@ Les visiteurs qui ouvrent l'[écran d'accueil](/docs/b1-church/getting-started/n
 
 Cliquez sur **Enregistrer** pour appliquer. Un message **Enregistré** confirme la modification. L'enregistrement actualise les paramètres mis en cache de l'application, de sorte que la modification apparaît la prochaine fois que l'écran d'accueil se charge.
 
+### Page de demande d'événement {#event-request-page}
+
+Les membres qui [demandent un événement](../../b1-church/events/requesting-events.md) dans l'application voient une courte ligne en haut de la page **Demander un événement** -- par défaut, *« Le personnel approuve chaque salle et chaque élément. »* Le paramètre **Page de demande d'événement** de la même page Portail des membres (`/mobile/b1-mobile`) vous permet de la remplacer par vos propres instructions, comme des règles de réservation, le préavis à respecter ou des conditions :
+
+1. Saisissez votre texte dans **Instructions de demande d'événement** (jusqu'à 1 000 caractères). Les sauts de ligne sont conservés.
+2. Cliquez sur **Enregistrer**.
+
+Laissez le champ vide pour conserver la ligne par défaut.
+
 ### Tuiles de l'écran d'accueil {#home-screen-tiles}
 
 Les onglets qui ont une photo (voir **Image** dans [Ajouter un nouvel onglet](#adding-a-new-tab)) apparaissent sur l'[écran d'accueil](/docs/b1-church/getting-started/navigating#home) de l'application sous forme de tuiles photo, dans une section portant le nom de votre église. Cela inclut un onglet Verset du jour, si vous lui donnez une photo. Les onglets avec photo apparaissent aussi dans la barre d'onglets.
 
-Le paramètre **Tuiles de l'écran d'accueil** de la même page Portail des membres (`/mobile/b1-mobile`) contrôle la disposition de ces tuiles. Choisissez une **disposition** :
+Le paramètre **Tuiles de l'écran d'accueil** de la même page Portail des membres (`/mobile/b1-mobile`) contrôle la disposition de ces tuiles. Choisissez une **Disposition** :
 
 - **Grille** -- Deux tuiles par rangée (par défaut). Lorsque le nombre de tuiles est impair, la première tuile occupe toute la largeur.
 - **Rangée défilante** -- Une seule rangée de tuiles que les membres font défiler latéralement.
 - **Défilement (automatique)** -- La même rangée défilante latérale, mais qui se déplace aussi toute seule, en avançant d'une tuile environ toutes les quatre secondes, puis revenant à la première tuile après la dernière. Elle s'arrête lorsqu'un membre touche, survole ou se déplace dans la rangée avec la touche Tab, puis reprend quelques secondes plus tard. Sur les appareils dont la réduction des animations est activée, la rangée reste immobile et fonctionne comme **Rangée défilante**.
 - **Liste** -- Une liste avec une petite vignette photo à côté du nom de chaque onglet.
 - **Grille et liste** -- Les trois premiers onglets avec photo en grille, la première tuile occupant toute la largeur, et les trois suivants listés en dessous, avec une petite vignette à côté de chaque nom. S'il y en a plus de trois, l'en-tête de la section affiche un lien **Tout** qui ouvre la page **Plus** de l'application, listant chaque onglet.
-- **Défilement (automatique) et liste** -- Chaque onglet avec photo dans la rangée qui avance d'elle-même, décrite ci-dessus, avec les trois premiers aussi listés en dessous, et le même lien **Tout** s'il y en a plus de trois.
+- **Défilement (automatique) et liste** -- Chaque onglet avec photo dans la rangée qui avance d'elle-même, décrite ci-dessus, avec les trois premiers qui ne sont pas déjà dans le menu de l'application (la barre d'onglets sur téléphone, l'en-tête sur ordinateur) aussi listés en dessous, et le même lien **Tout** s'il y en a plus de trois.
 
 Dans les deux dispositions défilantes, lorsqu'il y a plus de tuiles qu'il n'en tient à l'écran, une rangée de points apparaît sous les tuiles, un point par tuile, le point de la tuile courante étant plein. Les membres peuvent toucher un point pour aller directement à cette tuile.
 
@@ -134,7 +143,7 @@ Les membres connectés voient toujours leur propre historique de présences et l
 
 Ces deux options sont désactivées par défaut. Une section n'apparaît que pour les membres connectés qui ont au moins un élément à afficher.
 
-- **Afficher les nouvelles à l'accueil** -- Ajoute une section **Nouvelles** juste sous la salutation, qui affiche vos cinq derniers billets de [blogue](../website/blog.md) publiés sous forme de cartes photo dans une rangée qui défile d'elle-même. Toucher une carte ouvre le billet complet dans l'application, et un lien **Toutes les nouvelles** liste vos billets récents. Une fois activée, l'option **Seulement cette catégorie** vous permet de choisir une catégorie de blogue (par exemple, *Annonces*) afin que seuls ces billets apparaissent ; laissez **Tous les billets** pour tout afficher. Les nouvelles sont visibles par toute personne qui ouvre l'application, connectée ou non, puisque les billets de blogue sont publics sur votre site web. Cette option est désactivée par défaut et n'apparaît que lorsque vous avez au moins un billet publié.
+- **Afficher les nouvelles à l'accueil** -- Ajoute une section **Nouvelles** juste sous la salutation, qui affiche vos cinq derniers billets de [blogue](../website/blog.md) publiés sous forme de cartes photo dans une rangée qui défile d'elle-même. Toucher une carte ouvre le billet complet dans l'application, et un lien **Toutes les nouvelles** liste vos billets récents. Une fois l'option activée, **Seulement cette catégorie** vous permet de choisir une catégorie de blogue (par exemple, *Annonces*) afin que seuls ces billets apparaissent ; laissez **Tous les billets** pour tout afficher. Les nouvelles sont visibles par toute personne qui ouvre l'application, connectée ou non, puisque les billets de blogue sont publics sur votre site web. Cette option est désactivée par défaut et n'apparaît que lorsque vous avez au moins un billet publié.
 
 Cliquez sur **Enregistrer** pour appliquer.
 
@@ -143,8 +152,8 @@ Cliquez sur **Enregistrer** pour appliquer.
 **Mobile > Notifications push** (`/mobile/notifications`) envoie ou programme une notification push aux personnes qui ont installé l'application B1 et activé les notifications. Vous avez besoin de **Modifier le contenu** pour envoyer à tout le monde, ou de **Modifier les membres du groupe** pour envoyer à un groupe.
 
 1. Cliquez sur **Envoyer la notification**.
-2. Choisissez le **public** : **Toutes les personnes ayant l'application**, ou l'un de vos groupes. B1 indique combien de personnes la notification atteindra et combien ont désactivé les notifications push ; vous êtes exclu de votre propre envoi.
-3. Saisissez un **titre** (jusqu'à 80 caractères) et un **message** (jusqu'à 240 caractères), et facultativement une **URL du lien ou du feuillet** et une **URL de l'image** (les mêmes champs qu'une [notification de groupe](../groups/group-members.md#sending-push-notifications-to-group-members)).
+2. Choisissez le **Public** : **Toutes les personnes ayant l'application**, ou l'un de vos groupes. B1 indique combien de personnes la notification atteindra et combien ont désactivé les notifications push ; vous êtes exclu de votre propre envoi.
+3. Saisissez un **Titre** (jusqu'à 80 caractères) et un **Message** (jusqu'à 240 caractères), et facultativement une **URL du lien ou du feuillet** et une **URL de l'image** (les mêmes champs qu'une [notification de groupe](../groups/group-members.md#sending-push-notifications-to-group-members)).
 4. Sous **Quand**, conservez **Envoyer maintenant**, ou choisissez **Programmer pour plus tard** et sélectionnez une heure d'envoi **Envoyer à** dans le futur.
 5. Cliquez sur **Envoyer la notification** (ou **Programmer la notification**).
 
@@ -156,11 +165,11 @@ Une notification envoyée par B1 plus de 30 minutes après l'heure prévue est m
 
 Les onglets que vous configurez ici s'affichent dans la **PWA B1.church** que vos membres installent depuis n'importe quelle page de `https://yourchurchname.b1.church`. Les modifications apportées sur cette page sont prises en compte la prochaine fois qu'un membre ouvre l'application.
 
-Sur un téléphone, la barre d'onglets du bas affiche **Accueil**, jusqu'à trois de vos onglets, et **Plus** ; sur un ordinateur, l'en-tête en affiche jusqu'à cinq. Les écrans intégrés (comme Prédications, Don ou Groupes) obtiennent d'abord ces emplacements, et les onglets **Page interne** remplissent les emplacements restants. Les onglets **URL externe** et **Verset du jour** n'obtiennent jamais d'emplacement. Chaque onglet, y compris ceux qui ne tiennent pas, figure sur la page **Plus** de l'application.
+Sur un téléphone, la barre d'onglets du bas affiche **Accueil**, jusqu'à trois de vos onglets, et **Plus** ; sur un ordinateur, l'en-tête en affiche jusqu'à cinq. Les écrans intégrés (comme Prédications, Don ou Groupes) obtiennent ces emplacements en premier, et les onglets **Page interne** remplissent les emplacements restants. Les onglets **URL externe** et **Verset du jour** n'obtiennent jamais d'emplacement. Chaque onglet, y compris ceux qui ne tiennent pas, figure sur la page **Plus** de l'application.
 
-Les onglets placés dans un onglet **Dossier** font exception : ils n'apparaissent que sur l'écran propre au dossier, que les membres ouvrent en touchant le dossier. Cet écran affiche les onglets sous forme de tuiles photo lorsque chacun d'eux a une image, ou sous forme de liste dans le cas contraire. Un dossier qui ne contient aucun onglet visible pour un membre lui est masqué. Voir [Onglets de dossier](../../b1-church/getting-started/navigating.md#folder-tabs). Voir [Naviguer dans B1App](../../b1-church/getting-started/navigating.md) pour ce que voient les membres.
+Les onglets placés dans un onglet **Dossier** font exception : ils apparaissent sur l'écran propre au dossier, que les membres ouvrent en touchant le dossier. Lorsque le dossier n'obtient pas d'emplacement dans la barre d'onglets ou l'en-tête, la section **Plus de** de l'accueil affiche aussi le nom du dossier avec ses onglets sous forme de boutons, dans l'ordre défini ici. Cet écran présente les onglets sous forme de tuiles photo si chacun d'eux a une image, ou sous forme de liste dans le cas contraire. Un dossier qui ne contient aucun onglet visible par un membre est masqué pour ce membre. Voir [Onglets de dossier](../../b1-church/getting-started/navigating.md#folder-tabs). Voir [Navigation dans B1App](../../b1-church/getting-started/navigating.md) pour ce que voient les membres.
 
 ## Étapes suivantes {#next-steps}
 
-- [Paramètres de l'église](./church-settings.md) -- Configurer les informations de votre église et son image de marque
-- [Rôles et autorisations](./roles-permissions.md) -- Gérer l'accès de votre équipe
+- [Paramètres de l'église](./church-settings.md) -- Configurez les informations et l'image de marque de votre église
+- [Rôles et autorisations](./roles-permissions.md) -- Gérez les accès de votre équipe

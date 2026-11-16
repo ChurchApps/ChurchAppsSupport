@@ -3,7 +3,7 @@ title: "Miembros del grupo"
 description: "Añada, quite y designe líderes de los miembros del grupo en B1 Admin, y luego envíe correos, mensajes de texto o notificaciones, o imprima o exporte la lista de miembros desde la página del grupo."
 ---
 
-# Miembros del grupo
+# Miembros del grupo {#group-members}
 
 <div class="article-intro">
 
@@ -64,7 +64,7 @@ Los líderes del grupo pueden llevar notas privadas sobre el grupo, por ejemplo,
 La sección **Notas del líder** aparece en la página del grupo solo para las personas que son líderes de ese grupo. Muestra la nota más reciente, quién la escribió y cuándo, y cuántas notas hay.
 
 1. En la página del grupo, haga clic en **Todas las notas** en la sección **Notas del líder**.
-2. Escriba su nota en el cuadro y publíquela. Para darle formato, seleccione el texto y elija **Negrita**, **Cursiva**, **Lista con viñetas** o **Lista numerada** en el menú emergente que aparece (o presione **Ctrl+B** / **Ctrl+I**). Las notas se muestran con el nombre y la foto del autor, y la fecha y hora en que se publicó cada una.
+2. Escriba su nota en el cuadro y publíquela. Para darle formato, use la fila de botones **Negrita**, **Cursiva**, **Lista con viñetas** y **Lista numerada** que aparece debajo del cuadro mientras escribe: seleccione el texto y haga clic en un botón (o presione **Ctrl+B** / **Ctrl+I**). En una lista, **Enter** inicia el siguiente elemento, y **Enter** en un elemento vacío termina la lista. Las notas se muestran con el nombre y la foto del autor, y la fecha y hora en que se publicó cada una.
 3. Haga clic en el enlace **Volver a** con el nombre del grupo para regresar a la página del grupo.
 
 :::info

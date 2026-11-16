@@ -3,7 +3,7 @@ title: "Эндпоинты посещаемости"
 description: "Справочник API посещаемости для B1 Admin и B1 Checkin: кампусы, службы, времена служб, сессии, визиты, правила регистрации и эндпоинты экспорта."
 ---
 
-# Эндпоинты посещаемости
+# Эндпоинты посещаемости {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ description: "Справочник API посещаемости для B1 Admin 
 
 **Базовый путь:** `/attendance`
 
-## Кампусы
+## Кампусы {#campuses}
 
 Базовый путь: `/attendance/campuses`
 
@@ -26,7 +26,7 @@ description: "Справочник API посещаемости для B1 Admin 
 | POST | `/` | JWT | Services.Edit | Создать или обновить кампусы |
 | DELETE | `/:id` | JWT | Services.Edit | Удалить кампус |
 
-## Богослужения
+## Богослужения {#services}
 
 Базовый путь: `/attendance/services`
 
@@ -40,7 +40,7 @@ description: "Справочник API посещаемости для B1 Admin 
 | POST | `/` | JWT | Services.Edit | Создать или обновить богослужения |
 | DELETE | `/:id` | JWT | Services.Edit | Удалить богослужение |
 
-### Пример: поиск богослужений по кампусу
+### Пример: поиск богослужений по кампусу {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Services.Edit | Создать или обновить времена служений. Необязательные поля расписания: `dayOfWeek` (0 = воскресенье … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (до начала), `checkinCloseMinutes` (после окончания). Регистрация ограничивается по времени только тогда, когда заданы оба поля: `dayOfWeek` и `startTime` |
 | DELETE | `/:id` | JWT | Services.Edit | Удалить время служения |
 
-## Группы и времена служений
+## Группы и времена служений {#group-service-times}
 
 Базовый путь: `/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Services.Edit | Создать или обновить связи «группа — время служения» |
 | DELETE | `/:id` | JWT | Services.Edit | Удалить связь «группа — время служения» |
 
-## Записи посещаемости
+## Записи посещаемости {#attendance-records}
 
 Базовый путь: `/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ Authorization: Bearer <token>
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | Для каждой группы, назначенной на время служения, вернуть `{ groupId, sessionId, attendanceCount }` за указанную дату (`date` в формате `YYYY-MM-DD`; `sessionId` равен null, если у группы нет сессии). Используется диалогом **Who Still Needs Attendance** в B1Admin |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Поиск записей посещаемости с фильтрами (кампус, богослужение, время служения, группа, диапазон дат) |
 
-### Пример: динамика посещаемости
+### Пример: динамика посещаемости {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Сессии
+## Сессии {#sessions}
 
 Базовый путь: `/attendance/sessions`
 
@@ -130,7 +130,7 @@ Authorization: Bearer <token>
 | POST | `/` | JWT | Attendance.Edit или руководитель группы | Создать или обновить сессии. Руководители групп могут сохранять сессии своих групп |
 | DELETE | `/:id` | JWT | Attendance.Edit | Удалить сессию |
 
-## Визиты
+## Визиты {#visits}
 
 Базовый путь: `/attendance/visits`
 
@@ -141,11 +141,12 @@ Authorization: Bearer <token>
 | GET | `/` | JWT | Attendance.View | Получить все визиты. Фильтр по `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Получить визит по ID |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View или Attendance.Checkin | Загрузить данные регистрации людей на богослужении. Возвращает визиты с сессиями визитов из последней записанной даты |
+| GET | `/active?peopleIds=` | JWT | Attendance.View или Attendance.Checkin | Сегодняшние визиты указанных людей, которые ещё не отмечены как ушедшие, с заполненными сессиями визитов и сессиями. Параметр `peopleIds` (через запятую) обязателен; без него возвращается 400. Используется в B1Checkin для отметки ухода по имени |
 | POST | `/` | JWT | Attendance.Edit | Создать или обновить визиты |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit или Attendance.Checkin | Отправить данные регистрации. Создаёт или обновляет визиты и сессии визитов, удаляет устаревшие записи |
 | DELETE | `/:id` | JWT | Attendance.Edit | Удалить визит |
 
-### Пример: процесс регистрации
+### Пример: процесс регистрации {#example-check-in-flow}
 
 **Шаг 1 -- загрузить существующие данные регистрации:**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 Если у выбранного времени служения есть расписание регистрации и окно регистрации закрыто (вычисляется в том же порядке временных зон, что и для `checkinOpen`, с приоритетом кампуса), ничего не сохраняется, и ответ имеет вид `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Нарушения лимита мест и соотношения волонтёров также возвращают 409 (`error: "capacity"` или `"ratio"`). Сессии, которые человек уже занимает сегодня (повторно отправляются при каждой регистрации), не проверяются по окну времени, поэтому семья может добавить открытое время служения после того, как окно предыдущего уже закрылось.
 
-## Сессии визитов
+## Сессии визитов {#visit-sessions}
 
 Базовый путь: `/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Authorization: Bearer <token>
 | DELETE | `/:id` | JWT | Attendance.Edit | Удалить сессию визита по ID |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit или руководитель группы | Удалить человека из сессии. Удаляет сессию визита и родительский визит, если сессий не осталось. Руководители групп могут удалять посещаемость своих групп |
 
-### Пример: быстрая запись посещаемости
+### Пример: быстрая запись посещаемости {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Пример: выгрузка посещаемости сессии
+### Пример: выгрузка посещаемости сессии {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Серии посещений
+## Серии посещений {#streaks}
 
 Базовый путь: `/attendance/streaks`
 
@@ -269,7 +270,7 @@ Authorization: Bearer <token>
 |--------|------|------|------------|-------------|
 | GET | `/person/:personId` | JWT | — | Загрузить серии посещений человека |
 
-## Связанные страницы
+## Связанные страницы {#related-pages}
 
 - [Эндпоинты членства](./membership.md) — Люди, группы, роли и управление церковью
 - [Аутентификация и разрешения](./authentication.md) — Процесс входа, JWT, модель разрешений

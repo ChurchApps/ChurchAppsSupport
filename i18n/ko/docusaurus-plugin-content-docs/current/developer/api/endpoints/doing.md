@@ -3,7 +3,7 @@ title: "Doing 엔드포인트"
 description: "예배 계획, 봉사 배정, 작업, 자동화를 담당하는 B1 Admin의 Doing API 엔드포인트 참조입니다. 경로, 인증, 권한을 설명합니다."
 ---
 
-# Doing 엔드포인트
+# Doing 엔드포인트 {#doing-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ Doing 모듈은 예배 계획, 봉사자 일정, 할 일 관리, 자동화를 �
 
 **기본 경로:** `/doing`
 
-## 계획
+## 계획 {#plans}
 
 기본 경로: `/doing/plans`
 
@@ -36,7 +36,7 @@ Doing 모듈은 예배 계획, 봉사자 일정, 할 일 관리, 자동화를 �
 | POST | `/autofill/:id` | JWT | — | 계획의 봉사자 배정 자동 채우기. 본문: `{ teams: [{ positionId, personIds }] }` |
 | DELETE | `/:id` | JWT | — | 계획과 관련된 모든 시간, 배정, 자리, 계획 항목 삭제 |
 
-### 예시: 계획 복사하기
+### 예시: 계획 복사하기 {#example-copy-a-plan}
 
 ```
 POST /doing/plans/copy/abc-123
@@ -57,7 +57,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## 계획 유형
+## 계획 유형 {#plan-types}
 
 기본 경로: `/doing/planTypes`
 
@@ -72,7 +72,7 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 | POST | `/` | JWT | — | 계획 유형 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 계획 유형 삭제 |
 
-## 계획 항목
+## 계획 항목 {#plan-items}
 
 기본 경로: `/doing/planItems`
 
@@ -88,7 +88,7 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 | POST | `/sort` | JWT | — | 계획 항목의 정렬 순서 업데이트(형제 항목을 다시 정렬) |
 | DELETE | `/:id` | JWT | — | 계획 항목 삭제 |
 
-## 계획 피드
+## 계획 피드 {#plan-feed}
 
 기본 경로: `/doing/planFeed`
 
@@ -98,7 +98,7 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 |--------|------|------|------|------|
 | GET | `/presenter/:churchId/:planId` | 공개 | — | 발표자용 계획 피드 가져오기(비어 있으면 장소 피드에서 자동으로 채움) |
 
-## 자리
+## 자리 {#positions}
 
 기본 경로: `/doing/positions`
 
@@ -113,7 +113,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, POST `/`, DELETE `/:id` —
 | POST | `/` | JWT | — | 자리 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 자리 삭제 |
 
-## 시간
+## 시간 {#times}
 
 기본 경로: `/doing/times`
 
@@ -126,7 +126,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, POST `/`, DELETE `/:id` —
 | POST | `/` | JWT | — | 시간 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 시간 삭제 |
 
-## 배정
+## 배정 {#assignments}
 
 기본 경로: `/doing/assignments`
 
@@ -144,7 +144,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, POST `/`, DELETE `/:id` —
 | DELETE | `/signup/:id` | JWT | — | 본인의 셀프 가입 취소. 계획의 가입 마감일이 지나면 "Removal deadline has passed"로 거부됨 |
 | DELETE | `/:id` | JWT | — | 배정 삭제 |
 
-### 예시: 배정 수락하기
+### 예시: 배정 수락하기 {#example-accept-an-assignment}
 
 ```
 POST /doing/assignments/accept/assign-123
@@ -161,7 +161,7 @@ Authorization: Bearer <token>
 }
 ```
 
-## 불가능한 날짜
+## 불가능한 날짜 {#blockout-dates}
 
 기본 경로: `/doing/blockoutDates`
 
@@ -176,7 +176,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | POST | `/` | JWT | — | 불가능한 날짜 생성 또는 업데이트(제공하지 않으면 personId 기본값은 현재 사용자) |
 | DELETE | `/:id` | JWT | — | 불가능한 날짜 삭제 |
 
-## 할 일
+## 할 일 {#tasks}
 
 기본 경로: `/doing/tasks`
 
@@ -188,11 +188,12 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | GET | `/closed` | JWT | — | 현재 사용자의 완료된 할 일 가져오기 |
 | GET | `/timeline?taskIds=` | JWT | — | 쉼표로 구분된 할 일 ID로 할 일의 타임라인 데이터 가져오기 |
 | GET | `/directoryUpdate/:personId` | JWT | — | 인물의 교인 정보 업데이트 할 일 가져오기 |
-| POST | `/` | JWT | — | 할 일 생성 또는 업데이트. 교인 정보 업데이트 할 일을 처리하려면 `?type=directoryUpdate`를 추가(사진을 자동으로 업로드) |
+| POST | `/` | JWT | — | 할 일 생성 또는 업데이트. 교인 정보 업데이트 할 일을 처리하려면 `?type=directoryUpdate`를 추가(사진을 자동으로 업로드). 기존 할 일의 `assignedToId`를 변경하면 `data`의 기록에 "Reassigned from ... to ..." 항목이 추가됨 |
 | POST | `/:id/conversation` | JWT | `tasks.edit` 또는 카드 담당자 | 카드에 메모 대화를 연결. 본문: `{ conversationId }`. 처음 연결된 대화가 유지되며, 이후 호출은 카드를 변경 없이 반환 |
 | POST | `/loadForGroups` | JWT | — | 특정 그룹의 할 일 불러오기. 본문: `{ groupIds: [], status: "Open" }` |
+| DELETE | `/:id` | JWT | `tasks.edit` | 일반 할 일을 영구 삭제. 워크플로 카드(카드 엔드포인트를 사용)와 계정 삭제 요청(검토 동작에서 처리)에 대해서는 400을 반환 |
 
-## 자동화
+## 자동화 {#automations}
 
 기본 경로: `/doing/automations`
 
@@ -204,7 +205,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | POST | `/` | JWT | — | 자동화 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 자동화 삭제 |
 
-## 동작
+## 동작 {#actions}
 
 기본 경로: `/doing/actions`
 
@@ -217,7 +218,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | POST | `/` | JWT | — | 동작 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 동작 삭제 |
 
-## 조건
+## 조건 {#conditions}
 
 기본 경로: `/doing/conditions`
 
@@ -230,7 +231,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | POST | `/` | JWT | — | 조건 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 조건 삭제 |
 
-## 접속사
+## 접속사 {#conjunctions}
 
 기본 경로: `/doing/conjunctions`
 
@@ -243,7 +244,7 @@ CRUD 기본 클래스를 확장합니다(GET `/:id`, DELETE `/:id` — 권한 �
 | POST | `/` | JWT | — | 접속사 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 접속사 삭제 |
 
-## 콘텐츠 제공자 인증
+## 콘텐츠 제공자 인증 {#content-provider-auths}
 
 기본 경로: `/doing/contentProviderAuths`
 
@@ -263,7 +264,7 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 | POST | `/` | JWT | — | 콘텐츠 제공자 인증 생성 또는 업데이트 |
 | DELETE | `/:id` | JWT | — | 콘텐츠 제공자 인증 삭제 |
 
-## 제공자 프록시
+## 제공자 프록시 {#provider-proxy}
 
 기본 경로: `/doing/providerProxy`
 
@@ -277,7 +278,7 @@ CRUD 기본 클래스를 확장합니다(GET `/`, GET `/:id`, POST `/`, DELETE `
 | POST | `/getInstructions` | JWT | — | 콘텐츠 항목의 지침 가져오기. 본문: `{ ministryId, providerId, path }` |
 | POST | `/getExpandedInstructions` | JWT | — | 콘텐츠 항목의 확장된 지침 가져오기. 본문: `{ ministryId, providerId, path }` |
 
-## 관련 문서
+## 관련 문서 {#related-pages}
 
 - [Membership 엔드포인트](./membership.md) — 교인, 그룹, 역할, 권한
 - [Attendance 엔드포인트](./attendance.md) — 예배 및 방문 기록

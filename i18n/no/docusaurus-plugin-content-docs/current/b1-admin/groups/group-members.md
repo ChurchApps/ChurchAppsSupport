@@ -64,7 +64,7 @@ Gruppeledere kan føre private notater om gruppen – for eksempel oppfølginger
 Seksjonen **Leader notes** vises på gruppesiden bare for personer som er ledere for gruppen. Den viser det nyeste notatet, hvem som skrev det og når, og hvor mange notater det finnes.
 
 1. På gruppesiden klikker du **All notes** i seksjonen **Leader notes**.
-2. Skriv notatet ditt i boksen og legg det ut. For å formatere det markerer du tekst og velger **Bold**, **Italic**, **Bulleted list** eller **Numbered list** fra popup-menyen som dukker opp (eller trykker **Ctrl+B** / **Ctrl+I**). Notatene vises med forfatterens navn og bilde, og dato og klokkeslett for når de ble lagt ut.
+2. Skriv notatet ditt i boksen og legg det ut. For å formatere det bruker du raden med knappene **Bold**, **Italic**, **Bulleted list** og **Numbered list** som vises under boksen mens du skriver: marker tekst og klikk på en knapp (eller trykk **Ctrl+B** / **Ctrl+I**). I en liste starter **Enter** neste punkt, og **Enter** på et tomt punkt avslutter listen. Notatene vises med forfatterens navn og bilde, og dato og klokkeslett for når de ble lagt ut.
 3. Klikk lenken **Back to** med gruppens navn for å gå tilbake til gruppesiden.
 
 :::info

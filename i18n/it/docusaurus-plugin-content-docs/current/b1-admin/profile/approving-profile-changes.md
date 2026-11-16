@@ -3,7 +3,7 @@ title: "Approvare le modifiche ai profili"
 description: "Verifica e approva le richieste di modifica del profilo dei membri in B1 Admin, e configura il Gruppo di approvazione dell'anagrafe che le riceve."
 ---
 
-# Approvare le modifiche ai profili
+# Approvare le modifiche ai profili {#approving-profile-changes}
 
 <div class="article-intro">
 
@@ -40,7 +40,7 @@ Quando un membro invia una modifica al profilo, questa compare come compito asse
 3. Verifica le modifiche.
 4. Clicca su **Applica** per approvare e salvare le modifiche nel suo profilo.
 
-Una richiesta per aggiungere un familiare mostra il titolo, il nome, il ruolo nel nucleo e il cellulare della nuova persona su un'unica riga (ad esempio, *Sig. Mario Rossi · Figlio · 555-0100*). Applicandola, la persona viene creata nel nucleo familiare del membro con questi dati.
+Una richiesta per aggiungere un familiare mostra il titolo, il nome, il ruolo nel nucleo, il cellulare e l'email della nuova persona su un'unica riga (ad esempio, *Sig. Mario Rossi · Figlio · 555-0100 · mario@example.com*), con accanto la sua foto se il membro ne ha aggiunta una. Applicandola, la persona viene creata nel nucleo familiare del membro con questi dati e con la foto.
 
 Il compito si chiude automaticamente una volta applicate le modifiche.
 

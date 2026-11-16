@@ -1,14 +1,14 @@
 ---
-title: "Dein Profil im B1.church Mitgliederportal bearbeiten"
+title: "Ihr Profil im B1.church-Mitgliederportal bearbeiten"
 sidebar_label: "Profil bearbeiten"
-description: "Aktualisiere deine Kontaktdaten, Haushaltsmitglieder, Anmelde-E-Mail und dein Passwort sowie deine Datenschutzeinstellungen im B1.church-Mitgliederportal."
+description: "Aktualisieren Sie Ihre Kontaktdaten, Haushaltsmitglieder, Anmelde-E-Mail, Passwort und Datenschutzeinstellungen im B1.church-Mitgliederportal."
 ---
 
-# Dein Profil bearbeiten
+# Ihr Profil bearbeiten {#editing-your-profile}
 
 <div class="article-intro">
 
-Deine Profilseite im Mitgliederportal ermöglicht es dir, deine Kontaktdaten zu aktualisieren, deinen Haushalt zu verwalten, deine Konto-E-Mail und dein Passwort zu ändern und festzulegen, wer deine Adresse, Telefonnummer und E-Mail-Adresse sehen kann.
+Ihre Profilseite im Mitgliederportal ermöglicht es Ihnen, Ihre Kontaktdaten zu aktualisieren, Ihren Haushalt zu verwalten, Ihre Konto-E-Mail-Adresse und Ihr Passwort zu ändern und festzulegen, wer Ihre Adresse, Telefonnummer und E-Mail-Adresse sehen kann.
 
 </div>
 
@@ -17,77 +17,78 @@ Deine Profilseite im Mitgliederportal ermöglicht es dir, deine Kontaktdaten zu 
 <YouTube id="SKqr2A_jdRQ" title="Profil und Benachrichtigungen aktualisieren" next="Einer Gruppe beitreten und mit ihr chatten" nextUrl="/docs/b1-church/groups/browsing-groups" />
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du musst [angemeldet](./logging-in.md) sein -- zum Bearbeiten des Profils ist ein Konto erforderlich
+- Sie müssen [angemeldet](./logging-in.md) sein -- zum Bearbeiten des Profils ist ein Konto erforderlich
 
 </div>
 
-## Dein Profil öffnen {#opening-your-profile}
+## Ihr Profil öffnen {#opening-your-profile}
 
-Tippe in der oberen App-Leiste auf dein Profilfoto oder oben auf der Seite **Mehr** bzw. auf deiner [Ich-Seite](./me-page.md) auf **Profil bearbeiten**, um **Dein Profil** unter `/mobile/profileEdit` zu öffnen. Die Seite besteht aus einem Blatt mit Abschnitten -- **Foto & Name**, **Kontakt**, **Haushalt**, **Konto** und **Datenschutz** -- die jeweils deine aktuellen Angaben mit einem Link **Bearbeiten** (oder **Familienmitglied hinzufügen** / **Ändern**) zeigen, der ein Feld zum Ändern öffnet.
+Tippen Sie in der oberen App-Leiste auf Ihr Profilfoto oder auf **Profil bearbeiten** oben auf der Seite **Mehr** bzw. auf Ihrer [Ich-Seite](./me-page.md), um **Ihr Profil** unter `/mobile/profileEdit` zu öffnen. Die Seite besteht aus einer Reihe von Abschnitten -- **Foto & Name**, **Kontakt**, **Haushalt**, **Konto** und **Datenschutz** --, die jeweils Ihre aktuellen Angaben mit einem Link **Bearbeiten** (oder **Familienmitglied hinzufügen** bzw. **Ändern**) zeigen. Dieser öffnet ein Fenster, in dem Sie Änderungen vornehmen.
 
 ## Foto & Name und Kontakt {#photo--name-and-contact}
 
-Diese Abschnitte enthalten die Angaben, die deine Gemeinde in deinem Personendatensatz sieht:
+Diese Abschnitte enthalten die Angaben, die Ihre Gemeinde in Ihrem Personendatensatz sieht:
 
-- **Foto & Name** -- Tippe auf **Foto ändern**, um ein neues Bild hochzuladen, und bearbeite deine **Anrede**, deinen Vornamen, zweiten Vornamen und Nachnamen. Bei der **Anrede** wählst du einen Vorschlag (Herr, Frau, Fräulein, Dr., Prof., Pfr. oder Pastor) oder gibst deine eigene ein, bis zu 10 Zeichen.
-- **Kontakt** -- E-Mail, Mobiltelefon, Festnetz, Arbeitstelefon, Geburtsdatum und deine Adresse (Straße, Ort, Bundesland und Postleitzahl). Wenn du in den [Benachrichtigungseinstellungen](./notification-preferences.md) Textnachrichten-Erinnerungen aktivierst, gehen sie an deine Mobilnummer.
+- **Foto & Name** -- Tippen Sie auf **Foto ändern**, um ein neues Bild hochzuladen, und bearbeiten Sie Ihre **Anrede**, Ihren Vornamen, zweiten Vornamen und Nachnamen. Für **Anrede** wählen Sie einen Vorschlag (Herr, Frau, Fräulein, Dr., Prof., Pfr. oder Pastor) oder geben eine eigene ein, bis zu 10 Zeichen.
+- **Kontakt** -- E-Mail, Mobiltelefon, Festnetz, Arbeitstelefon, Geburtsdatum und Ihre Adresse (Straße, Ort, Bundesland und Postleitzahl). Wenn Sie unter [Benachrichtigungseinstellungen](./notification-preferences.md) Textnachricht-Erinnerungen aktivieren, gehen diese an Ihre Mobilnummer.
 
-Nimm deine Änderungen im Feld vor und tippe auf **Änderungen speichern**.
+Nehmen Sie Ihre Änderungen im Fenster vor und tippen Sie auf **Änderungen speichern**.
 
 :::info
-Verlangt deine Gemeinde eine Genehmigung für Verzeichnisänderungen, steht auf der Seite "Änderungen an deinem Profil gehen zur Prüfung an die Mitarbeiter der Gemeinde." und die Schaltfläche lautet **Zur Genehmigung einreichen** -- deine Änderungen werden als Anfrage eingereicht und nicht sofort übernommen. Wie deine Gemeinde diese prüft, erfährst du unter [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes).
+Wenn Ihre Gemeinde für Verzeichnisänderungen eine Genehmigung verlangt, steht auf der Seite „Änderungen an Ihrem Profil gehen zur Prüfung an die Mitarbeitenden der Gemeinde.“ und die Schaltfläche lautet **Zur Genehmigung einreichen** -- Ihre Änderungen werden dann als Anfrage eingereicht, statt sofort übernommen zu werden. Wie Ihre Gemeinde sie prüft, erfahren Sie unter [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes).
 :::
 
 ## Haushalt {#household}
 
-Der Abschnitt Haushalt zeigt die anderen Personen, die mit deinem Haushalt verbunden sind, jeweils mit ihrer Rolle im Haushalt (Haushaltsvorstand, Ehepartner, Kind usw.). Tippe auf ein Haushaltsmitglied, um dessen Details zu sehen.
+Der Abschnitt Haushalt zeigt die anderen Personen, die mit Ihrem Haushalt verknüpft sind, jeweils mit ihrer Rolle im Haushalt (Haushaltsvorstand, Ehepartner, Kind und so weiter). Tippen Sie auf ein Haushaltsmitglied, um dessen Details anzuzeigen.
 
-So fügst du ein Familienmitglied hinzu, das noch nicht im System ist:
+Um ein Familienmitglied hinzuzufügen, das noch nicht im System ist:
 
-1. Tippe auf **Familienmitglied hinzufügen**.
-2. Gib den **Vornamen** ein. Der **Nachname** ist bereits mit deinem Nachnamen ausgefüllt; ändere ihn, wenn er ein anderer ist.
-3. Füge optional die **Anrede** und das **Mobiltelefon** hinzu.
-4. Wähle die **Rolle im Haushalt**: **Haushaltsvorstand**, **Ehepartner**, **Kind** oder **Sonstige** (Standard).
-5. Tippe auf **Hinzufügen**. Die Person erscheint mit ihrer Rolle unter **Ausstehende Familienmitglieder**; tippe auf **Entfernen**, um jemanden von der Liste zu nehmen. Wiederhole dies für weitere Personen.
-6. Tippe auf **Änderungen speichern** (oder **Zur Genehmigung einreichen**).
+1. Tippen Sie auf **Familienmitglied hinzufügen**.
+2. Geben Sie den **Vornamen** ein. Der **Nachname** ist bereits mit Ihrem Nachnamen vorausgefüllt; ändern Sie ihn, wenn der Nachname der Person abweicht.
+3. Optional können Sie **Anrede**, **E-Mail** und **Mobiltelefon** ergänzen.
+4. Wählen Sie die **Rolle im Haushalt**: **Haushaltsvorstand**, **Ehepartner**, **Kind** oder **Sonstige** (Standard).
+5. Optional tippen Sie auf **Foto hinzufügen**, um ein Bild dieser Person auszuwählen (tippen Sie auf **Foto ändern**, um ein anderes zu wählen).
+6. Tippen Sie auf **Hinzufügen**. Die Person erscheint unter **Ausstehende Familienmitglieder** mit ihrer Rolle und E-Mail-Adresse; tippen Sie auf **Entfernen**, um sie von der Liste zu nehmen. Wiederholen Sie dies für weitere Personen.
+7. Tippen Sie auf **Änderungen speichern** (oder **Zur Genehmigung einreichen**).
 
-Prüft deine Gemeinde Verzeichnisänderungen, werden neue Familienmitglieder zusammen mit deinen anderen Änderungen zur Genehmigung eingereicht. Andernfalls werden sie deinem Haushalt sofort beim Speichern hinzugefügt.
+Prüft Ihre Gemeinde Verzeichnisänderungen, werden die neuen Familienmitglieder zusammen mit Ihren übrigen Änderungen zur Genehmigung eingereicht. Andernfalls werden sie Ihrem Haushalt sofort beim Speichern hinzugefügt.
 
 ## Konto {#account}
 
-Der Abschnitt Konto verwaltet deine Anmeldung statt deines Gemeindeprofils. Tippe auf **Bearbeiten**, um ihn zu öffnen:
+Der Abschnitt Konto verwaltet Ihren Login statt Ihres Gemeindeprofils. Tippen Sie auf **Bearbeiten**, um ihn zu öffnen:
 
-- **Anzeigename** -- der Vor- und Nachname, der bei deiner Anmeldung angezeigt wird (getrennt vom Namen in deinem Gemeindeprofil).
-- **E-Mail ändern** -- aktualisiere die E-Mail-Adresse, mit der du dich anmeldest.
-- **Passwort ändern** -- gib dein aktuelles Passwort ein und dann dein neues Passwort zweimal. Das neue Passwort muss mindestens 8 Zeichen lang sein.
+- **Anzeigename** -- der Vor- und Nachname, der bei Ihrer Anmeldung angezeigt wird (getrennt vom Namen in Ihrem Gemeindeprofil).
+- **E-Mail ändern** -- aktualisieren Sie die E-Mail-Adresse, mit der Sie sich anmelden.
+- **Passwort ändern** -- geben Sie Ihr aktuelles Passwort ein und danach zweimal Ihr neues Passwort. Das neue Passwort muss mindestens 8 Zeichen lang sein.
 
 Jeder Teil hat seine eigene Schaltfläche **Speichern**.
 
 ## Datenschutz {#privacy}
 
-Der Abschnitt Datenschutz zeigt, wer deine Kontaktdaten in allen ChurchApps-Diensten sehen kann. Tippe auf **Ändern**, um **Sichtbarkeitseinstellungen** zu öffnen:
+Der Abschnitt Datenschutz zeigt, wer Ihre Kontaktdaten in allen ChurchApps sehen kann. Tippen Sie auf **Ändern**, um **Sichtbarkeitseinstellungen** zu öffnen:
 
-- **Mich im Mitgliederverzeichnis ausblenden** -- ein Schalter, der dich vollständig aus dem [Mitgliederverzeichnis](../community/member-directory.md) entfernt.
-- **Sichtbarkeit der Adresse**, **Sichtbarkeit der Telefonnummer** und **Sichtbarkeit der E-Mail** -- jede hat ihr eigenes Auswahlmenü, sodass du zum Beispiel deine E-Mail-Adresse mit der ganzen Gemeinde teilen und deine Adresse privater halten kannst. Die Optionen sind:
+- **Mich im Mitgliederverzeichnis ausblenden** -- ein Schalter, der Sie vollständig aus dem [Mitgliederverzeichnis](../community/member-directory.md) entfernt.
+- **Sichtbarkeit der Adresse**, **Sichtbarkeit der Telefonnummer** und **Sichtbarkeit der E-Mail** -- jede hat ein eigenes Auswahlmenü, sodass Sie etwa Ihre E-Mail-Adresse mit der ganzen Gemeinde teilen, Ihre Adresse aber privater halten können. Zur Auswahl stehen:
 
 | Stufe | Wer es sehen kann |
 |---|---|
 | **Alle** | Für alle sichtbar, die das Verzeichnis einsehen können. |
 | **Nur Mitglieder** | Für andere angemeldete Gemeindemitglieder sichtbar. |
-| **Nur meine Gruppen** | Nur für Mitglieder der Gruppen sichtbar, denen du angehörst. |
-| **Meine Gruppenleiter und Mitarbeiter** | Nur für Mitarbeiter der Gemeinde und die Leiter der Gruppen sichtbar, denen du angehörst. |
-| **Nur Mitarbeiter** | Nur für Mitarbeiter der Gemeinde sichtbar (Personen mit dem Mitgliedsstatus Mitarbeiter oder der Berechtigung Personen anzeigen). |
+| **Nur meine Gruppen** | Nur für Mitglieder von Gruppen sichtbar, denen Sie angehören. |
+| **Meine Gruppenleiter und Mitarbeiter** | Nur für Mitarbeitende der Gemeinde und die Leitenden der Gruppen sichtbar, denen Sie angehören. |
+| **Nur Mitarbeiter** | Nur für Mitarbeitende der Gemeinde sichtbar (Personen mit dem Mitgliedsstatus Mitarbeitende oder der Berechtigung Personen anzeigen). |
 
-Tippe auf **Speichern**, um deine Auswahl zu übernehmen. Deine Gemeinde legt für jedes dieser drei Felder einen Standard fest -- siehe [Einstellungen der mobilen App](/docs/b1-admin/settings/mobile-app) -- aber was du hier wählst, überschreibt diesen Standard für deinen eigenen Datensatz.
+Tippen Sie auf **Speichern**, um Ihre Auswahl zu übernehmen. Ihre Gemeinde legt für jedes dieser drei Felder einen Standard fest -- siehe [Einstellungen der mobilen App](/docs/b1-admin/settings/mobile-app) -- doch was Sie hier wählen, überschreibt diesen Standard für Ihren eigenen Datensatz.
 
 :::tip
-Du siehst immer deine eigenen Angaben, unabhängig von diesen Einstellungen, und Mitarbeiter mit der Berechtigung zum Anzeigen von Personen können sie ebenfalls immer sehen.
+Sie sehen Ihre eigenen Angaben immer, unabhängig von diesen Einstellungen, und Mitarbeitende mit der Berechtigung Personen anzeigen können sie ebenfalls immer sehen.
 :::
 
 ## Verwandte Artikel {#related-articles}
 
-- [Die Ich-Seite](./me-page.md) — Dein persönliches Dashboard
-- [Mitgliederverzeichnis](../community/member-directory.md) — Andere Mitglieder durchsuchen
-- [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes) — Wie deine Gemeinde eingereichte Änderungen prüft
+- [Die Ich-Seite](./me-page.md) -- Ihr persönliches Dashboard
+- [Mitgliederverzeichnis](../community/member-directory.md) -- Andere Mitglieder durchsuchen
+- [Profiländerungen genehmigen](/docs/b1-admin/profile/approving-profile-changes) -- Wie Ihre Gemeinde eingereichte Änderungen prüft

@@ -55,7 +55,7 @@ Each workflow board is made up of **steps**, shown as columns from left to right
 When you add or edit a step, you can configure:
 
 - **Step Name** -- the column heading (for example, "Welcome Call" or "Awaiting Registration").
-- **Due in (days)** -- automatically sets a due date when a card enters this step. Cards past their due date are flagged as **Overdue**.
+- **Due in (days)** -- automatically sets a due date when a card enters this step. Cards past their due date are flagged as **Overdue**. Leave it blank for no due date; you can also clear a number you set earlier.
 - **Default assignee** -- the person or group new cards on this step are assigned to automatically. When the default assignee is a person, they get a notification that a card has been assigned to them.
 - **Automated actions** -- things the system does on its own when a card arrives (see below).
 - **Routing** -- where the card goes when it leaves the step (see [Routing](#routing-cards-with-outcomes-and-conditions)).
@@ -158,7 +158,7 @@ Open a workflow to see its board. Each card shows the person's name, who it is a
 
 From the card drawer you can:
 
-- **Assign** the card to a different person or group.
+- **Assign** the card to a different person or group. The change is recorded in the card's **Activity**, for example "Reassigned from Jane Smith to John Doe".
 - **Snooze** the card for 1 day, 3 days, or 1 week to temporarily hide its due date.
 - **Send Back** to the previous step or **Skip** to the next step.
 - **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card to a new step reassigns it to that step's default assignee; pinning keeps the current person responsible throughout.
@@ -253,7 +253,7 @@ A special kind of workflow can follow up on [serving requests](./plans.md#assign
 
 These workflows use a **Send serving request** action instead of **Send email** and **Send text**. Choose **Email** or **Text message** and, optionally, write a **Request message**. The request always includes the role, plan, service date, and a link to respond; you can use `{{planName}}`, `{{positionName}}`, and `{{serviceDate}}` in your message. Leave the message empty to use the default request. Volunteers' notification preferences, text opt-in, your texting provider, and your church's email approval all apply, and any skipped or blocked attempt is recorded on the card. **Send email**, **Send text**, and **Add to workflow** aren't available on these boards.
 
-The **Triggers** tab on a confirmation workflow explains how cards are started rather than offering triggers, and these workflows don't appear in the **Add to Workflow** lists for people.
+The **Triggers** tab on a confirmation workflow explains how cards are started rather than offering triggers, and these workflows don't appear in the **Add to Workflow** lists for people. The board has no **Add Card** button, since cards only come from serving requests on a plan.
 
 ### How cards are started and closed
 

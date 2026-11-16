@@ -3,11 +3,11 @@ title: "Approbations du calendrier"
 description: "Examinez les demandes de réservation de salles et de ressources en attente dans B1 Admin, vérifiez les conflits, approuvez ou refusez-les, et consultez les décisions passées dans l'historique."
 ---
 
-# Approbations du calendrier
+# Approbations du calendrier {#calendar-approvals}
 
 <div class="article-intro">
 
-La page Approbations est l'endroit où les administrateurs examinent les demandes de réservation de salles et de ressources en attente, ainsi que les événements du calendrier qui doivent être approuvés avant d'être publiés.
+La page Approbations est l'endroit où les administrateurs examinent et traitent les demandes de réservation de salles et de ressources en attente, ainsi que les événements du calendrier qui doivent être approuvés avant d'être publiés.
 
 </div>
 
@@ -15,7 +15,7 @@ La page Approbations est l'endroit où les administrateurs examinent les demande
 <h4>Avant de commencer</h4>
 
 - Configurez des salles ou des ressources avec un **Groupe d'approbation** dans [Salles et ressources](./rooms-resources.md)
-- Vous devez disposer de l'autorisation **Modifier le contenu**, ou de **Résoudre les conflits et approbations du calendrier** (les deux se trouvent dans la section **Contenu** de [Rôles et autorisations](../settings/roles-permissions.md)). Sans **Modifier le contenu**, le menu **Calendriers** n'est pas affiché — ouvrez alors Approbations depuis le lien des approbations en attente du **Tableau de bord** ou depuis le courriel d'approbation.
+- Vous devez disposer de l'autorisation **Modifier le contenu**, ou de **Résoudre les conflits et approbations du calendrier** (les deux se trouvent dans la section **Contenu** de [Rôles et autorisations](../settings/roles-permissions.md)). Sans **Modifier le contenu**, le menu **Calendriers** n'est pas affiché -- ouvrez alors Approbations depuis le lien des approbations en attente du **Tableau de bord** ou depuis le courriel d'approbation.
 
 </div>
 
@@ -25,9 +25,9 @@ Dans B1 Admin, ouvrez le [menu Jump](../introduction.md#getting-around-with-the-
 
 ## Demandes de réservation {#booking-requests}
 
-Lorsqu'une personne réserve une salle ou une ressource qui possède un **Groupe d'approbation**, et qu'elle ne fait pas partie de ce groupe, la demande apparaît dans la section **Demandes de salles et ressources**. (Les réservations faites par les membres du Groupe d'approbation sont approuvées automatiquement.) Les membres du Groupe d'approbation reçoivent aussi un courriel listant les nouvelles demandes en attente, avec un lien vers cette page. Chaque ligne affiche :
+Lorsqu'une personne réserve une salle ou une ressource qui possède un **Groupe d'approbation**, et qu'elle n'est pas membre de ce groupe, la demande apparaît dans la section **Demandes de salles et ressources**. (Les réservations faites par les membres du Groupe d'approbation sont approuvées automatiquement.) Les membres du Groupe d'approbation reçoivent aussi un courriel listant les nouvelles demandes en attente, avec un lien vers cette page. Chaque ligne affiche :
 
-- Le nom et la date/heure de l'événement
+- Le nom et la date/l'heure de l'événement
 - La salle ou la ressource demandée (avec la quantité pour les ressources à plusieurs unités)
 - **Demandé par**, la personne qui l'a demandée, avec un lien vers sa fiche
 - Un badge de statut indiquant si la demande comporte des conflits
@@ -38,7 +38,7 @@ Si une demande chevauche une autre réservation ou un blocage pour la même sall
 
 ### Approuver ou refuser {#approving-or-rejecting}
 
-Passez la souris sur une demande de réservation et cliquez sur **Approuver** ou **Refuser** (le refus vous demande d'abord une confirmation). Le demandeur est informé de la décision. Les réservations approuvées bloquent la salle ou la ressource pour l'événement ; les réservations refusées libèrent le créneau pour d'autres.
+Passez la souris sur une demande de réservation et cliquez sur **Approuver** ou **Refuser**. Le demandeur est informé de la décision. Les réservations approuvées bloquent la salle ou la ressource pour l'événement ; les réservations refusées libèrent le créneau pour d'autres.
 
 Lorsque vous cliquez sur **Approuver**, une boîte de dialogue **Approuver la réservation** s'ouvre afin que vous puissiez aussi publier l'événement à la même étape :
 
@@ -46,9 +46,16 @@ Lorsque vous cliquez sur **Approuver**, une boîte de dialogue **Approuver la r�
 2. Une fois **Publier dans le calendrier public** coché, vous pouvez éventuellement choisir un calendrier organisé dans **Ajouter aussi au calendrier** pour ajouter l'événement à l'un de vos [calendriers organisés](./curated-calendar.md). Laissez sur **Aucun** pour ignorer cette étape. (Cette option n'apparaît que si vous disposez de l'autorisation **content.edit**.)
 3. Cliquez sur **Approuver**.
 
+Lorsque vous cliquez sur **Refuser**, une boîte de dialogue **Refuser la demande** s'ouvre :
+
+1. Saisissez éventuellement un motif dans **Motif (facultatif)** (jusqu'à 500 caractères) -- par exemple *« Le gymnase est réservé ce week-end-là. »*
+2. Cliquez sur **Refuser** pour confirmer, ou sur **Annuler** pour laisser la demande en attente.
+
+Le motif est ajouté à la fin de la notification reçue par le demandeur (par exemple *Votre demande d'événement « Youth Lock-In » a été refusée : Le gymnase est réservé ce week-end-là.*), et les membres le voient aussi sur leur page **Mes demandes** dans l'application B1. Laissez-le vide pour envoyer l'avis standard.
+
 ## Événements en attente {#pending-events}
 
-Les événements demandés par les membres (par exemple depuis **Mes demandes** dans l'application B1) apparaissent dans la section **Demandes d'événements** avec leur date, leur **Description** et **Demandé par**. Cliquez sur **Approuver** pour publier un événement dans le calendrier, ou sur **Refuser** pour informer l'auteur que des modifications sont nécessaires. Cliquez sur **Modifier** pour corriger les détails de la demande avant de décider, ou sur **Supprimer** pour la retirer.
+Les événements que les membres demandent (par exemple depuis **Mes demandes** dans l'application B1) apparaissent dans la section **Demandes d'événements** avec leur date, leur **Description** et **Demandé par**. Cliquez sur **Approuver** pour publier un événement dans le calendrier, ou sur **Refuser** pour informer l'auteur que des modifications sont nécessaires (vous pouvez ajouter un motif, comme décrit plus haut). Cliquez sur **Modifier** pour corriger les détails de la demande avant de décider, ou sur **Supprimer** pour la retirer. Les demandes d'événements envoyées par les membres depuis l'application n'ont pas de groupe ; la liste **Groupe** de la boîte de modification affiche donc **(aucun groupe)** pour elles, et vous pouvez enregistrer vos modifications sans en choisir un.
 
 :::tip
 Configurez un Groupe d'approbation sur une salle dans [Salles et ressources](./rooms-resources.md) pour exiger une approbation pour cette salle. Les groupes qui y ont accès peuvent alors demander la salle lors de la création d'événements, et ces demandes arrivent sur cette page.
@@ -58,10 +65,10 @@ Configurez un Groupe d'approbation sur une salle dans [Salles et ressources](./r
 
 Les demandes approuvées et refusées restent sur la page. Cliquez sur **Historique** en haut des Approbations pour les voir ; cliquez sur **En attente** pour revenir aux demandes ouvertes.
 
-- **Demandes de salles et ressources** liste chaque réservation tranchée avec l'événement, la salle ou la ressource, **Demandé par**, un badge **Approuvé** ou **Refusé**, et **Décidé**, qui indique qui a pris la décision et à quelle date. Les demandes tranchées le plus récemment sont listées en premier.
-- **Demandes d'événements** liste chaque événement tranché avec sa description, **Demandé par**, un badge **Approuvé** ou **Refusé**, et **Décidé**, qui indique qui a pris la décision et à quelle date. Les anciennes demandes d'événements, tranchées avant que B1 ne commence à l'enregistrer, affichent un tiret à la place.
+- **Demandes de salles et ressources** liste chaque réservation tranchée avec l'événement, la salle ou la ressource, **Demandé par**, un badge **Approuvé** ou **Refusé**, et **Décidé**, qui indique qui a pris la décision et à quelle date. Les réservations tranchées le plus récemment sont listées en premier.
+- **Demandes d'événements** liste chaque événement tranché avec sa description, **Demandé par**, un badge **Approuvé** ou **Refusé**, et **Décidé**, qui indique qui a pris la décision et à quelle date. Les anciennes demandes d'événements, tranchées avant que B1 ne commence à enregistrer cette information, affichent un tiret à la place.
 
-Vous pouvez changer d'avis depuis l'historique : une demande approuvée comporte une action **Refuser** et une demande refusée comporte une action **Approuver**. Refuser une demande d'événement que vous aviez approuvée la retire du calendrier public. Les demandes d'événements peuvent aussi être modifiées ou supprimées ici.
+Vous pouvez changer d'avis depuis l'historique : une demande approuvée comporte une action **Refuser** et une demande refusée une action **Approuver**. Refuser une demande d'événement que vous aviez approuvée la retire du calendrier public. Les demandes d'événements peuvent aussi être modifiées ou supprimées ici.
 
 Cliquez sur un nom sous **Demandé par** pour ouvrir la fiche de cette personne.
 

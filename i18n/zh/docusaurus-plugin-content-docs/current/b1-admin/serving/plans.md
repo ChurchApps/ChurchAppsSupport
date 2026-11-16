@@ -3,7 +3,7 @@ title: "服事计划"
 description: "在 B1 Admin 中设置志愿者排班：按日期创建崇拜计划，从前几周复制，为岗位指派团队成员，并管理报名截止日期和提醒。"
 ---
 
-# 服事计划
+# 服事计划 {#service-plans}
 
 <div class="article-intro">
 
@@ -80,8 +80,8 @@ description: "在 B1 Admin 中设置志愿者排班：按日期创建崇拜计�
 1. 打开某份计划，点击 **Manage serving team**（管理服事团队）。
 2. 点击 **Add Position**（添加岗位）。在 **Add a Position**（添加岗位）对话框中，选择或输入 **Category Name**（类别名称），例如 Worship（敬拜）或 Hospitality（接待）；输入岗位 **Name**（名称）和 **Volunteer Count**（志愿者人数）；然后选择 **Volunteer Group**（志愿者小组）。如果希望教会中的任何人都能担任该岗位（而不仅限于某个团队的成员），请将 **Volunteer Group** 保持为 **None**（无）。勾选 **Allow Self-Signup**（允许自助报名），让志愿者可以自行报名空缺岗位；还可以添加可选的 **Description**（描述），志愿者在浏览报名机会时会看到该描述。点击 **Save**。
 3. 点击岗位旁边的 **People Needed**（所需人数）链接（例如 "2 People Needed"（需要 2 人））。
-4. 在 **Assign Position**（指派岗位）对话框中，点击团队成员的姓名即可将其指派到该岗位。如果该岗位的志愿者小组设置为 **None**，请搜索教会中的任何人，然后点击其旁边的添加人员图标。完成后点击 **Done**（完成）。
-5. 已指派的志愿者会显示在岗位旁边。其头像上的绿点表示已接受，红点表示已拒绝。
+4. 在 **Assign Position**（指派岗位）对话框中，点击团队成员的姓名即可将其指派到该岗位。若团队人数较多，可在 **Search team**（搜索团队）中输入部分姓名以缩小列表范围；列表会独立滚动，因此 **Done** 始终可见。计划日期当天设有[不可服事日期](./plan-validation.md#blockout-dates)的团队成员会显示 **Unavailable**（不可服事）标记，并列在最后。如果该岗位的志愿者小组设置为 **None**，请搜索教会中的任何人，然后点击其旁边的添加人员图标。完成后点击 **Done**（完成）。
+5. 已指派的志愿者会显示在岗位旁边。其头像上的绿点表示已接受，红点表示已拒绝。**Unavailable** 标记则表示其在该计划日期不可服事。
 6. 在 **Validation**（验证）面板中通知志愿者（参见[通知志愿者](./plan-validation.md#notifying-volunteers)）。如果该计划使用了[确认工作流](#plan-settings)，通知志愿者时还会启动一张工作流卡片，持续跟进每项请求，直到志愿者回复为止。
 
 若要更改或移除某项分派，请点击志愿者的姓名，然后在 **Edit Assignment**（编辑分派）对话框中点击 **Delete**（删除）。若要更改岗位，请点击其名称；在 **Edit Position**（编辑岗位）对话框中点击 **Delete** 会删除该岗位，并取消分派到该岗位的所有人员。

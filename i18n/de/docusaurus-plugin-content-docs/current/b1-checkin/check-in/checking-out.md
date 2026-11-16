@@ -1,71 +1,83 @@
 ---
-title: "Auschecken & Kindersicherheit"
-description: "Kinder an einer besetzten B1-Checkin-Station abmelden: mit Sicherheitscodes, geprüften Abholpersonen, Elternausruf, Etikettenneudruck und Notfallmeldungen."
+title: "Check-out & Kinderschutz"
+description: "Checken Sie Kinder an einer besetzten B1-Checkin-Station mit Sicherheitscodes, geprüften Abholpersonen, Eltern-Paging, Neudruck von Etiketten und Notfallbenachrichtigungen aus."
 ---
 
-# Auschecken & Kindersicherheit
+# Check-out & Kinderschutz {#checking-out--child-safety}
 
 <div class="article-intro">
 
-Auschecken schließt die Schleife beim Kinder-Check-In: Ein Elternteil zeigt den Sicherheitscode von ihrem Abhol-Label vor, das Kiosk überprüft, wer abholt, und die Kinder werden ausgecheckt. Besetzte Stationen erhalten auch Sicherheits-Tools -- Überprüfung vertrauenswürdiger Abhol-Personen, Textnachrichten zum Auffinden von Eltern, Sicherheits-Label-Nachdrucke und einen Notfall-Rundfunk.
+Der Check-out schließt den Kreislauf des Kinder-Check-ins: Ein Elternteil zeigt den Sicherheitscode von seinem Abholetikett vor, der Kiosk prüft, wer abholt, und die Kinder werden ausgecheckt. Besetzte Stationen erhalten außerdem Sicherheitswerkzeuge -- die Prüfung vertrauenswürdiger Abholpersonen, Textnachrichten an Eltern, den Neudruck von Sicherheitsetiketten und eine Notfallbenachrichtigung.
 
 </div>
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
 
-- Auschecken ist auf Stationen verfügbar, die in den Kiosk-Admin-Einstellungen auf **manned**-Modus eingestellt sind
-- Kinder müssen mit einem gedruckten Abhol-Label [eingecheckt](./completing-checkin.md) worden sein, das den Sicherheitscode trägt
-- Paging und Notfall-Rundfunk erfordern, dass Ihre Kirche einen Textnachrichten-Provider in B1 Admin verbunden hat
+- Der Check-out ist an Stationen verfügbar, die in den Kiosk-Administrationseinstellungen auf den Modus **besetzt** eingestellt sind
+- Kinder müssen [eingecheckt](./completing-checkin.md) worden sein, wobei ein gedrucktes Abholetikett mit dem Sicherheitscode ausgegeben wurde
+- Für Eltern-Paging und Notfallbenachrichtigungen muss Ihre Gemeinde in B1 Admin einen Anbieter für Textnachrichten verbunden haben
 
 </div>
 
-## Einen Auschecken starten
+## Check-out starten {#starting-a-check-out}
 
-1. Auf einer bemannten Station tippen Sie auf **Check Out** auf dem Lookup-Bildschirm.
-2. Geben Sie den 4-stelligen **Sicherheitscode** vom Abhol-Label der Familie ein. Sie können ihn eingeben, den On-Screen-Zahlenblock verwenden oder den Barcode des Labels mit einem USB- oder Bluetooth-Scanner scannen -- der Code wird automatisch gesendet, sobald alle 4 Ziffern eingegeben sind.
-   - Kein Scanner? Tippen Sie auf **Scan** unterhalb des Code-Feldes, um stattdessen die Tablet-Kamera zu verwenden. Halten Sie den QR-Code oder Barcode des Abhol-Labels vor die Kamera im **Scan pickup code**-Fenster und der Code wird für Sie eingegeben. Die Rückkamera wird standardmäßig verwendet; tippen Sie auf die Flip-Schaltfläche, um Kameras zu wechseln, oder tippen Sie auf **Cancel**, um zur Eingabe zurückzukehren.
-3. Das Kiosk zeigt die unter diesem Code eingecheckten Kinder an.
+1. Tippen Sie an einer besetzten Station auf dem Suchbildschirm auf **Auschecken**.
+2. Geben Sie den vierstelligen **Sicherheitscode** vom Abholetikett der Familie ein. Sie können ihn eintippen, die Bildschirmtastatur nutzen oder den Barcode des Etiketts mit einem USB- oder Bluetooth-Scanner einlesen -- der Code wird automatisch übermittelt, sobald alle 4 Zeichen eingegeben sind.
+   - Kein Scanner vorhanden? Tippen Sie unter dem Codefeld auf **Scannen**, um stattdessen die Kamera des Tablets zu verwenden. Halten Sie den QR-Code oder Barcode des Abholetiketts vor die Kamera im Fenster **Abholcode scannen**; der Code wird dann automatisch eingetragen. Standardmäßig wird die Rückkamera verwendet; tippen Sie auf die Wechseltaste, um die Kamera zu wechseln, oder auf **Abbrechen**, um zur Eingabe per Hand zurückzukehren.
+3. Der Kiosk zeigt die Kinder an, die unter diesem Code eingecheckt sind.
 
-## Überprüfung, wer abholt
+### Familie ohne Code finden {#finding-a-family-without-the-code}
 
-Der Auschecken-Bildschirm fragt, wer die Kinder abholt:
+Hat ein Elternteil das Abholetikett verloren, suchen Sie stattdessen die Familie:
 
-- **Vertrauenswürdige Abhol-Personen** für den Haushalt erscheinen als anklickbare Karten mit Foto und Beziehung -- tippen Sie auf die Person, die vor Ihnen steht.
-- **Haushalts-Erwachsene** erscheinen auch in einem Foto-Grid.
-- **Other** ermöglicht es Ihnen, einen Namen für jemanden einzugeben, der nicht auf der Liste steht.
+1. Tippen Sie auf dem Bildschirm **Auschecken** auf **Nach Name suchen** (neben **Scannen**).
+2. Geben Sie den Nachnamen der Familie ein und tippen Sie auf **Suchen**, oder tippen Sie auf **Telefonnummer verwenden**, um auf dem Tastenfeld eine Telefonnummer (mindestens die letzten 4 Ziffern) einzugeben.
+3. Tippen Sie in den Ergebnissen auf die Person. Der Kiosk findet alle Angehörigen dieses Haushalts, die heute eingecheckt und noch nicht ausgecheckt sind, und zeigt sie genauso an, als wäre der Code eingegeben worden.
 
-Wenn ein eingegebener Name mit jemandem übereinstimmt, der für diesen Haushalt als **Not Authorized** gekennzeichnet ist, blockiert das Kiosk das Auschecken mit einer Warnung. Ein Mitarbeiter kann **Override** wählen, um trotzdem fortzufahren -- das Override wird in der Anwesenheits-Aufzeichnung mit dem Namen der Person festgehalten.
+Ist niemand aus dem Haushalt eingecheckt, zeigt der Kiosk „Zurzeit ist niemand in diesem Haushalt eingecheckt.“ an. Tippen Sie auf **Neue Suche**, um erneut zu suchen, oder auf **Stattdessen Code eingeben**, um zurück zum Codefeld zu gelangen.
 
-Sobald die abhol-Person bestätigt ist, tippen Sie auschecken. Der Name der Abhol-Person wird in der Anwesenheits-Aufzeichnung gespeichert.
+Die Abholprüfung weiter unten gilt weiterhin: Die vertrauenswürdigen Abholpersonen und Erwachsenen des Haushalts werden aufgelistet, und Namen, die nicht zur Abholung berechtigt sind, bleiben gesperrt.
+
+## Abholperson bestätigen {#verifying-who-is-picking-up}
+
+Auf dem Check-out-Bildschirm wird gefragt, wer die Kinder abholt:
+
+- **Vertrauenswürdige Abholpersonen** des Haushalts erscheinen als antippbare Karten mit Foto und Beziehung -- tippen Sie auf die Person, die vor Ihnen steht.
+- **Erwachsene Haushaltsmitglieder** erscheinen ebenfalls in einem Fotoraster.
+- **Andere** erlaubt es, den Namen einer Person einzugeben, die nicht auf der Liste steht.
+
+Stimmt ein eingegebener Name mit einer Person überein, die für diesen Haushalt als **Nicht berechtigt** markiert ist, blockiert der Kiosk den Check-out mit einer Warnung. Eine Mitarbeitende oder ein Mitarbeitender kann **Außer Kraft setzen** wählen, um dennoch fortzufahren -- die Außerkraftsetzung wird mit dem Namen der Person im Anwesenheitsdatensatz vermerkt.
+
+Sobald die abholende Person bestätigt ist, tippen Sie auf **Auschecken**. Der Name der Abholperson wird im Anwesenheitsdatensatz gespeichert.
 
 :::info
-Vertrauenswürdige und nicht autorisierte Abhol-Personen werden vom Kirchenpersonal auf der Seite jeder Person in B1 Admin verwaltet -- siehe [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
+Vertrauenswürdige und nicht abholberechtigte Personen werden von Mitarbeitenden der Gemeinde auf der Seite jeder Person in B1 Admin verwaltet -- siehe [Check-in-Sicherheit](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
-## Seite nach Eltern
+## Einen Elternteil benachrichtigen {#paging-a-parent}
 
-Benötigen Sie einen Elternteil während des Gottesdienstes -- ein Windelwechsel, ein weinendes Kind? Von der Auschecken-Bildschirm auf einer bemannten Station kann das Personal eine **Seite** senden: eine Textnachrricht an die Eltern oder Erziehungsberechtigten des Kindes über den Textnachrichten-Provider der Kirche. Eltern, die sich von Texten abgemeldet haben oder keine Handynummer haben, werden übersprungen, und das Kiosk zeigt an, wie viele Nachrichten gesendet wurden.
+Brauchen Sie während des Gottesdienstes einen Elternteil -- etwa für einen Windelwechsel oder weil ein Kind weint? Vom Check-out-Bildschirm einer besetzten Station aus können Mitarbeitende einen **Ausruf** senden: eine Textnachricht an die Eltern oder Erziehungsberechtigten des Kindes über den Textnachrichtenanbieter der Gemeinde. Eltern, die sich von Textnachrichten abgemeldet haben oder keine Handynummer hinterlegt haben, werden übersprungen. Der Kiosk zeigt an, wie viele Nachrichten gesendet wurden.
 
-## Etiketten nachdrucken
+## Etiketten neu drucken {#reprinting-labels}
 
-Wenn ein Namensschild oder Abhol-Label verloren oder beschädigt wird, kann das Personal auf einer bemannten Station die Labels der Familie **nachdrucken**, nachdem der Sicherheitscode auf dem Auschecken-Bildschirm eingegeben wurde. Der Nachdruck verwendet den gleichen Drucker und die gleichen Label-Vorlagen wie das ursprüngliche Check-In.
+Geht ein Namensschild oder Abholetikett verloren oder wird es beschädigt, können Mitarbeitende an einer besetzten Station nach Eingabe des Sicherheitscodes die Etiketten der Familie auf dem Check-out-Bildschirm **neu drucken**. Der Neudruck verwendet denselben Drucker und dieselben Etikettenvorlagen wie der ursprüngliche Check-in.
 
-## Notfall-Rundfunk {#emergency-broadcast}
+## Notfallbenachrichtigung {#emergency-broadcast}
 
-Im Notfall kann das Personal die Erziehungsberechtigten von **jedem eingecheckten Kind** des aktuellen Gottesdienstes auf einmal benachrichtigen:
+Im Notfall können Mitarbeitende den Erziehungsberechtigten **aller eingecheckten Kinder** für den aktuellen Gottesdienst gleichzeitig eine Textnachricht senden:
 
-1. Öffnen Sie die Kiosk **Admin-Einstellungen** (7 schnelle Taps auf dem Header-Logo, plus die PIN, falls gesetzt).
-2. Tippen Sie auf **Emergency broadcast**.
-3. Geben Sie die Nachricht ein, und geben Sie dann **EMERGENCY** in das Bestätigungs-Feld ein -- die **Send broadcast**-Schaltfläche bleibt deaktiviert, bis Sie es tun.
-4. Das Kiosk zeigt an, wie viele Telefone die Nachricht erhalten haben und wie viele Personen übersprungen wurden (abgemeldet oder keine Handynummer).
+1. Öffnen Sie die **Administrationseinstellungen** des Kiosks (7 schnelle Tipps auf das Logo in der Kopfzeile, plus die PIN, falls eine festgelegt ist).
+2. Tippen Sie auf **Notfallbenachrichtigung**.
+3. Geben Sie die Nachricht ein und geben Sie dann **EMERGENCY** in das Bestätigungsfeld ein -- die Schaltfläche **Benachrichtigung senden** bleibt deaktiviert, bis Sie das getan haben.
+4. Der Kiosk meldet, wie viele Telefone die Nachricht erhalten haben und wie viele Personen übersprungen wurden (abgemeldet oder ohne Handynummer).
 
 :::warning
-Der Rundfunk geht an jeden eingecheckten Haushalt für den ausgewählten Gottesdienst. Verwenden Sie ihn nur für echte Notfälle -- Evakuierungen, Sperrungen, extreme Wetterbedingun gen.
+Die Benachrichtigung geht an jeden eingecheckten Haushalt für den ausgewählten Gottesdienst. Verwenden Sie sie nur für echte Notfälle -- Evakuierungen, Abriegelungen oder schweres Wetter.
 :::
 
-## Verwandte Artikel
+## Verwandte Artikel {#related-articles}
 
-- [Check-In abschließen](./completing-checkin.md) -- wo Sicherheitscodes und Abhol-Labels herkommen
-- [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) -- Konfiguration von Kapazitäten, Verhältnissen, Abhol-Personen und der Textnachrichten-Provider-Anforderung
-- [Printer Setup](../getting-started/printer-setup.md) -- Konfiguration des Label-Druckers
+- [Check-in abschließen](./completing-checkin.md) -- Woher Sicherheitscodes und Abholetiketten stammen
+- [Check-in-Sicherheit](../../b1-admin/attendance/checkin-safety.md) -- Konfiguration von Kapazitäten, Betreuungsschlüsseln, Abholpersonen und der Anforderung an einen Anbieter für Textnachrichten
+- [Druckereinrichtung](../getting-started/printer-setup.md) -- Konfiguration des Etikettendruckers

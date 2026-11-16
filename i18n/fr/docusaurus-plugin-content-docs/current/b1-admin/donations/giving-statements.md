@@ -3,7 +3,7 @@ title: "Relevés de dons"
 description: "Créez les relevés de dons de fin d'année pour chaque donateur dans B1 Admin, puis téléchargez-les en fichiers CSV ou imprimez-les pour l'envoi postal avec les totaux déductibles d'impôt."
 ---
 
-# Relevés de dons
+# Relevés de dons {#giving-statements}
 
 <div class="article-intro">
 
@@ -53,6 +53,12 @@ Générez vos relevés tôt en janvier, pendant que vos registres sont encore fr
 :::info
 Les relevés de dons ne comprennent que les dons attribués à des fonds dont le paramètre **Déductible d'impôt** est activé. Si un fonds n'est pas marqué comme déductible d'impôt, ses dons n'apparaîtront pas sur le relevé. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
 :::
+
+## Mémos sur les relevés {#gift-memos-on-statements}
+
+Chaque relevé énumère chaque don avec sa date, son mode, son fonds et son montant. Lorsqu'au moins un don d'un relevé comporte un **Mémo**, une colonne **Mémo** est ajoutée après le fonds, afin que le donateur voie à quoi servait chaque don. Les relevés sans mémo conservent la mise en page à quatre colonnes. Les **Notes** d'un don sont internes et n'apparaissent jamais sur un relevé. Les fichiers CSV du ZIP incluent le mémo comme dernière colonne.
+
+Pour indiquer une affectation sur le relevé, saisissez-la comme **Mémo** du don lors de [l'enregistrement du don](recording-donations.md), ou créez-lui un [fonds](funds.md) distinct si vous voulez le totaliser séparément.
 
 ## Formats de reçus pour le Canada, l'Australie et la Nouvelle-Zélande {#receipt-formats-for-canada-australia-and-new-zealand}
 

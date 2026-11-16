@@ -3,36 +3,37 @@ title: "Oversikt over B1 Church Checkin"
 description: "Sett opp B1 Church Checkin-kioskappen på iPad eller Android-nettbrett. Familier kan sjekke seg selv inn, og du kan skrive ut etiketter og hentelapper."
 ---
 
-# Oversikt over B1 Church Checkin
+# Oversikt over B1 Church Checkin {#b1-church-checkin-overview}
 
 <div class="article-intro">
 
-B1 Church Checkin er en selvbetjent kioskapp for iPad og Android-nettbrett. Den lar kirkemedlemmer slå opp familien sin, tilordne barn til grupper eller klasser, og skrive ut navnelapper og utleveringsslipper for foreldre -- alt uten at en frivillig må sitte ved disken.
+B1 Church Checkin er en selvbetjent kioskapp for iPad og Android-nettbrett. Den lar kirkemedlemmer slå opp familien sin, tilordne barn til grupper eller klasser, og skrive ut navnelapper og utleveringsslipper for foreldre — alt uten at en frivillig må sitte ved disken.
 
 </div>
 
-## Turvideo
+## Turvideo {#tour-video}
 
 <YouTube id="fNZsJi9F-jc" title="En omvisning i B1-innsjekking" next="Sette opp gudstjenester og oppmøte i B1" nextUrl="/docs/b1-admin/attendance/setup" />
 
-## Slik fungerer det
+## Slik fungerer det {#how-it-works}
 
 Plasser et iPad- eller Android-nettbrett i lobbyen eller velkomstområdet. Medlemmer går bort, søker etter husstanden sin med telefonnummer eller etternavn, går gjennom familien, velger hvilke grupper hver person skal delta i, og trykker **Sjekk inn**. Appen skriver automatisk ut navnelapper og utleveringsslipper, og tilbakestiller seg deretter for neste familie.
 
-## Viktige funksjoner
+## Viktige funksjoner {#key-features}
 
 - **Selvbetjent oppslag av medlemmer** -- Søk med telefonnummer eller etternavn for raskt å finne husstanden din.
 - **Gjennomgang av husstand** -- Se alle familiemedlemmer med bilder og nåværende gruppetilordninger med et blikk.
 - **Gruppetilordning** -- Tilordne hvert familiemedlem til riktig klasse eller gruppe for den valgte gudstjenestetiden.
-- **Innsjekking av gjester** -- Legg til en gjest i husstanden din på stedet med fornavn og etternavn.
+- **Innsjekking av gjester** -- Legg til en gjest i husstanden din på stedet med fornavn og etternavn, og eventuelt e-post.
 - **QR-gjesteregistrering** -- Vis en QR-kode som besøkende kan skanne for å [registrere seg selv](../b1-church/checkin/guest-registration.md) på egen telefon før innsjekking, eller la dem trykke **Registrer her** for å fylle ut det samme skjemaet på kiosken.
 - **Utskrift av etiketter** -- Skriv ut navnelapper for barn og utleveringsslipper for foreldre med unike sikkerhetskoder.
+- **[Utsjekking](./check-in/checking-out.md)** -- På betjente stasjoner sjekker du barn ut med hentekoden, eller slår opp familien etter etternavn eller telefonnummer når lappen er borte.
 - **Støtte for nettverksskrivere** -- Finn og konfigurer nettverksskrivere direkte fra appen.
 - **Automatisk innlogging** -- Etter første innlogging husker appen påloggingsopplysningene dine og går rett til gudstjenesteskjermen ved senere oppstarter.
 - **Støtte for flere kirker** -- Hvis kontoen din er koblet til mer enn én kirke, kan du velge hvilken du vil sjekke inn til.
-- **Kirkens profil** -- Appen viser kirkens logo i toppteksten når en kirke er valgt.
+- **Kirkens merkevare** -- Appen viser kirkens logo i toppteksten når en kirke er valgt.
 
-## Dokumentasjonsseksjoner
+## Dokumentasjonsseksjoner {#documentation-sections}
 
 - **[Komme i gang](./getting-started/index.md)** -- Installere appen, logge inn og sette opp skriveren.
 - **[Innsjekkingsflyt](./check-in/index.md)** -- Hele innsjekkingsflyten fra valg av gudstjeneste til utskrift av etiketter.
@@ -42,7 +43,7 @@ B1 Church Checkin fungerer best på et 10-tommers nettbrett (iPad eller Android)
 :::
 
 :::info
-Før du bruker B1 Church Checkin, må kirkens administrator konfigurere gudstjenester, gudstjenestetider og grupper i B1 Admin. Se [oppsettsveiledningen for oppmøte](../b1-admin/attendance/setup.md) for detaljer. Kontoen som logger inn på kiosken trenger tillatelsen **Innsjekking** for oppmøte; se [Kontoer for innsjekkingskiosk](../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts).
+Før du bruker B1 Church Checkin, må kirkens administrator konfigurere gudstjenester, gudstjenestetider og grupper i B1 Admin. Se [oppsettsveiledningen for oppmøte](../b1-admin/attendance/setup.md) for detaljer. Kontoen som logger inn på kiosken, trenger tillatelsen **Innsjekking** for oppmøte; se [Kontoer for innsjekkingskiosk](../b1-admin/settings/roles-permissions.md#check-in-kiosk-accounts).
 :::
 
 For støtte, send e-post til [support@churchapps.org](mailto:support@churchapps.org).

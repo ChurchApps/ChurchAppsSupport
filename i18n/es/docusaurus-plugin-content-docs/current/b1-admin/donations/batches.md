@@ -29,7 +29,7 @@ Cuando vaya a **Donaciones > Lotes**, verá una lista de sus lotes. Cada fila mu
 - **Total**: el monto total en dólares
 - **Estado**: **Abierto** o **Cerrado** (consulte [Cerrar y reabrir un lote](#closing-and-reopening-a-batch))
 
-Encima de la lista, los botones de año le permiten mostrar solo los lotes de un año, o todos los lotes con **Todos**. Un resumen de una línea muestra el número de lotes, el número de donativos y el monto total de los lotes mostrados.
+Encima de la lista, los botones de año le permiten mostrar solo los lotes de un año, o todos los lotes con **Todos**. Junto a ellos, los botones de estado (**Todos**, **Abiertos** y **Cerrados**) reducen la lista a los lotes en los que aún se trabaja o a los que ya terminó. Los dos filtros funcionan juntos, así que puede elegir **2026** y **Abiertos** para ver los lotes abiertos de este año. Un resumen de una línea muestra el número de lotes, el número de donativos y el monto total de los lotes mostrados.
 
 ## Crear un lote nuevo {#creating-a-new-batch}
 

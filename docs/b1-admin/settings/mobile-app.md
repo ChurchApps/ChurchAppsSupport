@@ -108,6 +108,15 @@ Visitors who open the app's [Home screen](/docs/b1-church/getting-started/naviga
 
 Click **Save** to apply. A **Saved** message confirms the change. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
 
+### Event Request Page {#event-request-page}
+
+Members who [request an event](../../b1-church/events/requesting-events.md) in the app see a short line at the top of the **Request an Event** page -- by default, *"Staff will approve each room and item."* The **Event request page** setting on the same Member portal page (`/mobile/b1-mobile`) lets you replace it with your own instructions, such as booking guidelines, how much notice to give, or terms:
+
+1. Type your text in **Event request instructions** (up to 1,000 characters). Line breaks are kept.
+2. Click **Save**.
+
+Leave the box blank to keep the default line.
+
 ### Home Screen Tiles
 
 Tabs that have a photo (see **Image** under [Adding a New Tab](#adding-a-new-tab)) appear on the app's [Home screen](/docs/b1-church/getting-started/navigating#home) as photo tiles, in a section headed with your church's name. This includes a Verse of the Day tab, if you give it a photo. Photo tabs still appear in the tab bar as well.
@@ -119,7 +128,7 @@ The **Home screen tiles** setting on the same Member portal page (`/mobile/b1-mo
 - **Scrolling (automatic)** -- The same sideways row, but it also moves on its own, advancing one tile about every four seconds and carrying on forward to the first tile again after the last one. It pauses while a member touches, hovers over, or tabs into the row and picks up again a few seconds later. On devices set to reduce motion, the row stays still and works like **Scrolling row**.
 - **List** -- A list with a small photo thumbnail next to each tab's name.
 - **Grid and list** -- The first three photo tabs as a grid, with the first tile spanning the full width, and the next three listed beneath with a small thumbnail beside each name. When there are more than three, the section heading shows an **All** link that opens the app's **More** page, which lists every tab.
-- **Scrolling (automatic) and list** -- Every photo tab in the self-advancing row described above, with the first three also listed beneath, and the same **All** link when there are more than three.
+- **Scrolling (automatic) and list** -- Every photo tab in the self-advancing row described above, with the first three that aren't already in the app's menu (the tab bar on phones, the header on computers) also listed beneath, and the same **All** link when there are more than three.
 
 In both scrolling layouts, when there are more tiles than fit across the screen, a row of dots appears under the tiles, one per tile, with the current tile's dot filled in. Members can tap a dot to jump to that tile.
 
@@ -158,7 +167,7 @@ The tabs you configure here are displayed in the **B1.church PWA** that your mem
 
 On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page.
 
-Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
+Tabs placed inside a **Folder** tab are the exception: they appear on the folder's own screen, which members open by tapping the folder. When the folder doesn't get a slot in the tab bar or header, Home's **More from** section also lists the folder's name with its tabs as buttons beneath it, in the order set here. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
 
 ## Next Steps
 

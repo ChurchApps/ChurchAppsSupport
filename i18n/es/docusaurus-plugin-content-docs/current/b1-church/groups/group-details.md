@@ -58,7 +58,7 @@ Si eres líder del grupo, tienes capacidades adicionales de edición:
 - **Crear y editar eventos** -- Toca **Todos los eventos** y luego **Agregar evento** para agregar un evento al calendario del grupo. Al crear un evento, puedes reservar salas y recursos junto con él: elige entre las salas y recursos disponibles, establece tiempos opcionales de preparación y limpieza, y la solicitud de reserva se envía automáticamente para aprobación.
 - **Editar eventos recurrentes** -- Al abrir un evento recurrente para editarlo, B1 primero pregunta qué fechas cambiar: **Solo esta fecha**, **Esta y todas las fechas siguientes** o **Todas las fechas**. Elige una y haz clic en **Guardar** para abrir el evento. Si elegiste **Solo esta fecha**, el interruptor **Recurrente** se oculta y tus cambios (o una eliminación) se aplican solo a esa fecha.
 - **Eliminar eventos** -- Toca el icono de lápiz junto a un evento, luego toca **Eliminar evento** y confirma. En un evento recurrente, la eliminación sigue las fechas que elegiste al abrirlo: solo esta fecha, esta y todas las fechas siguientes, o toda la serie. Una fecha eliminada ya no aparece en el calendario del grupo ni en los próximos eventos de los miembros.
-- **Establecer recordatorios de eventos** -- Al editar un evento existente, activa **Enviar recordatorios** para recordar a las personas antes de que comience. Elige cuándo se envían, la **Hora del día**, **¿A quién se debe recordar?** y un **Mensaje** opcional, luego elige **Push**, **Correo electrónico** o, si tu iglesia tiene el envío de mensajes de texto configurado, **Mensaje de texto** en **Enviar por**. Los mensajes de texto solo llegan a las personas que activaron los recordatorios por texto en sus [Preferencias de notificación](../getting-started/notification-preferences.md).
+- **Establecer recordatorios de eventos** -- Al editar un evento existente, activa **Enviar recordatorios** para recordar a las personas antes de que comience. Elige cuándo se envían, la **Hora del día**, **¿A quién se debe recordar?** y un **Mensaje** opcional, luego elige **Push**, **Correo electrónico** o, si tu iglesia tiene el envío de mensajes de texto configurado, **Mensaje de texto** en **Enviar por**. Los mensajes de texto solo llegan a las personas que activaron los recordatorios por texto en sus [Preferencias de notificación](../getting-started/notification-preferences.md). Después de guardar los recordatorios, toca **Enviar ahora** para enviar uno de inmediato; B1 muestra a cuántas personas llegó, por ejemplo, **Enviado a 8 personas**, y los recordatorios programados se siguen enviando.
 - **Administrar recursos** -- Sube archivos (hasta 100 MB de almacenamiento), agrega enlaces o elimina recursos existentes.
 - **Escribir notas de reunión y registrar asistencia** -- Usa **Agregar nota** y **Tomar asistencia** en la sección **Reuniones**. Consulta [Notas de reunión y asistencia](#meeting-notes-and-attendance).
 - **Mantener notas privadas del líder** -- Usa la sección **Notas del líder**. Consulta [Notas del líder](#leader-notes).
@@ -74,23 +74,23 @@ Para escribir un resumen de una reunión:
 
 1. Toca **Agregar nota**.
 2. Elige la **Fecha** de la reunión. Empieza con tu reunión más reciente de la última semana, o con hoy. Puedes elegir una fecha futura para publicar una nota antes de una reunión.
-3. Escribe la nota en el cuadro **Notas**, por ejemplo, lo que se cubrió, anuncios o peticiones de oración. La barra de herramientas te permite agregar texto en negrita, listas y enlaces.
+3. Escribe la nota en el cuadro **Notas** -- por ejemplo, lo que se cubrió, anuncios o peticiones de oración. La barra de herramientas te permite agregar texto en negrita, listas y enlaces.
 4. Toca **Guardar**.
 
 Si la fecha ya tiene una nota, se abre para que puedas editarla. La pantalla **Tomar asistencia** tiene el mismo cuadro **Notas** debajo de la fecha, así que puedes escribir el resumen mientras tomas asistencia. Los líderes también pueden tocar una reunión en la lista para abrir su asistencia y nota. Las notas de reunión son las mismas notas de sesión que el personal ve en las **Sesiones** del grupo en B1 Admin; consulta [Registrar asistencia](../../b1-admin/attendance/recording-attendance.md#session-notes).
 
 ### Notas del líder {#leader-notes}
 
-**Notas del líder** es un feed privado para los líderes del grupo, por ejemplo, para llevar un registro de seguimientos o inquietudes pastorales. Solo los líderes del grupo pueden verlo o publicar en él. Los demás miembros nunca lo ven, y tampoco el personal de la iglesia, a menos que también sean líderes del grupo.
+**Notas del líder** es un feed privado para los líderes del grupo -- por ejemplo, para llevar un registro de seguimientos o inquietudes pastorales. Solo los líderes del grupo pueden verlo o publicar en él. Los demás miembros nunca lo ven, y tampoco el personal de la iglesia, a menos que también sean líderes del grupo.
 
 1. En la sección **Notas del líder**, toca **Abrir notas** (o toca cualquier nota).
-2. Escribe tu nota en el cuadro de la parte inferior y envíala. Selecciona texto para ponerlo en negrita o cursiva o convertirlo en una lista; consulta [Dar formato a tu mensaje](./conversations.md#formatting-your-message).
+2. Escribe tu nota en el cuadro de la parte inferior y envíala. Selecciona texto para ponerlo en negrita o cursiva, o para convertirlo en una lista; consulta [Dar formato a tu mensaje](./conversations.md#formatting-your-message).
 
 Hasta que alguien publique, el feed muestra "Todavía no hay notas" con el recordatorio "Solo los líderes de este grupo pueden ver estas notas." Los líderes ven las mismas notas en la página del grupo dentro de B1 Admin; consulta [Miembros del grupo](../../b1-admin/groups/group-members.md#leader-notes).
 
 ### Formularios vinculados {#linked-forms}
 
-El personal de la iglesia puede vincular un formulario a tu grupo desde B1 Admin, por ejemplo, una tarjeta de petición de oración o una autorización para un viaje (consulta [Vincular un formulario a un grupo](../../b1-admin/forms/creating-forms.md#linking-a-form-to-a-group)). Los formularios vinculados aparecen en la sección **Formularios** del grupo. Los miembros tocan **Llenar** para abrir un formulario y enviarlo.
+El personal de la iglesia puede vincular un formulario a tu grupo desde B1 Admin -- por ejemplo, una tarjeta de petición de oración o una autorización para un viaje (consulta [Vincular un formulario a un grupo](../../b1-admin/forms/creating-forms.md#linking-a-form-to-a-group)). Los formularios vinculados aparecen en la sección **Formularios** del grupo. Los miembros tocan **Llenar** para abrir un formulario y enviarlo.
 
 Los líderes también pueden leer e imprimir las respuestas:
 

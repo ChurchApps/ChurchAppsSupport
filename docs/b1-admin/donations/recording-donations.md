@@ -36,6 +36,8 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 3. Fill in the details and click **Add Donation** (or press Enter). If the amount is empty or zero, the form asks you to enter an amount greater than zero instead of saving.
 4. The donation is added to the donations list, and the form resets so you can enter the next one. The date, method, fund, memo, and notes stay as you set them, so a stack of similar checks only needs the donor, amount, and check number.
 
+The **Date** always starts on the batch date when you open a batch. If you change it, the new date carries over to the next gift you enter in that batch -- in the entry panel and in the full donation editor -- until you change it again or leave the batch.
+
 :::tip Memo or Notes?
 The **Memo** is printed on the donor's giving statement and receipt, beside the gift. Use it for what the donor should see, such as the purpose of an earmarked gift ("Youth trip"). **Notes** are for your staff only and are never printed. When someone gives online, whatever they type in the memo box on the giving form is saved as the gift's memo.
 :::
@@ -96,6 +98,16 @@ Splitting donations across funds is common when a donor writes a single check de
 ## Editing or Removing Donations
 
 To edit a donation, click the **Edit** button on its row in the batch. You can change the date, amount, fund, payment method (Check, Cash, Card, or In-Kind), or any other detail, including the **Memo** and **Notes**. For an in-kind gift, the editor labels the detail field **Item** so you can describe what was given. Click **Save** when you are done.
+
+### Moving a Gift to Another Batch
+
+If a gift was entered in the wrong batch, you can move it instead of deleting it and typing it again:
+
+1. Click **Edit** on the donation's row.
+2. In the **Batch** dropdown, pick the batch it belongs in. The list shows each batch's date and name, newest first. Closed batches aren't listed, except the gift's current batch.
+3. Click **Save**.
+
+The gift leaves the current batch and appears in the one you picked, and both batches' totals update. Moving a gift is an edit, so it doesn't start a **Donation · Created** [workflow](../serving/workflows.md#triggers) the way entering it again would.
 
 :::tip
 The line under the batch name at the top of the page updates automatically to show the batch date, the number of gifts, and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.

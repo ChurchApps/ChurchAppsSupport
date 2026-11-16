@@ -3,7 +3,7 @@ title: "Guía: Administre a los voluntarios del domingo"
 description: "Configure equipos de voluntarios, planes de servicio semanales, órdenes de servicio y tareas dominicales en B1 Admin, para que los voluntarios vean y respondan a sus asignaciones en B1.church y en la aplicación móvil."
 ---
 
-# Administre a los voluntarios del domingo
+# Administre a los voluntarios del domingo {#manage-sunday-volunteers}
 
 <div class="article-intro">
 
@@ -56,7 +56,7 @@ Siga la guía [Planes](../serving/plans.md) para:
 1. En el menú Jump, elija **Serving > Plans**, seleccione la pestaña de su ministerio y abra su tipo de plan (haga clic en **Create Plan Type** si todavía no tiene uno)
 2. Haga clic en **New Plan** y seleccione la **Service Date**. Para configurar varios domingos a la vez, copie desde un plan anterior, elija **Repeat every** y **Frequency**, e introduzca cuántos en **Number of plans**
 3. En la página del plan, haga clic en **Manage serving team**, haga clic en **Add Position** para agregar cada posición y luego haga clic en su enlace **People Needed** para asignar voluntarios
-4. En el panel **Validation**, haga clic en el enlace **Notify _N_ volunteer(s)** para que los voluntarios reciban sus solicitudes (consulte [Notificar a los voluntarios](../serving/plan-validation.md#notifying-volunteers)). Un punto verde en la foto de un voluntario significa que aceptó y un punto rojo significa que rechazó; el recuadro **Responses** de la página del plan cuenta los que aceptaron, los pendientes y los que rechazaron
+4. En el panel **Validation**, haga clic en el enlace **Notificar a _N_ voluntario(s)** para que los voluntarios reciban sus solicitudes (consulte [Notificar a los voluntarios](../serving/plan-validation.md#notifying-volunteers)). Un punto verde en la foto de un voluntario significa que aceptó y un punto rojo significa que rechazó; el recuadro **Responses** de la página del plan cuenta los que aceptaron, los pendientes y los que rechazaron
 5. Active los [recordatorios para voluntarios](../serving/plans.md#volunteer-reminders) para el tipo de plan, de modo que reciban un recordatorio por notificación push, correo electrónico o mensaje de texto antes de cada servicio
 
 ## Paso 4: Arme la orden de servicio {#step-4-build-the-service-order}
@@ -108,7 +108,7 @@ Los voluntarios asignados ven automáticamente sus planes y pueden responder.
 
 1. Los voluntarios ven sus planes en [B1.church y en la aplicación B1](../../b1-church/plans/viewing-plans.md)
 2. Pueden aceptar o rechazar asignaciones directamente desde su teléfono o computadora
-3. Pueden marcar fechas de no disponibilidad para las semanas en las que no puedan participar
+3. Pueden marcar fechas de no disponibilidad para las semanas en las que no puedan participar. El personal también puede registrarlas en la tarjeta **Fechas de no disponibilidad** del equipo, y los voluntarios con fechas bloqueadas muestran una insignia **No disponible** cuando asigna posiciones; consulte [Fechas de no disponibilidad](../serving/plan-validation.md#blockout-dates)
 4. Los planes se pueden imprimir para los ensayos o publicar detrás del escenario
 5. Los voluntarios pueden explorar e inscribirse en las posiciones abiertas a través de la [página de inscripción de voluntarios](../../b1-church/serving/volunteer-signup.md)
 

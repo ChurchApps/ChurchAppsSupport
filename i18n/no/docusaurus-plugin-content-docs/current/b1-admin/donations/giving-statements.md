@@ -54,6 +54,12 @@ Kjør oversiktene tidlig i januar mens registreringene dine er friske. Kontrolle
 Gaveoversikter inkluderer bare gaver tilordnet fond der innstillingen **Tax Deductible** er slått på. Hvis et fond ikke er merket som skattefradragsberettiget, vises ikke gavene til fondet på oversikten. Du kan administrere denne innstillingen på siden [Fond](funds.md).
 :::
 
+## Gavememoer på oversikter {#gift-memos-on-statements}
+
+Hver oversikt viser hver gave med dato, metode, fond og beløp. Når minst én gave på en oversikt har et **Memo**, legges det til en kolonne **Memo** etter fondet, slik at giveren kan se hva hver gave var ment for. Oversikter uten memoer beholder oppsettet med fire kolonner. En gaves **Notes** er interne og vises aldri på en oversikt. CSV-filene i ZIP-filen har memoet som sin siste kolonne.
+
+For å få et formål med på oversikten, legger du det inn som gavens **Memo** når du [registrerer giften](recording-donations.md), eller gir det et eget [fond](funds.md) hvis du vil at det skal summeres separat.
+
 ## Kvitteringsformater for Canada, Australia og New Zealand {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Menigheter utenfor USA kan bytte oversikten til landets offisielle kvitteringsoppsett. Klikk **Statement format** øverst på siden Giving Statements (eller gå til **Settings** og åpne seksjonen **Giving**), og sett **Statement Format** (som starter på **Standard**) til **Canada - CRA official receipt**, **Australia** eller **New Zealand**. Fyll deretter inn feltene som vises: registreringsnummeret ditt (**CRA Registration Number**, **ABN** eller **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name** og for Canada **City of Issue**. Klikk **Save**.

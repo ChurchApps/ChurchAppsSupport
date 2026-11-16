@@ -4,7 +4,7 @@ sidebar_label: "Gruppedetaljer"
 description: "Finn, åpne og administrer detaljsiden for en gruppe i B1 Admins medlemsvisning av B1.church: se arrangementer, møter, skjemaer og medlemmer, og meld deg på eller be om å bli med."
 ---
 
-# Gruppedetaljer
+# Gruppedetaljer {#group-details}
 
 <div class="article-intro">
 
@@ -58,7 +58,7 @@ Hvis du er leder for gruppen, har du flere redigeringsmuligheter:
 - **Opprette og redigere arrangementer** -- Trykk på **Alle arrangementer**, og deretter **Legg til arrangement** for å legge til et arrangement i gruppekalenderen. Når du oppretter et arrangement, kan du reservere rom og ressurser sammen med det. Velg blant ledige rom og ressurser, sett eventuelle tidspunkter for oppsett og nedrigging, så sendes bookingforespørselen automatisk til godkjenning.
 - **Redigere gjentakende arrangementer** -- Når du åpner et gjentakende arrangement for å redigere det, spør B1 først hvilke datoer du vil endre: **Bare denne datoen**, **Denne og alle påfølgende datoer** eller **Alle datoer**. Velg ett og klikk på **Lagre** for å åpne arrangementet. Hvis du valgte **Bare denne datoen**, er bryteren **Gjentakende** skjult, og endringene dine (eller en sletting) gjelder bare for den ene datoen.
 - **Slette arrangementer** -- Trykk på blyant-ikonet ved siden av et arrangement, deretter på **Slett arrangement** og bekreft. For et gjentakende arrangement følger slettingen datoene du valgte da du åpnet det -- bare denne datoen, denne og alle påfølgende datoer, eller hele serien. En slettet dato vises ikke lenger i gruppekalenderen eller i medlemmenes kommende arrangementer.
-- **Angi påminnelser for arrangementer** -- Når du redigerer et eksisterende arrangement, slår du på **Send påminnelser** for å minne folk før det starter. Velg når de sendes, **Tidspunkt på dagen**, **Hvem skal få påminnelse?** og eventuelt en **Melding**, og velg deretter **Push**, **E-post** eller, hvis menigheten har satt opp tekstmeldinger, **Tekst** under **Send via**. Tekstmeldinger går bare til personer som har slått på tekstpåminnelser i sine [varselinnstillinger](../getting-started/notification-preferences.md).
+- **Angi påminnelser for arrangementer** -- Når du redigerer et eksisterende arrangement, slår du på **Send påminnelser** for å minne folk før det starter. Velg når de sendes, **Tidspunkt på dagen**, **Hvem skal få påminnelse?** og eventuelt en **Melding**, og velg deretter **Push**, **E-post** eller, hvis menigheten har satt opp tekstmeldinger, **Tekst** under **Send via**. Tekstmeldinger går bare til personer som har slått på tekstpåminnelser i sine [varselinnstillinger](../getting-started/notification-preferences.md). Etter at påminnelsene er lagret, trykker du på **Send nå** for å sende en med en gang; B1 viser hvor mange personer den nådde, for eksempel **Sendt til 8 personer**, og de planlagte påminnelsene sendes fortsatt.
 - **Administrere ressurser** -- Last opp filer (opptil 100 MB lagringsplass), legg til lenker, eller slett eksisterende ressurser.
 - **Skrive møtenotater og føre oppmøte** -- Bruk **Legg til notat** og **Før oppmøte** i seksjonen **Møter**. Se [Møtenotater og oppmøte](#meeting-notes-and-attendance).
 - **Føre private ledernotater** -- Bruk seksjonen **Lederens notater**. Se [Lederens notater](#leader-notes).

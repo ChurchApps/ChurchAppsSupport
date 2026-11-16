@@ -3,11 +3,11 @@ title: "Utsjekking og barnesikkerhet"
 description: "Sjekk ut barn på en bemannet B1 Checkin-stasjon med sikkerhetskoder, verifiserte henteperson, varsling av foreldre, nye etiketter og nødkunngjøringer."
 ---
 
-# Utsjekking og barnesikkerhet
+# Utsjekking og barnesikkerhet {#checking-out--child-safety}
 
 <div class="article-intro">
 
-Utsjekking avslutter innsjekkingen av barn: en forelder viser sikkerhetskoden fra hentelappen, kiosken kontrollerer hvem som henter, og barna sjekkes ut. Betjente stasjoner har også sikkerhetsverktøy — kontroll av godkjente hentepersoner, tekstmeldinger for å tilkalle en forelder, ny utskrift av sikkerhetsetiketter og nødvarsling.
+Utsjekking avslutter innsjekkingen av barn: en forelder viser sikkerhetskoden fra hentelappen, kiosken bekrefter hvem som henter, og barna sjekkes ut. Betjente stasjoner har i tillegg sikkerhetsverktøy — bekreftelse av godkjente hentepersoner, tekstmeldinger for å tilkalle en forelder, ny utskrift av sikkerhetsetiketter og nødvarsling.
 
 </div>
 
@@ -20,14 +20,26 @@ Utsjekking avslutter innsjekkingen av barn: en forelder viser sikkerhetskoden fr
 
 </div>
 
-## Starte en utsjekking
+## Starte en utsjekking {#starting-a-check-out}
 
 1. På en betjent stasjon trykker du på **Sjekk ut** på oppslagsskjermen.
 2. Skriv inn den firesifrede **sikkerhetskoden** fra familiens hentelapp. Du kan skrive den inn, bruke tastaturet på skjermen eller skanne strekkoden på lappen med en USB- eller Bluetooth-skanner — koden sendes automatisk når alle fire tegnene er skrevet inn.
    - Ingen skanner? Trykk på **Skann** under kodefeltet for å bruke nettbrettets kamera i stedet. Hold QR-koden eller strekkoden på hentelappen opp mot kameraet i vinduet **Skann hentekode**, så fylles koden inn for deg. Bakkameraet brukes som standard; trykk på vendeknappen for å bytte kamera, eller trykk på **Avbryt** for å gå tilbake til å skrive inn.
 3. Kiosken viser barna som er sjekket inn under den koden.
 
-## Kontrollere hvem som henter
+### Finne en familie uten koden {#finding-a-family-without-the-code}
+
+Hvis forelderen har mistet hentelappen, kan du slå opp familien i stedet:
+
+1. På skjermen **Sjekk ut** trykker du på **Søk etter navn** (ved siden av **Skann**).
+2. Skriv inn familiens etternavn og trykk på **Søk**, eller trykk på **Bruk telefonnummer** for å skrive inn et telefonnummer (minst de fire siste sifrene) på tastaturet.
+3. Trykk på personen i resultatene. Kiosken finner alle i den husstanden som er sjekket inn i dag og ikke er sjekket ut ennå, og viser dem akkurat som om koden var skrevet inn.
+
+Hvis ingen i husstanden er sjekket inn, viser kiosken «Ingen i denne husstanden er sjekket inn akkurat nå.» Trykk på **Nytt søk** for å søke på nytt, eller **Skriv inn kode i stedet** for å gå tilbake til kodefeltet.
+
+Kontrollen av hentepersoner nedenfor gjelder fortsatt: husstandens godkjente hentepersoner og voksne vises, og navn som er ikke-autoriserte, blokkeres fortsatt.
+
+## Bekrefte hvem som henter {#verifying-who-is-picking-up}
 
 Utsjekkingsskjermen spør hvem som henter barna:
 
@@ -43,11 +55,11 @@ Når hentepersonen er bekreftet, trykker du på sjekk ut. Hentepersonens navn la
 Godkjente og ikke-autoriserte hentepersoner administreres av kirkens ansatte på hver persons side i B1 Admin — se [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).
 :::
 
-## Tilkalle en forelder
+## Tilkalle en forelder {#paging-a-parent}
 
 Trenger du en forelder under gudstjenesten — bleieskift, et barn som gråter? Fra utsjekkingsskjermen på en betjent stasjon kan ansatte sende en **tilkalling**: en tekstmelding til barnets foreldre eller foresatte via kirkens leverandør av tekstmeldinger. Foreldre som har reservert seg mot tekstmeldinger eller ikke har mobilnummer, hoppes over, og kiosken viser hvor mange meldinger som ble sendt.
 
-## Skrive ut etiketter på nytt
+## Skrive ut etiketter på nytt {#reprinting-labels}
 
 Hvis en navnelapp eller hentelapp er mistet eller skadet, kan ansatte på en betjent stasjon **skrive ut** familiens etiketter på nytt fra utsjekkingsskjermen etter å ha skrevet inn sikkerhetskoden. Utskriften bruker samme skriver og de samme etikettmalene som den opprinnelige innsjekkingen.
 
@@ -64,7 +76,7 @@ I en nødssituasjon kan ansatte sende tekstmelding til de foresatte til **alle i
 Varselet sendes til alle innsjekkede husstander for den valgte gudstjenesten. Bruk det kun ved reelle nødssituasjoner — evakuering, innelåsing, farlig vær.
 :::
 
-## Relaterte artikler
+## Relaterte artikler {#related-articles}
 
 - [Fullføre innsjekking](./completing-checkin.md) — hvor sikkerhetskoder og hentelapper kommer fra
 - [Innsjekkingssikkerhet](../../b1-admin/attendance/checkin-safety.md) — konfigurere kapasitet, forhold, hentepersoner og kravet om leverandør av tekstmeldinger

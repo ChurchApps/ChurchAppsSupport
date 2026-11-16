@@ -3,7 +3,7 @@ title: "Configuración de la aplicación móvil"
 description: "Configure las pestañas de navegación, las fichas de la pantalla de inicio, el aviso para iniciar sesión y las opciones de privacidad del directorio de miembros de la aplicación de miembros de B1.church en B1 Admin."
 ---
 
-# Configuración de la aplicación móvil
+# Configuración de la aplicación móvil {#mobile-app-settings}
 
 <div class="article-intro">
 
@@ -108,6 +108,15 @@ Los visitantes que abren la [pantalla de inicio](/docs/b1-church/getting-started
 
 Haga clic en **Guardar** para aplicar. Un mensaje **Guardado** confirma el cambio. Al guardar se actualiza la configuración en caché de la aplicación, así que el cambio se verá la próxima vez que se cargue la pantalla de inicio.
 
+### Página de solicitud de eventos {#event-request-page}
+
+Los miembros que [solicitan un evento](../../b1-church/events/requesting-events.md) en la aplicación ven una breve línea en la parte superior de la página **Solicitar un evento** -- por defecto, *"El personal aprobará cada sala y artículo."* La opción **Página de solicitud de eventos** de la misma página Portal de miembros (`/mobile/b1-mobile`) le permite reemplazarla con sus propias instrucciones, como pautas de reserva, con cuánta anticipación se debe avisar o condiciones:
+
+1. Escriba su texto en **Instrucciones de solicitud de eventos** (de hasta 1,000 caracteres). Los saltos de línea se conservan.
+2. Haga clic en **Guardar**.
+
+Deje el cuadro en blanco para mantener la línea predeterminada.
+
 ### Fichas de la pantalla de inicio {#home-screen-tiles}
 
 Las pestañas que tienen una foto (consulte **Imagen** en [Agregar una pestaña nueva](#adding-a-new-tab)) aparecen en la [pantalla de inicio](/docs/b1-church/getting-started/navigating#home) de la aplicación como fichas con foto, en una sección encabezada con el nombre de su iglesia. Esto incluye una pestaña de Versículo del día, si le asigna una foto. Las pestañas con foto también siguen apareciendo en la barra de pestañas.
@@ -119,7 +128,7 @@ La opción **Fichas de la pantalla de inicio** de la misma página Portal de mie
 - **Deslizable (automático)** -- La misma fila deslizable, pero que también se mueve sola, avanzando una ficha aproximadamente cada cuatro segundos y volviendo a la primera ficha después de la última. Se pausa mientras un miembro toca, pasa el cursor sobre la fila o navega a ella con el teclado, y se reanuda unos segundos después. En los dispositivos con la opción de reducir movimiento activada, la fila permanece fija y funciona como **Fila deslizable**.
 - **Lista** -- Una lista con una pequeña miniatura de foto junto al nombre de cada pestaña.
 - **Cuadrícula y lista** -- Las tres primeras pestañas con foto en cuadrícula, con la primera ocupando todo el ancho, y las tres siguientes listadas debajo con una pequeña miniatura junto a cada nombre. Cuando hay más de tres, el encabezado de la sección muestra un enlace **Todas** que abre la página **Más** de la aplicación, que enumera todas las pestañas.
-- **Deslizable (automático) y lista** -- Todas las pestañas con foto en la fila de avance automático descrita arriba, con las tres primeras también listadas debajo, y el mismo enlace **Todas** cuando hay más de tres.
+- **Deslizable (automático) y lista** -- Todas las pestañas con foto en la fila de avance automático descrita arriba, con las tres primeras que aún no estén en el menú de la aplicación (la barra de pestañas en teléfonos, el encabezado en computadoras) también listadas debajo, y el mismo enlace **Todas** cuando hay más de tres.
 
 En ambos diseños deslizables, cuando hay más fichas de las que caben en la pantalla, aparece una fila de puntos debajo de las fichas, uno por cada ficha, con el punto de la ficha actual relleno. Los miembros pueden tocar un punto para ir a esa ficha.
 
@@ -158,7 +167,7 @@ Las pestañas que configura aquí se muestran en la **PWA de B1.church** que sus
 
 En un teléfono, la barra de pestañas inferior muestra **Inicio**, hasta tres de sus pestañas y **Más**; en una computadora, el encabezado muestra hasta cinco. Las pantallas integradas (como Sermones, Donaciones o Grupos) reciben primero sus espacios, y las pestañas de **Página interna** ocupan los espacios que sobren. Las pestañas de **URL externa** y de **Versículo del día** nunca obtienen un espacio. Todas las pestañas, incluidas las que no caben, aparecen en la página **Más** de la aplicación.
 
-Las pestañas colocadas dentro de una pestaña de **Carpeta** son la excepción: solo aparecen en la pantalla de la propia carpeta, que los miembros abren al tocarla. Esa pantalla muestra las pestañas como fichas con foto cuando todas tienen imagen, o como lista en caso contrario. Una carpeta que no contiene pestañas visibles para un miembro se oculta para ese miembro. Consulte [Pestañas de carpeta](../../b1-church/getting-started/navigating.md#folder-tabs). Consulte [Navegar por B1App](../../b1-church/getting-started/navigating.md) para ver lo que ven los miembros.
+Las pestañas colocadas dentro de una pestaña de **Carpeta** son la excepción: solo aparecen en la pantalla de la propia carpeta, que los miembros abren al tocarla. Cuando la carpeta no recibe un espacio en la barra de pestañas o en el encabezado, la sección **Más de** de Inicio también muestra el nombre de la carpeta con sus pestañas como botones debajo, en el orden establecido aquí. Esa pantalla muestra las pestañas como fichas con foto cuando todas tienen imagen, o como lista en caso contrario. Una carpeta que no contiene pestañas visibles para un miembro se oculta para ese miembro. Consulte [Pestañas de carpeta](../../b1-church/getting-started/navigating.md#folder-tabs). Consulte [Navegar por B1App](../../b1-church/getting-started/navigating.md) para ver lo que ven los miembros.
 
 ## Próximos pasos {#next-steps}
 

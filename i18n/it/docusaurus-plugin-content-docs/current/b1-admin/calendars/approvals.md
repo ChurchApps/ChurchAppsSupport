@@ -3,7 +3,7 @@ title: "Approvazioni del calendario"
 description: "Esamina le richieste di prenotazione di sale e risorse in attesa in B1 Admin, controlla i conflitti, approva o rifiuta le richieste e consulta le decisioni passate nella Cronologia."
 ---
 
-# Approvazioni del calendario
+# Approvazioni del calendario {#calendar-approvals}
 
 <div class="article-intro">
 
@@ -38,7 +38,7 @@ Se una richiesta si sovrappone a un'altra prenotazione o a un blocco per la stes
 
 ### Approvare o rifiutare {#approving-or-rejecting}
 
-Passa con il mouse su una richiesta di prenotazione e fai clic su **Approva** o **Rifiuta** (il rifiuto ti chiede prima una conferma). Chi ha fatto la richiesta viene informato della decisione. Le prenotazioni approvate bloccano quella sala o risorsa per l'evento; quelle rifiutate liberano lo spazio per altri.
+Passa con il mouse su una richiesta di prenotazione e fai clic su **Approva** o **Rifiuta**. Chi ha fatto la richiesta viene informato della decisione. Le prenotazioni approvate bloccano quella sala o risorsa per l'evento; quelle rifiutate liberano lo spazio per altri.
 
 Quando fai clic su **Approva**, si apre la finestra **Approva prenotazione**, così puoi pubblicare l'evento nello stesso passaggio:
 
@@ -46,9 +46,16 @@ Quando fai clic su **Approva**, si apre la finestra **Approva prenotazione**, co
 2. Una volta selezionato **Pubblica nel calendario pubblico**, puoi facoltativamente scegliere un calendario curato da **Aggiungi anche al calendario** per aggiungere l'evento anche a uno dei tuoi [calendari curati](./curated-calendar.md). Lascialo su **Nessuno** per saltare questo passaggio. (Questa opzione compare solo se hai il permesso **content.edit**.)
 3. Fai clic su **Approva**.
 
+Quando fai clic su **Rifiuta**, si apre la finestra **Rifiuta richiesta**:
+
+1. Facoltativamente, scrivi un motivo in **Motivo (facoltativo)** (fino a 500 caratteri) -- ad esempio, *"La palestra è occupata quel fine settimana."*
+2. Fai clic su **Rifiuta** per confermare, oppure su **Annulla** per lasciare la richiesta in attesa.
+
+Il motivo viene aggiunto alla fine della notifica che riceve chi ha fatto la richiesta (ad esempio, *La tua richiesta di evento "Youth Lock-In" è stata rifiutata: La palestra è occupata quel fine settimana.*), e i membri lo vedono anche nella pagina **Le mie richieste** dell'app B1. Lascialo vuoto per inviare il semplice avviso.
+
 ## Eventi in attesa {#pending-events}
 
-Gli eventi richiesti dai membri (ad esempio da **Le mie richieste** nell'app B1) compaiono nella sezione **Richieste di eventi** con la loro data, la **Descrizione** e **Richiesto da**. Fai clic su **Approva** per pubblicare un evento nel calendario, oppure su **Rifiuta** per avvisare chi l'ha inviato che servono modifiche. Fai clic su **Modifica** per correggere i dettagli della richiesta prima di decidere, oppure su **Elimina** per rimuoverla.
+Gli eventi richiesti dai membri (ad esempio da **Le mie richieste** nell'app B1) compaiono nella sezione **Richieste di eventi** con la loro data, la **Descrizione** e **Richiesto da**. Fai clic su **Approva** per pubblicare un evento nel calendario, oppure su **Rifiuta** per avvisare chi l'ha inviato che servono modifiche (puoi aggiungere un motivo, come descritto sopra). Fai clic su **Modifica** per correggere i dettagli della richiesta prima di decidere, oppure su **Elimina** per rimuoverla. Le richieste di evento inviate dai membri tramite l'app non hanno un gruppo, quindi nell'elenco **Gruppo** della finestra di modifica compare **(nessun gruppo)** e puoi salvare le modifiche senza sceglierne uno.
 
 :::tip
 Imposta un Gruppo di approvazione su una sala in [Sale e risorse](./rooms-resources.md) per richiedere un'approvazione per quella sala. I gruppi che vi hanno accesso potranno quindi richiedere la sala quando creano eventi, e tali richieste confluiranno in questa pagina.

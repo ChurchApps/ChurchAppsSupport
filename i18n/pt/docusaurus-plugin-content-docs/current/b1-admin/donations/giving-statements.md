@@ -3,7 +3,7 @@ title: "Recibos de Doação"
 description: "Crie os recibos de doação de fim de ano para cada doador no B1 Admin e, em seguida, baixe-os como arquivos CSV ou imprima-os para envio pelo correio, com os totais dedutíveis de impostos."
 ---
 
-# Recibos de Doação
+# Recibos de Doação {#giving-statements}
 
 <div class="article-intro">
 
@@ -53,6 +53,12 @@ Gere os seus recibos logo no início de janeiro, enquanto os registros estão re
 :::info
 Os recibos de doação incluem apenas as doações atribuídas a fundos com a configuração **Dedutível de impostos** ativada. Se um fundo não estiver marcado como dedutível, as doações dele não aparecerão no recibo. Você pode gerenciar essa configuração na página de [Fundos](funds.md).
 :::
+
+## Memorandos das Doações nos Recibos {#gift-memos-on-statements}
+
+Cada recibo lista todas as contribuições com a data, a forma, o fundo e o valor. Quando pelo menos uma contribuição de um recibo tem um **Memorando**, uma coluna **Memorando** é adicionada após o fundo, para que o doador veja a finalidade de cada contribuição. Recibos sem memorandos mantêm o layout de quatro colunas. As **Observações** de uma doação são internas e nunca aparecem em um recibo. Os arquivos CSV do ZIP incluem o memorando como última coluna.
+
+Para incluir uma finalidade no recibo, informe-a como o **Memorando** da doação ao [registrar a doação](recording-donations.md), ou crie um [fundo](funds.md) próprio se quiser totalizá-la separadamente.
 
 ## Formatos de Recibo para Canadá, Austrália e Nova Zelândia {#receipt-formats-for-canada-australia-and-new-zealand}
 

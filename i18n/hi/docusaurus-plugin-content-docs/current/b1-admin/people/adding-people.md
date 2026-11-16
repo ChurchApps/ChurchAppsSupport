@@ -3,7 +3,7 @@ title: "लोग जोड़ना"
 description: "B1 Admin में अपने चर्च के डेटाबेस में एक व्यक्ति जोड़ें, उनका विवरण भरें, और check-in और रिपोर्टिंग के लिए परिवार के सदस्यों को households में जोड़ें।"
 ---
 
-# लोग जोड़ना
+# लोग जोड़ना {#adding-people}
 
 <div class="article-intro">
 
@@ -26,7 +26,7 @@ People सेक्शन B1 Admin की नींव है — यह आप�
 ## एक व्यक्ति जोड़ना {#adding-a-person}
 
 1. B1.church Admin dashboard पर जाएँ।
-2. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाईं ओर का सर्च बार), **People** खोलें, और **People** पर क्लिक करें।
+2. [Jump menu](../introduction.md#getting-around-with-the-jump-menu) खोलें (ऊपर-बाईं ओर का सर्च बार), **People** का विस्तार करें, और **People** पर क्लिक करें।
 3. पेज हेडर में **Add Person** बटन पर क्लिक करें। पेज directory के नीचे **Add a New Person** फ़ॉर्म तक स्क्रॉल हो जाता है।
 4. व्यक्ति का **First Name** और **Last Name** भरें (दोनों आवश्यक हैं)। वैकल्पिक रूप से **Title**, **Email**, और **Mobile Phone** जोड़ें, फिर **Add** पर क्लिक करें (या **Enter** दबाएँ)।
 
@@ -62,9 +62,9 @@ profile का बाकी हिस्सा हर प्रकार की 
 - **Attendance** — दिखाता है कि पिछले कुछ हफ़्तों में व्यक्ति कौन से हफ़्ते आया और उसकी सबसे हाल की visits। पूरा visit इतिहास देखने के लिए **All years** पर क्लिक करें, जिसमें campus, service, service time, group, और kiosk check-in समय वाला **Checked In** कॉलम शामिल है (जिन visits में kiosk check-in दर्ज नहीं है, उनके लिए डैश दिखता है), या उसे छापने के लिए **Print** (छपे पन्ने के ऊपर बीच में आपके चर्च का लोगो और नाम होता है, व्यक्ति के नाम के ऊपर)। किसी एक व्यक्ति के इतिहास के बजाय चर्च-व्यापी रुझानों के लिए देखें [Tracking Attendance](../attendance/tracking-attendance.md)
 - **Donations** — इस साल के उपहार दिखाता है, जिनमें गैर-कर-कटौती योग्य funds के उपहार भी शामिल हैं। पूरा [donation इतिहास](../donations/recording-donations.md) देखने के लिए **All years** पर क्लिक करें, या नया उपहार दर्ज करने के लिए **Log a gift**। अगर आपके चर्च ने [Giving Privacy](../settings/church-settings.md#giving-privacy) चालू किया है, तो **Show giving** पर क्लिक करने तक राशियाँ छिपी रहती हैं
 - **Groups** — व्यक्ति की [group सदस्यताएँ](../groups/group-members.md) सूचीबद्ध करता है, जिसमें **Joined** और हर group में जुड़ने की तारीख (जब वह दर्ज हो) दिखती है
-- **Notes** — व्यक्ति के बारे में हाल के notes दिखाता है (pastoral care, follow-ups, आदि)। notes पढ़ने और जोड़ने के लिए **All notes** पर क्लिक करें। हर note दिखाता है कि उसे किसने लिखा और कब पोस्ट किया गया। note को फ़ॉर्मेट करने के लिए note box में टेक्स्ट हाइलाइट करें और छोटे popup से **Bold**, **Italic**, **Bulleted list**, या **Numbered list** चुनें (या **Ctrl+B** / **Ctrl+I** दबाएँ, Mac पर **Cmd**); पोस्ट होने के बाद note फ़ॉर्मेटिंग दिखाता है। note हटाने से पहले पुष्टि माँगी जाती है, क्योंकि यह वापस नहीं हो सकता। सभी लोगों के हाल के notes एक साथ देखने के लिए [Notes](./notes.md) पेज का उपयोग करें
+- **Notes** — व्यक्ति के बारे में हाल के notes दिखाता है (pastoral care, follow-ups, आदि)। notes पढ़ने और जोड़ने के लिए **All notes** पर क्लिक करें। हर note दिखाता है कि उसे किसने लिखा और कब पोस्ट किया गया। note को फ़ॉर्मेट करने के लिए note box पर क्लिक करें — जब बॉक्स चुना हो, तो उसके नीचे **Bold**, **Italic**, **Bulleted list**, और **Numbered list** बटनों की पंक्ति दिखती है — फिर टेक्स्ट हाइलाइट करें और कोई बटन क्लिक करें (या **Ctrl+B** / **Ctrl+I** दबाएँ, Mac पर **Cmd**)। सूची में **Enter** अगला bullet या number शुरू करता है; खाली आइटम पर **Enter** सूची समाप्त करता है। पोस्ट होने के बाद note में फ़ॉर्मेटिंग, जिसमें उसके bullets और numbers भी शामिल हैं, दिखती है। note हटाने से पहले पुष्टि माँगी जाती है, क्योंकि यह वापस नहीं हो सकता। सभी लोगों के हाल के notes एक साथ देखने के लिए [Notes](./notes.md) पेज का उपयोग करें
 - **Forms** — व्यक्ति के forms और हर एक जमा हुआ है या नहीं, यह सूचीबद्ध करता है (नीचे [Working with Forms](#working-with-forms) देखें)
-- **Requests & registrations** — व्यक्ति की कमरे और संसाधन की [event requests](../calendars/approvals.md) (माँगे गए कमरों या संसाधनों और **Pending**, **Approved**, या **Rejected** के साथ) और उनकी [event registrations](../calendars/paid-registrations.md) (कितने लोगों का पंजीकरण किया और **Registered**, **Pending**, **Waitlisted**, या **Cancelled** के साथ), सबसे नए पहले। सबसे हाल की पाँच दिखाई जाती हैं; पूरी सूची के लिए **All requests** पर क्लिक करें। अगर आप [Approvals](../calendars/approvals.md) पेज इस्तेमाल कर सकते हैं तो आप event requests देखते हैं, और अगर आप registrations देख सकते हैं तो registrations; दोनों में से कोई नहीं, तो सेक्शन छिपा रहता है
+- **Requests & registrations** — व्यक्ति की कमरे और संसाधन की [event requests](../calendars/approvals.md) (उनके दिए विवरण, माँगे गए कमरों या संसाधनों और **Pending**, **Approved**, या **Rejected** के साथ) और उनकी [event registrations](../calendars/paid-registrations.md) (कितने लोगों का पंजीकरण किया और **Registered**, **Pending**, **Waitlisted**, या **Cancelled** के साथ), सबसे नए पहले। सबसे हाल की पाँच दिखाई जाती हैं; पूरी सूची के लिए **All requests** पर क्लिक करें। अगर आप [Approvals](../calendars/approvals.md) पेज इस्तेमाल कर सकते हैं तो आप event requests देखते हैं, और अगर आप registrations देख सकते हैं तो registrations; दोनों में से कोई नहीं, तो सेक्शन छिपा रहता है
 
 इनमें से किसी पूर्ण दृश्य को खोलने पर, प्रोफ़ाइल पर लौटने के लिए ऊपर व्यक्ति के नाम वाले **Back to** link पर क्लिक करें।
 

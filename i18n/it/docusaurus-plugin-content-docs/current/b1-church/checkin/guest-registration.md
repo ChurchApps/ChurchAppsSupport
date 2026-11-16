@@ -1,9 +1,9 @@
 ---
 title: "Registrazione ospiti"
-description: "Registra te stesso e la tua famiglia come ospiti per la prima volta con il modulo QR di B1 Checkin, così i volontari possono fare il check-in al vostro arrivo."
+description: "Registra te stesso e la tua famiglia come ospiti per la prima volta con il modulo QR di B1 Checkin, così i volontari possono fare il check-in al tuo arrivo."
 ---
 
-# Registrazione ospiti
+# Registrazione ospiti {#guest-registration}
 
 <div class="article-intro">
 
@@ -21,7 +21,7 @@ Se visiti una chiesa per la prima volta, puoi registrare te stesso e la tua fami
 
 ## Come funziona la registrazione ospiti {#how-guest-registration-works}
 
-La registrazione ospiti è pensata per i visitatori che non hanno ancora un account. Sul chiosco di check-in della chiesa, tocca **Registrati come ospite** per mostrare un codice QR che porta alla pagina di registrazione. Puoi anche ricevere il collegamento da un volontario o da un accoglienza, oppure trovarlo su un volantino o sul sito della chiesa.
+La registrazione ospiti è pensata per i visitatori che non hanno ancora un account. Sul chiosco di check-in della chiesa, tocca **Registrati come ospite** per mostrare un codice QR che porta alla pagina di registrazione. Puoi anche ricevere il collegamento da un volontario o da un membro dell'accoglienza, oppure trovarlo su un volantino o sul sito della chiesa.
 
 Non hai il telefono a portata di mano? Nella stessa finestra del codice QR sul chiosco, tocca **Registra qui** per compilare il modulo direttamente sul chiosco. Vedi [Registrarsi come ospite](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) per capire come funziona sul chiosco.
 
@@ -31,17 +31,18 @@ La pagina si apre con il titolo **Registrazione ospiti**. Se la chiesa ha aggiun
 
 1. **Scansiona il codice QR** al chiosco di check-in oppure apri sul telefono il collegamento alla registrazione ospiti. (Se hai toccato **Registra qui** sul chiosco, il modulo è già aperto.)
 2. Compila la scheda **Contatto principale**. **Nome** e **Cognome** sono sempre obbligatori. A seconda di ciò che chiede la tua chiesa, potresti vedere anche:
-   - **Titolo** (come Sig., Sig.ra, Dott., o Pastore), davanti al nome
+   - **Titolo** (come Sig., Sig.ra, Dott. o Pastore), davanti al nome
    - **Email** e **Telefono**
    - **Stato civile**
    - **Indirizzo di casa** -- **Via e numero civico**, **Indirizzo riga 2**, **Città**, **Provincia** e **CAP**. È condiviso da tutta la famiglia.
 3. Il modulo si apre con una seconda scheda per il **Familiare 2**. Inserisci nome e cognome, oppure tocca la **X** nell'angolo della scheda per rimuoverla se ti stai registrando da solo.
 4. Per aggiungere altre persone, tocca **Aggiungi familiare**. La nuova scheda riporta automaticamente il cognome del contatto principale. Puoi registrare fino a 10 persone alla volta.
-5. Se la tua chiesa lo chiede, la scheda di ciascuna persona può includere anche **Titolo**, **Telefono**, **Data di nascita**, **Genere** e **Classe**. Ogni scheda successiva al contatto principale può chiedere anche un **Ruolo nel nucleo familiare** -- **Coniuge**, **Figlio** oppure **Altro** -- così la chiesa sa come ogni persona è legata al contatto principale.
+5. Se la tua chiesa lo chiede, la scheda di ciascuna persona può includere anche **Titolo**, **Email**, **Telefono**, **Data di nascita**, **Genere** e **Classe**. Ogni scheda successiva a quella del contatto principale può chiedere anche un **Ruolo nel nucleo familiare** — **Coniuge**, **Figlio** o **Altro** — così la chiesa sa come ciascuna persona è legata al contatto principale.
+   Se la tua chiesa chiede una foto, ogni scheda ha un pulsante **Aggiungi foto**. Tocca il pulsante, scegli o scatta una foto, ritagliala e salvala; la foto compare sulla scheda. Tocca **Cambia foto** per sceglierne un'altra o **Rimuovi foto** per eliminarla. La foto viene salvata come foto profilo di quella persona quando viene creata la sua scheda.
 6. Se la tua chiesa include una casella **Commenti** sotto i familiari, usala per condividere ciò che vuoi far sapere alla chiesa (fino a 1.000 caratteri).
 7. Tocca **Registra** per inviare.
 
-I campi contrassegnati con un asterisco (`*`) sono obbligatori. Ogni scheda richiede un nome e un cognome: se ne manca uno, il modulo mostra "Nome e cognome sono obbligatori per ogni membro." Se un altro campo obbligatorio è vuoto, mostra "Compila tutti i campi obbligatori." Non viene inviato nulla finché non li compili.
+I campi contrassegnati con un asterisco (`*`) sono obbligatori. Ogni scheda richiede nome e cognome: se ne manca uno, il modulo mostra "Nome e cognome sono obbligatori per ogni membro." Se un altro campo obbligatorio è vuoto, mostra "Compila tutti i campi obbligatori." Non viene inviato nulla finché non li compili.
 
 ## Dopo la registrazione {#after-registering}
 

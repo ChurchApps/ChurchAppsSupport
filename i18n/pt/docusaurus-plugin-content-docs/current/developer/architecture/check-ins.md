@@ -3,7 +3,7 @@ title: "Check-ins"
 description: "Como o check-in funciona no B1Checkin, B1App e B1 Admin: modelo de presença, grupos como salas, limites de capacidade e regras de segurança na retirada."
 ---
 
-# Check-ins
+# Check-ins {#check-ins}
 
 <div class="article-intro">
 
@@ -11,7 +11,7 @@ O check-in é um único sistema com três portas de entrada: o aplicativo de qui
 
 </div>
 
-## Visão geral
+## Visão geral {#overview}
 
 ```
 ┌──────────────────────────┐
@@ -44,7 +44,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 Todas as três chamam os mesmos dois módulos da API por meio do `ApiHelper`: **MembershipApi** (`/membership`) para pessoas, domicílios e grupos; **AttendanceApi** (`/attendance`) para tudo o que está abaixo.
 
-## Modelo de dados (`Api/src/modules/attendance`)
+## Modelo de dados (`Api/src/modules/attendance`) {#data-model-apisrcmodulesattendance}
 
 | Entidade / tabela | Campos principais | Significado |
 |-------------------|-------------------|-------------|
@@ -57,7 +57,7 @@ Todas as três chamam os mesmos dois módulos da API por meio do `ApiHelper`: **
 | `visitSessions` | visitId, sessionId | Em qual(is) sessão(ões) uma visita se encaixa — uma criança feita check-in em dois horários de culto recebe duas linhas (`models/VisitSession.ts`) |
 | `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (blocos JSON) | Layouts de etiquetas personalizáveis (`models/LabelTemplate.ts`) |
 
-### Como um check-in concluído é persistido
+### Como um check-in concluído é persistido {#how-a-completed-check-in-is-persisted}
 
 `VisitController.postCheckin` (`Api/src/modules/attendance/controllers/VisitController.ts`) trata `POST /attendance/visits/checkin?serviceId=&peopleIds=`. O corpo é um array de objetos `Visit`, cada um carregando `visitSessions` cuja `session` embutida nomeia apenas um par `(serviceTimeId, groupId)`. Em seguida, o servidor:
 
@@ -69,16 +69,17 @@ Todas as três chamam os mesmos dois módulos da API por meio do `ApiHelper`: **
 
 Cada visita salva também emite um webhook `attendance.recorded`. O lado de leitura, `GET /attendance/visits/checkin`, retorna as visitas das pessoas a partir de sua **última data registrada** — se essa foi em uma semana anterior, os ids são removidos, e o cliente recebe uma cópia preenchida das seleções de salas da semana passada, que serão salvas como novos registros.
 
-### Check-out
+### Check-out {#check-out}
 
-Dois endpoints completam o ciclo (`VisitController`):
+Três endpoints completam o ciclo (`VisitController`):
 
 - `GET /attendance/visits/code/:code` — as visitas de hoje ainda não concluídas com aquele código de segurança, com as sessões preenchidas.
+- `GET /attendance/visits/active?peopleIds=` — as visitas de hoje ainda não concluídas das pessoas listadas (com qualquer código de segurança), com as sessões preenchidas; retorna 400 quando `peopleIds` está vazio. Usado pelo check-out por nome.
 - `POST /attendance/visits/checkout` — corpo `{ visitIds, checkedOutBy?, checkedOutById? }`; registra `checkoutTime` e quem buscou, e emite um webhook `attendance.checkout` por visita.
 
-Permissões: os quiosques se autenticam com `attendance.checkin`, que concede exatamente a superfície de check-in/check-out/modelos de etiqueta, além das consultas de domicílio de que um quiosque precisa sem `people.view` (busca por telefone/nome, membros do domicílio no modelo de check-in e a lista de quem pode buscar do domicílio). O `SessionHelper.filterChurches` do B1Checkin só oferece as igrejas em que a conta tem `Attendance/Checkin` ou `Attendance/Edit`. `Checkin` não faz mais parte das permissões do Everyone (função nula) (`RoleHelper` e a migração `2026-11-01_remove_everyone_checkin`), então precisa ser concedido por meio de uma função real; `attendance.view`/`attendance.edit` cobrem relatórios e lançamento manual; a estrutura (cultos, horários de culto, atribuições de grupos) exige `services.edit`. O self check-in de membros (B1App) não exige nenhuma permissão: qualquer usuário autenticado com uma pessoa vinculada na igreja pode chamar `GET`/`POST /attendance/visits/checkin`, e o servidor restringe os `personId`s enviados ao domicílio do próprio chamador (403 caso contrário — essa barreira é o que impede que os `securityCode`s de outras famílias sejam lidos). A participação na igreja é a permissão; se os membros *veem* o recurso é controlado pelas abas de navegação do B1App da igreja. Os demais endpoints de check-in (`code/:code`, `checkout`, `guardians`, `CheckinController`) continuam restritos a quiosques e à equipe.
+Permissões: os quiosques se autenticam com `attendance.checkin`, que concede exatamente a superfície de check-in/check-out/modelos de etiqueta, além das consultas de domicílio de que um quiosque precisa sem `people.view` (busca por telefone/nome, membros do domicílio no modelo de check-in e a lista de quem pode buscar do domicílio). O `SessionHelper.filterChurches` do B1Checkin só oferece as igrejas em que a conta tem `Attendance/Checkin` ou `Attendance/Edit`. `Checkin` não faz mais parte das permissões do Everyone (função nula) (`RoleHelper` e a migração `2026-11-01_remove_everyone_checkin`), então precisa ser concedido por meio de uma função real; `attendance.view`/`attendance.edit` cobrem relatórios e lançamento manual; a estrutura (cultos, horários de culto, atribuições de grupos) exige `services.edit`. O self check-in de membros (B1App) não exige nenhuma permissão: qualquer usuário autenticado com uma pessoa vinculada na igreja pode chamar `GET`/`POST /attendance/visits/checkin`, e o servidor restringe os `personId`s enviados ao domicílio do próprio chamador (403 caso contrário — essa barreira é o que impede que os `securityCode`s de outras famílias sejam lidos). A participação na igreja é a permissão; se os membros *veem* o recurso é controlado pelas abas de navegação do B1App da igreja. Os demais endpoints de check-in (`code/:code`, `active`, `checkout`, `guardians`, `CheckinController`) continuam restritos a quiosques e à equipe.
 
-## Os grupos orientam o roteamento de salas
+## Os grupos orientam o roteamento de salas {#groups-drive-room-routing}
 
 Não existe entidade de sala ou de turma em nenhum lugar do sistema. Uma "sala" é um **grupo** de membership com `trackAttendance` habilitado, vinculado a um ou mais horários de culto por meio de `groupServiceTimes`. Os campos do grupo (em `Api/src/modules/membership/models/Group.ts`) que moldam o comportamento do quiosque:
 
@@ -99,7 +100,7 @@ As atribuições são editadas na página do grupo no B1Admin (`B1Admin/src/grou
 Como os grupos são a única fonte da verdade, a mesma participação em grupos alimenta o roteamento do quiosque, a presença no estilo de lista nas páginas de grupos do B1Admin e os relatórios de presença — atribuir um grupo a um horário de culto é o único passo necessário para torná-lo um destino de check-in.
 :::
 
-## Segurança infantil
+## Segurança infantil {#child-safety}
 
 ### Tipos de check-in {#check-in-types}
 
@@ -131,7 +132,7 @@ As pessoas autorizadas a buscar são uma entidade de membership, por domicílio:
 
 No check-out (`B1Checkin/app/checkout.tsx`), o quiosque carrega a lista de quem pode buscar do domicílio: as entradas `trusted` aparecem como cartões tocáveis de busca junto com a grade de fotos dos adultos do domicílio, e um nome "Outro" digitado livremente é comparado de forma aproximada (distância de Levenshtein, `src/helpers/PickupMatchHelper.ts`) com as entradas `notAuthorized` — uma correspondência bloqueia o check-out com uma folha de aviso e um botão **Substituir** da equipe. O override é registrado na própria visita: envia `checkedOutBy` como `"OVERRIDE: {nome}"` pelo `POST /attendance/visits/checkout` normal, de modo que aparece no registro de presença e no webhook `attendance.checkout`, e não em uma tabela de auditoria separada.
 
-### Chamada aos pais e alerta de emergência
+### Chamada aos pais e alerta de emergência {#page-a-parent-and-emergency-broadcast}
 
 `CheckinController` (`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`) expõe dois endpoints de SMS:
 
@@ -140,7 +141,7 @@ No check-out (`B1Checkin/app/checkout.tsx`), o quiosque carrega a lista de quem 
 
 Ambos resolvem os adultos do domicílio pelo gateway de membership e entregam o envio ao **`MessagingModuleGateway.sendBulkText`** (`Api/src/shared/modules/MessagingModuleGateway.ts`) — a porta entre módulos para o provedor de SMS configurado pela igreja (`@churchapps/texting`: TextInChurch, Clearstream ou MutualMinistry; não há um remetente de SMS embutido). O gateway registra uma linha `sentText` mais entradas `deliveryLog` por destinatário e limita um lote a 500 destinatários; sem provedor configurado, retorna `no_provider`, que o quiosque exibe como "Nenhum provedor de SMS configurado". O `dispatch()` do controller elimina números de telefone duplicados e ignora pessoas sem celular ou com `optedOut` definido, retornando `{ sent, failed, skippedOptedOut, skippedNoPhone }` para que o quiosque mostre o que foi ignorado.
 
-## O quiosque (B1Checkin)
+## O quiosque (B1Checkin) {#the-kiosk-b1checkin}
 
 As telas são arquivos do expo-router em `B1Checkin/app/`; o estado entre telas fica em uma classe estática `CachedData` (`src/helpers/CachedData.ts`), e não em estado do React.
 
@@ -157,11 +158,11 @@ index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶
 3. **Atribuição de grupo** (`app/selectGroup.tsx`) — uma árvore de categorias construída a partir de `serviceTime.groups`, com as salas elegíveis por idade/série destacadas e as inelegíveis esmaecidas atrás de uma confirmação da equipe (veja [Elegibilidade por idade/série](#agegrade-eligibility-kiosk-side)); escolher uma sala grava um visitSession `{ session: { serviceTimeId, groupId } }` na visita pendente daquela pessoa (`src/helpers/VisitSessionHelper.ts`). "Nenhum" limpa a escolha.
 4. **Concluir** (`app/checkinComplete.tsx`) — `POST /attendance/visits/checkin` com `pendingVisits` (cada uma marcada com seu `checkinType`), depois imprime as etiquetas se houver uma impressora configurada e volta automaticamente para a busca. Uma resposta `409` de capacidade ou `notOpen` mostra a sala nomeada com o motivo (cheia/fechada, ou check-in não aberto); um aviso de proporção oferece uma confirmação da equipe que reenvia com `acknowledgeWarnings=true`.
 
-A tela de **check-out** (`app/checkout.tsx`) aceita o código de segurança de 4 caracteres por um campo com foco automático — assim, scanners de código de barras por teclado USB/Bluetooth funcionam sem câmera — ou por um teclado na tela que usa o mesmo alfabeto, enviando automaticamente ao chegar a 4 caracteres. Um botão **Escanear** abre uma folha com a câmera compartilhada `src/components/CodeScanner.tsx` (por padrão a câmera traseira, aceitando QR, Code 128 e Code 39), para que estações sem scanner de teclado possam ler a etiqueta de busca; um código escaneado segue o mesmo caminho `handleCode()` da entrada digitada. A tela busca o código, mostra as crianças que estão sendo buscadas e apresenta as **pessoas autorizadas a buscar** do domicílio como cartões tocáveis junto com uma grade de fotos dos adultos do domicílio (mais a opção de texto livre "Outro", que passa por uma verificação aproximada contra os nomes não autorizados — veja [Busca autorizada e pessoas não autorizadas](#trusted-and-not-authorized-pickup)), e então envia `POST /attendance/visits/checkout` com o nome/id escolhido. No modo com equipe, a tela também oferece **Chamar um dos pais** (`POST /attendance/checkin/page`) e uma **reimpressão da etiqueta de segurança** — `reprint()` reconstrói as etiquetas da família com `LabelHelper.getAllLabelsFor(...)` e as envia pelo mesmo pipeline `PrintUI` do check-in.
+A tela de **check-out** (`app/checkout.tsx`) aceita o código de segurança de 4 caracteres por um campo com foco automático — assim, scanners de código de barras por teclado USB/Bluetooth funcionam sem câmera — ou por um teclado na tela que usa o mesmo alfabeto, enviando automaticamente ao chegar a 4 caracteres. Um botão **Escanear** abre uma folha com a câmera compartilhada `src/components/CodeScanner.tsx` (por padrão a câmera traseira, aceitando QR, Code 128 e Code 39), para que estações sem scanner de teclado possam ler a etiqueta de busca; um código escaneado segue o mesmo caminho `handleCode()` da entrada digitada. Um botão **Pesquisar por nome** troca a entrada do código por `src/components/HouseholdSearch.tsx` (pesquisa por sobrenome ou telefone, pelos mesmos endpoints `/membership/people/search` da busca); ao escolher uma pessoa, o quiosque carrega o domicílio dela (`GET /membership/people/household/{householdId}`) e chama `GET /attendance/visits/active?peopleIds=` com o id de cada membro, de modo que uma etiqueta perdida não impede a busca. De qualquer forma, a tela mostra as crianças que estão sendo buscadas e apresenta as **pessoas autorizadas a buscar** do domicílio como cartões tocáveis junto com uma grade de fotos dos adultos do domicílio (mais a opção de texto livre "Outro", que passa por uma verificação aproximada contra os nomes não autorizados — veja [Busca autorizada e pessoas não autorizadas](#trusted-and-not-authorized-pickup)), e então envia `POST /attendance/visits/checkout` com o nome/id escolhido. No modo com equipe, a tela também oferece **Chamar um dos pais** (`POST /attendance/checkin/page`) e uma **reimpressão da etiqueta de segurança** — `reprint()` reconstrói as etiquetas da família com `LabelHelper.getAllLabelsFor(...)` e as envia pelo mesmo pipeline `PrintUI` do check-in.
 
 A personalidade da estação é um flag do AsyncStorage `@StationMode` (`"self"` | `"manned"`, alternado em `app/adminSettings.tsx`). O modo com equipe adiciona o ponto de entrada de check-out na tela de busca e a edição de perfil por pessoa (`POST /membership/people`) a partir da tela do domicílio. O endurecimento do quiosque é embutido: um PIN opcional (`app/setPin.tsx`, `src/components/PinEntryModal.tsx`) protege as telas de administração e de impressora, a tela administrativa abre somente com 7 toques rápidos no logotipo do cabeçalho, e uma tela de atração ociosa (`src/hooks/useInactivityTimer.ts`) assume entre uma família e outra.
 
-## Self check-in (B1App)
+## Self check-in (B1App) {#self-check-in-b1app}
 
 Os membros fazem o check-in pelo portal b1.church, na tela `/mobile/checkin` (roteada por `B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx` para `screens/CheckinPage.tsx`). Exige um usuário conectado e percorre as mesmas quatro etapas do quiosque — cultos → domicílio → grupos → conclusão — pelos mesmos endpoints, com o estado mantido em `B1App/src/helpers/CheckinHelper.ts`. As diferenças em relação ao quiosque: o domicílio vem do `householdId` do próprio usuário conectado (sem etapa de busca), e não há impressão de etiquetas — em vez disso, a tela de conclusão mostra o código de segurança do lote como QR (`qrcode.react`) com a dica "mostre isto em uma estação de check-in". Se o domicílio já tiver check-in ao carregar a página, um botão "Mostrar código de check-in" exibe novamente o QR a partir da primeira visita existente (de `GET /attendance/visits/checkin`) que tenha um `securityCode`. O check-in é registrado imediatamente no envio (não há estado pendente); o QR serve apenas para a impressão de etiquetas no quiosque.
 
@@ -169,19 +170,19 @@ Os membros fazem o check-in pelo portal b1.church, na tela `/mobile/checkin` (ro
 
 Tipos e `ApiHelper`/`ArrayHelper` vêm de `@churchapps/helpers` e `@churchapps/apphelper`; nenhum componente React é compartilhado com o B1Admin.
 
-## Presença no lado administrativo (B1Admin)
+## Presença no lado administrativo (B1Admin) {#admin-side-attendance-b1admin}
 
 - **Configuração** — `/attendance` (`B1Admin/src/attendance/AttendancePage.tsx`) exibe a árvore de estrutura e cria cultos (`ServiceEdit.tsx`) e horários de culto (`ServiceTimeEdit.tsx`). Os dados dos campi vêm de membership pelo hook `useCampuses()`.
 - **Presença manual** fica na seção de Grupos, e não na seção de presença: `B1Admin/src/groups/components/GroupSessionsTab.tsx` cria sessões (`POST /attendance/sessions`; ao adicionar, `SessionEdit.tsx` pode incluir uma sessão para cada outro grupo que compartilhe o horário de culto escolhido, pulando os grupos que já têm uma sessão naquela data) e marca pessoas como presentes por `POST /attendance/visitsessions/log`, que encontra ou cria a visita daquela pessoa e sessão. Líderes de grupo podem registrar a presença dos próprios grupos sem a permissão `attendance.edit` — os controllers verificam `au.leaderGroupIds`.
 - **Relatórios** — tendência de presença e presença por grupo são relatórios definidos no servidor (`B1Admin/src/components/reporting/ReportWithFilter.tsx` contra o ReportingApi; definições em `Api/reports/*.json`). Ambos recebem `startDate`/`endDate` (data final inclusiva); o relatório de tendência usa por padrão de um ano atrás até hoje e acrescenta uma coluna `sessionDates` por semana, e a árvore de presença por grupo na tela inclui o `checkinTime` de cada visita e o `membershipStatus` da pessoa. O CSV de presença por grupo vem do relatório complementar `groupAttendanceDownload`, pivotado por `GroupAttendanceDownloadHelper` em uma linha por membro do grupo com uma coluna presente/ausente por sessão datada; o histórico individual é `GET /attendance/attendancerecords?personId=` (`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-## Impressão de etiquetas
+## Impressão de etiquetas {#label-printing}
 
-### Modelos e o designer
+### Modelos e o designer {#templates-and-the-designer}
 
 As igrejas criam suas próprias etiquetas no B1Admin em `/mobile/checkin/labels` (`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, acessada pela página de configurações de Check-In). Um modelo é uma linha de `labelTemplates` cujo `content` é um array JSON de blocos — `text`, `field`, `barcode`, `qrcode` ou `box` — cada um posicionado em coordenadas percentuais com fonte, alinhamento, simbologia (`code39`/`code128`/`qr`) e condições de visibilidade opcionais (por exemplo, só renderizar a caixa de alergia quando `person.nametagNotes` não estiver vazio). Existem dois `labelType`s: `nametag` (um por pessoa com check-in; campos como `person.displayName`, `sessions`, `securityCode` e `person.isBirthdayWeek` — `"true"` quando o mês/dia do aniversário está a até 3 dias de hoje, com a virada do ano, calculado por `LabelHelper.isBirthdayWithin()`) e `pickup` (um por família; campos como `children`, `childrenAllergies`). O servidor impõe um único padrão por tipo em cada igreja (`LabelTemplateController.save`). O designer traz modelos iniciais que espelham as etiquetas embutidas do quiosque e exibe prévias com dados de exemplo.
 
-### Renderização e impressão no quiosque
+### Renderização e impressão no quiosque {#rendering-and-printing-on-the-kiosk}
 
 Na conclusão do check-in, `B1Checkin/src/helpers/LabelHelper.ts` decide o que imprimir a partir das flags de grupo de cada visita pendente: etiquetas de identificação para os grupos com `printNametag`, mais uma etiqueta de busca da família se alguma visita atingir um grupo com `parentPickup`. Visitas com `checkinType` `volunteer` são ignoradas por `LabelHelper.selectChildVisits()`, de modo que um voluntário de berçário em uma sala de Busca de Pais nunca dispara uma etiqueta de busca. O código de segurança da resposta do check-in vai para as etiquetas de identificação das crianças e para a etiqueta de busca; as etiquetas de identificação dos adultos são impressas sem código. Se a igreja tiver modelos, `LabelRenderer` (`src/helpers/LabelRenderer.ts`) transforma blocos + um contexto de campos em um documento HTML independente; caso contrário, são usadas as etiquetas HTML embutidas em `B1Checkin/assets/labels/` com substituição de marcadores.
 
@@ -196,7 +197,7 @@ O pipeline de impressão (`src/components/PrintUI.tsx`) renderiza cada etiqueta 
 
 A seleção de impressora fica em `app/printers.tsx` (a varredura da rede retorna entradas `marca~modelo~ip`; a escolha persiste no AsyncStorage), e `src/helpers/PrinterLog.ts` mantém um registro de diagnóstico no dispositivo, exibido por um indicador de status ao vivo no cabeçalho do quiosque.
 
-## Cadastro de visitantes
+## Cadastro de visitantes {#guest-registration}
 
 Dois caminhos criam uma pessoa no meio do check-in:
 
@@ -215,7 +216,7 @@ O cadastro por QR é controlado pelas configurações da igreja salvas no cartã
 
 `src/components/checkin/GuestRegister.tsx` do B1App busca a lista de verificação pelo endpoint anônimo `GET /membership/people/guest-register/options?churchId=` e renderiza somente os campos incluídos (e-mail, telefone, estado civil e endereço no contato principal; data de nascimento, gênero e série por membro; uma caixa de comentários), enviando somente esses. O servidor reaplica a lista em `GuestRegistrationHelper.sanitize()` — campos desativados são descartados, campos obrigatórios ausentes ou fora da lista resultam em 400 — antes de `PersonHelper.registerGuestHousehold()` rodar. Primeiro chama `PersonRepo.findGuestMatch()` para cada membro com e-mail ou telefone: exatamente uma pessoa ativa com o mesmo primeiro nome e o mesmo e-mail ou os mesmos dígitos de telefone é reutilizada (nenhuma ou várias correspondências criam uma nova pessoa, então nunca há um palpite). Um membro sem contato é correspondido pelo primeiro nome dentro do domicílio correspondido. Pessoas reutilizadas nunca são editadas, então um formulário anônimo não consegue sobrescrever dados guardados, e a resposta repete os nomes enviados. Membros não correspondidos entram no domicílio correspondido ou em um novo, como `membershipStatus: "Visitor"`, emitindo `person.created` para cada nova pessoa. Depois, as falhas são registradas em log em vez de retornadas: os membros são adicionados ao grupo configurado (`group.member.added`); se o registro de presença estiver ativo, `AttendanceModuleGateway.recordAttendance()` marca cada membro como presente em cada um dos horários de culto do grupo que tenha cronograma e cuja janela de check-in (`CheckinGateHelper.isServiceTimeOpen`) esteja aberta agora, criando a sessão para a data de hoje no fuso da igreja, se necessário — horários sem cronograma e cadastros fora da janela não registram nada; e os comentários viram uma conversa de nota privada na pessoa do chefe do domicílio (autor da mensagem "Guest sign-up"), vinculada por `person.conversationId`.
 
-## Páginas relacionadas
+## Páginas relacionadas {#related-pages}
 
 - [Endpoints de Attendance](../api/endpoints/attendance.md) -- Superfície REST completa de campi, cultos, sessões, visitas e visitSessions
 - [Endpoints de Membership](../api/endpoints/membership.md) -- Pessoas, domicílios e grupos

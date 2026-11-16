@@ -3,7 +3,7 @@ title: "Estados de donación"
 description: "Cree estados de donación de fin de año para cada donante en B1 Admin, luego descárguelos como archivos CSV o imprímalos para enviarlos por correo con los totales deducibles de impuestos."
 ---
 
-# Estados de donación
+# Estados de donación {#giving-statements}
 
 <div class="article-intro">
 
@@ -53,6 +53,12 @@ Genere sus estados a principios de enero, mientras sus registros aún están fre
 :::info
 Los estados de donación solo incluyen donaciones asignadas a fondos que tienen activada la configuración **Deducible de impuestos**. Si un fondo no está marcado como deducible de impuestos, sus donaciones no aparecerán en el estado. Puede administrar esta configuración en la página de [Fondos](funds.md).
 :::
+
+## Memos en los estados de donación {#gift-memos-on-statements}
+
+Cada estado enumera cada donativo con su fecha, método, fondo y monto. Cuando al menos un donativo del estado tiene un **Memo**, se agrega una columna **Memo** después del fondo para que el donante pueda ver para qué fue cada donativo. Los estados sin memos mantienen el diseño de cuatro columnas. Las **Notas** de un donativo son internas y nunca aparecen en un estado. Los archivos CSV del ZIP incluyen el memo como su última columna.
+
+Para incluir un propósito en el estado, introdúzcalo como **Memo** del donativo al [registrar la donación](recording-donations.md), o asígnele su propio [fondo](funds.md) si desea que se totalice por separado.
 
 ## Formatos de recibo para Canadá, Australia y Nueva Zelanda {#receipt-formats-for-canada-australia-and-new-zealand}
 

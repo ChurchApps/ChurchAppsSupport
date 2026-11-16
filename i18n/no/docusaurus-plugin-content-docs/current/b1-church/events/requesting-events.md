@@ -3,7 +3,7 @@ title: "Be om arrangementer og rom"
 description: "Be om booking av rom eller utstyr til et arrangement fra B1.church-medlemsportalen, følg statusen i Mine forespørsler, og avbestill mens den venter."
 ---
 
-# Be om arrangementer og rom
+# Be om arrangementer og rom {#requesting-events--rooms}
 
 <div class="article-intro">
 
@@ -22,6 +22,7 @@ Hvis menigheten din holder oversikt over rom og ressurser som kan bookes, kan du
 ## Sende en forespørsel {#submitting-a-request}
 
 1. Åpne **Me**-siden i medlemsportalen og trykk på **Be om et arrangement** i seksjonen **Forespørsler og påmeldinger**.
+   Øverst på siden vises *«Ansatte godkjenner hvert rom og hver ressurs.»* med mindre menigheten din har skrevet egne instruksjoner — for eksempel retningslinjer for booking eller hvor mye varsel som må gis. Da ser du disse i stedet (se [Påmeldingssiden for arrangementer](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Fyll inn grunnopplysningene om arrangementet: **Tittel på arrangement**, en valgfri **Beskrivelse**, og **Start**- og **Slutt**-tidspunktene. Slå på **Hele dagen** for å velge bare datoer.
 3. Velg **Rom** og **Ressurser** du trenger (du kan velge flere av hver). Når du har valgt én, kan du legge til **Oppsett (min før)** og **Nedrigging (min etter)**, eller slå på **Egendefinert reservasjonsvindu** og angi **Reserver fra** og **Reserver til** selv.
 4. Se etter konfliktvarsler. Hvis tidspunktet ditt overlapper med en eksisterende booking av et rom eller en ressurs, ser du *«Noen valg kan allerede være booket på dette tidspunktet.»* Du kan justere tidspunktet ditt eller velge noe annet.
@@ -35,11 +36,13 @@ Etter innsending viser et sammendrag **Forespørsel sendt** statusen for hvert r
 
 ## Følge forespørslene dine {#tracking-your-requests}
 
-Åpne **Mine forespørsler** fra Me-siden. Forespørslene er delt inn i **Kommende** og **Tidligere** etter datoen for arrangementet (trykk på **Alle tidligere** for å se eldre). Hver forespørsel viser tittelen på arrangementet og når det starter, statusen for hvert rom og hver ressurs du ba om, og en statusbrikke:
+Åpne **Mine forespørsler** fra Me-siden. Forespørslene er delt inn i **Kommende** og **Tidligere** etter datoen for arrangementet (trykk på **Alle tidligere** for å se eldre). Hver forespørsel viser tittelen på arrangementet og når det starter, beskrivelsen du skrev inn, statusen for hvert rom og hver ressurs du ba om, og en statusbrikke:
 
 - **Venter** -- Venter på en avgjørelse
 - **Godkjent** -- Bookingen din er bekreftet
 - **Avvist** -- Forespørselen ble avslått
+
+Hvis ansatte oppga en grunn da de avslo forespørselen, eller ett av rommene eller ressursene i den, vises den med rødt under forespørselen — for eksempel *Avvist: Gymsalen er booket den helgen.* Den samme grunnen står også i varselet du får om avgjørelsen.
 
 Mens en forespørsel fortsatt venter, kan du trekke den tilbake med **Avbryt forespørsel**. En bekreftelse spør «Avbryte denne forespørselen? Dette kan ikke angres.» Trykk på **Avbryt forespørsel** for å bekrefte, eller **Behold** for å la den være.
 

@@ -24,9 +24,10 @@ Place an iPad or Android tablet in your lobby or welcome area. Members walk up, 
 - **Self-service member lookup** -- Search by phone number or last name to find your household quickly.
 - **Household review** -- See all family members with photos and current group assignments at a glance.
 - **Group assignment** -- Assign each family member to the right class or group for the selected service time.
-- **Guest check-in** -- Add a guest to your household on the spot with a first and last name.
+- **Guest check-in** -- Add a guest to your household on the spot with a first and last name, and an optional email.
 - **QR guest registration** -- Display a QR code that visitors can scan to [register themselves](../b1-church/checkin/guest-registration.md) on their own phone before checking in, or let them tap **Register here** to fill in the same form on the kiosk.
 - **Label printing** -- Print name labels for children and parent pickup slips with unique security codes.
+- **[Check-out](./check-in/checking-out.md)** -- On manned stations, check children out with the pickup code, or look the family up by last name or phone number when the label is lost.
 - **Network printer support** -- Discover and configure network printers directly from the app.
 - **Auto-login** -- After the first login, the app remembers your credentials and goes straight to the services screen on future launches.
 - **Multi-church support** -- If your account is linked to more than one church, you can choose which one to check into.

@@ -3,7 +3,7 @@ title: "Demander des événements et des salles"
 description: "Demandez la réservation d'une salle ou d'un équipement pour un événement depuis le portail des membres de B1.church, suivez son statut dans Mes demandes et annulez-la tant qu'elle est en attente."
 ---
 
-# Demander des événements et des salles
+# Demander des événements et des salles {#requesting-events--rooms}
 
 <div class="article-intro">
 
@@ -22,6 +22,7 @@ Si votre église gère des salles et des ressources réservables, vous pouvez de
 ## Soumettre une demande {#submitting-a-request}
 
 1. Ouvrez la page **Moi** du portail des membres et appuyez sur **Demander un événement** dans la section **Demandes et inscriptions**.
+   En haut de la page, vous lisez *« Le personnel approuve chaque salle et chaque élément. »*, sauf si votre église a rédigé ses propres instructions -- par exemple des règles de réservation ou le préavis à respecter -- auquel cas vous voyez celles-ci (voir [Page de demande d'événement](../../b1-admin/settings/mobile-app.md#event-request-page)).
 2. Renseignez les informations de base de l'événement : **Titre de l'événement**, une **Description** facultative, ainsi que les heures de **Début** et de **Fin**. Activez **Toute la journée** pour ne choisir que des dates.
 3. Choisissez les **Salles** et les **Ressources** dont vous avez besoin (vous pouvez en sélectionner plusieurs de chaque). Une fois un élément choisi, vous pouvez ajouter des minutes de **Installation (min avant)** et de **Rangement (min après)**, ou activer **Fenêtre de réservation personnalisée** et définir vous-même **Réserver à partir de** et **Réserver jusqu'à**.
 4. Faites attention aux avertissements de conflit — si votre horaire chevauche une réservation existante pour une salle ou une ressource, vous verrez le message *« Certaines sélections sont peut-être déjà réservées à cette heure. »* Vous pouvez modifier votre horaire ou choisir autre chose.
@@ -35,13 +36,15 @@ Après l'envoi, un récapitulatif **Demande envoyée** indique le statut de chaq
 
 ## Suivre vos demandes {#tracking-your-requests}
 
-Ouvrez **Mes demandes** depuis la page Moi. Les demandes sont réparties entre **À venir** et **Passées** selon la date de l'événement (appuyez sur **Toutes les passées** pour voir les anciennes). Chaque demande affiche le titre de l'événement et son heure de début, le statut de chaque salle et ressource demandée, ainsi qu'un badge de statut :
+Ouvrez **Mes demandes** depuis la page Moi. Les demandes sont réparties entre **À venir** et **Passées** selon la date de l'événement (appuyez sur **Toutes les passées** pour voir les anciennes). Chaque demande affiche le titre de l'événement et son heure de début, la description que vous avez saisie, le statut de chaque salle et ressource demandée, ainsi qu'un badge de statut :
 
 - **En attente** -- En attente d'une décision
 - **Approuvée** -- Votre réservation est confirmée
 - **Refusée** -- La demande a été refusée
 
-Tant qu'une demande est en attente, vous pouvez la retirer avec **Annuler la demande**. Une confirmation demande « Annuler cette demande ? Cette action est irréversible. » — appuyez sur **Annuler la demande** pour confirmer ou sur **Conserver** pour la laisser telle quelle.
+Si le personnel a indiqué une raison lors du refus de la demande, ou de l'une de ses salles ou ressources, celle-ci apparaît en rouge sous la demande -- par exemple, *Refusée : le gymnase est réservé ce week-end-là.* La même raison figure dans la notification que vous recevez au sujet de la décision.
+
+Tant qu'une demande est en attente, vous pouvez la retirer avec **Annuler la demande**. Une confirmation demande « Annuler cette demande ? Cette action est irréversible. » — appuyez sur **Annuler la demande** pour confirmer, ou sur **Conserver** pour la laisser telle quelle.
 
 Vous pouvez aussi lancer une nouvelle demande avec le bouton **Demander un événement** en haut de Mes demandes.
 

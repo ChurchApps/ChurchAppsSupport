@@ -37,6 +37,12 @@ Du konfigurerer påminnelser i delen **Reminders** for hendelsen. Utvid den for 
 
 For å stoppe påminnelsene for en hendelse slår du av **Enable reminders** og lagrer.
 
+### Sende en påminnelse nå {#sending-a-reminder-now}
+
+For en hendelse som allerede er lagret, klikker du **Send now** ved siden av **Save** for å sende påminnelsen med en gang – for eksempel etter en endring like før arrangementet. Den bruker de lagrede innstillingene og går til de samme personene, for hendelsens neste kommende dato. B1 viser deretter hvor mange personer den nådde, for eksempel **Sent to 12 people**. De planlagte påminnelsene sendes fortsatt som planlagt.
+
+**Send now** er bare tilgjengelig når påminnelser er slått på og lagret, så lagre eventuelle endringer først. Hvis påminnelsen inkluderer **Text**, trenger du også tillatelse til å sende tekstmeldinger.
+
 For en hendelse som allerede er lagret, viser en **live preview** omtrent hvor mange som får påminnelse, hvor mange deltakere som ikke kan nås, og de neste planlagte utsendelsestidspunktene mens du gjør endringer – slik at du kan bekrefte at påminnelsen ser riktig ut før du lagrer. En helt ny hendelse har ingen forhåndsvisning før den er lagret.
 
 ## Hvem får påminnelse {#who-gets-reminded}

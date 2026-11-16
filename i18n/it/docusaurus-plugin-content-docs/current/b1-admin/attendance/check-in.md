@@ -4,7 +4,7 @@ sidebar_label: "Check-In"
 description: "Configura il check-in self-service per i culti con l'app B1 Checkin in B1 Admin, con dispositivi, account kiosk, programmi, personalizzazione e registrazione ospiti tramite QR."
 ---
 
-# Check-In
+# Check-In {#check-in}
 
 <div class="article-intro">
 
@@ -118,8 +118,8 @@ L'elenco **Campi di iscrizione** controlla ciò che chiede il modulo di registra
 
 | Campo | Richiesto a | Incluso per impostazione predefinita |
 |-------|-----------|---------------------|
-| **Titolo** | Ogni membro della famiglia, come menu a tendina davanti al nome (Sig., Sig.ra, Sig.na, Dott., Prof., Rev., Pastore) | No |
-| **Email** | Solo il contatto principale | Sì (facoltativo) |
+| **Titolo** | Ogni membro della famiglia, come menu a tendina davanti al nome (Sig., Sig.ra, Sig.na, Ms, Dott., Prof., Rev., Pastore) | No |
+| **Email** | Ogni membro della famiglia. Se obbligatorio, solo il contatto principale deve compilarla. | Sì (facoltativo) |
 | **Telefono** | Ogni membro della famiglia. Se obbligatorio, solo il contatto principale deve compilarlo. | Sì (facoltativo) |
 | **Ruolo nel nucleo familiare** | Ogni membro della famiglia dopo il contatto principale -- Coniuge, Figlio o Altro. Il contatto principale è il capofamiglia di un nuovo nucleo. Chi non ha un ruolo viene salvato come Altro. | Sì (facoltativo) |
 | **Indirizzo di casa** | Una volta per la famiglia -- via, indirizzo riga 2, città, provincia e CAP. Se obbligatorio, tutto tranne la riga 2 dell'indirizzo deve essere compilato. L'indirizzo viene salvato per ogni membro della famiglia. | No |
@@ -128,6 +128,7 @@ L'elenco **Campi di iscrizione** controlla ciò che chiede il modulo di registra
 | **Stato civile** | Solo il contatto principale | No |
 | **Classe** | Ogni membro della famiglia (dalla scuola materna alla 12ª, o Diplomato) | No |
 | **Commenti** | Una volta, in una casella sotto i membri della famiglia (fino a 1.000 caratteri) | No |
+| **Foto** | Ogni membro della famiglia, con un pulsante **Aggiungi foto** che apre uno strumento di ritaglio. La foto diventa la foto profilo della nuova persona. Se obbligatoria, solo il contatto principale deve aggiungerne una. | No |
 
 I campi disattivati non vengono mai salvati, anche se qualcuno li invia all'iscrizione in altro modo. I commenti vengono salvati come nota nella scheda del contatto principale (pubblicata come "Iscrizione ospite"), così puoi leggerli nella sezione **Note** del suo profilo.
 

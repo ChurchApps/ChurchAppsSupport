@@ -1,56 +1,59 @@
 ---
 title: "Veranstaltungen & Räume anfragen"
-description: "Fordere im B1.church-Mitgliederportal eine Raum- oder Gerätebuchung für eine Veranstaltung an, verfolge den Status unter Meine Anfragen und storniere sie, solange sie ausstehend ist."
+description: "Fragen Sie über das B1.church-Mitgliederportal eine Raum- oder Gerätebuchung für eine Veranstaltung an, verfolgen Sie den Status unter Meine Anfragen und stornieren Sie die Anfrage, solange sie offen ist."
 ---
 
-# Veranstaltungen & Räume anfragen
+# Veranstaltungen & Räume anfragen {#requesting-events--rooms}
 
 <div class="article-intro">
 
-Wenn deine Gemeinde buchbare Räume und Ressourcen verwaltet, kannst du eine Veranstaltung -- mit den Räumen und der Ausrüstung, die sie benötigt -- direkt im Mitgliederportal anfragen. Konflikte mit bestehenden Buchungen werden bei der Auswahl markiert, deine Anfrage geht zur Genehmigung an die Gemeinde, und du kannst sie unter Meine Anfragen verfolgen oder stornieren.
+Wenn Ihre Gemeinde buchbare Räume und Ressourcen verwaltet, können Sie direkt im Mitgliederportal eine Veranstaltung anfragen -- mit den Räumen und der Ausstattung, die sie benötigt. Konflikte mit bestehenden Buchungen werden bei der Auswahl sofort markiert, Ihre Anfrage geht zur Genehmigung an die Gemeinde, und Sie können sie unter **Meine Anfragen** verfolgen oder stornieren.
 
 </div>
 
 <div class="prereqs">
-<h4>Bevor du beginnst</h4>
+<h4>Bevor Sie beginnen</h4>
 
-- Du musst im Mitgliederportal [angemeldet](../getting-started/logging-in.md) sein
-- Deine Gemeinde muss Räume oder Ressourcen im B1 Admin eingerichtet haben -- die Links für Anfragen erscheinen nur dann
+- Sie müssen im Mitgliederportal [angemeldet](../getting-started/logging-in.md) sein
+- Ihre Gemeinde muss Räume oder Ressourcen in B1 Admin eingerichtet haben -- die Links für Anfragen erscheinen nur dann
 
 </div>
 
-## Eine Anfrage einreichen {#submitting-a-request}
+## Eine Anfrage stellen {#submitting-a-request}
 
-1. Öffne die Seite **Ich** im Mitgliederportal und tippe im Abschnitt **Anfragen & Anmeldungen** auf **Veranstaltung anfragen**.
-2. Fülle die Grunddaten der Veranstaltung aus: **Veranstaltungstitel**, optional eine **Beschreibung** sowie die **Start-** und **Endzeit**. Aktiviere **Ganztägig**, um nur Daten auszuwählen.
-3. Wähle die **Räume** und **Ressourcen** aus, die du brauchst (du kannst mehrere von jedem wählen). Sobald du eine ausgewählt hast, kannst du **Aufbau (Min. vorher)** und **Abbau (Min. nachher)** hinzufügen oder **Benutzerdefiniertes Reservierungsfenster** aktivieren und **Reservieren ab** sowie **Reservieren bis** selbst festlegen.
-4. Achte auf Konfliktwarnungen -- überschneidet sich deine Zeit mit einer bestehenden Buchung für einen Raum oder eine Ressource, siehst du *"Einige Auswahlen sind zu dieser Zeit möglicherweise bereits gebucht."* Du kannst deine Zeit anpassen oder etwas anderes wählen.
-5. Findet die Veranstaltung mehrfach statt, aktiviere **Wiederholen** und lege das Muster fest.
-6. Tippe auf **Anfrage senden**. Die Schaltfläche bleibt ausgegraut, bis du einen Veranstaltungstitel eingibst. Tippe auf **Abbrechen**, um ohne Senden zu verlassen.
+1. Öffnen Sie im Mitgliederportal die Seite **Ich** und tippen Sie im Abschnitt **Anfragen & Anmeldungen** auf **Veranstaltung anfragen**.
+   Oben auf der Seite steht *„Mitarbeitende genehmigen jeden Raum und jeden Gegenstand.“*, sofern Ihre Gemeinde keine eigenen Hinweise verfasst hat -- etwa Buchungsrichtlinien oder die erforderliche Vorlaufzeit. In diesem Fall sehen Sie stattdessen diese Hinweise (siehe [Seite für Veranstaltungsanfragen](../../b1-admin/settings/mobile-app.md#event-request-page)).
+2. Füllen Sie die Grunddaten der Veranstaltung aus: **Veranstaltungstitel**, optional eine **Beschreibung** sowie die Zeiten **Start** und **Ende**. Aktivieren Sie **Ganztägig**, um nur Tage auszuwählen.
+3. Wählen Sie die benötigten **Räume** und **Ressourcen** aus (Sie können mehrere von jeder Sorte wählen). Sobald Sie eine ausgewählt haben, können Sie die Minuten für **Aufbau (Min. vorher)** und **Abbau (Min. nachher)** angeben oder **Benutzerdefiniertes Reservierungsfenster** aktivieren und **Reservieren ab** und **Reservieren bis** selbst festlegen.
+4. Achten Sie auf Konfliktwarnungen -- überschneidet sich Ihre Zeit mit einer bestehenden Buchung für einen Raum oder eine Ressource, sehen Sie *„Einige Auswahlen sind zu dieser Zeit möglicherweise bereits gebucht.“*. Sie können dann Ihre Zeit anpassen oder etwas anderes wählen.
+5. Findet die Veranstaltung mehrfach statt, aktivieren Sie **Wiederholen** und legen Sie das Muster fest.
+6. Tippen Sie auf **Anfrage senden**. Die Schaltfläche bleibt ausgegraut, bis Sie einen Veranstaltungstitel eingeben. Tippen Sie auf **Abbrechen**, um ohne Absenden zu gehen.
 
-Nach dem Senden zeigt eine Zusammenfassung **Anfrage gesendet** den Status jedes Raums und jeder Ressource, die du angefragt hast (tippe auf **Meine Anfragen**, um zu deiner Liste zu gelangen):
+Nach dem Absenden zeigt eine Übersicht **Anfrage gesendet** den Status jedes Raums und jeder Ressource, die Sie angefragt haben (tippen Sie auf **Meine Anfragen**, um zu Ihrer Liste zu gelangen):
 
-- **Genehmigt** -- Sofort gebucht (der Raum oder die Ressource hat keine Genehmigungsgruppe).
-- **Genehmigung ausstehend** -- Jemand aus der Gemeinde muss zuerst zustimmen.
+- **Genehmigt** -- Sofort gebucht (der Raum bzw. die Ressource hat keine Genehmigungsgruppe).
+- **Genehmigung ausstehend** -- Jemand aus der Gemeinde muss die Anfrage zuerst freigeben.
 
-## Deine Anfragen verfolgen {#tracking-your-requests}
+## Ihre Anfragen verfolgen {#tracking-your-requests}
 
-Öffne **Meine Anfragen** auf der Seite Ich. Anfragen werden nach dem Datum der Veranstaltung in **Kommend** und **Vergangen** aufgeteilt (tippe auf **Alle vergangenen**, um ältere zu sehen). Jede Anfrage zeigt den Veranstaltungstitel und den Beginn, den Status jedes Raums und jeder Ressource, die du angefragt hast, sowie ein Status-Abzeichen:
+Öffnen Sie **Meine Anfragen** über die Seite **Ich**. Anfragen werden nach dem Datum der Veranstaltung in **Kommend** und **Vergangen** aufgeteilt (tippen Sie auf **Alle vergangenen**, um ältere zu sehen). Jede Anfrage zeigt den Veranstaltungstitel und den Startzeitpunkt, die von Ihnen eingegebene Beschreibung, den Status jedes angefragten Raums und jeder Ressource sowie eine Statusanzeige:
 
 - **Ausstehend** -- Wartet auf eine Entscheidung
-- **Genehmigt** -- Deine Buchung ist bestätigt
+- **Genehmigt** -- Ihre Buchung ist bestätigt
 - **Abgelehnt** -- Die Anfrage wurde abgelehnt
 
-Solange eine Anfrage noch ausstehend ist, kannst du sie mit **Anfrage zurückziehen** zurückziehen. Eine Bestätigung fragt "Diese Anfrage zurückziehen? Dies kann nicht rückgängig gemacht werden." -- tippe auf **Anfrage zurückziehen**, um zu bestätigen, oder auf **Behalten**, um sie zu belassen.
+Hat Mitarbeitende einen Grund für die Ablehnung der Anfrage oder eines ihrer Räume bzw. einer Ressource angegeben, erscheint dieser rot unter der Anfrage -- zum Beispiel *Abgelehnt: Die Turnhalle ist an diesem Wochenende belegt.* Derselbe Grund steht auch in der Benachrichtigung, die Sie über die Entscheidung erhalten.
 
-Du kannst auch über die Schaltfläche **Veranstaltung anfragen** oben in Meine Anfragen eine neue Anfrage starten.
+Solange eine Anfrage noch ausstehend ist, können Sie sie mit **Anfrage zurückziehen** zurückziehen. Eine Bestätigung fragt „Diese Anfrage zurückziehen? Dies kann nicht rückgängig gemacht werden.“ -- tippen Sie auf **Anfrage zurückziehen**, um zu bestätigen, oder auf **Behalten**, um sie zu behalten.
+
+Eine neue Anfrage können Sie auch über die Schaltfläche **Veranstaltung anfragen** oben in **Meine Anfragen** starten.
 
 :::info
-Anfragen werden von Mitarbeitern der Gemeinde auf der [Genehmigungsseite](../../b1-admin/calendars/approvals.md) im B1 Admin geprüft. Welche Räume und Ressourcen eine Genehmigung benötigen, legt deine Gemeinde fest -- siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources.md).
+Anfragen werden von Mitarbeitenden der Gemeinde auf der [Genehmigungsseite](../../b1-admin/calendars/approvals.md) in B1 Admin geprüft. Welche Räume und Ressourcen eine Genehmigung benötigen, legt Ihre Gemeinde fest -- siehe [Räume & Ressourcen](../../b1-admin/calendars/rooms-resources.md).
 :::
 
 ## Verwandte Artikel {#related-articles}
 
-- [Die Seite Ich](../getting-started/me-page.md) -- Wo die Links für Anfragen zu finden sind
-- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Wie Mitarbeiter Anfragen prüfen
-- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Wie Gemeinden buchbare Orte einrichten
+- [Die Ich-Seite](../getting-started/me-page.md) -- Wo die Links für Anfragen zu finden sind
+- [Kalender-Genehmigungen (B1 Admin)](../../b1-admin/calendars/approvals.md) -- Wie Mitarbeitende Anfragen prüfen
+- [Räume & Ressourcen (B1 Admin)](../../b1-admin/calendars/rooms-resources.md) -- Wie Gemeinden buchbare Räume einrichten

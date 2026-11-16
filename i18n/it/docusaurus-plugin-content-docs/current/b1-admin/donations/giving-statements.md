@@ -3,7 +3,7 @@ title: "Ricevute di donazione"
 description: "Crea le ricevute di donazione di fine anno per ogni donatore in B1 Admin, poi scaricale come file CSV o stampale per la spedizione con i totali fiscalmente deducibili."
 ---
 
-# Ricevute di donazione
+# Ricevute di donazione {#giving-statements}
 
 <div class="article-intro">
 
@@ -53,6 +53,12 @@ Genera le ricevute all'inizio di gennaio, quando i registri sono ancora freschi.
 :::info
 Le ricevute di donazione includono solo le donazioni assegnate a fondi con l'impostazione **Fiscalmente deducibile** attiva. Se un fondo non è contrassegnato come fiscalmente deducibile, le sue donazioni non compariranno nella ricevuta. Puoi gestire questa impostazione nella pagina [Fondi](funds.md).
 :::
+
+## Memo delle offerte sulle ricevute {#gift-memos-on-statements}
+
+Ogni ricevuta elenca ogni offerta con data, metodo, fondo e importo. Quando almeno un'offerta di una ricevuta ha un **Memo**, dopo il fondo viene aggiunta una colonna **Memo**, così il donatore può vedere a cosa serviva ciascuna offerta. Le ricevute senza memo mantengono il layout a quattro colonne. Le **Note** di un'offerta sono interne e non compaiono mai su una ricevuta. I file CSV nello ZIP includono il memo come ultima colonna.
+
+Per indicare una finalità sulla ricevuta, inserisci il **Memo** dell'offerta quando [registri la donazione](recording-donations.md), oppure assegnala a un suo [fondo](funds.md) se vuoi che venga totalizzata a parte.
 
 ## Formati di ricevuta per Canada, Australia e Nuova Zelanda {#receipt-formats-for-canada-australia-and-new-zealand}
 

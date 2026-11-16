@@ -3,7 +3,7 @@ title: "Aprovações de Calendário"
 description: "Analise solicitações pendentes de reserva de salas e recursos no B1 Admin, verifique conflitos, aprove ou recuse e consulte decisões anteriores em Histórico."
 ---
 
-# Aprovações de Calendário
+# Aprovações de Calendário {#calendar-approvals}
 
 <div class="article-intro">
 
@@ -38,7 +38,7 @@ Se uma solicitação se sobrepõe a outra reserva ou bloqueio da mesma sala ou r
 
 ### Aprovando ou Recusando {#approving-or-rejecting}
 
-Passe o cursor sobre uma solicitação de reserva e clique em **Aprovar** ou **Recusar** (ao recusar, será preciso confirmar antes). O solicitante é notificado da decisão. As reservas aprovadas ficam bloqueadas para aquela sala ou recurso durante o evento; as reservas recusadas liberam o horário para outras pessoas.
+Passe o cursor sobre uma solicitação de reserva e clique em **Aprovar** ou **Recusar**. O solicitante é notificado da decisão. As reservas aprovadas ficam bloqueadas para aquela sala ou recurso durante o evento; as reservas recusadas liberam o horário para outras pessoas.
 
 Ao clicar em **Aprovar**, abre-se a caixa **Aprovar reserva**, na qual você também pode publicar o evento na mesma etapa:
 
@@ -46,9 +46,16 @@ Ao clicar em **Aprovar**, abre-se a caixa **Aprovar reserva**, na qual você tam
 2. Quando **Publicar no calendário público** estiver marcado, você pode, opcionalmente, escolher um calendário curado em **Também adicionar ao calendário** para incluir o evento em um dos seus [calendários curados](./curated-calendar.md). Deixe em **Nenhum** para pular essa etapa. (Esta opção só aparece se você tiver a permissão **content.edit**.)
 3. Clique em **Aprovar**.
 
+Ao clicar em **Recusar**, abre-se a caixa **Recusar solicitação**:
+
+1. Opcionalmente, digite um motivo em **Motivo (opcional)** (até 500 caracteres) -- por exemplo, *"O ginásio está reservado naquele fim de semana."*
+2. Clique em **Recusar** para confirmar ou em **Cancelar** para manter a solicitação pendente.
+
+O motivo é adicionado ao final da notificação que o solicitante recebe (por exemplo, *Sua solicitação de evento "Youth Lock-In" foi recusada: O ginásio está reservado naquele fim de semana.*), e os membros também o veem na página **Minhas Solicitações** no aplicativo B1. Deixe em branco para enviar apenas o aviso padrão.
+
 ## Eventos Pendentes {#pending-events}
 
-Os eventos que os membros solicitam (por exemplo, em **Minhas Solicitações** no aplicativo B1) aparecem na seção **Solicitações de Eventos**, com a data, a **Descrição** e **Solicitado por**. Clique em **Aprovar** para publicar um evento no calendário ou em **Recusar** para avisar quem enviou que são necessárias alterações. Clique em **Editar** para corrigir os detalhes da solicitação antes de decidir, ou em **Excluir** para removê-la.
+Os eventos que os membros solicitam (por exemplo, em **Minhas Solicitações** no aplicativo B1) aparecem na seção **Solicitações de Eventos**, com a data, a **Descrição** e **Solicitado por**. Clique em **Aprovar** para publicar um evento no calendário ou em **Recusar** para avisar quem enviou que são necessárias alterações (você pode adicionar um motivo, como descrito acima). Clique em **Editar** para corrigir os detalhes da solicitação antes de decidir, ou em **Excluir** para removê-la. As solicitações de eventos enviadas pelo aplicativo não têm grupo; por isso, a lista **Grupo** da caixa de edição mostra **(sem grupo)** para elas, e você pode salvar as alterações sem escolher um.
 
 :::tip
 Configure um Grupo de Aprovação em uma sala em [Salas, Recursos e Agendamento](./rooms-resources.md) para exigir aprovação para essa sala. Os grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações chegam a esta página.

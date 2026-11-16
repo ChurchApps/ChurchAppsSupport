@@ -3,7 +3,7 @@ title: "캘린더 승인"
 description: "B1 Admin에서 대기 중인 공간 및 자원 예약 요청을 검토하고, 충돌을 확인하고, 승인하거나 거절하며, 기록에서 과거 결정을 확인하세요."
 ---
 
-# 캘린더 승인
+# 캘린더 승인 {#calendar-approvals}
 
 <div class="article-intro">
 
@@ -34,34 +34,41 @@ B1 Admin에서 [점프 메뉴](../introduction.md#getting-around-with-the-jump-m
 
 ### 충돌 표시 {#conflict-indicators}
 
-요청이 같은 공간이나 자원의 다른 예약 또는 사용 불가 시간과 겹치면 상태에 **Conflicts** 배지가 표시됩니다. 배지에 마우스를 올리면 세부 내용을 볼 수 있습니다. 겹치지 않는 요청에는 **No conflicts**가 표시됩니다. 충돌이 있는 요청은 어느 쪽이든 승인하기 전에 신중히 검토하세요.
+요청이 같은 공간이나 자원의 다른 예약 또는 사용 불가 시간과 겹치면 상태에 **Conflicts** 배지가 표시됩니다. 배지에 마우스를 올리면 세부 내용을 볼 수 있습니다. 겹치지 않는 요청에는 **No conflicts**가 표시됩니다. 충돌하는 요청은 어느 한쪽이라도 승인하기 전에 신중히 검토하세요.
 
 ### 승인 또는 거절 {#approving-or-rejecting}
 
-예약 요청 위에 마우스를 올린 뒤 **Approve** 또는 **Reject**를 클릭합니다(거절은 먼저 확인을 요청합니다). 요청자에게 결정이 알림으로 전달됩니다. 승인된 예약은 해당 이벤트 동안 그 공간이나 자원에 고정되며, 거절된 예약은 그 시간대를 다른 사람이 쓸 수 있게 풀어 줍니다.
+예약 요청 위에 마우스를 올린 뒤 **Approve** 또는 **Reject**를 클릭하세요. 요청자에게 결정이 알림으로 전달됩니다. 승인된 예약은 해당 이벤트 동안 그 공간이나 자원에 고정되며, 거절된 예약은 그 시간대를 다른 사람이 쓸 수 있도록 풀어 줍니다.
 
 **Approve**를 클릭하면 **Approve booking** 대화상자가 열리며, 같은 단계에서 이벤트를 게시할 수도 있습니다.
 
-1. **Publish to public calendar**를 체크하면 그룹 캘린더에서 이벤트가 공개됩니다. 체크하지 않으면 이벤트의 공개 상태를 바꾸지 않고 예약만 승인합니다.
-2. **Publish to public calendar**를 체크하면 **Also add to calendar**에서 선택 사항으로 큐레이션 캘린더를 고를 수 있으며, 이벤트를 [큐레이션 캘린더](./curated-calendar.md)에도 추가할 수 있습니다. 추가하지 않으려면 **None**으로 두세요. (이 옵션은 **content.edit** 권한이 있을 때만 표시됩니다.)
+1. **Publish to public calendar**를 체크하면 이벤트가 그룹 캘린더에 공개됩니다. 체크하지 않으면 이벤트의 공개 상태는 바꾸지 않고 예약만 승인합니다.
+2. **Publish to public calendar**를 체크한 뒤에는 **Also add to calendar**에서 선택적으로 [큐레이션 캘린더](./curated-calendar.md) 하나를 골라 이벤트를 함께 추가할 수 있습니다. 추가하지 않으려면 **None**으로 두세요. (이 옵션은 **content.edit** 권한이 있을 때만 표시됩니다.)
 3. **Approve**를 클릭합니다.
+
+**Reject**를 클릭하면 **Reject Request** 대화상자가 열립니다.
+
+1. 필요하면 **Reason (optional)**에 사유를 입력합니다(최대 500자). 예: *"The gym is booked that weekend."*
+2. **Reject**를 클릭하여 확정하거나, **Cancel**을 클릭하여 요청을 대기 상태로 둡니다.
+
+사유는 요청자가 받는 알림의 끝에 덧붙습니다(예: *Your event request "Youth Lock-In" was rejected: The gym is booked that weekend.*). 구성원은 B1 앱의 **My Requests** 페이지에서도 사유를 볼 수 있습니다. 비워 두면 간단한 안내만 발송됩니다.
 
 ## 대기 중인 이벤트 {#pending-events}
 
-구성원이 요청한 이벤트(예: B1 앱의 **My Requests**에서 요청한 것)는 날짜, **Description**, **Requested by**와 함께 **Event Requests** 섹션에 나타납니다. **Approve**를 클릭하면 이벤트가 캘린더에 게시되고, **Reject**를 클릭하면 요청자에게 수정이 필요하다고 알립니다. 결정하기 전에 요청 내용을 고치려면 **Edit**를, 삭제하려면 **Delete**를 클릭합니다.
+구성원이 요청한 이벤트(예: B1 앱의 **My Requests**에서 요청한 것)는 날짜, **Description**, **Requested by**와 함께 **Event Requests** 섹션에 나타납니다. **Approve**를 클릭하면 이벤트가 캘린더에 게시되고, **Reject**를 클릭하면 제출자에게 수정이 필요하다고 알립니다(위에서 설명한 대로 사유를 추가할 수 있습니다). 결정하기 전에 요청 내용을 고치려면 **Edit**를, 삭제하려면 **Delete**를 클릭하세요. 앱에서 구성원이 보낸 이벤트 요청에는 그룹이 없으므로, 편집 대화상자의 **Group** 목록에 **(no group)**이 표시되며 그룹을 고르지 않고도 변경 사항을 저장할 수 있습니다.
 
 :::tip
-공간에 승인을 요구하려면 [공간 및 자원](./rooms-resources.md)에서 그 공간에 Approval Group을 설정하세요. 접근 권한이 있는 그룹은 이벤트를 만들 때 공간을 요청할 수 있고, 그 요청은 이 페이지로 들어옵니다.
+공간에 승인을 요구하려면 [공간 및 자원](./rooms-resources.md)에서 그 공간에 Approval Group을 설정하세요. 접근 권한이 있는 그룹은 이벤트를 만들 때 그 공간을 요청할 수 있고, 그 요청은 이 페이지로 들어옵니다.
 :::
 
 ## 기록 {#history}
 
 승인되거나 거절된 요청은 페이지에 계속 남습니다. 승인 페이지 상단의 **History**를 클릭하면 볼 수 있으며, **Pending**을 클릭하면 열린 요청으로 돌아갑니다.
 
-- **Room & Resource Requests**에는 결정된 예약마다 이벤트, 공간이나 자원, **Requested by**, **Approved** 또는 **Rejected** 배지, 그리고 **Decided**가 나열됩니다. **Decided**에는 누가 언제 결정했는지 표시됩니다. 가장 최근에 결정된 요청이 먼저 나옵니다.
-- **Event Requests**에는 결정된 이벤트마다 설명, **Requested by**, **Approved** 또는 **Rejected** 배지, 그리고 **Decided**가 나열됩니다. B1이 이 정보를 기록하기 시작하기 전에 결정된 이벤트 요청은 대신 대시(-)로 표시됩니다.
+- **Room & Resource Requests**에는 결정된 예약마다 이벤트, 공간이나 자원, **Requested by**, **Approved** 또는 **Rejected** 배지, 그리고 **Decided**가 나열됩니다. **Decided**에는 누가 어떤 날짜에 결정했는지 표시됩니다. 가장 최근에 결정된 요청이 먼저 나옵니다.
+- **Event Requests**에는 결정된 이벤트마다 설명, **Requested by**, **Approved** 또는 **Rejected** 배지, 그리고 **Decided**가 나열됩니다. B1이 이 정보를 기록하기 시작하기 전에 결정된 오래된 이벤트 요청은 대신 대시(-)로 표시됩니다.
 
-History에서도 결정을 바꿀 수 있습니다. 승인된 요청에는 **Reject** 작업이, 거절된 요청에는 **Approve** 작업이 있습니다. 승인했던 이벤트 요청을 거절하면 공개 캘린더에서도 빠집니다. 이 페이지에서 이벤트 요청을 수정하거나 삭제할 수도 있습니다.
+History에서도 결정을 바꿀 수 있습니다. 승인된 요청에는 **Reject** 작업이, 거절된 요청에는 **Approve** 작업이 있습니다. 승인했던 이벤트 요청을 거절하면 공개 캘린더에서도 빠집니다. 이벤트 요청은 여기에서 수정하거나 삭제할 수도 있습니다.
 
 **Requested by** 아래의 이름을 클릭하면 그 사람의 기록이 열립니다.
 

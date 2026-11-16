@@ -3,7 +3,7 @@ title: "체크인"
 description: "B1Checkin, B1App, B1 Admin에서 체크인이 작동하는 방식: 출석 데이터 모델, 방으로서의 그룹, 정원 제한, 픽업 안전 규칙을 설명합니다."
 ---
 
-# 체크인
+# 체크인 {#check-ins}
 
 <div class="article-intro">
 
@@ -11,29 +11,29 @@ description: "B1Checkin, B1App, B1 Admin에서 체크인이 작동하는 방식:
 
 </div>
 
-## 개요
+## 개요 {#overview}
 
 ```
 ┌──────────────────────────┐
-│ B1Checkin (Expo 키오스크) │──┐         ┌──────────────────────────────────────────────┐
-│  조회 → 가구 →            │  │         │ Api                                          │
-│  그룹 → 완료/인쇄          │  │  HTTPS  │  ┌─ membership 모듈 ───────────────────────┐ │
-├──────────────────────────┤  ├───────▶ │  │ 교인 · 가구 · 그룹                       │ │
-│ B1App (셀프 체크인)       │──┤         │  └─────────────────────────────────────────┘ │
-│  /mobile/checkin 화면     │  │         │  ┌─ attendance 모듈 ───────────────────────┐ │
+│ B1Checkin (Expo kiosk)   │──┐         ┌──────────────────────────────────────────────┐
+│  lookup → household →    │  │         │ Api                                          │
+│  groups → complete/print │  │  HTTPS  │  ┌─ membership module ─────────────────────┐ │
+├──────────────────────────┤  ├───────▶ │  │ people · households · groups            │ │
+│ B1App (self check-in)    │──┤         │  └─────────────────────────────────────────┘ │
+│  /mobile/checkin screen  │  │         │  ┌─ attendance module ─────────────────────┐ │
 ├──────────────────────────┤  │         │  │ campuses → services → serviceTimes      │ │
-│ B1Admin (직원)            │──┘         │  │ groupServiceTimes  (방 배정)             │ │
-│  설정 · 보고서 ·           │            │  │ sessions ← visitSessions → visits       │ │
-│  라벨 디자이너            │            │  │ labelTemplates                          │ │
+│ B1Admin (staff)          │──┘         │  │ groupServiceTimes  (room routing)       │ │
+│  setup · reports ·       │            │  │ sessions ← visitSessions → visits       │ │
+│  label designer          │            │  │ labelTemplates                          │ │
 └──────────────────────────┘            │  └─────────────────────────────────────────┘ │
                                         └──────────────────────────────────────────────┘
 
-라벨 인쇄 경로(키오스크 전용):
+Label print path (kiosk only):
 POST /attendance/visits/checkin ──▶ { securityCode, streaks }
-  └▶ LabelHelper (라벨 템플릿, 또는 기본 제공 HTML 대체본)
-       └▶ LabelRenderer → HTML 문서 + 인라인 SVG 바코드
-            └▶ PrintUI: WebView 렌더링 → ViewShot JPG 캡처
-                 └▶ printer-helper 네이티브 모듈 → Brother QL / Zebra
+  └▶ LabelHelper (label templates, or bundled HTML fallback)
+       └▶ LabelRenderer → HTML doc + inline SVG barcodes
+            └▶ PrintUI: WebView render → ViewShot JPG capture
+                 └▶ printer-helper native module → Brother QL / Zebra
 ```
 
 | 화면 | 저장소 | 스택 | 역할 |
@@ -44,7 +44,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 세 곳 모두 `ApiHelper`를 통해 같은 두 API 모듈을 호출합니다. 교인, 가구, 그룹을 담당하는 **MembershipApi**(`/membership`)와, 아래의 모든 기능을 담당하는 **AttendanceApi**(`/attendance`)입니다.
 
-## 데이터 모델 (`Api/src/modules/attendance`)
+## 데이터 모델 (`Api/src/modules/attendance`) {#data-model-apisrcmodulesattendance}
 
 | 엔티티 / 테이블 | 주요 필드 | 의미 |
 |----------------|-----------|---------|
@@ -55,9 +55,9 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 | `sessions` | groupId, serviceTimeId, sessionDate | 하루에 한 그룹이 가지는 모임 1회. 체크인 시점에 지연 생성됨(`models/Session.ts`) |
 | `visits` | personId, serviceId, visitDate, checkinTime, securityCode, checkinType, checkedInById, checkoutTime, checkedOutBy, checkedOutById | 하루에 한 사람이 출석한 기록(`models/Visit.ts`). `checkinType`은 `member` / `guest` / `volunteer`(NULL = 레거시 교인). 키오스크가 설정하며 정원/비율 게이트가 사용함 |
 | `visitSessions` | visitId, sessionId | 방문이 포함하는 세션. 두 예배 시간에 체크인한 아이는 두 행을 가짐(`models/VisitSession.ts`) |
-| `labelTemplates` | name, labelType(`nametag`/`pickup`), width, height, isDefault, content(JSON 블록) | 디자인 가능한 라벨 레이아웃(`models/LabelTemplate.ts`) |
+| `labelTemplates` | name, labelType (`nametag`/`pickup`), width, height, isDefault, content (JSON 블록) | 디자인 가능한 라벨 레이아웃(`models/LabelTemplate.ts`) |
 
-### 완료된 체크인의 저장 방식
+### 완료된 체크인의 저장 방식 {#how-a-completed-check-in-is-persisted}
 
 `VisitController.postCheckin`(`Api/src/modules/attendance/controllers/VisitController.ts`)이 `POST /attendance/visits/checkin?serviceId=&peopleIds=`를 처리합니다. 요청 본문은 `Visit` 객체의 배열이며, 각 객체는 `visitSessions`를 가지고, 그 안의 `session`은 `(serviceTimeId, groupId)` 쌍만 지정합니다. 그다음 서버는 다음을 수행합니다.
 
@@ -69,16 +69,17 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 저장된 방문마다 `attendance.recorded` 웹훅도 발송됩니다. 읽기 쪽인 `GET /attendance/visits/checkin`은 사람들의 방문을 **마지막으로 기록된 날짜**부터 반환합니다. 그날이 지난주라면 id를 제거하므로, 클라이언트는 지난주 방 선택을 미리 채운 복사본을 받으며, 이것은 새 기록으로 저장됩니다.
 
-### 체크아웃
+### 체크아웃 {#check-out}
 
-두 엔드포인트가 흐름을 완성합니다(`VisitController`).
+세 개의 엔드포인트가 흐름을 완성합니다(`VisitController`).
 
 - `GET /attendance/visits/code/:code` -- 해당 보안 코드를 가진, 아직 체크아웃되지 않은 오늘의 방문. 세션이 채워져 있음.
+- `GET /attendance/visits/active?peopleIds=` -- 나열된 사람들의 아직 체크아웃되지 않은 오늘의 방문(보안 코드 무관). 세션이 채워져 있음. `peopleIds`가 비어 있으면 400을 반환함. 이름으로 체크아웃하는 기능을 뒷받침함.
 - `POST /attendance/visits/checkout` -- 본문 `{ visitIds, checkedOutBy?, checkedOutById? }`. `checkoutTime`과 픽업한 사람을 기록하며, 방문마다 `attendance.checkout` 웹훅을 발송함.
 
-권한: 키오스크는 `attendance.checkin`으로 인증합니다. 이 권한은 체크인/체크아웃/라벨 템플릿 기능만 정확히 부여하며, `people.view`가 없어도 키오스크에 필요한 가구 조회(전화번호/이름 검색, 체크인 모델의 가구 구성원, 가구 픽업 목록)를 함께 허용합니다. B1Checkin의 `SessionHelper.filterChurches`는 계정이 `Attendance/Checkin` 또는 `Attendance/Edit`를 가진 교회만 보여 줍니다. `Checkin`은 더 이상 Everyone(역할 없음) 권한에 포함되지 않으므로(`RoleHelper`와 마이그레이션 `2026-11-01_remove_everyone_checkin`), 실제 역할을 통해 부여해야 합니다. `attendance.view`/`attendance.edit`는 보고와 수동 입력을 담당하며, 구조(예배, 예배 시간, 그룹 배정)는 `services.edit`가 필요합니다. 교인 셀프 체크인(B1App)에는 어떤 권한도 필요하지 않습니다. 교회에 연결된 교인이 있는 인증 사용자라면 누구나 `GET`/`POST /attendance/visits/checkin`을 호출할 수 있으며, 서버는 제출된 `personId`를 호출자 자신의 가구로 제한합니다(그 밖에는 403). 이 울타리 덕분에 다른 가족의 `securityCode`를 읽을 수 없습니다. 교인 자격이 곧 권한이며, 교인이 기능을 *볼 수 있는지*는 교회의 B1App 탐색 탭으로 제어합니다. 나머지 체크인 엔드포인트(`code/:code`, `checkout`, `guardians`, `CheckinController`)는 여전히 키오스크와 직원 전용입니다.
+권한: 키오스크는 `attendance.checkin`으로 인증합니다. 이 권한은 체크인/체크아웃/라벨 템플릿 기능만 정확히 부여하며, `people.view`가 없어도 키오스크에 필요한 가구 조회(전화번호/이름 검색, 체크인 모델의 가구 구성원, 가구 픽업 목록)를 함께 허용합니다. B1Checkin의 `SessionHelper.filterChurches`는 계정이 `Attendance/Checkin` 또는 `Attendance/Edit`를 가진 교회만 보여 줍니다. `Checkin`은 더 이상 Everyone(역할 없음) 권한에 포함되지 않으므로(`RoleHelper`와 마이그레이션 `2026-11-01_remove_everyone_checkin`), 실제 역할을 통해 부여해야 합니다. `attendance.view`/`attendance.edit`는 보고와 수동 입력을 담당하며, 구조(예배, 예배 시간, 그룹 배정)는 `services.edit`가 필요합니다. 교인 셀프 체크인(B1App)에는 어떤 권한도 필요하지 않습니다. 교회에 연결된 교인이 있는 인증 사용자라면 누구나 `GET`/`POST /attendance/visits/checkin`을 호출할 수 있으며, 서버는 제출된 `personId`를 호출자 자신의 가구로 제한합니다(그 밖에는 403). 이 울타리 덕분에 다른 가족의 `securityCode`를 읽을 수 없습니다. 교인 자격이 곧 권한이며, 교인이 기능을 *볼 수 있는지*는 교회의 B1App 탐색 탭으로 제어합니다. 나머지 체크인 엔드포인트(`code/:code`, `active`, `checkout`, `guardians`, `CheckinController`)는 여전히 키오스크와 직원 전용입니다.
 
-## 그룹이 방 배정을 담당합니다
+## 그룹이 방 배정을 담당합니다 {#groups-drive-room-routing}
 
 시스템 어디에도 방이나 교실 엔티티가 없습니다. "방"은 `trackAttendance`가 켜져 있고 `groupServiceTimes`를 통해 하나 이상의 예배 시간에 연결된 교인 **그룹**입니다. 키오스크 동작을 결정하는 그룹 필드(`Api/src/modules/membership/models/Group.ts`)는 다음과 같습니다.
 
@@ -99,7 +100,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 그룹이 유일한 진실 원천이므로, 같은 그룹 소속 정보가 키오스크 라우팅, B1Admin 그룹 페이지의 명단형 출석, 출석 보고를 모두 뒷받침합니다. 그룹을 예배 시간에 배정하는 것만으로 체크인 목적지가 되는 데 충분합니다.
 :::
 
-## 아동 안전
+## 아동 안전 {#child-safety}
 
 ### 체크인 유형 {#check-in-types}
 
@@ -131,7 +132,7 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 체크아웃(`B1Checkin/app/checkout.tsx`)에서 키오스크는 가구의 픽업 목록을 불러옵니다. `trusted` 항목은 가구 성인 사진 격자와 함께 누를 수 있는 픽업 카드로 표시됩니다. 직접 입력한 "Other" 이름은 `notAuthorized` 항목과 퍼지 매칭됩니다(레벤슈타인 거리, `src/helpers/PickupMatchHelper.ts`). 일치하면 경고 시트와 직원용 **Override** 버튼으로 체크아웃이 차단됩니다. 우회 기록은 방문 자체에 남습니다. 일반 `POST /attendance/visits/checkout`을 통해 `checkedOutBy`를 `"OVERRIDE: {name}"`으로 보내므로, 별도의 감사 테이블이 아니라 출석 기록과 `attendance.checkout` 웹훅에 남습니다.
 
-### 부모 호출과 긴급 방송
+### 부모 호출과 긴급 방송 {#page-a-parent-and-emergency-broadcast}
 
 `CheckinController`(`Api/src/modules/attendance/controllers/CheckinController.ts`, `/attendance/checkin`)는 두 개의 SMS 엔드포인트를 노출합니다.
 
@@ -140,16 +141,16 @@ POST /attendance/visits/checkin ──▶ { securityCode, streaks }
 
 두 기능 모두 membership 게이트웨이로 가구 성인을 찾은 뒤, 발송을 **`MessagingModuleGateway.sendBulkText`**(`Api/src/shared/modules/MessagingModuleGateway.ts`)에 넘깁니다. 이것은 교회가 설정한 문자 제공자(`@churchapps/texting`: TextInChurch, Clearstream, MutualMinistry. 내장 SMS 발송기는 없음)로 들어가는 모듈 간 통로입니다. 게이트웨이는 `sentText` 행과 수신자별 `deliveryLog` 항목을 기록하며, 한 배치당 수신자를 500명으로 제한합니다. 제공자가 설정되지 않으면 `no_provider`를 반환하고, 키오스크는 이를 "No SMS provider configured"로 표시합니다. 컨트롤러의 `dispatch()`는 전화번호 중복을 제거하고, 휴대폰이 없거나 `optedOut`이 설정된 사람은 건너뜁니다. 그리고 키오스크가 무엇을 건너뛰었는지 보여 줄 수 있도록 `{ sent, failed, skippedOptedOut, skippedNoPhone }`을 반환합니다.
 
-## 키오스크(B1Checkin)
+## 키오스크(B1Checkin) {#the-kiosk-b1checkin}
 
 화면은 `B1Checkin/app/` 아래의 expo-router 파일이며, 화면 간 상태는 React state가 아니라 정적 `CachedData` 클래스(`src/helpers/CachedData.ts`)에 있습니다.
 
 ```
-index (부팅/자동 로그인) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
+index (boot/auto-login) → selectChurch → services ──▶ lookup ──▶ household ──▶ checkinComplete
                                           │             │  ▲         │ │            │
-             serviceTimes, groups,        │             │  └─────────┘ └▶ addGuest  └▶ 라벨 인쇄,
-             groupServiceTimes,           │             └▶ checkout (직원 응대)        자동으로
-             labelTemplates 불러오기       │                                            lookup으로 복귀
+             loads serviceTimes, groups,  │             │  └─────────┘ └▶ addGuest  └▶ print labels,
+             groupServiceTimes,           │             └▶ checkout (manned)           auto-return
+             labelTemplates               │                                            to lookup
 ```
 
 1. **조회** (`app/lookup.tsx`) -- 전화번호(`GET /membership/people/search/phone?number=`, 끝 4자리 또는 전체) 또는 이름(`GET /membership/people/search?term=`)으로 검색합니다. 일치하는 사람을 고르면 가구(`GET /membership/people/household/{householdId}`)와 기존 방문(`GET /attendance/visits/checkin`)을 불러오고, 지난주 선택으로 `pendingVisits`를 채웁니다.
@@ -157,11 +158,11 @@ index (부팅/자동 로그인) → selectChurch → services ──▶ lookup �
 3. **그룹 배정** (`app/selectGroup.tsx`) -- `serviceTime.groups`로 만든 카테고리 트리입니다. 연령/학년이 맞는 방은 강조되고, 맞지 않는 방은 직원 확인 뒤에서 흐리게 표시됩니다([연령/학년 적격성](#agegrade-eligibility-kiosk-side) 참고). 방을 고르면 그 사람의 대기 중인 방문에 `{ session: { serviceTimeId, groupId } }` visitSession이 기록됩니다(`src/helpers/VisitSessionHelper.ts`). "None"을 고르면 지워집니다.
 4. **완료** (`app/checkinComplete.tsx`) -- `pendingVisits`(각각 `checkinType`이 찍힘)와 함께 `POST /attendance/visits/checkin`을 호출한 뒤, 프린터가 설정되어 있으면 라벨을 인쇄하고 자동으로 조회 화면으로 돌아갑니다. `409` 정원 또는 `notOpen` 응답이 오면 사유(가득 참/닫힘, 또는 체크인 시작 전)와 함께 문제가 된 방을 보여 줍니다. 비율 경고가 오면 직원 확인을 제안하며, 확인하면 `acknowledgeWarnings=true`로 다시 제출합니다.
 
-**체크아웃** 화면(`app/checkout.tsx`)은 자동으로 포커스되는 입력란에서 4자리 보안 코드를 받습니다. 그래서 USB/블루투스 키보드 방식의 바코드 스캐너를 카메라 없이 사용할 수 있습니다. 화면 키패드도 같은 알파벳을 사용하며, 4자리가 되면 자동으로 제출합니다. **Scan** 버튼은 공유 `src/components/CodeScanner.tsx` 카메라(기본은 후면, QR, Code 128, Code 39 인식)를 여는 시트를 띄워, 스캐너가 없는 스테이션도 픽업 라벨을 읽을 수 있게 합니다. 스캔된 코드는 입력된 코드와 같은 `handleCode()` 경로로 들어갑니다. 이 화면은 코드를 조회하고, 픽업될 아이들을 보여 주고, 가구 성인 사진 격자와 함께 가구의 **신뢰 픽업 인원**을 누를 수 있는 카드로 제시합니다(미승인 이름과 퍼지 확인되는 "Other" 자유 입력 옵션도 포함. [신뢰 픽업과 미승인 픽업](#trusted-and-not-authorized-pickup) 참고). 그다음 선택한 사람의 이름/ID와 함께 `POST /attendance/visits/checkout`을 보냅니다. 직원 응대 모드에서는 화면에 **Page a parent**(`POST /attendance/checkin/page`)와 **보안 라벨 재인쇄**도 나타납니다. `reprint()`는 `LabelHelper.getAllLabelsFor(...)`로 가족의 라벨을 다시 만들고, 체크인과 같은 `PrintUI` 파이프라인으로 보냅니다.
+**체크아웃** 화면(`app/checkout.tsx`)은 자동으로 포커스되는 입력란에서 4자리 보안 코드를 받습니다. 그래서 USB/블루투스 키보드 방식의 바코드 스캐너를 카메라 없이 사용할 수 있습니다. 화면 키패드도 같은 알파벳을 사용하며, 4자리가 되면 자동으로 제출합니다. **Scan** 버튼은 공유 `src/components/CodeScanner.tsx` 카메라(기본은 후면, QR, Code 128, Code 39 인식)를 여는 시트를 띄워, 스캐너가 없는 스테이션도 픽업 라벨을 읽을 수 있게 합니다. 스캔된 코드는 입력된 코드와 같은 `handleCode()` 경로로 들어갑니다. **Search by name** 버튼은 코드 입력 대신 `src/components/HouseholdSearch.tsx`(성 또는 전화번호 검색, 조회와 같은 `/membership/people/search` 엔드포인트 사용)를 보여 줍니다. 사람을 고르면 그 가구(`GET /membership/people/household/{householdId}`)를 불러오고, 모든 구성원의 id와 함께 `GET /attendance/visits/active?peopleIds=`를 호출하므로 라벨을 잃어버려도 픽업을 막지 않습니다. 어느 쪽이든 픽업될 아이들을 보여 주고, 가구의 **신뢰 픽업 인원**을 가구 성인 사진 격자와 함께 누를 수 있는 카드로 제시합니다(미승인 이름과 퍼지 확인되는 "Other" 자유 입력 옵션도 포함. [신뢰 픽업과 미승인 픽업](#trusted-and-not-authorized-pickup) 참고). 그다음 선택한 사람의 이름/ID와 함께 `POST /attendance/visits/checkout`을 보냅니다. 직원 응대 모드에서는 화면에 **Page a parent**(`POST /attendance/checkin/page`)와 **보안 라벨 재인쇄**도 나타납니다. `reprint()`는 `LabelHelper.getAllLabelsFor(...)`로 가족의 라벨을 다시 만들고, 체크인과 같은 `PrintUI` 파이프라인으로 보냅니다.
 
 스테이션 성격은 AsyncStorage 플래그 `@StationMode`(`"self"` | `"manned"`, `app/adminSettings.tsx`에서 전환)로 정합니다. 직원 응대 모드에서는 조회 화면에 체크아웃 진입점이 추가되고, 가구 화면에서 교인 프로필을 편집할 수 있습니다(`POST /membership/people`). 키오스크 보안은 기본으로 내장되어 있습니다. 선택 사항인 PIN(`app/setPin.tsx`, `src/components/PinEntryModal.tsx`)이 관리자 화면과 프린터 화면을 보호하고, 관리자 화면은 헤더 로고를 빠르게 7번 눌러야만 열립니다. 유휴 대기 화면(`src/hooks/useInactivityTimer.ts`)은 가족과 가족 사이에 화면을 넘겨받습니다.
 
-## 셀프 체크인(B1App)
+## 셀프 체크인(B1App) {#self-check-in-b1app}
 
 교인은 b1.church 포털의 `/mobile/checkin` 화면에서 체크인합니다(`B1App/src/app/[sdSlug]/mobile/components/ScreenRouter.tsx`가 `screens/CheckinPage.tsx`로 라우팅함). 로그인한 사용자가 필요하며, 키오스크와 같은 네 단계(예배 → 가구 → 그룹 → 완료)를 같은 엔드포인트에 대해 진행합니다. 상태는 `B1App/src/helpers/CheckinHelper.ts`에 있습니다. 키오스크와의 차이는 다음과 같습니다. 가구는 로그인한 사용자 본인의 `householdId`에서 가져오므로 검색 단계가 없습니다. 인쇄도 없습니다. 대신 완료 화면에 배치의 보안 코드가 QR(`qrcode.react`)로 표시되며, "체크인 스테이션에서 이 코드를 보여 주세요"라는 안내가 붙습니다. 페이지를 열었을 때 가구가 이미 체크인되어 있으면, "Show check-in code" 버튼이 첫 번째 기존 방문(`GET /attendance/visits/checkin`에서 `securityCode`가 있는 것)의 QR을 다시 보여 줍니다. 체크인은 제출 시점에 바로 기록되며, 대기 상태는 없습니다. QR은 키오스크에서 라벨을 인쇄하는 용도로만 쓰입니다.
 
@@ -169,19 +170,19 @@ index (부팅/자동 로그인) → selectChurch → services ──▶ lookup �
 
 타입과 `ApiHelper`/`ArrayHelper`는 `@churchapps/helpers`와 `@churchapps/apphelper`에서 가져옵니다. B1Admin과 공유하는 React 컴포넌트는 없습니다.
 
-## 관리자 측 출석(B1Admin)
+## 관리자 측 출석(B1Admin) {#admin-side-attendance-b1admin}
 
-- **설정** -- `/attendance`(`B1Admin/src/attendance/AttendancePage.tsx`)가 구조 트리를 보여 주고 예배(`ServiceEdit.tsx`)와 예배 시간(`ServiceTimeEdit.tsx`)을 만듭니다. 캠퍼스 데이터는 `useCampuses()` 훅으로 membership에서 가져옵니다.
+- **Setup(설정)** -- `/attendance`(`B1Admin/src/attendance/AttendancePage.tsx`)가 구조 트리를 보여 주고 예배(`ServiceEdit.tsx`)와 예배 시간(`ServiceTimeEdit.tsx`)을 만듭니다. 캠퍼스 데이터는 `useCampuses()` 훅으로 membership에서 가져옵니다.
 - **수동 출석**은 출석 섹션이 아니라 그룹 쪽에 있습니다. `B1Admin/src/groups/components/GroupSessionsTab.tsx`가 세션을 만들고(`POST /attendance/sessions`. 추가할 때 `SessionEdit.tsx`는 선택한 예배 시간을 공유하는 다른 그룹마다 세션 하나를 포함할 수 있으며, 그날 이미 세션이 있는 그룹은 건너뜀), `POST /attendance/visitsessions/log`로 사람을 출석 처리합니다. 이 호출은 그 사람과 세션의 방문을 찾거나 만듭니다. 그룹 리더는 `attendance.edit` 권한 없이도 자기 그룹의 출석을 기록할 수 있습니다. 컨트롤러가 `au.leaderGroupIds`를 확인하기 때문입니다.
 - **보고** -- 출석 추세와 그룹 출석은 서버에서 정의한 보고서입니다(`B1Admin/src/components/reporting/ReportWithFilter.tsx`가 ReportingApi를 사용하며, 정의는 `Api/reports/*.json`). 둘 다 `startDate`/`endDate`(종료일 포함)를 받습니다. 추세 보고서는 기본값으로 1년 전부터 오늘까지이며, 주별 `sessionDates` 열을 추가합니다. 그룹 출석의 화면 트리에는 각 방문의 `checkinTime`과 교인의 `membershipStatus`가 포함됩니다. 그룹 출석의 CSV는 짝이 되는 `groupAttendanceDownload` 보고서에서 가져오며, `GroupAttendanceDownloadHelper`가 그룹 구성원마다 한 행으로 피벗하고, 날짜가 있는 세션마다 출석/결석 열을 붙입니다. 교인별 이력은 `GET /attendance/attendancerecords?personId=`입니다(`B1Admin/src/people/components/PersonAttendance.tsx`).
 
-## 라벨 인쇄
+## 라벨 인쇄 {#label-printing}
 
-### 템플릿과 디자이너
+### 템플릿과 디자이너 {#templates-and-the-designer}
 
 교회는 B1Admin의 `/mobile/checkin/labels`(`B1Admin/src/attendance/LabelsPage.tsx` + `components/LabelEditor.tsx`, 체크인 설정 페이지에서 진입)에서 자체 라벨을 디자인합니다. 템플릿은 `labelTemplates` 행이며, `content`는 블록의 JSON 배열입니다. 블록은 `text`, `field`, `barcode`, `qrcode`, `box`이며, 각각 퍼센트 좌표로 배치되고 글꼴, 정렬, 기호 체계(`code39`/`code128`/`qr`), 선택적 표시 조건을 가집니다(예: `person.nametagNotes`가 비어 있지 않을 때만 알레르기 상자를 표시). `labelType`은 두 가지입니다. `nametag`(체크인한 사람마다 하나. `person.displayName`, `sessions`, `securityCode`, 그리고 `person.isBirthdayWeek` 같은 필드를 가지며, 생일의 월/일이 오늘로부터 3일 이내이면 `"true"`이고 연말을 넘어 계산됨. `LabelHelper.isBirthdayWithin()`이 계산)와 `pickup`(가족마다 하나. `children`, `childrenAllergies` 같은 필드를 가짐)입니다. 서버는 교회의 유형당 기본 템플릿을 하나로 강제합니다(`LabelTemplateController.save`). 디자이너에는 키오스크의 기본 제공 라벨을 본뜬 시작 템플릿이 들어 있으며, 샘플 데이터로 미리 보기를 할 수 있습니다.
 
-### 키오스크에서 렌더링과 인쇄
+### 키오스크에서 렌더링과 인쇄 {#rendering-and-printing-on-the-kiosk}
 
 체크인이 완료되면 `B1Checkin/src/helpers/LabelHelper.ts`가 각 대기 방문의 그룹 플래그를 보고 무엇을 인쇄할지 결정합니다. `printNametag` 그룹의 이름표와, 방문 중 하나라도 `parentPickup` 그룹에 해당하면 가족 픽업 라벨 하나입니다. `checkinType`이 `volunteer`인 방문은 `LabelHelper.selectChildVisits()`에서 건너뜁니다. 그래서 Parent Pickup 방에 있는 보육 봉사자는 픽업 라벨을 유발하지 않습니다. 체크인 응답의 보안 코드는 아이 이름표와 픽업 라벨에 들어가며, 성인 이름표에는 코드 없이 인쇄됩니다. 교회에 템플릿이 있으면 `LabelRenderer`(`src/helpers/LabelRenderer.ts`)가 블록과 필드 컨텍스트를 독립형 HTML 문서로 바꿉니다. 없으면 `B1Checkin/assets/labels/`의 기본 제공 HTML 라벨에 자리표시자를 채워 사용합니다.
 
@@ -196,7 +197,7 @@ index (부팅/자동 로그인) → selectChurch → services ──▶ lookup �
 
 프린터 선택은 `app/printers.tsx`에서 합니다(네트워크 스캔은 `brand~model~ip` 항목을 반환하며, 선택은 AsyncStorage에 저장됨). `src/helpers/PrinterLog.ts`는 기기 내 진단 로그를 유지하며, 키오스크 헤더의 실시간 상태 점으로 확인할 수 있습니다.
 
-## 손님 등록
+## 손님 등록 {#guest-registration}
 
 체크인 도중 사람을 만드는 경로는 두 가지입니다.
 
@@ -215,7 +216,7 @@ QR 가입은 B1Admin의 **QR Guest Registration** 카드(`src/mobile/CheckInPage
 
 B1App의 `src/components/checkin/GuestRegister.tsx`는 익명 `GET /membership/people/guest-register/options?churchId=`에서 체크리스트를 가져와, 포함된 필드만 렌더링합니다(주 연락처의 이메일, 전화번호, 결혼 여부, 주소. 교인마다 생년월일, 성별, 학년. 댓글 상자 하나). 그리고 그 필드들만 보냅니다. 서버는 `PersonHelper.registerGuestHousehold()`가 실행되기 전에 `GuestRegistrationHelper.sanitize()`에서 체크리스트를 다시 적용합니다. 꺼진 필드는 버리고, 필수 값이 없거나 목록에 없는 값은 400으로 거부합니다. 먼저 이메일이나 전화번호가 있는 교인마다 `PersonRepo.findGuestMatch()`를 호출합니다. 같은 이름과 같은 이메일이나 전화번호 숫자를 가진 살아 있는 사람이 정확히 한 명이면 재사용합니다. 0명이거나 여러 명이면 새 사람을 만듭니다. 그래서 추측하지 않습니다. 연락처가 없는 교인은 일치한 가구 안에서 이름으로 매칭합니다. 재사용된 사람은 절대 수정하지 않으므로, 익명 양식이 저장된 정보를 덮어쓸 수 없습니다. 응답에는 제출된 이름이 그대로 되돌아옵니다. 매칭되지 않은 교인은 일치한 가구 또는 새 가구에 `membershipStatus: "Visitor"`로 들어가며, 새 사람마다 `person.created`를 발송합니다. 그 뒤의 실패는 응답에 담지 않고 기록만 합니다. 교인은 설정된 그룹에 추가되며(`group.member.added`), 출석 기록이 켜져 있으면 `AttendanceModuleGateway.recordAttendance()`가 그 그룹의 예배 시간 중 일정이 있고 체크인 창(`CheckinGateHelper.isServiceTimeOpen`)이 지금 열려 있는 모든 시간에 대해 교인을 출석 처리합니다. 필요하면 교회 현지 날짜의 세션을 만듭니다. 일정이 없는 예배 시간이나 창 밖의 가입은 아무것도 기록하지 않습니다. 댓글은 가구장에 대한 숨김 교인 메모 대화가 되며(메시지 작성자 "Guest sign-up"), `person.conversationId`로 연결됩니다.
 
-## 관련 문서
+## 관련 문서 {#related-pages}
 
 - [출석 엔드포인트](../api/endpoints/attendance.md) -- 캠퍼스, 예배, 세션, 방문, 방문 세션의 전체 REST 인터페이스
 - [Membership 엔드포인트](../api/endpoints/membership.md) -- 교인, 가구, 그룹

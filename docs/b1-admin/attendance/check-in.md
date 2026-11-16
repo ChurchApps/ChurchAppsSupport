@@ -119,7 +119,7 @@ The **Sign-up fields** checklist controls what the registration form asks for. *
 | Field | Asked for | Included by default |
 |-------|-----------|---------------------|
 | **Title** | Each family member, as a dropdown in front of the name (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | No |
-| **Email** | Primary contact only | Yes (optional) |
+| **Email** | Each family member. When required, only the primary contact must fill it in. | Yes (optional) |
 | **Phone** | Each family member. When required, only the primary contact must fill it in. | Yes (optional) |
 | **Household role** | Each family member after the primary contact -- Spouse, Child, or Other. The primary contact is head of a new household. Anyone without a role is saved as Other. | Yes (optional) |
 | **Home address** | Once for the family -- street, address line 2, city, state, and zip. When required, everything except address line 2 must be filled in. The address is saved on every family member. | No |
@@ -128,6 +128,7 @@ The **Sign-up fields** checklist controls what the registration form asks for. *
 | **Marital status** | Primary contact only | No |
 | **Grade** | Each family member (PreK through 12, or Graduated) | No |
 | **Comments** | Once, in a box below the family members (up to 1,000 characters) | No |
+| **Photo** | Each family member, with an **Add Photo** button that opens a cropper. The photo becomes the new person's profile photo. When required, only the primary contact must add one. | No |
 
 Fields you turn off are never saved, even if someone sends them to the sign-up some other way. Comments are saved as a note on the primary contact's record (posted as "Guest sign-up"), so you can read them in the **Notes** section of their profile.
 

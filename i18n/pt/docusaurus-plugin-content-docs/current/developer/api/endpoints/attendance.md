@@ -3,7 +3,7 @@ title: "Endpoints de Frequência"
 description: "Referência da API de presença no B1 Admin e B1 Checkin: campi, cultos, horários, sessões, visitas, regras de check-in e endpoints de exportação."
 ---
 
-# Endpoints de Frequência
+# Endpoints de Frequência {#attendance-endpoints}
 
 <div class="article-intro">
 
@@ -13,7 +13,7 @@ O módulo de Frequência gerencia locais de campus, serviços, horários de serv
 
 **Caminho base:** `/attendance`
 
-## Campus
+## Campus {#campuses}
 
 Caminho base: `/attendance/campuses`
 
@@ -26,7 +26,7 @@ Controlador CRUD padrão (estende GenericCrudController). Fornece as rotas `getB
 | POST | `/` | JWT | Services.Edit | Criar ou atualizar campus |
 | DELETE | `/:id` | JWT | Services.Edit | Excluir um campus |
 
-## Serviços
+## Serviços {#services}
 
 Caminho base: `/attendance/services`
 
@@ -40,7 +40,7 @@ Estende GenericCrudController com as rotas CRUD `getById`, `getAll`, `post` e `d
 | POST | `/` | JWT | Services.Edit | Criar ou atualizar serviços |
 | DELETE | `/:id` | JWT | Services.Edit | Excluir um serviço |
 
-### Exemplo: Pesquisar Serviços por Campus
+### Exemplo: Pesquisar Serviços por Campus {#example-search-services-by-campus}
 
 ```
 GET /attendance/services/search?campusId=abc-123
@@ -73,7 +73,7 @@ Estende GenericCrudController com as rotas CRUD `getById`, `post` e `delete`. Os
 | POST | `/` | JWT | Services.Edit | Criar ou atualizar horários de serviço. Campos opcionais de programação: `dayOfWeek` (0 = domingo … 6), `startTime` / `endTime` (`HH:mm`), `checkinOpenMinutes` (antes do início), `checkinCloseMinutes` (após o término). O check-in só é limitado por horário quando `dayOfWeek` e `startTime` estão definidos |
 | DELETE | `/:id` | JWT | Services.Edit | Excluir um horário de serviço |
 
-## Horários de Serviço dos Grupos
+## Horários de Serviço dos Grupos {#group-service-times}
 
 Caminho base: `/attendance/groupservicetimes`
 
@@ -86,7 +86,7 @@ Vincula grupos a horários de serviço específicos.
 | POST | `/` | JWT | Services.Edit | Criar ou atualizar associações grupo-horário de serviço |
 | DELETE | `/:id` | JWT | Services.Edit | Excluir uma associação grupo-horário de serviço |
 
-## Registros de Frequência
+## Registros de Frequência {#attendance-records}
 
 Caminho base: `/attendance/attendancerecords`
 
@@ -102,7 +102,7 @@ Fornece visões agregadas somente leitura dos dados de frequência para relatór
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | Para cada grupo atribuído ao horário de serviço, retorna `{ groupId, sessionId, attendanceCount }` para aquela data (`date` no formato `YYYY-MM-DD`; `sessionId` é null quando o grupo não tem sessão). Alimenta o diálogo **Who Still Needs Attendance** do B1Admin |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Pesquisar registros de frequência com filtros (campus, serviço, horário de serviço, grupo, intervalo de datas) |
 
-### Exemplo: Tendência de Frequência
+### Exemplo: Tendência de Frequência {#example-attendance-trend}
 
 ```
 GET /attendance/attendancerecords/trend?serviceId=svc-001
@@ -117,7 +117,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sessões
+## Sessões {#sessions}
 
 Caminho base: `/attendance/sessions`
 
@@ -130,7 +130,7 @@ Estende GenericCrudController com as rotas CRUD `getById` e `delete`. Os endpoin
 | POST | `/` | JWT | Attendance.Edit ou Group Leader | Criar ou atualizar sessões. Líderes de grupo podem salvar sessões dos seus próprios grupos |
 | DELETE | `/:id` | JWT | Attendance.Edit | Excluir uma sessão |
 
-## Visitas
+## Visitas {#visits}
 
 Caminho base: `/attendance/visits`
 
@@ -141,11 +141,12 @@ Gerencia os registros individuais de visita (uma pessoa comparecendo em uma data
 | GET | `/` | JWT | Attendance.View | Listar todas as visitas. Filtre por `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Obter uma visita pelo ID |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View ou Attendance.Checkin | Carregar os dados de check-in de pessoas em um serviço. Retorna as visitas com as sessões de visita da última data registrada |
+| GET | `/active?peopleIds=` | JWT | Attendance.View ou Attendance.Checkin | Visitas de hoje das pessoas listadas que ainda não fizeram check-out, com as sessões de visita e sessões preenchidas. `peopleIds` (separados por vírgula) é obrigatório; retorna 400 sem ele. Usado pelo check-out por nome do B1Checkin |
 | POST | `/` | JWT | Attendance.Edit | Criar ou atualizar visitas |
 | POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit ou Attendance.Checkin | Enviar os dados de check-in. Cria/atualiza visitas e sessões de visita e remove os registros obsoletos |
 | DELETE | `/:id` | JWT | Attendance.Edit | Excluir uma visita |
 
-### Exemplo: Fluxo de Check-in
+### Exemplo: Fluxo de Check-in {#example-check-in-flow}
 
 **Passo 1 -- Carregar os dados de check-in existentes:**
 
@@ -197,7 +198,7 @@ Authorization: Bearer <token>
 
 Se um horário de serviço escolhido tiver uma programação de check-in e a janela estiver fechada (medida na mesma ordem de fuso horário, priorizando o campus, usada por `checkinOpen`), nada é salvo e a resposta é `409 { "error": "notOpen", "groups": [{ "groupId", "groupName", "reason": "notOpen" }] }`. Violações de capacidade e de proporção de voluntários também retornam 409 (`error: "capacity"` ou `"ratio"`). As sessões que uma pessoa já possui hoje (reenviadas a cada check-in) ignoram a verificação da janela, de modo que uma família pode adicionar um horário de serviço aberto depois que a janela de um horário anterior já tiver fechado.
 
-## Sessões de Visita
+## Sessões de Visita {#visit-sessions}
 
 Caminho base: `/attendance/visitsessions`
 
@@ -213,7 +214,7 @@ Gerencia a associação entre visitas e sessões (em qual sessão específica um
 | DELETE | `/:id` | JWT | Attendance.Edit | Excluir uma sessão de visita pelo ID |
 | DELETE | `/?personId=&sessionId=` | JWT | Attendance.Edit ou Group Leader | Remover uma pessoa de uma sessão. Exclui a sessão de visita e a visita pai caso não restem sessões. Líderes de grupo podem remover a frequência dos seus próprios grupos |
 
-### Exemplo: Registro Rápido de Frequência
+### Exemplo: Registro Rápido de Frequência {#example-quick-log-attendance}
 
 ```
 POST /attendance/visitsessions/log
@@ -231,7 +232,7 @@ Authorization: Bearer <token>
 {}
 ```
 
-### Exemplo: Baixar a Frequência de uma Sessão
+### Exemplo: Baixar a Frequência de uma Sessão {#example-download-session-attendance}
 
 ```
 GET /attendance/visitsessions/download/sess-001
@@ -259,7 +260,7 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Sequências
+## Sequências {#streaks}
 
 Caminho base: `/attendance/streaks`
 
@@ -269,7 +270,7 @@ Acompanha as sequências de frequência de cada pessoa -- semanas consecutivas e
 |--------|---------|--------------|-----------|-----------|
 | GET | `/person/:personId` | JWT | — | Carregar as sequências de frequência de uma pessoa |
 
-## Páginas Relacionadas
+## Páginas Relacionadas {#related-pages}
 
 - [Endpoints de Membresia](./membership.md) — Pessoas, grupos, funções e gestão da igreja
 - [Autenticação e Permissões](./authentication.md) — Fluxo de login, JWT, modelo de permissões

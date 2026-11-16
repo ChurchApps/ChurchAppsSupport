@@ -27,6 +27,18 @@ Check-out closes the loop on child check-in: a parent presents the security code
    - No scanner? Tap **Scan** below the code field to use the tablet's camera instead. Hold the pickup label's QR code or barcode up to the camera in the **Scan pickup code** window and the code is entered for you. The back camera is used by default; tap the flip button to switch cameras, or tap **Cancel** to go back to typing.
 3. The kiosk shows the children checked in under that code.
 
+### Finding a Family Without the Code
+
+If the parent lost their pickup label, look the family up instead:
+
+1. On the **Check Out** screen, tap **Search by name** (next to **Scan**).
+2. Type the family's last name and tap **Search**, or tap **Use phone number** to enter a phone number (at least the last 4 digits) on the keypad.
+3. Tap the person in the results. The kiosk finds everyone in that household who is checked in today and not yet checked out, and shows them just as if the code had been entered.
+
+If no one in the household is checked in, the kiosk shows "No one in this household is checked in right now." Tap **New search** to search again, or **Enter code instead** to go back to the code field.
+
+The pickup check below still applies: the household's trusted pickup people and adults are listed, and not-authorized names are still blocked.
+
 ## Verifying Who Is Picking Up
 
 The check-out screen asks who is picking the children up:
