@@ -57,7 +57,7 @@ Then fill in the form:
 
 1. **Play** - Choose what plays:
    - **Playlists** - Any playlist you've built
-   - **Service plans** - A plan type from B1 Admin, marked **(current plan)**. The screen plays whatever plan is current for that plan type each week, including Go Curriculum lessons (customized ones too), which use the Go login linked to the plan type's ministry
+   - **Service plans** - A plan type from B1 Admin, marked **(current plan)**. The screen plays whatever plan is current for that plan type each week, including GO! Curriculum lessons (customized ones too), which use the Go login linked to the plan type's ministry
    - **Provider folder…** - Opens **Choose a provider folder**. Browse to a folder and click **Use this folder**. To pick a different folder later, click **Change**
 2. **Repeats** - Select the days of the week this schedule plays. For a single date instead, turn on **One time** and pick the **Date**.
 3. **Start** and **End** - The times the schedule starts and stops.

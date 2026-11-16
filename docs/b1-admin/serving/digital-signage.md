@@ -44,10 +44,10 @@ If your screens run [FreePlay](../../freeplay/index.md), you don't need the feed
 3. Under **Play**, choose your plan type from **Service plans**. It's marked **(current plan)**.
 4. Set the days and times, then click **Save**.
 
-The TVs play whatever plan is current for that plan type each week, at the times you set. This works with Go Curriculum lessons too, including plans you've customized. FreePlay signs in with the Go Curriculum account linked to the ministry under **Content Providers** (see [Scheduling Lessons](./scheduling-lessons.md)), or the church's Go Curriculum connection if the ministry has none. See [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for all the options, and [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) to add a TV.
+The TVs play whatever plan is current for that plan type each week, at the times you set. This works with GO! Curriculum lessons too, including plans you've customized. FreePlay signs in with the GO! Curriculum account linked to the ministry under **Content Providers** (see [Scheduling Lessons](./scheduling-lessons.md)), or the church's GO! Curriculum connection if the ministry has none. See [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for all the options, and [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) to add a TV.
 
 :::note
-The feed URL doesn't include Go Curriculum media, because that content needs your church's Go Curriculum login. To show a Go Curriculum lesson on a lobby or classroom TV, use FreePlay.
+The feed URL doesn't include GO! Curriculum media, because that content needs your church's GO! Curriculum login. To show a GO! Curriculum lesson on a lobby or classroom TV, use FreePlay.
 :::
 
 ## Next Steps

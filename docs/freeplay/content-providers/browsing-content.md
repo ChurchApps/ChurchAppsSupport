@@ -46,9 +46,9 @@ The [Lessons.church](../../lessons-church/index.md) library is organized the sam
 
 Press **Back** at any level to go up one step.
 
-## Browsing Go Curriculum
+## Browsing GO! Curriculum
 
-After you [sign in with your gocurriculum.com account](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum opens to its age groups, **Elementary** and **Preschool**. Drill in by age group, then collection, then lesson, and select a lesson to open its download screen.
+After you [sign in with your gocurriculum.com account](./connecting-providers.md#phone-sign-in-qr-code-only), GO! Curriculum opens to its age groups, **Elementary** and **Preschool**. Drill in by age group, then collection, then lesson, and select a lesson to open its download screen.
 
 What you see depends on your Go membership:
 
