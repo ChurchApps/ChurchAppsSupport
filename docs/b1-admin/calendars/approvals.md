@@ -54,6 +54,10 @@ Events that members request (for example, from **My Requests** in the B1 app) ap
 Set up an Approval Group on a room in [Rooms & Resources](./rooms-resources.md) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
 :::
 
+## Changing Who a Request Is For
+
+If you entered a request on a member's behalf, for example when they called the office, it is listed under your name. Click the swap icon beside the name under **Requested by** (in either section, on **Pending** or **History**), search for the member, and click **Move to this person**. The whole request moves: the event request and every room and resource booking on it. The member then receives the approve or reject notification, sees the request under **My Requests** in the B1 app, and it appears in the requests section of their person record. Moving a request does not change whether it is approved.
+
 ## History
 
 Approved and rejected requests stay on the page. Click **History** at the top of Approvals to see them; click **Pending** to go back to the open requests.
