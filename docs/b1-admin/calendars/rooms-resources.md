@@ -35,11 +35,13 @@ Rooms are physical spaces that can be reserved alongside calendar events — a s
 4. Set an **Approval Group** if bookings need sign-off. Bookings made by members of that group are approved automatically; anyone else's booking waits as **Pending** until it's approved on the [Approvals](./approvals.md) page, and the group's members get an email about new requests. Leave it on **No approval needed** to approve every booking automatically.
 5. Click **Save**.
 
-The Rooms list shows each room's **Room Name**, **Capacity**, and **Approval Group**.
+The Rooms list shows each room's **Room Name**, **Capacity**, and **Approval Group**. Rooms switched off show an **Inactive** badge next to their name.
 
 ### Editing or Deleting a Room
 
 Hover over a room and click **Edit**, make your changes, and click **Save**. Use **Delete** to remove a room permanently.
+
+If a room is closed for a while — a renovation, a season, or no set return date — turn its **Active** switch off and click **Save** instead of deleting it. An inactive room keeps its details and every past booking, but it no longer appears in the room lists when someone schedules an event or requests a room. Turn the switch back on to make it bookable again. A blockout is better when the room is closed for specific dates, because it keeps the room in the list and warns about bookings during those dates.
 
 ## Resources
 
@@ -53,7 +55,7 @@ Resources are items that can be booked alongside an event — AV equipment, proj
 4. Set an **Approval Group** if someone needs to sign off on resource loans. It works the same way as for rooms.
 5. Click **Save**.
 
-Edit or delete a resource the same way as a room.
+Edit or delete a resource the same way as a room. A resource also has an **Active** switch: turn it off to take it out of the resource lists without losing its details or past bookings.
 
 ## Blockouts
 
