@@ -117,6 +117,14 @@ Once registration is enabled, members will see a **Register for this Event** but
 Registration Questions only works with forms that are **not** marked Restricted. A restricted form is skipped automatically during registration rather than shown, so use an unrestricted form when attaching questions to an event.
 :::
 
+### Sharing an Event's Link {#sharing-an-event-link}
+
+To invite people who are not in your church database, share the event's own page. Click the event on the calendar and click **Share**, or click **Share** on the event's registration page. A dialog shows the event's link and a QR code: click the copy icon to copy the link, or click **Download PNG** to save the QR code for a flyer or slide. Anyone with the link can see the event, add it to their calendar, and, when registration is on, register as a guest with just a name and email.
+
+A **Private** event stays off your site calendar but can still be shared once registration is turned on. A private event without registration has no public page, so it has no **Share** button.
+
+In the B1 App, events in a group's calendar have a **Share** link that opens the phone's share sheet with the same link.
+
 ### Managing Registrations
 
 To view and manage registrations for your events:
