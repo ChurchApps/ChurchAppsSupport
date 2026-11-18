@@ -70,6 +70,8 @@ The **Text** channel only appears when your church has a texting provider connec
 - Turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and
 - Have a mobile number on their profile.
 
+Staff with permission to send texts can turn **Text reminders** on for a person from that person's [record](../people/adding-people.md#text-reminders), on the line under their mobile number. When you click **Send now** on a reminder that includes **Text**, B1 shows how many people were texted and how many were skipped, for example *Sent to 2 people · 1 texted, 1 skipped*.
+
 Each text starts with your church's name, is kept to a single text message, and ends with "Reply STOP to opt out." Anyone who replies STOP stops receiving texts from your church. For STOP replies to reach B1, paste the **Inbound (STOP) webhook URL** from your [texting settings](../settings/church-settings.md#texting) into your provider's inbound message webhook.
 
 ## What Members Can Control

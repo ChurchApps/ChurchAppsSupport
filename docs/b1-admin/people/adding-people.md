@@ -88,6 +88,10 @@ Sending from B1 uses the same approval and daily limits as group email. If your 
 
 If your church has a [texting provider](../settings/church-settings.md#texting) connected, you have permission to send texts, and the person has a mobile phone number, a **Text** button appears next to **Email**. Click it, type your **Message**, and click **Send**. The dialog shows the number the text goes to. See [Texting Group Members](../groups/group-members.md#texting-group-members) for how texting works.
 
+### Text Reminders {#text-reminders}
+
+Task, event, and serving reminders only go out by text to people who have turned text messages on. With the same texting provider, permission, and mobile number, the person's record shows **Text reminders** under their mobile number, with **On** or **Off**. Click **Turn on** to start sending them reminder texts, or **Turn off** to stop. This is the same switch as **Text messages** in the person's own [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), so either of you can change it. Someone who replied STOP to your church's texts still gets no reminder texts, even with **Text reminders** on.
+
 ## Working with Forms
 
 You can fill out custom forms directly from a person's profile. These are user-defined forms that you can build by following the [Creating Forms](../forms/creating-forms.md) guide.

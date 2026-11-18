@@ -23,7 +23,7 @@ At the top of the screen you'll find settings that apply to everything:
 
 - **Delivery**
   - **Push notifications** -- Turns push notifications on or off for your account. To set up push on the device you're using, turn it on from your inbox -- see [Push Notifications on This Device](#push-notifications-on-this-device).
-  - **Text messages** -- Shown only if your church has texting set up. Turn this on to get serving and event reminders by text at the mobile number on your profile. It is off until you turn it on.
+  - **Text messages** -- Shown only if your church has texting set up. Turn this on to get serving and event reminders by text at the mobile number on your profile. It is off until you turn it on. Church staff can also turn it on or off for you from your record in B1 Admin.
   - **Mute all notifications** -- Temporarily silences every channel until you turn it off again.
 - **Email** -- Choose an **Email frequency**:
   - **Per notification** -- Send an email as things happen.
