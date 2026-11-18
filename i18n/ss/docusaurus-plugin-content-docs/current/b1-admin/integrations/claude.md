@@ -32,7 +32,7 @@ Isebenta ku-website ye-Claude, ku-Claude desktop app, naku-app ye-Claude yelucin
 ### Sinyatselo 1 — Vula tilungiselelo te-connector te-Claude
 
 1. Hamba uye ku-[claude.ai](https://claude.ai) bese uyangena (nome wakhe i-akhawunti lemahhala).
-2. Chofota libito lakho ekhoneni lelingentasi ngesencele, bese u-**Settings** (Tilungiselelo) → **Connectors** (Ema-connector).
+2. Chofota libito lakho ekhoneni lelingentasi ngesencele, bese u-**Customize** (Kulungisa) → **Connectors** (Ema-connector).
 
 ### Sinyatselo 2 — Ngeta i-B1
 

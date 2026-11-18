@@ -32,7 +32,7 @@ Claude 是将 B1 连接到 AI 最简单的方式，并可在 Claude 的**免费�
 ### 步骤 1——打开 Claude 的连接器设置 {#step-1--open-claudes-connector-settings}
 
 1. 前往 [claude.ai](https://claude.ai)并登录（或建立免费账户）。
-2. 点击左下角的你的名字，然后依次点击 **Settings** → **Connectors**。
+2. 点击左下角的你的名字，然后依次点击 **Customize** → **Connectors**。
 
 ### 步骤 2——添加 B1 {#step-2--add-b1}
 

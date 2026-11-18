@@ -32,7 +32,7 @@ Toimii Clauden verkkosivuilla, Claude-työpöytäsovelluksessa ja Claude-puhelin
 ### Vaihe 1 — Avaa Clauden liitinasetukset
 
 1. Mene osoitteeseen [claude.ai](https://claude.ai) ja kirjaudu sisään (tai luo ilmainen tili).
-2. Napsauta nimeäsi vasemmassa alakulmassa ja valitse **Asetukset** → **Liittimet**.
+2. Napsauta nimeäsi vasemmassa alakulmassa ja valitse **Mukauta** → **Liittimet**.
 
 ### Vaihe 2 — Lisää B1
 

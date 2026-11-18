@@ -32,7 +32,7 @@ Fonctionne sur le site web de Claude, l'application de bureau Claude et l'applic
 ### Étape 1 — Ouvrir les paramètres des connecteurs de Claude {#step-1--open-claudes-connector-settings}
 
 1. Rendez-vous sur [claude.ai](https://claude.ai) et connectez-vous (ou créez un compte gratuit).
-2. Cliquez sur votre nom en bas à gauche, puis sur **Paramètres** → **Connecteurs**.
+2. Cliquez sur votre nom en bas à gauche, puis sur **Personnaliser** → **Connecteurs**.
 
 ### Étape 2 — Ajouter B1 {#step-2--add-b1}
 

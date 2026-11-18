@@ -32,7 +32,7 @@ A Claude weboldalán, asztali alkalmazásában és mobilalkalmazásában is műk
 ### 1. lépés — Nyisd meg a Claude csatlakozóbeállításait
 
 1. Látogass el a [claude.ai](https://claude.ai) oldalra, és jelentkezz be (vagy hozz létre egy ingyenes fiókot).
-2. Kattints a nevedre a bal alsó sarokban, majd válaszd a **Beállítások** → **Connectorok** menüpontot.
+2. Kattints a nevedre a bal alsó sarokban, majd válaszd a **Testreszabás** → **Connectorok** menüpontot.
 
 ### 2. lépés — Add hozzá a B1-et
 

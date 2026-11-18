@@ -32,7 +32,7 @@ Działa na stronie Claude, w aplikacji Claude na komputer i w aplikacji Claude n
 ### Krok 1 — Otwórz ustawienia łączników Claude
 
 1. Wejdź na [claude.ai](https://claude.ai) i zaloguj się (albo załóż darmowe konto).
-2. Kliknij swoje imię w lewym dolnym rogu, a następnie **Ustawienia** → **Łączniki**.
+2. Kliknij swoje imię w lewym dolnym rogu, a następnie **Dostosuj** → **Łączniki**.
 
 ### Krok 2 — Dodaj B1
 

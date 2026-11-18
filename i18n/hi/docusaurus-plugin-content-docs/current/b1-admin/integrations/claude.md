@@ -32,7 +32,7 @@ Claude वेबसाइट, Claude desktop ऐप और Claude फ़ोन �
 ### चरण 1 — Claude की connector settings खोलें {#step-1--open-claudes-connector-settings}
 
 1. [claude.ai](https://claude.ai) पर जाएँ और साइन इन करें (या मुफ़्त account बनाएँ)।
-2. नीचे-बाईं ओर अपने नाम पर क्लिक करें, फिर **Settings** → **Connectors**।
+2. नीचे-बाईं ओर अपने नाम पर क्लिक करें, फिर **Customize** → **Connectors**।
 
 ### चरण 2 — B1 जोड़ें {#step-2--add-b1}
 

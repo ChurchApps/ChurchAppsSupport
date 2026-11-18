@@ -32,7 +32,7 @@ Claude 웹사이트, Claude 데스크톱 앱, Claude 휴대폰 앱에서 모두 
 ### 1단계 — Claude의 커넥터 설정 열기 {#step-1--open-claudes-connector-settings}
 
 1. [claude.ai](https://claude.ai)에 접속하여 로그인하세요(또는 무료 계정을 만드세요).
-2. 왼쪽 아래의 이름을 클릭한 다음 **Settings** → **Connectors**를 클릭하세요.
+2. 왼쪽 아래의 이름을 클릭한 다음 **Customize** → **Connectors**를 클릭하세요.
 
 ### 2단계 — B1 추가하기 {#step-2--add-b1}
 

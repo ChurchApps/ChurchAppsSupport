@@ -32,7 +32,7 @@ Fungerar på Claudes webbplats, i Claude-skrivbordsappen och i Claude-appen för
 ### Steg 1: Öppna Claudes anslutningsinställningar
 
 1. Gå till [claude.ai](https://claude.ai) och logga in (eller skapa ett kostnadsfritt konto).
-2. Klicka på ditt namn nere till vänster och välj sedan **Inställningar** → **Anslutningar**.
+2. Klicka på ditt namn nere till vänster och välj sedan **Anpassa** → **Anslutningar**.
 
 ### Steg 2: Lägg till B1
 
