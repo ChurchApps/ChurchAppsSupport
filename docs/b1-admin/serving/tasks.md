@@ -67,7 +67,9 @@ A task with a due date can remind its assignee before it is due.
 5. Under **Send By**, choose **Push**, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
 6. Click **Save Reminders**.
 
-If the task has no due date, B1 warns you that no reminders will be sent until one is set in the **Due** field. Text reminders only reach people who turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and each text may cost your church.
+If the task has no due date, B1 warns you that no reminders will be sent until one is set in the **Due** field. Text reminders only reach people who turned on **Text messages** in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), and each text may cost your church. Staff with permission to send texts can turn **Text reminders** on for a person from that person's [record](../people/adding-people.md#text-reminders), on the line under their mobile number.
+
+To send a saved reminder right away, click **Send now**. When the reminder includes **Text**, B1 shows how many people were reminded and how many were texted and skipped, for example *Sent to 2 people · 1 texted, 1 skipped*. People are skipped when they have **Text messages** off, have no mobile number, or replied STOP.
 
 ## Task Lifecycle
 
