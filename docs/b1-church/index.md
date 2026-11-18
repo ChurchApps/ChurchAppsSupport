@@ -11,6 +11,10 @@ B1.church is the member-facing portal for your church. It is the place where you
 
 </div>
 
+## Training Video
+
+<YouTube id="yiKP0zuJMVU" title="B1.church for Your Members" next="Logging In and Installing the B1.church App" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 When members visit your B1.church site, they see your church's public website with your branding, navigation links, and content pages. After logging in, they can access the **Member Portal** where all of their personal church tools live in one place.
 
 ## Key Features
