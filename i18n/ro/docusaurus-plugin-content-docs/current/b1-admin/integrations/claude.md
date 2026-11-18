@@ -32,7 +32,7 @@ Funcționează pe site-ul Claude, în aplicația desktop Claude și în aplicaț
 ### Pasul 1 — Deschide setările conectorilor Claude
 
 1. Mergi la [claude.ai](https://claude.ai) și te autentifici (sau creezi un cont gratuit).
-2. Dă clic pe numele tău din colțul din stânga jos, apoi pe **Settings** → **Connectors**.
+2. Dă clic pe numele tău din colțul din stânga jos, apoi pe **Customize** → **Connectors**.
 
 ### Pasul 2 — Adaugă B1
 

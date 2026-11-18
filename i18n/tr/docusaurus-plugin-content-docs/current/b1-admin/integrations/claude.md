@@ -32,7 +32,7 @@ Claude web sitesinde, Claude masaüstü uygulamasında ve Claude telefon uygulam
 ### Adım 1 — Claude bağlayıcı ayarlarını açın
 
 1. [claude.ai](https://claude.ai) adresine gidin ve oturum açın (ya da ücretsiz bir hesap oluşturun).
-2. Sol alt köşedeki adınıza tıklayın, ardından **Ayarlar** → **Bağlayıcılar** seçeneğine gidin.
+2. Sol alt köşedeki adınıza tıklayın, ardından **Özelleştir** → **Bağlayıcılar** seçeneğine gidin.
 
 ### Adım 2 — B1'i ekleyin
 

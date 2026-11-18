@@ -32,7 +32,7 @@ Funciona en el sitio web de Claude, en la aplicación de escritorio de Claude y 
 ### Paso 1: Abra la configuración de conectores de Claude {#step-1--open-claudes-connector-settings}
 
 1. Vaya a [claude.ai](https://claude.ai) e inicie sesión (o cree una cuenta gratuita).
-2. Haga clic en su nombre en la esquina inferior izquierda y luego en **Settings** → **Connectors**.
+2. Haga clic en su nombre en la esquina inferior izquierda y luego en **Customize** → **Connectors**.
 
 ### Paso 2: Agregue B1 {#step-2--add-b1}
 

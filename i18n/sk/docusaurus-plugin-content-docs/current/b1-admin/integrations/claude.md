@@ -32,7 +32,7 @@ Funguje na webovej stránke Claude, v desktopovej aplikácii Claude a v aplikác
 ### Krok 1 — Otvorte nastavenia konektorov Claude
 
 1. Choďte na [claude.ai](https://claude.ai) a prihláste sa (alebo si vytvorte bezplatný účet).
-2. Kliknite na svoje meno v ľavom dolnom rohu a potom na **Settings** → **Connectors**.
+2. Kliknite na svoje meno v ľavom dolnom rohu a potom na **Customize** → **Connectors**.
 
 ### Krok 2 — Pridajte B1
 

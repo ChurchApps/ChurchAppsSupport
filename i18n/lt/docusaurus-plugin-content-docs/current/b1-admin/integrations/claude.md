@@ -32,7 +32,7 @@ Veikia Claude svetainėje, Claude darbalaukio programoje ir Claude telefono prog
 ### 1 žingsnis — Atidarykite Claude jungčių nustatymus
 
 1. Eikite į [claude.ai](https://claude.ai) ir prisijunkite (arba sukurkite nemokamą paskyrą).
-2. Spustelėkite savo vardą apatiniame kairiajame kampe, tada **Settings** → **Connectors**.
+2. Spustelėkite savo vardą apatiniame kairiajame kampe, tada **Customize** → **Connectors**.
 
 ### 2 žingsnis — Pridėkite B1
 

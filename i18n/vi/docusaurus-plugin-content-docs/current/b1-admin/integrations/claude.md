@@ -32,7 +32,7 @@ Hoạt động trên trang web Claude, ứng dụng Claude trên máy tính và 
 ### Bước 1 — Mở cài đặt kết nối của Claude
 
 1. Truy cập [claude.ai](https://claude.ai) và đăng nhập (hoặc tạo tài khoản miễn phí).
-2. Nhấp vào tên của bạn ở góc dưới bên trái, sau đó chọn **Cài đặt** → **Connectors**.
+2. Nhấp vào tên của bạn ở góc dưới bên trái, sau đó chọn **Tùy chỉnh** → **Connectors**.
 
 ### Bước 2 — Thêm B1
 
