@@ -112,7 +112,7 @@ Profile पेज के **Account Deletion** सेक्शन में आ�
 :::
 
 :::info
-अगर आप **Domain Admin** हैं, तो अपना खाता हटाने से पहले प्रशासनिक ज़िम्मेदारियाँ किसी दूसरे उपयोगकर्ता को सौंपना सुनिश्चित करें। admin भूमिकाएँ प्रबंधित करने के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
+अगर आप अपने चर्च के एकमात्र **Domain Admin** हैं, तो B1 आपका खाता नहीं हटाएगा। वह दिखाता है "You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account." **Domain Admins** में पहले किसी और उपयोगकर्ता को जोड़ें। admin भूमिकाएँ प्रबंधित करने के विवरण के लिए [Roles & Permissions](../settings/roles-permissions.md) देखें।
 :::
 
 :::info

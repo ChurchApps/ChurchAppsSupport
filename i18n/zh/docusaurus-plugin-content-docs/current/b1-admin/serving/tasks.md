@@ -33,13 +33,17 @@ description: "在 B1 Admin 中创建、指派和完成任务，在“服事 > �
 
 1. 在 **My Work** 页面上，点击 **Add Task**（添加任务）。随即打开 **New Task**（新建任务）表单。
 2. 可选：点击 **Associate with**（关联对象）输入框，并选择该任务所涉及的个人或小组。如果是与任何人无关的普通待办事项（例如给自己的提醒），可留空。
-3. 点击 **Assign to**（指派给）输入框。在 **Select a Person or Group**（选择个人或小组）窗口中，在 **Person**（个人）标签页中搜索，或切换到 **Group**（小组）标签页搜索小组，然后选择搜索结果。
+3. 点击 **Assign to**（指派给）输入框。在 **Select people or a group**（选择个人或小组）窗口中，在 **Person**（个人）标签页中搜索，或切换到 **Group**（小组）标签页搜索小组，然后选择搜索结果。
 4. 输入任务的 **Title**（标题）。
 5. 可选：选择 **Due date**（截止日期）。
 6. 在 **Notes**（备注）中添加任何详细信息或给被指派人的说明。
 7. 点击 **Save**（保存）。
 
 该任务现在会出现在任务列表中，被指派人可以在其仪表板和移动应用中看到。
+
+:::tip
+**Associate with**（关联对象）和 **Assign to**（指派给）都可以选择多人。在窗口中继续选择人员，然后点击 **Done**（完成）；所选人员会以标签形式显示在输入框下方。在 **Group**（小组）标签页中，勾选 **Create a separate task for each member**（为每位成员分别创建任务），即可加入小组中的所有人。点击 **Save**（保存）时，每位人员都会创建一个任务；当两个输入框都选了多人时，每位被指派人都会就每位关联人员获得一个任务（两位被指派人和三位关联人员会生成六个任务）。编辑已创建的任务时，仍然一次只更改一位人员。
+:::
 
 ## 管理任务 {#managing-a-task}
 
@@ -63,7 +67,9 @@ description: "在 B1 Admin 中创建、指派和完成任务，在“服事 > �
 5. 在 **Send By**（发送方式）下，选择 **Push**（推送）、**Email**（电子邮件），以及在你的教会已连接[短信服务商](../settings/church-settings.md#texting)的情况下选择 **Text**（短信）。
 6. 点击 **Save Reminders**（保存提醒）。
 
-如果任务没有截止日期，B1 会提示你：在设置 **Due** 字段之前，将不会发送任何提醒。短信提醒只会发送给在其[通知偏好](../../b1-church/getting-started/notification-preferences.md)中开启了 **Text messages**（短信）的人员，且每条短信都可能产生费用。
+如果任务没有截止日期，B1 会提示你：在设置 **Due** 字段之前，将不会发送任何提醒。短信提醒只会发送给在其[通知偏好](../../b1-church/getting-started/notification-preferences.md)中开启了 **Text messages**（短信）的人员，且每条短信都可能产生费用。具有发送短信权限的工作人员，可以从人员的[记录](../people/adding-people.md#text-reminders)中为其开启 **Text reminders**（短信提醒），开关位于其手机号码下方。
+
+若要立即发送已保存的提醒，请点击 **Send now**（立即发送）。当提醒包含 **Text** 时，B1 会显示已提醒的人数，以及已发送短信和被跳过的人数，例如 *Sent to 2 people · 1 texted, 1 skipped*。以下人员会被跳过：关闭了 **Text messages**（短信）、没有手机号码，或曾回复 STOP。
 
 ## 任务生命周期 {#task-lifecycle}
 

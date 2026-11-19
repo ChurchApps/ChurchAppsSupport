@@ -54,6 +54,10 @@ Os eventos que os membros solicitam (por exemplo, em **Minhas Solicitações** n
 Configure um Grupo de Aprovação em uma sala em [Salas, Recursos e Agendamento](./rooms-resources.md) para exigir aprovação para essa sala. Os grupos com acesso podem então solicitar a sala ao criar eventos, e essas solicitações chegam a esta página.
 :::
 
+## Alterando Para Quem é uma Solicitação {#changing-who-a-request-is-for}
+
+Se você registrou uma solicitação em nome de um membro, por exemplo quando ele ligou para o escritório, ela aparece com o seu nome. Clique no ícone de troca ao lado do nome em **Solicitado por** (em qualquer seção, em **Pendentes** ou **Histórico**), busque o membro e clique em **Mover para esta pessoa**. A solicitação inteira é movida: a solicitação do evento e todas as reservas de salas e recursos nela. O membro então recebe a notificação de aprovação ou recusa, vê a solicitação em **Minhas Solicitações** no aplicativo B1, e ela aparece na seção de solicitações do registro dele. Mover uma solicitação não altera se ela foi aprovada.
+
 ## Histórico {#history}
 
 As solicitações aprovadas e recusadas permanecem na página. Clique em **Histórico** no topo de Aprovações para vê-las; clique em **Pendentes** para voltar às solicitações abertas.

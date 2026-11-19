@@ -65,7 +65,7 @@ Para cambiar el nombre o el correo electrónico de un miembro, haga clic en el i
 2. Busque a la persona en la lista **Miembros**.
 3. Haga clic en el icono de eliminar de su fila y confirme.
 
-Su iglesia siempre debe tener al menos un Administrador de dominio, así que no se puede quitar al último miembro de **Administradores de dominio**.
+Su iglesia siempre debe tener al menos un Administrador de dominio, así que no se puede quitar al último miembro de **Administradores de dominio**. B1 muestra "Se requiere al menos un Administrador de dominio. Agregue otro Administrador de dominio antes de quitar este." El único Administrador de dominio tampoco puede salir de la iglesia ni eliminar su propia cuenta hasta que se agregue a otra persona a **Administradores de dominio**.
 
 ## Configurar permisos {#configuring-permissions}
 

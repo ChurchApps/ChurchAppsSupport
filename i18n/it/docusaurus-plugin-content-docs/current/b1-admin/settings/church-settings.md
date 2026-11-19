@@ -94,6 +94,12 @@ Gli SMS funzionano meglio quando i numeri includono il prefisso del paese. Se in
 
 La tua regione si applica alle date e agli orari in tutto B1 Admin, nel tuo sito web B1.church e nel portale membri, incluse prediche, articoli del blog, calendari dei gruppi e piani di servizio, così i membri vedono le date nello stesso formato del personale.
 
+### Giorno del culto {#worship-day}
+
+La sezione Regione include anche l'impostazione **Giorno del culto** per il giorno in cui si tiene il culto principale. È **Domenica**, a meno che tu non la cambi. Le chiese che celebrano il culto di sabato (o in un altro giorno) possono scegliere quel giorno, e la Dashboard lo segue: il titolo principale dice "Questo sabato", i pannelli laterali dicono "In servizio sabato" e "Sabato scorso", la data del culto mostrata è il sabato successivo, e il conteggio dal vivo "in sala" si attiva sui check-in del sabato.
+
+Quando il giorno del culto non è domenica, la voce Regione nell'elenco a sinistra mostra anche il giorno accanto alla tua regione.
+
 ## Messaggi di testo {#texting}
 
 Collega un fornitore di SMS per inviare messaggi a una persona o a un intero gruppo da B1 Admin. I messaggi vengono inviati tramite il tuo account presso il fornitore, quindi si applicano le sue tariffe e i suoi limiti.

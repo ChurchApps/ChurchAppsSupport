@@ -70,6 +70,8 @@ description: "在 B1 Admin 中设置活动的推送、电子邮件和短信提�
 - 在其[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)中开启了 **Text messages**，并且
 - 其个人资料中有手机号码。
 
+具有发送短信权限的工作人员，可以在该人员的[记录](../people/adding-people.md#text-reminders)中，于其手机号码下方的一行为其开启 **Text reminders**（短信提醒）。在包含 **Text** 的提醒上点击 **Send now** 后，B1 会显示已发送给多少人、跳过多少人，例如 *Sent to 2 people · 1 texted, 1 skipped*。
+
 每条短信都以教会名称开头，控制在一条短信之内，并以"回复 STOP 退订"结尾。回复 STOP 的人将不再收到教会发出的短信。为使 STOP 回复能够传送到 B1，请将[短信设置](../settings/church-settings.md#texting)中的 **Inbound (STOP) webhook URL** 粘贴到你的服务提供商的入站消息 webhook 中。
 
 ## 成员可以控制的内容 {#what-members-can-control}

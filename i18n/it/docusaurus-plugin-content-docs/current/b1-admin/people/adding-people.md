@@ -88,6 +88,10 @@ L'invio da B1 usa le stesse approvazioni e gli stessi limiti giornalieri dell'em
 
 Se la tua chiesa ha collegato un [fornitore di SMS](../settings/church-settings.md#texting), hai il permesso di inviare messaggi e la persona ha un numero di cellulare, accanto a **Email** compare un pulsante **SMS**. Cliccalo, scrivi il **Messaggio** e clicca su **Invia**. La finestra mostra il numero a cui va l'SMS. Vedi [Inviare SMS ai membri dei gruppi](../groups/group-members.md#texting-group-members) per il funzionamento degli SMS.
 
+### Promemoria SMS {#text-reminders}
+
+I promemoria di attività, eventi e servizio vengono inviati via SMS solo alle persone che hanno attivato i messaggi di testo. Con lo stesso fornitore SMS, lo stesso permesso e lo stesso numero di cellulare, la scheda della persona mostra **Promemoria via SMS** sotto il suo numero di cellulare, con **Attivo** o **Disattivo**. Clicca su **Attiva** per iniziare a inviare i promemoria via SMS, oppure su **Disattiva** per interromperli. È lo stesso interruttore di **Messaggi di testo** nelle [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md) della persona, quindi entrambi potete modificarlo. Chi ha risposto STOP ai messaggi della tua chiesa non riceve comunque SMS di promemoria, anche con **Promemoria via SMS** attivo.
+
 ## Lavorare con i moduli {#working-with-forms}
 
 Puoi compilare i moduli personalizzati direttamente dalla scheda di una persona. Sono moduli definiti dall'utente che puoi costruire seguendo la guida [Creare moduli](../forms/creating-forms.md).

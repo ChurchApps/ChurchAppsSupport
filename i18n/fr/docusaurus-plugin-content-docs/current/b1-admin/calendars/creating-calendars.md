@@ -82,7 +82,17 @@ Cliquez sur **Nouvel événement** sur la page de détail du calendrier pour ajo
 - **Salles** et **Ressources** -- Réservez l'espace et l'équipement pour l'événement. Voir [Salles, ressources et planification](./rooms-resources.md). Une fois une salle choisie, vous pouvez aussi ajouter un temps de préparation et de rangement ou une fenêtre de réservation personnalisée -- voir [Réserver une salle ou une ressource](./availability.md#booking-a-room-or-resource).
 - **Rappels** -- Développez cette section pour envoyer des rappels avant l'événement. Voir [Rappels d'événements](./event-reminders.md).
 
-**Groupe**, **Titre**, **Début** et **Fin** sont obligatoires, et la fin doit être postérieure au début. Cliquez sur **Enregistrer**. Si l'événement se répète, B1 vous demande de confirmer, car l'enregistrement met à jour chaque occurrence de la série. Pour supprimer un événement, ouvrez-le dans l'éditeur et cliquez sur **Supprimer**.
+**Groupe**, **Titre**, **Début** et **Fin** sont obligatoires, et la fin doit être postérieure au début. Cliquez sur **Enregistrer**. Pour supprimer un événement, ouvrez-le dans l'éditeur et cliquez sur **Supprimer**.
+
+### Modifier une date d'un événement récurrent {#changing-one-date-of-a-recurring-event}
+
+Lorsque vous cliquez sur une date d'un événement récurrent dans le calendrier, puis sur **Modifier**, l'enregistrement ou la suppression vous demande quelles dates modifier :
+
+- **Cette date seulement** -- Seule la date sur laquelle vous avez cliqué. À l'enregistrement, cette date devient un événement ponctuel distinct avec vos modifications, et le reste de la série demeure inchangé. À la suppression, seule cette date est retirée.
+- **Cette date et toutes les dates suivantes** -- La série se termine la veille de la date sur laquelle vous avez cliqué. À l'enregistrement, vos modifications démarrent une nouvelle série à partir de cette date ; à la suppression, les dates restantes sont retirées.
+- **Toutes les dates** -- La série entière, comme auparavant.
+
+Le formulaire affiche la première date de la série, mais **Cette date seulement** et **Cette date et toutes les dates suivantes** reportent vos modifications d'heure sur la date sur laquelle vous avez cliqué. Une date détachée conserve les salles et ressources de la série, obtient ses propres réservations et ne copie pas les rappels de la série. Si vous ouvrez un événement récurrent sans choisir de date (par exemple depuis **Approbations**), B1 vous demande plutôt de confirmer, car l'enregistrement met à jour chaque date de la série.
 
 ### Notes d'événement {#event-notes}
 
@@ -116,6 +126,14 @@ Une fois l'inscription activée, les membres verront un bouton **S'inscrire à c
 :::info
 Les questions d'inscription ne fonctionnent qu'avec les formulaires qui ne sont **pas** marqués comme Restreint. Un formulaire restreint est automatiquement ignoré lors de l'inscription au lieu d'être affiché ; utilisez donc un formulaire non restreint lorsque vous joignez des questions à un événement.
 :::
+
+### Partager le lien d'un événement {#sharing-an-event-link}
+
+Pour inviter des personnes qui ne figurent pas dans la base de données de votre église, partagez la page de l'événement elle-même. Cliquez sur l'événement dans le calendrier puis sur **Partager**, ou cliquez sur **Partager** sur la page d'inscription de l'événement. Une boîte de dialogue affiche le lien de l'événement et un code QR : cliquez sur l'icône de copie pour copier le lien, ou cliquez sur **Télécharger le PNG** pour enregistrer le code QR destiné à un dépliant ou à une diapositive. Toute personne disposant du lien peut voir l'événement, l'ajouter à son calendrier et, lorsque l'inscription est activée, s'inscrire en tant qu'invité avec seulement un nom et un courriel.
+
+Un événement **Privé** reste absent du calendrier de votre site, mais peut tout de même être partagé une fois l'inscription activée. Un événement privé sans inscription n'a pas de page publique et ne dispose donc pas du bouton **Partager**.
+
+Dans l'application B1, les événements du calendrier d'un groupe comportent un lien **Partager** qui ouvre la feuille de partage du téléphone avec le même lien.
 
 ### Gérer les inscriptions {#managing-registrations}
 

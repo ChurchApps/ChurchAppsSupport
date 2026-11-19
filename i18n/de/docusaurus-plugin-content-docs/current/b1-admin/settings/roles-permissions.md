@@ -65,8 +65,7 @@ Um den Namen oder die E-Mail-Adresse eines Mitglieds zu ändern, klicken Sie in 
 2. Suchen Sie die Person in der Liste **Mitglieder**.
 3. Klicken Sie in ihrer Zeile auf das Löschsymbol und bestätigen Sie.
 
-Ihre Gemeinde muss immer mindestens einen Domain-Administrator haben, daher kann das letzte Mitglied der Rolle **Domain-Administratoren** nicht entfernt werden.
-
+Ihre Gemeinde muss immer mindestens einen Domain-Administrator haben, daher kann das letzte Mitglied der Rolle **Domain-Administratoren** nicht entfernt werden. B1 zeigt die Meldung „Mindestens ein Domain-Administrator ist erforderlich. Fügen Sie einen weiteren Domain-Administrator hinzu, bevor Sie diesen entfernen.“ an. Der einzige Domain-Administrator kann die Gemeinde außerdem nicht verlassen oder das eigene Konto nicht löschen, solange niemand anderes zu **Domain-Administratoren** hinzugefügt wurde.
 ## Berechtigungen konfigurieren {#configuring-permissions}
 
 Jede Rolle kann Zugriff auf bestimmte Bereiche von B1 Admin erhalten. Im Bereich **Berechtigungen bearbeiten** sind die Berechtigungen in Abschnitte gruppiert, die Sie aufklappen können, etwa **Anwesenheit**, **Inhalt**, **Spenden**, **Formulare und Pläne**, **Lektionen**, **Nachrichten**, **Personen und Gruppen** und **Aufgaben**. Geben Sie in das Feld **Berechtigungen filtern** einen Begriff ein, um nur passende Berechtigungen anzuzeigen.

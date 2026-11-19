@@ -53,11 +53,11 @@ Ein pulsierendes Symbol **Warten auf Bestätigung** zeigt an, dass FreePlay Ihre
 
 ## Anmeldung per Telefon (nur QR-Code) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive** und **Go Curriculum** verwenden eine etwas andere Anmeldung per QR-Code, bei der Sie keinen Code eingeben müssen:
+**Dropbox**, **OneDrive** und **GO! Curriculum** verwenden eine etwas andere Anmeldung per QR-Code, bei der Sie keinen Code eingeben müssen:
 
 1. Wählen Sie die Anbieterkarte auf dem Bildschirm **Inhaltsanbieter**.
 2. FreePlay zeigt einen Bildschirm **Verbinden mit** mit dem Namen des Anbieters und einem QR-Code.
-3. Scannen Sie den QR-Code mit Ihrem Telefon und melden Sie sich mit Ihrem Konto bei diesem Anbieter an (Ihr Microsoft-Konto für OneDrive oder Ihr gocurriculum.com-Konto für Go Curriculum).
+3. Scannen Sie den QR-Code mit Ihrem Telefon und melden Sie sich mit Ihrem Konto bei diesem Anbieter an (Ihr Microsoft-Konto für OneDrive oder Ihr gocurriculum.com-Konto für GO! Curriculum).
 4. Erteilen Sie die Zustimmung. Der Fernseher verbindet sich automatisch und zeigt **Verbunden!** an.
 
 Der Bildschirm zeigt, wie viele Minuten Ihnen zum Abschluss der Anmeldung bleiben.

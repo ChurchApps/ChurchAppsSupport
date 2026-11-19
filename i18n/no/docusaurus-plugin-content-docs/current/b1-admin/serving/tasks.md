@@ -33,13 +33,17 @@ Som standard vises bare åpne oppgaver. Velg **Lukket** over listen for å se fu
 
 1. På siden **Mitt arbeid** klikker du på **Legg til oppgave**. Skjemaet **Ny oppgave** åpnes.
 2. Klikk eventuelt i boksen **Knytt til** og velg personen eller gruppen oppgaven gjelder. La den stå tom for en vanlig oppgave som ikke gjelder noen, for eksempel en påminnelse til deg selv.
-3. Klikk i boksen **Tildel til**. I vinduet **Velg en person eller gruppe** søker du på fanen **Person**, eller bytter til fanen **Gruppe** og søker etter en gruppe, og velger deretter resultatet.
+3. Klikk i boksen **Tildel til**. I vinduet **Velg personer eller en gruppe** søker du på fanen **Person**, eller bytter til fanen **Gruppe** og søker etter en gruppe, og velger deretter resultatet.
 4. Skriv inn en **tittel** for oppgaven.
 5. Velg eventuelt en **forfallsdato**.
 6. Legg til **notater** med detaljer eller instruksjoner for mottakeren.
 7. Klikk på **Lagre**.
 
 Oppgaven vises nå i oppgavelisten, og mottakeren ser den på dashbordet sitt og i mobilappen.
+
+:::tip
+Både **Knytt til** og **Tildel til** tar flere personer. Fortsett å velge personer i vinduet, og klikk deretter **Done**; de vises som brikker under boksen. På fanen **Gruppe** krysser du av for **Create a separate task for each member** for å legge til alle i en gruppe. **Lagre** oppretter én oppgave for hver person, og når begge feltene inneholder flere personer, får hver mottaker en oppgave for hver tilknyttet person (to mottakere og tre personer gir seks oppgaver). Å redigere en oppgave du allerede har opprettet, endrer fortsatt én person om gangen.
+:::
 
 ## Administrere en oppgave {#managing-a-task}
 
@@ -63,7 +67,9 @@ En oppgave med forfallsdato kan minne mottakeren før fristen.
 5. Under **Send via** velger du **Push**, **E-post** og, hvis menigheten din har en [tekstmeldingsleverandør](../settings/church-settings.md#texting) koblet til, **Tekstmelding**.
 6. Klikk på **Lagre påminnelser**.
 
-Hvis oppgaven ikke har en forfallsdato, varsler B1 deg om at ingen påminnelser sendes før en dato er satt i feltet **Forfall**. Tekstpåminnelser når bare personer som har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og hver tekstmelding kan koste menigheten din penger.
+Hvis oppgaven ikke har en forfallsdato, varsler B1 deg om at ingen påminnelser sendes før en dato er satt i feltet **Forfall**. Tekstpåminnelser når bare personer som har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og hver tekstmelding kan koste menigheten din penger. Ansatte med tillatelse til å sende tekstmeldinger kan slå på **Text reminders** for en person fra personens [personpost](../people/adding-people.md#text-reminders), på linjen under mobilnummeret.
+
+For å sende en lagret påminnelse med en gang, klikk på **Send now**. Når påminnelsen inkluderer **Text**, viser B1 hvor mange som ble påminnet, og hvor mange som fikk tekstmelding og ble hoppet over, for eksempel *Sent to 2 people · 1 texted, 1 skipped*. Personer blir hoppet over når de har **Text messages** slått av, mangler mobilnummer eller har svart STOP.
 
 ## Livssyklus for en oppgave {#task-lifecycle}
 

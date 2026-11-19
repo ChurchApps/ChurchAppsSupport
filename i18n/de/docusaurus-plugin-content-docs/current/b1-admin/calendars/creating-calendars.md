@@ -82,7 +82,17 @@ Klicken Sie auf der Detailseite des Kalenders auf **Neues Ereignis**, um ein Ere
 - **Räume** und **Ressourcen** – Reservieren Sie Raum und Ausstattung für das Ereignis. Siehe [Räume, Ressourcen & Terminplanung](./rooms-resources.md). Sobald eine Auswahl getroffen ist, können Sie außerdem Aufbau- und Abbauzeit oder ein eigenes Reservierungsfenster festlegen – siehe [Einen Raum oder eine Ressource buchen](./availability.md#booking-a-room-or-resource).
 - **Erinnerungen** – Klappen Sie diesen Abschnitt auf, um vor dem Ereignis Erinnerungen zu versenden. Siehe [Ereigniserinnerungen](./event-reminders.md).
 
-**Gruppe**, **Titel**, **Beginn** und **Ende** sind Pflichtfelder, und das Ende muss nach dem Beginn liegen. Klicken Sie auf **Speichern**. Wiederholt sich das Ereignis, bittet B1 um eine Bestätigung, da beim Speichern jeder Termin der Serie aktualisiert wird. Um ein Ereignis zu löschen, öffnen Sie es im Editor und klicken Sie auf **Löschen**.
+**Gruppe**, **Titel**, **Beginn** und **Ende** sind Pflichtfelder, und das Ende muss nach dem Beginn liegen. Klicken Sie auf **Speichern**. Um ein Ereignis zu löschen, öffnen Sie es im Editor und klicken Sie auf **Löschen**.
+
+### Ein Datum eines wiederkehrenden Ereignisses ändern {#changing-one-date-of-a-recurring-event}
+
+Wenn Sie im Kalender auf ein Datum eines sich wiederholenden Ereignisses und dann auf **Bearbeiten** klicken, fragt B1 beim Speichern oder Löschen, welche Termine geändert werden sollen:
+
+- **Nur dieses Datum** – Nur das Datum, das Sie angeklickt haben. Beim Speichern wird dieses Datum zu einem eigenen einmaligen Ereignis mit Ihren Änderungen, und die übrige Serie bleibt unverändert. Beim Löschen wird nur dieses Datum entfernt.
+- **Dieses und alle folgenden Daten** – Die Serie endet am Tag vor dem angeklickten Datum. Beim Speichern beginnt mit Ihren Änderungen eine neue Serie ab diesem Datum; beim Löschen werden die restlichen Termine entfernt.
+- **Alle Daten** – Die gesamte Serie, wie bisher.
+
+Das Formular zeigt das erste Datum der Serie, aber **Nur dieses Datum** und **Dieses und alle folgenden Daten** übertragen Ihre Zeitänderungen auf das angeklickte Datum. Ein abgetrenntes Datum behält die Räume und Ressourcen der Serie, erhält eigene Buchungen und übernimmt keine Erinnerungen der Serie. Wenn Sie ein wiederkehrendes Ereignis öffnen, ohne ein Datum zu wählen (zum Beispiel über **Genehmigungen**), bittet B1 stattdessen um eine Bestätigung, weil das Speichern jeden Termin der Serie aktualisiert.
 
 ### Notizen zu Ereignissen {#event-notes}
 
@@ -116,6 +126,14 @@ Sobald die Anmeldung aktiviert ist, sehen Mitglieder eine Schaltfläche **Für d
 :::info
 Anmeldefragen funktionieren nur mit Formularen, die **nicht** als Eingeschränkt markiert sind. Ein eingeschränktes Formular wird bei der Anmeldung automatisch übersprungen, statt angezeigt zu werden. Verwenden Sie daher für Fragen an ein Ereignis ein nicht eingeschränktes Formular.
 :::
+
+### Den Link zu einem Ereignis teilen {#sharing-an-event-link}
+
+Um Personen einzuladen, die nicht in der Datenbank Ihrer Gemeinde stehen, teilen Sie die eigene Seite des Ereignisses. Klicken Sie im Kalender auf das Ereignis und dann auf **Teilen**, oder klicken Sie auf der Anmeldeseite des Ereignisses auf **Teilen**. Ein Dialog zeigt den Link des Ereignisses und einen QR-Code: Klicken Sie auf das Kopiersymbol, um den Link zu kopieren, oder auf **PNG herunterladen**, um den QR-Code für einen Flyer oder eine Folie zu speichern. Wer den Link hat, kann das Ereignis sehen, es zu seinem Kalender hinzufügen und sich – wenn die Anmeldung aktiviert ist – mit nur Namen und E-Mail-Adresse als Gast anmelden.
+
+Ein Ereignis mit der Sichtbarkeit **Privat** bleibt aus dem Kalender Ihrer Website ausgeblendet, kann aber geteilt werden, sobald die Anmeldung aktiviert ist. Ein privates Ereignis ohne Anmeldung hat keine öffentliche Seite und daher keine Schaltfläche **Teilen**.
+
+In der B1-App haben Ereignisse im Kalender einer Gruppe einen Link **Teilen**, der das Teilen-Menü des Telefons mit demselben Link öffnet.
 
 ### Anmeldungen verwalten {#managing-registrations}
 

@@ -94,6 +94,12 @@ Pinakamahusay gumana ang texting kapag may country code ang mga numero. Kung nag
 
 Nalalapat ang rehiyon mo sa mga petsa at oras sa buong B1 Admin at sa iyong B1.church website at member portal, kabilang ang mga sermon, blog post, group calendar, at serving plan, para makita ng mga miyembro ang mga petsa sa parehong format na nakikita ng staff mo.
 
+### Araw ng Pagsamba {#worship-day}
+
+Mayroon ding setting na **Worship day** ang seksyong Region para sa araw kung kailan nagaganap ang iyong pangunahing serbisyo. Ito ay **Sunday** maliban kung babaguhin mo. Maaaring piliin ng mga simbahang sumasamba tuwing Sabado (o ibang araw) ang araw na iyon, at sinusunod ito ng Dashboard: ang pangunahing heading ay nagsasabing "This Saturday", ang mga side panel ay nagsasabing "Serving Saturday" at "Last Saturday", ang petsa ng serbisyong ipinapakita ay ang paparating na Sabado, at naiilawan ang live na bilang na "in the room" sa mga check-in tuwing Sabado.
+
+Kapag hindi Sunday ang worship day, ipinapakita rin ng entry na Region sa kaliwang listahan ang araw sa tabi ng iyong rehiyon.
+
 ## Texting {#texting}
 
 Mag-connect ng texting provider para makapagpadala ng SMS sa isang tao o sa buong grupo mula sa B1 Admin. Ipinapadala ang mga text sa sarili mong account sa provider, kaya nalalapat ang kanilang presyo at limitasyon.

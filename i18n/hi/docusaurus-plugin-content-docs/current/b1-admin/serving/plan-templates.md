@@ -13,7 +13,7 @@ description: "B1 Admin में किसी सेवा योजना क�
 
 ## प्रशिक्षण वीडियो {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="B1 में योजना टेम्पलेट, कार्य और वर्कफ़्लो" next="B1 में कैलेंडर, इवेंट और रूम बुकिंग बनाना" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="B1 में योजना टेम्पलेट, कार्य और वर्कफ़्लो" next="B1 में कैलेंडर, इवेंट और रूम बुकिंग बनाना" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>

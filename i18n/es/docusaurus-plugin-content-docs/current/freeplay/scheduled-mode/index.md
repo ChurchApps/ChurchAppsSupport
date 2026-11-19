@@ -31,7 +31,7 @@ Cuando no hay nada programado, las pantallas de un grupo reproducen su **bucle p
 - **[Modo plan](../plan-mode/index.md)** sigue un tipo de plan de servicio de B1 Admin. Alguien presiona **Iniciar plan** en el TV, y la lección se reproduce cuando lo hace
 - **El Modo programado** sigue un calendario. El contenido inicia y se detiene en las horas que usted fija, por lo que funciona bien para la señalización del vestíbulo, los bucles de anuncios y las aulas donde la lección debe estar en pantalla antes de que llegue alguien
 
-Una entrada del calendario también puede reproducir un plan de servicio. Elija el tipo de plan en **Planes de servicio** al añadir un horario, y la pantalla reproducirá el plan que esté vigente en B1 Admin esa semana. Esto incluye las lecciones de Go Curriculum, incluso las que haya personalizado en el plan. La pantalla usa el inicio de sesión de Go Curriculum vinculado al ministerio del tipo de plan en B1 Admin, o la conexión de Go Curriculum de la iglesia si el ministerio no tiene una.
+Una entrada del calendario también puede reproducir un plan de servicio. Elija el tipo de plan en **Planes de servicio** al añadir un horario, y la pantalla reproducirá el plan que esté vigente en B1 Admin esa semana. Esto incluye las lecciones de GO! Curriculum, incluso las que haya personalizado en el plan. La pantalla usa el inicio de sesión de GO! Curriculum vinculado al ministerio del tipo de plan en B1 Admin, o la conexión de GO! Curriculum de la iglesia si el ministerio no tiene una.
 
 ## Primeros pasos
 

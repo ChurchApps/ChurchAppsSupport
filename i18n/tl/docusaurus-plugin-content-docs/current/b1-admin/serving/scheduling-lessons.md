@@ -14,7 +14,7 @@ Direktang nakakonekta ang B1 Admin sa [Lessons.church](https://lessons.church) p
 
 ## Training Video {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Muling Paggamit ng Lesson Trim para sa Bawat Linggo sa B1" next="Mga Plan Template, Tasks, at Workflows sa B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Muling Paggamit ng Lesson Trim para sa Bawat Linggo sa B1" next="Mga Plan Template, Tasks, at Workflows sa B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
@@ -45,7 +45,7 @@ Isang beses lamang itong gawin kada ministry. Kailangan mong ikonekta ang iyong 
 Bawat ministry ang may sariling seksyong Content Providers. Kung marami kang ministry (hal., Children's at Youth), kailangan mong i-link ang Lessons.church sa bawat isa nang hiwalay.
 :::
 
-Hindi lang ang Lessons.church ang opsyon. Ang parehong listahan ng **Link New Provider** ay may iba pang pinagmumulan ng curriculum at file, kabilang ang SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive, at OneDrive. I-link ang alinman sa mga ito sa parehong paraan, at lalabas sila bilang mga provider na maaari mong lipatan kapag pumipili ng aralin.
+Hindi lang ang Lessons.church ang opsyon. Ang parehong listahan ng **Link New Provider** ay may iba pang pinagmumulan ng curriculum at file, kabilang ang SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive, at OneDrive. I-link ang alinman sa mga ito sa parehong paraan, at lalabas sila bilang mga provider na maaari mong lipatan kapag pumipili ng aralin.
 
 ## Hakbang 2 -- Mag-iskedyul ng Aralin {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Kapag naka-link na, direkta ka nang makakapag-iskedyul ng mga aralin mula sa Pla
    - Piliin ang tiyak na **Lesson**
    - Piliin ang **Venue** -- ito ang bersyon ng aralin para sa grupo ng edad
 
-   Iba-iba ang pagkakaayos ng nilalaman ng ibang provider. Halimbawa, ang **Go Curriculum** ay nagsisimula sa **Elementary** o **Preschool**, pagkatapos ay isang series, at saka ang mismong aralin -- walang venue na pipiliin.
+   Iba-iba ang pagkakaayos ng nilalaman ng ibang provider. Halimbawa, ang **GO! Curriculum** ay nagsisimula sa **Elementary** o **Preschool**, pagkatapos ay isang series, at saka ang mismong aralin -- walang venue na pipiliin.
 8. I-click ang **Associate Lesson** para kumpirmahin
 9. Piliin ang iyong **copy option** para sa mga volunteer:
    - **Nothing** -- bagong plan, walang volunteer na dadalhin
@@ -87,7 +87,7 @@ Para mag-iskedyul ng ilang aralin mula sa iisang series nang sabay-sabay, i-clic
 4. Suriin ang listahan -- ang panimulang aralin at ang natitira sa series nito, bawat isa may petsa. Alisan ng check ang anumang gusto mong laktawan
 5. I-click ang **Save** para gumawa ng isang plan kada aralin
 
-Para sa Lessons.church, ipinapakita rin ng listahan ang **Venue** na gagamitin ng bawat aralin, na tinutugma ayon sa pangalan sa venue na pinili mo para sa panimulang aralin (kung walang ganoong venue ang isang aralin, may gagamiting iba at mamarkahan itong **substituted**). Ang mga provider na ang mga aralin ay walang antas ng venue, gaya ng Go Curriculum, ay direktang nag-iiskedyul ng mga aralin, at nakatago ang column ng Venue.
+Para sa Lessons.church, ipinapakita rin ng listahan ang **Venue** na gagamitin ng bawat aralin, na tinutugma ayon sa pangalan sa venue na pinili mo para sa panimulang aralin (kung walang ganoong venue ang isang aralin, may gagamiting iba at mamarkahan itong **substituted**). Ang mga provider na ang mga aralin ay walang antas ng venue, gaya ng GO! Curriculum, ay direktang nag-iiskedyul ng mga aralin, at nakatago ang column ng Venue.
 
 ## Pagpapanatili lamang ng Bahagi ng Bawat Aralin {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Kapag hindi tumugma sa pattern ang isang aralin (may nawawalang bahagi, walang v
 
 Hindi binabago ang mga plan na may nakasave nang order of service kapag naiskedyul ang mga ito. Para baguhin ang nakasave na trim, i-customize ang ibang plan at i-click ang **Replace the saved trim for Elementary** (muli, ipinapangalan sa plan type mo). Para ihinto ang pag-trim, buksan ang **Edit** dialog ng plan type at i-click ang **Clear** sa tabi ng **Lesson trim**.
 
-## Mga Go Curriculum Leader Guide {#go-curriculum-leader-guides}
+## Mga GO! Curriculum Leader Guide {#go-curriculum-leader-guides}
 
-Kapag nag-iskedyul ka ng aralin ng Go Curriculum, binubuo ang service order ng plan mula sa **Large Group** leader guide ng aralin: nagiging seksyon ang bawat bahagi ng guide, at nakalista ang bawat hakbang sa loob nito kasama ang uri nito (gaya ng say, do, play, o note) at ang teksto nito. Ang mga hakbang na nagpe-play ng video o iba pang media ay dala ang file na iyon, kaya nagpe-play ito ayon sa pagkakasunod-sunod. (Ang aralin na walang Large Group guide ay babalik sa simpleng listahan ng mga media file nito.)
+Kapag nag-iskedyul ka ng aralin ng GO! Curriculum, binubuo ang service order ng plan mula sa **Large Group** leader guide ng aralin: nagiging seksyon ang bawat bahagi ng guide, at nakalista ang bawat hakbang sa loob nito kasama ang uri nito (gaya ng say, do, play, o note) at ang teksto nito. Ang mga hakbang na nagpe-play ng video o iba pang media ay dala ang file na iyon, kaya nagpe-play ito ayon sa pagkakasunod-sunod. (Ang aralin na walang Large Group guide ay babalik sa simpleng listahan ng mga media file nito.)
 
 Ang bawat series na may materyal para sa small group ay nagsisimula rin sa folder na **Small Group Guides**. Buksan ito at pumili ng aralin para iskedyulin ang **Small Group** guide ng araling iyon, na ipinapangalan tulad ng "Lesson Name - Small Group" -- kapaki-pakinabang para sa hiwalay na plan type ng small group. Karamihan sa Small Group guide ay mga hakbang sa talakayan at kadalasang walang media. Dahil nasa unahan ang folder, hindi ito kailanman makukuha ng bulk scheduling ng isang series mula sa isa sa mga aralin nito.
 

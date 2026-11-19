@@ -41,7 +41,7 @@ Ang pagbubukas ng `https://yourchurchname.b1.church/mobile` ay magdadala sa iyo 
 
 Lumalabas lamang ang mga seksyon ng serving, groups, attendance, forms, at giving kapag naka-sign in ka, naka-on ng iyong simbahan ang tool na iyon, at may maipapakita ka -- halimbawa, isang paparating na takdang paglilingkod o kahit isang grupo. Sa computer, dalawang column ang layout ng Home.
 
-Kung naka-sign out ka, ang Home ay magpapakita ng heading na **Welcome** sa halip na pagbati, kasama ang maikling paanyaya ("Sign in to see your groups, giving, and more.") at button na **Sign In**. Lumalabas ang paanyaya kahit wala pang ibang nakahanda ang iyong simbahan para sa Home. Maaaring baguhin ng iyong simbahan ang paanyayang ito o itago ito -- tingnan ang [Mga Setting ng Mobile App](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Kapag nakatago ito, maaari ka pa ring mag-sign in mula sa pahinang **More** o sa pahinang **Me**.
+Kung naka-sign out ka, ang Home ay magpapakita ng heading na **Welcome** sa halip na pagbati, at sa ilalim ng **Upcoming events**, hanggang tatlo sa mga paparating na event ng simbahan na tumatanggap ng registration, bawat isa ay may link na **Register** (kasama ang link na **All upcoming events** papunta sa screen na **Groups** kapag mas marami pa). Nagpapakita rin ito ng maikling paanyaya ("Sign in to see your groups, giving, and more.") at button na **Sign In**. Lumalabas ang paanyaya kahit wala pang ibang nakahanda ang iyong simbahan para sa Home. Maaaring baguhin ng iyong simbahan ang paanyayang ito o itago ito -- tingnan ang [Mga Setting ng Mobile App](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Kapag nakatago ito, maaari ka pa ring mag-sign in mula sa pahinang **More** o sa pahinang **Me**.
 
 ## Ang Bottom Tab Bar {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ Unang binibigyan ng puwesto sa tab ang mga built-in na screen (gaya ng Groups, G
 
 ### Mga Folder Tab {#folder-tabs}
 
-Maaaring pagpangkatin ng iyong simbahan ang ilang tab sa isang **folder**. Lumalabas ang folder na parang anumang ibang tab -- sa tab bar, sa pahinang **More**, o bilang photo tile sa Home -- at kapag na-tap ito, magbubukas ang isang screen na may pangalan ng folder na naglilista ng mga tab sa loob nito. Kung may larawan ang bawat tab sa folder, ipinapakita ang mga ito bilang photo tile; kung wala, bilang listahan. Ang mga link sa labas na website sa loob ng folder ay nagbubukas sa bagong tab ng browser. Lumalabas lamang ang mga tab sa loob ng folder sa screen ng folder, hindi sa tab bar o sa pahinang **More**. Nakatago ang folder na walang nakikita kang laman.
+Maaaring pagpangkatin ng iyong simbahan ang ilang tab sa isang **folder**. Lumalabas ang folder na parang anumang ibang tab -- sa tab bar, sa pahinang **More**, o bilang photo tile sa Home -- at kapag na-tap ito, magbubukas ang isang screen na may pangalan ng folder na naglilista ng mga tab sa loob nito. Ang mga tab na may larawan ay unang ipinapakita, bawat isa bilang photo banner na buong lapad, at ang mga tab na walang larawan ay nakalista sa ibaba nila. Ang mga link sa labas na website sa loob ng folder ay nagbubukas sa bagong tab ng browser. Lumalabas lamang ang mga tab sa loob ng folder sa screen ng folder, hindi sa tab bar o sa pahinang **More**. Nakatago ang folder na walang nakikita kang laman.
 
 ## Sa Computer {#on-a-computer}
 

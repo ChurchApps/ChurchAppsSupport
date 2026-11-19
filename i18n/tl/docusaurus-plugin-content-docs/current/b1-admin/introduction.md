@@ -13,7 +13,7 @@ Salamat sa pagpili sa B1.church! Gagabayan ka ng panimulang ito sa mga pangunahi
 
 ## Training Video {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="Ano ang B1.church?" />
+<YouTube id="zS64eorbKUQ" title="Ano ang B1.church?" next="B1.church para sa Iyong mga Miyembro" nextUrl="/docs/b1-church" />
 
 Para sa karagdagang suporta, mangyaring mag-email sa [support@churchapps.org](mailto:support@churchapps.org).
 

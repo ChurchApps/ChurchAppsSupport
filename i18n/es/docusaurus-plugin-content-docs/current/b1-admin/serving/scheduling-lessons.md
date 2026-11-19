@@ -14,7 +14,7 @@ B1 Admin se integra directamente con [Lessons.church](https://lessons.church) pa
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Reutilizar un recorte de lección para cada semana en B1" next="Plantillas de plan, tareas y flujos de trabajo en B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Reutilizar un recorte de lección para cada semana en B1" next="Plantillas de plan, tareas y flujos de trabajo en B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Antes de empezar</h4>
@@ -45,7 +45,7 @@ Esta es una configuración única por ministerio. Debe conectar su cuenta de Les
 La sección Proveedores de contenido es por ministerio. Si administra varios ministerios (por ejemplo, Infantil y Jóvenes), deberá vincular Lessons.church por separado en cada uno.
 :::
 
-Lessons.church no es la única opción. La misma lista **Vincular nuevo proveedor** también ofrece otras fuentes de currículo y archivos, como SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive y OneDrive. Vincúlelos de la misma forma, y aparecerán como proveedores a los que puede cambiar al seleccionar una lección.
+Lessons.church no es la única opción. La misma lista **Vincular nuevo proveedor** también ofrece otras fuentes de currículo y archivos, como SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive y OneDrive. Vincúlelos de la misma forma, y aparecerán como proveedores a los que puede cambiar al seleccionar una lección.
 
 ## Paso 2: programe una lección {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Una vez vinculado, puede programar lecciones directamente desde Planes.
    - Seleccione la **Lección** específica
    - Seleccione el **Lugar**: es la versión de la lección para el grupo de edad
 
-   Otros proveedores organizan el contenido de forma diferente. Por ejemplo, **Go Curriculum** empieza con **Elemental** o **Preescolar**, luego una serie y, por último, la lección en sí; no hay lugar que elegir.
+   Otros proveedores organizan el contenido de forma diferente. Por ejemplo, **GO! Curriculum** empieza con **Elemental** o **Preescolar**, luego una serie y, por último, la lección en sí; no hay lugar que elegir.
 8. Haga clic en **Asociar lección** para confirmar
 9. Elija su **opción de copia** para los voluntarios:
    - **Nada**: plan nuevo, sin voluntarios arrastrados
@@ -87,7 +87,7 @@ Para programar varias lecciones de la misma serie a la vez, haga clic en **Progr
 4. Revise la lista: la lección inicial y el resto de su serie, cada una con una fecha. Desmarque las que quiera omitir
 5. Haga clic en **Guardar** para crear un plan por cada lección
 
-En el caso de Lessons.church, la lista también muestra el **Lugar** que usará cada lección, emparejado por nombre con el lugar que eligió para la lección inicial (si una lección no tiene ese lugar, se usa otro y se marca como **sustituido**). Los proveedores cuyas lecciones no tienen nivel de lugar, como Go Curriculum, programan las lecciones directamente y la columna Lugar queda oculta.
+En el caso de Lessons.church, la lista también muestra el **Lugar** que usará cada lección, emparejado por nombre con el lugar que eligió para la lección inicial (si una lección no tiene ese lugar, se usa otro y se marca como **sustituido**). Los proveedores cuyas lecciones no tienen nivel de lugar, como GO! Curriculum, programan las lecciones directamente y la columna Lugar queda oculta.
 
 ## Conservar solo una parte de cada lección {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Cuando una lección no encaja con el patrón (falta una parte, no tiene video o 
 
 Los planes que ya tienen un orden del servicio no se modifican al programarlos. Para cambiar el recorte guardado, personalice otro plan y haga clic en **Reemplazar el recorte guardado para Elemental** (de nuevo, con el nombre de su tipo de plan). Para dejar de recortar, abra el diálogo **Editar** del tipo de plan y haga clic en **Borrar** junto a **Recorte de lección**.
 
-## Guías de líder de Go Curriculum {#go-curriculum-leader-guides}
+## Guías de líder de GO! Curriculum {#go-curriculum-leader-guides}
 
-Cuando programa una lección de Go Curriculum, el orden del servicio del plan se construye a partir de la guía de líder del **Grupo grande** de la lección: cada parte de la guía se convierte en una sección, y cada paso dentro de ella aparece con su tipo (como decir, hacer, reproducir o nota) y su texto. Los pasos que reproducen un video u otro medio llevan consigo ese archivo, así que se reproduce en orden. (Una lección sin guía de Grupo grande recurre a una lista simple de sus archivos multimedia).
+Cuando programa una lección de GO! Curriculum, el orden del servicio del plan se construye a partir de la guía de líder del **Grupo grande** de la lección: cada parte de la guía se convierte en una sección, y cada paso dentro de ella aparece con su tipo (como decir, hacer, reproducir o nota) y su texto. Los pasos que reproducen un video u otro medio llevan consigo ese archivo, así que se reproduce en orden. (Una lección sin guía de Grupo grande recurre a una lista simple de sus archivos multimedia).
 
 Cada serie que tiene material para grupos pequeños también empieza con una carpeta **Guías de grupos pequeños**. Ábrala y elija una lección para programar la guía de **Grupo pequeño** de esa lección, con un nombre como "Nombre de la lección - Grupo pequeño"; es útil para un tipo de plan aparte para grupos pequeños. Las guías de grupos pequeños son sobre todo pasos de discusión y normalmente no tienen medios. Como la carpeta aparece primero en la lista, programar en lote una serie desde una de sus lecciones nunca la incluye.
 ## Aplicar un plan anual {#apply-a-year-plan}

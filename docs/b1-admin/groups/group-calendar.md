@@ -101,7 +101,7 @@ Click on any event to view its details. From the event detail view:
 - **Leaders** can edit event details, change times, or delete the event.
 
 :::warning
-Deleting an event removes it permanently. If you need to cancel a single occurrence of a recurring event, consider editing it instead.
+Deleting an event removes it permanently. When you edit or delete a recurring event, you're asked whether to change **Just this date**, **This and all following dates**, or **All dates**, so you can cancel a single meeting without touching the rest of the series.
 :::
 
 ## Subscribing to the Calendar

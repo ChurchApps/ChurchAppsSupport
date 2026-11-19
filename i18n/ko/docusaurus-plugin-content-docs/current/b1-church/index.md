@@ -11,6 +11,10 @@ B1.church는 교회의 교인을 위한 포털입니다. 교인들이 교회와 
 
 </div>
 
+## 교육 영상 {#training-video}
+
+<YouTube id="yiKP0zuJMVU" title="B1.church 성도용 안내" next="B1.church 및 교인 포털에 로그인하기" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 교인이 B1.church 사이트를 방문하면 교회의 브랜딩, 탐색 링크, 콘텐츠 페이지가 포함된 공개 웹사이트가 보입니다. 로그인하면 개인 교회 도구가 모두 모여 있는 **Member Portal**을 이용할 수 있습니다.
 
 ## 주요 기능

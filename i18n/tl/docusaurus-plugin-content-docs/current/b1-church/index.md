@@ -11,6 +11,10 @@ Ang B1.church ang portal para sa mga miyembro ng iyong simbahan. Dito pumupunta 
 
 </div>
 
+## Training Video {#training-video}
+
+<YouTube id="yiKP0zuJMVU" title="B1.church para sa Iyong mga Miyembro" next="Pag-log In at Pag-install ng B1.church App" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 Kapag bumisita ang mga miyembro sa iyong B1.church site, makikita nila ang pampublikong website ng iyong simbahan na may iyong branding, mga navigation link, at mga content page. Pagkatapos mag-log in, maaari nilang i-access ang **Member Portal** kung saan nasa iisang lugar ang lahat ng kanilang personal na tool ng simbahan.
 
 ## Mga Pangunahing Feature

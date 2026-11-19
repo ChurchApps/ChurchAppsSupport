@@ -53,11 +53,11 @@ Un indicatore pulsante **In attesa di conferma** mostra che FreePlay sta verific
 
 ## Accesso con il telefono (solo codice QR) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive** e **Go Curriculum** usano un accesso con codice QR leggermente diverso, senza alcun codice da digitare:
+**Dropbox**, **OneDrive** e **GO! Curriculum** usano un accesso con codice QR leggermente diverso, senza alcun codice da digitare:
 
 1. Seleziona la scheda del provider nella schermata **Provider di contenuti**
 2. FreePlay mostra una schermata **Collegati a** con il nome del provider e un codice QR
-3. Scansiona il codice QR con il telefono e accedi al tuo account presso quel provider (il tuo account Microsoft per OneDrive, oppure il tuo account gocurriculum.com per Go Curriculum)
+3. Scansiona il codice QR con il telefono e accedi al tuo account presso quel provider (il tuo account Microsoft per OneDrive, oppure il tuo account gocurriculum.com per GO! Curriculum)
 4. Approva l'accesso. La TV si collega automaticamente e mostra **Collegato!**
 
 La schermata mostra quanti minuti hai a disposizione per completare l'accesso.

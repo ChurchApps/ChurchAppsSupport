@@ -13,7 +13,7 @@ I piani di servizio organizzano chi serve e quando. Ogni piano è legato a una d
 
 ## Video di formazione {#training-video}
 
-<YouTube id="47DstBXKl74" title="Creare piani e pianificare i volontari in B1" next="Creare l'ordine del servizio e la libreria dei canti in B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Creare piani e pianificare i volontari in B1" next="Creare l'ordine del servizio e la libreria dei canti in B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
@@ -141,7 +141,7 @@ I volontari che non hanno ancora confermato trovano i pulsanti **Accetta** e **R
 
 ### Promemoria via SMS {#text-reminders}
 
-L'opzione **SMS** compare solo quando la tua chiesa ha collegato un fornitore di SMS. Gli SMS vengono inviati tramite il fornitore di SMS della tua chiesa, e ogni messaggio può comportare un costo per la chiesa. Un volontario riceve un promemoria via SMS solo se ha attivato **Messaggi di testo** nelle sue [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md) e ha un numero di cellulare nel suo profilo. Ogni SMS inizia con il nome della tua chiesa, è contenuto in un unico messaggio e termina con "Rispondi STOP per disiscriverti." Chi risponde STOP smette di ricevere SMS dalla tua chiesa. Perché le risposte STOP arrivino a B1, incolla l'**URL del webhook per i messaggi in arrivo (STOP)** dalle tue [impostazioni SMS](../settings/church-settings.md#texting) nel webhook dei messaggi in arrivo del tuo fornitore.
+L'opzione **SMS** compare solo quando la tua chiesa ha collegato un fornitore di SMS. Gli SMS vengono inviati tramite il fornitore di SMS della tua chiesa, e ogni messaggio può comportare un costo per la chiesa. Un volontario riceve un promemoria via SMS solo se ha attivato **Messaggi di testo** nelle sue [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md) e ha un numero di cellulare nel suo profilo. Il personale con il permesso di inviare SMS può attivare **Promemoria via SMS** per un volontario dalla [scheda](../people/adding-people.md#text-reminders) del volontario. Ogni SMS inizia con il nome della tua chiesa, è contenuto in un unico messaggio e termina con "Rispondi STOP per disiscriverti." Chi risponde STOP smette di ricevere SMS dalla tua chiesa. Perché le risposte STOP arrivino a B1, incolla l'**URL del webhook per i messaggi in arrivo (STOP)** dalle tue [impostazioni SMS](../settings/church-settings.md#texting) nel webhook dei messaggi in arrivo del tuo fornitore.
 
 Per inviare subito un SMS a tutti i programmati in un intervallo di date, usa **Invia SMS ai volontari** nella [Panoramica dei piani](./plans-overview.md#texting-everyone-scheduled).
 

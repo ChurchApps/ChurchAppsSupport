@@ -57,7 +57,7 @@ Remplissez ensuite le formulaire :
 
 1. **Diffuser** - Choisissez ce qui sera diffusé :
    - **Listes de lecture** - Toute liste de lecture que vous avez créée
-   - **Plans de service** - Un type de plan de B1 Admin, marqué **(plan en cours)**. L'écran diffuse chaque semaine le plan en cours pour ce type de plan, y compris les leçons Go Curriculum (y compris les leçons personnalisées), qui utilisent le compte Go lié au ministère du type de plan
+   - **Plans de service** - Un type de plan de B1 Admin, marqué **(plan en cours)**. L'écran diffuse chaque semaine le plan en cours pour ce type de plan, y compris les leçons GO! Curriculum (y compris les leçons personnalisées), qui utilisent le compte Go lié au ministère du type de plan
    - **Dossier de fournisseur…** - Ouvre **Choisir un dossier de fournisseur**. Parcourez jusqu'à un dossier et cliquez sur **Utiliser ce dossier**. Pour en choisir un autre plus tard, cliquez sur **Modifier**
 2. **Répétition** - Sélectionnez les jours de la semaine où cette planification sera diffusée. Pour une seule date à la place, activez **Une fois** et choisissez la **Date**.
 3. **Début** et **Fin** - Les heures de début et de fin de la planification.

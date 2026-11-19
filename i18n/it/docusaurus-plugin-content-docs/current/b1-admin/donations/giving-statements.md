@@ -54,6 +54,12 @@ Genera le ricevute all'inizio di gennaio, quando i registri sono ancora freschi.
 Le ricevute di donazione includono solo le donazioni assegnate a fondi con l'impostazione **Fiscalmente deducibile** attiva. Se un fondo non è contrassegnato come fiscalmente deducibile, le sue donazioni non compariranno nella ricevuta. Puoi gestire questa impostazione nella pagina [Fondi](funds.md).
 :::
 
+## Memo delle donazioni sulle ricevute {#gift-memos-on-statements}
+
+Ogni ricevuta elenca ogni donazione con data, metodo, fondo e importo. Quando almeno una donazione di una ricevuta ha un **Memo**, dopo il fondo viene aggiunta una colonna **Memo**, così il donatore può vedere a cosa serviva ciascuna donazione. Le ricevute senza memo mantengono la disposizione a quattro colonne. Le **Note** di una donazione sono interne e non compaiono mai su una ricevuta. I file CSV nello ZIP includono il memo come ultima colonna.
+
+Per indicare una finalità sulla ricevuta, inseriscila come **Memo** della donazione quando [registri la donazione](recording-donations.md), oppure assegnala a un proprio [fondo](funds.md) se vuoi che venga totalizzata separatamente.
+
 ## Formati di ricevuta per Canada, Australia e Nuova Zelanda {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Le chiese al di fuori degli Stati Uniti possono passare alla disposizione ufficiale di ricevuta del proprio paese. Fai clic su **Formato ricevuta** in cima alla pagina Ricevute di donazione (oppure vai su **Impostazioni** e apri la sezione **Donazioni**), e imposta **Formato ricevuta** (che parte da **Standard**) su **Canada - ricevuta ufficiale CRA**, **Australia** oppure **Nuova Zelanda**, poi compila i campi che compaiono: il tuo numero di registrazione (**Numero di registrazione CRA**, **ABN** oppure **Numero di registrazione di beneficenza NZ**), l'**Indirizzo dell'organizzazione**, il **Nome del firmatario autorizzato** e, per il Canada, la **Città di emissione**. Fai clic su **Salva**.

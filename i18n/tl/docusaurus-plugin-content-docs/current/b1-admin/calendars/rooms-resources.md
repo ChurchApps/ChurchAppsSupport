@@ -35,11 +35,13 @@ Ang mga kuwarto ay pisikal na espasyong maaaring i-reserve kasabay ng mga calend
 4. Magtakda ng **Approval Group** kung kailangan ng pirma sa mga booking. Awtomatikong naaaprubahan ang mga booking na ginawa ng mga miyembro ng grupong iyon; ang booking ng iba ay maghihintay bilang **Pending** hanggang maaprubahan ito sa [Approvals](./approvals.md) page, at makakatanggap ng email ang mga miyembro ng grupo tungkol sa mga bagong kahilingan. Iwanan sa **No approval needed** para awtomatikong maaprubahan ang bawat booking.
 5. I-click ang **Save**.
 
-Ipinapakita ng listahan ng Rooms ang **Room Name**, **Capacity**, at **Approval Group** ng bawat kuwarto.
+Ipinapakita ng listahan ng Rooms ang **Room Name**, **Capacity**, at **Approval Group** ng bawat kuwarto. Ang mga kuwartong naka-off ay may badge na **Inactive** sa tabi ng pangalan nila.
 
 ### Pag-edit o Pagbura ng Kuwarto {#editing-or-deleting-a-room}
 
 I-hover ang isang kuwarto at i-click ang **Edit**, gawin ang mga pagbabago, at i-click ang **Save**. Gamitin ang **Delete** para permanenteng alisin ang kuwarto.
+
+Kung sarado ang isang kuwarto nang ilang panahon -- renovation, season, o walang nakatakdang petsa ng pagbabalik -- i-off ang switch na **Active** nito at i-click ang **Save** sa halip na burahin ito. Pinananatili ng inactive na kuwarto ang mga detalye nito at bawat nakaraang booking, ngunit hindi na ito lumalabas sa mga listahan ng kuwarto kapag may nagsisiskedyul ng event o humihiling ng kuwarto. I-on muli ang switch para maging available ulit ito sa pag-book. Mas mainam ang blockout kapag sarado ang kuwarto sa partikular na mga petsa, dahil nananatili ang kuwarto sa listahan at nagbababala ito tungkol sa mga booking sa mga petsang iyon.
 
 ## Mga Resource {#resources}
 
@@ -53,7 +55,7 @@ Ang mga resource ay mga gamit na maaaring i-book kasama ng isang event -- AV equ
 4. Magtakda ng **Approval Group** kung may kailangang pumirma sa paghiram ng resource. Pareho itong gumagana sa mga kuwarto.
 5. I-click ang **Save**.
 
-I-edit o burahin ang resource sa parehong paraan ng kuwarto.
+I-edit o burahin ang resource sa parehong paraan ng kuwarto. Mayroon ding switch na **Active** ang resource: i-off ito para alisin ang resource sa mga listahan ng resource nang hindi nawawala ang mga detalye o nakaraang booking nito.
 
 ## Mga Blockout {#blockouts}
 

@@ -54,6 +54,12 @@ Erstellen Sie Ihre Bescheinigungen früh im Januar, solange Ihre Unterlagen noch
 Spendenbescheinigungen enthalten nur Spenden, die Fonds zugeordnet sind, bei denen die Einstellung **Steuerlich absetzbar** aktiviert ist. Ist ein Fonds nicht als steuerlich absetzbar markiert, erscheinen seine Spenden nicht in der Bescheinigung. Diese Einstellung verwalten Sie auf der Seite [Fonds](funds.md).
 :::
 
+## Memos zu Gaben auf den Bescheinigungen {#gift-memos-on-statements}
+
+Jede Bescheinigung listet jede Gabe mit Datum, Art, Fonds und Betrag auf. Hat mindestens eine Gabe einer Bescheinigung ein **Memo**, wird nach dem Fonds eine Spalte **Memo** hinzugefügt, damit Spendende sehen, wofür jede Gabe bestimmt war. Bescheinigungen ohne Memos behalten das Layout mit vier Spalten. Die **Notizen** einer Gabe sind intern und erscheinen nie auf einer Bescheinigung. Die CSV-Dateien im ZIP enthalten das Memo als letzte Spalte.
+
+Um einen Verwendungszweck auf die Bescheinigung zu bringen, geben Sie ihn beim [Erfassen der Spende](recording-donations.md) als **Memo** der Gabe ein, oder geben Sie ihm einen eigenen [Fonds](funds.md), wenn er separat summiert werden soll.
+
 ## Belegformate für Kanada, Australien und Neuseeland {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Kirchen außerhalb der Vereinigten Staaten können die Bescheinigung auf das offizielle Belegformat ihres Landes umstellen. Klicken Sie oben auf der Seite Spendenbescheinigungen auf **Bescheinigungsformat** (oder öffnen Sie unter **Einstellungen** den Bereich **Spenden**) und setzen Sie **Bescheinigungsformat** (das mit **Standard** beginnt) auf **Kanada – CRA-offizieller Beleg**, **Australien** oder **Neuseeland**. Füllen Sie dann die erscheinenden Felder aus: Ihre Registrierungsnummer (**CRA-Registrierungsnummer**, **ABN** oder **NZ-Registrierungsnummer für Wohltätigkeitsorganisationen**), **Adresse der Organisation**, **Name des Unterzeichnungsberechtigten** und für Kanada den **Ausstellungsort**. Klicken Sie auf **Speichern**.

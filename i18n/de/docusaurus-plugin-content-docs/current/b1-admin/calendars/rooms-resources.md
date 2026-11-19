@@ -35,11 +35,13 @@ Räume sind physische Flächen, die zusammen mit Kalenderereignissen reserviert 
 4. Legen Sie eine **Genehmigungsgruppe** fest, wenn Buchungen einer Freigabe bedürfen. Buchungen von Mitgliedern dieser Gruppe werden automatisch genehmigt; jede andere Buchung wartet als **Ausstehend**, bis sie auf der Seite [Genehmigungen](./approvals.md) bestätigt wird, und die Mitglieder der Gruppe erhalten eine E-Mail zu neuen Anfragen. Lassen Sie es auf **Keine Genehmigung erforderlich**, um jede Buchung automatisch zu genehmigen.
 5. Klicken Sie auf **Speichern**.
 
-Die Liste der Räume zeigt für jeden Raum den **Raumnamen**, die **Kapazität** und die **Genehmigungsgruppe**.
+Die Liste der Räume zeigt für jeden Raum den **Raumnamen**, die **Kapazität** und die **Genehmigungsgruppe**. Ausgeschaltete Räume zeigen neben ihrem Namen ein Abzeichen **Inaktiv**.
 
 ### Einen Raum bearbeiten oder löschen {#editing-or-deleting-a-room}
 
 Fahren Sie mit der Maus über einen Raum und klicken Sie auf **Bearbeiten**, nehmen Sie Ihre Änderungen vor und klicken Sie auf **Speichern**. Mit **Löschen** entfernen Sie einen Raum dauerhaft.
+
+Wenn ein Raum für eine Weile geschlossen ist – etwa wegen einer Renovierung, einer Saison oder ohne festes Rückgabedatum –, schalten Sie seinen Schalter **Aktiv** aus und klicken Sie auf **Speichern**, statt ihn zu löschen. Ein inaktiver Raum behält seine Angaben und alle früheren Buchungen, erscheint aber nicht mehr in den Raumlisten, wenn jemand ein Ereignis plant oder einen Raum anfragt. Schalten Sie den Schalter wieder ein, um den Raum erneut buchbar zu machen. Eine Sperrung ist besser, wenn der Raum an bestimmten Daten geschlossen ist, denn dann bleibt der Raum in der Liste und es wird vor Buchungen an diesen Daten gewarnt.
 
 ## Ressourcen {#resources}
 
@@ -53,7 +55,7 @@ Ressourcen sind Gegenstände, die zusammen mit einem Ereignis gebucht werden kö
 4. Legen Sie eine **Genehmigungsgruppe** fest, wenn jemand die Ausleihe von Ressourcen freigeben muss. Dies funktioniert wie bei Räumen.
 5. Klicken Sie auf **Speichern**.
 
-Bearbeiten oder löschen Sie eine Ressource auf die gleiche Weise wie einen Raum.
+Bearbeiten oder löschen Sie eine Ressource auf die gleiche Weise wie einen Raum. Eine Ressource hat außerdem einen Schalter **Aktiv**: Schalten Sie ihn aus, um sie aus den Ressourcenlisten zu entfernen, ohne ihre Angaben oder frühere Buchungen zu verlieren.
 
 ## Sperrungen {#blockouts}
 

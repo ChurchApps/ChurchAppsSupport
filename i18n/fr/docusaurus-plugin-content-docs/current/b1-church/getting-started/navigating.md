@@ -41,7 +41,7 @@ Ouvrir `https://yourchurchname.b1.church/mobile` vous mène au tableau de bord *
 
 Les sections Service, Groupes, Présences, Formulaires et Dons n'apparaissent que lorsque vous êtes connecté, que votre église a activé cet outil et que vous avez quelque chose à afficher — par exemple une affectation à venir ou au moins un groupe. Sur ordinateur, l'accueil est disposé en deux colonnes.
 
-Si vous êtes déconnecté, l'accueil affiche un titre **Bienvenue** à la place de la salutation, avec une courte invitation (« Connectez-vous pour voir vos groupes, vos dons et plus encore. ») et un bouton **Se connecter**. Cette invitation s'affiche même si votre église n'a encore rien configuré pour l'accueil. Votre église peut reformuler cette invitation ou la masquer -- voir [Paramètres de l'application mobile](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Lorsqu'elle est masquée, vous pouvez toujours vous connecter depuis la page **Plus** ou la page **Moi**.
+Si vous êtes déconnecté, l'accueil affiche un titre **Bienvenue** à la place de la salutation et, sous **Événements à venir**, jusqu'à trois événements à venir de l'église qui acceptent les inscriptions, chacun avec un lien **S'inscrire** (ainsi qu'un lien **Tous les événements à venir** vers l'écran **Groupes** s'il y en a davantage). Il affiche aussi une courte invitation (« Connectez-vous pour voir vos groupes, vos dons et plus encore. ») et un bouton **Se connecter**. Cette invitation s'affiche même si votre église n'a encore rien configuré pour l'accueil. Votre église peut reformuler cette invitation ou la masquer -- voir [Paramètres de l'application mobile](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Lorsqu'elle est masquée, vous pouvez toujours vous connecter depuis la page **Plus** ou la page **Moi**.
 
 ## La barre d'onglets inférieure {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ Les écrans intégrés (comme Groupes, Dons ou Plans) obtiennent d'abord les emp
 
 ### Onglets dossiers {#folder-tabs}
 
-Votre église peut regrouper plusieurs onglets dans un **dossier**. Un dossier apparaît comme n'importe quel autre onglet -- dans la barre d'onglets, sur la page **Plus** ou sous forme de vignette photo sur l'accueil -- et son ouverture affiche un écran portant le nom du dossier, qui liste les onglets qu'il contient. Si chaque onglet du dossier a une photo, ils sont affichés sous forme de vignettes photo ; sinon, ils sont affichés sous forme de liste. Les liens vers des sites externes dans un dossier s'ouvrent dans un nouvel onglet du navigateur. Les onglets d'un dossier n'apparaissent que sur l'écran du dossier, et non dans la barre d'onglets ou sur la page **Plus**. Un dossier sans rien de visible pour vous est masqué.
+Votre église peut regrouper plusieurs onglets dans un **dossier**. Un dossier apparaît comme n'importe quel autre onglet -- dans la barre d'onglets, sur la page **Plus** ou sous forme de vignette photo sur l'accueil -- et son ouverture affiche un écran portant le nom du dossier, qui liste les onglets qu'il contient. Les onglets qui ont une photo sont affichés en premier, chacun sous forme de bannière photo pleine largeur, et les onglets sans photo sont listés en dessous. Les liens vers des sites externes dans un dossier s'ouvrent dans un nouvel onglet du navigateur. Les onglets d'un dossier n'apparaissent que sur l'écran du dossier, et non dans la barre d'onglets ou sur la page **Plus**. Un dossier sans rien de visible pour vous est masqué.
 
 ## Sur ordinateur {#on-a-computer}
 

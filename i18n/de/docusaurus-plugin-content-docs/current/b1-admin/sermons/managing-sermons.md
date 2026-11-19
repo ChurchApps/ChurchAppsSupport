@@ -62,7 +62,7 @@ Jeder Predigteintrag kann Folgendes enthalten:
 - **Vorschaubild** -- Ein Vorschaubild, das in Ihrer Predigtbibliothek angezeigt wird. Klicken Sie auf das Bild, um es zuzuschneiden oder zu ersetzen (16:9).
 - **Titel** -- Der Predigtname, der Besuchern angezeigt wird
 - **Beschreibung** -- Eine Zusammenfassung des Predigtinhalts
-- **Audiodatei-URL (für Podcast)** -- Ein direkter Link zu einer MP3- oder M4A-Datei für diese Predigt. Fügen Sie entweder eine URL ein oder klicken Sie, sobald die Predigt gespeichert ist, auf **Audio hochladen**, um eine Datei hochzuladen und das Feld automatisch auszufüllen. In Ihren Podcast-Feed werden nur Predigten aufgenommen, bei denen dieses Feld (oder ein direkter Link zu einer Videodatei) gesetzt ist.
+- **Audiodatei-URL (für Podcast)** -- Ein direkter Link zu **einer** MP3- oder M4A-Datei für diese Predigt. Hier gehört keine Feed-Adresse eines Podcasts hin; ein dort eingefügter Feed wird nicht abgespielt. Um einen ganzen Podcast zu übernehmen, verwenden Sie den [Massenimport](./bulk-import.md#importing-podcast-episodes). Fügen Sie entweder eine URL ein oder klicken Sie, sobald die Predigt gespeichert ist, auf **Audio hochladen**, um eine Datei hochzuladen und das Feld automatisch auszufüllen. In Ihren Podcast-Feed werden nur Predigten aufgenommen, bei denen dieses Feld (oder ein direkter Link zu einer Videodatei) gesetzt ist.
 
 ## Ihr Podcast-Feed {#your-podcast-feed}
 

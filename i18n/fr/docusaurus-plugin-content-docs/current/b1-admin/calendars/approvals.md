@@ -54,6 +54,10 @@ Les événements demandés par les membres (par exemple depuis **Mes demandes** 
 Configurez un Groupe d'approbation sur une salle dans [Salles et ressources](./rooms-resources.md) pour exiger une approbation pour cette salle. Les groupes qui y ont accès peuvent alors demander la salle lors de la création d'événements, et ces demandes arrivent sur cette page.
 :::
 
+## Changer le demandeur d'une demande {#changing-who-a-request-is-for}
+
+Si vous avez saisi une demande au nom d'un membre, par exemple lorsqu'il a appelé le bureau, elle est listée à votre nom. Cliquez sur l'icône d'échange à côté du nom sous **Demandé par** (dans l'une ou l'autre section, sur **En attente** ou **Historique**), recherchez le membre et cliquez sur **Déplacer vers cette personne**. La demande entière est déplacée : la demande d'événement et chaque réservation de salle et de ressource qui s'y rattache. Le membre reçoit alors la notification d'approbation ou de refus, voit la demande sous **Mes demandes** dans l'application B1, et elle apparaît dans la section des demandes de sa fiche personne. Déplacer une demande ne change pas son statut d'approbation.
+
 ## Historique {#history}
 
 Les demandes approuvées et refusées restent sur la page. Cliquez sur **Historique** en haut des Approbations pour les voir ; cliquez sur **En attente** pour revenir aux demandes ouvertes.

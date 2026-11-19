@@ -13,7 +13,7 @@ Planvorlagen speichern eine wiederverwendbare Momentaufnahme der Gottesdienstord
 
 ## Schulungsvideo {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Planvorlagen, Aufgaben und Workflows in B1" next="Kalender, Veranstaltungen und Raumbuchungen in B1 erstellen" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Planvorlagen, Aufgaben und Workflows in B1" next="Kalender, Veranstaltungen und Raumbuchungen in B1 erstellen" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>

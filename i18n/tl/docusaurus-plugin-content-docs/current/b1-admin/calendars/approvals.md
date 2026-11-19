@@ -54,6 +54,10 @@ Ang mga event na hinihiling ng mga miyembro (halimbawa, mula sa **My Requests** 
 Mag-set up ng Approval Group sa isang kuwarto sa [Rooms & Resources](./rooms-resources.md) para mangailangan ng approval para sa kuwartong iyon. Maaaring humiling ng kuwarto ang mga grupong may access kapag gumagawa ng event, at dumadaloy ang mga kahilingang iyon sa pahinang ito.
 :::
 
+## Pagpapalit ng Taong Pinagkakahilingan {#changing-who-a-request-is-for}
+
+Kung naglagay ka ng kahilingan para sa isang miyembro, halimbawa noong tumawag siya sa opisina, nakalista ito sa ilalim ng pangalan mo. I-click ang swap icon sa tabi ng pangalan sa ilalim ng **Requested by** (sa alinmang seksyon, sa **Pending** o **History**), hanapin ang miyembro, at i-click ang **Move to this person**. Ang buong kahilingan ay lilipat: ang event request at bawat booking ng kuwarto at resource dito. Matatanggap ng miyembro ang notification ng approve o reject, makikita niya ang kahilingan sa ilalim ng **My Requests** sa B1 app, at lalabas ito sa seksyon ng mga kahilingan sa kanyang person record. Ang paglipat ng kahilingan ay hindi nagbabago kung naaprubahan ito o hindi.
+
 ## History {#history}
 
 Nananatili sa pahina ang mga naaprubahan at na-reject na kahilingan. I-click ang **History** sa itaas ng Approvals para makita ang mga ito; i-click ang **Pending** para bumalik sa mga bukas na kahilingan.

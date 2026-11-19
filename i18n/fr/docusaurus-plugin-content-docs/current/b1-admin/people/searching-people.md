@@ -55,7 +55,7 @@ Dans la vue **Tableau**, les personnes sont classées par nom de famille, puis p
 1. Cliquez sur un **en-tête de colonne** (par exemple **Nom** ou **Courriel**) pour trier selon cette colonne.
 2. Cliquez de nouveau sur le même en-tête pour inverser l'ordre du tri.
 
-Le premier clic trie la colonne par ordre croissant (de A à Z, du plus jeune au plus âgé, date la plus ancienne en premier), et la flèche à côté de l'en-tête indique le sens du tri. Les personnes sans valeur dans cette colonne sont toujours placées en dernier. Vous pouvez ainsi facilement retrouver des personnes par ordre alphabétique, par âge ou selon n'importe quelle autre colonne visible.
+Le premier clic trie la colonne par ordre croissant (de A à Z, du plus jeune au plus âgé, date la plus ancienne en premier), et la flèche à côté de l'en-tête indique le sens du tri. Les personnes sans valeur dans cette colonne sont toujours placées en dernier. Vous pouvez ainsi facilement retrouver des personnes par ordre alphabétique, par âge ou selon n'importe quelle autre colonne visible. B1 mémorise le tri sur cet appareil, de sorte que le tableau reste trié de la même façon après un rafraîchissement de la page ou lorsque vous revenez plus tard.
 
 ## Personnaliser les colonnes {#customizing-columns}
 
@@ -77,6 +77,7 @@ Toutes les informations n'ont pas besoin d'être visibles en même temps. Vous p
 ### Afficher les champs personnalisés en colonnes {#showing-custom-fields-as-columns}
 
 Le sélecteur de colonnes comporte deux onglets : **Standard** regroupe les colonnes intégrées présentées ci-dessus, et **Personnalisé** regroupe les [champs personnalisés](../settings/custom-fields.md) de votre église ainsi que les questions de tous les formulaires liés aux personnes. Cochez un champ personnalisé dans l'onglet **Personnalisé** pour l'ajouter comme colonne : la valeur de chaque personne pour ce champ apparaît alors dans le tableau. Les valeurs sont affichées de la même façon que sur la fiche de la personne : les champs Oui/Non affichent *Oui* ou *Non*, les champs à choix multiple affichent le libellé de l'option, et les dates sont affichées au format court. Les personnes sans valeur pour ce champ ont une cellule vide.
+
 
 ## Exporter les résultats de recherche {#exporting-search-results}
 

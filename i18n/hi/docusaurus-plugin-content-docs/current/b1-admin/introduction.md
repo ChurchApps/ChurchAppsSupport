@@ -13,7 +13,7 @@ B1.church चुनने के लिए धन्यवाद! यह पर�
 
 ## ट्रेनिंग वीडियो {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="What Is B1.church?" />
+<YouTube id="zS64eorbKUQ" title="What Is B1.church?" next="B1.church for Your Members" nextUrl="/docs/b1-church" />
 
 और सहायता के लिए, कृपया [support@churchapps.org](mailto:support@churchapps.org) पर ईमेल करें।
 

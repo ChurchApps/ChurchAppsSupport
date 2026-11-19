@@ -65,7 +65,7 @@ For å endre et medlems navn eller e-post klikker du på redigeringsikonet på r
 2. Finn personen i listen **Medlemmer**.
 3. Klikk på slettikonet på raden deres og bekreft.
 
-Menigheten din må alltid ha minst én domeneadministrator, så den siste medlemmen av **Domeneadministratorer** kan ikke fjernes.
+Menigheten din må alltid ha minst én domeneadministrator, så den siste medlemmen av **Domeneadministratorer** kan ikke fjernes. B1 viser «At least one Domain Admin is required. Add another Domain Admin before removing this one.» Den eneste domeneadministratoren kan heller ikke forlate menigheten eller slette sin egen konto før noen andre er lagt til i **Domeneadministratorer**.
 
 ## Konfigurere tillatelser {#configuring-permissions}
 

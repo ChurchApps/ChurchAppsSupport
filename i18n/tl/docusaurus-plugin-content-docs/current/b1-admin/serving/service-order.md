@@ -14,7 +14,7 @@ Tinutukoy ng service order ang pagkakasunod-sunod ng mga elemento sa iyong worsh
 
 ## Training Video {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Pagbuo ng Service Order at Song Library sa B1" next="Mga Plan Template, Tasks, at Workflows sa B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Pagbuo ng Service Order at Song Library sa B1" next="Mga Plan Template, Tasks, at Workflows sa B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>

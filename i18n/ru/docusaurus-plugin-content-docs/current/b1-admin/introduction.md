@@ -13,7 +13,7 @@ description: "Рассказываем, как войти в B1 Admin, найт�
 
 ## Обучающее видео {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="Что такое B1.church?" />
+<YouTube id="zS64eorbKUQ" title="Что такое B1.church?" next="B1.church для участников" nextUrl="/docs/b1-church" />
 
 По дополнительным вопросам пишите на [support@churchapps.org](mailto:support@churchapps.org).
 

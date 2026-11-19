@@ -35,11 +35,13 @@ Salas são espaços físicos que podem ser reservados junto com eventos do calen
 4. Defina um **Grupo de Aprovação** se as reservas precisarem de autorização. As reservas feitas por membros desse grupo são aprovadas automaticamente; as de qualquer outra pessoa ficam **Pendentes** até serem aprovadas na página de [Aprovações](./approvals.md), e os membros do grupo recebem um e-mail sobre as novas solicitações. Deixe em **Não precisa de aprovação** para aprovar todas as reservas automaticamente.
 5. Clique em **Salvar**.
 
-A lista de Salas mostra o **Nome da Sala**, a **Capacidade** e o **Grupo de Aprovação** de cada sala.
+A lista de Salas mostra o **Nome da Sala**, a **Capacidade** e o **Grupo de Aprovação** de cada sala. Salas desativadas exibem um selo **Inativa** ao lado do nome.
 
 ### Editando ou Excluindo uma Sala {#editing-or-deleting-a-room}
 
 Passe o cursor sobre uma sala e clique em **Editar**, faça as alterações e clique em **Salvar**. Use **Excluir** para remover uma sala permanentemente.
+
+Se uma sala ficar fechada por um tempo -- para uma reforma, uma temporada ou sem data prevista de retorno --, desative a chave **Ativo** e clique em **Salvar** em vez de excluí-la. Uma sala inativa mantém os seus dados e todas as reservas anteriores, mas deixa de aparecer nas listas de salas quando alguém agenda um evento ou solicita uma sala. Ative a chave novamente para torná-la reservável outra vez. Um bloqueio é melhor quando a sala está fechada em datas específicas, porque ela continua na lista e avisa sobre as reservas nessas datas.
 
 ## Recursos {#resources}
 
@@ -53,7 +55,7 @@ Recursos são itens que podem ser reservados junto com um evento -- equipamentos
 4. Defina um **Grupo de Aprovação** se alguém precisar autorizar o empréstimo de recursos. Funciona da mesma forma que para as salas.
 5. Clique em **Salvar**.
 
-Edite ou exclua um recurso da mesma forma que uma sala.
+Edite ou exclua um recurso da mesma forma que uma sala. Um recurso também tem uma chave **Ativo**: desative-a para retirá-lo das listas de recursos sem perder os seus dados nem as reservas anteriores.
 
 ## Bloqueios {#blockouts}
 

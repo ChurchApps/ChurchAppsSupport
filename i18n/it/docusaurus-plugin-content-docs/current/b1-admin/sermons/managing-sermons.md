@@ -62,7 +62,7 @@ Ogni voce di predica può includere:
 - **Miniatura** -- Un'immagine di anteprima mostrata nella tua libreria delle predicazioni. Fai clic sull'immagine per ritagliarla o sostituirla (16:9).
 - **Titolo** -- Il nome della predica mostrato ai visitatori
 - **Descrizione** -- Un riepilogo del contenuto della predica
-- **URL del file audio (per il podcast)** -- Un collegamento diretto a un file MP3/M4A per questa predica. Puoi incollare un URL oppure, una volta salvata la predica, fare clic su **Carica audio** per caricare un file e compilare il campo automaticamente. Solo le predicazioni con questo campo (o con un collegamento diretto a un file video) compilato sono incluse nel tuo feed podcast.
+- **URL del file audio (per il podcast)** -- Un collegamento diretto a **un** file MP3/M4A per questa predica. Non è il posto per l'indirizzo del feed di un podcast: un feed incollato qui non viene riprodotto. Per importare un intero podcast, usa [Importazione in blocco](./bulk-import.md#importing-podcast-episodes). Puoi incollare un URL oppure, una volta salvata la predica, fare clic su **Carica audio** per caricare un file e compilare il campo automaticamente. Solo le predicazioni con questo campo (o con un collegamento diretto a un file video) compilato sono incluse nel tuo feed podcast.
 
 ## Il tuo feed podcast {#your-podcast-feed}
 

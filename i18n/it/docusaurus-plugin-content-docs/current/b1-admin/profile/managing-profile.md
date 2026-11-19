@@ -112,7 +112,7 @@ L'eliminazione dell'account -- immediata oppure approvata dalla tua chiesa -- è
 :::
 
 :::info
-Se sei un **Amministratore di dominio**, assicurati di trasferire le responsabilità amministrative a un altro utente prima di eliminare il tuo account. Vedi [Ruoli e permessi](../settings/roles-permissions.md) per i dettagli sulla gestione dei ruoli amministrativi.
+Se sei l'unico **Amministratore di dominio** della tua chiesa, B1 non eliminerà il tuo account. Mostra il messaggio "Sei l'unico Amministratore di dominio per *chiesa*. Rendi un altro utente Amministratore di dominio prima di eliminare il tuo account." Aggiungi prima un altro utente agli **Amministratori di dominio**. Vedi [Ruoli e permessi](../settings/roles-permissions.md) per i dettagli sulla gestione dei ruoli amministrativi.
 :::
 
 :::info

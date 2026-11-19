@@ -53,11 +53,11 @@ description: "QR 코드, 이메일 로그인 또는 원클릭 액세스로 FreeP
 
 ## 휴대폰 로그인(QR 코드 전용) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive**, **Go Curriculum**은 입력할 코드 없이 약간 다른 QR 코드 로그인을 사용합니다:
+**Dropbox**, **OneDrive**, **GO! Curriculum**은 입력할 코드 없이 약간 다른 QR 코드 로그인을 사용합니다:
 
 1. **콘텐츠 제공자** 화면에서 제공자 카드를 선택합니다
 2. FreePlay가 제공자 이름과 QR 코드가 표시된 **다음에 연결** 화면을 보여 줍니다
-3. 휴대폰으로 QR 코드를 스캔하고 해당 제공자의 계정으로 로그인합니다(OneDrive는 Microsoft 계정, Go Curriculum은 gocurriculum.com 계정)
+3. 휴대폰으로 QR 코드를 스캔하고 해당 제공자의 계정으로 로그인합니다(OneDrive는 Microsoft 계정, GO! Curriculum은 gocurriculum.com 계정)
 4. 액세스를 승인합니다. TV가 자동으로 연결되고 **연결됨!**을 표시합니다
 
 화면에는 로그인을 마치기까지 남은 시간(분)이 표시됩니다.

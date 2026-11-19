@@ -14,7 +14,7 @@ El orden del servicio define la secuencia de elementos de su servicio de adoraci
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Crear el orden del servicio y la biblioteca de canciones en B1" next="Plantillas de plan, tareas y flujos de trabajo en B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Crear el orden del servicio y la biblioteca de canciones en B1" next="Plantillas de plan, tareas y flujos de trabajo en B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Antes de empezar</h4>

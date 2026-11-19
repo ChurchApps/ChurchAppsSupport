@@ -82,7 +82,17 @@ Click **New Event** on the calendar detail page to add an event, or click an eve
 - **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](./rooms-resources.md). Once one is picked you can also add setup and teardown time or a custom reservation window -- see [Booking a Room or Resource](./availability.md#booking-a-room-or-resource).
 - **Reminders** -- Expand this section to send reminders before the event. See [Event Reminders](./event-reminders.md).
 
-**Group**, **Title**, **Start**, and **End** are required, and the end must be after the start. Click **Save**. If the event repeats, B1 asks you to confirm, because saving updates every occurrence in the series. To delete an event, open it in the editor and click **Delete**.
+**Group**, **Title**, **Start**, and **End** are required, and the end must be after the start. Click **Save**. To delete an event, open it in the editor and click **Delete**.
+
+### Changing One Date of a Recurring Event {#changing-one-date-of-a-recurring-event}
+
+When you click a date of a repeating event on the calendar and then **Edit**, saving or deleting asks which dates to change:
+
+- **Just this date** -- Only the date you clicked. On save, that date becomes its own one-time event with your changes, and the rest of the series stays as it was. On delete, only that date is removed.
+- **This and all following dates** -- The series ends the day before the date you clicked. On save, your changes start a new series from that date; on delete, the remaining dates are removed.
+- **All dates** -- The whole series, as before.
+
+The form shows the series' first date, but **Just this date** and **This and all following dates** move your time changes onto the date you clicked. A date that was split off keeps the series' rooms and resources, gets its own bookings, and doesn't copy the series' reminders. If you open a recurring event without picking a date (for example, from **Approvals**), B1 asks you to confirm instead, because saving updates every date in the series.
 
 ### Event Notes {#event-notes}
 

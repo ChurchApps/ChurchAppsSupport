@@ -70,6 +70,8 @@ El canal **Texto** solo aparece cuando su iglesia tiene conectado un proveedor d
 - Activaron los **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md), y
 - Tienen un número de teléfono móvil en su perfil.
 
+El personal con permiso para enviar mensajes de texto puede activar los **Recordatorios de texto** para una persona desde su [registro](../people/adding-people.md#text-reminders), en la línea debajo de su número de teléfono móvil. Cuando hace clic en **Enviar ahora** en un recordatorio que incluye **Texto**, B1 muestra cuántas personas recibieron el recordatorio y cuántas se omitieron, por ejemplo *Enviado a 2 personas · 1 con texto, 1 omitida*.
+
 Cada mensaje comienza con el nombre de su iglesia, se mantiene en un solo mensaje de texto y termina con "Responda STOP para darse de baja." Quien responda STOP deja de recibir mensajes de texto de su iglesia. Para que las respuestas STOP lleguen a B1, pegue la **URL del webhook de mensajes entrantes (STOP)** de su [configuración de mensajes de texto](../settings/church-settings.md#texting) en el webhook de mensajes entrantes de su proveedor.
 
 ## Lo que los miembros pueden controlar {#what-members-can-control}

@@ -13,7 +13,7 @@ Los planes de servicio organizan quién sirve y cuándo. Cada plan está vincula
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="47DstBXKl74" title="Crear planes y programar voluntarios en B1" next="Crear el orden del servicio y la biblioteca de canciones en B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Crear planes y programar voluntarios en B1" next="Crear el orden del servicio y la biblioteca de canciones en B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Antes de empezar</h4>
@@ -141,7 +141,7 @@ Los voluntarios que todavía no han confirmado reciben los botones **Aceptar** y
 
 ### Recordatorios por mensaje de texto {#text-reminders}
 
-La opción **Mensaje de texto** solo aparece cuando su iglesia tiene conectado un proveedor de mensajes de texto. Los mensajes se envían a través del proveedor de mensajes de texto de su iglesia, y cada mensaje puede tener un costo para la iglesia. Un voluntario solo recibe un recordatorio por mensaje de texto si activó **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md) y tiene un número de celular en su perfil. Cada mensaje comienza con el nombre de su iglesia, se mantiene en un solo mensaje de texto y termina con "Responda STOP para cancelar la suscripción." Quien responda STOP deja de recibir mensajes de texto de su iglesia. Para que las respuestas STOP lleguen a B1, pegue la **URL del webhook de entrada (STOP)** de su [configuración de mensajes de texto](../settings/church-settings.md#texting) en el webhook de mensajes entrantes de su proveedor.
+La opción **Mensaje de texto** solo aparece cuando su iglesia tiene conectado un proveedor de mensajes de texto. Los mensajes se envían a través del proveedor de mensajes de texto de su iglesia, y cada mensaje puede tener un costo para la iglesia. Un voluntario solo recibe un recordatorio por mensaje de texto si activó **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md) y tiene un número de celular en su perfil. El personal con permiso para enviar mensajes de texto puede activar los **Recordatorios de texto** para un voluntario desde su [registro](../people/adding-people.md#text-reminders). Cada mensaje comienza con el nombre de su iglesia, se mantiene en un solo mensaje de texto y termina con "Responda STOP para cancelar la suscripción." Quien responda STOP deja de recibir mensajes de texto de su iglesia. Para que las respuestas STOP lleguen a B1, pegue la **URL del webhook de entrada (STOP)** de su [configuración de mensajes de texto](../settings/church-settings.md#texting) en el webhook de mensajes entrantes de su proveedor.
 
 Para enviar un mensaje de texto a todas las personas programadas en un rango de fechas de inmediato, use **Enviar mensaje a voluntarios** en el [Resumen de planes](./plans-overview.md#texting-everyone-scheduled).
 

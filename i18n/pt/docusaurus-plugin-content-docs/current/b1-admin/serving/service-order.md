@@ -14,7 +14,7 @@ A ordem do culto define a sequência dos elementos do seu culto. Use-a para orga
 
 ## Vídeo de treinamento {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Montando a ordem do culto e a biblioteca de músicas no B1" next="Modelos de plano, tarefas e fluxos de trabalho no B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Montando a ordem do culto e a biblioteca de músicas no B1" next="Modelos de plano, tarefas e fluxos de trabalho no B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Antes de começar</h4>

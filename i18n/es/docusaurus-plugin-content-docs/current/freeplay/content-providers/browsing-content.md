@@ -46,9 +46,9 @@ La biblioteca de [Lessons.church](../../lessons-church/index.md) está organizad
 
 Presiona **Atrás** en cualquier nivel para subir un paso.
 
-## Explorar Go Curriculum
+## Explorar GO! Curriculum
 
-Después de [iniciar sesión con tu cuenta de gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum abre sus grupos de edad, **Elementary** y **Preschool**. Avanza por grupo de edad, luego por colección y después por lección, y selecciona una lección para abrir su pantalla de descarga.
+Después de [iniciar sesión con tu cuenta de gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), GO! Curriculum abre sus grupos de edad, **Elementary** y **Preschool**. Avanza por grupo de edad, luego por colección y después por lección, y selecciona una lección para abrir su pantalla de descarga.
 
 Lo que ves depende de tu membresía de Go:
 

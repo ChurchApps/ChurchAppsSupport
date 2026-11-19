@@ -115,7 +115,10 @@ Mettez ensuite à jour les variables du service **Api** pour que les liens dans 
 
 ```
 B1ADMIN_ROOT=https://admin.votreeglise.org
+B1APP_ROOT=https://app.votreeglise.org
 ```
+
+`B1APP_ROOT` est l'adresse du site des membres, utilisée pour les liens dans les courriels de plans, d'inscriptions et de rappels, ainsi que dans les notifications. Il peut aussi être un modèle comme `https://{subdomain}.votreeglise.org`. S'il n'est pas défini, ces liens pointent vers `https://{subdomain}.b1.church`.
 
 Et sur le service **B1Admin** :
 

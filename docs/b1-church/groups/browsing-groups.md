@@ -66,7 +66,7 @@ The **Groups** screen in the member portal lists the groups you belong to. The h
 - **Pending Requests** -- Groups you have asked to join that are waiting for a leader. See [Requesting to Join a Group](./join-requests.md).
 - **Upcoming Events** -- Church events that take registrations, each with a **Register** link. See [Registering for Events](../events/registering.md).
 
-Tap **Find a Group** to browse all of the church's groups. If you aren't in any groups yet, the screen says "No groups yet" with a **Browse groups** button; if you aren't signed in, it asks you to sign in to see your groups.
+Tap **Find a Group** to browse all of the church's groups. If you aren't in any groups yet, the screen says "No groups yet" with a **Browse groups** button; if you aren't signed in, it asks you to sign in to see your groups, but still lists the church's **Upcoming Events** that take registrations so you can register.
 
 ## Next Steps
 

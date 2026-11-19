@@ -115,7 +115,10 @@ SUPPORT_EMAIL=noreply@yourchurch.org
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT`는 회원 사이트의 주소이며, 계획, 등록, 알림 이메일과 알림 메시지의 링크에 사용됩니다. `https://{subdomain}.yourchurch.org` 같은 템플릿 형식으로 입력할 수도 있습니다. 설정하지 않으면 이 링크들은 `https://{subdomain}.b1.church`를 가리킵니다.
 
 그리고 **B1Admin** 서비스에는 다음을 설정하세요.
 

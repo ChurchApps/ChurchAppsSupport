@@ -1,13 +1,13 @@
 ---
 title: "Importación masiva"
-description: "Importe videos de sermones en masa desde un canal de YouTube o una cuenta de Vimeo a B1 Admin, y luego organícelos en una lista de reproducción."
+description: "Importe videos de sermones en masa desde un canal de YouTube o una cuenta de Vimeo, o episodios de podcast desde un feed RSS, a B1 Admin, y luego organícelos en una lista de reproducción."
 ---
 
 # Importación masiva
 
 <div class="article-intro">
 
-La página de Importación masiva le permite llenar rápidamente su biblioteca de sermones importando videos de YouTube o Vimeo. Es la forma más rápida de incorporar el contenido de sermones que ya tiene, en lugar de agregar cada video uno por uno.
+La página de Importación masiva le permite llenar rápidamente su biblioteca de sermones importando videos de YouTube o Vimeo, o episodios de un feed RSS de podcast. Es la forma más rápida de incorporar el contenido de sermones que ya tiene, en lugar de agregar cada sermón uno por uno.
 
 </div>
 
@@ -16,17 +16,18 @@ La página de Importación masiva le permite llenar rápidamente su biblioteca d
 
 - Necesita el permiso **Editar servicios** en la sección **Contenido** de su rol. Consulte [Roles y permisos](../settings/roles-permissions.md) si no tiene acceso.
 - Cree al menos una [lista de reproducción](./playlists.md) en la que importar sus sermones
-- Tenga a mano el ID de su canal de YouTube o la información de su cuenta de Vimeo
+- Tenga a mano el ID de su canal de YouTube, la información de su cuenta de Vimeo o la dirección de su feed de podcast
 
 </div>
 
 ## Elegir su origen {#choosing-your-source}
 
 1. En B1 Admin, abra el [menú Salto](../introduction.md#getting-around-with-the-jump-menu) (la barra de búsqueda en la parte superior izquierda), expanda **Sermones** y haga clic en **Sermones**. Haga clic en **Agregar sermón** y elija **Importación masiva** en el menú.
-2. En **Elegir origen de importación** verá dos opciones:
+2. En **Elegir origen de importación** verá tres opciones:
    - **YouTube** -- Importar videos desde un canal de YouTube
    - **Vimeo** -- Importar videos desde una cuenta de Vimeo
-3. Haga clic en la opción de la plataforma donde están alojados sus sermones (o haga clic en **Importar desde YouTube** / **Importar desde Vimeo** debajo de su descripción). Haga clic en **Atrás** en la parte superior de la página para volver a la elección de origen.
+   - **Feed RSS de podcast** -- Importar episodios de un feed de podcast como sermones de audio
+3. Haga clic en la opción de la plataforma donde están alojados sus sermones (o haga clic en **Importar desde YouTube**, **Importar desde Vimeo** o **Importar desde feed de podcast** debajo de su descripción). Haga clic en **Atrás** en la parte superior de la página para volver a la elección de origen.
 
 :::tip
 Puede volver y cambiar de origen en cualquier momento si tiene videos en ambas plataformas.
@@ -57,6 +58,30 @@ Sus videos se importarán con todos sus detalles, incluidos los títulos, las de
 
 :::info
 La importación masiva es ideal para empezar cuando está migrando desde otra plataforma. Para agregar sermones individuales en el futuro, use la página [Administrar sermones](./managing-sermons.md).
+:::
+
+## Importar episodios de podcast {#importing-podcast-episodes}
+
+Si sus sermones se publican como podcast (Spotify for Podcasters / Anchor, Buzzsprout, Podbean, etc.), puede incorporar los episodios como sermones de audio.
+
+1. Elija **Feed RSS de podcast** y pegue la dirección de su feed en **URL del feed de podcast**. Dónde encontrarla:
+   - **Spotify for Podcasters (Anchor)** -- **Settings** > **Availability** > **RSS distribution**. La dirección tiene este formato: `https://anchor.fm/s/…/podcast/rss`.
+   - **Buzzsprout** -- el enlace **RSS Feed** en el panel de su podcast.
+   - La mayoría de los demás proveedores muestran la dirección del feed RSS en la configuración o en la página de distribución del podcast.
+2. Haga clic en **Obtener**. El nombre del podcast aparece encima de una lista de sus episodios con sus fechas de publicación. Si el feed no se puede cargar o no tiene episodios de audio, un mensaje lo indicará; verifique la dirección e inténtelo de nuevo.
+3. Los episodios nuevos se marcan automáticamente. Los episodios que ya están en su biblioteca de sermones se marcan como **Ya importado** y no se pueden seleccionar, así que nada se agrega dos veces.
+4. Desmarque los episodios que no desee, elija una lista de reproducción en **Importar a la lista de reproducción** y haga clic en **Importar**.
+
+Cada episodio se convierte en un sermón de audio con su título, descripción, fecha, imagen y duración. Los miembros ven **Escuchar** y **Descargar audio** en estos sermones en la app de B1.
+
+Importar es una copia única, no un enlace en vivo al feed. Cuando publique episodios nuevos, regrese y vuelva a ejecutar la importación con la misma dirección del feed; solo se marcarán los episodios nuevos.
+
+:::note
+Solo se importa el audio. Los episodios de podcast en video no se incorporan; agréguelos a través de YouTube, Vimeo o [Administrar sermones](./managing-sermons.md).
+:::
+
+:::tip
+¿Quiere una lista en su sitio web o aplicación que siempre refleje su podcast sin volver a importar? Agregue el elemento **Podcast** a una página del creador de sitios web y luego agregue esa página como una pestaña **Página interna** en su aplicación móvil.
 :::
 
 ## Próximos pasos {#next-steps}

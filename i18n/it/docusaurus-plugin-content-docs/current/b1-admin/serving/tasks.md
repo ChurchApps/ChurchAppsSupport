@@ -33,13 +33,17 @@ Per impostazione predefinita vengono mostrate solo le attività aperte. Scegli *
 
 1. Nella pagina **Il mio lavoro**, fai clic su **Aggiungi attività**. Si apre il modulo **Nuova attività**.
 2. Se vuoi, fai clic sulla casella **Associa a** e scegli la persona o il gruppo a cui si riferisce l'attività. Lasciala vuota per un semplice promemoria che non riguarda nessuno in particolare, ad esempio un promemoria per te stesso.
-3. Fai clic sulla casella **Assegna a**. Nella finestra **Seleziona una persona o un gruppo** cerca nella scheda **Persona**, oppure passa alla scheda **Gruppo** e cerca un gruppo, quindi seleziona il risultato.
+3. Fai clic sulla casella **Assegna a**. Nella finestra **Seleziona persone o un gruppo** cerca nella scheda **Persona**, oppure passa alla scheda **Gruppo** e cerca un gruppo, quindi seleziona il risultato.
 4. Inserisci un **Titolo** per l'attività.
 5. Se vuoi, scegli una **Data di scadenza**.
 6. Aggiungi **Note** con dettagli o istruzioni per l'assegnatario.
 7. Fai clic su **Salva**.
 
 L'attività comparirà ora nell'elenco delle attività e sarà visibile all'assegnatario nella sua dashboard e nell'app mobile.
+
+:::tip
+Sia **Associa a** sia **Assegna a** accettano più persone. Continua a scegliere persone nella finestra, poi fai clic su **Fine**; compaiono come etichette sotto la casella. Nella scheda **Gruppo**, seleziona **Crea un'attività separata per ogni membro** per aggiungere tutti i membri di un gruppo. **Salva** crea un'attività per ciascuna persona e, quando entrambe le caselle contengono più persone, ogni assegnatario riceve un'attività per ogni persona associata (due assegnatari e tre persone danno sei attività). Modificare un'attività già creata cambia ancora una persona alla volta.
+:::
 
 ## Gestire un'attività {#managing-a-task}
 
@@ -63,7 +67,9 @@ Un'attività con data di scadenza può ricordare al suo assegnatario la scadenza
 5. Sotto **Invia tramite**, scegli **Notifica push**, **Email** e, se la tua chiesa ha collegato un [fornitore di SMS](../settings/church-settings.md#texting), **SMS**.
 6. Fai clic su **Salva promemoria**.
 
-Se l'attività non ha una data di scadenza, B1 ti avvisa che non verrà inviato alcun promemoria finché non ne imposti una nel campo **Scadenza**. I promemoria via SMS raggiungono solo le persone che hanno attivato **Messaggi di testo** nelle loro [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può comportare un costo per la tua chiesa.
+Se l'attività non ha una data di scadenza, B1 ti avvisa che non verrà inviato alcun promemoria finché non ne imposti una nel campo **Scadenza**. I promemoria via SMS raggiungono solo le persone che hanno attivato **Messaggi di testo** nelle loro [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e ogni SMS può comportare un costo per la tua chiesa. Il personale con il permesso di inviare SMS può attivare **Promemoria via SMS** per una persona dalla [scheda](../people/adding-people.md#text-reminders) della persona, nella riga sotto il suo numero di cellulare.
+
+Per inviare subito un promemoria salvato, fai clic su **Invia ora**. Quando il promemoria include **SMS**, B1 mostra quante persone sono state avvisate, quante hanno ricevuto un SMS e quante sono state saltate, ad esempio *Inviato a 2 persone · 1 con SMS, 1 saltata*. Le persone vengono saltate quando hanno **Messaggi di testo** disattivati, non hanno un numero di cellulare o hanno risposto STOP.
 
 ## Ciclo di vita di un'attività {#task-lifecycle}
 

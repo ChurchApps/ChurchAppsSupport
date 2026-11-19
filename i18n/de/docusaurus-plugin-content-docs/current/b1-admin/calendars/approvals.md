@@ -54,6 +54,10 @@ Ereignisse, die Mitglieder beantragen (etwa über **Meine Anfragen** in der B1-A
 Richten Sie unter [Räume & Ressourcen](./rooms-resources.md) für einen Raum eine Genehmigungsgruppe ein, damit dieser Raum eine Genehmigung erfordert. Gruppen mit Zugriff können den Raum dann beim Erstellen von Ereignissen anfragen, und diese Anfragen landen auf dieser Seite.
 :::
 
+## Die Person einer Anfrage ändern {#changing-who-a-request-is-for}
+
+Wenn Sie eine Anfrage im Namen eines Mitglieds erfasst haben, zum Beispiel weil die Person im Büro angerufen hat, wird sie unter Ihrem Namen geführt. Klicken Sie auf das Tauschsymbol neben dem Namen unter **Angefragt von** (in beiden Bereichen, bei **Ausstehend** oder **Verlauf**), suchen Sie das Mitglied und klicken Sie auf **Dieser Person zuordnen**. Die gesamte Anfrage wird verschoben: die Ereignisanfrage und jede Raum- und Ressourcenbuchung darin. Das Mitglied erhält anschließend die Benachrichtigung über die Genehmigung oder Ablehnung, sieht die Anfrage unter **Meine Anfragen** in der B1-App, und sie erscheint im Bereich Anfragen in seinem Personendatensatz. Das Verschieben einer Anfrage ändert nicht, ob sie genehmigt ist.
+
 ## Verlauf {#history}
 
 Genehmigte und abgelehnte Anfragen bleiben auf der Seite erhalten. Klicken Sie oben auf **Genehmigungen** auf **Verlauf**, um sie zu sehen; klicken Sie auf **Ausstehend**, um zu den offenen Anfragen zurückzukehren.

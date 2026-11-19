@@ -158,7 +158,7 @@ The tabs you configure here are displayed in the **B1.church PWA** that your mem
 
 On a phone, the bottom tab bar shows **Home**, up to three of your tabs, and **More**; on a computer, the header shows up to five. Built-in screens (such as Sermons, Giving, or Groups) get those slots first, and **Internal Page** tabs fill any slots left over. **External URL** and **Verse of the Day** tabs never get a slot. Every tab, including those that don't fit, is listed on the app's **More** page.
 
-Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows the tabs as photo tiles when every one of them has an image, or as a list otherwise. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
+Tabs placed inside a **Folder** tab are the exception: they appear only on the folder's own screen, which members open by tapping the folder. That screen shows each tab that has an image as a full-width photo banner, with the tabs that have no image listed below them. A folder that holds no tabs a member can see is hidden from that member. See [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). See [Navigating B1App](../../b1-church/getting-started/navigating.md) for what members see.
 
 ## Next Steps
 

@@ -14,7 +14,7 @@ Die Gottesdienstordnung legt den Ablauf der Elemente in Ihrem Gottesdienst fest.
 
 ## Schulungsvideo {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Gottesdienstordnung und Liedbibliothek in B1 aufbauen" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Gottesdienstordnung und Liedbibliothek in B1 aufbauen" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>

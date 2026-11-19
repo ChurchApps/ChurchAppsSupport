@@ -13,7 +13,7 @@ Les plans de service organisent qui sert et quand. Chaque plan est lié à une d
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="47DstBXKl74" title="Créer des plans et planifier les bénévoles dans B1" next="Construire l'ordre de service et la bibliothèque de chansons dans B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Créer des plans et planifier les bénévoles dans B1" next="Construire l'ordre de service et la bibliothèque de chansons dans B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
@@ -141,7 +141,7 @@ Les bénévoles qui n'ont pas encore confirmé reçoivent les boutons **Accepter
 
 ### Rappels par message texte {#text-reminders}
 
-L'option **Message texte** n'apparaît que lorsque votre église a connecté un fournisseur de messages texte. Les messages sont envoyés par le fournisseur de votre église, et chaque message peut coûter à votre église. Un bénévole ne reçoit un rappel par message texte que s'il a activé les **messages texte** dans ses [préférences de notification](../../b1-church/getting-started/notification-preferences.md) et qu'il a un numéro de téléphone mobile dans son profil. Chaque message commence par le nom de votre église, tient en un seul message texte et se termine par « Répondez STOP pour vous désabonner ». Toute personne qui répond STOP cesse de recevoir des messages texte de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook des messages entrants (STOP)** de vos [paramètres de messagerie texte](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
+L'option **Message texte** n'apparaît que lorsque votre église a connecté un fournisseur de messages texte. Les messages sont envoyés par le fournisseur de votre église, et chaque message peut coûter à votre église. Un bénévole ne reçoit un rappel par message texte que s'il a activé les **messages texte** dans ses [préférences de notification](../../b1-church/getting-started/notification-preferences.md) et qu'il a un numéro de téléphone mobile dans son profil. Les membres du personnel autorisés à envoyer des messages texte peuvent activer les **Rappels par texto** pour un bénévole depuis la [fiche](../people/adding-people.md#text-reminders) de celui-ci. Chaque message commence par le nom de votre église, tient en un seul message texte et se termine par « Répondez STOP pour vous désabonner ». Toute personne qui répond STOP cesse de recevoir des messages texte de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook des messages entrants (STOP)** de vos [paramètres de messagerie texte](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
 
 Pour envoyer immédiatement un message texte à toutes les personnes planifiées sur une plage de dates, utilisez **Envoyer un texto aux bénévoles** dans la [vue d'ensemble des plans](./plans-overview.md#texting-everyone-scheduled).
 

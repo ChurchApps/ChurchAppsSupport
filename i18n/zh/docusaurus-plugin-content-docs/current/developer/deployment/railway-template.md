@@ -115,7 +115,10 @@ SUPPORT_EMAIL=noreply@yourchurch.org
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` 是会员网站的地址，用于计划、报名和提醒电子邮件以及通知中的链接。它也可以是模板，例如 `https://{subdomain}.yourchurch.org`。如果未设置，这些链接将指向 `https://{subdomain}.b1.church`。
 
 在 **B1Admin** 服务上：
 

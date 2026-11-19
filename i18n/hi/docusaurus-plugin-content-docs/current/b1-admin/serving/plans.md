@@ -13,7 +13,7 @@ description: "B1 Admin में स्वयंसेवक शेड्यू�
 
 ## प्रशिक्षण वीडियो {#training-video}
 
-<YouTube id="47DstBXKl74" title="B1 में योजनाएँ बनाना और स्वयंसेवकों को शेड्यूल करना" next="B1 में सेवा क्रम और गीत लाइब्रेरी बनाना" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="B1 में योजनाएँ बनाना और स्वयंसेवकों को शेड्यूल करना" next="B1 में सेवा क्रम और गीत लाइब्रेरी बनाना" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>
@@ -141,7 +141,7 @@ B1 स्वयंसेवकों को उनकी निर्धार�
 
 ### टेक्स्ट अनुस्मारक {#text-reminders}
 
-**Text** विकल्प तभी दिखता है जब आपके चर्च का टेक्स्टिंग प्रदाता जुड़ा हो। टेक्स्ट आपके चर्च के टेक्स्टिंग प्रदाता के माध्यम से जाते हैं, और हर टेक्स्ट पर आपके चर्च का खर्च लग सकता है। स्वयंसेवक को टेक्स्ट अनुस्मारक तभी मिलता है जब उसने अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** चालू किए हों और उसकी प्रोफ़ाइल पर मोबाइल नंबर हो। हर टेक्स्ट आपके चर्च के नाम से शुरू होता है, एक ही टेक्स्ट संदेश में रखा जाता है, और "Reply STOP to opt out." पर समाप्त होता है। जो कोई STOP का जवाब देता है, उसे आपके चर्च से टेक्स्ट मिलना बंद हो जाता है। STOP के जवाब B1 तक पहुँचने के लिए, अपनी [टेक्स्टिंग सेटिंग्स](../settings/church-settings.md#texting) से **Inbound (STOP) webhook URL** को अपने प्रदाता के inbound संदेश webhook में पेस्ट करें।
+**Text** विकल्प तभी दिखता है जब आपके चर्च का टेक्स्टिंग प्रदाता जुड़ा हो। टेक्स्ट आपके चर्च के टेक्स्टिंग प्रदाता के माध्यम से जाते हैं, और हर टेक्स्ट पर आपके चर्च का खर्च लग सकता है। स्वयंसेवक को टेक्स्ट अनुस्मारक तभी मिलता है जब उसने अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** चालू किए हों और उसकी प्रोफ़ाइल पर मोबाइल नंबर हो। टेक्स्ट भेजने की अनुमति वाला स्टाफ़ स्वयंसेवक के [रिकॉर्ड](../people/adding-people.md#text-reminders) से उसके लिए **Text reminders** चालू कर सकता है। हर टेक्स्ट आपके चर्च के नाम से शुरू होता है, एक ही टेक्स्ट संदेश में रखा जाता है, और "Reply STOP to opt out." पर समाप्त होता है। जो कोई STOP का जवाब देता है, उसे आपके चर्च से टेक्स्ट मिलना बंद हो जाता है। STOP के जवाब B1 तक पहुँचने के लिए, अपनी [टेक्स्टिंग सेटिंग्स](../settings/church-settings.md#texting) से **Inbound (STOP) webhook URL** को अपने प्रदाता के inbound संदेश webhook में पेस्ट करें।
 
 किसी तिथि सीमा में शेड्यूल किए गए सभी को तुरंत टेक्स्ट करने के लिए, [Plans Overview](./plans-overview.md#texting-everyone-scheduled) पर **Text Volunteers** का उपयोग करें।
 

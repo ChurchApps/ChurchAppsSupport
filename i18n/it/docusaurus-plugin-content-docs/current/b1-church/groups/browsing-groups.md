@@ -66,7 +66,7 @@ La schermata **Gruppi** del portale membri elenca i gruppi di cui fai parte. L'i
 - **Richieste in attesa** -- I gruppi a cui hai chiesto di unirti e che attendono l'approvazione di un leader. Vedi [Richiedere di unirsi a un gruppo](./join-requests.md).
 - **Eventi in programma** -- Eventi della chiesa che accettano iscrizioni, ciascuno con un link **Iscriviti**. Vedi [Iscriversi agli eventi](../events/registering.md).
 
-Tocca **Trova un gruppo** per sfogliare tutti i gruppi della chiesa. Se non fai ancora parte di alcun gruppo, la schermata dice "Nessun gruppo ancora" con un pulsante **Sfoglia i gruppi**; se non hai effettuato l'accesso, ti chiede di accedere per vedere i tuoi gruppi.
+Tocca **Trova un gruppo** per sfogliare tutti i gruppi della chiesa. Se non fai ancora parte di alcun gruppo, la schermata dice "Nessun gruppo ancora" con un pulsante **Sfoglia i gruppi**; se non hai effettuato l'accesso, ti chiede di accedere per vedere i tuoi gruppi, ma mostra comunque gli **Eventi in programma** della chiesa che accettano iscrizioni, così puoi iscriverti.
 
 ## Prossimi passi {#next-steps}
 

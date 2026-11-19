@@ -46,9 +46,9 @@ Ang library ng [Lessons.church](../../lessons-church/index.md) ay nakaayos gaya 
 
 Pindutin ang **Back** sa anumang level para umakyat ng isang hakbang.
 
-## Pag-browse sa Go Curriculum
+## Pag-browse sa GO! Curriculum
 
-Pagkatapos mong [mag-sign in gamit ang account mo sa gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), magbubukas ang Go Curriculum sa mga age group nito, ang **Elementary** at **Preschool**. Mag-drill in ayon sa age group, pagkatapos ay collection, pagkatapos ay lesson, at piliin ang lesson para buksan ang download screen nito.
+Pagkatapos mong [mag-sign in gamit ang account mo sa gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), magbubukas ang GO! Curriculum sa mga age group nito, ang **Elementary** at **Preschool**. Mag-drill in ayon sa age group, pagkatapos ay collection, pagkatapos ay lesson, at piliin ang lesson para buksan ang download screen nito.
 
 Ang makikita mo ay nakadepende sa Go membership mo:
 

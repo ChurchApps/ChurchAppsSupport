@@ -66,7 +66,7 @@ A tela **Grupos** no portal de membros lista os grupos de que você participa. O
 - **Solicitações pendentes** -- Grupos em que você pediu para entrar e que aguardam um líder. Veja [Solicitando participação em um grupo](./join-requests.md).
 - **Próximos eventos** -- Eventos da igreja que aceitam inscrições, cada um com um link **Inscrever-se**. Veja [Inscrevendo-se em eventos](../events/registering.md).
 
-Toque em **Encontre um grupo** para navegar por todos os grupos da igreja. Se você ainda não participa de nenhum grupo, a tela diz "Nenhum grupo ainda" com um botão **Navegar por grupos**; se você não estiver conectado, ela pede que você entre para ver seus grupos.
+Toque em **Encontre um grupo** para navegar por todos os grupos da igreja. Se você ainda não participa de nenhum grupo, a tela diz "Nenhum grupo ainda" com um botão **Navegar por grupos**; se você não estiver conectado, ela pede que você entre para ver seus grupos, mas ainda lista os **Próximos eventos** da igreja que aceitam inscrições para que você possa se inscrever.
 
 ## Próximos passos {#next-steps}
 

@@ -88,6 +88,10 @@ Sending fra B1 bruker de samme godkjennings- og døgngrensene som e-post til gru
 
 Hvis kirken din har en [tekstmeldingsleverandør](../settings/church-settings.md#texting) koblet til, du har tillatelse til å sende tekstmeldinger, og personen har et mobilnummer, vises en knapp **Tekst** ved siden av **E-post**. Klikk på den, skriv inn **Melding**, og klikk på **Send**. Dialogen viser nummeret teksten går til. Se [Sende tekstmeldinger til gruppemedlemmer](../groups/group-members.md#texting-group-members) for hvordan tekstmeldinger fungerer.
 
+### Tekstpåminnelser {#text-reminders}
+
+Oppgave-, arrangements- og tjenestepåminnelser sendes bare som tekstmelding til personer som har slått på tekstmeldinger. Med samme tekstmeldingsleverandør, tillatelse og mobilnummer viser personens post **Text reminders** under mobilnummeret, med **On** eller **Off**. Klikk på **Turn on** for å begynne å sende dem påminnelser som tekstmeldinger, eller **Turn off** for å stoppe. Dette er den samme bryteren som **Text messages** i personens egne [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), så dere kan begge endre den. Noen som har svart STOP på kirkens tekstmeldinger, får fortsatt ingen påminnelser som tekst, selv om **Text reminders** er på.
+
 ## Arbeide med skjemaer {#working-with-forms}
 
 Du kan fylle ut egendefinerte skjemaer direkte fra en persons profil. Dette er brukerdefinerte skjemaer som du kan bygge ved å følge veiledningen [Lage skjemaer](../forms/creating-forms.md).

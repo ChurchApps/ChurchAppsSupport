@@ -55,7 +55,7 @@ In der Ansicht **Tabelle** sind Personen nach Nachname, dann Vorname sortiert. S
 1. Klicken Sie auf eine **Spaltenüberschrift** (zum Beispiel **Name** oder **E-Mail**), um nach dieser Spalte zu sortieren.
 2. Klicken Sie auf dieselbe Überschrift erneut, um die Sortierreihenfolge umzukehren.
 
-Der erste Klick sortiert die Spalte aufsteigend (A bis Z, vom Jüngsten zum Ältesten, frühestes Datum zuerst), und der Pfeil neben der Überschrift zeigt die Richtung an. Personen ohne Wert in dieser Spalte stehen immer am Ende. So finden Sie Personen leicht alphabetisch, nach Alter oder nach jeder anderen sichtbaren Spalte.
+Der erste Klick sortiert die Spalte aufsteigend (A bis Z, vom Jüngsten zum Ältesten, frühestes Datum zuerst), und der Pfeil neben der Überschrift zeigt die Richtung an. Personen ohne Wert in dieser Spalte stehen immer am Ende. So finden Sie Personen leicht alphabetisch, nach Alter oder nach jeder anderen sichtbaren Spalte. B1 merkt sich die Sortierung auf diesem Gerät, sodass die Tabelle nach dem Neuladen der Seite oder bei einem späteren Besuch genauso sortiert bleibt.
 
 ## Spalten anpassen {#customizing-columns}
 

@@ -57,7 +57,7 @@ Fülle danach das Formular aus:
 
 1. **Abspielen** - Wähle, was abgespielt wird:
    - **Playlists** - Jede Playlist, die du erstellt hast
-   - **Dienstpläne** - Ein Plantyp aus dem B1 Admin, mit der Markierung **(aktueller Plan)**. Der Bildschirm spielt jede Woche den jeweils aktuellen Plan dieses Plantyps ab, einschließlich Go-Curriculum-Lektionen (auch angepasste), die die Go-Anmeldung der Abteilung des Plantyps verwenden
+   - **Dienstpläne** - Ein Plantyp aus dem B1 Admin, mit der Markierung **(aktueller Plan)**. Der Bildschirm spielt jede Woche den jeweils aktuellen Plan dieses Plantyps ab, einschließlich GO! Curriculum-Lektionen (auch angepasste), die die Go-Anmeldung der Abteilung des Plantyps verwenden
    - **Anbieter-Ordner…** - Öffnet **Anbieter-Ordner auswählen**. Navigiere zu einem Ordner und klicke auf **Diesen Ordner verwenden**. Um später einen anderen Ordner zu wählen, klicke auf **Ändern**
 2. **Wiederholung** - Wähle die Wochentage, an denen dieser Zeitplan läuft. Für ein einzelnes Datum stattdessen **Einmalig** aktivieren und das **Datum** wählen.
 3. **Beginn** und **Ende** - Die Uhrzeiten, zu denen der Zeitplan beginnt und endet.

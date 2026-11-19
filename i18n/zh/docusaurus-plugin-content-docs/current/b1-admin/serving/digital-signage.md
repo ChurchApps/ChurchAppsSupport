@@ -44,10 +44,10 @@ description: "在 B1 Admin 中使用始终显示当前计划的数字标牌 URL�
 3. 在 **播放** 下，从 **服侍计划** 中选择您的计划类型。它会标有 **（当前计划）**。
 4. 设置日期和时间，然后点击 **保存**。
 
-电视会在您设定的时间播放该计划类型每周的当前计划。这同样适用于 Go Curriculum 课程，包括您自定义过的计划。FreePlay 使用在 **内容提供方** 下关联到该事工的 Go Curriculum 账户登录（参见[安排课程](./scheduling-lessons.md)），如果该事工没有关联账户，则使用教会的 Go Curriculum 连接。有关所有选项，请参阅[安排日历](../../freeplay/scheduled-mode/scheduling-the-calendar.md)；要添加电视，请参阅[配对屏幕](../../freeplay/scheduled-mode/pairing-a-screen.md)。
+电视会在您设定的时间播放该计划类型每周的当前计划。这同样适用于 GO! Curriculum 课程，包括您自定义过的计划。FreePlay 使用在 **内容提供方** 下关联到该事工的 GO! Curriculum 账户登录（参见[安排课程](./scheduling-lessons.md)），如果该事工没有关联账户，则使用教会的 GO! Curriculum 连接。有关所有选项，请参阅[安排日历](../../freeplay/scheduled-mode/scheduling-the-calendar.md)；要添加电视，请参阅[配对屏幕](../../freeplay/scheduled-mode/pairing-a-screen.md)。
 
 :::note
-信息源网址不包含 Go Curriculum 媒体，因为该内容需要您教会的 Go Curriculum 登录。要在大厅或教室的电视上显示 Go Curriculum 课程，请使用 FreePlay。
+信息源网址不包含 GO! Curriculum 媒体，因为该内容需要您教会的 GO! Curriculum 登录。要在大厅或教室的电视上显示 GO! Curriculum 课程，请使用 FreePlay。
 :::
 
 ## 后续步骤

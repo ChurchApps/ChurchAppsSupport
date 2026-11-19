@@ -112,7 +112,7 @@ A exclusão de conta -- seja imediata ou aprovada pela sua igreja -- é permanen
 :::
 
 :::info
-Se você for um **Administrador de domínio**, transfira as responsabilidades administrativas para outro usuário antes de excluir a sua conta. Veja [Funções e permissões](../settings/roles-permissions.md) para detalhes sobre o gerenciamento de funções administrativas.
+Se você for o único **Administrador do domínio** da sua igreja, o B1 não excluirá a sua conta. Ele mostra a mensagem "Você é o único Administrador do domínio de *igreja*. Torne outra pessoa Administrador do domínio antes de excluir sua conta." Adicione primeiro outro usuário em **Administradores do domínio**. Veja [Funções e permissões](../settings/roles-permissions.md) para detalhes sobre o gerenciamento de funções administrativas.
 :::
 
 :::info

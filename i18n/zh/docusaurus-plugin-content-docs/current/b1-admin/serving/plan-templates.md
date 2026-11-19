@@ -13,7 +13,7 @@ description: "在 B1 Admin 中将服事计划的崇拜程序和岗位保存为�
 
 ## 培训视频 {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="在 B1 中使用计划模板、任务和工作流" next="在 B1 中创建日历、活动和场地预订" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="在 B1 中使用计划模板、任务和工作流" next="在 B1 中创建日历、活动和场地预订" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>开始之前</h4>

@@ -11,6 +11,10 @@ B1.church आपके चर्च का सदस्य-केंद्रि
 
 </div>
 
+## प्रशिक्षण वीडियो {#training-video}
+
+<YouTube id="yiKP0zuJMVU" title="B1.church for Your Members" next="Logging In and Installing the B1.church App" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 जब सदस्य आपकी B1.church साइट पर जाते हैं, तो वे आपके चर्च की सार्वजनिक वेबसाइट देखते हैं, जिसमें आपकी ब्रांडिंग, नेविगेशन लिंक और सामग्री पृष्ठ होते हैं। लॉग इन करने के बाद, वे **Member Portal** तक पहुँच सकते हैं, जहाँ उनके सभी व्यक्तिगत चर्च उपकरण एक ही जगह होते हैं।
 
 ## मुख्य विशेषताएँ

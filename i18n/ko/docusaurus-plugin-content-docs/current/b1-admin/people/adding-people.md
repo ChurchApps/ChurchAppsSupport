@@ -88,6 +88,10 @@ B1에서 보내는 이메일은 그룹 이메일과 같은 승인 및 일일 한
 
 교회에 [문자 제공자](../settings/church-settings.md#texting)가 연결되어 있고, 문자를 보낼 권한이 있으며, 사람의 휴대폰 번호가 있다면, **Email** 옆에 **Text** 버튼이 나타납니다. 클릭하고 **Message**를 입력한 다음 **Send**를 클릭하세요. 대화상자에는 문자가 전송될 번호가 표시됩니다. 문자가 작동하는 방식은 [그룹 구성원에게 문자 보내기](../groups/group-members.md#texting-group-members)를 참고하세요.
 
+### 문자 알림 {#text-reminders}
+
+작업, 행사, 봉사 알림은 문자 메시지를 켜 둔 사람에게만 문자로 발송됩니다. 같은 문자 제공업체, 권한, 휴대폰 번호가 있다면, 사람의 기록에서 휴대폰 번호 아래 줄에 **Text reminders**가 **On** 또는 **Off**로 표시됩니다. 알림 문자를 보내기 시작하려면 **Turn on**을, 중지하려면 **Turn off**를 클릭하세요. 이것은 본인의 [알림 설정](../../b1-church/getting-started/notification-preferences.md)에 있는 **Text messages**와 같은 스위치이므로, 둘 중 누구나 바꿀 수 있습니다. 교회의 문자에 STOP으로 답장한 사람은 **Text reminders**를 켜 두었더라도 알림 문자를 받지 않습니다.
+
 ## 양식 사용하기 {#working-with-forms}
 
 사람의 프로필에서 맞춤 양식을 직접 작성할 수 있습니다. 이것은 [양식 만들기](../forms/creating-forms.md) 가이드를 따라 만들 수 있는 사용자 정의 양식입니다.

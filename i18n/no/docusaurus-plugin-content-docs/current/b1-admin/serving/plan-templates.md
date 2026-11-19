@@ -13,7 +13,7 @@ Plan-maler lar deg lagre et gjenbrukbart øyeblikksbilde av en plans gudstjenest
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Plan-maler, oppgaver og arbeidsflyter i B1" next="Opprette kalendere, arrangementer og romreservasjoner i B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Plan-maler, oppgaver og arbeidsflyter i B1" next="Opprette kalendere, arrangementer og romreservasjoner i B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>

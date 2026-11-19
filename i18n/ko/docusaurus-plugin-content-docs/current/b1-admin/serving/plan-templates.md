@@ -13,7 +13,7 @@ description: "B1 Admin에서 예배 계획의 예배 순서와 자리를 재사�
 
 ## 교육 동영상 {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="B1의 계획 템플릿, 작업, 워크플로" next="B1에서 캘린더, 행사, 공간 예약 만들기" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="B1의 계획 템플릿, 작업, 워크플로" next="B1에서 캘린더, 행사, 공간 예약 만들기" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>

@@ -14,7 +14,7 @@ B1 Admin s'intègre directement à [Lessons.church](https://lessons.church) afin
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Réutiliser un découpage de leçon pour chaque semaine dans B1" next="Modèles de plans, tâches et flux de travail dans B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Réutiliser un découpage de leçon pour chaque semaine dans B1" next="Modèles de plans, tâches et flux de travail dans B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>
@@ -45,7 +45,7 @@ Cette configuration se fait une seule fois par ministère. Vous devez connecter 
 La section Fournisseurs de contenu est propre à chaque ministère. Si vous gérez plusieurs ministères (par exemple, Enfants et Jeunes), vous devrez relier Lessons.church pour chacun d'eux séparément.
 :::
 
-Lessons.church n'est pas la seule option. La même liste **Relier un nouveau fournisseur** propose aussi d'autres sources de programmes et de fichiers, notamment SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive et OneDrive. Reliez-les de la même façon : ils apparaissent comme des fournisseurs auxquels vous pouvez passer lors de la sélection d'une leçon.
+Lessons.church n'est pas la seule option. La même liste **Relier un nouveau fournisseur** propose aussi d'autres sources de programmes et de fichiers, notamment SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive et OneDrive. Reliez-les de la même façon : ils apparaissent comme des fournisseurs auxquels vous pouvez passer lors de la sélection d'une leçon.
 
 ## Étape 2 — Planifier une leçon {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Une fois la connexion établie, vous pouvez planifier des leçons directement de
    - Sélectionnez la **Leçon** précise
    - Sélectionnez le **Public** -- il s'agit de la version de la leçon adaptée à la tranche d'âge
 
-   Les autres fournisseurs organisent leur contenu différemment. Par exemple, **Go Curriculum** commence par **Élémentaire** ou **Préscolaire**, puis une série, puis la leçon elle-même -- il n'y a aucun public à choisir.
+   Les autres fournisseurs organisent leur contenu différemment. Par exemple, **GO! Curriculum** commence par **Élémentaire** ou **Préscolaire**, puis une série, puis la leçon elle-même -- il n'y a aucun public à choisir.
 8. Cliquez sur **Associer la leçon** pour confirmer
 9. Choisissez votre **option de copie** pour les bénévoles :
    - **Rien** -- plan vierge, aucun bénévole reporté
@@ -87,7 +87,7 @@ Pour planifier plusieurs leçons d'une même série à la fois, cliquez sur **Pl
 4. Vérifiez la liste -- la leçon de départ et le reste de sa série, chacune avec une date. Décochez celles que vous voulez sauter
 5. Cliquez sur **Enregistrer** pour créer un plan par leçon
 
-Pour Lessons.church, la liste affiche aussi le **Public** que chaque leçon utilisera, apparié par nom au public choisi pour la leçon de départ (si une leçon n'a pas ce public, une autre est utilisée et marquée **remplacée**). Les fournisseurs dont les leçons n'ont pas de niveau de public, comme Go Curriculum, planifient les leçons directement et la colonne Public est masquée.
+Pour Lessons.church, la liste affiche aussi le **Public** que chaque leçon utilisera, apparié par nom au public choisi pour la leçon de départ (si une leçon n'a pas ce public, une autre est utilisée et marquée **remplacée**). Les fournisseurs dont les leçons n'ont pas de niveau de public, comme GO! Curriculum, planifient les leçons directement et la colonne Public est masquée.
 
 ## Ne garder qu'une partie de chaque leçon {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Lorsqu'une leçon ne correspond pas au modèle (une partie manque, n'a pas de vi
 
 Les plans qui ont déjà un ordre de service ne sont pas modifiés lors de leur planification. Pour changer le découpage enregistré, personnalisez un autre plan et cliquez sur **Remplacer le découpage enregistré pour Élémentaire** (à nouveau nommé d'après votre type de plan). Pour arrêter le découpage, ouvrez la boîte de dialogue **Modifier** du type de plan et cliquez sur **Effacer** à côté de **Découpage des leçons**.
 
-## Guides du responsable Go Curriculum {#go-curriculum-leader-guides}
+## Guides du responsable GO! Curriculum {#go-curriculum-leader-guides}
 
-Lorsque vous planifiez une leçon Go Curriculum, l'ordre de service du plan est construit à partir du guide du responsable **Grand groupe** de la leçon : chaque partie du guide devient une section, et chaque étape qu'elle contient est listée avec son type (par exemple dire, faire, jouer ou note) et son texte. Les étapes qui lisent une vidéo ou un autre média portent ce fichier avec elles, afin qu'il soit lu dans l'ordre. (Une leçon sans guide de Grand groupe se rabat sur une simple liste de ses fichiers multimédias.)
+Lorsque vous planifiez une leçon GO! Curriculum, l'ordre de service du plan est construit à partir du guide du responsable **Grand groupe** de la leçon : chaque partie du guide devient une section, et chaque étape qu'elle contient est listée avec son type (par exemple dire, faire, jouer ou note) et son texte. Les étapes qui lisent une vidéo ou un autre média portent ce fichier avec elles, afin qu'il soit lu dans l'ordre. (Une leçon sans guide de Grand groupe se rabat sur une simple liste de ses fichiers multimédias.)
 
 Chaque série qui comporte du matériel pour petits groupes commence aussi par un dossier **Guides des petits groupes**. Ouvrez-le et choisissez une leçon pour planifier le guide **Petits groupes** de cette leçon, nommé « Nom de la leçon - Petits groupes » -- utile pour un type de plan distinct destiné aux petits groupes. Les guides des petits groupes comportent surtout des étapes de discussion et ne contiennent généralement aucun média. Comme le dossier est listé en premier, la planification en lot d'une série à partir de l'une de ses leçons ne le reprend jamais.
 ## Appliquer un plan annuel {#apply-a-year-plan}

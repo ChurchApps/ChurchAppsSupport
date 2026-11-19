@@ -46,9 +46,9 @@ La libreria di [Lessons.church](../../lessons-church/index.md) è organizzata co
 
 Premi **Indietro** a qualsiasi livello per salire di un passo.
 
-## Sfogliare Go Curriculum
+## Sfogliare GO! Curriculum
 
-Dopo aver [effettuato l'accesso con il tuo account gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum si apre sulle sue fasce d'età, **Elementary** e **Preschool**. Entra per fascia d'età, poi per collezione, poi per lezione, e seleziona una lezione per aprire la sua schermata di download.
+Dopo aver [effettuato l'accesso con il tuo account gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), GO! Curriculum si apre sulle sue fasce d'età, **Elementary** e **Preschool**. Entra per fascia d'età, poi per collezione, poi per lezione, e seleziona una lezione per aprire la sua schermata di download.
 
 Cosa vedi dipende dal tuo abbonamento Go:
 

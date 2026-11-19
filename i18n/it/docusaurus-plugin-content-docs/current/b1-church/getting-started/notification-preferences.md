@@ -23,7 +23,7 @@ In cima alla schermata trovi le impostazioni che valgono per tutto:
 
 - **Consegna**
   - **Notifiche push** -- Attiva o disattiva le notifiche push per il tuo account. Per configurare le push sul dispositivo che stai usando, attivale dalla tua posta in arrivo -- vedi [Notifiche push su questo dispositivo](#push-notifications-on-this-device).
-  - **Messaggi di testo** -- Compare solo se la tua chiesa ha attivato gli SMS. Attivalo per ricevere promemoria per i servizi e gli eventi via SMS sul numero di cellulare presente nel tuo profilo. È disattivato finché non lo attivi.
+  - **Messaggi di testo** -- Compare solo se la tua chiesa ha attivato gli SMS. Attivalo per ricevere promemoria per i servizi e gli eventi via SMS sul numero di cellulare presente nel tuo profilo. È disattivato finché non lo attivi. Il personale della chiesa può anche attivarlo o disattivarlo per te dalla tua scheda in B1 Admin.
   - **Silenzia tutte le notifiche** -- Silenzia temporaneamente tutti i canali finché non lo disattivi di nuovo.
 - **Email** -- Scegli una **Frequenza email**:
   - **Per notifica** -- Invia un'email man mano che succedono le cose.

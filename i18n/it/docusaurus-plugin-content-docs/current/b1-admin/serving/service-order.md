@@ -14,7 +14,7 @@ L'ordine del servizio definisce la sequenza degli elementi del tuo culto. Usalo 
 
 ## Video di formazione {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Creare l'ordine del servizio e la libreria dei canti in B1" next="Modelli di piano, attività e flussi di lavoro in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Creare l'ordine del servizio e la libreria dei canti in B1" next="Modelli di piano, attività e flussi di lavoro in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>

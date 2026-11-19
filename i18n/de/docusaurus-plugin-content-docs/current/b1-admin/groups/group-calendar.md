@@ -101,7 +101,7 @@ Klicken Sie auf einen beliebigen Termin, um seine Details zu sehen. In der Detai
 - **Leitende** können Termindetails bearbeiten, Zeiten ändern oder den Termin löschen.
 
 :::warning
-Das Löschen eines Termins entfernt ihn dauerhaft. Wenn Sie nur ein einzelnes Vorkommen eines wiederkehrenden Termins absagen müssen, bearbeiten Sie ihn lieber.
+Das Löschen eines Termins entfernt ihn dauerhaft. Wenn Sie einen wiederkehrenden Termin bearbeiten oder löschen, werden Sie gefragt, ob Sie **Nur dieses Datum**, **Dieses und alle folgenden Daten** oder **Alle Daten** ändern möchten. So können Sie eine einzelne Sitzung absagen, ohne die übrige Serie anzutasten.
 :::
 
 ## Den Kalender abonnieren {#subscribing-to-the-calendar}

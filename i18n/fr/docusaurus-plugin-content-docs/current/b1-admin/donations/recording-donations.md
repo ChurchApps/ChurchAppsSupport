@@ -32,9 +32,13 @@ L'enregistrement des dons dans B1 Admin se fait par le système de lots. Vous cr
 ## Saisir les dons individuels {#entering-individual-donations}
 
 1. Sur la page de détail du lot, le panneau de saisie des dons apparaît à côté de la liste des dons. Sous **Sélectionner une personne ou anonyme**, saisissez le nom du donateur dans le champ de recherche pour le trouver, ou cliquez sur **Anonyme**. (Cliquer sur **Ajouter un don** en haut de la page vous amène directement à ce panneau.)
-2. Après avoir sélectionné une personne, le formulaire de saisie affiche les champs **Date** (qui commence à la date du lot), **Mode** (Chèque, Espèces, Carte ou En nature), **Fonds** (affiché lorsque votre église a plus d'un fonds), **Notes**, **Montant** et **N° de chèque** (ou **4 derniers chiffres** pour les dons par carte, ou **Article** pour décrire un don en nature ; les dons en espèces n'ont pas de champ de détail). Cliquez sur **Changer** à côté du nom du donateur pour choisir quelqu'un d'autre.
+2. Après avoir sélectionné une personne, le formulaire de saisie affiche les champs **Date** (qui commence à la date du lot), **Mode** (Chèque, Espèces, Carte ou En nature), **Fonds** (affiché lorsque votre église a plus d'un fonds), **Mémo (imprimé sur le relevé)**, **Notes (interne)**, **Montant** et **N° de chèque** (ou **4 derniers chiffres** pour les dons par carte, ou **Article** pour décrire un don en nature ; les dons en espèces n'ont pas de champ de détail). Cliquez sur **Changer** à côté du nom du donateur pour choisir quelqu'un d'autre.
 3. Remplissez les détails et cliquez sur **Ajouter le don** (ou appuyez sur Entrée). Si le montant est vide ou égal à zéro, le formulaire vous demande de saisir un montant supérieur à zéro au lieu d'enregistrer.
-4. Le don est ajouté à la liste des dons, et le formulaire se réinitialise pour que vous puissiez saisir le suivant. La date, le mode, le fonds et les notes restent tels que vous les avez définis ; une pile de chèques semblables ne nécessite donc que le donateur, le montant et le numéro de chèque.
+4. Le don est ajouté à la liste des dons, et le formulaire se réinitialise pour que vous puissiez saisir le suivant. La date, le mode, le fonds, le mémo et les notes restent tels que vous les avez définis ; une pile de chèques semblables ne nécessite donc que le donateur, le montant et le numéro de chèque.
+
+:::tip Mémo ou Notes ?
+Le **Mémo** est imprimé sur le relevé de dons et le reçu du donateur, à côté du don. Utilisez-le pour ce que le donateur doit voir, comme l'affectation d'un don destiné à un usage précis (« Voyage des jeunes »). Les **Notes** sont réservées à votre personnel et ne sont jamais imprimées. Lorsqu'une personne donne en ligne, tout ce qu'elle saisit dans la zone mémo du formulaire de don est enregistré comme mémo du don.
+:::
 
 :::info
 Si le lot a été [fermé](batches.md#closing-and-reopening-a-batch), le panneau de saisie et les liens **Modifier** sont masqués pour quiconque ne dispose pas de **Modifier les dons**, et un avis en haut du lot indique qu'il est fermé. Demandez à une personne disposant de **Modifier les dons** de le rouvrir.
@@ -91,7 +95,7 @@ La répartition d'un don entre plusieurs fonds est courante lorsqu'un donateur r
 
 ## Modifier ou retirer des dons {#editing-or-removing-donations}
 
-Pour modifier un don, cliquez sur le bouton **Modifier** sur sa ligne dans le lot. Vous pouvez changer la date, le montant, le fonds, le mode de paiement (Chèque, Espèces, Carte ou En nature) ou tout autre détail. Pour un don en nature, l'éditeur intitule le champ de détail **Article** afin que vous puissiez décrire ce qui a été donné. Cliquez sur **Enregistrer** lorsque vous avez terminé.
+Pour modifier un don, cliquez sur le bouton **Modifier** sur sa ligne dans le lot. Vous pouvez changer la date, le montant, le fonds, le mode de paiement (Chèque, Espèces, Carte ou En nature) ou tout autre détail, y compris le **Mémo** et les **Notes**. Pour un don en nature, l'éditeur intitule le champ de détail **Article** afin que vous puissiez décrire ce qui a été donné. Cliquez sur **Enregistrer** lorsque vous avez terminé.
 
 :::tip
 La ligne sous le nom du lot, en haut de la page, se met à jour automatiquement pour afficher la date du lot, le nombre de dons et le montant total en dollars à mesure que vous ajoutez ou modifiez des saisies. Utilisez-la pour rapprocher les montants de votre bordereau de dépôt.
@@ -123,7 +127,7 @@ Lorsqu'une personne remet un chèque, paie un événement ou un t-shirt, ou qu'u
 2. Cliquez sur **Reçu** à côté de **Modifier** sur la ligne du don. Vous pouvez aussi cliquer sur **Reçu** au bas du formulaire Modifier le don.
 3. Cliquez sur **Imprimer**, ou sur **Fermer** pour revenir en arrière.
 
-Le reçu utilise la même mise en page que le relevé de dons : votre église et le donateur (ou « Anonyme »), la date et le mode du don, chaque fonds et son montant, la note, votre Note sur les dons, et le bloc de reçu officiel si vous avez défini un **Format du relevé** (voir [Relevés de dons](giving-statements.md)). Le numéro de reçu de ce bloc correspond à l'identifiant du don.
+Le reçu utilise la même mise en page que le relevé de dons : votre église et le donateur (ou « Anonyme »), la date et le mode du don, chaque fonds et son montant, le mémo du don (s'il en a un), votre Note sur les dons, et le bloc de reçu officiel si vous avez défini un **Format du relevé** (voir [Relevés de dons](giving-statements.md)). Le numéro de reçu de ce bloc correspond à l'identifiant du don.
 
 :::info
 La mention « aucun bien ni service fourni » n'est imprimée que lorsque chaque fonds du don est marqué comme déductible d'impôt. Si une partie du don est allée à un fonds non déductible, comme des frais d'événement ou un achat, le reçu omet cette mention afin de se lire comme un paiement plutôt que comme un don de bienfaisance.

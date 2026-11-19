@@ -55,7 +55,7 @@ Nella vista **Tabella**, le persone sono elencate per cognome, poi per nome. Puo
 1. Clicca su un'**intestazione di colonna** (ad esempio **Nome** o **Email**) per ordinare in base a quella colonna.
 2. Clicca di nuovo sulla stessa intestazione per invertire l'ordine.
 
-Il primo clic ordina la colonna in modo crescente (dalla A alla Z, dal più giovane al più anziano, dalla data più vecchia), e la freccia accanto all'intestazione indica la direzione. Le persone senza un valore in quella colonna compaiono sempre per ultime. Così è facile trovare le persone in ordine alfabetico, per età o per qualsiasi altra colonna visibile.
+Il primo clic ordina la colonna in modo crescente (dalla A alla Z, dal più giovane al più anziano, dalla data più vecchia), e la freccia accanto all'intestazione indica la direzione. Le persone senza un valore in quella colonna compaiono sempre per ultime. Così è facile trovare le persone in ordine alfabetico, per età o per qualsiasi altra colonna visibile. B1 ricorda l'ordinamento su quel dispositivo, così la tabella resta ordinata allo stesso modo dopo un aggiornamento della pagina o quando torni più tardi.
 
 ## Personalizzare le colonne {#customizing-columns}
 

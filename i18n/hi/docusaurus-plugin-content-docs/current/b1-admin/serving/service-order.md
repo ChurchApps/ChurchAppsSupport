@@ -14,7 +14,7 @@ description: "आराधना योजना के लिए B1 Admin म�
 
 ## प्रशिक्षण वीडियो {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="B1 में सेवा क्रम और गीत लाइब्रेरी बनाना" next="B1 में योजना टेम्पलेट, कार्य और वर्कफ़्लो" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="B1 में सेवा क्रम और गीत लाइब्रेरी बनाना" next="B1 में योजना टेम्पलेट, कार्य और वर्कफ़्लो" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>शुरू करने से पहले</h4>

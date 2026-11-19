@@ -65,7 +65,7 @@ description: "B1 Admin에서 역할을 설정하여 직원과 자원봉사자가
 2. **Members** 목록에서 그 사람을 찾으세요.
 3. 그 사람의 행에 있는 삭제 아이콘을 클릭하고 확인하세요.
 
-교회에는 항상 도메인 관리자가 최소 한 명 있어야 하므로, **Domain Admins**의 마지막 구성원은 제거할 수 없습니다.
+교회에는 항상 도메인 관리자가 최소 한 명 있어야 하므로, **Domain Admins**의 마지막 구성원은 제거할 수 없습니다. B1은 "At least one Domain Admin is required. Add another Domain Admin before removing this one."라는 메시지를 표시합니다. 유일한 도메인 관리자는 **Domain Admins**에 다른 사람이 추가되기 전까지 교회를 떠나거나 자신의 계정을 삭제할 수도 없습니다.
 
 ## 권한 설정하기 {#configuring-permissions}
 

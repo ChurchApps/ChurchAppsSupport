@@ -11,6 +11,10 @@ B1.church er medlemsportalen for kirken din. Det er stedet menigheten går for �
 
 </div>
 
+## Opplæringsvideo {#training-video}
+
+<YouTube id="yiKP0zuJMVU" title="B1.church for Your Members" next="Logging In and Installing the B1.church App" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 Når medlemmer besøker B1.church-nettstedet ditt, ser de kirkens offentlige nettsted med profilen din, navigasjonslenker og innholdssider. Etter innlogging kan de åpne **Medlemsportalen**, der alle deres personlige kirkeverktøy ligger samlet på ett sted.
 
 ## Viktige funksjoner

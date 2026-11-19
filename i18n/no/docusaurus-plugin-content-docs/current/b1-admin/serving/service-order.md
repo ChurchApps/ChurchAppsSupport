@@ -14,7 +14,7 @@ Gudstjenesterekkefølgen definerer rekkefølgen på elementene i gudstjenesten. 
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Bygge gudstjenesterekkefølgen og sangbiblioteket i B1" next="Plan-maler, oppgaver og arbeidsflyter i B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Bygge gudstjenesterekkefølgen og sangbiblioteket i B1" next="Plan-maler, oppgaver og arbeidsflyter i B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>

@@ -82,7 +82,17 @@ Klikk **New Event** på detaljsiden for kalenderen for å legge til en hendelse,
 - **Rooms** og **Resources** – reserver lokaler og utstyr til hendelsen. Se [Rom, ressurser og planlegging](./rooms-resources.md). Når du har valgt ett, kan du også legge til tid for oppsett og opprydding eller et eget reservasjonsvindu – se [Booke et rom eller en ressurs](./availability.md#booking-a-room-or-resource).
 - **Reminders** – utvid denne delen for å sende påminnelser før hendelsen. Se [Påminnelser for hendelser](./event-reminders.md).
 
-**Group**, **Title**, **Start** og **End** er påkrevd, og sluttidspunktet må være etter starttidspunktet. Klikk **Save**. Hvis hendelsen gjentas, ber B1 deg om å bekrefte, fordi lagring oppdaterer alle forekomstene i serien. For å slette en hendelse åpner du den i redigeringsvisningen og klikker **Delete**.
+**Group**, **Title**, **Start** og **End** er påkrevd, og sluttidspunktet må være etter starttidspunktet. Klikk **Save**. For å slette en hendelse åpner du den i redigeringsvisningen og klikker **Delete**.
+
+### Endre én dato for en gjentakende hendelse {#changing-one-date-of-a-recurring-event}
+
+Når du klikker på en dato for en gjentakende hendelse i kalenderen og deretter **Edit**, spør lagring eller sletting hvilke datoer som skal endres:
+
+- **Just this date** – Bare datoen du klikket på. Ved lagring blir den datoen en egen engangshendelse med endringene dine, og resten av serien forblir som den var. Ved sletting fjernes bare den datoen.
+- **This and all following dates** – Serien avsluttes dagen før datoen du klikket på. Ved lagring starter endringene dine en ny serie fra den datoen; ved sletting fjernes de gjenværende datoene.
+- **All dates** – Hele serien, som før.
+
+Skjemaet viser seriens første dato, men **Just this date** og **This and all following dates** flytter tidsendringene dine over til datoen du klikket på. En dato som er skilt ut, beholder seriens rom og ressurser, får sine egne bookinger og kopierer ikke seriens påminnelser. Hvis du åpner en gjentakende hendelse uten å velge en dato (for eksempel fra **Approvals**), ber B1 deg i stedet om å bekrefte, fordi lagring oppdaterer alle datoene i serien.
 
 ### Hendelsesnotater {#event-notes}
 
@@ -116,6 +126,14 @@ Når påmelding er aktivert, ser medlemmer en knapp **Register for this Event** 
 :::info
 Registration Questions fungerer bare med skjemaer som **ikke** er merket som Restricted. Et begrenset skjema hoppes automatisk over under påmeldingen i stedet for å vises, så bruk et ubegrenset skjema når du legger ved spørsmål til en hendelse.
 :::
+
+### Dele lenken til en hendelse {#sharing-an-event-link}
+
+For å invitere personer som ikke finnes i menighetens database, del hendelsens egen side. Klikk på hendelsen i kalenderen og klikk **Share**, eller klikk **Share** på hendelsens påmeldingsside. En dialog viser hendelsens lenke og en QR-kode: klikk på kopieringsikonet for å kopiere lenken, eller klikk **Download PNG** for å lagre QR-koden til en flyer eller et lysbilde. Alle som har lenken, kan se hendelsen, legge den til i kalenderen sin og, når påmelding er aktivert, melde seg på som gjest med bare navn og e-post.
+
+En **Private**-hendelse holder seg utenfor nettstedets kalender, men kan likevel deles når påmelding er aktivert. En privat hendelse uten påmelding har ingen offentlig side, så den har ingen knapp **Share**.
+
+I B1-appen har hendelser i en gruppes kalender en lenke **Share** som åpner telefonens delingsark med samme lenke.
 
 ### Administrere påmeldinger {#managing-registrations}
 

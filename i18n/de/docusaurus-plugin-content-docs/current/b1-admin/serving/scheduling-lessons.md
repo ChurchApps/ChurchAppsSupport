@@ -14,7 +14,7 @@ B1 Admin ist direkt mit [Lessons.church](https://lessons.church) verbunden, dami
 
 ## Schulungsvideo {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Einen Lektions-Zuschnitt für jede Woche in B1 wiederverwenden" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Einen Lektions-Zuschnitt für jede Woche in B1 wiederverwenden" next="Planvorlagen, Aufgaben und Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
@@ -45,7 +45,7 @@ Diese Einrichtung ist einmalig pro Dienstbereich. Sie müssen Ihr Lessons.church
 Der Abschnitt Inhaltsanbieter gilt pro Dienstbereich. Wenn Sie mehrere Dienstbereiche betreiben (z. B. Kinder und Jugend), müssen Sie Lessons.church für jeden einzeln verknüpfen.
 :::
 
-Lessons.church ist nicht die einzige Option. Die gleiche Liste **Neuen Anbieter verknüpfen** bietet auch weitere Lehrplan- und Dateiquellen an, darunter SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive und OneDrive. Verknüpfen Sie diese auf die gleiche Weise; sie erscheinen dann als Anbieter, zu denen Sie beim Auswählen einer Lektion wechseln können.
+Lessons.church ist nicht die einzige Option. Die gleiche Liste **Neuen Anbieter verknüpfen** bietet auch weitere Lehrplan- und Dateiquellen an, darunter SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive und OneDrive. Verknüpfen Sie diese auf die gleiche Weise; sie erscheinen dann als Anbieter, zu denen Sie beim Auswählen einer Lektion wechseln können.
 
 ## Schritt 2 — Eine Lektion planen {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Sobald die Verbindung besteht, können Sie Lektionen direkt über die Pläne pla
    - Wählen Sie die konkrete **Lektion**
    - Wählen Sie den **Veranstaltungsort** – das ist die Fassung der Lektion für die jeweilige Altersgruppe
 
-   Andere Anbieter ordnen ihre Inhalte anders. **Go Curriculum** beginnt zum Beispiel mit **Grundschule** oder **Vorschule**, dann einer Reihe und danach der Lektion selbst – einen Veranstaltungsort gibt es dort nicht.
+   Andere Anbieter ordnen ihre Inhalte anders. **GO! Curriculum** beginnt zum Beispiel mit **Grundschule** oder **Vorschule**, dann einer Reihe und danach der Lektion selbst – einen Veranstaltungsort gibt es dort nicht.
 8. Klicken Sie auf **Lektion zuordnen**, um zu bestätigen
 9. Wählen Sie die **Kopieroption** für die Freiwilligen:
    - **Nichts** – neuer Plan, keine Freiwilligen werden übernommen
@@ -87,7 +87,7 @@ Um mehrere Lektionen aus derselben Reihe auf einmal zu planen, klicken Sie auf *
 4. Prüfen Sie die Liste – die Start-Lektion und der Rest ihrer Reihe, jeweils mit einem Datum. Entfernen Sie den Haken bei allen, die Sie überspringen möchten
 5. Klicken Sie auf **Speichern**, um einen Plan pro Lektion anzulegen
 
-Bei Lessons.church zeigt die Liste außerdem den **Veranstaltungsort** an, den jede Lektion verwendet. Er wird über den Namen dem Veranstaltungsort zugeordnet, den Sie für die Start-Lektion gewählt haben. Hat eine Lektion diesen Veranstaltungsort nicht, wird ein anderer verwendet und als **ersetzt** markiert. Anbieter, deren Lektionen keine Veranstaltungsort-Ebene haben, etwa Go Curriculum, planen die Lektionen direkt, und die Spalte Veranstaltungsort wird ausgeblendet.
+Bei Lessons.church zeigt die Liste außerdem den **Veranstaltungsort** an, den jede Lektion verwendet. Er wird über den Namen dem Veranstaltungsort zugeordnet, den Sie für die Start-Lektion gewählt haben. Hat eine Lektion diesen Veranstaltungsort nicht, wird ein anderer verwendet und als **ersetzt** markiert. Anbieter, deren Lektionen keine Veranstaltungsort-Ebene haben, etwa GO! Curriculum, planen die Lektionen direkt, und die Spalte Veranstaltungsort wird ausgeblendet.
 
 ## Nur einen Teil jeder Lektion behalten {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Passt eine Lektion nicht zum Muster (ein Teil fehlt, hat diese Woche kein Video 
 
 Pläne, die bereits eine Gottesdienstordnung haben, werden beim Planen nicht verändert. Um den gespeicherten Zuschnitt zu ändern, passen Sie einen anderen Plan an und klicken Sie auf **Gespeicherten Zuschnitt für Grundschule ersetzen** (wieder mit dem Namen Ihrer Planart). Um das Zuschneiden zu beenden, öffnen Sie das Dialogfeld **Bearbeiten** der Planart und klicken Sie neben **Lektions-Zuschnitt** auf **Leeren**.
 
-## Leiterhandbücher von Go Curriculum {#go-curriculum-leader-guides}
+## Leiterhandbücher von GO! Curriculum {#go-curriculum-leader-guides}
 
-Wenn Sie eine Lektion von Go Curriculum planen, wird die Gottesdienstordnung des Plans aus dem Leiterhandbuch **Große Gruppe** der Lektion aufgebaut: Jeder Teil des Handbuchs wird zu einem Abschnitt, und jeder Schritt darin wird mit seinem Typ (etwa sagen, tun, spielen oder Hinweis) und seinem Text aufgeführt. Schritte, die ein Video oder andere Medien abspielen, übernehmen diese Datei, sodass sie der Reihe nach abgespielt wird. (Eine Lektion ohne Handbuch für die Große Gruppe greift auf eine einfache Liste ihrer Mediendateien zurück.)
+Wenn Sie eine Lektion von GO! Curriculum planen, wird die Gottesdienstordnung des Plans aus dem Leiterhandbuch **Große Gruppe** der Lektion aufgebaut: Jeder Teil des Handbuchs wird zu einem Abschnitt, und jeder Schritt darin wird mit seinem Typ (etwa sagen, tun, spielen oder Hinweis) und seinem Text aufgeführt. Schritte, die ein Video oder andere Medien abspielen, übernehmen diese Datei, sodass sie der Reihe nach abgespielt wird. (Eine Lektion ohne Handbuch für die Große Gruppe greift auf eine einfache Liste ihrer Mediendateien zurück.)
 
 Auch jede Reihe mit Material für Kleingruppen beginnt mit einem Ordner **Kleingruppen-Handbücher**. Öffnen Sie ihn und wählen Sie eine Lektion, um das Handbuch **Kleine Gruppe** dieser Lektion zu planen, benannt etwa „Lektionsname - Kleine Gruppe“ – nützlich für eine eigene Planart für Kleingruppen. Kleingruppen-Handbücher bestehen überwiegend aus Gesprächsschritten und haben meist keine Medien. Da der Ordner zuerst aufgeführt wird, wird er beim gesammelten Planen einer Reihe aus einer ihrer Lektionen nie mit übernommen.
 ## Jahresplan anwenden {#apply-a-year-plan}

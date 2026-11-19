@@ -14,7 +14,7 @@ B1 Admin integreres direkte med [Lessons.church](https://lessons.church), slik a
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Gjenbruke en leksjonsutklipp for hver uke i B1" next="Plan-maler, oppgaver og arbeidsflyter i B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Gjenbruke en leksjonsutklipp for hver uke i B1" next="Plan-maler, oppgaver og arbeidsflyter i B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
@@ -45,7 +45,7 @@ Dette er et engangsoppsett per tjeneste. Du må koble til Lessons.church-kontoen
 Delen Innholdsleverandører gjelder per tjeneste. Hvis du driver flere tjenester (f.eks. barn og ungdom), må du koble til Lessons.church for hver enkelt av dem.
 :::
 
-Lessons.church er ikke det eneste alternativet. Den samme listen **Koble til ny leverandør** tilbyr også andre kilder for undervisningsmateriell og filer, blant annet SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive og OneDrive. Koble til hvilken som helst av dem på samme måte, og de vises som leverandører du kan bytte til når du velger en leksjon.
+Lessons.church er ikke det eneste alternativet. Den samme listen **Koble til ny leverandør** tilbyr også andre kilder for undervisningsmateriell og filer, blant annet SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive og OneDrive. Koble til hvilken som helst av dem på samme måte, og de vises som leverandører du kan bytte til når du velger en leksjon.
 
 ## Steg 2 — Planlegg en leksjon {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Når du er koblet til, kan du planlegge leksjoner direkte fra planene.
    - Velg den bestemte **leksjonen**
    - Velg **Aldersgruppe** — dette er aldersgruppeversjonen av leksjonen
 
-   Andre leverandører organiserer innhold annerledes. For eksempel starter **Go Curriculum** med **Barnetrinn** eller **Førskole**, deretter en serie, og deretter selve leksjonen — der er ingen aldersgruppe å velge.
+   Andre leverandører organiserer innhold annerledes. For eksempel starter **GO! Curriculum** med **Barnetrinn** eller **Førskole**, deretter en serie, og deretter selve leksjonen — der er ingen aldersgruppe å velge.
 8. Klikk på **Knytt leksjon** for å bekrefte
 9. Velg **kopialternativ** for de frivillige:
    - **Ingenting** — ny plan, ingen frivillige overføres
@@ -87,7 +87,7 @@ For å planlegge flere leksjoner fra samme serie samtidig, klikk på **Planlegg 
 4. Gå gjennom listen — startleksjonen og resten av serien, hver med en dato. Fjern avkrysningen for alle du vil hoppe over
 5. Klikk på **Lagre** for å opprette én plan per leksjon
 
-For Lessons.church viser listen også **aldersgruppen** hver leksjon vil bruke, matchet etter navn med aldersgruppen du valgte for startleksjonen (hvis en leksjon ikke har den aldersgruppen, brukes en annen og merkes **erstattet**). Leverandører hvis leksjoner ikke har et aldersgruppenivå, som Go Curriculum, planlegger leksjonene direkte, og kolonnen for aldersgruppe er skjult.
+For Lessons.church viser listen også **aldersgruppen** hver leksjon vil bruke, matchet etter navn med aldersgruppen du valgte for startleksjonen (hvis en leksjon ikke har den aldersgruppen, brukes en annen og merkes **erstattet**). Leverandører hvis leksjoner ikke har et aldersgruppenivå, som GO! Curriculum, planlegger leksjonene direkte, og kolonnen for aldersgruppe er skjult.
 
 ## Behold bare en del av hver leksjon {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Når en leksjon ikke passer mønsteret (en del mangler, har ingen video eller bi
 
 Planer som allerede har en gudstjenesterekkefølge, endres ikke når de planlegges. For å endre det lagrede utklippet, tilpass en annen plan og klikk på **Erstatt det lagrede utklippet for Barnetrinn** (igjen oppkalt etter plantypen din). For å slutte å klippe, åpner du plantypens **Rediger**-dialog og klikker på **Tøm** ved siden av **Leksjonsutklipp**.
 
-## Go Curriculum-lederveiledninger {#go-curriculum-leader-guides}
+## GO! Curriculum-lederveiledninger {#go-curriculum-leader-guides}
 
-Når du planlegger en Go Curriculum-leksjon, bygges planens gudstjenesterekkefølge opp fra leksjonens lederveiledning for **Stor gruppe**: hver del av veiledningen blir en seksjon, og hvert steg inni den listes med sin type (for eksempel si, gjør, spill eller merknad) og sin tekst. Steg som spiller av en video eller annet medium har med seg den filen, slik at den spilles i rekkefølge. (En leksjon uten veiledning for Stor gruppe faller tilbake til en enkel liste over mediefilene sine.)
+Når du planlegger en GO! Curriculum-leksjon, bygges planens gudstjenesterekkefølge opp fra leksjonens lederveiledning for **Stor gruppe**: hver del av veiledningen blir en seksjon, og hvert steg inni den listes med sin type (for eksempel si, gjør, spill eller merknad) og sin tekst. Steg som spiller av en video eller annet medium har med seg den filen, slik at den spilles i rekkefølge. (En leksjon uten veiledning for Stor gruppe faller tilbake til en enkel liste over mediefilene sine.)
 
 Hver serie som har materiell for smågrupper, starter også med en mappe for **Smågruppeveiledninger**. Åpne den og velg en leksjon for å planlegge den leksjonens veiledning for **Smågruppe**, navngitt slik som «Leksjonsnavn - Smågruppe» — nyttig for en egen plantype for smågrupper. Smågruppeveiledninger består mest av diskusjonssteg og har vanligvis ingen media. Fordi mappen står først i listen, plukkes den aldri opp når du planlegger en serie i bulk fra en av leksjonene.
 ## Bruk en årsplan {#apply-a-year-plan}

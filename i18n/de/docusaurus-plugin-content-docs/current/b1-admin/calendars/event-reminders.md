@@ -70,6 +70,8 @@ Der Kanal **Text** erscheint nur, wenn Ihre Kirche einen Anbieter für Textnachr
 - in ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) **Textnachrichten** aktiviert haben und
 - in ihrem Profil eine Handynummer hinterlegt haben.
 
+Mitarbeitende mit der Berechtigung, Textnachrichten zu versenden, können **Textnachrichten-Erinnerungen** für eine Person in deren [Datensatz](../people/adding-people.md#text-reminders) aktivieren, in der Zeile unter der Handynummer. Wenn Sie bei einer Erinnerung mit **Text** auf **Jetzt senden** klicken, zeigt B1 an, wie vielen Personen eine Textnachricht gesendet wurde und wie viele übersprungen wurden, zum Beispiel *An 2 Personen gesendet · 1 per Text, 1 übersprungen*.
+
 Jede Nachricht beginnt mit dem Namen Ihrer Kirche, besteht aus einer einzigen Textnachricht und endet mit „Mit STOP antworten, um sich abzumelden.“ Wer mit STOP antwortet, erhält keine Textnachrichten mehr von Ihrer Kirche. Damit STOP-Antworten B1 erreichen, fügen Sie die **URL des Webhooks für eingehende STOP-Nachrichten** aus Ihren [Einstellungen für Textnachrichten](../settings/church-settings.md#texting) in den Webhook für eingehende Nachrichten Ihres Anbieters ein.
 
 ## Was Mitglieder steuern können {#what-members-can-control}

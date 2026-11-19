@@ -65,7 +65,7 @@ To change a member's name or email, click the edit icon on their row.
 2. Find the person in the **Members** list.
 3. Click the delete icon on their row and confirm.
 
-Your church must always have at least one Domain Admin, so the last member of **Domain Admins** can't be removed.
+Your church must always have at least one Domain Admin, so the last member of **Domain Admins** can't be removed. B1 shows "At least one Domain Admin is required. Add another Domain Admin before removing this one." The only Domain Admin also can't leave the church or delete their own account until someone else is added to **Domain Admins**.
 
 ## Configuring Permissions
 

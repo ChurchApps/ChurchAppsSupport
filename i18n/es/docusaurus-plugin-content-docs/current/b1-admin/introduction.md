@@ -13,7 +13,7 @@ description: "Guía para iniciar sesión en B1 Admin, orientarse en el Dashboard
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="¿Qué es B1.church?" />
+<YouTube id="zS64eorbKUQ" title="¿Qué es B1.church?" next="B1.church para sus miembros" nextUrl="/docs/b1-church" />
 
 Para más soporte, escriba a [support@churchapps.org](mailto:support@churchapps.org).
 

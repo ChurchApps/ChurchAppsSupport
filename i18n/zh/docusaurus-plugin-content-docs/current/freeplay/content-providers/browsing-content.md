@@ -46,9 +46,9 @@ description: "在 FreePlay 中使用电视遥控器浏览已连接内容提供�
 
 在任何一级按**返回**键即可返回上一级。
 
-## 浏览 Go Curriculum
+## 浏览 GO! Curriculum
 
-在您[使用 gocurriculum.com 账户登录](./connecting-providers.md#phone-sign-in-qr-code-only)后，Go Curriculum 会显示其年龄组：**Elementary**（小学）和 **Preschool**（学龄前）。依次选择年龄组、合集和课程，然后选择一节课程即可打开其下载界面。
+在您[使用 gocurriculum.com 账户登录](./connecting-providers.md#phone-sign-in-qr-code-only)后，GO! Curriculum 会显示其年龄组：**Elementary**（小学）和 **Preschool**（学龄前）。依次选择年龄组、合集和课程，然后选择一节课程即可打开其下载界面。
 
 您看到的内容取决于您的 Go 会员资格：
 

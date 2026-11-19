@@ -13,7 +13,7 @@ Les modèles de plans vous permettent d'enregistrer un instantané réutilisable
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Modèles de plans, tâches et flux de travail dans B1" next="Créer des calendriers, des événements et des réservations de salles dans B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Modèles de plans, tâches et flux de travail dans B1" next="Créer des calendriers, des événements et des réservations de salles dans B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>

@@ -66,7 +66,7 @@ L'écran **Groupes** du portail des membres liste les groupes auxquels vous appa
 - **Demandes en attente** -- Les groupes que vous avez demandé à rejoindre et qui attendent l'accord d'un responsable. Voir [Demander à rejoindre un groupe](./join-requests.md).
 - **Événements à venir** -- Les événements de l'église qui acceptent les inscriptions, chacun avec un lien **S'inscrire**. Voir [S'inscrire à un événement](../events/registering.md).
 
-Appuyez sur **Trouver un groupe** pour parcourir tous les groupes de l'église. Si vous n'êtes encore membre d'aucun groupe, l'écran indique « Aucun groupe pour le moment » avec un bouton **Parcourir les groupes** ; si vous n'êtes pas connecté, il vous invite à vous connecter pour voir vos groupes.
+Appuyez sur **Trouver un groupe** pour parcourir tous les groupes de l'église. Si vous n'êtes encore membre d'aucun groupe, l'écran indique « Aucun groupe pour le moment » avec un bouton **Parcourir les groupes** ; si vous n'êtes pas connecté, il vous invite à vous connecter pour voir vos groupes, mais affiche tout de même les **Événements à venir** de l'église qui acceptent les inscriptions afin que vous puissiez vous inscrire.
 
 ## Étapes suivantes {#next-steps}
 

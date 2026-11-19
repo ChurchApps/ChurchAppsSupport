@@ -112,7 +112,7 @@ La suppression de compte -- qu'elle soit immédiate ou approuvée par votre égl
 :::
 
 :::info
-Si vous êtes **Administrateur de domaine**, transférez les responsabilités administratives à un autre utilisateur avant de supprimer votre compte. Consultez [Rôles et autorisations](../settings/roles-permissions.md) pour plus de détails sur la gestion des rôles d'administrateur.
+Si vous êtes le seul **Administrateur de domaine** de votre église, B1 ne supprimera pas votre compte. Il affiche « Vous êtes le seul administrateur de domaine de *église*. Désignez un autre administrateur de domaine avant de supprimer votre compte. » Ajoutez d'abord un autre utilisateur aux **Administrateurs de domaine**. Consultez [Rôles et autorisations](../settings/roles-permissions.md) pour plus de détails sur la gestion des rôles d'administrateur.
 :::
 
 :::info

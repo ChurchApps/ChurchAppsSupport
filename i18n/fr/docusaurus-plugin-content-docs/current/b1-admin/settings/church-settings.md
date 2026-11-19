@@ -94,6 +94,12 @@ L'envoi de messages texte fonctionne mieux lorsque les numéros comprennent l'in
 
 Votre région s'applique aux dates et aux heures dans toute l'application B1 Admin et sur votre site web B1.church ainsi que dans le portail des membres, y compris pour les prédications, les billets de blogue, les calendriers de groupes et les plans de service. Les membres voient ainsi les dates dans le même format que votre personnel.
 
+### Jour du culte {#worship-day}
+
+La section Région comporte aussi un paramètre **Jour du culte** pour le jour où se tient votre culte principal. Il est **dimanche** à moins que vous ne le modifiiez. Les églises qui se réunissent le samedi (ou un autre jour) peuvent choisir ce jour, et le tableau de bord le suit : le titre principal affiche « Ce samedi », les panneaux latéraux affichent « Service samedi » et « Samedi dernier », la date de culte affichée est le samedi à venir, et le compteur en direct « dans la salle » s'active lors des pointages du samedi.
+
+Lorsque le jour du culte n'est pas le dimanche, l'entrée Région de la liste de gauche affiche aussi ce jour à côté de votre région.
+
 ## Messagerie texte {#texting}
 
 Connectez un fournisseur de messages texte pour envoyer des SMS à une personne ou à un groupe entier depuis B1 Admin. Les messages sont envoyés par votre propre compte auprès du fournisseur ; sa tarification et ses limites s'appliquent donc.

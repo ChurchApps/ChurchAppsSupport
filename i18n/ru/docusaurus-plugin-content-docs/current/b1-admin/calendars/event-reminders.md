@@ -70,6 +70,8 @@ description: "Настройте напоминания о событиях в B
 - включил **Text messages** в своих [настройках уведомлений](../../b1-church/getting-started/notification-preferences.md), и
 - указал мобильный номер в своем профиле.
 
+Сотрудники с правом отправки SMS могут включить **Text reminders** для человека в его [карточке](../people/adding-people.md#text-reminders), в строке под его мобильным номером. Когда вы нажимаете **Send now** на напоминании, которое включает **Text**, B1 показывает, сколько людей получили SMS, а сколько пропущено, например *Sent to 2 people · 1 texted, 1 skipped*.
+
 Каждое сообщение начинается с названия вашей общины, умещается в одно SMS и заканчивается фразой «Reply STOP to opt out». Тот, кто ответит STOP, перестает получать SMS от вашей общины. Чтобы ответы STOP доходили до B1, вставьте **Inbound (STOP) webhook URL** из ваших [настроек SMS](../settings/church-settings.md#texting) в webhook входящих сообщений вашего провайдера.
 
 ## Что могут контролировать участники {#what-members-can-control}

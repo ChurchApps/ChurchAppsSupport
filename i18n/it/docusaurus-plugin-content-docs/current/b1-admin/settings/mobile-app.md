@@ -13,7 +13,7 @@ La pagina Impostazioni dell'app mobile ti permette di configurare le schede di n
 
 ## Video di formazione {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Personalizzare l'app dei membri della tua chiesa in B1" />
+<YouTube id="7x2CQG_pH6o" title="Personalizzare l'app dei membri della tua chiesa in B1" />
 
 :::info
 Le schede configurate qui compaiono nell'app B1, che i membri possono [installare come Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Condividi con i membri la pagina di installazione della tua chiesa — `https://yourchurchname.b1.church/mobile/install` — che li guida nell'installazione dell'app sul loro dispositivo, senza bisogno di scaricarla da App Store o Google Play.
@@ -158,7 +158,7 @@ Le schede che configuri qui vengono mostrate nella **PWA B1.church** che i tuoi 
 
 Su telefono, la barra delle schede in basso mostra **Home**, fino a tre delle tue schede e **Altro**; su computer, l'intestazione mostra fino a cinque schede. Le schermate integrate (come Prediche, Donazioni o Gruppi) occupano per prime gli spazi disponibili, e le schede **Pagina interna** riempiono quelli rimasti liberi. Le schede **URL esterno** e **Versetto del giorno** non ottengono mai uno spazio. Ogni scheda, comprese quelle che non entrano, è elencata nella pagina **Altro** dell'app.
 
-Fanno eccezione le schede inserite in una scheda **Cartella**: compaiono solo nella schermata della cartella stessa, che i membri aprono toccando la cartella. Quella schermata mostra le schede come riquadri fotografici quando ognuna ha un'immagine, oppure come elenco in caso contrario. Una cartella che non contiene schede visibili a un membro è nascosta a quel membro. Vedi [Schede cartella](../../b1-church/getting-started/navigating.md#folder-tabs). Vedi [Navigare nella B1App](../../b1-church/getting-started/navigating.md) per ciò che vedono i membri.
+Fanno eccezione le schede inserite in una scheda **Cartella**: compaiono solo nella schermata della cartella stessa, che i membri aprono toccando la cartella. Quella schermata mostra ogni scheda che ha un'immagine come banner fotografico a tutta larghezza, con sotto elencate le schede senza immagine. Una cartella che non contiene schede visibili a un membro è nascosta a quel membro. Vedi [Schede cartella](../../b1-church/getting-started/navigating.md#folder-tabs). Vedi [Navigare nella B1App](../../b1-church/getting-started/navigating.md) per ciò che vedono i membri.
 
 ## Passaggi successivi {#next-steps}
 

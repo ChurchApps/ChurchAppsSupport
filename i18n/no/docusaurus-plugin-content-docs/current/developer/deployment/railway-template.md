@@ -115,7 +115,10 @@ Oppdater deretter variablene på **Api**-tjenesten slik at lenker i e-poster bru
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` er medlemsnettstedets adresse, brukt til lenker i e-poster for planer, påmeldinger og påminnelser, og i varsler. Den kan også være en mal som `https://{subdomain}.yourchurch.org`. Hvis den ikke er satt, peker disse lenkene til `https://{subdomain}.b1.church`.
 
 Og på **B1Admin**-tjenesten:
 

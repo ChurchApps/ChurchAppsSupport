@@ -13,7 +13,7 @@ Takk for at du valgte B1.church! Denne introduksjonen gjennomgår det grunnlegge
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="Hva er B1.church?" />
+<YouTube id="zS64eorbKUQ" title="Hva er B1.church?" next="B1.church for Your Members" nextUrl="/docs/b1-church" />
 
 For videre støtte, send e-post til [support@churchapps.org](mailto:support@churchapps.org).
 

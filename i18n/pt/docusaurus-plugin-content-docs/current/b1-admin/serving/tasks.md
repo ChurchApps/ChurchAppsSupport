@@ -33,13 +33,17 @@ Por padrão, somente as tarefas abertas são exibidas. Escolha **Concluídas** a
 
 1. Na página **Meu trabalho**, clique em **Adicionar tarefa**. Abre-se um formulário **Nova tarefa**.
 2. Opcionalmente, clique na caixa **Associar a** e escolha a pessoa ou o grupo ao qual a tarefa se refere. Deixe em branco para uma pendência simples que não se refira a ninguém, como um lembrete para você mesmo.
-3. Clique na caixa **Atribuir a**. Na janela **Selecione uma pessoa ou grupo**, pesquise na aba **Pessoa** ou mude para a aba **Grupo** e pesquise um grupo, depois selecione o resultado.
+3. Clique na caixa **Atribuir a**. Na janela **Selecione pessoas ou um grupo**, pesquise na aba **Pessoa** ou mude para a aba **Grupo** e pesquise um grupo, depois selecione o resultado.
 4. Digite um **Título** para a tarefa.
 5. Opcionalmente, escolha uma **Data de vencimento**.
 6. Adicione **Observações** com quaisquer detalhes ou instruções para o responsável.
 7. Clique em **Salvar**.
 
 A tarefa passará a aparecer na lista de tarefas e ficará visível para o responsável no painel dele e no aplicativo móvel.
+
+:::tip
+Tanto **Associar a** quanto **Atribuir a** aceitam várias pessoas. Continue escolhendo pessoas na janela e depois clique em **Concluído**; elas aparecem como etiquetas abaixo da caixa. Na aba **Grupo**, marque **Criar uma tarefa separada para cada membro** para incluir todas as pessoas de um grupo. **Salvar** cria uma tarefa para cada pessoa, e quando as duas caixas têm várias pessoas, cada responsável recebe uma tarefa para cada pessoa associada (dois responsáveis e três pessoas resultam em seis tarefas). Editar uma tarefa que você já criou continua alterando uma pessoa por vez.
+:::
 
 ## Gerenciando uma tarefa {#managing-a-task}
 
@@ -63,7 +67,9 @@ Uma tarefa com data de vencimento pode lembrar o responsável antes do prazo.
 5. Em **Enviar por**, escolha **Notificação push**, **E-mail** e, se a sua igreja tiver um [provedor de SMS](../settings/church-settings.md#texting) conectado, **SMS**.
 6. Clique em **Salvar lembretes**.
 
-Se a tarefa não tiver data de vencimento, o B1 avisa que nenhum lembrete será enviado até que uma data seja definida no campo **Vencimento**. Os lembretes por SMS só chegam a quem ativou **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md), e cada SMS pode gerar custos para a sua igreja.
+Se a tarefa não tiver data de vencimento, o B1 avisa que nenhum lembrete será enviado até que uma data seja definida no campo **Vencimento**. Os lembretes por SMS só chegam a quem ativou **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md), e cada SMS pode gerar custos para a sua igreja. A equipe com permissão para enviar mensagens de texto pode ativar **Lembretes por SMS** para uma pessoa a partir do [registro](../people/adding-people.md#text-reminders) dela, na linha abaixo do número de celular.
+
+Para enviar um lembrete salvo imediatamente, clique em **Enviar agora**. Quando o lembrete inclui **SMS**, o B1 mostra quantas pessoas foram lembradas e quantas receberam SMS e quantas foram ignoradas, por exemplo *Enviado para 2 pessoas · 1 recebeu SMS, 1 ignorada*. As pessoas são ignoradas quando têm **Mensagens de texto** desativadas, não têm número de celular ou responderam STOP.
 
 ## Ciclo de vida de uma tarefa {#task-lifecycle}
 

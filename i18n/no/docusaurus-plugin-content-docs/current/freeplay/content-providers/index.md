@@ -19,7 +19,7 @@ FreePlay inkluderer for øyeblikket følgende leverandører:
 - **Bible Project** - Videoer og ressurser som utforsker Bibelen
 - **SignPresenter** - Presentasjons- og skiltinnhold for menigheter
 - **B1.church** - Innhold fra ditt eget B1-menighetsoppsett
-- **Go Curriculum** - Læreplan fra gocurriculum.com, organisert etter aldersgruppe (**Elementary** og **Preschool**), deretter samling og leksjon. Du ser bare de aldersgruppene og videoene som medlemskapet ditt i Go inkluderer
+- **GO! Curriculum** - Læreplan fra gocurriculum.com, organisert etter aldersgruppe (**Elementary** og **Preschool**), deretter samling og leksjon. Du ser bare de aldersgruppene og videoene som medlemskapet ditt i Go inkluderer
 - **Dropbox** - Bla gjennom og spill av bilder og videoer fra din egen Dropbox
 - **Jesus Film Project** - Filmer og videoklipp fra Jesus Film Project
 - **OneDrive** - Bla gjennom og spill av bilder, videoer og lyd fra ditt eget Microsoft OneDrive

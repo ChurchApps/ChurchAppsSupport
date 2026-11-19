@@ -57,7 +57,7 @@ Pagkatapos, punan ang form:
 
 1. **Play** - Piliin kung ano ang ipapatugtog:
    - **Playlists** - Anumang playlist na ginawa mo
-   - **Service plans** - Isang plan type mula sa B1 Admin, may markang **(current plan)**. Ang screen ay tumutugtog ng kasalukuyang plano para sa plan type na iyon bawat linggo, kasama ang mga aralin ng Go Curriculum (pati ang mga na-customize), na gumagamit ng Go login na nakakabit sa ministeryo ng plan type
+   - **Service plans** - Isang plan type mula sa B1 Admin, may markang **(current plan)**. Ang screen ay tumutugtog ng kasalukuyang plano para sa plan type na iyon bawat linggo, kasama ang mga aralin ng GO! Curriculum (pati ang mga na-customize), na gumagamit ng Go login na nakakabit sa ministeryo ng plan type
    - **Provider folder…** - Bubukas ang **Choose a provider folder**. Mag-browse sa isang folder at i-click ang **Use this folder**. Para pumili ng ibang folder sa susunod, i-click ang **Change**
 2. **Repeats** - Piliin ang mga araw ng linggo na tutugtog ang iskedyul. Para sa isang partikular na petsa, i-on ang **One time** at pumili ng **Date**.
 3. **Start** at **End** - Ang mga oras kung kailan magsisimula at titigil ang iskedyul.

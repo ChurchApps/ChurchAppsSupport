@@ -54,6 +54,12 @@ Genere sus estados a principios de enero, mientras sus registros aún están fre
 Los estados de donación solo incluyen donaciones asignadas a fondos que tienen activada la configuración **Deducible de impuestos**. Si un fondo no está marcado como deducible de impuestos, sus donaciones no aparecerán en el estado. Puede administrar esta configuración en la página de [Fondos](funds.md).
 :::
 
+## Memos de donación en los estados {#gift-memos-on-statements}
+
+Cada estado enumera cada donativo con su fecha, método, fondo y monto. Cuando al menos un donativo de un estado tiene un **Memo**, se añade una columna **Memo** después del fondo para que el donante vea para qué fue cada donativo. Los estados sin memos conservan el diseño de cuatro columnas. Las **Notas** de un donativo son internas y nunca aparecen en un estado. Los archivos CSV del ZIP incluyen el memo como su última columna.
+
+Para que un propósito aparezca en el estado, introdúzcalo como **Memo** del donativo al [registrar la donación](recording-donations.md), o asígnele su propio [fondo](funds.md) si desea que se totalice por separado.
+
 ## Formatos de recibo para Canadá, Australia y Nueva Zelanda {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Las iglesias fuera de Estados Unidos pueden cambiar el estado al formato oficial de recibo de su país. Haga clic en **Formato del estado** en la parte superior de la página de Estados de donación (o vaya a **Configuración** y abra la sección **Donaciones**), y configure **Formato del estado** (que comienza en **Estándar**) como **Canadá - recibo oficial de la CRA**, **Australia** o **Nueva Zelanda**. Luego complete los campos que aparecen: su número de registro (**Número de registro de la CRA**, **ABN** o **Número de registro de organización benéfica de NZ**), la **Dirección de la organización**, el **Nombre del firmante autorizado** y, para Canadá, la **Ciudad de emisión**. Haga clic en **Guardar**.

@@ -112,7 +112,7 @@ B1 Admin에서는 색상 테마와 라이트 또는 다크 표시 모드를 고�
 :::
 
 :::info
-**Domain Admin**이라면, 계정을 삭제하기 전에 관리 책임을 다른 사용자에게 넘겨주세요. 관리자 역할 관리에 대한 자세한 내용은 [역할 및 권한](../settings/roles-permissions.md)을 참고하세요.
+교회의 유일한 **Domain Admin**이라면 B1은 계정을 삭제하지 않습니다. "You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account."라는 메시지가 표시됩니다. 계정을 삭제하기 전에 먼저 **Domain Admins**에 다른 사용자를 추가하세요. 관리자 역할 관리에 대한 자세한 내용은 [역할 및 권한](../settings/roles-permissions.md)을 참고하세요.
 :::
 
 :::info

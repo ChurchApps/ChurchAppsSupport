@@ -13,7 +13,7 @@ description: "在 B1 Admin 中配置 B1.church 成员应用的导航标签、主
 
 ## 培训视频 {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="在 B1 中自定义教会的成员应用" />
+<YouTube id="7x2CQG_pH6o" title="在 B1 中自定义教会的成员应用" />
 
 :::info
 此处配置的标签会显示在 B1 App 中，成员可以将其[安装为渐进式 Web 应用（PWA）](../../b1-church/getting-started/installing-pwa.md)。请将你教会的安装页面 -- `https://yourchurchname.b1.church/mobile/install` -- 分享给成员；该页面会引导他们在设备上安装应用，无需从 App Store 或 Google Play 下载。
@@ -158,7 +158,7 @@ Mobile 菜单还包括 **App Theme**（应用主题）、**Member portal**（会
 
 在手机上，底部标签栏会显示 **Home**（主页）、最多三个你的标签以及 **More**（更多）；在电脑上，页眉最多显示五个标签。内置页面（例如讲道、奉献或小组）会优先占用这些位置，剩余位置则由**内部页面**标签填充。**外部网址**和**每日经文**标签永远不会占用这些位置。所有标签，包括无法放入的标签，都会列在应用的 **More** 页面中。
 
-放在**文件夹**标签内的标签是例外：它们只会显示在文件夹自身的页面上，会员点击文件夹即可打开。当所有标签都有图片时，该页面会以照片图块的形式显示这些标签，否则以列表形式显示。对于某位会员而言，如果文件夹中没有其可以看到的标签，该文件夹将对其隐藏。参见[文件夹标签](../../b1-church/getting-started/navigating.md#folder-tabs)。有关会员所看到的内容，请参阅[导航 B1App](../../b1-church/getting-started/navigating.md)。
+放在**文件夹**标签内的标签是例外：它们只会显示在文件夹自身的页面上，会员点击文件夹即可打开。该页面会为每个带有图片的标签显示一个全宽照片横幅，没有图片的标签则列在其下方。对于某位会员而言，如果文件夹中没有其可以看到的标签，该文件夹将对其隐藏。参见[文件夹标签](../../b1-church/getting-started/navigating.md#folder-tabs)。有关会员所看到的内容，请参阅[导航 B1App](../../b1-church/getting-started/navigating.md)。
 
 ## 后续步骤 {#next-steps}
 

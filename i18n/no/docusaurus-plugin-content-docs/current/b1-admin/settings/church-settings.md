@@ -94,6 +94,12 @@ Tekstmeldinger fungerer best når numrene inkluderer landskoden. Hvis du sender 
 
 Regionen din gjelder for datoer og klokkeslett i B1 Admin og på B1.church-nettstedet og medlemsportalen din, inkludert preken, blogginnlegg, gruppekalendere og tjenesteplaner, slik at medlemmene ser datoer i samme format som de ansatte gjør.
 
+### Gudstjenestedag {#worship-day}
+
+Delen Region har også en innstilling **Worship day** for dagen hovedgudstjenesten din holdes. Den er **Sunday** med mindre du endrer den. Menigheter som har gudstjeneste på lørdag (eller en annen dag), kan velge den dagen, og dashbordet følger den: hovedoverskriften sier «This Saturday», sidepanelene sier «Serving Saturday» og «Last Saturday», tjenestedatoen som vises, er den kommende lørdagen, og den levende telleren «in the room» lyser opp ved innsjekkinger på lørdag.
+
+Når gudstjenestedagen ikke er søndag, viser også Region-oppføringen i listen til venstre dagen ved siden av regionen din.
+
 ## Tekstmeldinger {#texting}
 
 Koble til en tekstmeldingsleverandør for å sende SMS til en person eller en hel gruppe fra B1 Admin. Tekstmeldinger sendes gjennom din egen konto hos leverandøren, så deres priser og grenser gjelder.

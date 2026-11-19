@@ -66,7 +66,7 @@ Inililista ng screen na **Groups** sa member portal ang mga grupong kinabibilang
 - **Pending Requests** -- Mga grupong hiniling mong salihan na naghihintay ng lider. Tingnan ang [Paghiling na Sumali sa Grupo](./join-requests.md).
 - **Upcoming Events** -- Mga event ng simbahan na tumatanggap ng pagpaparehistro, bawat isa ay may link na **Register**. Tingnan ang [Pagpaparehistro sa mga Event](../events/registering.md).
 
-I-tap ang **Find a Group** para mag-browse ng lahat ng grupo ng simbahan. Kung wala ka pang grupo, sinasabi ng screen ang "No groups yet" kasama ang button na **Browse groups**; kung hindi ka naka-sign in, hihilingin nito na mag-sign in ka para makita ang iyong mga grupo.
+I-tap ang **Find a Group** para mag-browse ng lahat ng grupo ng simbahan. Kung wala ka pang grupo, sinasabi ng screen ang "No groups yet" kasama ang button na **Browse groups**; kung hindi ka naka-sign in, hihilingin nito na mag-sign in ka para makita ang iyong mga grupo, pero ipinapakita pa rin nito ang mga **Upcoming Events** ng simbahan na tumatanggap ng registration para makapagpatala ka.
 
 ## Mga Susunod na Hakbang {#next-steps}
 

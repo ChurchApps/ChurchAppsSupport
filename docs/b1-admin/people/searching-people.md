@@ -55,7 +55,7 @@ In the **Table** view, people are listed by last name, then first name. You can 
 1. Click a **column header** (for example, **Name** or **Email**) to sort by that column.
 2. Click the same header again to reverse the sort order.
 
-The first click sorts the column in ascending order (A to Z, youngest to oldest, earliest date first), and the arrow beside the header shows the direction. People with no value in that column are always listed last. This makes it easy to find people alphabetically, by age, or by any other visible column.
+The first click sorts the column in ascending order (A to Z, youngest to oldest, earliest date first), and the arrow beside the header shows the direction. People with no value in that column are always listed last. This makes it easy to find people alphabetically, by age, or by any other visible column. B1 remembers the sort on that device, so the table stays sorted the same way after you refresh the page or come back later.
 
 ## Customizing Columns
 

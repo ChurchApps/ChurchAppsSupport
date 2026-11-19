@@ -66,7 +66,7 @@ Der Bildschirm **Gruppen** im Mitgliederportal listet die Gruppen auf, denen du 
 - **Ausstehende Anfragen** -- Gruppen, denen du beitreten möchtest und deren Anfrage bei einem Leiter noch aussteht. Siehe [Beitritt zu einer Gruppe anfragen](./join-requests.md).
 - **Kommende Veranstaltungen** -- Gemeindeveranstaltungen mit Anmeldung, jeweils mit einem Link **Anmelden**. Siehe [Für Veranstaltungen anmelden](../events/registering.md).
 
-Tippe auf **Gruppe finden**, um alle Gruppen der Gemeinde zu durchsuchen. Wenn du noch in keiner Gruppe bist, zeigt der Bildschirm "Noch keine Gruppen" mit einer Schaltfläche **Gruppen durchsuchen**; bist du nicht angemeldet, wirst du gebeten, dich anzumelden, um deine Gruppen zu sehen.
+Tippe auf **Gruppe finden**, um alle Gruppen der Gemeinde zu durchsuchen. Wenn du noch in keiner Gruppe bist, zeigt der Bildschirm "Noch keine Gruppen" mit einer Schaltfläche **Gruppen durchsuchen**; bist du nicht angemeldet, wirst du gebeten, dich anzumelden, um deine Gruppen zu sehen, und siehst trotzdem die kommenden Veranstaltungen der Gemeinde, die Anmeldungen annehmen, damit du dich anmelden kannst.
 
 ## Nächste Schritte {#next-steps}
 

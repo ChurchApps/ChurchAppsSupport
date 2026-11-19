@@ -66,7 +66,7 @@ La pantalla **Grupos** del portal de miembros muestra los grupos a los que perte
 - **Solicitudes pendientes** -- Grupos a los que pediste unirte y que esperan la aprobación de un líder. Consulta [Solicitar unirse a un grupo](./join-requests.md).
 - **Próximos eventos** -- Eventos de la iglesia que aceptan inscripciones, cada uno con un enlace **Inscribirse**. Consulta [Inscribirse en eventos](../events/registering.md).
 
-Toca **Buscar un grupo** para explorar todos los grupos de la iglesia. Si todavía no perteneces a ningún grupo, la pantalla dice "Todavía no hay grupos" con un botón **Explorar grupos**; si no has iniciado sesión, te pide que inicies sesión para ver tus grupos.
+Toca **Buscar un grupo** para explorar todos los grupos de la iglesia. Si todavía no perteneces a ningún grupo, la pantalla dice "Todavía no hay grupos" con un botón **Explorar grupos**; si no has iniciado sesión, te pide que inicies sesión para ver tus grupos, pero aun así muestra los **Próximos eventos** de la iglesia que aceptan inscripciones para que puedas registrarte.
 
 ## Próximos pasos {#next-steps}
 

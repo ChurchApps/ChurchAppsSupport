@@ -65,7 +65,7 @@ Para alterar o nome ou o e-mail de um membro, clique no ícone de editar na linh
 2. Localize a pessoa na lista **Membros**.
 3. Clique no ícone de excluir na linha dela e confirme.
 
-A sua igreja precisa ter sempre pelo menos um Administrador do domínio, por isso o último membro de **Administradores do domínio** não pode ser removido.
+A sua igreja precisa ter sempre pelo menos um Administrador do domínio, por isso o último membro de **Administradores do domínio** não pode ser removido. O B1 mostra a mensagem "É necessário pelo menos um Administrador do domínio. Adicione outro Administrador do domínio antes de remover este." O único Administrador do domínio também não pode sair da igreja nem excluir a própria conta até que outra pessoa seja adicionada a **Administradores do domínio**.
 
 ## Configurando permissões {#configuring-permissions}
 

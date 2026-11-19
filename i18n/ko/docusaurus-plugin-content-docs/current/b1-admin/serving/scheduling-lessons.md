@@ -14,7 +14,7 @@ B1 Admin은 [Lessons.church](https://lessons.church)와 직접 연동되므로, 
 
 ## 교육 동영상 {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="B1에서 수업 편집본을 매주 재사용하기" next="B1의 계획 템플릿, 작업, 워크플로" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="B1에서 수업 편집본을 매주 재사용하기" next="B1의 계획 템플릿, 작업, 워크플로" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
@@ -45,7 +45,7 @@ B1 Admin은 [Lessons.church](https://lessons.church)와 직접 연동되므로, 
 Content Providers 섹션은 사역별로 있습니다. 여러 사역을 운영한다면(예: 어린이부와 청소년부), 각 사역마다 Lessons.church를 따로 연결해야 합니다.
 :::
 
-Lessons.church만 있는 것은 아닙니다. 같은 **Link New Provider** 목록에는 SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive, OneDrive를 포함하여 다른 커리큘럼 및 파일 소스도 있습니다. 어느 것이든 같은 방식으로 연결하면, 수업을 선택할 때 전환할 수 있는 제공자로 나타납니다.
+Lessons.church만 있는 것은 아닙니다. 같은 **Link New Provider** 목록에는 SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive, OneDrive를 포함하여 다른 커리큘럼 및 파일 소스도 있습니다. 어느 것이든 같은 방식으로 연결하면, 수업을 선택할 때 전환할 수 있는 제공자로 나타납니다.
 
 ## 2단계 — 수업 일정 잡기 {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Lessons.church만 있는 것은 아닙니다. 같은 **Link New Provider** 목�
    - 특정 **Lesson**(수업)을 선택하세요
    - **Venue**(대상)를 선택하세요. 이는 연령대별 버전의 수업입니다
 
-   다른 제공자는 콘텐츠를 다르게 구성합니다. 예를 들어 **Go Curriculum**은 **Elementary**(초등) 또는 **Preschool**(유아)로 시작한 다음, 시리즈, 그다음 수업 자체로 이어집니다. 이 경우 고를 대상(Venue)은 없습니다.
+   다른 제공자는 콘텐츠를 다르게 구성합니다. 예를 들어 **GO! Curriculum**은 **Elementary**(초등) 또는 **Preschool**(유아)로 시작한 다음, 시리즈, 그다음 수업 자체로 이어집니다. 이 경우 고를 대상(Venue)은 없습니다.
 8. **Associate Lesson**(수업 연결)을 클릭하여 확인하세요
 9. 자원봉사자에 대한 **copy option**(복사 옵션)을 선택하세요.
    - **Nothing**(없음) -- 새 계획이며, 자원봉사자는 이월되지 않습니다
@@ -87,7 +87,7 @@ Lessons.church만 있는 것은 아닙니다. 같은 **Link New Provider** 목�
 4. 목록을 검토하세요. 시작 수업과 그 시리즈의 나머지 수업이 각각 날짜와 함께 표시됩니다. 건너뛰고 싶은 수업은 체크를 해제하세요
 5. **Save**를 클릭하면 수업마다 계획이 하나씩 만들어집니다
 
-Lessons.church의 경우, 목록에는 각 수업이 사용할 **Venue**(대상)도 표시됩니다. 시작 수업에서 선택한 대상과 이름이 일치하는 대상이 사용되며, 해당 수업에 그 대상이 없으면 다른 대상이 사용되고 **substituted**(대체됨)로 표시됩니다. Go Curriculum처럼 수업에 대상 단계가 없는 제공자는 수업을 바로 예약하며, Venue 열은 숨겨집니다.
+Lessons.church의 경우, 목록에는 각 수업이 사용할 **Venue**(대상)도 표시됩니다. 시작 수업에서 선택한 대상과 이름이 일치하는 대상이 사용되며, 해당 수업에 그 대상이 없으면 다른 대상이 사용되고 **substituted**(대체됨)로 표시됩니다. GO! Curriculum처럼 수업에 대상 단계가 없는 제공자는 수업을 바로 예약하며, Venue 열은 숨겨집니다.
 
 ## 모든 수업의 일부만 남기기 {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Lessons.church의 경우, 목록에는 각 수업이 사용할 **Venue**(대상)
 
 이미 예배 순서가 있는 계획은 예약될 때 변경되지 않습니다. 저장된 편집본을 바꾸려면 다른 계획을 맞춤 설정한 다음 **Replace the saved trim for Elementary**(Elementary의 저장된 편집본 바꾸기)를 클릭하세요(여기에서도 계획 유형 이름이 표시됩니다). 편집을 중단하려면 계획 유형의 **Edit** 대화 상자를 열고 **Lesson trim**(수업 편집본) 옆의 **Clear**(지우기)를 클릭하세요.
 
-## Go Curriculum 리더 가이드 {#go-curriculum-leader-guides}
+## GO! Curriculum 리더 가이드 {#go-curriculum-leader-guides}
 
-Go Curriculum 수업을 예약하면, 계획의 예배 순서는 수업의 **Large Group**(대그룹) 리더 가이드를 바탕으로 만들어집니다. 가이드의 각 부분이 섹션이 되며, 각 섹션 안의 단계는 유형(예: say(말하기), do(하기), play(재생), note(메모))과 텍스트와 함께 나열됩니다. 영상이나 다른 미디어를 재생하는 단계에는 해당 파일이 함께 들어가므로, 순서대로 재생됩니다. (Large Group 가이드가 없는 수업은 미디어 파일의 단순 목록으로 대체됩니다.)
+GO! Curriculum 수업을 예약하면, 계획의 예배 순서는 수업의 **Large Group**(대그룹) 리더 가이드를 바탕으로 만들어집니다. 가이드의 각 부분이 섹션이 되며, 각 섹션 안의 단계는 유형(예: say(말하기), do(하기), play(재생), note(메모))과 텍스트와 함께 나열됩니다. 영상이나 다른 미디어를 재생하는 단계에는 해당 파일이 함께 들어가므로, 순서대로 재생됩니다. (Large Group 가이드가 없는 수업은 미디어 파일의 단순 목록으로 대체됩니다.)
 
 소그룹 자료가 있는 각 시리즈에는 **Small Group Guides**(소그룹 가이드) 폴더도 있습니다. 폴더를 열고 수업을 고르면 그 수업의 **Small Group**(소그룹) 가이드를 예약할 수 있습니다. 이름은 "Lesson Name - Small Group"(수업 이름 - 소그룹)처럼 붙습니다. 별도의 소그룹 계획 유형에 유용합니다. 소그룹 가이드는 대부분 토론 단계이며, 보통 미디어가 없습니다. 이 폴더가 목록 맨 앞에 있으므로, 이 폴더 안의 수업에서 시리즈를 일괄 예약해도 이 폴더는 포함되지 않습니다.
 ## 연간 계획 적용하기 {#apply-a-year-plan}

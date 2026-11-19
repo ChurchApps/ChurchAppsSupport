@@ -41,7 +41,7 @@ Al abrir `https://yourchurchname.b1.church/mobile` se accede al panel de **Inici
 
 Las secciones de servicio, grupos, asistencia, formularios y donaciones solo aparecen cuando has iniciado sesión, tu iglesia tiene activada esa herramienta y tienes algo que mostrar -- por ejemplo, una asignación próxima o al menos un grupo. En una computadora, Inicio se organiza en dos columnas.
 
-Si no has iniciado sesión, Inicio muestra un encabezado **Bienvenido** en lugar del saludo, con una breve invitación ("Inicia sesión para ver tus grupos, donaciones y más.") y un botón **Iniciar sesión**. La invitación se muestra incluso si tu iglesia todavía no ha configurado nada más para Inicio. Tu iglesia puede reformular esta invitación u ocultarla -- consulta [Configuración de la aplicación móvil](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Cuando está oculta, aún puedes iniciar sesión desde la página **Más** o la página **Yo**.
+Si no has iniciado sesión, Inicio muestra un encabezado **Bienvenido** en lugar del saludo y, debajo de **Próximos eventos**, hasta tres de los próximos eventos de la iglesia que aceptan inscripciones, cada uno con un enlace **Inscribirse** (más un enlace **Todos los próximos eventos** a la pantalla **Grupos** cuando hay más). También muestra una breve invitación ("Inicia sesión para ver tus grupos, donaciones y más.") y un botón **Iniciar sesión**. La invitación se muestra incluso si tu iglesia todavía no ha configurado nada más para Inicio. Tu iglesia puede reformular esta invitación u ocultarla -- consulta [Configuración de la aplicación móvil](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Cuando está oculta, aún puedes iniciar sesión desde la página **Más** o la página **Yo**.
 
 ## La barra de pestañas inferior {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ Las pantallas integradas (como Grupos, Donaciones o Planes) reciben primero los 
 
 ### Pestañas de carpeta {#folder-tabs}
 
-Tu iglesia puede agrupar varias pestañas en una **carpeta**. Una carpeta aparece como cualquier otra pestaña -- en la barra de pestañas, en la página **Más** o como un mosaico con foto en Inicio -- y al tocarla se abre una pantalla con el nombre de la carpeta que lista las pestañas que contiene. Si todas las pestañas de la carpeta tienen foto, se muestran como mosaicos con foto; de lo contrario, se muestran como una lista. Los enlaces a sitios web externos dentro de una carpeta se abren en una nueva pestaña del navegador. Las pestañas dentro de una carpeta solo aparecen en la pantalla de la carpeta, no en la barra de pestañas ni en la página **Más**. Una carpeta sin nada visible para ti se oculta.
+Tu iglesia puede agrupar varias pestañas en una **carpeta**. Una carpeta aparece como cualquier otra pestaña -- en la barra de pestañas, en la página **Más** o como un mosaico con foto en Inicio -- y al tocarla se abre una pantalla con el nombre de la carpeta que lista las pestañas que contiene. Las pestañas que tienen foto se muestran primero, cada una como un banner de foto a todo el ancho, y debajo de ellas se listan las pestañas sin foto. Los enlaces a sitios web externos dentro de una carpeta se abren en una nueva pestaña del navegador. Las pestañas dentro de una carpeta solo aparecen en la pantalla de la carpeta, no en la barra de pestañas ni en la página **Más**. Una carpeta sin nada visible para ti se oculta.
 
 ## En una computadora {#on-a-computer}
 

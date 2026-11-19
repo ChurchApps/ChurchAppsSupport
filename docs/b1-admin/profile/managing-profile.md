@@ -112,7 +112,7 @@ Account deletion — whether immediate or approved by your church — is permane
 :::
 
 :::info
-If you are a **Domain Admin**, make sure to transfer administrative responsibilities to another user before deleting your account. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin roles.
+If you are your church's only **Domain Admin**, B1 won't delete your account. It shows "You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account." Add another user to **Domain Admins** first. See [Roles & Permissions](../settings/roles-permissions.md) for details on managing admin roles.
 :::
 
 :::info

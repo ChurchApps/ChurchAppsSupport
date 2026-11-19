@@ -65,7 +65,7 @@ Per modificare il nome o l'email di un membro, fai clic sull'icona di modifica n
 2. Trova la persona nell'elenco **Membri**.
 3. Fai clic sull'icona di eliminazione nella sua riga e conferma.
 
-La tua chiesa deve avere sempre almeno un Amministratore del dominio, quindi l'ultimo membro di **Amministratori del dominio** non può essere rimosso.
+La tua chiesa deve avere sempre almeno un Amministratore del dominio, quindi l'ultimo membro di **Amministratori del dominio** non può essere rimosso. B1 mostra il messaggio "È richiesto almeno un Amministratore del dominio. Aggiungine un altro prima di rimuovere questo." L'unico Amministratore del dominio non può inoltre lasciare la chiesa né eliminare il proprio account finché qualcun altro non viene aggiunto agli **Amministratori del dominio**.
 
 ## Configurare le autorizzazioni {#configuring-permissions}
 

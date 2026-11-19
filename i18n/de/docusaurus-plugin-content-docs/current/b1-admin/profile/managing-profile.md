@@ -112,7 +112,7 @@ Die Löschung eines Kontos -- ob sofort oder nach Genehmigung durch Ihre Gemeind
 :::
 
 :::info
-Wenn Sie **Domain-Administrator** sind, übertragen Sie die Verwaltungsaufgaben an einen anderen Benutzer, bevor Sie Ihr Konto löschen. Details zur Verwaltung von Administratorrollen finden Sie unter [Rollen & Berechtigungen](../settings/roles-permissions.md).
+Wenn Sie der einzige **Domain-Administrator** Ihrer Gemeinde sind, löscht B1 Ihr Konto nicht. Es erscheint die Meldung: „Sie sind der einzige Domain-Administrator für *Gemeinde*. Machen Sie vor dem Löschen Ihres Kontos eine andere Person zum Domain-Administrator.“ Fügen Sie zuerst einen weiteren Benutzer zu **Domain-Administratoren** hinzu. Details zur Verwaltung von Administratorrollen finden Sie unter [Rollen & Berechtigungen](../settings/roles-permissions.md).
 :::
 
 :::info

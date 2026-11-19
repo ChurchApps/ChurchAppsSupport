@@ -45,7 +45,7 @@ La pantalla **Sermones** del portal de miembros (`/mobile/sermons`) se organiza 
 - **Recientes** -- los próximos tres sermones. Toca **Todos los sermones** para ver cada sermón, filtrar por año o buscar en títulos y descripciones de todos los años.
 - **Series** -- las tres series más nuevas de tu iglesia con la cantidad de sermones de cada una. Toca **Todas las series** para ver la lista completa, o toca una serie para ver sus sermones.
 
-Toca un sermón para abrirlo. Toca la imagen o **Ver sermón** para reproducirlo, **Compartir** para enviar un enlace, o **Abrir enlace** para abrir el video en su propio sitio. Debajo hay una sección **Acerca de** con la descripción y una lista **En esta serie** con un enlace **Todos en la serie**.
+Toca un sermón para abrirlo. Toca la imagen o **Ver sermón** para reproducirlo, **Compartir** para enviar un enlace, o **Abrir enlace** para abrir el video en su propio sitio. Un sermón con una **URL del archivo de audio** también muestra **Escuchar**, que reproduce el audio directamente en la aplicación, y **Descargar audio**, que guarda el episodio en su teléfono; los sermones solo de audio se marcan como **Audio** en las listas de sermones. Si su iglesia publica sus sermones como podcast, un administrador puede incorporar los episodios como sermones de audio con [Importación masiva](../../b1-admin/sermons/bulk-import.md#importing-podcast-episodes), para que el podcast se reproduzca directamente en la pestaña Sermones. Debajo hay una sección **Acerca de** con la descripción y una lista **En esta serie** con un enlace **Todos en la serie**.
 
 :::tip
 Si buscas una transmisión en vivo en lugar de un sermón grabado, consulta la página de [Transmisión en vivo](./live-streaming.md).

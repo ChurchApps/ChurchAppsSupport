@@ -23,7 +23,7 @@ Du kan også trykke på klokkeikonet, trykke på **Se alle** for å åpne innbok
 
 - **Levering**
   - **Push-varsler** -- Slår push-varsler på eller av for kontoen din. For å sette opp push på enheten du bruker, slår du den på fra innboksen din -- se [Push-varsler på denne enheten](#push-notifications-on-this-device).
-  - **Tekstmeldinger** -- Vises bare hvis menigheten din har satt opp tekstmeldinger. Slå dette på for å få tjeneste- og arrangementspåminnelser som tekstmelding til mobilnummeret på profilen din. Det er av inntil du slår det på.
+  - **Tekstmeldinger** -- Vises bare hvis menigheten din har satt opp tekstmeldinger. Slå dette på for å få tjeneste- og arrangementspåminnelser som tekstmelding til mobilnummeret på profilen din. Det er av inntil du slår det på. Ansatte i menigheten kan også slå den på eller av for deg fra posten din i B1 Admin.
   - **Demp alle varsler** -- Demper alle kanaler midlertidig til du slår det av igjen.
 - **E-post** -- Velg en **E-postfrekvens**:
   - **Per varsel** -- Send en e-post etter hvert som ting skjer.

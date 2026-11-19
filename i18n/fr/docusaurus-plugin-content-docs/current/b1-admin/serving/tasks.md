@@ -33,13 +33,17 @@ Par défaut, seules les tâches ouvertes sont affichées. Choisissez **Clôturé
 
 1. Sur la page **Mon travail**, cliquez sur **Ajouter une tâche**. Un formulaire **Nouvelle tâche** s'ouvre.
 2. Facultativement, cliquez sur la case **Concerne** et choisissez la personne ou le groupe concerné par la tâche. Laissez-la vide pour une simple chose à faire qui ne concerne personne, comme un rappel pour vous-même.
-3. Cliquez sur la case **Assigner à**. Dans la fenêtre **Sélectionner une personne ou un groupe**, recherchez sous l'onglet **Personne**, ou passez à l'onglet **Groupe** et recherchez un groupe, puis sélectionnez le résultat.
+3. Cliquez sur la case **Assigner à**. Dans la fenêtre **Sélectionner des personnes ou un groupe**, recherchez sous l'onglet **Personne**, ou passez à l'onglet **Groupe** et recherchez un groupe, puis sélectionnez le résultat.
 4. Saisissez un **titre** pour la tâche.
 5. Choisissez facultativement une **date d'échéance**.
 6. Ajoutez des **notes** avec les détails ou les instructions pour la personne assignée.
 7. Cliquez sur **Enregistrer**.
 
 La tâche apparaît maintenant dans la liste et est visible par la personne assignée sur son tableau de bord et dans l'application mobile.
+
+:::tip
+Les champs **Concerne** et **Assigner à** acceptent plusieurs personnes. Continuez à choisir des personnes dans la fenêtre, puis cliquez sur **Terminé** ; elles apparaissent sous forme de pastilles sous la case. Dans l'onglet **Groupe**, cochez **Créer une tâche distincte pour chaque membre** pour ajouter tous les membres d'un groupe. **Enregistrer** crée une tâche pour chaque personne ; lorsque les deux cases contiennent plusieurs personnes, chaque personne assignée reçoit une tâche pour chaque personne concernée (deux personnes assignées et trois personnes concernées donnent six tâches). La modification d'une tâche déjà créée ne change toujours qu'une personne à la fois.
+:::
 
 ## Gérer une tâche {#managing-a-task}
 
@@ -63,7 +67,9 @@ Une tâche dotée d'une date d'échéance peut rappeler à la personne assignée
 5. Sous **Envoyer par**, choisissez **Notification push**, **Courriel** et, si votre église a connecté un [fournisseur de messages texte](../settings/church-settings.md#texting), **Message texte**.
 6. Cliquez sur **Enregistrer les rappels**.
 
-Si la tâche n'a pas de date d'échéance, B1 vous avertit qu'aucun rappel ne sera envoyé tant qu'elle n'en aura pas une dans le champ **Échéance**. Les rappels par message texte ne parviennent qu'aux personnes ayant activé les **messages texte** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md), et chaque message peut coûter à votre église.
+Si la tâche n'a pas de date d'échéance, B1 vous avertit qu'aucun rappel ne sera envoyé tant qu'elle n'en aura pas une dans le champ **Échéance**. Les rappels par message texte ne parviennent qu'aux personnes ayant activé les **messages texte** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md), et chaque message peut coûter à votre église. Les personnes du personnel autorisées à envoyer des messages texte peuvent activer les **Rappels par texto** pour une personne depuis la [fiche](../people/adding-people.md#text-reminders) de celle-ci, sur la ligne située sous son numéro de téléphone mobile.
+
+Pour envoyer tout de suite un rappel enregistré, cliquez sur **Envoyer maintenant**. Lorsque le rappel comprend **Message texte**, B1 indique combien de personnes ont été rappelées, combien ont reçu un message texte et combien ont été ignorées, par exemple *Envoyé à 2 personnes · 1 par message texte, 1 ignorée*. Les personnes sont ignorées lorsqu'elles ont désactivé les **messages texte**, n'ont pas de numéro de téléphone mobile ou ont répondu STOP.
 
 ## Cycle de vie d'une tâche {#task-lifecycle}
 

@@ -19,7 +19,7 @@ FreePlay include attualmente i seguenti fornitori:
 - **Bible Project** - Video e risorse che esplorano la Bibbia
 - **SignPresenter** - Contenuti di presentazione e cartellonistica per le chiese
 - **B1.church** - Contenuti dalla tua configurazione B1 della chiesa
-- **Go Curriculum** - Programma di gocurriculum.com, organizzato per fascia d'età (**Elementary** e **Preschool**), poi per raccolta e lezione. Vedi solo le fasce d'età e i video inclusi nel tuo abbonamento Go
+- **GO! Curriculum** - Programma di gocurriculum.com, organizzato per fascia d'età (**Elementary** e **Preschool**), poi per raccolta e lezione. Vedi solo le fasce d'età e i video inclusi nel tuo abbonamento Go
 - **Dropbox** - Sfoglia e riproduci immagini e video dal tuo Dropbox
 - **Jesus Film Project** - Film e clip video dal Jesus Film Project
 - **OneDrive** - Sfoglia e riproduci immagini, video e audio dal tuo Microsoft OneDrive

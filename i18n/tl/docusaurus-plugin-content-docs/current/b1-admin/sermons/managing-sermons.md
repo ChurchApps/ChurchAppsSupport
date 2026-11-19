@@ -62,7 +62,7 @@ Maaaring maglaman ang bawat sermon entry ng:
 - **Thumbnail** -- Preview na larawang ipinapakita sa iyong sermon library. I-click ang larawan para i-crop o palitan ito (16:9).
 - **Title** -- Ang pangalan ng sermon na nakikita ng mga bisita
 - **Description** -- Buod ng nilalaman ng sermon
-- **Audio File URL (for podcast)** -- Direktang link sa MP3/M4A file para sa sermon na ito. Maaari mong i-paste ang URL o, kapag na-save na ang sermon, i-click ang **Upload Audio** para mag-upload ng file at awtomatikong mapunan ito. Tanging ang mga sermon na may field na ito (o direktang link sa video file) ang kasama sa iyong podcast feed.
+- **Audio File URL (for podcast)** -- Direktang link sa **isang** MP3/M4A file para sa sermon na ito. Hindi ito ang lugar para sa address ng podcast feed; hindi mapapatugtog ang feed na ipi-paste dito. Para dalhin ang buong podcast, gamitin ang [Bulk Import](./bulk-import.md#importing-podcast-episodes). Maaari mong i-paste ang URL o, kapag na-save na ang sermon, i-click ang **Upload Audio** para mag-upload ng file at awtomatikong mapunan ito. Tanging ang mga sermon na may field na ito (o direktang link sa video file) ang kasama sa iyong podcast feed.
 
 ## Ang Iyong Podcast Feed {#your-podcast-feed}
 

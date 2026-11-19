@@ -46,9 +46,9 @@ La bibliothèque [Lessons.church](../../lessons-church/index.md) est organisée 
 
 Appuyez sur **Retour** à n'importe quel niveau pour remonter d'une étape.
 
-## Parcourir Go Curriculum
+## Parcourir GO! Curriculum
 
-Après vous être [connecté avec votre compte gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), Go Curriculum affiche ses tranches d'âge, **Elementary** et **Preschool**. Parcourez par tranche d'âge, puis par collection, puis par leçon, et sélectionnez une leçon pour ouvrir son écran de téléchargement.
+Après vous être [connecté avec votre compte gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), GO! Curriculum affiche ses tranches d'âge, **Elementary** et **Preschool**. Parcourez par tranche d'âge, puis par collection, puis par leçon, et sélectionnez une leçon pour ouvrir son écran de téléchargement.
 
 Ce que vous voyez dépend de votre abonnement Go :
 

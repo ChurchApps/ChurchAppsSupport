@@ -11,6 +11,10 @@ B1.church ist das Portal für Gemeindemitglieder Ihrer Kirche. Hier bleibt Ihre 
 
 </div>
 
+## Schulungsvideo
+
+<YouTube id="yiKP0zuJMVU" title="B1.church für Ihre Mitglieder" next="Anmelden bei B1.church und im Mitgliederportal" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 Wenn Mitglieder Ihre B1.church-Seite besuchen, sehen sie die öffentliche Website Ihrer Kirche mit Ihrem Branding, den Navigationslinks und den Inhaltsseiten. Nach der Anmeldung können sie das **Mitgliederportal** aufrufen, in dem alle ihre persönlichen Werkzeuge der Kirche an einem Ort zusammengefasst sind.
 
 ## Wichtige Funktionen

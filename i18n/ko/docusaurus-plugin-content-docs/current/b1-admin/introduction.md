@@ -13,7 +13,7 @@ B1.church를 선택해 주셔서 감사합니다! 이 소개는 B1.church Admin 
 
 ## 교육 영상 {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="B1.church란 무엇인가?" />
+<YouTube id="zS64eorbKUQ" title="B1.church란 무엇인가?" next="B1.church 성도용 안내" nextUrl="/docs/b1-church" />
 
 추가 지원이 필요하면 [support@churchapps.org](mailto:support@churchapps.org)로 이메일을 보내 주세요.
 

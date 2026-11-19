@@ -101,7 +101,7 @@ Cliquez sur n'importe quel événement pour en consulter les détails. Depuis la
 - **Les responsables** peuvent modifier les détails de l'événement, changer les heures ou supprimer l'événement.
 
 :::warning
-Supprimer un événement le retire définitivement. Si vous devez annuler une seule occurrence d'un événement récurrent, pensez plutôt à le modifier.
+Supprimer un événement le retire définitivement. Lorsque vous modifiez ou supprimez un événement récurrent, on vous demande si vous souhaitez changer **Cette date seulement**, **Cette date et toutes les dates suivantes** ou **Toutes les dates**, afin de pouvoir annuler une seule réunion sans toucher au reste de la série.
 :::
 
 ## S'abonner au calendrier {#subscribing-to-the-calendar}

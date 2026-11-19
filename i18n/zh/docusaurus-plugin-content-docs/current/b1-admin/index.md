@@ -47,7 +47,7 @@ B1 Admin 是你的教会管理仪表板。它提供各种工具，管理教会�
 - **[报表](./reports/index.md)**——查看生日、出席与奉献报表，这些报表位于人员、出席与奉献区域之中，另外设置中还有审计日志
 - **[网站](./website/index.md)**——建立并管理教会网站，可自定义导航样式，并以你的 GA4 ID 追踪网站与 B1 应用程序的访问情况，或关闭公开网站，仅保留会员门户
 - **[讲道](./sermons/index.md)**——管理讲道资料库、直播，以及自动生成的播客订阅源
-- **[日历](./calendars/index.md)**——建立精选日历，活动依小组以颜色区分，可印在教会信头上，管理场地与资源预订，并查看可用时间。开放[活动报名](./calendars/paid-registrations.md)并设置收费的参与者类型，可手动添加不收费的参与者，并在教会未提供线上奉献时，让人们先报名、稍后再付款
+- **[日历](./calendars/index.md)**——建立精选日历，活动依小组以颜色区分，[更改或取消重复活动的某一天](./calendars/creating-calendars.md#changing-one-date-of-a-recurring-event)，可印在教会信头上，管理场地与资源预订，并查看可用时间。开放[活动报名](./calendars/paid-registrations.md)并设置收费的参与者类型，可手动添加不收费的参与者，并在教会未提供线上奉献时，让人们先报名、稍后再付款
 - **[手机](./settings/mobile-app.md)**——设置教会 B1 应用程序的导航标签、主题与主画面，设置 B1 Checkin 应用程序及其标签，并向所有使用应用程序的人员或某个小组发送或排程[推送通知](./settings/mobile-app.md#push-notifications)
 - **[设置](./settings/index.md)**——在一个可滚动的页面中完成所有配置，并附有快速跳转列表：教会资料、地区、日期与电话号码格式、短信功能（包括你自己的 Twilio 账户）、附有会员人数的角色、权限，以及自定义的人员栏位
 - **[整合](./integrations/index.md)**——将活动发布到 Slack 或 Discord，同步 Mailchimp 受众名单，连接 Zapier，并使用 **Settings > Developer** 下的 API 密钥与 webhook，向 Claude 或 ChatGPT 查询你的教会资料

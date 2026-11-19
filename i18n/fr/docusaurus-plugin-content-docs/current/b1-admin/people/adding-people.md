@@ -88,6 +88,10 @@ L'envoi depuis B1 applique les mêmes approbations et limites quotidiennes que l
 
 Si votre église a connecté un [fournisseur de SMS](../settings/church-settings.md#texting), que vous êtes autorisé à envoyer des SMS et que la personne a un numéro de téléphone mobile, un bouton **SMS** apparaît à côté de **Courriel**. Cliquez dessus, saisissez votre **Message**, puis cliquez sur **Envoyer**. La boîte de dialogue indique le numéro qui recevra le SMS. Voir [Envoyer des SMS aux membres des groupes](../groups/group-members.md#texting-group-members) pour le fonctionnement de la messagerie texte.
 
+### Rappels par texto {#text-reminders}
+
+Les rappels de tâches, d'événements et de service ne sont envoyés par texto qu'aux personnes ayant activé les messages texte. Avec le même fournisseur de messagerie texte, la même autorisation et le même numéro de téléphone mobile, la fiche de la personne affiche **Rappels par texto** sous son numéro de téléphone mobile, avec **Activé** ou **Désactivé**. Cliquez sur **Activer** pour commencer à lui envoyer des rappels par texto, ou sur **Désactiver** pour arrêter. Ce commutateur est le même que **Messages texte** dans les [Préférences de notification](../../b1-church/getting-started/notification-preferences.md) de la personne ; l'un ou l'autre peut donc le modifier. Une personne qui a répondu STOP aux textos de votre église ne reçoit toujours aucun rappel par texto, même lorsque **Rappels par texto** est activé.
+
 ## Travailler avec les formulaires {#working-with-forms}
 
 Vous pouvez remplir des formulaires personnalisés directement depuis la fiche d'une personne. Il s'agit de formulaires définis par l'utilisateur que vous pouvez créer en suivant le guide [Créer des formulaires](../forms/creating-forms.md).

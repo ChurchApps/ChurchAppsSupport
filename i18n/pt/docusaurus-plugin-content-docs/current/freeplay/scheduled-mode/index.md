@@ -31,7 +31,7 @@ Quando nada está agendado, as telas de um grupo reproduzem o seu **loop padrão
 - **[Modo de plano](../plan-mode/index.md)** segue um tipo de plano de culto do B1 Admin. Alguém aperta **Iniciar plano** na TV, e a lição toca quando isso acontece
 - **O Modo programado** segue um calendário. O conteúdo começa e para nos horários que você define, então funciona bem para sinalização de saguão, loops de anúncios e salas de aula em que a lição deve estar no ar antes de alguém entrar
 
-Uma entrada do calendário ainda pode reproduzir um plano de culto. Escolha o tipo de plano em **Planos de culto** ao adicionar um agendamento, e a tela reproduz qualquer plano que esteja vigente no B1 Admin naquela semana. Isso inclui as lições do Go Curriculum, mesmo as que você tiver personalizado no plano. A tela usa o login do Go Curriculum vinculado ao ministério do tipo de plano no B1 Admin, ou a conexão do Go Curriculum da igreja se o ministério não tiver uma.
+Uma entrada do calendário ainda pode reproduzir um plano de culto. Escolha o tipo de plano em **Planos de culto** ao adicionar um agendamento, e a tela reproduz qualquer plano que esteja vigente no B1 Admin naquela semana. Isso inclui as lições do GO! Curriculum, mesmo as que você tiver personalizado no plano. A tela usa o login do GO! Curriculum vinculado ao ministério do tipo de plano no B1 Admin, ou a conexão do GO! Curriculum da igreja se o ministério não tiver uma.
 
 ## Primeiros passos
 

@@ -13,7 +13,7 @@ Merci d'avoir choisi B1.church ! Cette introduction vous guide dans les bases de
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="Qu'est-ce que B1.church ?" />
+<YouTube id="zS64eorbKUQ" title="Qu'est-ce que B1.church ?" next="B1.church pour vos membres" nextUrl="/docs/b1-church" />
 
 Pour toute assistance complémentaire, écrivez à [support@churchapps.org](mailto:support@churchapps.org).
 

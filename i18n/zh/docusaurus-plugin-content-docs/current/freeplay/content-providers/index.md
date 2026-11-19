@@ -19,7 +19,7 @@ FreePlay 目前包含以下提供商：
 - **Bible Project** - 探索圣经的视频和资源
 - **SignPresenter** - 为教会提供的演示文稿和标识内容
 - **B1.church** - 来自您自己 B1 教会设置的内容
-- **Go Curriculum** - 来自 gocurriculum.com 的课程，按年龄组（**Elementary** 和 **Preschool**）分类，然后是系列和课程。您只能看到您的 Go 会员资格所包含的年龄组和视频
+- **GO! Curriculum** - 来自 gocurriculum.com 的课程，按年龄组（**Elementary** 和 **Preschool**）分类，然后是系列和课程。您只能看到您的 Go 会员资格所包含的年龄组和视频
 - **Dropbox** - 浏览并播放您自己 Dropbox 中的图片和视频
 - **Jesus Film Project** - 来自 Jesus Film Project 的电影和视频片段
 - **OneDrive** - 浏览并播放您自己 Microsoft OneDrive 中的图片、视频和音频

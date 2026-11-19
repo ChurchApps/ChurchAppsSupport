@@ -94,6 +94,12 @@ Los mensajes de texto funcionan mejor cuando los números incluyen el código de
 
 Su región se aplica a las fechas y horas en todo B1 Admin, en su sitio web B1.church y en el portal de miembros, incluidos los sermones, las entradas de blog, los calendarios de grupos y los planes de servicio, para que los miembros vean las fechas en el mismo formato que su personal.
 
+### Día de culto {#worship-day}
+
+La sección Región también tiene una configuración **Día de culto** para el día en que se reúne su servicio principal. Es **Domingo** a menos que la cambie. Las iglesias que celebran el culto los sábados (u otro día) pueden elegir ese día, y el Panel lo sigue: el encabezado principal dice "Este sábado", los paneles laterales dicen "Sirviendo el sábado" y "El sábado pasado", la fecha de servicio mostrada es el próximo sábado, y el conteo en vivo "en la sala" se activa en los registros de entrada del sábado.
+
+Cuando el día de culto no es domingo, la entrada Región de la lista de la izquierda también muestra el día junto a su región.
+
 ## Mensajes de texto {#texting}
 
 Conecte un proveedor de mensajes de texto para enviar SMS a una persona o a un grupo completo desde B1 Admin. Los mensajes se envían a través de su propia cuenta con el proveedor, así que se aplican sus tarifas y límites.

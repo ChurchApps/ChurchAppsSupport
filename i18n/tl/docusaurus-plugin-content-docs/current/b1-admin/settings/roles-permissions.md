@@ -65,7 +65,7 @@ Para baguhin ang pangalan o email ng isang miyembro, i-click ang edit icon sa ka
 2. Hanapin ang tao sa listahang **Members**.
 3. I-click ang delete icon sa kanyang row at kumpirmahin.
 
-Dapat palaging may kahit isang Domain Admin ang simbahan mo, kaya hindi maaaring alisin ang huling miyembro ng **Domain Admins**.
+Dapat palaging may kahit isang Domain Admin ang simbahan mo, kaya hindi maaaring alisin ang huling miyembro ng **Domain Admins**. Magpapakita ang B1 ng "At least one Domain Admin is required. Add another Domain Admin before removing this one." Hindi rin maaaring umalis sa simbahan o burahin ang sarili nilang account ang nag-iisang Domain Admin hangga't walang ibang idinadagdag sa **Domain Admins**.
 
 ## Pag-configure ng Mga Permiso {#configuring-permissions}
 

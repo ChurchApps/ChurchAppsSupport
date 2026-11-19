@@ -13,7 +13,7 @@ description: "在 B1 Admin 中设置志愿者排班：按日期创建崇拜计�
 
 ## 培训视频 {#training-video}
 
-<YouTube id="47DstBXKl74" title="在 B1 中创建计划并安排志愿者" next="在 B1 中建立崇拜程序和诗歌库" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="在 B1 中创建计划并安排志愿者" next="在 B1 中建立崇拜程序和诗歌库" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>开始之前</h4>
@@ -141,7 +141,7 @@ B1 可以在志愿者被安排服事的礼拜之前自动提醒他们，让你�
 
 ### 短信提醒 {#text-reminders}
 
-只有在你的教会连接了短信服务商后，才会出现 **Text**（短信）选项。短信通过你教会的短信服务商发送，每条短信可能会产生费用。只有在志愿者已在其[通知偏好](../../b1-church/getting-started/notification-preferences.md)中开启 **Text messages**（短信），并且个人资料中有手机号码时，才会收到短信提醒。每条短信都以你教会的名称开头，内容限制为一条短信，并以 "Reply STOP to opt out."（回复 STOP 即可退订。）结尾。回复 STOP 的人将不再收到你教会发来的短信。要让 STOP 回复能够传送到 B1，请将[短信设置](../settings/church-settings.md#texting)中的 **Inbound (STOP) webhook URL**（入站（STOP）Webhook 网址）粘贴到你的服务商的入站消息 Webhook 中。
+只有在你的教会连接了短信服务商后，才会出现 **Text**（短信）选项。短信通过你教会的短信服务商发送，每条短信可能会产生费用。只有在志愿者已在其[通知偏好](../../b1-church/getting-started/notification-preferences.md)中开启 **Text messages**（短信），并且个人资料中有手机号码时，才会收到短信提醒。具有发送短信权限的工作人员，可以从志愿者的[记录](../people/adding-people.md#text-reminders)中为其开启 **Text reminders**（短信提醒）。每条短信都以你教会的名称开头，内容限制为一条短信，并以 "Reply STOP to opt out."（回复 STOP 即可退订。）结尾。回复 STOP 的人将不再收到你教会发来的短信。要让 STOP 回复能够传送到 B1，请将[短信设置](../settings/church-settings.md#texting)中的 **Inbound (STOP) webhook URL**（入站（STOP）Webhook 网址）粘贴到你的服务商的入站消息 Webhook 中。
 
 如需立即向某个日期范围内的所有已排班人员发送短信，请使用[计划总览](./plans-overview.md#texting-everyone-scheduled)中的 **Text Volunteers**（短信通知志愿者）。
 

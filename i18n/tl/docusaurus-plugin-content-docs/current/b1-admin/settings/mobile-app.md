@@ -13,7 +13,7 @@ Hinahayaan ka ng pahinang Mobile App Settings na i-configure ang mga navigation 
 
 ## Training Video {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Pag-customize ng Member App ng Iyong Simbahan sa B1" />
+<YouTube id="7x2CQG_pH6o" title="Pag-customize ng Member App ng Iyong Simbahan sa B1" />
 
 :::info
 Lumalabas sa B1 App ang mga tab na naka-configure dito, na maaaring [i-install ng mga miyembro bilang Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Ibahagi sa mga miyembro ang install page ng iyong simbahan -- `https://yourchurchname.b1.church/mobile/install` -- gagabayan sila nito sa pag-install ng app sa kanilang device, nang walang kailangang i-download mula sa App Store o Google Play.
@@ -158,7 +158,7 @@ Ang mga tab na iyong ini-configure dito ay ipinapakita sa **B1.church PWA** na i
 
 Sa telepono, ipinapakita ng bottom tab bar ang **Home**, hanggang tatlo sa iyong mga tab, at **More**; sa computer, hanggang lima ang ipinapakita ng header. Ang mga built-in na screen (gaya ng Sermons, Giving, o Groups) ang unang nakakakuha ng mga slot, at ang mga **Internal Page** tab ang pumupuno sa mga natitirang slot. Hindi kailanman nakakakuha ng slot ang mga tab na **External URL** at **Verse of the Day**. Nakalista sa pahinang **More** ng app ang bawat tab, kasama ang mga hindi nagkasya.
 
-Ang eksepsyon ay ang mga tab na nasa loob ng **Folder** tab: lumilitaw lamang ang mga ito sa sariling screen ng folder, na binubuksan ng miyembro sa pamamagitan ng pag-tap sa folder. Ipinapakita ng screen na iyon ang mga tab bilang photo tile kapag bawat isa ay may larawan, o bilang listahan kung hindi. Ang folder na walang tab na nakikita ng isang miyembro ay nakatago sa miyembrong iyon. Tingnan ang [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). Tingnan ang [Navigating B1App](../../b1-church/getting-started/navigating.md) para sa makikita ng mga miyembro.
+Ang eksepsyon ay ang mga tab na nasa loob ng **Folder** tab: lumilitaw lamang ang mga ito sa sariling screen ng folder, na binubuksan ng miyembro sa pamamagitan ng pag-tap sa folder. Ipinapakita ng screen na iyon ang bawat tab na may larawan bilang photo banner na buong lapad, at ang mga tab na walang larawan ay nakalista sa ibaba nila. Ang folder na walang tab na nakikita ng isang miyembro ay nakatago sa miyembrong iyon. Tingnan ang [Folder Tabs](../../b1-church/getting-started/navigating.md#folder-tabs). Tingnan ang [Navigating B1App](../../b1-church/getting-started/navigating.md) para sa makikita ng mga miyembro.
 
 ## Mga Susunod na Hakbang {#next-steps}
 

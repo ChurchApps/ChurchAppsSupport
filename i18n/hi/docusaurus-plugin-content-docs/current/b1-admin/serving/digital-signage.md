@@ -44,10 +44,10 @@ SignPresenter के अंदर चरण-दर-चरण सेटअप क
 3. **Play** के अंतर्गत, **Service plans** में से अपना प्लान प्रकार चुनें। वह **(current plan)** के रूप में चिह्नित होगा।
 4. दिन और समय सेट करें, फिर **Save** पर क्लिक करें।
 
-टीवी हर हफ़्ते उस प्लान प्रकार का वर्तमान प्लान चलाते हैं, जो आपके सेट किए समय पर चलता है। यह Go Curriculum के पाठों के साथ भी काम करता है, जिसमें आपके द्वारा अनुकूलित किए गए प्लान भी शामिल हैं। FreePlay उस Go Curriculum खाते से साइन इन करता है जो **Content Providers** के अंतर्गत मंत्रालय से जुड़ा है (देखें [Scheduling Lessons](./scheduling-lessons.md)), या यदि मंत्रालय में कोई खाता नहीं है तो चर्च का Go Curriculum कनेक्शन। सभी विकल्पों के लिए [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) देखें, और टीवी जोड़ने के लिए [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) देखें।
+टीवी हर हफ़्ते उस प्लान प्रकार का वर्तमान प्लान चलाते हैं, जो आपके सेट किए समय पर चलता है। यह GO! Curriculum के पाठों के साथ भी काम करता है, जिसमें आपके द्वारा अनुकूलित किए गए प्लान भी शामिल हैं। FreePlay उस GO! Curriculum खाते से साइन इन करता है जो **Content Providers** के अंतर्गत मंत्रालय से जुड़ा है (देखें [Scheduling Lessons](./scheduling-lessons.md)), या यदि मंत्रालय में कोई खाता नहीं है तो चर्च का GO! Curriculum कनेक्शन। सभी विकल्पों के लिए [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) देखें, और टीवी जोड़ने के लिए [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) देखें।
 
 :::note
-फ़ीड URL में Go Curriculum मीडिया शामिल नहीं होता, क्योंकि उस सामग्री के लिए आपके चर्च के Go Curriculum लॉगिन की ज़रूरत होती है। लॉबी या कक्षा के टीवी पर Go Curriculum पाठ दिखाने के लिए FreePlay का उपयोग करें।
+फ़ीड URL में GO! Curriculum मीडिया शामिल नहीं होता, क्योंकि उस सामग्री के लिए आपके चर्च के GO! Curriculum लॉगिन की ज़रूरत होती है। लॉबी या कक्षा के टीवी पर GO! Curriculum पाठ दिखाने के लिए FreePlay का उपयोग करें।
 :::
 
 ## अगले चरण

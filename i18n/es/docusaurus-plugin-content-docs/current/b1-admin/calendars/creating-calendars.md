@@ -82,7 +82,17 @@ Haga clic en **Nuevo evento** en la página de detalle del calendario para añad
 - **Salas** y **Recursos**: reserve espacio y equipos para el evento. Consulte [Salas, recursos y programación](./rooms-resources.md). Una vez elegida una sala o recurso, también puede añadir tiempo de preparación y limpieza o una ventana de reserva personalizada; consulte [Reservar una sala o recurso](./availability.md#booking-a-room-or-resource).
 - **Recordatorios**: expanda esta sección para enviar recordatorios antes del evento. Consulte [Recordatorios de eventos](./event-reminders.md).
 
-**Grupo**, **Título**, **Inicio** y **Fin** son obligatorios, y el fin debe ser posterior al inicio. Haga clic en **Guardar**. Si el evento se repite, B1 le pedirá que confirme, porque guardar actualiza todas las ocurrencias de la serie. Para eliminar un evento, ábralo en el editor y haga clic en **Eliminar**.
+**Grupo**, **Título**, **Inicio** y **Fin** son obligatorios, y el fin debe ser posterior al inicio. Haga clic en **Guardar**. Para eliminar un evento, ábralo en el editor y haga clic en **Eliminar**.
+
+### Cambiar una fecha de un evento recurrente {#changing-one-date-of-a-recurring-event}
+
+Cuando hace clic en una fecha de un evento que se repite en el calendario y luego en **Editar**, al guardar o eliminar se le pregunta qué fechas cambiar:
+
+- **Solo esta fecha** -- Solo la fecha en la que hizo clic. Al guardar, esa fecha se convierte en un evento único con sus cambios, y el resto de la serie se mantiene igual. Al eliminar, solo se quita esa fecha.
+- **Esta y todas las fechas siguientes** -- La serie termina el día anterior a la fecha en la que hizo clic. Al guardar, sus cambios inician una nueva serie desde esa fecha; al eliminar, se quitan las fechas restantes.
+- **Todas las fechas** -- La serie completa, como antes.
+
+El formulario muestra la primera fecha de la serie, pero **Solo esta fecha** y **Esta y todas las fechas siguientes** trasladan sus cambios de hora a la fecha en la que hizo clic. Una fecha separada conserva las salas y los recursos de la serie, obtiene sus propias reservas y no copia los recordatorios de la serie. Si abre un evento recurrente sin elegir una fecha (por ejemplo, desde **Aprobaciones**), B1 le pedirá que confirme en su lugar, porque guardar actualiza todas las fechas de la serie.
 
 ### Notas del evento {#event-notes}
 
@@ -116,6 +126,14 @@ Una vez habilitado el registro, los miembros verán un botón **Registrarse para
 :::info
 Las preguntas de registro solo funcionan con formularios que **no** estén marcados como Restringidos. Un formulario restringido se omite automáticamente durante el registro en lugar de mostrarse, así que use un formulario no restringido al adjuntar preguntas a un evento.
 :::
+
+### Compartir el enlace de un evento {#sharing-an-event-link}
+
+Para invitar a personas que no están en la base de datos de su iglesia, comparta la propia página del evento. Haga clic en el evento del calendario y luego en **Compartir**, o haga clic en **Compartir** en la página de registro del evento. Un cuadro de diálogo muestra el enlace del evento y un código QR: haga clic en el icono de copiar para copiar el enlace, o en **Descargar PNG** para guardar el código QR para un volante o una diapositiva. Cualquier persona con el enlace puede ver el evento, añadirlo a su calendario y, cuando el registro está activado, registrarse como invitado solo con un nombre y un correo electrónico.
+
+Un evento **Privado** permanece fuera del calendario de su sitio, pero aún puede compartirse una vez que active el registro. Un evento privado sin registro no tiene página pública, así que no tiene botón **Compartir**.
+
+En la app de B1, los eventos del calendario de un grupo tienen un enlace **Compartir** que abre la hoja de compartir del teléfono con el mismo enlace.
 
 ### Administrar registros {#managing-registrations}
 

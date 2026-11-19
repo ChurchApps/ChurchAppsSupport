@@ -101,7 +101,7 @@ I-click ang anumang event para tingnan ang mga detalye nito. Mula sa event detai
 - Maaaring mag-edit ng detalye ng event, magpalit ng oras, o burahin ang event ang **mga lider**.
 
 :::warning
-Permanenteng inaalis ng pagbura ng event ang event. Kung kailangan mo lamang kanselahin ang isang occurrence ng paulit-ulit na event, mas mabuting i-edit na lang ito.
+Permanenteng inaalis ng pagbura ng event ang event. Kapag in-edit o binura mo ang umuulit na event, tatanungin ka kung babaguhin ang **Just this date**, **This and all following dates**, o **All dates**, para makansela mo ang isang pulong nang hindi ginagalaw ang natitirang serye.
 :::
 
 ## Pag-subscribe sa Calendar {#subscribing-to-the-calendar}

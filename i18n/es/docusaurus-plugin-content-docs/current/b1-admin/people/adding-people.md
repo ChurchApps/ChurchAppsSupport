@@ -88,6 +88,10 @@ Enviar desde B1 usa las mismas aprobaciones y límites diarios que el correo de 
 
 Si su iglesia tiene conectado un [proveedor de mensajes de texto](../settings/church-settings.md#texting), usted tiene permiso para enviar mensajes de texto y la persona tiene un número de teléfono móvil, aparece un botón **Text** junto a **Email**. Haga clic en él, escriba su **Message** y haga clic en **Send**. El cuadro de diálogo muestra el número al que se enviará el mensaje. Consulte [Envío de mensajes de texto a miembros de grupos](../groups/group-members.md#texting-group-members) para saber cómo funcionan los mensajes de texto.
 
+### Recordatorios de texto {#text-reminders}
+
+Los recordatorios de tareas, eventos y servicio solo se envían por mensaje de texto a las personas que activaron los mensajes de texto. Con el mismo proveedor de mensajes de texto, permiso y número de teléfono móvil, el registro de la persona muestra **Text reminders** debajo de su número de teléfono móvil, con **On** u **Off**. Haga clic en **Turn on** para empezar a enviarle recordatorios por mensaje de texto, o en **Turn off** para dejar de enviarlos. Es el mismo interruptor que **Text messages** en las [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md) de la propia persona, así que cualquiera de los dos puede cambiarlo. Una persona que respondió STOP a los mensajes de su iglesia sigue sin recibir recordatorios por mensaje de texto, incluso con **Text reminders** activado.
+
 ## Cómo trabajar con formularios {#working-with-forms}
 
 Puede completar formularios personalizados directamente desde el perfil de una persona. Son formularios definidos por el usuario que puede crear siguiendo la guía [Creación de formularios](../forms/creating-forms.md).
