@@ -62,7 +62,7 @@ Each sermon entry can include:
 - **Thumbnail** -- A preview image shown in your sermon library. Click the image to crop or replace it (16:9).
 - **Title** -- The sermon name displayed to visitors
 - **Description** -- A summary of the sermon content
-- **Audio File URL (for podcast)** -- A direct link to an MP3/M4A file for this sermon. Either paste a URL or, once the sermon has been saved, click **Upload Audio** to upload a file and fill it in automatically. Only sermons with this field (or a direct video file link) set are included in your podcast feed.
+- **Audio File URL (for podcast)** -- A direct link to **one** MP3/M4A file for this sermon. This is not the place for a podcast feed address; a feed pasted here will not play. To bring in a whole podcast, use [Bulk Import](./bulk-import.md#importing-podcast-episodes). Either paste a URL or, once the sermon has been saved, click **Upload Audio** to upload a file and fill it in automatically. Only sermons with this field (or a direct video file link) set are included in your podcast feed.
 
 ## Your Podcast Feed
 
