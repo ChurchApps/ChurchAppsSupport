@@ -45,7 +45,7 @@ The **Sermons** screen in the member portal (`/mobile/sermons`) is laid out as o
 - **Recent** -- the next three sermons. Tap **All sermons** to see every sermon, filter by year, or search titles and descriptions across all years.
 - **Series** -- your church's three newest series with how many sermons each has. Tap **All series** for the full list, or tap a series to see its sermons.
 
-Tap a sermon to open it. Tap the picture or **Watch Sermon** to play it, **Share** to send a link, or **Open Link** to open the video on its own site. Below are an **About** section with the description and an **In this series** list with an **All in series** link.
+Tap a sermon to open it. Tap the picture or **Watch Sermon** to play it, **Share** to send a link, or **Open Link** to open the video on its own site. A sermon with an **Audio File URL** also shows **Listen**, which plays the audio right in the app, and **Download audio**, which saves the episode to your phone; audio-only sermons are marked **Audio** in sermon lists. Below are an **About** section with the description and an **In this series** list with an **All in series** link.
 
 :::tip
 If you are looking for a live broadcast rather than a recorded sermon, check the [Live Streaming](./live-streaming.md) page instead.
