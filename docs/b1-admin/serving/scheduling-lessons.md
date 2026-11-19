@@ -14,7 +14,7 @@ B1 Admin integrates directly with [Lessons.church](https://lessons.church) so yo
 
 ## Training Video
 
-<YouTube id="29DVkNF4UsY" title="Reusing a Lesson Trim for Every Week in B1" next="Plan Templates, Tasks, and Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Reusing a Lesson Trim for Every Week in B1" next="Plan Templates, Tasks, and Workflows in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Before You Begin</h4>
