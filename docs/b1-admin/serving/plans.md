@@ -127,7 +127,7 @@ Reminder timing and content are set per **plan type**, so each kind of service c
 1. From the **Serving** area, select the ministry that contains the plan type.
 2. In the **Plan Types** list, click **Edit** next to the plan type.
 3. Expand the **Reminders** section and turn on **Send reminders for plans of this type**.
-4. Under **When should reminders go out?**, pick up to three timings: **7 days before**, **3 days before**, **2 days before**, **1 day before**, or **Day of**.
+4. Under **When should reminders go out?**, pick up to three timings. Use the quick choices (**7 days before**, **3 days before**, **2 days before**, **1 day before**, **Day of**) or type any number of days up to 14 in the **Other** box and click **Add**. For a Sunday service, 6 days before is Monday.
 5. Set the **Time of Day** the reminders go out.
 6. Optionally add a **Message**. Leave it blank to use the default reminder wording.
 7. Under **Send By**, choose **Push**, **Email**, and, if your church has a [texting provider](../settings/church-settings.md#texting) connected, **Text**.
