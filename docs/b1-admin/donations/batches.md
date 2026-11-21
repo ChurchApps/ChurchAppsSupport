@@ -29,7 +29,7 @@ When you navigate to **Donations > Batches**, you will see a list of your batche
 - **Total** -- the combined dollar amount
 - **Status** -- **Open** or **Closed** (see [Closing and Reopening a Batch](#closing-and-reopening-a-batch))
 
-Above the list, year buttons let you show only the batches from one year, or **All** batches. A one-line summary shows the number of batches, the number of gifts, and the total amount for the batches shown.
+Above the list, year buttons let you show only the batches from one year, or **All** batches. Beside them, the **All**, **Open**, and **Closed** status buttons narrow the list by status. The page opens on **Open**, so you see the batches still being worked on, and finished batches are one click away under **Closed** or **All**. If every batch is closed, the list says so and points you to **All**. A one-line summary shows the number of batches, the number of gifts, and the total amount for the batches shown.
 
 ## Creating a New Batch
 
