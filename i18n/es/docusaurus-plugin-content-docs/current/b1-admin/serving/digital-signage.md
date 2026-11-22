@@ -44,10 +44,10 @@ Si tus pantallas usan [FreePlay](../../freeplay/index.md), no necesitas la URL d
 3. En **Reproducir**, elige tu tipo de plan en **Planes de servicio**. Estará marcado como **(plan actual)**.
 4. Define los días y las horas, y luego haz clic en **Guardar**.
 
-Los televisores reproducen cada semana el plan que sea actual para ese tipo de plan, en las horas que definas. Esto también funciona con las lecciones de Go Curriculum, incluidos los planes que hayas personalizado. FreePlay inicia sesión con la cuenta de Go Curriculum vinculada al ministerio en **Proveedores de contenido** (consulta [Programar lecciones](./scheduling-lessons.md)), o con la conexión de Go Curriculum de la iglesia si el ministerio no tiene una. Consulta [Programar el calendario](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para ver todas las opciones, y [Vincular una pantalla](../../freeplay/scheduled-mode/pairing-a-screen.md) para añadir un televisor.
+Los televisores reproducen cada semana el plan que sea actual para ese tipo de plan, en las horas que definas. Esto también funciona con las lecciones de GO! Curriculum, incluidos los planes que hayas personalizado. FreePlay inicia sesión con la cuenta de GO! Curriculum vinculada al ministerio en **Proveedores de contenido** (consulta [Programar lecciones](./scheduling-lessons.md)), o con la conexión de GO! Curriculum de la iglesia si el ministerio no tiene una. Consulta [Programar el calendario](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para ver todas las opciones, y [Vincular una pantalla](../../freeplay/scheduled-mode/pairing-a-screen.md) para añadir un televisor.
 
 :::note
-La URL de la fuente no incluye el contenido multimedia de Go Curriculum, porque ese contenido requiere el inicio de sesión de Go Curriculum de tu iglesia. Para mostrar una lección de Go Curriculum en un televisor del vestíbulo o de un aula, usa FreePlay.
+La URL de la fuente no incluye el contenido multimedia de GO! Curriculum, porque ese contenido requiere el inicio de sesión de GO! Curriculum de tu iglesia. Para mostrar una lección de GO! Curriculum en un televisor del vestíbulo o de un aula, usa FreePlay.
 :::
 
 ## Próximos pasos

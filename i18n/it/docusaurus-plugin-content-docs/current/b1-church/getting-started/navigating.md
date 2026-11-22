@@ -41,7 +41,7 @@ Aprendo `https://yourchurchname.b1.church/mobile` si arriva alla dashboard **Hom
 
 Le sezioni su servizio, gruppi, presenze, moduli e donazioni compaiono solo quando hai effettuato l'accesso, la chiesa ha attivato quello strumento e hai qualcosa da mostrare -- ad esempio un incarico in arrivo oppure almeno un gruppo. Su computer, la Home è disposta su due colonne.
 
-Se non hai effettuato l'accesso, la Home mostra un titolo **Benvenuto** al posto del saluto, con un breve invito ("Accedi per vedere i tuoi gruppi, le donazioni e altro.") e un pulsante **Accedi**. L'invito compare anche quando la chiesa non ha ancora configurato nulla per la Home. La chiesa può riformularlo o nasconderlo -- vedi [Impostazioni dell'app mobile](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Quando è nascosto, puoi comunque accedere dalla pagina **Altro** o dalla pagina **Me**.
+Se non hai effettuato l'accesso, la Home mostra un titolo **Benvenuto** al posto del saluto e, sotto **Eventi in programma**, fino a tre eventi in programma della chiesa che accettano iscrizioni, ciascuno con un link **Iscriviti** (oltre a un link **Tutti gli eventi in programma** alla schermata **Gruppi** quando sono di più). Mostra anche un breve invito ("Accedi per vedere i tuoi gruppi, le donazioni e altro.") e un pulsante **Accedi**. L'invito compare anche quando la chiesa non ha ancora configurato nulla per la Home. La chiesa può riformularlo o nasconderlo -- vedi [Impostazioni dell'app mobile](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Quando è nascosto, puoi comunque accedere dalla pagina **Altro** o dalla pagina **Me**.
 
 ## La barra delle schede in basso {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ Le schermate integrate (come Gruppi, Donazioni o Piani) ottengono per prime i po
 
 ### Cartelle di schede {#folder-tabs}
 
-La tua chiesa può raggruppare più schede in una **cartella**. Una cartella appare come qualsiasi altra scheda -- nella barra delle schede, nella pagina Altro o come riquadro con foto nella Home -- e toccandola si apre una schermata con il nome della cartella che elenca le schede al suo interno. Se ogni scheda della cartella ha una foto, vengono mostrate come riquadri con foto; altrimenti come elenco. I link a siti web esterni in una cartella si aprono in una nuova scheda del browser. Le schede all'interno di una cartella compaiono solo nella schermata della cartella, non nella barra delle schede né nella pagina Altro. Una cartella che non contiene nulla di visibile per te è nascosta.
+La tua chiesa può raggruppare più schede in una **cartella**. Una cartella appare come qualsiasi altra scheda -- nella barra delle schede, nella pagina Altro o come riquadro con foto nella Home -- e toccandola si apre una schermata con il nome della cartella che elenca le schede al suo interno. Le schede con una foto vengono mostrate per prime, ciascuna come banner fotografico a tutta larghezza, e quelle senza foto sono elencate sotto di esse. I link a siti web esterni in una cartella si aprono in una nuova scheda del browser. Le schede all'interno di una cartella compaiono solo nella schermata della cartella, non nella barra delle schede né nella pagina Altro. Una cartella che non contiene nulla di visibile per te è nascosta.
 
 ## Su computer {#on-a-computer}
 

@@ -57,7 +57,7 @@ Poi compila il modulo:
 
 1. **Riproduci** - Scegli cosa riprodurre:
    - **Playlist** - Qualsiasi playlist che hai creato
-   - **Piani di servizio** - Un tipo di piano di B1 Admin, contrassegnato con **(piano attuale)**. Lo schermo riproduce ogni settimana il piano attualmente attivo per quel tipo di piano, incluse le lezioni di Go Curriculum (anche quelle personalizzate), che usano l'accesso Go collegato al ministero del tipo di piano
+   - **Piani di servizio** - Un tipo di piano di B1 Admin, contrassegnato con **(piano attuale)**. Lo schermo riproduce ogni settimana il piano attualmente attivo per quel tipo di piano, incluse le lezioni di GO! Curriculum (anche quelle personalizzate), che usano l'accesso Go collegato al ministero del tipo di piano
    - **Cartella del provider…** - Apre **Scegli una cartella del provider**. Sfoglia fino a una cartella e clicca su **Usa questa cartella**. Per sceglierne una diversa più tardi, clicca su **Cambia**
 2. **Ripeti** - Seleziona i giorni della settimana in cui questa programmazione viene riprodotta. Per una singola data, attiva invece **Una volta** e scegli la **Data**.
 3. **Inizio** e **Fine** - Gli orari in cui la programmazione inizia e si ferma.

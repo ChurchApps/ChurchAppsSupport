@@ -14,7 +14,7 @@ B1 Admin 与 [Lessons.church](https://lessons.church) 直接集成，因此你�
 
 ## 培训视频 {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="在 B1 中为每周重复使用课程裁剪" next="在 B1 中使用计划模板、任务和工作流" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="在 B1 中为每周重复使用课程裁剪" next="在 B1 中使用计划模板、任务和工作流" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>开始之前</h4>
@@ -45,7 +45,7 @@ B1 Admin 与 [Lessons.church](https://lessons.church) 直接集成，因此你�
 内容提供商部分是按事工划分的。如果你管理多个事工（例如儿童和青少年），则需要为每个事工分别链接 Lessons.church。
 :::
 
-Lessons.church 并非唯一选择。同一 **Link New Provider** 列表还提供其他课程和文件来源，包括 SignPresenter、The Bible Project、Jesus Film Project、Go Curriculum、Dropbox、Google Drive 和 OneDrive。链接它们的方式相同，选择课程时它们会作为可切换的提供商出现。
+Lessons.church 并非唯一选择。同一 **Link New Provider** 列表还提供其他课程和文件来源，包括 SignPresenter、The Bible Project、Jesus Film Project、GO! Curriculum、Dropbox、Google Drive 和 OneDrive。链接它们的方式相同，选择课程时它们会作为可切换的提供商出现。
 
 ## 第 2 步 — 安排课程 {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Lessons.church 并非唯一选择。同一 **Link New Provider** 列表还提供
    - 选择具体的 **Lesson**（课程）
    - 选择 **Venue**（适用年龄段）-- 即该课程的年龄段版本
 
-   其他提供商的内容组织方式有所不同。例如，**Go Curriculum** 先选择 **Elementary**（小学）或 **Preschool**（学前），然后选择系列，最后才是课程本身 -- 没有适用年龄段可供选择。
+   其他提供商的内容组织方式有所不同。例如，**GO! Curriculum** 先选择 **Elementary**（小学）或 **Preschool**（学前），然后选择系列，最后才是课程本身 -- 没有适用年龄段可供选择。
 8. 点击 **Associate Lesson**（关联课程）以确认
 9. 为志愿者选择 **copy option**（复制选项）：
    - **Nothing**（不复制）-- 全新计划，不沿用志愿者
@@ -87,7 +87,7 @@ Lessons.church 并非唯一选择。同一 **Link New Provider** 列表还提供
 4. 检查列表 -- 起始课程及其系列中的其余课程，每节课都带有日期。取消勾选任何你想跳过的课程
 5. 点击 **Save**，为每节课程各创建一份计划
 
-对于 Lessons.church，列表还会显示每节课程将使用的 **Venue**（适用年龄段），系统会按名称与你为起始课程所选的适用年龄段进行匹配（如果某节课程没有该适用年龄段，则会改用其他年龄段，并标记为 **substituted**（已替换））。像 Go Curriculum 这样课程没有适用年龄段层级的提供商，会直接安排课程，此时 Venue 列将被隐藏。
+对于 Lessons.church，列表还会显示每节课程将使用的 **Venue**（适用年龄段），系统会按名称与你为起始课程所选的适用年龄段进行匹配（如果某节课程没有该适用年龄段，则会改用其他年龄段，并标记为 **substituted**（已替换））。像 GO! Curriculum 这样课程没有适用年龄段层级的提供商，会直接安排课程，此时 Venue 列将被隐藏。
 
 ## 仅保留每节课程的一部分 {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Lessons.church 并非唯一选择。同一 **Link New Provider** 列表还提供
 
 已有崇拜程序的计划在安排时不会被更改。若要更改已保存的裁剪设置，请自定义另一份计划，然后点击 **Replace the saved trim for Elementary**（替换 Elementary 已保存的裁剪设置）（同样会以你的计划类型命名）。若要停止裁剪，请打开计划类型的 **Edit** 对话框，然后点击 **Lesson trim**（课程裁剪）旁边的 **Clear**（清除）。
 
-## 为 Go Curriculum 使用领导指南 {#go-curriculum-leader-guides}
+## 为 GO! Curriculum 使用领导指南 {#go-curriculum-leader-guides}
 
-安排 Go Curriculum 课程时，计划的崇拜程序会根据该课程的 **Large Group**（大组）领导指南生成：指南的每个部分都会成为一个章节，其中的每个步骤都会列出其类型（例如 say（讲述）、do（操作）、play（播放）或 note（注意））及其文字。播放视频或其他媒体的步骤会附带相应文件，因此会按顺序播放。（没有大组指南的课程则会退回为其媒体文件的简单列表。）
+安排 GO! Curriculum 课程时，计划的崇拜程序会根据该课程的 **Large Group**（大组）领导指南生成：指南的每个部分都会成为一个章节，其中的每个步骤都会列出其类型（例如 say（讲述）、do（操作）、play（播放）或 note（注意））及其文字。播放视频或其他媒体的步骤会附带相应文件，因此会按顺序播放。（没有大组指南的课程则会退回为其媒体文件的简单列表。）
 
 每个包含小组材料的系列也会以 **Small Group Guides**（小组指南）文件夹开头。打开该文件夹并选择一节课程，即可安排该课程的 **Small Group**（小组）指南，其名称类似 "Lesson Name - Small Group"（课程名称 - 小组）-- 适用于单独的小组计划类型。小组指南主要是讨论步骤，通常没有媒体。由于该文件夹排在最前面，因此从其中的某节课程批量安排系列时，不会误将其纳入。
 ## 应用年度计划 {#apply-a-year-plan}

@@ -54,6 +54,10 @@ Gli eventi richiesti dai membri (ad esempio da **Le mie richieste** nell'app B1)
 Imposta un Gruppo di approvazione su una sala in [Sale e risorse](./rooms-resources.md) per richiedere un'approvazione per quella sala. I gruppi che vi hanno accesso potranno quindi richiedere la sala quando creano eventi, e tali richieste confluiranno in questa pagina.
 :::
 
+## Cambiare la persona a cui è intestata una richiesta {#changing-who-a-request-is-for}
+
+Se hai inserito una richiesta per conto di un membro, ad esempio quando ha chiamato l'ufficio, la richiesta è elencata a tuo nome. Fai clic sull'icona di scambio accanto al nome sotto **Richiesto da** (in entrambe le sezioni, in **In attesa** o **Cronologia**), cerca il membro e fai clic su **Sposta a questa persona**. Viene spostata l'intera richiesta: la richiesta di evento e ogni prenotazione di sale e risorse associata. Il membro riceve quindi la notifica di approvazione o rifiuto, vede la richiesta in **Le mie richieste** nell'app B1 e compare nella sezione delle richieste della sua scheda persona. Spostare una richiesta non modifica se è approvata o meno.
+
 ## Cronologia {#history}
 
 Le richieste approvate e rifiutate restano nella pagina. Fai clic su **Cronologia** in cima alle Approvazioni per vederle; fai clic su **In attesa** per tornare alle richieste aperte.

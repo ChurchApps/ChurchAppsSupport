@@ -32,9 +32,13 @@ Ang pagtatala ng donasyon sa B1 Admin ay ginagawa sa pamamagitan ng sistema ng B
 ## Pagpasok ng Indibidwal na Donasyon {#entering-individual-donations}
 
 1. Sa batch detail page, lalabas ang donation entry panel sa tabi ng listahan ng donasyon. Sa ilalim ng **Select Person or Anonymous**, i-type ang pangalan ng donor sa search field para mahanap sila, o i-click ang **Anonymous**. (Ang pag-click sa **Add Donation** sa itaas ng pahina ay dadalhin ka sa panel na ito.)
-2. Pagkatapos pumili ng tao, ipinapakita ng entry form ang mga field para sa **Date** (nagsisimula sa petsa ng batch), **Method** (Check, Cash, Card, o In-Kind), **Fund** (lumalabas kapag higit sa isang fund ang iyong simbahan), **Notes**, **Amount**, at **Check #** (o **Last 4 digits** para sa card na handog, o **Item** para ilarawan ang in-kind na handog; walang detail field ang cash na handog). I-click ang **Change** sa tabi ng pangalan ng donor para pumili ng iba.
+2. Pagkatapos pumili ng tao, ipinapakita ng entry form ang mga field para sa **Date** (nagsisimula sa petsa ng batch), **Method** (Check, Cash, Card, o In-Kind), **Fund** (lumalabas kapag higit sa isang fund ang iyong simbahan), **Memo (prints on statement)**, **Notes (internal)**, **Amount**, at **Check #** (o **Last 4 digits** para sa card na handog, o **Item** para ilarawan ang in-kind na handog; walang detail field ang cash na handog). I-click ang **Change** sa tabi ng pangalan ng donor para pumili ng iba.
 3. Punan ang mga detalye at i-click ang **Add Donation** (o pindutin ang Enter). Kung walang laman o zero ang halaga, hihilingin ng form na maglagay ng halagang mas malaki sa zero bago mag-save.
-4. Idinadagdag ang donasyon sa listahan ng donasyon, at nire-reset ang form para makapaglagay ka ng susunod. Nananatili ang petsa, method, fund, at notes gaya ng itinakda mo, kaya ang sunud-sunod na magkakatulad na tseke ay kailangan lamang ng donor, halaga, at numero ng tseke.
+4. Idinadagdag ang donasyon sa listahan ng donasyon, at nire-reset ang form para makapaglagay ka ng susunod. Nananatili ang petsa, method, fund, memo, at notes gaya ng itinakda mo, kaya ang sunud-sunod na magkakatulad na tseke ay kailangan lamang ng donor, halaga, at numero ng tseke.
+
+:::tip Memo or Notes?
+Ipinaprint ang **Memo** sa giving statement at resibo ng donor, katabi ng regalo. Gamitin ito para sa dapat makita ng donor, gaya ng layunin ng nakalaang regalo ("Youth trip"). Para lamang sa iyong staff ang **Notes** at hindi kailanman iniimprenta. Kapag may nagbigay online, anumang isinulat nila sa memo box ng giving form ay sine-save bilang memo ng regalo.
+:::
 
 :::info
 Kapag [nakasara](batches.md#closing-and-reopening-a-batch) na ang batch, nakatago ang entry panel at mga link na **Edit** para sa sinumang walang **Edit Donations**, at may paalalang lalabas sa itaas ng batch na sarado na ito. Hilingin sa may **Edit Donations** na buksan muli ito.
@@ -91,7 +95,7 @@ Karaniwan ang paghahati ng donasyon sa maraming fund kapag isang tseke ang isinu
 
 ## Pag-edit o Pag-alis ng Donasyon {#editing-or-removing-donations}
 
-Para i-edit ang donasyon, i-click ang button na **Edit** sa row nito sa batch. Maaari mong palitan ang petsa, halaga, fund, paraan ng bayad (Check, Cash, Card, o In-Kind), o ibang detalye. Para sa in-kind na handog, lalagyan ng label ng editor ang detail field ng **Item** para mailarawan mo kung ano ang ibinigay. I-click ang **Save** kapag tapos ka na.
+Para i-edit ang donasyon, i-click ang button na **Edit** sa row nito sa batch. Maaari mong palitan ang petsa, halaga, fund, paraan ng bayad (Check, Cash, Card, o In-Kind), o ibang detalye, kabilang ang **Memo** at **Notes**. Para sa in-kind na handog, lalagyan ng label ng editor ang detail field ng **Item** para mailarawan mo kung ano ang ibinigay. I-click ang **Save** kapag tapos ka na.
 
 :::tip
 Awtomatikong nag-a-update ang linya sa ilalim ng pangalan ng batch sa itaas ng pahina para ipakita ang petsa ng batch, bilang ng handog, at pinagsamang halaga habang nagdadagdag o nag-e-edit ka ng entry. Gamitin ito para mag-reconcile sa iyong deposit slip.
@@ -123,7 +127,7 @@ Kapag may nag-abot ng tseke, nagbayad para sa event o t-shirt, o may bisitang or
 2. I-click ang **Receipt** sa tabi ng **Edit** sa row ng donasyon. Maaari ka ring mag-click ng **Receipt** sa ibaba ng Edit Donation form.
 3. I-click ang **Print**, o ang **Close** para bumalik.
 
-Gumagamit ang resibo ng parehong layout ng giving statement: ang iyong simbahan at ang donor (o "Anonymous"), petsa at paraan ng handog, bawat fund at halaga, ang note, ang iyong Giving Note, at ang official receipt block kung nagtakda ka ng **Statement format** (tingnan ang [Giving Statements](giving-statements.md)). Ang numero ng resibo sa block na iyon ay ang ID ng donasyon.
+Gumagamit ang resibo ng parehong layout ng giving statement: ang iyong simbahan at ang donor (o "Anonymous"), petsa at paraan ng handog, bawat fund at halaga, ang memo ng regalo (kung mayroon), ang iyong Giving Note, at ang official receipt block kung nagtakda ka ng **Statement format** (tingnan ang [Giving Statements](giving-statements.md)). Ang numero ng resibo sa block na iyon ay ang ID ng donasyon.
 
 :::info
 Ang wording na "no goods or services" ay iniimprenta lamang kapag bawat fund sa handog ay markado bilang tax-deductible. Kung may bahaging napunta sa fund na hindi tax-deductible, gaya ng bayad sa event o pagbili, inaalis ng resibo ang wording na iyon para mabasa itong bayad at hindi kawanggawang handog.

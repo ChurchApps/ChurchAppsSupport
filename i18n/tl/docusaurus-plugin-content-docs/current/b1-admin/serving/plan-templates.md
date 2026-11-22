@@ -13,7 +13,7 @@ Hinahayaan ka ng mga plan template na mag-save ng reusable na kopya ng order of 
 
 ## Training Video {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Mga Plan Template, Tasks, at Workflows sa B1" next="Paggawa ng Calendar, Event, at Room Booking sa B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Mga Plan Template, Tasks, at Workflows sa B1" next="Paggawa ng Calendar, Event, at Room Booking sa B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>

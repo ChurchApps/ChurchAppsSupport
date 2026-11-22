@@ -54,6 +54,10 @@ Hendelser som medlemmer ber om (for eksempel fra **My Requests** i B1-appen), vi
 Sett opp en Approval Group på et rom i [Rom og ressurser](./rooms-resources.md) for å kreve godkjenning for det rommet. Grupper med tilgang kan da be om rommet når de oppretter hendelser, og disse forespørslene havner på denne siden.
 :::
 
+## Endre hvem en forespørsel gjelder {#changing-who-a-request-is-for}
+
+Hvis du har registrert en forespørsel på vegne av et medlem, for eksempel når vedkommende ringte kontoret, står den under ditt navn. Klikk på bytteikonet ved siden av navnet under **Requested by** (i begge seksjonene, på **Pending** eller **History**), søk etter medlemmet og klikk **Move to this person**. Hele forespørselen flyttes: hendelsesforespørselen og alle rom- og ressursbookinger på den. Medlemmet får deretter varselet om godkjenning eller avslag, ser forespørselen under **My Requests** i B1-appen, og den vises i forespørselsdelen av personposten deres. Å flytte en forespørsel endrer ikke om den er godkjent.
+
 ## Historikk {#history}
 
 Godkjente og avslåtte forespørsler blir værende på siden. Klikk **History** øverst i Approvals for å se dem; klikk **Pending** for å gå tilbake til de åpne forespørslene.

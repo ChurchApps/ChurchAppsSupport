@@ -115,7 +115,10 @@ Aktualisieren Sie danach die Variablen des Dienstes **Api**, damit Links in E-Ma
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` ist die Adresse der Mitgliederseite. Sie wird für Links in E-Mails zu Plänen, Anmeldungen und Erinnerungen sowie in Benachrichtigungen verwendet. Sie kann auch eine Vorlage sein, etwa `https://{subdomain}.yourchurch.org`. Ist sie nicht gesetzt, verweisen diese Links auf `https://{subdomain}.b1.church`.
 
 Und auf dem Dienst **B1Admin**:
 

@@ -115,7 +115,10 @@ Poi aggiorna le variabili del servizio **Api** così i link nelle email usano i 
 
 ```
 B1ADMIN_ROOT=https://admin.tuachiesa.org
+B1APP_ROOT=https://app.tuachiesa.org
 ```
+
+`B1APP_ROOT` è l'indirizzo del sito dei membri, usato per i link nelle email di piani, iscrizioni e promemoria e nelle notifiche. Può anche essere un modello come `https://{subdomain}.tuachiesa.org`. Se non è impostato, quei link puntano a `https://{subdomain}.b1.church`.
 
 E sul servizio **B1Admin**:
 

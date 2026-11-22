@@ -44,10 +44,10 @@ Se i tuoi schermi usano [FreePlay](../../freeplay/index.md), non hai bisogno del
 3. In **Play**, scegli il tuo tipo di piano da **Service plans**. È contrassegnato con **(current plan)**.
 4. Imposta i giorni e gli orari, quindi clicca su **Save**.
 
-Le TV riproducono ogni settimana il piano attuale per quel tipo di piano, agli orari che hai impostato. Funziona anche con le lezioni di Go Curriculum, inclusi i piani che hai personalizzato. FreePlay accede con l'account Go Curriculum collegato al ministero in **Content Providers** (vedi [Pianificare le lezioni](./scheduling-lessons.md)), oppure con la connessione Go Curriculum della chiesa se il ministero non ne ha una. Consulta [Pianificazione del calendario](../../freeplay/scheduled-mode/scheduling-the-calendar.md) per tutte le opzioni e [Associazione di uno schermo](../../freeplay/scheduled-mode/pairing-a-screen.md) per aggiungere una TV.
+Le TV riproducono ogni settimana il piano attuale per quel tipo di piano, agli orari che hai impostato. Funziona anche con le lezioni di GO! Curriculum, inclusi i piani che hai personalizzato. FreePlay accede con l'account GO! Curriculum collegato al ministero in **Content Providers** (vedi [Pianificare le lezioni](./scheduling-lessons.md)), oppure con la connessione GO! Curriculum della chiesa se il ministero non ne ha una. Consulta [Pianificazione del calendario](../../freeplay/scheduled-mode/scheduling-the-calendar.md) per tutte le opzioni e [Associazione di uno schermo](../../freeplay/scheduled-mode/pairing-a-screen.md) per aggiungere una TV.
 
 :::note
-L'URL del feed non include i contenuti multimediali di Go Curriculum, perché questi richiedono l'accesso a Go Curriculum della tua chiesa. Per mostrare una lezione di Go Curriculum su una TV dell'atrio o di un'aula, usa FreePlay.
+L'URL del feed non include i contenuti multimediali di GO! Curriculum, perché questi richiedono l'accesso a GO! Curriculum della tua chiesa. Per mostrare una lezione di GO! Curriculum su una TV dell'atrio o di un'aula, usa FreePlay.
 :::
 
 ## Prossimi passi

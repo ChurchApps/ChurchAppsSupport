@@ -13,7 +13,7 @@ Os planos de culto organizam quem serve e quando. Cada plano está vinculado a u
 
 ## Vídeo de treinamento {#training-video}
 
-<YouTube id="47DstBXKl74" title="Criando planos e escalando voluntários no B1" next="Montando a ordem do culto e a biblioteca de músicas no B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Criando planos e escalando voluntários no B1" next="Montando a ordem do culto e a biblioteca de músicas no B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
@@ -141,7 +141,7 @@ Voluntários que ainda não confirmaram recebem os botões **Aceitar** e **Recus
 
 ### Lembretes por SMS {#text-reminders}
 
-A opção **SMS** só aparece quando a sua igreja tem um provedor de SMS conectado. Os SMS são enviados pelo provedor de SMS da sua igreja, e cada mensagem pode gerar custos para a igreja. Um voluntário só recebe um lembrete por SMS se tiver ativado **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) e tiver um número de celular no perfil. Cada SMS começa com o nome da sua igreja, é mantido em uma única mensagem e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber SMS da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de mensagens recebidas (STOP)** das suas [configurações de SMS](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
+A opção **SMS** só aparece quando a sua igreja tem um provedor de SMS conectado. Os SMS são enviados pelo provedor de SMS da sua igreja, e cada mensagem pode gerar custos para a igreja. Um voluntário só recebe um lembrete por SMS se tiver ativado **Mensagens de texto** nas suas [Preferências de notificação](../../b1-church/getting-started/notification-preferences.md) e tiver um número de celular no perfil. A equipe com permissão para enviar mensagens de texto pode ativar **Lembretes por SMS** para um voluntário a partir do [registro](../people/adding-people.md#text-reminders) dele. Cada SMS começa com o nome da sua igreja, é mantido em uma única mensagem e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber SMS da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de mensagens recebidas (STOP)** das suas [configurações de SMS](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
 
 Para enviar SMS imediatamente a todos os escalados em um intervalo de datas, use **Enviar SMS aos voluntários** na [Visão geral dos planos](./plans-overview.md#texting-everyone-scheduled).
 

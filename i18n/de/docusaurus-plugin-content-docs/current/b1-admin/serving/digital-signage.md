@@ -44,10 +44,10 @@ Wenn Ihre Bildschirme [FreePlay](../../freeplay/index.md) verwenden, benötigen 
 3. Wählen Sie unter **Wiedergabe** Ihren Planungstyp aus **Gottesdienstpläne** aus. Er ist mit **(aktueller Plan)** markiert.
 4. Legen Sie die Tage und Uhrzeiten fest und klicken Sie dann auf **Speichern**.
 
-Die Fernseher spielen jede Woche zu den von Ihnen festgelegten Zeiten den Plan ab, der für diesen Planungstyp gerade aktuell ist. Das funktioniert auch mit Go-Curriculum-Lektionen, einschließlich angepasster Pläne. FreePlay meldet sich mit dem Go-Curriculum-Konto an, das unter **Inhaltsanbieter** mit dem Dienst verknüpft ist (siehe [Lektionen planen](./scheduling-lessons.md)), oder mit der Go-Curriculum-Verbindung der Kirche, falls der Dienst keine hat. Alle Optionen finden Sie unter [Den Kalender planen](../../freeplay/scheduled-mode/scheduling-the-calendar.md), und unter [Einen Bildschirm koppeln](../../freeplay/scheduled-mode/pairing-a-screen.md) erfahren Sie, wie Sie einen Fernseher hinzufügen.
+Die Fernseher spielen jede Woche zu den von Ihnen festgelegten Zeiten den Plan ab, der für diesen Planungstyp gerade aktuell ist. Das funktioniert auch mit GO!-Curriculum-Lektionen, einschließlich angepasster Pläne. FreePlay meldet sich mit dem GO!-Curriculum-Konto an, das unter **Inhaltsanbieter** mit dem Dienst verknüpft ist (siehe [Lektionen planen](./scheduling-lessons.md)), oder mit der GO!-Curriculum-Verbindung der Kirche, falls der Dienst keine hat. Alle Optionen finden Sie unter [Den Kalender planen](../../freeplay/scheduled-mode/scheduling-the-calendar.md), und unter [Einen Bildschirm koppeln](../../freeplay/scheduled-mode/pairing-a-screen.md) erfahren Sie, wie Sie einen Fernseher hinzufügen.
 
 :::note
-Die Feed-URL enthält keine Medien aus Go Curriculum, da dieser Inhalt Ihre Go-Curriculum-Anmeldung der Kirche erfordert. Um eine Go-Curriculum-Lektion auf einem Fernseher in der Lobby oder im Klassenzimmer anzuzeigen, verwenden Sie FreePlay.
+Die Feed-URL enthält keine Medien aus GO! Curriculum, da dieser Inhalt Ihre GO!-Curriculum-Anmeldung der Kirche erfordert. Um eine GO!-Curriculum-Lektion auf einem Fernseher in der Lobby oder im Klassenzimmer anzuzeigen, verwenden Sie FreePlay.
 :::
 
 ## Nächste Schritte

@@ -23,7 +23,7 @@ En la parte superior de la pantalla encontrarás configuraciones que se aplican 
 
 - **Envío**
   - **Notificaciones push** -- Activa o desactiva las notificaciones push para tu cuenta. Para configurar push en el dispositivo que estás usando, actívalo desde tu bandeja de entrada -- consulta [Notificaciones push en este dispositivo](#push-notifications-on-this-device).
-  - **Mensajes de texto** -- Solo se muestra si tu iglesia tiene configurado el envío de mensajes de texto. Actívalo para recibir recordatorios de servicio y eventos por mensaje de texto al número móvil de tu perfil. Está desactivado hasta que lo actives.
+  - **Mensajes de texto** -- Solo se muestra si tu iglesia tiene configurado el envío de mensajes de texto. Actívalo para recibir recordatorios de servicio y eventos por mensaje de texto al número móvil de tu perfil. Está desactivado hasta que lo actives. El personal de la iglesia también puede activarlo o desactivarlo por ti desde tu registro en B1 Admin.
   - **Silenciar todas las notificaciones** -- Silencia temporalmente todos los canales hasta que lo desactives.
 - **Correo electrónico** -- Elige una **Frecuencia de correo**:
   - **Por notificación** -- Envía un correo a medida que ocurren las cosas.

@@ -55,7 +55,7 @@ I visningen **Tabell** listes personer etter etternavn, deretter fornavn. Du kan
 1. Klikk på en **kolonneoverskrift** (for eksempel **Navn** eller **E-post**) for å sortere etter den kolonnen.
 2. Klikk på samme overskrift igjen for å reversere sorteringsrekkefølgen.
 
-Det første klikket sorterer kolonnen stigende (A til Å, yngst til eldst, tidligste dato først), og pilen ved siden av overskriften viser retningen. Personer uten verdi i den kolonnen listes alltid sist. Det gjør det enkelt å finne personer alfabetisk, etter alder eller etter en annen synlig kolonne.
+Det første klikket sorterer kolonnen stigende (A til Å, yngst til eldst, tidligste dato først), og pilen ved siden av overskriften viser retningen. Personer uten verdi i den kolonnen listes alltid sist. Det gjør det enkelt å finne personer alfabetisk, etter alder eller etter en annen synlig kolonne. B1 husker sorteringen på den enheten, så tabellen forblir sortert på samme måte etter at du laster siden på nytt eller kommer tilbake senere.
 
 ## Tilpasse kolonner {#customizing-columns}
 
@@ -77,6 +77,7 @@ Ikke all informasjon trenger å være synlig samtidig. Du kan velge hvilke kolon
 ### Vise egendefinerte felt som kolonner {#showing-custom-fields-as-columns}
 
 Kolonnevelgeren har to faner: **Standard** inneholder de innebygde kolonnene som er listet over, og **Egendefinert** inneholder kirkens [egendefinerte felt](../settings/custom-fields.md) sammen med spørsmålene fra eventuelle skjemaer for personer. Kryss av for et egendefinert felt på fanen **Egendefinert** for å legge det til som en kolonne, og hver persons verdi for det feltet vises i tabellen. Verdier vises på samme måte som på personens profil. Ja/nei-felt viser *Ja* eller *Nei*, flervalgsfelt viser etikettene til alternativene, og datoer vises som korte datoer. Personer uten verdi for feltet får en tom celle.
+
 
 ## Eksportere søkeresultater {#exporting-search-results}
 

@@ -14,7 +14,7 @@ description: "在 B1 Admin 中为敬拜计划设置崇拜程序：添加诗歌�
 
 ## 培训视频 {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="在 B1 中建立崇拜程序和诗歌库" next="在 B1 中使用计划模板、任务和工作流" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="在 B1 中建立崇拜程序和诗歌库" next="在 B1 中使用计划模板、任务和工作流" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>开始之前</h4>

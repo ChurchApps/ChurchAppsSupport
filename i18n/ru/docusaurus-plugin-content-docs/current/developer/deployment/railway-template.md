@@ -115,7 +115,10 @@ SUPPORT_EMAIL=noreply@yourchurch.org
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` — это адрес сайта для участников; он используется для ссылок в письмах о планах, регистрациях и напоминаниях, а также в уведомлениях. Это может быть и шаблон, например `https://{subdomain}.yourchurch.org`. Если он не задан, такие ссылки ведут на `https://{subdomain}.b1.church`.
 
 А в сервисе **B1Admin**:
 

@@ -101,7 +101,7 @@ Fai clic su un evento qualsiasi per vederne i dettagli. Dalla vista dei dettagli
 - **I leader** possono modificare i dettagli dell'evento, cambiare gli orari o eliminarlo.
 
 :::warning
-Eliminare un evento lo rimuove in modo permanente. Se devi annullare una sola occorrenza di un evento ricorrente, valuta invece di modificarlo.
+Eliminare un evento lo rimuove in modo permanente. Quando modifichi o elimini un evento ricorrente, ti viene chiesto se modificare **Solo questa data**, **Questa e tutte le date successive** oppure **Tutte le date**, così puoi annullare un singolo incontro senza toccare il resto della serie.
 :::
 
 ## Iscriversi al calendario {#subscribing-to-the-calendar}

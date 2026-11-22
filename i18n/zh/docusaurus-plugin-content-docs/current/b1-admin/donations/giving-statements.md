@@ -54,6 +54,12 @@ description: "在 B1 Admin 中为每位捐赠人生成年终奉献收据，然�
 奉献收据仅包含分配到已启用 **Tax Deductible** 设置的基金的奉献。如果某个基金未标记为可免税，其奉献将不会出现在收据上。你可以在[基金](funds.md)页面管理此设置。
 :::
 
+## 收据上的奉献备注 {#gift-memos-on-statements}
+
+每份收据会列出每笔奉献的日期、方式、基金和金额。当收据上至少有一笔奉献设有 **Memo** 时，基金栏之后会增加一个 **Memo** 列，让捐赠人看到每笔奉献的用途。没有备注的收据则保持四列版式。奉献的 **Notes** 仅供内部使用，绝不会出现在收据上。ZIP 中的 CSV 文件会将 Memo 作为最后一列。
+
+要在收据上注明用途，请在[登记奉献](recording-donations.md)时将其填入该笔奉献的 **Memo**；如果希望单独汇总，则可为其设置独立的[基金](funds.md)。
+
 ## 加拿大、澳大利亚和新西兰的收据格式 {#receipt-formats-for-canada-australia-and-new-zealand}
 
 教会在美国以外地区，可以将收据切换为其所在国家的官方收据格式。点击奉献收据页面顶部的 **Statement format**（收据格式）（或前往 **Settings** 并打开 **Giving** 板块），将 **Statement Format**（收据格式）（默认为 **Standard**）设置为 **Canada - CRA official receipt**（加拿大 - CRA 官方收据）、**Australia**（澳大利亚）或 **New Zealand**（新西兰），然后填写出现的字段：你的注册号（**CRA Registration Number**（CRA 注册号）、**ABN**（澳大利亚商业编号）或 **NZ Charity Registration Number**（新西兰慈善注册号））、**Organization Address**（机构地址）、**Authorized Signatory Name**（授权签署人姓名），加拿大还需填写 **City of Issue**（签发城市）。点击 **Save**。

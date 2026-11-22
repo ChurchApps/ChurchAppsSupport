@@ -46,9 +46,9 @@ description: "FreePlay में अपने TV रिमोट से कन�
 
 किसी भी स्तर पर एक कदम ऊपर जाने के लिए **वापस** (Back) दबाएँ।
 
-## Go Curriculum ब्राउज़ करना
+## GO! Curriculum ब्राउज़ करना
 
-[अपने gocurriculum.com खाते से साइन इन करने](./connecting-providers.md#phone-sign-in-qr-code-only) के बाद, Go Curriculum अपने आयु समूह खोलता है: **Elementary** और **Preschool**। आयु समूह, फिर संग्रह, फिर लेसन के अनुसार अंदर जाएँ, और लेसन की डाउनलोड स्क्रीन खोलने के लिए उसे चुनें।
+[अपने gocurriculum.com खाते से साइन इन करने](./connecting-providers.md#phone-sign-in-qr-code-only) के बाद, GO! Curriculum अपने आयु समूह खोलता है: **Elementary** और **Preschool**। आयु समूह, फिर संग्रह, फिर लेसन के अनुसार अंदर जाएँ, और लेसन की डाउनलोड स्क्रीन खोलने के लिए उसे चुनें।
 
 आप क्या देखते हैं, यह आपकी Go सदस्यता पर निर्भर करता है:
 

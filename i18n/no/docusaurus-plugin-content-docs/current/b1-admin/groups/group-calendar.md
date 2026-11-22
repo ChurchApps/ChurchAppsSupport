@@ -101,7 +101,7 @@ Klikk på en hendelse for å se detaljene. Fra visningen med hendelsesdetaljer:
 - **Ledere** kan redigere detaljene for hendelsen, endre tidspunkter eller slette hendelsen.
 
 :::warning
-Å slette en hendelse fjerner den permanent. Hvis du trenger å avlyse én enkelt forekomst av en gjentakende hendelse, bør du heller redigere den.
+Å slette en hendelse fjerner den permanent. Når du redigerer eller sletter en gjentakende hendelse, blir du spurt om du vil endre **Just this date**, **This and all following dates** eller **All dates**, slik at du kan avlyse ett enkelt møte uten å berøre resten av serien.
 :::
 
 ## Abonnere på kalenderen {#subscribing-to-the-calendar}

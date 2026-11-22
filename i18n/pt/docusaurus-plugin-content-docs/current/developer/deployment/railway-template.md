@@ -115,7 +115,10 @@ Depois, atualize as variáveis do serviço **Api** para que os links nos e-mails
 
 ```
 B1ADMIN_ROOT=https://admin.suaigreja.org
+B1APP_ROOT=https://app.suaigreja.org
 ```
+
+`B1APP_ROOT` é o endereço do site dos membros, usado nos links dos e-mails de planos, inscrições e lembretes, e nas notificações. Pode ser também um modelo, como `https://{subdomain}.suaigreja.org`. Se não estiver definido, esses links apontam para `https://{subdomain}.b1.church`.
 
 E no serviço **B1Admin**:
 

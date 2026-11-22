@@ -70,6 +70,8 @@ Lumalabas lamang ang channel na **Text** kapag may nakakonektang texting provide
 - Nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at
 - May mobile number sa kanilang profile.
 
+Maaaring i-on ng staff na may permission magpadala ng text ang **Text reminders** para sa isang tao mula sa [record](../people/adding-people.md#text-reminders) ng taong iyon, sa linya sa ilalim ng kanyang mobile number. Kapag nag-click ka ng **Send now** sa paalalang may kasamang **Text**, ipinapakita ng B1 kung ilang tao ang na-text at kung ilan ang nilaktawan, halimbawa *Sent to 2 people · 1 texted, 1 skipped*.
+
 Nagsisimula ang bawat text sa pangalan ng iyong simbahan, pinananatiling iisang text message, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil sa pagtanggap ng text mula sa iyong simbahan. Para maabot ng mga sagot na STOP ang B1, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
 
 ## Ano ang Maaaring Kontrolin ng mga Miyembro {#what-members-can-control}

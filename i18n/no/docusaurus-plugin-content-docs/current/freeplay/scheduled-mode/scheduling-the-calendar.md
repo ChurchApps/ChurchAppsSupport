@@ -57,7 +57,7 @@ Fyll deretter ut skjemaet:
 
 1. **Spill av** - Velg hva som skal spilles av:
    - **Spillelister** - Alle spillelister du har bygget
-   - **Tjenesteplaner** - En plantype fra B1 Admin, merket **(gjeldende plan)**. Skjermen spiller hver uke den planen som er gjeldende for plantypen, inkludert Go Curriculum-leksjoner (også tilpassede), som bruker Go-innloggingen knyttet til plantypens tjenesteområde
+   - **Tjenesteplaner** - En plantype fra B1 Admin, merket **(gjeldende plan)**. Skjermen spiller hver uke den planen som er gjeldende for plantypen, inkludert GO! Curriculum-leksjoner (også tilpassede), som bruker Go-innloggingen knyttet til plantypens tjenesteområde
    - **Leverandørmappe…** - Åpner **Velg en leverandørmappe**. Bla til en mappe og klikk på **Bruk denne mappen**. For å velge en annen mappe senere klikker du på **Endre**
 2. **Gjentas** - Velg ukedagene planen skal spilles av. For en enkelt dato i stedet slår du på **Én gang** og velger **Dato**.
 3. **Start** og **Slutt** - Tidspunktene planen starter og stopper.

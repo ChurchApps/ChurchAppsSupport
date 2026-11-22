@@ -54,6 +54,10 @@ Los eventos que los miembros solicitan (por ejemplo, desde **Mis solicitudes** e
 Configure un Grupo de aprobación en una sala desde [Salas y recursos](./rooms-resources.md) para requerir aprobación para esa sala. Los grupos con acceso podrán entonces solicitar la sala al crear eventos, y esas solicitudes llegarán a esta página.
 :::
 
+## Cambiar a quién pertenece una solicitud {#changing-who-a-request-is-for}
+
+Si ingresó una solicitud en nombre de un miembro, por ejemplo cuando llamó a la oficina, aparece con su nombre. Haga clic en el icono de intercambio junto al nombre bajo **Solicitado por** (en cualquiera de las dos secciones, en **Pendientes** o **Historial**), busque al miembro y haga clic en **Mover a esta persona**. La solicitud completa se traslada: la solicitud del evento y cada reserva de sala y recurso incluida en ella. Luego, el miembro recibe la notificación de aprobación o rechazo, ve la solicitud en **Mis solicitudes** en la app de B1, y aparece en la sección de solicitudes de su registro de persona. Trasladar una solicitud no cambia si está aprobada o no.
+
 ## Historial {#history}
 
 Las solicitudes aprobadas y rechazadas permanecen en la página. Haga clic en **Historial** en la parte superior de Aprobaciones para verlas; haga clic en **Pendientes** para volver a las solicitudes abiertas.

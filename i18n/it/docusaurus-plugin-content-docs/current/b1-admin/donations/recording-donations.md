@@ -32,9 +32,13 @@ In B1 Admin la registrazione delle donazioni avviene tramite il sistema dei Lott
 ## Inserire le singole donazioni {#entering-individual-donations}
 
 1. Nella pagina di dettaglio del lotto, il pannello di inserimento delle donazioni compare accanto all'elenco delle donazioni. Sotto **Seleziona persona o anonimo**, digita il nome del donatore nel campo di ricerca per trovarlo, oppure fai clic su **Anonimo**. (Facendo clic su **Aggiungi donazione** in cima alla pagina si scorre fino a questo pannello.)
-2. Dopo aver selezionato una persona, il modulo di inserimento mostra i campi **Data** (che parte dalla data del lotto), **Metodo** (Assegno, Contanti, Carta o In natura), **Fondo** (mostrato quando la tua chiesa ha più di un fondo), **Note**, **Importo** e **Assegno n.** (oppure **Ultime 4 cifre** per le offerte con carta, oppure **Oggetto** per descrivere un'offerta in natura; le offerte in contanti non hanno un campo di dettaglio). Fai clic su **Cambia** accanto al nome del donatore per sceglierne un altro.
+2. Dopo aver selezionato una persona, il modulo di inserimento mostra i campi **Data** (che parte dalla data del lotto), **Metodo** (Assegno, Contanti, Carta o In natura), **Fondo** (mostrato quando la tua chiesa ha più di un fondo), **Memo (stampato sulla ricevuta)**, **Note (interne)**, **Importo** e **Assegno n.** (oppure **Ultime 4 cifre** per le offerte con carta, oppure **Oggetto** per descrivere un'offerta in natura; le offerte in contanti non hanno un campo di dettaglio). Fai clic su **Cambia** accanto al nome del donatore per sceglierne un altro.
 3. Compila i dettagli e fai clic su **Aggiungi donazione** (oppure premi Invio). Se l'importo è vuoto o pari a zero, il modulo ti chiede di inserire un importo maggiore di zero invece di salvare.
-4. La donazione viene aggiunta all'elenco e il modulo si azzera così puoi inserire la successiva. Data, metodo, fondo e note restano come li hai impostati, quindi una pila di assegni simili richiede solo il donatore, l'importo e il numero dell'assegno.
+4. La donazione viene aggiunta all'elenco e il modulo si azzera così puoi inserire la successiva. Data, metodo, fondo, memo e note restano come li hai impostati, quindi una pila di assegni simili richiede solo il donatore, l'importo e il numero dell'assegno.
+
+:::tip Memo o Note?
+Il **Memo** viene stampato sulla ricevuta del donatore, accanto all'offerta. Usalo per ciò che il donatore deve vedere, come lo scopo di un'offerta destinata a un fine preciso ("Viaggio dei giovani"). Le **Note** sono solo per il tuo staff e non vengono mai stampate. Quando qualcuno dona online, qualsiasi cosa scriva nella casella memo del modulo di donazione viene salvata come memo dell'offerta.
+:::
 
 :::info
 Se il lotto è stato [chiuso](batches.md#closing-and-reopening-a-batch), il pannello di inserimento e i link **Modifica** sono nascosti per chi non ha **Modifica donazioni**, e un avviso in cima al lotto indica che è chiuso. Chiedi a chi ha **Modifica donazioni** di riaprirlo.
@@ -91,7 +95,7 @@ Dividere le donazioni tra più fondi è comune quando un donatore scrive un unic
 
 ## Modificare o rimuovere donazioni {#editing-or-removing-donations}
 
-Per modificare una donazione, fai clic sul pulsante **Modifica** sulla sua riga nel lotto. Puoi cambiare la data, l'importo, il fondo, il metodo di pagamento (Assegno, Contanti, Carta o In natura) o qualsiasi altro dettaglio. Per un'offerta in natura, l'editor etichetta il campo di dettaglio come **Oggetto** così puoi descrivere cosa è stato donato. Fai clic su **Salva** quando hai finito.
+Per modificare una donazione, fai clic sul pulsante **Modifica** sulla sua riga nel lotto. Puoi cambiare la data, l'importo, il fondo, il metodo di pagamento (Assegno, Contanti, Carta o In natura) o qualsiasi altro dettaglio, compresi il **Memo** e le **Note**. Per un'offerta in natura, l'editor etichetta il campo di dettaglio come **Oggetto** così puoi descrivere cosa è stato donato. Fai clic su **Salva** quando hai finito.
 
 :::tip
 La riga sotto il nome del lotto in cima alla pagina si aggiorna automaticamente e mostra la data del lotto, il numero di offerte e l'importo complessivo in dollari man mano che aggiungi o modifichi le voci. Usala per riconciliare con la distinta di versamento.
@@ -123,7 +127,7 @@ Quando qualcuno consegna un assegno, paga un evento o una maglietta, oppure un'o
 2. Fai clic su **Ricevuta** accanto a **Modifica** sulla riga della donazione. Puoi anche fare clic su **Ricevuta** in fondo al modulo Modifica donazione.
 3. Fai clic su **Stampa**, oppure su **Chiudi** per tornare indietro.
 
-La ricevuta usa lo stesso layout della ricevuta di donazione: la tua chiesa e il donatore (oppure "Anonimo"), la data e il metodo dell'offerta, ogni fondo e importo, la nota, la tua Nota sulle donazioni e il blocco della ricevuta ufficiale se hai impostato un **Formato ricevuta** (vedi [Ricevute di donazione](giving-statements.md)). Il numero di ricevuta in quel blocco è l'ID della donazione.
+La ricevuta usa lo stesso layout della ricevuta di donazione: la tua chiesa e il donatore (oppure "Anonimo"), la data e il metodo dell'offerta, ogni fondo e importo, il memo dell'offerta (se ne ha uno), la tua Nota sulle donazioni e il blocco della ricevuta ufficiale se hai impostato un **Formato ricevuta** (vedi [Ricevute di donazione](giving-statements.md)). Il numero di ricevuta in quel blocco è l'ID della donazione.
 
 :::info
 La dicitura "nessun bene o servizio" viene stampata solo quando ogni fondo dell'offerta è contrassegnato come fiscalmente deducibile. Se una parte dell'offerta è andata a un fondo non deducibile, come una quota di partecipazione a un evento o un acquisto, la ricevuta non riporta quella dicitura, così appare come un pagamento anziché come un'offerta benefica.

@@ -54,6 +54,12 @@ Patakbuhin ang iyong mga statement nang maaga sa Enero habang sariwa pa ang iyon
 Ang mga giving statement ay kinabibilangan lamang ng mga donasyong itinalaga sa mga fund na may naka-enable na **Tax Deductible** setting. Kung hindi markado ang isang fund bilang tax-deductible, hindi lalabas sa statement ang mga donasyon nito. Maaari mong pamahalaan ang setting na ito sa pahinang [Funds](funds.md).
 :::
 
+## Mga Memo ng Regalo sa Mga Statement {#gift-memos-on-statements}
+
+Ipinapakita ng bawat statement ang bawat regalo kasama ang petsa, paraan, fund, at halaga nito. Kapag may **Memo** ang kahit isang regalo sa isang statement, idinadagdag ang column na **Memo** pagkatapos ng fund para makita ng donor kung para saan ang bawat regalo. Ang mga statement na walang memo ay nananatili sa apat na column na layout. Ang **Notes** ng regalo ay para sa loob lamang at hindi kailanman lumalabas sa statement. Ang mga CSV file sa ZIP ay may kasamang memo bilang huling column nito.
+
+Para ilagay ang layunin sa statement, ilagay ito bilang **Memo** ng regalo kapag [itinatala ang donasyon](recording-donations.md), o bigyan ito ng sariling [fund](funds.md) kung gusto mo itong i-total nang hiwalay.
+
 ## Mga Format ng Resibo para sa Canada, Australia at New Zealand {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Maaaring lumipat ang mga simbahang nasa labas ng United States sa opisyal na layout ng resibo ng kanilang bansa. I-click ang **Statement format** sa itaas ng Giving Statements page (o pumunta sa **Settings** at buksan ang seksyong **Giving**), at itakda ang **Statement Format** (na nagsisimula sa **Standard**) sa **Canada - CRA official receipt**, **Australia**, o **New Zealand**, pagkatapos punan ang mga field na lalabas: ang iyong registration number (**CRA Registration Number**, **ABN**, o **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name**, at para sa Canada, ang **City of Issue**. I-click ang **Save**.

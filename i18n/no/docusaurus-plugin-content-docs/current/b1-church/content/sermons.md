@@ -45,7 +45,7 @@ Skjermen **Preken** i medlemsportalen (`/mobile/sermons`) er oppbygd som én sid
 - **Nylig** -- de neste tre prekenene. Trykk på **Alle preken** for å se alle prekenene, filtrere etter år eller søke i titler og beskrivelser på tvers av alle år.
 - **Serier** -- menighetens tre nyeste serier, med antall preken i hver. Trykk på **Alle serier** for hele listen, eller trykk på en serie for å se prekenene i den.
 
-Trykk på en preken for å åpne den. Trykk på bildet eller **Se preken** for å spille den av, **Del** for å sende en lenke, eller **Åpne lenke** for å åpne videoen på dens egen side. Under finner du en seksjon **Om** med beskrivelsen, og en liste **I denne serien** med en lenke til **Alle i serien**.
+Trykk på en preken for å åpne den. Trykk på bildet eller **Se preken** for å spille den av, **Del** for å sende en lenke, eller **Åpne lenke** for å åpne videoen på dens egen side. En preken med en **URL til lydfil** viser også **Listen**, som spiller av lyden direkte i appen, og **Download audio**, som lagrer episoden på telefonen din; lydprekener er merket **Audio** i prekenlistene. Hvis menigheten din publiserer prekenene sine som en podcast, kan en administrator hente inn episodene som lydprekener med [Masseimport](../../b1-admin/sermons/bulk-import.md#importing-podcast-episodes), slik at podcasten spilles av direkte i fanen Preken. Under finner du en seksjon **Om** med beskrivelsen, og en liste **I denne serien** med en lenke til **Alle i serien**.
 
 :::tip
 Leter du etter en direktesending i stedet for en innspilt preken, kan du se på siden [Direktesending](./live-streaming.md).

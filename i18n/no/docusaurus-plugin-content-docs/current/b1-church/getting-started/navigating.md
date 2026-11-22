@@ -41,7 +41,7 @@ Når du åpner `https://yourchurchname.b1.church/mobile`, kommer du til **Hjem**
 
 Seksjonene for tjeneste, grupper, oppmøte, skjemaer og giving vises bare når du er logget inn, menigheten har slått på verktøyet, og du har noe å vise -- for eksempel et kommende oppdrag eller minst én gruppe. På en datamaskin er Hjem delt i to kolonner.
 
-Hvis du er logget ut, viser Hjem overskriften **Velkommen** i stedet for hilsenen, med en kort melding («Logg inn for å se grupper, giving og mer.») og en knapp for **Logg inn**. Meldingen vises selv om menigheten din ikke har satt opp noe annet på Hjem ennå. Menigheten din kan skrive om denne meldingen eller skjule den -- se [Innstillinger for mobilappen](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Når den er skjult, kan du fortsatt logge inn fra siden **Mer** eller **Me**.
+Hvis du er logget ut, viser Hjem overskriften **Velkommen** i stedet for hilsenen og, under **Upcoming events**, inntil tre av menighetens kommende arrangementer som tar imot påmeldinger, hver med en lenke **Register** (pluss en lenke **All upcoming events** til skjermen **Groups** når det er flere). Det vises også en kort melding («Logg inn for å se grupper, giving og mer.») og en knapp for **Logg inn**. Meldingen vises selv om menigheten din ikke har satt opp noe annet på Hjem ennå. Menigheten din kan skrive om denne meldingen eller skjule den -- se [Innstillinger for mobilappen](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Når den er skjult, kan du fortsatt logge inn fra siden **Mer** eller **Me**.
 
 ## Den nederste fanelinjen {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ Innebygde skjermer (som Grupper, Giving eller Planer) får fanepluss først. Eve
 
 ### Mappefaner {#folder-tabs}
 
-Menigheten din kan gruppere flere faner i en **mappe**. En mappe vises som hvilken som helst annen fane -- i fanelinjen, på siden **Mer** eller som en bildeflis på Hjem. Når du trykker på den, åpnes en skjerm med mappens navn som lister fanene inni. Hvis alle fanene i mappen har et bilde, vises de som bildefliser. Ellers vises de som en liste. Lenker til eksterne nettsteder i en mappe åpnes i en ny fane i nettleseren. Faner inne i en mappe vises bare på mappens skjerm, ikke i fanelinjen eller på siden **Mer**. En mappe uten noe du kan se, er skjult.
+Menigheten din kan gruppere flere faner i en **mappe**. En mappe vises som hvilken som helst annen fane -- i fanelinjen, på siden **Mer** eller som en bildeflis på Hjem. Når du trykker på den, åpnes en skjerm med mappens navn som lister fanene inni. Faner som har et bilde, vises først, hver som et bannerbilde i full bredde, og fanene uten bilde listes under dem. Lenker til eksterne nettsteder i en mappe åpnes i en ny fane i nettleseren. Faner inne i en mappe vises bare på mappens skjerm, ikke i fanelinjen eller på siden **Mer**. En mappe uten noe du kan se, er skjult.
 
 ## På en datamaskin {#on-a-computer}
 

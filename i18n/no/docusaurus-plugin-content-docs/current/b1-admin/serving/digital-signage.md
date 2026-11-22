@@ -44,10 +44,10 @@ Hvis skjermene dine kjører [FreePlay](../../freeplay/index.md), trenger du ikke
 3. Under **Spill av** velger du planstypen din fra **Tjenesteplaner**. Den er merket **(gjeldende plan)**.
 4. Angi dager og klokkeslett, og klikk deretter på **Lagre**.
 
-TV-ene spiller av den planen som er gjeldende for planstypen hver uke, til tidspunktene du har angitt. Dette fungerer også med Go Curriculum-leksjoner, inkludert planer du har tilpasset. FreePlay logger på med Go Curriculum-kontoen som er koblet til tjenesteområdet under **Innholdsleverandører** (se [Planlegge leksjoner](./scheduling-lessons.md)), eller med kirkens Go Curriculum-tilkobling hvis tjenesteområdet ikke har en. Se [Planlegge kalenderen](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for alle alternativene, og [Koble til en skjerm](../../freeplay/scheduled-mode/pairing-a-screen.md) for å legge til en TV.
+TV-ene spiller av den planen som er gjeldende for planstypen hver uke, til tidspunktene du har angitt. Dette fungerer også med GO! Curriculum-leksjoner, inkludert planer du har tilpasset. FreePlay logger på med GO! Curriculum-kontoen som er koblet til tjenesteområdet under **Innholdsleverandører** (se [Planlegge leksjoner](./scheduling-lessons.md)), eller med kirkens GO! Curriculum-tilkobling hvis tjenesteområdet ikke har en. Se [Planlegge kalenderen](../../freeplay/scheduled-mode/scheduling-the-calendar.md) for alle alternativene, og [Koble til en skjerm](../../freeplay/scheduled-mode/pairing-a-screen.md) for å legge til en TV.
 
 :::note
-Feed-URL-en inkluderer ikke Go Curriculum-medier, fordi det innholdet krever Go Curriculum-innloggingen til kirken din. For å vise en Go Curriculum-leksjon på en TV i lobbyen eller klasserommet, bruk FreePlay.
+Feed-URL-en inkluderer ikke GO! Curriculum-medier, fordi det innholdet krever GO! Curriculum-innloggingen til kirken din. For å vise en GO! Curriculum-leksjon på en TV i lobbyen eller klasserommet, bruk FreePlay.
 :::
 
 ## Neste steg

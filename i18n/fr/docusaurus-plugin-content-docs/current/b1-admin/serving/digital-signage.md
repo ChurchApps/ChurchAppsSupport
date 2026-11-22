@@ -44,10 +44,10 @@ Si vos écrans utilisent [FreePlay](../../freeplay/index.md), vous n'avez pas be
 3. Sous **Play**, choisissez votre type de plan dans **Service plans**. Il est marqué **(current plan)**.
 4. Définissez les jours et les heures, puis cliquez sur **Save**.
 
-Les téléviseurs diffusent chaque semaine le plan en cours pour ce type de plan, aux heures que vous avez définies. Cela fonctionne également avec les leçons Go Curriculum, y compris les plans que vous avez personnalisés. FreePlay se connecte avec le compte Go Curriculum lié au ministère sous **Content Providers** (voir [Programmer des leçons](./scheduling-lessons.md)), ou avec la connexion Go Curriculum de l'église si le ministère n'en possède pas. Consultez [Programmer le calendrier](../../freeplay/scheduled-mode/scheduling-the-calendar.md) pour découvrir toutes les options, et [Associer un écran](../../freeplay/scheduled-mode/pairing-a-screen.md) pour ajouter un téléviseur.
+Les téléviseurs diffusent chaque semaine le plan en cours pour ce type de plan, aux heures que vous avez définies. Cela fonctionne également avec les leçons GO! Curriculum, y compris les plans que vous avez personnalisés. FreePlay se connecte avec le compte GO! Curriculum lié au ministère sous **Content Providers** (voir [Programmer des leçons](./scheduling-lessons.md)), ou avec la connexion GO! Curriculum de l'église si le ministère n'en possède pas. Consultez [Programmer le calendrier](../../freeplay/scheduled-mode/scheduling-the-calendar.md) pour découvrir toutes les options, et [Associer un écran](../../freeplay/scheduled-mode/pairing-a-screen.md) pour ajouter un téléviseur.
 
 :::note
-L'URL du flux n'inclut pas les médias Go Curriculum, car ce contenu nécessite l'identifiant Go Curriculum de votre église. Pour afficher une leçon Go Curriculum sur un téléviseur du hall d'entrée ou d'une salle de classe, utilisez FreePlay.
+L'URL du flux n'inclut pas les médias GO! Curriculum, car ce contenu nécessite l'identifiant GO! Curriculum de votre église. Pour afficher une leçon GO! Curriculum sur un téléviseur du hall d'entrée ou d'une salle de classe, utilisez FreePlay.
 :::
 
 ## Étapes suivantes

@@ -1,13 +1,13 @@
 ---
 title: "Importazione in blocco"
-description: "Importa video di predica in blocco da un canale YouTube o da un account Vimeo in B1 Admin, poi ordinali in una playlist."
+description: "Importa in blocco video di predica da un canale YouTube o da un account Vimeo, oppure episodi di podcast da un feed RSS, in B1 Admin, poi ordinali in una playlist."
 ---
 
 # Importazione in blocco
 
 <div class="article-intro">
 
-La pagina Importazione in blocco ti permette di popolare rapidamente la tua libreria di prediche importando video da YouTube o Vimeo. È il modo più veloce per portare i contenuti delle prediche già esistenti, invece di aggiungere un video alla volta.
+La pagina Importazione in blocco ti permette di popolare rapidamente la tua libreria di prediche importando video da YouTube o Vimeo, oppure episodi da un feed RSS di podcast. È il modo più veloce per portare i contenuti delle prediche già esistenti, invece di aggiungere una predica alla volta.
 
 </div>
 
@@ -16,17 +16,18 @@ La pagina Importazione in blocco ti permette di popolare rapidamente la tua libr
 
 - Ti serve l'autorizzazione **Modifica servizi** nella sezione **Contenuti** del tuo ruolo. Vedi [Ruoli e autorizzazioni](../settings/roles-permissions.md) se non hai accesso.
 - Crea almeno una [playlist](./playlists.md) in cui importare le tue prediche
-- Tieni a portata di mano il tuo ID del canale YouTube o le informazioni del tuo account Vimeo
+- Tieni a portata di mano il tuo ID del canale YouTube, le informazioni del tuo account Vimeo o l'indirizzo del feed del tuo podcast
 
 </div>
 
 ## Scegliere la fonte {#choosing-your-source}
 
 1. In B1 Admin, apri il [menu di salto](../introduction.md#getting-around-with-the-jump-menu) (la barra di ricerca in alto a sinistra), espandi **Prediche** e fai clic su **Prediche**. Fai clic su **Aggiungi predica** e scegli **Importazione in blocco** dal menu.
-2. In **Scegli la fonte di importazione** vedrai due opzioni:
+2. In **Scegli la fonte di importazione** vedrai tre opzioni:
    - **YouTube** -- Importa video da un canale YouTube
    - **Vimeo** -- Importa video da un account Vimeo
-3. Fai clic sull'opzione della piattaforma in cui sono ospitate le tue prediche (oppure fai clic su **Importa da YouTube** / **Importa da Vimeo** sotto la relativa descrizione). Fai clic su **Indietro** in cima alla pagina per tornare alla scelta della fonte.
+   - **Feed RSS del podcast** -- Importa episodi da un feed di podcast come prediche audio
+3. Fai clic sull'opzione della piattaforma in cui sono ospitate le tue prediche (oppure fai clic su **Importa da YouTube**, **Importa da Vimeo** o **Importa da feed podcast** sotto la relativa descrizione). Fai clic su **Indietro** in cima alla pagina per tornare alla scelta della fonte.
 
 :::tip
 Puoi tornare indietro e cambiare fonte in qualsiasi momento, se hai video su entrambe le piattaforme.
@@ -57,6 +58,30 @@ I tuoi video verranno importati con tutti i loro dettagli, inclusi titoli, descr
 
 :::info
 L'importazione in blocco è ideale per iniziare quando stai migrando da un'altra piattaforma. Per aggiungere le singole prediche in seguito, usa invece la pagina [Gestire le prediche](./managing-sermons.md).
+:::
+
+## Importare episodi di podcast {#importing-podcast-episodes}
+
+Se le tue prediche sono pubblicate come podcast (Spotify for Podcasters / Anchor, Buzzsprout, Podbean e simili), puoi importare gli episodi come prediche audio.
+
+1. Scegli **Feed RSS del podcast** e incolla l'indirizzo del tuo feed in **URL del feed podcast**. Dove trovarlo:
+   - **Spotify for Podcasters (Anchor)** -- **Impostazioni** > **Disponibilità** > **Distribuzione RSS**. L'indirizzo ha questo aspetto: `https://anchor.fm/s/…/podcast/rss`.
+   - **Buzzsprout** -- il link **RSS Feed** nella dashboard del tuo podcast.
+   - La maggior parte degli altri servizi mostra l'indirizzo del feed RSS nelle impostazioni o nella pagina di distribuzione del podcast.
+2. Fai clic su **Recupera**. Il nome del podcast compare sopra un elenco dei suoi episodi con le date di pubblicazione. Se il feed non può essere caricato o non contiene episodi audio, compare un messaggio che lo indica: verifica l'indirizzo e riprova.
+3. I nuovi episodi vengono selezionati per te. Gli episodi già presenti nella tua libreria delle prediche sono contrassegnati **Già importato** e non possono essere selezionati, così nulla viene aggiunto due volte.
+4. Deseleziona gli episodi che non vuoi, scegli una playlist in **Importa nella playlist** e fai clic su **Importa**.
+
+Ogni episodio diventa una predica audio con il suo titolo, la descrizione, la data, l'immagine di copertina e la durata. Nell'app B1, i membri vedono **Ascolta** e **Scarica audio** su queste prediche.
+
+L'importazione è una copia una tantum, non un collegamento in tempo reale al feed. Quando pubblichi nuovi episodi, torna qui ed esegui di nuovo l'importazione con lo stesso indirizzo del feed; vengono selezionati solo i nuovi episodi.
+
+:::note
+Vengono importati solo gli audio. Gli episodi video di un podcast non vengono importati: aggiungili tramite YouTube, Vimeo o [Gestire le prediche](./managing-sermons.md).
+:::
+
+:::tip
+Vuoi un elenco sul tuo sito web o nella tua app che rispecchi sempre il tuo podcast senza reimportarlo? Aggiungi l'elemento **Podcast** a una pagina nel costruttore del sito web, poi aggiungi quella pagina come scheda **Pagina** nella tua app mobile.
 :::
 
 ## Passaggi successivi {#next-steps}

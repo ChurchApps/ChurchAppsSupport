@@ -112,7 +112,7 @@ La eliminación de cuenta, ya sea inmediata o aprobada por su iglesia, es perman
 :::
 
 :::info
-Si es **Domain Admin**, asegúrese de transferir las responsabilidades administrativas a otro usuario antes de eliminar su cuenta. Consulte [Roles y permisos](../settings/roles-permissions.md) para más detalles sobre la administración de roles de administrador.
+Si es el único **Domain Admin** de su iglesia, B1 no eliminará su cuenta. Muestra "Usted es el único Domain Admin de *iglesia*. Haga que otra persona sea Domain Admin antes de eliminar su cuenta." Agregue primero a otro usuario a **Domain Admins**. Consulte [Roles y permisos](../settings/roles-permissions.md) para más detalles sobre la administración de roles de administrador.
 :::
 
 :::info

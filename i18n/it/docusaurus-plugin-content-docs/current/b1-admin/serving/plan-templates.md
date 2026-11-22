@@ -13,7 +13,7 @@ I modelli di piano ti permettono di salvare un'istantanea riutilizzabile dell'or
 
 ## Video di formazione {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Modelli di piano, attività e flussi di lavoro in B1" next="Creare calendari, eventi e prenotazioni di sale in B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Modelli di piano, attività e flussi di lavoro in B1" next="Creare calendari, eventi e prenotazioni di sale in B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>

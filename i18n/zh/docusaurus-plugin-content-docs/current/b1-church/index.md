@@ -11,6 +11,10 @@ B1.church 是面向教会成员的门户网站。会众可以在这里保持联�
 
 </div>
 
+## 培训视频 {#training-video}
+
+<YouTube id="yiKP0zuJMVU" title="面向会员的 B1.church" next="登录 B1.church 与成员门户" nextUrl="/docs/b1-church/getting-started/logging-in" />
+
 成员访问你的 B1.church 网站时，会看到带有你教会品牌标识、导航链接和内容页面的公开网站。登录后，他们可以进入**成员门户（Member Portal）**，那里集中了他们所有的个人教会工具。
 
 ## 主要功能

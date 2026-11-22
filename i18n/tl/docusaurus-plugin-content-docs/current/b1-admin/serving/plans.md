@@ -13,7 +13,7 @@ Ang mga service plan ang nag-oorganisa kung sino ang naglilingkod at kailan. Baw
 
 ## Training Video {#training-video}
 
-<YouTube id="47DstBXKl74" title="Paggawa ng Plans at Pag-iskedyul ng mga Volunteer sa B1" next="Pagbuo ng Service Order at Song Library sa B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Paggawa ng Plans at Pag-iskedyul ng mga Volunteer sa B1" next="Pagbuo ng Service Order at Song Library sa B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Bago Ka Magsimula</h4>
@@ -141,7 +141,7 @@ Ang mga volunteer na hindi pa nakukumpirma ay may mga button na **Accept** at **
 
 ### Mga Text Reminder {#text-reminders}
 
-Lumalabas lamang ang opsyong **Text** kapag may nakakabit na texting provider ang simbahan mo. Dumadaan ang mga text sa texting provider ng simbahan mo, at maaaring magkaroon ng gastos ang simbahan mo sa bawat text. Makakatanggap lamang ng text reminder ang isang volunteer kung naka-on ang **Text messages** sa kanyang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) at may mobile number ang kanyang profile. Nagsisimula ang bawat text sa pangalan ng simbahan mo, nananatili sa isang text message lamang, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil sa pagtanggap ng text mula sa simbahan mo. Para maabot ng mga sagot na STOP ang B1, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
+Lumalabas lamang ang opsyong **Text** kapag may nakakabit na texting provider ang simbahan mo. Dumadaan ang mga text sa texting provider ng simbahan mo, at maaaring magkaroon ng gastos ang simbahan mo sa bawat text. Makakatanggap lamang ng text reminder ang isang volunteer kung naka-on ang **Text messages** sa kanyang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) at may mobile number ang kanyang profile. Maaaring i-on ng staff na may pahintulot magpadala ng text ang **Text reminders** para sa isang volunteer mula sa [record](../people/adding-people.md#text-reminders) ng volunteer. Nagsisimula ang bawat text sa pangalan ng simbahan mo, nananatili sa isang text message lamang, at nagtatapos sa "Reply STOP to opt out." Ang sinumang sumagot ng STOP ay titigil sa pagtanggap ng text mula sa simbahan mo. Para maabot ng mga sagot na STOP ang B1, i-paste ang **Inbound (STOP) webhook URL** mula sa iyong [texting settings](../settings/church-settings.md#texting) sa inbound message webhook ng iyong provider.
 
 Para mag-text agad sa lahat ng naka-iskedyul sa isang hanay ng mga petsa, gamitin ang **Text Volunteers** sa [Plans Overview](./plans-overview.md#texting-everyone-scheduled).
 

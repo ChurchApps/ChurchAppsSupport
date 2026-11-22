@@ -65,7 +65,7 @@ Pour modifier le nom ou le courriel d'un membre, cliquez sur l'icône de modific
 2. Repérez la personne dans la liste **Membres**.
 3. Cliquez sur l'icône de suppression dans sa ligne et confirmez.
 
-Votre église doit toujours avoir au moins un administrateur du domaine ; le dernier membre des **Administrateurs du domaine** ne peut donc pas être retiré.
+Votre église doit toujours avoir au moins un administrateur du domaine ; le dernier membre des **Administrateurs du domaine** ne peut donc pas être retiré. B1 affiche « Au moins un administrateur du domaine est requis. Ajoutez un autre administrateur du domaine avant de retirer celui-ci. » Le seul administrateur du domaine ne peut pas non plus quitter l'église ni supprimer son propre compte tant qu'une autre personne n'a pas été ajoutée aux **Administrateurs du domaine**.
 
 ## Configurer les autorisations {#configuring-permissions}
 

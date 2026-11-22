@@ -13,7 +13,7 @@ A página Configurações do aplicativo móvel permite configurar as abas de nav
 
 ## Vídeo de treinamento {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Personalizando o aplicativo de membros da sua igreja no B1" />
+<YouTube id="7x2CQG_pH6o" title="Personalizando o aplicativo de membros da sua igreja no B1" />
 
 :::info
 As abas configuradas aqui aparecem no aplicativo B1, que os membros podem [instalar como um Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Compartilhe com os membros a página de instalação da sua igreja — `https://yourchurchname.b1.church/mobile/install` — ela os orienta a instalar o aplicativo no próprio dispositivo, sem precisar baixar nada na App Store ou no Google Play.
@@ -158,7 +158,7 @@ As abas que você configura aqui são exibidas no **PWA do B1.church** que os se
 
 No celular, a barra de abas inferior mostra **Início**, até três das suas abas e **Mais**; no computador, o cabeçalho mostra até cinco. As telas integradas (como Sermões, Doações ou Grupos) têm prioridade nesses espaços, e as abas de **Página interna** preenchem os espaços que sobrarem. As abas de **URL externa** e de **Versículo do dia** nunca ocupam um espaço. Todas as abas, inclusive as que não cabem, são listadas na página **Mais** do aplicativo.
 
-As abas colocadas dentro de uma aba **Pasta** são a exceção: elas aparecem somente na própria tela da pasta, que os membros abrem tocando na pasta. Essa tela mostra as abas como blocos com foto quando todas têm imagem, ou como uma lista caso contrário. Uma pasta que não contenha abas que um membro possa ver fica oculta para esse membro. Veja [Abas de pasta](../../b1-church/getting-started/navigating.md#folder-tabs). Veja [Navegando no B1App](../../b1-church/getting-started/navigating.md) para saber o que os membros veem.
+As abas colocadas dentro de uma aba **Pasta** são a exceção: elas aparecem somente na própria tela da pasta, que os membros abrem tocando na pasta. Essa tela mostra cada aba que tem imagem como um banner com foto em largura total, com as abas sem imagem listadas abaixo delas. Uma pasta que não contenha abas que um membro possa ver fica oculta para esse membro. Veja [Abas de pasta](../../b1-church/getting-started/navigating.md#folder-tabs). Veja [Navegando no B1App](../../b1-church/getting-started/navigating.md) para saber o que os membros veem.
 
 ## Próximos passos {#next-steps}
 

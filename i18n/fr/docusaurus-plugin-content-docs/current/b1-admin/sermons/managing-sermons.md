@@ -62,7 +62,7 @@ Chaque entrée de prédication peut comprendre :
 - **Miniature** -- Une image d'aperçu affichée dans votre bibliothèque de prédications. Cliquez sur l'image pour la recadrer ou la remplacer (16:9).
 - **Titre** -- Le nom de la prédication affiché aux visiteurs
 - **Description** -- Un résumé du contenu de la prédication
-- **URL du fichier audio (pour le balado)** -- Un lien direct vers un fichier MP3/M4A pour cette prédication. Collez une URL ou, une fois la prédication enregistrée, cliquez sur **Téléverser l'audio** pour téléverser un fichier et le renseigner automatiquement. Seules les prédications dont ce champ (ou un lien direct vers un fichier vidéo) est renseigné sont incluses dans votre flux de balados.
+- **URL du fichier audio (pour le balado)** -- Un lien direct vers **un seul** fichier MP3/M4A pour cette prédication. Ce champ n'est pas destiné à l'adresse d'un flux de balado ; un flux collé ici ne se lira pas. Pour importer un balado complet, utilisez [Importation en masse](./bulk-import.md#importing-podcast-episodes). Collez une URL ou, une fois la prédication enregistrée, cliquez sur **Téléverser l'audio** pour téléverser un fichier et le renseigner automatiquement. Seules les prédications dont ce champ (ou un lien direct vers un fichier vidéo) est renseigné sont incluses dans votre flux de balados.
 
 ## Votre flux de balados {#your-podcast-feed}
 

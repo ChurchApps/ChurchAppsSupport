@@ -13,7 +13,7 @@ Las plantillas de plan le permiten guardar una copia reutilizable del orden del 
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Plantillas de plan, tareas y flujos de trabajo en B1" next="Crear calendarios, eventos y reservas de salas en B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Plantillas de plan, tareas y flujos de trabajo en B1" next="Crear calendarios, eventos y reservas de salas en B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Antes de empezar</h4>

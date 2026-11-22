@@ -88,6 +88,10 @@ O envio pelo B1 usa as mesmas aprovações e os mesmos limites diários do e-mai
 
 Se a sua igreja tiver um [provedor de mensagens de texto](../settings/church-settings.md#texting) conectado, você tiver permissão para enviar mensagens e a pessoa tiver um número de celular, um botão **Texto** aparece ao lado de **E-mail**. Clique nele, digite a sua **Mensagem** e clique em **Enviar**. A caixa de diálogo mostra o número para o qual a mensagem será enviada. Veja [Enviando mensagens de texto aos membros do grupo](../groups/group-members.md#texting-group-members) para saber como o envio de mensagens de texto funciona.
 
+### Lembretes por SMS {#text-reminders}
+
+Lembretes de tarefas, eventos e escalas só são enviados por SMS para pessoas que ativaram as mensagens de texto. Com o mesmo provedor de mensagens, a mesma permissão e o mesmo número de celular, o registro da pessoa mostra **Lembretes por SMS** abaixo do número de celular, com **Ativado** ou **Desativado**. Clique em **Ativar** para começar a enviar a ela lembretes por SMS, ou em **Desativar** para parar. É o mesmo controle que **Mensagens de texto** nas [Preferências de Notificação](../../b1-church/getting-started/notification-preferences.md) da própria pessoa, então qualquer um dos dois pode alterá-lo. Quem respondeu STOP às mensagens da sua igreja continua sem receber lembretes por SMS, mesmo com **Lembretes por SMS** ativado.
+
 ## Trabalhando com formulários {#working-with-forms}
 
 Você pode preencher formulários personalizados diretamente no perfil de uma pessoa. São formulários definidos pelo usuário, que você pode criar seguindo o guia [Criando formulários](../forms/creating-forms.md).

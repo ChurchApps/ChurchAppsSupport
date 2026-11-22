@@ -23,7 +23,7 @@ En haut de l'écran, vous trouverez les réglages qui s'appliquent à tout :
 
 - **Envoi**
   - **Notifications push** -- Active ou désactive les notifications push pour votre compte. Pour configurer les push sur l'appareil que vous utilisez, activez-les depuis votre boîte de réception -- voir [Notifications push sur cet appareil](#push-notifications-on-this-device).
-  - **Messages texte** -- Affiché uniquement si votre église a configuré l'envoi de textos. Activez cette option pour recevoir par texto les rappels de service et d'événements sur le numéro de mobile de votre profil. Elle est désactivée tant que vous ne l'activez pas.
+  - **Messages texte** -- Affiché uniquement si votre église a configuré l'envoi de textos. Activez cette option pour recevoir par texto les rappels de service et d'événements sur le numéro de mobile de votre profil. Elle est désactivée tant que vous ne l'activez pas. Le personnel de l'église peut aussi l'activer ou la désactiver pour vous depuis votre fiche dans B1 Admin.
   - **Désactiver toutes les notifications** -- Met temporairement en sourdine tous les canaux jusqu'à ce que vous les réactiviez.
 - **Courriel** -- Choisissez une **Fréquence des courriels** :
   - **Par notification** -- Envoyer un courriel au fur et à mesure des événements.

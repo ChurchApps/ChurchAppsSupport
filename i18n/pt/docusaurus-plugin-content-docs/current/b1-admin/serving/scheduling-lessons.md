@@ -14,7 +14,7 @@ O B1 Admin se integra diretamente ao [Lessons.church](https://lessons.church), p
 
 ## Vídeo de treinamento {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Reutilizando um recorte de lição para todas as semanas no B1" next="Modelos de plano, tarefas e fluxos de trabalho no B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Reutilizando um recorte de lição para todas as semanas no B1" next="Modelos de plano, tarefas e fluxos de trabalho no B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Antes de começar</h4>
@@ -45,7 +45,7 @@ Esta é uma configuração única por ministério. Você precisa conectar sua co
 A seção Provedores de conteúdo é por ministério. Se você administra vários ministérios (por exemplo, Infantil e Juvenil), precisará vincular o Lessons.church separadamente para cada um.
 :::
 
-O Lessons.church não é a única opção. A mesma lista **Vincular novo provedor** também oferece outras fontes de material didático e de arquivos, incluindo SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive e OneDrive. Vincule qualquer uma delas da mesma forma, e elas aparecerão como provedores para os quais você pode alternar ao selecionar uma lição.
+O Lessons.church não é a única opção. A mesma lista **Vincular novo provedor** também oferece outras fontes de material didático e de arquivos, incluindo SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive e OneDrive. Vincule qualquer uma delas da mesma forma, e elas aparecerão como provedores para os quais você pode alternar ao selecionar uma lição.
 
 ## Etapa 2 — Agende uma lição {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Depois de vinculado, você pode agendar lições diretamente pelos Planos.
    - Selecione a **Lição** específica
    - Selecione o **Local** — esta é a versão da lição para a faixa etária
 
-   Outros provedores organizam o conteúdo de forma diferente. Por exemplo, o **Go Curriculum** começa com **Elementar** ou **Pré-escola**, depois uma série e, por fim, a própria lição — não há local para escolher.
+   Outros provedores organizam o conteúdo de forma diferente. Por exemplo, o **GO! Curriculum** começa com **Elementar** ou **Pré-escola**, depois uma série e, por fim, a própria lição — não há local para escolher.
 8. Clique em **Associar lição** para confirmar
 9. Escolha a sua **opção de cópia** para os voluntários:
    - **Nada** — plano novo, sem voluntários copiados
@@ -87,7 +87,7 @@ Para agendar várias lições da mesma série de uma vez, clique em **Agendar li
 4. Revise a lista — a lição inicial e o restante da sua série, cada uma com uma data. Desmarque as que deseja pular
 5. Clique em **Salvar** para criar um plano por lição
 
-No caso do Lessons.church, a lista também mostra o **Local** que cada lição usará, correspondido pelo nome ao local escolhido para a lição inicial (se uma lição não tiver esse local, outro é usado e marcado como **substituído**). Provedores cujas lições não têm nível de local, como o Go Curriculum, agendam as lições diretamente, e a coluna Local fica oculta.
+No caso do Lessons.church, a lista também mostra o **Local** que cada lição usará, correspondido pelo nome ao local escolhido para a lição inicial (se uma lição não tiver esse local, outro é usado e marcado como **substituído**). Provedores cujas lições não têm nível de local, como o GO! Curriculum, agendam as lições diretamente, e a coluna Local fica oculta.
 
 ## Mantendo apenas parte de cada lição {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Quando uma lição não se encaixa no padrão (uma parte está ausente, não tem
 
 Planos que já têm uma ordem do culto não são alterados quando são agendados. Para mudar o recorte salvo, personalize outro plano e clique em **Substituir o recorte salvo para Elementar** (novamente com o nome do seu tipo de plano). Para deixar de recortar, abra a caixa de diálogo **Editar** do tipo de plano e clique em **Limpar** ao lado de **Recorte da lição**.
 
-## Guias do líder do Go Curriculum {#go-curriculum-leader-guides}
+## Guias do líder do GO! Curriculum {#go-curriculum-leader-guides}
 
-Ao agendar uma lição do Go Curriculum, a ordem do culto do plano é montada a partir do guia do líder do **Grande grupo** da lição: cada parte do guia se torna uma seção, e cada etapa dentro dela é listada com seu tipo (como falar, fazer, tocar ou observação) e seu texto. As etapas que reproduzem um vídeo ou outra mídia levam esse arquivo consigo, para que ele seja reproduzido na ordem. (Uma lição sem guia de Grande grupo recorre a uma lista simples dos arquivos de mídia.)
+Ao agendar uma lição do GO! Curriculum, a ordem do culto do plano é montada a partir do guia do líder do **Grande grupo** da lição: cada parte do guia se torna uma seção, e cada etapa dentro dela é listada com seu tipo (como falar, fazer, tocar ou observação) e seu texto. As etapas que reproduzem um vídeo ou outra mídia levam esse arquivo consigo, para que ele seja reproduzido na ordem. (Uma lição sem guia de Grande grupo recorre a uma lista simples dos arquivos de mídia.)
 
 Cada série que tem material de pequenos grupos também começa com uma pasta **Guias de pequenos grupos**. Abra-a e escolha uma lição para agendar o guia de **Pequeno grupo** dessa lição, nomeado como "Nome da lição - Pequeno grupo" — útil para um tipo de plano separado para pequenos grupos. Os guias de pequenos grupos são formados principalmente por etapas de discussão e geralmente não têm mídia. Como a pasta aparece primeiro na lista, o agendamento em massa de uma série a partir de uma de suas lições nunca a inclui.
 ## Aplicar um plano anual {#apply-a-year-plan}

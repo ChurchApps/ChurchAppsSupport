@@ -112,7 +112,7 @@ B1 Admin 让你可以选择配色主题，以及浅色或深色的显示模式�
 :::
 
 :::info
-如果你是 **Domain Admin**，请在删除账户之前，先将管理职责转交给其他用户。有关管理员角色的详细信息，请参阅[角色与权限](../settings/roles-permissions.md)。
+如果你是教会唯一的 **Domain Admin**，B1 不会删除你的账户，而是会显示提示："You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account."（意即：你是 *church* 唯一的 Domain Admin，请先将他人设为 Domain Admin，再删除你的账户）。请先将其他用户加入 **Domain Admins**。有关管理员角色的详细信息，请参阅[角色与权限](../settings/roles-permissions.md)。
 :::
 
 :::info

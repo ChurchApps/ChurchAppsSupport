@@ -46,9 +46,9 @@ description: "FreePlay에서 TV 리모컨으로 연결된 제공자의 라이브
 
 어느 단계에서든 **뒤로** 버튼을 누르면 한 단계 위로 올라갑니다.
 
-## Go Curriculum 둘러보기
+## GO! Curriculum 둘러보기
 
-[gocurriculum.com 계정으로 로그인](./connecting-providers.md#phone-sign-in-qr-code-only)하면 Go Curriculum이 연령대인 **Elementary**와 **Preschool**을 보여줍니다. 연령대, 컬렉션, 레슨 순서로 들어가고, 레슨을 선택하면 다운로드 화면이 열립니다.
+[gocurriculum.com 계정으로 로그인](./connecting-providers.md#phone-sign-in-qr-code-only)하면 GO! Curriculum이 연령대인 **Elementary**와 **Preschool**을 보여줍니다. 연령대, 컬렉션, 레슨 순서로 들어가고, 레슨을 선택하면 다운로드 화면이 열립니다.
 
 보이는 내용은 Go 멤버십에 따라 달라집니다.
 

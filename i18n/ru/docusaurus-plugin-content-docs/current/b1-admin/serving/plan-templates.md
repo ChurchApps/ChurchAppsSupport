@@ -13,7 +13,7 @@ description: "Сохраните порядок служения и позици
 
 ## Видеоурок {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Шаблоны планов, задачи и рабочие процессы в B1" next="Создание календарей, событий и бронирования помещений в B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Шаблоны планов, задачи и рабочие процессы в B1" next="Создание календарей, событий и бронирования помещений в B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Перед началом работы</h4>

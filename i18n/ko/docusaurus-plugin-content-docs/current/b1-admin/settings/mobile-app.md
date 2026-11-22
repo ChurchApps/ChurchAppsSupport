@@ -13,7 +13,7 @@ description: "B1 Admin에서 B1.church 구성원 앱의 탐색 탭, 홈 화면 �
 
 ## 교육 동영상 {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="B1에서 교회 구성원 앱 맞춤 설정하기" />
+<YouTube id="7x2CQG_pH6o" title="B1에서 교회 구성원 앱 맞춤 설정하기" />
 
 :::info
 여기에서 구성한 탭은 구성원이 [프로그레시브 웹 앱(PWA)으로 설치](../../b1-church/getting-started/installing-pwa.md)할 수 있는 B1 App에 나타납니다. 교회의 설치 페이지 — `https://yourchurchname.b1.church/mobile/install` — 를 구성원에게 공유하세요. 이 페이지는 앱 스토어나 Google Play 다운로드 없이 기기에 앱을 설치하는 방법을 안내합니다.
@@ -158,7 +158,7 @@ B1이 발송을 시도할 때 30분 넘게 늦은 알림은 *Missed*(놓침)로 
 
 휴대폰에서는 아래쪽 탭 바에 **Home**(홈), 탭 최대 세 개, **More**(더보기)가 표시됩니다. 컴퓨터에서는 머리글에 최대 다섯 개가 표시됩니다. 내장 화면(설교, 헌금, 그룹 등)이 먼저 자리를 차지하며, **Internal Page**(내부 페이지) 탭은 남은 자리를 채웁니다. **External URL**(외부 URL) 탭과 **Verse of the Day**(오늘의 말씀) 탭은 자리를 차지하지 못합니다. 자리에 들어가지 못한 탭을 포함하여 모든 탭은 앱의 **More** 페이지에 나열됩니다.
 
-**Folder**(폴더) 탭 안에 있는 탭은 예외입니다. 이 탭들은 폴더 자체의 화면에만 나타나며, 구성원은 폴더를 탭하여 엽니다. 이 화면에서는 모든 탭에 이미지가 있으면 사진 타일로, 그렇지 않으면 목록으로 탭을 보여줍니다. 구성원이 볼 수 있는 탭이 하나도 없는 폴더는 그 구성원에게 숨겨집니다. [폴더 탭](../../b1-church/getting-started/navigating.md#folder-tabs)을 참고하세요. 구성원이 보게 되는 내용은 [B1App 탐색하기](../../b1-church/getting-started/navigating.md)를 참고하세요.
+**Folder**(폴더) 탭 안에 있는 탭은 예외입니다. 이 탭들은 폴더 자체의 화면에만 나타나며, 구성원은 폴더를 탭하여 엽니다. 이 화면에서는 이미지가 있는 각 탭을 전체 너비의 사진 배너로 먼저 보여주고, 이미지가 없는 탭은 그 아래에 목록으로 보여줍니다. 구성원이 볼 수 있는 탭이 하나도 없는 폴더는 그 구성원에게 숨겨집니다. [폴더 탭](../../b1-church/getting-started/navigating.md#folder-tabs)을 참고하세요. 구성원이 보게 되는 내용은 [B1App 탐색하기](../../b1-church/getting-started/navigating.md)를 참고하세요.
 
 ## 다음 단계 {#next-steps}
 

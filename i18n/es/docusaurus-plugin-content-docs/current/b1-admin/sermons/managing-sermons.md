@@ -62,7 +62,7 @@ Cada entrada de sermón puede incluir:
 - **Miniatura** -- Una imagen de vista previa que se muestra en su biblioteca de sermones. Haga clic en la imagen para recortarla o reemplazarla (16:9).
 - **Título** -- El nombre del sermón que se muestra a los visitantes
 - **Descripción** -- Un resumen del contenido del sermón
-- **URL del archivo de audio (para podcast)** -- Un enlace directo a un archivo MP3/M4A de este sermón. Puede pegar una URL o, una vez guardado el sermón, hacer clic en **Subir audio** para subir un archivo y completar el campo automáticamente. Solo los sermones con este campo (o con un enlace directo a un archivo de video) configurado se incluyen en su feed de podcast.
+- **URL del archivo de audio (para podcast)** -- Un enlace directo a **un solo** archivo MP3/M4A de este sermón. Este no es el lugar para la dirección del feed de un podcast; un feed pegado aquí no se reproducirá. Para incorporar todo un podcast, use [Importación masiva](./bulk-import.md#importing-podcast-episodes). Puede pegar una URL o, una vez guardado el sermón, hacer clic en **Subir audio** para subir un archivo y completar el campo automáticamente. Solo los sermones con este campo (o con un enlace directo a un archivo de video) configurado se incluyen en su feed de podcast.
 
 ## Su feed de podcast {#your-podcast-feed}
 

@@ -65,7 +65,7 @@ description: "Настройте роли в B1 Admin, чтобы контрол
 2. Найдите человека в списке **Members**.
 3. Нажмите значок удаления в его строке и подтвердите.
 
-В вашей церкви всегда должен быть хотя бы один Domain Admin, поэтому последнего участника **Domain Admins** удалить нельзя.
+В вашей церкви всегда должен быть хотя бы один Domain Admin, поэтому последнего участника **Domain Admins** удалить нельзя. B1 показывает сообщение «At least one Domain Admin is required. Add another Domain Admin before removing this one.». Единственный Domain Admin также не может покинуть церковь или удалить свою учётную запись, пока в **Domain Admins** не добавлен кто-то ещё.
 
 ## Настройка разрешений {#configuring-permissions}
 

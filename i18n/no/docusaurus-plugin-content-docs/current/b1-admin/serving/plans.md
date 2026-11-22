@@ -13,7 +13,7 @@ Gudstjenesteplaner organiserer hvem som tjener og når. Hver plan er knyttet til
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="47DstBXKl74" title="Opprette planer og planlegge frivillige i B1" next="Bygge gudstjenesterekkefølgen og sangbiblioteket i B1" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Opprette planer og planlegge frivillige i B1" next="Bygge gudstjenesterekkefølgen og sangbiblioteket i B1" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Før du begynner</h4>
@@ -141,7 +141,7 @@ Frivillige som ikke har bekreftet ennå, får knappene **Ta imot** og **Takk nei
 
 ### Tekstpåminnelser {#text-reminders}
 
-Alternativet **Tekstmelding** vises bare når menigheten din har en tekstmeldingsleverandør koblet til. Tekstmeldinger sendes gjennom menighetens tekstmeldingsleverandør, og hver tekstmelding kan koste menigheten din penger. En frivillig mottar bare en tekstpåminnelse hvis de har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md) og har et mobilnummer på profilen sin. Hver tekstmelding starter med menighetens navn, holdes til én enkelt tekstmelding og avsluttes med «Svar STOP for å melde deg av.» Alle som svarer STOP, slutter å motta tekstmeldinger fra menigheten din. For at STOP-svar skal nå B1, må du lime inn **URL-en for innkommende (STOP) webhook** fra dine [tekstmeldingsinnstillinger](../settings/church-settings.md#texting) i leverandørens webhook for innkommende meldinger.
+Alternativet **Tekstmelding** vises bare når menigheten din har en tekstmeldingsleverandør koblet til. Tekstmeldinger sendes gjennom menighetens tekstmeldingsleverandør, og hver tekstmelding kan koste menigheten din penger. En frivillig mottar bare en tekstpåminnelse hvis de har slått på **Tekstmeldinger** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md) og har et mobilnummer på profilen sin. Ansatte med tillatelse til å sende tekstmeldinger kan slå på **Text reminders** for en frivillig fra den frivilliges [personpost](../people/adding-people.md#text-reminders). Hver tekstmelding starter med menighetens navn, holdes til én enkelt tekstmelding og avsluttes med «Svar STOP for å melde deg av.» Alle som svarer STOP, slutter å motta tekstmeldinger fra menigheten din. For at STOP-svar skal nå B1, må du lime inn **URL-en for innkommende (STOP) webhook** fra dine [tekstmeldingsinnstillinger](../settings/church-settings.md#texting) i leverandørens webhook for innkommende meldinger.
 
 For å sende tekstmelding til alle som er planlagt over et datointervall med én gang, bruk **Send tekstmelding til frivillige** i [Planoversikten](./plans-overview.md#texting-everyone-scheduled).
 

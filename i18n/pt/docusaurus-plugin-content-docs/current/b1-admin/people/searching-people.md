@@ -55,7 +55,7 @@ Na visualização **Tabela**, as pessoas são listadas por sobrenome e depois po
 1. Clique em um **cabeçalho de coluna** (por exemplo, **Nome** ou **E-mail**) para ordenar por essa coluna.
 2. Clique novamente no mesmo cabeçalho para inverter a ordem.
 
-O primeiro clique ordena a coluna em ordem crescente (de A a Z, do mais novo ao mais velho, da data mais antiga para a mais recente), e a seta ao lado do cabeçalho mostra a direção. Pessoas sem valor naquela coluna são sempre listadas por último. Isso facilita encontrar pessoas em ordem alfabética, por idade ou por qualquer outra coluna visível.
+O primeiro clique ordena a coluna em ordem crescente (de A a Z, do mais novo ao mais velho, da data mais antiga para a mais recente), e a seta ao lado do cabeçalho mostra a direção. Pessoas sem valor naquela coluna são sempre listadas por último. Isso facilita encontrar pessoas em ordem alfabética, por idade ou por qualquer outra coluna visível. O B1 lembra a ordenação neste dispositivo, então a tabela continua ordenada da mesma forma depois que você atualiza a página ou volta mais tarde.
 
 ## Personalizando colunas {#customizing-columns}
 

@@ -115,7 +115,10 @@ Then update the **Api** service variables so links in emails use the new domains
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` is the member site's address, used for links in plan, registration, and reminder emails and in notifications. It may also be a template such as `https://{subdomain}.yourchurch.org`. If it isn't set, those links point at `https://{subdomain}.b1.church`.
 
 And on the **B1Admin** service:
 

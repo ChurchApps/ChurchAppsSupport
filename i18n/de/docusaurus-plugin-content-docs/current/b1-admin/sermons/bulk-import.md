@@ -1,13 +1,13 @@
 ---
 title: "Massenimport"
-description: "Importieren Sie Predigtvideos in B1 Admin gesammelt aus einem YouTube-Kanal oder einem Vimeo-Konto und sortieren Sie sie anschließend in eine Wiedergabeliste."
+description: "Importieren Sie Predigtvideos gesammelt aus einem YouTube-Kanal oder einem Vimeo-Konto oder Podcast-Episoden aus einem RSS-Feed in B1 Admin und sortieren Sie sie anschließend in eine Wiedergabeliste."
 ---
 
 # Massenimport
 
 <div class="article-intro">
 
-Auf der Seite Massenimport füllen Sie Ihre Predigtbibliothek schnell, indem Sie Videos von YouTube oder Vimeo importieren. Das ist der schnellste Weg, bestehende Predigtinhalte zu übernehmen, statt jedes Video einzeln hinzuzufügen.
+Auf der Seite Massenimport füllen Sie Ihre Predigtbibliothek schnell, indem Sie Videos von YouTube oder Vimeo oder Episoden aus einem Podcast-RSS-Feed importieren. Das ist der schnellste Weg, bestehende Predigtinhalte zu übernehmen, statt jede Predigt einzeln hinzuzufügen.
 
 </div>
 
@@ -16,17 +16,18 @@ Auf der Seite Massenimport füllen Sie Ihre Predigtbibliothek schnell, indem Sie
 
 - Sie benötigen die Berechtigung **Gottesdienste bearbeiten** im Abschnitt **Inhalt** Ihrer Rolle. Falls Sie keinen Zugriff haben, lesen Sie [Rollen und Berechtigungen](../settings/roles-permissions.md).
 - Legen Sie mindestens eine [Wiedergabeliste](./playlists.md) an, in die Sie Ihre Predigten importieren
-- Halten Sie Ihre YouTube-Kanal-ID oder Ihre Vimeo-Kontodaten bereit
+- Halten Sie Ihre YouTube-Kanal-ID, Ihre Vimeo-Kontodaten oder die Feed-Adresse Ihres Podcasts bereit
 
 </div>
 
 ## Die Quelle auswählen {#choosing-your-source}
 
 1. Öffnen Sie in B1 Admin das [Sprungmenü](../introduction.md#getting-around-with-the-jump-menu) (die Suchleiste oben links), klappen Sie **Predigten** auf und klicken Sie auf **Predigten**. Klicken Sie auf **Predigt hinzufügen** und wählen Sie im Menü **Massenimport**.
-2. Unter **Importquelle wählen** stehen Ihnen zwei Optionen zur Verfügung:
+2. Unter **Importquelle wählen** stehen Ihnen drei Optionen zur Verfügung:
    - **YouTube** -- Videos aus einem YouTube-Kanal importieren
    - **Vimeo** -- Videos aus einem Vimeo-Konto importieren
-3. Klicken Sie auf die Option der Plattform, auf der Ihre Predigten gehostet werden (oder klicken Sie unter deren Beschreibung auf **Von YouTube importieren** bzw. **Von Vimeo importieren**). Mit **Zurück** oben auf der Seite kehren Sie zur Auswahl der Quelle zurück.
+   - **Podcast-RSS-Feed** -- Episoden aus einem Podcast-Feed als Audio-Predigten importieren
+3. Klicken Sie auf die Option der Plattform, auf der Ihre Predigten gehostet werden (oder klicken Sie unter deren Beschreibung auf **Von YouTube importieren**, **Von Vimeo importieren** bzw. **Von Podcast-Feed importieren**). Mit **Zurück** oben auf der Seite kehren Sie zur Auswahl der Quelle zurück.
 
 :::tip
 Wenn Ihre Videos auf beiden Plattformen liegen, können Sie jederzeit zurückgehen und die Quelle wechseln.
@@ -57,6 +58,30 @@ Ihre Videos werden mit allen Angaben übernommen, einschließlich Titel, Beschre
 
 :::info
 Der Massenimport eignet sich ideal für den Einstieg, wenn Sie von einer anderen Plattform umziehen. Für das Hinzufügen einzelner Predigten im weiteren Verlauf nutzen Sie stattdessen die Seite [Predigten verwalten](./managing-sermons.md).
+:::
+
+## Podcast-Episoden importieren {#importing-podcast-episodes}
+
+Wenn Ihre Predigten als Podcast veröffentlicht werden (Spotify for Podcasters / Anchor, Buzzsprout, Podbean und so weiter), können Sie die Episoden als Audio-Predigten übernehmen.
+
+1. Wählen Sie **Podcast-RSS-Feed** und fügen Sie die Adresse Ihres Feeds in das Feld **Podcast-Feed-URL** ein. So finden Sie die Adresse:
+   - **Spotify for Podcasters (Anchor)** -- **Einstellungen** > **Verfügbarkeit** > **RSS-Verteilung**. Die Adresse sieht etwa so aus: `https://anchor.fm/s/…/podcast/rss`.
+   - **Buzzsprout** -- der Link **RSS Feed** auf dem Dashboard Ihres Podcasts.
+   - Die meisten anderen Anbieter zeigen die RSS-Feed-Adresse in den Einstellungen des Podcasts oder auf der Seite für die Verteilung an.
+2. Klicken Sie auf **Abrufen**. Der Name des Podcasts erscheint über einer Liste seiner Episoden mit deren Veröffentlichungsdaten. Kann der Feed nicht geladen werden oder enthält er keine Audio-Episoden, erscheint eine Meldung. Prüfen Sie dann die Adresse und versuchen Sie es erneut.
+3. Neue Episoden sind für Sie bereits angehakt. Episoden, die bereits in Ihrer Predigtbibliothek stehen, sind mit **Bereits importiert** markiert und lassen sich nicht anhaken, sodass nichts doppelt hinzugefügt wird.
+4. Entfernen Sie den Haken bei Episoden, die Sie nicht möchten, wählen Sie unter **In Wiedergabeliste importieren** eine Wiedergabeliste aus und klicken Sie auf **Importieren**.
+
+Jede Episode wird als Audio-Predigt mit Titel, Beschreibung, Datum, Cover und Länge angelegt. Mitglieder sehen bei diesen Predigten in der B1-App **Anhören** und **Audio herunterladen**.
+
+Der Import ist eine einmalige Kopie und keine Live-Verbindung zum Feed. Wenn Sie neue Episoden veröffentlichen, starten Sie den Import einfach erneut mit derselben Feed-Adresse; nur die neuen Episoden werden geprüft.
+
+:::note
+Es wird nur Audio importiert. Video-Podcast-Episoden werden nicht übernommen; fügen Sie diese über YouTube, Vimeo oder [Predigten verwalten](./managing-sermons.md) hinzu.
+:::
+
+:::tip
+Möchten Sie eine Liste auf Ihrer Website oder in Ihrer App, die Ihren Podcast ohne erneuten Import immer widerspiegelt? Fügen Sie auf einer Seite im Website-Builder das Element **Podcast** hinzu und binden Sie diese Seite anschließend als Reiter **Seite** in Ihrer mobilen App ein.
 :::
 
 ## Nächste Schritte {#next-steps}

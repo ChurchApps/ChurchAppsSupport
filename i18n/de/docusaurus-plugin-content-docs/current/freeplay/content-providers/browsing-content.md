@@ -46,9 +46,9 @@ Die Bibliothek von [Lessons.church](../../lessons-church/index.md) ist genauso a
 
 Drücken Sie auf einer beliebigen Ebene **Zurück**, um einen Schritt nach oben zu gelangen.
 
-## Go Curriculum durchsuchen
+## GO! Curriculum durchsuchen
 
-Nachdem Sie sich [mit Ihrem gocurriculum.com-Konto angemeldet haben](./connecting-providers.md#phone-sign-in-qr-code-only), öffnet sich Go Curriculum mit seinen Altersgruppen **Grundschule** und **Vorschule**. Navigieren Sie nach Altersgruppe, dann nach Sammlung, dann nach Lektion, und wählen Sie eine Lektion aus, um deren Download-Bildschirm zu öffnen.
+Nachdem Sie sich [mit Ihrem gocurriculum.com-Konto angemeldet haben](./connecting-providers.md#phone-sign-in-qr-code-only), öffnet sich GO! Curriculum mit seinen Altersgruppen **Grundschule** und **Vorschule**. Navigieren Sie nach Altersgruppe, dann nach Sammlung, dann nach Lektion, und wählen Sie eine Lektion aus, um deren Download-Bildschirm zu öffnen.
 
 Was Sie sehen, hängt von Ihrer Go-Mitgliedschaft ab:
 

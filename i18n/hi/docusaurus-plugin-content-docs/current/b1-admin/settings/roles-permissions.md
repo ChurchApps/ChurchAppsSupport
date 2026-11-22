@@ -65,7 +65,7 @@ Roles पेज के ऊपर **Add role** पर क्लिक करे�
 2. **Members** सूची में व्यक्ति को खोजें।
 3. उनकी पंक्ति पर डिलीट आइकन पर क्लिक करें और पुष्टि करें।
 
-आपके चर्च में हमेशा कम से कम एक Domain Admin होना चाहिए, इसलिए **Domain Admins** के अंतिम सदस्य को हटाया नहीं जा सकता।
+आपके चर्च में हमेशा कम से कम एक Domain Admin होना चाहिए, इसलिए **Domain Admins** के अंतिम सदस्य को हटाया नहीं जा सकता। B1 दिखाता है "At least one Domain Admin is required. Add another Domain Admin before removing this one." जब तक **Domain Admins** में कोई और न जोड़ा जाए, तब तक एकमात्र Domain Admin भी चर्च छोड़ नहीं सकता या अपना खाता हटा नहीं सकता।
 
 ## अनुमतियाँ कॉन्फ़िगर करना {#configuring-permissions}
 

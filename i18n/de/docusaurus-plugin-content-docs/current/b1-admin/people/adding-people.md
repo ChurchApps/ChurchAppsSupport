@@ -88,6 +88,10 @@ Der Versand aus B1 unterliegt denselben Genehmigungs- und Tageslimits wie die E-
 
 Ist beim Anbieter für Textnachrichten Ihrer Gemeinde ein [Anbieter für Textnachrichten](../settings/church-settings.md#texting) verbunden, Sie berechtigt sind, SMS zu senden, und die Person eine Mobilnummer hat, erscheint neben **E-Mail** eine Schaltfläche **SMS**. Klicken Sie darauf, tippen Sie Ihre **Nachricht** ein und klicken Sie auf **Senden**. Der Dialog zeigt die Nummer, an die die SMS geht. Wie SMS funktionieren, erfahren Sie unter [Gruppenmitglieder per SMS kontaktieren](../groups/group-members.md#texting-group-members).
 
+### SMS-Erinnerungen {#text-reminders}
+
+Aufgaben-, Veranstaltungs- und Dienst-Erinnerungen werden nur per SMS an Personen verschickt, die Textnachrichten aktiviert haben. Mit demselben Anbieter für Textnachrichten, derselben Berechtigung und einer Mobilnummer zeigt der Datensatz der Person unter ihrer Mobilnummer **SMS-Erinnerungen** mit **Ein** oder **Aus**. Klicken Sie auf **Einschalten**, um Erinnerungen per SMS zu senden, oder auf **Ausschalten**, um sie zu beenden. Dies ist derselbe Schalter wie **Textnachrichten** in den eigenen [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) der Person, daher kann jeder der beiden ihn ändern. Wer auf die Texte Ihrer Gemeinde mit STOP geantwortet hat, erhält auch bei eingeschalteten **SMS-Erinnerungen** keine Erinnerungs-SMS.
+
 ## Mit Formularen arbeiten {#working-with-forms}
 
 Sie können eigene Formulare direkt auf dem Profil einer Person ausfüllen. Dies sind benutzerdefinierte Formulare, die Sie nach der Anleitung [Formulare erstellen](../forms/creating-forms.md) anlegen können.

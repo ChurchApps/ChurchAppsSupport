@@ -33,13 +33,17 @@ De forma predeterminada, solo se muestran las tareas abiertas. Elija **Cerradas*
 
 1. En la página **Mi trabajo**, haga clic en **Agregar tarea**. Se abre un formulario **Nueva tarea**.
 2. Opcionalmente, haga clic en el cuadro **Asociar con** y elija la persona o el grupo al que se refiere la tarea. Déjelo en blanco para un pendiente general que no se refiere a nadie, como un recordatorio para usted mismo.
-3. Haga clic en el cuadro **Asignar a**. En la ventana **Seleccione una persona o grupo**, busque en la pestaña **Persona**, o cambie a la pestaña **Grupo** y busque un grupo, y luego seleccione el resultado.
+3. Haga clic en el cuadro **Asignar a**. En la ventana **Seleccione personas o un grupo**, busque en la pestaña **Persona**, o cambie a la pestaña **Grupo** y busque un grupo, y luego seleccione el resultado.
 4. Escriba un **Título** para la tarea.
 5. Opcionalmente, elija una **Fecha límite**.
 6. Agregue **Notas** con cualquier detalle o instrucción para la persona asignada.
 7. Haga clic en **Guardar**.
 
 La tarea aparecerá ahora en la lista de tareas y será visible para la persona asignada en su panel y en la aplicación móvil.
+
+:::tip
+Tanto **Asociar con** como **Asignar a** admiten varias personas. Siga eligiendo personas en la ventana y luego haga clic en **Listo**; aparecen como etiquetas debajo del cuadro. En la pestaña **Grupo**, marque **Crear una tarea separada para cada miembro** para agregar a todos los de un grupo. **Guardar** crea una tarea por cada persona, y cuando ambos cuadros tienen varias personas, cada persona asignada recibe una tarea por cada persona asociada (dos personas asignadas y tres asociadas generan seis tareas). Editar una tarea que ya creó sigue cambiando una persona a la vez.
+:::
 
 ## Administrar una tarea {#managing-a-task}
 
@@ -63,7 +67,9 @@ Una tarea con fecha límite puede recordar a su responsable antes de que venza.
 5. En **Enviar por**, elija **Notificación push**, **Correo electrónico** y, si su iglesia tiene un [proveedor de mensajes de texto](../settings/church-settings.md#texting) conectado, **Mensaje de texto**.
 6. Haga clic en **Guardar recordatorios**.
 
-Si la tarea no tiene fecha límite, B1 le advierte que no se enviará ningún recordatorio hasta que se establezca una en el campo **Vence**. Los recordatorios por mensaje de texto solo llegan a las personas que activaron **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md), y cada mensaje puede tener un costo para la iglesia.
+Si la tarea no tiene fecha límite, B1 le advierte que no se enviará ningún recordatorio hasta que se establezca una en el campo **Vence**. Los recordatorios por mensaje de texto solo llegan a las personas que activaron **Mensajes de texto** en sus [Preferencias de notificación](../../b1-church/getting-started/notification-preferences.md), y cada mensaje puede tener un costo para la iglesia. El personal con permiso para enviar mensajes de texto puede activar los **Recordatorios de texto** para una persona desde su [registro](../people/adding-people.md#text-reminders), en la línea debajo de su número de teléfono móvil.
+
+Para enviar un recordatorio guardado de inmediato, haga clic en **Enviar ahora**. Cuando el recordatorio incluye **Mensaje de texto**, B1 muestra cuántas personas recibieron el recordatorio, cuántas recibieron un mensaje de texto y cuántas se omitieron, por ejemplo *Enviado a 2 personas · 1 con texto, 1 omitida*. Se omite a las personas que tienen **Mensajes de texto** desactivados, que no tienen número de teléfono móvil o que respondieron STOP.
 
 ## Ciclo de vida de una tarea {#task-lifecycle}
 

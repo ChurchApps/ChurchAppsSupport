@@ -31,7 +31,7 @@ Wenn nichts geplant ist, spielen die Bildschirme einer Gruppe ihre **Standard-Sc
 - **[Planmodus](../plan-mode/index.md)** folgt einem Gottesdienstplantyp aus B1 Admin. Jemand drückt auf dem TV auf **Start Plan**, und die Lektion beginnt, sobald diese Person es tut
 - **Geplanter Modus** folgt einem Kalender. Inhalte beginnen und enden zu den von Ihnen festgelegten Zeiten, daher eignet er sich gut für Eingangsbereich-Beschilderung, Ansage-Schleifen und Klassenräume, in denen die Lektion schon laufen soll, bevor jemand hereinkommt
 
-Ein Kalendereintrag kann trotzdem einen Gottesdienstplan abspielen. Wählen Sie beim Hinzufügen eines Termins unter **Service plans** den Plantyp aus, und der Bildschirm spielt den Plan ab, der in B1 Admin in dieser Woche aktuell ist. Dazu gehören auch Go-Curriculum-Lektionen, selbst wenn Sie sie im Plan angepasst haben. Der Bildschirm verwendet den Go-Curriculum-Login, der dem Dienstbereich des Plantyps in B1 Admin zugeordnet ist, oder die Go-Curriculum-Verbindung der Gemeinde, falls der Dienstbereich keine hat.
+Ein Kalendereintrag kann trotzdem einen Gottesdienstplan abspielen. Wählen Sie beim Hinzufügen eines Termins unter **Service plans** den Plantyp aus, und der Bildschirm spielt den Plan ab, der in B1 Admin in dieser Woche aktuell ist. Dazu gehören auch GO! Curriculum-Lektionen, selbst wenn Sie sie im Plan angepasst haben. Der Bildschirm verwendet den GO! Curriculum-Login, der dem Dienstbereich des Plantyps in B1 Admin zugeordnet ist, oder die GO! Curriculum-Verbindung der Gemeinde, falls der Dienstbereich keine hat.
 
 ## Erste Schritte
 

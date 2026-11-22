@@ -54,6 +54,12 @@ Gere os seus recibos logo no início de janeiro, enquanto os registros estão re
 Os recibos de doação incluem apenas as doações atribuídas a fundos com a configuração **Dedutível de impostos** ativada. Se um fundo não estiver marcado como dedutível, as doações dele não aparecerão no recibo. Você pode gerenciar essa configuração na página de [Fundos](funds.md).
 :::
 
+## Memorandos nos Recibos {#gift-memos-on-statements}
+
+Cada recibo lista todas as doações com a data, o método, o fundo e o valor. Quando pelo menos uma doação de um recibo tem um **Memorando**, uma coluna **Memorando** é adicionada após o fundo, para que o doador veja a finalidade de cada doação. Recibos sem memorandos mantêm o layout de quatro colunas. As **Observações** de uma doação são internas e nunca aparecem no recibo. Os arquivos CSV do ZIP incluem o memorando como última coluna.
+
+Para indicar uma finalidade no recibo, informe-a como o **Memorando** da doação ao [registrar a doação](recording-donations.md), ou crie um [fundo](funds.md) próprio se quiser que ela seja totalizada separadamente.
+
 ## Formatos de Recibo para Canadá, Austrália e Nova Zelândia {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Igrejas fora dos Estados Unidos podem alterar o recibo para o layout oficial de recibo do seu país. Clique em **Formato do recibo** no topo da página Recibos de Doação (ou acesse **Configurações** e abra a seção **Doações**) e defina **Formato do recibo** (que começa em **Padrão**) como **Canadá - recibo oficial da CRA**, **Austrália** ou **Nova Zelândia**. Em seguida, preencha os campos que aparecem: o número de registro (**Número de registro da CRA**, **ABN** ou **Número de registro de entidade de caridade da NZ**), o **Endereço da organização**, o **Nome do signatário autorizado**, e, para o Canadá, a **Cidade de emissão**. Clique em **Salvar**.

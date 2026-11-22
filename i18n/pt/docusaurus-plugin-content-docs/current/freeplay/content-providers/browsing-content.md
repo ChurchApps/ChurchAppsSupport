@@ -46,9 +46,9 @@ A biblioteca do [Lessons.church](../../lessons-church/index.md) é organizada da
 
 Pressione **Voltar** em qualquer nível para subir um passo.
 
-## Navegando pelo Go Curriculum
+## Navegando pelo GO! Curriculum
 
-Depois que você [entrar com sua conta do gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), o Go Curriculum abre nas suas faixas etárias, **Elementary** e **Preschool**. Avance por faixa etária, depois por coleção e, então, por lição, e selecione uma lição para abrir a tela de download.
+Depois que você [entrar com sua conta do gocurriculum.com](./connecting-providers.md#phone-sign-in-qr-code-only), o GO! Curriculum abre nas suas faixas etárias, **Elementary** e **Preschool**. Avance por faixa etária, depois por coleção e, então, por lição, e selecione uma lição para abrir a tela de download.
 
 O que você vê depende da sua assinatura Go:
 

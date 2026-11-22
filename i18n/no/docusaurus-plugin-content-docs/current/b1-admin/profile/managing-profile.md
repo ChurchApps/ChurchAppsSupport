@@ -112,7 +112,7 @@ Sletting av konto, enten den skjer umiddelbart eller er godkjent av kirken din, 
 :::
 
 :::info
-Hvis du er **Domeneadministrator**, må du overføre administrative oppgaver til en annen bruker før du sletter kontoen din. Se [Roller og tillatelser](../settings/roles-permissions.md) for detaljer om administrasjon av administratorroller.
+Hvis du er den eneste **Domeneadministrator** i kirken din, sletter ikke B1 kontoen din. Den viser meldingen «You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account.» Legg først til en annen bruker i **Domeneadministratorer**. Se [Roller og tillatelser](../settings/roles-permissions.md) for detaljer om administrasjon av administratorroller.
 :::
 
 :::info

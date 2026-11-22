@@ -13,7 +13,7 @@ description: "带你登录 B1 Admin、熟悉仪表板与快速菜单，并在探
 
 ## 培训视频 {#training-video}
 
-<YouTube id="o4KfSQrRooE" title="什么是 B1.church？" />
+<YouTube id="zS64eorbKUQ" title="什么是 B1.church？" next="面向会员的 B1.church" nextUrl="/docs/b1-church" />
 
 如需进一步的支持，请发送电子邮件至 [support@churchapps.org](mailto:support@churchapps.org)。
 

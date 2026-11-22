@@ -13,7 +13,7 @@ La page Paramètres de l'application mobile vous permet de configurer les onglet
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Personnaliser l'application des membres de votre église dans B1" />
+<YouTube id="7x2CQG_pH6o" title="Personnaliser l'application des membres de votre église dans B1" />
 
 :::info
 Les onglets configurés ici apparaissent dans l'application B1, que les membres peuvent [installer comme application web progressive (PWA)](../../b1-church/getting-started/installing-pwa.md). Partagez la page d'installation de votre église — `https://yourchurchname.b1.church/mobile/install` — avec vos membres ; elle les guide pour installer l'application sur leur appareil, sans téléchargement depuis l'App Store ou Google Play.
@@ -150,7 +150,7 @@ Cliquez sur **Enregistrer** pour appliquer.
 
 La page liste les notifications **Programmées** (avec **Modifier**, **Envoyer maintenant** et **Annuler** sur chacune) et les notifications **Récentes** avec leur statut, comme *Envoyée : 12 sur 15*, *Annulée* ou *Manquée (l'heure d'envoi est passée)*. Cliquez sur **Retirer** pour retirer une notification terminée de la liste, ou sur **Tout effacer** pour retirer toutes les notifications envoyées, en échec ou annulées. Les heures sont affichées selon le [fuseau horaire](./church-settings.md#time-zone) de votre église, ou celui de votre ordinateur si l'église n'en a pas défini. Les destinataires d'une notification programmée sont recalculés au moment de l'envoi.
 
-Une notification envoyée par B1 plus de 30 minutes après l'heure prévue est marquée *Manquée* et n'est pas envoyée ; une notification qui échoue trois fois affiche *Échec* avec l'erreur. Retirer une notification de la liste ne la retire pas des appareils des personnes qui l'ont déjà reçue. Lorsqu'une notification n'a pas de lien, la toucher ouvre la liste des notifications de l'application pour une notification à toute l'église, ou la page du groupe pour une notification de groupe. Les membres qui ont désactivé **Annonces de l'église** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md) ne reçoivent pas ces notifications, qu'elles soient destinées à tout le monde ou à un groupe.
+Une notification envoyée avec plus de 30 minutes de retard lorsque B1 tente de l'envoyer est marquée *Manquée* et n'est pas envoyée ; une notification qui échoue trois fois affiche *Échec* avec l'erreur. Retirer une notification de la liste ne la reprend pas auprès des personnes qui l'ont déjà reçue. Lorsqu'une notification push ne comporte aucun lien, la toucher ouvre la liste des notifications de l'application pour une notification à toute l'église, ou la page du groupe pour une notification de groupe. Les membres qui ont désactivé les **Annonces de l'église** dans leurs [préférences de notification](../../b1-church/getting-started/notification-preferences.md) ne reçoivent pas ces notifications push, qu'elles soient destinées à tout le monde ou à un groupe.
 
 ## Emplacement de ces onglets {#where-these-tabs-appear}
 
@@ -158,7 +158,7 @@ Les onglets que vous configurez ici s'affichent dans la **PWA B1.church** que vo
 
 Sur un téléphone, la barre d'onglets du bas affiche **Accueil**, jusqu'à trois de vos onglets, et **Plus** ; sur un ordinateur, l'en-tête en affiche jusqu'à cinq. Les écrans intégrés (comme Prédications, Don ou Groupes) obtiennent d'abord ces emplacements, et les onglets **Page interne** remplissent les emplacements restants. Les onglets **URL externe** et **Verset du jour** n'obtiennent jamais d'emplacement. Chaque onglet, y compris ceux qui ne tiennent pas, figure sur la page **Plus** de l'application.
 
-Les onglets placés dans un onglet **Dossier** font exception : ils n'apparaissent que sur l'écran propre au dossier, que les membres ouvrent en touchant le dossier. Cet écran affiche les onglets sous forme de tuiles photo lorsque chacun d'eux a une image, ou sous forme de liste dans le cas contraire. Un dossier qui ne contient aucun onglet visible pour un membre lui est masqué. Voir [Onglets de dossier](../../b1-church/getting-started/navigating.md#folder-tabs). Voir [Naviguer dans B1App](../../b1-church/getting-started/navigating.md) pour ce que voient les membres.
+Les onglets placés dans un onglet **Dossier** font exception : ils n'apparaissent que sur l'écran propre au dossier, que les membres ouvrent en touchant le dossier. Cet écran affiche chaque onglet ayant une image sous forme de bannière photo pleine largeur, les onglets sans image étant listés en dessous. Un dossier qui ne contient aucun onglet visible pour un membre lui est masqué. Voir [Onglets de dossier](../../b1-church/getting-started/navigating.md#folder-tabs). Voir [Naviguer dans B1App](../../b1-church/getting-started/navigating.md) pour ce que voient les membres.
 
 ## Étapes suivantes {#next-steps}
 

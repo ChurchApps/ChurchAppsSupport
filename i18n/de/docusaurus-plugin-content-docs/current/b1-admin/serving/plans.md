@@ -13,7 +13,7 @@ Dienstpläne organisieren, wer wann dient. Jeder Plan ist an ein bestimmtes Datu
 
 ## Schulungsvideo {#training-video}
 
-<YouTube id="47DstBXKl74" title="Pläne erstellen und Freiwillige in B1 einplanen" next="Gottesdienstordnung und Liedbibliothek in B1 aufbauen" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="Pläne erstellen und Freiwillige in B1 einplanen" next="Gottesdienstordnung und Liedbibliothek in B1 aufbauen" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>Bevor Sie beginnen</h4>
@@ -141,7 +141,7 @@ Freiwillige, die noch nicht zugesagt haben, erhalten die Schaltflächen **Zusage
 
 ### SMS-Erinnerungen {#text-reminders}
 
-Die Option **SMS** erscheint nur, wenn Ihre Gemeinde einen SMS-Anbieter verbunden hat. SMS werden über den SMS-Anbieter Ihrer Gemeinde versendet, und jede SMS kann Ihre Gemeinde Geld kosten. Eine Freiwillige oder ein Freiwilliger erhält nur dann eine SMS-Erinnerung, wenn sie oder er unter den [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) die **Textnachrichten** aktiviert hat und im Profil eine Mobilnummer hinterlegt ist. Jede SMS beginnt mit dem Namen Ihrer Gemeinde, passt in eine einzige Textnachricht und endet mit „Antworten Sie mit STOP, um sich abzumelden.“ Wer mit STOP antwortet, erhält keine SMS mehr von Ihrer Gemeinde. Damit STOP-Antworten B1 erreichen, fügen Sie die **Eingehende (STOP-)Webhook-URL** aus Ihren [SMS-Einstellungen](../settings/church-settings.md#texting) in den Webhook für eingehende Nachrichten Ihres Anbieters ein.
+Die Option **SMS** erscheint nur, wenn Ihre Gemeinde einen SMS-Anbieter verbunden hat. SMS werden über den SMS-Anbieter Ihrer Gemeinde versendet, und jede SMS kann Ihre Gemeinde Geld kosten. Eine Freiwillige oder ein Freiwilliger erhält nur dann eine SMS-Erinnerung, wenn sie oder er unter den [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) die **Textnachrichten** aktiviert hat und im Profil eine Mobilnummer hinterlegt ist. Mitarbeitende mit der Berechtigung, SMS zu senden, können für eine Freiwillige oder einen Freiwilligen über deren [Datensatz](../people/adding-people.md#text-reminders) die **SMS-Erinnerungen** einschalten. Jede SMS beginnt mit dem Namen Ihrer Gemeinde, passt in eine einzige Textnachricht und endet mit „Antworten Sie mit STOP, um sich abzumelden.“ Wer mit STOP antwortet, erhält keine SMS mehr von Ihrer Gemeinde. Damit STOP-Antworten B1 erreichen, fügen Sie die **Eingehende (STOP-)Webhook-URL** aus Ihren [SMS-Einstellungen](../settings/church-settings.md#texting) in den Webhook für eingehende Nachrichten Ihres Anbieters ein.
 
 Um allen Eingeplanten in einem Datumsbereich sofort eine SMS zu senden, verwenden Sie **Freiwillige per SMS anschreiben** in der [Planübersicht](./plans-overview.md#texting-everyone-scheduled).
 

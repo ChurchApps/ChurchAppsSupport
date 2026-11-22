@@ -14,7 +14,7 @@ description: "예배 계획의 B1 Admin 예배 순서를 설정하세요. 찬양
 
 ## 교육 동영상 {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="B1에서 예배 순서와 찬양 라이브러리 만들기" next="B1의 계획 템플릿, 작업, 워크플로" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="B1에서 예배 순서와 찬양 라이브러리 만들기" next="B1의 계획 템플릿, 작업, 워크플로" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>

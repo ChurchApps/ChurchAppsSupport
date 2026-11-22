@@ -82,7 +82,17 @@ I-click ang **New Event** sa calendar detail page para magdagdag ng event, o i-c
 - **Rooms** at **Resources** -- Mag-reserve ng espasyo at kagamitan para sa event. Tingnan ang [Rooms, Resources & Scheduling](./rooms-resources.md). Kapag napili na ang isa, maaari ka ring magdagdag ng setup at teardown time o custom reservation window -- tingnan ang [Booking a Room or Resource](./availability.md#booking-a-room-or-resource).
 - **Reminders** -- I-expand ang seksyong ito para magpadala ng paalala bago ang event. Tingnan ang [Event Reminders](./event-reminders.md).
 
-Kinakailangan ang **Group**, **Title**, **Start**, at **End**, at dapat mas huli ang end kaysa sa start. I-click ang **Save**. Kung umuulit ang event, magtatanong ang B1 para kumpirmahin, dahil ina-update ng pag-save ang bawat occurrence sa serye. Para burahin ang event, buksan ito sa editor at i-click ang **Delete**.
+Kinakailangan ang **Group**, **Title**, **Start**, at **End**, at dapat mas huli ang end kaysa sa start. I-click ang **Save**. Para burahin ang event, buksan ito sa editor at i-click ang **Delete**.
+
+### Pagbabago ng Isang Petsa ng Umuulit na Event {#changing-one-date-of-a-recurring-event}
+
+Kapag nag-click ka ng petsa ng umuulit na event sa calendar at pagkatapos ay **Edit**, magtatanong ang pag-save o pagbura kung aling mga petsa ang babaguhin:
+
+- **Just this date** -- Ang petsang na-click mo lamang. Sa pag-save, ang petsang iyon ay magiging sarili nitong one-time event na may iyong mga pagbabago, at mananatili ang natitirang bahagi ng serye gaya ng dati. Sa pagbura, ang petsang iyon lamang ang aalisin.
+- **This and all following dates** -- Magtatapos ang serye sa araw bago ang petsang na-click mo. Sa pag-save, ang iyong mga pagbabago ay magsisimula ng bagong serye mula sa petsang iyon; sa pagbura, aalisin ang natitirang mga petsa.
+- **All dates** -- Ang buong serye, gaya ng dati.
+
+Ipinapakita ng form ang unang petsa ng serye, ngunit inililipat ng **Just this date** at **This and all following dates** ang iyong mga pagbabago sa oras papunta sa petsang na-click mo. Ang petsang nahiwalay ay nananatili sa mga kuwarto at resource ng serye, nagkakaroon ng sarili nitong mga booking, at hindi kinokopya ang mga reminder ng serye. Kung magbubukas ka ng umuulit na event nang hindi pumipili ng petsa (halimbawa, mula sa **Approvals**), magtatanong muna ang B1 para kumpirmahin, dahil ina-update ng pag-save ang bawat petsa sa serye.
 
 ### Event Notes {#event-notes}
 
@@ -116,6 +126,14 @@ Kapag naka-enable na ang registration, makikita ng mga miyembro ang button na **
 :::info
 Ang Registration Questions ay gumagana lamang sa mga form na **hindi** minarkahang Restricted. Awtomatikong nilalaktawan ang restricted na form habang nagpapatala sa halip na ipakita, kaya gumamit ng unrestricted na form kapag naglalakip ng mga tanong sa event.
 :::
+
+### Pagbabahagi ng Link ng Event {#sharing-an-event-link}
+
+Para mag-imbita ng mga taong wala sa database ng iyong simbahan, ibahagi ang sariling page ng event. I-click ang event sa calendar at i-click ang **Share**, o i-click ang **Share** sa registration page ng event. Ipinapakita ng dialog ang link ng event at isang QR code: i-click ang copy icon para kopyahin ang link, o i-click ang **Download PNG** para i-save ang QR code para sa flyer o slide. Ang sinumang may link ay makakakita ng event, maidadagdag ito sa kanilang calendar, at, kapag naka-on ang registration, makakapagpatala bilang bisita gamit lamang ang pangalan at email.
+
+Ang **Private** na event ay nananatiling wala sa site calendar mo ngunit maibabahagi pa rin kapag naka-on na ang registration. Ang private na event na walang registration ay walang public page, kaya walang button na **Share** dito.
+
+Sa B1 App, ang mga event sa calendar ng grupo ay may link na **Share** na nagbubukas ng share sheet ng telepono na may parehong link.
 
 ### Pamamahala ng Registrations {#managing-registrations}
 

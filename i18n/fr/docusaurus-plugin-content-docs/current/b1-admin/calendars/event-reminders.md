@@ -70,6 +70,8 @@ Le canal **Texto** n'apparaît que lorsque votre église a un fournisseur de mes
 - Ont activé les **Messages texte** dans leurs [Préférences de notification](../../b1-church/getting-started/notification-preferences.md), et
 - Ont un numéro de téléphone mobile dans leur profil.
 
+Les personnes du personnel autorisées à envoyer des textos peuvent activer les **Rappels par texto** pour une personne depuis sa [fiche](../people/adding-people.md#text-reminders), sur la ligne située sous son numéro de téléphone mobile. Lorsque vous cliquez sur **Envoyer maintenant** pour un rappel qui comprend **Texto**, B1 affiche combien de personnes ont reçu un texto et combien ont été ignorées, par exemple *Envoyé à 2 personnes · 1 par texto, 1 ignorée*.
+
 Chaque texto commence par le nom de votre église, tient en un seul message texte, et se termine par « Répondez STOP pour vous désabonner. » Toute personne qui répond STOP cesse de recevoir des textos de votre église. Pour que les réponses STOP parviennent à B1, collez l'**URL du webhook des messages entrants (STOP)** de vos [paramètres de messagerie texte](../settings/church-settings.md#texting) dans le webhook de messages entrants de votre fournisseur.
 
 ## Ce que les membres peuvent contrôler {#what-members-can-control}

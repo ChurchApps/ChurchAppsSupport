@@ -62,7 +62,7 @@ description: "在 B1 Admin 中管理你的讲道库：从 YouTube、Vimeo 或 Fa
 - **Thumbnail**（缩略图）-- 在讲道库中显示的预览图片。点击图片可裁剪或替换（比例为 16:9）。
 - **Title**（标题）-- 向访客显示的讲道名称
 - **Description**（描述）-- 讲道内容的摘要
-- **Audio File URL (for podcast)**（音频文件网址，用于播客）-- 该讲道 MP3/M4A 文件的直接链接。你可以粘贴网址，或在讲道保存后，点击 **Upload Audio**（上传音频），上传文件并自动填入。只有设置了此字段（或直接的视频文件链接）的讲道才会包含在播客订阅源中。
+- **Audio File URL (for podcast)**（音频文件网址，用于播客）-- 该讲道**一个** MP3/M4A 文件的直接链接。此处不能填写播客订阅源地址；贴在此处的订阅源无法播放。若要导入整个播客，请使用[批量导入](./bulk-import.md#importing-podcast-episodes)。你可以粘贴网址，或在讲道保存后，点击 **Upload Audio**（上传音频），上传文件并自动填入。只有设置了此字段（或直接的视频文件链接）的讲道才会包含在播客订阅源中。
 
 ## 你的播客订阅源 {#your-podcast-feed}
 

@@ -53,11 +53,11 @@ description: "通过二维码、电子邮件登录或一键访问将 FreePlay �
 
 ## 手机登录（仅二维码） {#phone-sign-in-qr-code-only}
 
-**Dropbox**、**OneDrive** 和 **Go Curriculum** 使用略有不同的二维码登录方式，无需输入代码：
+**Dropbox**、**OneDrive** 和 **GO! Curriculum** 使用略有不同的二维码登录方式，无需输入代码：
 
 1. 在**内容提供方**屏幕上选择提供方卡片
 2. FreePlay 会显示**连接到**屏幕，其中包含提供方名称和二维码
-3. 用手机扫描二维码，并使用该提供方的账户登录（OneDrive 使用您的 Microsoft 账户，Go Curriculum 使用您的 gocurriculum.com 账户）
+3. 用手机扫描二维码，并使用该提供方的账户登录（OneDrive 使用您的 Microsoft 账户，GO! Curriculum 使用您的 gocurriculum.com 账户）
 4. 批准访问权限。电视会自动连接并显示**连接成功！**
 
 屏幕会显示您完成登录还剩的分钟数。

@@ -53,11 +53,11 @@ Un indicador pulsante **Esperando confirmación** muestra que FreePlay está com
 
 ## Inicio de sesión con teléfono (solo código QR) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive** y **Go Curriculum** usan un inicio de sesión con código QR ligeramente distinto, sin código que escribir:
+**Dropbox**, **OneDrive** y **GO! Curriculum** usan un inicio de sesión con código QR ligeramente distinto, sin código que escribir:
 
 1. Seleccione la tarjeta del proveedor en la pantalla **Proveedores de contenido**
 2. FreePlay muestra una pantalla **Conectar a** con el nombre del proveedor y un código QR
-3. Escanee el código QR con su teléfono e inicie sesión en su cuenta de ese proveedor (su cuenta de Microsoft para OneDrive, o su cuenta de gocurriculum.com para Go Curriculum)
+3. Escanee el código QR con su teléfono e inicie sesión en su cuenta de ese proveedor (su cuenta de Microsoft para OneDrive, o su cuenta de gocurriculum.com para GO! Curriculum)
 4. Apruebe el acceso. El televisor se conecta automáticamente y muestra **¡Conectado!**
 
 La pantalla muestra cuántos minutos le quedan para terminar de iniciar sesión.

@@ -35,11 +35,13 @@ Las salas son espacios físicos que pueden reservarse junto con los eventos del 
 4. Establezca un **Grupo de aprobación** si las reservas necesitan autorización. Las reservas hechas por miembros de ese grupo se aprueban automáticamente; las de cualquier otra persona quedan como **Pendientes** hasta que se aprueben en la página de [Aprobaciones](./approvals.md), y los miembros del grupo reciben un correo electrónico sobre las nuevas solicitudes. Déjelo en **No requiere aprobación** para aprobar automáticamente todas las reservas.
 5. Haga clic en **Guardar**.
 
-La lista de Salas muestra el **Nombre de la sala**, la **Capacidad** y el **Grupo de aprobación** de cada sala.
+La lista de Salas muestra el **Nombre de la sala**, la **Capacidad** y el **Grupo de aprobación** de cada sala. Las salas desactivadas muestran una insignia **Inactiva** junto a su nombre.
 
 ### Editar o eliminar una sala {#editing-or-deleting-a-room}
 
 Pase el cursor sobre una sala y haga clic en **Editar**, realice sus cambios y haga clic en **Guardar**. Use **Eliminar** para borrar una sala de forma permanente.
+
+Si una sala está cerrada durante un tiempo (por una remodelación, una temporada o sin una fecha de regreso definida), desactive su interruptor **Activo** y haga clic en **Guardar** en lugar de eliminarla. Una sala inactiva conserva sus datos y todas sus reservas anteriores, pero ya no aparece en las listas de salas cuando alguien programa un evento o solicita una sala. Vuelva a activar el interruptor para que la sala pueda reservarse de nuevo. Un bloqueo es mejor cuando la sala está cerrada en fechas específicas, porque mantiene la sala en la lista y advierte sobre las reservas durante esas fechas.
 
 ## Recursos {#resources}
 
@@ -53,7 +55,7 @@ Los recursos son artículos que pueden reservarse junto con un evento: equipos d
 4. Establezca un **Grupo de aprobación** si alguien necesita autorizar los préstamos de recursos. Funciona igual que en el caso de las salas.
 5. Haga clic en **Guardar**.
 
-Edite o elimine un recurso de la misma forma que una sala.
+Edite o elimine un recurso de la misma forma que una sala. Un recurso también tiene un interruptor **Activo**: desactívelo para quitarlo de las listas de recursos sin perder sus datos ni sus reservas anteriores.
 
 ## Bloqueos {#blockouts}
 

@@ -101,7 +101,7 @@ Clique em qualquer evento para ver os seus detalhes. Na visão de detalhes do ev
 - **Líderes** podem editar os detalhes do evento, alterar os horários ou excluir o evento.
 
 :::warning
-Excluir um evento o remove permanentemente. Se você precisar cancelar uma única ocorrência de um evento recorrente, considere editá-lo em vez disso.
+Excluir um evento o remove permanentemente. Ao editar ou excluir um evento recorrente, você será perguntado se deseja alterar **Somente esta data**, **Esta e todas as datas seguintes** ou **Todas as datas**, para que possa cancelar uma única reunião sem alterar o restante da série.
 :::
 
 ## Assinando o Calendário {#subscribing-to-the-calendar}

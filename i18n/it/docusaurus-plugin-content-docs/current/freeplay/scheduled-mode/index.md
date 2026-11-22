@@ -31,7 +31,7 @@ Quando non è programmato nulla, gli schermi di un gruppo riproducono il suo **l
 - **[Modalità piano](../plan-mode/index.md)** segue un tipo di piano di servizio da B1 Admin. Qualcuno preme **Avvia piano** sulla TV, e la lezione parte in quel momento
 - **La modalità pianificata** segue un calendario. I contenuti iniziano e finiscono agli orari che imposti, quindi funziona bene per la segnaletica nell'atrio, i loop di annunci e le aule in cui la lezione deve essere già visibile prima che qualcuno entri
 
-Una voce del calendario può comunque riprodurre un piano di servizio. Scegli il tipo di piano sotto **Piani di servizio** quando aggiungi una programmazione, e lo schermo riproduce il piano attualmente attivo in B1 Admin in quella settimana. Questo include le lezioni di Go Curriculum, anche quelle che hai personalizzato nel piano. Lo schermo usa l'accesso a Go Curriculum collegato al ministero del tipo di piano in B1 Admin, oppure la connessione a Go Curriculum della chiesa se il ministero non ne ha una.
+Una voce del calendario può comunque riprodurre un piano di servizio. Scegli il tipo di piano sotto **Piani di servizio** quando aggiungi una programmazione, e lo schermo riproduce il piano attualmente attivo in B1 Admin in quella settimana. Questo include le lezioni di GO! Curriculum, anche quelle che hai personalizzato nel piano. Lo schermo usa l'accesso a GO! Curriculum collegato al ministero del tipo di piano in B1 Admin, oppure la connessione a GO! Curriculum della chiesa se il ministero non ne ha una.
 
 ## Per iniziare
 

@@ -115,7 +115,10 @@ Pagkatapos, i-update ang mga variable ng serbisyong **Api** para tumuro sa mga b
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+Ang `B1APP_ROOT` ay ang address ng site ng miyembro, na ginagamit para sa mga link sa email ng plano, registration, at paalala, at sa mga notification. Maaari rin itong maging template gaya ng `https://{subdomain}.yourchurch.org`. Kung hindi ito nakatakda, ang mga link na iyon ay tumuturo sa `https://{subdomain}.b1.church`.
 
 At sa serbisyong **B1Admin**:
 

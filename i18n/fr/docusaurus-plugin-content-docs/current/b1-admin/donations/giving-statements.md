@@ -54,6 +54,12 @@ Générez vos relevés tôt en janvier, pendant que vos registres sont encore fr
 Les relevés de dons ne comprennent que les dons attribués à des fonds dont le paramètre **Déductible d'impôt** est activé. Si un fonds n'est pas marqué comme déductible d'impôt, ses dons n'apparaîtront pas sur le relevé. Vous pouvez gérer ce paramètre sur la page [Fonds](funds.md).
 :::
 
+## Mémos de dons sur les relevés {#gift-memos-on-statements}
+
+Chaque relevé énumère chaque don avec sa date, son mode de paiement, son fonds et son montant. Lorsqu'au moins un don figurant sur un relevé comporte un **Mémo**, une colonne **Mémo** est ajoutée après le fonds afin que le donateur puisse voir à quoi servait chaque don. Les relevés sans mémo conservent la mise en page à quatre colonnes. Les **Notes** d'un don sont internes et n'apparaissent jamais sur un relevé. Les fichiers CSV du ZIP incluent le mémo comme dernière colonne.
+
+Pour indiquer une affectation sur le relevé, saisissez-la comme **Mémo** du don lors de [l'enregistrement du don](recording-donations.md), ou attribuez-lui son propre [fonds](funds.md) si vous souhaitez en obtenir le total séparément.
+
 ## Formats de reçus pour le Canada, l'Australie et la Nouvelle-Zélande {#receipt-formats-for-canada-australia-and-new-zealand}
 
 Les églises situées hors des États-Unis peuvent faire passer le relevé à la mise en page officielle de reçu de leur pays. Cliquez sur **Format du relevé** en haut de la page Relevés de dons (ou allez dans **Paramètres** et ouvrez la section **Dons**), puis réglez le **Format du relevé** (qui commence sur **Standard**) sur **Canada - reçu officiel de l'ARC**, **Australie** ou **Nouvelle-Zélande**, puis remplissez les champs qui apparaissent : votre numéro d'enregistrement (**Numéro d'enregistrement ARC**, **ABN** ou **Numéro d'enregistrement d'organisme de bienfaisance NZ**), l'**Adresse de l'organisation**, le **Nom du signataire autorisé** et, pour le Canada, la **Ville de délivrance**. Cliquez sur **Enregistrer**.

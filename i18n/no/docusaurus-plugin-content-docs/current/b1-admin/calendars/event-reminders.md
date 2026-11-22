@@ -70,6 +70,8 @@ Kanalen **Text** vises bare når menigheten din har en leverandør for tekstmeld
 - Har slått på **Text messages** i sine [varslingsinnstillinger](../../b1-church/getting-started/notification-preferences.md), og
 - Har et mobilnummer på profilen sin.
 
+Personer med tillatelse til å sende tekstmeldinger kan slå på **Text reminders** for en person fra vedkommendes [personpost](../people/adding-people.md#text-reminders), på linjen under mobilnummeret. Når du klikker **Send now** på en påminnelse som inkluderer **Text**, viser B1 hvor mange som fikk tekstmelding, og hvor mange som ble hoppet over, for eksempel *Sent to 2 people · 1 texted, 1 skipped*.
+
 Hver tekstmelding starter med menighetens navn, holdes innenfor én tekstmelding og avsluttes med «Reply STOP to opt out.» Den som svarer STOP, slutter å få tekstmeldinger fra menigheten din. For at STOP-svar skal nå B1, limer du inn **Inbound (STOP) webhook URL** fra [innstillingene for tekstmeldinger](../settings/church-settings.md#texting) i leverandørens webhook for innkommende meldinger.
 
 ## Hva medlemmene kan styre {#what-members-can-control}

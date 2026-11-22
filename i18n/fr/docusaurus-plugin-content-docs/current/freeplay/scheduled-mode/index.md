@@ -31,7 +31,7 @@ Lorsque rien n'est programmé, les écrans d'un groupe diffusent sa **boucle par
 - **[Mode plan](../plan-mode/index.md)** suit un type de plan de culte depuis B1 Admin. Quelqu'un appuie sur **Start Plan** sur le téléviseur, et la leçon démarre à ce moment-là
 - **Le mode programmé** suit un calendrier. Le contenu démarre et s'arrête aux heures que vous définissez, ce qui convient bien aux écrans d'accueil, aux boucles d'annonces et aux salles de classe où la leçon doit être affichée avant l'arrivée de tout le monde
 
-Une entrée du calendrier peut aussi diffuser un plan de culte. Choisissez le type de plan sous **Service plans** lorsque vous ajoutez une programmation, et l'écran diffuse le plan en cours dans B1 Admin cette semaine-là. Cela inclut les leçons Go Curriculum, même celles que vous avez personnalisées dans le plan. L'écran utilise l'identifiant Go Curriculum lié au ministère du type de plan dans B1 Admin, ou la connexion Go Curriculum de l'église si le ministère n'en a pas.
+Une entrée du calendrier peut aussi diffuser un plan de culte. Choisissez le type de plan sous **Service plans** lorsque vous ajoutez une programmation, et l'écran diffuse le plan en cours dans B1 Admin cette semaine-là. Cela inclut les leçons GO! Curriculum, même celles que vous avez personnalisées dans le plan. L'écran utilise l'identifiant GO! Curriculum lié au ministère du type de plan dans B1 Admin, ou la connexion GO! Curriculum de l'église si le ministère n'en a pas.
 
 ## Premiers pas
 

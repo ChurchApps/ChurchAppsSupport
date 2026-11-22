@@ -82,7 +82,17 @@ Clique em **Novo Evento** na página de detalhes do calendário para adicionar u
 - **Salas** e **Recursos** -- Reserve espaço e equipamentos para o evento. Veja [Salas, Recursos e Agendamento](./rooms-resources.md). Depois de escolher um deles, você também pode adicionar tempo de preparação e desmontagem ou uma janela de reserva personalizada -- veja [Reservando uma Sala ou Recurso](./availability.md#booking-a-room-or-resource).
 - **Lembretes** -- Expanda esta seção para enviar lembretes antes do evento. Veja [Lembretes de Eventos](./event-reminders.md).
 
-**Grupo**, **Título**, **Início** e **Término** são obrigatórios, e o término deve ser posterior ao início. Clique em **Salvar**. Se o evento se repetir, o B1 pedirá sua confirmação, pois salvar atualiza todas as ocorrências da série. Para excluir um evento, abra-o no editor e clique em **Excluir**.
+**Grupo**, **Título**, **Início** e **Término** são obrigatórios, e o término deve ser posterior ao início. Clique em **Salvar**. Para excluir um evento, abra-o no editor e clique em **Excluir**.
+
+### Alterando Uma Data de um Evento Recorrente {#changing-one-date-of-a-recurring-event}
+
+Ao clicar em uma data de um evento que se repete no calendário e depois em **Editar**, ao salvar ou excluir será perguntado quais datas alterar:
+
+- **Somente esta data** -- Apenas a data em que você clicou. Ao salvar, essa data passa a ser um evento único com as suas alterações, e o restante da série permanece como estava. Ao excluir, somente essa data é removida.
+- **Esta e todas as datas seguintes** -- A série termina no dia anterior à data em que você clicou. Ao salvar, as suas alterações iniciam uma nova série a partir dessa data; ao excluir, as datas restantes são removidas.
+- **Todas as datas** -- A série inteira, como antes.
+
+O formulário mostra a primeira data da série, mas **Somente esta data** e **Esta e todas as datas seguintes** movem as suas alterações de horário para a data em que você clicou. Uma data separada da série mantém as salas e recursos da série, recebe as suas próprias reservas e não copia os lembretes da série. Se você abrir um evento recorrente sem escolher uma data (por exemplo, a partir de **Aprovações**), o B1 pedirá sua confirmação, pois salvar atualiza todas as datas da série.
 
 ### Anotações do Evento {#event-notes}
 
@@ -116,6 +126,14 @@ Depois que a inscrição estiver habilitada, os membros verão um botão **Inscr
 :::info
 As Perguntas da Inscrição só funcionam com formulários que **não** estão marcados como Restritos. Um formulário restrito é ignorado automaticamente durante a inscrição, em vez de ser exibido; por isso, use um formulário não restrito ao anexar perguntas a um evento.
 :::
+
+### Compartilhando o Link de um Evento {#sharing-an-event-link}
+
+Para convidar pessoas que não estão no banco de dados da sua igreja, compartilhe a própria página do evento. Clique no evento no calendário e clique em **Compartilhar**, ou clique em **Compartilhar** na página de inscrição do evento. Uma caixa mostra o link do evento e um QR code: clique no ícone de cópia para copiar o link, ou clique em **Baixar PNG** para salvar o QR code para um panfleto ou slide. Qualquer pessoa com o link pode ver o evento, adicioná-lo ao seu calendário e, quando as inscrições estiverem ativas, inscrever-se como convidada apenas com nome e e-mail.
+
+Um evento **Privado** continua fora do calendário do seu site, mas ainda pode ser compartilhado depois que as inscrições forem ativadas. Um evento privado sem inscrições não tem página pública, por isso não tem o botão **Compartilhar**.
+
+No aplicativo B1, os eventos do calendário de um grupo têm um link **Compartilhar** que abre a folha de compartilhamento do telefone com o mesmo link.
 
 ### Gerenciando Inscrições {#managing-registrations}
 

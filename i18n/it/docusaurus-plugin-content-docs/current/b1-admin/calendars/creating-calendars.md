@@ -82,7 +82,17 @@ Fai clic su **Nuovo evento** nella pagina di dettaglio del calendario per aggiun
 - **Sale** e **Risorse** -- Riserva spazi e attrezzature per l'evento. Vedi [Sale, risorse e programmazione](./rooms-resources.md). Una volta scelta una sala o una risorsa, puoi anche aggiungere tempi di allestimento e smontaggio oppure una finestra di prenotazione personalizzata -- vedi [Prenotare una sala o una risorsa](./availability.md#booking-a-room-or-resource).
 - **Promemoria** -- Espandi questa sezione per inviare promemoria prima dell'evento. Vedi [Promemoria degli eventi](./event-reminders.md).
 
-**Gruppo**, **Titolo**, **Inizio** e **Fine** sono obbligatori, e la fine deve essere successiva all'inizio. Fai clic su **Salva**. Se l'evento si ripete, B1 ti chiede una conferma, perché il salvataggio aggiorna ogni occorrenza della serie. Per eliminare un evento, aprilo nell'editor e fai clic su **Elimina**.
+**Gruppo**, **Titolo**, **Inizio** e **Fine** sono obbligatori, e la fine deve essere successiva all'inizio. Fai clic su **Salva**. Per eliminare un evento, aprilo nell'editor e fai clic su **Elimina**.
+
+### Modificare una sola data di un evento ricorrente {#changing-one-date-of-a-recurring-event}
+
+Quando fai clic su una data di un evento ricorrente nel calendario e poi su **Modifica**, al salvataggio o all'eliminazione viene chiesto quali date modificare:
+
+- **Solo questa data** -- Solo la data su cui hai fatto clic. Al salvataggio, quella data diventa un evento singolo con le tue modifiche, e il resto della serie resta invariato. All'eliminazione, viene rimossa solo quella data.
+- **Questa e tutte le date successive** -- La serie termina il giorno prima della data su cui hai fatto clic. Al salvataggio, le tue modifiche avviano una nuova serie da quella data; all'eliminazione, vengono rimosse le date rimanenti.
+- **Tutte le date** -- L'intera serie, come prima.
+
+Il modulo mostra la prima data della serie, ma **Solo questa data** e **Questa e tutte le date successive** spostano le modifiche di orario sulla data su cui hai fatto clic. Una data separata dalla serie mantiene le sale e le risorse della serie, ottiene le proprie prenotazioni e non copia i promemoria della serie. Se apri un evento ricorrente senza scegliere una data (ad esempio da **Approvazioni**), B1 ti chiede invece una conferma, perché il salvataggio aggiorna ogni data della serie.
 
 ### Note dell'evento {#event-notes}
 
@@ -116,6 +126,14 @@ Una volta attivate le iscrizioni, i membri vedranno un pulsante **Iscriviti a qu
 :::info
 Le Domande di iscrizione funzionano solo con moduli che **non** sono contrassegnati come Riservati. Un modulo riservato viene saltato automaticamente durante la registrazione invece di essere mostrato, quindi usa un modulo non riservato quando alleghi domande a un evento.
 :::
+
+### Condividere il link di un evento {#sharing-an-event-link}
+
+Per invitare persone che non sono nel database della tua chiesa, condividi la pagina dell'evento stessa. Fai clic sull'evento nel calendario e poi su **Condividi**, oppure fai clic su **Condividi** nella pagina di iscrizione dell'evento. Una finestra mostra il link dell'evento e un codice QR: fai clic sull'icona di copia per copiare il link, oppure su **Scarica PNG** per salvare il codice QR per un volantino o una diapositiva. Chiunque abbia il link può vedere l'evento, aggiungerlo al proprio calendario e, con le iscrizioni attive, iscriversi come ospite inserendo solo nome ed email.
+
+Un evento **Privato** resta fuori dal calendario del sito, ma può comunque essere condiviso una volta attivate le iscrizioni. Un evento privato senza iscrizioni non ha una pagina pubblica, quindi non ha il pulsante **Condividi**.
+
+Nell'app B1, gli eventi nel calendario di un gruppo hanno un link **Condividi** che apre il foglio di condivisione del telefono con lo stesso link.
 
 ### Gestire le iscrizioni {#managing-registrations}
 

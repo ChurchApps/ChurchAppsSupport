@@ -31,7 +31,7 @@ Kapag walang nakaiskedyul, pinapatugtog ng mga screen ng isang grupo ang **defau
 - **[Plan Mode](../plan-mode/index.md)** ay sumusunod sa isang service plan type mula sa B1 Admin. Pinipindot ng isang tao ang **Start Plan** sa TV, at tumutugtog ang lesson kapag pinindot nila ito
 - **Scheduled Mode** ay sumusunod sa isang kalendaryo. Nagsisimula at humihinto ang content sa mga oras na itinakda mo, kaya mainam ito para sa lobby signage, announcement loop, at mga classroom kung saan dapat nakalabas na ang lesson bago pa pumasok ang sinuman
 
-Maaari pa ring magpatugtog ng service plan ang isang entry sa kalendaryo. Piliin ang plan type sa ilalim ng **Service plans** kapag nagdaragdag ka ng schedule, at ipapatugtog ng screen ang anumang plan na kasalukuyan sa B1 Admin sa linggong iyon. Kasama rito ang mga aralin ng Go Curriculum, kahit ang mga na-customize mo sa plan. Ginagamit ng screen ang Go Curriculum login na naka-link sa ministry ng plan type sa B1 Admin, o ang Go Curriculum connection ng simbahan kung walang ministry na nakatakda.
+Maaari pa ring magpatugtog ng service plan ang isang entry sa kalendaryo. Piliin ang plan type sa ilalim ng **Service plans** kapag nagdaragdag ka ng schedule, at ipapatugtog ng screen ang anumang plan na kasalukuyan sa B1 Admin sa linggong iyon. Kasama rito ang mga aralin ng GO! Curriculum, kahit ang mga na-customize mo sa plan. Ginagamit ng screen ang GO! Curriculum login na naka-link sa ministry ng plan type sa B1 Admin, o ang GO! Curriculum connection ng simbahan kung walang ministry na nakatakda.
 
 ## Pagsisimula
 

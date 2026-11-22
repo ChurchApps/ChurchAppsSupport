@@ -70,6 +70,8 @@ description: "B1 Admin에서 푸시, 이메일, 문자 이벤트 알림을 설�
 - [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 **Text messages**를 켜 두었고,
 - 프로필에 휴대폰 번호가 있는 사람.
 
+문자 메시지를 보낼 권한이 있는 직원은 사람의 [기록](../people/adding-people.md#text-reminders)에서, 휴대폰 번호 아래 줄의 **Text reminders**를 켤 수 있습니다. **Text**가 포함된 알림에서 **Send now**를 클릭하면 B1이 몇 명에게 문자를 보냈고 몇 명을 건너뛰었는지 보여 줍니다(예: *Sent to 2 people · 1 texted, 1 skipped*).
+
 각 문자는 교회 이름으로 시작하며, 한 통의 문자 메시지로 제한되고, "Reply STOP to opt out."(수신 거부는 STOP으로 답장하세요.)로 끝납니다. STOP으로 답장한 사람은 교회의 문자를 더 받지 않습니다. STOP 답장이 B1에 전달되도록 [문자 설정](../settings/church-settings.md#texting)에 있는 **Inbound (STOP) webhook URL**을 문자 제공업체의 수신 메시지 webhook에 붙여 넣으세요.
 
 ## 구성원이 직접 정할 수 있는 것 {#what-members-can-control}

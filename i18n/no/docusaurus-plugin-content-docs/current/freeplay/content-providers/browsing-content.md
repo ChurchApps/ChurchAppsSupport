@@ -46,9 +46,9 @@ Du kan gå så dypt som innholdsstrukturen til leverandøren tillater. Leseren h
 
 Trykk på **Tilbake** på alle nivåer for å gå opp ett steg.
 
-## Bla gjennom Go Curriculum
+## Bla gjennom GO! Curriculum
 
-Etter at du [logger inn med gocurriculum.com-kontoen din](./connecting-providers.md#phone-sign-in-qr-code-only), åpnes Go Curriculum med aldersgruppene **Elementary** og **Preschool**. Gå inn etter aldersgruppe, deretter samling, deretter leksjon, og velg en leksjon for å åpne nedlastingsskjermen.
+Etter at du [logger inn med gocurriculum.com-kontoen din](./connecting-providers.md#phone-sign-in-qr-code-only), åpnes GO! Curriculum med aldersgruppene **Elementary** og **Preschool**. Gå inn etter aldersgruppe, deretter samling, deretter leksjon, og velg en leksjon for å åpne nedlastingsskjermen.
 
 Hva du ser avhenger av Go-medlemskapet ditt:
 

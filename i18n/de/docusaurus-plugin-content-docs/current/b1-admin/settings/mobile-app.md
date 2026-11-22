@@ -13,7 +13,7 @@ Auf der Seite Einstellungen der mobilen App konfigurieren Sie die Navigationsrei
 
 ## Schulungsvideo {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Anpassen der Mitglieder-App Ihrer Gemeinde in B1" />
+<YouTube id="7x2CQG_pH6o" title="Anpassen der Mitglieder-App Ihrer Gemeinde in B1" />
 
 :::info
 Hier konfigurierte Reiter erscheinen in der B1-App, die Mitglieder als [Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md) installieren können. Teilen Sie mit Ihren Mitgliedern die Installationsseite Ihrer Gemeinde – `https://yourchurchname.b1.church/mobile/install`. Dort werden sie Schritt für Schritt durch die Installation der App auf ihrem Gerät geführt, ganz ohne Download aus dem App Store oder Google Play.
@@ -158,7 +158,7 @@ Die hier konfigurierten Reiter werden in der **B1.church-PWA** angezeigt, die Ih
 
 Auf dem Telefon zeigt die untere Reiterleiste **Start**, bis zu drei Ihrer Reiter und **Mehr**; auf dem Computer zeigt die Kopfzeile bis zu fünf. Eingebaute Seiten (etwa Predigten, Spenden oder Gruppen) bekommen diese Plätze zuerst, und Reiter vom Typ **Interne Seite** füllen alle verbleibenden Plätze. **Externe-URL**- und **Vers des Tages**-Reiter bekommen nie einen Platz. Jeder Reiter, auch wenn er nicht hineinpasst, ist auf der Seite **Mehr** der App aufgeführt.
 
-Eine Ausnahme sind Reiter, die in einem Reiter vom Typ **Ordner** liegen: Sie erscheinen nur auf der eigenen Seite des Ordners, die Mitglieder öffnen, indem sie auf den Ordner tippen. Diese Seite zeigt die Reiter als Fotokacheln, wenn alle ein Bild haben, andernfalls als Liste. Ein Ordner, der keine für ein Mitglied sichtbaren Reiter enthält, wird diesem Mitglied ausgeblendet. Siehe [Ordner-Reiter](../../b1-church/getting-started/navigating.md#folder-tabs). Was Mitglieder sehen, erfahren Sie unter [Navigation in der B1-App](../../b1-church/getting-started/navigating.md).
+Eine Ausnahme sind Reiter, die in einem Reiter vom Typ **Ordner** liegen: Sie erscheinen nur auf der eigenen Seite des Ordners, die Mitglieder öffnen, indem sie auf den Ordner tippen. Diese Seite zeigt jeden Reiter mit einem Bild als Foto-Banner in voller Breite, darunter die Reiter ohne Bild als Liste. Ein Ordner, der keine für ein Mitglied sichtbaren Reiter enthält, wird diesem Mitglied ausgeblendet. Siehe [Ordner-Reiter](../../b1-church/getting-started/navigating.md#folder-tabs). Was Mitglieder sehen, erfahren Sie unter [Navigation in der B1-App](../../b1-church/getting-started/navigating.md).
 
 ## Nächste Schritte {#next-steps}
 

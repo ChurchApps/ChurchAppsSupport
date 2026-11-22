@@ -14,7 +14,7 @@ description: "Составьте порядок служения в B1 Admin д�
 
 ## Видеоурок {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Составление порядка служения и библиотеки песен в B1" next="Шаблоны планов, задачи и рабочие процессы в B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Составление порядка служения и библиотеки песен в B1" next="Шаблоны планов, задачи и рабочие процессы в B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Перед началом работы</h4>

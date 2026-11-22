@@ -35,11 +35,13 @@ Le sale sono spazi fisici che possono essere riservati insieme agli eventi del c
 4. Imposta un **Gruppo di approvazione** se le prenotazioni richiedono un via libera. Le prenotazioni fatte dai membri di quel gruppo vengono approvate automaticamente; quelle di chiunque altro restano **In attesa** finché non vengono approvate nella pagina [Approvazioni](./approvals.md), e i membri del gruppo ricevono un'email sulle nuove richieste. Lascia su **Nessuna approvazione necessaria** per approvare automaticamente ogni prenotazione.
 5. Fai clic su **Salva**.
 
-L'elenco delle sale mostra per ciascuna il **Nome sala**, la **Capienza** e il **Gruppo di approvazione**.
+L'elenco delle sale mostra per ciascuna il **Nome sala**, la **Capienza** e il **Gruppo di approvazione**. Le sale disattivate mostrano un badge **Inattivo** accanto al nome.
 
 ### Modificare o eliminare una sala {#editing-or-deleting-a-room}
 
 Passa con il mouse su una sala e fai clic su **Modifica**, apporta le modifiche e fai clic su **Salva**. Usa **Elimina** per rimuovere definitivamente una sala.
+
+Se una sala è chiusa per un certo periodo -- una ristrutturazione, una stagione o senza una data di ritorno prestabilita -- disattiva l'interruttore **Attivo** e fai clic su **Salva** invece di eliminarla. Una sala inattiva mantiene i suoi dettagli e tutte le prenotazioni passate, ma non compare più negli elenchi delle sale quando qualcuno programma un evento o richiede una sala. Riattiva l'interruttore per renderla di nuovo prenotabile. Un blocco è più adatto quando la sala è chiusa in date specifiche, perché la sala resta nell'elenco e segnala le prenotazioni in quelle date.
 
 ## Risorse {#resources}
 
@@ -53,7 +55,7 @@ Le risorse sono oggetti che possono essere prenotati insieme a un evento -- attr
 4. Imposta un **Gruppo di approvazione** se qualcuno deve approvare i prestiti delle risorse. Funziona come per le sale.
 5. Fai clic su **Salva**.
 
-Modifica o elimina una risorsa allo stesso modo di una sala.
+Modifica o elimina una risorsa allo stesso modo di una sala. Una risorsa ha anche un interruttore **Attivo**: disattivalo per toglierla dagli elenchi delle risorse senza perdere i suoi dettagli o le prenotazioni passate.
 
 ## Blocchi {#blockouts}
 

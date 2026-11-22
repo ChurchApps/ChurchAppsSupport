@@ -70,6 +70,8 @@ O canal **SMS** só aparece quando a sua igreja tem um provedor de mensagens de 
 - Ativaram **Mensagens de texto** nas suas [Preferências de Notificação](../../b1-church/getting-started/notification-preferences.md), e
 - Têm um número de celular no perfil.
 
+A equipe com permissão para enviar mensagens de texto pode ativar **Lembretes por SMS** para uma pessoa a partir do [registro](../people/adding-people.md#text-reminders) dela, na linha abaixo do número de celular. Ao clicar em **Enviar agora** em um lembrete que inclui **SMS**, o B1 mostra quantas pessoas receberam a mensagem e quantas foram ignoradas, por exemplo *Enviado para 2 pessoas · 1 recebeu SMS, 1 ignorada*.
+
 Cada mensagem começa com o nome da sua igreja, é mantida em uma única mensagem de texto e termina com "Responda STOP para cancelar." Quem responder STOP deixa de receber mensagens de texto da sua igreja. Para que as respostas STOP cheguem ao B1, cole a **URL do webhook de STOP (entrada)** das suas [configurações de mensagens de texto](../settings/church-settings.md#texting) no webhook de mensagens recebidas do seu provedor.
 
 ## O Que os Membros Podem Controlar {#what-members-can-control}

@@ -31,7 +31,7 @@ Når ingenting er planlagt, spiller en gruppes skjermer sin **standard-sløyfe**
 - **[Planmodus](../plan-mode/index.md)** følger én tjenesteplantype fra B1 Admin. Noen trykker **Start plan** på TV-en, og leksjonen spilles når de gjør det
 - **Planlagt modus** følger en kalender. Innhold starter og stopper til tidspunktene du har satt, så den fungerer godt for skilt i lobbyen, kunngjøringssløyfer og klasserom der leksjonen skal være oppe før noen går inn
 
-En kalenderoppføring kan fortsatt spille en tjenesteplan. Velg plantypen under **Tjenesteplaner** når du legger til en tidsplan, og skjermen spiller hvilken plan som er gjeldende i B1 Admin den uken. Dette inkluderer Go Curriculum-leksjoner, også de du har tilpasset i planen. Skjermen bruker Go Curriculum-innloggingen som er koblet til plantypens tjeneste i B1 Admin, eller kirkens Go Curriculum-tilkobling hvis tjenesten ikke har en.
+En kalenderoppføring kan fortsatt spille en tjenesteplan. Velg plantypen under **Tjenesteplaner** når du legger til en tidsplan, og skjermen spiller hvilken plan som er gjeldende i B1 Admin den uken. Dette inkluderer GO! Curriculum-leksjoner, også de du har tilpasset i planen. Skjermen bruker GO! Curriculum-innloggingen som er koblet til plantypens tjeneste i B1 Admin, eller kirkens GO! Curriculum-tilkobling hvis tjenesten ikke har en.
 
 ## Komme i gang
 

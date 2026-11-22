@@ -65,7 +65,7 @@ description: "在 B1 Admin 中设置角色，控制员工和志愿者可以查�
 2. 在 **Members** 列表中找到该人员。
 3. 点击其所在行上的删除图标并确认。
 
-你的教会必须始终至少有一名域管理员，因此 **Domain Admins** 中的最后一名成员无法被移除。
+你的教会必须始终至少有一名域管理员，因此 **Domain Admins** 中的最后一名成员无法被移除。B1 会显示 "At least one Domain Admin is required. Add another Domain Admin before removing this one."（至少需要一名域管理员。请先添加另一名域管理员，再移除此人。）唯一的域管理员在有其他人被加入 **Domain Admins** 之前，也无法离开教会或删除自己的账户。
 
 ## 配置权限 {#configuring-permissions}
 

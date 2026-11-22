@@ -41,7 +41,7 @@ Ao abrir `https://yourchurchname.b1.church/mobile`, você vai para o painel **In
 
 As seções de serviço, grupos, presença, formulários e ofertas só aparecem quando você está conectado, sua igreja ativou aquela ferramenta e você tem algo para mostrar -- por exemplo, uma atribuição futura ou pelo menos um grupo. No computador, o Início é organizado em duas colunas.
 
-Se você não estiver conectado, o Início mostra um título **Bem-vindo** no lugar da saudação, com um breve convite ("Entre para ver seus grupos, ofertas e muito mais.") e um botão **Entrar**. O convite aparece mesmo que sua igreja ainda não tenha configurado mais nada para o Início. Sua igreja pode reformular esse convite ou ocultá-lo -- veja [Configurações do aplicativo móvel](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Quando ele estiver oculto, você ainda pode entrar pela página **Mais** ou pela página **Eu**.
+Se você não estiver conectado, o Início mostra um título **Bem-vindo** no lugar da saudação e, em **Próximos eventos**, até três próximos eventos da igreja que aceitam inscrições, cada um com um link **Inscrever-se** (mais um link **Todos os próximos eventos** para a tela **Grupos**, quando houver mais de três). Ele também mostra um breve convite ("Entre para ver seus grupos, ofertas e muito mais.") e um botão **Entrar**. O convite aparece mesmo que sua igreja ainda não tenha configurado mais nada para o Início. Sua igreja pode reformular esse convite ou ocultá-lo -- veja [Configurações do aplicativo móvel](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). Quando ele estiver oculto, você ainda pode entrar pela página **Mais** ou pela página **Eu**.
 
 ## A barra de abas inferior {#the-bottom-tab-bar}
 
@@ -55,7 +55,7 @@ As telas integradas (como Grupos, Ofertas ou Planos) recebem os espaços da barr
 
 ### Pastas de abas {#folder-tabs}
 
-Sua igreja pode agrupar várias abas em uma **pasta**. Uma pasta aparece como qualquer outra aba -- na barra de abas, na página Mais ou como um bloco com foto no Início -- e, ao tocar nela, abre uma tela com o nome da pasta que lista as abas dentro dela. Se todas as abas da pasta tiverem foto, elas são exibidas como blocos com foto; caso contrário, aparecem como uma lista. Links para sites externos em uma pasta abrem em uma nova aba do navegador. As abas dentro de uma pasta aparecem somente na tela da pasta, e não na barra de abas nem na página Mais. Uma pasta sem nada que você possa ver fica oculta.
+Sua igreja pode agrupar várias abas em uma **pasta**. Uma pasta aparece como qualquer outra aba -- na barra de abas, na página Mais ou como um bloco com foto no Início -- e, ao tocar nela, abre uma tela com o nome da pasta que lista as abas dentro dela. As abas que têm foto aparecem primeiro, cada uma como um banner com foto em largura total, e as abas sem foto são listadas abaixo delas. Links para sites externos em uma pasta abrem em uma nova aba do navegador. As abas dentro de uma pasta aparecem somente na tela da pasta, e não na barra de abas nem na página Mais. Uma pasta sem nada que você possa ver fica oculta.
 
 ## No computador {#on-a-computer}
 

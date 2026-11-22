@@ -57,7 +57,7 @@ Luego completa el formulario:
 
 1. **Reproducir** - Elige qué se reproduce:
    - **Listas de reproducción** - Cualquier lista de reproducción que hayas creado
-   - **Planes de servicio** - Un tipo de plan de B1 Admin, marcado **(plan actual)**. La pantalla reproduce el plan actual de ese tipo cada semana, incluidas las lecciones de Go Curriculum (también las personalizadas), que usan el inicio de sesión de Go vinculado al ministerio del tipo de plan
+   - **Planes de servicio** - Un tipo de plan de B1 Admin, marcado **(plan actual)**. La pantalla reproduce el plan actual de ese tipo cada semana, incluidas las lecciones de GO! Curriculum (también las personalizadas), que usan el inicio de sesión de Go vinculado al ministerio del tipo de plan
    - **Carpeta de proveedor…** - Abre **Elige una carpeta de proveedor**. Explora hasta una carpeta y haz clic en **Usar esta carpeta**. Para elegir otra carpeta más adelante, haz clic en **Cambiar**
 2. **Se repite** - Selecciona los días de la semana en que se reproduce este horario. Para una fecha única, activa **Una vez** y elige la **Fecha**.
 3. **Inicio** y **Fin** - Las horas en que el horario comienza y termina.

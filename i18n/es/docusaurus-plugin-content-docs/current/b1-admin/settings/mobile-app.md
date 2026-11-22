@@ -13,7 +13,7 @@ La página de Configuración de la aplicación móvil le permite configurar las 
 
 ## Video de capacitación {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Personalizar la aplicación de miembros de su iglesia en B1" />
+<YouTube id="7x2CQG_pH6o" title="Personalizar la aplicación de miembros de su iglesia en B1" />
 
 :::info
 Las pestañas configuradas aquí aparecen en la aplicación B1, que los miembros pueden [instalar como una aplicación web progresiva (PWA)](../../b1-church/getting-started/installing-pwa.md). Comparta con sus miembros la página de instalación de su iglesia (`https://yourchurchname.b1.church/mobile/install`); les guía para instalar la aplicación en su dispositivo, sin necesidad de descargarla desde App Store ni Google Play.
@@ -158,7 +158,7 @@ Las pestañas que configura aquí se muestran en la **PWA de B1.church** que sus
 
 En un teléfono, la barra de pestañas inferior muestra **Inicio**, hasta tres de sus pestañas y **Más**; en una computadora, el encabezado muestra hasta cinco. Las pantallas integradas (como Sermones, Donaciones o Grupos) reciben primero sus espacios, y las pestañas de **Página interna** ocupan los espacios que sobren. Las pestañas de **URL externa** y de **Versículo del día** nunca obtienen un espacio. Todas las pestañas, incluidas las que no caben, aparecen en la página **Más** de la aplicación.
 
-Las pestañas colocadas dentro de una pestaña de **Carpeta** son la excepción: solo aparecen en la pantalla de la propia carpeta, que los miembros abren al tocarla. Esa pantalla muestra las pestañas como fichas con foto cuando todas tienen imagen, o como lista en caso contrario. Una carpeta que no contiene pestañas visibles para un miembro se oculta para ese miembro. Consulte [Pestañas de carpeta](../../b1-church/getting-started/navigating.md#folder-tabs). Consulte [Navegar por B1App](../../b1-church/getting-started/navigating.md) para ver lo que ven los miembros.
+Las pestañas colocadas dentro de una pestaña de **Carpeta** son la excepción: solo aparecen en la pantalla de la propia carpeta, que los miembros abren al tocarla. Esa pantalla muestra cada pestaña que tiene imagen como un banner de foto a todo el ancho, y debajo se enumeran las pestañas sin imagen. Una carpeta que no contiene pestañas visibles para un miembro se oculta para ese miembro. Consulte [Pestañas de carpeta](../../b1-church/getting-started/navigating.md#folder-tabs). Consulte [Navegar por B1App](../../b1-church/getting-started/navigating.md) para ver lo que ven los miembros.
 
 ## Próximos pasos {#next-steps}
 

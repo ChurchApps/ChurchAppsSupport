@@ -35,11 +35,13 @@ Rom er fysiske lokaler som kan reserveres sammen med kalenderhendelser – et ki
 4. Angi en **Approval Group** hvis bookinger må godkjennes. Bookinger som gjøres av medlemmer av den gruppen, godkjennes automatisk. Andres bookinger venter som **Pending** til de godkjennes på siden [Approvals](./approvals.md), og gruppens medlemmer får en e-post om nye forespørsler. La feltet stå på **No approval needed** for å godkjenne alle bookinger automatisk.
 5. Klikk **Save**.
 
-Listen over rom viser hvert rom med **Room Name**, **Capacity** og **Approval Group**.
+Listen over rom viser hvert rom med **Room Name**, **Capacity** og **Approval Group**. Rom som er slått av, viser et merke **Inactive** ved siden av navnet.
 
 ### Redigere eller slette et rom {#editing-or-deleting-a-room}
 
 Hold musepekeren over et rom og klikk **Edit**, gjør endringene dine og klikk **Save**. Bruk **Delete** for å fjerne et rom permanent.
+
+Hvis et rom er stengt en stund – for en renovering, en sesong eller uten fast returdato – slår du av bryteren **Active** og klikker **Save** i stedet for å slette det. Et inaktivt rom beholder detaljene og alle tidligere bookinger, men vises ikke lenger i romlistene når noen planlegger en hendelse eller ber om et rom. Slå bryteren på igjen for å gjøre det bookbart igjen. En sperring er bedre når rommet er stengt på bestemte datoer, fordi rommet da beholdes i listen og gir en advarsel om bookinger i disse datoene.
 
 ## Ressurser {#resources}
 
@@ -53,7 +55,7 @@ Ressurser er gjenstander som kan bookes sammen med en hendelse – AV-utstyr, pr
 4. Angi en **Approval Group** hvis noen må godkjenne utlån av ressurser. Dette fungerer på samme måte som for rom.
 5. Klikk **Save**.
 
-Rediger eller slett en ressurs på samme måte som et rom.
+Rediger eller slett en ressurs på samme måte som et rom. En ressurs har også en **Active**-bryter: slå den av for å ta den ut av ressurslistene uten å miste detaljene eller tidligere bookinger.
 
 ## Sperringer {#blockouts}
 

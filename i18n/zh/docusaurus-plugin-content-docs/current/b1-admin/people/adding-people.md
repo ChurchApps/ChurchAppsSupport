@@ -88,6 +88,10 @@ B1 会为该人员建立一个新的住户，并以其姓氏命名。
 
 如果你的教会已连接[短信服务商](../settings/church-settings.md#texting)、你拥有发送短信的权限，且该人员有手机号码，则 **Email** 旁边会出现 **Text** 按钮。点击它，输入你的 **Message**，然后点击 **Send**。对话框会显示短信将发送到的号码。短信的运作方式请参阅[向小组成员发送短信](../groups/group-members.md#texting-group-members)。
 
+### 短信提醒 {#text-reminders}
+
+只有已开启短信功能的人员才会收到任务、活动和服事提醒短信。若你的教会已连接相同的短信服务商、你拥有相应权限，且该人员有手机号码，则其记录会在手机号码下方显示 **Text reminders**（短信提醒），并标示 **On** 或 **Off**。点击 **Turn on** 即可开始发送提醒短信，或点击 **Turn off** 停止。此开关与该人员自己的[通知偏好设置](../../b1-church/getting-started/notification-preferences.md)中的 **Text messages** 为同一设置，因此你和该人员皆可更改。曾回复 STOP 退订你教会短信的人员，即使开启了 **Text reminders**，仍不会收到提醒短信。
+
 ## 处理表单 {#working-with-forms}
 
 你可以直接从人员的个人资料中填写自定义表单。这些是用户自定义的表单，你可以依照[建立表单](../forms/creating-forms.md)指南自行建立。

@@ -14,7 +14,7 @@ B1 Admin si integra direttamente con [Lessons.church](https://lessons.church), c
 
 ## Video di formazione {#training-video}
 
-<YouTube id="29DVkNF4UsY" title="Riutilizzare una selezione di lezione per ogni settimana in B1" next="Modelli di piano, attività e flussi di lavoro in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="weuZJQwA6w0" title="Riutilizzare una selezione di lezione per ogni settimana in B1" next="Modelli di piano, attività e flussi di lavoro in B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Prima di iniziare</h4>
@@ -45,7 +45,7 @@ Questa è una configurazione una tantum per ogni ministero. Devi collegare il tu
 La sezione Fornitori di contenuti è specifica per ogni ministero. Se gestisci più ministeri (ad esempio, Bambini e Giovani), dovrai collegare Lessons.church separatamente per ciascuno.
 :::
 
-Lessons.church non è l'unica opzione. Lo stesso elenco **Collega nuovo fornitore** offre anche altre fonti di curriculum e di file, tra cui SignPresenter, The Bible Project, Jesus Film Project, Go Curriculum, Dropbox, Google Drive e OneDrive. Collegali allo stesso modo: compariranno come fornitori a cui puoi passare quando selezioni una lezione.
+Lessons.church non è l'unica opzione. Lo stesso elenco **Collega nuovo fornitore** offre anche altre fonti di curriculum e di file, tra cui SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive e OneDrive. Collegali allo stesso modo: compariranno come fornitori a cui puoi passare quando selezioni una lezione.
 
 ## Passaggio 2 -- Pianifica una lezione {#step-2--schedule-a-lesson}
 
@@ -63,7 +63,7 @@ Una volta collegato, puoi pianificare le lezioni direttamente dai Piani.
    - Seleziona la **Lezione** specifica
    - Seleziona il **Livello** -- ovvero la versione della lezione per la fascia d'età
 
-   Gli altri fornitori organizzano i contenuti in modo diverso. Ad esempio, **Go Curriculum** parte da **Elementari** o **Prescolare**, poi da una serie, e infine dalla lezione stessa -- qui non c'è alcun livello da scegliere.
+   Gli altri fornitori organizzano i contenuti in modo diverso. Ad esempio, **GO! Curriculum** parte da **Elementari** o **Prescolare**, poi da una serie, e infine dalla lezione stessa -- qui non c'è alcun livello da scegliere.
 8. Fai clic su **Associa lezione** per confermare
 9. Scegli la tua **opzione di copia** per i volontari:
    - **Niente** -- piano nuovo, senza volontari riportati
@@ -87,7 +87,7 @@ Per pianificare contemporaneamente più lezioni della stessa serie, fai clic su 
 4. Controlla l'elenco -- la lezione di partenza e il resto della sua serie, ciascuna con una data. Deseleziona quelle che vuoi saltare
 5. Fai clic su **Salva** per creare un piano per ogni lezione
 
-Per Lessons.church, l'elenco mostra anche il **Livello** che ciascuna lezione userà, abbinato per nome al livello scelto per la lezione di partenza (se una lezione non ha quel livello, ne viene usato un altro e viene contrassegnato come **sostituito**). I fornitori le cui lezioni non prevedono un livello, come Go Curriculum, pianificano le lezioni direttamente e la colonna Livello è nascosta.
+Per Lessons.church, l'elenco mostra anche il **Livello** che ciascuna lezione userà, abbinato per nome al livello scelto per la lezione di partenza (se una lezione non ha quel livello, ne viene usato un altro e viene contrassegnato come **sostituito**). I fornitori le cui lezioni non prevedono un livello, come GO! Curriculum, pianificano le lezioni direttamente e la colonna Livello è nascosta.
 
 ## Mantenere solo una parte di ogni lezione {#keeping-only-part-of-every-lesson}
 
@@ -105,9 +105,9 @@ Quando una lezione non rientra nello schema (una parte manca, non ha un video o 
 
 I piani che hanno già un ordine del servizio non vengono modificati quando vengono pianificati. Per cambiare la riduzione salvata, personalizza un altro piano e fai clic su **Sostituisci la riduzione salvata per Elementari** (anche in questo caso con il nome del tuo tipo di piano). Per interrompere la riduzione, apri la finestra **Modifica** del tipo di piano e fai clic su **Cancella** accanto a **Riduzione lezione**.
 
-## Guide per i leader di Go Curriculum {#go-curriculum-leader-guides}
+## Guide per i leader di GO! Curriculum {#go-curriculum-leader-guides}
 
-Quando pianifichi una lezione di Go Curriculum, l'ordine del servizio del piano viene costruito a partire dalla guida per il leader del **Gruppo grande** della lezione: ogni parte della guida diventa una sezione, e ogni passaggio al suo interno viene elencato con il proprio tipo (come dire, fare, suonare o nota) e il proprio testo. I passaggi che riproducono un video o altri contenuti multimediali portano con sé il file, così viene riprodotto in ordine. (Una lezione senza una guida per il Gruppo grande ripiega su un semplice elenco dei suoi file multimediali.)
+Quando pianifichi una lezione di GO! Curriculum, l'ordine del servizio del piano viene costruito a partire dalla guida per il leader del **Gruppo grande** della lezione: ogni parte della guida diventa una sezione, e ogni passaggio al suo interno viene elencato con il proprio tipo (come dire, fare, suonare o nota) e il proprio testo. I passaggi che riproducono un video o altri contenuti multimediali portano con sé il file, così viene riprodotto in ordine. (Una lezione senza una guida per il Gruppo grande ripiega su un semplice elenco dei suoi file multimediali.)
 
 Ogni serie che include materiale per piccoli gruppi inizia anche con una cartella **Guide per piccoli gruppi**. Aprila e scegli una lezione per pianificare la guida **Piccolo gruppo** di quella lezione, denominata come "Nome lezione - Piccolo gruppo" -- utile per un tipo di piano separato dedicato ai piccoli gruppi. Le guide per piccoli gruppi consistono per lo più in passaggi di discussione e di solito non hanno contenuti multimediali. Poiché la cartella compare per prima nell'elenco, la programmazione in blocco di una serie a partire da una delle sue lezioni non la include mai.
 ## Applicare un piano annuale {#apply-a-year-plan}

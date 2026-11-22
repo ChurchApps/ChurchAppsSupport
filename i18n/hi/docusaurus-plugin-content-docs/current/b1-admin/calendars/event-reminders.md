@@ -70,6 +70,8 @@ description: "B1 Admin में पुश, ईमेल और टेक्स�
 - अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** चालू कर चुके हैं, और
 - अपनी प्रोफ़ाइल पर एक मोबाइल नंबर रखते हैं।
 
+टेक्स्ट भेजने की अनुमति वाला स्टाफ़ किसी व्यक्ति के [रिकॉर्ड](../people/adding-people.md#text-reminders) से, उसके मोबाइल नंबर के नीचे की पंक्ति पर, उसके लिए **Text reminders** चालू कर सकता है। जब आप **Text** शामिल वाले रिमाइंडर पर **Send now** पर क्लिक करते हैं, तो B1 दिखाता है कि कितने लोगों को टेक्स्ट भेजा गया और कितने छोड़े गए, उदाहरण के लिए *Sent to 2 people · 1 texted, 1 skipped*।
+
 हर टेक्स्ट आपके चर्च के नाम से शुरू होता है, एक ही टेक्स्ट संदेश तक सीमित रहता है, और "Reply STOP to opt out." के साथ समाप्त होता है। जो कोई STOP का उत्तर देता है, उसे आपके चर्च से टेक्स्ट मिलना बंद हो जाता है। STOP के उत्तर B1 तक पहुंचने के लिए, अपनी [टेक्स्टिंग सेटिंग](../settings/church-settings.md#texting) से **Inbound (STOP) webhook URL** को अपने प्रदाता के इनबाउंड संदेश webhook में पेस्ट करें।
 
 ## सदस्य क्या नियंत्रित कर सकते हैं {#what-members-can-control}

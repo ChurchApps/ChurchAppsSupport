@@ -88,6 +88,10 @@ B1 से भेजने पर वही स्वीकृति और द�
 
 अगर आपके चर्च का कोई [texting provider](../settings/church-settings.md#texting) जुड़ा है, आपके पास text भेजने की अनुमति है, और व्यक्ति का मोबाइल नंबर है, तो **Email** के बगल में एक **Text** बटन दिखता है। उस पर क्लिक करें, अपना **Message** लिखें, और **Send** पर क्लिक करें। dialog दिखाता है कि text किस नंबर पर जाएगा। texting कैसे काम करती है, इसके लिए देखें [Texting Group Members](../groups/group-members.md#texting-group-members)।
 
+### टेक्स्ट रिमाइंडर {#text-reminders}
+
+Task, event, और serving रिमाइंडर केवल उन लोगों को टेक्स्ट से जाते हैं जिन्होंने text messages चालू किए हैं। उसी texting provider, अनुमति, और मोबाइल नंबर के साथ, व्यक्ति के रिकॉर्ड में उनके मोबाइल नंबर के नीचे **Text reminders** दिखता है, जिसमें **On** या **Off** होता है। रिमाइंडर टेक्स्ट भेजना शुरू करने के लिए **Turn on** पर क्लिक करें, या रोकने के लिए **Turn off**। यह व्यक्ति की अपनी [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) में **Text messages** वाला ही स्विच है, इसलिए आप में से कोई भी इसे बदल सकता है। जिस व्यक्ति ने आपके चर्च के टेक्स्ट पर STOP का उत्तर दिया है, उसे **Text reminders** चालू होने पर भी रिमाइंडर टेक्स्ट नहीं मिलते।
+
 ## Forms के साथ काम करना {#working-with-forms}
 
 आप व्यक्ति के profile से सीधे custom forms भर सकते हैं। ये उपयोगकर्ता-परिभाषित forms हैं जिन्हें आप [Creating Forms](../forms/creating-forms.md) गाइड का पालन करके बना सकते हैं।

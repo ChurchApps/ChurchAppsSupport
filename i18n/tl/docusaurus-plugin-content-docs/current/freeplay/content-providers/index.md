@@ -19,7 +19,7 @@ Kasalukuyang kasama sa FreePlay ang mga sumusunod na provider:
 - **Bible Project** - Mga video at resources na tumatalakay sa Bibliya
 - **SignPresenter** - Presentation at signage content para sa mga simbahan
 - **B1.church** - Content mula sa sarili mong B1 church setup
-- **Go Curriculum** - Curriculum mula sa gocurriculum.com, nakaayos ayon sa age group (**Elementary** at **Preschool**), pagkatapos ay collection at lesson. Makikita mo lamang ang mga age group at video na kasama sa iyong Go membership
+- **GO! Curriculum** - Curriculum mula sa gocurriculum.com, nakaayos ayon sa age group (**Elementary** at **Preschool**), pagkatapos ay collection at lesson. Makikita mo lamang ang mga age group at video na kasama sa iyong Go membership
 - **Dropbox** - Mag-browse at mag-play ng mga larawan at video mula sa sarili mong Dropbox
 - **Jesus Film Project** - Mga pelikula at video clip mula sa Jesus Film Project
 - **OneDrive** - Mag-browse at mag-play ng mga larawan, video, at audio mula sa sarili mong Microsoft OneDrive

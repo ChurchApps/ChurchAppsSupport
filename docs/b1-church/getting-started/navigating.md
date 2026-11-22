@@ -41,7 +41,7 @@ Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dash
 
 The serving, groups, attendance, forms, and giving sections only appear when you are signed in, your church has that tool turned on, and you have something to show -- for example, an upcoming assignment or at least one group. On a computer, Home is laid out in two columns.
 
-If you are signed out, Home shows a **Welcome** heading in place of the greeting, with a short prompt ("Sign in to see your groups, giving, and more.") and a **Sign In** button. The prompt shows even when your church hasn't set up anything else for Home yet. Your church can reword this prompt or hide it -- see [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). When it is hidden, you can still sign in from the **More** page or the **Me** page.
+If you are signed out, Home shows a **Welcome** heading in place of the greeting and, under **Upcoming events**, up to three of the church's upcoming events that take registrations, each with a **Register** link (plus an **All upcoming events** link to the **Groups** screen when there are more). It also shows a short prompt ("Sign in to see your groups, giving, and more.") and a **Sign In** button. The prompt shows even when your church hasn't set up anything else for Home yet. Your church can reword this prompt or hide it -- see [Mobile App Settings](../../b1-admin/settings/mobile-app.md#home-screen-sign-in-prompt). When it is hidden, you can still sign in from the **More** page or the **Me** page.
 
 ## The Bottom Tab Bar
 
@@ -55,7 +55,7 @@ Built-in screens (such as Groups, Giving, or Plans) get the tab slots first; any
 
 ### Folder Tabs {#folder-tabs}
 
-Your church can group several tabs into a **folder**. A folder appears like any other tab -- in the tab bar, on the **More** page, or as a photo tile on Home -- and tapping it opens a screen with the folder's name that lists the tabs inside it. If every tab in the folder has a photo, they are shown as photo tiles; otherwise they are shown as a list. Links to outside websites in a folder open in a new browser tab. Tabs inside a folder appear only on the folder's screen, not in the tab bar or on the **More** page. A folder with nothing in it that you can see is hidden.
+Your church can group several tabs into a **folder**. A folder appears like any other tab -- in the tab bar, on the **More** page, or as a photo tile on Home -- and tapping it opens a screen with the folder's name that lists the tabs inside it. Tabs that have a photo are shown first, each as a full-width photo banner, and the tabs without a photo are listed below them. Links to outside websites in a folder open in a new browser tab. Tabs inside a folder appear only on the folder's screen, not in the tab bar or on the **More** page. A folder with nothing in it that you can see is hidden.
 
 ## On a Computer
 

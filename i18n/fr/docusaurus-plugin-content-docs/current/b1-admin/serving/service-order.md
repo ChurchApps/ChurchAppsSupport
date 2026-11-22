@@ -14,7 +14,7 @@ L'ordre de service définit la séquence des éléments de votre culte. Utilisez
 
 ## Vidéo de formation {#training-video}
 
-<YouTube id="O-xjiLFPOvA" title="Construire l'ordre de service et la bibliothèque de chansons dans B1" next="Modèles de plans, tâches et flux de travail dans B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
+<YouTube id="U_SQeSjFvfQ" title="Construire l'ordre de service et la bibliothèque de chansons dans B1" next="Modèles de plans, tâches et flux de travail dans B1" nextUrl="/docs/b1-admin/serving/plan-templates" />
 
 <div class="prereqs">
 <h4>Avant de commencer</h4>

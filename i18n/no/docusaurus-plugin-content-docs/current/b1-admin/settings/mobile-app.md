@@ -13,7 +13,7 @@ Siden Innstillinger for mobilappen lar deg konfigurere navigasjonsfanene som vis
 
 ## Opplæringsvideo {#training-video}
 
-<YouTube id="ydY7WGK16fE" title="Tilpasse menighetens medlemsapp i B1" />
+<YouTube id="7x2CQG_pH6o" title="Tilpasse menighetens medlemsapp i B1" />
 
 :::info
 Faner som settes opp her, vises i B1-appen, som medlemmene kan [installere som en progressiv webapp (PWA)](../../b1-church/getting-started/installing-pwa.md). Del menighetens installasjonsside — `https://yourchurchname.b1.church/mobile/install` — med medlemmene; den veileder dem gjennom installasjonen av appen på enheten sin, uten at det kreves nedlasting fra App Store eller Google Play.
@@ -158,7 +158,7 @@ Fanene du konfigurerer her, vises i **B1.church-PWA-en** som medlemmene dine ins
 
 På telefon viser fanelinjen nederst **Hjem**, opptil tre av fanene dine, og **Mer**; på datamaskin viser topptekstlinjen opptil fem. Innebygde skjermer (som Preken, Gave eller Grupper) får plassene først, og faner av typen **Intern side** fyller ledige plasser. Faner av typen **Ekstern URL** og **Dagens vers** får aldri en plass. Alle faner, også de som ikke får plass, listes på appens side **Mer**.
 
-Faner som ligger inne i en fane av typen **Mappe**, er et unntak: de vises bare på mappens egen skjerm, som medlemmene åpner ved å trykke på mappen. Denne skjermen viser fanene som fliser med bilde når alle har et bilde, og ellers som en liste. En mappe som ikke inneholder faner et medlem kan se, er skjult for det medlemmet. Se [Mappefaner](../../b1-church/getting-started/navigating.md#folder-tabs). Se [Navigere i B1-appen](../../b1-church/getting-started/navigating.md) for hva medlemmene ser.
+Faner som ligger inne i en fane av typen **Mappe**, er et unntak: de vises bare på mappens egen skjerm, som medlemmene åpner ved å trykke på mappen. Denne skjermen viser hver fane som har et bilde, som et bannerbilde i full bredde, med fanene uten bilde listet under dem. En mappe som ikke inneholder faner et medlem kan se, er skjult for det medlemmet. Se [Mappefaner](../../b1-church/getting-started/navigating.md#folder-tabs). Se [Navigere i B1-appen](../../b1-church/getting-started/navigating.md) for hva medlemmene ser.
 
 ## Neste steg {#next-steps}
 

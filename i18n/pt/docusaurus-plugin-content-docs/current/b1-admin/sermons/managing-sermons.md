@@ -62,7 +62,7 @@ Cada registro de sermão pode incluir:
 - **Miniatura** -- Uma imagem de visualização exibida na sua biblioteca de sermões. Clique na imagem para recortá-la ou substituí-la (16:9).
 - **Título** -- O nome do sermão exibido aos visitantes
 - **Descrição** -- Um resumo do conteúdo do sermão
-- **URL do arquivo de áudio (para podcast)** -- Um link direto para um arquivo MP3/M4A deste sermão. Cole uma URL ou, depois que o sermão for salvo, clique em **Enviar áudio** para enviar um arquivo, que preencherá o campo automaticamente. Somente sermões com este campo (ou com um link direto para um arquivo de vídeo) preenchido são incluídos no seu feed de podcast.
+- **URL do arquivo de áudio (para podcast)** -- Um link direto para **um** arquivo MP3/M4A deste sermão. Este não é o lugar para o endereço de um feed de podcast; um feed colado aqui não será reproduzido. Para trazer um podcast inteiro, use a [Importação em massa](./bulk-import.md#importing-podcast-episodes). Cole uma URL ou, depois que o sermão for salvo, clique em **Enviar áudio** para enviar um arquivo, que preencherá o campo automaticamente. Somente sermões com este campo (ou com um link direto para um arquivo de vídeo) preenchido são incluídos no seu feed de podcast.
 
 ## Seu feed de podcast {#your-podcast-feed}
 

@@ -115,7 +115,10 @@ Variables सहेजने के बाद, Api सेवा अपने आ
 
 ```
 B1ADMIN_ROOT=https://admin.yourchurch.org
+B1APP_ROOT=https://app.yourchurch.org
 ```
+
+`B1APP_ROOT` सदस्य साइट का पता है, जिसका उपयोग योजना, पंजीकरण और रिमाइंडर ईमेल में और सूचनाओं में लिंक के लिए होता है। यह `https://{subdomain}.yourchurch.org` जैसा टेम्पलेट भी हो सकता है। यदि यह सेट नहीं है, तो वे लिंक `https://{subdomain}.b1.church` की ओर जाते हैं।
 
 और **B1Admin** सेवा पर:
 

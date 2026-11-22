@@ -55,7 +55,7 @@ Sa view na **Table**, nakalista ang mga tao ayon sa apelyido, pagkatapos ang una
 1. I-click ang isang **column header** (halimbawa, **Name** o **Email**) para i-sort ayon sa column na iyon.
 2. I-click muli ang parehong header para baligtarin ang direksyon ng pag-sort.
 
-Ang unang click ay nag-so-sort ng column nang pataas (A hanggang Z, pinakabata hanggang pinakamatanda, pinakaunang petsa muna), at ipinapakita ng arrow sa tabi ng header ang direksyon. Ang mga taong walang halaga sa column na iyon ay laging nasa huli. Ginagawa nitong madali ang paghahanap ng mga tao ayon sa alpabeto, edad, o anumang ibang nakikitang column.
+Ang unang click ay nag-so-sort ng column nang pataas (A hanggang Z, pinakabata hanggang pinakamatanda, pinakaunang petsa muna), at ipinapakita ng arrow sa tabi ng header ang direksyon. Ang mga taong walang halaga sa column na iyon ay laging nasa huli. Ginagawa nitong madali ang paghahanap ng mga tao ayon sa alpabeto, edad, o anumang ibang nakikitang column. Naaalala ng B1 ang pag-sort sa device na iyon, kaya nananatiling nakaayos ang table sa parehong paraan pagkatapos mong i-refresh ang page o bumalik sa ibang pagkakataon.
 
 ## Pag-customize ng mga Column {#customizing-columns}
 

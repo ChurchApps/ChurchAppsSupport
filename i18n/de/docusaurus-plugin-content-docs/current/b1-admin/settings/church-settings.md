@@ -94,6 +94,12 @@ Der SMS-Versand funktioniert am besten, wenn Nummern die Ländervorwahl enthalte
 
 Ihre Region gilt für Datums- und Zeitangaben in ganz B1 Admin sowie auf Ihrer B1.church-Website und im Mitgliederportal, einschließlich Predigten, Blogbeiträgen, Gruppenkalendern und Dienstplänen. So sehen Mitglieder Daten im selben Format wie Ihre Mitarbeitenden.
 
+### Gottesdiensttag {#worship-day}
+
+Im Abschnitt Region gibt es außerdem die Einstellung **Gottesdiensttag** für den Tag, an dem Ihr Hauptgottesdienst stattfindet. Sie steht auf **Sonntag**, solange Sie sie nicht ändern. Gemeinden, die am Samstag (oder an einem anderen Tag) Gottesdienst feiern, können diesen Tag wählen. Das Dashboard richtet sich dann danach: Die Hauptüberschrift lautet „Diesen Samstag“, die Seitenbereiche zeigen „Dienst am Samstag“ und „Letzter Samstag“, das angezeigte Gottesdienstdatum ist der kommende Samstag, und die Live-Anzeige „im Raum“ leuchtet bei Check-ins am Samstag auf.
+
+Wenn der Gottesdiensttag nicht Sonntag ist, zeigt auch der Eintrag Region in der linken Liste den Tag neben Ihrer Region an.
+
 ## SMS-Versand {#texting}
 
 Verbinden Sie einen SMS-Anbieter, um aus B1 Admin SMS an eine Person oder eine ganze Gruppe zu senden. Die Nachrichten werden über Ihr eigenes Konto beim Anbieter verschickt, daher gelten dessen Preise und Limits.

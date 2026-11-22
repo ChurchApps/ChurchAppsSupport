@@ -101,7 +101,7 @@ Haga clic en cualquier evento para ver sus detalles. Desde la vista de detalle d
 - **Los líderes** pueden editar los detalles del evento, cambiar los horarios o eliminar el evento.
 
 :::warning
-Eliminar un evento lo quita de forma permanente. Si necesita cancelar una sola ocurrencia de un evento recurrente, considere editarlo en su lugar.
+Eliminar un evento lo quita de forma permanente. Al editar o eliminar un evento recurrente, se le pregunta si desea cambiar **Solo esta fecha**, **Esta y todas las fechas siguientes** o **Todas las fechas**, para que pueda cancelar una sola reunión sin tocar el resto de la serie.
 :::
 
 ## Suscribirse al calendario {#subscribing-to-the-calendar}

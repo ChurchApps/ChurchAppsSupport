@@ -13,7 +13,7 @@ Os modelos de plano permitem salvar um retrato reutilizável da ordem do culto o
 
 ## Vídeo de treinamento {#training-video}
 
-<YouTube id="p8O9e4y7geA" title="Modelos de plano, tarefas e fluxos de trabalho no B1" next="Criando calendários, eventos e reservas de salas no B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
+<YouTube id="b-g4Q9TsGPI" title="Modelos de plano, tarefas e fluxos de trabalho no B1" next="Criando calendários, eventos e reservas de salas no B1" nextUrl="/docs/b1-admin/calendars/creating-calendars" />
 
 <div class="prereqs">
 <h4>Antes de começar</h4>

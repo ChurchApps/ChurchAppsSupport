@@ -23,7 +23,7 @@ Sa itaas ng screen, makikita mo ang mga setting na nalalapat sa lahat:
 
 - **Delivery**
   - **Push notifications** -- Ina-on o ina-off ang push notifications para sa iyong account. Para i-set up ang push sa device na ginagamit mo, i-on ito mula sa iyong inbox -- tingnan ang [Push Notifications sa Device na Ito](#push-notifications-on-this-device).
-  - **Text messages** -- Ipinapakita lamang kung nakapag-set up ng texting ang iyong simbahan. I-on ito para makatanggap ng paalala sa paglilingkod at event sa pamamagitan ng text sa mobile number na nasa iyong profile. Naka-off ito hanggang i-on mo.
+  - **Text messages** -- Ipinapakita lamang kung nakapag-set up ng texting ang iyong simbahan. I-on ito para makatanggap ng paalala sa paglilingkod at event sa pamamagitan ng text sa mobile number na nasa iyong profile. Naka-off ito hanggang i-on mo. Maaari ding i-on o i-off ito para sa iyo ng staff ng simbahan mula sa iyong record sa B1 Admin.
   - **Mute all notifications** -- Pansamantalang pinatatahimik ang bawat channel hanggang i-off mo ulit.
 - **Email** -- Pumili ng **Email frequency**:
   - **Per notification** -- Magpadala ng email habang nangyayari ang mga bagay.

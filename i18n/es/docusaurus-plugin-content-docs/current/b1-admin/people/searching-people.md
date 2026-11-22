@@ -55,7 +55,7 @@ En la vista **Table**, las personas aparecen ordenadas por apellido y luego por 
 1. Haga clic en un **encabezado de columna** (por ejemplo, **Name** o **Email**) para ordenar por esa columna.
 2. Haga clic de nuevo en el mismo encabezado para invertir el orden.
 
-El primer clic ordena la columna en orden ascendente (de la A a la Z, de menor a mayor edad, la fecha más antigua primero), y la flecha junto al encabezado indica la dirección. Las personas sin valor en esa columna siempre aparecen al final. Así es fácil encontrar personas por orden alfabético, por edad o por cualquier otra columna visible.
+El primer clic ordena la columna en orden ascendente (de la A a la Z, de menor a mayor edad, la fecha más antigua primero), y la flecha junto al encabezado indica la dirección. Las personas sin valor en esa columna siempre aparecen al final. Así es fácil encontrar personas por orden alfabético, por edad o por cualquier otra columna visible. B1 recuerda el orden en ese dispositivo, así que la tabla se mantiene ordenada de la misma forma después de actualizar la página o al volver más tarde.
 
 ## Personalizar columnas {#customizing-columns}
 

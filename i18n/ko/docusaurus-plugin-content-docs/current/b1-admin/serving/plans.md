@@ -13,7 +13,7 @@ description: "B1 Admin에서 자원봉사 일정 설정하기: 날짜별 예배 
 
 ## 교육 동영상 {#training-video}
 
-<YouTube id="47DstBXKl74" title="B1에서 계획 만들기 및 자원봉사자 일정 잡기" next="B1에서 예배 순서와 찬양곡 라이브러리 만들기" nextUrl="/docs/b1-admin/serving/service-order" />
+<YouTube id="_ekj0UR6H5g" title="B1에서 계획 만들기 및 자원봉사자 일정 잡기" next="B1에서 예배 순서와 찬양곡 라이브러리 만들기" nextUrl="/docs/b1-admin/serving/service-order" />
 
 <div class="prereqs">
 <h4>시작하기 전에</h4>
@@ -141,7 +141,7 @@ B1은 자원봉사자가 배정된 예배 전에 자동으로 알림을 보낼 �
 
 ### 문자 알림 {#text-reminders}
 
-**Text**(문자) 옵션은 교회에 문자 서비스 제공자가 연결되어 있을 때만 나타납니다. 문자는 교회의 문자 서비스 제공자를 통해 발송되며, 문자 한 통마다 교회에 비용이 발생할 수 있습니다. 자원봉사자는 [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 **Text messages**(문자 메시지)를 켜 두고 프로필에 휴대폰 번호가 있어야만 문자 알림을 받습니다. 모든 문자는 교회 이름으로 시작하며, 단일 문자 메시지로 보내지고, "Reply STOP to opt out."(수신 거부는 STOP으로 답장하세요.)로 끝납니다. STOP으로 답장한 사람은 교회로부터 더 이상 문자를 받지 않습니다. STOP 답장이 B1에 전달되도록 하려면, [문자 설정](../settings/church-settings.md#texting)에 있는 **Inbound (STOP) webhook URL**(수신(STOP) 웹훅 URL)을 제공자의 수신 메시지 웹훅에 붙여 넣으세요.
+**Text**(문자) 옵션은 교회에 문자 서비스 제공자가 연결되어 있을 때만 나타납니다. 문자는 교회의 문자 서비스 제공자를 통해 발송되며, 문자 한 통마다 교회에 비용이 발생할 수 있습니다. 자원봉사자는 [알림 설정](../../b1-church/getting-started/notification-preferences.md)에서 **Text messages**(문자 메시지)를 켜 두고 프로필에 휴대폰 번호가 있어야만 문자 알림을 받습니다. 문자 메시지를 보낼 권한이 있는 직원은 자원봉사자의 [기록](../people/adding-people.md#text-reminders)에서 자원봉사자의 **Text reminders**를 켤 수 있습니다. 모든 문자는 교회 이름으로 시작하며, 단일 문자 메시지로 보내지고, "Reply STOP to opt out."(수신 거부는 STOP으로 답장하세요.)로 끝납니다. STOP으로 답장한 사람은 교회로부터 더 이상 문자를 받지 않습니다. STOP 답장이 B1에 전달되도록 하려면, [문자 설정](../settings/church-settings.md#texting)에 있는 **Inbound (STOP) webhook URL**(수신(STOP) 웹훅 URL)을 제공자의 수신 메시지 웹훅에 붙여 넣으세요.
 
 일정이 잡힌 모든 사람에게 특정 날짜 범위의 문자를 바로 보내려면, [계획 개요](./plans-overview.md#texting-everyone-scheduled)의 **Text Volunteers**(자원봉사자에게 문자 보내기)를 사용하세요.
 

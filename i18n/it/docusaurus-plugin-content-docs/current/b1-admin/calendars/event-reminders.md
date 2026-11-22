@@ -70,6 +70,8 @@ Il canale **SMS** compare solo quando la tua chiesa ha collegato un fornitore di
 - Hanno attivato **Messaggi di testo** nelle proprie [Preferenze di notifica](../../b1-church/getting-started/notification-preferences.md), e
 - Hanno un numero di cellulare nel proprio profilo.
 
+Il personale con il permesso di inviare SMS può attivare **Promemoria via SMS** per una persona dalla [scheda](../people/adding-people.md#text-reminders) della persona, nella riga sotto il suo numero di cellulare. Quando fai clic su **Invia ora** per un promemoria che include **SMS**, B1 mostra quante persone hanno ricevuto il messaggio e quante sono state saltate, ad esempio *Inviato a 2 persone · 1 con SMS, 1 saltata*.
+
 Ogni SMS inizia con il nome della tua chiesa, è contenuto in un singolo messaggio e termina con "Rispondi STOP per disiscriverti." Chi risponde STOP smette di ricevere SMS dalla tua chiesa. Perché le risposte STOP arrivino a B1, incolla l'**URL del webhook dei messaggi in arrivo (STOP)** dalle tue [impostazioni SMS](../settings/church-settings.md#texting) nel webhook dei messaggi in arrivo del tuo fornitore.
 
 ## Cosa possono controllare i membri {#what-members-can-control}

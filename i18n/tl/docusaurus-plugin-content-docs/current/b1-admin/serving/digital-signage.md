@@ -44,10 +44,10 @@ Kung ang iyong mga screen ay gumagamit ng [FreePlay](../../freeplay/index.md), h
 3. Sa ilalim ng **Play**, piliin ang iyong uri ng plan mula sa **Service plans**. Makikita ang markang **(current plan)**.
 4. Itakda ang mga araw at oras, pagkatapos i-click ang **Save**.
 
-Ipinapakita ng mga TV ang kasalukuyang plan para sa uri ng plan na iyon tuwing linggo, sa mga oras na itinakda mo. Gumagana rin ito sa mga lesson ng Go Curriculum, kasama ang mga plan na in-customize mo. Nag-sa-sign in ang FreePlay gamit ang Go Curriculum account na naka-link sa ministry sa ilalim ng **Content Providers** (tingnan ang [Scheduling Lessons](./scheduling-lessons.md)), o ang koneksyon ng simbahan sa Go Curriculum kung walang naka-link sa ministry. Tingnan ang [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para sa lahat ng opsyon, at ang [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) para magdagdag ng TV.
+Ipinapakita ng mga TV ang kasalukuyang plan para sa uri ng plan na iyon tuwing linggo, sa mga oras na itinakda mo. Gumagana rin ito sa mga lesson ng GO! Curriculum, kasama ang mga plan na in-customize mo. Nag-sa-sign in ang FreePlay gamit ang GO! Curriculum account na naka-link sa ministry sa ilalim ng **Content Providers** (tingnan ang [Scheduling Lessons](./scheduling-lessons.md)), o ang koneksyon ng simbahan sa GO! Curriculum kung walang naka-link sa ministry. Tingnan ang [Scheduling the Calendar](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para sa lahat ng opsyon, at ang [Pairing a Screen](../../freeplay/scheduled-mode/pairing-a-screen.md) para magdagdag ng TV.
 
 :::note
-Hindi kasama sa feed URL ang media ng Go Curriculum, dahil kailangan ng nilalamang iyon ang login ng simbahan mo sa Go Curriculum. Para maipakita ang lesson ng Go Curriculum sa TV sa lobby o classroom, gamitin ang FreePlay.
+Hindi kasama sa feed URL ang media ng GO! Curriculum, dahil kailangan ng nilalamang iyon ang login ng simbahan mo sa GO! Curriculum. Para maipakita ang lesson ng GO! Curriculum sa TV sa lobby o classroom, gamitin ang FreePlay.
 :::
 
 ## Mga Susunod na Hakbang

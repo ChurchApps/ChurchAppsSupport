@@ -19,7 +19,7 @@ FreePlay에는 현재 다음 제공자가 포함되어 있습니다:
 - **Bible Project** - 성경을 탐구하는 동영상과 자료
 - **SignPresenter** - 교회를 위한 프레젠테이션 및 사이니지 콘텐츠
 - **B1.church** - 자신의 B1 교회 설정에서 가져온 콘텐츠
-- **Go Curriculum** - gocurriculum.com의 커리큘럼으로, 연령대(**Elementary**와 **Preschool**)별로 나뉘고, 그 아래에 컬렉션과 수업이 정리되어 있습니다. Go 멤버십에 포함된 연령대와 동영상만 표시됩니다.
+- **GO! Curriculum** - gocurriculum.com의 커리큘럼으로, 연령대(**Elementary**와 **Preschool**)별로 나뉘고, 그 아래에 컬렉션과 수업이 정리되어 있습니다. Go 멤버십에 포함된 연령대와 동영상만 표시됩니다.
 - **Dropbox** - 자신의 Dropbox에 있는 이미지와 동영상을 찾아보고 재생
 - **Jesus Film Project** - Jesus Film Project의 영화 및 동영상 클립
 - **OneDrive** - 자신의 Microsoft OneDrive에 있는 이미지, 동영상, 오디오를 찾아보고 재생

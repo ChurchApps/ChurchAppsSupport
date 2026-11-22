@@ -32,9 +32,13 @@ Spenden erfassen Sie in B1 Admin über das System der Stapel. Sie legen einen St
 ## Einzelne Spenden eingeben {#entering-individual-donations}
 
 1. Auf der Detailseite des Stapels erscheint das Eingabefeld für Spenden neben der Liste der Spenden. Geben Sie unter **Person oder anonym auswählen** den Namen des Spendenden in das Suchfeld ein, um ihn zu finden, oder klicken Sie auf **Anonym**. (Ein Klick auf **Spende hinzufügen** oben auf der Seite springt zu diesem Feld.)
-2. Nachdem Sie eine Person gewählt haben, zeigt das Formular die Felder **Datum** (beginnt mit dem Datum des Stapels), **Art** (Scheck, Bargeld, Karte oder Sachspende), **Fonds** (wird angezeigt, wenn Ihre Kirche mehr als einen Fonds hat), **Notizen**, **Betrag** sowie **Scheck-Nr.** (bzw. **Letzte 4 Ziffern** bei Kartengaben oder **Gegenstand** zur Beschreibung einer Sachspende; Bargeldgaben haben kein Detailfeld). Klicken Sie neben dem Namen des Spendenden auf **Ändern**, um eine andere Person zu wählen.
+2. Nachdem Sie eine Person gewählt haben, zeigt das Formular die Felder **Datum** (beginnt mit dem Datum des Stapels), **Art** (Scheck, Bargeld, Karte oder Sachspende), **Fonds** (wird angezeigt, wenn Ihre Kirche mehr als einen Fonds hat), **Memo (wird auf der Bescheinigung gedruckt)**, **Notizen (intern)**, **Betrag** sowie **Scheck-Nr.** (bzw. **Letzte 4 Ziffern** bei Kartengaben oder **Gegenstand** zur Beschreibung einer Sachspende; Bargeldgaben haben kein Detailfeld). Klicken Sie neben dem Namen des Spendenden auf **Ändern**, um eine andere Person zu wählen.
 3. Füllen Sie die Angaben aus und klicken Sie auf **Spende hinzufügen** (oder drücken Sie die Eingabetaste). Ist der Betrag leer oder null, fordert das Formular einen Betrag größer als null, statt zu speichern.
-4. Die Spende wird der Liste hinzugefügt, und das Formular wird zurückgesetzt, damit Sie die nächste eingeben können. Datum, Art, Fonds und Notizen bleiben so, wie Sie sie eingestellt haben. Bei einem Stapel ähnlicher Schecks müssen Sie nur noch Spendenden, Betrag und Schecknummer eingeben.
+4. Die Spende wird der Liste hinzugefügt, und das Formular wird zurückgesetzt, damit Sie die nächste eingeben können. Datum, Art, Fonds, Memo und Notizen bleiben so, wie Sie sie eingestellt haben. Bei einem Stapel ähnlicher Schecks müssen Sie nur noch Spendenden, Betrag und Schecknummer eingeben.
+
+:::tip Memo oder Notizen?
+Das **Memo** wird auf der Spendenbescheinigung und der Quittung neben der Gabe gedruckt. Verwenden Sie es für das, was der Spendende sehen soll, etwa den Zweck einer zweckgebundenen Gabe („Jugendreise“). **Notizen** sind nur für Ihre Mitarbeitenden bestimmt und werden nie gedruckt. Wenn jemand online gibt, wird alles, was er im Memo-Feld des Gabenformulars eingibt, als Memo der Gabe gespeichert.
+:::
 
 :::info
 Ist der Stapel [geschlossen](batches.md#closing-and-reopening-a-batch), sind das Eingabefeld und die Links **Bearbeiten** für alle ausgeblendet, die nicht **Spenden bearbeiten** haben, und ein Hinweis oben im Stapel zeigt, dass er geschlossen ist. Bitten Sie jemanden mit **Spenden bearbeiten**, ihn wieder zu öffnen.
@@ -91,7 +95,7 @@ Das Aufteilen von Spenden auf mehrere Fonds ist üblich, wenn ein Spendender ein
 
 ## Spenden bearbeiten oder entfernen {#editing-or-removing-donations}
 
-Um eine Spende zu bearbeiten, klicken Sie in ihrer Zeile im Stapel auf die Schaltfläche **Bearbeiten**. Sie können Datum, Betrag, Fonds, Zahlungsart (Scheck, Bargeld, Karte oder Sachspende) oder andere Angaben ändern. Bei einer Sachspende beschriftet der Editor das Detailfeld als **Gegenstand**, damit Sie beschreiben können, was gegeben wurde. Klicken Sie auf **Speichern**, wenn Sie fertig sind.
+Um eine Spende zu bearbeiten, klicken Sie in ihrer Zeile im Stapel auf die Schaltfläche **Bearbeiten**. Sie können Datum, Betrag, Fonds, Zahlungsart (Scheck, Bargeld, Karte oder Sachspende) oder andere Angaben ändern, einschließlich des **Memos** und der **Notizen**. Bei einer Sachspende beschriftet der Editor das Detailfeld als **Gegenstand**, damit Sie beschreiben können, was gegeben wurde. Klicken Sie auf **Speichern**, wenn Sie fertig sind.
 
 :::tip
 Die Zeile unter dem Stapelnamen oben auf der Seite aktualisiert sich automatisch und zeigt das Datum des Stapels, die Anzahl der Gaben und den kombinierten Geldbetrag, während Sie Einträge hinzufügen oder ändern. Nutzen Sie sie, um mit Ihrem Einzahlungsbeleg abzugleichen.
@@ -123,7 +127,7 @@ Wenn jemand einen Scheck abgibt, für eine Veranstaltung oder ein T-Shirt bezahl
 2. Klicken Sie in der Zeile der Spende neben **Bearbeiten** auf **Quittung**. Sie können auch unten im Formular „Spende bearbeiten“ auf **Quittung** klicken.
 3. Klicken Sie auf **Drucken** oder auf **Schließen**, um zurückzukehren.
 
-Die Quittung verwendet dasselbe Layout wie die Spendenbescheinigung: Ihre Kirche und den Spendenden (oder „Anonym“), Datum und Art der Gabe, jeden Fonds und Betrag, die Notiz, Ihren Gebehinweis und den offiziellen Belegblock, sofern Sie ein **Bescheinigungsformat** festgelegt haben (siehe [Spendenbescheinigungen](giving-statements.md)). Die Belegnummer in diesem Block ist die ID der Spende.
+Die Quittung verwendet dasselbe Layout wie die Spendenbescheinigung: Ihre Kirche und den Spendenden (oder „Anonym“), Datum und Art der Gabe, jeden Fonds und Betrag, das Memo der Gabe (falls vorhanden), Ihren Gebehinweis und den offiziellen Belegblock, sofern Sie ein **Bescheinigungsformat** festgelegt haben (siehe [Spendenbescheinigungen](giving-statements.md)). Die Belegnummer in diesem Block ist die ID der Spende.
 
 :::info
 Der Hinweis „keine Waren oder Dienstleistungen“ wird nur gedruckt, wenn alle Fonds der Gabe als steuerlich absetzbar markiert sind. Ist ein Teil der Gabe an einen nicht absetzbaren Fonds gegangen, etwa für eine Veranstaltungsgebühr oder einen Kauf, lässt die Quittung diesen Hinweis weg, damit sie als Zahlung und nicht als Spende gelesen wird.

@@ -33,13 +33,17 @@ Bukas na gawain lamang ang ipinapakita bilang default. Piliin ang **Closed** sa 
 
 1. Sa pahinang **My Work**, i-click ang **Add Task**. Magbubukas ang form na **New Task**.
 2. Opsyonal na i-click ang kahong **Associate with** at piliin ang taong o grupong tungkol sa gawain. Iwanang blangko kung simpleng to-do ito na hindi tungkol sa sinuman, gaya ng paalala para sa sarili mo.
-3. I-click ang kahong **Assign to**. Sa window na **Select a Person or Group**, maghanap sa tab na **Person**, o lumipat sa tab na **Group** at maghanap ng grupo, pagkatapos piliin ang resulta.
+3. I-click ang kahong **Assign to**. Sa window na **Select people or a group**, maghanap sa tab na **Person**, o lumipat sa tab na **Group** at maghanap ng grupo, pagkatapos piliin ang resulta.
 4. Ilagay ang **Title** ng gawain.
 5. Opsyonal na pumili ng **Due date**.
 6. Magdagdag ng **Notes** na may anumang detalye o tagubilin para sa taong naitalaga.
 7. I-click ang **Save**.
 
 Lalabas na ngayon ang gawain sa listahan ng gawain at makikita ito ng naitalagang tao sa kanyang dashboard at mobile app.
+
+:::tip
+Parehong tumatanggap ng maraming tao ang **Associate with** at **Assign to**. Patuloy na pumili ng mga tao sa window, pagkatapos i-click ang **Done**; lalabas sila bilang mga chip sa ilalim ng kahon. Sa tab na **Group**, lagyan ng check ang **Create a separate task for each member** para idagdag ang lahat ng nasa grupo. Gumagawa ang **Save** ng isang gawain para sa bawat tao, at kapag maraming tao ang nasa parehong kahon, bawat assignee ay makakakuha ng gawain para sa bawat kaugnay na tao (dalawang assignee at tatlong tao ay anim na gawain). Ang pag-edit ng gawaing nagawa mo na ay nagbabago pa rin ng isang tao sa bawat pagkakataon.
+:::
 
 ## Pamamahala ng Gawain {#managing-a-task}
 
@@ -63,7 +67,9 @@ Ang gawaing may due date ay maaaring magpaalala sa naitalagang tao bago ito suma
 5. Sa ilalim ng **Send By**, piliin ang **Push**, **Email**, at, kung may nakakabit na [texting provider](../settings/church-settings.md#texting) ang simbahan mo, **Text**.
 6. I-click ang **Save Reminders**.
 
-Kung walang due date ang gawain, babalaan ka ng B1 na walang paalalang ipapadala hanggang may nakatakdang petsa sa field na **Due**. Ang mga text reminder ay umaabot lamang sa mga taong nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at maaaring magkaroon ng gastos ang simbahan mo sa bawat text.
+Kung walang due date ang gawain, babalaan ka ng B1 na walang paalalang ipapadala hanggang may nakatakdang petsa sa field na **Due**. Ang mga text reminder ay umaabot lamang sa mga taong nag-on ng **Text messages** sa kanilang [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), at maaaring magkaroon ng gastos ang simbahan mo sa bawat text. Maaaring i-on ng staff na may pahintulot magpadala ng text ang **Text reminders** para sa isang tao mula sa [record](../people/adding-people.md#text-reminders) ng taong iyon, sa linya sa ilalim ng kanyang mobile number.
+
+Para magpadala agad ng naka-save na paalala, i-click ang **Send now**. Kapag kasama sa paalala ang **Text**, ipinapakita ng B1 kung ilang tao ang napaalalahanan at kung ilan ang na-text at nilaktawan, halimbawa *Sent to 2 people · 1 texted, 1 skipped*. Nilalaktawan ang mga taong naka-off ang **Text messages**, walang mobile number, o sumagot ng STOP.
 
 ## Buhay ng Gawain {#task-lifecycle}
 

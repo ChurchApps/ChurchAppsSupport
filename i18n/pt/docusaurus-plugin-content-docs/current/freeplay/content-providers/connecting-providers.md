@@ -53,11 +53,11 @@ Um indicador pulsante **Aguardando confirmação** mostra que o FreePlay está v
 
 ## Login pelo celular (somente QR code) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive** e **Go Curriculum** usam um login por QR code um pouco diferente, sem nenhum código para digitar:
+**Dropbox**, **OneDrive** e **GO! Curriculum** usam um login por QR code um pouco diferente, sem nenhum código para digitar:
 
 1. Selecione o cartão do provedor na tela **Provedores de conteúdo**
 2. O FreePlay mostra uma tela **Conectar a** com o nome do provedor e um QR code
-3. Leia o QR code com o seu celular e entre na sua conta desse provedor (sua conta Microsoft para o OneDrive, ou sua conta gocurriculum.com para o Go Curriculum)
+3. Leia o QR code com o seu celular e entre na sua conta desse provedor (sua conta Microsoft para o OneDrive, ou sua conta gocurriculum.com para o GO! Curriculum)
 4. Aprove o acesso. A TV se conecta automaticamente e exibe **Conectado!**
 
 A tela mostra quantos minutos você tem para concluir o login.

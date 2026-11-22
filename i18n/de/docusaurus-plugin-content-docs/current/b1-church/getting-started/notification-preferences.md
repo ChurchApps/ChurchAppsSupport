@@ -23,7 +23,7 @@ Oben auf dem Bildschirm findest du Einstellungen, die für alles gelten:
 
 - **Zustellung**
   - **Push-Benachrichtigungen** -- Schaltet Push-Benachrichtigungen für dein Konto ein oder aus. Um Push auf dem Gerät einzurichten, das du gerade verwendest, schalte es in deinem Posteingang ein -- siehe [Push-Benachrichtigungen auf diesem Gerät](#push-notifications-on-this-device).
-  - **Textnachrichten** -- Wird nur angezeigt, wenn deine Gemeinde den Textversand eingerichtet hat. Schalte dies ein, um Dienst- und Veranstaltungserinnerungen per SMS an die Mobilnummer in deinem Profil zu erhalten. Es ist ausgeschaltet, bis du es einschaltest.
+  - **Textnachrichten** -- Wird nur angezeigt, wenn deine Gemeinde den Textversand eingerichtet hat. Schalte dies ein, um Dienst- und Veranstaltungserinnerungen per SMS an die Mobilnummer in deinem Profil zu erhalten. Es ist ausgeschaltet, bis du es einschaltest. Mitarbeitende deiner Gemeinde können es auch in deinem Datensatz im B1 Admin für dich ein- oder ausschalten.
   - **Alle Benachrichtigungen stummschalten** -- Schaltet jeden Kanal vorübergehend stumm, bis du es wieder ausschaltest.
 - **E-Mail** -- Wähle eine **E-Mail-Häufigkeit**:
   - **Pro Benachrichtigung** -- Sende eine E-Mail, sobald etwas passiert.

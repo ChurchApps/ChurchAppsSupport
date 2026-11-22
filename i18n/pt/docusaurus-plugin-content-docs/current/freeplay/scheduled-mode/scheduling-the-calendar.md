@@ -57,7 +57,7 @@ Depois, preencha o formulário:
 
 1. **Reproduzir** - Escolha o que será reproduzido:
    - **Playlists** - Qualquer playlist que você tenha criado
-   - **Planos de culto** - Um tipo de plano do B1 Admin, marcado como **(plano atual)**. A tela reproduz o plano que estiver atual para aquele tipo de plano a cada semana, incluindo as lições do Go Curriculum (inclusive as personalizadas), que usam o login do Go vinculado ao ministério do tipo de plano
+   - **Planos de culto** - Um tipo de plano do B1 Admin, marcado como **(plano atual)**. A tela reproduz o plano que estiver atual para aquele tipo de plano a cada semana, incluindo as lições do GO! Curriculum (inclusive as personalizadas), que usam o login do Go vinculado ao ministério do tipo de plano
    - **Pasta de provedor…** - Abre **Escolha uma pasta de provedor**. Navegue até uma pasta e clique em **Usar esta pasta**. Para escolher outra pasta depois, clique em **Alterar**
 2. **Repete** - Selecione os dias da semana em que esta programação será reproduzida. Para uma data única, ative **Uma vez** e escolha a **Data**.
 3. **Início** e **Fim** - Os horários em que a programação começa e termina.

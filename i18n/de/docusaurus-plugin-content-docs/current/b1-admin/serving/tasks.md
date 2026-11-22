@@ -33,13 +33,17 @@ Standardmäßig werden nur offene Aufgaben angezeigt. Wählen Sie oberhalb der L
 
 1. Klicken Sie auf der Seite **Meine Arbeit** auf **Aufgabe hinzufügen**. Das Formular **Neue Aufgabe** öffnet sich.
 2. Klicken Sie optional in das Feld **Zugehörig zu** und wählen Sie die Person oder Gruppe, um die es in der Aufgabe geht. Lassen Sie das Feld leer für eine einfache Aufgabe, die niemanden betrifft, etwa eine Erinnerung für sich selbst.
-3. Klicken Sie in das Feld **Zuweisen an**. Suchen Sie im Fenster **Person oder Gruppe auswählen** auf dem Reiter **Person** oder wechseln Sie zum Reiter **Gruppe** und suchen Sie dort nach einer Gruppe. Wählen Sie dann das Ergebnis aus.
+3. Klicken Sie in das Feld **Zuweisen an**. Suchen Sie im Fenster **Personen oder eine Gruppe auswählen** auf dem Reiter **Person** oder wechseln Sie zum Reiter **Gruppe** und suchen Sie dort nach einer Gruppe. Wählen Sie dann das Ergebnis aus.
 4. Geben Sie einen **Titel** für die Aufgabe ein.
 5. Wählen Sie optional ein **Fälligkeitsdatum**.
 6. Fügen Sie unter **Notizen** Details oder Anweisungen für die zuständige Person hinzu.
 7. Klicken Sie auf **Speichern**.
 
 Die Aufgabe erscheint nun in der Aufgabenliste und ist für die zuständige Person auf ihrem Dashboard und in der mobilen App sichtbar.
+
+:::tip
+Sowohl **Zugehörig zu** als auch **Zuweisen an** nehmen mehrere Personen auf. Wählen Sie im Fenster weiter Personen aus und klicken Sie dann auf **Fertig**; sie werden als Chips unter dem Feld angezeigt. Aktivieren Sie auf dem Reiter **Gruppe** das Kästchen **Für jedes Mitglied eine eigene Aufgabe erstellen**, um alle Personen einer Gruppe hinzuzufügen. **Speichern** erstellt eine Aufgabe für jede Person; wenn in beiden Feldern mehrere Personen stehen, erhält jede zuständige Person eine Aufgabe für jede zugehörige Person (zwei zuständige und drei zugehörige Personen ergeben sechs Aufgaben). Das Bearbeiten einer bereits erstellten Aufgabe ändert weiterhin jeweils nur eine Person.
+:::
 
 ## Eine Aufgabe verwalten {#managing-a-task}
 
@@ -63,7 +67,9 @@ Eine Aufgabe mit Fälligkeitsdatum kann ihre zuständige Person vor dem Termin e
 5. Wählen Sie unter **Senden über** **Push**, **E-Mail** und, falls Ihre Gemeinde einen [SMS-Anbieter](../settings/church-settings.md#texting) verbunden hat, **SMS**.
 6. Klicken Sie auf **Erinnerungen speichern**.
 
-Hat die Aufgabe kein Fälligkeitsdatum, warnt B1 Sie, dass keine Erinnerungen versendet werden, bis im Feld **Fällig** ein Datum gesetzt ist. SMS-Erinnerungen erreichen nur Personen, die unter ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) die **Textnachrichten** aktiviert haben, und jede SMS kann Ihre Gemeinde Geld kosten.
+Hat die Aufgabe kein Fälligkeitsdatum, warnt B1 Sie, dass keine Erinnerungen versendet werden, bis im Feld **Fällig** ein Datum gesetzt ist. SMS-Erinnerungen erreichen nur Personen, die unter ihren [Benachrichtigungseinstellungen](../../b1-church/getting-started/notification-preferences.md) die **Textnachrichten** aktiviert haben, und jede SMS kann Ihre Gemeinde Geld kosten. Mitarbeitende mit der Berechtigung, SMS zu senden, können für eine Person über deren [Datensatz](../people/adding-people.md#text-reminders) die **SMS-Erinnerungen** einschalten, in der Zeile unter ihrer Mobilnummer.
+
+Um eine gespeicherte Erinnerung sofort zu senden, klicken Sie auf **Jetzt senden**. Enthält die Erinnerung **SMS**, zeigt B1 an, wie vielen Personen eine Erinnerung gesendet wurde und wie viele eine SMS erhalten bzw. übersprungen wurden, zum Beispiel *An 2 Personen gesendet · 1 per SMS, 1 übersprungen*. Personen werden übersprungen, wenn sie **Textnachrichten** ausgeschaltet haben, keine Mobilnummer hinterlegt ist oder sie mit STOP geantwortet haben.
 
 ## Lebenszyklus einer Aufgabe {#task-lifecycle}
 

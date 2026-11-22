@@ -115,7 +115,10 @@ Luego actualice las variables del servicio **Api** para que los enlaces de los c
 
 ```
 B1ADMIN_ROOT=https://admin.suiglesia.org
+B1APP_ROOT=https://app.suiglesia.org
 ```
+
+`B1APP_ROOT` es la dirección del sitio para miembros, que se usa en los enlaces de los correos de planes, registros y recordatorios, y en las notificaciones. También puede ser una plantilla como `https://{subdomain}.suiglesia.org`. Si no está configurada, esos enlaces apuntan a `https://{subdomain}.b1.church`.
 
 Y en el servicio **B1Admin**:
 

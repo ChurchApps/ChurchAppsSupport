@@ -32,9 +32,13 @@ Registrar doações no B1 Admin é feito pelo sistema de Lotes. Você cria um lo
 ## Lançando Doações Individuais {#entering-individual-donations}
 
 1. Na página de detalhes do lote, o painel de lançamento de doações aparece ao lado da lista de doações. Em **Selecione a pessoa ou anônimo**, digite o nome do doador no campo de busca para encontrá-lo, ou clique em **Anônimo**. (Clicar em **Adicionar Doação** no topo da página leva a este painel.)
-2. Depois de selecionar uma pessoa, o formulário de lançamento mostra os campos **Data** (começando na data do lote), **Forma** (Cheque, Dinheiro, Cartão ou Em bens), **Fundo** (exibido quando a sua igreja tem mais de um fundo), **Observações**, **Valor** e **Nº do cheque** (ou **Últimos 4 dígitos** para doações com cartão, ou **Item** para descrever uma doação em bens; as doações em dinheiro não têm campo de detalhe). Clique em **Alterar**, ao lado do nome do doador, para escolher outra pessoa.
+2. Depois de selecionar uma pessoa, o formulário de lançamento mostra os campos **Data** (começando na data do lote), **Forma** (Cheque, Dinheiro, Cartão ou Em bens), **Fundo** (exibido quando a sua igreja tem mais de um fundo), **Memorando (aparece no recibo)**, **Observações (interno)**, **Valor** e **Nº do cheque** (ou **Últimos 4 dígitos** para doações com cartão, ou **Item** para descrever uma doação em bens; as doações em dinheiro não têm campo de detalhe). Clique em **Alterar**, ao lado do nome do doador, para escolher outra pessoa.
 3. Preencha os dados e clique em **Adicionar Doação** (ou pressione Enter). Se o valor estiver vazio ou for zero, o formulário pedirá um valor maior que zero em vez de salvar.
-4. A doação é incluída na lista de doações, e o formulário é limpo para que você lance a próxima. A data, a forma, o fundo e as observações permanecem como você definiu, de modo que uma pilha de cheques semelhantes exige apenas o doador, o valor e o número do cheque.
+4. A doação é incluída na lista de doações, e o formulário é limpo para que você lance a próxima. A data, a forma, o fundo, o memorando e as observações permanecem como você definiu, de modo que uma pilha de cheques semelhantes exige apenas o doador, o valor e o número do cheque.
+
+:::tip Memorando ou Observações?
+O **Memorando** é impresso no recibo de doação do doador, ao lado da contribuição. Use-o para o que o doador deve ver, como a finalidade de uma doação destinada a um fim específico ("Viagem da juventude"). As **Observações** são apenas para a sua equipe e nunca são impressas. Quando alguém contribui online, o que a pessoa digitar na caixa de memorando do formulário de doação é salvo como o memorando da contribuição.
+:::
 
 :::info
 Se o lote tiver sido [fechado](batches.md#closing-and-reopening-a-batch), o painel de lançamento e os links **Editar** ficam ocultos para quem não tem a permissão **Editar Doações**, e um aviso no topo do lote informa que ele está fechado. Peça a alguém com a permissão **Editar Doações** para reabri-lo.
@@ -91,7 +95,7 @@ Dividir doações entre fundos é comum quando um doador emite um único cheque 
 
 ## Editando ou Removendo Doações {#editing-or-removing-donations}
 
-Para editar uma doação, clique no botão **Editar** na linha dela no lote. Você pode alterar a data, o valor, o fundo, a forma de pagamento (Cheque, Dinheiro, Cartão ou Em bens) ou qualquer outro detalhe. Para uma doação em bens, o editor rotula o campo de detalhe como **Item**, para que você descreva o que foi doado. Clique em **Salvar** quando terminar.
+Para editar uma doação, clique no botão **Editar** na linha dela no lote. Você pode alterar a data, o valor, o fundo, a forma de pagamento (Cheque, Dinheiro, Cartão ou Em bens) ou qualquer outro detalhe, incluindo o **Memorando** e as **Observações**. Para uma doação em bens, o editor rotula o campo de detalhe como **Item**, para que você descreva o que foi doado. Clique em **Salvar** quando terminar.
 
 :::tip
 A linha abaixo do nome do lote, no topo da página, é atualizada automaticamente para mostrar a data do lote, a quantidade de contribuições e o valor somado conforme você adiciona ou edita lançamentos. Use-a para conferir com o seu comprovante de depósito.
@@ -123,7 +127,7 @@ Quando alguém entrega um cheque, paga por um evento ou uma camiseta, ou quando 
 2. Clique em **Recibo**, ao lado de **Editar**, na linha da doação. Você também pode clicar em **Recibo** na parte inferior do formulário Editar Doação.
 3. Clique em **Imprimir**, ou em **Fechar** para voltar.
 
-O recibo usa o mesmo layout do recibo de doação: a sua igreja e o doador (ou "Anônimo"), a data e a forma da contribuição, cada fundo e valor, a observação, a sua Observação de Doação e o bloco oficial de recibo, caso você tenha definido um **Formato do recibo** (veja [Recibos de Doação](giving-statements.md)). O número do recibo nesse bloco é o ID da doação.
+O recibo usa o mesmo layout do recibo de doação: a sua igreja e o doador (ou "Anônimo"), a data e a forma da contribuição, cada fundo e valor, o memorando da doação (se houver), a sua Observação de Doação e o bloco oficial de recibo, caso você tenha definido um **Formato do recibo** (veja [Recibos de Doação](giving-statements.md)). O número do recibo nesse bloco é o ID da doação.
 
 :::info
 A frase "sem bens ou serviços" só é impressa quando todos os fundos da contribuição são marcados como dedutíveis de impostos. Se qualquer parte da contribuição tiver ido para um fundo não dedutível, como uma taxa de evento ou uma compra, o recibo omite essa frase para que seja lido como um pagamento, e não como uma contribuição beneficente.

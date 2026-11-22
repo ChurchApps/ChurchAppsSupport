@@ -66,7 +66,7 @@ Skjermen **Grupper** i medlemsportalen lister gruppene du er med i. Overskriften
 - **Ventende forespørsler** -- Grupper du har bedt om å bli med i, som venter på en leder. Se [Be om å bli med i en gruppe](./join-requests.md).
 - **Kommende arrangementer** -- Menighetsarrangementer som tar påmeldinger, hver med en lenke til **Meld deg på**. Se [Påmelding til arrangementer](../events/registering.md).
 
-Trykk på **Finn en gruppe** for å bla i alle menighetens grupper. Hvis du ikke er med i noen grupper ennå, står det «Ingen grupper ennå» med en knapp for **Bla i grupper**. Hvis du ikke er innlogget, ber skjermen deg logge inn for å se gruppene dine.
+Trykk på **Finn en gruppe** for å bla i alle menighetens grupper. Hvis du ikke er med i noen grupper ennå, står det «Ingen grupper ennå» med en knapp for **Bla i grupper**. Hvis du ikke er innlogget, ber skjermen deg logge inn for å se gruppene dine, men den viser fortsatt menighetens **Upcoming Events** som tar imot påmeldinger, slik at du kan melde deg på.
 
 ## Neste steg {#next-steps}
 

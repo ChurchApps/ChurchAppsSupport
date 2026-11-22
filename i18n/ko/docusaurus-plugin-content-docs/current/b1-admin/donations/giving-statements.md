@@ -54,6 +54,12 @@ description: "B1 Admin에서 모든 헌금자를 위한 연말 헌금 명세서�
 헌금 명세서에는 **Tax Deductible** 설정이 켜진 기금에 배정된 헌금만 포함됩니다. 기금이 세금 공제 대상으로 표시되지 않았다면 그 기금의 헌금은 명세서에 나타나지 않습니다. 이 설정은 [기금](funds.md) 페이지에서 관리할 수 있습니다.
 :::
 
+## 명세서의 헌금 메모 {#gift-memos-on-statements}
+
+각 명세서에는 모든 헌금의 날짜, 방법, 기금, 금액이 나열됩니다. 명세서의 헌금 중 하나 이상에 **Memo**가 있으면, 헌금자가 각 헌금의 용도를 볼 수 있도록 기금 뒤에 **Memo** 열이 추가됩니다. 메모가 없는 명세서는 네 개 열 레이아웃을 그대로 유지합니다. 헌금의 **Notes**는 내부용이므로 명세서에 나타나지 않습니다. ZIP 안의 CSV 파일에는 메모가 마지막 열로 포함됩니다.
+
+명세서에 용도를 표시하려면, [헌금을 기록할](recording-donations.md) 때 헌금의 **Memo**로 입력하세요. 용도별로 따로 합계를 내고 싶다면 별도의 [기금](funds.md)을 만드세요.
+
 ## 캐나다, 호주, 뉴질랜드의 영수증 형식 {#receipt-formats-for-canada-australia-and-new-zealand}
 
 미국 밖의 교회는 명세서를 해당 국가의 공식 영수증 양식으로 바꿀 수 있습니다. 헌금 명세서 페이지 상단의 **Statement format**을 클릭하거나(또는 **Settings**로 가서 **Giving** 섹션을 엽니다), **Statement Format**(기본값은 **Standard**)을 **Canada - CRA official receipt**, **Australia**, 또는 **New Zealand**로 설정한 뒤, 나타나는 항목을 입력합니다. 등록 번호(**CRA Registration Number**, **ABN**, 또는 **NZ Charity Registration Number**), **Organization Address**, **Authorized Signatory Name**, 캐나다의 경우 **City of Issue**입니다. **Save**를 클릭하세요.

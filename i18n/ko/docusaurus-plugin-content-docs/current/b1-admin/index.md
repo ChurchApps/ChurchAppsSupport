@@ -47,7 +47,7 @@ B1 Admin이 처음이라면 동영상 안내가 있는 [소개](./introduction.m
 - **[보고서](./reports/index.md)** - 생일, 출석, 헌금 보고서를 보며, 이들은 사람, 출석, 헌금 섹션 안에 있습니다. 설정의 감사 로그도 확인할 수 있습니다
 - **[웹사이트](./website/index.md)** - 맞춤 내비게이션 스타일로 교회 웹사이트를 만들고 관리하고, GA4 ID로 웹사이트와 B1 앱 방문을 추적하거나, 공개 사이트를 끄고 성도 포털만 유지할 수 있습니다
 - **[설교](./sermons/index.md)** - 설교 라이브러리, 라이브 스트리밍, 자동 팟캐스트 피드를 관리할 수 있습니다
-- **[캘린더](./calendars/index.md)** - 그룹별로 색이 지정된 행사가 있는 큐레이션 캘린더를 만들고, 교회 레터헤드에 인쇄하고, 공간/자원 예약을 관리하고, 가용성을 확인할 수 있습니다. 가격이 지정된 참석자 유형으로 [행사 등록](./calendars/paid-registrations.md)을 받고, 요금을 청구하지 않고 참석자를 직접 추가하며, 교회에 온라인 헌금이 없다면 사람들이 나중에 등록하고 결제하도록 할 수 있습니다
+- **[캘린더](./calendars/index.md)** - 그룹별로 색이 지정된 행사가 있는 큐레이션 캘린더를 만들고, [반복 행사의 한 날짜를 바꾸거나 취소](./calendars/creating-calendars.md#changing-one-date-of-a-recurring-event)하고, 교회 레터헤드에 인쇄하고, 공간/자원 예약을 관리하고, 가용성을 확인할 수 있습니다. 가격이 지정된 참석자 유형으로 [행사 등록](./calendars/paid-registrations.md)을 받고, 요금을 청구하지 않고 참석자를 직접 추가하며, 교회에 온라인 헌금이 없다면 사람들이 나중에 등록하고 결제하도록 할 수 있습니다
 - **[모바일](./settings/mobile-app.md)** - 교회 B1 앱의 내비게이션 탭, 테마, 홈 화면을 설정하고, B1 Checkin 앱과 라벨을 설정하고, 앱 사용자 전체 또는 한 그룹에 [푸시 알림](./settings/mobile-app.md#push-notifications)을 보내거나 예약할 수 있습니다
 - **[설정](./settings/index.md)** - 빠른 이동 목록이 있는 하나의 스크롤 페이지에서 모든 것을 구성할 수 있습니다. 교회 정보, 지역, 날짜 및 전화번호 형식, 문자(자체 Twilio 계정 포함), 인원수가 표시된 역할, 권한, 맞춤 사람 필드를 설정할 수 있습니다
 - **[통합](./integrations/index.md)** - Slack 또는 Discord에 행사를 게시하고, Mailchimp 대상자를 동기화하고, Zapier를 연결하고, **Settings > Developer**에 있는 API 키와 웹훅을 사용하여 Claude 또는 ChatGPT에 교회 데이터를 물어볼 수 있습니다

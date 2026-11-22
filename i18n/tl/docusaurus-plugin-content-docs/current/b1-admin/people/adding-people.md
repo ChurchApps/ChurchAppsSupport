@@ -88,6 +88,10 @@ Ang pagpapadala mula sa B1 ay gumagamit ng parehong approval at araw-araw na lim
 
 Kung nakakonekta ang iyong simbahan sa isang [texting provider](../settings/church-settings.md#texting), may pahintulot kang magpadala ng text, at may mobile phone number ang tao, lalabas ang button na **Text** sa tabi ng **Email**. I-click ito, i-type ang iyong **Message**, at i-click ang **Send**. Ipinapakita ng dialog ang numerong padadalhan ng text. Tingnan ang [Texting Group Members](../groups/group-members.md#texting-group-members) para sa kung paano gumagana ang texting.
 
+### Mga Text Reminder {#text-reminders}
+
+Ang mga paalala sa task, event, at serving ay ipinapadala lamang sa pamamagitan ng text sa mga taong nag-on ng text message. Sa parehong texting provider, pahintulot, at mobile number, ipinapakita ng record ng tao ang **Text reminders** sa ilalim ng kanyang mobile number, na may **On** o **Off**. I-click ang **Turn on** para simulan silang padalhan ng text na paalala, o **Turn off** para itigil. Ito ang parehong switch ng **Text messages** sa sariling [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) ng tao, kaya maaaring baguhin ito ng alinman sa inyo. Ang taong sumagot ng STOP sa mga text ng iyong simbahan ay hindi pa rin makakatanggap ng text na paalala, kahit naka-on ang **Text reminders**.
+
 ## Pagtatrabaho sa mga Form {#working-with-forms}
 
 Puwede mong punan ang mga custom na form nang direkta mula sa profile ng tao. Mga form na ginawa ng user ang mga ito na maaari mong buuin sa pamamagitan ng gabay na [Creating Forms](../forms/creating-forms.md).

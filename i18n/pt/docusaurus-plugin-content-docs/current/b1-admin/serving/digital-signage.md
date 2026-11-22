@@ -44,10 +44,10 @@ Se suas telas usam o [FreePlay](../../freeplay/index.md), você não precisa da 
 3. Em **Reproduzir**, escolha seu tipo de plano em **Planos de culto**. Ele está marcado como **(plano atual)**.
 4. Defina os dias e horários e clique em **Salvar**.
 
-As TVs exibem, a cada semana, o plano que está atual para aquele tipo de plano, nos horários que você definir. Isso também funciona com as lições do Go Curriculum, inclusive com planos que você personalizou. O FreePlay faz login com a conta do Go Curriculum vinculada ao ministério em **Provedores de Conteúdo** (veja [Agendando Lições](./scheduling-lessons.md)), ou com a conexão do Go Curriculum da igreja, caso o ministério não tenha uma. Veja [Agendando o Calendário](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para todas as opções e [Pareando uma Tela](../../freeplay/scheduled-mode/pairing-a-screen.md) para adicionar uma TV.
+As TVs exibem, a cada semana, o plano que está atual para aquele tipo de plano, nos horários que você definir. Isso também funciona com as lições do GO! Curriculum, inclusive com planos que você personalizou. O FreePlay faz login com a conta do GO! Curriculum vinculada ao ministério em **Provedores de Conteúdo** (veja [Agendando Lições](./scheduling-lessons.md)), ou com a conexão do GO! Curriculum da igreja, caso o ministério não tenha uma. Veja [Agendando o Calendário](../../freeplay/scheduled-mode/scheduling-the-calendar.md) para todas as opções e [Pareando uma Tela](../../freeplay/scheduled-mode/pairing-a-screen.md) para adicionar uma TV.
 
 :::note
-A URL do feed não inclui a mídia do Go Curriculum, porque esse conteúdo exige o login do Go Curriculum da sua igreja. Para exibir uma lição do Go Curriculum em uma TV do lobby ou da sala de aula, use o FreePlay.
+A URL do feed não inclui a mídia do GO! Curriculum, porque esse conteúdo exige o login do GO! Curriculum da sua igreja. Para exibir uma lição do GO! Curriculum em uma TV do lobby ou da sala de aula, use o FreePlay.
 :::
 
 ## Próximos passos

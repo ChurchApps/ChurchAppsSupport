@@ -62,7 +62,7 @@ Hver prekenoppføring kan inneholde:
 - **Miniatyrbilde** -- Et forhåndsbilde som vises i preken-biblioteket ditt. Klikk på bildet for å beskjære eller erstatte det (16:9).
 - **Tittel** -- Prekennavnet som vises for besøkende
 - **Beskrivelse** -- Et sammendrag av prekeninnholdet
-- **URL til lydfil (for podcast)** -- En direkte lenke til en MP3/M4A-fil for denne prekenen. Enten lim inn en URL, eller klikk på **Last opp lyd** når prekenen er lagret, for å laste opp en fil og fylle inn feltet automatisk. Bare prekener med dette feltet utfylt (eller en direkte lenke til en videofil) tas med i podcast-feeden din.
+- **URL til lydfil (for podcast)** -- En direkte lenke til **én** MP3/M4A-fil for denne prekenen. Dette er ikke stedet for en podcast-feedadresse; en feed som limes inn her, spilles ikke av. For å hente inn en hel podcast, bruk [Masseimport](./bulk-import.md#importing-podcast-episodes). Enten lim inn en URL, eller klikk på **Last opp lyd** når prekenen er lagret, for å laste opp en fil og fylle inn feltet automatisk. Bare prekener med dette feltet utfylt (eller en direkte lenke til en videofil) tas med i podcast-feeden din.
 
 ## Podcast-feeden din {#your-podcast-feed}
 

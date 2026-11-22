@@ -112,7 +112,7 @@ Permanente ang pagbura ng account -- maging agad man ito o aprubado ng iyong sim
 :::
 
 :::info
-Kung ikaw ay isang **Domain Admin**, tiyaking ilipat ang mga administratibong responsibilidad sa ibang user bago burahin ang iyong account. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mga detalye sa pamamahala ng admin role.
+Kung ikaw lamang ang **Domain Admin** ng iyong simbahan, hindi buburahin ng B1 ang iyong account. Magpapakita ito ng "You are the only Domain Admin for *church*. Make someone else a Domain Admin before deleting your account." Idagdag muna ang isa pang user sa **Domain Admins**. Tingnan ang [Roles & Permissions](../settings/roles-permissions.md) para sa mga detalye sa pamamahala ng admin role.
 :::
 
 :::info

@@ -53,11 +53,11 @@ En pulserende indikator **Venter på bekreftelse** viser at FreePlay sjekker inn
 
 ## Telefoninnlogging (kun QR-kode) {#phone-sign-in-qr-code-only}
 
-**Dropbox**, **OneDrive** og **Go Curriculum** bruker en litt annen QR-kodeinnlogging, uten kode å skrive inn:
+**Dropbox**, **OneDrive** og **GO! Curriculum** bruker en litt annen QR-kodeinnlogging, uten kode å skrive inn:
 
 1. Velg leverandørkortet på skjermen **Innholdsleverandører**
 2. FreePlay viser en skjerm **Koble til** med leverandørens navn og en QR-kode
-3. Skann QR-koden med telefonen og logg inn på kontoen din hos leverandøren (Microsoft-kontoen din for OneDrive, eller gocurriculum.com-kontoen din for Go Curriculum)
+3. Skann QR-koden med telefonen og logg inn på kontoen din hos leverandøren (Microsoft-kontoen din for OneDrive, eller gocurriculum.com-kontoen din for GO! Curriculum)
 4. Godkjenn tilgangen. TV-en kobles til automatisk og viser **Tilkoblet!**
 
 Skjermen viser hvor mange minutter du har igjen til å fullføre innloggingen.
