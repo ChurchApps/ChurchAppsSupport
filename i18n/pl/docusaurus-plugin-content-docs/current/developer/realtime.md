@@ -48,7 +48,7 @@ Wyboru transportu dokonuje konfiguracja `deliveryProvider`:
 
 Klient nie musi wiedzieć, który transport jest używany — w obu przypadkach komunikuje się przy użyciu tego samego protokołu JSON.
 
-## Protokół komunikacji
+## Protokół komunikacji {#wire-protocol}
 
 Każda ramka to JSON o strukturze `PayloadInterface`:
 

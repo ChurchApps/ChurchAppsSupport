@@ -48,7 +48,7 @@ Výběr přenosu řídí konfigurace `deliveryProvider`:
 
 Klient nemusí vědět, který přenos se používá, protože v obou případech mluví stejným JSON protokolem.
 
-## Síťový protokol
+## Síťový protokol {#wire-protocol}
 
 Každý rámec je JSON tvaru `PayloadInterface`:
 

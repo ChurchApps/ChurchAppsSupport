@@ -144,7 +144,7 @@ DELETE /messaging/connections/:churchId/:conversationId/:socketId
 - `onSocketIdReady(fn)` —— 在每个新 socketId 上触发，不仅仅是第一个——初始握手和每个后续重新连接。由 `SubscriptionManager` 用来刷新待处理加入。
 - `checkConnection()` —— 由下面的恢复监听器调用；如果套接字已关闭，立即重新连接，或如果它看起来打开，发送活跃性探针。
 
-**重新连接生命周期。** 意外关闭安排重新连接与指数退避（1 秒，以 30 秒上限翻倍）。`SocketHelper` 也监听 `window`/`document` 上的 `online`、`focus`、`pageshow` 和 `visibilitychange` 来检测恢复的选项卡：如果套接字已关闭，它立即重新连接并重置退避；如果它看起来打开，它发送 `"getId"` 活跃性探针并在 3 秒内未到达帧时强制重新连接——这捕获移动 OS 暂停应用后留下的半开套接字。在成功的重新握手上，`SocketHelper` 向该操作的每个已注册处理程序调度本地 `"reconnect"` 操作（参见 [有线协议](#有线协议)）。
+**重新连接生命周期。** 意外关闭安排重新连接与指数退避（1 秒，以 30 秒上限翻倍）。`SocketHelper` 也监听 `window`/`document` 上的 `online`、`focus`、`pageshow` 和 `visibilitychange` 来检测恢复的选项卡：如果套接字已关闭，它立即重新连接并重置退避；如果它看起来打开，它发送 `"getId"` 活跃性探针并在 3 秒内未到达帧时强制重新连接——这捕获移动 OS 暂停应用后留下的半开套接字。在成功的重新握手上，`SocketHelper` 向该操作的每个已注册处理程序调度本地 `"reconnect"` 操作（参见 [有线协议](#wire-protocol)）。
 
 ### `SubscriptionManager`
 

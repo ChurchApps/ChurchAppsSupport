@@ -48,7 +48,7 @@ The transport selector is the `deliveryProvider` config:
 
 The client never has to know which is in use — it speaks the same JSON protocol either way.
 
-## Wire protocol
+## Wire protocol {#wire-protocol}
 
 Every frame is JSON of shape `PayloadInterface`:
 

@@ -48,7 +48,7 @@ Perdavimo pasirinkimą lemia `deliveryProvider` konfigūracija:
 
 Klientui nereikia žinoti, kuris variantas naudojamas: abiem atvejais kalbama tuo pačiu JSON protokolu.
 
-## Ryšio protokolas
+## Ryšio protokolas {#wire-protocol}
 
 Kiekvienas kadras yra JSON, atitinkantis `PayloadInterface` struktūrą:
 

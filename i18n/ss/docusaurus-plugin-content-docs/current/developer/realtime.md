@@ -48,7 +48,7 @@ Sikhetsi setfutfwa ngukuhlelwa kwe-`deliveryProvider`:
 
 I-client ayidzingi kwati kutsi yikuphi lokusebentiswako — ikhuluma i-protocol ye-JSON lefanako nome ngayiphi indlela.
 
-## I-Protocol Ye-Wire
+## I-Protocol Ye-Wire {#wire-protocol}
 
 Iframe ngayinye yi-JSON yesakhiwo se-`PayloadInterface`:
 

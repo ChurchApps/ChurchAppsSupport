@@ -48,7 +48,7 @@ Transportväljaren är konfigurationen `deliveryProvider`:
 
 Klienten behöver aldrig veta vilken variant som används. Den använder samma JSON-protokoll i båda fallen.
 
-## Wire-protokoll
+## Wire-protokoll {#wire-protocol}
 
 Varje ram är JSON med formen `PayloadInterface`:
 

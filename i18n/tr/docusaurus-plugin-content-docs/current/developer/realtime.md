@@ -48,7 +48,7 @@ Taşıma seçicisi `deliveryProvider` yapılandırmasıdır:
 
 İstemcinin hangisinin kullanıldığını bilmesi gerekmez; her iki durumda da aynı JSON protokolünü kullanır.
 
-## Kablo protokolü
+## Kablo protokolü {#wire-protocol}
 
 Her çerçeve, `PayloadInterface` biçiminde bir JSON'dur:
 
