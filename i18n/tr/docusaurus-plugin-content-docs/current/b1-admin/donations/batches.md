@@ -55,7 +55,7 @@ Bir gruba girilen her bağışta, bağışçının adının altında **Giren** v
 
 Çevrimiçi bağışlar, [Stripe İçe Aktarma](stripe-import.md) aracıyla eklenen bağışlar ve Kasım 2026'da bu özellik eklenmeden önce girilen bağışlar bir ad göstermez.
 
-## Bir Grubu Kapatma ve Yeniden Açma
+## Bir Grubu Kapatma ve Yeniden Açma {#closing-and-reopening-a-batch}
 
 Bir grup sayıldıktan ve yatırıldıktan sonra, bağışlarının kapatıldığı andaki gibi kalması için grubu kapatın.
 
@@ -70,7 +70,7 @@ Değişiklik yapmak için grubu açın ve **Grubu Yeniden Aç** düğmesine tık
 **Grubu Kapat** ve **Grubu Yeniden Aç** düğmelerini yalnızca **Bağışları Düzenle** iznine sahip kişiler görür. Bu kişiler, bir düzeltme gerektiğinde grubu yeniden açmadan kapalı bir gruptaki bağışları da değiştirebilir.
 :::
 
-## Bir Grubu Kimler Değiştirebilir
+## Bir Grubu Kimler Değiştirebilir {#who-can-change-a-batch}
 
 Bir kişinin grupla çalışmasına izin veren iki [rol izni](../settings/roles-permissions.md) vardır:
 

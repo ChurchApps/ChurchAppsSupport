@@ -55,7 +55,7 @@ Varje gåva som registreras i en batch visar **Inmatad av** och personens namn u
 
 Onlinegåvor, gåvor som lagts till med verktyget [Stripe-import](stripe-import.md), samt gåvor som registrerades innan detta lades till i november 2026 visar inget namn.
 
-## Stänga och öppna en batch igen
+## Stänga och öppna en batch igen {#closing-and-reopening-a-batch}
 
 När en batch har räknats och satts in på kontot ska du stänga den, så att gåvorna förblir exakt som de var när du stängde den.
 
@@ -70,7 +70,7 @@ För att kunna göra ändringar igen öppnar du batchen och klickar på **Öppna
 Endast personer med behörigheten **Redigera gåvor** ser knapparna **Stäng batch** och **Öppna batch igen**. De kan dessutom fortfarande ändra gåvor i en stängd batch om en rättelse behövs, utan att öppna batchen igen.
 :::
 
-## Vem kan ändra en batch
+## Vem kan ändra en batch {#who-can-change-a-batch}
 
 Två [rollbehörigheter](../settings/roles-permissions.md) gör det möjligt för någon att arbeta med batcher:
 

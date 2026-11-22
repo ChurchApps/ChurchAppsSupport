@@ -48,7 +48,7 @@ Izbirnik prenosa je nastavitev `deliveryProvider`:
 
 Odjemalcu ni treba vedeti, katera možnost je v uporabi – v obeh primerih govori isti JSON protokol.
 
-## Žični protokol
+## Žični protokol {#wire-protocol}
 
 Vsak okvir je JSON oblike `PayloadInterface`:
 

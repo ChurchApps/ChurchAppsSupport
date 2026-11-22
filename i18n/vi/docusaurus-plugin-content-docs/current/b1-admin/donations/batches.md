@@ -55,7 +55,7 @@ Mỗi khoản quà được nhập vào đợt sẽ hiển thị **Entered by** 
 
 Quà trực tuyến, quà được thêm bởi công cụ [Nhập từ Stripe](stripe-import.md), và các khoản quà đã nhập trước khi tính năng này được thêm vào tháng 11 năm 2026 sẽ không hiển thị tên.
 
-## Đóng và mở lại một đợt
+## Đóng và mở lại một đợt {#closing-and-reopening-a-batch}
 
 Khi một đợt đã được kiểm đếm và gửi vào tài khoản, hãy đóng đợt để các khoản quyên góp của đợt giữ nguyên như lúc bạn đóng.
 
@@ -70,7 +70,7 @@ Nhãn trạng thái bên cạnh tên đợt sẽ đổi từ **Open** sang **Clo
 Chỉ những người có quyền **Sửa quyên góp** mới thấy các nút **Close Batch** và **Reopen Batch**. Họ cũng có thể sửa khoản quyên góp trong đợt đã đóng nếu cần chỉnh sửa, mà không cần mở lại đợt.
 :::
 
-## Ai có thể thay đổi đợt
+## Ai có thể thay đổi đợt {#who-can-change-a-batch}
 
 Hai [quyền của vai trò](../settings/roles-permissions.md) cho phép một người làm việc với đợt:
 

@@ -48,7 +48,7 @@ Výber transportu určuje konfigurácia `deliveryProvider`:
 
 Klient nemusí vedieť, ktorý sa používa. V oboch prípadoch hovorí rovnakým JSON protokolom.
 
-## Protokol správ
+## Protokol správ {#wire-protocol}
 
 Každý rámec je JSON v tvare `PayloadInterface`:
 

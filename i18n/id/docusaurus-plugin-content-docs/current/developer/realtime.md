@@ -48,7 +48,7 @@ Pemilih transport adalah konfigurasi `deliveryProvider`:
 
 Klien tidak perlu tahu transport mana yang digunakan. Klien selalu berbicara dengan protokol JSON yang sama.
 
-## Protokol wire
+## Protokol wire {#wire-protocol}
 
 Setiap frame berupa JSON dengan bentuk `PayloadInterface`:
 

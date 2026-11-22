@@ -48,7 +48,7 @@ Siirtoprotokollan valitsee `deliveryProvider`-asetus:
 
 Asiakkaan ei tarvitse tietää, kumpaa käytetään. Se puhuu molemmissa tapauksissa samaa JSON-protokollaa.
 
-## Langalla kulkeva protokolla
+## Langalla kulkeva protokolla {#wire-protocol}
 
 Jokainen kehys on JSON-muotoinen `PayloadInterface`-rakenne:
 

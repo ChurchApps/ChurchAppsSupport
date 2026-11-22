@@ -48,7 +48,7 @@ Cấu hình `deliveryProvider` quyết định giao thức truyền tải đư�
 
 Máy khách không cần biết đang dùng giao thức nào, vì cả hai đều sử dụng cùng một giao thức JSON.
 
-## Giao thức truyền dữ liệu
+## Giao thức truyền dữ liệu {#wire-protocol}
 
 Mỗi khung dữ liệu là một JSON có cấu trúc `PayloadInterface`:
 

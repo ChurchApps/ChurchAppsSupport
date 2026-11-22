@@ -48,7 +48,7 @@ Selectorul de transport este configurația `deliveryProvider`:
 
 Clientul nu trebuie să știe ce variantă este folosită — vorbește același protocol JSON în ambele cazuri.
 
-## Protocolul de transmitere
+## Protocolul de transmitere {#wire-protocol}
 
 Fiecare cadru este JSON cu forma `PayloadInterface`:
 

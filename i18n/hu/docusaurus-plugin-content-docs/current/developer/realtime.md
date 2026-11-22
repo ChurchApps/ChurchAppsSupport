@@ -48,7 +48,7 @@ Az átviteli módot a `deliveryProvider` konfiguráció választja ki:
 
 A kliensnek nem kell tudnia, melyik módot használja; mindkét esetben ugyanazt a JSON-protokollt beszéli.
 
-## Vezetékes protokoll
+## Vezetékes protokoll {#wire-protocol}
 
 Minden keret `PayloadInterface` alakú JSON:
 

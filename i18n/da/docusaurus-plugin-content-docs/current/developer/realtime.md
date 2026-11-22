@@ -48,7 +48,7 @@ Transportvælgeren er konfigurationen `deliveryProvider`:
 
 Klienten behøver aldrig at vide, hvilken der bruges. Den taler den samme JSON-protokol under begge.
 
-## Wire-protokol
+## Wire-protokol {#wire-protocol}
 
 Hver frame er JSON af formen `PayloadInterface`:
 
