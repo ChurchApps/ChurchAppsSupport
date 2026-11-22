@@ -55,7 +55,7 @@ Vsak dar, vnesen v skupino, prikazuje **Vnesel/a** in ime osebe pod imenom darov
 
 Spletna darila, darila, dodana z orodjem [Uvoz iz Stripe](stripe-import.md), in darila, vnesena pred dodajanjem te funkcije novembra 2026, ne prikazujejo imena.
 
-## Zapiranje in ponovno odpiranje skupine
+## Zapiranje in ponovno odpiranje skupine {#closing-and-reopening-a-batch}
 
 Ko je skupina prešteta in nakazana, jo zaprite, da njeni darovi ostanejo točno takšni, kot so bili ob zaprtju.
 
@@ -70,7 +70,7 @@ Oznaka stanja ob imenu skupine se spremeni iz **Odprta** v **Zaprta**, skupina p
 Gumba **Zapri skupino** in **Ponovno odpri skupino** vidijo samo osebe z dovoljenjem **Urejanje darov**. Če je potreben popravek, lahko darove v zaprti skupini spreminjajo tudi brez ponovnega odpiranja.
 :::
 
-## Kdo lahko spremeni skupino
+## Kdo lahko spremeni skupino {#who-can-change-a-batch}
 
 Dve [dovoljenji za vloge](../settings/roles-permissions.md) omogočata delo s skupinami:
 

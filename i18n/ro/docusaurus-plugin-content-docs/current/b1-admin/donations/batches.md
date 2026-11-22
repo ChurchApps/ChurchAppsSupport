@@ -55,7 +55,7 @@ Fiecare dar introdus într-un lot afișează **Introdus de** și numele persoane
 
 Darurile online, darurile adăugate de instrumentul [import Stripe](stripe-import.md) și darurile introduse înainte de adăugarea acestei funcții în noiembrie 2026 nu afișează un nume.
 
-## Închiderea și redeschiderea unui lot
+## Închiderea și redeschiderea unui lot {#closing-and-reopening-a-batch}
 
 Odată ce un lot a fost numărat și depus, închideți-l pentru ca donațiile să rămână exact așa cum erau când l-ați închis.
 
@@ -70,7 +70,7 @@ Pentru a face din nou modificări, deschideți lotul și faceți clic pe **Redes
 Doar persoanele cu permisiunea **Editare donații** văd butoanele **Închide lotul** și **Redeschide lotul**. Ele pot modifica în continuare donațiile dintr-un lot închis, dacă este nevoie de o corecție, fără a-l redeschide.
 :::
 
-## Cine poate modifica un lot
+## Cine poate modifica un lot {#who-can-change-a-batch}
 
 Două [permisiuni de rol](../settings/roles-permissions.md) permit cuiva să lucreze cu loturile:
 

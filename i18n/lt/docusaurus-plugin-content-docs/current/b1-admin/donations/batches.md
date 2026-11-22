@@ -55,7 +55,7 @@ Kiekviena į paketą įvesta auka rodo **Įvedė** ir asmens vardą po aukotojo 
 
 Internetinės aukos, [Stripe importo](stripe-import.md) įrankiu pridėtos aukos ir aukos, įvestos prieš tai pridedant šią funkciją 2026 m. lapkritį, vardo nerodo.
 
-## Paketo uždarymas ir atidarymas iš naujo
+## Paketo uždarymas ir atidarymas iš naujo {#closing-and-reopening-a-batch}
 
 Kai paketas suskaičiuotas ir pinigai įnešti į banką, uždarykite jį, kad aukos liktų tokios, kokios buvo jį uždarant.
 
@@ -70,7 +70,7 @@ Norėdami vėl keisti, atidarykite paketą ir spustelėkite **Atidaryti paketą 
 Mygtukus **Uždaryti paketą** ir **Atidaryti paketą iš naujo** mato tik asmenys, turintys leidimą **Redaguoti aukas**. Jie taip pat gali keisti aukas uždarytame pakete, jei reikia ištaisymo, nebeatidarę paketo.
 :::
 
-## Kas gali keisti paketą
+## Kas gali keisti paketą {#who-can-change-a-batch}
 
 Du [vaidmenų leidimai](../settings/roles-permissions.md) leidžia asmeniui dirbti su paketais:
 

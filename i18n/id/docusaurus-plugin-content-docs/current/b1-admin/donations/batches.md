@@ -55,7 +55,7 @@ Setiap pemberian yang dimasukkan ke dalam batch menampilkan **Dimasukkan oleh** 
 
 Donasi online, pemberian yang ditambahkan oleh alat [Impor Stripe](stripe-import.md), dan pemberian yang dimasukkan sebelum fitur ini ditambahkan pada November 2026 tidak menampilkan nama.
 
-## Menutup dan Membuka Kembali Batch
+## Menutup dan Membuka Kembali Batch {#closing-and-reopening-a-batch}
 
 Setelah batch dihitung dan disetorkan, tutuplah agar donasinya tetap sama persis seperti saat Anda menutupnya.
 
@@ -70,7 +70,7 @@ Untuk membuat perubahan lagi, buka batch dan klik **Buka Kembali Batch**. Batch 
 Hanya orang dengan izin **Edit Donasi** yang dapat melihat tombol **Tutup Batch** dan **Buka Kembali Batch**. Mereka juga tetap dapat mengubah donasi dalam batch yang tertutup jika diperlukan koreksi, tanpa perlu membuka kembali batch tersebut.
 :::
 
-## Siapa yang Dapat Mengubah Batch
+## Siapa yang Dapat Mengubah Batch {#who-can-change-a-batch}
 
 Dua [izin peran](../settings/roles-permissions.md) memungkinkan seseorang untuk bekerja dengan batch:
 

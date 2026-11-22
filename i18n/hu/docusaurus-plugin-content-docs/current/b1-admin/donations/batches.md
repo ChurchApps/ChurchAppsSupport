@@ -55,7 +55,7 @@ Minden csomagba beírt adománynál az adományozó neve alatt megjelenik a **R�
 
 Az online adományok, a [Stripe-import](stripe-import.md) eszközzel hozzáadott adományok, valamint a 2026 novemberében bevezetett funkció előtt rögzített adományok nem mutatnak nevet.
 
-## Csomag lezárása és újranyitása
+## Csomag lezárása és újranyitása {#closing-and-reopening-a-batch}
 
 Miután egy csomagot megszámoltak és befizették, zárja le, hogy az adományai a lezárás pillanatában tapasztalt állapotukban maradjanak.
 
@@ -70,7 +70,7 @@ A csomag ismételt módosításához nyissa meg, és kattintson a **Csomag újra
 Csak a **Adományok szerkesztése** jogosultsággal rendelkezők látják a **Csomag lezárása** és a **Csomag újranyitása** gombot. Ha javításra van szükség, lezárt csomagban is módosíthatnak adományokat anélkül, hogy újra kellene nyitniuk a csomagot.
 :::
 
-## Ki módosíthat egy csomagot
+## Ki módosíthat egy csomagot {#who-can-change-a-batch}
 
 Két [szerepkör-jogosultság](../settings/roles-permissions.md) teszi lehetővé, hogy valaki csomagokkal dolgozzon:
 

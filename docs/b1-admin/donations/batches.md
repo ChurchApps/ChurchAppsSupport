@@ -55,7 +55,7 @@ Each gift typed into a batch shows **Entered by** and the person's name under th
 
 Online gifts, gifts added by the [Stripe Import](stripe-import.md) tool, and gifts entered before this was added in November 2026 don't show a name.
 
-## Closing and Reopening a Batch
+## Closing and Reopening a Batch {#closing-and-reopening-a-batch}
 
 Once a batch has been counted and deposited, close it so its donations stay exactly as they were when you closed it.
 
@@ -70,7 +70,7 @@ To make changes again, open the batch and click **Reopen Batch**. New batches al
 Only people with **Edit Donations** see the **Close Batch** and **Reopen Batch** buttons. They can also still change donations in a closed batch if a correction is needed, without reopening it.
 :::
 
-## Who Can Change a Batch
+## Who Can Change a Batch {#who-can-change-a-batch}
 
 Two [role permissions](../settings/roles-permissions.md) let someone work with batches:
 

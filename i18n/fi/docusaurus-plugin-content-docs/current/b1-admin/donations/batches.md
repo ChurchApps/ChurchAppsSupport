@@ -55,7 +55,7 @@ Jokainen erään kirjattu lahja näyttää lahjoittajan nimen alla kentän **Kir
 
 Verkkolahjoitukset, [Stripe-tuonnin](stripe-import.md) työkalulla lisätyt lahjat ja ennen marraskuussa 2026 lisättyä ominaisuutta kirjatut lahjat eivät näytä nimeä.
 
-## Erän sulkeminen ja uudelleen avaaminen
+## Erän sulkeminen ja uudelleen avaaminen {#closing-and-reopening-a-batch}
 
 Kun erä on laskettu ja talletettu, sulje se, jotta sen lahjoitukset pysyvät täsmälleen samoina kuin sulkemishetkellä.
 
@@ -70,7 +70,7 @@ Tehdäksesi muutoksia uudelleen avaa erä ja napsauta **Avaa erä uudelleen**. U
 Vain henkilöt, joilla on oikeus **Muokkaa lahjoituksia**, näkevät painikkeet **Sulje erä** ja **Avaa erä uudelleen**. He voivat myös muokata suljetun erän lahjoituksia, jos korjaus on tarpeen, ilman että erää avataan uudelleen.
 :::
 
-## Kuka voi muuttaa erää
+## Kuka voi muuttaa erää {#who-can-change-a-batch}
 
 Kaksi [käyttöoikeusroolia](../settings/roles-permissions.md) mahdollistavat erien käsittelyn:
 

@@ -55,7 +55,7 @@ Każda darowizna wpisana do partii pokazuje pole **Wprowadzone przez** oraz imi�
 
 Darowizny online, darowizny dodane przez narzędzie [Import Stripe](stripe-import.md) oraz darowizny wprowadzone przed dodaniem tej funkcji w listopadzie 2026 r. nie pokazują nazwiska.
 
-## Zamykanie i ponowne otwieranie partii
+## Zamykanie i ponowne otwieranie partii {#closing-and-reopening-a-batch}
 
 Gdy partia zostanie policzona i wpłacona na konto, zamknij ją, aby jej darowizny pozostały dokładnie takie, jakie były w chwili zamknięcia.
 
@@ -70,7 +70,7 @@ Aby ponownie wprowadzać zmiany, otwórz partię i kliknij **Otwórz ponownie pa
 Przyciski **Zamknij partię** i **Otwórz ponownie partię** widzą tylko osoby z uprawnieniem **Edycja darowizn**. Mogą one również poprawiać darowizny w zamkniętej partii, jeśli potrzebna jest korekta, bez ponownego otwierania partii.
 :::
 
-## Kto może zmieniać partię
+## Kto może zmieniać partię {#who-can-change-a-batch}
 
 Dwa [uprawnienia ról](../settings/roles-permissions.md) pozwalają pracować z partiami:
 

@@ -55,7 +55,7 @@ Každý dar zadaný do dávky zobrazuje pod menom darcu text **Zadal/a** a meno 
 
 Online dary, dary pridané nástrojom [Import zo Stripe](stripe-import.md) a dary zadané pred pridaním tejto funkcie v novembri 2026 nezobrazujú meno.
 
-## Uzavretie a opätovné otvorenie dávky
+## Uzavretie a opätovné otvorenie dávky {#closing-and-reopening-a-batch}
 
 Keď sa dávka spočíta a vloží do banky, uzavrite ju, aby jej dary zostali presne také, aké boli, keď ste ju uzavreli.
 
@@ -70,7 +70,7 @@ Ak chcete vykonať zmeny, otvorte dávku a kliknite na **Znovu otvoriť dávku**
 Tlačidlá **Uzavrieť dávku** a **Znovu otvoriť dávku** vidia iba osoby s oprávnením **Upraviť dary**. Ak je potrebná oprava, môžu tiež meniť dary v uzavretej dávke bez jej opätovného otvorenia.
 :::
 
-## Kto môže meniť dávku
+## Kto môže meniť dávku {#who-can-change-a-batch}
 
 Dve [oprávnenia rolí](../settings/roles-permissions.md) umožňujú niekomu pracovať s dávkami:
 
