@@ -15,13 +15,15 @@ Each group in B1 can have its own event calendar. Group leaders use it to schedu
 <h4>Before You Begin</h4>
 
 - You need a group created in B1 Admin with at least one member. See [Creating Groups](creating-groups.md) and [Group Members](group-members.md).
-- To add or edit calendar events, you must be designated as a group leader. See [Designating Group Leaders](group-members.md#designating-group-leaders) for instructions.
+- To add or edit calendar events in B1.church, you must be designated as a group leader. See [Designating Group Leaders](group-members.md#designating-group-leaders) for instructions.
 
 </div>
 
 ## Accessing the Group Calendar
 
-The group calendar is available through the B1.church member-facing app:
+Members and group leaders view the group calendar in the B1.church member app. Staff can also schedule and manage events from the group's page in B1 Admin (see [Bulk-Creating Events in B1 Admin](#bulk-creating-events-in-b1-admin)).
+
+To open the calendar in B1.church:
 
 1. From B1 Admin, click the **dropdown menu** in the top right corner of your screen.
 2. Select **Switch App**.
@@ -31,7 +33,7 @@ The group calendar is available through the B1.church member-facing app:
 6. Under **Next event**, click **All events** to open the group's **Events** view. Use the **Calendar** toggle there for a month view.
 
 :::info
-The group calendar is managed through B1.church (the member app) rather than B1 Admin. Group leaders access it by switching apps from the admin dashboard.
+Group leaders add and edit individual events in B1.church. The same group's events can also be created and managed in B1 Admin.
 :::
 
 ## Adding an Event
