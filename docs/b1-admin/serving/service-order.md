@@ -53,6 +53,10 @@ The service order is a list of items arranged in the sequence they will occur du
 You can add songs directly from your [Songs](./songs.md) library. This links the song details, including lyrics and arrangements, to your service plan so your worship team has everything they need. When you pick a song, each key choice shows the arrangement name next to the key, so arrangements that share a key are easy to tell apart.
 :::
 
+### Copying from a Previous Plan
+
+To reuse an order of service you already built, click **Copy from Previous Plan** on the **Order of Service** page, pick one of the earlier plans in the same ministry, and click **Copy**. Its sections and items are added after whatever this plan already has; the earlier plan is not changed.
+
 ### Importing Multiple Items from an External Provider
 
 Choosing **External Item** (or **Add From Lesson**) opens a browser for your linked lesson providers instead of a single-item form. Browse (or search) into a provider's content, and check the box next to each section or action you want. The dialog tracks how many you have selected (for example, "3 selected") -- click **Import (3)** to add all of them to the service order at once, instead of repeating the add-item flow for each one.
@@ -99,7 +103,8 @@ Each item and section shows how long it runs and when it starts:
 ## Editing and Removing Items
 
 - Click the pencil icon on any item (or on a section header) to **edit** its details.
-- In the edit dialog, click **Delete** to remove the item from the order, or **Duplicate** to add a copy of it.
+- Click the trash icon on an item, or on a section header, to **delete** it after confirming. Deleting a section also removes the items in it. You can still delete from the edit dialog too.
+- Click the copy icon on an item to **duplicate** it.
 
 :::info
 The service order is specific to each plan. Changes you make here only affect the selected plan and will not alter other plans or your song library.
