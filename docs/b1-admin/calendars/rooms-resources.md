@@ -31,11 +31,11 @@ Rooms are physical spaces that can be reserved alongside calendar events — a s
 
 1. On the **Rooms** tab, click **Add Room** at the top of the page.
 2. Enter a **Room Name**.
-3. Optionally set a **Capacity** (maximum number of people) and a **Description**. Both show next to the room when people pick rooms for an event.
+3. Optionally set a **Capacity** (maximum number of people) and a **Description**. Both show next to the room when people pick rooms for an event. You can also pick or type a **Category** (for example Sanctuary, Kitchen, or AV). Rooms that share a category are grouped under a heading when people pick rooms for an event, and the category becomes a filter on this page.
 4. Set an **Approval Group** if bookings need sign-off. Bookings made by members of that group are approved automatically; anyone else's booking waits as **Pending** until it's approved on the [Approvals](./approvals.md) page, and the group's members get an email about new requests. Leave it on **No approval needed** to approve every booking automatically.
 5. Click **Save**.
 
-The Rooms list shows each room's **Room Name**, **Capacity**, and **Approval Group**. Rooms switched off show an **Inactive** badge next to their name.
+The Rooms list shows each room's **Room Name**, **Category**, **Capacity**, and **Approval Group**. When any room has a category, a filter button for each category appears below the tabs; click one to show only that category's rooms, and click it again to show them all. Rooms switched off show an **Inactive** badge next to their name.
 
 ### Editing or Deleting a Room
 
@@ -50,7 +50,7 @@ Resources are items that can be booked alongside an event — AV equipment, proj
 ### Adding a Resource
 
 1. Click the **Resources** tab, then **Add Resource**.
-2. Enter a **Resource Name** and optionally a **Description**.
+2. Enter a **Resource Name** and optionally a **Description** and **Category**. A category groups the resource under a heading when people pick resources for an event, the same way it does for rooms.
 3. Set the **Quantity** you own (for example, 3 projectors). Each event books one, and B1 warns when more events at the same time book it than you have.
 4. Set an **Approval Group** if someone needs to sign off on resource loans. It works the same way as for rooms.
 5. Click **Save**.
