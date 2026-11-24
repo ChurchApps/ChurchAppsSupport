@@ -62,6 +62,28 @@ If a person's photo can't be downloaded or read during the export, that photo is
 To restore it, choose **B1 Import Zip** as the source and **B1 Database** as the destination (see [Importing Data](./importing-data.md)). Households, pickup contacts, and saved lists are rebuilt along with the people. Saved list filters are pointed at the restored groups, funds, campuses, and custom fields.
 :::
 
+## Exporting One Person's Record
+
+A person's profile has two export actions in the row of links under their household, next to **Workflow** and **Merge**. They do different jobs:
+
+### Export (details and form answers as CSV)
+
+**Export** builds a spreadsheet of one person's details plus the answers they have given on your [People forms](../forms/creating-forms.md). It appears for staff who can edit or administer forms.
+
+1. Open the person's record and click **Export** under their household.
+2. The **Export** dialog lists every People form the person has submitted. Under **Forms**, uncheck any form you want to leave out, or use **All Forms** to toggle them all. The table on the right previews each **Form**, **Question**, and **Answer** that will be included; type in **Search** to find a question or answer, and the chips above the table count the *matching responses* and *forms selected*.
+3. Click **Export**. If you unchecked every form, the button reads **Export without forms** and the file holds only the personal details.
+
+The download is named after the person (for example, `Jane_Smith_details.csv`). It starts with a **Person** section -- display, first, middle, last, and nick name, email, name tag notes, donor number, membership status, gender, marital status, birth date, anniversary, address, home, work, and mobile phone (with extensions), and whether the person is hidden from the member directory -- followed by one section per form with a row for each question and its answer. Heading and payment questions are left out. Yes/No answers read *Yes* or *No*, and dates are written as short dates.
+
+### Export Data (everything B1 holds, as JSON)
+
+**Export Data** downloads a single JSON file of all the data stored for the person across B1: their record, household, group memberships, attendance, giving, notes, documents, and form submissions. It is meant for data-subject access requests under GDPR and for giving a member a complete copy of their data. It appears for staff who can edit people, and the same **Export Data** button is also in the **Data Management** section of the person's edit form. The file is named `person-data-<id>.json`. See [Using the Data Management Tools](../settings/data-security.md#using-the-data-management-tools).
+
+:::tip
+Use **Export** when a ministry leader needs one person's registration or intake answers in a spreadsheet. Use **Export Data** when the person themselves asks for their data.
+:::
+
 ## Exporting Group Data
 
 You can also export member lists for individual groups. From the **Groups** page, open a group and click the **download icon** to export that group's member list. See [Group Members](../groups/group-members.md) for more details.

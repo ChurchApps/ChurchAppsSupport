@@ -113,22 +113,37 @@ To edit a donation, click the **Edit** button on its row in the batch. You can c
 The line under the batch name at the top of the page updates automatically to show the batch date, the number of gifts, and the combined dollar amount as you add or edit entries. Use this to reconcile against your deposit slip.
 :::
 
+### Moving a Gift to Another Batch
+
+If a gift was entered into the wrong batch, you do not need to delete and re-enter it. Click **Edit** on the gift and use the **Batch** dropdown in the editor. It lists every open batch, newest first, as "Nov 1, 2025 – Sunday Offering" (or just the date for an unnamed batch), plus the gift's current batch even if that one is closed. Pick the right batch and click **Save**. Both batch totals update, and because this is an edit rather than a new gift, it does not start any **Donation · Created** [workflow](../serving/workflows.md#triggers) again.
+
+People with **Enter Donations** can only move a gift between two open batches; **Edit Donations** can move it anywhere.
+
+## Gift Statuses {#gift-statuses}
+
+Most gifts have no badge: they are complete and count everywhere. Online gifts can carry one of these badges in the batch list and on the batch printout:
+
+- **Pending** -- a bank (ACH) gift that Stripe is still settling. The amount shows in orange and is already included in the batch total. It becomes complete on its own when the payment clears.
+- **Refunded** -- the gift was refunded through the gateway (see below) or the donor won a card dispute. The amount is crossed out and left out of the batch total, fund totals, reports, and statements.
+
+A recurring charge that the gateway could not collect is not shown in a batch at all; it goes to [Failed Gifts](failed-gifts.md).
+
 ## Refunding a Donation
 
-If a donor was charged in error or asks for their money back, you can refund a completed donation directly from its edit screen -- no need to go to your payment gateway's dashboard.
+If a donor was charged in error or asks for their money back, you can refund a completed donation directly from its edit screen -- no need to go to your payment gateway's dashboard. Refunds through B1 Admin are available for **Stripe**; for other providers, refund the payment in the provider's own dashboard.
 
 1. Open the donation and click **Edit**.
 2. Click the **Refund** button next to Delete at the bottom of the form.
 3. Confirm the dialog: "Refund this donation in full through the payment gateway? This cannot be undone."
 
-The donation is refunded in full through the original payment gateway and marked **Refunded** in your donation lists.
+The donation is refunded in full through the original payment gateway and marked **Refunded** in your donation lists. If Stripe declines the refund (for example, the charge was already refunded in the Stripe dashboard), the gateway's message appears in red at the top of the form and the gift is left as it was.
 
 :::warning
 Refunds are full refunds only -- there is no way to refund a partial amount from B1 Admin. The refund also cannot be undone once confirmed.
 :::
 
 :::info
-The **Refund** button only appears for donations that were paid online (they have a gateway transaction) and are still in **Complete** status. Manually entered donations (cash, check) do not have a gateway transaction to refund -- edit or delete those instead.
+The **Refund** button only appears to people with **Edit Donations**, and only for donations that were paid online (they have a gateway transaction) and are still in **Complete** status. Manually entered donations (cash, check) do not have a gateway transaction to refund -- edit or delete those instead.
 :::
 
 ## Printing a Receipt for One Gift
@@ -136,7 +151,7 @@ The **Refund** button only appears for donations that were paid online (they hav
 When someone hands in a check, pays for an event or t-shirt, or a visiting organization brings a donation, you can print a receipt for just that gift instead of a whole batch or a year-end statement.
 
 1. Open the batch that holds the donation.
-2. Click **Receipt** beside **Edit** on the donation's row. You can also click **Receipt** at the bottom of the Edit Donation form.
+2. Click **Receipt** beside **Edit** on the donation's row. Anyone who can open the batch sees **Receipt**, even if they cannot edit gifts. You can also click **Receipt** at the bottom of the Edit Donation form.
 3. Click **Print**, or **Close** to go back.
 
 The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the gift's memo (if it has one), the donor's **Donor Number** (if they have one), your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID. On the **Standard** format, your **Tax ID** and **Organization Address** print in the Organization box when you've filled them in (see [Statement Settings](giving-statements.md#statement-settings)).
@@ -152,4 +167,5 @@ Online gifts already get an automatic thank-you email, so the receipt is mostly 
 ## Next Steps
 
 - Review your entries using [Donation Reports](donation-reports.md) to verify accuracy
+- Open a donor's record to see everything they have given and print a single statement -- see [Giving on a Person's Record](person-giving.md)
 - At year-end, generate [Giving Statements](giving-statements.md) for your donors

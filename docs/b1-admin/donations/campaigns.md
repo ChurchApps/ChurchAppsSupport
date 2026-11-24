@@ -32,8 +32,8 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
    - **Goal Amount** *(optional)* — the target amount for the campaign. Without a goal, the campaign shows no progress bar.
    - **Start Date** *(required, starts on today)* and **End Date** *(optional)* — the fundraising window. With no end date, the campaign shows as **Ongoing**.
    - **Description** — a short description of the campaign.
-   - **Show progress on giving page** — show the campaign's progress to donors on your giving page.
-   - **Allow donors to pledge** — let donors make their own pledges to the campaign.
+   - **Show progress on giving page** — show the campaign on your B1.church giving page with how much has been given (and the goal, if there is one) and how much has been pledged.
+   - **Allow donors to pledge** — adds a **Make a Pledge** button to that campaign on the giving page for signed-in members. A member enters a **Pledge Amount** and can come back later to **Update Pledge**; their pledge then shows up here like one you entered, and the giving page shows them "You pledged ... · ... given" with their status.
 3. Click **Save**. If the name, fund, or start date is missing, the form says which one to fill in.
 
 ## Tracking Progress
@@ -42,10 +42,18 @@ Each campaign row shows:
 
 - **Goal** — your target amount
 - **Pledged** — the total amount members have pledged to give
-- **Given** — the total amount actually donated to this campaign's fund during the campaign window
-- **Progress** — a bar and percentage showing how far toward your goal you have come
+- **Given** — the total amount actually donated to this campaign's fund during the campaign window: completed gifts (not refunded, failed, or pending ones) dated from the **Start Date** through the **End Date** inclusive, or from the start date onward for an ongoing campaign. Gifts to the fund before the campaign started are not counted, so you can run a new campaign on an existing fund
+- **Progress** — a bar and percentage (capped at 100%) showing how far toward your goal you have come
 
-Click a campaign's name to open the detail view. It shows the percentage of the goal reached and lists individual pledges with each donor's pledged and given amounts and a status (**Not Started**, **In Progress**, **Fulfilled**, **Beyond Pledged**, or **Non-Pledged** for donors who gave without pledging). Donors are listed by last name, then first name; click a column header to sort by that column instead. Click **Export** at the top of the detail view to download the pledge list as a CSV.
+Click a campaign's name to open the detail view. It shows the percentage of the goal reached and lists individual pledges with each donor's pledged and given amounts and a status:
+
+- **Not Started** — pledged, nothing given yet
+- **In Progress** — some given, less than the pledge
+- **Fulfilled** — given exactly the pledged amount
+- **Beyond Pledged** — given more than the pledge
+- **Non-Pledged** — gave to the fund during the campaign without pledging (an anonymous gift shows as **Anonymous**)
+
+If someone has more than one pledge to the same campaign, they appear once with the pledges added together. Donors are listed by last name, then first name; click a column header to sort by that column instead. Click **Export** at the top of the detail view to download the pledge list as a CSV with the columns donor, pledged, given, and status.
 
 ## Adding Pledges
 
@@ -63,6 +71,10 @@ Pledges appear in the campaign detail and contribute to the **Pledged** total in
 Pledges are separate from actual donations. A pledge tracks a commitment; a donation records the actual gift. Both are shown on the campaign so you can see how well pledges are being fulfilled.
 :::
 
+## Pledges on Giving Statements
+
+A donor's campaign activity prints on their [giving statement](giving-statements.md#whats-on-a-statement). When a donor has a pledge, or gave to a campaign's fund during the campaign, the statement gains a **Pledge Progress** table listing each **Campaign** with the amount **Pledged**, the amount **Given**, and the **Status** from the list above. This appears on **Print All**, on the single statement from a person record, and on the statements members print themselves. Donors with no campaign activity see no such table.
+
 ## Editing or Deleting a Campaign
 
 Click **Edit** on any campaign row (or **Edit Campaign** at the top of the campaign's detail view) to update any of its details. In the edit form, click **Delete** to permanently remove the campaign and its pledges; you return to the campaign list. Deleting a campaign does not delete any donations that were recorded to its fund.
@@ -72,3 +84,4 @@ Click **Edit** on any campaign row (or **Edit Campaign** at the top of the campa
 - [Recording Donations](./recording-donations.md) — record the actual gifts that fulfill pledges
 - [Funds](./funds.md) — set up the fund to associate with a campaign
 - [Donation Reports](./donation-reports.md) — reporting on donations by fund
+- [Giving Statements](./giving-statements.md) — where pledge progress is printed for each donor

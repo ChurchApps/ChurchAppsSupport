@@ -28,7 +28,7 @@ The Live Stream page lets you watch your church's services as they happen, right
 
 When no service is live, the player shows one of these instead:
 
-- **Before a service** -- the service's title (or **Next Service Time**) with a countdown. When the service is more than a day away, its date and time are shown instead. The video starts on its own when the countdown ends; you don't need to reload the page.
+- **Before a service** -- the title of the sermon scheduled for the service (or **Next Service Time**) with a countdown. When the service is more than a day away, its date and time are shown instead. The video starts on its own when the countdown ends; you don't need to reload the page.
 - **After a service** -- "The current service has ended."
 - **No service scheduled** -- your church's logo, or other content your church chose to show while it's offline.
 
@@ -36,7 +36,7 @@ When no service is live, the player shows one of these instead:
 
 The live stream page can include interactive tabs alongside the video, depending on what your church has configured. These may include:
 
-- **Chat** -- Send messages and interact with other viewers during the broadcast. The top of the chat shows how many people are watching; click it to see their names. Type in the **Message** box and click **Send** (the smiley button adds emoji). Chat opens a set time before the service starts and stays open for a while after it ends; until then, the message box is replaced by "Chat opens at" and the time.
+- **Chat** -- Send messages and interact with other viewers during the broadcast. The top of the chat shows how many people are watching ("12 attendees"); click it to see their names. If you are on another tab, the **Chat** tab flashes when new messages arrive. Type in the **Message** box and click **Send** (the smiley button adds emoji). Chat opens a set time before the service starts and stays open for a while after it ends; until then, the message box is replaced by "Chat opens at" and the time.
 - **Host Chat** -- If you are signed in and your church has made you a chat host, a separate **Host Chat** tab lets you talk privately with the other hosts.
 - **Additional tabs** -- Your church may add custom tabs with links to bulletins, sermon notes, [giving pages](../giving/making-donations.md), or other resources.
 
@@ -44,11 +44,13 @@ Click on the tab icons or labels to switch between the available features while 
 
 ### Your Name in Chat
 
-You can chat without logging in. You join as **Anonymous** followed by a number; click the pencil icon next to that name to choose your own display name, then click **Update**. If you are signed in, your chat messages use the name on your account.
+You can chat without logging in. You join as **Anonymous** followed by a number; click **Change Name** to choose your own display name and click **Update** (afterward, a pencil icon next to your name lets you change it again). If you are signed in, your chat messages use the name on your account.
+
+If you join a YouTube or Vimeo stream late, the video skips ahead to where the service is now, so you watch along with everyone else.
 
 ## Watching in the Member Portal
 
-The **Stream** screen in the member portal (`/mobile/stream`) shows a **Live** or **Offline** badge next to its title and, when nothing is live, when the next stream starts. Below the player, each chat has a section with its latest messages; tap **Open chat** to read and send messages. Your church's other stream tabs are listed underneath -- tap one to open it.
+The **Stream** screen in the member portal (`/mobile/stream`) shows a **Live** or **Offline** badge next to its title and, when nothing is live, when the next stream starts. The player appears within an hour of the service; before that the frame shows the service's title and "Starts in" the remaining days, hours, or minutes, or "We're not live right now" with "Check back during service times" when nothing is scheduled. Below the player, each chat has a section with its two latest messages ("Chat opens when the stream starts." until it does); tap **Open chat** to read and send messages, and **Back to Stream** to return. Your church's other stream tabs are listed underneath -- tap one to open it inside the app.
 
 ## Before and After the Service
 

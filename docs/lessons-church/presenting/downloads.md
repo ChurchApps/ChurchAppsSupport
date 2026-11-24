@@ -1,6 +1,6 @@
 ---
 title: "Downloads and Materials"
-description: "Find and download printable activity sheets, leader guides, and PDFs attached to Lessons.church lessons, studies, or programs for your class."
+description: "Find and download the zip bundles of printable activity sheets, leader guides, and video files listed in a Lessons.church lesson's Downloads sidebar."
 ---
 
 # Downloads and Materials
@@ -26,24 +26,17 @@ Depending on the lesson and provider, you may find resources such as:
 - **Coloring pages** -- Printable pages for younger age groups.
 - **Leader guides** -- Detailed instructions and background information for teachers.
 - **Supplementary PDFs** -- Additional reading, take-home sheets, or parent handouts.
+- **Video files** -- The lesson's videos as MP4 downloads for offline playback.
 
 Not every lesson includes all of these. The available materials depend on what the content provider has supplied.
 
 ## Where to Find Downloads
 
-Resources are available at three levels:
+1. Open the lesson and choose the **Venue** for your room.
+2. In the sidebar, find the **Downloads** heading. Each entry is a bundle (a zip file such as "Lesson 1 Media" or "Printables") or a video, with a download icon.
+3. Click an entry to download it. Unzip bundles to get at the individual files.
 
-- **Program level** -- General resources that apply to the entire curriculum series.
-- **Study level** -- Materials tied to a specific study within a program.
-- **Lesson level** -- Resources for an individual lesson.
-
-To download materials:
-
-1. Navigate to the lesson, study, or program page.
-2. Look for the **Downloads** or **Resources** section on the page.
-3. Click on a file name to download it to your device.
-
-Files are typically in PDF format and ready to print.
+The list covers the files that lesson actually uses. Providers attach some bundles to a whole study or program, and those appear under each lesson that draws on them, so you will not find a separate downloads area on program or study pages.
 
 ## Preparing for Class
 
@@ -55,7 +48,7 @@ A good routine is to check for downloadable materials a few days before class:
 4. Set aside any take-home materials to hand out at the end of class.
 
 :::info
-Some providers include all of their materials at the study level rather than attaching them to individual lessons. If you do not see downloads on a specific lesson page, check the parent study or program page.
+Downloads are counted so providers can see how their curriculum is used. You do not need to be logged in to download, but if you are, your church is listed in the provider's statistics.
 :::
 
 :::tip
@@ -64,6 +57,6 @@ Create a weekly checklist for your volunteers that includes downloading and prin
 
 ## Related Articles
 
-- [Volunteer Guides](./volunteer-guides.md) -- Share role-specific instructions with your team
-- [Presenter Mode](./presenter-mode.md) -- Display the lesson on a screen during class
+- [Volunteer Guides](./volunteer-guides.md) -- Print the lesson script for your team
+- [Presenter Mode](./presenter-mode.md) -- Display the lesson's media on a screen during class
 - [Viewing Lessons](../browsing/viewing-lessons.md) -- Navigate to lessons and explore their content

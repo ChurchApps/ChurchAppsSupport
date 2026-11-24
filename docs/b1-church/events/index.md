@@ -23,16 +23,19 @@ Events appear on your church's website, either on a month calendar or as tiles o
 - **Register for this Event** -- A button that takes you to the registration form. Only shown when registration is turned on for the event.
 - **Add to my calendar** -- Downloads the event as a calendar file you can open in Google Calendar, Apple Calendar, Outlook, or another calendar app.
 
-Tap **All events** at the top of the page to go back. Above the upcoming-event tiles, a **Subscribe** button lets you copy the whole calendar's ICS link or download it, so new events show up in your own calendar app.
+For a repeating event, **When** shows the pattern in words, such as "Weekly on Sunday, 10:00 AM". **Add to my calendar** downloads a file named after the event. Tap **All events** at the top of the page to go back. Above the upcoming-event tiles, a **Subscribe** button offers **Copy ICS Link** and **Download ICS File**, so new events show up in your own calendar app.
+
+In the member portal, upcoming events that take registrations are listed with a **Register** link on the **Groups** screen (and, when you are signed out, on Home), and each opens the same registration steps inside the app.
 
 ## Registration Status
 
 When you open an event's registration page, what you see depends on timing and capacity:
 
 - **Open** -- The registration form appears, with a bar showing how many spots are filled (for example, "4 / 50 spots filled") when the event has a capacity limit.
-- **Registration Not Open** -- The registration window has not started yet. The page shows the opening date, for example "Registration opens Nov 16, 2026." Check back then.
+- **Registration Not Open** -- The registration window has not started yet. The page shows the opening date, for example "Registration opens Nov 16, 2026". Check back then.
 - **Closed** -- The page says "Registration Not Open" and "Registration for this event has closed." The registration deadline has passed.
-- **Event Full** -- All available spots have been taken: "This event has reached its capacity of 50."
+- **Event Full** -- All available spots have been taken: "This event has reached its capacity of 50." (In the member portal the headings read "Registration not open" and "Event is full".)
+- **Registration unavailable** -- Registration has been turned off for the event ("Registration is not available for this event.").
 
 :::tip
 If an event is full, you may still be able to join the **waitlist** when your church has enabled it -- you'll be emailed automatically if a spot opens. Otherwise, check back later; spots may open up if someone cancels.

@@ -35,7 +35,7 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 
 ## What They Have In Common
 
-Everything is set up in B1Admin under **Settings → Developer**, which has three tabs: **API Keys**, **Webhooks**, and **Connected Apps**.
+Everything is set up in B1Admin under **Settings → Developer**, which has three tabs: **API Keys**, **Webhooks**, and **Connected Apps**. [Developer Settings](./developer-settings.md) walks through every field on those tabs, including the webhook event list, delivery log, and API key scopes.
 
 - **Slack, Discord, and Mailchimp** are webhooks you create yourself on the **Webhooks** tab (pick the matching **Connector Type**). They don't need an API key.
 - **Claude** (signing in with your B1 account) shows up on the **Connected Apps** tab, where you can revoke it.
@@ -65,6 +65,7 @@ If none of the above fits, every B1 surface is open:
 
 ## Next Steps
 
+- [Developer Settings](./developer-settings.md) — the API Keys, Webhooks, and Connected Apps tabs, field by field
 - [Slack & Discord](./slack-discord.md) — post chat notifications
 - [Zapier](./zapier.md) — connect to 7,000+ apps
 - [Make](./make.md) — visual workflow automation

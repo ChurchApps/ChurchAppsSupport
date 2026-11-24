@@ -46,15 +46,28 @@ Click **Print** for a printable month. The printout starts with your church's li
 Groups that have events in the calendar automatically appear in the **Groups in Calendar** list on the left side of the detail page.
 
 1. Click **Add Group** above the calendar to associate a group with your calendar.
-2. Choose the group in **Select a Group**. The list includes every group in your church, not just the groups you belong to.
-3. Choose **Add all the events of the group**, or **Add specific events** and click each event you want on the small calendar that appears.
+2. Choose the group in **Select a Group**. The list includes every regular group in your church (the groups created on the [Groups](../groups/creating-groups.md) page), not just the groups you belong to. Serving teams are not listed.
+3. Choose **Add all the events of the group**, or **Add specific events** and click each event you want on the small calendar that appears ("Click to add"; a picked event turns green, and clicking it again unpicks it). Only the group's **public** events are offered here. If the group has no public events, the dialog says "No events found".
 4. Click **Save**.
 
 Each event appears on the calendar only once. If you add a whole group, any of its events you had already added one at a time are folded into the group entry, and picking specific events from a group that is already on the calendar adds nothing new. Only groups added as a whole are listed under **Groups in Calendar**.
 
 ### Importing an .ics File
 
-Click **Import .ics** to bring in events from another calendar. Choose the **Group** the events should belong to, then click **Choose .ics file** or paste the file's contents, and click **Import**. The events are created in that group, and the group is added to the calendar you imported from, so the events show up there right away.
+Use **Import .ics** to bring events over from Google Calendar, Outlook, Apple Calendar, Planning Center, or any other program that can export an `.ics` file.
+
+1. Export the calendar from the other program as an `.ics` file.
+2. On the calendar detail page, click **Import .ics**. The **Import .ics Calendar** dialog opens.
+3. Choose the **Group** the imported events should belong to. Only regular groups are listed.
+4. Click **Choose .ics file** and pick the file, or paste the file's text into **Or paste .ics contents here**.
+5. Click **Import**. A message such as "Imported 42 events." confirms the result. **Import** is then disabled for that file so you don't import it twice; choose a different file or group to import again.
+6. Click **Close**.
+
+Each event keeps its title, description, location, start and end, all-day flag, and repeat rule from the file. Events without a title are named "(untitled)", and up to 500 events are imported from one file. Imported events are created as **Public** in the chosen group, and the group is added to this calendar (as a whole-group entry) so the events show up right away. If the file holds no events you see "No events found in the file."; if it can't be read, "Import failed. Check the file contents."
+
+:::info
+Importing creates real events in the group, exactly as if a leader had typed them in. To bring in a calendar that keeps changing, point people at a [subscription link](./curated-calendar.md#sharing-your-calendar) instead and import only once.
+:::
 
 ### Removing an Event from the Calendar
 
@@ -72,7 +85,7 @@ If you want to create a single calendar that pulls events from many groups acros
 
 Click **New Event** on the calendar detail page to add an event, or click an event on the calendar and then click **Edit** to change it. The **New Event** / **Edit Event** form has these fields:
 
-- **Group** -- The group the event belongs to. If your church has event templates, you can also pick a **Template** to fill in the form.
+- **Group** -- The group the event belongs to. Regular groups are listed; serving teams are not. If your church has [event templates](./rooms-resources.md#event-templates), a **Template** box also appears: pick one to fill in the **Title**, **Description**, **Rooms**, and **Resources**, and to set **End** from the template's duration (set **Start** first; the duration is ignored for an all-day event). Pick **(no template)** to leave the form as it is.
 - **Title**
 - **Event photo** -- Click **Add Photo** (or the empty photo box) to choose or upload an image, cropped to a wide 16:9 shape. Click **Change Photo** to replace it, or **Remove Photo** to take it off. The photo is shown at the top of the event's page on your website and as its tile when a Calendar element shows **Upcoming events** (see [Showing Events on Your Website](#showing-events-on-your-website)).
 - **Description** -- Shown on the event's page on your website. Bold text, lists, and links are supported.
@@ -81,12 +94,23 @@ Click **New Event** on the calendar detail page to add an event, or click an eve
 - **All day** -- Turn this on for an event with no set time. **Start** and **End** change to date pickers, and the event runs from the start of its first date to the end of its last.
 - **Tags** -- Comma-separated labels, such as `youth, students`. A Calendar element on your website can be set to show only events with a certain tag. This is the same **Tags** field shown in the event's registration settings.
 - **Who can view notes** and **Who can post notes** -- Who can read and add to the event's notes (see [Event Notes](#event-notes)). Choose **Staff only** (the default), **Group leaders** (leaders of the event's group), or **Group members** (everyone in the event's group, including its leaders).
-- **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](./rooms-resources.md). Once one is picked you can also add setup and teardown time or a custom reservation window -- see [Booking a Room or Resource](./availability.md#booking-a-room-or-resource).
+- **Rooms** and **Resources** -- Reserve space and equipment for the event. Each list shows only active rooms or resources, grouped under their category headings; a room shows its seats and description under its name (for example *Seats 120 · Projector and piano*). Tick as many as you need. For a resource your church owns more than one of, a **Quantity** box appears below the list with a note such as *3 available*; enter how many the event needs (never more than you own). Once a room or resource is picked you can also add **Setup (min before)** and **Teardown (min after)**, or turn on **Custom reservation window** -- see [Booking a Room or Resource](./availability.md#booking-a-room-or-resource). A warning lists any conflicts with other bookings or blockouts before you save. See [Rooms, Resources & Scheduling](./rooms-resources.md) to set up rooms and resources.
 - **Reminders** -- Expand this section to send reminders before the event. See [Event Reminders](./event-reminders.md).
 
-**Group**, **Title**, **Start**, and **End** are required for a new event, and the end must be after the start. Click **Save**. To delete an event, open it in the editor and click **Delete**.
+**Group**, **Title**, **Start**, and **End** are required for a new event, and the end must be after the start. Click **Save**. To delete an event, open it in the editor and click **Delete** (deleting a repeating event asks you to confirm that the whole series goes).
 
 An event a member asked for from **Request an Event** in the B1 app has no group. When you edit one (for example, from [Approvals](./approvals.md)), **Group** shows **(no group)** and you can save without picking one, or choose a group if it belongs to one.
+
+### Repeating Events {#repeating-events}
+
+Tick **Repeats** to make the event recur. Set **Start** first, because the repeat options are based on it. The recurrence fields appear below **Tags**:
+
+- **Interval** and **Frequency** -- How often it repeats: every *n* **Day**s, **Week**s, or **Month**s. For example, 2 and **Week** is every other week.
+- Weekly -- Buttons for the days of the week (**S M T W T F S**). The start date's weekday is picked for you; click others to add them.
+- Monthly -- The **On** box offers **Monthly on day** *N* (the same date each month) or **Monthly on the** *second Tuesday* (the same weekday each month, worked out from the start date).
+- **Ends** -- **Never**, **On** an **End Date**, or **After** a number of **Occurrences**.
+
+The calendar draws each date of the series, and room and resource bookings are checked for conflicts on every date. To change or remove a single date later, see [Changing One Date of a Recurring Event](#changing-one-date-of-a-recurring-event).
 
 ### Duplicating an Event {#duplicating-an-event}
 
@@ -161,25 +185,7 @@ In the B1 App, events in a group's calendar have a **Share** link that opens the
 
 ### Managing Registrations
 
-To view and manage registrations for your events:
-
-1. In the Jump menu, choose **Calendars > Registrations**.
-2. You will see a table of events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags. Click **Upcoming** (the default, soonest first) or **Past** (most recent first) to switch lists; an event moves to Past once it has ended, and a repeating event stays upcoming while it has another date ahead. Type in **Search events** to filter by title or tag.
-3. Click an event's name to see the full list of registrations, with **Name**, **Members**, **Type**, **Paid / Total**, **Status**, and **Date** columns.
-4. From the detail page, you can:
-   - **Add Attendee** -- Manually register someone who signed up offline or over the phone.
-   - **Cancel Registration** on individual registrations (asks you to confirm)
-   - **Restore** a cancelled registration
-   - **Delete** registrations permanently (asks you to confirm). Registrations with payments can't be deleted; cancel them instead.
-   - **Promote** waitlisted registrations when a spot opens
-   - **Send Balance Reminder** -- Email everyone who still owes money
-   - **Export CSV** -- Download the registrations shown, including attendee types, selections, payment amounts, and question answers
-
-   These row actions are icons at the end of each row; hover over an icon to see its name.
-
-Filter chips above the roster narrow it by status, attendee type, **Balance due**, or **Unanswered questions only** (when the event has Registration Questions). Answered registrations have a **View Answers** button to see their responses. Events with attendee types also show per-type counts above the table, and every row has a **Registration Details** dialog where you can edit the registration and record payments and refunds -- see [Paid Registrations](./paid-registrations.md#the-registration-roster).
-
-The left side of the detail page shows how many people are registered (the registrant plus everyone on their registration), with a capacity bar, any waitlist count, the event's tags, and its **Reminders**. The **Registrations** card title counts registrations instead, which is what capacity limits -- so a family of four is one registration but four people.
+In the Jump menu, choose **Calendars > Registrations** to see every event with registration enabled and how full each one is, then click an event to work its roster: add attendees, filter by status or type, view answers, export a CSV, and cancel, restore, promote, or delete registrations. The roster needs the **View Registrations** permission, and changing it needs **Edit Registrations**. See [Managing Registrations](./managing-registrations.md) for the full walkthrough and [Paid Registrations](./paid-registrations.md) for payments and refunds.
 
 :::tip
 Use the capacity progress bar on the Registrations page to monitor how quickly events are filling up. The bar turns red when an event is at or over capacity.
@@ -188,6 +194,8 @@ Use the capacity progress bar on the Registrations page to monitor how quickly e
 ## Next Steps
 
 - [Curated Calendar](./curated-calendar.md) -- Create a calendar that pulls from multiple groups
+- [Managing Registrations](./managing-registrations.md) -- Work the roster: add attendees, filter, export, cancel, restore, and promote
 - [Paid Registrations](./paid-registrations.md) -- Attendee types, add-on selections, discount codes, payments, and waitlists
+- [Event Reminders](./event-reminders.md) -- Remind group members or registrants before the event
 - [Event Registration Guide](../guides/event-registration.md) -- Step-by-step guide for setting up event registration
 - [Calendars Overview](./index.md) -- Return to the calendars overview

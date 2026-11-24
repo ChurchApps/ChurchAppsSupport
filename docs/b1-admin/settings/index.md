@@ -20,7 +20,7 @@ The Settings area is organized into the following sub-sections:
 3. **Custom Fields** -- Define your own fields to track on people (a date, number, yes/no answer, or pick-list), then fill them in on profiles and search on them. Also reached as a section on the main Settings page. See [Custom Fields](./custom-fields.md) for details.
 4. **Roles** -- Control what each staff member and volunteer can see and change. See [Roles & Permissions](./roles-permissions.md).
 5. **Email Templates** -- Save reusable email content for sending manually or from a workflow. See [Email Templates](./email-templates.md) for details.
-6. **Audit Log** and **Batches** -- Review changes made across your account ([Audit Log](../reports/audit-log.md)), and review or undo bulk imports and actions (**Batches**).
+6. **Audit Log** and **Batches** -- Review changes made across your account ([Audit Log](../reports/audit-log.md)), and review or undo bulk imports and bulk people actions within 30 days ([Batches](./batches.md)).
 7. **Server Admin** -- Advanced administration tools, shown only to ChurchApps server administrators.
 
 :::info
@@ -33,9 +33,9 @@ When you first open the Settings page, the panel on the left shows your **church
 
 Below that, a **Configuration** list links to each settings section: **Church Information**, **General**, **Region**, **Giving**, **Texting**, **File Storage**, **Domains**, **Grade Promotion**, **Check-In**, **Volunteer Signup**, **Giving privacy**, **Campuses**, **Custom Fields**, and **Developer**. Each item shows a one-line summary of its current setting, and sections that still need setting up (such as Giving, Texting, or Domains) are marked with a small dot. **Giving** only appears for people who can edit giving settings. On a phone the list is hidden; scroll the page to reach each section. All of the sections are on one page -- click a name in the list to scroll to it, or just scroll down. Each section shows its current settings; click **Edit** in a section to change them.
 
-The **Developer** section has three tabs: **API Keys**, **Webhooks**, and **Connected Apps**. See [API Keys](../../developer/api/api-keys.md), [Webhooks](../../developer/api/webhooks.md), and [Connected Apps](../../developer/api/connected-apps.md).
+The **Developer** section has three tabs: **API Keys**, **Webhooks**, and **Connected Apps**. See [API Keys, Webhooks & Connected Apps](../integrations/developer-settings.md) for the admin walkthrough, and [API Keys](../../developer/api/api-keys.md), [Webhooks](../../developer/api/webhooks.md), and [Connected Apps](../../developer/api/connected-apps.md) in the developer docs.
 
-**Email Templates**, **Audit Log**, and **Batches** are separate pages -- open them from the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) under **Settings**.
+**Email Templates**, **Audit Log**, and **Batches** are separate pages -- open them from the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) under **Settings**. Someone whose role has **View Roles and Users** but not **Edit Church Settings** still sees **Settings** in the Jump menu, but for them it opens straight to **Roles**, and the other Settings pages are not listed.
 
 Start with the **Church Information** section to edit your church's name, address, and contact information -- see [Church Settings](./church-settings.md). To manage user roles, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) and choose **Settings > Roles** -- see [Roles & Permissions](./roles-permissions.md).
 
@@ -52,6 +52,9 @@ For information about how your data is protected, see [Data Security](./data-sec
 - [Church Settings](./church-settings.md) -- Configure your church information and branding
 - [Campuses](./campuses.md) -- Add locations for multi-site churches
 - [Roles & Permissions](./roles-permissions.md) -- Set up user roles and access control
+- [Email Templates](./email-templates.md) -- Reusable email and text templates
+- [Batches](./batches.md) -- Review and undo bulk imports and bulk people actions
+- [Audit Log](../reports/audit-log.md) -- Who changed what, and when
 - [Mobile App Settings](./mobile-app.md) -- Customize the navigation tabs and app theme colors of the B1.church PWA
 - [Push Notifications](./mobile-app.md#push-notifications) -- Send or schedule push notifications to your app's users
 - [Data Security](./data-security.md) -- Learn how your data is protected

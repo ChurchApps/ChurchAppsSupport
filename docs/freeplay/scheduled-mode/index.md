@@ -12,7 +12,7 @@ Scheduled Mode lets a FreePlay TV run itself. You build playlists and put them o
 </div>
 
 :::tip
-FreePlay Admin uses your ChurchApps login, the same one you use for B1 Admin. There's no separate account to create.
+FreePlay Admin uses your ChurchApps login, the same one you use for B1 Admin. There's no separate account to create. See [Getting Around FreePlay Admin](./getting-around-freeplay-admin.md) for signing in and finding your way around.
 :::
 
 ## How It Fits Together
@@ -45,11 +45,12 @@ Until you've done each of these, the **Screens** page shows a **Get started** ch
 Click **Hide** to dismiss the checklist.
 
 :::tip
-Press **Ctrl+K** (**⌘K** on a Mac), or click the search box in the header, to open the command palette. From there you can jump to any page or start an action like **Pair screen**, **Add playlist**, or **Add schedule**.
+Press **Ctrl+K** (**⌘K** on a Mac), press **/**, or click the search box in the header to open the command palette. From there you can jump to any page or start an action like **Pair screen**, **Add playlist**, or **Add schedule**. See [Getting Around FreePlay Admin](./getting-around-freeplay-admin.md#the-command-palette).
 :::
 
 ## In This Section
 
+- **[Getting Around FreePlay Admin](./getting-around-freeplay-admin.md)** - Sign in, find the four pages, and use the command palette
 - **[Pairing a Screen](./pairing-a-screen.md)** - Show the code on the TV and pair it in FreePlay Admin
 - **[Managing Screens and Groups](./managing-screens.md)** - Check status and downloads, and organize screens into groups
 - **[Connecting Providers and Building Playlists](./building-playlists.md)** - Link content sources and build loops of images and videos

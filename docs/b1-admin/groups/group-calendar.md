@@ -61,7 +61,7 @@ For a group that meets every Saturday, set the frequency to "week" and choose Sa
 
 ## Bulk-Creating Events in B1 Admin
 
-The group's page in B1 Admin also has a **Calendar** section where staff can schedule a whole season of meetings at once:
+The group's page in B1 Admin also has a **Calendar** section where staff can schedule a whole season of meetings at once. Saving events here needs **Edit Content**, or you must be a leader of the group:
 
 1. Open the group in B1 Admin and, in the **Calendar** section, click **All events**.
 2. Click **+ Add Events** to open the **Add Recurring Events** dialog.
@@ -72,7 +72,7 @@ The group's page in B1 Admin also has a **Calendar** section where staff can sch
 7. Review the list of meeting dates and uncheck any to skip.
 8. Leave **Allow RSVPs** checked if you want members to be able to respond to these events (see below), then click **Save**.
 
-The B1 Admin event list has **Upcoming** and **Past** buttons above it. **Upcoming** shows events that haven't ended yet, plus recurring series that are still running, soonest first. **Past** keeps every earlier event the group has had, newest first. Each row shows the event's title, start, how it repeats, how many dates were skipped, its visibility, and its RSVPs. Click **Delete** on a row and confirm to remove the event and all of its occurrences.
+The B1 Admin event list has **Upcoming** and **Past** buttons above it. **Upcoming** shows events that haven't ended yet, plus recurring series that are still running, soonest first. **Past** keeps every earlier event the group has had, newest first. Each row shows the event's **Title**, **Start**, how it **Repeats** (**One time**, **Weekly**, or **Every 2 Weeks**, with the date the series runs **until**), its **Skipped Dates** count, its **Visibility**, and its **RSVPs**. People with **Edit Content** see a **Delete** link on each row; click it and confirm to remove the event and all of its occurrences. (Leaders without that permission edit and delete the group's events on B1.church, as described below.)
 
 ## Event RSVPs
 

@@ -25,7 +25,7 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 
 ## Booking Requests
 
-When someone books a room or resource that has an **Approval Group**, and they aren't a member of that group, the request appears in the **Room & Resource Requests** section. (Bookings by members of the Approval Group are approved automatically.) Members of the Approval Group also get an email listing new pending requests, with a link to this page. Each row shows:
+When someone books a room or resource that has an **Approval Group**, and they aren't a member of that group, the request appears in the **Room & Resource Requests** section. (Bookings by members of the Approval Group are approved automatically.) Members of the Approval Group also get a digest email listing the new pending requests for their group, with a link to this page; digests go out about every half hour, so one email can cover several requests. Each row shows:
 
 - The event name and date/time
 - The room or resource being requested (with the quantity for multi-unit resources)
@@ -38,17 +38,26 @@ If a request overlaps another booking or blockout for the same room or resource,
 
 ### Approving or Rejecting
 
-Hover over a booking request and click **Approve** or **Reject** (rejecting asks you to confirm first). The requester is notified of the decision. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
+Hover over a booking request and click **Approve** or **Reject**. The requester is notified of the decision (see [Rejecting with a Reason](#rejecting-with-a-reason)), and a "Booking approved." or "Booking rejected." message confirms it. Approved bookings are locked to that room or resource for the event; rejected bookings free the slot for others.
 
 When you click **Approve**, an **Approve booking** dialog opens so you can also publish the event in the same step:
 
 1. Check **Publish to public calendar** to make the event public on its group's calendar. Leave it unchecked to approve the booking without changing the event's visibility.
-2. Once **Publish to public calendar** is checked, you can optionally choose a curated calendar from **Also add to calendar** to add the event to one of your [curated calendars](./curated-calendar.md) as well. Leave it set to **None** to skip this. (This option only appears if you have the **content.edit** permission.)
+2. Once **Publish to public calendar** is checked, you can optionally choose a curated calendar from **Also add to calendar** to add the event to one of your [curated calendars](./curated-calendar.md) as well. Leave it set to **None** to skip this. (This box only appears if you have the **Edit Content** permission; **Resolve Calendar Conflicts & Approvals** on its own can publish but not add to a curated calendar.)
 3. Click **Approve**.
+
+## Rejecting with a Reason {#rejecting-with-a-reason}
+
+Clicking **Reject** on a booking or an event request opens the **Reject Request** dialog, which asks "Are you sure you wish to reject this request?" and offers a **Reason (optional)** box (up to 500 characters).
+
+1. Type the reason if you want the requester to know why, for example "The hall is being refloored that week; try the chapel." Leave it blank to send the decision alone.
+2. Click **Reject**.
+
+The requester gets a notification in the B1 app. Without a reason it reads, for example, *Your request for Fellowship Hall for "Youth Lock-In" was rejected.*; with a reason the text you typed follows the decision after a colon. Approvals send the same notification with *approved*. The notification links to the member's **My Requests** page.
 
 ## Pending Events
 
-Events that members request (for example, from **My Requests** in the B1 app) appear in the **Event Requests** section with their date, **Description**, and **Requested by**. Click **Approve** to publish an event to the calendar, or **Reject** to notify the submitter that changes are needed. Click **Edit** to fix the request's details before you decide, or **Delete** to remove it.
+Events that members request (for example, from **Request an Event** in the B1 app) appear in the **Event Requests** section with their date, **Description**, and **Requested by**. Click **Approve** to publish the event: its **Visibility** is set to **Public** so it appears on its group's calendar. Click **Reject** to turn it down; the event is kept but set to **Private**, and the member is told, with your reason if you give one (see [Rejecting with a Reason](#rejecting-with-a-reason)). Click **Edit** to fix the request's details before you decide, or **Delete** to remove it entirely (after confirming).
 
 Member requests don't belong to a group, so the editor shows **(no group)** in **Group**. You can save your changes without picking a group, or choose one if the event belongs to a ministry. Members can also enter an optional **Location** for events away from the church building, which shows in the editor's **Location** field.
 

@@ -36,6 +36,9 @@ Use your TV remote to control playback:
 | **Rewind** | Jump back 10 seconds in a video. On a slide, go to the previous item |
 | **Up arrow** | Open **Select a Message** to jump to a specific item |
 | **Down / Back** | Exit the player |
+| **Previous / Info** | Also exit the player, on remotes that have these buttons |
+
+Pressing the **Left arrow** on the first item exits the player too, and so does skipping forward past the last item unless the content loops.
 
 :::tip
 You can also swipe on touch-enabled remotes. Swipe left to go forward, swipe right to go back, swipe down to open **Select a Message**, and swipe up to exit the player.
@@ -43,23 +46,27 @@ You can also swipe on touch-enabled remotes. Swipe left to go forward, swipe rig
 
 ## Videos and Slides
 
-When you pause, a pause icon appears over the content. Press **Select** or **Play-Pause** again to resume.
+When you pause a video, a pause icon and a progress bar appear over it, and they stay until you resume. A paused slide simply stays on screen. Press **Select** or **Play-Pause** again to resume.
 
-Videos move to the next item when they finish. A video that is set to loop repeats until you skip ahead.
+Videos move to the next item when they finish. A video that is set to loop repeats until you skip ahead. After the last item, the player exits unless the content is set to loop, as [announcements](./announcements.md) are.
 
 Image slides move on by themselves after a few seconds (5 seconds unless the provider sets its own timing). Press the **Right arrow** to move on sooner, or pause to hold a slide on screen.
 
+If a file takes more than a second to open, FreePlay shows **Loading video...** or **Loading image...**. A file that won't open shows **Video failed to load** or **Image failed to load** with **Skipping to next item...**, and FreePlay moves on after a few seconds. See [Troubleshooting FreePlay](../getting-started/troubleshooting.md#video-failed-to-load-or-image-failed-to-load).
+
 ## Select a Message
 
-Press **Up** during playback to open **Select a Message**. It shows every item with a thumbnail and title, and marks the one that's playing as **NOW PLAYING**. Move to any item and press **Select** to jump straight to it. Press **Back** to close it without changing anything.
+Press **Up** during playback to open **Select a Message**. It shows every item with a thumbnail and title, three to a row, and marks the one that's playing with a green **NOW PLAYING** badge. The highlight starts on the current item. Move to any item and press **Select** to jump straight to it. Press **Back** to close it without changing anything.
+
+Playback stops while **Select a Message** is open. When you close it with **Back**, the current item starts again from its beginning.
 
 ## Exiting the Player
 
 Press **Down** or **Back** on your remote to leave the player. Where you end up depends on what you were playing:
 
-- **Provider content** - Back to the content browser
-- **A plan** - Back to the plan download screen. See [Plan Mode](../plan-mode/index.md)
-- **A download** - Back to the **Downloads** screen
+- **Provider content** - Back to the content browser, in the folder that holds what you were playing
+- **A plan** - Back to the plan download screen. See [Playing Today's Plan](../plan-mode/playing-todays-plan.md)
+- **A download or announcements** - Back to the **Downloads** screen
 
 :::info
 The screen stays awake while the player is open, so the TV won't go to sleep in the middle of a lesson.
@@ -68,4 +75,5 @@ The screen stays awake while the player is open, so the TV won't go to sleep in 
 ## Related Articles
 
 - **[Browsing and Downloading Content](./browsing-content.md)** - Find content and download it for offline play
+- **[Downloads and Storage](../getting-started/downloads-and-storage.md)** - Replay or delete what's saved on the TV
 - **[Scheduled Playback on the TV](../scheduled-mode/scheduled-playback.md)** - Remote controls for screens that follow a calendar

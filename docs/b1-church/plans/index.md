@@ -21,11 +21,12 @@ Plans can include several types of content depending on how your church sets the
 - **Blockout dates** -- Let your team leaders know when you are unavailable by managing your blockout dates.
 - **Scheduling preferences** -- Tell your schedulers how many times a month you want to serve, which service times you prefer, and whether to schedule your household together.
 - **Serving calendar** -- Subscribe to the times you have accepted so they show up in your own calendar app.
+- **Song library** -- If your church adds a **Songs** tab, browse every song in every key, search by title or artist, and open lyrics, chords, charts, and rehearsal tracks. See [Song Library](./songs.md).
 - **Home preview** -- Your next assignments also appear in the **You're serving** section of the [Home dashboard](../getting-started/navigating.md#home), where you can accept or decline ones that need a reply.
 
 ## Getting Started
 
-To access your plans, tap **Plans** in the tab bar or on the **More** page of your member portal. You must be [logged in](../getting-started/logging-in.md) to view your plans -- if you are not signed in, you will be prompted to log in first.
+To access your plans, tap **Plans** in the tab bar (if your church gave it a slot) or on the **More** page of your member portal. You must be [logged in](../getting-started/logging-in.md) to see your assignments -- signed out, the Plans page shows only the **Sign up to serve** button and empty **Upcoming** and **Past** sections, and opening a plan asks you to sign in ("Sign in required").
 
 :::info
 You will only see plans that you have been assigned to. If you do not see any plans listed, it means you have not been added to a serving team yet. Talk to your church administrator or ministry leader to get involved.
@@ -35,3 +36,4 @@ You will only see plans that you have been assigned to. If you do not see any pl
 
 - [Viewing Plans](./viewing-plans.md) -- Learn how to browse your plan list and view plan details.
 - [Service Order](./service-order.md) -- Understand the service order view and how to print it.
+- [Song Library](./songs.md) -- Browse and search your church's songs in every key.

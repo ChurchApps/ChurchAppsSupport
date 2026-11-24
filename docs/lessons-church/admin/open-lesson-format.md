@@ -7,7 +7,7 @@ description: "Format spec for third-party curriculum providers on Lessons.church
 
 <div class="article-intro">
 
-The Open Lesson Format is a standardized JSON schema that allows third-party content providers to publish curriculum for Lessons.church. Any organization that hosts a feed in this format can be added as an external provider, making their content browsable and playable alongside the built-in library.
+The Open Lesson Format is a standardized JSON schema that allows third-party content providers to publish curriculum for Lessons.church. Any organization that hosts a feed in this format can be added as an external provider by a church, making its lessons schedulable and playable alongside the built-in library.
 
 </div>
 
@@ -134,16 +134,16 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
       "actions": [
         {
           "id": "action-1",
-          "actionType": "text",
+          "actionType": "note",
           "content": "**Key Verse:** Mark 1:9-11",
-          "sort": 1
+          "sort": 1,
+          "role": "Leader"
         },
         {
           "id": "action-2",
-          "actionType": "question",
+          "actionType": "say",
           "content": "What do you know about baptism?",
-          "sort": 2,
-          "role": "Leader"
+          "sort": 2
         },
         {
           "id": "action-3",
@@ -179,7 +179,7 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 | `id` | string | Venue identifier |
 | `name` | string | Venue name |
 | `lessonId` | string | Lesson identifier |
-| `lessonName` | string | Lesson display name |
+| `lessonName` | string | Lesson display name (Lessons.church sends the lesson title here) |
 | `lessonImage` | string | Lesson image URL |
 | `lessonDescription` | string | Lesson summary (catalog copy) |
 | `bottomLine` | string | One-sentence parent take-home (optional) |
@@ -191,7 +191,7 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 | `programName` | string | Parent program name |
 | `programSlug` | string | Parent program slug |
 | `programAbout` | string | Program description |
-| `downloads` | array | Downloadable file bundles |
+| `downloads` | array | Downloadable file bundles, shown under **Downloads** in the lesson sidebar |
 | `sections` | array | Ordered lesson sections |
 
 #### Section
@@ -209,10 +209,10 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 | Field | Type | Description |
 |-------|------|-------------|
 | `id` | string | Action identifier |
-| `actionType` | string | One of: `play`, `text`, `question`, `quote`, `subhead` |
+| `actionType` | string | One of: `say`, `do`, `note`, `play` (see Action Types below) |
 | `content` | string | Text content or media label |
 | `sort` | number | Display order |
-| `role` | string | Role name, e.g. "Leader", "Kids" (optional) |
+| `role` | string | Role name, e.g. "Leader", "Host" (optional); set it where the role changes |
 | `roleId` | string | Role identifier (optional) |
 | `files` | array | Media files for `play` actions (optional) |
 
@@ -241,12 +241,25 @@ Each venue's `apiUrl` must return a JSON object matching this schema:
 
 | Type | Purpose |
 |------|---------|
-| `play` | Media playback -- video, audio, or slideshow. Must include `files`. |
-| `text` | Static text content. Supports markdown-style bold (`**text**`). |
-| `question` | Discussion or reflection question for the audience. |
-| `quote` | A highlighted quote or Scripture passage. |
-| `subhead` | A heading or divider within a section. |
+| `say` | Script for the leader to read or paraphrase. Rendered as speech bubbles. Markdown. |
+| `do` | An instruction or activity to carry out. Rendered as a checklist. Markdown. |
+| `note` | Background or a reminder for the volunteer, not read aloud. Markdown. |
+| `play` | Media playback -- a video, image, or slideshow. Must include `files`. `content` is the display name. |
+
+These are the four types the Lessons.church lesson page, the B1 app, and FreePlay render. Any other value is ignored by the viewer, so stick to these. Set `role` on the first action of each new role group within a section. The lesson page does not print role names, so make the content itself clear about who is acting.
+
+When Lessons.church publishes its own content as a feed, `Say`, `Do`, `Note`, and `Play` actions become these lowercase types, `Add-on` actions become `play`, and `Download` actions are left out of `sections` (their bundles appear in `downloads` instead).
+
+## Building a Feed Without Writing JSON
+
+The [Open Lesson Format Builder](./open-lesson-tools.md) at `lessons.church/tools/olf` produces a venue feed from a form, and the Open Lesson List Builder at `lessons.church/tools/oll` produces the provider tree. Both download the JSON for you to host.
 
 :::tip
 To see a working example of the feed in action, you can view the built-in Lessons.church content tree at `https://api.lessons.church/lessons/public/tree` and fetch any venue feed URL from it.
 :::
+
+## Related Articles
+
+- [Open Lesson Format Tools](./open-lesson-tools.md) -- Build and preview feeds in the browser
+- [Third-Party Providers](./third-party-providers.md) -- How a church connects your feed
+- [External Providers](../browsing/external-providers.md) -- What churches see once connected

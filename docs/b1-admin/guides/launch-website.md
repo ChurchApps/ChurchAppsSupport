@@ -36,7 +36,7 @@ Follow the [Website Initial Setup](../website/initial-setup.md) guide to:
 3. Click **Edit Content**, add a **Section**, then add your hero, welcome message, church name and tagline, and other key information
 
 :::tip
-Starting from scratch? A [Site Template](../website/managing-pages.md#starting-from-a-site-template) creates a set of ready-made pages (home, about, connect, give, and others) with navigation links already wired up — replace the placeholder content with your own.
+Starting from scratch? A [Site Template](../website/site-templates.md) creates a set of ready-made pages (home, about, connect, give, and others) with navigation links already wired up — replace the placeholder content with your own, or let the AI page builder draft a page from a short description.
 :::
 
 ## Step 2: Configure Appearance

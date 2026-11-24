@@ -22,7 +22,7 @@ Once you have created a group, the next step is adding members. From a group's d
 ## Adding Members to a Group
 
 1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **People > Groups** and click on the group you want to manage.
-2. In the **Members** section of the group page, click **All members**. (Teams and ministries open straight to their member list.)
+2. In the **Members** section of the group page, click **All members**. (Teams and ministries open straight to their member list; they are groups with the *team* or *ministry* tag, and a team's page also shows **Block-out dates**. See [Ministries, Teams, and Plan Types](../serving/ministries-and-teams.md).)
 3. In the **Add Person** box below the member list, type the name of the person you want to add and press **Enter** or click the search icon. People who are already in the group are left out of the results. To find people by other fields instead of their name, click **Advanced**.
 4. Click the person's name, or the add icon next to it, in the search results.
 5. The person now appears in the group member list. If they have an email address on file, a **Send Invite Email?** dialog asks whether to email them an invitation; click **Send Invite** or **No Thanks**.
@@ -31,7 +31,9 @@ Once you have created a group, the next step is adding members. From a group's d
 Before you type anything, the **Add Person** box shows a short list of **Recent people** you can add with one click: the people you picked most recently in any person search (remembered in this browser), then the people added to B1 most recently.
 :::
 
-When you are done, click the **Back to** link with the group's name to return to the group page. The group page shows a summary of the group's **Members** (with **All members**), **Sessions** (**All sessions**), **Calendar** (**All events**), and **Health** (**See health**). Each link opens the full view; **See health** shows the group's member, join, departure, and churn counts with charts of membership changes, attendance, age, and gender. If you are one of the group's leaders, it also shows **Leader notes** (see [Leader Notes](#leader-notes) below). When forms are linked to the group, a **Linked forms** section appears too (see [Linked Forms](#linked-forms) below).
+When you are done, click the **Back to** link with the group's name to return to the group page, where the **Members** section shows the first few members, the member and leader counts, and how many join requests are pending. See [The Group Page](./group-page.md) for the rest of the page.
+
+The member list has a **Name** column and a **Role** column that shows a **Leader** badge for each leader. Adding and removing members and changing leaders need **Edit Group Members**; with **View Group Members** (or **View Attendance** / **Edit Attendance**) you can see the list but not change it. Names are links to person records only if you can view people.
 
 ### Adding Someone Who Isn't in B1 Yet
 
@@ -130,7 +132,9 @@ See [Personalizing Texts with Merge Fields](../settings/church-settings.md#perso
 To download the group member list as a file:
 
 1. In the group's member list, click **Export** above the list.
-2. A CSV file containing the group's member information will download to your computer.
+2. A CSV file (`groupmembers.csv`) containing the group's member information will download to your computer.
+
+The file has one row per member. Along with the membership details (the group and person IDs, whether the person is a **leader**, and when they joined), each row carries the person's record fields and contact details: **personName**, **personEmail**, **personHomePhone**, **personMobilePhone**, **personWorkPhone**, and **personAddress1**, **personAddress2**, **personCity**, **personState**, and **personZip**, plus fields such as membership status, gender, and birth date.
 
 A CSV export is useful for importing data into other tools, or keeping offline records. For more export options, see [Exporting Data](../people/exporting-data.md).
 

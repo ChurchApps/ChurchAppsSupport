@@ -22,7 +22,8 @@ You can also tap the bell icon, tap **See all** to open your inbox, and then tap
 At the top of the screen you'll find settings that apply to everything:
 
 - **Delivery**
-  - **Push notifications** -- Turns push notifications on or off for your account. To set up push on the device you're using, turn it on from your inbox -- see [Push Notifications on This Device](#push-notifications-on-this-device).
+  - **Push notifications** -- Turns push notifications on or off for your account ("Allow push alerts on this account"). To set up push on the device you're using, turn it on from your inbox -- see [Push Notifications on This Device](#push-notifications-on-this-device).
+  - **Push notifications per day** -- Caps how many push alerts your account gets in a day: **No limit**, **3**, **5**, **10**, or **20**.
   - **Text messages** -- Shown only if your church has texting set up. Turn this on to get serving and event reminders by text at the mobile number on your profile. It is off until you turn it on. Church staff can also turn it on or off for you from your record in B1 Admin.
   - **Mute all notifications** -- Temporarily silences every channel until you turn it off again.
 - **Email** -- Choose an **Email frequency**:
@@ -33,7 +34,7 @@ At the top of the screen you'll find settings that apply to everything:
 
 ## Choosing Notifications by Type
 
-Below the global controls is a grid of notification types. For each one you can turn on or off the channels you want:
+Below the global controls, **Notification Categories** ("Choose which channels to use per category.") lists each notification type. For each one you can turn on or off the channels you want:
 
 - **Push** -- A notification on your device.
 - **Email** -- A message to your inbox.
@@ -42,7 +43,7 @@ Below the global controls is a grid of notification types. For each one you can 
 
 The types are **Direct Messages**, **Event Reminders**, **Serving & Schedule**, **Tasks & Follow-Ups**, **Group Chat**, **Church Announcements**, and **Group Activity** (such as requests to join a group you lead). Each channel shows as a chip you tap to turn on or off. For example, you might keep push notifications on for Direct Messages but turn them off for Church Announcements.
 
-Every type starts with push, email, and in-app turned on. Texts start on for reminders, serving, and tasks, and off for announcements.
+Every type starts with push, email, and in-app turned on. Texts start on for reminders, serving, and tasks, and off for announcements. A category your church has locked shows a padlock ("Required for safety/legal reasons.") and its chips can't be changed.
 
 ## Stopping Text Messages
 
@@ -52,7 +53,7 @@ To get texts again after replying STOP, reply **START** to your church's number.
 
 ## Saving Your Changes
 
-After adjusting your preferences, tap **Save Preferences**. Your changes take effect right away and apply everywhere you use B1. To undo changes you haven't saved yet, tap **Discard**.
+After adjusting your preferences, tap **Save Preferences** (it stays disabled until you change something). "Preferences saved." confirms it; your changes take effect right away and apply everywhere you use B1. To undo changes you haven't saved yet, tap **Discard**.
 
 :::tip
 Time-sensitive notifications -- direct messages, event and serving reminders, and tasks -- still reach you during quiet hours. Group chat, announcements, and group activity wait until quiet hours end.
@@ -62,7 +63,7 @@ Time-sensitive notifications -- direct messages, event and serving reminders, an
 
 Push notifications reach each phone or computer separately. When you're signed in and this device isn't set up yet, Home shows a **Turn on notifications** card -- tap **Enable Notifications** and choose **Allow** when your browser asks. You can also tap the bell icon, tap **See all** to open your inbox, and tap **Turn on** in the **Push notifications** section at the bottom (tap **Turn off** there to stop push on this device).
 
-On an iPhone, notifications only work once the app is [installed to your home screen](./installing-pwa.md), so the button reads **Install App** until then. If you blocked notifications earlier, the app explains how to allow them again in your browser or phone settings.
+On an iPhone, notifications only work once the app is [installed to your home screen](./installing-pwa.md), so the card reads "Install app to enable notifications" with an **Install App** button until then. If you blocked notifications earlier, the card says "Enable notifications in your browser" and the inbox shows **Blocked** with how to allow them again in your browser or phone settings. If your browser granted permission but the device still isn't registered, you'll see "Finish notification setup" with **Retry Registration** (or **Retry** in the inbox). If your church hasn't set up push at all, the inbox says "Push notifications aren't turned on for this site. An administrator needs to add the push keys."
 
 ## Related
 

@@ -15,7 +15,7 @@ Headcounts let you record a simple total attendance number -- for a service, a s
 <h4>Before You Begin</h4>
 
 - Your campuses, services, and service times must be configured. See [Attendance Setup](setup.md).
-- Entering a headcount requires the **Attendance &gt; Edit** permission; viewing the trend report requires **Attendance &gt; View**. See [Roles & Permissions](../settings/roles-permissions.md).
+- Entering a headcount requires the **Edit Attendance** permission; viewing the trend report requires **View Attendance**. See [Roles & Permissions](../settings/roles-permissions.md).
 
 </div>
 
@@ -35,7 +35,7 @@ Headcounts are a total-only alternative to [Recording Attendance](recording-atte
    - **Headcount** -- the total number of people present (a whole number, 0 or more)
 4. Click **Save**.
 
-The **Recent Headcounts** table beside the form lists your last several entries with their date, service, service time, group, and count. Click a row to load it back into the form if you need to correct or delete it.
+The **Recent Headcounts** table beside the form lists your entries with their **Date**, **Service**, **Service Time**, **Group**, and **Headcount**. Click a row to load it back into the form, which changes its title to **Edit Headcount**; change the values and click **Save**, click **Delete** and confirm to remove the entry, or click **Cancel** to go back to entering a new one. After each save the form keeps the service, service time, and date you used so you can enter the next count quickly.
 
 ## Headcount Trend Report
 

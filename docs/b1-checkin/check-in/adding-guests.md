@@ -21,14 +21,14 @@ If someone is visiting your family and needs to check in with your household, yo
 
 ## How to Add a Guest
 
-1. From the **household review screen**, tap the **Add Guest** button located below the list of household members.
-2. The add guest form appears with these fields:
+1. From the **household review screen**, tap **Add a Guest** below the list of household members.
+2. The **Add Guest** form appears with these fields:
    - **First Name** -- Enter the guest's first name.
    - **Last Name** -- Enter the guest's last name.
    - **Email** (optional) -- Enter the guest's email address so the church can follow up. Leave it blank to skip it.
-3. Tap the **Add Guest** button to save.
+3. Tap **Add Guest** to save.
 
-The guest is added to your household and you are returned to the household review screen. The new guest will appear in your member list alongside your other family members.
+The guest is added to your household and you are returned to the household review screen. The new guest appears in your member list alongside your other family members, with their check-in type already set to **Guest** so they count toward any guest capacity on the room and print as a guest on labels designed to show the check-in type. If saving fails, the form shows **Couldn't add the guest. Please try again.**
 
 :::info
 If the guest's name matches someone already in the system who is not a member, the app will link to that existing record instead of creating a duplicate. This helps keep your church database clean. The email is only saved on a new record; an existing record is not changed.

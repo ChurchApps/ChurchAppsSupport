@@ -32,9 +32,9 @@ Tap your profile photo in the top app bar, or tap **Edit Profile** at the top of
 These sections hold the information your church sees on your person record:
 
 - **Photo & name** — tap **Change Photo** to upload a new picture, or **Remove photo** (shown when you have a photo) to take yours down, and edit your **Title**, First, Middle, and Last name. For **Title**, pick a suggestion (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor) or type your own, up to 10 characters.
-- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, Anniversary, and your Address (street, city, state, and zip). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
+- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, Anniversary, and your address (**Address Line 1**, **Address Line 2**, **City**, **State**, and **Zip**). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
 
-Make your changes in the panel and tap **Save Changes**. If you remove your photo and your church reviews profile changes, staff see a **Remove photo** request and your photo comes down once they apply it.
+Make your changes in the panel and tap **Save Changes**. Photos can be PNG or JPG and are cropped to 4:3 and resized for you. If you close a panel with unsaved edits, the app asks "Discard changes?" -- tap **Keep** to go back to them or **Discard** to drop them. If you remove your photo and your church reviews profile changes, staff see a **Remove photo** request and your photo comes down once they apply it.
 
 :::info
 If your church requires approval for directory changes, the page says "Changes to your profile go to church staff for approval." and the button reads **Submit for Approval** -- your edits are submitted as a request instead of applying immediately. See [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) for how your church reviews these.
@@ -48,7 +48,7 @@ To add a family member who isn't in the system yet:
 
 1. Tap **Add Family Member**.
 2. Enter their **First Name**. **Last Name** starts filled in with your last name; change it if theirs is different.
-3. Optionally add their **Title** and **Mobile Phone**.
+3. Optionally add their **Title**, **Email**, and **Mobile Phone**, and tap **Add Photo** to give them a picture.
 4. Pick their **Household Role**: **Head**, **Spouse**, **Child**, or **Other** (the default).
 5. Tap **Add**. They appear under **Pending Family Members** with their role; tap **Remove** to take someone off the list. Repeat for anyone else.
 6. Tap **Save Changes** (or **Submit for Approval**).
@@ -73,7 +73,7 @@ Your changes go to church staff as a request, and the child's record updates onc
 
 The Account section manages your login rather than your church profile. Tap **Edit** to open it:
 
-- **Display Name** — the first and last name shown on your login (separate from the name on your church profile).
+- **Display Name** — the first and last name shown on your login (separate from the name on your church profile). Its **Save** button appears once you change it.
 - **Change Email** — update the email address you use to sign in.
 - **Change Password** — enter your current password, then your new password twice. Your new password must be at least 8 characters.
 
@@ -81,7 +81,7 @@ Each part has its own **Save** button.
 
 ## Privacy
 
-The Privacy section shows who can see your contact information across ChurchApps. Tap **Change** to open **Visibility Preferences**:
+The Privacy section shows whether you are **Shown in the directory** or **Hidden from the directory**, and who can see your contact information across ChurchApps. Tap **Change** to open **Visibility Preferences**:
 
 - **Hide me from the member directory** — a switch that removes you from the [member directory](../community/member-directory.md) entirely.
 - **Address Visibility**, **Phone Visibility**, and **Email Visibility** — each has its own dropdown, so you can share your email with the whole church while keeping your address more private, for example. The options are:

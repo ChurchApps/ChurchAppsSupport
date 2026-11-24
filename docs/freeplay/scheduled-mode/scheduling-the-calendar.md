@@ -23,8 +23,12 @@ The **Calendar** page in FreePlay Admin controls what each screen group plays an
 
 1. Go to **Calendar**.
 2. Pick a screen group from the tabs along the top. Each tab shows how many schedules the group has.
-3. The week view runs from Monday to Sunday, 6 AM to 10 PM. A red line marks the current time.
+3. The week view runs from Monday to Sunday, 6 AM to 10 PM, in half-hour rows. A red line marks the current time, and today's column is highlighted.
 4. Use the arrows to move to the previous or next week, or click **Today** to come back to this week.
+
+:::info
+The grid only draws the hours between 6 AM and 10 PM. A schedule that runs entirely outside those hours still plays on the screens, but you won't see it on the grid. Open it from the **Add schedule** form's times, or keep schedules inside the visible hours.
+:::
 
 The page subtitle shows the time zone used for the calendar. Schedules follow your church's time zone, which you set in B1 Admin under [Church Information](../../b1-admin/settings/church-settings.md#time-zone). If your church doesn't have a time zone set, FreePlay uses your campus's time zone. The calendar and your TVs use the same time zone, so a block placed at 9:00 AM on the calendar plays at 9:00 AM on the screen, even if your computer is set to a different time zone.
 
@@ -49,9 +53,11 @@ The default loop plays on the group's screens whenever nothing is scheduled.
 
 There are three ways to start a new schedule:
 
-- Click an empty spot on the calendar. The form opens with that day and half-hour already filled in.
-- Click **Add schedule** in the header.
+- Click an empty spot on the calendar. The form opens with that day and half-hour as the **Start**, and an **End** one hour later.
+- Click **Add schedule** in the header. The form opens for today, 9:00 AM to 10:00 AM.
 - Choose **Add schedule** from the command palette (**Ctrl+K** or **⌘K**).
+
+The form starts with the first playlist selected, the clicked day's weekday turned on under **Repeats**, and **Loop until the end time**.
 
 Then fill in the form:
 
@@ -60,7 +66,7 @@ Then fill in the form:
    - **Service plans** - A plan type from B1 Admin, marked **(current plan)**. The screen plays whatever plan is current for that plan type each week, including GO! Curriculum lessons (customized ones too), which use the Go login linked to the plan type's ministry
    - **Provider folder…** - Opens **Choose a provider folder**. Browse to a folder and click **Use this folder**. To pick a different folder later, click **Change**
 2. **Repeats** - Select the days of the week this schedule plays. For a single date instead, turn on **One time** and pick the **Date**.
-3. **Start** and **End** - The times the schedule starts and stops.
+3. **Start** and **End** - The times the schedule starts and stops, in 5-minute steps. If the end time is earlier than the start time, the schedule runs past midnight into the next day.
 4. **If it finishes early** - What to do when the content runs out before the end time:
    - **Loop until the end time** - Starts over from the beginning. Good for signage loops, announcements, and countdowns
    - **Teacher paced** - Slides wait for the teacher's remote. The lesson stays up past the end time until the last slide
@@ -72,10 +78,12 @@ Then fill in the form:
 **Teacher paced** replaced the older "hold the last slide" option. Schedules saved with that option now play as teacher paced.
 :::
 
+If something is missing, the form tells you what to fix, for example **Pick at least one day, or switch to One time.** or **The end time must be after the start time.**
+
 ## Editing or Deleting a Schedule
 
-1. Click the schedule's block on the calendar.
-2. Change any field and click **Save**, or click **Delete** to remove the schedule.
+1. Click the schedule's block on the calendar. The **Edit schedule** form opens.
+2. Change any field and click **Save**, or click **Delete** to remove the schedule. Deleting a weekly schedule removes every week of it.
 
 ## Overlapping Schedules
 
@@ -83,7 +91,7 @@ If two schedules overlap, the form shows a warning: **Overlaps another schedule.
 
 ## How Screens Pick Up Changes
 
-Paired screens download everything scheduled for the next 7 days, and they check for changes on their own. You don't need to touch the TV after you edit the calendar. To see when a screen has everything it needs, check **Ready through** on the [Screens page](./managing-screens.md).
+Paired screens download everything scheduled for the next 7 days, and they check for changes about every 10 minutes while they're playing, and each time FreePlay starts. You don't need to touch the TV after you edit the calendar. To see when a screen has everything it needs, check **Ready through** on the [Screens page](./managing-screens.md).
 
 ## Related Articles
 

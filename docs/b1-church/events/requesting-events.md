@@ -22,12 +22,12 @@ If your church tracks bookable rooms and resources, you can request an event —
 ## Submitting a Request
 
 1. Open the **Me** page in the member portal and tap **Request an Event** in the **Requests & registrations** section. The top of the page explains how your church handles requests. By default it says "Staff will approve each room and item.", but your church may show its own guidelines, notice periods, or terms here, so read them before you start.
-2. Fill in the event basics: **Event title**, an optional **Description**, and the **Start** and **End** times. Turn on **All day** to pick dates only.
+2. Fill in the event basics: **Event title**, an optional **Description**, and the **Start** and **End** times (they start at tomorrow, one hour long). Turn on **All day** to pick dates only.
 3. If the event is away from the church building, enter it in **Location (optional)**, for example "City Park, shelter 3." It shows on the event's page once the event is approved.
-4. Pick the **Rooms** and **Resources** you need (you can choose several of each). Once you pick one, you can add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** and set **Reserve from** and **Reserve until** yourself.
+4. Pick the **Rooms** and **Resources** you need (you can choose several of each). Rooms are listed under their categories with how many they seat ("Seats 40") and a description; resources show how many are available. A resource your church has several of gets a **Quantity** box so you can ask for more than one. Once you pick something, you can add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** and set **Reserve from** and **Reserve until** yourself (the setup and teardown fields go away).
 5. Watch for conflict warnings — if your time overlaps an existing booking for a room or resource, you'll see *"Some selections may already be booked at this time."* You can adjust your time or choose something else.
-6. If the event happens more than once, turn on **Repeats** and set the pattern.
-7. Tap **Submit Request**. The button stays grayed out until you enter an event title. Tap **Cancel** to leave without submitting.
+6. If the event happens more than once, turn on **Repeats** and set the pattern (it starts as weekly).
+7. Tap **Submit Request**. The button stays grayed out until you enter an event title and reads **Submitting…** while it saves; if it fails you'll see "Could not submit your request. Please try again." Tap **Cancel** to go to **My Requests** without submitting.
 
 After submitting, a **Request submitted** summary shows the status of each room and resource you asked for (tap **My Requests** to go to your list):
 
@@ -36,11 +36,11 @@ After submitting, a **Request submitted** summary shows the status of each room 
 
 ## Tracking Your Requests
 
-Open **My Requests** from the Me page. Requests are split into **Upcoming** and **Past** by the event's date (tap **All past** to see older ones). Each request shows the event title and when it starts, the status of each room and resource you asked for, and a status pill:
+Open **My Requests** from the Me page ("Rooms and equipment you've asked for."). Requests are split into **Upcoming** and **Past** by the event's date (tap **All past** to see older ones, and **Back to My Requests** to return). Each request shows the event title and when it starts, its description, the status of each room and resource you asked for ("Fellowship Hall approved · Projector pending"), and a status pill:
 
 - **Pending** -- Awaiting a decision
 - **Approved** -- Your booking is confirmed
-- **Rejected** -- The request was declined
+- **Rejected** -- The request was declined. When staff gave a reason, it is shown on the card -- "Rejected:" and the reason for the event, or "Projector rejected:" and the reason for a single room or resource.
 
 While a request is still pending, you can withdraw it with **Cancel request**. A confirmation asks "Cancel this request? This cannot be undone." — tap **Cancel request** to confirm or **Keep** to leave it.
 

@@ -36,10 +36,12 @@ You can convert any auto-generated page into a custom page if you want full cont
 ## Adding and Editing Pages
 
 1. Click the **Add Page** button at the top right of the Website Pages view.
-2. Choose a page type and enter a **Page Title**, then click **Save**. **Blank** starts an empty page; **Sermons**, **About Us**, **Donate**, and **Location** fill in a suggested title for that kind of page; **AI** builds a first draft of the page from a short description you type. The page's path is made from its title (for example, "Our Team" becomes `/our-team`), and you can change it later in **Page Settings**.
+2. Choose a **Page Type** and enter a **Page Title**, then click **Save**. **Blank** starts an empty page; **Sermons**, **About Us**, **Donate**, and **Location** fill in a suggested title for that kind of page (for example "About First Church"), which you can change; **AI** builds a first draft of the page from a short description you type (see [Generating a Page With AI](./site-templates.md#ai)). The page's path is made from its title (for example, "Our Team" becomes `/our-team`), and you can change it later in **Page Settings**. If another page already uses that path, the dialog shows *A page with this url already exists* -- pick a different title or rename the other page first.
 3. Click **Edit Content** next to any page to open the [page editor](./page-editor.md), where you can add sections, text, images, and other elements.
 4. Click **Page Settings** next to a page to update the page title, URL path, and other metadata.
 5. Click a page's path in the **Path** column to open the live page in a new tab and see exactly how it will look to visitors.
+
+The page count above the table (for example *12 pages*) counts the rows you can see; collapsed generated pages (such as the individual sermon pages under **Sermons**) are not counted until you expand them with the arrow next to their parent.
 
 :::tip
 For your home page, set the URL path to just `/`. For all other pages, use a descriptive path like `/about` or `/contact`.
@@ -55,7 +57,11 @@ Open **Page Settings** on any page to configure:
 - **Visibility** -- Choose who can see the page: **Everyone**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Team Members**, or **Specific Groups** (then tick the groups). This is a quick way to gate a private page (like a staff resource page) without a separate password. Visitors who aren't signed in see "This page is for church members" with a **Login** button; signed-in people the page isn't shared with see "You don't have access to this page." Gated pages are left out of your sitemap.
 - **Meta Description** -- A short summary shown in search engine results and social media link previews. Aim for about 155 characters, or click **Generate with AI** to draft one from the page's content.
 
-The dialog also has a **Duplicate** button, which makes a copy of the page and all of its content, and a **Delete** button, which permanently deletes the page.
+The dialog also has a **Duplicate** link in its header, which makes a copy of the page and all of its content (confirm when asked), and a **Delete** button, which permanently deletes the page and its navigation link.
+
+### The Page Preview Screen
+
+When you click **Exit** in the page editor, or right after a page is created from a [site template or by AI](./site-templates.md), you land on the page's preview screen at **/site/pages/preview/...**. It shows the page title and path, a status badge (**Published** when the page uses the publish workflow, otherwise **Live on save**), and a frame with the live page as visitors see it right now. When the page is published, the note *This is the published version of the page. Unpublished editor changes are not shown.* reminds you that draft edits are not in the frame. From here, click **Edit Content** to go back into the editor, **Page Settings** to open the settings dialog, or **Pages** to return to the list. A page on a secondary website previews on that site's own subdomain.
 
 :::tip
 To send an old address to a page (for example, after you rename `/about-us` to `/about`), add a redirect under **Redirects & analytics** in [Appearance](./appearance.md#redirects--analytics).
@@ -65,9 +71,9 @@ To send an old address to a page (for example, after you rename `/about-us` to `
 
 The **Main Navigation** panel on the right side of the Website Pages view displays your navigation links. These links control the menu that visitors see on your website.
 
-1. Click **Add** to create a new navigation link. You can point it to any page on your site or to an external URL.
-2. To reorder links, drag and drop them into the order you want. You can also nest links under a parent item to create dropdown menus.
-3. Click any link to open its **Link Settings**, where you can change its text, URL, or parent page.
+1. Click **Add** to open the **Add Link** dialog. Enter the **Url** -- pick one of your page paths from the list, or type any path or full web address -- and the **Link Text** visitors see. Choose a **Parent Page** to put the link inside another link's dropdown, or leave it as **(none)** for a top-level link. Click **Save**.
+2. To reorder links, drag and drop them into the order you want. You can also nest links under a parent item to create dropdown menus. Dropping a link off the list removes it from the navigation.
+3. Click any link to open its **Link Settings**, where you can change its **Url**, **Link Text**, or **Parent Page**. A link cannot be made a child of itself or of one of its own children, so those do not appear in the **Parent Page** list.
 4. To remove a link from the navigation, open its **Link Settings** and click **Delete**.
 
 :::info
@@ -114,28 +120,25 @@ You can add [forms](../forms/creating-forms.md) to your pages to collect registr
 
 ## Starting from a Site Template
 
-If you are building your site from scratch, you can bootstrap it using a **Site Template** instead of creating pages one at a time. A site template creates a set of pre-built pages — home, about, connect, give, and others — with placeholder content and navigation links already wired up.
+If you are building your site from scratch, you can bootstrap it using a **Site Template** instead of creating pages one at a time. A site template creates a set of pre-built pages -- home, about, visit, connect -- with placeholder content and navigation links already wired up.
 
 1. On the Pages screen, click the **Start From a Template** button (beside the **Add Page** button).
-2. Browse the available templates (such as **Classic**, **Modern**, **Community**, and **Visitor Focused**) and click one to preview its pages and the navigation links it adds.
-3. When you find one you like, click **Create Site**.
-4. Pages that do not already exist are created and added to your navigation. Pages you already have are marked **Already exists** and left as-is. The first new page then opens so you can look it over.
+2. Click a template (**Classic**, **Simple**, **Modern**, **Visitor Focused**, **Community**, **Media First**, or **Heritage**) to preview its pages and the navigation links it adds.
+3. Click **Create Site**. Pages that do not already exist are created and added to your navigation; pages you already have are marked **Already exists** and left as-is. The first new page then opens so you can look it over.
 
-After applying a template, open each page in the [page editor](./page-editor.md) to replace the placeholder text and images with your church's real content.
-
-:::info
-A template only sets colors and fonts on a site that has never had a color palette saved. Once you have chosen your own palette, applying a template leaves your colors and fonts alone -- those stay under [Appearance](./appearance.md).
-:::
+See [Site Templates and AI Pages](./site-templates.md) for what each template creates and how templates treat your colors and fonts. After applying a template, open each page in the [page editor](./page-editor.md) to replace the placeholder text and images with your church's real content.
 
 ## Multiple Websites {#multiple-websites}
 
 A church can run more than one website from the same account -- for example, one per campus or a separate site for a school.
 
-1. On the Pages screen, open the site switcher (it shows **Main Website** at first) and choose **Manage websites…**.
+1. On the Pages screen, open the site switcher (it shows **Main Website** at first) and choose **Manage websites…**. This option only appears for people with the **Edit Church Settings** permission; everyone with content access can still switch between existing sites.
 2. In the **Websites** dialog, enter a **Name** and a **Subdomain** (lowercase letters and numbers only -- it becomes `{subdomain}.b1.church`) and click **Add Website**.
-3. Pick the new site in the site switcher to build its pages, navigation, blocks, and appearance.
+3. Pick the new site in the site switcher to build its pages, navigation, blocks, and appearance. The same switcher appears on the **Blocks** and **Appearance** screens, and the editor remembers which site you picked.
 
-To remove a site, open **Manage websites…** and click **Delete** next to it. Its pages, navigation, and appearance are permanently deleted, and any custom domains it had move to the main website.
+To remove a site, open **Manage websites…** and click the trash icon next to it, then confirm. Its pages, navigation, and appearance are permanently deleted, and any custom domains it had move to the main website.
+
+Each website has its own pages, navigation links, blocks, footer, and [appearance](./appearance.md) styles. These are shared by all of your websites: the [blog](./blog.md), uploaded [files](./files.md), logos, the **Show Login** and **Disable Public Website** switches, site widgets, redirects, and analytics. To point a custom domain at a secondary site, see [Custom Domain](../settings/custom-domain.md).
 
 ## Image Lightbox
 
@@ -144,6 +147,7 @@ When visitors click on an image on your website, it opens in a full-screen light
 ## Next Steps
 
 - [Initial Setup](./initial-setup.md) -- First-time setup instructions
+- [Site Templates and AI Pages](./site-templates.md) -- Create a starter site or draft a page with AI
 - [Using the Page Editor](./page-editor.md) -- Learn how to build and style page content
 - [Appearance](./appearance.md) -- Customize your site's visual theme
 - [Files](./files.md) -- Upload and manage media assets for your pages

@@ -54,6 +54,20 @@ Click **Enter headcount** to record a simple total count for a service, service 
 
 Click **Kiosk** to open the **Kiosk Theme** settings, where you set the check-in kiosk's background image and idle screen. A **Check-in kiosk, QR, and labels** link takes you to the full [B1 CheckIn settings](check-in.md), which also cover QR guest sign-up and the [label designer](labels.md). The kiosk's colors come from **Mobile > App Theme**.
 
+## Who Sees What
+
+The Attendance page shows each part only to people whose role allows it:
+
+| Part of the page | Permission needed |
+|------------------|-------------------|
+| This week's total, **Rooms**, **Guests**, **Headcounts this week**, and the **Today** room lists | **View Attendance** |
+| The **Last 13 weeks** chart and the **All years** reports | **View Attendance Summary** for the chart; **View Attendance** for **All years** |
+| **Enter headcount** | **Edit Attendance** |
+| **Setup** | **Edit Services** |
+| **Kiosk** | **Edit Attendance** or **Edit Church Settings** |
+
+Without **View Attendance**, the page shows only its title and the actions you are allowed to use. Recording who attended happens on each group's page and needs **Edit Attendance** -- see [Recording Attendance](recording-attendance.md). The permission names are as they appear in the **Edit Permissions** panel; see [Configuring Permissions](../settings/roles-permissions.md#configuring-permissions).
+
 ## Next Steps
 
 - [Attendance Setup](setup.md) -- configure campuses, service times, and groups

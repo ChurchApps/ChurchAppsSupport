@@ -132,6 +132,10 @@ Deleted people disappear from your directory, groups, and searches. Only use thi
 
 You can't select yourself, so you can't bulk-delete or bulk-edit your own record.
 
+## Undoing a Bulk Action
+
+**Set Membership Status**, **Set Marital Status**, **Set Gender**, **Set Directory Opt-Out**, **Set Campus**, **Add to Group**, **Remove from Group**, and **Delete** are each recorded as a batch. If one of them went to the wrong people, an administrator with **Edit Church Settings** can open **Settings > Batches**, find the batch (for example, *Bulk update 42 people*), and click **Undo** within 30 days to put every affected record back the way it was. Records that someone has edited since the bulk action are skipped. **Set Custom Field** and **Add to Workflow** are not recorded as batches. See [Batches](../settings/batches.md).
+
 
 ## Best Practices
 

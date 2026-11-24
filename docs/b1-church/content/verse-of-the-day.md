@@ -55,7 +55,9 @@ Today's verse, and any earlier day you open, has three buttons:
 
 - **Share** -- shares the verse text, reference, and a link to the verse picture. If your device has no share menu, the text and link are copied to your clipboard.
 - **Share image** -- shares the verse picture itself, so you can post it or send it in a message. On devices that cannot share files (such as most desktop browsers), the image is downloaded instead.
-- **Download** -- saves the verse picture to your device.
+- **Download** -- saves the verse picture to your device (named `votd-` and the day).
+
+If the picture for a day can't be loaded, only **Share** is offered for it.
 
 On your church's website these always use the widescreen (16:9) picture. In the member portal they use the shape that fits your screen.
 

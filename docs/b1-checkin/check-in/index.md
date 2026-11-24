@@ -14,7 +14,7 @@ The check-in process in B1 Church Checkin follows a simple, step-by-step flow. A
 ## The Check-In Flow at a Glance
 
 1. **[Select a service](./selecting-service.md)** -- Choose which service you are attending (e.g., Sunday AM, Sunday PM, Midweek).
-2. **[Look up your family](./looking-up-members.md)** -- Search by phone number or last name to find yourself in the system.
+2. **[Look up your family](./looking-up-members.md)** -- Search by phone number or last name to find yourself in the system. Families who already [checked in on their phone](./scanning-codes.md) scan their QR code here instead to print labels.
 3. **[Review your household](./household-review.md)** -- See all family members and their current group assignments.
 4. **[Assign groups](./group-assignment.md)** -- Choose which class or group each family member should attend for each service time.
 5. **[Add guests](./adding-guests.md)** (optional) -- Add a visitor to your household if they are joining you.
@@ -22,6 +22,17 @@ The check-in process in B1 Church Checkin follows a simple, step-by-step flow. A
 7. **[Check out](./checking-out.md)** (manned stations) -- At pickup time, verify the security code and pickup person, with trusted-pickup lists, page-a-parent, and label reprints.
 
 After check-in is complete, the app displays a success screen and automatically returns to the lookup screen, ready for the next family.
+
+## Pages in This Section
+
+- [Selecting a Service](./selecting-service.md)
+- [Looking Up Members](./looking-up-members.md)
+- [Scanning a Phone Check-In Code](./scanning-codes.md)
+- [Reviewing Your Household](./household-review.md)
+- [Assigning Groups](./group-assignment.md)
+- [Adding Guests](./adding-guests.md)
+- [Completing Check-In](./completing-checkin.md)
+- [Checking Out & Child Safety](./checking-out.md)
 
 :::tip
 The entire flow is designed for church members to use independently. Volunteers do not need to operate the kiosk, though having someone nearby to help first-time visitors is always a good idea.
@@ -37,5 +48,5 @@ Make sure the following are configured in B1 Admin before using the check-in kio
 - **People** are added to the system with household associations. See [adding people](../../b1-admin/people/adding-people.md).
 
 :::info
-If you have not yet set up the kiosk itself, see [Getting Started](../getting-started/index.md) for installation, login, and printer configuration instructions.
+If you have not yet set up the kiosk itself, see [Getting Started](../getting-started/index.md) for installation, login, printer configuration, and [Admin Settings](../getting-started/admin-settings.md) such as manned station mode and the kiosk PIN.
 :::

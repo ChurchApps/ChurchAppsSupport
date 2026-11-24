@@ -1,43 +1,48 @@
 ---
 title: "Presenting"
-description: "Show lessons on a projector with Presenter Mode in Lessons.church, share role-based volunteer guides, and print materials ahead of class."
+description: "Show a lesson's videos and slides on a projector with Presenter Mode in Lessons.church, follow along in the B1 app, print role-colored scripts, and download materials."
 ---
 
 # Presenting
 
 <div class="article-intro">
 
-Lessons.church provides tools to help your volunteers confidently teach each lesson. Whether you are projecting content on a screen, handing out printed guides, or distributing activity sheets, everything you need is built right into the platform.
+Lessons.church provides tools to help your volunteers confidently teach each lesson. Whether you are projecting media on a screen, following the script on a phone, handing out printed guides, or distributing activity sheets, everything you need is built right into the platform.
 
 </div>
 
 ## Presenter Mode
 
-When it is time to teach, you can launch **Presenter Mode** directly from any lesson. This gives you a full-screen, projection-friendly view designed for classroom screens and projectors. It also integrates with FreeShow presentation software and [FreePlay](https://freeplay.church) for automated displays.
+When it is time to teach, click **Start Lesson** on any lesson. Presenter Mode plays the lesson's videos and slides full screen, one at a time, in lesson order. You step through them with the arrow keys or the on-screen arrows. For a hands-free classroom TV, the [FreePlay](https://freeplay.church) app plays the scheduled lesson automatically.
 
-## Volunteer Guides
+## Teaching from the B1 App
 
-Each lesson includes role-based guides so your volunteers know exactly what to say and do. A greeter sees their instructions, a small-group leader sees theirs, and so on. Guides can be viewed on a phone or tablet during class, or printed ahead of time.
+Volunteers open the **Lessons** tab in the B1 mobile app to see their classroom's scheduled lesson on a phone, with tabs for each section, links to the previous and next week, and any customizations your church has saved.
+
+## Volunteer Guides and Printing
+
+Within each section, actions are kept in role order so a leader, a host, or a small-group leader can find their own lines. The **Print** tool offers a **Color Coded** format that groups Say, Do, Note, and Play actions with labels, a plain **Script** format, and the standard **Lessons.church** layout.
 
 ## Downloadable Materials
 
-Lessons come with downloadable resources such as activity sheets, coloring pages, leader guides, and supplementary PDFs. These materials are available at the program, study, and lesson levels, so you can grab everything you need in one place.
+Lessons come with downloadable zip bundles of activity sheets, coloring pages, leader guides, and video files, listed under **Downloads** in the lesson sidebar.
 
 ## Putting It All Together
 
 A typical Sunday morning workflow might look like this:
 
-1. Download and print any activity sheets or coloring pages earlier in the week.
-2. Share the volunteer guide links with your team so they can review their roles.
-3. Open the lesson in **Presenter Mode** on the classroom computer or TV.
-4. Walk through the lesson sections while volunteers follow along with their individual guides.
+1. Download the bundle and print any activity sheets or coloring pages earlier in the week.
+2. Share the lesson link, or the classroom's upcoming-lessons page, with your team so they can review their roles.
+3. Open the lesson on the classroom computer or TV and click **Start Lesson** when the first video is due.
+4. Walk through the lesson while volunteers follow along in the B1 app or on a printed script.
 
 :::tip
-Preparing materials and sharing guide links a few days before class gives your volunteers time to review and arrive confident on Sunday morning.
+Preparing materials and sharing links a few days before class gives your volunteers time to review and arrive confident on Sunday morning.
 :::
 
 ## Next Steps
 
-- [Presenter Mode](./presenter-mode.md) -- Display lessons on a screen or projector
-- [Volunteer Guides](./volunteer-guides.md) -- Role-based instructions for your team
+- [Presenter Mode](./presenter-mode.md) -- Display lesson media on a screen or projector
+- [Teaching from the B1 App](./b1-teacher-view.md) -- Follow the lesson on a phone
+- [Volunteer Guides](./volunteer-guides.md) -- Role-based instructions and print formats
 - [Downloads and Materials](./downloads.md) -- Print and distribute lesson resources

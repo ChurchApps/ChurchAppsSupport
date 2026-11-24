@@ -21,26 +21,26 @@ Lessons.church supports external curriculum providers through the Open Lesson Fo
 
 ## Adding a Provider
 
-1. Click **External Providers** in the Lessons.church navigation. The **External Lesson Providers** page opens.
+1. Log in and open **Schedules** from your name menu, then click **External Providers** in the secondary menu. The **External Lesson Providers** page opens.
 2. Click **Add Provider**. If you haven't added one yet, click **Add First Provider** instead.
 3. Enter a **Provider Name**. This is the name your team sees when picking the provider.
 4. Enter the **API URL**. This is the address where the provider publishes their curriculum in the Open Lesson Format.
 5. Click **Save**.
 
-The provider is added for your church only. It then appears as a choice under **Provider** when you [schedule a lesson](../classrooms/scheduling-lessons.md) for a classroom, and under **Source** when you build a [year plan](./managing-year-plans.md).
+The provider is added for your church only. It then appears as a choice under **Provider** when you [schedule a lesson](../classrooms/scheduling-lessons.md) for a classroom, and under **Source** when you build a [year plan](./managing-year-plans.md). Lessons.church reads the provider's catalog each time you open those forms, so new content from the provider shows up without any further setup.
 
 ## Managing Providers
 
 The **External Lesson Providers** page lists every provider your church has added. To change one:
 
-- **Edit** -- Click the **Edit provider** (pencil) icon, change the **Provider Name** or **API URL**, and click **Save**.
+- **Edit** -- Click the **Edit provider** (pencil) icon. The **Edit Provider** form opens; change the **Provider Name** or **API URL** and click **Save**.
 - **Delete** -- Click the **Edit provider** icon, then click the delete (trash can) icon and confirm.
 
 ## What Is the Open Lesson Format?
 
 The Open Lesson Format is a standardized schema that describes curriculum content -- programs, studies, lessons, venues, sections, and actions -- in a structured way. Any organization that publishes their content using this format can be added as a provider in Lessons.church.
 
-If you are a content provider interested in making your curriculum available through Lessons.church, you can find the full schema documentation in the [Open Lesson Format](./open-lesson-format.md) guide.
+If you are a content provider interested in making your curriculum available through Lessons.church, you can find the full schema documentation in the [Open Lesson Format](./open-lesson-format.md) guide, and build the files with the [Open Lesson Format Tools](./open-lesson-tools.md).
 
 ## Why Use Third-Party Providers?
 

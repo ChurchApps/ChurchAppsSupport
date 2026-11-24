@@ -108,5 +108,7 @@ Your sermon library is online and your live stream is configured. Members can ca
 - [Bulk Import](../sermons/bulk-import.md) — import from YouTube or Vimeo
 - [Managing Sermons](../sermons/managing-sermons.md) — add and edit individual sermons
 - [Live Streaming](../sermons/live-streaming.md) — configure live services
+- [Stream Settings](../sermons/stream-settings.md) — chat, content tabs, and the stream page
+- [Podcast Feed](../sermons/podcast-feed.md) — the automatic RSS feed for podcast apps
 - [Sermons (Members)](../../b1-church/content/sermons.md) — member sermon viewing experience
 - [Live Streaming (Members)](../../b1-church/content/live-streaming.md) — member live stream experience

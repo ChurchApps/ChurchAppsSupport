@@ -34,14 +34,14 @@ Creating a group in B1 Admin is straightforward. You will set up a category, nam
 
 Once your group is created, you can fill in additional details:
 
-1. Click on the **group name** in the list to open it.
-2. Click the **Edit** button on the left side of the group page, below the group's details. The **Group Details** form opens.
+1. Click on the **group name** in the list to open it (see [The Group Page](./group-page.md) for a tour of what you will find there).
+2. Click the **Edit** button on the left side of the group page, below the group's details. The **Group Details** form opens. The button only appears for people with **Edit Groups**.
 3. Configure the following options:
    - **Category Name** and **Group Name** -- Change the group's category or rename it.
    - **Meeting Time** and **Meeting Location** -- When and where the group typically meets (for example, "Wednesdays at 7 PM" in "Room 204").
    - **Description** -- A brief summary of what the group is about, written in the formatting editor. This is visible to members.
    - **Photo** -- Click the photo box or **Add Photo** to pick or upload an image for the group.
-   - **Slug** -- The short key name used in the group's web address on your church site.
+   - **Slug (key name used for urls)** -- The short key name used in the group's web address on your church site (for example, `young-adults`). When it is blank, the group's ID is used instead.
    - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply, or click **Add New Label** to create one. Labels can be used to filter groups in the Groups Browser website element, and a Group List website element can show only the groups that carry one label.
    - **Campus** -- The campus the group belongs to, if your church has more than one. The main Groups page can then be [filtered by campus](./index.md#overview).
    - **Enrollment** -- Choose who can join this group:
@@ -55,7 +55,7 @@ Once your group is created, you can fill in additional details:
 4. For classes and children's rooms, the form also has these sections:
    - **Age & Grade** -- **Minimum Age** and **Maximum Age** (in years and months) and **Minimum Grade** and **Maximum Grade**, used to suggest the right room at check-in. Leave them blank (or **No limit**) for no limit. See [Check-In Safety](../attendance/checkin-safety.md#age-and-grade-room-guidance).
    - **Check-In Capacity** -- **Capacity**, **Guest Capacity**, **Children per Volunteer**, **Minimum Volunteers**, and **Closed for Check-In**. See [Check-In Safety](../attendance/checkin-safety.md#room-capacity-and-closing-a-room).
-   - **Attendance** -- **Track Attendance** (set to **Yes** to record [attendance](../attendance/tracking-attendance.md) for this group), **Attendance Reminder Emails** (reminds the group's leaders when one of the group's calendar events took place yesterday but no attendance was recorded), **Parent Pickup**, and **Print Nametag** (check-in options for children's groups).
+   - **Attendance** -- **Track Attendance** (set to **Yes** to record [attendance](../attendance/tracking-attendance.md) for this group; you can also click **Enable Attendance** in the **Sessions** section of the group page), **Attendance Reminder Emails** (reminds the group's leaders when one of the group's calendar events took place yesterday but no attendance was recorded), **Parent Pickup**, and **Print Nametag** (check-in options for children's groups).
    - **Service Times (optional)** -- Pick a service time in **Add Service Time** and click the plus button to associate the group with it; click the remove icon next to a service time to take it off. See [Attendance Setup](../attendance/setup.md) for details on service times.
 5. Click **Save** to apply your changes, or **Cancel** to close the form without saving.
 
@@ -93,7 +93,7 @@ Starting a new session of a recurring class or ministry? Instead of re-entering 
 1. Open the group and click **Duplicate** (below the **Edit** button on the left side of the group page).
 2. Confirm the duplication.
 
-The copy carries over the original's settings -- category, description, photo, meeting time/location, enrollment, labels, campus, chat feeds, confidentiality, age and grade limits, check-in capacity, and attendance options -- but **not** its members or service times. The new group opens right away; it is named after the original with " (Copy)" appended, so rename it from the group settings.
+The copy carries over the original's settings -- category, description, photo, meeting time/location, enrollment, labels, campus, chat feeds, confidentiality, **Show roster on website**, age and grade limits, check-in capacity, and attendance options -- but **not** its members, service times, slug, calendar events, or sessions. The new group opens right away; it is named after the original with " (Copy)" appended, so rename it from the group settings.
 
 ## Archiving a Group
 
@@ -116,6 +116,7 @@ To remove a group permanently, open it, click **Edit**, click **Delete** at the 
 
 After creating and configuring your group, you are ready to:
 
+- **Get to know the group page** -- Its details, status chips, actions, and the Members, Sessions, Calendar, and Health sections. See [The Group Page](./group-page.md).
 - **Add members** -- Search for people and add them to the group. Use the star icon (**Make Leader**) to designate group leaders. See [Group Members](./group-members.md).
 - **Set up a calendar** -- Create events and recurring meetings for the group. See [Group Calendar](./group-calendar.md).
 - **Communicate** -- Email, text, or send a push notification to the group's members from the group page. See [Group Members](./group-members.md#emailing-group-members).

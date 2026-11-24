@@ -22,8 +22,8 @@ The first step of every check-in is choosing which service you are attending. Th
 ## How It Works
 
 1. After logging in (or after auto-login on return visits), the app displays the **services screen**.
-2. You will see a list of all services that have been configured for your church. Each service appears as a card showing the service name (for example, "Sunday Morning" or "Wednesday Evening").
-3. Tap the service you are attending.
+2. You will see a list of all services that have been configured for your church. Each service appears as a row showing the service name (for example, "Sunday Morning" or "Wednesday Evening") and, below it, the **campus** the service belongs to.
+3. Tap the service you are attending. The row shows a spinner while the service loads.
 
 The app loads the service times and groups associated with that service, then takes you to the [member lookup screen](./looking-up-members.md).
 
@@ -41,15 +41,26 @@ Check-in windows follow the time zone of the service's campus. If that campus do
 Services are configured by your church administrator in B1 Admin under the Attendance section. If you do not see the service you expect, ask your admin to verify it has been created in the [attendance setup](../../b1-admin/attendance/setup.md).
 :::
 
+## If the List Is Empty or Fails to Load
+
+- **No services set up yet** -- no services exist in B1 Admin. Create them following the [attendance setup guide](../../b1-admin/attendance/setup.md), then tap **Try again**.
+- **Couldn't load services.** -- the tablet could not reach the server. Check the Wi-Fi connection and tap **Try again**. See [Troubleshooting and Offline Behavior](../getting-started/troubleshooting.md).
+
+## Changing the Service Later
+
+The kiosk stays on the chosen service until someone changes it. To switch -- for example, from the morning service to an evening event -- open [Admin Settings](../getting-started/admin-settings.md) (seven taps on the header logo, plus the PIN if one is set) and tap **Change Service**.
+
 ## What Happens Behind the Scenes
 
-When you select a service, the app fetches three things from the server:
+When you select a service, the app fetches everything the rest of the flow needs:
 
-- The **service times** for that service (for example, a single service might have a 9:00 AM and an 11:00 AM time slot).
-- The **groups** available at each service time (for example, Nursery, Preschool, Elementary).
+- The **service times** for that service (for example, a single service might have a 9:00 AM and an 11:00 AM time slot), including their check-in windows.
+- The **groups** available at each service time (for example, Nursery, Preschool, Elementary) with their age and grade ranges, capacity, and closed status.
 - The **group-to-service-time links** that determine which groups are available at which times.
+- The church's **check-in announcement** and **grade promotion date**.
+- The church's **label templates** from the [Label Designer](../../b1-admin/attendance/labels.md). The latest copy is also saved on the tablet so labels still print with your design if this download fails later.
 
-This data is cached locally so the rest of the check-in process is fast and responsive.
+This data is held in memory so the rest of the check-in process is fast and responsive. It refreshes each time a service is selected, so after changing groups or labels in B1 Admin, use **Change Service** on the kiosk to pick up the changes.
 
 :::tip
 If your church has only one service configured, you still need to tap it to proceed. The app does not auto-select a single service.
@@ -58,3 +69,9 @@ If your church has only one service configured, you still need to tap it to proc
 ## Next Step
 
 After selecting a service, you will [look up your family](./looking-up-members.md) by phone number or name.
+
+## Related Articles
+
+- [Attendance Setup](../../b1-admin/attendance/setup.md) -- creating services, service times, and check-in schedules
+- [Admin Settings and Kiosk PIN](../getting-started/admin-settings.md) -- changing the service on a running kiosk
+- [Looking Up Members](./looking-up-members.md)

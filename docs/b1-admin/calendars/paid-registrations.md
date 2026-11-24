@@ -19,6 +19,7 @@ Event registration can go beyond a simple head count. You can define priced atte
 <h4>Before You Begin</h4>
 
 - Enable registration on the event first — see [Creating Calendars](./creating-calendars.md#enabling-event-registration)
+- You need the **Edit Content** permission to open the Registrations pages, **View Registrations** to see the roster, and **Edit Registrations** to save attendee types, selections, and discount codes, add attendees, record payments and refunds, send balance reminders, and promote, cancel, restore, or delete registrations. All three are in the **Content** section of [Roles & Permissions](../settings/roles-permissions.md).
 - To collect payments online, your church needs [online giving configured](../donations/online-giving-setup.md) (Stripe, PayPal, or Kingdom Funding). Free events need no giving setup. Without online giving, paid registrations still work, but people pay the church directly — see [Churches Without Online Giving](#churches-without-online-giving).
 
 </div>
@@ -35,8 +36,8 @@ If you run the same kind of event again (a yearly retreat, or VBS every summer),
 
 1. Open the new event's registration page and click **Edit settings**.
 2. Click **Copy setup from another event** at the top of the **Registration Settings** card. The button is grayed out while you have unsaved changes; save or discard them first.
-3. Choose the event in **Copy from**. The list shows every other event with registration turned on, newest first.
-4. Click **Copy Setup**. A message confirms "Setup copied from" the event you picked.
+3. Choose the event in **Copy from**. The list shows every other event with registration turned on, newest first, each with its date. If there is none, the dialog says "No other events have registration turned on."
+4. Click **Copy Setup**. A message confirms "Setup copied from" the event you picked, and the three accordions reload with the copied rows.
 
 The copy brings over the **Capacity**, **Enable Waitlist**, **Tags**, and **Registration Questions** settings, plus every attendee type (with its price, deposit, capacity, and age range), selection, and discount code. Registrations are never copied. If this event already has an attendee type or selection with the same name, or a discount code with the same code, the existing one is kept as it is. The registration open and close dates, the pay later and self-cancel switches, and the confirmation message are not copied, so check them before you open registration.
 
@@ -61,7 +62,7 @@ Attendee types let you charge different prices for different kinds of attendees 
 7. Optionally set **Sort** to control the order types are listed in.
 8. Click **Save**.
 
-To remove a saved type, click its delete icon and confirm; it's removed right away. Selections and discount codes are removed the same way.
+To remove a saved type, click its delete icon and confirm "Remove this item? This cannot be undone."; it's removed right away. Selections and discount codes are removed the same way. Saving attendee types, selections, and discount codes needs the **Edit Registrations** permission.
 
 During registration, each attendee picks a type; sold-out types are shown as **Sold out** and cannot be selected. The roster shows each attendee's type and running per-type counts.
 
@@ -108,11 +109,13 @@ Promoted registrations stay *pending* until any balance is paid; paying (or havi
 
 ## The Registration Roster
 
+This section covers the money side of the roster. For the list page, the roster columns, filters, **Add Attendee**, **Export CSV**, and the cancel, restore, promote, and delete actions in full, see [Managing Registrations](./managing-registrations.md).
+
 Open an event from the Registrations page to see every registration. The card title shows how many registrations hold a spot against the capacity (for example, *Registrations (18 / 20)*). Only pending and confirmed registrations count; when people are waitlisted, the title adds the count (for example, *· 3 waitlisted*), and the same count appears under the capacity bar. The larger number above the capacity bar counts **people** instead of registrations -- everyone on each pending or confirmed registration -- so a family of four counts as four. The capacity limit itself still counts registrations. The table shows **Name**, **Members**, **Type** (each attendee's type), **Paid / Total** (with a balance warning when money is still owed), **Status**, and **Date**, plus per-type count chips above the table.
 
-- Click a row's details icon to open the **Registration Details** dialog — members, selections, paid/balance, and a **Payments** table listing every payment and refund (amount, method, kind, date). Refunds show as negative amounts.
+- Click a row's details icon to open the **Registration Details** dialog — members with their types, selections with quantities and prices, paid/balance, a **Payments** table listing every payment and refund (**Amount**, **Method**, **Kind**, **Date**), and the registrant's answers when the event has questions. Refunds show as negative amounts, and "No payments recorded." appears until there is one.
 - **Export CSV** downloads the roster with columns for members, attendee types, selections, paid/total/balance, status, and one column per registration question. If you have filters turned on, only the registrations you can see are exported.
-- **Add Attendee** records an offline or phone signup for any person in your church. Pick the person and, on a paid event, their attendee type. Their card is not charged: a paid registration is saved as **pending** with the full amount as a balance due. If your church has online giving, the person can pay it from [My Registrations](../../b1-church/events/my-registrations.md); otherwise collect it in person and [record the payment](#recording-payments-and-refunds). You need the Registrations Edit permission to add attendees. A person who is already on another active registration for the event can't be added again.
+- **Add Attendee** records an offline or phone signup for any person in your church. Pick the person and, on a paid event, their attendee type. Their card is not charged: a paid registration is saved as **pending** with the full amount as a balance due. If your church has online giving, the person can pay it from [My Registrations](../../b1-church/events/my-registrations.md); otherwise collect it in person and [record the payment](#recording-payments-and-refunds). You need the **Edit Registrations** permission to add attendees. A person who is already on another active registration for the event can't be added again.
 - **Send Balance Reminder** appears when anyone owes money (see [Sending Balance Reminders](#sending-balance-reminders)).
 
 ### Filtering the Roster
@@ -129,8 +132,8 @@ If nothing matches, the roster says "No registrations match these filters."
 ### Editing a Registration
 
 1. Click the row's details icon to open **Registration Details**, then click **Edit**. (Cancelled registrations can't be edited.)
-2. Change each person's first name, last name, or **Type**. Click the remove icon to take someone off, or click **Add Person** and search for someone in your church to add them.
-3. If the event has selections, change the **Qty** of each one.
+2. Change each person's first name, last name, or **Type** (each type shows its price; **No type** is also offered). Click the remove icon to take someone off, or click **Add Person** and search for someone in your church to add them -- people already on the registration are left out of the search. Every person needs a first and last name.
+3. If the event has selections, change the **Qty** of each one, up to the selection's **Max Qty**.
 4. Click **Save**.
 
 The total is recalculated when you save, but nothing is charged or refunded. If the new total leaves a balance, the member can pay it from My Registrations or you can record a payment. If it drops below what they already paid, record a refund for the difference. Type and selection capacity still apply, so B1 tells you if a type or selection you picked is full.
@@ -139,13 +142,13 @@ The total is recalculated when you save, but nothing is charged or refunded. If 
 
 The icons at the end of each row (hover to see their names) include:
 
-- **Cancel Registration** -- Marks the registration cancelled after you confirm. Its spot is released and, if the event has a waitlist, the next person is promoted automatically. Payments stay on record.
+- **Cancel Registration** -- Marks the registration cancelled after you confirm. The registrant is emailed that it was cancelled, its spot is released and, if the event has a waitlist, the next person is promoted automatically. Payments stay on record.
 - **Restore** -- Shown instead of Cancel on a cancelled registration. It becomes **Pending** again if it still owes money, or **Confirmed** if it doesn't. Restore is refused, with a message, if the event is now full, one of its attendee types is full, its discount code has no uses left, or the person has since registered again on another registration.
 - **Delete** -- Permanently removes the registration after you confirm. A registration with any payments can't be deleted: B1 shows "This registration has payments, so it can't be deleted. Cancel it instead to keep the payment records."
 
 ## Recording Payments and Refunds {#recording-payments-and-refunds}
 
-When someone pays by cash or check, or you need to give money back, record it in the **Registration Details** dialog so the roster and the member's balance stay correct. You need the Registrations Edit permission to see these buttons.
+When someone pays by cash or check, or you need to give money back, record it in the **Registration Details** dialog so the roster and the member's balance stay correct. You need the **Edit Registrations** permission to see these buttons.
 
 ### Recording a Cash or Check Payment
 
@@ -172,7 +175,7 @@ The refund goes back to the original card or bank account through your payment g
 Use **Record Refund** when you give money back outside your payment gateway (for example, cash at the door or a check from the church).
 
 1. In **Registration Details**, click **Record Refund**. It appears once the registration has any amount paid.
-2. Enter the **Amount** (up to the amount paid), choose the **Method**, and add a **Check Number** for a check.
+2. Enter the **Amount** (it starts blank; the dialog shows **Up to** the amount paid), choose the **Method**, and add a **Check Number** for a check.
 3. Click **Record Refund**.
 
 :::info
@@ -199,6 +202,7 @@ If your church has no giving provider set up, paid events can still take registr
 ## Related Articles
 
 - [Creating Calendars](./creating-calendars.md#enabling-event-registration) — enable registration and the basic settings
+- [Managing Registrations](./managing-registrations.md) — the Registrations list, roster columns, filters, exports, and row actions
 - [Online Giving Setup](../donations/online-giving-setup.md) — configure the payment gateway used at checkout
 - [Registering for Events](../../b1-church/events/registering.md) — what members see when they sign up
 - [My Registrations](../../b1-church/events/my-registrations.md) — how members pay balances, answer questions, and edit or cancel registrations

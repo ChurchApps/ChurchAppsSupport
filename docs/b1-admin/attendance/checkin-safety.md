@@ -52,14 +52,14 @@ Capacity and Closed for Check-In are always hard limits — the warn/block choic
 
 ## Check-In Types
 
-Every check-in records whether the person is a **Member**, **Guest**, or **Volunteer**. The type is chosen with chips on the kiosk household screen (Member is the default). Types feed the safety rules — volunteers provide ratio coverage, and guests count against the room's Guest Capacity.
+Every check-in records whether the person is a **Member**, **Guest**, or **Volunteer**. The type is chosen with chips on the kiosk household screen (Member is the default); on a [manned station](../../b1-checkin/getting-started/admin-settings.md) the volunteer running the kiosk picks it. Types feed the safety rules — volunteers provide ratio coverage, and guests count against the room's Guest Capacity.
 
 ## Age and Grade Room Guidance
 
 You can give each room age or grade bounds so the kiosk guides families to appropriate rooms:
 
 - On the group's settings, use the **Age & Grade** section to set the minimum/maximum age (years and months) and/or grade for the room.
-- At the kiosk, rooms a child qualifies for are highlighted and rooms they don't are dimmed. A dimmed room can still be chosen with a staff confirmation — the guidance never hard-blocks.
+- At the kiosk, rooms a child qualifies for are highlighted and rooms they don't are dimmed. A dimmed room can still be chosen with a staff confirmation — the guidance never hard-blocks. The kiosk marks each room **Eligible**, **Outside age range**, or **Closed**; see [Age and Grade Guidance](../../b1-checkin/check-in/group-assignment.md#age-and-grade-guidance).
 
 Grades roll over on your church's **grade promotion date**:
 

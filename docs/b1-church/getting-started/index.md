@@ -55,3 +55,6 @@ B1.church works in any mobile browser. For a more app-like experience, install y
 - [Logging In](./logging-in.md) -- Learn how to sign in (with your password or an emailed code) and manage your session.
 - [Navigating B1App](./navigating.md) -- Find your way around the member portal.
 - [Installing as an App (PWA)](./installing-pwa.md) -- Add B1.church to your phone's home screen.
+- [The Me Page](./me-page.md) -- Everything coming up for you, plus [My Tasks](./my-tasks.md), [My Forms](./my-forms.md), and [My Attendance](./my-attendance.md).
+- [Filling Out Forms](./filling-out-forms.md) -- Answer a form your church shared by link, QR code, or in a group.
+- [Editing Your Profile](./editing-your-profile.md) and [Notification Preferences](./notification-preferences.md) -- Keep your details and alerts the way you want them.

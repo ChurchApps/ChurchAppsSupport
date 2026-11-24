@@ -75,14 +75,16 @@ PWA installation on iOS requires Safari. If you are using Chrome or another brow
 ## Installing on Android (Chrome)
 
 1. Open **Chrome** on your Android device and go to `https://yourchurchname.b1.church/mobile/install`.
-2. Tap the **Install on Home Screen** button. (If Chrome hasn't offered an install prompt yet, the page tells you so -- tap the three-dot menu (⋮) in the top-right corner and select **Install app** instead.)
-3. Tap **Install** when prompted.
+2. Tap the **Install on Home Screen** button. (If Chrome hasn't offered an install prompt yet, the page says "Install is not available yet. If you're on Android, open this page in Chrome and wait a moment." -- tap the three-dot menu (⋮) in the top-right corner and select **Install app** instead.)
+3. Tap **Install** when prompted. The page confirms "Installed! Look for the icon on your home screen." (or "Install canceled. You can try again any time." if you backed out).
+
+If you'd rather keep using the browser for now, tap **Continue in browser** under the steps.
 
 The app icon will appear on your home screen. Tap it to open the member portal.
 
 ## After Installing
 
-Once installed, the PWA opens directly into the member portal in a dedicated full-screen window. If you open the install page from the installed app, it shows "You're all set!" instead of the steps. You can:
+Once installed, the PWA opens directly into the member portal in a dedicated full-screen window. If you install from the install page itself, it switches to "You're all set!"; opening the install page from inside the installed app just takes you to Home. You can:
 
 - Log in with your existing ChurchApps account
 - Access all the member features your church has enabled — groups, giving, check-in, serving plans, and more

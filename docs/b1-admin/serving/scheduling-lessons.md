@@ -28,7 +28,7 @@ B1 Admin integrates directly with [Lessons.church](https://lessons.church) so yo
 Want to see the full setup from start to finish? Our **<a href="/guides/freeplay-b1admin" target="_blank">step-by-step guide</a>** covers linking providers, scheduling a lesson, and connecting FreePlay to your classroom TV — with short videos and written steps you can check off as you go.
 :::
 
-## Step 1 — Link Your Lessons.church Account
+## Step 1 — Link Your Lessons.church Account {#link-your-lessonschurch-account}
 
 This is a one-time setup per ministry. You need to connect your Lessons.church account before you can browse and schedule content.
 
@@ -45,7 +45,15 @@ This is a one-time setup per ministry. You need to connect your Lessons.church a
 The Content Providers section is per ministry. If you run multiple ministries (e.g., Children's and Youth), you will need to link Lessons.church for each one separately.
 :::
 
-Lessons.church is not the only option. The same **Link New Provider** list also offers other curriculum and file sources, including SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive, and OneDrive. Link any of them the same way, and they appear as providers you can switch to when selecting a lesson.
+Lessons.church is not the only option. The same **Link New Provider** list also offers other curriculum and file sources, including SignPresenter, The Bible Project, Jesus Film Project, GO! Curriculum, Dropbox, Google Drive, and OneDrive. Link any of them the same way, and they appear as providers you can switch to when selecting a lesson. Providers that need a login use one of two flows: a device code you enter on the provider's site (like Lessons.church above), or a sign-in popup window (allow popups for B1 Admin if the dialog reports *"Failed to open popup. Please allow popups for this site."*). A provider that doesn't need an account is linked as soon as you pick it.
+
+### Managing Linked Providers
+
+Each linked provider is listed in the **Content Providers** card with its logo, the words **Linked**, and, for accounts that expire, an **Expires:** date. When a login has lapsed the line reads **Token expired - please re-link** instead, and lessons from that provider stop loading until you fix it.
+
+- Click the **Refresh** icon to sign in to the provider again without unlinking it. Use this when you see **Token expired** or when the provider's content stops appearing.
+- Click **Unlink** to disconnect the provider from this ministry. Plans that already contain its lessons keep their order of service, but new lessons can't be browsed until it is linked again.
+- **Link New Provider** only offers providers that aren't linked yet.
 
 ## Step 2 — Schedule a Lesson
 
@@ -169,3 +177,5 @@ Feel free to copy and send the message below directly to your curriculum provide
 - [Customizing Lessons](/docs/lessons-church/customization/customizing-lessons)
 - [FreePlay — Playing Lessons on a Classroom TV](/docs/freeplay/content-providers/playing-content)
 - [Lessons.church Scheduling Guide](/docs/lessons-church/classrooms/scheduling-lessons)
+- [Teaching from the B1 App](/docs/lessons-church/presenting/b1-teacher-view)
+- [Classroom Pages, Feeds, and B1 Groups](/docs/lessons-church/classrooms/sharing-and-feeds)

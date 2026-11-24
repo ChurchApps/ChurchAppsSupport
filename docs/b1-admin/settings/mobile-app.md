@@ -1,6 +1,6 @@
 ---
 title: "Mobile App Settings"
-description: "Configure the navigation tabs, Home screen tiles, sign-in prompt, and member directory privacy settings for the B1.church member app in B1 Admin."
+description: "Configure the navigation tabs, Home screen tiles, sign-in prompt, event request instructions, app colors, push notifications, and member directory privacy settings for the B1.church member app in B1 Admin."
 ---
 
 # Mobile App Settings
@@ -22,7 +22,7 @@ Tabs configured here appear in the B1 App, which members can [install as a Progr
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You need the "Edit Church Settings" permission. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
+- **Navigation** and **Push Notifications** need the **Edit Content** permission; **App Theme**, **Member portal**, and **B1 CheckIn** need **Edit Church Settings**; **Labels** needs **Edit Attendance**. See [Roles & Permissions](./roles-permissions.md) if you do not have access.
 - Configure your [Church Settings](./church-settings.md) first, including your church name and branding
 
 </div>
@@ -30,8 +30,8 @@ Tabs configured here appear in the B1 App, which members can [install as a Progr
 ## Accessing Navigation Settings
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Mobile**.
-2. Click **Navigation** (`/mobile/navigation`). You need the **Edit Content** permission to see it.
-3. The **App Tabs** list shows your current tabs in order, each with its visibility. Tabs inside a folder are indented under it.
+2. Click **Navigation** (`/mobile/navigation`). You need the **Edit Content** permission to see it. Opening `/mobile` on its own lands here when you have that permission, and on **App Theme** otherwise.
+3. The **App Tabs** list shows your current tabs in order. Each row shows the tab's icon or photo, its name, a badge with its visibility, and what it opens: the address for an **External URL** tab, the type for other tabs, or **Folder · 3 tabs** (the number of tabs it holds) for a folder. Tabs inside a folder are indented under it. The note above the list reminds you that the first three tabs appear in the phone tab bar and the rest are under **More**.
 
 The Mobile menu also holds **App Theme**, **Member portal**, **B1 CheckIn**, **Labels**, and **Push Notifications**. App Theme and Member portal are covered below; see [Push Notifications](#push-notifications) for scheduling notifications. **B1 CheckIn** holds the kiosk settings: QR guest registration, the [check-in announcement](../attendance/check-in.md#check-in-announcement) families see before choosing who to check in, and the kiosk theme. See [Check-In](../attendance/check-in.md).
 
@@ -40,20 +40,20 @@ The Mobile menu also holds **App Theme**, **Member portal**, **B1 CheckIn**, **L
 1. Click the **Add Tab** button at the top of the page.
 2. Fill in the tab details:
    - **Tab Name** -- The label that appears on the tab (for example, "Sermons" or "Give").
-   - **Icon** -- Click the icon selector to choose an icon for your tab.
+   - **Icon** -- Click the icon button at the end of the **Tab Name** box (labelled **Change**) to open the icon picker and choose an icon. A new tab starts with a link icon; pick a different one if you like.
    - **Image** -- Click **Select Image** (or **Change Image**) to give the tab a photo. Tabs with a photo appear as photo tiles on the app's Home screen -- see [Home Screen Tiles](#home-screen-tiles). To take a photo off, click **Remove Image** and save; the tab then appears as a plain tab, not a Home tile.
-   - **Tab Type** -- **Bible**, **Live Stream**, **Verse of the Day**, **Sermons**, **Check-in**, **Donation**, **Member Directory**, **My Groups**, **Volunteer Opportunities**, **Serving Plans**, **Songs**, **Registrations**, **Requests**, **External URL**, **Internal Page**, or **Folder**. **Songs** opens a searchable list of every song in your library (from **Serving > Songs**); tapping a key shows its lyrics and chords, files and audio, the same view a plan opens. **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member. For **Songs**, choose Serving Team Members or Specific Groups (such as your worship team) to limit who sees the song library.
+   - **Tab Type** -- **Bible**, **Live Stream**, **Verse of the Day**, **Sermons**, **Check-in**, **Donation**, **Member Directory**, **My Groups**, **Volunteer Opportunities**, **Serving Plans**, **Songs**, **Registrations**, **Requests**, **External URL**, **Internal Page**, or **Folder**. **Songs** opens a searchable list of every song in your library (from **Serving > Songs**); tapping a key shows its lyrics and chords, files and audio, the same view a plan opens (see [Song Library](/docs/b1-church/plans/songs) for what members see). **Registrations** opens the member's event registrations; **Requests** opens My Requests, where a member can request an event and see the status of past requests. Set Visibility to Logged-in Users or Members & Staff for these, since they need a signed-in member. For **Songs**, choose Serving Team Members or Specific Groups (such as your worship team) to limit who sees the song library.
    - **URL** -- Shown for **External URL** tabs: the web address the tab opens.
    - **Page** -- Shown for **Internal Page** tabs: pick one of your website's pages.
    - **Parent tab** -- Put the tab inside a **Folder** tab, or leave it on **None (top level)**. See [Where These Tabs Appear](#where-these-tabs-appear).
-   - **Visibility** -- Who can see this tab: **Everyone (including anonymous)**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Serving Team Members**, or **Specific Groups...** (then check the groups). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
-3. Click **Save Tab** to add it to your app.
+   - **Visibility** -- Who can see this tab: **Everyone (including anonymous)**, **Logged-in Users**, **Members & Staff**, **Staff Only**, **Serving Team Members**, or **Specific Groups...** (then check the groups under **Select Groups:**). For a **Member Directory** tab, this only controls who sees the tab itself; who can open the directory is set by **Show in Directory** on the Member portal page (see [Member Directory & Messaging Settings](#member-directory--messaging-settings)).
+3. Click **Save Tab** to add it to your app (the button reads **Saving...** while it works), or **Cancel** to discard it. A tab you move into or out of a folder goes to the end of its new list.
 
 ## Editing an Existing Tab
 
 1. Click the edit (pencil) icon on a tab in the **App Tabs** list.
 2. Update the tab's name, icon, image, type, or visibility settings.
-3. Click **Save Tab** to apply your changes. To remove the tab, click **Delete Tab** instead. Deleting a folder moves its tabs back to the top level.
+3. Click **Save Tab** to apply your changes. To remove the tab, click **Delete Tab** at the bottom of the form and confirm. Deleting a folder, or changing a folder's **Tab Type** to something else, moves its tabs back to the top level.
 
 ## Reordering Tabs
 
@@ -75,7 +75,7 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 2. For each color -- **Background**, **Surface**, **Primary**, **Primary Contrast** (text on primary-colored buttons and headers), **Secondary**, and **Text Color** -- click the swatch to pick a color, or type it in the **Hex** box. The **Preview** below shows a header, a card, and a button in your colors.
 3. Click **Save**.
 
-Click **Reset to Defaults** to go back to the standard colors. B1 Admin's own **Custom** theme also uses the light-mode **Primary** color -- see [Managing Your Profile](../profile/managing-profile.md).
+Click **Reset to Defaults** to put the standard colors back in the form, then click **Save** to keep them. B1 Admin's own **Custom** theme also uses the light-mode **Primary** color -- see [Managing Your Profile](../profile/managing-profile.md). The B1 Checkin kiosk always uses the **Light Mode** colors -- see [Kiosk Display](../../b1-checkin/getting-started/kiosk-display.md#colors).
 
 ## Sharing the Install Link {#sharing-the-install-link}
 
@@ -122,6 +122,14 @@ Visitors who open the app's [Home screen](/docs/b1-church/getting-started/naviga
 
 Click **Save** to apply. A **Saved** message confirms the change. Saving refreshes the app's cached settings, so the change shows up the next time the Home screen loads.
 
+### Event Request Instructions {#event-request-instructions}
+
+Members who open **Request an Event** in the app (see [Requesting Events & Rooms](../../b1-church/events/requesting-events.md)) see a short note at the top of the page. By default it reads *"Staff will approve each room and item."* The **Event request page** setting on the Member portal page (`/mobile/b1-mobile`) lets you replace it:
+
+- **Event request instructions** -- Your own wording, up to 1,000 characters, shown in place of the default. Use it for booking guidelines, how much notice you need, or terms members agree to by requesting. Leave it blank to keep the default sentence.
+
+Click **Save** to apply. Requests themselves are reviewed under [Calendar Approvals](../calendars/approvals.md).
+
 ### Home Screen Tiles
 
 Tabs that have a photo (see **Image** under [Adding a New Tab](#adding-a-new-tab)) appear on the app's [Home screen](/docs/b1-church/getting-started/navigating#home) as photo tiles, in a section headed with your church's name. This includes a Verse of the Day tab, if you give it a photo. Photo tabs still appear in the tab bar as well.
@@ -148,7 +156,7 @@ Signed-in members always see their own attendance history and submitted forms on
 
 Both are off by default. A section only appears for members who are signed in and have at least one record to show.
 
-- **Show News on Home** -- Adds a **News** section right under the greeting that shows your five latest published [blog posts](../website/blog.md) as photo cards in a row that moves along on its own. Tapping a card opens the full post inside the app, and an **All news** link lists your recent posts. Once it is on, **Only this category** lets you pick one blog category (for example, *Announcements*) so only those posts appear; leave it on **All posts** to show everything. News shows for everyone who opens the app, signed in or not, because blog posts are public on your website. It is off by default and only appears when you have at least one published post.
+- **Show News on Home** -- Adds a **News** section right under the greeting that shows your five latest published [blog posts](../website/blog.md) as photo cards in a row that moves along on its own. Tapping a card opens the full post inside the app, and an **All news** link lists your recent posts (see [News](/docs/b1-church/content/news) for the member view). Once it is on, **Only this category** lets you pick one blog category (for example, *Announcements*) so only those posts appear; leave it on **All posts** to show everything. News shows for everyone who opens the app, signed in or not, because blog posts are public on your website. It is off by default and only appears when you have at least one published post.
 
 Click **Save** to apply.
 
@@ -158,11 +166,11 @@ Click **Save** to apply.
 
 1. Click **Send Notification**.
 2. Choose the **Audience**: **Everyone with the app**, or one of your groups. B1 shows how many people the push will reach and how many have push turned off; you are left out of your own push.
-3. Enter a **Title** (up to 80 characters) and **Message** (up to 240 characters), and optionally an **Open link or flyer URL** and an **Image URL** (the same fields as a [group notification](../groups/group-members.md#sending-push-notifications-to-group-members)).
+3. Enter a **Title** (up to 80 characters) and **Message** (up to 240 characters), and optionally an **Open link or flyer URL** (an `https` address or a path inside the app such as `/groups`) and an **Image URL** (an `https` address), the same fields as a [group notification](../groups/group-members.md#sending-push-notifications-to-group-members). A preview under the fields shows how the notification will read.
 4. Under **When**, keep **Send now**, or choose **Schedule for later** and pick a **Send at** time in the future.
 5. Click **Send Notification** (or **Schedule Notification**).
 
-The page lists **Scheduled** notifications (with **Edit**, **Send now**, and **Cancel** on each) and **Recent** ones with their status, such as *Sent: 12 of 15*, *Cancelled*, or *Missed (the send time passed)*. Click **Remove** to take a finished notification off the list, or **Clear all** to remove every sent, failed, and cancelled one. Times are shown in your church's [time zone](./church-settings.md#time-zone), or your computer's if the church has none set. Who receives a scheduled notification is worked out again when it goes out.
+The page lists **Scheduled** notifications (with **Edit**, **Send now**, and **Cancel** on each; when you edit one you can change its text, links, and time but not its **Audience**, and the button reads **Save Changes**) and **Recent** ones with their status, such as *Sent: 12 of 15*, *Cancelled*, or *Missed (the send time passed)*. Click **Remove** to take a finished notification off the list, or **Clear all** to remove every sent, failed, and cancelled one. Times are shown in your church's [time zone](./church-settings.md#time-zone), or your computer's if the church has none set. Who receives a scheduled notification is worked out again when it goes out.
 
 A notification more than 30 minutes late when B1 tries to send it is marked *Missed* and not sent; one that fails three times shows *Failed* with the error. Removing a notification from the list does not take it back from people who already got it. When a push has no link, tapping it opens the app's notification list for a church-wide push, or the group's page for a group push. Members who turned off **Church Announcements** in their [notification preferences](../../b1-church/getting-started/notification-preferences.md) don't get these pushes, whether they go to everyone or to a group.
 
@@ -178,3 +186,6 @@ Tabs placed inside a **Folder** tab are the exception: they appear only on the f
 
 - [Church Settings](./church-settings.md) -- Configure your church information and branding
 - [Roles & Permissions](./roles-permissions.md) -- Manage access for your team
+- [Check-In](../attendance/check-in.md) -- The **B1 CheckIn** page: QR guest registration, the check-in announcement, and the kiosk theme
+- [Check-in Labels](../attendance/labels.md) -- Design the nametags and pickup slips the kiosk prints
+- [Requesting Events & Rooms](../../b1-church/events/requesting-events.md) -- What members see on the Request an Event page

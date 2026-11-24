@@ -29,8 +29,9 @@ Want the current plan to play on its own at a set time? In FreePlay Admin, add a
 3. Once paired, FreePlay loads the current plan and downloads all associated media
 4. Press **Start Plan** to begin playback
 
-The TV stays paired to the plan type. Each week, it automatically picks up the latest plan and its content.
+The TV stays paired to the plan type. Each week, it automatically picks up the latest plan and its content. A **Today's Plan** item at the top of the sidebar brings you back to the plan download screen at any time. See [Playing Today's Plan](./playing-todays-plan.md).
 
 ## In This Section
 
 - **[Pairing Your Device](./device-pairing.md)** - How to generate and enter the pairing code
+- **[Playing Today's Plan](./playing-todays-plan.md)** - The Today's Plan screen, Start Plan, hourly refresh, and turning Plan Mode off

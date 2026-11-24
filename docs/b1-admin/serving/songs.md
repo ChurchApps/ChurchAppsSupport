@@ -16,12 +16,13 @@ The Songs page manages your worship song library. Keep all your song details, ly
 
 - In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) in B1 Admin, choose **Serving > Songs** to access the Songs page
 - Optionally, have your [service plans](./plans.md) set up so you can link songs directly into the [service order](./service-order.md)
+- Adding, editing, exporting, and deleting songs needs the **Edit Content** permission in the **Content** section of a role (see [Roles & Permissions](../settings/roles-permissions.md)); anyone else can browse the library and open songs read-only
 
 </div>
 
 ## Browsing Your Song Library
 
-When you open the **Songs** page, your songs are listed in a table. Each row shows the song's thumbnail image, title, artist, and duration. Use the page controls under the list to move through a large library, or search to find what you need.
+When you open the **Songs** page, your songs are listed in a table. Each row shows the song's thumbnail image, title, artist, and duration. Use the page controls under the list to move through a large library (10, 25, or 50 songs per page), or search to find what you need.
 
 ## Searching for Songs
 
@@ -32,9 +33,13 @@ When you open the **Songs** page, your songs are listed in a table. Each row sho
 ## Adding a Song
 
 1. Click **Add Song** at the top of the Songs page.
-2. In **Search for a Song**, search the external song database by **Title or Artist**.
-3. Select the song you want to add, or click **Create Manually** if you can't find it.
-4. The song will be added to your library with its basic details pre-filled.
+2. In **Search for a Song**, type a **Title or Artist** and press **Enter** (or click the search icon). Results come from the PraiseCharts catalog (the dialog notes **Powered by: PraiseCharts**) and may be joined by a **WorshipCommons — free** section (see below).
+3. Click the song you want. B1 adds it to your library with its title, artist, key, and length filled in, creates a first arrangement named **(Default)** with a **Default** key in the song's key, and opens the song's page.
+4. If the song isn't listed, click **Create Manually**, enter the **Song Title** and **Artist** in the **Create Song** form, and click **Save**. You can fill in the rest of the details on the song's page.
+
+:::info
+Adding a song that is already in your library opens the existing song instead of creating a duplicate.
+:::
 
 :::tip
 After adding a song, click on it to review and update its details, add arrangements, or attach external links like YouTube videos or chord charts.
@@ -42,9 +47,9 @@ After adding a song, click on it to review and update its details, add arrangeme
 
 ### Free Songs from WorshipCommons
 
-Your search results may also include a **WorshipCommons — free** section alongside the regular results. These are Sunday-ready songs from [WorshipCommons](https://worshipcommons.org) that have been reviewed and licensed for worship use. Each result shows a license badge -- **Free for worship** or **Public domain** -- so you know the terms before you add it.
+Your search results may also include a **WorshipCommons — free** section alongside the regular results. These are Sunday-ready songs from [WorshipCommons](https://worshipcommons.org) that have been reviewed and licensed for worship use. Each result shows a review badge such as **Sunday-ready** and a license badge -- **Free for worship** or **Public domain** -- so you know the terms before you add it.
 
-- Click a WorshipCommons result to add it to your library, just like a regular search result.
+- Click a WorshipCommons result to add it to your library, just like a regular search result. The song gets a **WorshipCommons** external link back to its listing.
 - Click **View on WorshipCommons** to open the original listing in a new tab.
 
 Only songs that have passed WorshipCommons' review process appear here, so the selection may be smaller than the main song database.
@@ -53,7 +58,7 @@ To browse the full WorshipCommons library, print charts, or export slides, see t
 
 ## Deleting Songs
 
-Check the box next to one or more songs (or the box in the header to select every song shown), then click **Delete Selected** in the bar that appears and confirm. Click **Clear** to deselect.
+Check the box next to one or more songs (or the box in the header to select every song on the current page), then click **Delete Selected** in the bar that appears and confirm. Click **Clear** to deselect. Deleting a song removes its arrangements, keys, and uploaded files; plans that used it keep the song's name in their order of service but lose the link to its chart.
 
 ## Exporting Your Songs
 
@@ -68,19 +73,42 @@ Two exports at the top of the Songs page download spreadsheets (CSV files). You 
   The file lists each song's **Title**, **Artist**, **CCLI number**, **Times used**, and **Plan dates**. If no songs were used on plans in that range, the dialog says so instead of downloading an empty file.
 
 :::tip
-The CCLI number comes from the song's **CCLI** external link. Add a CCLI link to each song (see **Add external links** below) so your usage report is ready to copy into CCLI.
+The CCLI number comes from the song's **CCLI** external link. Add a CCLI link to each song (see [External Links](#external-links) below) so your usage report is ready to copy into CCLI. A song counts once per plan it appears on, even if it was sung in several service times, and songs whose key was deleted since still appear under the name they had on the plan.
 :::
 
 ## Viewing and Editing a Song
 
-Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, and meter appear on the left, along with its arrangements and external links. The selected arrangement, with its lyrics and keys, fills the rest of the page. From here you can:
+Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, meter, and language appear on the left, along with its arrangements and external links. The selected arrangement, with its lyrics and keys, fills the rest of the page. From here you can:
 
-- **Edit song details** -- Click **Edit** to update the title, artist, duration, and other metadata. Click **Done** when you're finished. To remove the song from your library, click **Edit** and then **Delete song**.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it. To start a new arrangement from an existing one, click **Duplicate** next to the arrangement's name (see [Duplicating an Arrangement](#duplicating-an-arrangement)).
-- **Add lyrics** -- Click **Edit** next to the arrangement's name to change its name, BPM, meter, length, sequence, and lyrics. Enter the lyrics using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
-- **Set the key** -- Specify the musical key for each arrangement using the **Key** picker above the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps.
-- **Add external links** -- Click **Edit** next to **External Links** on the left to link the song on services such as YouTube, Spotify, Apple, CCLI, or Hymnary. Links to chord charts or sheet music hosted elsewhere go on a key (see **Manage keys**).
-- **Manage keys** -- Under **Keys**, click **Add key** to add a key the arrangement is played in (a **Key Signature** and an optional label, such as "John's Key"). Select a key and click **Add Files** to **Import from PraiseCharts**, **Add External Link** for that key (such as a chord chart in that key), or **Upload Audio or Chart PDF**.
+- **Edit song details** -- Click **Edit** to change the song's **Album**, **Language**, **Release Date**, **BPM**, **Key**, and length in **Seconds**, then click **Save**. The title and artist come from the catalog entry the song was added from and can't be changed here; to fix a wrong title, add the song again from the right catalog entry (or with **Create Manually**) and delete this one. Click **Done** to leave the edit view. To remove the song from your library, click **Edit** and then **Delete song**.
+- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one named "New Arrangement" with a **Default** key in the song's key, and click an arrangement's name under **Arrangements** to open it. To start a new arrangement from an existing one, click **Duplicate** next to the arrangement's name (see [Duplicating an Arrangement](#duplicating-an-arrangement)).
+- **Add lyrics** -- Click **Edit** next to the arrangement's name to change its **Arrangement Name**, **BPM**, **Meter**, **Length** (in seconds), **Sequence**, and **Lyrics**. Enter the lyrics using ChordPro notation (for example, `[G]Amazing grace`, with section headers such as `[Verse 1]`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see. The same form has a **Delete** button that removes the arrangement.
+- **Set the key** -- Specify the musical key for each arrangement using the **Key** picker above the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps. The picker only appears when the song has a key saved in its details.
+- **Add external links** -- See [External Links](#external-links) below. Links to chord charts or sheet music hosted elsewhere go on a key instead (see **Manage keys**).
+- **Manage keys** -- Under **Keys**, click **Add key** to add a key the arrangement is played in: enter the **Key Signature** and an optional **Label (optional)**, such as "John's Key", and click **Save**. Keys appear as tabs labeled with the label and key (for example, "Default · G"). Select a key and click **Edit** next to the **Keys** heading to change or delete it, or click **Add Files** to **Import files from PraiseCharts**, **Add external link** for that key (such as a chord chart in that key), or **Upload Audio or Chart PDF**.
+
+### External Links {#external-links}
+
+External links point your team to the song on streaming and licensing services. They belong to the song (not to one arrangement) and appear as logo tiles under **External Links** on the song's page.
+
+1. Click **Edit** next to **External Links** (or **Add First Link** when the song has none).
+2. Click the **+** icon, choose the **Service** -- **Apple**, **CCLI**, **Genius**, **Hymnary**, **MusicBrainz**, **Spotify**, or **YouTube** -- and paste that service's **Id** for the song. The placeholder shows what the Id looks like: a CCLI song number such as `6016351`, a YouTube video id such as `XtwIT8JjddM`, a Spotify track id, the end of an Apple Music album URL, and so on. B1 builds the full link from the service and Id.
+3. Click **Save**. Click an existing link's service name to change or **Delete** it.
+4. Click the check mark (**Done**) to return to the song.
+
+A song added from PraiseCharts also gets a **PraiseCharts** tile automatically. The **CCLI** link is special: its Id is the song's CCLI number, which the [exports](#exporting-your-songs) use for your CCLI report.
+
+### Importing from PraiseCharts {#importing-from-praisecharts}
+
+Songs added from the PraiseCharts catalog can pull in PraiseCharts' own charts, lyrics, and audio:
+
+- **Lyrics** -- when an arrangement has no lyrics yet and the song came from PraiseCharts, a banner above the lyrics asks *"Would you like to import the text lyrics from PraiseCharts?"* Click **Import** to fill the arrangement's lyrics with the song's sections (you can then add chords in ChordPro notation).
+- **Charts and audio** -- select a key and choose **Add Files > Import files from PraiseCharts**. The **Add Products from PraiseCharts** dialog lists the products available for that key -- chord charts, lead sheets, vocal sheets, rehearsal tracks, and so on -- with the file type and price next to each. Expand a bundle to see what's inside. Click **Download** on products you already own, **Free** on free ones, or the price button to buy one; purchases open PraiseCharts in a popup and the list refreshes when you return. Click **Close** when you're done.
+- Anything you've downloaded for a key then appears under **Available Downloads** on that key's tab, in the song dialog on plans, and under **Files** when your team opens the song from a plan in the member app.
+
+:::info
+PraiseCharts products are tied to your own PraiseCharts account. If the dialog says *"You do not have a linked PraiseCharts account"*, follow its **profile** link and connect your PraiseCharts login under your [profile](../profile/managing-profile.md) first.
+:::
 
 ## Arrangements
 

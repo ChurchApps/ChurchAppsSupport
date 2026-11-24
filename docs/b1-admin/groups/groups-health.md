@@ -15,6 +15,7 @@ The Groups Health dashboard gives you a bird's-eye view of how all your groups a
 <h4>Before You Begin</h4>
 
 - You need at least a few groups with members to see meaningful data. See [Creating Groups](./creating-groups.md).
+- You need **View Group Members** to open Group Health. The **Avg Attendance** column and a group's **Attendance Trend** chart also need **View Attendance Summary**; without it they show a dash. See [Roles & Permissions](../people/roles-permissions.md).
 - Attendance data is pulled from recorded sessions. See the [Attendance](../attendance/index.md) section.
 
 </div>
@@ -32,16 +33,16 @@ In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jum
 | **Members** | Current active member count |
 | **Joined (90d)** | Members who joined in the last 90 days |
 | **Left (90d)** | Members who left in the last 90 days |
-| **Churn (90d)** | Net churn rate as a percentage over 90 days |
-| **Avg Attendance** | Average headcount per attendance session, or "-" if no attendance has been recorded |
-| **Avg Age** | Average age of members with a birth date on file |
+| **Churn (90d)** | The members who left in the last 90 days as a percentage of the group's size 90 days ago (today's members, minus those who joined, plus those who left), to one decimal place. A group of 20 that lost 2 shows 10%. |
+| **Avg Attendance** | The average number of people recorded present per session over the last 13 weeks, to one decimal place, or "-" if the group had no sessions in that time (or you lack **View Attendance Summary**) |
+| **Avg Age** | Average age of members with a birth date on file, rounded to a whole year, or "-" if none have one |
 | **Female** / **Male** | How many members are female and male |
 
-The table starts sorted by name. Click any column header to sort the table by that column. Click again to reverse the sort direction. Click **Groups** at the top of the page to go back to the Groups list.
+Only regular groups are listed; serving teams and ministries are left out. The table starts sorted by name. Click any column header to sort the table by that column. Click again to reverse the sort direction. Click **Groups** at the top of the page to go back to the Groups list.
 
 ## One Group's Health
 
-Each group's own page has a **Health** section with a one-line summary (members, joined, and left in the last 90 days). Click **See health** to open the group's health view: its **Members**, **Joined (90d)**, **Left (90d)**, and **Churn (90d)** numbers, a **Membership Changes (12 months)** chart, an **Attendance Trend** chart for groups that track attendance, and **Age** and **Gender** charts of its members.
+Each group's own page has a **Health** section with a one-line summary (members, joined, and left in the last 90 days). Click **See health** to open the group's health view: its **Members**, **Joined (90d)**, **Left (90d)**, and **Churn (90d)** numbers, a **Membership Changes (12 months)** column chart of people **Joined** and **Left** each month, an **Attendance Trend** line chart of weekly attendance for groups that track attendance, and **Age** and **Gender** charts of its members. Charts with nothing to show say "No data". The section and view appear for people with **View Group Members**; see [The Group Page](./group-page.md#health).
 
 ## Using Health Data
 

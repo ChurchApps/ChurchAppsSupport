@@ -63,7 +63,7 @@ Published posts appear at `{yoursite}/blog`, 10 per page with **Older posts**/**
 Published posts can also appear in a **News** section on the Home screen of your church's app, if you turn it on -- see [Home Screen Sections](../settings/mobile-app.md#home-screen-sections).
 
 :::info
-Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](./page-editor.md) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing.
+Blog posts are a separate content type from regular website pages -- they are not built in the [page editor](./page-editor.md) and do not appear in the Pages list. This keeps blog authoring fast and focused on writing. There is one blog per church: if you run [more than one website](./managing-pages.md#multiple-websites), the same posts appear at `/blog` on each of them.
 :::
 
 ## Adding Comments Below Posts

@@ -35,7 +35,9 @@ If the parent lost the pickup label or checked in without printing one, staff ca
 2. Enter at least 2 letters of the family's last name and tap **Search**. To use a phone number instead, tap **Use phone number** and enter at least 4 digits.
 3. Tap a person in the results. The kiosk finds everyone in that person's household who is checked in today and not yet checked out.
 
-If no one in the household is checked in, the kiosk says "No one in this household is checked in right now." Tap **New search** to try again, or **Enter code instead** to go back to the code keypad.
+If no one in the household is checked in, the kiosk says **No one in this household is checked in right now.** Tap **New search** to try again, or **Enter code instead** to go back to the code keypad.
+
+If a code is typed wrong, the kiosk shows **No active check-ins match that code. Please try again.** and clears the field; a connection problem shows **Couldn't look up that code. Please try again.** The code keypad only offers the characters a code can contain (digits 2-9 and consonants), so a code can never include a vowel or a 0 or 1.
 
 :::warning
 Looking a family up by name skips the security-code match, so follow your church's child-safety procedure, such as checking ID or confirming the person against the household's trusted pickup list, before checking children out this way.
@@ -53,9 +55,9 @@ The check-out screen asks who is picking the children up:
 
 - **Trusted pickup people** for the household appear as tappable cards with their photo and relationship — tap the person standing in front of you.
 - **Household adults** also appear in a photo grid.
-- **Other** lets you type a name for someone not on the list.
+- **Other** lets you type a name (at least 2 characters) for someone not on the list, then tap **Check Out**.
 
-If a typed name matches someone marked **Not Authorized** for that household, the kiosk blocks the check-out with a warning. A staff member can choose **Override** to proceed anyway — the override is recorded on the attendance record with the person's name.
+If a typed name matches someone marked **Not Authorized** for that household -- the match is forgiving about capitalization, word order, and small typos -- the kiosk blocks the check-out with a **Not authorized for pickup** warning: *Rick Sanders is flagged as not authorized for pickup. Follow your child-safety procedure.* A staff member can choose **Override** to proceed anyway; the attendance record then shows the pickup person as "OVERRIDE: " followed by the typed name, so the exception is visible later.
 
 Tapping a pickup person (or entering a name under **Other** and tapping **Check Out**) checks out the selected children. The check-out time and the pickup person's name are stored with each child's attendance record, and staff can see them in B1 Admin as **Checked Out** and **Picked Up By**. See [Check-In Details](../../b1-admin/attendance/recording-attendance.md#check-in-details).
 
@@ -65,20 +67,28 @@ Trusted and not-authorized pickup people are managed by church staff on each per
 
 ## Paging a Parent
 
-Need a parent during the service — a diaper change, a crying child? From the check-out screen on a manned station, staff can send a **page**: a text message to the child's parents or guardians through the church's texting provider. Parents who opted out of texts or have no mobile number are skipped, and the kiosk shows how many messages were sent.
+Need a parent during the service -- a diaper change, a crying child? From the check-out screen on a manned station, staff can send a **page**: a text message to the child's parents or guardians through the church's texting provider.
+
+1. Enter the child's security code (or find the family by name) so their check-in is on screen.
+2. Tap **Page parent**.
+3. Tap the preset message -- **Please come to Nursery.** (using the child's pickup room) or **Please come to check-in.** when no room applies -- or type a **Custom message** and tap **Send custom message**.
+4. The kiosk reports **Sent to 2 phone(s). 0 skipped.** Parents who opted out of texts or have no mobile number are skipped. Tap **OK** to close.
+
+If the church has no texting provider, the kiosk says **No SMS provider configured -- set one up in B1Admin Texting settings.**
 
 ## Reprinting Labels
 
-If a nametag or pickup label is lost or damaged, staff on a manned station can **reprint** the family's labels from the check-out screen after entering the security code. The reprint uses the same printer and label templates as the original check-in.
+If a nametag or pickup label is lost or damaged, staff on a manned station can reprint the family's labels from the check-out screen: enter the security code (or find the family by name), then tap **Reprint labels**. The reprint uses the same printer, label templates, and security code as the original check-in, and the kiosk confirms with **Labels sent to printer**. If the family's groups do not print labels, it says **No labels to print.**
 
 ## Emergency Broadcast
 
 In an emergency, staff can text the guardians of **every checked-in child** for the current service at once:
 
-1. Open the kiosk **admin settings** (7 rapid taps on the header logo, plus the PIN if one is set).
-2. Tap **Emergency broadcast**.
-3. Enter the message, then type **EMERGENCY** in the confirmation field — the **Send broadcast** button stays disabled until you do.
-4. The kiosk reports how many phones received the message and how many people were skipped (opted out or no mobile number).
+1. Open the kiosk [Admin Settings](../getting-started/admin-settings.md) (7 rapid taps on the header logo, plus the PIN if one is set).
+2. Tap **Emergency broadcast**. This option works on any station, not only manned ones.
+3. Tap the **service** to broadcast to. The kiosk's current service is pre-selected; the message goes to the guardians of everyone checked in to that service today.
+4. Type the **Message** (at least 2 characters), then type **EMERGENCY** in the **Type EMERGENCY to confirm** field -- the **Send broadcast** button stays disabled until you do.
+5. The kiosk reports **Sent to 42 phone(s). 3 skipped.** -- skipped means opted out of texts or no mobile number on file. Tap **OK** to close.
 
 :::warning
 The broadcast goes to every checked-in household for the selected service. Use it for genuine emergencies — evacuations, lockdowns, severe weather.
@@ -89,3 +99,4 @@ The broadcast goes to every checked-in household for the selected service. Use i
 - [Completing Check-In](./completing-checkin.md) — where security codes and pickup labels come from
 - [Check-In Safety](../../b1-admin/attendance/checkin-safety.md) — configuring capacities, ratios, pickup people, and the texting provider requirement
 - [Printer Setup](../getting-started/printer-setup.md) — label printer configuration
+- [Admin Settings and Kiosk PIN](../getting-started/admin-settings.md) — turning on manned station mode

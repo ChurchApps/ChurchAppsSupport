@@ -1,13 +1,13 @@
 ---
 title: "Viewing Lessons"
-description: "Walk through opening a lesson on Lessons.church, reading its sections and role actions, finding downloads, and switching age-group venues before class."
+description: "Walk through a Lessons.church lesson page: the Start Lesson button, the venue picker, section links, role actions, media previews, downloads, print, and OLF export."
 ---
 
 # Viewing Lessons
 
 <div class="article-intro">
 
-Each lesson on Lessons.church is a complete teaching session with structured content, downloadable materials, and support for multiple age groups. This guide explains how to navigate and use a lesson page to prepare for your class.
+Each lesson on Lessons.church is a complete teaching session with structured content, downloadable materials, and support for multiple age groups. This guide explains every part of the lesson page so you can prepare for class.
 
 </div>
 
@@ -27,57 +27,55 @@ To view a lesson, navigate through the content hierarchy:
 2. Select a **study** from the program page.
 3. Click the **lesson** you want to view from the study page.
 
-## What You Will See
+You can also land on a lesson from [search](./searching.md), from a classroom's schedule, or from a classroom's public page.
 
-The lesson page is organized into several areas:
+## The Lesson Header
 
-### Video
+The top of the page shows the program and study as breadcrumb links, the lesson title, its description, and the lesson image. The **Start Lesson** button opens [Presenter Mode](../presenting/presenter-mode.md), a full-screen slideshow of the lesson's videos and slides for the classroom screen.
 
-If the lesson includes a video, it appears at the top of the page. Click to play it directly in your browser. Videos are often used as the main teaching segment, especially for children's ministry.
+## The Sidebar
 
-### Sections and Roles
+The left column stays on screen as you scroll. From top to bottom:
 
-Each lesson is divided into **sections** (for example, "Opening," "Bible Story," "Activity," "Closing"). Within each section, content is organized by **role**:
+- **Venue** -- A dropdown listing the lesson's venues (for example, **Preschool** and **Elementary**). Choosing one swaps the whole page, including the sections and downloads, to that age group's version.
+- **Share** and **Print** icons -- **Share** opens a menu whose **Export to OLF** item opens the lesson in the [Open Lesson Format Builder](../admin/open-lesson-tools.md) so you can save it as a JSON file. **Print** opens the [Print Preview](../presenting/volunteer-guides.md#printing-a-lesson) dialog.
+- **Sections** -- Links to each section of the venue. Click one to jump to it; the link for the section you are reading is highlighted.
+- **Downloads** -- The zip bundles and videos available for this venue. See [Downloads and Materials](../presenting/downloads.md).
+- **About** -- Information about the curriculum provider, when they supply it.
 
-- **Leader** -- The primary teacher or presenter
-- **Helper** -- Supporting volunteers
-- Other custom roles the curriculum creator has defined
+## Sections and Roles
 
-Each role lists its **actions**, which tell the volunteer exactly what to do:
+The main column shows the venue's **sections** in order (for example, "Opening," "Bible Story," "Activity," "Closing"). Each section card has the section name and, when the provider lists supplies, a **Materials:** line.
 
-- **Say** -- Script or talking points to read aloud
-- **Do** -- Physical instructions or activities to perform
-- **Note** -- Background information or tips for the volunteer
-- **Play** -- Cues to play a video or audio clip
+Within a section the **actions** run in order. The provider assigns each action to a **role** (the leader, a helper, a small-group leader, or whatever the curriculum defines) and keeps one role's actions together, although the role names themselves are not printed on the page. Actions come in four styles:
 
-### Downloadable Materials
+- **Say** -- Script or talking points to read aloud, shown as speech bubbles.
+- **Do** -- Physical instructions or activities to perform, shown as a checklist.
+- **Note** -- Background information or tips for the volunteer, not read aloud.
+- **Play** -- A video or slide. It shows a thumbnail, the running time when known, and a title. Click it to preview: videos open in a **Preview Video** window, and images open in a **Slide Preview** window. Click **Close** to return to the lesson.
 
-Lessons may include files you can download and print, such as:
-
-- PDF handouts
-- Activity sheets
-- Coloring pages
-- Craft instructions
-- Take-home sheets for parents
-
-Look for download links within the lesson page to access these resources. See [Downloads and Materials](../presenting/downloads.md) for more details on preparing printed resources.
+:::info
+Play actions use the same files that [Presenter Mode](../presenting/presenter-mode.md) shows full screen. Previewing them here is the quickest way to check a video before class.
+:::
 
 ## Switching Between Venues
 
-Many lessons support multiple **venues**, which represent different age groups such as Preschool, Elementary, or Pre-Teen. Venues allow the same lesson topic to be tailored to the appropriate level for each group.
+Many lessons support multiple **venues**, which represent different age groups such as Preschool, Elementary, or Pre-Teen. To switch:
 
-To switch between venues:
-
-1. Look for the **venue selector** on the lesson page.
-2. Click a different venue name (for example, switch from **Elementary** to **Preschool**).
-3. The page updates to show the content, scripts, and materials designed for that age group.
+1. Open the **Venue** dropdown at the top of the sidebar.
+2. Choose a different venue name.
+3. The page updates to show the sections, scripts, media, and downloads for that age group.
 
 :::tip
 If you teach multiple age groups, review each venue before your session so you can see how the content is adapted for different levels.
 :::
 
+## Lessons from External Providers
+
+Lessons your church scheduled from an [external provider](./external-providers.md) open at an address starting with `lessons.church/external/` and use this same layout: header with **Start Lesson**, sidebar, and sections. Their Share and Print tools work the same way.
+
 ## Related Articles
 
-- [Presenter Mode](../presenting/presenter-mode.md) -- Display the lesson on a screen or projector during class
-- [Volunteer Guides](../presenting/volunteer-guides.md) -- Share role-specific instructions with your team
+- [Presenter Mode](../presenting/presenter-mode.md) -- Display the lesson's media on a screen or projector during class
+- [Volunteer Guides](../presenting/volunteer-guides.md) -- Role labels and printing
 - [Customizing Lessons](../customization/customizing-lessons.md) -- Tailor lesson content for your specific classroom

@@ -28,7 +28,7 @@ You configure reminders in the **Reminders** section of the event. Expand it to 
 - For an **existing event**, use the **Reminders** section in any of these places, and click the **Save** button inside the section: the dialog that opens when you click the event on a calendar, the **Edit Event** editor, or the event's registration page (**Calendars > Registrations**, then the event).
 
 1. Turn on **Enable reminders**.
-2. Choose **When (up to 3)** to send: **7 days before**, **3 days before**, **1 day before**, and **Day of**. Once three are picked, the others are disabled until you unpick one.
+2. Choose **When (up to 3)** to send: **7 days before**, **3 days before**, **1 day before**, and **Day of**. **1 day before** starts out picked. Once three are picked, the others are disabled and the section says "Maximum of 3 times selected" until you unpick one. **Save** is disabled while no time is picked.
 3. Set the **Time of day** the reminder should go out (default is **9:00 AM**, in your church's [time zone](../settings/church-settings.md#time-zone)).
 4. Choose **Who** should be reminded (see [Who Gets Reminded](#who-gets-reminded) below).
 5. Optionally add a **Message (optional)**. Leave it blank to use the default wording, or write your own -- you can include `{{eventTitle}}` and it will be replaced with the event's name.
@@ -37,7 +37,11 @@ You configure reminders in the **Reminders** section of the event. Expand it to 
 
 To stop reminders for an event, turn off **Enable reminders** and save.
 
-On an event that's already saved, a **live preview** shows roughly how many people will be reminded, how many attendees can't be reached, and the next scheduled send times as you make changes -- so you can confirm the reminder looks right before you save. A brand-new event has no preview until it's been saved.
+On an event that's already saved, a **live preview** shows roughly how many people will be reminded (*~24 people will be reminded*), how many attendees can't be reached (*2 unlinked attendees*), and the next scheduled send times (*Next: Mar 3, 9:00 AM, Mar 9, 9:00 AM*) as you make changes -- so you can confirm the reminder looks right before you save. A brand-new event has no preview until it's been saved.
+
+### Sending a Reminder Right Away {#send-now}
+
+Next to **Save** on a saved event is a **Send now** button. It sends the reminder immediately to everyone the **Who** setting covers, using the channels you picked -- handy for a last-minute change or a reminder you forgot to schedule. **Send now** is only available once the reminder has been saved with **Enable reminders** on; save your changes first so the message and recipients are current. Afterwards a line reports the result, for example *Sent to 24 people*, or with the **Text** channel on, *Sent to 24 people · 20 texted, 4 skipped* followed by why texts were skipped. Sending now does not change the scheduled reminders, which still go out at their set times.
 
 ## Who Gets Reminded
 
@@ -60,7 +64,7 @@ Guests added by name only (without a linked person record) can't receive a remin
 - Recurring events are handled automatically: each upcoming occurrence gets its own reminder.
 
 :::tip
-Reminders are sent **push first, with email as a fallback**. If a member has push notifications enabled, they'll get a push; if not, they'll get an email instead. Members choose which channels they want per notification type in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md).
+With both **Push** and **Email** checked, each reminder is delivered as a push notification to the member's signed-in devices and as an email at the same time -- the email is not held back for people whose push fails. Members choose which channels actually reach them, per notification type, in their [Notification Preferences](../../b1-church/getting-started/notification-preferences.md), so someone who has turned off email for event reminders only gets the push.
 :::
 
 ## Text Reminders
@@ -91,5 +95,6 @@ Volunteers scheduled on a plan receive a separate **serving reminder** with the 
 ## Next Steps
 
 - [Notification Preferences](../../b1-church/getting-started/notification-preferences.md) -- What members can control
+- [Managing Registrations](./managing-registrations.md) -- The registration page where reminders can also be set
 - [Event Registration Guide](../guides/event-registration.md) -- Set up registration so reminders can reach attendees
 - [Creating Calendars](./creating-calendars.md) -- Return to calendar setup

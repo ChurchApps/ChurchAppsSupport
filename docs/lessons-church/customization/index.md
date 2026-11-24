@@ -21,7 +21,7 @@ For example, a lesson might include a craft activity that works great for presch
 
 - **Remove sections** -- Remove entire sections of a lesson that do not apply to a specific classroom or age group.
 - **Remove roles or actions** -- Remove individual roles or actions within a section if they are not needed.
-- **Reorder content** -- Rearrange sections and actions to match the flow you prefer for your classroom.
+- **Reorder content** -- Rearrange sections, roles, and actions to match the flow you prefer for your classroom.
 
 ## Classroom-Specific or Global
 
@@ -31,6 +31,10 @@ Each time you make a change, you choose how broadly it applies:
 - **All the Classrooms** -- The change applies across every classroom at your church.
 
 This flexibility means you can set up different views of the same lesson for different age groups, or make a change that applies everywhere at once.
+
+## Where You See the Result
+
+Customized lessons appear in the B1 app's **Lessons** tab and in B1 Admin plans. The public lesson page on lessons.church keeps the provider's original content, and lessons from external providers cannot be customized.
 
 :::tip
 If you are new to customization, start with a single classroom to see how it works before applying changes across all classrooms.

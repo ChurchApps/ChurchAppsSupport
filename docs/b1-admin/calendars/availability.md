@@ -35,11 +35,13 @@ Each booking is color-coded by status:
 | Orange | Pending approval |
 | Grey | Blocked out (not available), shown as *Blocked: reason* |
 
-Each booking reads as the event title followed by the rooms and resources it uses. Hover over a booking to see the full text. Click a booking to open its event and edit it.
+Each booking reads as the event title followed by the rooms and resources it uses, for example *Youth Night — Fellowship Hall — Projector*. The block drawn on the calendar includes any setup and teardown minutes or custom reservation window, so it can be longer than the event itself. Hover over a booking to see the full text. Click a booking to open its event in the editor (blockouts can't be clicked; edit them under [Blockouts](./rooms-resources.md#blockouts)). The calendar covers bookings from one month ago to one year ahead.
 
 ## Filtering by Room or Resource
 
-Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Select **All rooms & resources** to return to the full view.
+Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Blockouts for other rooms and resources are hidden too, while blockouts that apply to **All rooms & resources** stay. Select **All rooms & resources** to return to the full view.
+
+The filter also feeds the **Book** button: with a room or resource selected, **Book** opens the **New Event** dialog with that room or resource already ticked.
 
 ## Exporting Bookings to a Spreadsheet {#exporting-bookings}
 
@@ -59,13 +61,15 @@ The file has one row per booking on each date in view, sorted by start time, wit
    - **Title** *(required)*
    - **Start** and **End** date/time *(required; End must be after Start)*
    - **Visibility** — Public or Private
-   - **Rooms** — select one or more rooms to reserve
-   - **Resources** — select one or more resources to reserve
+   - **Rooms** — select one or more rooms to reserve; each shows its seats and description
+   - **Resources** — select one or more resources to reserve. For a resource you own several of, a **Quantity** box appears (for example *3 available*) so you can book more than one.
 3. Once a room or resource is selected, you can set **Setup (min before)** and **Teardown (min after)**. These pad the booking on both ends so the space is reserved for setup and cleanup, even though the event start/end times stay the same.
 4. To repeat the booking, set the **Start** first, then check **Repeats** and configure the recurrence:
-   - **Interval** -- how often it repeats (for example, 2 with Week for every 2 weeks).
-   - **Frequency** -- Day, Week, or Month. Weekly lets you pick specific day(s) of the week; Monthly lets you pick a fixed day of the month or a relative pattern like "the second Tuesday."
-   - **Ends** -- **Never**, **On** a specific **End Date**, or **After** a set number of occurrences.
+   - **Interval** -- how often it repeats (for example, 2 with **Week** for every 2 weeks).
+   - **Frequency** -- **Day**, **Week**, or **Month**. Weekly lets you pick specific day(s) of the week; Monthly lets you pick **Monthly on day** *N* or a relative pattern such as **Monthly on the** *second Tuesday*.
+   - **Ends** -- **Never**, **On** a specific **End Date**, or **After** a set number of **Occurrences**.
+
+   See [Repeating Events](./creating-calendars.md#repeating-events) for the details. Every date of the series is checked for conflicts.
 5. To specify a custom booking window (different from the event start/end), turn on **Custom reservation window** and enter **Reserve from** and **Reserve until**. This replaces the setup and teardown minutes. Use it when a room needs to be accessible outside the event's listed hours.
 6. Click **Save** to submit the booking.
 

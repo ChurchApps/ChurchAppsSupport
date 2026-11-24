@@ -104,6 +104,8 @@ Your church is now accepting online donations. Members can give through your web
 ## Related Articles
 
 - [Funds](../donations/funds.md) — create and manage donation categories
+- [Giving Settings Reference](../donations/giving-settings.md) — every provider, fee, and statement field, including the **Transaction Fee** switch that requires donors to cover fees
+- [Failed Recurring Gifts](../donations/failed-gifts.md) — what happens when a recurring card declines
 - [Batches](../donations/batches.md) — organize donations into groups
 - [Recording Donations](../donations/recording-donations.md) — manually enter cash and check donations
 - [Stripe Import](../donations/stripe-import.md) — pull online transactions into B1 Admin

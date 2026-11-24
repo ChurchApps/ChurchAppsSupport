@@ -14,7 +14,7 @@ Funds let you categorize donations by purpose so you can track how much your chu
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- You will need access to the **Donations** section in B1 Admin
+- You need **View Donation Summaries** to open the Funds page, **View Donations** to open a fund's detail page or its **Giving Link**, and **Edit Donations** to add, edit, or delete funds (see [Who Can See What](index.md#who-can-see-what))
 - Decide which giving categories your church needs and whether each should be tax-deductible
 
 </div>
@@ -27,8 +27,8 @@ Navigate to **Donations > Funds** to see a list of all your funds. Each row show
 
 1. Click **Add Fund** at the top of the page.
 2. Enter a name for the fund (e.g., "Building Fund").
-3. Optionally enter a **Description** (up to 500 characters), such as what the fund pays for. Donors see it under the fund on the giving form.
-4. Check the **Tax Deductible** box if donations to this fund should be included on giving statements. Gifts to non-deductible funds are still listed in the donor's giving on their person record.
+3. Optionally enter a **Description** (up to 500 characters; a counter under the box shows how many you have used), such as what the fund pays for. Donors see it under the fund on the giving form.
+4. Check the **Tax Deductible** box if donations to this fund should be included on giving statements. The note under the box changes to match: "Tracks donations." when checked, or "Tracks non-donation transactions like camp registrations, tshirts, event tickets, etc." when not. Gifts to non-deductible funds are still listed in the donor's giving on their person record, and a one-gift receipt for them leaves off the "no goods or services" wording.
 5. Leave **Visible to Donors** checked to show the fund on the public and member donation forms, or uncheck it to hide the fund from donors while still using it for manually recorded donations.
 6. Click **Save**.
 
@@ -50,17 +50,17 @@ Deleting a fund does not remove donations that were previously assigned to it. T
 :::
 
 :::info
-Funds hidden from donors show a **Hidden** badge next to their name in this list. Hidden funds still work for donations recorded manually in B1 Admin -- they just don't appear as an option on the public or member donation forms.
+Funds hidden from donors show a **Hidden** badge next to their name in this list. Hidden funds still work for donations recorded manually in B1 Admin -- they just don't appear as an option on the public or member donation forms. A hidden fund still accepts online gifts through its own **Giving Link**, so you can run a quiet appeal by sharing the link or QR code with a smaller group without listing the fund for everyone.
 :::
 
 ## Viewing Fund Details
 
-Click on a **fund name** to open its detail page. This page shows:
+Click on a **fund name** to open its detail page (the name is only a link for people with **View Donations**). This page shows:
 
-- **Summary** -- a line under the page title with the number of gifts, the number of donors, and the total amount for the period shown
-- **Year buttons** -- the page opens on the current year; click another year to show that calendar year
+- **Summary** -- a line under the page title with the number of gifts, the number of donors, and the total amount for the period shown. If gifts were made in more than one currency the total is converted to your church currency and marked "Converted at current exchange rates"
+- **Year buttons** -- the last ten years; the page opens on the current year, and clicking a year shows January 1 through December 31 of that calendar year
 - **Date range filter** -- set a **Start Date** and **End Date** and click **Filter** to narrow the results to a specific time period
-- **Donation history** -- a list of donations to this fund with the date, batch, donor, and amount. Click **Export** above the list to download it as a CSV.
+- **Donation history** -- a list of donations to this fund with the **Date**, a **View batch** link, the **Donor** (linked to their person record when you can view people, or **Anonymous**), and the **Amount** in the currency it was given in. Click **Export** above the list to download it as a CSV.
 
 This view is helpful when you need to report on a specific giving initiative or check progress toward a fundraising goal.
 

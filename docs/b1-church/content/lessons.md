@@ -11,7 +11,7 @@ The embedded **Lessons** tab on B1.church has been deprecated. Curriculum playba
 
 To browse, schedule, or edit curriculum directly, sign in to [Lessons.church](https://lessons.church) in your browser. To play lessons on a classroom TV, install [FreePlay](/docs/freeplay/getting-started/) on your TV device.
 
-Parents of groups associated with a lesson plan type in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details.md) page — not on this deprecated tab.
+Parents of groups associated with a lesson plan type in B1Admin see **this week's lesson** on the [group details](/docs/b1-church/groups/group-details) page — not on this deprecated tab.
 :::
 
 <div class="article-intro">
@@ -30,11 +30,13 @@ The **Lessons** tab gave you access to your church's curriculum and learning mat
 
 ## Accessing Lessons
 
-1. Log in to your B1.church member portal.
-2. Click the **Lessons** tab in the [member navigation](../getting-started/navigating.md).
-3. The Lessons.church content loads directly within the page.
+The tab still works for churches that have kept a **Lessons** tab in their member portal navigation:
 
-Your login carries over automatically when you open the Lessons tab. You do not need to sign in again separately to Lessons.church.
+1. Log in to your B1.church member portal. Signed out, the screen says "Sign in to view lessons" with a **Sign In** button.
+2. Tap the **Lessons** tab (your church may have renamed it) in the [member navigation](../getting-started/navigating.md).
+3. The Lessons.church content loads directly within the page ("Loading lessons…"). If it hasn't loaded after a short while, the screen says "Unable to load lessons" with a **Retry** button.
+
+Your login carries over automatically when you open the Lessons tab. You do not need to sign in again separately to Lessons.church. Links inside the lesson content that point back to your groups, plans, directory, check-in, giving, or the daily verse open the matching screen in the app.
 
 ## What You Can Do
 

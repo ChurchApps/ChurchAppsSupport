@@ -45,6 +45,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/groups/index' },
           items: [
             'b1-admin/groups/creating-groups',
+            'b1-admin/groups/group-page',
             'b1-admin/groups/group-members',
             'b1-admin/groups/group-calendar',
             'b1-admin/groups/group-join-requests',
@@ -71,11 +72,14 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/donations/index' },
           items: [
             'b1-admin/donations/recording-donations',
+            'b1-admin/donations/person-giving',
             'b1-admin/donations/batches',
             'b1-admin/donations/funds',
             'b1-admin/donations/campaigns',
             'b1-admin/donations/giving-statements',
             'b1-admin/donations/online-giving-setup',
+            'b1-admin/donations/giving-settings',
+            'b1-admin/donations/failed-gifts',
             'b1-admin/donations/multi-currency',
             'b1-admin/donations/stripe-import',
             'b1-admin/donations/donation-reports',
@@ -87,6 +91,7 @@ const sidebars: SidebarsConfig = {
           key: 'admin-serving',
           link: { type: 'doc', id: 'b1-admin/serving/index' },
           items: [
+            'b1-admin/serving/ministries-and-teams',
             'b1-admin/serving/plans',
             'b1-admin/serving/plan-templates',
             'b1-admin/serving/plans-overview',
@@ -107,6 +112,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/forms/creating-forms',
             'b1-admin/forms/managing-submissions',
+            'b1-admin/forms/form-access',
           ],
         },
         {
@@ -128,7 +134,10 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-admin/website/initial-setup',
             'b1-admin/website/managing-pages',
+            'b1-admin/website/site-templates',
             'b1-admin/website/page-editor',
+            'b1-admin/website/element-reference',
+            'b1-admin/website/accessibility-checker',
             'b1-admin/website/blocks',
             'b1-admin/website/blog',
             'b1-admin/website/appearance',
@@ -144,7 +153,9 @@ const sidebars: SidebarsConfig = {
             'b1-admin/sermons/managing-sermons',
             'b1-admin/sermons/playlists',
             'b1-admin/sermons/live-streaming',
+            'b1-admin/sermons/stream-settings',
             'b1-admin/sermons/bulk-import',
+            'b1-admin/sermons/podcast-feed',
           ],
         },
         {
@@ -153,6 +164,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'b1-admin/calendars/index' },
           items: [
             'b1-admin/calendars/creating-calendars',
+            'b1-admin/calendars/managing-registrations',
             'b1-admin/calendars/paid-registrations',
             'b1-admin/calendars/curated-calendar',
             'b1-admin/calendars/event-reminders',
@@ -173,6 +185,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/settings/roles-permissions',
             'b1-admin/settings/mobile-app',
             'b1-admin/settings/email-templates',
+            'b1-admin/settings/batches',
             'b1-admin/settings/data-security',
           ],
         },
@@ -181,6 +194,7 @@ const sidebars: SidebarsConfig = {
           label: 'Integrations',
           link: { type: 'doc', id: 'b1-admin/integrations/index' },
           items: [
+            'b1-admin/integrations/developer-settings',
             'b1-admin/integrations/slack-discord',
             'b1-admin/integrations/zapier',
             'b1-admin/integrations/make',
@@ -254,6 +268,10 @@ const sidebars: SidebarsConfig = {
             'b1-church/getting-started/logging-in',
             'b1-church/getting-started/navigating',
             'b1-church/getting-started/me-page',
+            'b1-church/getting-started/my-tasks',
+            'b1-church/getting-started/my-forms',
+            'b1-church/getting-started/my-attendance',
+            'b1-church/getting-started/filling-out-forms',
             'b1-church/getting-started/editing-your-profile',
             'b1-church/getting-started/installing-pwa',
             'b1-church/getting-started/notification-preferences',
@@ -289,6 +307,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-church/plans/viewing-plans',
             'b1-church/plans/service-order',
+            'b1-church/plans/songs',
           ],
         },
         {
@@ -343,6 +362,7 @@ const sidebars: SidebarsConfig = {
             'b1-church/content/bible',
             'b1-church/content/verse-of-the-day',
             'b1-church/content/blog',
+            'b1-church/content/news',
             'b1-church/content/lessons',
             'b1-church/content/teacher-view',
           ],
@@ -362,6 +382,9 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-checkin/getting-started/logging-in',
             'b1-checkin/getting-started/printer-setup',
+            'b1-checkin/getting-started/admin-settings',
+            'b1-checkin/getting-started/kiosk-display',
+            'b1-checkin/getting-started/troubleshooting',
           ],
         },
         {
@@ -372,6 +395,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'b1-checkin/check-in/selecting-service',
             'b1-checkin/check-in/looking-up-members',
+            'b1-checkin/check-in/scanning-codes',
             'b1-checkin/check-in/household-review',
             'b1-checkin/check-in/group-assignment',
             'b1-checkin/check-in/adding-guests',
@@ -415,6 +439,7 @@ const sidebars: SidebarsConfig = {
           items: [
             'lessons-church/classrooms/setting-up-classrooms',
             'lessons-church/classrooms/scheduling-lessons',
+            'lessons-church/classrooms/sharing-and-feeds',
           ],
         },
         {
@@ -431,6 +456,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'lessons-church/presenting/index' },
           items: [
             'lessons-church/presenting/presenter-mode',
+            'lessons-church/presenting/b1-teacher-view',
             'lessons-church/presenting/volunteer-guides',
             'lessons-church/presenting/downloads',
           ],
@@ -441,12 +467,17 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'lessons-church/admin/index' },
           items: [
             'lessons-church/admin/managing-programs',
+            'lessons-church/admin/study-categories',
             'lessons-church/admin/managing-studies',
             'lessons-church/admin/managing-lessons',
+            'lessons-church/admin/sections-roles-actions',
+            'lessons-church/admin/managing-files',
+            'lessons-church/admin/managing-add-ons',
             'lessons-church/admin/managing-year-plans',
             'lessons-church/admin/statistics',
             'lessons-church/admin/third-party-providers',
             'lessons-church/admin/open-lesson-format',
+            'lessons-church/admin/open-lesson-tools',
           ],
         },
       ],
@@ -464,6 +495,8 @@ const sidebars: SidebarsConfig = {
           items: [
             'freeplay/getting-started/choosing-a-device',
             'freeplay/getting-started/pairing-modes',
+            'freeplay/getting-started/downloads-and-storage',
+            'freeplay/getting-started/troubleshooting',
           ],
         },
         {
@@ -471,6 +504,7 @@ const sidebars: SidebarsConfig = {
           label: 'Scheduled Mode',
           link: { type: 'doc', id: 'freeplay/scheduled-mode/index' },
           items: [
+            'freeplay/scheduled-mode/getting-around-freeplay-admin',
             'freeplay/scheduled-mode/pairing-a-screen',
             'freeplay/scheduled-mode/managing-screens',
             'freeplay/scheduled-mode/building-playlists',
@@ -484,6 +518,7 @@ const sidebars: SidebarsConfig = {
           link: { type: 'doc', id: 'freeplay/plan-mode/index' },
           items: [
             'freeplay/plan-mode/device-pairing',
+            'freeplay/plan-mode/playing-todays-plan',
           ],
         },
         {
@@ -506,11 +541,13 @@ const sidebars: SidebarsConfig = {
       items: [
         'worship-commons/finding-songs',
         'worship-commons/song-page',
+        'worship-commons/licenses-and-rights',
         'worship-commons/presenting-and-exporting',
         'worship-commons/service-plans',
         'worship-commons/your-account',
         'worship-commons/sharing-a-song',
         'worship-commons/proposing-edits',
+        'worship-commons/keyboard-shortcuts',
       ],
     },
     {

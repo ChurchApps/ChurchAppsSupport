@@ -25,17 +25,21 @@ If your church has set a check-in announcement, an **Announcement** window appea
 
 ## Viewing Household Members
 
-Each household member appears as a card. Members whose membership status is **Deceased** are left off the list; inactive members still show, since they may be returning. Each card has:
+The screen is titled **Who's checking in?** with a **Find / Select / Done** step indicator above it; you are on the **Select** step. Each household member appears as a card. Members whose membership status is **Deceased** are left off the list; inactive members still show, since they may be returning. Each card has:
 
 - Their **photo** (or a placeholder icon if no photo is on file)
 - Their **display name**
 - A **summary of their current group assignments** (shown as small chips below the name when the card is collapsed)
 - An **Already checked in** badge if they have already checked in for this service today
+- A yellow **warning badge** showing their **name tag notes** (allergies or other alerts) when any are on file
+- A **pencil icon** on [manned stations](../getting-started/admin-settings.md#self-service-and-manned-stations) for [editing the person's profile](#editing-a-profile-manned-stations)
 - An **expand/collapse arrow** on the right side
+
+A card gets a colored bar along its left edge once the person has at least one group selected. If the household loads with nobody in it, the screen shows **No household members found**.
 
 ## Expanding a Member
 
-Tap a member's card to expand it. When expanded, you will see a row for each **service time** within the selected service, earliest first. Service times are ordered by their scheduled day and start time when one is set, otherwise by the time in their name (so "9:00 AM" comes before "10:30 AM"); service times with no time in their name come last, alphabetically. Each row shows:
+Tap a member's card to expand it. If the person has name tag notes, they are repeated in a yellow alert at the top of the expanded card. Below that you will see a row for each **service time** within the selected service, earliest first. Service times are ordered by their scheduled day and start time when one is set, otherwise by the time in their name (so "9:00 AM" comes before "10:30 AM"); service times with no time in their name come last, alphabetically. Each row shows:
 
 - The **service time name** (for example, "9:00 AM" or "11:00 AM")
 - The **groups offered** at that service time, listed below the name (for example, "Nursery, Preschool, Adult Bible Class"), so you can see which classes are available before you choose
@@ -49,6 +53,20 @@ The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap
 
 Tap the member's card again to collapse it.
 
+## Editing a Profile (Manned Stations) {#editing-a-profile-manned-stations}
+
+On a station in [manned station mode](../getting-started/admin-settings.md#self-service-and-manned-stations), each member card has a **pencil icon**. A volunteer can tap it to fix a record on the spot without opening B1 Admin:
+
+1. Tap the **pencil** on the member's card. The **Edit Profile** window loads the person's current details.
+2. Change any of **First Name**, **Last Name**, **Birth Date** (entered as `YYYY-MM-DD`), **Mobile Phone**, **Email**, or **Name Tag Notes**.
+3. Tap **Save**. **Save** stays disabled until both names are filled in. Tap **Cancel** to close without saving.
+
+Only those fields are changed; everything else on the person's record is left alone. A corrected birth date immediately affects the [age guidance](./group-assignment.md#age-and-grade-guidance) and printed age, and name tag notes print on the labels. If the record cannot be loaded or saved, the window shows **Couldn't load this person. Please try again.** or **Couldn't save. Please try again.**
+
+:::tip
+Name Tag Notes is the place for allergies and medical alerts. They show as a warning badge on the household screen and print on the child's name tag and the pickup slip.
+:::
+
 :::tip
 You do not need to assign every family member to a group. Adults who are attending the main worship service can be left without a group assignment. Only assign groups for members who need to be checked into a specific class or program.
 :::
@@ -58,8 +76,10 @@ You do not need to assign every family member to a group. Adults who are attendi
 From the household review screen, you have three options:
 
 - **Expand a member** and tap a service time button to [assign or change a group](./group-assignment.md).
-- **Tap the Add Guest button** below the member list to [add a guest](./adding-guests.md) to your household.
-- **Tap the Check-in button** at the bottom of the screen to [complete the check-in](./completing-checkin.md) for everyone in the household.
+- **Tap Add a Guest** below the member list to [add a guest](./adding-guests.md) to your household.
+- **Tap Check In** at the bottom of the screen to [complete the check-in](./completing-checkin.md). The button shows how many people are selected -- for example **Check In -- 3** -- and stays disabled with the hint **Choose a group for at least one person** until someone has a group.
+
+Tap the **back arrow** next to the title to return to the lookup screen and start over with another family.
 
 :::info
 Any group assignments from a previous check-in to the same service are pre-loaded automatically. If your children attend the same groups each week, you may not need to change anything -- just review and check in.

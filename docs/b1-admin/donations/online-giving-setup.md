@@ -69,7 +69,7 @@ Donors on the public giving page can check **Give anonymously**. An anonymous gi
 
 When a recurring gift on Stripe fails (an expired or declined card, for example), the failed charge appears under **Donations > Failed Gifts** with the donor, amount, date and the reason the gateway gave. Click **Retry** to attempt the charge again once the donor has updated their payment method.
 
-B1 also emails the donor when the charge fails, and again three and seven days later if it has still not gone through, with a link to update their payment method in B1.church.
+B1 also emails the donor when the charge fails, and again three and seven days later if it has still not gone through, with a link to update their payment method in B1.church. See [Failed Recurring Gifts](failed-gifts.md) for the page, the emails, and the **Failed events** panel on the Batches page.
 
 :::info
 If your church set up Stripe before this feature existed, open **Settings** > **Giving**, click edit, and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
@@ -136,9 +136,20 @@ If a fund has a **Description** (set on the [Funds](funds.md#fund-descriptions-o
 
 Stripe sends an email notification each time a donation is received. To change the notification email address, go to the Stripe dashboard, click your profile in the top right, choose **Profile**, and update your email address.
 
+## Donor Emails {#donor-emails}
+
+B1 sends its own emails to the donor, from your church's name and with your **Light Background Logo** at the top, so you do not need a separate receipt process for online gifts:
+
+- **Thank You For Donating** -- sent to the email address on the gift as soon as a one-time gift succeeds or a recurring gift is set up. It lists each **Fund** and **Amount**; when the donor covered the processing fee it adds a **Transaction Fee** line and the **Total**. For a recurring gift it also shows the **Interval** and start date and has a "Modify your subscription here!" link to the donor's Giving page in B1.church. Anonymous donors get it too, since they still enter an email.
+- **Your Recurring Donation Needs Attention** and **Your Recurring Donation Was Canceled** -- sent when a recurring charge fails and if Stripe eventually cancels the schedule. See [Failed Recurring Gifts](failed-gifts.md#what-the-donor-receives).
+
+Gifts you record by hand in a batch send no email; print a [receipt](recording-donations.md#printing-a-receipt-for-one-gift) for those if the donor wants one. To thank donors in your own words, use a **Donation · Created** [workflow](../serving/workflows.md#triggers) with an email template.
+
 ## Processing Fee Options
 
-You can let donors optionally cover processing fees so your church receives the full donation amount. In **Settings > Giving**, click edit and turn on the **Transaction Fee** switch next to your keys. The rates used to work out the fee are under **Fees & statements**: **Flat Rate** and **Transaction Fee** for cards, and for Stripe bank (ACH) gifts a percentage and a **Hard limit**. They start on your provider's standard rates; change them if your negotiated rates differ, then click **Save**.
+Donors always see a checkbox on the giving form offering to cover the processing fee so your church receives the full amount: "I'll generously add ... to cover the transaction fees so you can keep 100% of my donation." To make covering the fee *required* instead of optional, go to **Settings > Giving**, click edit, and turn on the **Transaction Fee** switch next to your keys (its help text reads "Automatically forces users to cover the transaction fees"). The form then shows "Transaction fees of ... are applied." and the fee is always added to the total.
+
+The rates used to work out the fee are under **Fees & statements**: **Flat Rate [ Credit Card ]** and **Transaction Fee [ Credit Card ]** for cards, and for Stripe bank (ACH) gifts in US dollars **Flat Rate [ ACH ]** (a percentage) and **Hard limit [ ACH ]**. They start on your provider's standard rates; change them if your negotiated rates differ, then click **Save**. Every field is described in the [Giving Settings Reference](giving-settings.md#processing-fee-rates).
 
 :::tip
 After setup, make a small test donation to confirm everything is working before announcing online giving to your congregation.
@@ -185,6 +196,7 @@ Donors complete their payment in a secure Paystack window and can pick card, mob
 
 ## Next Steps
 
+- Look up any field in **Settings > Giving** in the [Giving Settings Reference](giving-settings.md)
 - Use [Stripe Import](stripe-import.md) to pull online transactions into B1 Admin if they are not syncing automatically
 - Check your [Donation Reports](donation-reports.md) to verify that online donations are appearing correctly
 - Generate [Giving Statements](giving-statements.md) that include both online and offline donations

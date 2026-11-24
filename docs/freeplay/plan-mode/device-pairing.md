@@ -48,8 +48,10 @@ After pairing, FreePlay loads the current plan for that plan type. It shows:
 When all the media files are downloaded, the **Start Plan** button appears. Press **Select** on your remote to start playback.
 
 :::tip
-The plan refreshes automatically every hour. If someone updates the plan during the day, FreePlay picks up the changes on its own.
+The plan refreshes automatically every hour while this screen is open, and again each time FreePlay starts. If someone updates the plan during the day, FreePlay picks up the changes on its own. See [Playing Today's Plan](./playing-todays-plan.md) for the rest of this screen.
 :::
+
+If the TV can't reach the internet, FreePlay shows **Offline: Internet access is currently unavailable** instead. When the plan was downloaded earlier, a **Start** button lets you play it anyway.
 
 ## If Pairing Fails
 
@@ -62,5 +64,6 @@ Pairing codes expire after 15 minutes. FreePlay shows a new code on its own when
 ## Related Articles
 
 - **[Plan Mode Overview](./index.md)** - How Plan Mode differs from Scheduled Mode
+- **[Playing Today's Plan](./playing-todays-plan.md)** - Start the plan, keep it current, and turn Plan Mode off
 - **[Pairing a Screen](../scheduled-mode/pairing-a-screen.md)** - Pair the same TV to a calendar in FreePlay Admin instead
 - **[Playing Content](../content-providers/playing-content.md)** - Player controls for plan playback

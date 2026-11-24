@@ -29,7 +29,7 @@ The audit log tracks all significant actions and changes across your church mana
    - **Action** -- What was done (e.g., Donation Saved, Login Success, Note Updated).
    - **Entity** -- The type and ID of the record that was affected.
    - **IP Address** -- The IP address of the user who performed the action.
-4. Click the arrow at the start of a row to see its details: a table of each changed field with its **Old Value** and **New Value**, or the **Deleted Record** for a delete.
+4. Click the arrow at the start of a row to see its details: a table of each changed field with its **Old Value** and **New Value** (changed fields are highlighted), or the **Deleted Record** for a delete. If B1 has no earlier entry for that record, it says **No previous entry found; showing submitted values only.** Very large changes are stored shortened and marked **Details were truncated and this entry cannot be undone.**
 
 ## Filtering the Log
 
@@ -88,6 +88,10 @@ If you can open the audit log, you also see a trace of changed notes right where
 4. In the **Entity** column, the ID of a person or group note links back to that person's or group's notes.
 
 Staff who cannot open the audit log see the notes list without these markers.
+
+## Bulk Actions and Imports
+
+Changes made by a bulk people action or a B1 Transfer import are written to the log one record at a time, tagged with the batch they belong to. To see them grouped, or to undo the whole batch within 30 days, use the [Batches](../settings/batches.md) page under **Settings**; its **View Results** dialog lists the same entries, and a successful undo writes a matching *undone* entry here for each restored record.
 
 ## Exporting the Log
 

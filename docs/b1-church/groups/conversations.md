@@ -32,7 +32,9 @@ The group chat can have two feeds, depending on which ones your church has turne
 - **Chat** -- Discussions, where any group member can post messages and reply to others.
 - **Announcements** -- Messages posted by group leaders that are important for all members to see. Regular members can read announcements and react to them, but only leaders can post; instead of a message box, regular members see "Only group leaders can post announcements."
 
-When both feeds are on, an **Announcement** strip at the top of the chat shows the latest announcement. Tap **All announcements** to open the announcements feed, and **Back to chat** to return to discussions. (Members only see the strip once the group has at least one announcement.)
+When both feeds are on, an **Announcement** strip at the top of the chat shows the latest announcement. Tap **All announcements** to open the announcements feed, and **Back to chat** to return to discussions. (Members only see the strip once the group has at least one announcement; leaders see it right away, reading "No announcements yet".) The message box changes with the feed -- **Send a message…** in Chat, **Post an announcement…** in Announcements.
+
+A bell icon in the chat header mutes or unmutes this group's chat notifications ("Notifications on — click to mute" / "Notifications muted — click to enable"). It does the same thing as the **Mute this group** switch on the group page.
 
 If your church has only turned on one of the two feeds for this group, the chat opens straight to that feed. If both are turned off, the group has no chat and no **Messages** section.
 
@@ -43,7 +45,7 @@ If your church has only turned on one of the two feeds for this group, the chat 
 3. Type your message in the **Send a message…** box.
 4. Tap the send button to share it with the group. On a phone or tablet, the return key starts a new line; on a computer, **Enter** sends and **Shift+Enter** starts a new line.
 
-Your message will be visible to all members of the group. Each message shows when it was sent: the time for today's messages, "yesterday" and the time, or the date and time for older ones.
+Your message will be visible to all members of the group. Each message shows when it was sent: "now" for the last minute, the time for today's messages, "yesterday" and the time, or the date and time for older ones. If nothing has been posted yet, the chat says "Start the conversation" -- "Be the first to share something with the group." If a message can't be sent you'll see "Message failed to send."
 
 Other people's messages show the sender's photo and name. Tap either one to open that person's profile in the [member directory](../community/member-directory.md), the same as in private messages.
 
@@ -63,13 +65,13 @@ The toolbar adds simple markdown to your text: `**bold**`, `_italic_`, a `- ` at
 
 You can edit or delete any message you have posted:
 
-1. Tap the **more options** button (⋮) under your message to open the message menu.
+1. Tap the **Message actions** button (⋮) under your message to open the message menu.
 2. Choose **Edit** to modify the message text, or **Delete** to remove it.
    - When editing, the message text loads back into the input field with an **Editing message** note above it (tap **Cancel** to stop editing). Make your changes and send to save them.
    - When deleting, a **Delete message?** confirmation appears. Tap **Delete** to permanently remove the message for everyone in the conversation.
 
 :::info
-You can only edit your own messages. Group leaders can also delete other members' messages; regular members only see the options on their own messages.
+You can only edit your own messages. Group leaders can also delete other members' messages (the menu on someone else's message offers **Delete** only); regular members only see the options on their own messages. If a delete fails, you'll see "Could not delete the message."
 :::
 
 ## Reacting to Messages

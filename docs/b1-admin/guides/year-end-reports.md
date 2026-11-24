@@ -90,7 +90,7 @@ Your year-end giving reports are complete. Donors have their tax-deductible stat
 - [Stripe Import](../donations/stripe-import.md) — import online transactions
 - [Donation Reports](../donations/donation-reports.md) — view giving trends and totals
 - [Funds](../donations/funds.md) — manage funds and tax-deductible settings
-- [Giving Statements](../donations/giving-statements.md) — generate year-end statements
+- [Giving Statements](../donations/giving-statements.md) — generate year-end statements, and see [what's on a statement](../donations/giving-statements.md#whats-on-a-statement)
 - [Recording Donations](../donations/recording-donations.md) — manually enter cash/check donations
 - [Donation History (Web)](../../b1-church/giving/donation-history.md) — member self-service view
 - [Set Up Online Giving Guide](./online-giving.md) — initial Stripe and giving setup

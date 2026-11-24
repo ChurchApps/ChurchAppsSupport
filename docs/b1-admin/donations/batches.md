@@ -46,7 +46,7 @@ Your new batch appears in the list, ready for you to add donations.
 - **Edit batch details** -- click the **Edit** button on a batch row (or **Edit Batch** at the top of an open batch) to change its name or date. Only people with **Edit Donations** see **Delete** there; deleting a batch removes the donations in it, and if you delete it from the batch's own page you return to the Batches list.
 - **Sort** -- use the column headers to sort batches by name or date.
 - **Export** -- click **Export** at the top of the page to download the batches shown as a spreadsheet (CSV).
-- **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches.
+- **Failed events** -- if your payment gateway has reported problems, a **Failed events** button (with the number of unresolved events) appears at the top of the page. Click it to show or hide the list of events below the batches, where you can mark each one resolved. See [Failed Gateway Events on the Batches Page](failed-gifts.md#failed-gateway-events-on-the-batches-page).
 - **Import from Stripe** -- click **Import missing Stripe transactions** at the top of the page to open the [Stripe Import](stripe-import.md) tool. The button only appears when your church's giving gateway is Stripe.
 
 ## Who Entered Each Gift
@@ -88,7 +88,7 @@ A common setup is a "Counting Team" role with **Enter Donations** and **View Don
 Open a batch and click **Print** above the donations list to print a paper copy for your counting team or deposit records. The printout includes:
 
 - Your church's letterhead -- your logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it -- then the batch name and the batch date
-- Every donation in the batch, with the donor's name, who entered it, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded)
+- Every donation in the batch, with the donor's name, who entered it, method, notes, date, and amount (refunded gifts are crossed out and marked as refunded, and are left out of the subtotals)
 - **Fund Subtotals** -- the total given to each fund in the batch
 - **Batch Total** -- the combined amount for the whole batch
 
@@ -111,3 +111,5 @@ Name your batches consistently so they are easy to find later. Including the dat
 ## Next Steps
 
 Once you have a batch, see [Recording Donations](recording-donations.md) to learn how to add individual donations to it. You can also [import Stripe transactions](stripe-import.md) to automatically create batches from online giving.
+
+Looking for the **Batches** page under **Settings**? That one tracks bulk people and group changes and imports so they can be undone; see [Batches (Settings)](../settings/batches.md).

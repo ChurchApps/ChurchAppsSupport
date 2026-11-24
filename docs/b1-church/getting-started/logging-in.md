@@ -28,16 +28,18 @@ Logging in to B1.church gives you access to the member portal where you can see 
 
 1. Go to your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
 2. Click the **Login** button in the top-right corner of the header. If your church hasn't turned on the **Login** button for its website, go to `https://yourchurchname.b1.church/login` instead.
-3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled. If you'd rather not use a password, click **Email me a code** instead (see [Signing In With an Emailed Code](#signing-in-with-an-emailed-code)).
+3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** when single sign-on is offered. If you'd rather not use a password, click **Email me a code** instead (see [Signing In With an Emailed Code](#signing-in-with-an-emailed-code)).
 4. Click **Sign In**.
 
-If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify Code**. The member portal asks for the code the same way.
+If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify Code**. The member portal asks for the code the same way, on a **Two-factor sign-in** screen with a **Verify code** button (and **Back to sign in** if you need to start over).
 
 After signing in, you will be taken back to the page you were on before you clicked login. If you navigated directly to a member portal page while logged out, you will be returned to that page automatically after signing in.
 
 ## Signing In From the Member Portal
 
-The member portal (`/mobile`) has its own sign-in screen. Tap **Sign In** on Home, the **More** page, or any screen that needs an account, enter your email and password, and tap **Sign In**. From there you can also tap **Email me a code** to sign in without your password, **Forgot password?** to reset your password, or **Create an account** if you don't have one yet. Google and Microsoft sign-in are only offered on the website's login page.
+The member portal (`/mobile`) has its own sign-in screen. Tap **Sign In** on Home, the **More** page, or any screen that needs an account, enter your email and password (the eye icon shows or hides what you typed), and tap **Sign In**. From there you can also tap **Email me a code** to sign in without your password, **Forgot password?** to reset your password, or **Create an account** if you don't have one yet. Google and Microsoft sign-in are only offered on the website's login page. Wherever a screen asks for a 6-digit code, it submits on its own as soon as you type or paste all six digits.
+
+If you try a password on an email that has no account, the portal says "We couldn't find an account with that email. Want to create one?" with a **Register** button that opens registration with your email filled in. When you register, the portal checks your email as soon as you leave the field: if your church already has you on file, your name is filled in and it says "We found your record at" your church -- "Complete registration to link your account." If an account already exists, it says "An account already exists for this email. Please sign in instead."
 
 ## Signing In With an Emailed Code {#signing-in-with-an-emailed-code}
 

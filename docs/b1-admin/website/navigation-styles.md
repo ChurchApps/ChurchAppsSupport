@@ -35,7 +35,7 @@ You can customize colors for both modes independently.
 2. Click **Appearance**
 3. In the **Style Settings** list, click **Navigation**
 
-The **Navigation Styling** editor has two cards: **Header (solid)** and **Header over hero (transparent)**.
+The **Navigation Styling** editor has two cards: **Header (solid)** and **Header over hero (transparent)**. If your church has more than one website, these colors belong to the site selected in the site switcher at the top of the Appearance page.
 
 ## Configuring Solid Navigation
 

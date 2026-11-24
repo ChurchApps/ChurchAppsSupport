@@ -27,8 +27,8 @@ The **Messages** page lists your conversations, newest first. Each row shows the
 
 ## Starting a Conversation
 
-1. Tap **New message** on the Messages page (or **New message** in the bell panel).
-2. Your **Recent** contacts are listed first. To find someone else, type their name in **Search for a person to message** and pick them from **Matches**.
+1. Tap **New message** on the Messages page (or **New message** in the bell panel, or the add-person icon at the top of an open conversation). The **New Message** screen says "Pick someone from the directory".
+2. Your **Recent** contacts are listed first. To find someone else, type their name in **Search for a person to message** and pick them from **Matches** ("No matches found." if nobody matches).
 3. Type your message and tap the send button.
 
 You can also start a conversation from someone's profile in the [member directory](./member-directory.md#viewing-a-member-profile) by tapping **Message**.
@@ -39,7 +39,7 @@ Type in the **Type a message…** box at the bottom of the conversation. Tap the
 
 To make text bold or italic, or to add a list, highlight it and use the row of buttons under the message box -- the same way as in [group chat](../groups/conversations.md#formatting-your-message).
 
-New messages appear right away for both people while the conversation is open, and each message shows when it was sent. Tap the person's name at the top of the conversation to open their directory profile.
+New messages appear right away for both people while the conversation is open, and each message shows when it was sent ("now" for the last minute). A link to a picture shows the picture itself. A brand-new conversation starts with "Start the conversation with" the person's name. Tap the person's name at the top of the conversation to open their directory profile.
 
 ## Editing or Deleting Your Messages
 
@@ -56,7 +56,8 @@ On the Messages page, tap the trash icon next to a conversation and confirm with
 
 ## When You Can't Message Someone
 
-- If someone is under your church's [minimum age for private messages](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings), their profile has no **Message** button, and a conversation with them shows "Messaging isn't available for this profile." instead of a message box.
+- If someone is under your church's [minimum age for private messages](/docs/b1-admin/settings/mobile-app#member-directory--messaging-settings), their profile has no **Message** button, they don't appear in **Matches** on the New Message screen, and starting a new conversation with them shows "Messaging isn't available for this profile." instead of a message box. A conversation that already existed before the rule applied stays open.
+- If someone has hidden themselves from the directory, their profile shows no **Message**, **Call**, or **Text** buttons.
 - If a message can't be sent, you'll see "Message failed to send." Check your connection and try again.
 
 ## Your Inbox
@@ -64,10 +65,10 @@ On the Messages page, tap the trash icon next to a conversation and confirm with
 Tap **See all** at the bottom of the bell panel, or **Open inbox** on your Me page, to open your **Inbox** (`/mobile/notifications`). Under the title it shows how many unread messages and new notifications you have, with a **Notification Preferences** button to choose [what you're notified about](../getting-started/notification-preferences.md).
 
 - **Messages** -- your most recent conversations, with **View all messages** to open the Messages page.
-- **Notifications** -- your most recent notifications, with a **New** badge on unread ones. Tap a notification to go to the group, plan, conversation, or page it came from.
+- **Notifications** -- your most recent notifications, with a **New** badge on unread ones, and a **Clear All** link in the header. Tap a notification to go to the group, plan, conversation, or page it came from -- an announcement or leader note opens that group's chat on the right feed, a decision on an event request opens **My Requests**, a task or card opens **My tasks**, and a link to a note in B1 Admin opens in a new tab.
 - **Push notifications** -- turn push notifications on or off for the device you're using. See [Push Notifications on This Device](../getting-started/notification-preferences.md#push-notifications-on-this-device).
 
-Tap **View all notifications** to see every notification, grouped under **Today**, **This week**, and **Earlier**. Tap **Unread** to show only the ones you haven't read, or **All** to see everything again. Tap the trash icon next to a notification to delete it, or tap **Clear All** and confirm to permanently remove every notification in your list. Tap **Back to Inbox** to return.
+Tap **View all notifications** (shown once you have at least one) to see every notification, grouped under **Today**, **This week**, and **Earlier**. Tap **Unread** (it shows the count, for example "Unread · 3") to show only the ones you haven't read ("No unread notifications." when there are none), or **All** to see everything again. Tap the trash icon next to a notification to delete it, or tap **Clear All** and confirm to permanently remove every notification in your list. Tap **Back to Inbox** to return.
 
 ## Related Articles
 
