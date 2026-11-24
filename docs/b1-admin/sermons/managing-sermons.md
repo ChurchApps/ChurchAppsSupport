@@ -1,6 +1,6 @@
 ---
 title: "Managing Sermons"
-description: "Manage your sermon library in B1 Admin: add sermons from YouTube, Vimeo, or Facebook, fetch their details, schedule publish dates, attach podcast audio, and delete sermons in bulk."
+description: "Manage your sermon library in B1 Admin: add sermons from YouTube, Vimeo, or Facebook, fetch their details, schedule publish dates, attach podcast audio, and move or delete sermons in bulk."
 ---
 
 # Managing Sermons
@@ -72,6 +72,16 @@ If some sermons can't be deleted, "Some sermons could not be deleted. Please try
 :::warning
 Deleting sermons can't be undone. Permanent live URLs have no checkbox and can't be bulk deleted; open one with **Edit** to remove it.
 :::
+
+## Moving Several Sermons to a Playlist {#moving-several-sermons-to-a-playlist}
+
+To reorganize your library in one pass -- for example, after a bulk import or when you split a long series in two -- select the sermons and move them together:
+
+1. Check the box at the start of each sermon row you want to move, or check the box in the header row to select every sermon in the list. To work with one playlist's sermons, type the playlist's name in the search box first; the list then shows just that playlist's sermons.
+2. Click **Move to Playlist** above the table. The button shows how many sermons are selected, for example **Move to Playlist (3)**.
+3. Pick a playlist from the menu. To take the sermons out of their playlist, pick **No Playlist**.
+
+A message such as "Moved 3 sermons to Easter Services" confirms the move, the **Playlist** column updates, and the selection clears. If the move fails, "Some sermons could not be moved. Please try again." appears and the sermons stay selected so you can try again. Permanent live URLs have no checkbox and can't be moved this way.
 
 ## Sermon Details
 
