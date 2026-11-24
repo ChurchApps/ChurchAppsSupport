@@ -71,7 +71,7 @@ Commons is the shared moderation queue for user-submitted content across product
 
 ### Accessing Commons
 
-1. Navigate to the **Commons** tab in the Server Admin panel.
+1. Choose **Commons** in the Server Admin panel's left list.
 2. You will see three sub-tabs: **Queue**, **Reports**, and **Assets**.
 
 A limited **music editor** role can also see the Queue tab, but is blocked from approving submissions that change a song's rights or licensing.
@@ -102,7 +102,7 @@ See the [Content Commons architecture](/docs/developer/architecture/commons) pag
 
 Churches cannot send church-written email (group email, form follow-ups, workflow emails, and account invites) until a server admin approves them. This keeps bot-registered churches from using the shared ChurchApps sending address for spam.
 
-1. Open the **Churches** tab in the Server Admin panel.
+1. Choose **Churches** in the Server Admin panel's left list.
 2. Each church shows a **Group Email** chip: **Approved** (green) or **Not approved** (outlined).
 3. Click the chip and confirm to approve the church, or to revoke an approval.
 

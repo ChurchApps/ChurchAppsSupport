@@ -51,7 +51,22 @@ Once the scan completes, you will see a list of discovered printers. Each printe
 A **No Printer** option is always included at the bottom of the list.
 
 :::warning
-The tablet and the printer must be connected to the same local network for the scan to discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network and that the printer is powered on.
+The tablet and the printer must be connected to the same local network for the scan to discover the printer. If your printer does not appear, verify that both devices are on the same Wi-Fi network and that the printer is powered on, or [enter it by IP address](#entering-a-printer-by-ip-address).
+:::
+
+## Entering a Printer by IP Address
+
+If the scan doesn't find your printer (some networks block printer discovery), you can add it by its IP address. You can find the address on the printer's network settings printout or its display.
+
+1. Below the printer list, tap **Enter IP address**.
+2. Type the printer's **IP address**, for example `192.168.1.50`.
+3. Under **Printer model**, tap your model: Brother QL-1110NWB, QL-1115NWB, QL-820NWB, QL-810W, QL-720NW, QL-710W, QL-580N, or Zebra Printer.
+4. Tap **Use This Printer**. The button stays disabled until the address is a valid IP address.
+
+The printer is added to the list and selected. Run a [test print](#test-printing), then tap **Save & Restart**. A printer entered this way stays in the list the next time you open printer settings, even though the scan doesn't find it.
+
+:::tip
+Give the printer a reserved (static) IP address in your router so the address doesn't change and the kiosk keeps printing.
 :::
 
 ## Selecting a Printer

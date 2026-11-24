@@ -7,7 +7,7 @@ description: "Check registration status, pay a balance due, edit attendees or ad
 
 <div class="article-intro">
 
-The **Registrations** page in the member portal is your home base for every event you have signed up for. From here you can check your status, pay an outstanding balance, edit who is coming and what you ordered, or cancel a registration entirely.
+The **Registrations** page in the member portal is your home base for every event you have signed up for. From here you can check your status, pay an outstanding balance, answer an event's questions, edit who is coming and what you ordered, or cancel a registration entirely.
 
 </div>
 
@@ -31,15 +31,26 @@ If you haven't registered for anything yet, you'll see "You haven't registered f
 
 ## Completing a Payment
 
-A **Complete payment** button appears on any registration with an outstanding balance — most commonly after you are promoted from a waitlist, or when a staff edit changed your total.
+A **Complete payment** button appears on any registration with an outstanding balance — most commonly after you paid a deposit, chose to pay later, were promoted from a waitlist, or had your total changed by a staff edit.
 
 1. Click **Complete payment**.
 2. Review the order summary, choose a saved card or enter a new one, and pay.
 3. Once the balance is paid, the registration shows as **Registered**.
 
 :::tip
-When a waitlist spot opens for you, the email your church sends includes a link straight to this payment step.
+When a waitlist spot opens for you, the email your church sends includes a link straight to this payment step. Your church may also email you a balance reminder showing your total, what you've paid, and what's left, with a link to this page.
 :::
+
+If you pay the church in person by cash or check instead, staff record the payment and your balance goes down. A registration that is paid in full shows as **Registered**.
+
+## Answering Questions Later {#answering-questions-later}
+
+If the event asks registration questions and your registration has no answers yet (for example, because church staff signed you up), an **Answer questions** button appears on the card.
+
+1. Click **Answer questions**.
+2. Fill in the form and submit it.
+
+Your answers are saved with your registration and the button goes away. Answering doesn't change your total. If the form can't be filled in from the portal, you'll see "These questions can't be answered here. Contact the church if you need to update your answers."
 
 ## Editing a Registration
 
@@ -53,17 +64,19 @@ Click **Save** to keep your changes, or **Back** to close without saving. To cha
 Capacity still applies when you edit — if an attendee type or option has since sold out, you'll be asked to choose another. Saving recalculates your total; if the change leaves a balance due, a **Complete payment** button appears on the card.
 
 :::info
-Editing never charges your card automatically. If your new total is higher, pay the difference with **Complete payment**; if it is lower, contact your church about a refund — refunds are handled by church staff through their payment provider.
+Editing never charges your card automatically. If your new total is higher, pay the difference with **Complete payment**; if it is lower, contact your church about a refund. Church staff issue refunds from B1 Admin, back to your card or in person.
 :::
 
 ## Canceling a Registration
+
+Some events don't allow cancelling online. If there is no **Cancel Registration** link on the card, contact your church office to cancel.
 
 1. Click **Cancel Registration** on the card.
 2. In the **Cancel Registration?** dialog, click **Cancel Registration** to confirm — cancellation cannot be undone. Click **Keep** to leave it as it is.
 
 The registration stays in your list marked **Cancelled**.
 
-Your spot is released immediately. If the event has a waitlist, the next person in line is promoted automatically. Any payment you made is not automatically refunded — contact your church office about refunds.
+Your spot is released immediately. If the event has a waitlist, the next person in line is promoted automatically. Any payment you made is not automatically refunded — contact your church office about refunds. If you cancelled by mistake, the church can restore your registration as long as there is still room.
 
 ## Related Articles
 

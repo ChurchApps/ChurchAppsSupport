@@ -28,6 +28,7 @@ Follow the [Funds](../donations/funds.md) guide to set up your giving categories
 1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Donations > Funds** and click **Add Fund**
 2. Create your most common funds (e.g., "General Fund", "Building Fund", "Missions")
 3. Check **Tax Deductible** on funds whose gifts belong on year-end giving statements, and leave **Visible to Donors** checked on funds donors should be able to pick online
+4. Optionally add a **Description** to each fund. Donors see it under the fund on the giving form
 
 :::tip
 You can add more funds at any time. Start with your most common giving categories.
@@ -58,7 +59,8 @@ Follow the [Online Giving Setup](../donations/online-giving-setup.md) and [Manag
 1. Add a **Donation** tab to your B1.church site (or a **Donation** element to a page in the website builder)
 2. Your giving URL will be: `https://yoursubdomain.b1.church/donate`
 3. Members can give without logging in (public page) or log in for saved payment methods and donation history
-4. To send donors straight to one fund, click **Giving Link** on that fund under **Donations > Funds** to copy a link (or download a QR code) with the fund and amount preset
+4. To send donors straight to one fund, click **Giving Link** on that fund under **Donations > Funds** to copy a link (or download a QR code) with the fund and amount preset. For a link to the giving page itself, click **Giving Page Link** at the top of the Funds page
+5. Check **Start as a recurring gift** in either dialog to make the form open on **Recurring**, for example for a "give monthly" appeal (see [Links That Start on a Recurring Gift](../donations/online-giving-setup.md#links-that-start-on-a-recurring-gift))
 
 ## Step 4: Make a Test Donation
 

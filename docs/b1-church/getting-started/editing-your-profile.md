@@ -31,10 +31,10 @@ Tap your profile photo in the top app bar, or tap **Edit Profile** at the top of
 
 These sections hold the information your church sees on your person record:
 
-- **Photo & name** — tap **Change Photo** to upload a new picture, and edit your **Title**, First, Middle, and Last name. For **Title**, pick a suggestion (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor) or type your own, up to 10 characters.
-- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, and your Address (street, city, state, and zip). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
+- **Photo & name** — tap **Change Photo** to upload a new picture, or **Remove photo** (shown when you have a photo) to take yours down, and edit your **Title**, First, Middle, and Last name. For **Title**, pick a suggestion (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, or Pastor) or type your own, up to 10 characters.
+- **Contact** — Email, Mobile Phone, Home Phone, Work Phone, Birth Date, Anniversary, and your Address (street, city, state, and zip). If you turn on text reminders in [Notification Preferences](./notification-preferences.md), they go to your mobile number.
 
-Make your changes in the panel and tap **Save Changes**.
+Make your changes in the panel and tap **Save Changes**. If you remove your photo and your church reviews profile changes, staff see a **Remove photo** request and your photo comes down once they apply it.
 
 :::info
 If your church requires approval for directory changes, the page says "Changes to your profile go to church staff for approval." and the button reads **Submit for Approval** -- your edits are submitted as a request instead of applying immediately. See [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes) for how your church reviews these.
@@ -42,7 +42,7 @@ If your church requires approval for directory changes, the page says "Changes t
 
 ## Household
 
-The Household section shows the other people linked to your household, each with their household role (Head, Spouse, Child, and so on). Tap a household member to view their details.
+The Household section shows the other people linked to your household, each with their household role (Head, Spouse, Child, and so on). Tap a household member to view their details, or tap **Edit** next to a child to update their profile (see [Editing a Child's Profile](#editing-a-childs-profile)).
 
 To add a family member who isn't in the system yet:
 
@@ -54,6 +54,20 @@ To add a family member who isn't in the system yet:
 6. Tap **Save Changes** (or **Submit for Approval**).
 
 If your church reviews directory changes, the new family members are submitted with your other changes for your church to approve. Otherwise they are added to your household as soon as you save.
+
+### Editing a Child's Profile {#editing-a-childs-profile}
+
+If you are the **Head** or **Spouse** of your household, you can send updates for the children in it, such as a new photo, a corrected birth date, or a phone number.
+
+1. Open **Your profile** and find the **Household** section.
+2. Tap **Edit** next to the child. Their profile opens with the note "Changes for this family member go to church staff for approval."
+3. Tap **Edit** on **Photo & name** or **Contact**, make your changes, and tap **Submit for Approval**.
+
+Your changes go to church staff as a request, and the child's record updates once staff approve it. See [Approving Profile Changes](/docs/b1-admin/profile/approving-profile-changes#requests-for-a-child) for how your church reviews them.
+
+:::info
+**Edit** only appears next to household members whose role is **Child** (and who aren't 18 or older), and only when your church reviews profile changes. If your church doesn't, or you open another adult's profile, the app explains that it can't send those changes; ask church staff to update anyone else.
+:::
 
 ## Account
 

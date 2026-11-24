@@ -75,6 +75,25 @@ To record someone who is not a member of the group, search for them in the perso
 
 People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
 
+## Check-In Details {#check-in-details}
+
+When people check in at a [B1 Checkin kiosk](check-in.md) or through [self check-in](../../b1-church/checkin/self-checkin.md), the session's attendance list shows extra columns beside each name:
+
+| Column | What it shows |
+|--------|---------------|
+| **Checked In** | The time the person checked in. Always shown. |
+| **Checked In By** | The adult who checked the family in. At the kiosk this is the adult whose name or phone number was looked up; for self check-in it is the member who was signed in. Blank when no clear adult did the lookup (for example, when a child's name was searched). |
+| **Checked Out** | The time the child was checked out at a manned kiosk station. |
+| **Picked Up By** | The name chosen on the kiosk's check-out screen. A staff override of a not-authorized pickup shows as "OVERRIDE:" followed by the name. |
+
+**Checked In By**, **Checked Out**, and **Picked Up By** only appear once at least one person in the session has a value. People marked present by hand show a dash.
+
+The same columns appear in a person's full attendance history: open their profile, find the **Attendance** summary, and click **All years**. See [Adding People](../people/adding-people.md) for the rest of the profile.
+
+:::tip
+To see everyone in one room today, with who has not been picked up yet, click **Today** beside the room on the [Attendance page](index.md#seeing-who-is-in-a-room-today).
+:::
+
 ## Checking Which Groups Still Need Attendance
 
 When several classes meet at the same service time, you can see at a glance which ones still need their attendance entered for that date.
@@ -107,7 +126,7 @@ You can download a record of the session as a CSV file to use in Excel, Numbers,
 2. Click the **Export** button at the top of the attendance list.
 3. Open the downloaded file in your spreadsheet application.
 
-The file has one row per group member with their name and whether they were present or absent, plus the session date and the session's notes.
+The file has one row per group member with their name and whether they were present or absent, plus the session date and the session's notes. For people who checked in at a kiosk or on their phone, it also has the check-in details: **checkinTime**, **checkedInBy**, **checkoutTime**, **pickedUpBy**, and **checkinType** (member, guest, or volunteer).
 
 ## Viewing Recorded Attendance
 

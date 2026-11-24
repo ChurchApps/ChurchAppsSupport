@@ -135,7 +135,7 @@ ChurchApps is multi-tenant by design — one deployment can host any number of c
 
 #### Adding additional churches
 
-1. In **B1 Admin**, navigate to **Settings → Manage Church → Switch Church → Create New**.
+1. Sign out of **B1 Admin** and sign in again. On the church-selection screen, click **Register a New Church** and fill in the new church's name and address. (The **Switch Church** item in the profile menu only lists churches you already belong to.)
 2. Each church has a unique **subdomain slug** (e.g. `firstchurch`, `gracecommunity`).
 3. The new church gets its own data, members, website, and giving setup, fully isolated from other churches on the same instance.
 
@@ -165,7 +165,7 @@ Wildcard custom domains require a paid Railway plan. Path-based routing works on
 Giving is configured **per-church inside the admin UI**, not via environment variables — that way each church can use its own merchant account.
 
 1. Get developer credentials from [Stripe](https://dashboard.stripe.com/) (Developers → API keys) or [PayPal](https://developer.paypal.com/) (My Apps & Credentials).
-2. In B1 Admin, go to **Settings → Giving Settings**.
+2. In B1 Admin, go to **Settings** and open the **Giving** section.
 3. Choose your provider, paste the Public and Secret keys, and configure fee handling.
 4. Optionally add `GOOGLE_RECAPTCHA_SECRET_KEY` to the **Api** service in Railway to protect public donation forms from bots.
 

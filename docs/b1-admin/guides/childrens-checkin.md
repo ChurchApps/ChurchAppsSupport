@@ -76,6 +76,10 @@ Now connect everything by installing the check-in app on a tablet.
 
 See the full [Check-In](../attendance/check-in.md) article for detailed setup steps.
 
+:::tip
+Two optional touches for Sunday morning: design your own nametags in the [Label Designer](../attendance/labels.md) (it can print a child's age or grade, a volunteer badge, and the name and phone of the adult who checked them in), and set a [check-in announcement](../attendance/check-in.md#check-in-announcement) that families see on the kiosk before choosing who to check in.
+:::
+
 ## Step 5: Get Your Hardware
 
 You need a tablet for the kiosk and optionally a Brother label printer for name tags.
@@ -99,6 +103,8 @@ Before Sunday morning, do a test run:
 4. Check in a child and verify:
    - The attendance shows up in B1 Admin under **People > Attendance**
    - If using a printer, a name tag prints correctly
+   - The child's session in B1 Admin shows the **Checked In** time and **Checked In By** (see [Check-In Details](../attendance/recording-attendance.md#check-in-details))
+5. On a manned station, check the child out and confirm the session now shows **Checked Out** and **Picked Up By**. See [Checking Out](../../b1-checkin/check-in/checking-out.md).
 
 :::tip
 Train your welcome team volunteers on the check-in process before launching. A quick 5-minute walkthrough is usually all that's needed.

@@ -19,6 +19,8 @@ The Serving section on B1.church lets you browse volunteer opportunities and sig
 - **View your plans** -- See your upcoming and past [serving assignments](../plans/viewing-plans.md).
 - **Respond to assignments** -- Accept or decline positions you have been scheduled for, from the Plans page or the **You're serving** section on Home. If your plans change after you accept, you can [decline an accepted assignment](../plans/viewing-plans.md#declining-an-accepted-assignment) until the service is over.
 - **Remove signups** -- Cancel a self-signup if your plans change (before the deadline).
+- **See conflicts before you sign up** -- In the member portal, open positions are flagged when you are already serving that day or have blocked out the date. See [Conflict Flags](./volunteer-signup.md#conflict-flags-in-the-member-portal).
+- **Set scheduling preferences and subscribe to your calendar** -- From the Plans page, set how often and when you like to serve, and add your accepted serving times to your calendar app. See [Viewing Plans](../plans/viewing-plans.md#scheduling-preferences).
 
 ## How It Works
 

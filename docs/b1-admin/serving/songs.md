@@ -1,6 +1,6 @@
 ---
 title: "Songs"
-description: "Manage your worship song library in B1 Admin: search and add songs, edit details, attach ChordPro lyrics and arrangements, and upload rehearsal audio."
+description: "Manage your worship song library in B1 Admin: search and add songs, attach ChordPro lyrics and arrangements, upload rehearsal audio and chord chart PDFs, and export song usage for CCLI."
 ---
 
 # Songs
@@ -55,16 +55,32 @@ To browse the full WorshipCommons library, print charts, or export slides, see t
 
 Check the box next to one or more songs (or the box in the header to select every song shown), then click **Delete Selected** in the bar that appears and confirm. Click **Clear** to deselect.
 
+## Exporting Your Songs
+
+Two exports at the top of the Songs page download spreadsheets (CSV files). You need permission to edit songs to see them.
+
+- **Export** downloads your whole song library, with each song's **Title**, **Artist**, **CCLI number**, **CCLI link**, and **Keys**.
+- **Export song usage** lists the songs used on your plans over a date range, for your CCLI report:
+  1. Click **Export song usage**.
+  2. Set the **Start date** and **End date**. The range starts as the last six months.
+  3. Click **Export CSV**.
+
+  The file lists each song's **Title**, **Artist**, **CCLI number**, **Times used**, and **Plan dates**. If no songs were used on plans in that range, the dialog says so instead of downloading an empty file.
+
+:::tip
+The CCLI number comes from the song's **CCLI** external link. Add a CCLI link to each song (see **Add external links** below) so your usage report is ready to copy into CCLI.
+:::
+
 ## Viewing and Editing a Song
 
 Click a song's title to open its detail page. The song's title, artist, and details such as album, key, length, BPM, and meter appear on the left, along with its arrangements and external links. The selected arrangement, with its lyrics and keys, fills the rest of the page. From here you can:
 
 - **Edit song details** -- Click **Edit** to update the title, artist, duration, and other metadata. Click **Done** when you're finished. To remove the song from your library, click **Edit** and then **Delete song**.
-- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it.
+- **Manage arrangements** -- Each song can have multiple arrangements (for example, different keys or versions). Click **Add Arrangement** to create one, and click an arrangement's name under **Arrangements** to open it. To start a new arrangement from an existing one, click **Duplicate** next to the arrangement's name (see [Duplicating an Arrangement](#duplicating-an-arrangement)).
 - **Add lyrics** -- Click **Edit** next to the arrangement's name to change its name, BPM, meter, length, sequence, and lyrics. Enter the lyrics using ChordPro notation (for example, `[G]Amazing grace`). A live preview next to the editor renders the formatted chord chart as you type, so you can see exactly what your team will see.
 - **Set the key** -- Specify the musical key for each arrangement using the **Key** picker above the lyrics. The picker lists keys the way musicians usually write them (C, Db, D, Eb, E, F, F#, G, Ab, A, Bb, B). Changing the key transposes the displayed chords immediately, both on the arrangement page and when opening the song from a service plan, so your team always sees chords in the key they're actually playing. Chords are spelled to match the key: flat keys such as Bb or Eb show flat chord names (Bb, Eb, Ab) instead of sharps.
 - **Add external links** -- Click **Edit** next to **External Links** on the left to link the song on services such as YouTube, Spotify, Apple, CCLI, or Hymnary. Links to chord charts or sheet music hosted elsewhere go on a key (see **Manage keys**).
-- **Manage keys** -- Under **Keys**, click **Add key** to add a key the arrangement is played in (a **Key Signature** and an optional label, such as "John's Key"). Select a key and click **Add Files** to **Import from PraiseCharts**, **Add External Link** for that key (such as a chord chart in that key), or **Upload Audio**.
+- **Manage keys** -- Under **Keys**, click **Add key** to add a key the arrangement is played in (a **Key Signature** and an optional label, such as "John's Key"). Select a key and click **Add Files** to **Import from PraiseCharts**, **Add External Link** for that key (such as a chord chart in that key), or **Upload Audio or Chart PDF**.
 
 ## Arrangements
 
@@ -80,16 +96,30 @@ An arrangement represents a distinct version of a song — for example, a faster
 
 When you add a song to a [Service Order](./service-order.md), you can choose which arrangement to use for that specific service, so your team always rehearses and plays the right version.
 
-### Rehearsal Audio
+### Duplicating an Arrangement {#duplicating-an-arrangement}
 
-Worship admins can attach a rehearsal audio track to an arrangement so the team can listen ahead of practice:
+To make a new version of an arrangement without retyping it, open the arrangement and click **Duplicate** next to its name. B1 creates a new arrangement of the same song named after the original with "(copy)" added (or "(copy 2)" and so on if that name is taken) and opens it. The copy gets the original's BPM, meter, length, sequence, lyrics, keys, and each key's external links. Uploaded audio tracks and chart PDFs stay with the original arrangement. Click **Edit** on the copy to rename it and make your changes.
+
+### Rehearsal Audio and Chart PDFs
+
+Worship admins can attach a rehearsal audio track or a chord chart PDF to an arrangement so the team can listen and read ahead of practice:
 
 1. Open the song and select the arrangement.
-2. Under **Keys**, select a key (click **Add key** first if the arrangement has none), click **Add Files**, and choose **Upload Audio**.
-3. Choose an MP3, M4A, or AAC file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable).
-4. Click **Save**. The track plays inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens it in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+2. Under **Keys**, select a key (click **Add key** first if the arrangement has none), click **Add Files**, and choose **Upload Audio or Chart PDF**.
+3. Choose an MP3, M4A, or AAC audio file (up to 25 MB -- WAV isn't accepted, to keep storage usage manageable), or a PDF chart (up to 4 MB).
+4. Click **Save**.
 
-Deleting the arrangement also removes its uploaded audio file.
+Audio tracks play inline wherever that arrangement appears -- on the arrangement page in B1 Admin and in the service plan when a team member opens the song in the B1.church member portal. Plan items with audio show a music-note icon instead of a thumbnail.
+
+Chart PDFs are listed under **Chart PDFs** in the **Keys** panel. Click one to open it in a new tab, or click its trash icon to delete it. Team members see the chart under **Files** when they open the song from a plan in the member portal (see [Viewing Song Lyrics and Chords](../../b1-church/plans/service-order.md#viewing-song-lyrics-and-chords)).
+
+Uploaded files belong to the arrangement, not to one key, so they show on every key tab. Deleting the arrangement also removes its uploaded files.
+
+:::info
+If the upload is refused, the message tells you why: the file is not a supported type, **This file is not a valid PDF.**, or **PDF is too large. Maximum size is 4 MB.**
+:::
+
+To print each song's chord chart with the plan, check **Include chord charts** when you print (see [Printing Plans](./plans.md#printing-plans)).
 
 :::info
 Songs from your library can be added directly to a [Service Order](./service-order.md) within a plan, linking the song details and the chosen arrangement to that specific service.
@@ -98,4 +128,5 @@ Songs from your library can be added directly to a [Service Order](./service-ord
 ## Next Steps
 
 - Add songs to your [Service Order](./service-order.md) when building out a [service plan](./plans.md)
+- Print chord charts for every song in a plan with [Printing Plans](./plans.md#printing-plans)
 - Coordinate with your worship team using [Tasks](./tasks.md) for song preparation and practice

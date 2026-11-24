@@ -36,6 +36,18 @@ Recording donations in B1 Admin is done through the Batches system. You create a
 3. Fill in the details and click **Add Donation** (or press Enter). If the amount is empty or zero, the form asks you to enter an amount greater than zero instead of saving.
 4. The donation is added to the donations list, and the form resets so you can enter the next one. The date, method, fund, memo, and notes stay as you set them, so a stack of similar checks only needs the donor, amount, and check number.
 
+The first gift you enter starts on the batch date. If you change the date, the next gift starts on the date you used, whether you enter it in the quick entry panel or the full donation editor, until you leave the batch.
+
+### Adding a Donor Who Isn't in the Database Yet
+
+If the donor search finds no one, the panel shows **No records found** with an **Add New Person** link.
+
+1. Click **Add New Person**.
+2. Enter the donor's **First Name** and **Last Name**, and optionally their **Email**, then click **Add**. If B1 finds people who may already be that donor, it lists them so you can pick **Use Existing** or **Create Anyway**.
+3. The new person is selected as the donor right away, so you can finish entering the gift without leaving the batch.
+
+The same link appears in the donor search of the full donation editor. It is only offered to people who can edit people records; others can still search for existing donors.
+
 :::tip Memo or Notes?
 The **Memo** is printed on the donor's giving statement and receipt, beside the gift. Use it for what the donor should see, such as the purpose of an earmarked gift ("Youth trip"). **Notes** are for your staff only and are never printed. When someone gives online, whatever they type in the memo box on the giving form is saved as the gift's memo.
 :::
@@ -85,7 +97,7 @@ The gift is saved to the batch for that date. If no batch exists for that date y
 
 Sometimes a single donor gives to more than one fund in one transaction. To handle this:
 
-1. Below the entry panel, click the **full donation editor** link (or click **Edit** on an existing donation row). A new gift starts on the batch date.
+1. Below the entry panel, click the **full donation editor** link (or click **Edit** on an existing donation row). A new gift starts on the batch date, or on the date of the last gift you entered if you changed it.
 2. In the full editor, enter an amount and fund, then click **Add More** to add another fund and amount. The total is calculated from the individual fund amounts.
 3. Click **Save**. A gift with no amount in any fund is not saved; the editor asks for an amount greater than zero.
 
@@ -127,10 +139,10 @@ When someone hands in a check, pays for an event or t-shirt, or a visiting organ
 2. Click **Receipt** beside **Edit** on the donation's row. You can also click **Receipt** at the bottom of the Edit Donation form.
 3. Click **Print**, or **Close** to go back.
 
-The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the gift's memo (if it has one), your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID.
+The receipt uses the same layout as the giving statement: your church and the donor (or "Anonymous"), the gift's date and method, each fund and amount, the gift's memo (if it has one), the donor's **Donor Number** (if they have one), your Giving Note, and the official receipt block if you have set a **Statement format** (see [Giving Statements](giving-statements.md)). The receipt number in that block is the donation's ID. On the **Standard** format, your **Tax ID** and **Organization Address** print in the Organization box when you've filled them in (see [Statement Settings](giving-statements.md#statement-settings)).
 
 :::info
-The "no goods or services" wording is only printed when every fund on the gift is marked tax-deductible. If any part of the gift went to a fund that is not tax-deductible, such as an event fee or a purchase, the receipt leaves that wording off so it reads as a payment rather than a charitable gift.
+The "no goods or services" wording (or your own **Tax Disclaimer**, if you've set one) is only printed when every fund on the gift is marked tax-deductible. If any part of the gift went to a fund that is not tax-deductible, such as an event fee or a purchase, the receipt leaves that wording off so it reads as a payment rather than a charitable gift.
 :::
 
 :::tip

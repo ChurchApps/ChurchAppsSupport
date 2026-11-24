@@ -67,6 +67,8 @@ Follow the [Importing Data](../people/importing-data.md) guide. In **Settings**,
 1. **Custom CSV / Excel** — export from your current system or spreadsheet, upload it, and map your columns to B1 fields
 2. **Migrating from another system** — upload an export from **Breeze**, **Planning Center**, **Tithe.ly**, or **CCB / Pushpay**
 
+After the import, open **People** and click **Possible duplicates** to find anyone who came in twice and merge them. See [Possible Duplicates](../people/searching-people.md#possible-duplicates).
+
 :::tip
 Migrating from Breeze? Export your **People**, **Tags**, and **Contributions** files, zip them together, and upload the zip as a **Breeze Import Zip** — your people, groups, and donation records come over in one step.
 :::

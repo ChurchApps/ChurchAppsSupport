@@ -75,6 +75,20 @@ B1 also emails the donor when the charge fails, and again three and seven days l
 If your church set up Stripe before this feature existed, open **Settings** > **Giving**, click edit, and click **Save** once. That refreshes the Stripe webhook so failed charges are reported to B1.
 :::
 
+## Lost Card Disputes (Stripe)
+
+If a donor disputes a card gift with their bank and Stripe reports that the church **lost** the dispute, B1 marks the gift **Refunded**, the same as a refund. It then drops out of giving statements, totals, and reports. Disputes the church wins, or that close any other way, leave the gift as it was.
+
+:::info
+If your church set up Stripe before November 2026, open **Settings** > **Giving**, click edit, and click **Save** once. That refreshes the Stripe webhook so B1 is told when a dispute closes.
+:::
+
+## Payment Methods Used by a Recurring Gift
+
+A saved card or bank account can't be deleted while one of the donor's active recurring gifts is charged to it. Trying shows: "This payment method is used by a recurring gift. Move the gift to another payment method, then delete this one." This applies to staff managing a donor's payment methods as well as to members. Edit the recurring gift to use another method first, or cancel it, then delete the old method.
+
+This check works for Stripe, Kingdom Funding, and Paystack. For PayPal, B1 can't look up which method a recurring gift uses, so the delete goes ahead as before.
+
 ## Adding a Donation Page to Your B1.church Site
 
 1. Go to [b1.church](https://b1.church/) and log in.
@@ -94,6 +108,8 @@ To find your giving URL, go to **B1 Admin** and click the **Settings** icon to s
 
 Share this link on your website, in emails, or in your bulletin so members know where to give online.
 
+You can also click **Giving Page Link** at the top of **Donations > Funds** to copy this link or download it as a QR code (**Download PNG**).
+
 ### Links With a Preset Fund and Amount
 
 To send donors straight to a specific fund, go to **Donations > Funds** and click **Giving Link** on the fund. Optionally enter an amount, then copy the link. The dialog also shows a QR code for the same link; click **Download PNG** to save it for a bulletin, slide, or poster. When a donor opens the link or scans the code, the fund and amount are already selected on the giving page. The link takes the form:
@@ -101,6 +117,20 @@ To send donors straight to a specific fund, go to **Donations > Funds** and clic
 `https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25`
 
 The same parameters work in the **Donate Link** element of the website builder.
+
+### Links That Start on a Recurring Gift
+
+Both the **Giving Link** and **Giving Page Link** dialogs have a **Start as a recurring gift** checkbox. Check it and the link (and its QR code) gains `recurring=1`, for example:
+
+`https://yoursubdomain.b1.church/donate?fundId=FUND_ID&amount=25&recurring=1`
+
+The donation form then opens with **Recurring** selected instead of one-time. Donors still see both options and can switch to a one-time gift before they give. Use this for a "Give monthly" button or a QR code on a pledge card.
+
+:::info
+Members who are already signed in are sent from `/donate` to their own **Giving** page. The fund, amount, and recurring choice from the link carry over, and the donation form opens ready to fill in.
+:::
+
+If a fund has a **Description** (set on the [Funds](funds.md#fund-descriptions-on-the-giving-form) page), it shows under the fund when a donor opens that fund's link.
 
 ## Donation Notifications
 

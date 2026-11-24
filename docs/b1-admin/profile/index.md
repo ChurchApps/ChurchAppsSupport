@@ -22,7 +22,7 @@ From the Profile section, you can:
 - **Switch themes** -- Toggle between light and dark mode from the user menu (click your profile picture in the top right corner).
 - **Manage connected devices** -- View, pair, rename, and remove the ChurchAppsPlayer and FreePlay screens linked to your account.
 - **View linked accounts** -- See and manage any external services connected to your ChurchApps account.
-- **Approve profile change requests** -- Review and apply updates submitted by members.
+- **Approve profile change requests** -- Review and apply updates submitted by members, including changes parents send for their children.
 - **Review account deletion requests** -- Approve or decline members' requests to delete their accounts.
 
 ## Profile Sub-Sections

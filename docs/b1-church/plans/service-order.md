@@ -36,7 +36,9 @@ Lesson and curriculum sections can also expand into a folder of individual actio
 
 ## Viewing Song Lyrics and Chords
 
-Click a song in the service order to open its details: the artist, the **Key Signature** buttons, the **Lyrics** (with chords when the song has them), song facts such as album, BPM, key, meter, and length, and **Links** to the song on services like Spotify, YouTube, or PraiseCharts. Tap a key under **Key Signature** to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for. Tap **Close** when you're done.
+Click a song in the service order to open its details: the artist, the arrangement's **Sequence** (for example, Intro, Verse, Chorus, Bridge) when one is set, the **Key Signature** buttons, the **Lyrics** (with chords when the song has them), song facts such as album, BPM, key, meter, and length, and **Links** to the song on services like Spotify, YouTube, or PraiseCharts. Tap a key under **Key Signature** to transpose the chords on the fly -- handy if your instrument or vocal range needs a different key than the one the worship leader planned for. Tap **Close** when you're done.
+
+Below the lyrics, **Files** lists the arrangement's charts and other files, including any chord chart PDFs your worship leader uploaded. Tap a chart to open it. **Audio Tracks** lists rehearsal recordings, which play right in the panel. Staff upload these files on the song's arrangement in B1 Admin (see [Rehearsal Audio and Chart PDFs](../../b1-admin/serving/songs.md#rehearsal-audio-and-chart-pdfs)).
 
 ## Curriculum and Lesson Content
 
@@ -44,4 +46,4 @@ If the plan has associated curriculum or lesson content from a provider like [Le
 
 ## Printing the Service Order
 
-The B1.church member app does not have a print option for plans. If you need a printed copy with the team roster and the full service order, ask a staff member to print it from B1 Admin. See [Printing Plans](../../b1-admin/serving/plans.md#printing-plans).
+The B1.church member app does not have a print option for plans. If you need a printed copy with the team roster and the full service order, ask a staff member to print it from B1 Admin. Staff can also include a chord chart page for each song in that printout. See [Printing Plans](../../b1-admin/serving/plans.md#printing-plans).

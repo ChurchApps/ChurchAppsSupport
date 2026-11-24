@@ -19,7 +19,7 @@ Events appear on your church's website, either on a month calendar or as tiles o
 - **Event photo** -- If the church added one.
 - **Event title and description** -- What the event is about.
 - **When** -- The date and time of the next occurrence, or the repeat pattern for a recurring event.
-- **Where** -- The rooms the event is booked in, if any.
+- **Where** -- The event's location (for example, "City Park, shelter 3") and the rooms it is booked in, if any.
 - **Register for this Event** -- A button that takes you to the registration form. Only shown when registration is turned on for the event.
 - **Add to my calendar** -- Downloads the event as a calendar file you can open in Google Calendar, Apple Calendar, Outlook, or another calendar app.
 

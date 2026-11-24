@@ -68,10 +68,11 @@ Not every piece of information needs to be visible at once. You can choose which
    - **Address**, **City**, **State/Province**, and **Zip/Postal**
    - **Primary Email** and **Primary Phone** (the mobile number, or the home or work number when there is no mobile)
    - **Birth Date**, **Birthday (No Year)**, and **Age**
-   - **Gender**, **Membership Status**, **Campus**, **Marital Status**, and **Anniversary**
+   - **Gender**, **Grade**, **School**, **Membership Status**, **Donor Number**, **Campus**, **Marital Status**, and **Anniversary**
    - **Name Tag Notes**
    - **Date Added** -- when the person's record was created
    - **Delete Option** -- adds a delete icon to each row (only offered if you can edit people)
+   **Donor Number** is unchecked by default. Turn it on if your church numbers its givers, and click its header to sort by it.
 3. The table updates immediately to reflect your selections. Click **Done** (or **Close**) to close the **Select Columns** dialog. B1 remembers your columns on that device.
 
 ### Showing Custom Fields as Columns
@@ -95,13 +96,44 @@ For more advanced queries -- like finding everyone who hasn't attended in the la
 
 ## Advanced Search
 
-Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on (you can click the field's name or its checkbox), choosing an operator and value for each. Categories include **Names**, **Demographics**, **Contact Information**, **Membership & Groups** (membership status, campus, date added, and group membership), **Activity** (donations and attendance), and **Custom Fields**.
+Advanced Search lets you build precise filters by combining conditions. Open it by clicking **Advanced** below the search box on the People page, then expand a category and check the fields you want to filter on (you can click the field's name or its checkbox), choosing an operator and value for each. Categories include **Names**, **Demographics** (including **Grade** and **School**), **Contact Information**, **Membership & Groups** (membership status, campus, date added, group membership, and group category), **Activity** (donations and attendance), and **Custom Fields**.
 
 There is no search button: the results update automatically about half a second after you change a filter, and people must match every filter you check. The filters you have turned on appear as chips above the categories -- click the **x** on a chip to remove that filter, or **Clear All** to remove them all. Click **Advanced** again to hide the panel.
 
+**Membership Status** lets you pick several statuses at once. Choose **is any of** to find people with any of the checked statuses (for example, Members and Regular Attendees together), or **is none of** to find everyone except those statuses (for example, everyone who isn't a Visitor). **Grade** works the same way, with **is any of** / **is none of** and a list of grades; **School** is a text filter.
+
+**Group Category** (under **Membership & Groups**, right after **Group Member**) finds everyone in any group of a category. Pick a category, such as Homegroups, with **is member of**, or use **is not member of** to find people in none of those groups. It only appears if you can see group members and your church's groups have categories. Ministry teams aren't listed as categories.
+
+**Birth Month** and **Anniversary Month** include a **This month** option. A [saved list](./lists.md) that uses it always follows the calendar, so a "Birthdays this month" list shows December birthdays in December without being edited.
+
 To find new people, open **Membership & Groups** and check **Date Added**. It starts on **in the last N days** with 30 filled in, so you can find everyone added in the last month in one click; change the number of days, or switch to *equals / after / before* to pick a date. **Birth Date** and **Anniversary** also offer **in the last N days**. Date Added is only recorded for people created since late October 2026; people added earlier have no date, so this filter doesn't find them.
 
+### Finding People Who Have Not Donated
+
+Under **Activity**, check **Member Donations** and click **Configure**. In the **Type** box, choose:
+
+- **has donated (in general)** or **has donated to** (pick a **Fund**) to find givers, or
+- **has not donated (in general)** or **has not donated to** (pick a **Fund**) to find people with no gifts in the range.
+
+Set the **From** and **To** dates and click **Save**. The filter chip reads *Not donated: ...* for the "has not" choices. You can save it as a live [List](./lists.md), for example "Regular attendees who haven't given this year." **Member Donations** only appears for staff who can view donations.
+
 The **Custom Fields** category lists your church's [Custom Fields](../settings/custom-fields.md) — the fields you define in Settings to track your own information (such as a background-check expiration date). The operators offered match each field's type: text fields support *contains / equals / starts with / ends with*, number fields support the comparison operators, date fields support *equals / after / before*, and Yes/No and Multiple Choice fields let you pick a value. Any field you can filter on here can be saved as a live [List](./lists.md).
+
+## Possible Duplicates {#possible-duplicates}
+
+Staff who can edit people see a **Possible duplicates** button in the row of saved lists, next to **Everyone**. Click it to see pairs of records that may be the same person. B1 lists two people as possible duplicates when they have the same first name and the same email or phone number, or the same first name, last name, and birth date. (A shared home phone or email alone isn't enough, so spouses and children aren't listed.)
+
+Each pair shows both people's name, email, phone, birth date, and the date they were **Added**, plus what they matched on (for example, *Same email, phone*). Click a name to open that person's record.
+
+1. Click **Merge** next to a pair.
+2. The merge dialog opens with the record added first set as the one to keep (if one of the pair is your own record, yours is kept instead).
+3. Resolve any fields where the two records differ, then click **Confirm**.
+
+Merging moves everything from the other record onto the one you keep. The list reloads when the merge finishes. If no pairs are found, the page says "No possible duplicates found". Click **Everyone** to go back to your directory.
+
+:::tip
+After a large [import](./importing-data.md), check **Possible duplicates** to catch people who came in twice. To stop new duplicates as they are added, see [Duplicate Warnings](./adding-people.md#duplicate-warnings).
+:::
 
 ## Saving Searches as Lists
 

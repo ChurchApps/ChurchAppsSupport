@@ -7,7 +7,7 @@ description: "In B1 Admin, finish the year's donation records, check fund tax se
 
 <div class="article-intro">
 
-Walk through the year-end process of finalizing your donation records, verifying fund settings, and generating tax-deductible giving statements for every donor. This is typically done in early January for the previous calendar year.
+Walk through the year-end process of finalizing your donation records, verifying fund settings, and generating tax-deductible giving statements for every donor. This is typically done in early January for the previous calendar year. If your church's tax year starts in another month, set **Statement Year Starts In** (Step 4) and run this process after that year closes.
 
 </div>
 
@@ -64,8 +64,9 @@ Create the official giving statements for your donors.
 Follow the [Giving Statements](../donations/giving-statements.md) guide to:
 
 1. In the Jump menu, choose **Donations > Giving Statements**
-2. Select the **Year** and review the summary statistics. Churches in Canada, Australia, or New Zealand can click **Statement format** to switch to their country's official receipt layout
-3. Choose your download method:
+2. Click **Statement format** and check the [statement settings](../donations/giving-statements.md#statement-settings) before you print: **Tax ID** and **Organization Address** (printed on the Standard statement when filled in), **Tax Disclaimer** (your own wording in place of the standard "no goods or services" sentence), and **Statement Year Starts In** (January unless your tax year starts in another month). Churches in Canada, Australia, or New Zealand can also switch **Statement Format** to their country's official receipt layout
+3. Back on the Giving Statements page, select the **Year** and review the summary statistics
+4. Choose your download method:
    - **Download ZIP** — individual CSV files, one per donor
    - **Print All** — printable view with each statement on a new page, with your church logo at the top (if you've uploaded one)
 

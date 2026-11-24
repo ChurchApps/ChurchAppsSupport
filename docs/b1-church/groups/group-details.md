@@ -44,18 +44,31 @@ The page is one sheet of sections. Each shows a short preview, and a link in the
 - **Leader notes** -- Visible to the group's leaders only. Shows the two newest leader notes; tap **Open notes** to read them all and post a new one. See [Leader Notes](#leader-notes) below.
 - **Forms** -- Forms your church has linked to the group, up to three at a time. Members see the forms that are open, each with a **Fill out** button. Leaders also see closed forms (marked **Closed**), how many answers each has, and the registration forms of the group's events (marked **Event registration**). Tap **All forms** to see them all. Only shown when the group has linked forms. See [Linked Forms](#linked-forms) below.
 - **Messages** -- The latest messages from the group chat. Tap **Open chat** to read and post. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
-- **Members** -- A preview of the group's members (leaders first) and a count of members and leaders. Tap **All members** for the full list, which you can search with **Search Members**. Tap a member's name to visit their profile in the [member directory](../community/member-directory.md).
+- **Members** -- A preview of the group's members (leaders first) and a count of members and leaders. Tap **All members** for the full list, which you can search with **Search Members**. Tap a member's name to visit their profile in the [member directory](../community/member-directory.md). Leaders also see any pending **Join requests** at the top of this section (see [Approving Requests as a Leader](./join-requests.md#approving-requests-as-a-leader)).
 - **Resources** -- The first few shared files and links posted for the group. Tap **All resources** to see them all; you can download uploaded files or open linked resources.
 - **Plans** -- The group's next service plan. Tap **All plans** to see them all. Only shown if the group has plans.
 - **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
 
-Members also see a **Leave Group** link at the bottom of the page. It asks "Leave this group?" first, since you lose access to the group's messages, events, and resources; tap **Leave Group** again to confirm.
+Members also see a **Mute this group** switch and a **Leave Group** link at the bottom of the page:
+
+- **Mute this group** -- Turn it on to stop getting notifications and emails for this group's messages, while staying in the group. Turn it off to get them again. Each group has its own switch, so muting one group doesn't affect the others. If the change can't be saved, the switch goes back and "Could not save. Please try again." appears.
+- **Leave Group** -- Asks "Leave this group?" first, since you lose access to the group's messages, events, and resources; tap **Leave Group** again to confirm.
+
+## Sharing a Group {#sharing-a-group}
+
+A **Share** button appears under the group's name, so you can invite a friend to the group:
+
+1. Tap **Share**. A sheet titled **Share** and the group's name opens, with a QR code and the group's link.
+2. Let someone scan the QR code with their phone camera, or tap **Copy link** and paste the link into a text or email.
+3. Tap **Close** when you are done.
+
+Anyone who scans the code or opens the link sees the group's page and can join or ask to join it, following the group's join policy (see [Joining a Group](#joining-a-group)). Confidential and archived groups have no **Share** button, since they have no public page. Church staff can share the same link from B1 Admin -- see [Sharing a Group Link](../../b1-admin/groups/creating-groups.md#sharing-a-group-link).
 
 ## Leader Capabilities
 
 If you are a leader of the group, you have additional editing capabilities:
 
-- **Create and edit events** -- Tap **All events**, then **Add Event** to add an event to the group calendar. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Create and edit events** -- Tap **All events**, then **Add Event** to add an event to the group calendar. Fill in the title, description and times, and add a **Location (optional)** for events held away from the church. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
 - **Edit repeating events** -- When you open a repeating event to edit it, B1 first asks which dates to change: **Just this date**, **This and all following dates**, or **All dates**. Choose one and click **Save** to open the event. If you chose **Just this date**, the **Recurring** switch is hidden and your changes (or a delete) apply only to that one date.
 - **Delete events** -- Tap the pencil icon next to an event, then tap **Delete event** and confirm. For a repeating event, the delete follows the dates you picked when opening it -- just this date, this and all following dates, or the whole series. A deleted date no longer appears on the group calendar or in members' upcoming events.
 - **Set event reminders** -- When editing an existing event, turn on **Send reminders** to remind people before it starts. Pick when they go out, the **Time of Day**, **Who should be reminded?**, and an optional **Message**, then choose **Push**, **Email**, or, if your church has texting set up, **Text** under **Send By**. Texts only go to people who turned on text reminders in their [Notification Preferences](../getting-started/notification-preferences.md).
@@ -63,6 +76,7 @@ If you are a leader of the group, you have additional editing capabilities:
 - **Write meeting notes and track attendance** -- Use **Add note** and **Take attendance** in the **Meetings** section. See [Meeting Notes and Attendance](#meeting-notes-and-attendance).
 - **Keep private leader notes** -- Use the **Leader notes** section. See [Leader Notes](#leader-notes).
 - **Read and print form answers** -- Use the **Forms** section. See [Linked Forms](#linked-forms).
+- **Approve or decline join requests** -- Use the **Join requests** list at the top of the **Members** section. See [Approving Requests as a Leader](./join-requests.md#approving-requests-as-a-leader).
 
 To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
 

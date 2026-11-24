@@ -52,7 +52,7 @@ The Appearance page lets you customize the overall look and feel of your church 
 
 1. Click **Logo** in the Style Settings panel.
 2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
-3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon.
+3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon. The social media image is the picture that appears when someone shares a link to your site on Facebook, in a text, or in another app. You crop it to a wide 1200 x 630 pixel shape, and it is saved exactly as cropped, filling the whole preview with no border.
 4. Optionally enter a **PWA Short Name** (up to 12 characters) -- the name shown under your church's app icon when someone adds it to their phone's home screen.
 5. Click **Save Changes**. Uploaded images aren't stored until you save, so if you try to close or reload the browser tab first, your browser warns you that you have unsaved changes.
 

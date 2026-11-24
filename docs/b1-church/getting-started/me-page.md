@@ -39,6 +39,21 @@ If an event or registration has a photo, a small thumbnail of it appears at the 
 
 If nothing is scheduled, you'll see "Nothing coming up" — your serving times, events, and registrations will appear here as they are scheduled.
 
+### Calendar View and Subscribing {#calendar-view-and-subscribing}
+
+The **All upcoming** page (shown when you have more than three upcoming items) has a **List** / **Calendar** switch next to its heading:
+
+- **List** (the default) -- Your upcoming items in date order, as described above.
+- **Calendar** -- A month grid of everything on your schedule: serving, registrations, and events from your groups and church calendars. Days with items are marked. Use the arrows to move between months, and tap a day to see its items listed below the grid ("No events on this day." if there are none). Past days of the month are included, so you can look back as well as ahead.
+
+The app remembers which view you picked the next time you open the page.
+
+To see your groups' events in your own calendar app (Google Calendar, Apple Calendar, Outlook), tap **Subscribe** at the bottom of the **All upcoming** page. Your phone or computer opens the calendar feed in your calendar app, and new events from your groups show up there automatically.
+
+:::warning
+The subscribe link is personal to you. Anyone with this link can see your groups' events, so don't share it.
+:::
+
 ## My Cards and My Tasks
 
 If church staff have assigned you follow-up work, two more sections appear under **Upcoming**:
@@ -47,6 +62,8 @@ If church staff have assigned you follow-up work, two more sections appear under
 - **My tasks** -- other tasks assigned to you, with the person each one is about.
 
 Each section shows your three newest items; tap **All cards** or **All tasks** to open the full **My tasks** list. Tap a card to see its step, due date, and who it is about, and to add **Notes**. Tap **Complete** (or the outcome button your church set up for that step) when you are done, or tap **1 day**, **3 days**, or **7 days** under **Snooze** to set it aside for a while. Tasks open read-only here, with any notes they already have -- close them in B1 Admin.
+
+When you get a notification about a task or card -- for example, a new assignment or a new note -- tapping it opens **My tasks** with that task or card already open, whether you tap it in your inbox or as a push notification on your phone.
 
 The sections are hidden when nothing is assigned to you.
 

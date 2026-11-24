@@ -78,6 +78,8 @@ Each household can carry a list of people who are — or are not — allowed to 
 
 Click a person's status chip on the card to toggle between Trusted and Not Authorized.
 
+When a pickup person was added from the people search (so they are linked to a person record), their phone number shows under their name on the **Pickup** card: the mobile number, or the home or work number if there is no mobile. Click it to call. People added by name only don't show a phone.
+
 :::tip
 Add photos to trusted pickup people whenever possible — the check-out screen shows the photo so volunteers can visually verify the person standing in front of them.
 :::
@@ -92,6 +94,13 @@ Both features send text messages through your church's connected texting provide
 People who have opted out of texts, or who have no mobile number on file, are skipped automatically — the kiosk reports how many messages were sent and how many were skipped.
 
 See the kiosk-side walkthrough in [Check-Out & Child Safety](../../b1-checkin/check-in/checking-out.md).
+
+## Reviewing Check-Outs
+
+At a manned kiosk station, staff find the family by security code, or by last name or phone number when the pickup label is missing, and can check out some of the children while others stay. Each check-out records the time and who picked the child up. Staff can review this in B1 Admin:
+
+- **Today, by room** -- On the Attendance page, click **Today** beside a room to see who is still there and who has been picked up. See [Seeing Who Is in a Room Today](index.md#seeing-who-is-in-a-room-today).
+- **By session or person** -- The session's attendance list and each person's attendance history show **Checked In By**, **Checked Out**, and **Picked Up By**. See [Check-In Details](recording-attendance.md#check-in-details).
 
 ## Related Articles
 

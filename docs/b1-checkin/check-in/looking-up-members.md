@@ -42,6 +42,10 @@ The app searches for members whose phone number matches the digits you entered. 
 
 The app searches for members whose name matches what you typed.
 
+## Results as You Type
+
+You don't have to tap **Search**. Once you've entered at least 4 digits of a phone number or 2 letters of a last name, matching people start appearing under the keypad or name box a moment after you stop typing, and the list updates as you keep typing. Tap your name in the list to continue. If nothing matches yet, the list says **No Matches Found**; keep typing or check the number. Tapping **Search** still works and shows the full results screen.
+
 ## Selecting a Person
 
 Search results appear as cards below the search field. Each card shows the person's **name** and **photo** (if one is on file).
@@ -79,6 +83,10 @@ Families who already checked in on their phone through [B1 Church self check-in]
 3. The kiosk finds the check-in and prints the labels, then returns to the lookup screen.
 
 Scanning only prints labels -- the attendance was already recorded when the family checked in on their phone. If the code doesn't match an active check-in, the kiosk shows a message and returns to the lookup screen.
+
+### Starting on the Scanner
+
+If most families at a station check in on their phones first, staff can set the tablet to open straight to the scanner. In the kiosk [Admin Settings](../getting-started/logging-in.md#admin-settings), turn on **Start on scanner**. The lookup screen then opens the camera scanner, and after each family's labels print, the scanner stays up for the next family. Tap the back arrow on the scanner to use the keypad instead. The setting is saved on that tablet only.
 
 ## Next Step
 

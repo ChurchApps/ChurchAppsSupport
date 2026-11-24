@@ -1,14 +1,14 @@
 ---
 title: "Logging In to B1.church and the Member Portal"
 sidebar_label: "Logging In"
-description: "Sign in to your B1.church member portal, use two-factor codes or single sign-on, reset a forgotten password, and log out from your account menu."
+description: "Sign in to your B1.church member portal with a password, single sign-on, or an emailed code, use two-factor codes, reset a forgotten password, and log out."
 ---
 
 # Logging In
 
 <div class="article-intro">
 
-Logging in to B1.church gives you access to the member portal where you can see what is coming up for you, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in, navigate your user menu, and log out.
+Logging in to B1.church gives you access to the member portal where you can see what is coming up for you, manage groups, give online, and use all of the tools your church has set up. This article covers how to sign in (with a password, single sign-on, or an emailed code), navigate your user menu, and log out.
 
 </div>
 
@@ -28,7 +28,7 @@ Logging in to B1.church gives you access to the member portal where you can see 
 
 1. Go to your church's B1.church URL (for example, `https://yourchurchname.b1.church`).
 2. Click the **Login** button in the top-right corner of the header. If your church hasn't turned on the **Login** button for its website, go to `https://yourchurchname.b1.church/login` instead.
-3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled.
+3. Enter your **email address** and **password**, or click **Continue with Google** or **Continue with Microsoft** if your church has single sign-on enabled. If you'd rather not use a password, click **Email me a code** instead (see [Signing In With an Emailed Code](#signing-in-with-an-emailed-code)).
 4. Click **Sign In**.
 
 If you have turned on [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in), the next screen asks for a code. Enter the 6-digit code from your authenticator app, or one of your backup codes, and click **Verify Code**. The member portal asks for the code the same way.
@@ -37,7 +37,22 @@ After signing in, you will be taken back to the page you were on before you clic
 
 ## Signing In From the Member Portal
 
-The member portal (`/mobile`) has its own sign-in screen. Tap **Sign In** on Home, the **More** page, or any screen that needs an account, enter your email and password, and tap **Sign In**. From there you can also tap **Forgot password?** to reset your password, or **Create an account** if you don't have one yet. Google and Microsoft sign-in are only offered on the website's login page.
+The member portal (`/mobile`) has its own sign-in screen. Tap **Sign In** on Home, the **More** page, or any screen that needs an account, enter your email and password, and tap **Sign In**. From there you can also tap **Email me a code** to sign in without your password, **Forgot password?** to reset your password, or **Create an account** if you don't have one yet. Google and Microsoft sign-in are only offered on the website's login page.
+
+## Signing In With an Emailed Code {#signing-in-with-an-emailed-code}
+
+If you don't remember your password, or just don't want to type it, you can sign in with a one-time code sent to your email. This works on your church's website login page, in the member portal, and on the B1 Admin login page.
+
+1. On the sign-in screen, click **Email me a code**.
+2. Enter the email address on your ChurchApps account and click **Send Code** (**Send code** in the member portal).
+3. Check your email for a **6-digit code** and enter it.
+4. Click **Sign In** (**Verify code** in the member portal). You are signed in.
+
+If the code hasn't arrived, you can request another with **Resend code** after 30 seconds. To go back to your password, click **Sign in with password** (**Back to sign in** in the member portal). If you have [two-factor sign-in](../../b1-admin/profile/managing-profile.md#two-factor-sign-in) turned on, you still enter the code from your authenticator app afterward.
+
+:::info
+The code works once and expires after 10 minutes, and after five wrong tries you need to request a new one. If the code is wrong or has expired, you'll see a message saying so. Emailed codes only sign in to an existing account; if you don't have one yet, [create an account](./index.md) first. For your security, the screen never says whether an email address has an account, so if no code arrives, check your spam folder and the address you typed.
+:::
 
 ## Staying Signed In
 

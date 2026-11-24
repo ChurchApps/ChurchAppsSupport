@@ -16,12 +16,13 @@ The **Groups** section lets you organize your church members into ministries, sm
 
 Groups are organized by **category**. A category is a top-level label such as "Small Groups," "Ministries," or "Committees." Each category can contain multiple groups, making it simple to keep related groups together.
 
-When you open the Groups page, you will see a **Search groups...** box, a row of category buttons, and a table of your groups. Each group shows its category and labels under its name, along with its member count. Type in the search box to find a group by name or category, click **All** or a category name to filter the list (extra categories are under **More categories**), and click the **Name** or **People** column heading to sort. Click **Clear filters** to show every group again.
+When you open the Groups page, you will see a **Search groups...** box, a row of category buttons, and a table of your groups. Each group shows its category and labels under its name, along with its member count. Type in the search box to find a group by name or category, click **All** or a category name to filter the list (extra categories are under **More categories**), and click the **Name** or **People** column heading to sort. If your church has more than one [campus](../settings/campuses.md), a second row of buttons lets you show only one campus's groups: click a campus name, or **All campuses** to show them all. Click **Clear filters** to show every group again.
 
 The page header has buttons for the rest of the section:
 
 - **Group Health** -- Compare membership and attendance across all groups. See [Groups Health](./groups-health.md).
 - **pending requests** (for example, "2 pending requests") -- Appears when people are waiting to join a group. See [Group Join Requests](./group-join-requests.md#for-administrators).
+- **Share** -- Get a link and QR code for your church's public groups page. See [Sharing a Group Link](./creating-groups.md#sharing-a-group-link).
 - **Export** -- Download the list of groups as a CSV file.
 - **Add Group** -- Create a group. See [Creating Groups](./creating-groups.md).
 

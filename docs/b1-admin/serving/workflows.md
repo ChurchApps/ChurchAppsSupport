@@ -55,6 +55,7 @@ Each workflow board is made up of **steps**, shown as columns from left to right
 When you add or edit a step, you can configure:
 
 - **Step Name** -- the column heading (for example, "Welcome Call" or "Awaiting Registration").
+- **Instructions** -- optional directions for whoever works the card, such as a phone script or a checklist. They appear at the top of every card on this step (see [Working the Board](#working-the-board)). Leave it blank for none. Duplicating a workflow copies each step's instructions.
 - **Due in (days)** -- automatically sets a due date when a card enters this step. Cards past their due date are flagged as **Overdue**.
 - **Default assignee** -- the person or group new cards on this step are assigned to automatically. When the default assignee is a person, they get a notification that a card has been assigned to them.
 - **Automated actions** -- things the system does on its own when a card arrives (see below).
@@ -95,7 +96,7 @@ Automated actions run only when a card arrives through the normal flow -- when i
 
 ### Sending email
 
-Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}`, are filled in with the person's own details. If a **Donation · Created** trigger started the workflow, the gift fields `{{amount}}`, `{{giftDate}}`, `{{fund}}`, and `{{receipt}}` are filled in from that gift, even on steps that run after a Wait. See [Gift merge fields](../settings/email-templates.md#gift-merge-fields).
+Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}` or `{{donorNumber}}`, are filled in with the person's own details. If a **Donation · Created** trigger started the workflow, the gift fields `{{amount}}`, `{{giftDate}}`, `{{fund}}`, and `{{receipt}}` are filled in from that gift, even on steps that run after a Wait. See [Gift merge fields](../settings/email-templates.md#gift-merge-fields).
 
 When the email goes out, the card's history records **Email sent**. If it can't be sent -- for example, because your church's email isn't approved yet or the daily limit has been reached -- no "Email sent" entry is added.
 
@@ -117,7 +118,7 @@ Choose **Notify Person**, click **Pick person**, and optionally type a **Message
 
 ### Sending a text {#sending-a-text}
 
-Choose **Send Text** and type the **Text message** (up to 1,600 characters). If your church has saved [text templates](../settings/email-templates.md), a **Start from a template** list appears above the box. Picking one copies the template's text into the message, and you can still edit it. The step keeps its own copy, so later changes to the template do not change the step. When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, or **Church Name** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, or `{{churchName}}` at your cursor. Each one is filled in with the person's details when the text is sent. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
+Choose **Send Text** and type the **Text message** (up to 1,600 characters). If your church has saved [text templates](../settings/email-templates.md), a **Start from a template** list appears above the box. Picking one copies the template's text into the message, and you can still edit it. The step keeps its own copy, so later changes to the template do not change the step. When a card enters the step, the person receives that text on their mobile phone. To personalize the message, click a chip below the message box -- **First Name**, **Last Name**, **Display Name**, **Church Name**, or **Donor Number** -- to insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`, or `{{donorNumber}}` at your cursor. Each one is filled in with the person's details when the text is sent. **Donor Number** is the number on the person's record, and is left blank if they don't have one. The **Amount**, **Gift Date**, **Fund**, and **Receipt** chips insert the gift fields, which fill in only when a **Donation · Created** trigger started the workflow. For example, `Thanks {{firstName}} for your gift of {{amount}} to {{fund}}!`
 
 - If the person has no mobile phone on file, no text is sent and the card's history records **Text skipped: no mobile phone**.
 - If the person has opted out, no text is sent and the card's history records **Text skipped: opted out**.
@@ -142,7 +143,7 @@ A **Wait** at the very start of a step is a simple way to "hold" a card before i
 
 There are several ways to put people on a board:
 
-- **From the board** -- Click **Add Card** at the bottom of a step column and pick a person. You can also pick a group, and every member of that group is added as a card.
+- **From the board** -- Click **Add Card** at the bottom of a step column and pick a person. The person search starts as you type. If no one matches and you can edit people, the search shows **No records found** with an **Add New Person** link, so you can create the person and add their card in one step. You can also pick a group, and every member of that group is added as a card.
 - **From a person's record** -- Use **Add to Workflow** on a person's page to drop them onto a workflow.
 - **From People search** -- Select multiple people and use the bulk **Add to Workflow** action to add them all at once.
 - **Automatically with a trigger** -- Add people when something happens, like a form submission or a first gift (see [Triggers](#triggers) below).
@@ -153,26 +154,33 @@ Adding someone by hand, or with an **Add to workflow** step action, never gives 
 
 Open a workflow to see its board. Each card shows the person's name, who it is assigned to, and a due-date or status chip (**Overdue** or **Snoozed**). A step column also shows small badges for any automated actions it runs and annotations for its routing, giving you an at-a-glance map of how cards flow. Within each column, the card that entered the step most recently is at the top.
 
+Once the board has cards, two menus above it change what you see:
+
+- The sort menu -- **Newest first** (the default), **Oldest first**, **First name**, or **Last name**. The sort applies within every column.
+- The assignee filter -- **All cards** (the default), **My cards** (cards assigned to you), **Unassigned**, or one person or group that has cards on this board. Changing this filter clears any cards you had selected.
+
 - **Move a card** -- Drag a card from one column to the next as the person progresses.
 - **Open a card** -- Double-click a card (or click it) to open its detail drawer, where you can change the step, reassign it, add notes, and review what's already happened.
 
+If the card's step has [instructions](#building-the-board-with-steps), they appear in a shaded box at the top of the drawer, so whoever has the card sees what to do on this step. A card that a [trigger](#triggers) added also shows **Added by trigger:** followed by the trigger's name.
+
 From the card drawer you can:
 
-- **Assign** the card to a different person or group.
-- **Snooze** the card for 1 day, 3 days, or 1 week to temporarily hide its due date.
+- **Assign** the card to a different person or group. The new assignee gets a notification that a card has been assigned to them, unless you assign the card to yourself.
+- **Snooze** the card for 1 day, 3 days, or 1 week to temporarily hide its due date, or choose **Pick a date…** and pick a day in the **Snooze until** window (tomorrow or later), then click **Snooze**. The card wakes up at the start of that day.
 - **Send Back** to the previous step or **Skip** to the next step.
 - **Pin assignment** -- keep the same owner on the card even as it moves between steps. By default, moving a card to a new step reassigns it to that step's default assignee; pinning keeps the current person responsible throughout.
 - **Complete** the card to finish it, or choose an **Outcome** button if the step has outcomes configured (see [Routing](#routing-cards-with-outcomes-and-conditions)).
 - **Remove card** -- take a card off the board without finishing it, for example when someone was added by mistake. After you confirm, the card is closed and taken off everyone's list. No outcomes, routes, or step actions run, and its history is kept with a **Removed** entry. For a [serving assignment confirmation](#serving-assignment-confirmations) card, removing it closes the request the same way.
 - **Add notes** and review the card's **Activity** -- a log of automated actions that have run (emails sent, waits, etc.), each with the date and time it happened.
 
-For a card about a person, the drawer also shows that person's mobile phone and email as links you can tap to call or email them, plus a **View profile** link if you have permission to view people. The person a card is assigned to sees the phone and email even without access to People.
+For a card about a person, the drawer also shows that person's mobile phone and email as links you can tap to call or email them, plus a **View profile** link if you have permission to view people. The person a card is assigned to sees the phone and email even without access to People. If you can edit group members, clicking the email address opens the **Email** window, where you can load a saved template and send from B1 (see [Emailing a Person](../people/adding-people.md#emailing-a-person)); otherwise it opens your own email app.
 
 Notes are saved with the card. Anyone who can open the card -- including the person or group it's assigned to -- can read the notes and add their own. People who can't open the card can't see its notes.
 
 ### Bulk actions
 
-Select the checkboxes on multiple cards to act on them together. To pick every card in a step at once, check the **Select all** box in that step's column header; check it again to clear them. A toolbar appears letting you **Complete**, **Snooze**, **Assign** (reassign), or **Move to…** another step for all selected cards at once.
+Select the checkboxes on multiple cards to act on them together. To pick every card in a step at once, check the **Select all** box in that step's column header; check it again to clear them. A toolbar appears letting you **Complete**, **Snooze** (including **Pick a date…**), **Assign** (reassign), or **Move to…** another step for all selected cards at once.
 
 ## Routing Cards with Outcomes and Conditions {#routing-cards-with-outcomes-and-conditions}
 
@@ -220,12 +228,15 @@ Fire as soon as a record changes in B1. Choose the event, then optionally add **
 
 - **Person · Created / Updated** -- e.g. add anyone whose status becomes *Visitor* or *Guest* (the status given to people who register themselves).
 - **Donation · Created** -- e.g. add a first-time or large gift to a thank-you workflow (match on amount, fund, or method).
+- **Recurring gift · Created** -- add a donor when they set up a new recurring gift, for example to thank them for committing to give regularly. Match on **Amount**, **Fund**, or **Frequency** (**Weekly**, **Every 2 Weeks**, **Monthly**, **Quarterly**, or **Annually**). The card is about the donor. It fires once, when the recurring gift is first set up, not when it is changed later.
 - **Group · Member Joined** / **Group · Created**.
 - **Form · Submitted** -- add anyone who submits a chosen form (great for an "I'm New" or "Connect" card).
 
 ### Schedule triggers {#schedule-triggers}
 
 Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set of conditions. Use these for time-based outreach such as *everyone whose birthday is today* (Birth Date · Day of Month = **Today**, with the month matched to **Current Month**) or a *monthly* check-in. Even without **Only once per person**, a schedule trigger won't add the same person again within one repeat period (a day, week, month, or year, matching how often it runs).
+
+Schedule triggers run early in each day in your church's [time zone](../settings/church-settings.md#time-zone), within about two hours after midnight. A daily birthday rule therefore adds people on their birthday in your local calendar, not the day before.
 
 For any trigger you can also set:
 

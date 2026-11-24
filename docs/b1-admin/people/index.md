@@ -25,15 +25,17 @@ Here is an overview of the key features available in the People section:
 
 5. **Bulk edit people** -- Update multiple people at once by changing their membership status, marital status, gender, directory opt-out, campus, or group memberships, or by adding them to a workflow. This saves time when making the same change to many individuals. See [Bulk Editing](./bulk-editing.md).
 
-6. **Print your directory** -- Generate a formatted, printable member directory grouped by household, complete with photos and contact information. See [Print Directory](./print-directory.md).
+6. **Print your directory** -- Generate a formatted, printable member directory grouped by household, complete with photos and contact information. Choose which fields to include before you print. See [Print Directory](./print-directory.md).
 
 7. **Import and export data** -- Bring in member data from a CSV file or migrate from another church management system like Breeze. You can also export your directory to CSV at any time. See [Importing Data](./importing-data.md) and [Exporting Data](./exporting-data.md).
 
-8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md). The person's name, contact details, and household are on the left of the profile, with summaries of their attendance, giving, groups, notes, and forms beside them. Hover over an address or a home or work phone number to copy it with one click.
+8. **Manage profiles** -- View and edit detailed profiles for each person, including contact info, household members, [group memberships](../groups/group-members.md), [attendance history](../attendance/tracking-attendance.md), [donations](../donations/recording-donations.md), and [custom forms](../forms/creating-forms.md). The person's name, contact details, and household are on the left of the profile, with summaries of their attendance, giving, groups, notes, [documents](./adding-people.md#documents), [delivery problems](./adding-people.md#delivery-problems), and forms beside them. Hover over an address or a home or work phone number to copy it with one click.
 
-9. **Catch up on notes** -- Read the latest notes written on people, groups, events, and workflow cards in one list. See [Notes](./notes.md).
+9. **Clean up duplicate records** -- Review pairs of people who may be the same person and merge them. See [Possible Duplicates](./searching-people.md#possible-duplicates).
 
-10. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
+10. **Catch up on notes** -- Read the latest notes written on people, groups, events, and workflow cards in one list. See [Notes](./notes.md).
+
+11. **Assign roles and permissions** -- Control who on your team can access different parts of B1 Admin by assigning roles. See [Assigning Roles](./roles-permissions.md).
 
 ## Getting Started
 

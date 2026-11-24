@@ -38,7 +38,12 @@ Click a merge field chip above the Subject or Body to insert it at your cursor -
 
 - `{{firstName}}`, `{{lastName}}`, `{{displayName}}` -- The recipient's name
 - `{{email}}` -- The recipient's email address
+- `{{donorNumber}}` -- The **Donor Number** on the recipient's [person record](../people/adding-people.md), useful in giving letters and thank-yous. It is left blank for people without one. **Preview** shows the sample number 1042.
 - `{{churchName}}` -- Your church's name
+
+:::info
+`{{donorNumber}}` is filled in when a template is sent by a [workflow](../serving/workflows.md#sending-email) **Send email** or **Send text** action, or in a text to a single person from their record. In other emails and texts, such as messages to a whole group, it is left blank.
+:::
 
 ### Gift merge fields
 
@@ -54,7 +59,7 @@ These fields fill in only when the email is sent by a [workflow](../serving/work
 A template with the **Text** category is a plain-text message for texting rather than an email:
 
 - It has no subject. The rich text editor is replaced with a plain **Text Message** box that holds up to 1,600 characters.
-- The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{churchName}}`, or the [gift merge fields](#gift-merge-fields) at your cursor. In a text, `{{receipt}}` becomes one line, such as *$50.00 to General Fund on Nov 8, 2026*.
+- The merge field chips above the box insert `{{firstName}}`, `{{lastName}}`, `{{displayName}}`, `{{donorNumber}}`, `{{churchName}}`, or the [gift merge fields](#gift-merge-fields) at your cursor. In a text, `{{receipt}}` becomes one line, such as *$50.00 to General Fund on Nov 8, 2026*.
 - Text templates show up in the **Load Template (optional)** picker of the Text window for a [group](../groups/group-members.md#texting-group-members) or a single person. Picking one fills in the message, and you can still edit it before you send.
 - They also show up in the **Start from a template** list of the workflow [Send Text](../serving/workflows.md#sending-a-text) action.
 - They are left out of the email template pickers, including the workflow **Send email** action.

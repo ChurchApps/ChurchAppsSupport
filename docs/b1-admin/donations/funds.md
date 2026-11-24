@@ -27,17 +27,23 @@ Navigate to **Donations > Funds** to see a list of all your funds. Each row show
 
 1. Click **Add Fund** at the top of the page.
 2. Enter a name for the fund (e.g., "Building Fund").
-3. Check the **Tax Deductible** box if donations to this fund should be included on giving statements. Gifts to non-deductible funds are still listed in the donor's giving on their person record.
-4. Leave **Visible to Donors** checked to show the fund on the public and member donation forms, or uncheck it to hide the fund from donors while still using it for manually recorded donations.
-5. Click **Save**.
+3. Optionally enter a **Description** (up to 500 characters), such as what the fund pays for. Donors see it under the fund on the giving form.
+4. Check the **Tax Deductible** box if donations to this fund should be included on giving statements. Gifts to non-deductible funds are still listed in the donor's giving on their person record.
+5. Leave **Visible to Donors** checked to show the fund on the public and member donation forms, or uncheck it to hide the fund from donors while still using it for manually recorded donations.
+6. Click **Save**.
 
 The new fund immediately appears in your list and is available when entering donations.
 
 ## Editing and Deleting Funds
 
-- To edit a fund, click **Edit** on its row. You can change the name, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
+- To edit a fund, click **Edit** on its row. You can change the name or **Description**, toggle the tax-deductible setting, or toggle **Visible to Donors** to show or hide it from donation forms.
 - To delete a fund, open the edit form, click **Delete**, and confirm.
 - To share a link that opens your giving page with this fund already selected, click **Giving Link** on its row (see [Links With a Preset Fund and Amount](online-giving-setup.md#links-with-a-preset-fund-and-amount)).
+- To share a link to the giving page itself, with no fund chosen, click **Giving Page Link** at the top of the page. Both dialogs show a QR code and a **Start as a recurring gift** option.
+
+## Fund Descriptions on the Giving Form
+
+When a donor picks a fund on the public or member giving form, the fund's **Description** appears in smaller text under it. It also shows when a donor opens a fund's giving link. Use it to explain what the fund is for, for example "Covers the youth summer camp scholarships." The description is plain text, so links and formatting are shown as typed. Leave it blank and nothing extra appears.
 
 :::warning
 Deleting a fund does not remove donations that were previously assigned to it. Those donation records remain in the system, but the fund will no longer be available for new donations.

@@ -23,7 +23,7 @@ Tasks let you assign action items to people or groups in your church. Whether it
 
 In the Jump menu, choose **Serving > My Work** (or search for "My Work"). The **Tasks** list shows each task's title, who it is associated with, who it is assigned to, when it was opened, and its status. Your [workflow](./workflows.md) cards appear alongside it under **My Cards**. Assignees can also see and work their cards and open tasks from the **Me** screen in the B1 app.
 
-Use the tabs above the list to switch between tasks **Assigned to Me**, **Assigned to My Groups**, and **Requested by Me**. Each tab shows how many tasks it holds. Tasks and **My Cards** are listed newest first, so whatever just arrived is at the top.
+Use the tabs above the list to switch between tasks **Assigned to Me**, **Assigned to My Groups**, and **Requested by Me**. Each tab shows how many tasks it holds. Tasks and **My Cards** are listed newest first, so whatever just arrived is at the top. The list shows when each task was opened in short form, such as "3d ago"; hover over it to see the exact date and time.
 
 :::tip
 By default, only open tasks are shown. Choose **Closed** above the list to see completed tasks instead.
@@ -33,7 +33,7 @@ By default, only open tasks are shown. Choose **Closed** above the list to see c
 
 1. On the **My Work** page, click **Add Task**. A **New Task** form opens.
 2. Optionally click the **Associate with** box and choose the person or group the task is about. Leave it blank for a plain to-do that is not about anyone, such as a reminder for yourself.
-3. Click the **Assign to** box. In the **Select people or a group** window, search on the **Person** tab, or switch to the **Group** tab and search for a group, then select the result.
+3. Click the **Assign to** box. In the **Select people or a group** window, type a name on the **Person** tab, or switch to the **Group** tab and type a group's name, then select the result. Results appear as you type; on the **Person** tab you can also click the search button. The **Associate with** box uses the same window.
 4. Enter a **Title** for the task.
 5. Optionally pick a **Due date**.
 6. Add **Notes** with any details or instructions for the assignee.
@@ -47,14 +47,24 @@ Both **Associate with** and **Assign to** take several people. Keep picking peop
 
 ## Managing a Task
 
-Click on any task to open its detail page. From here you can:
+Click on any task to open its detail page. The top of the page shows the task's title, when it was created and by whom (for example, "Created Nov 12, 2026 6:25 PM by Jane Smith"), and, for a closed task, the date and time it was closed. When the task is about a person, their mobile phone and email appear next to **Associated** as links you can click to call or email them. Only people who can view the task see them. If you can edit group members, clicking the email address opens the **Email** window so you can send from B1 (see [Emailing a Person](../people/adding-people.md#emailing-a-person)); otherwise it opens your own email app.
+
+From here you can:
 
 - **Close or reopen the task** -- Click **Close task** when the work is done, or **Reopen task** to open it again.
-- **Reassign the task** -- Click **Assign** to choose a different person or group.
+- **Reassign the task** -- Click **Assign** to choose a different person or group. The new assignee gets the same "New Assignment" notification a new task sends (for a group, every member of the group is notified). Nothing is sent if you pick the current assignee again.
 - **Change who it's about** -- Click **Associate** to pick a different person or group, or choose **No person or group** to clear it.
 - **Change the due date** -- Pick a date in the **Due** field; it saves when you click away. (Tasks created for a [serving assignment confirmation](./workflows.md#serving-assignment-confirmations) show their due date but can't be changed here.)
 - **Add notes** -- Post updates or details for the assignee in the task's notes.
 - **Set reminders** -- See [Task Reminders](#task-reminders) below.
+- **Rename the task** -- Click the pencil (**Edit title**) next to the title, type the new title, and click **Save** (or press **Enter**). Click **Cancel** (or press **Esc**) to keep the old title.
+- **Delete the task** -- Click **Delete task** and confirm "Delete this task? This cannot be undone." You return to **My Work**. To keep a record instead, close the task.
+
+Renaming and deleting are available to people with permission to edit all cards and tasks (the **Tasks** section of a role's permissions; see [Roles & Permissions](../settings/roles-permissions.md)). [Account deletion requests](../profile/account-deletion.md) can't be deleted this way.
+
+### Task History
+
+When a task has been reassigned, a **History** list below the task's details records each change with its date and time, for example "Reassigned from Jane Smith to Youth Leaders." This lets you see who has had the task before, even after it changes hands several times.
 
 ## Task Reminders
 

@@ -98,6 +98,8 @@ Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GE
 | `event.created` | A calendar event is added |
 | `event.updated` | A calendar event is edited |
 | `event.destroyed` | A calendar event is deleted |
+| `registration.created` | Someone registers for an event (the payload includes the registration's `members`) |
+| `registration.cancelled` | A registration is cancelled by the member or by staff; fires once per registration, not again when a cancelled registration is restored |
 
 ## Payload Format
 

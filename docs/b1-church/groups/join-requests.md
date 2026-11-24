@@ -60,6 +60,21 @@ If you change your mind before a leader reviews your request:
 
 The request is immediately withdrawn and the leader will no longer see it.
 
+## Approving Requests as a Leader {#approving-requests-as-a-leader}
+
+If you lead a group, you can handle its join requests right from the group's page:
+
+1. Open the group's page. Pending requests appear under **Join requests** (with a count, for example "Join requests · 2") at the top of the **Members** section, and at the top of the **All members** list.
+2. Each request shows the person's name and photo, and their message if they wrote one.
+3. Tap **Approve** to add the person to the group. They appear in the member list right away.
+4. Or tap **Decline** to turn the request down.
+
+The request disappears from the list either way, and the person is notified of the outcome. Only the group's leaders see the **Join requests** list, and it is hidden when nothing is waiting. If a request can't be updated, "That request could not be updated. Try again." appears.
+
+:::info
+Declining in the app doesn't ask for a reason. To include a reason with a decline, use B1 Admin -- see [Group Join Requests](../../b1-admin/groups/group-join-requests.md#declining-a-request).
+:::
+
 ## Related Articles
 
 - [Browsing Groups](./browsing-groups.md) -- Find groups to join

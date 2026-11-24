@@ -38,6 +38,14 @@ The overview displays a grid where:
 
 Cells highlighted in **red** are unfilled — no volunteer has been assigned yet. This makes it easy to see staffing gaps at a glance without opening each plan individually.
 
+Names also show how each volunteer has responded, explained in a legend above the grid:
+
+- An hourglass icon after a name means **Pending**: the volunteer hasn't answered yet.
+- A red icon and a struck-through name mean **Declined**: the volunteer said no, and the slot counts as open again, so the cell is highlighted as unfilled if no one else covers it.
+- A red calendar icon after a name means the volunteer has blocked out that date. Hover over it to see the blocked-out dates.
+
+Accepted names have no mark. When you click a cell, the panel shows the same status as a **Pending** or **Declined** badge (and an **Unavailable** badge for blocked-out volunteers) next to each name.
+
 :::tip
 Volunteer names are shown in a shortened format (first name and last initial, e.g., "John D.") to keep the grid compact when you have many positions.
 :::
@@ -92,7 +100,7 @@ You can adjust what the overview shows using the controls above the grid. The gr
 
 ## Exporting to CSV
 
-Click **Export CSV** to download the current grid as a spreadsheet. The export includes all positions and volunteer assignments for the filtered date range, making it easy to share with ministry leaders or print for planning meetings.
+Click **Export CSV** to download the current grid as a spreadsheet. The export includes all positions and volunteer assignments for the filtered date range, making it easy to share with ministry leaders or print for planning meetings. Pending and declined volunteers are marked in the export too, with **(Pending)** or **(Declined)** after their name.
 
 :::info
 The CSV export reflects whatever filters are currently applied — only the dates and plan type shown in the grid are included in the download.

@@ -1,6 +1,6 @@
 ---
 title: "Dashboard"
-description: "See what the B1 Admin Dashboard shows: this week's order of service, who is serving and checked in, items that need attention, and your tasks and groups."
+description: "See what the B1 Admin Dashboard shows: this week's order of service, who is serving and checked in, approvals and open batches that need attention, and your tasks and groups."
 ---
 
 # Dashboard
@@ -44,7 +44,7 @@ Next to the order of service, the Dashboard adds what is happening around the se
 | **in the room** | How many people have checked in or been marked present. On Sunday it is today's count, with a **Live** marker; during the week it shows **Last Sunday**'s count. If no one was recorded by name, it uses that day's [headcounts](./attendance/headcount-entry.md). |
 | **Serving Sunday** / **Serving this hour** | Everyone scheduled on the plan with their position, linked to their person record. Declined assignments are left out. |
 | **First time** / **First time last Sunday** | First-time guests (people with a *Visitor* or *Guest* membership status, or checked in as a guest), grouped by household. |
-| **Rooms** | Check-ins per class or room for that week, with a capacity bar when the group has a **Capacity** set. |
+| **Rooms** | Check-ins per class or room for that week, with a capacity bar when the group has a **Capacity** set. To see the names in a room today and who has been picked up, use **Today** on the [Attendance page](./attendance/index.md#seeing-who-is-in-a-room-today). |
 
 Before any of this exists, the card shows a short hint with links to **People**, **Attendance** and **Plans** (only the ones you can open).
 
@@ -58,6 +58,7 @@ When something is waiting on you, a **Needs attention** card lists it with a lin
 
 - **pending calendar approvals** -- events and room or resource bookings that need approval. Opens [Approvals](./calendars/approvals.md). Shown to people who can edit content.
 - **pending group join requests** -- people asking to join a group. Opens the [pending requests](./groups/group-join-requests.md) list. Shown to people who can edit group members.
+- **open giving batches** -- [donation batches](./donations/batches.md) dated in the last 30 days that haven't been closed yet, so a counting team can see what still needs finishing. Opens **Donations > Batches**. The always-open batch that online gifts go into is not counted, and older open batches are left out. Shown to people with **View Donation Summaries** or **Enter Donations**.
 
 The card is hidden when there is nothing to do.
 

@@ -41,6 +41,8 @@ When a group uses the **Request** policy, all join attempts go through the appro
 2. Click on the group name
 3. The **Members** section shows how many requests are pending (for example, "1 pending"). Click **All members** -- pending requests for this group appear under **Pending Requests** at the top of the member list
 
+Leaders can also approve or decline requests on B1.church, without opening B1 Admin: a **Join requests** list appears at the top of the **Members** section of the group's page. See [Approving Requests as a Leader](../../b1-church/groups/join-requests.md#approving-requests-as-a-leader).
+
 ### For Administrators
 
 Administrators with group management permissions can view pending requests across all groups:

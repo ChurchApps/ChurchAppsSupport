@@ -74,6 +74,7 @@ Follow the [Page Editor](../website/page-editor.md) guide to:
 
 1. Add a **Calendar** element to a page on your B1 website to display the curated calendar
 2. Add a **Groups Browser** (or **Group List**) element so visitors can browse available groups and learn how to join
+3. To promote your groups in a bulletin or on a slide, click **Share** on the **Groups** page (or on one group's page) to get a link and a QR code that opens your public groups page (or that group's page). See [Sharing a Group Link](../groups/creating-groups.md#sharing-a-group-link)
 
 ## Step 6: Member Experience
 
@@ -81,7 +82,8 @@ Members can discover, join, and participate in groups from their phone or comput
 
 1. Members browse and join groups on [B1.church](../../b1-church/groups/browsing-groups.md)
 2. Group members can view details, calendars, and post in [conversations](../../b1-church/groups/conversations.md)
-3. All group features are also available in the [B1 App](../../b1-church/groups/index.md)
+3. Group leaders can approve or decline [join requests](../../b1-church/groups/join-requests.md#approving-requests-as-a-leader) right from the group's page
+4. All group features are also available in the [B1 App](../../b1-church/groups/index.md)
 
 :::info
 Members see their groups, upcoming events, and group conversations on both web and mobile — everything stays in sync.

@@ -27,7 +27,7 @@ Anyone can make a donation without creating an account:
 1. Navigate to your church's **Donate** page.
 2. The donation form is displayed on the left side of the page. Choose **Make a Donation** for a one-time gift or **Make a Recurring Donation** to give on a schedule (pick the frequency and start date).
 3. Enter your **First Name**, **Last Name**, and **Email**, then your card details.
-4. Under **Funds**, enter an **Amount** and pick the **Fund**. Click **Add More** to split your gift across several funds.
+4. Under **Funds**, enter an **Amount** and pick the **Fund**. If your church has added a description for the fund, it appears under it. Click **Add More** to split your gift across several funds.
 5. Optionally add a **Memo**. If your church allows it, you can check the box to cover the transaction fees.
 6. Click **Donate** to complete your donation.
 
@@ -38,8 +38,12 @@ On the right side of the page, under **Manage Donations**, you will see a link t
 The **Giving** screen in the member portal (`/mobile/donate`) shows the same form when you are signed out, with a **Sign in to manage recurring gifts and view history** link underneath.
 
 :::tip
-If you are already logged in when you visit the public donate page, you will be automatically redirected to the member donation page where you have access to your full giving history and saved payment methods.
+If you are already logged in when you visit the public donate page, you will be automatically redirected to the member donation page where you have access to your full giving history and saved payment methods. If you followed a giving link, the fund, amount, and recurring choice from the link come with you and the donation form opens right away.
 :::
+
+## Giving Links and QR Codes
+
+Your church may share a link or QR code that opens the giving page with a fund and amount already chosen, or with **Recurring** already selected for a "give monthly" appeal. You can still change the fund, the amount, or switch to a one-time gift before you give.
 
 ## Member Donation Page (Logged In)
 
@@ -56,7 +60,7 @@ To give:
 1. Open the giving page from your church's **Donate** tab, from the **Give** button in the **Giving** section of your [Home dashboard](../getting-started/navigating.md#home), or from **History** in the **Giving** section of your [Me page](../getting-started/me-page.md). On the Giving page, tap **Give** to open the donation form.
 2. Choose **Make a Donation** or **Make a Recurring Donation**.
 3. Select an existing saved payment method or enter new card details. When entering a new card, check **Save this card for future donations** to keep it for next time (if your church's provider supports saved cards).
-4. Choose the **Fund** you would like to give to and enter the **Amount**; click **Add More** to give to more than one fund. The list shows only the funds your church offers to donors, even if you are a staff member who can see other funds in B1 Admin.
+4. Choose the **Fund** you would like to give to and enter the **Amount**; click **Add More** to give to more than one fund. A short description of the fund appears under it when your church has added one. The list shows only the funds your church offers to donors, even if you are a staff member who can see other funds in B1 Admin.
 5. Click **Preview Donation** to review your gift, then **Donate** to complete it. **Cancel** returns to the Giving page.
 
 After your donation is processed, a success message will appear and your donation will show up in your [donation history](./donation-history.md).

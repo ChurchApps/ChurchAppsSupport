@@ -45,6 +45,8 @@ If your church has only turned on one of the two feeds for this group, the chat 
 
 Your message will be visible to all members of the group. Each message shows when it was sent: the time for today's messages, "yesterday" and the time, or the date and time for older ones.
 
+Other people's messages show the sender's photo and name. Tap either one to open that person's profile in the [member directory](../community/member-directory.md), the same as in private messages.
+
 ## Formatting Your Message {#formatting-your-message}
 
 You can add bold text, italics, and lists to a message:
@@ -80,7 +82,7 @@ In the group chat, you can react to any message with an emoji:
 Reactions appear as small chips under the message with a count of how many people used each one. Your own reaction is highlighted — tap the chip (or pick the same emoji again) to remove it, or pick a different emoji to add another. Reactions show up live for everyone in the chat.
 
 :::tip
-Group conversations live in each group's chat -- the old combined [Timeline](../community/timeline.md) feed has been retired. Activity that needs your attention arrives as a notification under the **bell** icon in the app bar.
+Group conversations live in each group's chat -- the old combined [Timeline](../community/timeline.md) feed has been retired. Activity that needs your attention arrives as a notification under the **bell** icon in the app bar. If a busy group sends you more alerts than you want, turn on **Mute this group** at the bottom of the group's page to stop notifications and emails for its messages (see [Group Details](./group-details.md#member-view-logged-in)).
 :::
 
 ## Leader Features

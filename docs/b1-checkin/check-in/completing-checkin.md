@@ -51,6 +51,8 @@ The same security code appears on both the child's name label and the parent's p
 
 The security code is generated fresh for each check-in and uses only consonants and digits (vowels are excluded to avoid forming inappropriate words).
 
+If your church designs its own nametags in the [Label Designer](../../b1-admin/attendance/labels.md), they can also print the child's **Age**, **Grade**, and **Birth Date**, their **Check-in Type** (Member, Guest, or Volunteer), and the name and phone number of the adult who checked them in.
+
 :::warning
 If labels do not print, open the Admin Settings by tapping the **church logo** seven times, then tap **Change Printer** to verify the printer connection. See [Printer Setup](../getting-started/printer-setup.md) for troubleshooting steps.
 :::
@@ -75,5 +77,9 @@ When you tap **Check-in**, the app sends the following to the server for each ho
 - The **person** being checked in
 - The **service** they are attending
 - The **service time** and **group** they are assigned to
+- Their **check-in type** (Member, Guest, or Volunteer) from the household screen
+- **Who checked the family in** -- the person whose name or phone number was looked up, when that person is clearly an adult (not marked as a child in the household, and 18 or older by birth date, or the household's head or spouse when no birth date is on file). If a child's name was searched, no one is recorded.
+
+The check-in time is recorded too. Staff see these details, along with the check-out time and who picked the child up, on the session's attendance list in B1 Admin. See [Check-In Details](../../b1-admin/attendance/recording-attendance.md#check-in-details).
 
 This data appears in B1 Admin under the Attendance section, where your church administrators can view and manage attendance records. See the [check-in administration guide](../../b1-admin/attendance/check-in.md) for details.
