@@ -40,7 +40,7 @@ The teacher view organizes lesson content into sections:
 
 - Each major section of the lesson appears as its own titled block
 - Click **Sections** at the top to open the list of sections, then pick one to jump directly to it
-- The heading shows which section you are in, such as "Section 2 of 5"
+- The heading shows which section you are in and its name, such as "Section 2 of 5 · Worship"
 - The section list makes it easy to skip around to different parts of the lesson
 - When the lesson has more than one section, previous and next buttons, labeled with the neighboring sections' names, stay pinned at the bottom of the screen while you scroll
 
@@ -65,7 +65,7 @@ When lessons include videos, images, or other media:
 
 If the lesson includes downloadable files (activity sheets, coloring pages, etc.):
 
-- Download buttons appear for each resource, after the last section of the lesson
+- A download link appears for each resource, after the last section of the lesson
 - Click to download files directly to your device
 - Files can include PDFs, images, or other materials provided by the content creator
 

@@ -23,7 +23,7 @@ Set up your volunteer teams, create weekly service plans, assign positions, buil
 
 Organize your volunteers into teams so you can manage assignments by ministry area. Teams live inside a ministry in the Serving area.
 
-Follow the [Serving](../serving/index.md) and [Group Members](../groups/group-members.md) guides to:
+Follow the [Ministries, Teams, and Plan Types](../serving/ministries-and-teams.md) and [Group Members](../groups/group-members.md) guides to:
 
 1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), choose **Serving > Plans** and click **Add Ministry** to create a ministry (e.g., "Sunday Morning")
 2. Select the ministry's tab and click **Create Serving Team** (or **New Serving Team**) to add teams like "Worship Team", "Sound & Media", "Greeters", "Kids Ministry Volunteers"
@@ -122,7 +122,7 @@ Your volunteer management system is set up. Each week, create a new plan, assign
 
 ## Related Articles
 
-- [Serving](../serving/index.md) — set up ministries and serving teams
+- [Ministries, Teams, and Plan Types](../serving/ministries-and-teams.md) — set up ministries, serving teams, and plan types
 - [Group Members](../groups/group-members.md) — add and manage team members
 - [Plans](../serving/plans.md) — create and manage service plans
 - [Service Order](../serving/service-order.md) — build the flow of a service

@@ -21,21 +21,23 @@ The **Registrations** page in the member portal is your home base for every even
 
 ## Viewing Your Registrations
 
-Open the **Me** page in the member portal and tap **Registrations** in the **Requests & registrations** section. Registrations for your household are split into **Upcoming** and **Past** (the three most recent past ones are shown; tap **All past** to see the rest). Each registration shows:
+Open the **Me** page in the member portal and tap **Registrations** in the **Requests & registrations** section (your church may also add a **Registrations** tab to the menu). The page is headed "Events your household signed up for." Registrations for your household are split into **Upcoming** and **Past** (three past ones are shown; tap **All past** to see the rest, and **Back to Registrations** to return). Cancelled registrations are listed last. Each registration shows:
 
 - The **event title and date**, followed by the **members** you registered
 - A **status** pill — **Registered**, **Pending**, **Waitlisted**, or **Cancelled**, or **Balance due** if money is still owed
 - The payment line — either the amount paid of the total (for example, "Total: $25.00 / $25.00"), or "Balance due $25.00 of $25.00" with a **Complete payment** button
 
-If you haven't registered for anything yet, you'll see "You haven't registered for any events. Check back soon for upcoming events."
+If you haven't registered for anything yet, you'll see "You haven't registered for any events. Check back soon for upcoming events." ("No upcoming registrations." when everything you signed up for is in the past). A cancelled registration keeps its card but loses its buttons.
 
 ## Completing a Payment
 
 A **Complete payment** button appears on any registration with an outstanding balance — most commonly after you paid a deposit, chose to pay later, were promoted from a waitlist, or had your total changed by a staff edit.
 
 1. Click **Complete payment**.
-2. Review the order summary, choose a saved card or enter a new one, and pay.
+2. In the **Payment** sheet, review the summary (the line reads **Balance due**), choose a saved card or enter a new one, and click the pay button -- it shows the amount, for example **Pay $25.00 & Register**, even though you are already registered. **Back** closes the sheet without paying.
 3. Once the balance is paid, the registration shows as **Registered**.
+
+Discount codes can't be applied at this stage, and a waitlisted registration has no **Complete payment** button until you are promoted. If your church doesn't take payments online, the sheet says "Online payment is not available for this event. You can register now and pay the church directly." -- pay the church in person.
 
 :::tip
 When a waitlist spot opens for you, the email your church sends includes a link straight to this payment step. Your church may also email you a balance reminder showing your total, what you've paid, and what's left, with a link to this page.
@@ -47,7 +49,7 @@ If you pay the church in person by cash or check instead, staff record the payme
 
 If the event asks registration questions and your registration has no answers yet (for example, because church staff signed you up), an **Answer questions** button appears on the card.
 
-1. Click **Answer questions**.
+1. Click **Answer questions**. A sheet titled with the event's name opens.
 2. Fill in the form and submit it.
 
 Your answers are saved with your registration and the button goes away. Answering doesn't change your total. If the form can't be filled in from the portal, you'll see "These questions can't be answered here. Contact the church if you need to update your answers."
@@ -56,12 +58,12 @@ Your answers are saved with your registration and the button goes away. Answerin
 
 Plans change. Click **Edit** on a registration to open the **Edit Registration** dialog, where you can:
 
-- Change each member's **First Name**, **Last Name**, and **attendee type**
-- Adjust **selection quantities** (add-ons like T-shirts or meals)
+- Change each member's **First Name**, **Last Name**, and attendee type (**Select a type**, with each type's price shown)
+- Adjust **selection quantities** (add-ons like T-shirts or meals, each with its price)
 
-Click **Save** to keep your changes, or **Back** to close without saving. To change your contact details, contact your church office.
+You can't add or remove people here -- to add someone, register them separately; to remove someone, contact your church office. Click **Save** to keep your changes, or **Back** to close without saving. To change your contact details, contact your church office.
 
-Capacity still applies when you edit — if an attendee type or option has since sold out, you'll be asked to choose another. Saving recalculates your total; if the change leaves a balance due, a **Complete payment** button appears on the card.
+Capacity still applies when you edit — if an attendee type or option has since sold out, you'll see "Registration failed. The event may be full or registration may have closed." and need to choose another. Saving recalculates your total; if the change leaves a balance due, a **Complete payment** button appears on the card.
 
 :::info
 Editing never charges your card automatically. If your new total is higher, pay the difference with **Complete payment**; if it is lower, contact your church about a refund. Church staff issue refunds from B1 Admin, back to your card or in person.

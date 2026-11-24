@@ -13,11 +13,12 @@ Lessons.church offers a free library of church curriculum that anyone can explor
 
 ## The Home Page
 
-When you first arrive at Lessons.church, the home page gives you a quick overview of everything available:
+When you first arrive at [Lessons.church](https://lessons.church), the home page gives you a quick overview of everything available:
 
-- **Featured programs** -- Highlighted curriculum series appear at the top, making it easy to discover popular or recently updated content.
-- **All programs** -- Below the featured section, you will find a complete listing of every available curriculum program along with statistics such as the number of lessons and studies in each.
-- **Provider content** -- Content from both Lessons.church and external curriculum providers is displayed together, giving you a single place to explore.
+- **Library counts** -- The banner shows how many providers, studies, and lessons are in the library, with a **Join for FREE Curriculum** button that opens registration.
+- **Age shortcuts** -- Four pictures for **Preschool**, **Elementary**, **Teen**, and **Adult** jump down the page to a program for that age.
+- **Available Programs** -- Each program has its own band showing its age group, name, one-line description, a **Learn More** button, and thumbnails of up to six of its studies. Click a thumbnail to go straight to that study, or **Learn More** for the program page.
+- **Partner programs** -- Below the main list, an **Additional Elementary Curriculum Offered by Partner Organizations** band links to programs contributed by partner churches.
 
 ## Ways to Find Content
 
@@ -25,9 +26,9 @@ There are several ways to navigate the curriculum library:
 
 1. **Browse by program** -- Click any program on the home page to see its studies and lessons. This is the best approach when you want to explore a specific curriculum series. See [Programs and Studies](./programs-and-studies.md) for details.
 
-2. **Search** -- Use the search page to find lessons by keyword across the entire library. This is helpful when you know a topic but are not sure which program covers it. See [Searching](./searching.md) for details.
+2. **Search** -- Use the search box in the header to find programs, studies, and lessons by keyword across the whole library. This is helpful when you know a topic but are not sure which program covers it. See [Searching](./searching.md) for details.
 
-3. **Explore external providers** -- Some content comes from third-party curriculum providers who publish in the Open Lesson Format. You can browse their programs and studies just like built-in content. See [External Providers](./external-providers.md) for details.
+3. **Connect an external provider** -- Churches can add third-party curriculum that is published in the Open Lesson Format. Its programs do not appear on the home page or in search; your church sees them when scheduling and can open their lessons from the schedule. See [External Providers](./external-providers.md) for details.
 
 ## No Login Required
 
@@ -36,3 +37,7 @@ Browsing is completely open. You can view programs, studies, lessons, downloadab
 :::tip
 Start by exploring a few programs on the home page to get a feel for how the curriculum is organized before diving into a specific study.
 :::
+
+## Help and FAQ
+
+The footer of every page links to the **FAQ** at `lessons.church/faq`, which answers common questions about cost, curriculum sources, FreePlay, the B1 app, and offline use. It also links to **Comparisons** with paid curriculum and to this **Help Center**.

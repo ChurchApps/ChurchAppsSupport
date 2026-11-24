@@ -37,7 +37,7 @@ The giving dashboard is the **Dashboard** view of the **Summary** page, the firs
 If donations in the period were given in more than one currency, the KPI totals are converted to your church currency and a **Converted at current exchange rates** note appears below the cards. See [Multi-Currency Support](./multi-currency.md#converted-totals) for details.
 
 :::info
-The dashboard shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page.
+The dashboard shows aggregate giving data. It does not include individual donor names. For donor-level details, use the [Batches](batches.md) page or open the donor's [person record](person-giving.md). Only completed gifts are counted: refunded gifts, failed recurring charges, and bank gifts still pending are left out of the KPIs, the chart, and the Lapsed Givers view.
 :::
 
 ## Lapsed Givers
@@ -69,6 +69,8 @@ You can export donation data from multiple places:
 - **Summary page** -- download a CSV of giving totals by week, month, or quarter and fund
 - **Batch detail page** -- download a CSV of individual donations with donor details
 - **Funds detail page** -- download donation history for a specific fund
+- **Person record** -- download one donor's gifts for a year, or all years, with **CSV** in their giving view (see [Giving on a Person's Record](person-giving.md#the-giving-view))
+- **Campaign detail page** -- download the pledge list for a campaign
 
 :::tip
 For year-end reporting, combine the Summary page export with the [Giving Statements](giving-statements.md) tool to get both aggregate trends and individual donor statements.

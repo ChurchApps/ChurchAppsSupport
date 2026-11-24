@@ -1,13 +1,13 @@
 ---
 title: "Managing Lessons"
-description: "Build a lesson's structure in Lessons.church admin: add venues, sections, and role-based Say, Do, Note, or Play actions, plus parent take-home copy and resources."
+description: "Create a lesson in Lessons.church admin with its name, title, slug, description, parent take-home copy, and trailer, then add the venues that hold its content."
 ---
 
 # Managing Lessons
 
 <div class="article-intro">
 
-Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This is where you build out the detailed content -- venues, sections, roles, and actions -- that volunteers will use when they teach.
+Lessons are the individual teaching sessions within a study. Each lesson represents what happens during a single class meeting. This guide covers the lesson's details and venues; the sections, roles, and actions inside a venue are covered in [Building Venue Content](./sections-roles-actions.md).
 
 </div>
 
@@ -21,14 +21,23 @@ Lessons are the individual teaching sessions within a study. Each lesson represe
 
 ## Creating a Lesson
 
-1. Navigate to the **Admin** area, expand the program and study, and find the study you want to add a lesson to.
-2. Click **Add Lesson**.
-3. Enter a **Name** and other details for the lesson.
-4. Save the lesson.
+1. Open **Admin**, click the program, and click the study card to expand its lessons.
+2. Click **Add lesson to this study**.
+3. Fill in the **Add Lesson** form:
+   - **Lesson Image** -- Click the box to upload and crop a 16:9 thumbnail.
+   - **Live** -- **No** hides the lesson from the public site; **Yes** publishes it.
+   - **Order** -- Position within the study.
+   - **Lesson Name** -- Required. The short label, usually "Lesson 1", "Lesson 2", and so on.
+   - **Title** -- The descriptive title, such as "Jesus Feeds 5,000". Lesson cards show both.
+   - **URL Slug** -- Type a slug and click **Check** before saving. The full lesson address is shown once checked.
+   - **Description** -- Catalog copy for teachers browsing lessons.church. Shown on the lesson card and under the title on the lesson page.
+   - **Parent take-home** -- See below.
+   - **Video Embed URL** -- Optional trailer embed address.
+4. Click **Save**. The lesson appears in the study's list; click it again to add venues.
 
 ## Parent Take-Home
 
-Each lesson has an optional **Parent take-home** section under Description. These fields are what parents see on their B1 group after class (and on the classroom parent page). They are not a second lesson description.
+Each lesson has an optional **Parent take-home** group of fields under Description. These are what parents see on their B1 group after class and on the classroom's public page. They are not a second lesson description.
 
 | Field | Purpose |
 |---|---|
@@ -37,51 +46,32 @@ Each lesson has an optional **Parent take-home** section under Description. Thes
 | **Question** | One car-ride question parents can ask without a PDF. |
 | **Optional note** | Extra (prayer prompt, family activity). Markdown. Hidden when empty. |
 
-Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week — nothing is shown.
+Bottom line and one question matter more than an overview. Leave all four empty if you have nothing for parents that week; nothing is shown.
 
-Do not put parent copy in **Description**. Description is catalog copy for teachers browsing lessons.church.
+Do not put parent copy in **Description**. Description is catalog copy for teachers.
+
+## Editing or Deleting a Lesson
+
+Click the lesson row to open **Edit Lesson**, change any field, and click **Save**. To remove a lesson, click the **Delete lesson** (trash can) button and confirm.
 
 ## Understanding the Lesson Structure
 
 Each lesson is organized into several layers:
 
-- **Venues** -- Different versions of the lesson for different age groups or settings. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson.
+- **Venues** -- Different versions of the lesson for different age groups or settings. For example, you might have a "Preschool" venue and an "Elementary" venue for the same lesson. Churches pick a venue when they schedule.
 - **Sections** -- The segments within a venue, such as "Welcome", "Video", "Bible Story", and "Activity". Sections control the flow of the class time.
-- **Roles and Actions** -- Within each section, you assign roles (for example, "Lead Teacher" or "Small Group Leader") and give each role specific actions.
-
-## Action Types
-
-There are four types of actions you can assign to a role within a section:
-
-- **Say** -- Text the volunteer should speak or paraphrase to the class.
-- **Do** -- A physical activity or instruction to carry out.
-- **Note** -- Background information or a reminder for the volunteer (not read aloud).
-- **Play** -- A video or audio clip to play during the section.
+- **Roles and Actions** -- Within each section, you assign roles (for example, "Leader" or "Small Group Leader") and give each role specific actions.
 
 ## Adding a Venue
 
-1. Open the lesson in the admin view.
+1. Open the lesson and click the **Venues** tab in its panel. (The tab is available once the lesson has been saved.)
 2. Click **Add Venue**.
-3. Enter a name for the venue (e.g., "Preschool" or "Elementary").
-4. Save. You can now add sections to this venue.
+3. Enter the **Order** and a **Venue Name** (e.g., "Preschool" or "Elementary"), then click **Save**.
+4. The venue appears in the **Venues** list. Click the **Edit Venue** (pencil) icon to rename, reorder, or delete it, or click the venue name to open its structure page and start adding sections. See [Building Venue Content](./sections-roles-actions.md).
 
-## Adding Sections and Actions
+## Lesson-Level Files
 
-1. Expand a venue to see its sections.
-2. Click **Add Section** and give it a name (e.g., "Welcome").
-3. Within the section, click **Add Action**.
-4. Choose the **role**, **action type** (Say, Do, Note, or Play), and enter the content.
-5. Save.
-
-Repeat this process to build out the full lesson flow.
-
-## Uploading Lesson-Level Resources
-
-You can attach downloadable materials directly to a lesson -- for example, an activity sheet or coloring page specific to that week.
-
-1. Open the lesson in the admin view.
-2. Navigate to the **Resources** section.
-3. Upload your files.
+Click the **Files** tab to attach the week's media and printables -- the teaching video, slides, an activity sheet, or a coloring page. Files attached here are offered to this lesson's Play and Download actions under the **Lesson** group. See [Managing Files and Media](./managing-files.md).
 
 :::tip
 Build your lesson from the volunteer's perspective. Step through the sections and actions in order and ask yourself whether a first-time volunteer could follow along without any other preparation.
@@ -89,6 +79,7 @@ Build your lesson from the volunteer's perspective. Step through the sections an
 
 ## Related Articles
 
-- [Managing Programs](./managing-programs.md) -- Set up the top-level curriculum container
+- [Building Venue Content](./sections-roles-actions.md) -- Fill a venue with sections, roles, and actions
+- [Managing Files and Media](./managing-files.md) -- Upload the lesson's videos and printables
 - [Managing Studies](./managing-studies.md) -- Organize lessons into study groups
 - [Statistics](./statistics.md) -- Track how your lessons are being used

@@ -24,9 +24,9 @@ The Files page is the central repository for all media and documents used on you
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Files**.
 2. Click **Upload Files** at the top of the page, or **Choose File** in the **Upload Files** panel on the right, and pick a file from your computer.
-3. The file uploads as soon as you pick it and appears in the files table.
+3. The file uploads as soon as you pick it (a progress bar shows larger uploads) and appears in the files table. A single file can be up to 25 MB; a larger one is refused with an upload error.
 
-The Upload Files panel also shows how much storage you are using. 100 MB is provided free; once it is full, the upload buttons are hidden until you delete files or add space. To get more, link your own Google Drive, Dropbox, OneDrive, or S3 bucket under **Settings**, in the **File Storage** section. Files then go to your linked account, and the panel shows **Stored in your linked account**.
+The Upload Files panel also shows how much storage you are using. 100 MB is provided free; once it is full, the upload buttons are hidden until you delete files or add space. To get more, link your own Google Drive, Dropbox, or S3-compatible bucket under **Settings**, in the **File Storage** section. Files then go to your linked account, and the panel shows **Stored in your linked account**.
 
 :::tip
 For best results, optimize images before uploading. Smaller file sizes help your website load faster for visitors. Tools like TinyPNG or Squoosh can compress images without noticeable quality loss.
@@ -39,7 +39,7 @@ The files table lists every uploaded file with its **Name** and **Size**. Click 
 ## Using Files on Your Website
 
 1. Find the file in the files table.
-2. Click **Copy link** to copy the file's URL (the button changes to **Copied**). You can paste this URL into image elements, download links, or anywhere else that accepts a file URL.
+2. Click **Copy link** to copy the file's URL (the button changes to **Link copied**). You can paste this URL into image elements, download links, or anywhere else that accepts a file URL.
 3. Files you upload here are available for use across all your website pages and content blocks.
 
 :::info

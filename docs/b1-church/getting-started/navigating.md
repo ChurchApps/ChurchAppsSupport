@@ -26,16 +26,17 @@ The member portal in B1.church is a phone-first web app that lives under `/mobil
 
 Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dashboard at `/mobile/dashboard`. Home is the landing page of the member portal. It starts with a greeting ("Good morning", "Good afternoon", or "Good evening" with your first name) and today's date, followed by sections that only appear when they apply:
 
+- **Announcement bar** -- if your church has turned on the announcement bar for its website (B1 Admin **Site → Appearance**), the same banner shows at the very top of Home, above everything else. Tap its link to open the page it points to inside the app (a link to one of your church's own pages opens as that tab), or tap the **×** to dismiss it for a day (a changed announcement shows again right away).
 - **Turn on notifications** -- when you are signed in and this device isn't set up for push notifications yet, a card at the top offers an **Enable Notifications** button (on an iPhone, **Install App** first) -- see [Push Notifications on This Device](./notification-preferences.md#push-notifications-on-this-device).
-- **News** -- if your church turns it on, your church's latest blog posts as photo cards that slide along on their own. Tap a card to read the whole post without leaving the app, or tap **All news** for the full list. Each post has a **View on website** link to the same post on your church's website -- see [Home Screen Sections](../../b1-admin/settings/mobile-app.md#home-screen-sections).
+- **News** -- if your church turns it on, your church's latest blog posts as photo cards that slide along on their own. Tap a card to read the whole post without leaving the app, or tap **All news** for the full list. Each post has a **View on website** link to the same post on your church's website -- see [News](../content/news.md).
 - **Photo tiles** -- tabs your church gave a photo (including Verse of the Day) appear as photo tiles under your church's name. Depending on your church's choice they are laid out as a two-column grid, a row you swipe sideways (which can also move along on its own), a list with a small thumbnail beside each name, or a combined layout -- three featured tiles as a grid with the next three listed beneath, or every tile in a self-advancing row with the first three listed beneath -- and an **All** link to the full list -- see [Home Screen Tiles](../../b1-admin/settings/mobile-app.md#home-screen-tiles). When the sideways row has more tiles than fit on screen, a row of dots under it shows where you are; tap a dot to jump to that tile. The row keeps moving forward, starting over from the first tile after the last. Every photo tab appears here, even one that also has a slot in the tab bar.
-- **Your follow-ups** -- when you are signed in, your two newest open tasks and workflow cards (cards first), with an **All** link to the full **My tasks** list. Tasks and cards are listed newest first there and on your [Me page](./me-page.md) too.
+- **Your follow-ups** -- when you are signed in, your two newest open tasks and workflow cards (cards first), with an **All** link to the full **My tasks** list. Tasks and cards are listed newest first there and on your [Me page](./me-page.md) too -- see [My Tasks and Cards](./my-tasks.md).
 - **Latest sermon** -- your church's newest sermon, with an **All sermons** link. A sermon without its own picture shows its series picture.
 - **Verse of the Day** -- today's verse; tap it to open the full [Verse of the Day](../content/verse-of-the-day.md) page
 - **You're serving** -- your next upcoming serving assignments, with an **All plans** link. If any assignment still needs your answer, those are shown first with a **Needs reply** badge and **Accept** / **Decline** buttons so you can respond right from Home (**Decline** asks you to confirm first); otherwise your next assignments show an **Accepted** or **Confirmed** badge. Tap an assignment to open its plan.
 - **Your groups** -- up to three of your groups with their meeting time and location, and an **All groups** link
 - **Upcoming events** -- when you are signed in, your next three upcoming group events and event registrations together, in date order, each with its date and time (and a thumbnail if the event has a photo). Each row is tagged **Event** (an event from a group you belong to) or **Registration** (an event you have [registered for](../events/registering.md)); an event you are registered for shows once, as a registration. Tap an event to open its group's events, or a registration to open your [registrations](../events/my-registrations.md). Tap **All upcoming events** to open the full upcoming list on your [Me page](./me-page.md#upcoming), which also includes your serving assignments and registrations.
-- **My Attendance** and **My Forms** -- if your church turns them on, how many times you attended in the last 90 days with your two most recent visits, and your two most recent form submissions, with links to the full lists. These always appear on your [Me page](./me-page.md) either way -- see [Home Screen Sections](../../b1-admin/settings/mobile-app.md#home-screen-sections).
+- **My Attendance** and **My Forms** -- if your church turns them on, how many times you attended in the last 90 days with your two most recent visits, and your two most recent form submissions, with links to the full lists ([My Attendance](./my-attendance.md) and [My Forms](./my-forms.md)). These always appear on your [Me page](./me-page.md) either way -- see [Home Screen Sections](../../b1-admin/settings/mobile-app.md#home-screen-sections).
 - **Giving** -- how much you have given this year ("Given in" the current year), a **Give** button (shown only when your church offers online giving), and a **History** link to your [donation history](../giving/donation-history.md). Hidden if your church has limited members' giving history to an earlier year or hidden it, in which case your church's giving tool shows as a button under **More from** instead
 - **More from** *your church* -- buttons for the rest of the tools your church has turned on that are not already in the tab bar or shown above. The ones you use most move to the front.
 
@@ -55,7 +56,11 @@ Built-in screens (such as Groups, Giving, or Plans) get the tab slots first; any
 
 ### Folder Tabs {#folder-tabs}
 
-Your church can group several tabs into a **folder**. A folder appears like any other tab -- in the tab bar, on the **More** page, or as a photo tile on Home -- and tapping it opens a screen with the folder's name that lists the tabs inside it. Tabs that have a photo are shown first, each as a full-width photo banner, and the tabs without a photo are listed below them. Links to outside websites in a folder open in a new browser tab. Tabs inside a folder appear only on the folder's screen, not in the tab bar or on the **More** page. A folder with nothing in it that you can see is hidden.
+Your church can group several tabs into a **folder**. A folder appears like any other tab -- in the tab bar, on the **More** page, or as a photo tile on Home -- and tapping it opens a screen with the folder's name that lists the tabs inside it. Tabs that have a photo are shown first, each as a full-width photo banner, and the tabs without a photo are listed below them. Links to outside websites in a folder open in a new browser tab. Tabs inside a folder appear only on the folder's screen, not in the tab bar or on the **More** page. A folder with nothing in it that you can see is hidden (opening one directly says "Nothing here yet").
+
+### Custom Page Tabs {#custom-page-tabs}
+
+A tab your church points at one of its own website pages (for example a "Food Pantry" page built in B1 Admin) opens that page inside the app, under the tab's name, with an **Open in new tab** link above it in case you'd rather read it in your browser. Links on the page to the church's giving, daily verse, check-in, directory, groups, plans, or a group's page open the matching app screen instead of the website. If the page hasn't loaded after a while, you'll see "Unable to load page" with a **Retry** button, and a page on another website that refuses to be embedded shows "This site can't be shown inside the app." with an **Open Website** button.
 
 ## On a Computer
 
@@ -66,11 +71,11 @@ On a wider screen, such as a computer or a large tablet, the bottom tab bar is r
 Tapping **More** opens the More page at `/mobile/more`. It contains:
 
 - Your name and photo, with an **Edit Profile** link — see [Editing Your Profile](./editing-your-profile.md)
-- Every tab your church configured, in order, under your church's name. Links to outside websites open in a new browser tab.
+- Every tab your church configured, in order, under your church's name. If your church added separators between tabs in B1 Admin, each run of tabs becomes its own section. Links to outside websites open in a new browser tab.
 - An **Account** section with:
   - **Me** -- your personal page (signed in only)
   - **Appearance** -- switch between **Light Mode** and **Dark Mode**
-  - **Admin Portal** -- only shown if you have administrator permissions at your church; it opens B1 Admin in a new tab
+  - **Admin Portal** -- only shown if you can edit your church's website content; it opens B1 Admin in a new tab
   - **Install App** -- opens the [install instructions](./installing-pwa.md) at `/mobile/install` (hidden once the app is installed)
 - **Sign out**, or a **Sign In** button if you are signed out
 - Your church's name and a link to the privacy policy
@@ -92,7 +97,7 @@ Tapping the bell opens a panel with two sections:
 - **Messages** -- your most recent private conversations, with a **New message** link to start one
 - **Notifications** -- your most recent notifications, with a **New** badge on unread ones. Tap a notification to go to the group, plan, or conversation it came from. A notification about a task or workflow card assigned to you opens that task in **My tasks** (see [My Cards and My Tasks](./me-page.md#my-cards-and-my-tasks)).
 
-Each section shows how many unread items it has. Tap **See all** at the bottom to open your full inbox at `/mobile/notifications`.
+Each section shows how many unread items it has (the bell's badge stops counting at 99+). Tap **See all** at the bottom to open your full inbox at `/mobile/notifications`.
 
 ## Pages With Sections
 

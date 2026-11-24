@@ -44,7 +44,7 @@ The reader fills the content area of the page, giving you plenty of space to rea
 In the member portal (`/mobile/bible`), your selected book, chapter, and translation are remembered on that device, so the reader reopens where you left off. The website reader always starts at Genesis 1.
 :::
 
-If the reader can't load, the page says so and offers a button to read on Bible.com instead (the member portal also offers Biblia.com).
+If the reader can't load, the page says so and offers a button to read on Bible.com instead. The member portal says "The in-app reader failed to load. You can still open the Bible in your browser." with **Open Bible.com** and **Open Biblia.com** buttons, follows the app's light or dark theme, and starts a newly chosen book at chapter 1.
 
 :::tip
 You can bookmark the Bible page in your browser to return to it quickly for your daily reading. Pair it with the [Verse of the Day](./verse-of-the-day.md) for daily Scripture inspiration.

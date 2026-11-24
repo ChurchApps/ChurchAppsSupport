@@ -18,7 +18,7 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 <div class="prereqs">
 <h4>Before You Begin</h4>
 
-- Set up your ministries and teams in the Serving area
+- Set up your [ministries, teams, and plan types](./ministries-and-teams.md) in the Serving area
 - Make sure volunteers have been added to your [people directory](../people/adding-people.md) and assigned to teams
 
 </div>
@@ -91,7 +91,7 @@ To change or remove an assignment, click the volunteer's name and click **Delete
 Each position shows a count chip (for example, "2/3", or "1/2 signup" for self-signup positions) so you can see how many spots are filled at a glance. At the top of the serving team page, a summary ("X of Y positions filled") shows your overall staffing for the plan, along with how many are still needed, switching to **Fully staffed** once every position is covered.
 
 :::tip
-Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
+Set up your [serving teams](./ministries-and-teams.md#creating-serving-teams) before creating plans. This way, you will have a ready pool of volunteers to assign from. In the position list, the team a position draws from is shown in parentheses after the position's name.
 :::
 
 ### Choosing Who to Assign
@@ -212,12 +212,26 @@ To give your musicians their charts in the same printout, check **Include chord 
 
 The printout leaves off anything that would be empty. If no volunteers are assigned, there's no team box and the service order uses the full page width. If no items have a length, the **Length** column is left off, and if the plan has no service times and no lengths, so is the **Time** column. To drop the black **Service Order** heading bar with the service date, uncheck **Show Service Order heading** at the top of the print page; B1 Admin remembers your choice on that browser.
 
+The print page opens in a new browser tab with **Print** and **Close** buttons at the top. **Print** opens your browser's print dialog; when you finish printing (or cancel), the tab returns to the plan.
+
+### Printing a Lesson Plan
+
+When the plan is linked to a lesson from a content provider (see [Scheduling Lessons](./scheduling-lessons.md)), **Print** opens a full-screen **Print Preview** instead, because a lesson prints best as its script rather than as a run sheet. Use the **Format:** tabs at the top to pick a layout:
+
+- **Lessons.church** -- one card per lesson section, headed with the section's name and its **Materials:** list, followed by each line and its media.
+- **Color Coded** -- a compact leader guide. The lesson's name, venue, and picture head the page, and inside each section consecutive lines of the same kind are grouped under a bold label such as **SAY**, **DO**, or **PLAY**, so a teacher can find the next spoken part at a glance.
+- **Script** -- the same header followed by every line of every section in order, styled by its kind, for reading straight through.
+- **Service Order** -- the regular run sheet described above, with the team box, times, and the **Show Service Order heading** and **Include chord charts** options.
+
+The lesson formats only include the sections and lines you kept in the plan: anything you took out while [editing a lesson section](./service-order.md#editing-a-lesson-section) is left off the printout too. Click **Print** in the preview's toolbar to send the chosen format to your printer, or **Close** to return to the plan.
+
 :::info
 Plans are organized by ministry. Make sure you are on the correct ministry tab before creating or viewing plans.
 :::
 
 ## Next Steps
 
+- Add ministries, serving teams, and plan types in [Ministries, Teams, and Plan Types](./ministries-and-teams.md)
 - Use the [Plans Overview](./plans-overview.md) to see all upcoming assignments across multiple weeks in one grid and spot unfilled positions — and assign volunteers directly from the grid
 - Save a plan's structure as a [Plan Template](./plan-templates.md) so you can stamp it onto future plans in one click
 - Build out your [Service Order](./service-order.md) with songs, readings, and other elements

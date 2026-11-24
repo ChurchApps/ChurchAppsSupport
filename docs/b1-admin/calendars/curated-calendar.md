@@ -31,8 +31,8 @@ A curated calendar aggregates events from multiple groups into one unified calen
 
 1. Click your new calendar's name (or **Manage Events** on its row) to open it.
 2. Click **Add Group** above the calendar. Groups you add appear in the **Groups in Calendar** list on the left side of the page.
-3. Choose a group in **Select a Group**. Every group in your church is listed, including groups you are not a member of.
-4. Choose **Add all the events of the group**, or **Add specific events** and click the events you want.
+3. Choose a group in **Select a Group**. Every regular group in your church is listed, including groups you are not a member of (serving teams are not).
+4. Choose **Add all the events of the group**, or **Add specific events** and click the events you want. Only the group's public events can be picked one at a time.
 5. Click **Save**.
 6. Repeat this process to add as many groups as you want to include.
 
@@ -44,14 +44,17 @@ To take something off the calendar, click the event and choose **Remove from Cal
 Add all your active ministry groups to create a comprehensive calendar that gives your congregation a complete picture of what is happening at your church each week.
 :::
 
-## Sharing Your Calendar
+## Sharing Your Calendar {#sharing-your-calendar}
 
 Once your curated calendar is set up, you can share it in several ways:
 
 - **Embed on your website** -- Add a **Calendar** element to a page to show the calendar as a month grid or as tiles of upcoming events, optionally limited to events with one tag. Each event links to its own page on your site. See [Using the Calendar element](../website/page-editor.md#using-the-calendar-element).
-- **Subscribe via ICS** -- Click **Subscribe** above the calendar and choose **Copy ICS Link**. Your congregation can paste this link into Google Calendar, Apple Calendar, Outlook, or any other calendar app to stay in sync.
-- **Download the ICS file** -- Click **Subscribe** and choose **Download ICS File** to import the calendar into a calendar application.
-- **Print** -- Click **Print** on the calendar's page for a printable view.
+- **Subscribe via ICS** -- Click **Subscribe** above the calendar and choose **Copy ICS Link** ("Copied to clipboard" confirms it). Your congregation can paste this link into Google Calendar, Apple Calendar, Outlook, or any other calendar app to stay in sync. The link needs no login, so you can post it on your website or in a newsletter; the calendar app refreshes it on its own schedule, usually a few hours. The feed includes every public event on the calendar, with the group's events added as a whole as well as the ones you picked individually, and repeating events keep their rules and skipped dates.
+- **Download the ICS file** -- Click **Subscribe** and choose **Download ICS File** to save a one-time `calendar.ics` snapshot that can be imported into a calendar application. Unlike the link, a downloaded file does not update.
+- **Print** -- Click **Print** on the calendar's page for a printable month with your church's logo and name at the top. See [The Calendar Detail Page](./creating-calendars.md#the-calendar-detail-page).
+- **Share one event** -- Click an event and choose **Share** for its own link and QR code. See [Sharing an Event's Link](./creating-calendars.md#sharing-an-event-link). Each public event page also offers an *Add to my calendar* download of just that event.
+
+A [group's own calendar](../groups/group-calendar.md#subscribing-to-the-calendar) has a subscription link of its own, so a small group can subscribe to just its events.
 
 :::info
 When group leaders add new events to their [groups](../groups/creating-groups.md), those events automatically appear in your curated calendar. You do not need to manually update the curated calendar each time a new event is added.

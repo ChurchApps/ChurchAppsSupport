@@ -32,3 +32,4 @@ If you already have a ChurchApps account from B1.church, you can log in to Lesso
 - [Creating an Account](./creating-account.md) -- Step-by-step registration instructions
 - [Portal Overview](./portal-overview.md) -- Learn your way around the church dashboard
 - [Setting Up Classrooms](../classrooms/setting-up-classrooms.md) -- Create your first classroom after getting oriented
+- [Browsing Content](../browsing/index.md) -- Explore the library before you log in

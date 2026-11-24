@@ -75,6 +75,37 @@ To link a whole lesson to the plan, click **Associate Lesson** above the order o
 
 When a plan has a lesson linked to it, the order of service first shows a **Lesson Preview** of that lesson. Click **Customize** (or add a section, item, or song) to copy the lesson's sections into the plan so you can edit them. For lessons that are just a list of files, such as GO! Curriculum lessons, the files are grouped under a section named after the lesson, so you still have a section bar to add your own items into.
 
+### Editing an Item's Details
+
+Click the pencil icon on an item to open its edit dialog (**Edit Item**, **Edit Song**, **Edit Header** for a section, or **Edit Add-On** for a file from a provider). Depending on the kind of item you can set:
+
+- **Name** and **Description** -- what the row says. For a song, the description starts as the artist and the key you picked.
+- **Minutes** and **Seconds** -- how long the item runs. See [Timing and Media](#timing-and-media).
+- **Position** -- the serving position responsible for this item, so the volunteer covering it is shown next to it (see [Linking an Item to a Position](#linking-an-item-to-a-position)). This dropdown only appears once the plan has positions.
+- **Include in services** -- which service times the item appears in, when the plan has more than one (see [Including Items in Specific Service Times](#including-items-in-specific-service-times)).
+
+Click **Save**. The dialog also has **Delete** and, for anything but a section header, **Duplicate**, which adds a copy right after the original.
+
+### Linking an Item to a Position {#linking-an-item-to-a-position}
+
+Setting a **Position** on an item or section header connects the service order to the serving team: the order of service shows the assigned volunteer's name beside the row (or the position's name if nobody is assigned yet), and the printed plan does the same when **Show volunteer names on signup page** is on.
+
+1. Add the positions first on the plan's serving team page (see [Assigning Team Members](./plans.md#assigning-team-members)).
+2. Back on the order of service, click the pencil icon on the item or section header.
+3. Choose the position from **Position** (listed as category and name, for example "Worship - Worship Leader"), or **None** to clear it.
+4. Click **Save**.
+
+Set it on a section header (for example "Worship" led by the worship leader, "Message" by the speaker) when one person owns a whole part of the service, and on individual items when they are handled by different people.
+
+### Viewing a Song's Chart from the Service Order
+
+Click a song's title in the order of service to open its song dialog without leaving the plan. The dialog shows the song's details on the right and, on the left:
+
+- **Files** -- anything attached to the key chosen for this plan: PraiseCharts downloads for that key (see [Importing from PraiseCharts](./songs.md#importing-from-praisecharts)), external links, and audio tracks you can play right there.
+- **Lyrics** -- the arrangement's chord chart. Use the **Key** dropdown above it to transpose on the fly; it starts in the song's written key.
+
+Click **Close** to return to the order of service. This is the same view your team gets when they open the song from a plan in the member app.
+
 ## Reordering Items
 
 Drag items by the handle on the left of each row to rearrange the order — drop onto the blue line where you want the item to land, or onto a section header to move it into that section. The sequence shown on screen is the order your team will follow during the service.
@@ -104,7 +135,7 @@ Each item and section shows how long it runs and when it starts:
 
 ## Editing and Removing Items
 
-- Click the pencil icon on any item (or on a section header) to **edit** its details.
+- Click the pencil icon on any item (or on a section header) to **edit** its details (see [Editing an Item's Details](#editing-an-items-details)).
 - Click the trash icon on an item, or on a section header, to **delete** it after confirming. Deleting a section also removes the items in it. You can still delete from the edit dialog too.
 - Click the copy icon on an item to **duplicate** it.
 

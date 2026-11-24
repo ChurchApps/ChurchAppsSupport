@@ -26,9 +26,28 @@ If you are an admin, the tabs show the ministries you belong to, plus any minist
 
 The Serving section includes these key areas:
 
-- **[Plans](./plans.md)** -- Create service plans for specific dates and assign volunteers to teams. Plans help you organize who is serving when, so everyone knows their role ahead of time. Set up automatic [volunteer reminders](./plans.md#volunteer-reminders) by push, email, or text so your team is notified before each service, and use the **[Plans Overview](./plans-overview.md)** to see all upcoming assignments across multiple weeks in one grid.
-- **[Songs](./songs.md)** -- Manage your worship song library with lyrics, arrangements, rehearsal audio, chord chart PDFs, and external links. Your worship team can use this to prepare for upcoming services. Export your library or a song usage report with CCLI numbers for your CCLI reporting.
-- **[Tasks](./tasks.md)** -- Assign and track tasks for your team members from **My Work**.
+**Setting up**
+
+- **[Ministries, Teams, and Plan Types](./ministries-and-teams.md)** -- Create the ministries that organize the Serving page, the serving teams that positions are filled from, and the plan types that hold each recurring service's plans. Covers ministry leaders, team block-out dates, plan type settings, and who needs which permission.
+
+**Planning services**
+
+- **[Service Plans](./plans.md)** -- Create service plans for specific dates, add positions, and assign volunteers from your teams. Set up automatic [volunteer reminders](./plans.md#volunteer-reminders) by push, email, or text, warn leaders about [scheduling gaps](./plans.md#leader-gap-alerts), and print the plan.
+- **[Plan Templates](./plan-templates.md)** -- Save a plan's order of service and positions once and stamp them onto future plans in one click.
+- **[Plans Overview](./plans-overview.md)** -- See every position across many weeks in one grid, fill gaps from the grid, auto-schedule, and email or text everyone scheduled.
+- **[Plan Validation & Notifications](./plan-validation.md)** -- Catch unfilled positions, double-bookings, block-out conflicts, and preference mismatches, then publish and notify your volunteers.
+- **[Service Order](./service-order.md)** -- Lay out the flow of the service with sections, songs, custom items, and lesson content, time it, and link items to the volunteers covering them.
+- **[Songs](./songs.md)** -- Manage your worship song library with lyrics, arrangements, keys, rehearsal audio, chord chart PDFs, PraiseCharts imports, and external links. Export your library or a song usage report with CCLI numbers for your CCLI reporting.
+
+**Lessons and screens**
+
+- **[Scheduling Lessons](./scheduling-lessons.md)** -- Link Lessons.church and other curriculum providers to a ministry, then schedule a lesson, a whole series, or a published year plan into a plan type, and trim every lesson to the parts your classroom uses.
+- **[Connecting FreePlay to B1 Admin](./tv-pairing.md)** -- Put the scheduled lesson on a classroom TV with the FreePlay app.
+- **[Digital Signage](./digital-signage.md)** -- Send a plan type's current lesson to a lobby TV with a feed URL or a FreePlay schedule.
+
+**Following up**
+
+- **[Tasks](./tasks.md)** -- Assign and track action items for your team members from **My Work**, with due dates and reminders.
 - **[Workflows](./workflows.md)** -- Move people through a series of steps on a visual Kanban board, such as new-visitor follow-up or a membership process. Steps can run automated actions (send an email, wait a few days, add to a group), and cards advance by outcome buttons, conditional routing, or event and schedule triggers -- with built-in reports.
 
 ## Getting Started
@@ -38,5 +57,5 @@ The Serving section includes these key areas:
 3. Click **Create Plan Type** (or **Add Plan Type**) or choose an existing plan type to start [creating service plans](./plans.md), or explore the [Songs](./songs.md) and [Tasks](./tasks.md) sub-sections.
 
 :::info
-Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry. Select a ministry tab and click **Create Serving Team** (or **New Serving Team**) in the **Serving Teams** list to add one.
+Before you can create plans, you will need to create your Ministries in the Serving area and Teams within each Ministry. Select a ministry tab and click **Create Serving Team** (or **New Serving Team**) in the **Serving Teams** list to add one. [Ministries, Teams, and Plan Types](./ministries-and-teams.md) walks through all of this, including the permissions each step needs.
 :::

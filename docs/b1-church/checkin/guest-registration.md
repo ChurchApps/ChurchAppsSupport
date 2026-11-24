@@ -25,7 +25,7 @@ Guest registration is designed for visitors who do not yet have an account. On t
 
 Don't have a phone handy? In the same QR code window on the kiosk, tap **Register here** to fill in the form on the kiosk itself. See [Registering as a Guest](../../b1-checkin/check-in/looking-up-members.md#registering-as-a-guest) for how this works on the kiosk.
 
-The page opens with the title **Guest Registration**. If the church has added a header photo, it appears at the top of the page; otherwise you'll see a small icon.
+The page opens with the title **Guest Registration** and the subtitle "Register your family as guests". If the church has added a header photo, it appears at the top of the page; otherwise you'll see a small icon.
 
 ## Registering Your Family
 
@@ -34,13 +34,13 @@ The page opens with the title **Guest Registration**. If the church has added a 
    - **Title** (such as Mr, Mrs, Dr, or Pastor), in front of the name
    - **Email** and **Phone**
    - **Photo** -- tap **Add Photo**, choose a picture, crop it, and save it. Use **Change Photo** or **Remove Photo** to replace or clear it.
-   - **Marital Status**
+   - **Marital Status** -- **Unknown**, **Single**, **Married**, **Divorced**, or **Widowed**
    - **Home Address** -- **Street Address**, **Address Line 2**, **City**, **State**, and **Zip**. This is shared by the whole family.
 3. The form starts with a second card for **Family Member 2**. Enter their first and last name, or tap the **X** in the card's corner to remove it if you're registering on your own.
 4. To add more people, tap **Add Family Member**. The new card fills in the primary contact's last name for you. You can register up to 10 people at once.
-5. If your church asks for them, each person's card may also include **Title**, **Email**, **Phone**, **Birth Date**, **Gender**, **Grade**, and a **Photo**. Email, phone, and photo are only ever required for the primary contact; they are optional for everyone else. Every card after the primary contact may also ask for a **Household Role** -- **Spouse**, **Child**, or **Other** -- so the church knows how each person is related to the primary contact.
+5. If your church asks for them, each person's card may also include **Title**, **Email**, **Phone**, **Birth Date**, **Gender** (**Unspecified**, **Male**, or **Female**), **Grade** (**PreK**, **K**, **1** through **12**, or **Graduated**), and a **Photo**. Email, phone, and photo are only ever required for the primary contact; they are optional for everyone else. Title, birth date, gender, and grade, when your church requires them, are required for every person. Every card after the primary contact may also ask for a **Household Role** -- **Spouse**, **Child**, or **Other** -- so the church knows how each person is related to the primary contact.
 6. If your church includes a **Comments** box below the family members, use it to share anything you'd like the church to know (up to 1,000 characters).
-7. Tap **Register** to submit.
+7. Tap **Register** to submit. The button reads **Registering...** while it saves; if something goes wrong you'll see "Registration failed. Please try again." **Add Family Member** is disabled once you have 10 people on the form.
 
 Fields marked with an asterisk (`*`) are required. Every card needs a first and last name -- if one is missing, the form shows "First name and last name are required for each member." If any other required field is left blank, it shows "Please fill in every required field." Nothing is submitted until you fill them in.
 

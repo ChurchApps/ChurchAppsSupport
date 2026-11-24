@@ -90,9 +90,11 @@ Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GE
 | `group.destroyed` | A group is deleted |
 | `group.member.added` | A person is added to a group |
 | `group.member.removed` | A person is removed from a group |
+| `group.member.requested` | A member asks to join a group that requires approval (payload carries `groupName` and `personName`) |
 | `donation.created` | A gift is recorded — manual entry, online, or the pending → complete transition |
 | `donation.updated` | A donation record is edited |
 | `attendance.recorded` | A visit is logged (manual entry or check-in) |
+| `attendance.checkout` | A checked-in person is checked out at a kiosk (payload carries `checkoutTime` and `checkedOutBy`) |
 | `session.created` | A new attendance session is created (manually or auto on first check-in) |
 | `form.submission.created` | A form is submitted |
 | `event.created` | A calendar event is added |
@@ -100,6 +102,8 @@ Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GE
 | `event.destroyed` | A calendar event is deleted |
 | `registration.created` | Someone registers for an event (the payload includes the registration's `members`) |
 | `registration.cancelled` | A registration is cancelled by the member or by staff; fires once per registration, not again when a cancelled registration is restored |
+| `list.member.added` | A person joins a saved people list (payload carries `listName` and `personName`) |
+| `list.member.removed` | A person leaves a saved people list |
 
 ## Payload Format
 
@@ -218,7 +222,7 @@ The SDK also exposes `WebhookVerifier.verify(secret, rawBody, signatureHeader)` 
 
 Your endpoint should respond with a `2xx` status as quickly as possible — ideally after only queuing the work, not after processing it. Any non-`2xx` response, a connection failure, or a response slower than **10 seconds** counts as a failed delivery.
 
-Failed deliveries are retried with exponential backoff — **16 attempts over roughly 5 days**. The interval grows from 1 minute, through hours, up to 3-day gaps for the final attempts. After the 16th failed attempt the delivery is marked `exhausted` and abandoned.
+Failed deliveries are retried with exponential backoff — **16 attempts over roughly 11 days**. The interval grows from 1 minute, through hours, to daily, then 2-day and finally a 3-day gap before the last attempt (the schedule in `WebhookRetryPolicy.ts` adds up to about 11 days). After the 16th failed attempt the delivery is marked `exhausted` and abandoned.
 
 Delivery is **at-least-once**: a delivery may arrive more than once (for example, if your endpoint succeeds but the response is lost). Use the `X-B1-Delivery-Id` header to deduplicate — process each id only once and treat repeats as no-ops.
 

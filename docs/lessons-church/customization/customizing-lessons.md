@@ -1,6 +1,6 @@
 ---
 title: "Customizing Lessons"
-description: "Remove or reorder sections, roles, and actions in a Lessons.church lesson, and choose whether each change applies to one classroom or all of them."
+description: "Remove or reorder sections, roles, and actions in a Lessons.church lesson, choose whether each change applies to one classroom or all of them, and see where it takes effect."
 ---
 
 # Customizing Lessons
@@ -22,11 +22,11 @@ This guide walks you through customizing a lesson for your classroom. Customizat
 
 ## Opening the Customization View
 
-1. Log in and navigate to your **Portal**.
+1. Log in and open **Schedules** (the **Classroom Management** page).
 2. Select the **classroom** that has the lesson you want to customize.
 3. In the classroom's schedule, find the lesson and click **Customize** below its name.
 
-The **Customize Lesson** page lists the lesson's sections, with each section's roles and each role's actions below it. Every row has buttons on the right:
+The **Customize Lesson** page shows the study, lesson, and venue you are editing, then a **Sections** table listing the lesson's sections, with each section's roles and each role's actions below it. Every row has buttons on the right:
 
 - **Up arrow** and **Down arrow** -- Move the item one place up or down among its neighbors
 - **Delete** (trash can) -- Remove the item
@@ -73,6 +73,15 @@ Repeat until the items are in the order you want. The new order is what your vol
 ## Undoing a Removal
 
 To bring back an item you removed, click its **Delete** button again. The menu now also offers **None**. Choose **None** to clear the removal and show the item again, or pick the other option to change where the removal applies.
+
+## Where Customizations Take Effect
+
+Customizations are tied to your church and classroom, so they appear wherever a lesson is shown for that classroom:
+
+- The lesson view in the **Lessons** tab of the B1 app (see [Teaching from the B1 App](../presenting/b1-teacher-view.md)) hides removed items and uses your order.
+- Lessons scheduled through B1 Admin serving plans use the same customizations.
+
+The public lesson page on lessons.church always shows the provider's original content, because it is shared by every church. Open the lesson from the B1 app or a plan to see the customized version.
 
 :::tip
 Start by customizing a single lesson for one classroom. Once you are comfortable with the process, you can apply customizations more broadly across all classrooms.

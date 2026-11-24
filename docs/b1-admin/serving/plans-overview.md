@@ -28,6 +28,10 @@ The Plans Overview gives you a bird's-eye view of all your volunteer assignments
 
 The overview covers the plan type you opened it from. Click the plan type's name at the top of the overview to go back to its plan list.
 
+:::info
+Anyone who can open the plan type can read the grid, but the overview's editing tools -- clicking a cell to assign, **Auto-schedule**, **Email Volunteers**, and **Text Volunteers** -- need the **Plans Edit** permission (see [Roles & Permissions](../settings/roles-permissions.md)). Ministry members who manage plans without that permission see the overview read-only and assign from the plan's own serving team page instead. **Export CSV** works for everyone who can see the grid.
+:::
+
 ## Reading the Overview Grid
 
 The overview displays a grid where:

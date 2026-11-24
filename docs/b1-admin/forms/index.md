@@ -18,7 +18,7 @@ When you open **Forms**, you will see these tabs:
 - **Forms** -- Shows all your active forms.
 - **Archived Forms** -- Shows forms that have been archived. You can restore archived forms at any time. This tab only appears once at least one form has been archived.
 
-A count of the forms is shown above the list. Each form in the list displays its name and, for Stand Alone forms, its public URL that you can share externally (People forms show **Person profile form** instead). Hover over a row (on a phone, the links are always shown) to see its actions: **Edit**, **Print**, **QR Code** (Stand Alone forms only), **Duplicate**, and **Archive**. Archived forms show **Print** and **Restore**.
+A count of the forms is shown above the list. Each form in the list displays its name and, for Stand Alone forms, its public URL that you can share externally (People forms show **Person profile form** instead). Hover over a row (on a phone, the links are always shown) to see its actions: **Edit**, **Print**, **QR Code** (Stand Alone forms only), **Duplicate**, and **Archive**. Archived forms show **Print** and **Restore**. **Edit**, **Duplicate**, **Archive**, and **Restore** appear only for forms you can manage -- see [Form Access & Permissions](./form-access.md).
 
 ## What You Can Do
 
@@ -33,21 +33,24 @@ From the Forms page, you can:
 
 ## Working with a Form
 
-Click on any form name to open it. The left side of the page shows the form's name, type, and public link, with an **Edit Form** button for its [settings](./creating-forms.md#configuring-form-properties) and a **Forms** link back to the list. The form has up to three tabs, depending on your access:
+Click on any form name to open it. The left side of the page shows the form's name, tags for its type (**People** or **Stand Alone**), its access (**Public** or **Restricted**, for Stand Alone forms) and **Archived** when it has been archived, its public link, and its description, with an **Edit Form** button for its [settings](./creating-forms.md#configuring-form-properties) and a **Forms** link back to the list. The form has up to three tabs, depending on your access (see [Form Access & Permissions](./form-access.md#what-each-person-sees)):
 
 - **Questions** -- Build the form structure by adding fields with different types. See [Creating Forms](./creating-forms.md) for details.
 - **Form Members** -- Control who can access and manage the form (stand-alone forms only).
 - **Form Submissions** -- View responses that have been submitted. See [Managing Submissions](./managing-submissions.md) for details.
+
+When only one tab is available to you, it opens on its own without a tab bar.
 
 :::tip
 Forms with a public URL can be shared via link, embedded on your website, or included in emails. This makes it easy to collect information from people who may not have a church account.
 :::
 
 :::info
-You can control who has access to each form using the **Form Members** tab. Assign **Admin** or **View Only** roles to give your team the right level of access.
+Opening the Forms page needs **Form Admin** or **Edit Forms**. You can also give individual people access to one Stand Alone form with the **Form Members** tab, as **Admin** or **View Only**. See [Form Access & Permissions](./form-access.md).
 :::
 
 ## Learn More
 
 - [Creating Forms](./creating-forms.md) -- Step-by-step guide to building forms and adding questions.
 - [Managing Submissions](./managing-submissions.md) -- How to view and manage form responses.
+- [Form Access & Permissions](./form-access.md) -- Who can manage, read, and fill in each form.

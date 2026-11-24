@@ -20,9 +20,11 @@ When you know what topic you want to teach but are not sure which program or stu
 
 ## How to Search
 
-1. Click the **search** icon at the top of the Lessons.church site to open the search box.
-2. Type a keyword or phrase (for example, "forgiveness," "David and Goliath," or "prayer"). Matching results appear in a list below the box as you type -- click one to go straight to it.
-3. Press **Enter** to open the full search results page.
+1. Click the **Search...** box in the header at the top of any Lessons.church page. On a phone, tap the search icon.
+2. Type at least two characters of a keyword or phrase (for example, "forgiveness," "David and Goliath," or "prayer"). Up to eight matching results appear in a list below the box as you type -- click one to go straight to it.
+3. Press **Enter**, or click **View all results**, to open the full search results page. It shows how many results were found and lays them out as cards.
+
+Click the **X** in the box to clear your search.
 
 ## How Search Works
 
@@ -30,7 +32,7 @@ Search looks through the names, descriptions, categories, and age groups of ever
 
 ## Navigating Results
 
-Each result is labeled as a **program**, **study**, or **lesson**, along with its age group when one is set. Studies show which program they belong to, and lessons show their study and program. Click any result to go directly to that page. A lesson page shows the full content, sections, roles, and downloadable materials.
+Each result is labeled as a **program**, **study**, or **lesson**, along with its age group when one is set. Studies show which program they belong to, and lessons show their program and study. Studies and programs also show how many lessons they contain, and any categories the study belongs to appear as small tags. Click any result to go directly to that page. A lesson page shows the full content, sections, roles, and downloadable materials.
 
 ## When to Use Search
 

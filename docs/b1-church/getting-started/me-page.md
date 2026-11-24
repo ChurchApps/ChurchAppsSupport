@@ -29,7 +29,7 @@ If you are signed out, you'll see "Sign in to see your week" and a **Sign In** b
 
 ## Upcoming
 
-The **Upcoming** section lists your next three items in date order, each tagged with a type badge. If you have more, tap **All upcoming** to see the full list, and **Back to Me** to return.
+The **Upcoming** section lists your next three items in date order, each tagged with a type badge. If you have more, tap **All upcoming** to see the full list (up to twelve items; switch to **Calendar** to see everything), and **Back to Me** to return.
 
 - **Serving** -- Your volunteer positions on upcoming service plans, with the date and start time of the service you're serving in (the time your team is needed when the plan has several service times, or just the date if the plan has no times). Tap one to open the plan.
 - **Registration** -- Events you have [registered for](../events/registering.md). Tap through to your [registrations](../events/my-registrations.md).
@@ -44,7 +44,7 @@ If nothing is scheduled, you'll see "Nothing coming up" — your serving times, 
 The **All upcoming** page (shown when you have more than three upcoming items) has a **List** / **Calendar** switch next to its heading:
 
 - **List** (the default) -- Your upcoming items in date order, as described above.
-- **Calendar** -- A month grid of everything on your schedule: serving, registrations, and events from your groups and church calendars. Days with items are marked. Use the arrows to move between months, and tap a day to see its items listed below the grid ("No events on this day." if there are none). Past days of the month are included, so you can look back as well as ahead.
+- **Calendar** -- A month grid of everything on your schedule: serving, registrations, and events from your groups and church calendars. Days with items are marked, today is outlined, and the week starts on the day your church has chosen. Use the arrows to move between months, and tap a day to see its items listed below the grid ("No events on this day." if there are none). Past days of the month are included, so you can look back as well as ahead.
 
 The app remembers which view you picked the next time you open the page.
 
@@ -65,19 +65,19 @@ Each section shows your three newest items; tap **All cards** or **All tasks** t
 
 When you get a notification about a task or card -- for example, a new assignment or a new note -- tapping it opens **My tasks** with that task or card already open, whether you tap it in your inbox or as a push notification on your phone.
 
-The sections are hidden when nothing is assigned to you.
+The sections are hidden when nothing is assigned to you. See [My Tasks and Cards](./my-tasks.md) for everything you can do with a card.
 
 ## Household, Groups, and Giving
 
-- **Household** -- The other people in your household. Tap a name to view their profile, or tap **Manage** to edit your household from your profile. Hidden if no one else is linked to your household.
-- **My Groups** -- The groups you belong to. Tap a group to open it, or tap **All groups** for the full list. If you aren't in any groups, you'll see "You're not in any groups yet."
-- **Giving** -- How much you have given this year and how many gifts ("No gifts yet in" the current year if there are none). Tap **History** to open the giving page. Hidden if your church has limited members' giving history to an earlier year or hidden it (see [Donation History](../giving/donation-history.md#if-your-church-limits-giving-history)).
+- **Household** -- The other people in your household, each with their household role. Tap a name to view their profile, or tap **Manage** to edit your household from your profile. Hidden if no one else is linked to your household.
+- **My Groups** -- Up to eight of the groups you belong to. Tap a group to open it, or tap **All groups** for the full list. If you aren't in any groups, you'll see "You're not in any groups yet."
+- **Giving** -- How much you have given this year and how many gifts ("No gifts yet in" the current year if there are none; just the number of gifts when they were in more than one currency). Tap **History** to open the giving page. Hidden if your church has limited members' giving history to an earlier year or hidden it (see [Donation History](../giving/donation-history.md#if-your-church-limits-giving-history)).
 
 ## My Forms
 
 The **My Forms** section lists the forms you've most recently submitted, with the date of each. If you haven't submitted any, you'll see "You haven't submitted any forms yet."
 
-Tap a form or **All forms** to open the **My Forms** page, which lists your submitted forms, newest first. Tap a form to expand it and see your answers; tap it again to collapse it. Your answers are read-only here -- contact your church if something needs to change.
+Tap a form or **All forms** to open the **My Forms** page, which lists your submitted forms, newest first. Tap a form to expand it and see your answers; tap it again to collapse it. Your answers are read-only here -- contact your church if something needs to change. See [My Forms](./my-forms.md).
 
 :::info
 My Forms shows stand-alone forms you filled out yourself, plus stand-alone form submissions that are linked to your person record -- for example, one matched to you by your email address, or one church staff [moved to you](../../b1-admin/forms/managing-submissions.md#changing-the-person-on-a-submission). Forms that staff complete about you on your record in B1 Admin are not listed.
@@ -87,7 +87,7 @@ My Forms shows stand-alone forms you filled out yourself, plus stand-alone form 
 
 The **My Attendance** section shows how many times you attended in the last 90 days, followed by your most recent check-ins. Each row shows the group name (or the service, if you checked in to a service) and the date.
 
-Tap a row or **History** to open the **My Attendance** page, which lists the services and groups you were checked in to over the last 12 months, grouped by month. If nothing was recorded, you'll see "No attendance recorded in the last 12 months."
+Tap a row or **History** to open the **My Attendance** page, which lists the services and groups you were checked in to over the last 12 months, grouped by month. If nothing was recorded, you'll see "No attendance recorded in the last 12 months." See [My Attendance](./my-attendance.md).
 
 ## Requests & Registrations
 
@@ -102,11 +102,14 @@ If your church hasn't set up rooms or resources, these links are hidden.
 
 ## Inbox
 
-The **Inbox** section shows your two most recent notifications so you can catch up without opening each area of the portal. Tap **Open inbox** to see all of your notifications and messages, or tap **Messages** to go to your private conversations.
+The **Inbox** section shows your most recent notifications ("No notifications yet" when there are none) so you can catch up without opening each area of the portal. Tap **Open inbox** to see all of your notifications and messages, or tap **Messages** to go to your private conversations.
 
 ## Related Articles
 
 - [Navigating B1App](./navigating.md) -- The member portal layout
+- [My Tasks and Cards](./my-tasks.md) -- Work the follow-ups assigned to you
+- [My Forms](./my-forms.md) -- Reread the forms you submitted
+- [My Attendance](./my-attendance.md) -- Your check-in history
 - [Requesting Events & Rooms](../events/requesting-events.md) -- Submit and track room/resource requests
 - [My Registrations](../events/my-registrations.md) -- Manage your event registrations
 - [Volunteer Signup](../serving/volunteer-signup.md) -- How serving assignments work

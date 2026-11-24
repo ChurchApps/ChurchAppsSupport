@@ -26,7 +26,7 @@ Group events can collect RSVPs so leaders know who is coming. On your group's pa
 3. Tap your answer. Your choice highlights, and each button shows a live count of how many people have given that response.
 4. Tap your highlighted answer again to clear it, or tap a different button to change your response.
 
-Your RSVP applies to that specific occurrence — for a weekly meeting, you answer each week's event separately. Once an event has ended, its buttons go away; your answer still shows as a badge next to the event.
+Your RSVP applies to that specific occurrence — for a weekly meeting, you answer each week's event separately. Your current answer also shows as a badge next to the event, and the **Next event** card adds how many are going ("5 going"). Once an event has ended, its buttons go away; the badge stays. A button with no responses yet shows no count.
 
 ## For Group Leaders
 

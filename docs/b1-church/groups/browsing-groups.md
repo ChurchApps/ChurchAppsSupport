@@ -36,7 +36,7 @@ All of the church's public groups are shown together. Use the controls above the
 
 If nothing matches, the page says "No groups match your filters."
 
-Your church can also link to a page for a single group label, such as `/groups/youth`, which lists only the groups with that label.
+Your church can also link to a page for a single group label, such as `/groups/youth`, which lists only the groups with that label under a heading such as "Youth Groups" ("No groups found" if the label matches nothing).
 
 ## Reading Group Cards
 
@@ -60,13 +60,13 @@ If you are looking for a specific type of group, pick it from the **Category** f
 
 The **Groups** screen in the member portal lists the groups you belong to. The heading shows how many groups you are in (and how many join requests are pending).
 
-- **Search your groups** -- Filter your groups by name.
+- **Search your groups** -- Filter your groups by name. While you are searching, every match is listed under **Your groups** ("No results found." when nothing matches).
 - **Your groups** -- The groups you open most often, up to five, each with its meeting time and location. Tap one to open it.
 - **Other Groups** -- The rest of your groups.
 - **Pending Requests** -- Groups you have asked to join that are waiting for a leader. See [Requesting to Join a Group](./join-requests.md).
-- **Upcoming Events** -- Church events that take registrations, each with a **Register** link. See [Registering for Events](../events/registering.md).
+- **Upcoming Events** -- Church events that take registrations, each with its date and time ("(All day)" for all-day events) and a **Register** link. See [Registering for Events](../events/registering.md).
 
-Tap **Find a Group** to browse all of the church's groups. If you aren't in any groups yet, the screen says "No groups yet" with a **Browse groups** button; if you aren't signed in, it asks you to sign in to see your groups, but still lists the church's **Upcoming Events** that take registrations so you can register.
+Tap **Find a Group** at the top to browse all of the church's groups. If you aren't in any groups yet, the screen says "No groups yet" with a **Browse groups** button instead; if you aren't signed in, it asks you to sign in to see your groups (with **Sign In** and **Browse groups** buttons), but still lists the church's **Upcoming Events** that take registrations so you can register. On a computer, **Pending Requests** and **Upcoming Events** sit in a column to the right of your groups.
 
 ## Next Steps
 

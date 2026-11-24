@@ -74,7 +74,7 @@ The data collected through forms can help you:
 - Process payments for events or programs
 
 :::info
-Form members with **Admin** or **View Only** roles can access the **Form Submissions** tab. Make sure the right people on your team have access to the forms they need by managing roles in the **Form Members** tab.
+The **Form Submissions** tab appears for people with **Form Admin** and for form members with **Admin** or **View Only** access to the form. People who only have **Edit Forms** read a person's answers from that person's record instead. Make sure the right people on your team have access to the forms they need by managing roles in the **Form Members** tab -- see [Form Access & Permissions](./form-access.md).
 :::
 
 :::info
@@ -88,5 +88,6 @@ If a **Stand Alone** form is set to create a person record, any submissions matc
 ## Next Steps
 
 - Learn how to build and customize forms in [Creating Forms](./creating-forms.md)
+- Decide who should read submissions with [Form Access & Permissions](./form-access.md)
 - Add people from form submissions to your [people directory](../people/adding-people.md) for ongoing follow-up
 - [Link a form to a group](./creating-forms.md#linking-a-form-to-a-group) so its leaders can read the answers, or [automatically add submitters to the group](./creating-forms.md#automatically-adding-submitters-to-a-group) so a stand-alone sign-up form builds its own roster

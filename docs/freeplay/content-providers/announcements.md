@@ -38,7 +38,7 @@ Once slides have been downloaded, an **Announcements** item appears near the top
 - After the last slide, the loop starts over from the first one
 - If the folder has a single video, it repeats in place
 
-The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Content](./playing-content.md).
+The loop plays from the files saved on the device, so it keeps running without an internet connection. You can use the same remote controls as any other content -- see [Playing Content](./playing-content.md). Press **Back** to stop the loop; FreePlay opens the **Downloads** screen, and the sidebar is one more **Back** away.
 
 ## Updating the Slides
 

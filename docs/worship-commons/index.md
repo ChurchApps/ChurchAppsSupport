@@ -12,35 +12,39 @@ WorshipCommons is a free, open library of worship songs for churches. It holds p
 
 </div>
 
-WorshipCommons is for worship leaders, musicians, and tech volunteers who need songs they can use without extra fees, and for songwriters who want to give their songs to the church. You don't need an account to browse, play, print, or project songs. A free ChurchApps account lets you save songs and share songs of your own.
+WorshipCommons is for worship leaders, musicians, and tech volunteers who need songs they can use without extra fees, and for songwriters who want to give their songs to the church. You don't need an account to browse, play, print, project songs, or build a service plan. A free ChurchApps account lets you save songs, share songs of your own, and propose edits. The site is available in nine languages; use the globe picker at the bottom of any page.
 
 :::info
-What your church may do depends on each song's license. Public-domain hymns are free for every use in the United States (best-effort; other countries may differ). Songs shared under the WorshipCommons License are free for worship, and the writer keeps commercial rights. Open a song's **About & rights** tab to see exactly what it allows. WorshipCommons doesn't replace your CCLI license for the rest of the songs you sing.
+What your church may do depends on each song's license. Public-domain hymns are free for every use in the United States (best-effort; other countries may differ). Songs shared under the WorshipCommons License are free for worship, and the writer keeps commercial rights. Open a song's **About & rights** tab to see exactly what it allows, or read [Licenses and Rights](./licenses-and-rights.md). WorshipCommons doesn't replace your CCLI license for the rest of the songs you sing.
 :::
 
 ## Key Features
 
-- **Search and filters** -- Search by title, first line, tune, theme, scripture, or writer, and filter by key, tempo, language, license, and more. See [Finding Songs](./finding-songs.md).
+- **Search and filters** -- Search by title, first line, tune, theme, scripture, or writer, and filter by theme, confidence, key, meter, tempo, language, license, and more. Browse seasonal collections or shuffle new songs on the **Listen** page. See [Finding Songs](./finding-songs.md).
 - **Chord charts in any key** -- Transpose, set a capo, switch to Nashville numbers, and tap a chord to see its guitar and piano shape. See [The Song Page](./song-page.md).
-- **Hear the song** -- Play a demo recording or a piano preview, slow it down, and practice with a metronome.
-- **Print and download** -- Print a chord chart in your key, or download ChordPro, lyrics, sheet music, and audio packs when a song has them.
+- **Hear the song** -- Play a demo recording or a piano preview, slow it down, hear one vocal part at a time, and practice with a metronome and a pitch pipe.
+- **Print and download** -- Print a chord chart in your key, including large print, or download ChordPro, lyrics, sheet music in any key and part, and composition, audio, and multitrack packs when a song has them.
 - **Lead and project** -- Lead worship from a browser tab with words that follow the music, or open a simple lyrics projector. See [Presenting and Exporting Songs](./presenting-and-exporting.md).
 - **Exports** -- Download slides for FreeShow, OpenLP, ProPresenter, or PowerPoint, or copy a song for OnSong or Planning Center. B1 Admin can add WorshipCommons songs straight to your song library.
-- **Service plans** -- Build a set for Sunday, choose the key and sections for each song, and share one link with the band. See [Service Plans](./service-plans.md).
+- **Service plans** -- Build a set for Sunday, choose the key, capo, and sections for each song, share one link with the band, use stage mode on a tablet, print a booklet, and export the whole set. See [Service Plans](./service-plans.md).
+- **Clear rights** -- Every song names its license, and a use-by-use table says whether you may project, print, stream, arrange, or record it, and whether CCLI needs a report. See [Licenses and Rights](./licenses-and-rights.md).
 - **Share your songs** -- Upload a song you wrote, a translation, or an arrangement, and choose how it's licensed. See [Sharing a Song](./sharing-a-song.md).
-- **Community edits** -- Anyone signed in can propose a fix, and a reviewer decides. See [Proposing Edits and Reporting Songs](./proposing-edits.md).
+- **Community edits** -- Anyone signed in can propose a fix, add a missing file, or transcribe a score, and a reviewer decides. See [Proposing Edits and Reporting Songs](./proposing-edits.md).
 - **Writer pages** -- Every writer gets a page listing their songs, with an optional bio and links. See [Your Account and Writer Page](./your-account.md).
+- **Keyboard control** -- Drive Lead worship, the projector, and stage mode from a keyboard or presentation remote. See [Keyboard Shortcuts](./keyboard-shortcuts.md).
 
 ## Learn More
 
-- [Finding Songs](./finding-songs.md) -- Search, filter, and browse the library
+- [Finding Songs](./finding-songs.md) -- Search, filter, browse collections, and listen to new songs
 - [The Song Page](./song-page.md) -- Chords, keys, playback, practice, printing, and downloads
+- [Licenses and Rights](./licenses-and-rights.md) -- Badges, the Rights panel, CCLI reporting, and attribution
 - [Presenting and Exporting Songs](./presenting-and-exporting.md) -- Lead worship, project lyrics, and export to FreeShow, OpenLP, and more
 - [Service Plans](./service-plans.md) -- Plan a set and share it with your team
-- [Your Account and Writer Page](./your-account.md) -- Sign in, saved songs, My submissions, and your writer profile
+- [Your Account and Writer Page](./your-account.md) -- Sign in, saved songs, My submissions, your writer profile, and site language
 - [Sharing a Song](./sharing-a-song.md) -- Upload a song, translation, or arrangement
-- [Proposing Edits and Reporting Songs](./proposing-edits.md) -- Suggest a change or report a problem
+- [Proposing Edits and Reporting Songs](./proposing-edits.md) -- Suggest a change, transcribe a score, or report a problem
+- [Keyboard Shortcuts](./keyboard-shortcuts.md) -- Every key for the screens you use in a service
 
 :::info
-WorshipCommons is part of the [ChurchApps](https://churchapps.org) suite of free, open-source tools for churches.
+WorshipCommons is part of the [ChurchApps](https://churchapps.org) suite of free, open-source tools for churches. The **Our Mission**, **Licenses**, **Terms**, and **Call for songs** pages on the site explain why the library exists and how it's run.
 :::

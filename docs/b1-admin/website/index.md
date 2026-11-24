@@ -21,6 +21,12 @@ Create and manage all the pages on your church website. The **Pages** table list
 
 Your navigation links are listed in the **Main Navigation** panel beside the Pages table. You can reorder and nest links using drag-and-drop to set the exact hierarchy and order you want visitors to see. See [Managing Pages](./managing-pages.md).
 
+Starting from scratch? **Start From a Template** builds a whole starter site, and the **AI** page type drafts a single page from your description. See [Site Templates and AI Pages](./site-templates.md).
+
+### Page Editor
+
+Pages are built in a drag-and-drop editor from sections and elements -- text, images, buttons, galleries, sermons, calendars, giving forms, and more. The editor previews desktop and mobile, keeps an edit history, can hold changes as a draft until you **Publish**, and checks your page for accessibility problems. See [Using the Page Editor](./page-editor.md), the [Element Reference](./element-reference.md) for every element's settings, and the [Accessibility Checker](./accessibility-checker.md).
+
 ### Blog
 
 Publish news, updates, and devotionals as blog posts at `/blog` on your site, with an RSS feed. See the [Blog](./blog.md) guide.
@@ -49,8 +55,12 @@ Start with [Initial Setup](./initial-setup.md) if you are configuring your websi
 
 - [Initial Setup](./initial-setup.md) -- Get your website up and running for the first time
 - [Managing Pages](./managing-pages.md) -- Learn how to create and organize your pages
+- [Site Templates and AI Pages](./site-templates.md) -- Create a starter site or let AI draft a page
 - [Using the Page Editor](./page-editor.md) -- Build and style your page content with the visual editor
+- [Element Reference](./element-reference.md) -- Every element and each of its settings
+- [Accessibility Checker](./accessibility-checker.md) -- Find and fix accessibility problems before publishing
 - [Reusable Blocks](./blocks.md) -- Build content once and reuse it on many pages
 - [Blog](./blog.md) -- Publish news and devotionals
 - [Appearance](./appearance.md) -- Customize your site's look and feel
+- [Navigation Styles](./navigation-styles.md) -- Color the navigation bar in solid and transparent modes
 - [Files](./files.md) -- Upload and manage media files

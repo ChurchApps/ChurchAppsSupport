@@ -16,6 +16,7 @@ At the end of each year, your donors need a summary of their tax-deductible givi
 
 - Verify that your [funds](funds.md) are correctly marked as **Tax Deductible** -- only donations to tax-deductible funds appear on statements
 - Ensure all donations have been [recorded](recording-donations.md) and any online transactions have been [imported from Stripe](stripe-import.md)
+- You need **View Donation Summaries** to open the page and **View Donations** for the year's gifts to load; changing the statement settings needs **Edit Settings**
 
 </div>
 
@@ -40,9 +41,11 @@ The **Download Options** panel gives you two options for getting statements to y
 
 Under **Individual CSV Files**, click **Download ZIP** (the button shows the number of files) to download a ZIP file containing an individual CSV file for each donor. This is useful if you want to email statements individually or import them into another system.
 
+The ZIP is named `giving_statements_2026.zip`. Inside, each file is named `LastName_FirstName_<person id>_2026_donations.csv` and has one row per fund the donor gave to on each gift, with the columns `amount`, `donationDate`, `fundName`, `method`, `methodDetails`, and `memo`. Internal notes are not included. Anonymous gifts have no donor and are not in the ZIP.
+
 ### Print All Statements
 
-Under **Printable Statements**, click **Print All** (the button shows the number of statements) to open a printable view of every donor's statement for the selected year in your browser. From there, use your browser's print function to send them to a printer. Each statement starts on a new page so they are ready to fold and mail, and the statements are in order by the donor's last name, then first name.
+Under **Printable Statements**, click **Print All** (the button shows the number of statements) to open a printable view of every donor's statement for the selected year in your browser. While it loads you see "Loading statements..."; then click **Print** at the top right (or use your browser's print function) to send them to a printer, or **Close** to go back. Each statement starts on a new page so they are ready to fold and mail, and the statements are in order by the donor's last name, then first name. Once the print dialog closes, the page returns to Giving Statements on its own.
 
 If you have uploaded a **Light Background Logo** under [Website > Appearance](../website/appearance.md), it prints centered at the top of each statement, above the statement title. This applies to **Print All**, a single donor's statement printed from their record, and the statements members print themselves from the **Giving** page of B1.church.
 
@@ -53,6 +56,20 @@ Run your statements early in January while your records are fresh. Double-check 
 :::info
 Giving statements only include donations assigned to funds that have the **Tax Deductible** setting enabled. If a fund is not marked as tax-deductible, its donations will not appear on the statement. You can manage this setting on the [Funds](funds.md) page.
 :::
+
+## What's on a Statement {#whats-on-a-statement}
+
+Every statement -- from **Print All**, a single donor's **Statement** on their [person record](person-giving.md#the-giving-view), or the one a member prints in B1.church -- uses the same layout:
+
+1. Your church logo (if uploaded) and the title **2026 Annual Giving Statement**, the period line ("Period: Jan 1 - Dec 31, 2026", or the exact dates for a non-January statement year), and the date and time it was issued.
+2. **Donor Information** -- the donor's name, address, mobile phone, email, and **Donor Number** when they have one -- beside **Organization**, your church's name and address (or the **Organization Address** and **Tax ID** from the statement settings).
+3. For the Canada, Australia, and New Zealand formats, the official receipt block.
+4. **Statement Summary** -- the **Total Contributions** figure and a **Fund Breakdown** table of the total given to each fund.
+5. **Contribution Details** -- every gift with its **Date**, **Method**, **Fund**, **Memo** (only when at least one gift has one), and **Amount**, ending in a **Total Contributions** row.
+6. **Pledge Progress** -- only for donors with a [campaign](campaigns.md) pledge or gifts to a campaign fund: each **Campaign** with the amount **Pledged**, the amount **Given**, and the pledge **Status**.
+7. A **Note** that the statement summarizes contributions received during the year, the tax disclaimer, and your **Giving Note** if you have set one.
+
+A gift that went only to non-deductible funds is left off entirely. A gift split between a deductible and a non-deductible fund is listed with both lines, and on the country formats the non-deductible part is reported separately as "Gifts not eligible for a tax receipt".
 
 ## Statement Settings {#statement-settings}
 
@@ -112,4 +129,4 @@ These settings only change what members see. You can still print any year from t
 
 ## Next Steps
 
-If you need to review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md).
+If you need to review donation details before generating statements, visit the [Donation Reports](donation-reports.md) page or check individual [batches](batches.md). To print or reprint one donor's statement, open their record and use **Statement** in the giving view -- see [Giving on a Person's Record](person-giving.md). All of the statement settings are also listed in the [Giving Settings Reference](giving-settings.md#statement-fields).

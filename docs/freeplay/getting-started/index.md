@@ -67,10 +67,28 @@ The sidebar lists, from top to bottom:
 - **Today's Plan** -- Shown when the TV is paired to a plan. See [Plan Mode](../plan-mode/index.md)
 - **Announcements** -- Shown once you have chosen an announcements folder. See [Announcements](../content-providers/announcements.md)
 - **Browse** -- Each connected content provider you can browse. See [Browsing and Downloading Content](../content-providers/browsing-content.md)
-- **Settings** -- At the bottom of the sidebar. Opens **Pair to a calendar** (pair this TV to a calendar or plan -- see [Choosing a Pairing Mode](./pairing-modes.md)), **Downloads** (play or delete content saved on this device), and **Providers** (connect content providers and choose the announcements folder)
+- **Settings** -- At the bottom of the sidebar. See [The Settings Screen](#the-settings-screen) below
+
+Only the items that apply to this TV are shown. A TV with no plan, no announcements folder, and no connected providers shows just the logo and **Settings**. A provider whose **Browse Library** switch is turned off in its [Provider Settings](../content-providers/connecting-providers.md#provider-settings) is left out of the **Browse** list.
+
+## The Settings Screen
+
+Select **Settings** at the bottom of the sidebar to open it. It has three rows:
+
+- **Pair to a calendar** -- *Play what's scheduled for this screen at freeplay.church, with no one pressing Start.* The right side of the row reads **Not paired** until the TV is paired to a calendar, then shows the name of the screen group it follows. Select it to show a pairing code, or, once paired, to go back to the schedule, unpair, or pair to a different calendar. See [Choosing a Pairing Mode](./pairing-modes.md)
+- **Downloads** -- *Play or delete content saved on this device.* See [Downloads and Storage](./downloads-and-storage.md)
+- **Providers** -- *Connect content providers and choose the announcements folder.* Opens the **Content Providers** screen. See [Connecting to Providers](../content-providers/connecting-providers.md)
+
+Press **Back** on the Settings screen to open the sidebar.
+
+:::info
+The **Content Providers** screen shows the FreePlay version at its top right, for example **v1.5.1**. Have it handy when you contact support. See [Troubleshooting FreePlay](./troubleshooting.md#finding-your-freeplay-version).
+:::
 
 ## What's Next
 
 - **[Choosing a Pairing Mode](./pairing-modes.md)** - Learn about the different ways to connect your TV
+- **[Downloads and Storage](./downloads-and-storage.md)** - Manage what's saved on the TV and how FreePlay frees space
+- **[Troubleshooting FreePlay](./troubleshooting.md)** - What the messages on the TV mean and how to fix them
 - **[Scheduled Mode](../scheduled-mode/index.md)** - Put your TVs on a calendar with FreePlay Admin
 - **[Content Providers](../content-providers/index.md)** - Connect to Lessons.church, Bible Project, and more

@@ -41,6 +41,14 @@ Run this at the beginning of each month so you have time to prepare cards or ann
 Anniversary data comes from the anniversary field on each person's profile. If someone is missing, their profile just needs the date added. See [Adding People](../people/adding-people.md).
 :::
 
+## The Anniversaries by Month Report {#the-anniversaries-by-month-report}
+
+For a plain printable list without setting up columns, run the built-in **Anniversaries by Month** report instead. It has no menu entry, so go straight to **admin.b1.church/reports/anniversaries** (bookmark it); you need permission to view People.
+
+1. In the **Filter Report** panel, choose the **Month**, and optionally a **Group** to limit the list to the members of one group.
+2. Click **Run Report**.
+3. The table lists each person's **Anniversary** and **Name**. Use the print icon to print it.
+
 ## Also See
 
 Looking for birthdays at the same time? See [Birthday & Anniversary Lists](./birthday-report.md) to pull both in one search.

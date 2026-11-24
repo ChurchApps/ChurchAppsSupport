@@ -34,6 +34,10 @@ View a beautifully formatted Bible verse image that changes every day. The image
 
 Read news, updates, and devotionals your church publishes, filter them by category or tag, and follow new posts by RSS.
 
+### News
+
+When your church turns it on, the latest blog posts appear as **News** cards at the top of the member portal's Home screen, with an **All news** list and each post readable inside the app. See [News](./news.md).
+
 ### Lessons
 
 View lessons scheduled in your church's plans. If you are a teacher or leader, open the plan and use the **Teach** button to see the lesson in a full-screen, easy-to-navigate [Teacher View](./teacher-view.md) that's perfect for teaching or presenting.
@@ -47,7 +51,7 @@ The embedded **Lessons** tab has been deprecated. Curriculum playback now lives 
 Content pages are available through your church's site navigation. Your church administrator decides which content features are enabled and how they appear in the menu. If you do not see a particular content feature listed above, it may not be configured for your church.
 
 :::info
-[Sermons](./sermons.md), [Live Streaming](./live-streaming.md), the [Bible](./bible.md), [Verse of the Day](./verse-of-the-day.md), and the [Blog](./blog.md) are available publicly. Lessons and Teacher View require you to be [logged in](../getting-started/logging-in.md).
+[Sermons](./sermons.md), [Live Streaming](./live-streaming.md), the [Bible](./bible.md), [Verse of the Day](./verse-of-the-day.md), the [Blog](./blog.md), and [News](./news.md) are available publicly. Lessons and Teacher View require you to be [logged in](../getting-started/logging-in.md).
 :::
 
 ## Next Steps
@@ -57,5 +61,6 @@ Content pages are available through your church's site navigation. Your church a
 - [Bible](./bible.md) -- Read Scripture in the built-in reader
 - [Verse of the Day](./verse-of-the-day.md) -- See today's daily verse
 - [Blog](./blog.md) -- Read and follow your church's blog posts
+- [News](./news.md) -- The same posts inside the member portal
 - [Teacher View](./teacher-view.md) -- Use the expanded teacher interface for lesson content
 - [FreePlay](/docs/freeplay/) -- Play lessons on classroom TVs (replaces the deprecated in-app Lessons tab)

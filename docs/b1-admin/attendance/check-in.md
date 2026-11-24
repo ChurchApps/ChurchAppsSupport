@@ -17,7 +17,7 @@ B1 Admin supports self check-in at services through the companion **B1 Checkin**
 
 - Your campuses, service times, and groups must be configured in [Attendance Setup](setup.md).
 - You need [people in your database](../people/adding-people.md) with [households](../people/adding-people.md#managing-households) set up so families can check in together.
-- You'll need a tablet and optionally a Brother label printer (see [hardware recommendations](#recommended-hardware) below).
+- You'll need a tablet and optionally a Brother or Zebra label printer (see [hardware recommendations](#recommended-hardware) below).
 
 </div>
 
@@ -52,16 +52,16 @@ If your church has multiple campuses, you'll need to repeat the setup for each c
 - **Large Screen:** Samsung Galaxy Tab A8 10.5"
 - **Budget:** Amazon Fire HD 10
 
-**Printers** — check-ins work with Brother label printers for printing name tags:
+**Printers** — check-ins print name tags on Brother QL and Zebra label printers connected to the same Wi-Fi network as the tablet. Recommended Brother models:
 
-- **Best:** Brother QL-1110NWB (supports multiple tablets via Bluetooth and WiFi)
+- **Best:** Brother QL-1110NWB (supports multiple tablets via WiFi)
 - **Good:** Brother QL-810W (supports multiple tablets via WiFi)
 - **Budget:** Brother QL-1100 (WiFi only)
 
 **Labels:** Brother DK-1201 (1-1/7" x 3-1/2")
 
 :::warning
-Only Brother label printers are compatible with the B1 Checkin app. Other printer brands will not work for printing name tags.
+The B1 Checkin app finds printers over Wi-Fi only; Bluetooth and USB connections are not used, and brands other than Brother QL and Zebra will not print name tags. See [Printer Setup](../../b1-checkin/getting-started/printer-setup.md) for discovery, test prints and the diagnostics log, and [Kiosk Display](../../b1-checkin/getting-started/kiosk-display.md) for the logo, colors, idle screen and language the kiosk shows.
 :::
 
 :::info

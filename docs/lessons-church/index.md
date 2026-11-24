@@ -15,11 +15,12 @@ Lessons.church is a completely free curriculum platform for churches. There are 
 
 With Lessons.church, your church can:
 
-- **Browse content** -- Explore a growing library of programs and studies from multiple providers, organized by age group and topic.
-- **Set up classrooms** -- Create classrooms that match your ministry structure (for example, preschool, elementary, youth, or adult).
-- **Schedule lessons** -- Assign specific lessons to your classrooms on the dates you need them.
-- **Customize for your needs** -- Adjust lesson content to fit your church's teaching style and preferences.
-- **Present to classes** -- Use the built-in presenter mode to walk through lessons step by step during class time.
+- **Browse content** -- Explore a growing library of programs and studies from multiple providers, organized by age group and topic, and search it by keyword.
+- **Set up classrooms** -- Create classrooms that match your ministry structure (for example, preschool, elementary, youth, or adult) and link them to B1 teams and groups.
+- **Schedule lessons** -- Assign specific lessons to your classrooms on the dates you need them, from the library or from an external provider.
+- **Customize for your needs** -- Remove or reorder sections, roles, and actions for one classroom or all of them.
+- **Present to classes** -- Play a lesson's videos and slides full screen with **Start Lesson**, follow the script in the B1 app, or print it.
+- **Publish curriculum** -- Content providers manage programs, studies, lessons, venues, files, add-ons, and year plans in the admin area, or publish through the Open Lesson Format.
 
 ## How Content Is Organized
 
@@ -34,18 +35,19 @@ Lessons.church organizes curriculum in a clear hierarchy:
 
 Lessons.church works with other ChurchApps tools to help you deliver content:
 
-- **B1.church** -- Volunteers and parents can access upcoming and recent lessons through the B1 app.
+- **B1.church** -- Volunteers open their classroom's lesson from the **Lessons** tab of the B1 app, and parents see take-home content for linked groups. Churches running serving plans schedule lessons in B1 Admin.
 - **FreeShow** -- Use FreeShow presentation software to display lesson content on screen.
 - **[FreePlay](https://freeplay.church)** -- Display lessons directly on a TV using the FreePlay app for Android TV, Fire TV, and Apple TV.
+- **Digital signage** -- Each classroom has a playlist feed URL for signage software such as SignPresenter.
 
 ## Documentation Sections
 
 - [Getting Started](./getting-started/index.md) -- Create your account and learn the basics
 - [Browsing Content](./browsing/index.md) -- Find programs, studies, and lessons
-- [Classrooms](./classrooms/index.md) -- Set up classrooms and schedule lessons
+- [Classrooms](./classrooms/index.md) -- Set up classrooms, schedule lessons, and share them
 - [Customization](./customization/index.md) -- Tailor lessons to your church
-- [Presenting](./presenting/index.md) -- Deliver lessons in class using presenter mode
-- [Administration](./admin/index.md) -- Manage programs, studies, and lessons as an admin
+- [Presenting](./presenting/index.md) -- Deliver lessons in class with Presenter Mode, the B1 app, and printing
+- [Administration](./admin/index.md) -- Manage programs, studies, lessons, files, add-ons, and year plans as a content provider
 - [Statement of Faith](./statement-of-faith.md) -- Core beliefs and curriculum guidelines
 
-For support, email [support@churchapps.org](mailto:support@churchapps.org).
+For support, email [support@churchapps.org](mailto:support@churchapps.org), or see the FAQ at [lessons.church/faq](https://lessons.church/faq).

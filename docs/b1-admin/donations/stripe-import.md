@@ -35,8 +35,8 @@ The import process uses a two-step workflow: first you preview what would be imp
 The preview lists each Stripe event with its **Event ID**, **Type**, **Amount**, **Date**, and a **Status**:
 
 - **New** -- this transaction has not been imported yet and will be included if you proceed.
-- **Already Imported** -- this transaction already exists in B1 Admin and will be skipped.
-- **Skipped** -- this transaction was excluded for another reason (e.g., a refund or failed charge).
+- **Already Imported** -- this transaction already exists in B1 Admin and will be skipped. B1 matches in three ways: the Stripe event was already processed, the charge's transaction ID is on a gift (this is how bank gifts that settle days later are recognized; the **Notes** column says "Matched existing donation by transaction id"), or a gift with the same amount, date, and donor already exists ("Matched existing donation by amount/date/person").
+- **Skipped** -- a charge that belongs to a recurring gift. Stripe reports those twice, once as a charge and once as a paid invoice; B1 records the invoice, so the charge is skipped with the note "Subscription event - handled by invoice.paid". Refunds and failed charges are not listed at all.
 
 A summary at the top shows the **Total** number of events and how many are **New**, **Already Imported**, and **Skipped**. If any event could not be read, an **Errors** count appears and the event's row shows the message in the **Notes** column.
 
@@ -48,7 +48,9 @@ The preview step does not create any records. It is a read-only check so you can
 
 1. Review the preview results and the summary totals.
 2. Click **Import Missing** to import all transactions marked as **New**.
-3. After the import completes, the list becomes **Import Results**: each transaction that was added shows **Imported**, and the summary adds an **Imported** count.
+3. After the import completes, the list becomes **Import Results**: each transaction that was added shows **Imported**, and the summary adds an **Imported** count. A transaction that could not be saved shows **Error** with the reason in **Notes**; the rest still import.
+
+Imported gifts are recorded under the person linked to the Stripe customer (or as anonymous when there is none), in the current batch, and without an **Entered by** name.
 
 ## Tips for Using Stripe Import
 

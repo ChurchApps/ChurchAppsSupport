@@ -37,15 +37,38 @@ The **[Giving Statements](giving-statements.md)** page generates year-end giving
 
 ### Failed Gifts
 
-**Failed Gifts** lists recurring online gifts the payment gateway could not collect, with the donor, amount, date and the gateway's message, and a **Retry** button. See [Failed Recurring Gifts](online-giving-setup.md#failed-recurring-gifts).
+**[Failed Gifts](failed-gifts.md)** lists recurring online gifts the payment gateway could not collect, with the donor, amount, date and the gateway's message, and a **Retry** button. B1 reminds the donor by email while the gift is unpaid.
 
 ### Stripe Import
 
 If you accept online donations through Stripe, the **[Stripe Import](stripe-import.md)** tool lets you pull those transactions into B1 Admin so everything is in one system.
 
+## Giving on a Person's Record
+
+Outside the Donations section, every person record in **People** has a **Donations** card with this year's giving and a full giving view behind it: every gift on file, a printable **Statement** for any year, a **CSV** export, and tools to give on the donor's behalf and manage their recurring gifts and saved payment methods. See [Giving on a Person's Record](person-giving.md).
+
 ## Online Giving
 
-B1 Admin integrates with **Stripe**, **Kingdom Funding** and **Paystack** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started.
+B1 Admin integrates with **Stripe**, **Kingdom Funding** and **Paystack** for accepting online donations. Once configured, members can give through your B1.church site and those donations automatically appear in your records. See [Online Giving Setup](online-giving-setup.md) to get started, and the [Giving Settings Reference](giving-settings.md) for what every field under **Settings > Giving** does.
+
+## Who Can See What {#who-can-see-what}
+
+Access to the Donations section is controlled by the **Donations** permissions in [Roles & Permissions](../settings/roles-permissions.md):
+
+| Page or action | Permission needed |
+|----------------|-------------------|
+| **Summary** dashboard, **Funds** list, **Campaigns**, **Giving Statements** | **View Donation Summaries** |
+| **Lapsed Givers** view, the gifts on the Giving Statements page | **View Donations** |
+| **Batches** list | **View Donation Summaries** or **Enter Donations** |
+| Open a batch, a fund's detail page, a fund's **Giving Link**, print a receipt | **View Donations** |
+| Add batches and enter gifts into open batches | **Enter Donations** (or **Edit Donations**) |
+| Close or reopen a batch, delete a batch, edit funds and campaigns, add pledges, refund, **Log a gift**, give on a donor's behalf | **Edit Donations** |
+| **Failed Gifts** page | **View Donations**; **Retry** needs **Edit Donations** |
+| **Stripe Import** | **Edit Donations**, and the church's provider must be Stripe |
+| Giving on a person record | **View Donations**; **Log a gift** needs **Edit Donations** |
+| **Settings > Giving** and **Giving privacy** | **Edit Settings** |
+
+Someone with **Enter Donations** but no **View Donation Summaries** sees only **Batches** under **Donations** in the menu.
 
 :::tip
 If you are new to donations in B1 Admin, start by [setting up your funds](funds.md), then [create your first batch](batches.md) and [record donations](recording-donations.md) into it.
@@ -54,9 +77,14 @@ If you are new to donations in B1 Admin, start by [setting up your funds](funds.
 ## Next Steps
 
 - [Recording Donations](recording-donations.md) -- enter donations into a batch
+- [Giving on a Person's Record](person-giving.md) -- one donor's history, statement, recurring gifts and payment methods
 - [Donation Batches](batches.md) -- organize donations into groups
 - [Managing Funds](funds.md) -- set up and manage giving categories
+- [Campaigns & Pledges](campaigns.md) -- track a fundraising goal and member pledges
 - [Giving Statements](giving-statements.md) -- generate tax statements for donors
 - [Online Giving Setup](online-giving-setup.md) -- connect Stripe, Kingdom Funding or Paystack
+- [Giving Settings Reference](giving-settings.md) -- every field under Settings > Giving
+- [Failed Recurring Gifts](failed-gifts.md) -- retry declined recurring charges and follow up with donors
+- [Multi-Currency Support](multi-currency.md) -- gifts and totals in more than one currency
 - [Stripe Import](stripe-import.md) -- import online transactions
 - [Donation Reports](donation-reports.md) -- view and filter donation summaries

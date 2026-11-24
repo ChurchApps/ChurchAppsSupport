@@ -28,7 +28,7 @@ Build custom forms to collect information from your congregation. You can create
 1. Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left of B1 Admin), expand **People**, and click **Forms**.
 2. Click **Add Form**.
 3. Enter a **name** for your form.
-4. Choose the form type from the **Associate With** dropdown:
+4. Choose the form type from the **Associate With** dropdown (the helper text reads "People forms are filled in from a person's record. Choose Stand Alone to get a shareable link."):
    - **People** — Associates submissions with [people records](../people/adding-people.md) in your database. People forms are filled in from a person's record, so they don't get a shareable link.
    - **Stand Alone** — Creates an independent form with its own public URL, ideal for external registrations. Only Stand Alone forms offer a [header photo](#adding-a-header-photo), a [QR code](#sharing-a-form-with-a-qr-code), a [linked group](#linking-a-form-to-a-group), and **Create a person record from submissions**.
 5. For a Stand Alone form, you can fill in the rest of its [properties](#configuring-form-properties) now or later.
@@ -38,7 +38,7 @@ Your new form will appear in the list. Click on it to start adding questions.
 
 ## Printing a Blank Form {#printing-a-blank-form}
 
-Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand; required questions are marked with an asterisk. The top of the page shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, then the form name. There are no other print options -- print the whole form or nothing.
+Need a paper copy to hand out -- for a visitor card at the welcome desk, or a form someone without internet access can fill in by hand? Click **Print** next to a form on the main Forms list to open a **Print Form** preview, then click **Print**. Blank fields print with an underline or checkbox for each question so people can fill them in by hand: a box for **Text Area** questions, **Yes** and **No** checkboxes for **Yes/No** questions, a round marker per choice for **Multiple Choice**, and a square per choice for **Checkbox**. Required questions are marked with an asterisk, and **Payment** questions are left off the paper copy since they can only be paid online. The top of the page shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, then the form name. There are no other print options -- print the whole form or nothing.
 
 ## Sharing a Form with a QR Code {#sharing-a-form-with-a-qr-code}
 
@@ -94,7 +94,7 @@ Stand Alone forms have a **Form Members** tab for giving people access to just t
    - **View Only** — Can view submissions but cannot edit the form.
 4. Turn on **Email Notification** for anyone who should get an email each time the form is submitted.
 
-To take someone off the form, click **Remove** on their row and confirm.
+To take someone off the form, click **Remove** on their row and confirm. For how form members compare with the church-wide **Form Admin** and **Edit Forms** permissions, and what each can see, read [Form Access & Permissions](./form-access.md).
 
 ## Linking a Form to a Group {#linking-a-form-to-a-group}
 
@@ -145,8 +145,8 @@ The **Edit Form** settings are:
 - **Form Name** -- The name shown in B1 Admin and at the top of the form.
 - **Description** *(Stand Alone)* -- Text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out. It supports Markdown, so you can use `**bold**`, `*italic*`, lists, and links. The formatting shows on the public form page, on the form's page in B1 Admin, and on the printed form. Plain text with line breaks looks the same as before.
 - **Header Photo** *(Stand Alone)* -- See [Adding a Header Photo](#adding-a-header-photo).
-- **Form Access** *(Stand Alone)* -- **Public** lets anyone with the link fill in the form; **Restricted** requires people to sign in to your church's site before they can open it.
-- **Set Form Availability Timeframe** *(Stand Alone)* -- Choose **Yes** and set an **Availability Start Date** and **Availability End Date** to accept submissions only between those dates. Outside them, the form is closed.
+- **Form Access** *(Stand Alone)* -- **Public** lets anyone with the link fill in the form; **Restricted** requires people to sign in to your church's site before they can open it. See [Who Can Fill In a Form](./form-access.md#who-can-fill-in-a-form).
+- **Set Form Availability Timeframe** *(Stand Alone)* -- Choose **Yes** and set an **Availability Start Date** and **Availability End Date** to accept submissions only between those dates (the end date counts in full). Outside them, the form is closed, though people who manage the form can still submit it.
 - **Thank You Message** -- What people see after they submit (see below).
 - **Display Mode** -- **Standard** shows every question on one page; **Conversational (one question at a time)** steps through the questions one by one.
 - **Create a person record from submissions** *(Stand Alone)*, **Linked group**, and the follow-up email fields -- See [Linking a Form to a Group](#linking-a-form-to-a-group) and [Sending a Follow-up Email](#sending-a-follow-up-email).
@@ -157,7 +157,7 @@ Click **Save** to keep your changes. To remove a form permanently, click **Delet
 
 Stand Alone forms can show a **Header Photo** across the top of the form. In the form's details, click the photo box or **Add Photo**, then pick or upload an image (it is cropped to a 16:9 shape). Click **Save**. The photo appears under the form's name, above the description, on the form's public URL page and wherever the form is embedded with the website **Form** element. Use **Change Photo** to replace it or **Remove** to take it off.
 
-Use the **Thank You Message** field to set what people see after they submit the form, including on the form's public URL page. If you leave it blank, they see "Thank you for submitting the form!"
+Use the **Thank You Message** field to set what people see after they submit the form, including on the form's public URL page. If you leave it blank, they see "Thank you for submitting the form!" For what members see when they open a Public or Restricted form, and where their past submissions appear, see [Filling Out Forms](../../b1-church/getting-started/filling-out-forms.md) and [My Forms](../../b1-church/getting-started/my-forms.md).
 
 :::tip
 Stand Alone forms are great for event registrations. Share the public URL via email, social media, or embed the form directly on your church website.

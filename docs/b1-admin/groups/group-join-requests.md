@@ -48,7 +48,7 @@ Leaders can also approve or decline requests on B1.church, without opening B1 Ad
 Administrators with group management permissions can view pending requests across all groups:
 
 1. In the Jump menu, choose **People > Groups**
-2. Click the **pending requests** button in the page header (for example, "3 pending requests"). It only appears when there are requests waiting.
+2. Click the **pending requests** button in the page header (for example, "3 pending requests"). It only appears for people with **Edit Group Members**, and only when there are requests waiting. You can also go straight to **/groups/pending**.
 3. The **Pending Join Requests** page lists every pending request church-wide, with the group each person asked to join next to their name. Click **Groups** at the top of the page to go back. When nothing is waiting, the page shows **No pending requests.**
 
 ## Reviewing a Join Request

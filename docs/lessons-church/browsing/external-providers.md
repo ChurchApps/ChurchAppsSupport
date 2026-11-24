@@ -45,7 +45,8 @@ Once a provider is added, its programs, studies, and lessons are available when 
 
 1. When you [add a lesson to a classroom's schedule](../classrooms/scheduling-lessons.md), choose the provider under **Provider**.
 2. Pick the **Program**, **Study**, **Lesson**, and **Venue** the same way you would for a Lessons.church lesson.
-3. In the classroom's schedule, click **View Lesson** under a scheduled external lesson to open it. It uses the same layout as built-in lessons -- sections, roles, actions, videos, and downloadable materials.
+3. In the classroom's schedule, click **View Lesson** under a scheduled external lesson to open it. It uses the same layout as built-in lessons -- **Start Lesson**, the venue sidebar, sections, roles, actions, videos, and downloads -- at an address beginning with `lessons.church/external/`. From there you can click the breadcrumbs to browse the provider's study and program pages.
+4. Volunteers linked to the classroom open the same lesson from the B1 app, and the classroom's public page lists it like any other lesson.
 
 :::note
 Lessons from external providers can't be [customized](../customization/customizing-lessons.md). Only Lessons.church lessons show the **Customize** link.

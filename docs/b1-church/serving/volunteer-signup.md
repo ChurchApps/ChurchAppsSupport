@@ -25,9 +25,11 @@ Browse available volunteer positions and sign yourself up for upcoming services 
 1. Navigate to the **Volunteer Opportunities** page (`/volunteer`) on your church's B1.church website. In the member portal, tap **Sign up to serve** on the **Plans** screen to open the **Volunteer** screen instead.
 2. You will see a list of upcoming service plans that have open volunteer positions. If your church shows only the next week of each plan type, later weeks appear once the current one has passed.
 3. Each plan shows the **plan name**, **service date**, and **service times**, how many spots are open (or **Full**), and a bar of how many positions are filled. The service date is the plan's actual calendar date, no matter what time zone you are viewing from. On the website, each open position is listed with how many spots it has open; in the member portal, tap **Open spots** to hide plans that are already full.
-4. Click **View & Sign Up** on the website (or tap the plan in the member portal) to see its positions.
+4. Click **View & Sign Up** on the website (the button is only shown while the plan still has open spots) or tap the plan in the member portal to see its positions.
 
-Within a plan, positions are grouped by category (for example, "Band", "Hospitality", "Kids Ministry") and then listed by name. Each position shows:
+In the member portal, the **Volunteer** screen is headed "One-time ways to help at" your church's name, and each plan lists the names of its open positions. Use the **All** / **Open spots** pills to show or hide plans that are already full. If there is nothing to sign up for, it says "There are no volunteer opportunities available right now. Check back soon!" (or "Every opportunity is full right now." when the filter hides everything).
+
+Within a plan, any notes the plan's creator wrote appear first. Positions are grouped by category (for example, "Band", "Hospitality", "Kids Ministry"; positions without one are listed under **General**) and then listed by name. Each position shows:
 
 - **Position name** -- The role you would fill (e.g., "Drummer", "Greeter", "Coffee Server").
 - **Description** -- Details about the role, if provided by the administrator.
@@ -41,17 +43,17 @@ When you open a plan from **Sign up to serve** in the member portal, B1 checks i
 - If you are already serving that day, open positions show a **Serving that day** badge, and a note at the top says "You're already serving that day" along with the position you have.
 - If the date falls in one of your [blockout dates](../plans/viewing-plans.md#the-plans-page), open positions show a **Blocked out** badge, and a note says "This date is in your blockout dates."
 
-These flags are only a heads-up. You can still sign up if you want to.
+These flags are only a heads-up. You can still sign up if you want to. They aren't shown on positions you have already taken or that are full, and an assignment you declined doesn't count as serving that day.
 
 ## Signing Up
 
 1. Find a position you want to volunteer for.
 2. Click the **Sign Up** button next to the position.
-3. A confirmation message appears: "You're signed up! Thank you for volunteering." (in the member portal: "You've been signed up!").
+3. The button reads **Signing Up...** while it saves, then a confirmation message appears: "You're signed up! Thank you for volunteering." (in the member portal: "You've been signed up!"). If someone took the last spot first, you'll see "This position is full." ("This position is now full." on the website) instead.
 4. The position now shows a green **You're signed up** tag (**Signed up** in the member portal) and a **Remove** button.
 
 :::info
-You must be logged in to sign up. If you are not logged in, the page shows "Log in to sign up for a position." with a link to log in, and the **Sign Up** buttons are disabled.
+You must be logged in to sign up. If you are not logged in, the website shows "Log in to sign up for a position." with a link to log in, the member portal shows "Sign in to sign up for a position.", and the **Sign Up** buttons are disabled.
 :::
 
 ## Removing a Signup

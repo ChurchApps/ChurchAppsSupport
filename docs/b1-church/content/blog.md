@@ -33,11 +33,11 @@ To narrow the listing to one topic:
 - **Category** -- click a category chip above the post list, the category label on a post in the list, or the category above a post's title. Click the highlighted chip again to show every post.
 - **Tag** -- click a tag chip at the bottom of a post.
 
-The filtered listing is headed with the category or tag name. Click **All posts** under the heading to clear the filter.
+The filtered listing is headed with the category or tag name (with a small **Category** or **Tag** label above it). Click **All posts** under the heading to clear the filter. A post with no category shows **Blog** above its title instead, which takes you back to the full list.
 
 ## Related Posts
 
-At the end of a post that has a category, a **More in** *category* section suggests up to three other posts from the same category.
+At the end of a post that has a category, a **More in** *category* section suggests up to three other posts from the same category, newest first. Your church may also add its own footer below every post, such as a newsletter signup. In the member portal, the same posts appear as [News](./news.md).
 
 ## Subscribing via RSS
 

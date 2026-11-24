@@ -42,7 +42,7 @@ The key is what lets ChatGPT into *your* church's B1 — think of it like a pass
 
 1. Log in to [B1 Admin](https://admin.b1.church) and go to [Settings → Developer](https://admin.b1.church/settings/developer).
 2. On the **API Keys** tab, click **New API Key** and name it `ChatGPT`.
-3. **Scopes:** check what ChatGPT may do. Each area has a **read** box (look only) and a **write** box (make changes). Not sure? Check just the **read** boxes to start.
+3. **Scopes:** check what ChatGPT may do. Most areas have a **read** box (look only) and a **write** box (make changes); forms only has **forms:write**. Not sure? Check just the **read** boxes to start.
 4. Click **Save**, then **Copy** the key (it starts with `cak_`). It's only shown once.
 
 ---

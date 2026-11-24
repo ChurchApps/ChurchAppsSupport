@@ -192,3 +192,5 @@ Once the transfer is complete, take a few minutes to verify your data:
 4. Review any imported groups and giving records.
 
 If you notice issues, you can edit individual profiles from the People page. You can also run the transfer tool again to [export your data](exporting-data.md) as a backup.
+
+If the import itself went wrong -- the wrong file, a mis-mapped column, people who came in twice -- you can undo the whole import within 30 days. Each import into the **B1 Database** is recorded as a batch named *Import from `<source>` `<date>`* under **Settings > Batches** in B1 Admin; click **Undo** on it to remove everything the import created, then fix your file and run the import again. Records anyone has edited since the import are left in place. See [Batches](../settings/batches.md).

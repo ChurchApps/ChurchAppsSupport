@@ -30,6 +30,8 @@ Roles let you control what different users can access within your ChurchApps acc
 2. Click **Roles**.
 3. The Roles page displays all currently defined roles for your church. The **Members** column shows how many users are in each role, and the **(Everyone)** row shows **All users**.
 
+The Roles pages need the **View Roles and Users** permission; changing anything needs **Edit Roles and Users** (both in the **People and Groups** section). Someone with **View Roles and Users** but not **Edit Church Settings** still sees **Settings** in the Jump menu, but it opens straight to this Roles page. The **Add role** button and the **(Everyone)** row appear only for people who can edit roles, and the **Edit** link on a role's row also needs permission to view people.
+
 ## Creating a Role
 
 Click **Add role** at the top of the Roles page. The menu offers:
@@ -78,12 +80,32 @@ Check or uncheck a permission to grant or remove it for the role. Each change sa
 The **Donations** section has these permissions:
 
 - **View Donation Summaries** -- see the Donations section, including the Summary, Batches, Funds, Campaigns, and Giving Statements pages.
-- **View Donations** -- see individual donations, such as the gifts inside a batch.
-- **Edit Donations** -- full control: add, edit, and delete donations and batches, and [close and reopen batches](../donations/batches.md#closing-and-reopening-a-batch).
+- **View Donations** -- see individual donations, such as the gifts inside a batch, and the [Failed Gifts](../donations/failed-gifts.md) page.
+- **Edit Donations** -- full control: add, edit, and delete donations and batches, [close and reopen batches](../donations/batches.md#closing-and-reopening-a-batch), retry failed gifts, and run [Stripe Import](../donations/stripe-import.md).
 - **Enter Donations** -- add batches and enter, edit, or delete donations, but only in batches that are still open. People with only this permission cannot delete batches, close or reopen them, or change gifts that came in through online giving.
 - **Edit Settings** -- manage donation settings.
 
-Someone with **Enter Donations** but not **View Donation Summaries** sees only the **Batches** page under **Donations**. Give a counting team role both **Enter Donations** and **View Donations** so they can open a batch and see the gifts they entered. See [Who Can Change a Batch](../donations/batches.md#who-can-change-a-batch) for details.
+Someone with **Enter Donations** but not **View Donation Summaries** sees only the **Batches** page under **Donations**. Give a counting team role both **Enter Donations** and **View Donations** so they can open a batch and see the gifts they entered. See [Who Can Change a Batch](../donations/batches.md#who-can-change-a-batch) for details, and [Who Can See What](../donations/index.md#who-can-see-what) for every Donations page.
+
+### Content Permissions
+
+The **Content** section covers the website, sermons, calendars, and registrations:
+
+- **Edit Content** -- edit website pages, blocks and appearance, calendars and events, the member portal navigation, and push notifications. Most Calendars and Website pages need this permission.
+- **Edit Services** -- manage live stream times and stream settings under Sermons. This is a different permission from the **Edit Services** in the **Attendance** section, which controls attendance setup (campuses, services and service times); check the section heading when you grant it.
+- **View Registrations** and **Edit Registrations** -- read the roster of an event's sign-ups, or also record payments, refunds and cancellations. See [Managing Registrations](../calendars/managing-registrations.md).
+- **Resolve Calendar Conflicts & Approvals** -- approve or reject room, resource and event requests on the [Approvals](../calendars/approvals.md) page.
+- **Edit Church Settings** -- opens the Settings page, including campuses, custom fields, and [Batches](./batches.md).
+
+### Where Each Area's Permissions Are Explained
+
+Several sections of this site list exactly which buttons each permission unlocks:
+
+- [The Group Page -- Who Can Do What](../groups/group-page.md#who-can-do-what)
+- [Form Access & Permissions](../forms/form-access.md)
+- [Attendance -- Who Sees What](../attendance/index.md#who-sees-what)
+- [Donations -- Who Can See What](../donations/index.md#who-can-see-what)
+- [Ministries, Teams, and Plan Types](../serving/ministries-and-teams.md) for Serving, and the view/edit/admin tiers on [Workflows](../serving/workflows.md)
 
 ### People Names Only
 

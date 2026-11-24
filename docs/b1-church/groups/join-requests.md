@@ -31,7 +31,7 @@ Groups can have different join policies set by their administrators:
 1. Browse to the group you want to join. See [Browsing Groups](./browsing-groups.md) if you need help finding it.
 2. Open the group's detail page.
 3. Click **Request to Join**.
-4. A **Request to join** dialog appears where you can optionally write a **Message (optional)** to the group leader explaining why you would like to join.
+4. A **Request to Join:** dialog headed with the group's name appears ("Optionally include a short note for the group leader.") where you can write a **Message (optional)** of up to 1,000 characters to the group leader explaining why you would like to join.
 5. Click **Send Request** to send your request.
 
 The group's page now shows a **Request Pending** notice in place of the button. The group's leaders will receive a notification about your request. Once they review it, you will receive a notification with the outcome.
@@ -58,7 +58,7 @@ If you change your mind before a leader reviews your request:
 2. Find your request in the **Pending Requests** section.
 3. Click **Cancel request** next to the request.
 
-The request is immediately withdrawn and the leader will no longer see it.
+The request is immediately withdrawn and the leader will no longer see it. If it can't be withdrawn you'll see "Unable to save changes."
 
 ## Approving Requests as a Leader {#approving-requests-as-a-leader}
 

@@ -15,14 +15,16 @@ Content providers are external services that supply lesson materials, videos, an
 
 FreePlay currently includes the following providers:
 
-- **[Lessons.church](../../lessons-church/index.md)** - Free, open-source children's ministry curriculum
-- **Bible Project** - Videos and resources exploring the Bible
-- **SignPresenter** - Presentation and signage content for churches
-- **B1.church** - Content from your own B1 church setup
-- **GO! Curriculum** - Curriculum from gocurriculum.com, organized by age group (**Elementary** and **Preschool**), then collection and lesson. You only see the age groups and videos your Go membership includes
-- **Dropbox** - Browse and play images and videos from your own Dropbox
-- **Jesus Film Project** - Films and video clips from the Jesus Film Project
-- **OneDrive** - Browse and play images, videos, and audio from your own Microsoft OneDrive
+- **SignPresenter** - Presentation and signage content for churches. Connects with a QR code and a short code
+- **[Lessons.church](../../lessons-church/index.md)** - Free, open-source children's ministry curriculum. No sign-in needed
+- **B1.Church** - The current service plan from your own B1 Admin setup. Connects with a QR code and a short code, and can supply **Today's Plan** -- see [Playing Today's Plan](../plan-mode/playing-todays-plan.md)
+- **Bible Project** - Videos and resources exploring the Bible. No sign-in needed
+- **Dropbox** - Browse and play images and videos from your own Dropbox. Sign in from your phone
+- **Jesus Film Project** - Films and video clips from the Jesus Film Project. No sign-in needed
+- **GO! Curriculum** - Curriculum from gocurriculum.com, organized by age group (**Elementary** and **Preschool**), then collection and lesson. You only see the age groups and videos your Go membership includes. Sign in from your phone
+- **OneDrive** - Browse and play images, videos, and audio from your own Microsoft OneDrive. Sign in with your Microsoft account from your phone
+
+The cards appear in this order on the **Content Providers** screen. See [Connecting to Providers](./connecting-providers.md) for each sign-in method.
 
 :::note
 Google Drive and FreeShow are no longer shown in the FreePlay TV app. To use Google Drive content on your TVs, connect it in [FreePlay Admin](../scheduled-mode/building-playlists.md#connecting-providers), add the files to a playlist, and schedule that playlist.

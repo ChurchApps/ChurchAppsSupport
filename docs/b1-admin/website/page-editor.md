@@ -29,7 +29,18 @@ The B1 page editor is a visual drag-and-drop builder that lets you design your c
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left), expand **Website**, and click **Pages**.
 2. Find the page you want to edit in the Pages table and click **Edit Content**.
 
-The editor opens in full-screen mode with a live preview of your page. The toolbar across the top has **Exit**, the page's publish status, **Undo** and **Redo**, the save status, **Publish**, the desktop and mobile preview buttons, **Add Content**, the accessibility check, and a **More** (⋮) menu. Click **Add Content** to open the **Add Elements** panel on the left; click a section or element to open its settings on the right.
+The editor opens in full-screen mode with a live preview of your page. The toolbar across the top has, from left to right:
+
+- **Exit** -- leaves the editor and opens the page's [preview screen](./managing-pages.md#the-page-preview-screen) (or the Blocks list when you are editing a block).
+- The **Page** or **Block** label with its name, and for pages a status chip: **Live on save**, **Published**, or **Unpublished changes** (see [Saving and Publishing](#saving-and-publishing)).
+- **Undo** and **Redo**, then the save status: **Saving…**, **All changes saved** with how long ago, or **Couldn't save**.
+- **Publish** (pages only), the **Desktop** and **Mobile** preview buttons, and **Add Content**.
+- The **Check accessibility** icon, which shows a count when the page has issues (see [Accessibility Checker](./accessibility-checker.md)).
+- The **More** (⋮) menu with **View history**, **Discard unpublished changes** and **Turn off publishing** (both only on a published page), **Edit site footer** (opens your [footer block](./blocks.md#your-site-footer-is-a-block)), and **Help**.
+
+Click **Add Content** to open the **Add Elements** panel on the left; click a section or element to open its settings on the right.
+
+**Help** opens **Page editor basics**, a short card with tips for adding, editing, and rearranging content, undo and history, and the keyboard shortcuts, plus a **Full documentation** link to this site.
 
 The editor needs a screen at least about 880 pixels wide. On a phone you see a message asking you to open the page on a tablet or computer.
 
@@ -46,22 +57,29 @@ Every page is built from two levels:
 
 ### Adding a Section
 
-1. Click **Add Content** and drag **Section** onto the page. You can also hover between two sections and click the **+** (**Add section**) button that appears.
+1. On an empty page, click **Add your first section** in the **This page is empty** box. Otherwise click **Add Content** and drag **Section** onto the page, or hover between two sections and click the **+** (**Add section**) button that appears on the line between them.
 2. In the **Choose a Section Layout** dialog, choose how to start:
-   - **From a template** — browse the section templates by category (Hero, About, Services, People, Media, Giving, and Call to Action) and click one to insert it as a fully styled, pre-filled section. You can customize everything after it is added.
-   - **Blank Section** — an empty section to build from scratch. To split it into columns, add a **Row** element inside it.
+   - **From a template** -- click a template card to insert it as a fully styled, pre-filled section. Use the chips at the top (**All**, **Hero**, **About**, **Services**, **People**, **Media**, **Giving**, **Call to Action**) to filter by category. The templates are:
+     - **Hero** -- **Centered Hero**, **Split Hero**, **Gradient Hero**
+     - **About** -- **Welcome**, **About Us**, **Our Story**, **Testimony**
+     - **Services** -- **Service Times**, **Find Us**
+     - **People** -- **Meet the Team**, **Ministries**, **Browse Groups**, **Group List**, **FAQ**
+     - **Media** -- **Latest Sermons**, **Watch Online**
+     - **Giving** -- **Giving Banner**, **Ways to Give**
+     - **Call to Action** -- **Call to Action**, **Connect**, **Photo Gallery**, **Verse Banner**
+   - **Blank Section** -- an empty section to build from scratch. To split it into columns, add a **Row** element inside it.
 3. The new section appears in the preview. Click it to select it and configure its background, colors, and other style options.
 
-Hovering over a section shows its toolbar: drag handle, **Section settings**, **Move section up**, **Move section down**, **Duplicate section**, **Try another layout**, and **Delete section**.
+Hovering over a section shows its toolbar in the top-right corner: a drag handle (**Drag to reorder**), **Section settings**, **Move section up**, **Move section down**, **Duplicate section**, **Try another layout**, and **Delete section**. Double-clicking an empty part of a section also opens its settings.
 
 ### Switching a Section's Layout
 
-Already built out a section but want a different structure? Click **Try another layout** on the section's toolbar to swap its arrangement for a different one from the gallery while keeping your existing content and elements in place.
+Already built out a section but want a different structure? Click **Try another layout** on the section's toolbar. The **Switch Section Layout** dialog shows the same template gallery; pick one and your existing headings, text, buttons, and photos are poured into the new arrangement. As the dialog warns, *Extra content that doesn't fit the new layout is dropped. Use undo to restore it.* The button is only offered for sections that have content to carry over, and not for [reusable block](./blocks.md) sections.
 
 ### Adding Elements to a Section
 
 1. Click **Add Content** to open the **Add Elements** panel. Use **Search Elements** or the tabs (**All**, **Common**, **Media**, **Church**, **Advanced**, and **Blocks** once you have [reusable blocks](./blocks.md)) to find an element.
-2. Drag the element into a section in the preview, or select an element on the page and then click a card to add the new element right after it. The elements are:
+2. Drag the element into a section in the preview (a **Drop here to add element** target appears where it can go), or select an element on the page and then click a card to add the new element right after it. Hover over a card to read its one-line description. The elements are (see the [Element Reference](./element-reference.md) for every setting of each one):
    - **Row** -- Splits a section into side-by-side columns
    - **Box** -- Groups elements together in a styled container
    - **Carousel** -- Rotates through a set of full-width slides
@@ -130,31 +148,48 @@ The **Scrolling (automatic)** layout on the **Groups Browser**, **Group List**, 
 
 On devices set to reduce motion, the row stays still and visitors swipe or scroll it themselves. If all the tiles fit, the row doesn't move and no dots appear.
 
-### Reordering Content
+### Selecting and Arranging Elements
 
-Drag sections or elements using the handle icon (six dots) on the left side of each item to reorder them. You can drag elements within a section or move them between sections.
+Click an element to select it. A thin outline marks the selection, a small toolbar appears above it with **Duplicate**, **Move up**, **Move down**, and **Delete**, and the element's settings open in the panel on the right. The panel header shows a breadcrumb of where the element sits -- for example **Section > Row > Column > Image** -- and you can click any part of it to jump to that section, row, or column (the panel calls a selected column a **Layout container**). Press **Esc** to deselect.
+
+While an element is selected, you can also drag the small handles on its edges to change its spacing directly on the page: the blue handles set the margin (space outside the element) and the orange handles set the padding (space inside). A tooltip shows the value as you drag.
+
+To reorder, drag sections or elements using the handle icon (six dots) to move them. You can drag elements within a section or move them between sections; while you drag, **Scroll Up** and **Scroll Down** targets appear at the top and bottom of a long page so you can reach the rest of it. Deleting an element or a section asks you to confirm (**Delete element?** / **Delete section?**); either can be undone with **Undo** right afterwards.
+
+### Keyboard Shortcuts
+
+- **Ctrl+Z** / **Cmd+Z** -- Undo; **Ctrl+Shift+Z** (or **Ctrl+Y**) / **Cmd+Shift+Z** -- Redo
+- **Delete** or **Backspace** -- delete the selected element (after confirming)
+- **Ctrl+D** / **Cmd+D** -- duplicate the selected element
+- **Alt+Up** / **Alt+Down** -- move the selected element up or down
+- **Esc** -- deselect and close the settings panel
+
+The shortcuts are ignored while you are typing in a text box, so they will not interfere with editing content.
 
 ## Styling Your Page
 
 ### Section Styles
 
-Click any section to open its style panel. You can set:
+Click a section (or its **Section settings** button) to open the **Edit Section** panel. You can set:
 
-- **Colors** -- On the **Suggested** tab, click one of the color combinations from your palette. On the **Custom** tab, set the **Background Type** (**Color**, **Image**, or **YouTube Video**) and the heading, text, and link colors. With an image background, click the image to set its focal point (the part kept in view when the image is cropped), and use **Overlay Color** and **Background Opacity** to tint the image so text stays readable.
-- **Visibility** -- **Hide on desktop** or **Hide on mobile**
-- **Styles** -- Add individual style settings, such as top and bottom padding, for all devices, desktop only, or mobile only
-- **Animations** -- An effect and speed for when the section scrolls into view
-- **Shape Dividers** -- Decorative shapes (wave, waves, slant, curve, peaks, and triangle) on the top or bottom edge of the section, with color, height, and flip options
+- **ID** -- an optional anchor name for the section, such as `staff`. Visitors can then jump straight to it with a link like `/about#staff`, and a navigation link can point at it the same way.
+- **Current Colors** -- a sample shows the section's current background and text colors. On the **Suggested** tab, click one of the combinations built from your [palette](./appearance.md#color-palette); only pairings with enough contrast are offered, and a matching link color is chosen for you. On the **Custom** tab, set the **Background Type** -- **Color** (a color picker, a row of grays, your palette swatches, or a typed value in **Background**), **Image** (**Select photo** from your gallery), or **Youtube Video** (enter the **Youtube ID**) -- and pick the **Heading Color**, **Text Color**, and **Link Color** from your palette swatches. With an image background, click the picture to set its **Focal Point** (the part kept in view when the image is cropped), and use **Background Opacity** (0 to 1) and **Overlay Color** to tint the image so text stays readable.
+- **Visibility** -- **Hide on desktop** or **Hide on mobile**.
+- **Styles** -- per-section border, color, font, height, line height, margin, padding, and width overrides for **All**, **Desktop Only**, or **Mobile Only** (see [Styles for One Section or Element](#styles-for-one-section-or-element)).
+- **Animations** -- an **On Show Animation** and **On Show Speed** for when the section scrolls into view (the same choices as for elements; see the [Animation group](./element-reference.md#animation-group)).
+- **Shape Dividers** -- a **Top Divider** and **Bottom Divider**. Choose a **Shape** (**None**, **Wave**, **Waves**, **Slant**, **Curve**, **Triangle**, or **Peaks**), then its **Color**, **Height** in pixels (default 60), and **Flip Horizontally** to mirror it.
 
-The section settings also have **Duplicate** and **Convert To Block**, which copies the section into a new [reusable block](./blocks.md).
+Click **Save** to apply your changes, or **Cancel** to discard them. The panel header also has **Duplicate** (makes a copy of the section below it) and **Convert To**, which copies the section into a new [reusable section block](./blocks.md) after you give the block a name. **Delete** removes the section and everything in it.
 
-### Element Styles
+A section that is a placed [section block](./blocks.md) shows only a **Block** list for choosing which block to display; edit the block's content from **Website > Blocks**.
 
-Click any element to open its style panel. Common options include font size, color, alignment, margin, and padding. For images, you can set alt text and link targets.
+### Element Settings
+
+Click any element to open its **Edit Element** panel. Most elements have three groups -- **Content** (the element's own fields), **Style** (spacing, size, border, color, and font overrides), and **Animation** -- plus **Hide on desktop** and **Hide on mobile** switches at the top. Click **Save** to keep your changes. Every element's **Content** fields are listed in the [Element Reference](./element-reference.md).
 
 ### Styles for One Section or Element
 
-For finer control, open the **Styles** panel in a section's or element's settings and click **Add a style** under **All**, **Desktop Only**, or **Mobile Only**. Each style applies only to that section or element, so it will not affect the rest of the page.
+For finer control, open the **Styles** panel in a section's settings or the **Style** group in an element's settings and click **Add a style** under **All**, **Desktop Only**, or **Mobile Only**. Pick a **Property** (such as **Padding Top**, **Font Size**, **Background Color**, or **Text Shadow**), enter a value, and click **Update**; click an existing style to change or **Delete** it. Each style applies only to that section or element, so it will not affect the rest of the page. The full property list is in the [Element Reference](./element-reference.md#style-group).
 
 :::tip
 If you need to apply styles across your entire site -- such as a custom font or global color -- use the [Appearance](./appearance.md) settings instead of custom CSS on individual pages.
@@ -173,7 +208,7 @@ To see the live page exactly as visitors will, go back to the Pages list and cli
 
 ## Checking Accessibility
 
-Click the **Check accessibility** icon in the toolbar (it shows a count when issues are found) to run a quick check for common issues -- images missing alt text, low color contrast, or headings out of order. Each issue links directly to the element that needs attention so you can fix it in place.
+Click the **Check accessibility** icon in the toolbar (it shows a count when issues are found) to open the **Accessibility** panel, which lists missing alt text, low color contrast, headings out of order, and links without text, grouped by section with a **Show in page** button for each. See [Accessibility Checker](./accessibility-checker.md) for each rule and how to fix it.
 
 ## Undoing Changes
 
@@ -190,7 +225,7 @@ Changes made after the point you restored stay in the history, so you can use **
 
 ## Saving and Publishing
 
-Changes are saved automatically as you work. A status indicator in the toolbar shows whether your changes have been saved.
+Moving, duplicating, and deleting sections and elements, dragging spacing handles, and adding content are saved as soon as you do them; changes you make inside a settings panel are saved when you click its **Save** button. The status indicator in the toolbar shows **Saving…** while a save is in progress, **All changes saved** (with how long ago) when everything is stored, or **Couldn't save** if a save failed -- in that case check your connection and try the change again.
 
 ### Draft and published state
 
@@ -212,6 +247,9 @@ Use the draft/publish workflow when you want to prepare a page -- for example, f
 
 ## Related Articles
 
+- [Element Reference](./element-reference.md) -- Every element and each of its settings
+- [Accessibility Checker](./accessibility-checker.md) -- What the editor checks and how to fix each issue
+- [Reusable Blocks](./blocks.md) -- Build content once and place it on many pages
 - [Managing Pages](./managing-pages.md) -- Create pages, set URLs, and manage site navigation
 - [Appearance](./appearance.md) -- Set site-wide colors, fonts, and branding
 - [Files](./files.md) -- Upload images and documents to use in the editor

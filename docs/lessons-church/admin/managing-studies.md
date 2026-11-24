@@ -1,6 +1,6 @@
 ---
 title: "Managing Studies"
-description: "Create, edit, and categorize studies inside a program in the Lessons.church admin area, and attach series overviews or newsletter templates to each one."
+description: "Create, edit, order, and publish studies inside a program in the Lessons.church admin area, check their URL slugs, and attach study-level files."
 ---
 
 # Managing Studies
@@ -21,43 +21,43 @@ A study is a series of related lessons within a program. For example, a four-wee
 
 ## Creating a Study
 
-1. Navigate to the **Admin** area and expand the program you want to add a study to.
-2. Click **Add Study**.
-3. Fill in the following fields:
-   - **Name** -- The display name for the study (e.g., "The Good Samaritan").
-   - **Slug** -- A URL-friendly identifier (e.g., "the-good-samaritan").
-   - **Description** -- A summary of what this study covers and how many lessons it includes.
-   - **Image** -- Upload a thumbnail image for the study.
-4. Save the study.
+1. Open **Admin** and click the program in the **Programs** column.
+2. Click **Add Study** at the top of the middle column.
+3. Fill in the **Add Study** form (the header notes which program it is **in**):
+   - **Study Image** -- Click the box to upload and crop a 16:9 thumbnail.
+   - **Live** -- **No** hides the study from the public site; **Yes** publishes it.
+   - **Order** -- A number controlling where the study appears among the program's studies on the public page.
+   - **Study Name** -- Required (e.g., "The Good Samaritan").
+   - **URL Slug** -- Type a slug (e.g., "the-good-samaritan") and click **Check**. The slug is cleaned up and the full study address is shown. You must check the slug before saving; to change it later click the pencil icon beside it.
+   - **One-Line Description** -- The short summary shown on study cards.
+   - **Description** -- The full description shown above the lessons on the study page. Markdown is supported.
+   - **Video Embed URL** -- Optional trailer embed address.
+4. Click **Save**.
 
 ## Editing a Study
 
-1. Click on the study name in the admin list.
-2. Update any of the fields as needed.
-3. Save your changes.
+1. Click the study card in the middle column. Its lessons expand and the **Edit Study** form opens in the panel.
+2. Update any of the fields as needed and click **Save**.
+3. To remove the study, click the **Delete study** (trash can) button and confirm. A study that still has lessons or files cannot be removed; delete those first.
 
-## Assigning a Category
+## Categories
 
-If the parent program uses study categories, you can assign your study to one:
-
-1. Open the study in the admin view.
-2. Select a **Category** from the dropdown.
-3. Save.
-
-Categories help users browse programs that have many studies. For example, you might have categories like "Old Testament", "New Testament", and "Topical".
+Categories are assigned from the program, not from the study form. Open the program, click **Edit Categories**, and add the study to one or more categories there. See [Study Categories](./study-categories.md).
 
 ## Managing Lessons Within a Study
 
-Studies contain one or more lessons. Expand a study in the admin view to see its lessons, or click **Add Lesson** to create a new one. See [Managing Lessons](./managing-lessons.md) for details on building out lesson content.
+Expanded study cards list their lessons in order, each numbered. Click **Add lesson to this study** at the bottom of the list to create a new one, or click a lesson row to edit it. See [Managing Lessons](./managing-lessons.md).
 
-## Uploading Study-Level Resources
+## Study-Level Files
 
-You can attach downloadable files that apply to the entire study -- for example, a series overview, promotional graphics, or a parent newsletter template.
-
-1. Open the study in the admin view.
-2. Navigate to the **Resources** section.
-3. Upload your files.
+Click the **Files** tab in the study's panel to attach bundles and videos that apply to the whole series -- a series overview, promotional graphics, or a parent newsletter template. See [Managing Files and Media](./managing-files.md).
 
 :::tip
 Write your study description with church leaders in mind. A clear summary of the theme, target age group, and number of lessons helps churches decide whether to use the series.
 :::
+
+## Related Articles
+
+- [Managing Programs](./managing-programs.md) -- The program that contains the study
+- [Managing Lessons](./managing-lessons.md) -- Add lessons to the study
+- [Study Categories](./study-categories.md) -- Group studies into tabs on the program page

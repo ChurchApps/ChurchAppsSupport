@@ -24,10 +24,10 @@ When you click on a group from the groups page, you are taken to the group detai
 
 If you are not logged in, you will see the following:
 
-- **Header** -- The group's name with its meeting time and location. On a computer, the group's photo appears above it.
+- **Header** -- The group's name with its meeting time and location. On a computer, the group's photo appears above it. Visitors don't get the **Share** button; sign in to share a group.
 - **Sign in to join** -- A button under the group's name. Sign in (or create an account) to join the group or request to join. After you sign in, you are brought back to the group and taken straight to the join step.
 - **About** -- The full description of the group explaining its purpose and what to expect, or "No details yet." if the group has no description.
-- **Leaders** -- The names of the group's leaders. You can tap a leader's name to view their profile.
+- **Leaders** -- The names of the group's leaders (hidden when the group has none). You can tap a leader's name to view their profile.
 - **Upcoming Events** -- Up to three upcoming events for the group, each showing the event title, date, time, and description, with a **Register** link when the event takes registrations. If the group has no upcoming events, this section is hidden.
 
 ## Member View (Logged In)
@@ -38,27 +38,27 @@ When you are a member, the group's header shows its name, meeting day, time, and
 
 The page is one sheet of sections. Each shows a short preview, and a link in the section's header opens the full view; tap **Back to** *group name* to return. The available sections are:
 
-- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). An event that takes registrations has a **Register** link; once you have registered, your status -- **Registered**, **Pending**, or **Waitlisted** -- shows in its place (on this card and in the full events list), and tapping it opens your [registrations](../events/my-registrations.md). A public event, or one that takes registrations, also has a **Share** link, here and in the full events list. It opens your device's share sheet with a link to the event's public page, or copies the link if your browser can't share. Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events) and **List** (the month's events in date order, grouped by day). When you are looking at the current month, the list starts from today, so it only shows what's still coming up. If the group's events have tags, you can filter by tag. Tap **Subscribe** at the bottom to add the group's calendar to your own calendar app, so new events show up there automatically.
-- **This week's lesson** -- If your group is associated with a Lessons.church plan type and this week's lesson has parent take-home content, it appears under **Next event** (members only).
+- **Next event** -- The group's next upcoming event, with **Going** / **Maybe** / **Can't go** buttons (see [Event RSVPs](./event-rsvps.md)). An event that takes registrations has a **Register** link; once you have registered, your status -- **Registered**, **Pending**, or **Waitlisted** -- shows in its place (on this card and in the full events list), and tapping it opens your [registrations](../events/my-registrations.md). A public event, or one that takes registrations, also has a **Share** link, here and in the full events list. It opens your device's share sheet with a link to the event's public page, or copies the link if your browser can't share. Tap **All events** to open the group's calendar: use the arrows to move between months, and switch between **Calendar** (a month grid where you tap a day to see its events -- "No events on this day." when there are none) and **List** (the month's events in date order, grouped by day -- "No upcoming events this month." when there are none). The app remembers which view you used. When you are looking at the current month, the list starts from today, so it only shows what's still coming up. A repeating event shows its pattern ("Weekly", "Every 2 weeks", "Monthly"), and an event only members can see is tagged **Private**. If the group's events have tags, a **Tags** row lets you filter by one (or **All**). Tap **Subscribe** at the bottom to add the group's calendar to your own calendar app, so new events show up there automatically.
+- **This week's lesson** -- If your group is associated with a Lessons.church plan type, the most recent lesson (today's or the latest past one) that has parent take-home content appears under **Next event** (members only).
 - **Meetings** -- The group's recent meetings, newest first. Each one shows the date, how many people were there (for example, "8 of 12 there") or **Upcoming** for today or a future date with no attendance yet, and the leader's note for that meeting, with any bold text, lists, and links kept. Tap **All meetings** to see them all. A meeting only appears once it has a note or attendance. See [Meeting Notes and Attendance](#meeting-notes-and-attendance) below.
 - **Leader notes** -- Visible to the group's leaders only. Shows the two newest leader notes; tap **Open notes** to read them all and post a new one. See [Leader Notes](#leader-notes) below.
 - **Forms** -- Forms your church has linked to the group, up to three at a time. Members see the forms that are open, each with a **Fill out** button. Leaders also see closed forms (marked **Closed**), how many answers each has, and the registration forms of the group's events (marked **Event registration**). Tap **All forms** to see them all. Only shown when the group has linked forms. See [Linked Forms](#linked-forms) below.
 - **Messages** -- The latest messages from the group chat. Tap **Open chat** to read and post. Only shown to members, and only if your church has turned on group chat for this group. See [Group Conversations](./conversations.md) for more details.
-- **Members** -- A preview of the group's members (leaders first) and a count of members and leaders. Tap **All members** for the full list, which you can search with **Search Members**. Tap a member's name to visit their profile in the [member directory](../community/member-directory.md). Leaders also see any pending **Join requests** at the top of this section (see [Approving Requests as a Leader](./join-requests.md#approving-requests-as-a-leader)).
-- **Resources** -- The first few shared files and links posted for the group. Tap **All resources** to see them all; you can download uploaded files or open linked resources.
-- **Plans** -- The group's next service plan. Tap **All plans** to see them all. Only shown if the group has plans.
+- **Members** -- A preview of up to six of the group's members (leaders first) and a count of members and leaders ("No members yet." for an empty group). Tap **All members** for the full list, which you can search with **Search Members**. Tap a member's name to visit their profile in the [member directory](../community/member-directory.md). Leaders also see any pending **Join requests** at the top of this section (see [Approving Requests as a Leader](./join-requests.md#approving-requests-as-a-leader)).
+- **Resources** -- The first few shared files and links posted for the group. Tap **All resources** to see them all, split into **Links** (each with its web address) and **Files** (each with its size); you can download uploaded files or open linked resources.
+- **Plans** -- The group's next service plan, or its most recent one when nothing is scheduled ("No upcoming plans." when the group has no dated plans). Tap **All plans** to see them all: switch between **Upcoming** (soonest first) and **Past** (newest first), and, when the group has more than one kind of plan, filter by **Plan Type**. Tap a plan to open it. Only shown if the group has plans.
 - **About** -- The group's full description, rendered with rich text formatting. Only shown if the group has a description.
 
 Members also see a **Mute this group** switch and a **Leave Group** link at the bottom of the page:
 
-- **Mute this group** -- Turn it on to stop getting notifications and emails for this group's messages, while staying in the group. Turn it off to get them again. Each group has its own switch, so muting one group doesn't affect the others. If the change can't be saved, the switch goes back and "Could not save. Please try again." appears.
+- **Mute this group** ("No notifications or emails for this group's messages.") -- Turn it on to stop getting notifications and emails for this group's messages, while staying in the group. Turn it off to get them again. Each group has its own switch, so muting one group doesn't affect the others. If the change can't be saved, the switch goes back and "Could not save. Please try again." appears.
 - **Leave Group** -- Asks "Leave this group?" first, since you lose access to the group's messages, events, and resources; tap **Leave Group** again to confirm.
 
 ## Sharing a Group {#sharing-a-group}
 
 A **Share** button appears under the group's name, so you can invite a friend to the group:
 
-1. Tap **Share**. A sheet titled **Share** and the group's name opens, with a QR code and the group's link.
+1. Tap **Share**. A sheet titled **Share** and the group's name opens, with a QR code, the group's link, and the note "Anyone who scans this code or opens the link can see the group and join or ask to join."
 2. Let someone scan the QR code with their phone camera, or tap **Copy link** and paste the link into a text or email.
 3. Tap **Close** when you are done.
 
@@ -68,21 +68,71 @@ Anyone who scans the code or opens the link sees the group's page and can join o
 
 If you are a leader of the group, you have additional editing capabilities:
 
-- **Create and edit events** -- Tap **All events**, then **Add Event** to add an event to the group calendar. Fill in the title, description and times, and add a **Location (optional)** for events held away from the church. When creating an event, you can reserve rooms and resources alongside it — select from available rooms and resources, set optional setup and teardown times, and the booking request is automatically submitted for approval.
+- **Create and edit events** -- Tap **All events**, then **Add Event** (or the pencil next to an existing event) to add an event to the group calendar. See [Creating and Editing Events](#creating-and-editing-events) below.
 - **Edit repeating events** -- When you open a repeating event to edit it, B1 first asks which dates to change: **Just this date**, **This and all following dates**, or **All dates**. Choose one and click **Save** to open the event. If you chose **Just this date**, the **Recurring** switch is hidden and your changes (or a delete) apply only to that one date.
 - **Delete events** -- Tap the pencil icon next to an event, then tap **Delete event** and confirm. For a repeating event, the delete follows the dates you picked when opening it -- just this date, this and all following dates, or the whole series. A deleted date no longer appears on the group calendar or in members' upcoming events.
-- **Set event reminders** -- When editing an existing event, turn on **Send reminders** to remind people before it starts. Pick when they go out, the **Time of Day**, **Who should be reminded?**, and an optional **Message**, then choose **Push**, **Email**, or, if your church has texting set up, **Text** under **Send By**. Texts only go to people who turned on text reminders in their [Notification Preferences](../getting-started/notification-preferences.md).
-- **Manage resources** -- Upload files (up to 100 MB of storage), add links, or delete existing resources.
+- **Set event reminders** -- When editing an existing event, turn on **Send reminders**. See [Event Reminders](#event-reminders) below.
+- **Manage resources** -- Upload files, add links, or delete existing resources. See [Managing Resources](#managing-resources) below.
 - **Write meeting notes and track attendance** -- Use **Add note** and **Take attendance** in the **Meetings** section. See [Meeting Notes and Attendance](#meeting-notes-and-attendance).
 - **Keep private leader notes** -- Use the **Leader notes** section. See [Leader Notes](#leader-notes).
 - **Read and print form answers** -- Use the **Forms** section. See [Linked Forms](#linked-forms).
 - **Approve or decline join requests** -- Use the **Join requests** list at the top of the **Members** section. See [Approving Requests as a Leader](./join-requests.md#approving-requests-as-a-leader).
 
+Church staff with the right permissions get the same tools on groups they don't lead: people who can edit groups see **Add Event**, resource editing, and **View responses**, and people who can edit attendance see **Add note** and **Take attendance**.
+
 To change the group's name, description, or member list, use B1 Admin. See [Group Members](../../b1-admin/groups/group-members.md).
+
+### Creating and Editing Events {#creating-and-editing-events}
+
+**Add Event** opens the **New Event** sheet (editing opens **Edit event**). When you add from the calendar, the event starts on the day you had selected at 2:00 PM for one hour.
+
+1. Enter a **Title** (required -- "Please enter a title." otherwise) and a **Description**. The description has a formatting toolbar for bold text, lists, and links.
+2. Set the **Start** and **End** times, or turn on **All day** to pick dates only.
+3. Add a **Location (optional)** for events held away from the church.
+4. Choose the **Visibility**: **Public** (anyone can see it on the church calendar) or **Members only**.
+5. Leave **Allow RSVPs** on to collect Going / Maybe / Can't go answers (see [Event RSVPs](./event-rsvps.md)), or turn it off.
+6. Turn on **Recurring** to repeat the event and set the pattern (it starts as weekly).
+7. Turn on **Registration** to take sign-ups for the event. You can then set a **Capacity**, **Tags** (which also feed the calendar's tag filter), and when **Registration Opens** and **Registration Closes**. See [Registering for Events](../events/registering.md) for what members see.
+8. If your church has rooms or resources set up, pick the **Rooms** and **Resources** the event needs. They are grouped by category and show how many a room seats or how many of a resource are available; a resource with several units gets a **Quantity** box. Add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** to set **Reserve from** and **Reserve until** yourself. If a time clashes with an existing booking you'll see "Some selections may already be booked at this time."
+9. Tap **Save** (**Save Changes** when editing). If any room or resource needs approval, the sheet stays open and says "Your room/resource request was submitted and is pending approval."; rooms without an approval group are booked right away.
+
+Room and resource bookings are saved when you create an event or edit **All dates** of a repeating one; they aren't changed when you edit **Just this date** or **This and all following dates**. Changing a resource's quantity re-submits that booking for approval.
+
+### Event Reminders {#event-reminders}
+
+Open an existing event with the pencil and turn on **Send reminders** to remind people before it starts:
+
+1. Under "When should reminders go out?" pick up to three of **7 days before**, **3 days before**, **1 day before**, and **Day of**, and set the **Time of Day** (it starts as 1 day before at 9:00 AM).
+2. Under **Who should be reminded?** choose **Everyone registered**, **One per household**, **Everyone in the group**, or **Automatic**. Events that take registrations start on **Everyone registered**; others start on **Everyone in the group**.
+3. Optionally type a **Message** ("Optional. Leave blank to use the default reminder wording.").
+4. Under **Send By**, choose **Push**, **Email**, or, if your church has texting set up, **Text** ("Texts go out through your church's texting provider, only to people who turned on text reminders." -- see [Notification Preferences](../getting-started/notification-preferences.md)).
+5. Tap **Save Reminders** -- it has its own button, separate from the event's **Save Changes**, and is disabled until you have picked at least one time and one channel. "Saved" confirms it. Once saved, **Send now** sends the reminder immediately ("Sent to 12 people").
+
+To stop reminders, turn **Send reminders** off and tap **Save Reminders**.
+
+### Managing Resources {#managing-resources}
+
+In the **Resources** view, leaders see **Add Link** and **Upload** in the section headers:
+
+- **Add Link** -- enter the **Link text** and **URL** (https:// is added if you leave it off) and save.
+- **Upload** -- pick a file; "Uploading" and a percentage show the progress. A meter shows how much of the group's storage is used ("Used 12 MB / 100MB"); once it is full the **Upload** link disappears until something is deleted. Churches that connected their own cloud storage have no cap.
+- **Delete** -- the trash icon next to a link or file asks "Delete this item?" and names it; confirm to remove it.
+
+Members see the same **Links** and **Files** lists ("No links yet." / "No files yet.") and can open or download everything.
 
 ### Meeting Notes and Attendance {#meeting-notes-and-attendance}
 
-Group leaders, and staff who can take attendance, see **Add note** and **Take attendance** in the **Meetings** section header. Members see the same list of meetings and notes, so anyone who missed a week can catch up.
+Group leaders, and staff who can take attendance, see **Add note** and **Take attendance** in the **Meetings** section header (and **All meetings** once there are more than three). Members see the same list of meetings and notes ("No meetings yet." until the first one), so anyone who missed a week can catch up.
+
+To take attendance:
+
+1. Tap **Take attendance**. Pick the meeting **Date** (today or earlier) -- it starts on your most recent meeting from the past week, or today.
+2. Write a recap in the **Notes** box if you like (see below).
+3. The counter shows "3 of 12 present". Tap each member to switch them between **Present** and **Absent**, or use **All** / **None** to mark everyone at once.
+4. To record a visitor, tap **Add**, type their name in **Search for a person**, tap **Search**, and tap them in the results; they join the list marked **(Guest)** (people already on the list show **Added**). Guests are remembered for that date, so they reappear if you reopen it.
+5. Tap **Save Attendance**. "Attendance saved." confirms it.
+
+Tapping a past or today's meeting in the list reopens its attendance; tapping a future meeting opens its note instead.
 
 To write a recap of a meeting:
 
@@ -104,7 +154,7 @@ Until someone posts, the feed shows "No notes yet" with the reminder "Only this 
 
 ### Linked Forms {#linked-forms}
 
-Church staff can link a form to your group in B1 Admin -- for example, a prayer request card or a trip permission slip (see [Linking a Form to a Group](../../b1-admin/forms/creating-forms.md#linking-a-form-to-a-group)). Linked forms appear in the group's **Forms** section. Members tap **Fill out** to open a form and submit it.
+Church staff can link a form to your group in B1 Admin -- for example, a prayer request card or a trip permission slip (see [Linking a Form to a Group](../../b1-admin/forms/creating-forms.md#linking-a-form-to-a-group)). Linked forms appear in the group's **Forms** section. Members tap **Fill out** to open the form on the church's website and submit it -- see [Filling Out Forms](../getting-started/filling-out-forms.md).
 
 Leaders can also read and print the answers:
 

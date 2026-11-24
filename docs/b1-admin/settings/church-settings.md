@@ -74,7 +74,7 @@ B1 uses this time zone for church-wide times, such as event reminders and the sc
 The **Region** setting controls how dates and times are written throughout B1. By default dates use the United States format (for example, "Sep 28, 2026" and "9/28/2026"). Churches outside the US can switch to their own format -- for example, choosing English (United Kingdom) shows "28 Sept 2026" and "28/09/2026" instead.
 
 1. On the Settings page, click **Region** in the left-hand list, then click **Edit** in the **Region** section.
-2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look.
+2. Choose your region from the **Region** dropdown. Each option shows a sample date so you can see exactly how dates will look. The choices are English (United States, United Kingdom, Australia, Canada), German (Germany), French (France), Spanish (Spain, Mexico), Portuguese (Brazil), Dutch (Netherlands), and Hungarian (Hungary).
 3. Click **Save**.
 
 The Region section then shows your selected region, a sample of the **Date format**, and your **Phone numbers** format.
@@ -109,7 +109,7 @@ Connect a texting provider to send SMS messages to a person or a whole group fro
    - **Clearstream** -- enter an **API Key**. Create one in your Clearstream Account Settings under API Keys.
    - **Text In Church** -- enter an **API Key**. Ask Text In Church Support for developer API access first, then create a key in your Account Settings > Developer API section.
    - **Nalo Solutions** (Ghana) -- enter the auth key from your Nalo Solutions account as the **API Key**, and a **Sender ID** (up to 11 characters) that Nalo has approved for you.
-   - **Twilio** -- use your church's own Twilio account; Twilio bills you directly. Copy the **Account SID** and **Auth Token** from the [Twilio Console](https://console.twilio.com), and enter a **From Number** -- a Twilio phone number registered for A2P 10DLC, in a format like `+15551234567`. After saving, paste the inbound webhook URL (see below) into the number's **A message comes in** webhook in Twilio so STOP replies are recorded in B1 too.
+   - **Twilio** -- use your church's own Twilio account; Twilio bills you directly. Copy the **Account SID** and **Auth Token** from the [Twilio Console](https://console.twilio.com), and enter a **From Number** -- a Twilio phone number registered for A2P 10DLC, in a format like `+15551234567` (a Twilio Messaging Service SID also works here). After saving, paste the inbound webhook URL (see below) into the number's **A message comes in** webhook in Twilio so STOP replies are recorded in B1 too.
 3. Click **Save**.
 
 To stop texting, set **Provider** to **None** and save. This removes the saved provider.
@@ -159,7 +159,7 @@ This only affects new uploads to your website Files and similar content areas. G
 
 ## Giving
 
-The **Giving** section connects your payment provider and sets your church's currency for online giving and paid registrations. See [Online Giving Setup](../donations/online-giving-setup.md). It only appears for people who can edit giving settings.
+The **Giving** section connects your payment provider and sets your church's currency for online giving and paid registrations. See [Online Giving Setup](../donations/online-giving-setup.md) for the walkthrough and the [Giving Settings Reference](../donations/giving-settings.md) for every provider, fee, and statement field. It only appears for people who can edit giving settings.
 
 ## Check-In
 

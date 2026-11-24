@@ -39,7 +39,7 @@ Open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the 
 
    Building a template's steps can take a moment. While it works, the **Add Workflow** button reads **Creating...** and can't be clicked again, so you won't end up with a duplicate. If something goes wrong, the page shows *"The workflow could not be created. Please try again."*
 3. Give the workflow a **Name**.
-4. Optionally assign a **Category** to group related workflows together. You can create a new category right from the dropdown.
+4. Optionally assign a **Category** to group related workflows together. Choose **+ Add Category** at the bottom of the dropdown to create one on the spot (type the **New category name** and click the check mark), or click the pencil next to an existing category in the dropdown to rename it. Workflows without a category are listed as **Uncategorized**.
    For a blank workflow, you also choose its **Workflow purpose**: **People follow-up** (the usual kind) or **Serving assignment confirmation**. The purpose can't be changed after the workflow is created.
 5. Leave the workflow **Active** so people can be added to it, or set it to **Inactive** to hide it from the add-to-workflow lists.
 6. Click **Save**.
@@ -220,34 +220,65 @@ Combine this with **Wait**: *Send welcome email → Wait 3 days → automaticall
 
 ## Triggers {#triggers}
 
-Triggers add people to a workflow automatically when something happens, so you never have to add cards by hand. On a workflow board, click the **Triggers** tab, then **Add Trigger**. There are two kinds:
+Triggers add people to a workflow automatically when something happens, so you never have to add cards by hand. On a workflow board, click the **Triggers** tab, then **Add Trigger**. Give the trigger a **Name** (it shows on each card it creates as **Added by trigger:**), then pick one of two kinds with the toggle at the top -- **When something happens** or **On a schedule**. The kind can't be changed once the trigger is saved. Adding, editing, pausing, and deleting triggers needs the manage-workflows permission (see [Who Can Do What](#who-can-do-what)).
 
 ### Event triggers
 
-Fire as soon as a record changes in B1. Choose the event, then optionally add **conditions** so only matching people are added:
+Fire as soon as a record changes in B1. Under **When this happens**, choose the event:
 
-- **Person · Created / Updated** -- e.g. add anyone whose status becomes *Visitor* or *Guest* (the status given to people who register themselves).
-- **Donation · Created** -- e.g. add a first-time or large gift to a thank-you workflow (match on amount, fund, or method).
-- **Recurring gift · Created** -- add a donor when they set up a new recurring gift, for example to thank them for committing to give regularly. Match on **Amount**, **Fund**, or **Frequency** (**Weekly**, **Every 2 Weeks**, **Monthly**, **Quarterly**, or **Annually**). The card is about the donor. It fires once, when the recurring gift is first set up, not when it is changed later.
-- **Group · Member Joined** / **Group · Created**.
-- **Form · Submitted** -- add anyone who submits a chosen form (great for an "I'm New" or "Connect" card).
+| Event | Card is about | Fields you can match on |
+|---|---|---|
+| **Person · Created** / **Person · Updated** | the person | **Membership Status**, **Gender**, **Marital Status** |
+| **Donation · Created** | the donor | **Amount**, **Method**, **First-Time Donor** (Yes/No), **Donor Membership Status**, **Fund** |
+| **Recurring gift · Created** | the donor | **Amount**, **Fund**, **Frequency** (**Weekly**, **Every 2 Weeks**, **Monthly**, **Quarterly**, **Annually**) |
+| **Group · Member Joined** / **Group · Member Left** / **Group · Join Requested** | the member | **Group**, **Group Name** |
+| **Group · Created** | the group | **Group Name**, **Category** |
+| **Form · Submitted** | the person who submitted (or who the form is about) | **Form**, **Submitter Membership Status** |
+| **Check-In · Recorded** | the person checked in | **Group**, **Membership Status** |
+| **Event · Registration Created** / **Event · Registration Cancelled** | the registrant | **Event**, **Registrant Membership Status** |
+| **List · Member Added** / **List · Member Removed** | the person | **List**, **List Name** |
+
+Some examples: add anyone whose status becomes *Visitor* or *Guest* (the status given to people who register themselves) with **Person · Updated**; add a first-time or large gift to a thank-you workflow with **Donation · Created**; thank a donor who commits to regular giving with **Recurring gift · Created** (it fires once, when the recurring gift is first set up, not when it is changed later); or turn an "I'm New" form into follow-up with **Form · Submitted**.
+
+Under **Only if**, add conditions so only matching records start a card. Each condition row is a **Field**, an **Operator**, and a **Value**: text fields offer *is*, *is not*, *contains*, *is one of*, and *is not one of*; numbers offer *is*, *is not*, *greater than*, *less than*, *at least*, and *at most*; and choice fields such as Fund, Group, or Membership Status offer *is*, *is not*, *is one of*, and *is not one of* with a dropdown of your church's values. Choose **Match ALL conditions** or **Match ANY condition** to decide how several rows combine. With no rows the trigger *"Runs for every matching event."*
 
 ### Schedule triggers {#schedule-triggers}
 
-Run on a recurring basis -- daily, weekly, monthly, or yearly -- against a set of conditions. Use these for time-based outreach such as *everyone whose birthday is today* (Birth Date · Day of Month = **Today**, with the month matched to **Current Month**) or a *monthly* check-in. Even without **Only once per person**, a schedule trigger won't add the same person again within one repeat period (a day, week, month, or year, matching how often it runs).
+Run on a recurring basis -- choose **Daily**, **Weekly**, **Monthly**, or **Yearly** under **Repeats** -- against a set of conditions. Use these for time-based outreach such as *everyone whose birthday is today* (Birth Date · Day of Month = **Today**, with the month matched to **Current Month**) or a *monthly* check-in. Even without **Only once per person**, a schedule trigger won't add the same person again within one repeat period (a day, week, month, or year, matching how often it runs).
+
+Schedule conditions use the same condition editor as [automatic routing](#automatic-routing-conditional), including the date, giving, and personal-attribute conditions. Save the trigger first; the **Conditions** area then offers **Add Condition**, and each saved condition appears as a chip you can remove. A schedule trigger with no conditions matches nobody, so always add at least one.
 
 Schedule triggers run early in each day in your church's [time zone](../settings/church-settings.md#time-zone), within about two hours after midnight. A daily birthday rule therefore adds people on their birthday in your local calendar, not the day before.
 
-For any trigger you can also set:
+### Settings for every trigger
 
-- The **Starting step** the new card lands on (defaults to the first step).
-- **Only once per person** -- so the same person isn't added to the workflow twice by the trigger. With this on, anyone who already has a card on this workflow is skipped.
+- The **Starting step** the new card lands on (defaults to **First step**).
+- **Only once per person** -- so the same person isn't added to the workflow twice by the trigger. With this on (the default), anyone who already has a card on this workflow is skipped.
   - **Add again after their card is closed** -- appears when **Only once per person** is on. Check it to let the trigger add someone again once their earlier card on this workflow is closed. A person still never has two open cards on the workflow at the same time. Use this for things that can happen more than once, like a returning guest or a yearly process.
 - **Active** -- turn the trigger on or off without deleting it.
 
 :::tip
 Pair a **Form · Submitted** trigger with the **New Visitor Follow-up** template to turn your "Connect Card" or "I'm New" form into an automatic follow-up pipeline.
 :::
+
+### Managing triggers
+
+The **Triggers** tab lists each trigger with its event (or **On a schedule · Weekly**, and so on) and a summary of its conditions, such as *Match ALL conditions (2)*. Click a trigger to edit it. The icons on each row let you:
+
+- **Run now** -- apply the trigger to the people who already match, instead of waiting for the next event. For a schedule trigger this runs the rule immediately. For **Person · Created** or **Person · Updated** it checks everyone in your directory against the conditions. For **Group · Member Joined** or **List · Member Added** it adds the current members of the group or list named in a **Group** or **List** condition (the trigger must have one). Other event types can't be run on demand. When it finishes, a message reports *"Applied to 12 people; 3 skipped (already in workflow)."* **Only once per person** and the repeat-period rule still apply.
+- **Pause automation** -- stop the trigger without deleting it. Pausing also puts any of its runs that are still waiting on hold, and the row shows a **Paused** badge. **Resume automation** turns it back on and lets the held runs continue.
+- The trash icon deletes the trigger. Cards it already created stay on the board, labeled *(deleted trigger)*.
+
+### Execution History
+
+Below the trigger list, **Execution History** records every time a trigger fired, with **When**, which **Trigger**, the **Person** it was about, a **Status**, and how many **Attempts** it took. Click **Refresh** to update the list. Statuses are:
+
+- **Success** -- the card was created.
+- **Pending** -- the first attempt failed and B1 will try again; retries follow about 5 minutes, 30 minutes, 2 hours, 12 hours, and 24 hours later.
+- **Failed** -- six attempts failed. Hover over the status to see the last error, then click **Retry** once the cause is fixed.
+- **Paused** -- the run is on hold because its trigger was paused (or you paused this run). Use **Resume** to let it continue, **Retry** to attempt it right away, or **Pause** on a pending run to hold it.
+
+A retried run never creates a second card for the same person: if the card already exists, the run is marked successful and nothing is added.
 
 ## Serving Assignment Confirmations {#serving-assignment-confirmations}
 
@@ -292,6 +323,19 @@ Open a workflow and click **Reports** to see analytics for that workflow:
 - **Completed (30 days)** -- throughput over the last 30 days, shown as a line chart.
 
 Use these to spot bottlenecks -- for example, a step where cards pile up and never advance.
+
+## Who Can Do What {#who-can-do-what}
+
+Workflow access comes from the **Tasks** section of a role's permissions (see [Roles & Permissions](../settings/roles-permissions.md)), in three tiers:
+
+| You want to... | Needs |
+|---|---|
+| Work the cards assigned to you (or to your groups) from **My Work**, add notes, complete them | Nothing extra -- every signed-in staff member has **My Work** |
+| Open the **Workflows** list, open boards, read cards, see triggers and reports | **View** tasks and workflows |
+| Drag and edit any card, add cards, use bulk actions, rename or delete tasks | **Edit** tasks and workflows (cards and tasks) |
+| Add, edit, duplicate, or delete workflows and steps, configure actions and routing, manage triggers, run or pause automation | **Admin** (manage) tasks and workflows |
+
+Without the view tier, the Workflows page shows *"You do not have access to this section."*, and a card opened from **My Work** has no **Open workflow board** link or step list. Creating a **Serving Assignment Confirmation** workflow from its template also needs permission to send texts, because the template includes a text step.
 
 ## Related Articles
 

@@ -24,35 +24,37 @@ The Appearance page lets you customize the overall look and feel of your church 
 
 1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu) (the search bar at the top-left) and expand **Website**.
 2. Click **Appearance**.
-3. The **Site Styles** page loads. The **Theme, fonts & footer** card shows the **Style Settings** list on the left and a preview of a sample site on the right. Below it are the **Announcement & widgets** and **Redirects & analytics** cards.
+3. The **Site Styles** page loads. The **Theme, fonts & footer** card shows the **Style Settings** list on the left and a preview of a sample site on the right. As the page says, this is a sample site with your colors, fonts, and logos, not your actual content; it also applies your custom CSS so you can check its effect. Below it are the **Announcement & widgets** and **Redirects & analytics** cards.
+
+If your church has more than one website, use the site switcher in the header to pick which site's styles you are editing. See [Appearance and Multiple Websites](#appearance-and-multiple-websites).
 
 ## Color Palette {#color-palette}
 
 1. Click **Color Palette** in the Style Settings panel.
-2. You will see **Base Colors** (light, accent, and dark shades) and **Semantic Colors** (Primary, Secondary, Success, Warning, and Error).
+2. Under **Color Values** you will see the five **Base Colors** -- **Light** (lightest shade, for section backgrounds), **Light Accent** (soft accent for subtle backgrounds), **Accent** (main accent for buttons and highlights), **Dark Accent** (deep accent for headings and links), and **Dark** (darkest shade, for body text) -- and the **Semantic Colors**: **Primary** (primary buttons and links), **Secondary**, **Success**, **Warning**, and **Error**. The base colors are the swatches offered everywhere in the page editor; the semantic colors drive the **Button Link** element's **Color** choices and status messages.
 3. Click any color swatch to open the color picker. Drag the selector or enter a hex value to choose your color.
-4. The **Color Combinations Preview** shows how your selected colors work together.
-5. Use **Suggested Palettes** to start from a pre-designed color scheme. Clicking a palette only loads its colors into the editor.
+4. The **Color Combinations Preview** shows every pairing of your base colors as background and text, so you can see which ones read well together.
+5. Use **Suggested Palettes** (sixteen ready-made schemes, **Palette 1** through **Palette 16**) to start from a pre-designed color scheme. Clicking a palette only loads its five base colors into the editor; your semantic colors are kept.
 6. Click **Save Palette** to apply your colors to the site, or **Cancel** to discard them.
 
 ## Typography
 
 1. Click **Fonts** in the Style Settings panel.
-2. Click the **Heading Font** or **Body Font** button to open the **Select a Font** browser, which lists Google Fonts by popularity, ten to a page. Type in **Search** to find a font by name, or use the **Category Filter** (Serif, Sans Serif, Display, Handwriting, or Monospace). Click a font to choose it. You can also click one of the **Popular Font Combinations** to set both fonts at once.
+2. Click the **Heading Font** or **Body Font** button to open the **Select a Font** browser, which lists Google Fonts by popularity, ten to a page, each with a **Sample** line in that font. Type in **Search** to find a font by name, or use the **Category Filter** (**Serif**, **Sans Serif**, **Display**, **Handwriting**, or **Monospace**). Click a font to choose it. You can also click one of the **Popular Font Combinations** -- pairings of Open Sans, Montserrat, Oswald, Roboto, Poppins, Playfair Display, Lato, Raleway, and Inter -- to set both fonts at once. The **Typography Preview** shows headings and body text in your current choices.
 3. Click **Save Fonts** to apply your font choices.
-4. To adjust the size hierarchy for Heading 1 through Heading 4, click **Typography Scale** in the Style Settings panel. Use the **Type Scale** multiplier, **Base Size**, and **Line Height** fields to fine-tune, then click **Save Typography**.
+4. To adjust the size hierarchy for Heading 1 through Heading 4, click **Typography Scale** in the Style Settings panel. Set the **Base Size (px)** for body text (12 to 24, default 16), the **Type Scale** multiplier applied for each heading level (1.1 to 2, default 1.25), and the **Line Height** for body text (1 to 2.5, default 1.6). The **Preview** shows the resulting pixel size of each heading and of small text. Click **Save Typography**.
 
 ## Spacing
 
 1. Click **Spacing Scale** in the Style Settings panel.
-2. Adjust spacing values for Extra Small through Extra Large. Practical examples show how each value affects layout.
-3. Click **Save Spacing** to apply the values across your entire site.
+2. Adjust the six **Spacing Values** in pixels: **Extra Small** (default 4), **Small** (8), **Medium** (16), **Large** (24), **Extra Large** (32), and **2X Large** (48). The **Practical Examples** below -- an icon row, a card, a hero section, and a full-width banner -- redraw as you type so you can see how each value affects layout.
+3. Click **Save Spacing** to apply the values across your entire site. These are also the steps the page editor's spacing handles snap to.
 
 ## Logo and Branding {#logo-and-branding}
 
 1. Click **Logo** in the Style Settings panel.
-2. Upload your **Light Background Logo** and **Dark Background Logo**. Use images with a transparent background and a 4:1 aspect ratio for best results.
-3. Upload a **Social Media Image** for link previews and a **Favicon** for the browser tab icon. The social media image is the picture that appears when someone shares a link to your site on Facebook, in a text, or in another app. You crop it to a wide 1200 x 630 pixel shape, and it is saved exactly as cropped, filling the whole preview with no border.
+2. Under **Main Logos**, click **Upload Light Background Logo** and **Upload Dark Background Logo** (or **Edit ...** to replace one). Each opens a crop tool locked to a 4:1 shape and saved at 1280 x 320 pixels, so use a horizontal logo with a transparent background.
+3. Under **SEO & Browser Assets**, upload a **Social Media Image** for link previews (cropped to 1200 x 630) and a **Favicon** for the browser tab icon (square, saved at 400 x 400; a small 16 x 16 copy is made automatically). The social media image is the picture that appears when someone shares a link to your site on Facebook, in a text, or in another app. You crop it to a wide 1200 x 630 pixel shape, and it is saved exactly as cropped, filling the whole preview with no border.
 4. Optionally enter a **PWA Short Name** (up to 12 characters) -- the name shown under your church's app icon when someone adds it to their phone's home screen.
 5. Click **Save Changes**. Uploaded images aren't stored until you save, so if you try to close or reload the browser tab first, your browser warns you that you have unsaved changes.
 
@@ -74,7 +76,7 @@ For detailed instructions, see [Navigation Styles](./navigation-styles.md).
 
 ## Site Footer
 
-Click **Site Footer** in the Style Settings panel to open your footer in the block editor. Build it like any page section -- for example, your address, service times, and social links -- and click **Exit** when you are done. The footer appears at the bottom of every page that uses the **Header & Footer** layout. Each of your websites has its own footer.
+Click **Site Footer** in the Style Settings panel to open your footer in the block editor (the first time, B1 creates an empty block named **Site Footer** for you). Build it like any page section -- for example, your address, service times, and social links -- and click **Exit** when you are done. The footer appears at the bottom of every page that uses the **Header & Footer** layout; until you add content to it, visitors see a default footer with your dark-background logo, church name, and address. Each of your websites has its own footer. You can also reach the footer from any page in the editor through **More** (⋮) > **Edit site footer**. See [Your Site Footer Is a Block](./blocks.md#your-site-footer-is-a-block).
 
 ## Announcement & Widgets
 
@@ -95,7 +97,7 @@ Uncheck **Enabled** and click **Save** to turn a widget off. These widgets apply
 The **Redirects & analytics** card (below the Style Settings) holds two unrelated but commonly-needed settings:
 
 - **Analytics** -- Add your **GA4 Measurement ID** (format `G-XXXXXXXXXX`) and click **Save** to track visitor traffic on your website. The same ID also tracks page views in your church's B1 app (the member portal at `/mobile`, including the installed app), tagged with a `display_mode` of `installed` or `browser` so you can tell installed-app visits from browser visits in Google Analytics.
-- **Redirects** -- Map an old URL path to a new one, so links to a page you moved or renamed keep working instead of 404ing. Enter the old **From Path** and the new **To Path**, then click **Add**. The redirect is saved right away and listed above the fields; click its delete icon to remove it. Paths are saved in lowercase, with a leading slash and no trailing slash. A redirect also takes priority over B1's built-in pages (`/sermons`, `/stream`, `/donate`, `/bible`, and `/votd`), so you can send that address somewhere else (for example, to your own sermons page or a YouTube channel). It doesn't override a page you built yourself at the same address. Delete that page first if you want the redirect to apply.
+- **Redirects** -- Map an old URL path to a new one, so links to a page you moved or renamed keep working instead of 404ing. Enter the old **From Path** and the new **To Path**, then click **Add**. The redirect is saved right away and listed above the fields; click its delete icon to remove it. Paths are saved in lowercase, with a leading slash and no trailing slash. Both paths are required, they cannot be the same, and a church can have up to 200 redirects. A redirect also takes priority over B1's built-in pages (`/sermons`, `/stream`, `/donate`, `/bible`, and `/votd`), so you can send that address somewhere else (for example, to your own sermons page or a YouTube channel). It doesn't override a page you built yourself at the same address. Delete that page first if you want the redirect to apply.
 
 ## Custom CSS and JavaScript
 
@@ -114,7 +116,13 @@ Your site enforces a Content Security Policy that blocks inline scripts from any
 
 ## Style Themes
 
-If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes with coordinated colors. Click one to load it, adjust any color you like, then click **Save Palette**.
+If you want a quick starting point, the **Suggested Palettes** in the Color Palette section offer pre-built themes with coordinated colors. Click one to load it, adjust any color you like, then click **Save Palette**. A [site template](./site-templates.md) also sets a palette and font pair, but only on a site that has never saved a palette.
+
+## Appearance and Multiple Websites
+
+If your church runs [more than one website](./managing-pages.md#multiple-websites), the **Color Palette**, **Fonts**, **Typography Scale**, **Spacing Scale**, **Navigation**, **CSS & Javascript**, and **Site Footer** settings belong to the site selected in the site switcher. A new site starts out showing the main website's styles; the first time you save any of these settings for it, it gets its own copy and the two sites can diverge from then on.
+
+The **Logo**, **Announcement & widgets**, and **Redirects & analytics** settings are shared by every website your church has.
 
 ## Next Steps
 

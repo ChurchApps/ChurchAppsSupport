@@ -22,8 +22,8 @@ Lessons.church uses the same ChurchApps account system as B1.church. If you alre
 ## Registering a New Account
 
 1. Go to [Lessons.church](https://lessons.church) in your web browser.
-2. Click **Login** in the top navigation bar.
-3. On the login page, click **Register** to create a new account.
+2. Click **Register** in the top navigation bar (next to **Login**), or **Join for FREE Curriculum** on the home page.
+3. The registration form opens.
 4. Enter your **first name**, **last name**, and **email address**.
 5. Create a **password** for your account.
 6. Submit the registration form.
@@ -54,7 +54,9 @@ If you already have a ChurchApps account from B1.church or another ChurchApps to
 
 1. Go to [Lessons.church](https://lessons.church) and click **Login**.
 2. Enter your existing **email** and **password**.
-3. You will be taken to the portal where you can manage your classrooms and schedules.
+3. You will be taken to the portal where you can manage your classrooms and schedules. If you belong to more than one church, pick the church to work in when prompted.
+
+Once logged in, your name replaces the **Login** and **Register** buttons in the header. Click it for the **Schedules**, **Admin** (content editors only), and **Logout** links.
 
 :::info
 Your ChurchApps account works across all ChurchApps products. One account gives you access to B1 Admin, B1.church, Lessons.church, and more.

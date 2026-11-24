@@ -37,17 +37,25 @@ If your church has more than one website, use the site switcher at the top of th
 
 ## Building a Block's Content
 
-1. Click the block's name, or **Edit** on its row. The block opens in the [page editor](./page-editor.md).
-2. Add and style content the same way you would on a page, starting with a section.
-3. Changes save automatically. Click **Exit** in the toolbar to return to the Blocks list.
+1. Click the block's name, or **Edit** on its row. The block opens in the [page editor](./page-editor.md) with a **Block** label and the block's name in the toolbar, and the content area is labeled **Block Preview**.
+2. Add and style content the same way you would on a page:
+   - For a **Section(s)** block, add one or more sections (from a template or blank) and fill them.
+   - For an **Element(s)** block, there are no sections to add. Click **Add Content** and drop elements straight into the **Block Preview** area; the block's own layout comes from the section it is placed in on each page.
+3. Click **Exit** in the toolbar to return to the Blocks list. Block edits go live on every page that uses the block as soon as they are saved; blocks have no draft and publish workflow of their own.
 
 ## Using a Block on a Page
 
 1. Open a page in the [page editor](./page-editor.md) and click **Add Content**.
 2. Select the **Blocks** tab in the **Add Elements** panel. (The tab only appears once you have at least one block.)
-3. Drag the block onto the page: an element block into a section, or a section block between sections.
+3. Drag the block onto the page: an element block (the widgets icon, described as **Reusable element block**) into a section, or a section block (the stacked-rows icon, **Reusable section**) between sections.
 
-The page shows the block's current content. To change it, edit the block itself from the **Blocks** page; every page that uses it updates.
+The page shows the block's current content. To change it, edit the block itself from the **Blocks** page; every page that uses it updates. Selecting a placed block on a page shows only a **Block** dropdown in its settings, for swapping in a different block.
+
+You can also turn an existing section into a block: open the section's settings and click **Convert To** (see [Section Styles](./page-editor.md#section-styles)). This copies the section into a new section block and leaves the original on the page. Element blocks can also be shown by the **Stream** element while you are not live -- set its **Offline Content** to **Block**.
+
+## Your Site Footer Is a Block
+
+The footer at the bottom of every **Header & Footer** page is a special block that does not appear in the Blocks list. Open it from **Site Footer** under [Appearance](./appearance.md#site-footer), or from the editor's **More** (⋮) menu with **Edit site footer** while editing any page. The first time you open it, B1 creates an empty block named **Site Footer** for you; until you add sections to it, your site shows a default footer with your dark-background logo, church name, and address.
 
 ## Renaming or Deleting a Block
 

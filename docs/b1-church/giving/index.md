@@ -27,7 +27,8 @@ Here is what is available in the giving section:
 - **Pay with card or bank account** -- Donations are processed securely by your church's payment provider (most churches use Stripe). You can pay with a credit or debit card, and, depending on the provider, a bank account, mobile money, or PayPal and Venmo. ACH bank payment instructions are also available.
 - **Set up recurring donations** -- Logged-in members can schedule automatic recurring donations so you never miss a gift.
 - **View donation history** -- See a complete list of your past donations, including the date, method, fund, and amount.
-- **Print giving statements** -- Generate printable giving statements for the current year or previous year for your tax records.
+- **Print giving statements** -- Generate a printable giving statement for any year you gave in, for your tax records.
+- **Pledge to a campaign** -- When your church runs a giving campaign and allows it, make or update a pledge from the campaign card on the Giving page.
 - **Manage payment methods** -- Save and manage your payment methods for faster giving in the future.
 
 Your church can limit which years of giving history members see, or hide it, and can add a giving note shown on your Giving page and statements. See [Donation History](./donation-history.md#if-your-church-limits-giving-history).

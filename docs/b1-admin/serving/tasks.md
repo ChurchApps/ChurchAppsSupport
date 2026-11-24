@@ -21,7 +21,9 @@ Tasks let you assign action items to people or groups in your church. Whether it
 
 ## Viewing Tasks
 
-In the Jump menu, choose **Serving > My Work** (or search for "My Work"). The **Tasks** list shows each task's title, who it is associated with, who it is assigned to, when it was opened, and its status. Your [workflow](./workflows.md) cards appear alongside it under **My Cards**. Assignees can also see and work their cards and open tasks from the **Me** screen in the B1 app.
+In the Jump menu, choose **Serving > My Work** (or search for "My Work"). The **Tasks** list shows each task's title and number (for example, "#42"), who it is associated with, who it is assigned to, when it was opened and by whom, and its status. Your [workflow](./workflows.md) cards appear alongside it under **My Cards**. A **Workflows** link at the top of the page opens the Workflows list. Assignees can also see and work their cards and open tasks from the **Me** screen in the B1 app.
+
+Every signed-in staff member can open **My Work** and see the tasks assigned to them, to their groups, or that they requested. Seeing other people's workflow boards, editing cards you aren't assigned, and managing workflows are separate **Tasks** permissions (see [Workflows](./workflows.md#who-can-do-what)).
 
 Use the tabs above the list to switch between tasks **Assigned to Me**, **Assigned to My Groups**, and **Requested by Me**. Each tab shows how many tasks it holds. Tasks and **My Cards** are listed newest first, so whatever just arrived is at the top. The list shows when each task was opened in short form, such as "3d ago"; hover over it to see the exact date and time.
 

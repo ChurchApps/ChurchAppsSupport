@@ -44,7 +44,7 @@ The sync is **one-way** (B1 → Mailchimp) and only touches Mailchimp's standard
 4. The relevant events are pre-selected; uncheck any you don't want (e.g. leave person events on but skip group tags).
 5. Save. B1 verifies the key and audience against Mailchimp before accepting — a typo fails immediately with a reason.
 
-Re-open the webhook and click **Send Test Event** at any time to re-verify the connection (for Mailchimp it checks your key and audience instead of sending a sample subscriber). Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about five days.
+Re-open the webhook and click **Send Test Event** at any time to re-verify the connection (for Mailchimp it checks your key and audience instead of sending a sample subscriber). Every sync attempt is logged in the webhook's delivery history with Mailchimp's actual response, and failed deliveries retry automatically with backoff for about eleven days.
 
 ## Initial Import
 

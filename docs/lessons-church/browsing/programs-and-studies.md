@@ -33,23 +33,24 @@ Content is organized from broadest to most specific:
 To explore programs:
 
 1. Visit the Lessons.church home page.
-2. Scroll through the list of available programs or look at the featured programs at the top.
-3. Click on a **program name** or its image to open the program page.
+2. Scroll through the **Available Programs** bands, or use the age pictures in the banner to jump to one.
+3. Click **Learn More** on a program, or one of its study thumbnails.
 
 Each program page includes:
 
-- **Description** -- An overview of what the curriculum covers and who it is designed for.
-- **Program image** -- A visual identity for the series.
-- **Video trailer** -- Some programs include a short video preview so you can see the style and quality of the content before committing to it.
-- **Studies** -- A listing of all studies in the program, which may be organized into categories.
+- **Name and one-line description** at the top, with the program's image.
+- **Watch Trailer** -- Programs that include a preview video show this button. Click it to play the trailer in a pop-up; click **Close** to return.
+- **Studies** -- The full description of the program, followed by its studies. Programs that organize studies into categories show a row of tabs: **All** plus one tab per category, in alphabetical order. Click a tab to filter; the studies inside a category appear in the order the provider set.
+
+Each study card shows its image, how long it runs (**1 Week**, **4 Weeks**, and so on, one week per lesson), its name, and the start of its description. Click the card to open the study.
 
 ## Browsing Studies
 
 From a program page:
 
-1. Browse the list of studies. If the program organizes studies into categories, you will see them grouped accordingly.
-2. Click on a **study name** to open the study page.
-3. The study page displays all of the lessons included in that study, listed in teaching order.
+1. Click a study card. The study page shows the program name as a breadcrumb link above the study name.
+2. Read the study description under **Lessons**, then scroll through the lesson cards. Lessons appear in teaching order.
+3. Each lesson card shows the lesson's image, its short name (for example, "Lesson 3"), its title, and the start of its description. Click **SEE MORE** or anywhere on the card to open the lesson.
 
 From here, you can click into any lesson to see its full content, including sections, roles, and downloadable materials. See [Viewing Lessons](./viewing-lessons.md) for a detailed walkthrough.
 

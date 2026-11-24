@@ -96,6 +96,8 @@ const config: Config = {
 
           // Old hardcoded URLs
           { from: '/b1Admin/plans.html', to: '/docs/b1-admin/serving/plans' },
+          // Lessons.church's External Providers page links here for the Open Lesson Format spec
+          { from: '/developer/open-lesson-schema.html', to: '/docs/lessons-church/admin/open-lesson-format' },
           // Automations page removed from B1Admin; scheduled automation now lives in workflow triggers
           { from: '/docs/b1-admin/serving/automations', to: '/docs/b1-admin/serving/workflows' },
           // FreePlay Classroom Mode screens (church/room search) removed from the app; calendar pairing replaces them

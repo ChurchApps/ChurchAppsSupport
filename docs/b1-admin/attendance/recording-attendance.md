@@ -20,9 +20,17 @@ Once your campuses, service times, and groups are set up, you can manually recor
 
 - Your campuses, service times, and groups must be configured. See [Attendance Setup](setup.md) if you haven't done this yet.
 - The groups you want to track must have **Track Attendance** enabled. See [Attendance Setup](setup.md) for details.
-- You need the **Edit Attendance** permission to save attendance. Volunteers who only have **View People Names Only** for people can still take attendance this way -- they open classes from **Groups** and see members by name only. See [People Names Only](../settings/roles-permissions.md#people-names-only).
+- You need the **Edit Attendance** permission to add sessions and save attendance in B1 Admin. **View Attendance** lets you open sessions and see who was present without changing anything. Volunteers who only have **View People Names Only** for people can still take attendance this way -- they open classes from **Groups** and see members by name only. See [People Names Only](../settings/roles-permissions.md#people-names-only).
 
 </div>
+
+:::info
+Group leaders can see their own group's sessions and attendance in B1 Admin without any attendance permission. To record attendance and write meeting notes themselves, leaders use the group's page on B1.church. See [Group Details](../../b1-church/groups/group-details.md#meeting-notes-and-attendance).
+:::
+
+## Turning On Attendance Tracking from the Group Page {#turning-on-attendance-tracking-from-the-group-page}
+
+Sessions are only available for groups with **Track Attendance** turned on. When it is off, the **Sessions** section of the [group page](../groups/group-page.md#sessions) says "Turn on attendance tracking to record sessions and check-ins for this group," and clicking **All sessions** shows **Attendance tracking isn't enabled**. People with **Edit Groups** can click **Enable Attendance** in either place to turn it on immediately, without opening the group's settings; the sessions list appears as soon as it saves. To turn it off again, set **Track Attendance** back to **No** in the group's settings. See [Configuring Group Settings](../groups/creating-groups.md#configuring-group-settings).
 
 ## Creating a Session
 
@@ -50,6 +58,25 @@ A session is created for the current group and for each of the other groups on t
 You can create sessions for past dates to catch up on attendance you haven't recorded yet, or create them in advance so they are ready when your group meets.
 :::
 
+## Browsing Sessions {#browsing-sessions}
+
+The **Sessions** list on the left of the view shows the group's sessions, newest first, with a count of how many are listed:
+
+- **Year buttons** above the list filter it to one year. The most recent year is selected when the list opens; when the group has sessions in more than one year, click **All Years** to see them all.
+- Each row shows the session's **date** and weekday, its service time when it has one, and, on the right, the number of people recorded present. Sessions dated in the future show **upcoming** instead of a count, and the selected session is marked **Active**. The counts appear for people who can view attendance and for the group's leaders.
+- Long lists are split into pages of 25; use the page numbers at the bottom of the list.
+- When you open the view, the most recent session that isn't in the future is selected for you. Click any other row to open that session's attendance list on the right.
+
+The **New** button at the bottom of the list (shown with **Edit Attendance**) adds a session, as described above. If the group has no sessions yet, the list reminds you to assign the group to a service time under **People > Attendance > Setup**; that is optional, but it lets you pick a **Service Time** for each session.
+
+## Editing or Deleting a Session {#editing-or-deleting-a-session}
+
+1. In the **Sessions** list, click the **Edit** (pencil) icon on the session's row. The **Edit Session** form opens above the attendance list.
+2. Change the **Service Time** (for groups assigned to one), the **Session Date**, or the **Notes**, and click **Save**. The sessions list and attendance list update to match.
+3. To remove the session instead, click **Delete** at the bottom of the form and confirm. The session disappears from the group and its attendance no longer counts in reports, so [export it](#exporting-attendance-to-a-spreadsheet) first if you need a record.
+
+Editing and deleting sessions need **Edit Attendance**.
+
 ## Session Notes {#session-notes}
 
 Each session can have notes -- a recap of what was covered, announcements, or prayer requests.
@@ -61,19 +88,17 @@ The notes appear at the top of the session's attendance list. They are also the 
 
 ## Marking Attendance
 
-Select a session to see its attendance list. Every group member is listed with a checkbox, sorted by last name, and anyone already recorded as present is checked.
+Select a session to see its attendance list, headed **Attendance for** the group's name with the session's date and service time beneath it. The number of people already recorded present appears beside the heading, along with a count of checked-in **volunteers** when there are any. Every group member is listed with a checkbox, sorted by last name, and anyone already recorded as present is checked. A **Type** column shows a **Volunteer** or **Guest** chip for kiosk check-ins and a **Guest** chip for anyone who isn't a group member.
 
 1. Check the box next to each person who attended. Use **Select All** or **Select None** to change everyone at once.
 2. The count above the list (for example, "12 of 15 present") updates as you check boxes.
 3. Click **Save Attendance**. Nothing is recorded until you save, and a message confirms when the save is done. If you try to close or reload the browser tab while a save is still going, your browser warns you first so the changes are not lost.
 
-Unchecking someone who was already recorded as present and then saving removes them from the session.
+Unchecking someone who was already recorded as present and then saving removes them from the session. **Save Attendance** stays disabled until you change at least one box, and the checkboxes are read-only for people without **Edit Attendance**.
 
 ### Adding Visitors
 
-To record someone who is not a member of the group, search for them in the person search beside the attendance list. If they are not in your database yet, you can create them from the search. Either way, they are added to the list already checked. Click **Save Attendance** to record them.
-
-People who checked in at a kiosk show a **Volunteer** or **Guest** chip. People who are not group members show a **Guest** chip.
+To record someone who is not a member of the group, search for them in the **Add Person** box below the attendance list. If they are not in your database yet, you can create them from the search. Either way, they are added to the list already checked. Click **Save Attendance** to record them.
 
 ## Check-In Details {#check-in-details}
 
@@ -112,8 +137,8 @@ Pair this with **Print All Classes** and [adding sessions for every class in a s
 
 A roll sheet is a printable class list that teachers can mark by hand and give back to you to enter later. Each sheet shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with the church name beneath it, the class, a large **Date** line under the class name, and the service time. Members are listed in two columns (read down the left column, then the right) so more names fit on a page, and every member has **Present** and **Absent** boxes. There are blank lines for visitors and a **Teacher / Notes** area.
 
-- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date and shows that session's service time.
-- **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page.
+- **From a session** -- Click the **Print Roll Sheet** (printer) icon at the top of the session's attendance list. The sheet is dated with the session's date and shows that session's service time. The icon appears for people with **View Group Members** and for the group's leaders.
+- **All classes for a service** -- If the session has a service time, click **Print All Classes** to print one sheet per class assigned to that service time. Each class prints on its own page. This needs **View Group Members**.
 - **From the member list** -- On the group's page, click **All members**, then click the **Print Roll Sheet** icon above the member list and choose **Attendance Sheet** to print an undated sheet. The same menu has a **Contact Roster** layout with each member's phone, email, and address -- see [Printing the Member List](../groups/group-members.md#printing-the-member-list).
 
 The sheet opens in a new tab and your browser's print dialog appears automatically.
@@ -123,8 +148,8 @@ The sheet opens in a new tab and your browser's print dialog appears automatical
 You can download a record of the session as a CSV file to use in Excel, Numbers, or Google Sheets.
 
 1. Open the session you want to export.
-2. Click the **Export** button at the top of the attendance list.
-3. Open the downloaded file in your spreadsheet application.
+2. Click the **Export** button at the top of the attendance list. It appears once the session has at least one person recorded, for people with **View Attendance**.
+3. Open the downloaded file (named after the group, for example `Kids Room 1_visits.csv`) in your spreadsheet application.
 
 The file has one row per group member with their name and whether they were present or absent, plus the session date and the session's notes. For people who checked in at a kiosk or on their phone, it also has the check-in details: **checkinTime**, **checkedInBy**, **checkoutTime**, **pickedUpBy**, and **checkinType** (member, guest, or volunteer).
 

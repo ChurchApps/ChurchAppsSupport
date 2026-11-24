@@ -50,6 +50,10 @@ If you do not see the Settings option, ask the person who set up your church acc
 For detailed instructions on working with pages and navigation, see [Managing Pages](./managing-pages.md). For a full guide to the visual editor, see [Using the Page Editor](./page-editor.md).
 :::
 
+:::tip
+Prefer not to start from a blank page? Click **Start From a Template** on the Pages screen to create a home page, about page, and visit page with navigation in one step, or choose the **AI** page type in **Add Page** to have a page drafted from a short description. See [Site Templates and AI Pages](./site-templates.md).
+:::
+
 ## Configuring Site Appearance
 
 1. In the Jump menu, choose **Website > Appearance**.

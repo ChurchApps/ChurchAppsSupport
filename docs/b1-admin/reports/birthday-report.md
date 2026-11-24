@@ -41,6 +41,16 @@ Same steps — in the **Demographics** section, check **Anniversary Month** inst
 Both lists come from the birth date and anniversary fields on each person's profile — if someone's missing, their profile just needs the date added.
 :::
 
+## The Birthdays by Month Report
+
+B1 also has a ready-made **Birthdays by Month** report. It is not in the menus, so go straight to **admin.b1.church/reports/birthdays** (bookmark it) -- you need permission to view People.
+
+1. In the **Filter Report** panel, choose the **Month**. Optionally choose a **Group** to list only the members of one class or group, such as a children's class.
+2. Click **Run Report**.
+3. The results table lists each person's **Birthday** and **Name**. Use the print icon to print it.
+
+The report shows the same people as the **Birth Month** filter above but as a plain printable table with no columns to set up, which makes it the quicker choice for a bulletin list. The People search is the better choice when you also want to see ages, email the people, or save the search as a [list](../people/lists.md). The matching **Anniversaries by Month** report is at **/reports/anniversaries**; see [Anniversary List](./anniversary-report.md#the-anniversaries-by-month-report).
+
 :::info
-Earlier versions of B1 Admin linked a separate Birthdays report from the menu. That link has been removed — the People search filters above are the current way, and they cover anniversaries too.
+Earlier versions of B1 Admin linked the Birthdays report from the menu. That link has been removed, so reach the report by its address, or use the People search filters above, which cover anniversaries too.
 :::

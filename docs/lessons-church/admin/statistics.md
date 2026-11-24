@@ -1,6 +1,6 @@
 ---
 title: "Statistics"
-description: "Find download counts by study, see which churches are pulling your resources, and map their locations in Lessons.church admin statistics, with date-range filtering."
+description: "Open a program's stats in Lessons.church admin to see unique downloads by study, the logged-in churches downloading, and a map of download locations for a date range."
 ---
 
 # Statistics
@@ -21,44 +21,38 @@ The statistics page gives admins insight into how their content is being used. Y
 
 ## Accessing Statistics
 
-1. Navigate to the **Admin** area.
-2. Select the **Stats** or **Statistics** page.
-3. Choose the **program** you want to view statistics for.
+1. Open **Admin** and click the program in the **Programs** column.
+2. In the middle column header, next to **Add Study**, click the **View Stats** icon.
+3. The page **Stats for** followed by the program name opens, showing the current month by default.
 
 ## What You Can See
 
-The statistics page provides several views of your download data:
+### Unique Downloads by Study
 
-### Downloads by Study
-
-A breakdown of unique downloads for each study within the selected program. This shows you which series are getting the most traction and helps you decide where to invest your content creation efforts.
-
-### Church List
-
-A list of churches that have downloaded resources from your program. This gives you a sense of your audience and how widely your content is being adopted.
+A table of each study in the program and its **Unique Downloads**. Counts are unique: a person who downloads several files from one lesson, downloads a lesson several times, or downloads several lessons in a series counts once. This shows you which series are getting the most traction.
 
 ### Geographic Distribution
 
-A map view showing where your downloading churches are located. This helps you understand the geographic reach of your curriculum and identify regions where your content is popular.
+A **Map of Downloads** with a dot for each location downloads came from. Hover a dot to see the city, state, country, and total downloads from there. Drag and scroll to pan and zoom.
 
-### Date Range Filtering
+### Church List
 
-You can filter all statistics by a date range to focus on a specific time period. This is useful for seeing trends over time or measuring the impact of a newly released study.
+A table of churches that downloaded from this program, with their city and state. Login is not required to download, so many downloads are anonymous; this list shows only churches whose users were logged in when they downloaded.
 
-1. Set the **start date** and **end date** using the date pickers.
-2. The statistics will update to reflect only the activity within that range.
+### Date Filter
+
+All three views cover the date range in the **Date Filter** box, which starts at the first and last day of the current month.
+
+1. Change the **Start Date** and **End Date**.
+2. Click **Update Results**. The table, map, and church list refresh for the new range.
 
 ## Using Statistics Effectively
 
 Here are a few ways to put your download data to work:
 
 - **Identify popular content** -- Focus your effort on creating more material in the style and topics that get the most downloads.
-- **Track new releases** -- After publishing a new study, filter by date to see how quickly it is being picked up.
+- **Track new releases** -- After publishing a new study, set the range to its release week to see how quickly it is being picked up.
 - **Understand your audience** -- Use the church list and map to see who is using your content and consider reaching out to those communities.
-
-:::info
-Statistics are based on unique downloads. If the same church downloads a resource multiple times, it is counted once.
-:::
 
 ## Related Articles
 
