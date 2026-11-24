@@ -41,6 +41,16 @@ Each booking reads as the event title followed by the rooms and resources it use
 
 Use the **Room / Resource** dropdown at the top left to narrow the calendar to a single room or resource. Select **All rooms & resources** to return to the full view.
 
+## Exporting Bookings to a Spreadsheet {#exporting-bookings}
+
+Click **Export** at the top of the page to download a CSV file of the bookings in the current view, for a facilities team or custodial schedule.
+
+1. Pick the view and dates you want with **Month**, **Week**, **Day**, or **Agenda** and **Back** / **Next**.
+2. Optionally pick one room or resource in **Room / Resource**.
+3. Click **Export**.
+
+The file has one row per booking on each date in view, sorted by start time, with these columns: **Event**, **Room / Resource**, **Quantity** (for resources), **Start** and **End** (the event's own times), **Setup (min)** and **Teardown (min)**, **Status** (**Approved** or **Pending**), and **Requested by**. A booking with a custom reservation window leaves the setup and teardown columns blank. Repeating bookings get a row for each date. Blockouts are not included. The **Export** button only appears when there is at least one booking in view.
+
 ## Booking a Room or Resource
 
 1. Click the **Book** button at the top of the page.

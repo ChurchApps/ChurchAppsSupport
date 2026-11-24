@@ -16,7 +16,7 @@ The Mobile App Settings page lets you configure the navigation tabs that appear 
 <YouTube id="7x2CQG_pH6o" title="Customizing Your Church's Member App in B1" />
 
 :::info
-Tabs configured here appear in the B1 App, which members can [install as a Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Share your church's install page — `https://yourchurchname.b1.church/mobile/install` — with members; it walks them through installing the app on their device, with no App Store or Google Play download required.
+Tabs configured here appear in the B1 App, which members can [install as a Progressive Web App (PWA)](../../b1-church/getting-started/installing-pwa.md). Share your church's install page — `https://yourchurchname.b1.church/mobile/install` — with members; it walks them through installing the app on their device, with no App Store or Google Play download required. The **Install link** box at the top of the Member portal page gives you this link and a QR code (see [Sharing the Install Link](#sharing-the-install-link)).
 :::
 
 <div class="prereqs">
@@ -33,7 +33,7 @@ Tabs configured here appear in the B1 App, which members can [install as a Progr
 2. Click **Navigation** (`/mobile/navigation`). You need the **Edit Content** permission to see it.
 3. The **App Tabs** list shows your current tabs in order, each with its visibility. Tabs inside a folder are indented under it.
 
-The Mobile menu also holds **App Theme**, **Member portal**, **B1 Check-In**, **Labels**, and **Push Notifications**. App Theme and Member portal are covered below; see [Push Notifications](#push-notifications) for scheduling notifications.
+The Mobile menu also holds **App Theme**, **Member portal**, **B1 CheckIn**, **Labels**, and **Push Notifications**. App Theme and Member portal are covered below; see [Push Notifications](#push-notifications) for scheduling notifications. **B1 CheckIn** holds the kiosk settings: QR guest registration, the [check-in announcement](../attendance/check-in.md#check-in-announcement) families see before choosing who to check in, and the kiosk theme. See [Check-In](../attendance/check-in.md).
 
 ## Adding a New Tab
 
@@ -76,6 +76,20 @@ Keep your tab count manageable. Three to five tabs works well for most churches.
 3. Click **Save**.
 
 Click **Reset to Defaults** to go back to the standard colors. B1 Admin's own **Custom** theme also uses the light-mode **Primary** color -- see [Managing Your Profile](../profile/managing-profile.md).
+
+## Sharing the Install Link {#sharing-the-install-link}
+
+The **Member portal** page (`/mobile/b1-mobile`) opens with an **Install link** box that holds your church's app install page link. Members open it on their phone to get the app.
+
+1. In the Jump menu, expand **Mobile** and click **Member portal**.
+2. In the **Install link** box at the top, click the link to open the install page yourself, or click **Copy** to copy it (the button briefly reads **Copied**) and paste it into an email, text, or social media post.
+3. Click **QR Code** to show a QR code for the link. Click **Download PNG** to save it as an image, or click the copy icon under the code to copy the link. Click **Close** when you are done.
+
+Anyone who scans the code lands on the install page for your church's app.
+
+:::tip
+Put the QR code in your bulletin or on a slide before or after the service so people can install the app on the spot.
+:::
 
 ## Member Directory & Messaging Settings
 

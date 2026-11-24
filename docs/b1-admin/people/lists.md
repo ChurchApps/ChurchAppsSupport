@@ -28,7 +28,7 @@ description: "Save a People search in B1 Admin as a named list, then reload it i
 5. Optionally enter a **Category** to group related lists together (for example, "Outreach" or "Membership").
 6. Under **Who can see this list**, choose **All staff** or **Only me**.
 7. Under **Match**, choose **All filters** (people must match every filter) or **Any filter** (people who match at least one filter).
-8. Under **Include household**, choose **Matches only**, **Children of matches** (also adds the children in each matching person's household), or **Entire household** (adds everyone in each matching person's household).
+8. Under **Include household**, choose **Matches only**, **Children of matches** (also adds the children in each matching person's household), **Entire household** (adds everyone in each matching person's household), or **Adults of matches** (replaces each match with the Head and Spouse of their household, handy for reaching the parents of a list of children).
 9. Optionally check **Refresh nightly** (see [Nightly Refresh](#nightly-refresh) below). When it's checked, you can also check **Email me when membership changes**.
 10. Click **Save**.
 
@@ -55,18 +55,31 @@ Staff with manage permission can rename or delete any list from the People page.
 - Click the **List Settings** (gear) icon to rename it or change its category and sharing. Lists saved with these options can also change **Include household**, **Refresh nightly**, and **Email me when membership changes** here. The **Match** setting can't be changed after the list is saved.
 - Click the **Delete** (trash) icon to delete it (you will be asked to confirm).
 
+### Duplicating a List
+
+To start a new list from an existing one, load the list, click the **List Settings** (gear) icon, and click **Duplicate**. B1 saves a copy named "*List name* (copy)" with the same filters and options and opens it. Use the gear icon on the copy to rename it.
+
 ## Nightly Refresh {#nightly-refresh}
 
-Loading a list always runs its search fresh, whether or not **Refresh nightly** is checked. **Refresh nightly** also has B1 re-run the list every night and keep track of who joined or left it. If you checked **Email me when membership changes**, B1 emails you (the person who saved the list) after a nightly refresh that added or removed anyone, with how many people were added and removed. The nightly refresh also sends list membership changes to your [integrations](../integrations/index.md), such as Mailchimp tags.
+Loading a list always runs its search fresh, whether or not **Refresh nightly** is checked. **Refresh nightly** also has B1 re-run the list every night and keep track of who joined or left it. If you checked **Email me when membership changes**, B1 emails you (the person who saved the list) after a nightly refresh that added or removed anyone. The email lists the names of the people added and removed (up to 100 of each, then a count of the rest). The nightly refresh also sends list membership changes to your [integrations](../integrations/index.md), such as Mailchimp tags.
 
 ## Use Cases
 
 | Scenario | How to build the list |
 |---|---|
-| All visitors | Advanced search: Membership Status = Visitor |
+| All visitors | Advanced search: Membership Status **is any of** Visitor |
+| Everyone except visitors | Advanced search: Membership Status **is none of** Visitor |
+| Birthdays this month | Advanced search: Birth Month = **This month** (the list follows the calendar) |
+| Parents of the children in a class | Advanced search: Group Member = [the class], then Include household = **Adults of matches** |
+| Everyone in your home groups | Advanced search: Group Category = [your home group category] |
+| Attendees who haven't given this year | Advanced search: Membership Status, plus Member Donations **has not donated (in general)** from January 1 to today |
 | Members at a specific campus | Advanced search: Campus = [your campus] |
 | Volunteers with an expired background check | Advanced search: [Custom Field](../settings/custom-fields.md) "Background check expires" is before today |
 | Results from an AI question | Ask a question in AI Search, then save |
+
+:::info
+A **Group Category** filter is saved as the groups that were in that category when you saved the list. Lists that use **Any filter**, an **Include household** option other than **Matches only**, or **Refresh nightly** won't pick up groups added to the category later. To include new groups, run the search again and save it as a new list.
+:::
 
 ## Related Articles
 

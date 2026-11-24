@@ -1,7 +1,7 @@
 ---
 title: "Your Service Plans in the B1.church Member Portal"
 sidebar_label: "Viewing Plans"
-description: "Check your service plan assignments in B1.church, accept or decline requests, set blockout dates, and review your past serving history."
+description: "Check your service plan assignments in B1.church, accept or decline requests, set blockout dates and scheduling preferences, subscribe to your serving calendar, and review your past serving history."
 ---
 
 # Viewing Plans
@@ -35,15 +35,47 @@ The Plans page gives you a clear view of all the service plans you are assigned 
 
 The top of the page shows how many of your upcoming assignments are confirmed and how many still need a reply, plus a **Sign up to serve** button that opens the [volunteer signup](../serving/volunteer-signup.md) page. Below that, the page is organized into sections:
 
-- **Needs your reply** -- Assignments you have not answered yet, each with **Accept** and **Decline** buttons so you can respond without opening the plan. Tapping **Decline** asks you to confirm first. Only shown when something is waiting on you.
+- **Needs your reply** -- Assignments you have not answered yet, each with **Accept** and **Decline** buttons so you can respond without opening the plan. Tapping **Decline** asks you to confirm first, and lets you add a reason. When more than one request is waiting, tap **Accept all** to accept them all at once. Only shown when something is waiting on you.
 - **Upcoming** -- Your next three assignments. Tap **All upcoming** to see the rest.
 - **Blockout dates** -- Dates when you are unavailable for serving. Tap **Add dates**, choose a **Start date** and **End date**, and tap **Save**. Tap **Remove** next to a blockout to delete it. Your team leaders see these dates so they can schedule around you.
+- **Scheduling preferences** -- How often and when you like to serve. See [Scheduling Preferences](#scheduling-preferences).
+- **Serving calendar** -- A calendar subscription of the times you have accepted. See [Adding Your Serving Times to Your Calendar](#serving-calendar).
 - **Past** -- How many times you have served this year and when you last served (or "No past assignments." if you haven't served yet). Tap **Past assignments** to see the full list, which you can filter by year.
 
 Each assignment shows the **service date**, the **plan name**, your **position**, and a status badge -- **Accepted**, **Confirmed**, **Declined**, **Pending Response**, or **Needs reply** if you have not responded yet.
 
 :::info
 Your church may send **reminders** before the services you are scheduled for, by email and as an app notification. If your church sends texts, you can also get them by text by turning on **Text messages** in your [Notification Preferences](../getting-started/notification-preferences.md). If you have not responded yet, you can **Accept** or **Decline** right from the reminder email — no sign-in needed.
+:::
+
+## Accepting Several Requests at Once
+
+When more than one assignment is waiting in **Needs your reply**, an **Accept all** link appears at the top of that section. Tap it to accept every waiting request in one step. If any of them can't be accepted, those stay in the list with a note such as "Accepted 2 of 3. The rest still need your reply; try again."
+
+## Scheduling Preferences {#scheduling-preferences}
+
+Tell your schedulers how you like to serve. They and the church's auto-scheduling use these preferences when they fill positions.
+
+1. On the Plans page, find **Scheduling preferences** and tap **Edit**.
+2. Fill in any of these:
+   - **Max times per month** -- the most times you want to serve in a month. Leave it blank for no limit.
+   - **Preferred service times** -- the services you would rather serve at, for example "9:00 am" or "First Service". Separate several with commas.
+   - **Household** -- **Schedule us together**, **Not on the same day**, or **No preference**.
+3. Tap **Save**.
+
+The section then shows your preferences, or **No preferences set.** if you haven't set any. Staff can see and change the same preferences in B1 Admin (see [Scheduling Preferences](../../b1-admin/serving/plans.md#scheduling-preferences)).
+
+## Adding Your Serving Times to Your Calendar {#serving-calendar}
+
+The **Serving calendar** section on the Plans page lets you see your serving schedule in your own calendar app, such as Apple Calendar, Google Calendar, or Outlook.
+
+1. On the Plans page, find **Serving calendar** and tap **Subscribe**.
+2. Your device opens the subscription in your calendar app. Confirm there to add it.
+
+The calendar shows the assignments you have **accepted**, with the plan, your position, and the service times you are needed (or an all-day event if the plan has no times). Requests you haven't answered and assignments you declined are not included. Your calendar app checks for changes on its own schedule, so updates can take a while to appear.
+
+:::warning
+Anyone with your calendar link can see your serving times. If you shared it by mistake, tap **Reset link**. The old link stops working right away; tap **Subscribe** again to add the new one to your calendar.
 :::
 
 ## Viewing Plan Details
@@ -65,9 +97,14 @@ If something comes up after you have accepted, you can still back out from the p
 1. Open the plan and find your position under **Your assignment**. It shows an **Accepted** badge.
 2. Tap the red **Decline** link under the position.
 3. A confirmation asks **Decline this assignment?** -- "Your team leaders will be notified that you can no longer serve in this position."
-4. Tap **Decline** to confirm, or **Cancel** to keep the assignment.
+4. Optionally type a short note in **Reason (optional)**, such as "Out of town".
+5. Tap **Decline** to confirm, or **Cancel** to keep the assignment.
 
-Your status changes to **Declined**. The same confirmation appears whenever you tap **Decline** -- on the plan page, in **Needs your reply** on the Plans page, or in **You're serving** on Home -- so a mis-tap never declines an assignment.
+Your status changes to **Declined**. The same confirmation, with the same **Reason (optional)** box, appears whenever you tap **Decline** -- on the plan page, in **Needs your reply** on the Plans page, or in **You're serving** on Home -- so a mis-tap never declines an assignment. Declining from the **Decline** button in a reminder email also offers a **Reason (optional)** box.
+
+:::info
+If you give a reason, it is added to the notification your ministry leaders get when you decline. Only they and staff who can edit plans see it. A reason is limited to one line of up to 255 characters.
+:::
 
 ## Accepting a Declined Assignment {#accepting-a-declined-assignment}
 

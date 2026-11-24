@@ -35,7 +35,7 @@ When your church enables registration for an event, you can sign up through a si
    - **Email** (required)
    - **Phone** (optional)
 5. If the event has attendee types (for example, Adult and Child at different prices), choose **Your registration type**. Each type shows its price, and types that have run out show as **Sold out**.
-6. Click **Continue**.
+6. Click **Continue**. If you are logged in and already registered for this event, you'll see "You're already registered for this event." instead; check [My Registrations](./my-registrations.md) to see or change your registration.
 
 :::info
 If the event has a capacity limit, a progress bar shows how many spots remain. If the event is full and your church has enabled a waitlist, you can still complete the signup to join the waitlist — see [Joining a Waitlist](#joining-a-waitlist) below.
@@ -43,7 +43,8 @@ If the event has a capacity limit, a progress bar shows how many spots remain. I
 
 ## Step 2: Add Family Members
 
-1. If you are logged in, the **Additional Members** step lists your household under **Your Household**, with you already checked. Check each family member who is coming. If the event has attendee types, pick a type for each one.
+1. If you are logged in, the **Additional Members** step lists your household under **Your Household**, with you already checked. Check each family member who is coming. If the event has attendee types, pick a type for each one. When a type has an age range (for example, Child for ages 0 to 12) and a family member's birthdate on file fits it, that type is picked for them when you check their name; you can still change it.
+   - A family member who is already on another registration for this event is marked **Already registered** and can't be checked, so nobody is signed up twice.
 2. To add someone who isn't in your household, click **Add Member** and enter their **First Name** and **Last Name** (up to 10 people in total).
 3. If the event has attendee types, pick a type for each person you add.
 4. Click the remove button next to any member to take them off the registration.
@@ -64,7 +65,7 @@ Some events ask registrants to answer a few extra questions -- dietary restricti
 1. If the event has questions attached, a **Questions** step appears next.
 2. Fill in your answers and continue.
 
-If the event has no questions attached, this step is skipped automatically.
+If the event has no questions attached, this step is skipped automatically. If church staff registered you, or you registered before the questions were added, you can answer them later from [My Registrations](./my-registrations.md#answering-questions-later).
 
 ## Step 5: Pay (Paid Events)
 
@@ -74,7 +75,10 @@ If your registration has a cost, the **Payment** step shows an **Order Summary**
 - **Logged-in members** can pay with a saved card or choose **Use a new card**.
 - **Guests** enter their card details directly and tick the **I'm not a robot** check before paying.
 
-Click the **Pay & Register** button, which shows your total (for example, **Pay $25.00 & Register**), to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
+Click the **Pay & Register** button, which shows the amount being charged (for example, **Pay $25.00 & Register**), to complete the payment and registration in one step. Your card details go directly to the church's payment provider and are never stored by B1.
+
+- **Deposits** -- Some attendee types only need a deposit to hold your spot. When they do, the order summary shows **Due today** (what you pay now) and **Balance due later** (what you'll still owe). Options and selections are paid in full today. Pay the rest later from [My Registrations](./my-registrations.md#completing-a-payment), or pay the church in person.
+- **Pay later** -- If the church allows it, the payment step also says "Or register now and pay by cash or check at the event." with a **Register and Pay Later** button. Your registration is saved with the full amount as a balance due, and nothing is charged.
 
 Free registrations skip this step and go straight to confirmation.
 
@@ -82,7 +86,7 @@ If your church does not take payments online, the payment step says *"Online pay
 
 ## Step 6: Confirm
 
-A confirmation message appears with the event details and a list of everyone you registered. If you chose **Register and Pay Later**, the message is titled **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest).
+A confirmation message appears with the event details and a list of everyone you registered. If you chose **Register and Pay Later**, the message is titled **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due. You will also receive a **confirmation email** at the email address associated with your account (or the email you provided as a guest). The church may add its own note to that email, such as directions or what to bring.
 
 If you chose **Register and Pay Later**, the member portal shows **Registration Pending** instead, with a **Pending** badge, "Your spot is held for" the event, and the balance due (for example, "Balance due $25.00 of $25.00").
 
@@ -94,10 +98,11 @@ If the event is full and your church enabled the waitlist, the first step shows:
 
 ## Changing or Canceling a Registration
 
-If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations.md). Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
+If you are logged in, you can edit or cancel your registration yourself from the **Registrations** page in the member portal — see [My Registrations](./my-registrations.md). Some events don't allow cancelling online; for those, contact the church office. Guests should contact the church office, and staff can make the change from the B1 Admin registrations page.
 
 ## Related Articles
 
 - [Events Overview](./index.md) -- Browse upcoming events with registration
-- [My Registrations](./my-registrations.md) -- View, edit, pay balances, and cancel your registrations
+- [My Registrations](./my-registrations.md) -- View, edit, pay balances, answer questions, and cancel your registrations
+- [Paid Registrations (B1 Admin)](../../b1-admin/calendars/paid-registrations.md) -- How churches set up prices, deposits, and pay later
 - [Making Donations](../giving/making-donations.md) -- Make a donation alongside event participation

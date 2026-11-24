@@ -21,13 +21,15 @@ Place an iPad or Android tablet in your lobby or welcome area. Members walk up, 
 
 ## Key Features
 
-- **Self-service member lookup** -- Search by phone number or last name to find your household quickly.
+- **Self-service member lookup** -- Search by phone number or last name to find your household quickly; results appear as you type, and a kiosk can start on the scanner.
+- **Check-in announcement** -- Show families a message from the church before they choose who to check in.
 - **Household review** -- See all family members with photos and current group assignments at a glance.
 - **Group assignment** -- Assign each family member to the right class or group for the selected service time.
-- **Guest check-in** -- Add a guest to your household on the spot with a first and last name.
+- **Guest check-in** -- Add a guest to your household on the spot with a first and last name and an optional email.
 - **QR guest registration** -- Display a QR code that visitors can scan to [register themselves](../b1-church/checkin/guest-registration.md) on their own phone before checking in, or let them tap **Register here** to fill in the same form on the kiosk.
-- **Label printing** -- Print name labels for children and parent pickup slips with unique security codes.
-- **Network printer support** -- Discover and configure network printers directly from the app.
+- **Label printing** -- Print name labels for children and parent pickup slips with unique security codes, and add age, grade, birth date, check-in type, or who checked the child in to your designed labels.
+- **Check-out by name or phone** -- Manned stations can find a family without the pickup code, check out only some of the children, and record the time and who picked them up.
+- **Network printer support** -- Discover network printers directly from the app, or enter one by IP address.
 - **Auto-login** -- After the first login, the app remembers your credentials and goes straight to the services screen on future launches.
 - **Multi-church support** -- If your account is linked to more than one church, you can choose which one to check into.
 - **Church branding** -- The app displays your church logo in the header once a church is selected.

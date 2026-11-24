@@ -267,7 +267,7 @@ Manages stored payment methods (cards, bank accounts) via payment gateway APIs. 
 | POST | `/addbankaccount` | JWT | Donations.Edit or own personId | Add a bank account via token (deprecated; use `ach-setup-intent`). Body: `{ id, personId, customerId, email, name }` |
 | POST | `/updatebank` | JWT | Donations.Edit or own personId | Update bank account details. Body: `{ paymentMethodId, personId, bankData, customerId }` |
 | POST | `/verifybank` | JWT | Donations.Edit or own customer | Verify a bank account with micro-deposits. Body: `{ paymentMethodId, customerId, amountData }` |
-| DELETE | `/:id/:customerid` | JWT | Donations.Edit or own customer | Delete a payment method (card or bank account) |
+| DELETE | `/:id/:customerid` | JWT | Donations.Edit or own customer | Delete a payment method (card or bank account). Returns `409` with `code: "payment_method_in_use"` when an active recurring gift still uses it; cancel or re-point the subscription first |
 
 ## Event Log
 

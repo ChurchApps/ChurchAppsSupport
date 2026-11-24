@@ -52,6 +52,6 @@ B1.church works in any mobile browser. For a more app-like experience, install y
 
 ## Next Steps
 
-- [Logging In](./logging-in.md) -- Learn how to sign in and manage your session.
+- [Logging In](./logging-in.md) -- Learn how to sign in (with your password or an emailed code) and manage your session.
 - [Navigating B1App](./navigating.md) -- Find your way around the member portal.
 - [Installing as an App (PWA)](./installing-pwa.md) -- Add B1.church to your phone's home screen.

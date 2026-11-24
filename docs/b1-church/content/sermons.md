@@ -31,6 +31,10 @@ The buttons above the list (**Playlists**, then the playlist's name, then the se
 
 Each sermon also has its own page at `/sermons/` followed by the sermon's ID, which you can share or bookmark. It shows the video, the series name, the title, the date, and the description.
 
+To always reach the newest sermon, use `/sermons/latest` on your church's site (for example, `https://yourchurch.b1.church/sermons/latest`). It opens the page of the sermon with the most recent publish date, so the same link stays current every week. If your church has no sermons yet, it opens the Sermons page instead.
+
+A sermon without its own picture shows its series (playlist) picture instead, on its page, in link previews when the page is shared, and in the member portal.
+
 :::info Podcast feed
 Your church's sermons are also published as a podcast (RSS) feed. Podcast apps and feed readers can find it from any sermon's page.
 :::

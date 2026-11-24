@@ -58,6 +58,8 @@ Follow the [Managing Sermons](../sermons/managing-sermons.md) guide to:
 2. Pick a **Playlist** and the **Video Provider** (YouTube, Vimeo, Facebook, or Custom Embed Url), then paste the video link or ID
 3. For YouTube and Vimeo, click **Fetch** to fill in the title, description, thumbnail, duration, and publish date from the video, then click **Save**
 
+If an import brings in videos you don't want, check them in the sermon list and click **Delete Selected** to remove them together. See [Deleting Several Sermons at Once](../sermons/managing-sermons.md#deleting-several-sermons-at-once).
+
 ## Step 4: Set Up Live Streaming
 
 Connect your YouTube channel so your B1 site automatically picks up your live stream.
@@ -80,6 +82,10 @@ Follow the [Page Editor](../website/page-editor.md) guide to:
 
 1. Add a **Sermons** element to a page on your B1 website so visitors can browse your library
 2. Add a **Stream** element for the live viewing experience
+
+:::tip
+Add a "Latest Sermon" link to your site's navigation that points to `/sermons/latest`. It always opens your newest sermon, so you never have to update it. See [Linking to the Latest Sermon](../sermons/managing-sermons.md#linking-to-the-latest-sermon).
+:::
 
 ## Step 6: Mobile Access
 

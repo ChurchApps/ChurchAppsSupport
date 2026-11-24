@@ -27,7 +27,7 @@ If you are an admin, the tabs show the ministries you belong to, plus any minist
 The Serving section includes these key areas:
 
 - **[Plans](./plans.md)** -- Create service plans for specific dates and assign volunteers to teams. Plans help you organize who is serving when, so everyone knows their role ahead of time. Set up automatic [volunteer reminders](./plans.md#volunteer-reminders) by push, email, or text so your team is notified before each service, and use the **[Plans Overview](./plans-overview.md)** to see all upcoming assignments across multiple weeks in one grid.
-- **[Songs](./songs.md)** -- Manage your worship song library with lyrics, arrangements, and external links. Your worship team can use this to prepare for upcoming services.
+- **[Songs](./songs.md)** -- Manage your worship song library with lyrics, arrangements, rehearsal audio, chord chart PDFs, and external links. Your worship team can use this to prepare for upcoming services. Export your library or a song usage report with CCLI numbers for your CCLI reporting.
 - **[Tasks](./tasks.md)** -- Assign and track tasks for your team members from **My Work**.
 - **[Workflows](./workflows.md)** -- Move people through a series of steps on a visual Kanban board, such as new-visitor follow-up or a membership process. Steps can run automated actions (send an email, wait a few days, add to a group), and cards advance by outcome buttons, conditional routing, or event and schedule triggers -- with built-in reports.
 

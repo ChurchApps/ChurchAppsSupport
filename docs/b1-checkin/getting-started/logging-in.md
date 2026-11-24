@@ -69,6 +69,7 @@ Admin settings are intentionally hidden so that church members using the kiosk c
    - **Set Admin PIN** (or **Change Admin PIN** once one is set) — set or update the kiosk PIN that protects admin access
    - **Emergency broadcast** — text the guardians of every checked-in household (see [Emergency Broadcast](../check-in/checking-out.md#emergency-broadcast))
    - **Manned station mode** — a switch that adds check-out, paging, reprint, and profile editing to this station (see [Checking Out](../check-in/checking-out.md))
+   - **Start on scanner** — a switch that opens the camera scanner instead of the keypad, and returns to it after each family, for stations where families mostly [check in on their phones](../check-in/looking-up-members.md#starting-on-the-scanner). It applies to this tablet only.
    - **Logout** — sign out and return to the login screen
 
    Tap **Back to Kiosk** to return to check-in.

@@ -41,7 +41,7 @@ Follow the [Songs](../serving/songs.md) guide to:
 
 1. In the Jump menu, choose **Serving > Songs**, click **Add Song**, and search the song database by title or artist (or click **Create Manually**)
 2. For each song, add arrangements with lyrics and keys
-3. Add external links to YouTube performances, chord charts, or sheet music, and upload rehearsal audio if you have it
+3. Add external links to YouTube performances, chord charts, or sheet music, and upload rehearsal audio or chord chart PDFs if you have them
 
 :::info
 Songs added here can be pulled into any service plan later. Build your library once, reuse it every week.
@@ -55,9 +55,9 @@ Follow the [Plans](../serving/plans.md) guide to:
 
 1. In the Jump menu, choose **Serving > Plans**, select your ministry tab, and open your plan type (click **Create Plan Type** if you don't have one yet)
 2. Click **New Plan** and pick the **Service Date**. To set up several Sundays at once, copy from a previous plan, choose **Repeat every** and **Frequency**, and enter how many in **Number of plans**
-3. On the plan page, click **Manage serving team**, click **Add Position** to add each position, then click its **People Needed** link to assign volunteers
+3. On the plan page, click **Manage serving team**, click **Add Position** to add each position, then click its **People Needed** link to assign volunteers. The picker shows when each person **Last served** and flags anyone **Serving that day** or **Unavailable**, so you can [spread the load](../serving/plans.md#choosing-who-to-assign)
 4. In the **Validation** panel, click the **Notify _N_ volunteer(s)** link so volunteers get their requests (see [Notifying Volunteers](../serving/plan-validation.md#notifying-volunteers)). A green dot on a volunteer's picture means they accepted and a red dot means they declined; the plan page's **Responses** tile counts accepted, pending, and declined
-5. Turn on [volunteer reminders](../serving/plans.md#volunteer-reminders) for the plan type so volunteers are reminded by push, email, or text before each service
+5. Turn on [volunteer reminders](../serving/plans.md#volunteer-reminders) for the plan type so volunteers are reminded by push, email, or text before each service. In the same section, turn on [leader gap alerts](../serving/plans.md#leader-gap-alerts) so your ministry leaders hear about open positions a few days ahead
 
 ## Step 4: Build the Service Order
 
@@ -108,8 +108,8 @@ Assigned volunteers automatically see their plans and can respond.
 
 1. Volunteers see their plans on [B1.church and in the B1 App](../../b1-church/plans/viewing-plans.md)
 2. They can accept or decline assignments directly from their phone or computer
-3. They can set blockout dates for weeks they're unavailable
-4. Plans can be printed for rehearsals or posted backstage
+3. They can set blockout dates for weeks they're unavailable and [scheduling preferences](../../b1-church/plans/viewing-plans.md#scheduling-preferences), and subscribe to their accepted serving times in their own calendar app. For volunteers who don't use the app, you can enter block-out dates on the team's page (see [Block-Out Dates](../serving/plans.md#block-out-dates))
+4. Plans can be printed for rehearsals or posted backstage, with a chord chart page for each song if you check **Include chord charts**
 5. Volunteers can browse and sign up for open positions via the [volunteer signup page](../../b1-church/serving/volunteer-signup.md)
 
 :::tip

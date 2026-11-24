@@ -15,10 +15,12 @@ The **Plans** section in B1.church lets you see the service plans you have been 
 
 Plans can include several types of content depending on how your church sets them up:
 
-- **Your assignments** -- See which positions you have been assigned to and when you are needed. Each assignment shows your position name, the service date, and your current status (such as Accepted, Declined, or Needs reply). You can accept or decline new assignments, and decline one you already accepted if your plans change.
+- **Your assignments** -- See which positions you have been assigned to and when you are needed. Each assignment shows your position name, the service date, and your current status (such as Accepted, Declined, or Needs reply). You can accept or decline new assignments (or accept several at once with **Accept all**), give an optional reason when you decline, and decline one you already accepted if your plans change.
 - **Service order** -- View the order of service with timing details, song information, and item descriptions so you know the flow of the service ahead of time.
 - **Curriculum content** -- Some plans include associated lesson or curriculum content from providers like [Lessons.church](../content/lessons.md). You can preview this content directly within the plan.
 - **Blockout dates** -- Let your team leaders know when you are unavailable by managing your blockout dates.
+- **Scheduling preferences** -- Tell your schedulers how many times a month you want to serve, which service times you prefer, and whether to schedule your household together.
+- **Serving calendar** -- Subscribe to the times you have accepted so they show up in your own calendar app.
 - **Home preview** -- Your next assignments also appear in the **You're serving** section of the [Home dashboard](../getting-started/navigating.md#home), where you can accept or decline ones that need a reply.
 
 ## Getting Started

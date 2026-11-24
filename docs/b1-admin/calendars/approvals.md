@@ -50,9 +50,21 @@ When you click **Approve**, an **Approve booking** dialog opens so you can also 
 
 Events that members request (for example, from **My Requests** in the B1 app) appear in the **Event Requests** section with their date, **Description**, and **Requested by**. Click **Approve** to publish an event to the calendar, or **Reject** to notify the submitter that changes are needed. Click **Edit** to fix the request's details before you decide, or **Delete** to remove it.
 
+Member requests don't belong to a group, so the editor shows **(no group)** in **Group**. You can save your changes without picking a group, or choose one if the event belongs to a ministry. Members can also enter an optional **Location** for events away from the church building, which shows in the editor's **Location** field.
+
 :::tip
 Set up an Approval Group on a room in [Rooms & Resources](./rooms-resources.md) to require approval for that room. Groups with access can then request the room when creating events, and those requests flow into this page.
 :::
+
+## Writing Your Own Request Instructions {#request-instructions}
+
+The top of the **Request an Event** page in the B1 app says "Staff will approve each room and item." by default. You can replace that line with your own booking guidelines, notice periods, or terms.
+
+1. In the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), expand **Mobile** and click **Member portal** (the **Portal settings** page). You need the **Edit Church Settings** permission.
+2. Under **Event request page**, type your text in **Event request instructions** (up to 1,000 characters). Line breaks are kept.
+3. Click **Save** at the bottom of the page.
+
+Members see your text at the top of the page the next time they open it. Clear the box and save to go back to the default line. See [Requesting Events & Rooms](../../b1-church/events/requesting-events.md) for what members see.
 
 ## Changing Who a Request Is For
 
@@ -73,3 +85,4 @@ Click a name under **Requested by** to open that person's record.
 
 - [Rooms, Resources & Scheduling](./rooms-resources.md) — configure bookable rooms and resources
 - [Creating Calendars](./creating-calendars.md) — manage calendars and events
+- [Requesting Events & Rooms](../../b1-church/events/requesting-events.md) — how members submit requests

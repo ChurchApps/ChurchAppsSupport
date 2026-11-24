@@ -74,16 +74,33 @@ Click **New Event** on the calendar detail page to add an event, or click an eve
 
 - **Group** -- The group the event belongs to. If your church has event templates, you can also pick a **Template** to fill in the form.
 - **Title**
-- **Event photo** -- Click **Add Photo** (or the empty photo box) to choose or upload an image, cropped to a wide 16:9 shape. Click **Change Photo** to replace it. The photo is shown at the top of the event's page on your website and as its tile when a Calendar element shows **Upcoming events** (see [Showing Events on Your Website](#showing-events-on-your-website)).
+- **Event photo** -- Click **Add Photo** (or the empty photo box) to choose or upload an image, cropped to a wide 16:9 shape. Click **Change Photo** to replace it, or **Remove Photo** to take it off. The photo is shown at the top of the event's page on your website and as its tile when a Calendar element shows **Upcoming events** (see [Showing Events on Your Website](#showing-events-on-your-website)).
 - **Description** -- Shown on the event's page on your website. Bold text, lists, and links are supported.
+- **Location** -- Optional. Where the event happens when it isn't in one of your booked rooms, for example "City Park, shelter 3." It is shown in the event's dialog on the calendar, under **Where** on the event's page on your website, and in calendar feeds and the event's calendar file.
 - **Start** and **End**, **Repeats**, and **Visibility** (**Public** or **Private**).
+- **All day** -- Turn this on for an event with no set time. **Start** and **End** change to date pickers, and the event runs from the start of its first date to the end of its last.
 - **Tags** -- Comma-separated labels, such as `youth, students`. A Calendar element on your website can be set to show only events with a certain tag. This is the same **Tags** field shown in the event's registration settings.
 - **Who can view notes** and **Who can post notes** -- Who can read and add to the event's notes (see [Event Notes](#event-notes)). Choose **Staff only** (the default), **Group leaders** (leaders of the event's group), or **Group members** (everyone in the event's group, including its leaders).
 - **Rooms** and **Resources** -- Reserve space and equipment for the event. See [Rooms, Resources & Scheduling](./rooms-resources.md). Once one is picked you can also add setup and teardown time or a custom reservation window -- see [Booking a Room or Resource](./availability.md#booking-a-room-or-resource).
 - **Reminders** -- Expand this section to send reminders before the event. See [Event Reminders](./event-reminders.md).
 
-**Group**, **Title**, **Start**, and **End** are required, and the end must be after the start. Click **Save**. To delete an event, open it in the editor and click **Delete**.
-
+**Group**, **Title**, **Start**, and **End** are required for a new event, and the end must be after the start. Click **Save**. To delete an event, open it in the editor and click **Delete**.
+
+An event a member asked for from **Request an Event** in the B1 app has no group. When you edit one (for example, from [Approvals](./approvals.md)), **Group** shows **(no group)** and you can save without picking one, or choose a group if it belongs to one.
+
+### Duplicating an Event {#duplicating-an-event}
+
+To make a similar event without retyping it, click the event on the calendar and click **Duplicate**. A **New Event** form opens, filled in from the original:
+
+- The title gets "(Copy)" added to the end.
+- The start and end move to the date you clicked. For a repeating event, that is the occurrence you clicked rather than the series' first date.
+- The description, photo, location, group, **All day**, visibility, tags, and notes settings are copied.
+- The same rooms and resources are picked, with their quantities and any setup and teardown minutes or custom reservation window.
+
+The copy doesn't repeat and has no reminders or registration settings. Change anything you need and click **Save**. Its room and resource bookings are new requests, so any that need approval go to [Approvals](./approvals.md) like any other booking. Nothing is saved if you close the form without saving.
+
+
+
 ### Changing One Date of a Recurring Event {#changing-one-date-of-a-recurring-event}
 
 When you click a date of a repeating event on the calendar and then **Edit**, saving or deleting asks which dates to change:
@@ -96,7 +113,7 @@ The form shows the series' first date, but **Just this date** and **This and all
 
 ### Event Notes {#event-notes}
 
-Each event has its own notes thread for planning and follow-up. Click an event on the calendar detail page; the dialog shows the event's details, its reminders, and its **Notes** below, with **Edit**, **Manage Registrations**, and **Remove from Calendar** buttons. Type a note and post it to add it to the thread.
+Each event has its own notes thread for planning and follow-up. Click an event on the calendar detail page; the dialog shows the event's details (including its **Location**, if it has one), its reminders, and its **Notes** below, with **Edit**, **Duplicate**, **Share**, **Manage Registrations**, and **Remove from Calendar** buttons. Type a note and post it to add it to the thread.
 
 Staff with permission to edit content or administer calendars can always read and post event notes. The **Who can view notes** and **Who can post notes** settings on the event decide whether the event group's leaders or members can too.
 
@@ -117,7 +134,14 @@ You can enable registration for any calendar event so members can sign up throug
    - **Tags** -- Comma-separated labels (e.g., "youth, retreat, vbs") to help categorize registerable events.
    - **Registration Questions** -- Optionally attach a [form](../forms/creating-forms.md) so registrants answer extra questions (dietary restrictions, T-shirt size, emergency contact, etc.) as part of signing up. Choose **None** to skip questions.
    - **Enable Waitlist** -- When the event fills up, let additional registrants join a waitlist instead of being turned away. See [Paid Registrations](./paid-registrations.md#waitlist).
+   - **Members can cancel their own registration** -- On by default. Turn it off if members should contact the church to cancel.
+   - **Allow pay later (cash or check)** -- Let members register for a paid event now and pay in person. See [Payment and Cancellation Options](./paid-registrations.md#payment-and-cancellation-options).
+   - **Confirmation Message** -- Optional plain text added to the registration confirmation email, such as directions or what to bring.
 4. Click **Save Settings**.
+
+:::tip
+Setting up the same event again? Click **Copy setup from another event** at the top of the settings card to copy capacity, waitlist, tags, questions, attendee types, selections, and discount codes from an earlier event. See [Copying Setup from Another Event](./paid-registrations.md#copying-setup-from-another-event).
+:::
 
 For paid events, the same settings page lets you define priced **Attendee Types**, optional **Selections** (add-ons), and **Discount Codes**, with payment collected through your church's giving provider. See [Paid Registrations](./paid-registrations.md) for the full walkthrough.
 
@@ -140,18 +164,20 @@ In the B1 App, events in a group's calendar have a **Share** link that opens the
 To view and manage registrations for your events:
 
 1. In the Jump menu, choose **Calendars > Registrations**.
-2. You will see a table of all events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags. Type in **Search events** to filter it.
+2. You will see a table of events with registration enabled, showing the event title, date, current registration count vs. capacity, and tags. Click **Upcoming** (the default, soonest first) or **Past** (most recent first) to switch lists; an event moves to Past once it has ended, and a repeating event stays upcoming while it has another date ahead. Type in **Search events** to filter by title or tag.
 3. Click an event's name to see the full list of registrations, with **Name**, **Members**, **Type**, **Paid / Total**, **Status**, and **Date** columns.
 4. From the detail page, you can:
    - **Add Attendee** -- Manually register someone who signed up offline or over the phone.
    - **Cancel Registration** on individual registrations (asks you to confirm)
-   - **Delete** registrations permanently (asks you to confirm)
+   - **Restore** a cancelled registration
+   - **Delete** registrations permanently (asks you to confirm). Registrations with payments can't be deleted; cancel them instead.
    - **Promote** waitlisted registrations when a spot opens
-   - **Export CSV** -- Download all registrations, including attendee types, selections, payment amounts, and question answers
+   - **Send Balance Reminder** -- Email everyone who still owes money
+   - **Export CSV** -- Download the registrations shown, including attendee types, selections, payment amounts, and question answers
 
    These row actions are icons at the end of each row; hover over an icon to see its name.
 
-If the event has Registration Questions attached, the detail page also shows an **Unanswered questions only** filter to quickly find registrants who haven't submitted answers yet, and a **View Answers** button on each answered registration to see their responses. Events with attendee types also show per-type counts above the table, and every row has a **Registration Details** dialog with payments -- see [Paid Registrations](./paid-registrations.md#the-registration-roster).
+Filter chips above the roster narrow it by status, attendee type, **Balance due**, or **Unanswered questions only** (when the event has Registration Questions). Answered registrations have a **View Answers** button to see their responses. Events with attendee types also show per-type counts above the table, and every row has a **Registration Details** dialog where you can edit the registration and record payments and refunds -- see [Paid Registrations](./paid-registrations.md#the-registration-roster).
 
 The left side of the detail page shows how many people are registered (the registrant plus everyone on their registration), with a capacity bar, any waitlist count, the event's tags, and its **Reminders**. The **Registrations** card title counts registrations instead, which is what capacity limits -- so a family of four is one registration but four people.
 

@@ -41,8 +41,9 @@ Group leaders add and edit individual events in B1.church. The same group's even
 1. From the group calendar, click **Add Event**.
 2. Enter a **title** for the event.
 3. Write a short **description** of what the event is about.
-4. Set the **start time** and **end time**.
-5. Click **Save** to add the event to the calendar.
+4. Optionally enter a **Location** for events held away from the church (for example, *City Park, shelter 3*). It appears on the event's page in the app.
+5. Set the **start time** and **end time**.
+6. Click **Save** to add the event to the calendar.
 
 ## Setting Up Recurring Events
 

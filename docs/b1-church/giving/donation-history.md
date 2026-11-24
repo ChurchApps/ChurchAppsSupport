@@ -56,11 +56,15 @@ Your church may also add a **giving note** -- a short message such as its refund
 
 Even if your church hasn't set up online giving, you can still see the gifts it has recorded for you, such as cash and checks. Open the **Giving** page while signed in and you'll see the note "Online giving isn't set up for this church yet. Your recorded gifts and statements are below." Your yearly total, **Recent activity**, **All history**, and **Print Statement** all work as usual. The **Give** button, **Repeat last gift**, and the **Recurring** and **Payment methods** sections are not shown. The **Giving** section on your Home dashboard also shows your total and **History** link, without the **Give** button.
 
+## If Your Church's Statement Year Isn't the Calendar Year
+
+Some churches run their giving year on a fiscal or tax year, such as July to June. When yours does, the years on the Giving page, in **All history**, and on your statements are those statement years. They are shown with both years, such as "2025–2026", and the statement's period line gives the exact dates, for example "Period: Jul 1, 2025 - Jun 30, 2026". Each gift is counted in the statement year it falls in. Your church sets this in B1 Admin (see [Statement Year Start Month](../../b1-admin/donations/giving-statements.md#statement-year-start-month)).
+
 ## Exporting and Printing Statements
 
-Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current calendar year (or the latest year your church has released) in a new tab. The button appears once you have at least one recorded gift. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.
+Tap **Print Statement** at the top of the Giving page to open a printable giving statement covering the current year (or the latest year your church has released) in a new tab. The button appears once you have at least one recorded gift. To print a different year, open **All history**, pick that year, and tap **Print Statement** next to the total.
 
-The statement is centered on the page and starts with your church's logo (when your church has uploaded one), the year, the period it covers (January 1 to December 31), and the date it was issued. Below that are your name and contact details beside your church's name and address, a summary with your total contributions and a total for each fund, and a table of every gift with its date, method, fund, and amount. If any of your gifts that year has a memo (the note you typed when giving online, or one your church added), a **Memo** column shows it beside the fund. At the bottom, a note confirms that the statement covers all contributions your church received from you that year, followed by a short disclaimer that the church is a registered non-profit and that no goods or services were provided in exchange for the gifts other than intangible religious benefits. Your church's giving note, if it has one, is printed after that.
+The statement is centered on the page and starts with your church's logo (when your church has uploaded one), the year, the period it covers (January 1 to December 31 unless your church uses a different statement year), and the date it was issued. Below that are your name and contact details (with your donor number, if your church has given you one) beside your church's name and address (and its Tax ID, if your church has entered one), a summary with your total contributions and a total for each fund, and a table of every gift with its date, method, fund, and amount. If any of your gifts that year has a memo (the note you typed when giving online, or one your church added), a **Memo** column shows it beside the fund. At the bottom, a note confirms that the statement covers all contributions your church received from you that year, followed by a short disclaimer that the church is a registered non-profit and that no goods or services were provided in exchange for the gifts other than intangible religious benefits. Your church may replace that disclaimer with its own wording. Your church's giving note, if it has one, is printed after that.
 
 :::tip
 Print your statement early in the new year, before you need it for tax filing, while last year's donations are still fresh in your history.
@@ -73,6 +77,10 @@ If you have any scheduled gifts, the **Recurring** section on the Giving page li
 If a recurring donation is charged through **Stripe**, you can **pause** it instead of canceling -- click the pause icon next to the donation and confirm. Giving stops until you click the same icon to **resume**; a paused donation is marked **Paused** in the list. Recurring donations through other payment providers can still be edited or canceled, but not paused.
 
 To add, remove, or change your saved payment methods, tap **Manage** in the **Payment methods** section.
+
+:::info
+You can't delete a card or bank account that one of your recurring gifts is charged to. You'll see "This payment method is used by a recurring gift. Move the gift to another payment method, then delete this one." Edit the recurring gift to use a different payment method (or cancel it), then delete the old one.
+:::
 
 ## Next Steps
 

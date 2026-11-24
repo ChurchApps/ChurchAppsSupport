@@ -35,6 +35,8 @@ If a volunteer is assigned to two positions that overlap in time within the same
 ### Blockout Dates
 Volunteers can set dates they are unavailable in the B1 App. If someone is assigned to a plan that falls within one of their blockout dates, the validation panel surfaces the conflict automatically so you can find a replacement.
 
+The same volunteers also show a red **Unavailable** badge beside their name in the position list, in the **Assign Position** dialog, and in the [Plans Overview](./plans-overview.md) grid. Staff can add block-out dates for volunteers who don't use the app from the team's **Block-out dates** card (see [Block-Out Dates](./plans.md#block-out-dates)).
+
 ### Cross-Plan Conflicts
 The validation also checks across all your plans at once. If the same volunteer is assigned in two different plans that overlap in time — for example, a 9am service and a 10am service that both run until 10:30am — B1 Admin will flag that person as double-booked across plans.
 
@@ -42,6 +44,8 @@ The validation also checks across all your plans at once. If the same volunteer 
 If a volunteer has [scheduling preferences](./plans.md#scheduling-preferences), the panel warns you when an assignment goes against them: when they are scheduled more times this month than their **Max times per month**, when none of the plan's times match their **Preferred service times**, or when they asked not to serve on the same day as their household and a household member is also scheduled.
 
 When everything checks out, the panel reads **Plan is valid.**
+
+To have B1 warn your ministry leaders about unfilled positions and unconfirmed volunteers a few days before each service, turn on [leader gap alerts](./plans.md#leader-gap-alerts) for the plan type.
 
 :::tip
 You don't need to do anything to run validation — it updates automatically every time you add or change an assignment. Just keep an eye on the panel as you build the plan.

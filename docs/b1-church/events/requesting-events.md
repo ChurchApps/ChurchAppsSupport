@@ -21,12 +21,13 @@ If your church tracks bookable rooms and resources, you can request an event —
 
 ## Submitting a Request
 
-1. Open the **Me** page in the member portal and tap **Request an Event** in the **Requests & registrations** section.
+1. Open the **Me** page in the member portal and tap **Request an Event** in the **Requests & registrations** section. The top of the page explains how your church handles requests. By default it says "Staff will approve each room and item.", but your church may show its own guidelines, notice periods, or terms here, so read them before you start.
 2. Fill in the event basics: **Event title**, an optional **Description**, and the **Start** and **End** times. Turn on **All day** to pick dates only.
-3. Pick the **Rooms** and **Resources** you need (you can choose several of each). Once you pick one, you can add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** and set **Reserve from** and **Reserve until** yourself.
-4. Watch for conflict warnings — if your time overlaps an existing booking for a room or resource, you'll see *"Some selections may already be booked at this time."* You can adjust your time or choose something else.
-5. If the event happens more than once, turn on **Repeats** and set the pattern.
-6. Tap **Submit Request**. The button stays grayed out until you enter an event title. Tap **Cancel** to leave without submitting.
+3. If the event is away from the church building, enter it in **Location (optional)**, for example "City Park, shelter 3." It shows on the event's page once the event is approved.
+4. Pick the **Rooms** and **Resources** you need (you can choose several of each). Once you pick one, you can add **Setup (min before)** and **Teardown (min after)** minutes, or turn on **Custom reservation window** and set **Reserve from** and **Reserve until** yourself.
+5. Watch for conflict warnings — if your time overlaps an existing booking for a room or resource, you'll see *"Some selections may already be booked at this time."* You can adjust your time or choose something else.
+6. If the event happens more than once, turn on **Repeats** and set the pattern.
+7. Tap **Submit Request**. The button stays grayed out until you enter an event title. Tap **Cancel** to leave without submitting.
 
 After submitting, a **Request submitted** summary shows the status of each room and resource you asked for (tap **My Requests** to go to your list):
 
@@ -46,7 +47,7 @@ While a request is still pending, you can withdraw it with **Cancel request**. A
 You can also start a new request with the **Request an Event** button at the top of My Requests.
 
 :::info
-Requests are reviewed by church staff on the B1 Admin [Approvals page](../../b1-admin/calendars/approvals.md). Which rooms and resources need approval is up to your church — see [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md).
+Requests are reviewed by church staff on the B1 Admin [Approvals page](../../b1-admin/calendars/approvals.md). Which rooms and resources need approval is up to your church — see [Rooms & Resources](../../b1-admin/calendars/rooms-resources.md). Staff can change the instructions at the top of the Request an Event page. See [Writing Your Own Request Instructions](../../b1-admin/calendars/approvals.md#request-instructions).
 :::
 
 ## Related Articles

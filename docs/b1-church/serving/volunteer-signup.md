@@ -34,6 +34,15 @@ Within a plan, positions are grouped by category (for example, "Band", "Hospital
 - **Available spots** -- How many slots are filled and how many remain (for example, "2 of 2 slots remaining" on the website, or "0 of 2 filled" in the member portal).
 - **Who has signed up** -- If your church has turned on **Show volunteer names on signup page** for the plan, a "Signed up:" line lists the names of the people already serving in that position. Names are only shown when you are signed in.
 
+### Conflict Flags in the Member Portal
+
+When you open a plan from **Sign up to serve** in the member portal, B1 checks it against your own schedule:
+
+- If you are already serving that day, open positions show a **Serving that day** badge, and a note at the top says "You're already serving that day" along with the position you have.
+- If the date falls in one of your [blockout dates](../plans/viewing-plans.md#the-plans-page), open positions show a **Blocked out** badge, and a note says "This date is in your blockout dates."
+
+These flags are only a heads-up. You can still sign up if you want to.
+
 ## Signing Up
 
 1. Find a position you want to volunteer for.

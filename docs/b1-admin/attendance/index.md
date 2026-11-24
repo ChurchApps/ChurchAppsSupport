@@ -19,10 +19,20 @@ The left column shows the week's dates and the total number of people **in the r
 
 The main area of the page shows:
 
-- **Rooms** -- each group people checked in to this week, with the number checked in (and a capacity bar for groups with a check-in capacity). Click a group to open it.
+- **Rooms** -- each group people checked in to this week, with the number checked in (and a capacity bar for groups with a check-in capacity). Click a group to open it, or click **Today** beside it to see who is in that room today.
 - **Guests** -- people who checked in as guests this week. Click a name to open their record.
 - **Last 13 weeks** -- a small bar chart of weekly check-ins, with how many of those weeks had check-ins. Its **All years** link opens the reports.
 - **Headcounts this week** -- headcounts entered for this week's services.
+
+### Seeing Who Is in a Room Today
+
+Click **Today** beside a room in the **Rooms** list to open a window named after the room (for example, "Kids Room 1 today"). It lists everyone checked in to that room's sessions dated today, earliest check-in first, with a summary such as "12 checked in, 3 not picked up yet" at the top.
+
+Each row shows the person's name and the [check-in details](recording-attendance.md#check-in-details): **Checked In**, and once anyone has them, **Checked In By**, **Checked Out**, and **Picked Up By**. If the room meets at more than one service time today, a **Service Time** column is added. Click a name to open the person's record (if you can view people). If no one has checked in to the room today, the window says "No one has checked in to this room today."
+
+:::tip
+Use this during a service to answer "who is still in the nursery?" at a glance: anyone without a **Checked Out** time has not been picked up yet.
+:::
 
 ## Actions
 

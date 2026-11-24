@@ -36,7 +36,7 @@ Click on a service to select it and move to the next step.
 
 ### Step 2: Select Household Members and Groups
 
-After selecting a service, you will see your household members under **Who's here**. For each person attending:
+After selecting a service, you will see your household members under **Who's here**. Household members marked **Deceased** in the church's records are not listed; inactive members still are. For each person attending:
 
 1. Tap a household member to expand their entry.
 2. You will see the available **service times** for the service you selected. If your church has set a check-in schedule for a service time, you can only pick it while check-in for it is open (for example, from 30 minutes before the service until shortly after it ends). Outside that window the service time is listed as **Closed**, with when it opens if known -- for example, **Closed · opens Sun 9:30 AM**.
@@ -66,6 +66,7 @@ If you need to change a group selection before completing check-in, tap the **Ch
 ## Things to Know
 
 - You can only check in household members that are linked to your account. If a family member is missing, ask your church administrator to add them to your household.
+- Church staff can see that you were the one who checked your family in. Your name shows as **Checked In By** on the attendance records in B1 Admin.
 - If no services appear on the check-in page, your church may not have any services configured for check-in at this time.
 - If you select a service and see a message such as "Check-in opens Sun 9:30 AM." (or "Check-in isn't open for this service right now."), none of that service's times are currently within their check-in window. Try again once check-in opens.
 - If your household checked in for an earlier service time, you can come back and check in for a later service time once it opens, even after the earlier one has closed.

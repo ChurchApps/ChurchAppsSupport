@@ -46,7 +46,9 @@ Every type starts with push, email, and in-app turned on. Texts start on for rem
 
 ## Stopping Text Messages
 
-To stop getting texts, turn off **Text messages** and save. You can also reply **STOP** to any text from your church to opt your number out of its texts.
+To stop getting texts, turn off **Text messages** and save. You can also reply **STOP** to any text from your church to opt your number out of its texts. Replying STOP only stops texts; it doesn't hide you from the member directory.
+
+To get texts again after replying STOP, reply **START** to your church's number. Reminder texts stay off until you turn **Text messages** back on here (church staff can also turn it on for you).
 
 ## Saving Your Changes
 

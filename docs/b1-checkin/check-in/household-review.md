@@ -19,9 +19,13 @@ After you select a person from the search results, the app loads your entire hou
 
 </div>
 
+## Check-In Announcement {#check-in-announcement}
+
+If your church has set a check-in announcement, an **Announcement** window appears first, before the household screen. Read the message and tap **OK** to continue. Each family sees it once; it doesn't come back when you return to this screen after adding a guest or changing rooms. Church staff set the message in B1 Admin; see [Check-In Announcement](../../b1-admin/attendance/check-in.md#check-in-announcement).
+
 ## Viewing Household Members
 
-Each household member appears as a card with:
+Each household member appears as a card. Members whose membership status is **Deceased** are left off the list; inactive members still show, since they may be returning. Each card has:
 
 - Their **photo** (or a placeholder icon if no photo is on file)
 - Their **display name**
@@ -41,7 +45,7 @@ If a service time has a [check-in schedule](../../b1-admin/attendance/setup.md#s
 
 Tap the group button to go to the [group selection screen](./group-assignment.md) where you can choose or change the group for that person and service time.
 
-The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in — Member is the default. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.
+The expanded card also shows **Member**, **Guest**, and **Volunteer** chips. Tap one to set how this person is checking in. Member is the default, except that someone who checked in as a **Volunteer** last time starts on **Volunteer**, so regular volunteers don't have to change it each week. A guest you just added starts on **Guest**. The type matters for children's rooms: volunteers count toward the room's volunteer-to-child ratio, and guests count against any guest capacity your church has set.
 
 Tap the member's card again to collapse it.
 

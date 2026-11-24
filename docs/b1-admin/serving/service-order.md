@@ -30,6 +30,8 @@ The service order defines the sequence of elements in your worship service. Use 
 2. Click on a **plan type**, then open a specific **plan**.
 3. The plan page shows a preview of the **Order of Service**. Click **Edit order of service** (or **View order of service** if you can't edit the plan) to open the full order of service on its own page. Click **Back to plan** to return.
 
+To work through several weeks in a row, use the arrows beside the service date at the top of the page. They open the order of service of the previous or next plan of the same plan type.
+
 ## Building Your Service Order
 
 The service order is a list of items arranged in the sequence they will occur during the service. Common elements include:

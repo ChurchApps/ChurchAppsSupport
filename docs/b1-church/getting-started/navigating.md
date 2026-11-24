@@ -30,7 +30,7 @@ Opening `https://yourchurchname.b1.church/mobile` takes you to the **Home** dash
 - **News** -- if your church turns it on, your church's latest blog posts as photo cards that slide along on their own. Tap a card to read the whole post without leaving the app, or tap **All news** for the full list. Each post has a **View on website** link to the same post on your church's website -- see [Home Screen Sections](../../b1-admin/settings/mobile-app.md#home-screen-sections).
 - **Photo tiles** -- tabs your church gave a photo (including Verse of the Day) appear as photo tiles under your church's name. Depending on your church's choice they are laid out as a two-column grid, a row you swipe sideways (which can also move along on its own), a list with a small thumbnail beside each name, or a combined layout -- three featured tiles as a grid with the next three listed beneath, or every tile in a self-advancing row with the first three listed beneath -- and an **All** link to the full list -- see [Home Screen Tiles](../../b1-admin/settings/mobile-app.md#home-screen-tiles). When the sideways row has more tiles than fit on screen, a row of dots under it shows where you are; tap a dot to jump to that tile. The row keeps moving forward, starting over from the first tile after the last. Every photo tab appears here, even one that also has a slot in the tab bar.
 - **Your follow-ups** -- when you are signed in, your two newest open tasks and workflow cards (cards first), with an **All** link to the full **My tasks** list. Tasks and cards are listed newest first there and on your [Me page](./me-page.md) too.
-- **Latest sermon** -- your church's newest sermon, with an **All sermons** link
+- **Latest sermon** -- your church's newest sermon, with an **All sermons** link. A sermon without its own picture shows its series picture.
 - **Verse of the Day** -- today's verse; tap it to open the full [Verse of the Day](../content/verse-of-the-day.md) page
 - **You're serving** -- your next upcoming serving assignments, with an **All plans** link. If any assignment still needs your answer, those are shown first with a **Needs reply** badge and **Accept** / **Decline** buttons so you can respond right from Home (**Decline** asks you to confirm first); otherwise your next assignments show an **Accepted** or **Confirmed** badge. Tap an assignment to open its plan.
 - **Your groups** -- up to three of your groups with their meeting time and location, and an **All groups** link
@@ -90,7 +90,7 @@ The bell and profile photo only appear when you are signed in.
 Tapping the bell opens a panel with two sections:
 
 - **Messages** -- your most recent private conversations, with a **New message** link to start one
-- **Notifications** -- your most recent notifications, with a **New** badge on unread ones. Tap a notification to go to the group, plan, or conversation it came from.
+- **Notifications** -- your most recent notifications, with a **New** badge on unread ones. Tap a notification to go to the group, plan, or conversation it came from. A notification about a task or workflow card assigned to you opens that task in **My tasks** (see [My Cards and My Tasks](./me-page.md#my-cards-and-my-tasks)).
 
 Each section shows how many unread items it has. Tap **See all** at the bottom to open your full inbox at `/mobile/notifications`.
 

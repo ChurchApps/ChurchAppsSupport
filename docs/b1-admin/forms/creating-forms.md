@@ -49,6 +49,7 @@ Stand Alone forms have a **QR Code** link next to them on the main Forms list (a
 1. Open your form and go to the **Questions** tab.
 2. Click **Add Question**.
 3. Select a **Field Type**:
+   - **Heading** — A section title that splits a long form into parts (see [Adding Section Headings](#adding-section-headings))
    - **Textbox** — For short text answers
    - **Whole Number** and **Decimal** — For numbers
    - **Date** — For date selections
@@ -59,7 +60,7 @@ Stand Alone forms have a **QR Code** link next to them on the main Forms list (a
    - **Multiple Choice** — For picking one of several options
    - **Checkbox** — For checking any number of options
    - **Payment** — For collecting payments
-4. Enter a **Title** and optional **Description** for the question. The description appears under the question when people fill out the form, so use it for hints like "Include any allergies we should know about."
+4. Enter a **Title** and optional **Description** for the question. The description appears under the question when people fill out the form, so use it for hints like "Include any allergies we should know about." Descriptions can be up to 255 characters and support Markdown: `**bold**`, `*italic*`, lists, and links such as `[our policy](https://example.com)`.
 5. Fill in the extra fields for the type you chose:
    - For text, number, date, email, and phone questions, an optional **Placeholder** shows sample text inside the empty box.
    - For **Multiple Choice** and **Checkbox**, add each option under **Choices**: enter a **Value** (what is saved) and **Text** (what people see), then click the add button. Click the remove icon to take an option off.
@@ -70,9 +71,17 @@ Stand Alone forms have a **QR Code** link next to them on the main Forms list (a
 
 The **Questions** tab lists each question with its type and whether it is required. Click a question's title to edit it, or click **Delete** in the question's form and confirm to remove it. Use the **Move up** and **Move down** arrows on a row to change the order the questions appear in.
 
+To add a question that is similar to one you already have, click the copy icon (**Duplicate question**) on its row. The copy, with the same type, description, and choices, is placed right below the original with "(copy)" after its title, and opens for editing so you can change what you need.
+
 :::warning
 The **Payment** field type requires Stripe to be configured. If you haven't set up online giving yet, see [Online Giving Setup](../donations/online-giving-setup.md) before adding payment fields. People who pay on a form without signing in must tick the **I'm not a robot** check before the card is accepted.
 :::
+
+### Adding Section Headings {#adding-section-headings}
+
+Choose the **Heading** field type to break a long form into sections, such as "Contact Information" or "Medical Details." Enter the heading's **Title** and, optionally, a **Description** with instructions for that section. Headings have no placeholder and can't be required.
+
+On the form, a heading shows as a section title with its description beneath it, and on the [printed form](#printing-a-blank-form) it prints as a title with a line under it. Headings don't collect an answer, so they are left out of the submissions table, the summary, and the CSV export.
 
 ## Managing Form Members {#managing-form-members}
 
@@ -113,6 +122,8 @@ Each time someone submits the form, the matched or newly created person is added
 
 With **Create a person record from submissions** checked, you can also email each person who submits the form. Fill in **Follow-up Email Subject** and **Follow-up Email Body** in the form's settings. You can use the `{firstName}` and `{churchName}` tokens in both. The email is only sent when both fields are filled in.
 
+Add the `{answers}` token to the body to include a copy of what the person submitted: a table with each question and their answer. Yes/No questions read **Yes** or **No**, multiple choice and checkbox answers show the choice text people saw, and headings and questions left blank are skipped. `{answers}` only works in the body; in the subject it is left out.
+
 :::info
 Follow-up emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church).
 :::
@@ -132,7 +143,7 @@ You can update your form's name and settings at any time: open the form and clic
 The **Edit Form** settings are:
 
 - **Form Name** -- The name shown in B1 Admin and at the top of the form.
-- **Description** *(Stand Alone)* -- Text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out.
+- **Description** *(Stand Alone)* -- Text shown above the questions on the public form page, useful for telling people what the form is for before they start filling it out. It supports Markdown, so you can use `**bold**`, `*italic*`, lists, and links. The formatting shows on the public form page, on the form's page in B1 Admin, and on the printed form. Plain text with line breaks looks the same as before.
 - **Header Photo** *(Stand Alone)* -- See [Adding a Header Photo](#adding-a-header-photo).
 - **Form Access** *(Stand Alone)* -- **Public** lets anyone with the link fill in the form; **Restricted** requires people to sign in to your church's site before they can open it.
 - **Set Form Availability Timeframe** *(Stand Alone)* -- Choose **Yes** and set an **Availability Start Date** and **Availability End Date** to accept submissions only between those dates. Outside them, the form is closed.

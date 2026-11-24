@@ -50,11 +50,39 @@ Across the top of the editor you can set:
 
 A label is built from blocks — individual pieces of content placed on the label. Click a button in the **Add Block** panel to add one:
 
-- **Fields** — pull a value in at print time. Nametags offer **Display Name**, **First Name**, **Last Name**, **Nickname**, **Nametag Notes** (the notes on the person's record), **Birthday This Week** (true when the person's birthday falls within 3 days before or after the check-in date), **Sessions** (the service times and rooms they checked in to), **Security Code**, **Date**, and **Church Name**. Pickup slips offer **Children**, **Children & Allergies**, **Security Code**, **Date**, and **Church Name**.
+- **Fields** — pull a value in at print time. Nametags and pickup slips offer different fields (see [Nametag and Pickup Slip Fields](#nametag-and-pickup-slip-fields) below).
 - **Text** — static text you type in (for headings, labels, or instructions)
 - **Barcode** — a Code 128 or Code 39 barcode of a field, such as the security code
 - **QR Code** — a QR code of a field
 - **Box** — a rectangle with an optional fill color and border
+
+### Nametag and Pickup Slip Fields
+
+Nametags offer these fields:
+
+| Field | What prints |
+|-------|-------------|
+| **Display Name**, **First Name**, **Last Name**, **Nickname** | The person's name from their record |
+| **Nametag Notes** | The **Name Tag Notes** on the person's record, such as allergies |
+| **Birthday This Week** | `true` when the person's birthday falls within 3 days before or after the check-in date (useful in a condition) |
+| **Age** | The person's age in whole years. Children under 2 print in months instead, for example `18 mo`. Blank when no birth date is on file. |
+| **Grade** | The grade on the person's record, such as `PreK` or `3` |
+| **Birth Date** | The person's birth date, in the date format of the kiosk tablet |
+| **Check-in Type** | **Member**, **Guest**, or **Volunteer**, as chosen on the kiosk household screen |
+| **Checked In By Name** | The name of the adult who checked the family in at the kiosk |
+| **Checked In By Phone** | That adult's phone number (mobile, then home, then work) |
+| **Sessions** | The service times and rooms the person checked in to |
+| **Security Code**, **Date**, **Church Name** | The pickup security code, today's date, and your church's name |
+
+Pickup slips offer **Children**, **Children & Allergies**, **Security Code**, **Date**, and **Church Name**.
+
+The built-in nametag that prints when you have no templates doesn't include Age, Grade, Birth Date, Check-in Type, or Checked In By. To print them, add them to a template of your own.
+
+**Checked In By** is the person whose name or phone number the family looked up on the kiosk, but only when that person is clearly an adult: not marked **Child** in the household, and either 18 or older by birth date or the household's **Head** or **Spouse** when no birth date is on file. If a child's name was searched, or nothing shows the person is an adult, these two fields print blank. Add a **Condition** of **Is not blank** so an empty "Checked in by" line doesn't print.
+
+:::tip
+Use **Check-in Type** to make volunteer badges look different. For example, add a box or a "VOLUNTEER" text block with the condition **Check-in Type** **Equals** **Volunteer**, or show a "Welcome!" block only for guests.
+:::
 
 ### Positioning and Styling Blocks
 
@@ -65,7 +93,7 @@ Drag a block on the label to move it, or click it and use the **Properties** pan
 - **Align** — Left, Center, or Right
 - **Symbology** and **Value** — for barcodes and QR codes
 - **Fill** and **Border** — for boxes
-- **Condition** — **Always** shows the block. Pick a field to show the block only when that field **Is not blank**, **Is blank**, **Equals**, or **Does not equal** a value. For example, show nametag notes only when they are filled in, or show a birthday graphic only when **Birthday This Week** equals `true`.
+- **Condition** — **Always** shows the block. Pick a field to show the block only when that field **Is not blank**, **Is blank**, **Equals**, or **Does not equal** a value. For example, show nametag notes only when they are filled in, or show a birthday graphic only when **Birthday This Week** equals `true`. When the condition's field is **Check-in Type**, the **Value** is a list of **Member**, **Guest**, and **Volunteer** instead of a text box, and it matches no matter what language the kiosk uses.
 
 Click **Remove Block** to delete the selected block.
 

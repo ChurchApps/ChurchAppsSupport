@@ -107,7 +107,7 @@ Use when the device has no browser. Defined by RFC 8628.
 
    ```json
    { "device_code": "...", "user_code": "WXYZ-1234",
-     "verification_uri": "https://app.b1.church/device",
+     "verification_uri": "https://admin.b1.church/device",
      "expires_in": 900, "interval": 5 }
    ```
 

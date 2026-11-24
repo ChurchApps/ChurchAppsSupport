@@ -119,7 +119,7 @@ The **Sign-up fields** checklist controls what the registration form asks for. *
 | Field | Asked for | Included by default |
 |-------|-----------|---------------------|
 | **Title** | Each family member, as a dropdown in front of the name (Mr, Mrs, Miss, Ms, Dr, Prof, Rev, Pastor) | No |
-| **Email** | Primary contact only | Yes (optional) |
+| **Email** | Each family member. When required, only the primary contact must fill it in. | Yes (optional) |
 | **Phone** | Each family member. When required, only the primary contact must fill it in. | Yes (optional) |
 | **Household role** | Each family member after the primary contact -- Spouse, Child, or Other. The primary contact is head of a new household. Anyone without a role is saved as Other. | Yes (optional) |
 | **Home address** | Once for the family -- street, address line 2, city, state, and zip. When required, everything except address line 2 must be filled in. The address is saved on every family member. | No |
@@ -128,8 +128,9 @@ The **Sign-up fields** checklist controls what the registration form asks for. *
 | **Marital status** | Primary contact only | No |
 | **Grade** | Each family member (PreK through 12, or Graduated) | No |
 | **Comments** | Once, in a box below the family members (up to 1,000 characters) | No |
+| **Photo** | Each family member, with **Add Photo**, **Change Photo**, and **Remove Photo** buttons. Guests crop the picture to a 4:3 shape. When required, only the primary contact must add one. | No |
 
-Fields you turn off are never saved, even if someone sends them to the sign-up some other way. Comments are saved as a note on the primary contact's record (posted as "Guest sign-up"), so you can read them in the **Notes** section of their profile.
+Fields you turn off are never saved, even if someone sends them to the sign-up some other way. A photo becomes the new person's profile photo, so volunteers can recognize the family at the kiosk and on the check-out screen. Comments are saved as a note on the primary contact's record (posted as "Guest sign-up"), so you can read them in the **Notes** section of their profile.
 
 ### Adding Guests to a Group
 
@@ -163,7 +164,7 @@ Add the registration link to your church website's "Plan Your Visit" or "I'm New
 
 ### What Happens After a Guest Signs Up
 
-B1 first looks for people who are already in **People**. A family member is matched to an existing person when exactly one person has the same first name and the same email or phone number. A child entered without an email or phone is matched by first name within the household that was matched. Matched people are reused as they are -- the sign-up never changes their details or membership status -- and anyone new joins the matched household.
+B1 first looks for people who are already in **People**. A family member is matched to an existing person when exactly one person has the same first name and the same email or phone number. A child entered without an email or phone is matched by first name within the household that was matched. Matched people are reused as they are -- the sign-up never changes their details, photo, or membership status -- and anyone new joins the matched household.
 
 When nobody matches, the sign-up creates a new household named after the primary contact's last name, with a person record for every family member. Everyone new is added to **People** with the membership status **Visitor**, with the primary contact as head of household.
 
@@ -171,6 +172,26 @@ Matched and new people alike are added to the group you chose (if they aren't in
 
 To follow up automatically, add a [workflow trigger](../serving/workflows.md#triggers) such as **Person · Created** with the condition *Membership Status is Visitor*, or **Group · Member Joined** for the group you chose above.
 
+## Check-In Announcement
+
+You can show families a short message on the kiosk before they choose who to check in, such as a room change, a special event this week, or a reminder to label diaper bags.
+
+1. In B1 Admin, open the [Jump menu](../introduction.md#getting-around-with-the-jump-menu), expand **Mobile**, and click **B1 CheckIn**. You need the **Edit Church Settings** permission.
+2. In the **Check-in announcement** card, type your message in the **Announcement** box (up to 500 characters).
+3. Click **Save**.
+
+On the kiosk, each household sees the message in an **Announcement** window right after they pick their name, before the household screen. They tap **OK** to continue. The window appears once per family: going back to the household screen to add a guest or change rooms doesn't show it again, but the next family sees it. The announcement is plain text, and nothing is recorded when a family taps **OK**.
+
+To turn the announcement off, clear the **Announcement** box and click **Save**. There is one announcement for the whole church, and it shows on every kiosk and every service.
+
+:::tip
+Kiosks load the announcement when a service is selected. After you change it, choose the service again on the kiosk (or restart the app) to pick up the new text.
+:::
+
+See [Reviewing Your Household](../../b1-checkin/check-in/household-review.md#check-in-announcement) for what families see.
+
 ## What Gets Recorded
 
 Every check-in creates an attendance record in B1 Admin. You can view these records on the [Attendance](tracking-attendance.md) page and in each [group's](../groups/group-members.md) sessions just like manually entered attendance. There is no difference in how the data appears — both methods feed into the same reports.
+
+Kiosk check-ins also record details that manual attendance doesn't have: the check-in time, the check-in type (Member, Guest, or Volunteer), **who checked the family in**, and, after pickup, the check-out time and who picked the child up. These show on the session's attendance list and in each person's attendance history. See [Check-In Details](recording-attendance.md#check-in-details).

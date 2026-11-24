@@ -7,7 +7,7 @@ description: "Check children out on a manned B1 Checkin station with security co
 
 <div class="article-intro">
 
-Check-out closes the loop on child check-in: a parent presents the security code from their pickup label, the kiosk verifies who is picking up, and the children are checked out. Manned stations also get safety tools — trusted-pickup verification, page-a-parent texts, security-label reprints, and an emergency broadcast.
+Check-out closes the loop on child check-in: a parent presents the security code from their pickup label (or staff look the family up by name or phone), the kiosk verifies who is picking up, and the children are checked out. Manned stations also get safety tools — trusted-pickup verification, page-a-parent texts, security-label reprints, and an emergency broadcast.
 
 </div>
 
@@ -15,7 +15,7 @@ Check-out closes the loop on child check-in: a parent presents the security code
 <h4>Before You Begin</h4>
 
 - Check-out is available on stations set to **manned** mode in the kiosk admin settings
-- Children must have been [checked in](./completing-checkin.md) with a printed pickup label carrying the security code
+- Children must have been [checked in](./completing-checkin.md) today. A printed pickup label with the security code is the usual way in, but staff can also find the family by name or phone
 - Paging and emergency broadcasts require your church to have a texting provider connected in B1 Admin
 
 </div>
@@ -27,6 +27,26 @@ Check-out closes the loop on child check-in: a parent presents the security code
    - No scanner? Tap **Scan** below the code field to use the tablet's camera instead. Hold the pickup label's QR code or barcode up to the camera in the **Scan pickup code** window and the code is entered for you. The back camera is used by default; tap the flip button to switch cameras, or tap **Cancel** to go back to typing.
 3. The kiosk shows the children checked in under that code.
 
+### Finding a Family Without the Code
+
+If the parent lost the pickup label or checked in without printing one, staff can look the family up instead:
+
+1. On the **Check Out** screen, tap **Search by name**.
+2. Enter at least 2 letters of the family's last name and tap **Search**. To use a phone number instead, tap **Use phone number** and enter at least 4 digits.
+3. Tap a person in the results. The kiosk finds everyone in that person's household who is checked in today and not yet checked out.
+
+If no one in the household is checked in, the kiosk says "No one in this household is checked in right now." Tap **New search** to try again, or **Enter code instead** to go back to the code keypad.
+
+:::warning
+Looking a family up by name skips the security-code match, so follow your church's child-safety procedure, such as checking ID or confirming the person against the household's trusted pickup list, before checking children out this way.
+:::
+
+## Choosing Which Children to Check Out
+
+Under **Checking out**, each child appears with a checkbox, and every child starts checked. Uncheck any child who is staying, for example when one parent picks up a toddler while an older sibling stays for a later service. Only the checked children are checked out; the others stay checked in and can be checked out later with the same code.
+
+If you uncheck everyone, the kiosk shows "Select at least one child to check out." and the pickup buttons are disabled until you check at least one child.
+
 ## Verifying Who Is Picking Up
 
 The check-out screen asks who is picking the children up:
@@ -37,7 +57,7 @@ The check-out screen asks who is picking the children up:
 
 If a typed name matches someone marked **Not Authorized** for that household, the kiosk blocks the check-out with a warning. A staff member can choose **Override** to proceed anyway — the override is recorded on the attendance record with the person's name.
 
-Once the picker is confirmed, tap check out. The pickup person's name is stored with the attendance record.
+Tapping a pickup person (or entering a name under **Other** and tapping **Check Out**) checks out the selected children. The check-out time and the pickup person's name are stored with each child's attendance record, and staff can see them in B1 Admin as **Checked Out** and **Picked Up By**. See [Check-In Details](../../b1-admin/attendance/recording-attendance.md#check-in-details).
 
 :::info
 Trusted and not-authorized pickup people are managed by church staff on each person's page in B1 Admin — see [Check-In Safety](../../b1-admin/attendance/checkin-safety.md#trusted-and-not-authorized-pickup-people).

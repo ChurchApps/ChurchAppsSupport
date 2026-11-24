@@ -28,7 +28,7 @@ Once your form is live, submissions will start coming in. The **Form Submissions
 The tab has two cards:
 
 - **Form Submission Summary** -- For each Multiple Choice, Checkbox, and Yes/No question, a tally of how many people picked each answer.
-- **Form Submission Results** -- A table of every response, with a count of submissions. Each row shows who the submission is for (**Submitted For** on People forms, **Submitted By** on Stand Alone forms, or **Anonymous**) and the **Submission Date**, followed by one column for every question on the form, in the form's order. If your form has many questions, scroll the table sideways to see the rest of the columns. Click a person's name to open their record.
+- **Form Submission Results** -- A table of every response, with a count of submissions. Each row shows who the submission is for (**Submitted For** on People forms, **Submitted By** on Stand Alone forms, or **Anonymous**) and the **Submission Date**, followed by one column for every question on the form, in the form's order. [Section headings](./creating-forms.md#adding-section-headings) don't collect answers, so they get no column here or in the export. If your form has many questions, scroll the table sideways to see the rest of the columns. Click a person's name to open their record.
 
 Click **Export** on either card to download the responses as a CSV file, one row per submission. Click the **Print** (printer) icon to print the summary and the results table, headed with your church's name.
 

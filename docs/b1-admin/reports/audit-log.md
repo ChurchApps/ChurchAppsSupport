@@ -45,6 +45,7 @@ Use the filters at the top of the page to narrow down the results:
   - **Groups** -- Group management actions.
   - **Forms** -- Form submission activity.
   - **Settings** -- Configuration changes.
+  - **Security** -- Account security changes, such as two-factor sign-in being turned on, turned off, or reset, password and email changes, and logging in as another user.
 - **Start Date** -- Show entries from this date forward.
 - **End Date** -- Show entries up to this date.
 
@@ -57,9 +58,25 @@ Each entry's category is shown as a chip, color-coded for quick identification:
 - **login** -- Blue chip. Tracks successful and failed login attempts.
 - **person** -- Blue chip. Tracks person record creates, updates, and deletes.
 - **permission** -- Red chip. Tracks when access rights are granted or revoked.
+- **security** -- Red chip. Tracks account security changes (see below).
 - **donation** -- Green chip. Tracks donation record changes.
 - **form** -- Orange chip. Tracks form submission activity.
 - **group**, **settings**, and other categories (such as **userchurch**) -- Gray chip.
+
+## Security Entries {#security-entries}
+
+Choose **Security** in the **Category** filter to review changes to how people sign in. These entries show a readable name in the **Action** column:
+
+- **Two-factor sign-in turned on**
+- **Two-factor sign-in turned off**
+- **Two-factor sign-in reset**
+- **Password changed**
+- **Email changed**
+- **Logged in as another user** -- someone signed in to B1 as a different user.
+
+:::tip
+Check the **Security** category after a staff member leaves or if you suspect an account was misused. A password or email change you don't recognize is worth following up with that person.
+:::
 
 ## Note History on People and Groups
 

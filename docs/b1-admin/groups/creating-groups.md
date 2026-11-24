@@ -43,7 +43,7 @@ Once your group is created, you can fill in additional details:
    - **Photo** -- Click the photo box or **Add Photo** to pick or upload an image for the group.
    - **Slug** -- The short key name used in the group's web address on your church site.
    - **Labels** -- Assign one or more descriptive labels to the group (for example, "In-Person", "Online", "New Members Welcome"). Labels are freeform tags you define; check all that apply, or click **Add New Label** to create one. Labels can be used to filter groups in the Groups Browser website element, and a Group List website element can show only the groups that carry one label.
-   - **Campus** -- The campus the group belongs to, if your church has more than one.
+   - **Campus** -- The campus the group belongs to, if your church has more than one. The main Groups page can then be [filtered by campus](./index.md#overview).
    - **Enrollment** -- Choose who can join this group:
      - **Open (members can join immediately)** -- Anyone can join without approval
      - **Request to Join (leader approval required)** -- People must submit a join request that requires approval (see [Group Join Requests](./group-join-requests.md))
@@ -67,6 +67,23 @@ Adding a clear description and meeting time helps members know what to expect wh
 
 :::info
 Turning off both Discussions and Announcements removes the Messages tab from the group entirely in the member portal. Turning off just one hides its tab; members are moved to whichever feed is still on. Existing messages are kept either way -- the toggles only control new posting.
+:::
+
+## Sharing a Group Link {#sharing-a-group-link}
+
+Invite people to a group by sharing a link or a QR code that opens the group's page on your church's B1.church site. From that page, people sign in and join, or ask to join, following the group's **Enrollment** setting.
+
+1. Open the group.
+2. Click **Share** on the left side of the group page, next to the group's other actions such as **Duplicate**.
+3. A **Share** window opens with a QR code and the group's link. Click the copy icon next to the link to copy it, or click **Download PNG** to save the QR code as an image you can print on a flyer or show on a slide.
+4. Click **Close** when you are done.
+
+The **Share** button only appears for regular groups that have a public page. It is hidden for [confidential](#configuring-group-settings) groups, archived groups, and other kinds of groups such as serving teams.
+
+To share all of your groups at once, click **Share** in the header of the main Groups page instead. That link and QR code open your church's public groups page, where people can browse your groups and ask to join one.
+
+:::tip
+Members can share the same link and QR code from the group's page on B1.church. See [Group Details](../../b1-church/groups/group-details.md#sharing-a-group).
 :::
 
 ## Duplicating a Group

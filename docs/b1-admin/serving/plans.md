@@ -32,6 +32,8 @@ Service plans organize who is serving and when. Each plan is tied to a specific 
 
 Each plan page shows links back to its plan type and to **Plans**, so you can move back up without the browser's back button.
 
+To move to the plan before or after this one, use the arrows on either side of the service date at the top of the page. They step through plans of the same plan type in service date order, and keep you on the same page, so if you are on the order of service or the serving team page, the arrow opens that same page on the neighboring plan. Hover over an arrow to see which plan it goes to.
+
 :::info
 Full admin access is not required to manage plans. Anyone who is a member of a ministry can navigate to Serving and create, edit, and schedule plans for their own ministry without needing the Plans Edit permission. Editors with the Plans Edit role can manage plans across every ministry.
 :::
@@ -80,8 +82,8 @@ Click a time's name to edit or delete it.
 1. Open a plan and click **Manage serving team**.
 2. Click **Add Position**. In the **Add a Position** dialog, choose or type a **Category Name** (for example, Worship or Hospitality), enter the position **Name** and the **Volunteer Count**, and pick a **Volunteer Group**. To let anyone in your church fill the position (not just members of one team), leave **Volunteer Group** set to **None**. Check **Allow Self-Signup** to let volunteers sign themselves up for open spots, and add an optional **Description** that volunteers see when they browse signup opportunities. Click **Save**.
 3. Click the **People Needed** link next to the position (for example, "2 People Needed").
-4. In the **Assign Position** dialog, click a team member's name to assign them. If the position's Volunteer Group is set to **None**, search for anyone in your church and click the add-person icon next to the person instead. Click **Done** when you're finished.
-5. Assigned volunteers appear next to the position. A green dot on their picture means they accepted, and a red dot means they declined.
+4. In the **Assign Position** dialog, click a team member's name to assign them. On a long team, type in the **Search team** box to filter the list by name; the list scrolls inside the dialog so **Done** stays in view. If the position's Volunteer Group is set to **None**, search for anyone in your church and click the add-person icon next to the person instead. Click **Done** when you're finished.
+5. Assigned volunteers appear next to the position. A green dot on their picture means they accepted, and a red dot means they declined. A volunteer who has blocked out the plan's date shows a red **Unavailable** badge (see [Block-Out Dates](#block-out-dates)). When a volunteer accepts or declines, the leaders of the plan's ministry get a notification. If the volunteer gave a reason for declining, it is included at the end of that notification (for example, "...Reason: Out of town").
 6. Notify the volunteers from the **Validation** panel (see [Notifying Volunteers](./plan-validation.md#notifying-volunteers)). If the plan uses a [confirmation workflow](#plan-settings), notifying also starts a workflow card that follows up on each request until the volunteer responds.
 
 To change or remove an assignment, click the volunteer's name and click **Delete** in the **Edit Assignment** dialog. To change a position, click its name; **Delete** in the **Edit Position** dialog removes the position and unschedules anyone assigned to it.
@@ -92,6 +94,16 @@ Each position shows a count chip (for example, "2/3", or "1/2 signup" for self-s
 Set up your teams in the ministry settings before creating plans. This way, you will have a ready pool of volunteers to assign from.
 :::
 
+### Choosing Who to Assign
+
+The **Assign Position** dialog helps you spread the load across your team:
+
+- Under each name, **Last served** shows the date that person last served on a plan before this one (declined assignments don't count). People who have never served show **Hasn't served yet**.
+- A **Serving that day** badge means the person is already assigned somewhere else on the same day. Hover over it to see the other position and plan.
+- An **Unavailable** badge means the person has blocked out the date. Hover over it to see the dates.
+
+The list puts people who are free first, then people already serving that day, then people who are unavailable. Within each group, whoever served least recently comes first, the same order Auto Assign uses. You can still pick anyone in the list, including people marked **Serving that day** or **Unavailable**.
+
 ### Auto Assign
 
 Click **Auto Assign** on the serving team page to fill every open spot from the position's Volunteer Group. Positions without a Volunteer Group are skipped. To take back the volunteers it just added, click **Undo Auto Assign**. You can also fill many plans at once from the [Plans Overview](./plans-overview.md#auto-scheduling-from-the-overview).
@@ -99,6 +111,21 @@ Click **Auto Assign** on the serving team page to fill every open spot from the 
 ### Scheduling Preferences
 
 In the **Assign Position** dialog, click the sliders icon next to a team member to set their **Scheduling Preferences**: **Max times per month**, **Preferred service times**, and **Household scheduling** (schedule the household together, or not on the same day). [Plan validation](./plan-validation.md) warns you when an assignment goes against these preferences.
+
+Volunteers can also set their own preferences from the **Plans** page of the member app (see [Scheduling Preferences](../../b1-church/plans/viewing-plans.md#scheduling-preferences)). Both places edit the same preferences.
+
+### Block-Out Dates {#block-out-dates}
+
+Volunteers usually enter the dates they can't serve themselves, on the **Plans** page of the member app. For volunteers who won't do that, staff can record block-out dates for them on the team's page:
+
+1. In **Serving**, select the ministry tab and click the team's name in the **Serving Teams** list.
+2. Below the team's members, the **Block-out dates** card lists each member's upcoming block-out dates, with **From** and **To** dates.
+3. Click **Add block-out**, choose the **Team member**, set the **From** and **To** dates, and click **Save**.
+4. To remove one, click the trash icon on its row and confirm.
+
+Adding and removing block-out dates on the team page requires the Plans Edit permission.
+
+When a volunteer has blocked out a plan's date, a red **Unavailable** badge appears beside their name in the serving team's position list, in the **Assign Position** dialog, and in the [Plans Overview](./plans-overview.md) grid. Hover over the badge to see the blocked-out dates. The [Validation](./plan-validation.md#blockout-dates) panel also lists the conflict.
 
 ### Copying Positions into an Empty Plan
 
@@ -149,6 +176,17 @@ To text everyone scheduled over a range of dates right away, use **Text Voluntee
 Each reminder is sent once. Text reminders are sent in addition to push and email, not instead of them.
 :::
 
+### Leader Gap Alerts {#leader-gap-alerts}
+
+The same **Reminders** section can also warn your ministry leaders when a plan isn't fully staffed yet.
+
+1. Open the plan type's **Reminders** section as above.
+2. Turn on **Alert ministry leaders about scheduling gaps**.
+3. Enter how many days before the service the alert should go out (0 to 14; it starts at 3).
+4. Click **Save Reminders**.
+
+The leaders of the plan's ministry (the members marked as leaders of the ministry) each get one push notification and email listing the unfilled positions and the people who haven't confirmed, with a link to the plan. Nothing is sent when the plan is fully scheduled, and each plan only gets the alert once. The alert goes out at the **Time of Day** set for reminders (9:00 AM unless you change it), and it is saved separately from the volunteer reminders, so you can use either one without the other.
+
 ## Associating Groups with a Plan Type
 
 Below the plan list on the plan type page, the **Associated Groups** section lets you decide which groups can see the plans for this plan type from their member portal. This is a quick way to surface upcoming services to the right teams without giving them admin access.
@@ -169,6 +207,8 @@ If the plans are Lessons.church lessons, members of the associated group also se
 You can print a plan for distribution to your team. Open the plan and click **Print** at the top of the page to generate a printable version that includes assignments and the service order. The top of the printout shows your church logo (the **Light Background Logo** from [Website > Appearance](../website/appearance.md), if you've uploaded one) with your church's name beneath it, and the plan's name, so loose pages are easy to identify. This is useful for handing out at rehearsals or posting in a common area.
 
 When the plan has more than one service time, the printout has a time column for each service, headed with its start time. An item left out of a service (see [Including Items in Specific Service Times](./service-order.md#including-items-in-specific-service-times)) shows a dash in that service's column.
+
+To give your musicians their charts in the same printout, check **Include chord charts** at the top of the print page. Each song in the order of service is added on its own page after the plan, with its title, artist, key, and sequence, and its lyrics and chords transposed into the key picked for the song on the plan. Only songs whose arrangement has lyrics in B1 get a chart. The checkbox only appears when the plan has songs, and B1 Admin remembers your choice on that browser.
 
 The printout leaves off anything that would be empty. If no volunteers are assigned, there's no team box and the service order uses the full page width. If no items have a length, the **Length** column is left off, and if the plan has no service times and no lengths, so is the **Time** column. To drop the black **Service Order** heading bar with the service date, uncheck **Show Service Order heading** at the top of the print page; B1 Admin remembers your choice on that browser.
 

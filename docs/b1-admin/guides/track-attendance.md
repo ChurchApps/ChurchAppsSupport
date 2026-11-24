@@ -67,6 +67,7 @@ Follow the [Check-In](../attendance/check-in.md) guide to:
 1. Install the B1 Checkin app on a tablet for self-service check-in
 2. Members search for their name and check in themselves and their family
 3. Check-in attendance records appear alongside manually entered records — no difference in the data
+4. Kiosk and phone check-ins also record the check-in time and who checked the family in, plus the check-out time and who picked each child up. See [Check-In Details](../attendance/recording-attendance.md#check-in-details).
 
 :::info
 For a complete children's ministry setup including hardware and printer configuration, see the [Children's Check-In Guide](./childrens-checkin.md).
