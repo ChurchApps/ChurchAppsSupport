@@ -16,8 +16,8 @@ Workflows move people through a series of steps on a visual board. Each person b
 
 - Make sure the people you want to track exist in B1 Admin
 - Familiarize yourself with how [Tasks](./tasks.md) work, since each card on a board is a task
-- To use the **Send email** action, create the email templates you want to send first (managed under **Settings → Email Templates**)
-- To use the **Send text** action, connect a [texting provider](../settings/church-settings.md#texting) first
+- To use the **Send Email** action, create the email templates you want to send first (managed under **Settings → Email Templates**)
+- To use the **Send Text** action, connect a [texting provider](../settings/church-settings.md#texting) first
 - You will need the appropriate Tasks permission. Viewing, editing cards, and managing workflows are separate permission levels (see [Roles & Permissions](../settings/roles-permissions.md))
 
 </div>
@@ -75,18 +75,20 @@ In the step editor, open **Automated actions**, click **Add Action**, choose a t
 
 | Action | What it does |
 |---|---|
-| **Send email** | Emails the person an email template you choose. You can override the subject line. |
-| **Send text** | Texts the person a message you write, through your church's [texting provider](../settings/church-settings.md#texting). |
 | **Wait** | Pauses the card for a number of days before continuing (see below). |
-| **Add to group** | Adds the person to a [group](../groups/index.md) you pick. |
-| **Remove from group** | Removes the person from a group you pick. |
+| **Send Email** | Emails the person an email template you choose. You can override the subject line. |
+| **Send Text** | Texts the person a message you write, through your church's [texting provider](../settings/church-settings.md#texting). |
+| **Add to Group** | Adds the person to a [group](../groups/index.md) you pick. |
+| **Remove from Group** | Removes the person from a group you pick. |
 | **Record Attendance** | Marks the person present at a group's service time that is in progress (see below). |
-| **Add to workflow** | Starts the person on another workflow -- useful for handing off between processes. |
-| **Add note** | Records a note in the card's history. |
-| **Set field** | Updates a field on the person's record: Membership Status, Marital Status, Gender, City, State, or Zip. |
-| **Webhook** | Sends the card's details to an external web address (URL) you provide, for connecting to other systems. |
-| **Create task** | Creates a [task](./tasks.md) with the title and description you enter, assigned to whoever you pick. |
+| **Add to Workflow** | Starts the person on another workflow -- useful for handing off between processes. |
+| **Add Note** | Records a note in the card's history. |
+| **Set Field** | Updates one field on the person's record. The **Field** list shows the stored field names: `membershipStatus`, `maritalStatus`, `gender`, `city`, `state`, and `zip`. Whatever you type in **Value** is saved as is, so match the spelling B1 uses (for example *Member* or *Regular Attendee*). |
+| **Call Webhook** | Sends the card's details to a web address (URL) you provide, for connecting to other systems (see [Calling a webhook](#calling-a-webhook)). |
+| **Create Task** | Creates a [task](./tasks.md) with the **Task title** and optional description you enter, assigned to whoever you pick. Fill in **Task due in days** to give the task a due date. |
 | **Notify Person** | Sends a staff member or volunteer you pick an email and a B1 notification about the card (see below). |
+
+The table follows the order of the action type list. A new action starts out as **Wait** until you choose another type. [Serving assignment confirmation](#serving-assignment-confirmations) workflows offer a slightly different list, with **Send serving request** in place of **Send Email**, **Send Text**, and **Add to Workflow**.
 
 After all of a step's actions finish, the card **rests on that step** so a person can work it -- unless the step has an automatic route that moves it onward (see [Fully automated steps](#fully-automated-steps)).
 
@@ -96,12 +98,12 @@ Automated actions run only when a card arrives through the normal flow -- when i
 
 ### Sending email
 
-Choose **Send email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}` or `{{donorNumber}}`, are filled in with the person's own details. If a **Donation · Created** trigger started the workflow, the gift fields `{{amount}}`, `{{giftDate}}`, `{{fund}}`, and `{{receipt}}` are filled in from that gift, even on steps that run after a Wait. See [Gift merge fields](../settings/email-templates.md#gift-merge-fields).
+Choose **Send Email**, pick one of your email templates, and optionally type a custom subject. When a card enters the step, the person receives that email automatically. (If the person has no email address on file, the step simply skips this action.) [Merge fields](../settings/email-templates.md#merge-fields) in the template, such as `{{firstName}}` or `{{donorNumber}}`, are filled in with the person's own details. If a **Donation · Created** trigger started the workflow, the gift fields `{{amount}}`, `{{giftDate}}`, `{{fund}}`, and `{{receipt}}` are filled in from that gift, even on steps that run after a Wait. See [Gift merge fields](../settings/email-templates.md#gift-merge-fields).
 
 When the email goes out, the card's history records **Email sent**. If it can't be sent -- for example, because your church's email isn't approved yet or the daily limit has been reached -- no "Email sent" entry is added.
 
 :::info
-Workflow emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). The **Send email** action warns you in the step editor when these emails won't send: *"Your church's email hasn't been approved yet..."* if approval is still pending, or *"Your church's email is paused..."* if recent messages bounced or were reported as spam.
+Workflow emails only go out after your church has been approved to send group email, and they count toward your church's daily email limit. See [Turning On Group Email for Your Church](../groups/group-members.md#turning-on-group-email-for-your-church). The **Send Email** action warns you in the step editor when these emails won't send: *"Your church's email hasn't been approved yet..."* if approval is still pending, or *"Your church's email is paused..."* if recent messages bounced or were reported as spam.
 :::
 
 ### Recording attendance
@@ -128,6 +130,30 @@ Choose **Send Text** and type the **Text message** (up to 1,600 characters). If 
 Texts are sent through your church's own [texting provider](../settings/church-settings.md#texting). If no provider is connected, the action editor warns *"No texting provider is set up"* and texts will not send.
 :::
 
+### Calling a webhook {#calling-a-webhook}
+
+Choose **Call Webhook** and paste the address of the other system into **Webhook URL (https)**. When a card enters the step, B1 sends one HTTP `POST` to that address with a `Content-Type: application/json` header and this JSON body:
+
+```json
+{
+  "cardId": "a1b2c3d4e5f",
+  "workflowId": "g6h7i8j9k0l",
+  "stepId": "m1n2o3p4q5r",
+  "personId": "Pq7Rs2Tu4Vw",
+  "personName": "Jordan Rivera"
+}
+```
+
+`cardId`, `workflowId`, and `stepId` identify the card and the step it is on. `personId` and `personName` are the id and name of the person the card is about. (On the rare card that is about something else, such as the group on a **Group · Created** trigger, they hold that record's id and name.) Those five fields are everything B1 sends.
+
+:::warning
+This request is **not signed**. It carries no signature header and no shared secret, so the receiving system cannot prove that the call came from B1. If you need a signed delivery that is retried when it fails, create a webhook under **Settings → Developer → Webhooks** instead. See [Developer Settings](../integrations/developer-settings.md#webhooks). Those webhooks fire when records change in B1 (a person is added, a form is submitted, and so on), not when a card enters a step.
+:::
+
+- The address must start with `https` and be reachable from the public internet. B1 will not call `localhost`, hostnames ending in `.local` or `.internal`, or any address that resolves to a private, loopback, link-local, or cloud-metadata IP. An address that fails this check is skipped: nothing is sent and nothing is added to the card's history.
+- B1 sends the request once and waits up to 10 seconds for it to complete. It does not follow redirects and it does not retry.
+- When the request completes, the card's history records **Webhook sent**, whatever status code the other system answered with. If the request cannot be completed (for example, the connection fails or times out), the failure is logged in the card's history and the step's remaining actions still run.
+
 ### Waiting a few days (drip sequences)
 
 The **Wait** action holds a card for the number of days you set. While it waits, the card shows as **Snoozed**. B1 checks for finished waits every 30 minutes, so a card picks up again within about half an hour of its wait ending. When the wait is over:
@@ -148,7 +174,7 @@ There are several ways to put people on a board:
 - **From People search** -- Select multiple people and use the bulk **Add to Workflow** action to add them all at once.
 - **Automatically with a trigger** -- Add people when something happens, like a form submission or a first gift (see [Triggers](#triggers) below).
 
-Adding someone by hand, or with an **Add to workflow** step action, never gives them a second open card on the same workflow. If they already have an open card, they're skipped (in a bulk add, only the people without one get new cards). Once their card is closed, you can add them again. Triggers follow their own **Only once per person** setting instead.
+Adding someone by hand, or with an **Add to Workflow** step action, never gives them a second open card on the same workflow. If they already have an open card, they're skipped (in a bulk add, only the people without one get new cards). Once their card is closed, you can add them again. Triggers follow their own **Only once per person** setting instead.
 
 ## Working the Board {#working-the-board}
 
@@ -233,7 +259,7 @@ Fire as soon as a record changes in B1. Under **When this happens**, choose the 
 | **Recurring gift · Created** | the donor | **Amount**, **Fund**, **Frequency** (**Weekly**, **Every 2 Weeks**, **Monthly**, **Quarterly**, **Annually**) |
 | **Group · Member Joined** / **Group · Member Left** / **Group · Join Requested** | the member | **Group**, **Group Name** |
 | **Group · Created** | the group | **Group Name**, **Category** |
-| **Form · Submitted** | the person who submitted (or who the form is about) | **Form**, **Submitter Membership Status** |
+| **Form · Submitted** | the person the form is about, or else the signed-in person who submitted it. A submission tied to nobody gets a card named after the submitter or the form | **Form**, **Submitter Membership Status** |
 | **Check-In · Recorded** | the person checked in | **Group**, **Membership Status** |
 | **Event · Registration Created** / **Event · Registration Cancelled** | the registrant | **Event**, **Registrant Membership Status** |
 | **List · Member Added** / **List · Member Removed** | the person | **List**, **List Name** |
@@ -293,7 +319,7 @@ A special kind of workflow can follow up on [serving requests](./plans.md#assign
 3. Edit the waits, messages, and steps to fit your church.
 4. Open a [plan's settings](./plans.md#plan-settings) and choose this workflow under **Confirmation workflow**.
 
-These workflows use a **Send serving request** action instead of **Send email** and **Send text**. Choose **Email** or **Text message** and, optionally, write a **Request message**. The request always includes the role, plan, service date, and a link to respond; you can use `{{planName}}`, `{{positionName}}`, and `{{serviceDate}}` in your message. Leave the message empty to use the default request. Volunteers' notification preferences, text opt-in, your texting provider, and your church's email approval all apply, and any skipped or blocked attempt is recorded on the card. **Send email**, **Send text**, and **Add to workflow** aren't available on these boards.
+These workflows use a **Send serving request** action instead of **Send Email** and **Send Text**. Choose **Email** or **Text message** and, optionally, write a **Request message**. The request always includes the role, plan, service date, and a link to respond; you can use `{{planName}}`, `{{positionName}}`, and `{{serviceDate}}` in your message. Leave the message empty to use the default request. Volunteers' notification preferences, text opt-in, your texting provider, and your church's email approval all apply, and any skipped or blocked attempt is recorded on the card. **Send Email**, **Send Text**, and **Add to Workflow** aren't available on these boards.
 
 The **Triggers** tab on a confirmation workflow explains how cards are started rather than offering triggers, and these workflows don't appear in the **Add to Workflow** lists for people.
 
@@ -341,6 +367,6 @@ Without the view tier, the Workflows page shows *"You do not have access to this
 
 - [Tasks](./tasks.md) -- the individual action items that workflow cards are built on
 - [Forms](../forms/index.md) -- build the forms that can trigger workflows
-- [Groups](../groups/index.md) -- the groups an "Add to group" action can place people in
+- [Groups](../groups/index.md) -- the groups an **Add to Group** action can place people in
 - [Service Plans](./plans.md) -- choose a confirmation workflow for a plan's serving requests
 - [Roles & Permissions](../settings/roles-permissions.md) -- control who can view, edit, and manage workflows

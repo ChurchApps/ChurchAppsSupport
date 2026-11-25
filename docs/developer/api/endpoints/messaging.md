@@ -327,7 +327,7 @@ Manages reusable email templates and sending templated emails to groups.
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | Load all email templates for the church |
 | GET | `/:id` | JWT | — | Load a single email template by ID |
-| GET | `/sendStatus` | JWT | `groupMembers.edit` or `tasks.admin` | The church's group email status: `{ approved, paused, remaining, requested }`. B1Admin's Send Email dialog and the workflow **Send email** action use it to warn when email won't go out |
+| GET | `/sendStatus` | JWT | `groupMembers.edit` or `tasks.admin` | The church's group email status: `{ approved, paused, remaining, requested }`. B1Admin's Send Email dialog and the workflow **Send Email** action use it to warn when email won't go out |
 | POST | `/requestApproval` | JWT | `groupMembers.edit` | Ask support to approve the church for group email (at most once per church per week) |
 | GET | `/preview/:groupId` | JWT | — | Preview email delivery for a group (eligible recipient count, members with no email) |
 | POST | `/` | JWT | — | Create or update email templates (batch) |
