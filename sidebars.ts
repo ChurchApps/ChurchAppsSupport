@@ -197,8 +197,6 @@ const sidebars: SidebarsConfig = {
             'b1-admin/integrations/developer-settings',
             'b1-admin/integrations/slack-discord',
             'b1-admin/integrations/zapier',
-            'b1-admin/integrations/make',
-            'b1-admin/integrations/google-sheets',
             'b1-admin/integrations/claude',
             'b1-admin/integrations/chatgpt',
             {
@@ -213,7 +211,6 @@ const sidebars: SidebarsConfig = {
                 'b1-admin/integrations/services/clearstream',
                 'b1-admin/integrations/services/text-in-church',
                 'b1-admin/integrations/services/mobile-message',
-                'b1-admin/integrations/services/checkr',
               ],
             },
           ],
@@ -602,6 +599,7 @@ const sidebars: SidebarsConfig = {
             'developer/api/connected-apps',
             'developer/api/webhooks',
             'developer/api/mcp',
+            'developer/api/custom-fields',
             {
               type: 'category',
               label: 'Endpoint Reference',

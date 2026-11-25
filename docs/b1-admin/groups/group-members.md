@@ -109,7 +109,7 @@ If your church has not been reviewed yet, the Send Email dialog shows **Group em
 2. The dialog changes to **Review requested**. You can close it.
 3. Group email is usually turned on within one business day. Open the Send Email dialog again after that to send your message.
 
-Until your church is approved, B1 also does not send [form follow-up emails](../forms/creating-forms.md#sending-a-follow-up-email) or the **Send email** step in [workflows](../serving/workflows.md).
+Until your church is approved, B1 also does not send [form follow-up emails](../forms/creating-forms.md#sending-a-follow-up-email) or the **Send Email** step in [workflows](../serving/workflows.md).
 
 :::info Sending limits
 After approval, a church can send up to 150 church-written emails a day. The limit grows as your church builds a clean sending history, up to 2,000 a day. If recent messages bounced or were marked as spam, group email pauses and the dialog asks you to contact support. If a send would go over your daily limit, B1 does not send it and shows an error.

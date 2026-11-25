@@ -64,9 +64,9 @@ Doing the initial load through Mailchimp's importer keeps you in control of the 
 - **Tag names are the group/list names.** Renaming a group or list starts tagging under the new name; the old tag remains on existing subscribers until removed in Mailchimp.
 - **Mailchimp's contact limits still apply** — a sync that pushes a free-tier audience past its cap will log `Member limit reached` errors in the delivery history.
 
-## Other Recipes (Zapier / Make)
+## Other Recipes (Zapier)
 
-Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier.md) or [Make](../make.md), which trigger on the same webhook events:
+Anything beyond audience sync — tagging givers on `donation.created`, a Mailchimp → B1 reverse direction, or syncing to a different email platform entirely (Constant Contact, Brevo, etc.) — is still available through [Zapier](../zapier.md), which triggers on the same webhook events:
 
 - **Tag givers:** B1 *New Donation* → B1 *Find Person* → Mailchimp *Add Subscriber to Tag* (`Gave-2026`)
 - **Two-way:** Mailchimp *New Subscriber* → B1 *Create Person*

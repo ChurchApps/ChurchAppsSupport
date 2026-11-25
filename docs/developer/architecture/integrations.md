@@ -30,9 +30,9 @@ Everything except content providers is served by a single monolithic API (the [A
    ┌─────────────────────┐                          ┌───────────────────────────────────────┐
    │  Third-party app     │   Bearer  cak_… / JWT    │              B1 API (Api)              │
    │  · server / SaaS     │ ───────────────────────▶ │  ┌─────────────────────────────────┐  │
-   │  · Zapier / Make     │                          │  │ CustomAuthProvider.getUser()    │  │
-   │  · Google Sheets     │                          │  │   cak_ key ─┐                    │  │
-   │  · CLI / scripts     │                          │  │   OAuth JWT ┴▶ Principal          │  │
+   │  · Zapier            │                          │  │ CustomAuthProvider.getUser()    │  │
+   │  · CLI / scripts     │                          │  │   cak_ key ─┐                    │  │
+   │                      │                          │  │   OAuth JWT ┴▶ Principal          │  │
    │  · AI client (MCP)   │ ─── POST /mcp ──────────▶ │  │   scopes filter → permissions[] │  │
    └─────────────────────┘                          │  └────────────────┬────────────────┘  │
              ▲                                        │                   ▼                    │
@@ -91,7 +91,7 @@ The complete product surface. Any authenticated endpoint accepts either a JWT or
 
 ### API keys
 
-A `cak_<prefix>.<secret>` personal access token, created in **B1Admin → Settings → Developer → API Keys**. Only a SHA-256 hash is stored; the raw key is shown once. Managed at `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for a single church's own scripts and for connectors like Zapier, Make, and Google Sheets. → **[API Keys](../api/api-keys.md)**
+A `cak_<prefix>.<secret>` personal access token, created in **B1Admin → Settings → Developer → API Keys**. Only a SHA-256 hash is stored; the raw key is shown once. Managed at `/membership/apiKeys` (`Api/src/modules/membership/controllers/ApiKeyController.ts`). Best for a single church's own scripts and for connectors like Zapier. → **[API Keys](../api/api-keys.md)**
 
 ### OAuth 2.0 & Connected Apps
 
@@ -136,8 +136,7 @@ Rather than everyone building from scratch, ChurchApps ships connectors on top o
 
 - **[Slack & Discord](/docs/b1-admin/integrations/slack-discord)** — a webhook `connectorType` reshapes the standard envelope into a chat message; configured entirely in B1Admin, no third-party account.
 - **[Mailchimp](/docs/b1-admin/integrations/services/mailchimp)** — a `mailchimp` connectorType that syncs people into a Mailchimp audience and maps group/list membership to tags (`Api/src/shared/webhooks/MailchimpConnector.ts`). Unlike the chat connectors it issues its own authenticated requests per event (upsert/archive/tag) instead of POSTing to a church-supplied URL; the API key and audience id live encrypted in `webhooks.connectorConfig`. One-way, standard merge fields only.
-- **[Zapier](/docs/b1-admin/integrations/zapier)** and **[Make](/docs/b1-admin/integrations/make)** — trigger on webhook events and act via the REST API; they register their own webhook when a Zap/scenario turns on (needs a key with `settings:write`). The Zapier app's source lives in the `Integrations` repo under `zapier/` (Zapier CLI, deployed with `zapier push`).
-- **[Google Sheets](/docs/b1-admin/integrations/google-sheets)** — an API-key-authenticated add-on that exports People / Donations / Groups / Attendance on demand.
+- **[Zapier](/docs/b1-admin/integrations/zapier)** — triggers on webhook events and acts via the REST API; it registers its own webhook when a Zap turns on (needs a key with `settings:write`). The Zapier app's source lives in the `Integrations` repo under `zapier/` (Zapier CLI, deployed with `zapier push`).
 - **[Claude](/docs/b1-admin/integrations/claude)** and **[ChatGPT](/docs/b1-admin/integrations/chatgpt)** — MCP clients pointed at `/mcp`.
 
 For your own code, **[`@churchapps/integration-sdk`](https://www.npmjs.com/package/@churchapps/integration-sdk)** (`Packages/integration-sdk`) wraps all of it: a typed REST client, an OAuth client (auth-code / refresh / device flow), and an HMAC webhook verifier with Express middleware.

@@ -7,7 +7,7 @@ description: "Set up real-time webhooks from B1 Admin: register endpoints, choos
 
 <div class="article-intro">
 
-Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, Make, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
+Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
 
 </div>
 
@@ -26,6 +26,8 @@ Webhooks are **outbound** only: B1 calls your endpoint, you do not call B1. Each
 
 Delivery uses a **durable outbox**: when a subscribed event occurs, B1 records a delivery row and a background worker POSTs it within about a minute. Failed deliveries are retried with exponential backoff. Nothing is lost if a delivery is slow or your endpoint is briefly down.
 
+A workflow step's **Call Webhook** action is a separate, simpler mechanism: a single unsigned POST with no retries and no delivery log. See [Calling a webhook](../../b1-admin/serving/workflows.md#calling-a-webhook).
+
 ## Registering a Webhook
 
 ### In B1Admin
@@ -34,7 +36,7 @@ Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the
 
 ### Via the API
 
-All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys.md) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
+All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys.md) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier register webhooks on the church's behalf when a Zap is turned on.
 
 ```http
 POST /membership/webhooks
@@ -64,7 +66,7 @@ The create response — and **only** the create response — includes the `secre
 | Method & Path | Purpose |
 |---|---|
 | `GET /membership/webhooks` | List the church's webhooks (secret omitted) |
-| `GET /membership/webhooks/events` | The catalog of valid event names |
+| `GET /membership/webhooks/events` | The catalog of valid event names, as `{ groups, all }` |
 | `GET /membership/webhooks/:id` | Load one webhook |
 | `POST /membership/webhooks` | Create (no `id`) or update (with `id`) |
 | `POST /membership/webhooks/:id/regenerate-secret` | Rotate the signing secret; returns the new value once |
@@ -81,7 +83,7 @@ Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GE
 |---|---|
 | `person.created` | A person is added |
 | `person.updated` | A person record is changed |
-| `person.destroyed` | A person is deleted |
+| `person.destroyed` | A person is deleted (payload also carries the person's `email` when one was on file) |
 | `household.created` | A household is added |
 | `household.updated` | A household is changed |
 | `household.destroyed` | A household is deleted |
@@ -91,8 +93,8 @@ Event names follow the pattern `{entity}.{action}`. Fetch the live list from `GE
 | `group.member.added` | A person is added to a group |
 | `group.member.removed` | A person is removed from a group |
 | `group.member.requested` | A member asks to join a group that requires approval (payload carries `groupName` and `personName`) |
-| `donation.created` | A gift is recorded — manual entry, online, or the pending → complete transition |
-| `donation.updated` | A donation record is edited |
+| `donation.created` | A gift is recorded, by manual entry or online. A gift that starts out pending fires once, when it is first recorded with `status` `pending` |
+| `donation.updated` | A donation record is edited and saved. A status change on its own (pending to complete, failed, refunded) does not fire an event |
 | `attendance.recorded` | A visit is logged (manual entry or check-in) |
 | `attendance.checkout` | A checked-in person is checked out at a kiosk (payload carries `checkoutTime` and `checkedOutBy`) |
 | `session.created` | A new attendance session is created (manually or auto on first check-in) |
@@ -134,9 +136,9 @@ The body wraps the changed resource in a small envelope:
 }
 ```
 
-For `*.destroyed` events, `data` contains only the `id` and `churchId` of the deleted record.
+For `*.destroyed` events, `data` contains only the `id` and `churchId` of the deleted record. `person.destroyed` also carries the deleted person's `email` when they had one.
 
-Events whose payloads reference other records by id also carry human-readable names, resolved at delivery time: `personName` and `groupName` on the group membership events, `personName` on attendance, donation, and list membership events, `groupName` on `session.created`, and `formName` (plus `personName` when the submission is tied to a person) on `form.submission.created`.
+Events whose payloads reference other records by id also carry human-readable names, looked up when the event fires: `personName` and `groupName` on the group membership events, `personName` on attendance, donation, and list membership events, `groupName` on `session.created`, and `formName` (plus `personName` when the submission is tied to a person) on `form.submission.created`. Wherever `personName` is added, `personEmail` is added as well when the person has an email address on file. `form.submission.created` also carries `submitterName`, the name (or, failing that, the email) entered on the form.
 
 ## Connector Types
 
@@ -144,9 +146,9 @@ The default delivery format is the JSON envelope above — `connectorType: "stan
 
 | `connectorType` | Body sent | Use when |
 |---|---|---|
-| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier / Make / a custom server |
-| `"slack"` | `{ "text": "💝 New donation: $50.00" }` | You're posting straight to a Slack Incoming Webhook URL |
-| `"discord"` | `{ "content": "💝 New donation: $50.00" }` | You're posting straight to a Discord channel webhook URL |
+| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier or a custom server |
+| `"slack"` | `{ "text": "💝 New donation: $50.00 from Jordan Rivera" }` | You're posting straight to a Slack Incoming Webhook URL |
+| `"discord"` | `{ "content": "💝 New donation: $50.00 from Jordan Rivera" }` | You're posting straight to a Discord channel webhook URL |
 | `"mailchimp"` | n/a — the connector calls Mailchimp's API itself | You want [audience sync](/docs/b1-admin/integrations/services/mailchimp) with no URL to host |
 
 The connector type is set in the **Connector Type** dropdown on the webhook editor, or via `connectorType` in the `POST /membership/webhooks` body. The signed `X-B1-Signature` header is still sent for Slack/Discord deliveries (they ignore it harmlessly), so switching a webhook back to `standard` later requires no resigning.
@@ -155,7 +157,7 @@ Slack and Discord are pure body reshapes — the engine still POSTs to the churc
 
 ## Test Deliveries
 
-Every webhook editor has a **Send Test Event** button — the corresponding API call is `POST /membership/webhooks/:id/test`. The test route builds a synthetic payload for the first subscribed event, dispatches it synchronously through the real signed-delivery path (and through `formatForConnector` for Slack/Discord), and returns the resulting delivery row including `responseStatus` and `responseBody`. Use it to confirm connectivity and signature handling before flipping the integration on for real. For `mailchimp` webhooks the test instead verifies the stored credentials against the Mailchimp API (a synthetic event would write a fake subscriber into the church's real audience) and returns a delivery-shaped result without creating a row.
+Every webhook editor has a **Send Test Event** button — the corresponding API call is `POST /membership/webhooks/:id/test`. The test route builds a synthetic payload for the first subscribed event (or for the subscribed event named in an optional `event` field of the request body), dispatches it synchronously through the real signed-delivery path (and through `formatForConnector` for Slack/Discord), and returns the resulting delivery row including `responseStatus` and `responseBody`. Use it to confirm connectivity and signature handling before flipping the integration on for real. For `mailchimp` webhooks the test instead verifies the stored credentials against the Mailchimp API (a synthetic event would write a fake subscriber into the church's real audience) and returns a delivery-shaped result without creating a row.
 
 ## Verifying Signatures
 

@@ -29,7 +29,7 @@ You can also go straight there: **/settings/developer** opens the section on the
 
 ## API Keys
 
-An API key lets another program act in B1 on your behalf. Use one for [Zapier](./zapier.md), [Make](./make.md), [Google Sheets](./google-sheets.md), [ChatGPT](./chatgpt.md), [Claude with a key](./claude.md), or your own scripts.
+An API key lets another program act in B1 on your behalf. Use one for [Zapier](./zapier.md), [ChatGPT](./chatgpt.md), [Claude with a key](./claude.md), or your own scripts.
 
 The **API Keys** tab lists each key with its **Name**, **Key** (the `cak_` prefix followed by the first few characters and an ellipsis; the full key is never shown again), **Scopes** (one chip per scope), **Last Used**, and **Expires**. A dash means the key has never been used or never expires. When you have no keys yet the card reads *No API keys yet.*
 
@@ -61,10 +61,10 @@ A key is bound to the person who created it. It can never do more than that pers
 | `content:read` / `content:write` | View / edit website content, registrations, and streaming settings |
 | `messaging:read` / `messaging:write` | Read messages / also send texts |
 | `roles:read` / `roles:write` | View / edit roles |
-| `settings:read` / `settings:write` | View / edit church settings. **Required** for Zapier and Make, which register webhooks for you |
+| `settings:read` / `settings:write` | View / edit church settings. **Required** for Zapier, which registers webhooks for you |
 | `workflows:read` / `workflows:write` | View / run and edit [workflows](../serving/workflows.md) |
 
-Give each key only the scopes its integration needs. A Google Sheets export needs `people:read`, not `settings:write`; a Zap that triggers on new people needs `settings:write` plus `people:read`.
+Give each key only the scopes its integration needs. A script that only reads your directory needs `people:read`, not `settings:write`; a Zap that triggers on new people needs `settings:write` plus `people:read`.
 
 ### Deleting a Key
 
@@ -91,7 +91,7 @@ The **Webhooks** tab lists each webhook with its **Name**, **URL**, number of **
 7. For a **Standard**, **Slack**, or **Discord** webhook, a **Signing Secret** dialog appears once: *Copy your signing secret now — it will not be shown again. Use it to verify the X-B1-Signature header on every delivery.* Click **Copy**, store the secret with your integration, then **Close**. Slack, Discord, and most automation tools ignore the signature, so you only need the secret if your own code will verify deliveries (see [Verifying signatures](/docs/developer/api/webhooks#verifying-signatures)). Mailchimp webhooks have no secret.
 
 :::info
-Zapier and Make create their own webhooks here when you turn a Zap or scenario on (named like *Zapier — person.created*) and remove them when you turn it off. You do not need to add those by hand, but they appear in this list and you can inspect their deliveries like any other.
+Zapier creates its own webhooks here when you turn a Zap on (named like *Zapier — person.created*) and removes them when you turn it off. You do not need to add those by hand, but they appear in this list and you can inspect their deliveries like any other.
 :::
 
 ### Events You Can Subscribe To {#webhook-events}
@@ -137,7 +137,7 @@ Three exhausted deliveries in a row switch the webhook to **Disabled** automatic
 
 ### Editing or Deleting a Webhook
 
-Open the webhook, change any field (including **Connector Type** or the ticked events), and click **Save**. Click **Delete** on the form, or the delete icon in the list, to remove it; deliveries stop immediately. Deleting a webhook that Zapier or Make created will break that Zap or scenario until you turn it off and on again.
+Open the webhook, change any field (including **Connector Type** or the ticked events), and click **Save**. Click **Delete** on the form, or the delete icon in the list, to remove it; deliveries stop immediately. Deleting a webhook that Zapier created will break that Zap until you turn it off and on again.
 
 ## Connected Apps
 
@@ -154,6 +154,6 @@ Connected Apps only lists apps that signed in with your account. An app you gave
 - [Integrations](./index.md) -- Which integration needs a key, a webhook, or neither
 - [Slack & Discord](./slack-discord.md) -- Chat notifications through a Slack or Discord connector webhook
 - [Mailchimp](./services/mailchimp.md) -- Audience sync through the Mailchimp connector
-- [Zapier](./zapier.md) and [Make](./make.md) -- Automation platforms that use an API key and register webhooks for you
+- [Zapier](./zapier.md) -- An automation platform that uses an API key and registers webhooks for you
 - [Roles & Permissions](../settings/roles-permissions.md) -- Granting the Edit Church Settings permission
 - [API Keys](/docs/developer/api/api-keys), [Webhooks](/docs/developer/api/webhooks), and [Connected Apps & OAuth](/docs/developer/api/connected-apps) -- Developer reference for payloads, headers, signatures, and the REST endpoints behind these tabs

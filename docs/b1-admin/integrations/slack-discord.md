@@ -55,7 +55,7 @@ Treat the Slack webhook URL as a secret. Anyone with it can post arbitrary messa
 
 Re-open the webhook from the list and click **Send Test Event**. B1 sends a sample of the first event you ticked, so within a second or two a message like
 
-> 💝 New donation: $50.00
+> 💝 New donation: $50.00 from Sample Person
 
 appears in your Slack channel, and a new row shows up in the **Recent Deliveries** table on the same screen with status `succeeded`. You're done.
 
@@ -85,15 +85,27 @@ Same **Send Test Event** button — Discord shows the message in the chosen chan
 |---|---|
 | `person.created` | 👤 New person added: Jordan Rivera |
 | `person.updated` | 👤 Person updated: Jordan Rivera |
+| `person.destroyed` | 👤 A person was removed |
 | `group.created` | 👥 New group created: Tuesday Bible Study |
-| `group.member.added` | ➕ Someone was added to a group |
-| `donation.created` | 💝 New donation: $50.00 |
-| `donation.updated` | 💝 Donation updated: $75.00 |
-| `attendance.recorded` | ✅ Attendance recorded |
-| `form.submission.created` | 📝 New form submission received |
+| `group.updated` | 👥 Group updated: Tuesday Bible Study |
+| `group.destroyed` | 👥 A group was removed |
+| `group.member.added` | ➕ Jordan Rivera was added to Tuesday Bible Study |
+| `group.member.removed` | ➖ Jordan Rivera was removed from Tuesday Bible Study |
+| `household.created` | 🏠 New household: Rivera |
+| `household.updated` | 🏠 Household updated: Rivera |
+| `household.destroyed` | 🏠 A household was removed |
+| `donation.created` | 💝 New donation: $50.00 from Jordan Rivera |
+| `donation.updated` | 💝 Donation updated: $75.00 from Jordan Rivera |
+| `attendance.recorded` | ✅ Attendance recorded for Jordan Rivera |
+| `session.created` | 📋 New attendance session created for Tuesday Bible Study |
+| `form.submission.created` | 📝 New form submission received: Connect Card |
 | `event.created` | 📅 New event: Easter Service |
+| `event.updated` | 📅 Event updated: Easter Service |
+| `event.destroyed` | 📅 An event was removed |
 
-The full list lives in the [webhook event catalog](/docs/developer/api/webhooks#event-catalog) — any event there can be routed to Slack/Discord.
+A gift with no donor attached leaves off the name, and an amount in a currency other than US dollars reads like *50.00 EUR*.
+
+The full list lives in the [webhook event catalog](/docs/developer/api/webhooks#event-catalog) — any event there can be routed to Slack/Discord. The six events without a message of their own (`group.member.requested`, `attendance.checkout`, `registration.created`, `registration.cancelled`, `list.member.added`, and `list.member.removed`) post as a bell followed by the event name, for example *🔔 registration.created*.
 
 ## One Channel Per Topic
 
@@ -107,7 +119,7 @@ There's no limit on the number of webhooks per church. Each one is independent �
 
 ## Inspecting Deliveries
 
-The webhook editor's **Recent Deliveries** table shows the last 50 attempts. Click a row to see the exact payload that was sent and the response that came back. For a Slack connector the payload is `{"text":"💝 New donation: $50.00"}` — not the raw `{event,churchId,...}` envelope — because B1 reshapes it before delivery.
+The webhook editor's **Recent Deliveries** table shows the last 50 attempts. Click a row to see the exact payload that was sent and the response that came back. For a Slack connector the payload is `{"text":"💝 New donation: $50.00 from Jordan Rivera"}` — not the raw `{event,churchId,...}` envelope — because B1 reshapes it before delivery.
 
 If something failed (an amber `failed` badge while B1 is still retrying, or a red `exhausted` badge once it has given up), the **Response** column shows the HTTP status and the row's dialog shows the response body, so you can see exactly what Slack or Discord didn't like — usually a copy/paste error in the URL. Click **Redeliver** to send that delivery again.
 
@@ -115,7 +127,7 @@ If something failed (an amber `failed` badge while B1 is still retrying, or a re
 
 - **No message appears + delivery status `400`** — usually the Connector Type is set to **Standard** but the URL is a Slack/Discord one. Slack/Discord reject the raw envelope. Switch the dropdown to **Slack** or **Discord** and resend the test.
 - **Webhook auto-disabled** — B1 retries each failed delivery with growing gaps for about eleven days. If three deliveries in a row run out of retries, B1 turns the webhook off (its status reads **Disabled**). Fix the URL (or rotate it on Slack/Discord), turn **Active** back on, and save.
-- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) or [Make](./make.md) to compose a fuller Slack message via their Slack actions.
+- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) to compose a fuller Slack message via its Slack actions.
 
 ## Switching Connector Types Later
 
@@ -124,5 +136,4 @@ You can change the Connector Type on an existing webhook — it takes effect on 
 ## See Also
 
 - [Zapier](./zapier.md) — for multi-step workflows triggered by B1 events
-- [Make](./make.md) — visual scenario builder
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the full payload + signature format if you ever point a webhook at your own server

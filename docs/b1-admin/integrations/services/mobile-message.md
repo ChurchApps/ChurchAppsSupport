@@ -1,13 +1,13 @@
 ---
 title: "Mobile Message"
-description: "Connect B1 Admin events to Mobile Message, an Australian SMS API, using Zapier or Make webhooks to send welcome, donation, and reminder texts."
+description: "Connect B1 Admin events to Mobile Message, an Australian SMS API, using Webhooks by Zapier to send welcome, donation, and reminder texts to your people."
 ---
 
 # Mobile Message
 
 <div class="article-intro">
 
-[Mobile Message](https://mobilemessage.com.au) is an Australian SMS API — popular with AU churches because it offers local numbers and competitive AU pricing where Clearstream and Text In Church are US-centric. Mobile Message doesn't have a first-class Zapier app today, but it does publish a public REST API, so you can wire B1 events to Mobile Message texts through **Webhooks by Zapier** (or Make's HTTP module) in a few minutes.
+[Mobile Message](https://mobilemessage.com.au) is an Australian SMS API — popular with AU churches because it offers local numbers and competitive AU pricing where Clearstream and Text In Church are US-centric. Mobile Message doesn't have a first-class Zapier app today, but it does publish a public REST API, so you can wire B1 events to Mobile Message texts through **Webhooks by Zapier** in a few minutes.
 
 </div>
 
@@ -15,7 +15,7 @@ description: "Connect B1 Admin events to Mobile Message, an Australian SMS API, 
 <h4>Before You Begin</h4>
 
 - A [Mobile Message](https://mobilemessage.com.au) account with a registered Sender ID and API credentials (API username + password under *Account → API Settings*)
-- A [Zapier](https://zapier.com) account (or [Make](https://www.make.com))
+- A [Zapier](https://zapier.com) account
 - A B1Admin user with **Edit Settings** permission
 
 </div>
@@ -83,10 +83,6 @@ Mobile Message's `/v1/messages` endpoint accepts up to 10,000 messages per call.
 - **Action** — Webhooks by Zapier: GET `/membership/groupmembers?groupId=…` to list the target group's members (B1's Zapier app has no list action for this; send the API key as an `Authorization: Bearer cak_…` header)
 - **Action** — Formatter by Zapier → Utilities → Line-itemize the response into a `messages` array
 - **Action** — Webhooks by Zapier: POST the full array to `/v1/messages`
-
-### Make alternative
-
-If you prefer Make, drop the **HTTP — Make a request** module after the B1 Watch Events trigger, configure it the same way (POST, Basic Auth, JSON body). See the [Make overview](../make.md) for the B1 side — note that the B1.church Make app isn't released yet.
 
 ## Limits & Notes
 

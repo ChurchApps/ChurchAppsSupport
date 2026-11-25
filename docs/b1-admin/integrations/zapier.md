@@ -107,6 +107,5 @@ This means the trigger only fires for events that happen **after** the Zap is tu
 
 ## See Also
 
-- [Make](./make.md) — same pattern, different platform
 - [Slack & Discord](./slack-discord.md) — simpler chat notifications without Zapier
 - [Webhooks (developer reference)](/docs/developer/api/webhooks)
