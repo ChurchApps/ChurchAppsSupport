@@ -28,6 +28,13 @@ The fastest way to export your directory is directly from the **People** page:
 3. Click the **Export** button in the People page header.
 4. A CSV file named `people.csv` will download to your computer with the people currently in your results, including their name, contact information, address, grade and school, and other standard fields. If you haven't searched, the export includes your whole directory, even when the page is only showing the first part of it.
 
+The file also has one column for each of your church's [custom fields](../settings/custom-fields.md), placed after the standard columns and headed with the field's name:
+
+- Text and numbers appear as they were entered, dates as a short date, Yes/No fields as *Yes* or *No*, and Multiple Choice fields as the option's label.
+- The cell is blank for anyone who has no value, and a field nobody has filled in still gets its column.
+- A custom field with the same name as a standard column gets " (custom)" added to its heading. For example, a custom field called *Grade* is exported as *Grade (custom)*.
+- If B1 can't load a field's values, that column is left out and you see *Some custom fields could not be loaded and were left out of the export.*
+
 :::tip
 The export includes everyone in your current results. Run a search, load a [Saved List](./lists.md), or use **Advanced** search first to export just the people you need.
 :::
