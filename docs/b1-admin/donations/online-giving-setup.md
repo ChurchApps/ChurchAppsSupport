@@ -106,7 +106,7 @@ To find your giving URL, go to **B1 Admin** and click the **Settings** icon to s
 
 `https://yoursubdomain.b1.church/donate`
 
-Share this link on your website, in emails, or in your bulletin so members know where to give online.
+Share this link on your website, in emails, or in your bulletin so members know where to give online. To put the giving form itself on a website you host outside B1, see [Embedding B1 on Your Own Website](../website/embedding.md).
 
 You can also click **Giving Page Link** at the top of **Donations > Funds** to copy this link or download it as a QR code (**Download PNG**).
 
