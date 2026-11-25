@@ -64,3 +64,4 @@ Start with [Initial Setup](./initial-setup.md) if you are configuring your websi
 - [Appearance](./appearance.md) -- Customize your site's look and feel
 - [Navigation Styles](./navigation-styles.md) -- Color the navigation bar in solid and transparent modes
 - [Files](./files.md) -- Upload and manage media files
+- [Embedding B1 on Your Own Website](./embedding.md) -- Show your giving form, a form, or a calendar on a website you host elsewhere
