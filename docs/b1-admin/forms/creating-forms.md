@@ -44,6 +44,8 @@ Need a paper copy to hand out -- for a visitor card at the welcome desk, or a fo
 
 Stand Alone forms have a **QR Code** link next to them on the main Forms list (archived forms don't). Click it to open a QR code for the form's public URL, with the link shown beneath it. Click **Download PNG** to save the code as an image you can print on bulletins or show on slides. Anyone who scans it opens the form on their phone.
 
+To show a Stand Alone form inside a website you host outside B1, open the form, click **Embed code**, and follow [Embedding B1 on Your Own Website](../website/embedding.md).
+
 ## Adding Questions {#adding-questions}
 
 1. Open your form and go to the **Questions** tab.
