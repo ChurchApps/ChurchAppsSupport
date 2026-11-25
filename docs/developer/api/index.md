@@ -69,4 +69,5 @@ The API uses ES modules (`"type": "module"` in `package.json`). Make sure your i
 - **[Connected Apps (OAuth)](./connected-apps.md)** -- Multi-tenant OAuth flow for third-party apps
 - **[Webhooks](./webhooks.md)** -- Push event notifications to external systems
 - **[MCP Server](./mcp.md)** -- Model Context Protocol endpoint that exposes the API to AI assistants
+- **[Custom Person Fields](./custom-fields.md)** -- Field definitions, each person's values, and filtering people and lists by them
 - **[Endpoint Reference](./endpoints/index.md)** -- Complete REST API documentation for all modules

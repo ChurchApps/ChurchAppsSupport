@@ -599,6 +599,7 @@ const sidebars: SidebarsConfig = {
             'developer/api/connected-apps',
             'developer/api/webhooks',
             'developer/api/mcp',
+            'developer/api/custom-fields',
             {
               type: 'category',
               label: 'Endpoint Reference',
