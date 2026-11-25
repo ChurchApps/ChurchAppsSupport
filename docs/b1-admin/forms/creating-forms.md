@@ -66,7 +66,7 @@ To show a Stand Alone form inside a website you host outside B1, open the form, 
 5. Fill in the extra fields for the type you chose:
    - For text, number, date, email, and phone questions, an optional **Placeholder** shows sample text inside the empty box.
    - For **Multiple Choice** and **Checkbox**, add each option under **Choices**: enter a **Value** (what is saved) and **Text** (what people see), then click the add button. Click the remove icon to take an option off.
-   - For **Payment**, choose the **Fund** the money goes to and the **Amount**.
+   - For **Payment**, choose the **Fund** the money goes to and the **Amount**. Tick **Let the respondent choose the amount** to make that amount a suggestion the person filling in the form can change; if they enter 0 the form is submitted without a payment.
 6. Check **Require an answer for this question** if the field is mandatory. (Payment questions don't have this option.)
 7. Click **Save**.
 8. Repeat to add more questions.
