@@ -13,7 +13,7 @@ Everything a third party can plug into runs through one API and one authorizatio
 
 ## The Surfaces at a Glance
 
-There are six ways in or out, and they all share the same auth layer:
+There are six ways in or out that share the same auth layer, plus [embeds](#embeds), which use no credential at all:
 
 - **[REST API](../api/api-keys.md)** — the whole product surface, callable with a bearer token from any language.
 - **[API keys](../api/api-keys.md)** — the simplest credential: a `cak_…` token bound to one person in one church.
@@ -22,7 +22,7 @@ There are six ways in or out, and they all share the same auth layer:
 - **[MCP server](../api/mcp.md)** — an AI-facing wrapper over the REST API at `/mcp`.
 - **[Content providers](../freeplay-content-provider.md)** — the inbound path for external media libraries into FreePlay and the B1 apps.
 
-Everything except content providers is served by a single monolithic API (the [Api](https://github.com/ChurchApps/Api) repository) whose modules mount under stable base paths — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, and `/mcp`.
+Everything except content providers and embeds is served by a single monolithic API (the [Api](https://github.com/ChurchApps/Api) repository) whose modules mount under stable base paths — `/membership`, `/giving`, `/attendance`, `/content`, `/messaging`, `/doing`, `/reporting`, and `/mcp`.
 
 ## How It Fits Together
 
@@ -119,6 +119,10 @@ The inbound-content path, in the separate package `Packages/content-providers` (
 
 **Year plans** ride on this path. A curriculum publisher (with `lessons.edit`) maintains ordered week-1/2/3 sequences in the Lessons.church admin (`LessonsApi` tables `yearPlans` / `yearPlanWeeks`, with optional `startMonth` and per-week `anchor` of `easter` / `christmas`); `GET /yearPlans/public` on LessonsApi serves live plans anonymously, hydrating each week's program/study/venue from the lesson tree. B1Admin's **Serving → Plans → Schedule Lesson → Apply Year Plan** consumes that endpoint and writes one DoingApi plan per included week (`providerId=lessonschurch`, `providerPlanId=/lessons/{programId}/{studyId}/{lessonId}/{venueId}`). Plans with `startMonth` resolve anchored weeks against the chosen year (Easter via Gregorian computus, Christmas as the Sunday on-or-before Dec 25) and fill the runs between them; plans without `startMonth` still map week N to `startDate + (N−1)×7` days. Weeks from external OLF providers or with an incomplete path are skipped at apply time; churches edit the resulting plans like any other, and FreePlay plays whatever is on the plan.
 
+### Embeds
+
+A church can frame three B1App pages on its own website: `/embed/donate`, `/embed/forms/{id}`, and `/embed/calendar/{id}` (`B1App/src/app/[sdSlug]/embed/`). The public content setting `embedDomains` lists the hostnames of that website (up to 10, parsed by `parseEmbedDomains` in `B1App/src/helpers/embed.ts`, which B1Admin mirrors in `src/helpers/embedDomains.ts`). For each hostname the B1App middleware adds `https://{host}` and `https://*.{host}` to the Content-Security-Policy `frame-ancestors` directive, and only on those three routes, which are matched exactly; every other path keeps the default policy. The pages render anonymously (no session restore, analytics, or custom JavaScript), are sent with `X-Robots-Tag: noindex, nofollow`, and post `{ type: "b1-embed-height", height }` to the parent window whenever their content resizes, which the snippet from B1Admin's `src/helpers/embedCode.ts` uses to size the iframe. → **[Embedding B1 on Your Own Website](../../b1-admin/website/embedding.md)**
+
 ## Summary
 
 | Surface | Auth mechanism | Direction | Where implemented | Reference |
@@ -129,6 +133,7 @@ The inbound-content path, in the separate package `Packages/content-providers` (
 | Webhooks | Per-hook secret, HMAC-SHA256 signature | Outbound | `Api/src/shared/webhooks/` + `WebhookController.ts` | [Webhooks](../api/webhooks.md) |
 | MCP server | `Bearer` JWT, OAuth JWT (discovered via `/.well-known`), or `cak_…` key | Inbound (AI) | `Api/src/modules/mcp/` | [MCP Server](../api/mcp.md) |
 | Content providers | Per-provider: none / OAuth PKCE / device / form | Inbound content | `Packages/content-providers/` | [Content Provider](../freeplay-content-provider.md) |
+| Embeds | None (anonymous pages; framing limited by `embedDomains`) | Outbound (framed pages) | `B1App/src/app/[sdSlug]/embed/` + `src/middleware.ts` | [Embedding](../../b1-admin/website/embedding.md) |
 
 ## Prebuilt Connectors
 
