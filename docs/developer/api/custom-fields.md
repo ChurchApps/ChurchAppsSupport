@@ -180,6 +180,19 @@ The operators depend on the field's type:
 
 Only stored values are compared, so a person with no value for the field never matches, whatever the operator. A number or date that cannot be read does not match either.
 
+## Set Field Actions
+
+Two automations can write a custom field without calling the endpoints above: the **Set Field** action on a workflow step (see [Setting a field](../../b1-admin/serving/workflows.md#setting-a-field)) and the `setField` action on a saved list, which runs for each person the nightly refresh adds to the list. Both name their target in a `field` property. A custom field is addressed as `personField_` followed by the field's id, the same form the people search uses:
+
+```json
+{ "field": "personField_a1B2c3D4e5F", "value": "True" }
+```
+
+- **The value is stored as given.** It follows the same rules as `POST /membership/personfieldvalues`: it is not checked against the field's type, and an empty value clears what the person had.
+- **An unknown field id is rejected.** If the church has no field with that id (for example, because the field was deleted), nothing is written. A workflow logs the failed action in the card's history and goes on to the step's remaining actions. A list refresh logs the error and goes on with the rest of the refresh.
+- **A workflow action can also carry `fieldLabel`.** B1 Admin saves the field's name there, and the card's history shows it in place of the `personField_` key.
+- A `field` without the prefix names one of the built-in person fields instead.
+
 ## Related Pages
 
 - [Custom Fields](../../b1-admin/settings/custom-fields.md) -- How church staff define fields and fill them in from B1 Admin
