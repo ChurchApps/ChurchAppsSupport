@@ -26,7 +26,7 @@ VOMO's Zapier app exposes four instant triggers and four actions. The recipes mo
 
 | Direction | Trigger | Action |
 |---|---|---|
-| VOMO → B1 | VOMO Membership (created) | B1: Find Person → Create Person (if new) |
+| VOMO → B1 | VOMO Membership (created) | B1: Find or Create Person |
 | VOMO → B1 | VOMO Kiosk check-in | B1: Add Group Member to a "Currently Serving" group, or record as attendance |
 | B1 → VOMO | B1 `person.created` | VOMO: Find Organizer (by email); else custom step |
 | Either | VOMO Participation (signups) | B1: Add Group Member to project-specific group |
@@ -47,10 +47,10 @@ The VOMO actions are limited to **drafting projects** and **finding** existing o
 ### 2. Build the membership-sync Zap
 
 1. **Trigger** — VOMO: Membership (event = `created`).
-2. **Action** — B1.church: Find Person, matched on email.
+2. **Action** — B1.church: Find or Create Person, matched on email (map first name, last name, and email for volunteers who are new).
 3. **Action** — B1.church: Add Group Member, adding the person from step 2 to the appropriate volunteer group.
 
-   B1's *Find Person* stops the Zap with a "No person found" error when nobody matches. For volunteers who aren't in B1 yet, turn on Zapier's error handling for the Find Person step and run B1.church: Create Person, then Add Group Member, in its error path.
+   *Find or Create Person* matches the whole email address and adds the volunteer to B1 when nobody has it, so volunteers who aren't in B1 yet need no separate step.
 4. Turn on. New VOMO volunteers now appear in B1 with the right group membership.
 
 ### 3. (Optional) Build the kiosk-check-in Zap
@@ -58,8 +58,8 @@ The VOMO actions are limited to **drafting projects** and **finding** existing o
 1. **Trigger** — VOMO: Kiosk
 2. **Action** — B1.church: Find Person (by email)
 3. **Action** — your choice:
-   - *If treating as attendance* — Webhooks by Zapier POST to B1's `/attendance/visits` endpoint (B1's Zapier app doesn't yet have a first-class *Record Attendance* action). The B1 [API key](/docs/developer/api/api-keys) goes in the `Authorization: Bearer cak_…` header.
-   - *If treating as group membership* — B1.church: Add Group Member with a "Currently Serving (Today)" group, and a second Zap later in the day removes them via a scheduled cleanup.
+   - *If treating as attendance* — Webhooks by Zapier POST to B1's `/attendance/visits` endpoint (B1's Zapier app has no *Record Attendance* action). The B1 [API key](/docs/developer/api/api-keys) goes in the `Authorization: Bearer cak_…` header.
+   - *If treating as group membership* — B1.church: Add Group Member with a "Currently Serving (Today)" group, and a second Zap later in the day removes them with B1.church: Remove Group Member.
 
 ## Common Recipes
 
@@ -69,7 +69,7 @@ The VOMO actions are limited to **drafting projects** and **finding** existing o
 - **Action** — Filter by Zapier on project id, then
 - **Action** — B1.church: Add Group Member to a B1 group whose name mirrors the VOMO project.
 
-When the VOMO project ends, manually clear the B1 group (or pair this with a *Participation deleted* trigger that removes them).
+When the VOMO project ends, manually clear the B1 group (or pair this with a *Participation deleted* trigger and B1.church: Remove Group Member).
 
 ### Send a "thanks for signing up" text via SMS
 

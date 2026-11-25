@@ -26,10 +26,10 @@ All triggers below are Subsplash's. The actions are B1's.
 
 | Subsplash trigger | B1 action |
 |---|---|
-| New Donation | Find Person → Add Donation (Create Person if missing) |
+| New Donation | Find or Create Person → Add Donation |
 | New Pledge | Add Donation (with `notes` = "Pledge: …") |
 | New Person Created | Create Person |
-| Person Updated Profile | (no direct B1 action — log to a Google Sheet for manual review) |
+| Person Updated Profile | Find Person → Update Person (name, email, mobile phone) |
 | New Form Response | Create Person + (optionally) Add Group Member based on the form |
 
 Subsplash → B1 is the only direction Subsplash's app supports right now.
@@ -52,10 +52,10 @@ Follow [Subsplash's Zapier integration guide](https://support.subsplash.com/en/a
 ### 3. Build the "record a donation" Zap
 
 1. **Trigger** — Subsplash: New Donation
-2. **Action** — B1.church: Find Person (by email)
+2. **Action** — B1.church: Find or Create Person (by email; map first name, last name, and email for donors who are new)
 3. **Action** — B1.church: Add Donation, using the person's id from step 2. Map amount, date, fund, method = "Online", notes = Subsplash transaction id.
 
-B1's *Find Person* stops the Zap with a "No person found" error when nobody matches, so a Filter or Path step can't branch on it. To handle first-time donors, turn on Zapier's error handling for the Find Person step and, in its error path, run B1.church: Create Person → B1.church: Add Donation (using the newly created person's id).
+*Find or Create Person* matches the donor's whole email address and adds them to B1 when nobody has it, so first-time donors need no separate step. The *Find Person* action is the stricter choice: it stops the Zap with a "No person found" error when nobody matches.
 
 Turn the Zap on. Future Subsplash donations flow into **B1Admin → Donations** within seconds.
 
