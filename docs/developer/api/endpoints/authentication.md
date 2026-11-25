@@ -215,12 +215,12 @@ The API supports OAuth 2.0 for third-party integrations. Two grant types are ava
 2. **Exchange code for token:** `POST /membership/oauth/token` (Public)
    - Body: `{ "grant_type": "authorization_code", "code": "...", "client_id": "...", "client_secret": "...", "redirect_uri": "...", "code_verifier": "..." }`
    - Send `code_verifier` when the authorize step used a `code_challenge`; public clients omit `client_secret`. JSON or form-encoded bodies are accepted
-   - Returns: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 43200, "refresh_token": "...", "scope": "..." }`
+   - Returns: `{ "access_token": "...", "token_type": "Bearer", "expires_in": 604800, "refresh_token": "...", "scope": "..." }`
 
 3. **Refresh token:** `POST /membership/oauth/token` (Public)
    - Body: `{ "grant_type": "refresh_token", "refresh_token": "...", "client_id": "...", "client_secret": "..." }`
 
-Access tokens expire after **12 hours**.
+Access tokens expire after **7 days** by default (`expires_in` is `604800` seconds). A self-hosted API can change that with the `OAUTH_ACCESS_TOKEN_SECONDS` environment variable. Refresh tokens expire after **90 days**. See [Connected Apps](../connected-apps.md#refresh-token) for how refresh tokens rotate.
 
 ### Device Code Flow (RFC 8628)
 
