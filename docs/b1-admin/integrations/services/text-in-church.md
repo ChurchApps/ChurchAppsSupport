@@ -27,7 +27,7 @@ description: "Wire B1 Admin and Text In Church together with Zapier: mint an API
 | B1 → Text In Church | B1 `person.created` | Create/Update Person + Add to Group |
 | B1 → Text In Church | B1 `form.submission.created` | Send Text Message via the relevant team |
 | B1 → Text In Church | B1 `group.member.added` | Add to Group (mirror group membership) |
-| Text In Church → B1 | Connect Card Submitted | B1: Create Person + Add Group Member |
+| Text In Church → B1 | Connect Card Submitted | B1: Find or Create Person + Add Group Member |
 | Text In Church → B1 | Person Created | B1: Create Person |
 | Text In Church → B1 | Person Joined Group | B1: Add Group Member |
 
@@ -53,10 +53,10 @@ Follow [Text In Church's Zapier integration guide](https://help.textinchurch.com
 The most common direction. Connect cards fired from TIC become new B1 people automatically.
 
 1. **Trigger** — Text In Church: Connect Card Submitted.
-2. **Action** — B1.church: Find Person (by email).
+2. **Action** — B1.church: Find or Create Person (by email; map first name, last name, and email for contacts who are new).
 3. **Action** — B1.church: Add Group Member to a "New Contact" group, using the person's id from step 2.
 
-B1's *Find Person* stops the Zap with a "No person found" error when nobody matches, so a Path can't branch on it. For new contacts, turn on Zapier's error handling for the Find Person step and run B1.church: Create Person, then Add Group Member, in its error path.
+*Find or Create Person* matches the whole email address and adds the contact to B1 when nobody has it, so new contacts need no separate step.
 
 Turn the Zap on. The next connect card submitted through TIC lands in **B1Admin → People** automatically.
 
@@ -71,7 +71,7 @@ Turn the Zap on. The next connect card submitted through TIC lands in **B1Admin 
 ### Mirror group membership
 
 - **Trigger** — B1.church: New Group Member, filtered on a specific `groupId`
-- **Action** — Text In Church: Add to Group (same person, mirror group). Pair with a `group.member.removed` Zap if you want full sync.
+- **Action** — Text In Church: Add to Group (same person, mirror group). Pair with a Zap on B1.church: Removed Group Member if you want full sync.
 
 ### Page a leader when someone joins
 

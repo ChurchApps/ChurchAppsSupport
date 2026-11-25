@@ -24,19 +24,67 @@ The B1.church app is built and working, but it is still waiting on Zapier's revi
 
 </div>
 
-## Triggers and Actions
+## Triggers, Actions, and Searches
 
-| Type | What | B1 event / endpoint |
+### Triggers
+
+There is one trigger for each B1 [webhook event](../../developer/api/webhooks.md#event-catalog), 25 in all. Every trigger needs the **`settings:write`** scope, because turning the Zap on registers a webhook for it. The last column is the extra scope that lets Zapier load real records from your church when you test the trigger. Without that scope, or where the column says *sample only*, the test uses a built-in sample and the trigger still works.
+
+| Trigger | B1 event | Fires when | Scope for real test records |
+|---|---|---|---|
+| New Person | `person.created` | A person is added | `people:read` |
+| Updated Person | `person.updated` | A person record is changed | `people:read` |
+| Deleted Person | `person.destroyed` | A person is deleted or anonymized | Sample only |
+| New Group | `group.created` | A group is created | None needed |
+| Updated Group | `group.updated` | A group's settings are changed | None needed |
+| Deleted Group | `group.destroyed` | A group is deleted | Sample only |
+| New Group Member | `group.member.added` | A person is added to a group | `groups:read` |
+| Removed Group Member | `group.member.removed` | A person is removed from a group | Sample only |
+| New Group Join Request | `group.member.requested` | A person asks to join a group that needs approval | Sample only |
+| New Household | `household.created` | A household is created | `people:read` |
+| Updated Household | `household.updated` | A household is edited | `people:read` |
+| Deleted Household | `household.destroyed` | A household is deleted | Sample only |
+| New Donation | `donation.created` | A gift is recorded, by manual entry or online giving | `donations:read` |
+| Updated Donation | `donation.updated` | An existing donation is edited | `donations:read` |
+| New Attendance Record | `attendance.recorded` | A person's attendance is recorded, by check-in or by marking them present | Sample only |
+| New Attendance Checkout | `attendance.checkout` | A person is checked out of a service or class | Sample only |
+| New Attendance Session | `session.created` | An attendance session (a group or service meeting on a date) is created | Sample only |
+| New Form Submission | `form.submission.created` | A form is submitted | `forms:write` |
+| New Event | `event.created` | A calendar event is created | Sample only |
+| Updated Event | `event.updated` | A calendar event is changed | Sample only |
+| Deleted Event | `event.destroyed` | A calendar event is deleted | Sample only |
+| New Registration | `registration.created` | Someone registers for an event | Sample only |
+| Cancelled Registration | `registration.cancelled` | An event registration is cancelled | Sample only |
+| New List Member | `list.member.added` | The nightly refresh adds a person to a saved list | Sample only |
+| Removed List Member | `list.member.removed` | The nightly refresh removes a person from a saved list | Sample only |
+
+Two of these behave differently from what their names suggest:
+
+- **New Donation** fires once, when the gift is first recorded. It does not fire again when a pending gift (a bank transfer that is still settling, for example) later completes.
+- **New List Member** and **Removed List Member** only fire for a [saved list](../people/lists.md#nightly-refresh) that has **Refresh nightly** checked, and they fire during that nightly refresh rather than the moment a person starts or stops matching.
+
+### Actions
+
+| Action | What it does | Scope |
 |---|---|---|
-| **Trigger** | New Person | `person.created` |
-| **Trigger** | Updated Person | `person.updated` |
-| **Trigger** | New Donation | `donation.created` |
-| **Trigger** | New Group Member | `group.member.added` |
-| **Trigger** | New Form Submission | `form.submission.created` |
-| **Action** | Create Person | adds a new person |
-| **Action** | Add Donation | records a donation |
-| **Action** | Add Group Member | adds a person to a group |
-| **Action** | Find Person | looks up a person by id, email, or name; fails the task if nobody matches |
+| Create Person | Adds a new person from a first name, last name, and optional email and mobile phone | `people:write` |
+| Update Person | Changes a person's first name, last name, email, mobile phone, or membership status. Fields you leave blank keep their current value | `people:write` |
+| Add Donation | Records a donation, with an optional fund. Leave **Person** blank for an anonymous gift | `donations:write` |
+| Add Group Member | Adds a person to a group | `groups:write` |
+| Remove Group Member | Removes a person from a group. Fails the Zap if they are not in the group | `groups:write` |
+| Find Person | Looks up a person by id, email, or name. Fails the Zap if nobody matches | `people:read` |
+
+The app has no action for adding a person to a saved list, creating a household, or recording attendance.
+
+### Searches
+
+| Search | What it does | Scope |
+|---|---|---|
+| Find Person | Finds a person by id, email, or name | `people:read` |
+| Find Group | Finds a group by its exact name, ignoring capital letters | None needed |
+| Find or Create Person | Runs Find Person and, if nobody matches, creates the person | `people:write` |
+
+**Find Person** uses the first of id, email, and name that you fill in. An email has to match the whole address (capital letters aside), while a name can match part of a name; when several people match a name, the first by last name is used. It exists as both a search and an action. The search returns nothing when nobody matches, and the action stops the Zap with an error. Use **Find or Create Person** when someone who is not in B1 yet should be added.
 
 Combine these freely with any of Zapier's 7,000+ supported apps.
 
@@ -47,7 +95,7 @@ Combine these freely with any of Zapier's 7,000+ supported apps.
 1. In B1Admin go to **Settings → Developer → API Keys**.
 2. Click **New API Key**, give it a name like "Zapier", and select the scopes the Zap needs.
 3. **Important:** always include the **`settings:write`** scope. Zapier checks the key against B1's webhook list when you connect it, and B1 triggers register a webhook on your behalf when the Zap turns on — both need `settings:write`. A key without it fails the connection test, even if your Zaps only use B1 actions.
-4. Also grant the scopes the actions need — for example a "Add Donation" action needs `donations:write`, "Create Person" needs `people:write`.
+4. Also grant the scopes your triggers, actions, and searches need. The tables above list them. For example, Add Donation needs `donations:write` and Create Person needs `people:write`.
 5. Save. The full `cak_…` key is shown **once** — copy it.
 
 ### 2. Connect Zapier to B1
@@ -95,7 +143,7 @@ This means the trigger only fires for events that happen **after** the Zap is tu
 ## Limits & Notes
 
 - **Multiple Zaps with the same trigger** each register their own B1 webhook — there's no conflict, but it's worth knowing if you're inspecting **Settings → Developer → Webhooks** and wondering why three identical `Zapier — donation.created` rows are there.
-- **Test data in Zap setup** — when you build a Zap, Zapier asks for sample data to map fields. It will pull the most recent matching event from B1 if there is one; otherwise it uses a synthetic sample from the app definition.
+- **Test data in Zap setup.** When you build a Zap, Zapier asks for sample data to map fields. For people, groups, group members, households, donations, and form submissions it pulls recent records from your church, as long as the key has the read scope shown in the trigger table. For every other trigger, and when the key lacks that scope, it uses a built-in sample.
 - **Action failures surface as Zap errors** in Zapier's task history. Common cause: an API key without the right scope (e.g. an "Add Donation" action needs `donations:write`). Re-mint the key with the correct scopes and re-connect in Zapier.
 - **Outbound API call quotas** — every B1 API call from an action counts toward your Zapier task quota, not toward anything on B1's side.
 
