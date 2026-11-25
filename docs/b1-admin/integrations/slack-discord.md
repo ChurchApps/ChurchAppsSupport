@@ -115,7 +115,7 @@ If something failed (an amber `failed` badge while B1 is still retrying, or a re
 
 - **No message appears + delivery status `400`** — usually the Connector Type is set to **Standard** but the URL is a Slack/Discord one. Slack/Discord reject the raw envelope. Switch the dropdown to **Slack** or **Discord** and resend the test.
 - **Webhook auto-disabled** — B1 retries each failed delivery with growing gaps for about eleven days. If three deliveries in a row run out of retries, B1 turns the webhook off (its status reads **Disabled**). Fix the URL (or rotate it on Slack/Discord), turn **Active** back on, and save.
-- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) or [Make](./make.md) to compose a fuller Slack message via their Slack actions.
+- **Message arrived but is missing detail** — every chat platform limits message size. B1's messages are one-liners by design; for richer notifications use [Zapier](./zapier.md) to compose a fuller Slack message via its Slack actions.
 
 ## Switching Connector Types Later
 
@@ -124,5 +124,4 @@ You can change the Connector Type on an existing webhook — it takes effect on 
 ## See Also
 
 - [Zapier](./zapier.md) — for multi-step workflows triggered by B1 events
-- [Make](./make.md) — visual scenario builder
 - [Webhooks (developer reference)](/docs/developer/api/webhooks) — the full payload + signature format if you ever point a webhook at your own server

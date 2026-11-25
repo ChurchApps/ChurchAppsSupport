@@ -1,13 +1,13 @@
 ---
 title: "API Keys"
-description: "Create, scope, and revoke B1 API keys in B1 Admin for server scripts and Zapier, Make, or Google Sheets connectors, without a full OAuth flow."
+description: "Create, scope, and revoke B1 API keys in B1 Admin for server-side scripts and connectors such as Zapier, without setting up a full OAuth flow."
 ---
 
 # API Keys
 
 <div class="article-intro">
 
-API keys (personal access tokens) are the simplest way to authenticate against the B1 API from a server-side script, a third-party connector (Zapier, Make, Google Sheets), or anywhere a full OAuth flow is overkill. A key is bound to a specific person in a specific church and inherits that person's permissions, narrowed by an optional set of scopes.
+API keys (personal access tokens) are the simplest way to authenticate against the B1 API from a server-side script, a third-party connector such as Zapier, or anywhere a full OAuth flow is overkill. A key is bound to a specific person in a specific church and inherits that person's permissions, narrowed by an optional set of scopes.
 
 </div>
 
@@ -68,7 +68,7 @@ A scope **narrows** what a key can do — it can never grant a permission the un
 `write` scopes implicitly include the matching `read`. Server- and domain-admin permissions are deliberately not exposed as scopes — a scoped credential can never elevate to site administration.
 
 :::tip
-If you'll use the key to register webhooks (e.g. for a Zapier or Make integration), the key needs `settings:write`. A `people:read`-only key silently 403s on `POST /membership/webhooks`.
+If you'll use the key to register webhooks (e.g. for a Zapier integration), the key needs `settings:write`. A `people:read`-only key silently 403s on `POST /membership/webhooks`.
 :::
 
 ## Using a Key
@@ -98,7 +98,7 @@ A revoked key is gone immediately — there is no grace period.
 ## Best Practices
 
 - **One key per integration.** If something is compromised you revoke a single key without breaking the others.
-- **Mint the narrowest scopes that work.** A Google Sheets export needs only `people:read`, not `settings:write`.
+- **Mint the narrowest scopes that work.** A script that only reads people needs only `people:read`, not `settings:write`.
 - **Bind the key to a service account, not a real staff member.** If a staff member leaves, their B1 access ends — and so do any keys minted under their identity.
 - **Store keys in a secret manager** (your hosting provider's environment variables, AWS Secrets Manager, etc.) — never in source control.
 - **Rotate keys** if you suspect exposure: create a new key, update the integration, then delete the old one.
@@ -112,4 +112,4 @@ API keys are appropriate when **your church is the only one using the integratio
 | Who installs it | One church admin | Each church admin authorizes the app |
 | Auth header | `Authorization: Bearer cak_…` | `Authorization: Bearer <jwt>` |
 | Token lifetime | Until revoked | Access ≈ 7 days, refresh ≈ 90 days |
-| Best for | Internal scripts, Zapier/Make/Sheets connectors | Multi-tenant third-party apps |
+| Best for | Internal scripts, connectors such as Zapier | Multi-tenant third-party apps |

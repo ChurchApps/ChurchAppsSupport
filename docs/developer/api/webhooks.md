@@ -7,7 +7,7 @@ description: "Set up real-time webhooks from B1 Admin: register endpoints, choos
 
 <div class="article-intro">
 
-Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, Make, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
+Webhooks let a church push real-time notifications to third-party tools — automation platforms (Zapier, n8n), CRMs, accounting systems, or anything that accepts an HTTP POST. When a person, group, or household changes in B1, B1 sends a signed JSON payload to every URL subscribed to that event.
 
 </div>
 
@@ -34,7 +34,7 @@ Go to **Settings → Developer → Webhooks → New Webhook**. Enter a name, the
 
 ### Via the API
 
-All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys.md) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier and Make register webhooks on the church's behalf when a Zap or scenario is turned on.
+All endpoints are under the Membership module base path `/membership/webhooks` and require either a JWT from a church admin with the `Settings / Edit` permission, **or an [API key](./api-keys.md) minted with the `settings:write` scope**. The same routes accept both. This is what lets Zapier register webhooks on the church's behalf when a Zap is turned on.
 
 ```http
 POST /membership/webhooks
@@ -144,7 +144,7 @@ The default delivery format is the JSON envelope above — `connectorType: "stan
 
 | `connectorType` | Body sent | Use when |
 |---|---|---|
-| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier / Make / a custom server |
+| `"standard"` (default) | `{event, churchId, occurredAt, data}` envelope, signed | You're writing your own integration, or pointing at Zapier or a custom server |
 | `"slack"` | `{ "text": "💝 New donation: $50.00" }` | You're posting straight to a Slack Incoming Webhook URL |
 | `"discord"` | `{ "content": "💝 New donation: $50.00" }` | You're posting straight to a Discord channel webhook URL |
 | `"mailchimp"` | n/a — the connector calls Mailchimp's API itself | You want [audience sync](/docs/b1-admin/integrations/services/mailchimp) with no URL to host |

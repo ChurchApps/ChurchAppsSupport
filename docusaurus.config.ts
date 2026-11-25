@@ -100,6 +100,10 @@ const config: Config = {
           { from: '/developer/open-lesson-schema.html', to: '/docs/lessons-church/admin/open-lesson-format' },
           // Automations page removed from B1Admin; scheduled automation now lives in workflow triggers
           { from: '/docs/b1-admin/serving/automations', to: '/docs/b1-admin/serving/workflows' },
+          // Make and Google Sheets connectors were never released and will not be built; the Checkr recipe depended on Make
+          { from: '/docs/b1-admin/integrations/make', to: '/docs/b1-admin/integrations/zapier' },
+          { from: '/docs/b1-admin/integrations/google-sheets', to: '/docs/b1-admin/people/exporting-data' },
+          { from: '/docs/b1-admin/integrations/services/checkr', to: '/docs/b1-admin/integrations/services/' },
           // FreePlay Classroom Mode screens (church/room search) removed from the app; calendar pairing replaces them
           { from: '/docs/freeplay/classroom-mode', to: '/docs/freeplay/scheduled-mode/' },
           { from: '/docs/freeplay/classroom-mode/selecting-room', to: '/docs/freeplay/scheduled-mode/pairing-a-screen' },
