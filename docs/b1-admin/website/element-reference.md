@@ -232,7 +232,7 @@ Your sermon library.
 
 ### Podcast
 
-Episodes from a podcast feed, each with an audio player and a **Download** link.
+Episodes from a podcast feed, each with an audio player, a **Download** link, and a **Share** button that sends the episode's page (or its audio file when the feed has no page link).
 
 - **Podcast RSS Feed URL** -- the feed address from Apple Podcasts, Spotify for Creators, Buzzsprout, or similar. Nothing shows until this is set.
 - **Episodes to show** -- default 10.
