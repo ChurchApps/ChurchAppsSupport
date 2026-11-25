@@ -29,7 +29,7 @@ The Sermons page lets you browse and watch recorded sermons from your church. Yo
 
 The buttons above the list (**Playlists**, then the playlist's name, then the sermon's title) take you back a step. Your church can choose other layouts for its sermons page -- a grid or list of sermons, or the latest sermon featured at the top -- with a **Back** button after you play one. Sermons may be video hosted on platforms like YouTube, Vimeo, or Facebook.
 
-Each sermon also has its own page at `/sermons/` followed by the sermon's ID, which you can share or bookmark. It shows the video, the series name, the title, the date, and the description.
+Each sermon also has its own page at `/sermons/` followed by the sermon's ID, which you can share or bookmark. It shows the video (or an audio player for an audio-only sermon), the series name, the title, the date, and the description. Below the player, **Share** sends the page's address ("Link copied to clipboard" if your device can't share), and a sermon with an **Audio File URL** also shows **Download audio**, which saves the audio file under the sermon's title.
 
 To always reach the newest sermon, use `/sermons/latest` on your church's site (for example, `https://yourchurch.b1.church/sermons/latest`). It opens the page of the sermon with the most recent publish date, so the same link stays current every week. If your church has no sermons yet, it opens the Sermons page instead.
 
