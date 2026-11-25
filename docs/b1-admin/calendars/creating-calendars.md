@@ -36,7 +36,7 @@ To rename or delete a calendar later, hover over its row on the Calendars page a
 
 After creating a calendar, click its name (or hover over its row and click **Manage Events**) to open the detail page. This page has two main areas:
 
-- **Left column** -- The calendar's name with its actions (**New Event**, **Edit**, **Import .ics**, and **Print**), a link to any pending approvals, and the **Groups in Calendar** list showing which groups are included in this calendar. Click **Remove** next to a group to take it off the calendar.
+- **Left column** -- The calendar's name with its actions (**New Event**, **Edit**, **Import .ics**, **Print**, and **Embed code**), a link to any pending approvals, and the **Groups in Calendar** list showing which groups are included in this calendar. Click **Remove** next to a group to take it off the calendar.
 - **Main area** -- The **Calendar Events** view showing events pulled in from connected groups, with the **Subscribe** and **Add Group** buttons above it. Use **Today**, **Back**, **Next**, and the **Month**, **Week**, **Day**, and **Agenda** views to move around. Each event is drawn in its group's color. Colors are picked automatically, and a group keeps the same color on every calendar.
 
 Click **Print** for a printable month. The printout starts with your church's light background logo (from [Appearance](../website/appearance.md), if you set one), the church name, and the calendar name. Event names wrap onto more lines instead of being cut off, and the group colors are kept.

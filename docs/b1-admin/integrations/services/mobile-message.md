@@ -26,10 +26,10 @@ Mobile Message's API is "send SMS"-shaped — no triggers, just outbound text. S
 
 | Direction | B1 trigger | Outcome |
 |---|---|---|
-| B1 → Mobile Message | `person.created` | Welcome text to the new person |
-| B1 → Mobile Message | `donation.created` | Thank-you text to the donor |
-| B1 → Mobile Message | `form.submission.created` | Page the on-call team |
-| B1 → Mobile Message | `event.created` | Reminder broadcast to a list |
+| B1 → Mobile Message | New Person (`person.created`) | Welcome text to the new person |
+| B1 → Mobile Message | New Donation (`donation.created`) | Thank-you text to the donor |
+| B1 → Mobile Message | New Form Submission (`form.submission.created`) | Page the on-call team |
+| B1 → Mobile Message | New Event (`event.created`) | Text a list when an event is added to the calendar |
 
 ## Setup
 
@@ -42,8 +42,8 @@ Mobile Message's API is "send SMS"-shaped — no triggers, just outbound text. S
 
 ### 2. Build the Zap with Webhooks by Zapier
 
-1. **Trigger** — B1.church: pick the event you want (e.g. New Donation).
-2. **Action** — B1.church: Find Person (using `data.personId`) to get the phone number and name.
+1. **Trigger** — B1.church: pick the trigger you want (e.g. New Donation).
+2. **Action** — B1.church: Find Person (using the trigger's `personId`) to get the phone number and name. Skip this step for New Event, which is not about one person.
 3. **Action** — Webhooks by Zapier: **POST**. Configure as below.
 
 The POST step's settings:

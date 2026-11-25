@@ -21,6 +21,7 @@ B1 plugs into the tools your team already uses. Connect Slack or Discord for sta
 | **[Claude](./claude.md)** | Ask Anthropic's Claude questions about your church data, scoped to your permissions — free to try, recommended | Both | Under 3 minutes |
 | **[ChatGPT](./chatgpt.md)** | Same idea with OpenAI's ChatGPT (needs a paid ChatGPT plan) | Both | 10 minutes |
 | **[Mailchimp](./services/mailchimp.md)** | Keep a Mailchimp audience in sync with your people, groups, and saved lists — built into B1 | B1 → Mailchimp | 5 minutes |
+| **[Embed on your website](../website/embedding.md)** | Show your B1 giving form, a form, or a calendar inside a website you host elsewhere | B1 → your website | 5 minutes |
 | **[Connected services](./services/index.md)** | Curated recipes for Donorbox, Subsplash, VOMO, Clearstream, Text In Church, Mobile Message | Varies | 5–10 min each |
 
 ## How to Pick

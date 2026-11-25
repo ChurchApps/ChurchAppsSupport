@@ -104,6 +104,16 @@ Save any custom-field search as a [List](../people/lists.md). Lists are live que
 
 To see a field's values for everyone at once, add it as a column on the **People** page. Switch **View as** to **Table**, click the **Select columns** icon in the page header, switch to the **Custom** tab, and check the field. Each person's value appears in its own column next to the built-in ones. See [Showing Custom Fields as Columns](../people/searching-people.md#showing-custom-fields-as-columns).
 
+## Exporting Custom Fields
+
+The **Export** button on the **People** page includes your custom fields. The `people.csv` file gets one column for each field, placed after the standard columns and headed with the field's name. Dates are written as a short date, Yes/No answers as *Yes* or *No*, and Multiple Choice answers as the option's label. See [Exporting from the People Page](../people/exporting-data.md#exporting-from-the-people-page).
+
+## Setting a Custom Field from a Workflow
+
+A [workflow](../serving/workflows.md) step can fill in a custom field for you. Add a **Set Field** action to the step, pick the field under **Custom fields**, and choose the value. The value box matches the field's type, so a Yes/No field offers **Yes** and **No** and a Multiple Choice field offers its options. See [Setting a field](../serving/workflows.md#setting-a-field).
+
+If you delete a custom field that a **Set Field** action uses, that action stops setting anything. The step editor flags it with *This custom field no longer exists, so nothing will be set. Pick another field.*
+
 ## What Happens on Merge
 
 When you [merge two person records](../people/adding-people.md), custom-field values carry over automatically. The person you keep holds on to their own values; for any field where only the removed person had a value, that value is copied over so nothing is lost.

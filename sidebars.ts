@@ -143,6 +143,7 @@ const sidebars: SidebarsConfig = {
             'b1-admin/website/appearance',
             'b1-admin/website/navigation-styles',
             'b1-admin/website/files',
+            'b1-admin/website/embedding',
           ],
         },
         {

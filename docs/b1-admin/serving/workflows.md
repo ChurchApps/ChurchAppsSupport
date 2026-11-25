@@ -83,7 +83,7 @@ In the step editor, open **Automated actions**, click **Add Action**, choose a t
 | **Record Attendance** | Marks the person present at a group's service time that is in progress (see below). |
 | **Add to Workflow** | Starts the person on another workflow -- useful for handing off between processes. |
 | **Add Note** | Records a note in the card's history. |
-| **Set Field** | Updates one field on the person's record. The **Field** list shows the stored field names: `membershipStatus`, `maritalStatus`, `gender`, `city`, `state`, and `zip`. Whatever you type in **Value** is saved as is, so match the spelling B1 uses (for example *Member* or *Regular Attendee*). |
+| **Set Field** | Updates one field on the person's record: a built-in field or one of your church's [custom fields](../settings/custom-fields.md) (see [Setting a field](#setting-a-field)). |
 | **Call Webhook** | Sends the card's details to a web address (URL) you provide, for connecting to other systems (see [Calling a webhook](#calling-a-webhook)). |
 | **Create Task** | Creates a [task](./tasks.md) with the **Task title** and optional description you enter, assigned to whoever you pick. Fill in **Task due in days** to give the task a due date. |
 | **Notify Person** | Sends a staff member or volunteer you pick an email and a B1 notification about the card (see below). |
@@ -129,6 +129,17 @@ Choose **Send Text** and type the **Text message** (up to 1,600 characters). If 
 :::warning
 Texts are sent through your church's own [texting provider](../settings/church-settings.md#texting). If no provider is connected, the action editor warns *"No texting provider is set up"* and texts will not send.
 :::
+
+### Setting a field {#setting-a-field}
+
+Choose **Set Field**, pick the **Field**, and enter the **Value** to save on the card's person.
+
+- **Built-in fields** are listed first, under their stored names: `membershipStatus`, `maritalStatus`, `gender`, `city`, `state`, and `zip`. Whatever you type in **Value** is saved as is, so match the spelling B1 uses (for example *Member* or *Regular Attendee*).
+- **Custom fields** come after the built-in ones and are listed by name. When your church has custom fields, the list is split under the headings **Person fields** and **Custom fields**. The **Value** input matches the field's type: a list of the options for Multiple Choice, **Yes** or **No** for Yes/No, a date picker for Date, a number box for Whole Number and Decimal, and a text box for Textbox.
+
+Switching to or from a custom field clears the value, because a custom field's value only fits its own type. When the action runs, the card's history records **Set** followed by the field: a custom field's name, or a built-in field's stored name.
+
+If a custom field is deleted while an action still uses it, the step editor shows *This custom field no longer exists, so nothing will be set. Pick another field.* Until you pick another field, the action fails each time it runs. The failure is logged in the card's history and the step's remaining actions still run.
 
 ### Calling a webhook {#calling-a-webhook}
 

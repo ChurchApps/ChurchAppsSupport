@@ -87,6 +87,8 @@ Below the links in the **Main Navigation** panel are two switches that apply to 
 - **Show Login** -- Shows a **Login** button in your website's navigation bar.
 - **Disable Public Website** -- Turns off your public website. Use it if your church uses B1 only for its member portal, giving, and registrations, and keeps its main website somewhere else.
 
+Below the switches, **Embed on your website** lets a website you host elsewhere show your giving form, forms, and calendars (see [Embedding B1 on Your Own Website](./embedding.md)).
+
 ### What Disabling the Public Website Does
 
 When **Disable Public Website** is on:
@@ -100,6 +102,7 @@ These links keep working, so members and guests can still reach them:
 - Login and logout
 - The member portal (everything under `/mobile`)
 - [Event registration](../guides/event-registration.md) links and guest registration
+- The giving form, form, and calendar embeds on your own website, once you have listed that website (see [Embedding B1 on Your Own Website](./embedding.md#if-your-public-website-is-disabled))
 
 A warning appears under the switch while the public website is off. Turn the switch off again to bring your pages back. Nothing is deleted while the site is disabled.
 

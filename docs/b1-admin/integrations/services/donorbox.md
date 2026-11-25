@@ -24,7 +24,7 @@ If your church takes donations through Donorbox but tracks people and statements
 
 | Direction | Donorbox trigger | B1 action |
 |---|---|---|
-| Donorbox → B1 | New or Updated Donation (instant) | Find Person → Add Donation |
+| Donorbox → B1 | New or Updated Donation (instant) | Find or Create Person → Add Donation |
 | Donorbox → B1 | New or Updated Donor | Create Person |
 | Donorbox → B1 | New or Updated Plan (recurring) | Find Person → Add Donation (use Plan id as note) |
 
@@ -45,7 +45,7 @@ In B1Admin: **Settings → Developer → API Keys → New API Key**. Scopes:
 ### 2. Build the "record a donation" Zap
 
 1. **Trigger** — Donorbox: New Donation. Connect with Donorbox's API key (in Donorbox: *Account → Profile → API Settings*).
-2. **Action** — B1.church: Find Person. Map the donor's email from the trigger to the *Email* field.
+2. **Action** — B1.church: Find or Create Person. Map the donor's email from the trigger to the *Email* field, and map the donor's first name, last name, and email for the case where they are new.
 3. **Action** — B1.church: Add Donation. Map:
    - Person → the id from step 2
    - Amount → the trigger's donation amount
@@ -56,7 +56,7 @@ In B1Admin: **Settings → Developer → API Keys → New API Key**. Scopes:
 
 Turn the Zap on. The next live donation through Donorbox lands in **B1Admin → Donations** automatically.
 
-B1's *Find Person* stops the Zap with a "No person found" error when nobody has that email, so a Filter step can't branch on it. To handle first-time donors, turn on Zapier's error handling for the Find Person step and, in its error path, run B1.church: Create Person (map first/last/email) and then Add Donation with the new person's id. Or run the *New Donor* → *Create Person* Zap from the table above so donors exist in B1 before their gift arrives.
+*Find or Create Person* matches the donor's whole email address and adds them to B1 when nobody has it, so first-time donors need no separate step. If you would rather review unknown donors by hand, use the *Find Person* action instead: it stops the Zap with a "No person found" error when nobody has that email.
 
 ## Common Recipes
 
@@ -81,7 +81,7 @@ Donorbox's *New or Updated Donation* fires on edits too. Use a Zapier *Path* ste
 
 ## Troubleshooting
 
-- **"No person found" errors** — the donor isn't in B1 yet (or gave under a different email). Add the error path described above, and check the API key has `people:write` so *Create Person* can run.
+- **"No person found" errors** — the Zap uses the *Find Person* action and the donor isn't in B1 yet (or gave under a different email). Switch the step to *Find or Create Person*, and check the API key has `people:write` so the person can be created.
 - **Donation amount looks 100× too big or small** — Donorbox sends cents in some payload variants and dollars in others. Use a *Formatter by Zapier — Numbers* step to divide by 100 if needed.
 - **Duplicate donations from a single gift** — Donorbox fires both *New Donation* and *Updated Donation*. Either filter to `event_type = "donation.succeeded"` or build two Zaps with non-overlapping filters.
 
