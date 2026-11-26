@@ -1,13 +1,13 @@
 ---
 title: "Attendance Endpoints"
-description: "Reference for the attendance API in B1 Admin and B1 Checkin: campuses, services, service times, sessions, visits, check-in rules, and export endpoints."
+description: "Reference for the attendance API in B1 Admin and B1 Checkin: services, service times, sessions, visits, check-in and checkout, headcounts, and label templates."
 ---
 
 # Attendance Endpoints
 
 <div class="article-intro">
 
-The Attendance module manages campus locations, services, service times, attendance sessions, visits, and visit sessions. It provides the infrastructure for tracking who attended which service or group meeting, supports check-in workflows, and offers attendance trend and summary reporting.
+The Attendance module manages services, service times, attendance sessions, visits, and visit sessions, along with headcounts and check-in label templates. It provides the infrastructure for tracking who attended which service or group meeting, supports check-in and checkout workflows (including texting a checked-in person's household adults), and offers attendance trend and summary reporting. Campuses are now managed in the Membership module; the campus routes here are read-only.
 
 </div>
 
@@ -17,20 +17,16 @@ The Attendance module manages campus locations, services, service times, attenda
 
 Base path: `/attendance/campuses`
 
-Standard CRUD controller (extends GenericCrudController). Provides `getById`, `getAll`, `post`, and `delete` routes via the CRUD base class.
+Deprecated and read-only. Campuses are now managed in the Membership module: create, update, and delete them through `/membership/campuses` (Settings.Edit), documented on the [Membership Endpoints](./membership.md) page. The two routes below read the attendance module's own frozen copy of the campus list, which is slated for removal, so new integrations should read campuses from `/membership/campuses` too. `POST /attendance/campuses` and `DELETE /attendance/campuses/:id` no longer exist.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
 | GET | `/` | JWT | — | List all campuses for the church |
 | GET | `/:id` | JWT | — | Get a campus by ID |
-| POST | `/` | JWT | Services.Edit | Create or update campuses |
-| DELETE | `/:id` | JWT | Services.Edit | Delete a campus |
 
 ## Services
 
 Base path: `/attendance/services`
-
-Extends GenericCrudController with CRUD routes `getById`, `getAll`, `post`, and `delete`. The `getAll` (`GET /`) and `search` endpoints are overridden with custom implementations.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -61,8 +57,6 @@ Authorization: Bearer <token>
 ## Service Times
 
 Base path: `/attendance/servicetimes`
-
-Extends GenericCrudController with CRUD routes `getById`, `post`, and `delete`. The `getAll` and `search` endpoints are custom implementations.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
@@ -99,6 +93,7 @@ Provides read-only aggregate views of attendance data for reporting and display.
 | GET | `/tree` | JWT | — | Load the full attendance tree (campuses, services, service times, groups) |
 | GET | `/trend?campusId=&serviceId=&serviceTimeId=&groupId=` | JWT | Attendance.View Summary | Load attendance trend data with optional filters |
 | GET | `/groups?serviceId=&week=` | JWT | Attendance.View | Load group attendance for a service on a given week |
+| GET | `/groupsummary?weeks=` | JWT | Attendance.View Summary | Per-group attendance summary over sessions dated in the last `weeks` weeks (default 13, minimum 1): `[{ groupId, sessionCount, totalVisits, averageAttendance, lastSessionDate }]`. `averageAttendance` is visits per session, rounded to one decimal. Groups with no session in the window are left out |
 | GET | `/sessionStatus?serviceTimeId=&date=` | JWT | Attendance.View | For every group assigned to the service time, return `{ groupId, sessionId, attendanceCount }` for that date (`date` is `YYYY-MM-DD`; `sessionId` is null when the group has no session). Backs B1Admin's **Who Still Needs Attendance** dialog |
 | GET | `/search?campusId=&serviceId=&serviceTimeId=&groupId=&startDate=&endDate=` | JWT | Attendance.View | Search attendance records with filters (campus, service, service time, group, date range) |
 
@@ -121,11 +116,11 @@ Authorization: Bearer <token>
 
 Base path: `/attendance/sessions`
 
-Extends GenericCrudController with CRUD routes `getById` and `delete`. The `getAll` and `save` endpoints are custom implementations that also allow group leaders to manage sessions for their groups.
+Group leaders can create and update sessions for the groups they lead, and a group's members and leaders can list that group's sessions, without holding an attendance permission.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/` | JWT | Attendance.View or Group Leader | List all sessions. Filter by `?groupId=` (includes names). Group leaders can view sessions for their own groups |
+| GET | `/` | JWT | Attendance.View or group member | List all sessions. Filter by `?groupId=` (includes names). Without Attendance.View, the caller must pass the `groupId` of a group they belong to or lead |
 | GET | `/:id` | JWT | Attendance.View | Get a session by ID |
 | POST | `/` | JWT | Attendance.Edit or Group Leader | Create or update sessions. Group leaders can save sessions for their own groups |
 | DELETE | `/:id` | JWT | Attendance.Edit | Delete a session |
@@ -141,8 +136,12 @@ Manages individual visit records (a person attending on a specific date) and pro
 | GET | `/` | JWT | Attendance.View | List all visits. Filter by `?personId=` |
 | GET | `/:id` | JWT | Attendance.View | Get a visit by ID |
 | GET | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.View or Attendance.Checkin | Load check-in data for people at a service. Returns visits with visit sessions from the last logged date |
+| GET | `/active?peopleIds=` | JWT | Attendance.View or Attendance.Checkin | Today's visits that have not been checked out, for a comma-separated list of person IDs. Each visit includes its `visitSessions`, each with its `session`. `400` when `peopleIds` is empty |
+| GET | `/code/:code` | JWT | Attendance.View or Attendance.Checkin | Today's visits that have not been checked out and carry the security code `code` (case-insensitive), with `visitSessions` and their `session`. Used at checkout to find everyone checked in under one code |
+| GET | `/:id/guardians` | JWT | Attendance.Checkin or Attendance.Edit | The adults in the household of the visit's person (household members whose role is not `Child`): `[{ personId, name, mobilePhone }]`. Returns `[]` when the visit is not found |
 | POST | `/` | JWT | Attendance.Edit | Create or update visits |
-| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit or Attendance.Checkin | Submit check-in data. Creates/updates visits and visit sessions, removes stale records |
+| POST | `/checkin?serviceId=&peopleIds=` | JWT | Attendance.Edit or Attendance.Checkin | Submit check-in data. Creates/updates visits and visit sessions, removes stale records. Returns `{ streaks, securityCode }`: `streaks` maps each person ID in `peopleIds` to their number of consecutive weeks attended, up to and including this week, and `securityCode` is the 4-character code for this batch (a re-check-in keeps the code those people already hold today when the request sends it back) |
+| POST | `/checkout` | JWT | Attendance.Edit or Attendance.Checkin | Check out visits. Body: `{ visitIds, checkedOutBy?, checkedOutById? }`. Sets `checkoutTime` to now on each visit and stores who collected them, emits an `attendance.checkout` webhook per visit, and returns the updated visits. An empty `visitIds` returns `[]` |
 | DELETE | `/:id` | JWT | Attendance.Edit | Delete a visit |
 
 ### Example: Check-in Flow
@@ -259,18 +258,47 @@ Authorization: Bearer <token>
 ]
 ```
 
-## Streaks
+## Check-in
 
-Base path: `/attendance/streaks`
+Base path: `/attendance/checkin`
 
-Tracks attendance streaks for individuals -- consecutive weeks a person has attended. Useful for engagement metrics and gamification.
+Support routes for check-in stations: the church settings a kiosk needs, and text messages to the adults of checked-in people. Texts are sent through the church's texting provider to the mobile phone of each adult in the person's household (household members whose role is not `Child`). Adults with no mobile phone or who have opted out of texts are skipped, a number shared by several adults is texted once, and one request reaches at most 500 numbers. Each send is saved as a sent text with per-recipient delivery logs. See [Check-Ins](../../architecture/check-ins.md) for how check-in fits together.
 
 | Method | Path | Auth | Permission | Description |
 |--------|------|------|------------|-------------|
-| GET | `/person/:personId` | JWT | — | Load attendance streaks for a person |
+| GET | `/settings` | JWT | Attendance.Checkin or Attendance.View | The church settings a kiosk needs: `{ gradePromotionDate, checkinAnnouncement }`. `gradePromotionDate` is `null` and `checkinAnnouncement` is `""` when not set |
+| POST | `/page` | JWT | Attendance.Checkin or Attendance.Edit | Text the household adults of one checked-in person. Body: `{ visitId, message }` (`message` up to 480 characters). Returns `{ sent, failed, skippedOptedOut, skippedNoPhone }`. `400` when a field is missing, the message is too long, or the church has no texting provider; `404` when the visit is not found |
+| POST | `/broadcast` | JWT | Attendance.Checkin or Attendance.Edit | Text the household adults of everyone still checked in to a service (today's visits for `serviceId` with no checkout time). Body: `{ serviceId, message }` (`message` up to 480 characters). Returns `{ sent, failed, skippedOptedOut, skippedNoPhone }`, with `sent: 0` when nobody is checked in. Limited to 10 broadcasts per church per hour (`429`); `400` for the same reasons as `/page` |
+
+## Headcounts
+
+Base path: `/attendance/headcounts`
+
+Manually entered head counts: a number of people for a service, service time, or group on a date.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Attendance.View | List headcounts, newest date first. Filter by `?serviceTimeId=` or `?groupId=`. The unfiltered list also includes `serviceName` and `serviceTimeName` |
+| GET | `/:id` | JWT | Attendance.View | Get a headcount by ID |
+| POST | `/` | JWT | Attendance.Edit | Create or update headcounts (batch). Each item needs `headcountDate`, a whole-number `value` of zero or more, and at least one of `serviceId`, `serviceTimeId`, or `groupId` (`campusId` is optional); otherwise `400`. New rows record the caller as `enteredBy` |
+| DELETE | `/:id` | JWT | Attendance.Edit | Delete a headcount |
+
+## Label Templates
+
+Base path: `/attendance/labeltemplates`
+
+Designable check-in label layouts. Each template has a `name`, `labelType`, `width`, `height`, `content`, and an `isDefault` flag; a church has at most one default per `labelType`.
+
+| Method | Path | Auth | Permission | Description |
+|--------|------|------|------------|-------------|
+| GET | `/` | JWT | Attendance.View or Attendance.Checkin | List the church's label templates, sorted by name |
+| GET | `/:id` | JWT | Attendance.View or Attendance.Checkin | Get a label template by ID |
+| POST | `/` | JWT | Attendance.Edit | Create or update label templates (batch). Saving a template with `isDefault` set clears `isDefault` on the church's other templates of the same `labelType` |
+| DELETE | `/:id` | JWT | Attendance.Edit | Delete a label template |
 
 ## Related Pages
 
+- [Check-Ins](../../architecture/check-ins.md) — How check-in works across the kiosk, member, and admin apps
 - [Membership Endpoints](./membership.md) — People, groups, roles, and church management
 - [Authentication & Permissions](./authentication.md) — Login flow, JWT, permission model
 - [Module Structure](../module-structure.md) — Code organization patterns

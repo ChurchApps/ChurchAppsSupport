@@ -613,6 +613,8 @@ const sidebars: SidebarsConfig = {
                 'developer/api/endpoints/giving',
                 'developer/api/endpoints/messaging',
                 'developer/api/endpoints/doing',
+                'developer/api/endpoints/commons',
+                'developer/api/endpoints/lessons',
               ],
             },
           ],
